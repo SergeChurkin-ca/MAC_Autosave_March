@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="#">
+    
+    <title>${pagetitle}</title>
+    <link rel="icon" href="${faviconlink}">
+
+    <!-- Show and Hide Meta Tags -->
+    <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+   
+    <!-- Background, Buttons, and Text Color Meta Tags -->
+    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#bbbbbb">
+    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#000">
+    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#000">
+
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#000">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#000">
+
+    <!-- Brand Colors -->
+    <meta class="mktoColor" id="clrPrimaryOrange" mktoName="Color - Brand Orange" default="#FFCE07">
+    <meta class="mktoColor" id="clrPrimaryDarkOrange" mktoName="Color - Brand Dark Orange" default="#F37033">
+    <meta class="mktoColor" id="clrPrimaryDarkBlueInk" mktoName="Color - Brand Dark Blue Ink" default="#1E0068">
+
+    <meta class="mktoColor" id="clrGradientOrange" mktoName="Color - Gradient Orange" default="#F37033">
+    <meta class="mktoColor" id="clrGradientYellow" mktoName="Color - Gradient Yellow" default="#FFCE07">
+    
+    <meta class="mktoColor" id="clrAccentBlue" mktoName="Color - Brand Accent Blue" default="#0075EA">
+    <meta class="mktoColor" id="clrAccentGreen" mktoName="Color - Brand Accent Green" default="#00D85C">
+    <meta class="mktoColor" id="clrAccentVelvetInk" mktoName="Color - Brand Accent Velvet Ink" default="#00D85C">
+
+    <meta class="mktoColor" id="clrPrimaryGrey" mktoName="Color - Primary Grey" default="#F0F1F2">
+    <meta class="mktoColor" id="clrPrimaryBlack" mktoName="Color - Primary Black" default="#191919">
+    <meta class="mktoColor" id="clrWhite" mktoName="Color - White" default="#FFFFFF">
+
+      
+    <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#F37033">
+    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
+    
+    <!-- Form colors -->
+    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#F0F1F2">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#000">
+    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#1c1c1c">
+    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
+    <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#000">
+    <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#000">
+    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#000">
+    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#000">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#FFF">
+
+    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#191919">
+    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
+    
+    <!-- Font Size Meta Tags -->
+    <meta class="mktoString" mktoName="Global - Header H1 Font Size (px)" id="h1Headersize" default="32">
+    <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
+    <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="20">
+
+    
+    <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
+
+    <!-- Banner Section Styling -->
+    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/1400x700/1E0068/1E0068">
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="150">
+    
+    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="80">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="30">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="30">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
+
+    <!-- Free-Text Section Styling -->
+    <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+
+    <!-- Footer Section Styling -->
+    <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
+    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="20">
+    <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
+
+
+    <!-- Google Fonts -->
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Inter:wght@200&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Fira Sans', sans-serif">
+
+    <!-- General Button Styling -->
+    <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
+    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="3">
+    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.9">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="15">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="8">
+
+    <!-- Form Section Styling -->
+    <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
+    <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
+    <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
+    <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
+
+    
+    <style>
+      ${googlefontimport}
+      * {
+        padding:0;
+        border: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: Helvetica, sans-serif;
+        font-family: ${googlefontfamily} !important;
+      }
+
+    @font-face {
+    font-family: 'Product Sans';
+    src: url('https://fonts.gstatic.com/s/opensans/v26/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+      
+      body {background:#fff;} 
+
+      p {font-family: 'Product Sans' !important;}
+
+      #bannertext h1 {
+          font-size: $(h1Headersize)px !important;
+      }
+
+      #freetext h1 {
+          font-size: ${h1fontsize}px;
+      }
+
+      h2{
+        font-size: ${h2fontsize}px;
+      }
+      p,ul,ol{
+        margin:10px 0;
+      }
+      ul,ol{
+        margin-left:45px;
+      }
+      p, li{
+        line-height:1.5;
+        font-size:${pfontsize}px;
+      }
+      b, .bold, em{
+        font-weight:bold;
+      }
+      a {
+        text-decoration: none;
+      }
+      img{
+        vertical-align:bottom;
+        max-width:100%;
+        height:auto;
+      }
+      .logo-container a{
+        text-decoration:none;
+      }
+      
+      .flex{
+        display: -webkit-flex;
+        display:flex;
+      }
+      .flex .col:not(:last-child){
+        margin-right:30px;
+      }
+      .flex .col:last-child{
+        margin-right:0;
+      }
+      .w50{
+        width:48%;
+      }
+      .w100{
+        width:100%;
+      }
+      .btn a, .btn a:visited{
+        color: ${btnfontclr};
+        text-decoration:none;
+      }
+      .btn a{
+        border: none;
+        background: linear-gradient(to left, ${clrGradientOrange}, ${clrGradientYellow});
+        padding: ${btnpaddingtb}px ${btnpaddinglr}px;
+        -moz-border-radius: ${btnborderrds}px;
+        -webkit-border-radius: ${btnborderrds}px;
+        border-radius:${btnborderrds}px;
+        text-align:center;
+        font-size:${btnfontsize}px;
+        text-transform: uppercase;
+        transition: 0.3s all;
+      }
+      .btn a:hover, .btn a:focus {
+        background: linear-gradient(to right, ${clrGradientOrange}, ${clrGradientYellow});
+      }
+      .section{
+        width:85%;
+        max-width:1400px;
+        margin:0 auto;
+        padding:${sectionpaddingtb}px 0;
+      }
+      .form-container{
+        min-height:20px;
+        
+      }
+
+      .mktoForm input[type="text"],
+      .mktoForm input[type="url"], 
+      .mktoForm input[type="email"], 
+      .mktoForm input[type="tel"], 
+      .mktoForm input[type="number"], 
+      .mktoForm input[type="date"], 
+      .mktoForm textarea.mktoField, 
+      .mktoForm select.mktoField {
+        color: ${formTextColor} !important;
+      }
+      
+      
+      
+      #header{
+        background-color: ${bannerclr};
+        background-image:url('${bannerimage}');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        display:${showbanner};
+        background-blend-mode: multiply;
+      }
+      #freetext{
+        background-color:${freeTextBackgroundColor};
+        display:${showsec1};
+      }
+      #formsection{
+        background-color: ${mainformbgclr};
+        display:${showformsec};
+      }
+      #footer{
+        display:${showfooter};
+        background-color:${footerbgclr};
+        color:${footerfontclr};
+        font-size:${footerfontsize}px;
+      }
+
+      #footer svg {
+        width: ${footericonswidth}px;
+      }
+       #brand .section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        max-height:350px;
+        position:relative;
+        padding-top:${logopaddingtop}px;
+        padding-bottom:${logopaddingbtm}px;
+      }
+      
+      
+      #header .section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        min-height:500px;
+        position:relative;
+        padding-top:${headerpaddingtop}px;
+        padding-bottom:${headerpaddingbtm}px;
+      }
+        #header .logo-container{
+        position:absolute;
+        top:${sectionpaddingtb}px;
+        left:0;
+        width:100%;
+        display:${showtoplogo};
+      }
+      #header .logo-container img{
+        width:${toplogowidth}px;
+      }
+      #brand{
+        display:${showtoplogo-1};
+      }
+      #brand .logo-container{
+        position:absolute;
+        top:${sectionpaddingtb}px;
+        left:0;
+        width:100%;
+      }
+      #brand .logo-container img{
+        width:${toplogowidth}px;
+      }
+      #header #bannertext{
+        padding-top:80px;
+        padding-bottom:30px;
+      }
+
+      #header h1 {
+        color: ${clrWhite} !important;
+      }
+
+      #header p,
+      #header ul,
+      #header li {
+        color: ${clrWhite} !important;
+      }
+      #freetext .btn {
+        margin-top:30px;
+      }
+
+      #freetext h1 {
+        color: ${freeTextHeaderColor} !important;
+      }
+
+      #freetext p,
+      #freetext ul,
+      #freetext li {
+        color: ${freeTextTextColor} !important;
+      }
+
+      #formlefttext h2 {
+        color: ${formSectionHeaderColor} !important;
+      }
+
+      #formsection p,
+      #formsection ul,
+      #formsection li {
+        color: ${formSectionTextColor} !important;
+      }
+      #formsection .section{
+        justify-content: space-between;
+      }
+      #formsection .form-container{
+        background-color:${formbgclr};
+        padding-top: ${formTopBottomPadding}px;
+        padding-bottom: ${formTopBottomPadding}px;
+      }
+      #formsection .lefttext{
+        display:${showlefttext};
+        margin-right:40px;
+      }
+
+      #formheadline{
+        font-size: ${formheadlinefontsize}px;
+        color: ${formHeadLineColor} !important;
+        text-align:center;
+        margin-bottom: 10px;
+      }
+
+      #formheadline h2{
+        color: ${formHeadLineColor} !important;
+        font-size: ${formheadlinefontsize}px !important;
+      }
+      form.mktoForm{
+        width:99% !important;
+        max-width:700px !important;
+        margin: 0 auto !important;
+        ${googlefontfamily}
+      }
+      .mktoForm .mktoGutter{
+        width:0 !important;
+      }
+      .mktoForm .mktoOffset {
+        height: 7px !important;
+      }
+      .mktoForm .mktoLabel{
+        width:90% !important;
+        font-size:${formfontsize}px !important;
+        color: ${formLabelColor} !important;
+      }
+      .mktoForm .mktoFormRow{
+        display:flex !important;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
+        margin-left:20px;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol:first-child{
+        margin-left:0 !important;
+      }
+      .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap, .mktoForm input, .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm .mktoButtonRow{
+        width:100% !important;
+      }
+      .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
+        min-height:25px !important;
+        height:40px !important;
+      }
+      .mktoForm textarea.mktoField{
+        height:70px !important;
+        min-height:40px !important;
+      }
+      .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+        border: 1px solid #D0D3D4 !important;
+        background: #ffffff !important;
+        color: ${formTextColor} !important;
+        -moz-border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding-left: 10px !important;
+        font-size:${formfontsize}px !important;
+      }
+      .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input::-moz-placeholder { /* Firefox 19+ */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input:-ms-input-placeholder { /* IE 10+ */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input:-moz-placeholder { /* Firefox 18- */
+        color:#3a3a3a !important;
+      }
+      .mktoForm select.mktoField{
+        background-color:#ffffff !important;
+        background-image: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/select-arrow.png') !important;
+        background-repeat: no-repeat !important;
+        background-position:97% 50% !important;
+        -moz-appearance: none; 
+        -webkit-appearance: none; 
+        appearance: none;
+        background-size: 24px !important;
+      }
+      .mktoForm input:invalid, .mktoForm select.mktoField:invalid, .mktoForm textarea.mktoField:invalid{
+        box-shadow: 0px 0px 0px 3px #e83131 !important;
+      }
+      .mktoLogicalField.mktoCheckboxList input{
+        width: 20px !important;
+        height: 20px !important;
+        margin-top: 3px !important;
+        margin-right: 5px!important;
+      }
+      .mktoForm a, .mktoForm a:visited{
+        color:#3a3a3a !important;
+      }
+      .mktoForm .mktoLogicalField.mktoCheckboxList{
+        order:1;
+        margin-right: 8px !important;
+      }
+      .mktoForm .mktoButtonWrap{
+        margin-left: 0 !important;
+      }
+      .mktoForm .mktoButtonRow{
+        margin-top:10px;
+      }
+      .mktoButtonWrap button.mktoButton {
+        background: ${formButtonColor} !important;
+        border: 1px solid ${formButtonColor} !important;
+        color:${btnfontclr};
+        text-align: center !important;
+		letter-spacing: 0.1em !important;
+        font-size:${btnfontsize}px !important;
+        -moz-border-radius: ${btnborderrds}px !important;
+        -webkit-border-radius: ${btnborderrds}px !important;
+        border-radius:${btnborderrds}px !important;
+        opacity:1;
+        transition:300ms opacity;
+      }
+
+      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+        background: ${formButtonColor} !important;
+        color: ${formButtonTextColor} !important;
+        border: 1px solid ${formButtonColor} !important;
+      }
+
+      .mktoForm button.mktoButton:hover{
+        opacity:${btnhvropacity};
+        color: ${formButtonHoverColor} !important;
+        background-color: ${formButtonHoverBGColor} !important;
+        background: ${formButtonHoverBGColor} !important;
+      }
+
+      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+        color: ${formButtonHoverColor} !important;
+        background-color: ${formButtonHoverBGColor} !important;
+        background: ${formButtonHoverBGColor} !important;
+      }
+
+      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+        margin-left: 1.5em;
+        margin-top: 0.1em;
+        margin-bottom: 0.3em;
+        line-height: 2em!important;
+        display: block;
+        min-height: 12px;
+        font-size: ${formfontsize-1}px!important;
+}
+      #footer .section{
+        padding:${footerpaddingtb}px 0;
+        
+      }
+      #footer .row1{
+        align-items:center;
+        justify-content: space-between;
+        margin-bottom:20px;
+      }
+      #footer .logo-container img{
+        width:${footerlogowidth}px;
+      }
+      .icons-container ul, .icons-container ol{
+        display:flex;
+        flex-direction:row;
+        margin-left:0;
+      }
+      .icons-container ul li, .icons-container ol li{
+        list-style:none;
+        margin-right:10px;
+      }
+      #footer .icons-container img{
+        width:${footericonswidth}px;
+      }
+      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
+        color:${footerfontclr};
+        font-size:${footerfontsize}px;
+      }
+      
+      #footer .col:nth-child(4) a:nth-child(1) {
+        margin-right: 5px;
+      }
+      @media screen and (max-width:955px){
+        .flex{
+          flex-wrap:wrap;
+          flex-direction:column;
+        }
+        .flex .col:not(:last-child){
+          margin-left:0;
+          margin-right:0;
+        }
+        .w50{
+          width:100%;
+        }
+        .section, #header .section{
+          width:90%;
+          padding:40px 0;
+          padding-top:40px;
+          padding-bottom:40px;
+        }
+        #brand .logo-container{
+          top:40px;
+        }
+        #formsection .lefttext{
+          margin-right:0;
+          width:100%;
+          margin-bottom:20px;
+        }
+        #formsection .form-container{
+          padding:20px;
+        }
+        #footer .section{
+          padding:25px 0;
+          align-items:center;
+          justify-content: center;
+          text-align:center;
+        }
+        #footer .logo-container{
+          margin-bottom:10px;
+        }
+        .icons-container ul, .icons-container ol{
+          justify-content:center;
+        }
+      }
+      
+      
+      @media screen and (max-width:550px){
+        .mktoForm .mktoFormRow{
+          display:block !important;
+        }
+        .mktoForm .mktoFormRow .mktoFormCol{
+          margin-left:0 !important;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header id="brand">
+      <div class="section">
+           <div class="logo-container">
+            <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
+            <img src="https://www.device42.com/wp-content/uploads/2021/07/d42-rgb-full.png" alt="logo">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header">
+      <div class="section">
+        <div class="logo-container">
+           <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
+            <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
+          </div>
+        </div>
+        <div class="mktoText" id="bannertext" mktoName="Banner - Text">
+          <h1>
+            Lorem Ipsum
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+        
+      </div>
+    </div>
+      
+    
+    <div id="freetext">
+      <div class="section">
+        <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
+          <h1>
+            Lorem ipsum dolor sit amet
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="mktoText" id="freetextcopy2" mktoName="Free-Text - Copy 2">
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          </ul>
+        </div>
+        <div class="mktoText btn" id="freetextbtn1" mktoName="Free-Text - Button Content">
+          <a href="#">Button</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="formsection">
+      <div class="section flex">
+        
+        <div class="w50 lefttext">
+          <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
+            <h2>
+              Lorem ipsum dolor sit amet
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        
+        <div class="form-container w100">
+          <div class="mktoText" id="formheadline" mktoName="Form - Headline">
+            <h2  class="bold">Form Headline</h2>
+          </div>
+          <div class="mktoForm" id="form1" mktoName="Form"></div>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    <footer id="footer">
+      <div class="section">
+        
+        <div class="row1 flex">
+          <div class="logo-container col" style="display:${showfooterlogo};">
+          <div class="icons-container">
+            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
+              <ul>
+                <li><a href="https://www.youtube.com/user/godevice42" target="_blank" rel="noopener"><svg aria-hidden="true" width="${footericonswidth}" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a></li>
+                
+                <li><a href="https://www.facebook.com/device42" target="_blank" rel="noopener"><svg aria-hidden="true" width="${footericonswidth}" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg></a></li>
+                <li><a href="https://github.com/device42" target="_blank" rel="noopener"><svg aria-hidden="true" width="${footericonswidth}" focusable="false" data-prefix="fab" data-icon="github-alt" class="svg-inline--fa fa-github-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path fill="currentColor" d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg></a></li>
+                <li><a href="https://twitter.com/device42" target="_blank" rel="noopener"><svg aria-hidden="true" width="${footericonswidth}" focusable="false" data-prefix="fab" data-icon="twitter-square" class="svg-inline--fa fa-twitter-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8 .2 5.7 .2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3 .6 10.4 .8 15.8 .8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.45 65.45 0 0 1 -29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path></svg></a></li>
+                <li><a href="https://www.linkedin.com/company/device42" target="_blank" rel="noopener"><svg aria-hidden="true" width="${footericonswidth}" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg></a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+
+          <div class="mktoText col" id="footertext1" mktoName="Footer - Text">
+            &copy;2021 Device42, Inc. All rights are reserved. <br>
+            600 Saw Mill Road <br>
+            West Haven, CT 06516
+          </div>
+
+          <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
+            1 (844) 424-2422<br>
+            1 (203) 409-7242
+          </div>
+         
+          <div class="mktoText col" id="footertext3" mktoName="Footer - Text 2">
+            <a href="mailto:info@device42.com">info@device42.com</a>
+            <a href="https://www.device42.com/privacy/">Privacy Policy</a>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    
+  </body>
+</html>
