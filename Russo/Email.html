@@ -37,6 +37,7 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad25" mktoname="Top Padding" default="25" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad30" mktoname="Top Padding" default="30" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad40" mktoname="Top Padding" default="40" />
+<meta mktoModuleScope="true" class="mktoNumber" id="top_pad60" mktoname="Top Padding" default="60" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad70" mktoname="Top Padding" default="70" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad110" mktoname="Top Padding" default="110" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad0" mktoname="Bottom Padding" default="0" />
@@ -47,6 +48,8 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad35" mktoname="Bottom Padding" default="35" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad30" mktoname="Bottom Padding" default="30" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad40" mktoname="Bottom Padding" default="40" />
+<meta mktoModuleScope="true" class="mktoNumber" id="btm_pad60" mktoname="Bottom Padding" default="60" />
+<meta mktoModuleScope="true" class="mktoNumber" id="btm_pad70" mktoname="Bottom Padding" default="70" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad110" mktoname="Bottom Padding" default="110" />
 <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" />
 <meta mktoModuleScope="true" class="mktoNumber" id="logo-top_pad" mktoname="Logo Top Padding" default="20" />
@@ -56,6 +59,8 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize30" mktoname="Headline Font Size" default="30" />
 <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize28" mktoname="Headline Font Size" default="28" />
 <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize18" mktoname="Headline Font Size" default="18" />
+<meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize14" mktoname="Headline Font Size" default="14" />
+<meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize12" mktoname="Headline Font Size" default="12" />
 <meta mktoModuleScope="true" class="mktoColor" id="headlineFontColor" mktoname="Headline Text Color" default="#1F203E" />
 <meta mktoModuleScope="true" class="mktoColor" id="headlineFontColorwhite" mktoname="Headline Text Color" default="#FFFFFF" />
 <meta mktoModuleScope="true" class="mktoNumber" id="SubheadlineFontSize" mktoname="Subheadline Font Size" default="18" />
@@ -104,7 +109,6 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="DividerHeight" mktoname="Divider Height (px)" default="1" />
 <meta mktoModuleScope="true" class="mktoString" id="DividerWidth" mktoname="Divider Width (%)" default="90" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btnFontSize" mktoname="Button Font Size (px)" default="18" />
-<meta mktoModuleScope="true" class="mktoString" id="btnText2" mktoName="Button Text" default="Button">
 
 <meta mktoModuleScope="true" class="mktoList" id="alignCenterlogo" mktoName="Logo Align" values="left,center,right" default="center" />
 <meta mktoModuleScope="true" class="mktoList" id="alignCenter" mktoName="Align" values="left,center,right" default="center" />
@@ -248,6 +252,21 @@ th{font-weight:normal !important}
     width:110px !important;
   }
 }
+
+@media (max-width: 550px) {
+    .footer-icons tr, .footer-icons td,
+    .footer-links tr, .footer-links td {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-links td {
+        height: 20px;
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
 </style>
 </head>
 <body style="width: 100%; min-width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
@@ -262,14 +281,14 @@ th{font-weight:normal !important}
 <table class="mktoModule" mktoName="Logo" id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
     <td bgColor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;">
-    <table id="menu" style="padding:20px 31px;text-align: center; margin: 0 auto; width:100%; background-color:#54565B; color: #FFFFFF"> 
+    <table id="menu" style="padding:20px;text-align: center; margin: 0 auto; width:100%; background-color:#54565B; color: #FFFFFF; font-family:'${fontfamily}',Arial, sans-serif;font-size:${headlineFontSize12}px"> 
         <tbody> 
         <tr> 
             <td><a href="https://www.russopower.com/" target="_blank"> <img width="150px" class="logowidth" alt="Russo logo" src="https://lp.russopower.com/rs/843-FJG-506/images/RussoLogo_White.png" border="0" style="height:auto !important;"></a></td>  
             <td><a class="menu" href="#" target="_blank" style="color:${headlineFontColorwhite}">Power Equipment</a></td> 
-            <td> <a class="menu" href="#" target="_blank" style="color:${headlineFontColorwhite}">Fail Clean-Up</td> 
-            <td> <a class="menu" href="#" target="_blank" style="color:${headlineFontColorwhite}">Salt Sapply</a></td> 
-            <td> <a class="menu" href="#" target="_blank" style="color:${headlineFontColorwhite}">Service Dept</a></td> 
+            <td><a class="menu" href="#" target="_blank" style="color:${headlineFontColorwhite}">Fail Clean-Up</a></td> 
+            <td><a class="menu" href="#" target="_blank" style="color:${headlineFontColorwhite}">Salt Supply</a></td> 
+            <td><a class="menu" href="#" target="_blank" style="color:${headlineFontColorwhite}">Service Dept</a></td> 
         </tr> 
         </tbody> 
     </table>
@@ -292,7 +311,7 @@ th{font-weight:normal !important}
     <td valign="top">
         <table class="inner_table" width="590" style="margin: 0 auto; width: 590px; border-spacing: 0px; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" align="center">
             <tr>
-                <td height="${top_pad70}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                <td height="${top_pad60}" style="line-height:1px;font-size:1px;">&nbsp;</td>
             </tr>
             <tr>
                 <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${headlineFontColorwhite};font-weight:bold; font-size: ${headlineFontSize30}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
@@ -332,7 +351,7 @@ th{font-weight:normal !important}
                 </td>
             </tr>
             <tr>
-                <td height="${btm_pad110}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                <td height="${btm_pad70}" style="line-height:1px;font-size:1px;">&nbsp;</td>
             </tr>
         </table>
     </td>
@@ -458,7 +477,7 @@ th{font-weight:normal !important}
             <tbody>
                 <tr>
                     <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
-                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
+                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText2}</a>
                     </td>
                 </tr>
             </tbody>
@@ -528,7 +547,7 @@ th{font-weight:normal !important}
                                     <tbody>
                                         <tr>
                                             <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
-                                                <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
+                                                <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText2}</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -551,6 +570,7 @@ th{font-weight:normal !important}
 </tr>
 </table>
 <!--Image Left Text Right with btn-->    
+
 <!--Image Right Text Left with btn-->
 <table class="mktoModule" mktoName="2 Col Image Right with Button" id="imgRight1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
@@ -603,7 +623,7 @@ th{font-weight:normal !important}
                                     <tbody>
                                         <tr>
                                             <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
-                                                <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
+                                                <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText2}</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -629,25 +649,6 @@ th{font-weight:normal !important}
 
 
 
-<!--Divider Module-->
-<table class="mktoModule" mktoName="Divider Module" id="DividerModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-<tr>
-<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-<table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
-<tr>
-<td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-<tr>
-<td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
-</tr>
-<tr>
-<td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<!--Divider Module-->
 
 <!--3 Col-->
 <table class="mktoModule" mktoName="Three Columns Module" id="threeCol" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -701,7 +702,7 @@ th{font-weight:normal !important}
                 <td> 
                 <div class="mktoText" id="img-btn1"> 
                 <div> 
-                <table cellpadding="0" cellspacing="0" border="0"> 
+                <table align="center" cellpadding="0" cellspacing="0" border="0"> 
                 <tbody> 
                 <tr> 
                 <td bgcolor="#cc1c26" align="center" style="font-weight:bold; text-align: center;border:1px solid ; color:#ffffff; background-color:#cc1c26;text-decoration:none; font-size:18px; line-height:110%; font-family: 'Roboto',Arial, sans-serif; padding: 13px 35px; border-radius: 5px;"> <a style="text-decoration:none; color:#ffffff;" href="#">${btnText2}</a> </td> 
@@ -753,9 +754,9 @@ th{font-weight:normal !important}
                 </tr>
                 <tr> 
                 <td> 
-                <div class="mktoText" id="img-btn1"> 
+                <div class="mktoText" id="img-btn2"> 
                 <div> 
-                <table cellpadding="0" cellspacing="0" border="0"> 
+                <table align="center" cellpadding="0" cellspacing="0" border="0"> 
                 <tbody> 
                 <tr> 
                 <td bgcolor="#cc1c26" align="center" style="font-weight:bold; text-align: center;border:1px solid ; color:#ffffff; background-color:#cc1c26;text-decoration:none; font-size:18px; line-height:110%; font-family: 'Roboto',Arial, sans-serif; padding: 13px 35px; border-radius: 5px;"> <a style="text-decoration:none; color:#ffffff;" href="#">${btnText2}</a> </td> 
@@ -806,9 +807,9 @@ th{font-weight:normal !important}
                 </tr>
                 <tr> 
                 <td> 
-                <div class="mktoText" id="img-btn1"> 
+                <div class="mktoText" id="img-btn3"> 
                 <div> 
-                <table cellpadding="0" cellspacing="0" border="0"> 
+                <table align="center" cellpadding="0" cellspacing="0" border="0"> 
                 <tbody> 
                 <tr> 
                 <td bgcolor="#cc1c26" align="center" style="font-weight:bold; text-align: center;border:1px solid ; color:#ffffff; background-color:#cc1c26;text-decoration:none; font-size:18px; line-height:110%; font-family: 'Roboto',Arial, sans-serif; padding: 13px 35px; border-radius: 5px;"> <a style="text-decoration:none; color:#ffffff;" href="#">${btnText2}</a> </td> 
@@ -825,7 +826,7 @@ th{font-weight:normal !important}
 </td>
 </tr>
 <tr>
-<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+<td height="${btm_pad60}" style="line-height:1px;font-size:1px;">&nbsp;</td>
 </tr>
 </table>
 </td>
@@ -835,79 +836,79 @@ th{font-weight:normal !important}
 
 
 
-
-
 <!--Footer Module-->
-<table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;border-top: solid 2px ${DividerBGColor}" border="0" width="100%">
+<table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;font-family:'${fontfamily}',Arial, sans-serif;" border="0" width="100%">
 <tr>
 <td bgColor="${mod-bg-color}" valign="top" style="background-color:${mod-bg-color};vertical-align: top;">
-<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:90%;border-collapse: collapse;border-spacing: 0;" border="0" width="90%;">
 
 <tr>
 <td bgColor="${mod-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;">
- <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;border-bottom:solid 2px ${DividerBGColor}" border="0" width="100%"> 
+ <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;border-bottom:solid 2px ${DividerBGColor};border-top:solid 2px ${DividerBGColor}; font-weight:600" border="0" width="95%"> 
     <tr> 
-       <td class="footer-leftcol" width="1" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:1px"></td> 
-       <td width="25%" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:25%">
-         <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1" style="padding:20%">
+
+       <td width="20%" align="center" style="text-align: ${alignLeft}; font-size: 15px; line-height: 1px; width:20%">
+         <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1" style="padding:20% 0;">
          <a href="https://www.instagram.com/russopowerequipment" target="_blank"><img width="33" height="auto" src="https://lp.russopower.com/rs/843-FJG-506/images/instagram.gif" style="width:33px;height:auto;max-width:96%;" />
-         <span style="font-size:${CopySize15}px">Instagram</span>
+         <span style="font-size:${CopySize15}px;color:${footerCopyBlue};display:block;margin:-17px 0 0 44px;">Instagram</span>
             </a>
          </div>
-         
        </td> 
-       <td width="25%" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:25%">
-         <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2" style="padding:20%">
+
+       <td width="20%" align="center" style="text-align: ${alignLeft}; font-size: 15px; line-height: 1px; width:20%">
+         <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2" style="padding:20% 0;">
          	<a href="https://www.facebook.com/RussoPower" target="_blank"><img width="33" height="auto" src="https://lp.russopower.com/rs/843-FJG-506/images/facebook.gif" style="width:33px;height:auto;max-width:96%;" />
-             <span style="font-size:${CopySize15}px">Facebook</span>
+             <span style="font-size:${CopySize15}px;color:${footerCopyBlue};display:block;margin:-17px 0 0 44px;">Facebook</span>
              </a>
          </div>
-         
        </td> 
-       <td width="25%" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:25%">
-         <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3" style="padding:20%">
+
+       <td width="20%" align="center" style="text-align: ${alignLeft}; font-size: 15px; line-height: 1px; width:20%">
+         <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3" style="padding:20% 0;">
          <a href="https://twitter.com/russo_power" target="_blank"><img width="33" height="auto" src="https://lp.russopower.com/rs/843-FJG-506/images/twitter.gif" style="width:33px;height:auto;max-width:96%;" />
-             <span style="font-size:${CopySize15}px">Twitter</span></a>
+             <span style="font-size:${CopySize15}px;color:${footerCopyBlue};display:block;margin:-17px 0 0 44px;">Twitter</span></a>
          </div>
-        
        </td> 
-       <td width="25%" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:25%">
-         <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4" style="padding:20%">
+
+       <td width="20%" align="center" style="text-align: ${alignLeft}; font-size: 15px; line-height: 1px; width:20%">
+         <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4" style="padding:20% 0;">
          	<a href="https://www.youtube.com/user/RussoPowerEquipment"><img width="33" height="auto" src="https://lp.russopower.com/rs/843-FJG-506/images/youtube.gif" style="width:33px;height:auto;max-width:96%;" />
-             <span style="font-size:${CopySize15}px">Youtube</span>
+             <span style="font-size:${CopySize15}px;color:${footerCopyBlue};display:block;margin:-17px 0 0 44px;">Youtube</span>
              </a>
          </div>
-         
        </td> 
-       <td class="footer-rightcol" width="489" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:489px"></td> 
+
      </tr> 
+    <tr>
+        <td height="${btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+    </tr>
   </table>
 </td>
 </tr>
 
 <tr>
-<td bgColor="${mod-bg-color}" class="center" align="left" valign="top" style="vertical-align: top;padding: 50px 30px 0;">
- <table class="footer-links ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+<td bgColor="${mod-bg-color}" class="center" align="left" valign="top" style="vertical-align: top;padding: 50px 30px 15px 15px;">
+ <table class="footer-links ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;height:20px;" border="0" width="100%"> 
     <tr> 
-       <td class="footer-leftcol" width="1" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:1px"></td> 
-       <td width="25%" align="center" style="text-align: ${alignLeft}; font-size:${CopySize15}px; line-height: 1px; width:25%;">
+
+       <td width="20%" align="left" style="text-align: ${alignLeft}; font-size:${CopySize15}px; line-height: 1px; width:20%;">
          <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
         <a href="#" style="color:${footerCopyBlue}">Privacy Policy</a>
          </div>
          
        </td> 
-       <td width="25%" align="center" style="text-align: ${alignLeft}; font-size:${CopySize15}px; line-height: 1px; width:25%; border-left: solid 1px ${DividerBGColor}; border-right: solid 1px ${{DividerBGColor};">
+       <td width="30%" align="center" style="text-align: ${alignCenter}; font-size:${CopySize15}px; line-height: 1px; width:30%; border-left: solid 1px ${DividerBGColor}; border-right: solid 1px ${DividerBGColor};">
          <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
          	<a href="#" style="color:${footerCopyBlue}">Terms &amp; Conditions</a>
          </div>
          
        </td> 
-       <td width="25%" align="center" style="text-align: ${alignLeft}; font-size:${CopySize15}px; line-height: 1px; width:25%;">
+       <td width="20%" align="center" style="text-align: ${alignCenter}; font-size:${CopySize15}px; line-height: 1px; width:20%;">
          <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3">
             <a href="#" style="color:${footerCopyBlue}">Contact Us</a>
          </div>
        </td> 
-       <td class="footer-rightcol" width="489" align="center" style="text-align: center; font-size:${CopySize15}px; line-height: 1px; width:489px"></td> 
+       <td class="footer-rightcol" width="25%" align="center" style="text-align: center; font-size:${CopySize15}px; line-height: 1px; width:25%"></td> 
      </tr> 
   </table>
 </td>
@@ -917,16 +918,16 @@ th{font-weight:normal !important}
 
   
 <tr>
-<td align="${alignLeft}" style="padding: 0 31px;font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}; text-align: ${alignLeft};">
-<div class="mktoText" mktoName="Footer Text" id="footer-text">
-    <div>
+<td align="${alignLeft}" style="padding: 0 12px;font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}; text-align: ${alignLeft};">
+<div class="mktoText" mktoName="Footer Text" id="footer-text" style="padding-right:55px;">
+<div>
        
-<br>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vitae quis corporis ducimus unde provident excepturi, fugit maxime consequatur fugiat veniam repudiandae illo nesciunt error nisi officia debitis? Inventore, at!
 Illum, aut quis! Commodi corrupti vitae quos nobis accusantium ex asperiores! Obcaecati quam, porro minima corporis vero cumque quidem, ipsam quisquam consequuntur molestiae aperiam totam ipsa tenetur delectus sint quae.
 Perferendis totam cum ab quas nulla, ut reprehenderit dolorem qui ex dolores at quod illo nemo, doloribus quaerat ducimus repellendus expedita quidem dicta nisi veniam in consectetur alias. Vel, quibusdam?
 Sit fugit rerum voluptate quisquam natus doloribus expedita consectetur, libero ex esse ut dolores, architecto numquam tenetur sed, corrupti error est! Dicta mollitia repellat sint et, cupiditate eveniet atque nihil.
 Saepe labore reiciendis voluptas illum, deleniti eligendi nemo sapiente quidem quia aspernatur atque eum! Enim eaque saepe et, quisquam, laborum veritatis deserunt corrupti commodi distinctio harum deleniti! A, cumque nulla.</p>  
+
 </div>
 <p> Russo Power Equipment &copy; 2021</p> 
  </div>
