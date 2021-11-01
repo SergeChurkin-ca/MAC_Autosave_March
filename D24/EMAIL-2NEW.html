@@ -54,6 +54,7 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoColor" id="SubheadlineFontColor" mktoname="Subheadlinbe Text Color" default="#1F203E" />
 <meta mktoModuleScope="true" class="mktoNumber" id="CopySize18" mktoname="Text Font Size" default="18" />
 <meta mktoModuleScope="true" class="mktoNumber" id="CopySize" mktoname="Text Font Size" default="16" />
+<meta mktoModuleScope="true" class="mktoNumber" id="FooterFontSize-sm" mktoname="Footer Font Size" default="9" />
 <meta mktoModuleScope="true" class="mktoColor" id="CopyColor" mktoname="Text Color" default="#1F203E" />
 <meta mktoModuleScope="true" class="mktoColor" id="CopyColorWhite" mktoname="Text Color" default="#FFFFFF" />
 <meta mktoModuleScope="true" class="mktoImg" id="banner1_img" mktoName="Background Image" default="https://dummyimage.com/1400x700/1E0068/1E0068" />
@@ -96,8 +97,9 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoList" id="align" mktoName="Content Align" values="left,center,right" default="left" />
 <meta mktoModuleScope="true" class="mktoColor" id="footerbgclr" mktoname="Footer Background Color" default="#1c1c1c" />
 <meta mktoModuleScope="true" class="mktoNumber" id="logowidth2" mktoname="Logo Width (px)" default="100" />
+<meta mktoModuleScope="true" class="mktoNumber" id="footerlogowidth" mktoname="Logo Width (px)" default="145" />
 <meta mktoModuleScope="true" class="mktoNumber" id="logocolwidth" mktoname="Column Width (px)" default="215" />
-<meta mktoModuleScope="true" class="mktoNumber" id="footericonswidth" mktoname="Column Width (px)" default="20" />
+<meta mktoModuleScope="true" class="mktoNumber" id="footericonswidth" mktoname="Column Width (px)" default="15" />
 <title>{{my.ViewAsWebpage Title}}</title>
 <link rel="icon" href="{{my.Favicon URL}}" type="image/x-icon">
 <link rel="shortcut icon" href="{{my.Favicon URL}}" type="image/x-icon">
@@ -194,6 +196,15 @@ th{font-weight:normal !important}
   .imgmaxwidth{width:100%;max-width:${imgmaxwidth}px; height: auto !important}
   .fullWid .logowidth, .logowidth{width:100% !important;max-width:${logowidth}px !important; height: auto !important}
 }
+
+@media (max-width: 690px) {
+   .footer-inner-block {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center !important;
+  }
+}
 </style>
 <style>
   @font-face {
@@ -211,7 +222,7 @@ th{font-weight:normal !important}
 </style>
 </head>
 
-<body style="width: 100%; min-width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+<body style="width: 100%; background-color:${bodyBgColor}; min-width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
 <table class="full-container" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse;margin: 0 auto;">
 <tr>
 <td bgcolor="${bodyBgColor}" style="background-color:${bodyBgColor};">
@@ -426,42 +437,48 @@ ${btnBorderRadius}px;padding:5px">
 </table>
 <!--btn Module-->
   
+  
 <!-- Footer Module New-->
-<table class="mktoModule" mktoName="Footer Social Media Module" id="FooterModule1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<table class="mktoModule" mktoName="Footer Social Media Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 	<!-- This is updated footer loyout -->
   <tr>
+    
+    <td bgColor="${bannerdark-bg-Color}" valign="top" style="background-color:${bannerdark-bg-Color};vertical-align: top; padding: 20px 15px;">
+    <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px;border-collapse: collapse;border-spacing: 0;" border="0" width="640">
 
-    <td align="${alignCenter}" style="text-align: ${alignCenter};">
+    <tr class="footer-inner-block">
+
+    <td class="footer-inner-block" width="170" align="${alignCenter}" style="text-align: ${alignCenter}; width:170px;">
     <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-    <a href="https://www.device42.com/" target="_blank"><img class="logowidth" width="100" alt="logo" src="https://www.device42.com/wp-content/uploads/2021/08/d42-rgb-reverse.png" border="0" style="width:${logowidth2}px; height:auto !important;" /></a>
+    <a href="https://www.device42.com/" target="_blank"><img class="footerLogowidth" width="100%" alt="logo" src="https://www.device42.com/wp-content/uploads/2021/08/d42-rgb-reverse.png" border="0" style="width:${footerlogowidth}px; height:auto !important;" /></a>
     </div>
     </td>
 
-		<td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
-    <div class="mktoText" mktoName="Footer Text" id="footer-text">
+		<td class="footer-inner-block" width="120" align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size:${FooterFontSize-sm}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignLeft};width:120px;padding: 0 10px;">
+    <div class="mktoText" mktoName="Footer Text" id="footer-text" style="margin-top:14px;">
     600 Saw Mill Road<br>
     West Haven, CT 06516
     </div>
     </td>
 
-		<td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
-    <div class="mktoText" mktoName="Footer Text" id="footer-text">
+		<td class="footer-inner-block" width="100" align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size:${FooterFontSize-sm}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignLeft};width:100px;">
+    <div class="mktoText" mktoName="Footer Text" id="footer-text" style="margin-top:14px;">
     1 (844) 424-2422<br>
     1 (203) 409-7242
     </div>
     </td>
 
-		<td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
-    <div class="mktoText" mktoName="Footer Text" id="footer-text">
+		<td  class="footer-inner-block"width="100" align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size:${FooterFontSize-sm}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignLeft};width:100px;">
+    <div class="mktoText" mktoName="Footer Text" id="footer-text" style="margin-top:14px;">
     <a href="mailto:info@device42.com" style="color: ${CopyColorWhite}; text-decoration:none;">info@device42.com</a><br>
     <a href="https://www.device42.com/privacy/" style="color: ${CopyColorWhite}; text-decoration:none;">Privacy Policy</a>
     </div>
     </td>
 
-		<td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
-            <table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${logocolwidth}">
+		<td class="footer-inner-block" width="150" align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size:${FooterFontSize-sm}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};width:150px;">
+            <table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="150">
         <tr>
-        <td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-right:10px;">
+        <td width="15" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:15px;">
         <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
                 <a href="https://www.youtube.com/user/godevice42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube" role="img" 
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -469,14 +486,14 @@ ${btnBorderRadius}px;padding:5px">
         213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a>
                 </div>
         </td>
-        <td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-right:10px;">
+        <td width="15" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:15px;">
         <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
                 <a href="https://www.facebook.com/device42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f" role="img" 
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
         <path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg></a>
                 </div>
         </td>
-        <td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-right:10px;">
+        <td width="15" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:15px;">
         <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3">
                 <a href="https://github.com/device42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="github-alt" class="svg-inline--fa fa-github-alt" role="img" 
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
@@ -485,7 +502,7 @@ ${btnBorderRadius}px;padding:5px">
         6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg></a>
                 </div>
         </td>
-        <td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;">
+        <td width="15" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:15px;">
         <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4">
                 <a href="https://twitter.com/device42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="twitter-square" class="svg-inline--fa fa-twitter-square" role="img" 
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -494,7 +511,7 @@ ${btnBorderRadius}px;padding:5px">
         37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path></svg></a>
                 </div>
         </td>
-        <td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-left:10px;">
+        <td width="15" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:15px;">
         <div class="mktoText" mktoName="Footer Icon 5" id="footer-icon5">
                 <a href="https://www.linkedin.com/company/device42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in" role="img" 
         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -506,144 +523,32 @@ ${btnBorderRadius}px;padding:5px">
         </table>
     </td>
 	</tr>
-	<tr>
+	<tr class="footer-inner-block">
 
-    <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
+    <td class="footer-inner-block" width="128" align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size:${FooterFontSize-sm}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};width:128px;">
     <div class="mktoText" mktoName="Footer Text" id="footer-text">
     <div>
-    &copy;2021 Device42, Inc.
-    All rights are<br> reserved.
+    &copy;2021 Device42, Inc. All rights are<br> 
+    reserved.
     </div>
     </div>
     </td>
 
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
-		<td>&nbsp;</td>
+  </tr>
+  </table>
+    </td>
 	</tr>
-  <!-- end of updated footer layout -->
+  <!-- end of updated foote rlayout -->
 </table>
 
 <!-- end of footer new -->
 
 
 
-<!--Footer Module - Social Media-->
-<table class="mktoModule" mktoName="Footer Social Media Module" id="FooterModule1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-<tr>
-<td bgColor="${bannerdark-bg-Color}" valign="top" style="background-color:${bannerdark-bg-Color};vertical-align: top;">
-<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
-<tr>
-<td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-<tr>
-<td class="center" align="${alignCenter};" valign="top" style="vertical-align: top;">
- 
-<table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${logocolwidth}">
-<tr>
-  
-<td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-right:10px;">
-<div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
-         <a href="https://www.youtube.com/user/godevice42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube" role="img" 
-xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-<path fill="currentColor" d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 
-213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z"></path></svg></a>
-         </div>
-</td>
-<td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-right:10px;">
-<div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
-         <a href="https://www.facebook.com/device42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f" role="img" 
-xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-<path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg></a>
-         </div>
-</td>
-<td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-right:10px;">
-<div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3">
-         <a href="https://github.com/device42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="github-alt" class="svg-inline--fa fa-github-alt" role="img" 
-xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
-<path fill="currentColor" d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 
-41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 
-6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg></a>
-         </div>
-</td>
-<td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;">
-<div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4">
-         <a href="https://twitter.com/device42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="twitter-square" class="svg-inline--fa fa-twitter-square" role="img" 
-xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-<path fill="currentColor" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8 .2 5.7 .2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3 .6 10.4 .8 15.8 .8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 
-10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.45 65.45 0 0 1 -29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 
-37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path></svg></a>
-         </div>
-</td>
-<td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-left:10px;">
-<div class="mktoText" mktoName="Footer Icon 5" id="footer-icon5">
-         <a href="https://www.linkedin.com/company/device42" target="_blank" rel="noopener" color="${clrWhite}"><svg aria-hidden="true" width="${footericonswidth}" color="${clrWhite}" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in" role="img" 
-xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-<path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 
-111.3 61.9 111.3 142.3V448z"></path></svg></a>
-         </div>
-</td>
-</tr>
-</table>
 
-</td>
-</tr>
-<tr>
-<td height="${btm_pad0}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<!--Footer Module - Social Media-->
 
 <!--Footer Module-->
-<table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="1" width="100%">
-<tr>
-<td bgColor="${bannerdark-bg-Color}" valign="top" style="background-color:${bannerdark-bg-Color};vertical-align: top;">
 
-<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-<tr>
-<td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-
-<tr>
-<td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
-<div class="mktoText" mktoName="Footer Text" id="footer-text">
-<div>
-&copy;2021 Device42, Inc.
-All rights are reserved.
-
-<br><br>
-600 Saw Mill Road<br>
-West Haven, CT 06516<br></br>
-1 (844) 424-2422 <br>1 (203) 409-7242 <br> <a href="mailto:info@device42.com" style="color: ${CopyColorWhite}; text-decoration:none;">info@device42.com</a><br><br>
-<a href="https://www.device42.com/privacy/" style="color: ${CopyColorWhite}; text-decoration:none;">Privacy Policy</a>
-</div>
-</div>
-</td>
-</tr>
-
-<tr>
-<td height="${logo-top_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-<tr>
-<td align="${alignCenter}" style="text-align: ${alignCenter};">
-<div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-    <a href="https://www.device42.com/" target="_blank"><img class="logowidth" width="100" alt="logo" src="https://www.device42.com/wp-content/uploads/2021/08/d42-rgb-reverse.png" border="0" style="width:${logowidth2}px; height:auto !important;" /></a>
-</div>
-</td>
-</tr>
-
-<tr>
-<td height="${btm_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<!--Footer Module-->
   
 </td>
 </tr>
