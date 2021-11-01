@@ -254,6 +254,9 @@ th{font-weight:normal !important}
   #imgleft-btn1 table, #imgright-btn1 table {
     margin: 0 auto;
   }
+  .social-spacer-btm {
+      height: 40px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -295,6 +298,7 @@ th{font-weight:normal !important}
             padding: 5px;
         }
     }
+
 }
 </style>
 </head>
@@ -855,7 +859,7 @@ th{font-weight:normal !important}
 </td>
 </tr>
 <tr>
-<td height="${btm_pad60}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+<td height="${btm_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
 </tr>
 </table>
 </td>
@@ -874,8 +878,11 @@ th{font-weight:normal !important}
 <tr>
 <td bgColor="${mod-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;">
  <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="Margin:0 auto; border-collapse: collapse;border-spacing: 0;border-bottom:solid 2px ${DividerBGColor}; border-top:solid 2px ${DividerBGColor}; font-weight:600" border="0" width="95%"> 
-    <tr> 
-
+   <tr>
+                <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr> 
+   <tr> 
+		
        <td width="20%" align="center" style="text-align: ${alignCenter}; font-size: 15px; line-height: 1px; width:20%">
          <table width="100%" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;">
            <tr>
@@ -906,7 +913,7 @@ th{font-weight:normal !important}
        </td> 
 
        <td width="20%" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 15px; line-height: 1px; width:20%">
-                 <table width="100%" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;">
+        <table width="100%" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;">
            <tr>
            <td width="40" align="center" valign="top">
              <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3" style="padding:20% 0;">
@@ -916,20 +923,27 @@ th{font-weight:normal !important}
              </td>
              <td align="left"><span class="" style="font-size:${CopySize15}px;color:${footerCopyBlue};">&nbsp;Twitter</span></td>
            </tr>
-         </table>
+        </table>
        </td> 
 
-       <td width="20%" align="center" style="text-align: ${alignLeft}; font-size: 15px; line-height: 1px; width:20%">
-         <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4" style="padding:20% 0;">
-         	<a href="https://www.youtube.com/user/RussoPowerEquipment"><img width="33" height="auto" src="https://lp.russopower.com/rs/843-FJG-506/images/youtube.gif" style="width:33px;height:auto;max-width:96%;" />
-             <span style="font-size:${CopySize15}px;color:${footerCopyBlue};display:block;Margin-top:-17px;Margin-right:0;Margin-bottom:0;Margin-left:44px;width:75px;height:10px;">Youtube</span>
+       <td width="20%" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 15px; line-height: 1px; width:20%">
+        <table width="100%" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;">
+           <tr>
+           <td width="40" align="center" valign="top">
+             <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4" style="padding:20% 0;">
+         	<a href="https://www.youtube.com/user/RussoPowerEquipment" target="_blank"><img width="33" height="auto" valign="middle" src="https://lp.russopower.com/rs/843-FJG-506/images/youtube.gif"  style="vertical-align:middle;width:33px;height:auto;max-width:96%;" />
              </a>
-         </div>
+         	</div>  
+             </td>
+             <td align="left"><span class="" style="font-size:${CopySize15}px;color:${footerCopyBlue};">&nbsp;Youtube</span></td>
+           </tr>
+        </table>
        </td> 
+
 
      </tr> 
     <tr>
-        <td height="${btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+        <td class="social-spacer-btm" height="${btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
     </tr>
   </table>
 </td>
@@ -968,7 +982,7 @@ th{font-weight:normal !important}
   
 <tr>
 <td align="${alignLeft}" style="padding: 0 12px;font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}; text-align: ${alignLeft};">
-<div class="mktoText" mktoName="Footer Text" id="footer-text" style="padding-right:55px;">
+<div class="mktoText" mktoName="Footer Text" id="footer-text" style="padding-right:30px;">
 <div>
        
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vitae quis corporis ducimus unde provident excepturi, fugit maxime consequatur fugiat veniam repudiandae illo nesciunt error nisi officia debitis? Inventore, at!
