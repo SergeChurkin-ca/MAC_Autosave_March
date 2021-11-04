@@ -65,11 +65,11 @@
         @media screen and (max-width: 525px) {
             /* ALLOWS FOR FLUID TABLES */
             .wrapper {
-                width: 100% !important;
-                max-width: 100% !important;
+                /* width: 100% !important; */
+                /* max-width: 100% !important; */
             }
         }
-        
+        /*
         @media (max-width: 600px) {
             .table-wrapper,
             .header,
@@ -139,14 +139,53 @@
                 }
             }
         }
+
+*/
         /* ANDROID CENTER FIX */
         
         div[style*="margin: 16px 0;"] {
             margin: 0 !important;
         }
         
-        table {
-            border: solid 1px red;
+        @media (max-width:600px) {
+            table {
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            .header {
+                margin: 0 auto !important;
+                padding: 0 !important;
+                text-align: center;
+                width: 95% !important;
+                vertical-align: middle;
+            }
+            .logo-btn-1 img,
+            .logo-btn-2 img {
+                margin: 0 0 0 80% !important;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .header {
+                height: 80px !important;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .header {
+                height: 75px !important;
+            }
+            .logo-btn-1 img,
+            .logo-btn-2 img {
+                margin: 0 0 0 70% !important;
+            }
+        }
+        
+        @media (max-width: 355px) {
+            .logo-btn-1 img,
+            .logo-btn-2 img {
+                margin: 0 0 0 40% !important;
+            }
         }
     </style>
 </head>
@@ -163,27 +202,33 @@
             <td align="center" valign="top" width="500">
             <![endif]-->
                     <!-- ** HEADER **  -->
-                    <table class="header" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width:600px;height:105px;background-repeat:no-repeat;width:100%;text-align:right;">
+                    <table class="header" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width:600px;background-image:url('https://go.pharmalex.com/l/484291/2021-11-03/2qrynm/484291/1635995993ZP79umsL/header_logo.png');background-size:30%;background-position:left center;height:100px;background-repeat:no-repeat;width:100%;text-align:right;width:90%;">
                         <tbody>
-                            <td width="500" lign="center" class="logo-btn-1" style="padding:0;Margin-top:10px;Margin-bottom:15px;display:block;" valign="top">
-                                <a href="http://litmus.com" target="_blank" rel="noopener noreferrer"><img alt="Logo icon" border="0" height="400" src="https://go.pharmalex.com/l/484291/2021-11-03/2qrynm/484291/1635995993ZP79umsL/header_logo.png" style="display:block; height: auto; border-width: 0px; border-style:solid;"
-                                        width="40%"></a>
-                            </td>
-                            <td>
-                                <table width="50" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width:600px;height:185px;background-repeat:no-repeat;width:100%;text-align:right;">
-                                    <td align="center" class="logo-btn-1" style="padding:0;;display:block;" valign="top">
-                                        <a href="http://litmus.com" target="_blank" rel="noopener noreferrer"><img alt="Logo icon" border="0" height="100" src="https://go.pharmalex.com/l/484291/2021-11-02/2qrw8m/484291/1635861862g8biZiGO/button_LinkedIn.png" style="width:50%; height: auto; border-width: 0px; border-style:solid;"
-                                                width="3.5%"></a>
-                                    </td>
-                                    <td align="center" class="logo-btn-2" style="padding:0;display:block" valign="top">
-                                        <a href="http://litmus.com" target="_blank" rel="noopener noreferrer"><img alt="Logo icon" border="0" height="100" src="https://go.pharmalex.com/l/484291/2021-11-02/2qrw8p/484291/1635861876v2GHd6We/button_Web.png" style=" width:50%; height: auto; border-width: 0px; border-style: solid;"
-                                                width="3.5%"></a>
-                                    </td>
-                                </table>
-                            </td>
+                            <tr>
+                                <td align="center" class="logo-btn-1" style="padding:0;Margin-top:18px;Margin-bottom:15px;display:block;" valign="top">
+                                    <a href="http://litmus.com" target="_blank" rel="noopener noreferrer"><img alt="Logo icon" border="0" height="10" src="https://go.pharmalex.com/l/484291/2021-11-02/2qrw8m/484291/1635861862g8biZiGO/button_LinkedIn.png" style="Margin-left:500px;Margin-top:10px;display:block; font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); width: 3.5%; height: auto; border-width: 0px; border-style:solid;"
+                                            width="3.5%"></a>
+                                </td>
+                                <td align="center" class="logo-btn-2" style="padding:0;display:block" valign="top">
+                                    <a href="http://litmus.com" target="_blank" rel="noopener noreferrer"><img alt="Logo icon" border="0" height="10" src="https://go.pharmalex.com/l/484291/2021-11-02/2qrw8p/484291/1635861876v2GHd6We/button_Web.png" style="Margin-left:500px;display: block; font-family: Helvetica, Arial, sans-serif; color: rgb(255, 255, 255); width: 3.5%; height: auto; border-width: 0px; border-style: solid;"
+                                            width="3.5%"></a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     <!-- ** END of HEADER ** -->
+                    <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+                    <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+
+
                     <!--[if (gte mso 9)|(IE)]>
             </td>
             </tr>
@@ -201,7 +246,7 @@
             <td align="center" valign="top" width="500">
             <![endif]-->
                     <!-- ** BANNER **  -->
-                    <table class="banner" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width:690px;background-image:url('https://go.pharmalex.com/l/484291/2021-11-03/2qryn5/484291/1635995780v7FCWNLj/BPE_Newsletter_Banner_Image.png');background-size:contain;height:185px;background-repeat:no-repeat;width:100%;text-align:right;">
+                    <table class="banner" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width:600px;background-image:url('https://go.pharmalex.com/l/484291/2021-11-03/2qryn5/484291/1635995780v7FCWNLj/BPE_Newsletter_Banner_Image.png');background-size:contain;height:185px;background-repeat:no-repeat;width:100%;text-align:right;">
                         <tbody>
 
                             <tr>
@@ -237,7 +282,7 @@
             <td align="center" valign="top" width="500">
             <![endif]-->
                     <!-- ** MENU **  -->
-                    <table class="menu" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width:690px;height:20px;width:100%;text-align:right;">
+                    <table class="menu" border="0" cellpadding="0" cellspacing="0" class="wrapper" style="max-width:600px;height:20px;width:100%;text-align:right;">
                         <tbody>
                             <tr>
                                 <td align="center" valign="top">
@@ -487,7 +532,7 @@
                 <tbody>
                     <tr>
 
-                        <td valign="top " width="5 " style="margin-top:15px;padding-top:5px; width: 7%; vertical-align: top; ">
+                        <td valign="top " width="5 " style="margin-top:15px;padding-top:4px; width: 7%; vertical-align: top; ">
                             <img width="25 " src="https://go.pharmalex.com/l/484291/2021-11-03/2qryn9/484291/1635995867tlCOud9p/node.png " alt="img node decoration ">
                         </td>
 
@@ -495,8 +540,8 @@
                        <table valign="top " class="inner-table inner-col-1 " width="95% " style="vertical-align: top; text-align: center; ">
                            <tbody>
                                <tr>
-                                   <td>
-                                       <h3 style="font-size: 14px; ">SAVE THE DATE</h3>
+                                   <td style="text-align: left; ">
+                                       <h3 style="font-size: 14px; margin-top:0; margin-bottom:5px; ">SAVE THE DATE</h3>
                                     </td>
                                </tr>
                                <tr>
@@ -510,7 +555,7 @@
                                 </td>
                                </tr>
                                <tr>
-                                   <td><h5>Please Join Us!</h5></td>
+                                   <td><h5 style="margin-top:0;margin-bottom: 5px; ">Please Join Us!</h5></td>
                                </tr>
                                <tr>
                                 <td align="center ">
@@ -543,8 +588,8 @@
                         <table valign="top " class="inner-table inner-col-2 " width="95% " style="vertical-align: top; text-align: center; ">
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <h3 style="font-size: 14px; ">RECENTLY RELEASED</h3>
+                                    <td style="text-align: left; ">
+                                        <h3 style="font-size: 14px; margin-top:0; margin-bottom:5px; ">RECENTLY RELEASED</h3>
                                      </td>
                                 </tr>
                                 <tr>
@@ -558,7 +603,7 @@
                                  </td>
                                 </tr>
                                 <tr>
-                                    <td><h5>White Paper Title</h5></td>
+                                    <td><h5 style="margin-top:0;margin-bottom: 5px; ">White Paper Title</h5></td>
                                 </tr>
                                 <tr>
                                  <td align="center ">
@@ -591,8 +636,8 @@
                         <table valign="top " class="inner-table inner-col-3 " width="95% " style="vertical-align: top; text-align: center; ">
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <h3 style="font-size: 14px; ">UPCOMING EVENTS</h3>
+                                    <td style="text-align: left; ">
+                                        <h3 style="font-size: 14px; margin-top:0; margin-bottom:5px; ">UPCOMING EVENTS</h3>
                                      </td>
                                 </tr>
                                 <tr>
@@ -606,7 +651,7 @@
                                  </td>
                                 </tr>
                                 <tr>
-                                    <td><h5>We'll be there</h5></td>
+                                    <td><h5 style="margin-top:0;margin-bottom: 5px; ">We'll be there</h5></td>
                                 </tr>
                                 <tr>
                                  <td align="center ">
