@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <style type="text/css">
-            /* .col-1 {
+        /* .col-1 {
             padding-top: 15px;
             padding-right: 25px;
         }
@@ -160,30 +160,85 @@
                 vertical-align: middle;
             }
             .mobile-button-container {
-                display: inline;
+                display: block;
                 margin: 0 auto !important;
+            }
+            .volume-num,
+            .volume-num td {
+                display: inline;
+                width: 100% !important;
+            }
+            .menu td {
+                display: block;
+                width: 90% !important;
+                margin: 0 auto !important;
+                border: none !important;
+            }
+            .section-featured h1,
+            .section-featured h2,
+            .section-featured h3 {
+                padding-right: 20px;
+                padding-left: 16px;
+                width: 90% !important;
+            }
+            .section-video,
+            .inner-table,
+            .inner-table img {
+                text-align: center;
+                width: 90% !important;
+            }
+            .section-video p {
+                text-align: left;
             }
             .logo-btn-1 img,
             .logo-btn-2 img {
                 margin: 0 0 0 80% !important;
             }
             .banner {
-                display: block;
+                height: 150px !important;
+                background-size: cover !important;
+                background-position: center;
+            }
+            .banner td {
+                vertical-align: bottom !important;
+                margin: 0 !important
+            }
+            .banner table,
+            .volume-num {
+                display: initial !important;
                 margin: 0 auto !important;
                 width: 100% !important;
+                vertical-align: bottom;
             }
             @media (max-width:550px) {
                 .col-1,
                 .col-2 {
-                    border: solid 1px red;
                     display: block;
                     width: 85% !important;
                     margin: 0 auto !important;
                 }
             }
+            @media (max-width:470px) {
+                .section-images {
+                    display: block;
+                    width: 100% !important;
+                    margin: 0 auto !important;
+                }
+                .section-images .card-1,
+                .card-2,
+                .card-3 {
+                    display: block;
+                    width: 90% !important;
+                }
+            }
             @media (max-width: 500px) {
                 .header {
                     height: 80px !important;
+                }
+                .footer td {
+                    display: block;
+                    margin: 0 auto !important;
+                    text-align: center;
                 }
             }
             @media (max-width: 400px) {
@@ -201,6 +256,7 @@
                     margin: 0 0 0 40% !important;
                 }
             }
+        }
     </style>
 </head>
 
@@ -270,14 +326,16 @@
                                     <tr>
                                     <td align="left " valign="top " width="115 ">
                                     <![endif]-->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:143px;color:#ffffff;text-align:center;">
+                                    <table class="volume-num" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:143px;color:#ffffff;text-align:center;">
                                         <tbody>
-                                            <tr>
-                                                <td width="65%"></td>
-                                                <td width="15%">VOLUME 1</td>
-                                                <td width="5%">|</td>
-                                                <td width="15%">DATE</td>
-                                            </tr>
+                                            <td>
+                                                <tr>
+                                                    <td width="65%"></td>
+                                                    <td width="15%">VOLUME 1</td>
+                                                    <td width="5%">|</td>
+                                                    <td width="15%">DATE</td>
+                                                </tr>
+                                            </td>
                                         </tbody>
                                     </table>
                                 </td>
@@ -358,18 +416,17 @@
                     </table>
 
 
-
                     <!--Video Headline Module-->
                     <table class="section-video " border="0 " cellpadding="0 " cellspacing="0 " class="wrapper " style="max-width:600px;width:100%;Margin-top:10px;Margin-bottom:8px; " width="80% ">
                         <tbody>
                             <tr>
                                 <td valign="top " width="25 " style="margin-top:15px;padding-top:5px; "></td>
-                                <td width="300 " style="padding-left:0px; ">
+                                <td width="300 " style="padding-left:0px;padding-right:20px; ">
                                     <p style="font-size:12px; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio ipsam quos. Deserunt laudantium minus, aliquid quidem voluptates iure tenetur mollitia libero harum, quia doloremque autem similique suscipit molestiae
                                         corrupti! Est dolores animi iusto molestiae eaque voluptatibus expedita laboriosam iste quo? Laborum tenetur error corrupti, distinctio et aut, iste earum nihil obcaecati eligendi, eaque veniam rem voluptatem asperiores
                                         libero ad!</p>
                                     <div class="video-container ">
-                                        <table class="inner_table vidMod align-left " cellpadding="0 " cellspacing="0 " align="left " style="margin:0; width:250px;border-collapse: collapse;border-spacing:0; " border="0 " width="150 ">
+                                        <table class="inner-table vidMod align-left " cellpadding="0 " cellspacing="0 " align="left " style="margin:0; width:250px;border-collapse: collapse;border-spacing:0; " border="0 " width="150 ">
                                             <tr>
                                                 <td height="10 " style="line-height:1px;font-size:1px; ">&nbsp;</td>
                                             </tr>
@@ -546,11 +603,11 @@
                 <tbody>
                     <tr>
 
-                        <td valign="top " width="5 " style="margin-top:15px;padding-top:4px; width: 7%; vertical-align: top; ">
+                        <td valign="top " width="5 " style="margin-top:15px;padding-top:4px; width: 5%; vertical-align: top; ">
                             <img width="25 " src="https://go.pharmalex.com/l/484291/2021-11-03/2qryn9/484291/1635995867tlCOud9p/node.png " alt="img node decoration ">
                         </td>
 
-                    <td width="30% " valign="top ">
+                    <td class="card-1 " width="30% " valign="top ">
                        <table valign="top " class="inner-table inner-col-1 " width="95% " style="vertical-align: top; text-align: center; ">
                            <tbody>
                                <tr>
@@ -598,7 +655,7 @@
                        </table>
                     </td>
 
-                    <td width="30% " valign="top ">
+                    <td class="card-2 " width="30% " valign="top ">
                         <table valign="top " class="inner-table inner-col-2 " width="95% " style="vertical-align: top; text-align: center; ">
                             <tbody>
                                 <tr>
@@ -646,7 +703,7 @@
                         </table>
                      </td>
                      
-                     <td width="30% " valign="top ">
+                     <td class="card-3 " width="30% " valign="top ">
                         <table valign="top " class="inner-table inner-col-3 " width="95% " style="vertical-align: top; text-align: center; ">
                             <tbody>
                                 <tr>
