@@ -298,6 +298,7 @@ th{font-weight:normal !important}
     .disclaimer-center {
         padding: 20px 0 0 0 !important;
     }
+  	
     .footer-links td {
         height: 20px;
         width: 100% !important;
@@ -343,7 +344,11 @@ th{font-weight:normal !important}
     .icon-text-container, .icon-text {
         display: none;
     }                                                            
-}
+	}
+  	@media (max-width: 300px) {
+     .block-z{display:block;margin:0 auto;float:none !important; width: 100% !important; } 
+      .block-z img {width: 70%}; 
+    }
 
 }
 </style>
@@ -621,7 +626,7 @@ th{font-weight:normal !important}
                     <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td >
+                    <td>
                         <div class="mktoText" id="imgleft-btn1" mktoname="Button">
                             <div>
                                 <table cellpadding="0" cellspacing="0" border="0">
@@ -697,7 +702,7 @@ th{font-weight:normal !important}
                     <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td >
+                    <td>
                         <div class="mktoText" id="imgright-btn1" mktoname="Button">
                             <div>
                                 <table cellpadding="0" cellspacing="0" border="0">
@@ -1091,23 +1096,25 @@ th{font-weight:normal !important}
                 <tr>
                     <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
+              
+     <tr>
+<td>
+<div class="mktoText" id="btn" mktoname="Button">
+    <div>
+        <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
+            <tbody>
                 <tr>
-                    <td >
-                        <div class="mktoText" id="2-imgleft-btn1" mktoname="Button">
-                            <div>
-                                <table cellpadding="0" cellspacing="0" border="0">
-                                    <tbody>
-                                        <tr>
-                                            <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 9px 25px; border-radius: ${btnBorderRadius-sm}px;">
-                                                <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText2}</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 9px 25px; border-radius: ${btnBorderRadius-sm}px;">
+                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText2}</a>
                     </td>
                 </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</td>
+</tr>
+              
             </table>
         </th>
     </tr>
@@ -1135,7 +1142,7 @@ th{font-weight:normal !important}
 <td>
 <table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
     <tr>
-        <th dir="ltr" width="284" align="left" class="block center" valign="top" style="vertical-align: top;">
+        <th dir="ltr" width="284" align="center" class="block center" valign="top" style="vertical-align: top;">
             <div class="mktoImg" mktoname="Image" id="2-imgRight-img">
                 <div>
                     <img src="https://dummyimage.com/284x142/EEF3F9/B3B8C4" width="284" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
@@ -1168,7 +1175,7 @@ th{font-weight:normal !important}
                     <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td >
+                    <td>
                         <div class="mktoText" id="2-imgright-btn1" mktoname="Button">
                             <div>
                                 <table cellpadding="0" cellspacing="0" border="0">
@@ -1199,11 +1206,11 @@ th{font-weight:normal !important}
 </table>
 <!--Image Right Text Left with btn-->    
 
-
+  
                                                                                             
-
-<!--3 Col-->
-<table class="mktoModule" mktoName="Three Columns Module" id="threeCol" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<!-- 6 images section -->
+	<!--3 Col-->
+<table class="mktoModule" mktoName="Three Columns Module" id="six-images-1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
 <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
 <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
@@ -1214,13 +1221,13 @@ th{font-weight:normal !important}
 <td>
 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
     <tr>
-        <th width="180" align="left" class="block" valign="top" style="vertical-align: top;">
+        <th width="80" align="left" class="block-z" valign="top" style="vertical-align: top;">
             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                 <tr>
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                             <div>
-                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="80" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                                     />
                             </div>
                         </div>
@@ -1232,13 +1239,13 @@ th{font-weight:normal !important}
             </table>
 </th>
         <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-        <th width="180" align="left" class="block top_pad1" valign="top" style="vertical-align: top;">
+        <th width="80" align="left" class="block-z" valign="top" style="vertical-align: top;">
              <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                 <tr>
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                             <div>
-                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="80" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                                     />
                             </div>
                         </div>
@@ -1250,13 +1257,13 @@ th{font-weight:normal !important}
             </table>
         </th>
         <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-        <th width="180" align="left" class="block top_pad1" valign="top" style="vertical-align: top;">
+        <th width="80" align="left" class="block-z" valign="top" style="vertical-align: top;">
             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                 <tr>
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                             <div>
-                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="80" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                                     />
                             </div>
                         </div>
@@ -1280,7 +1287,83 @@ th{font-weight:normal !important}
 </tr>
 </table>
 <!--3 Col-->
+ <!--3 Col-->
+<table class="mktoModule" mktoName="Three Columns Module" id="six-images-2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
 
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <th width="80" align="left" class="block-z" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                            <div>
+                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="80" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            </table>
+</th>
+        <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th width="80" align="left" class="block-z" valign="top" style="vertical-align: top;">
+             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                            <div>
+                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="80" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            </table>
+        </th>
+        <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th width="80" align="left" class="block-z" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                            <div>
+                                <img src="https://dummyimage.com/80x75/EEF3F9/B3B8C4" width="80" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            
+            
+            </table>
+        </th>
+    </tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+<!--3 Col-->
+<!-- end of 6 images section -->
 
 <!--Footer Module-->
 <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;font-family:'${fontfamily}',Arial, sans-serif;" border="0" width="100%">
