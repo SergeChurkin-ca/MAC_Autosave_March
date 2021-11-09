@@ -13,8 +13,8 @@ font-family: Arial, serif !important;
     <meta class="mktoColor" id="bodyBgColor" mktoname="EM Body BG Color" default="#F6F9FC" />
     <meta class="mktoColor" id="bodyborderColor" mktoname="Body Border Color" default="#F6F9FC" />
     <meta class="mktoNumber" id="bodyborderWid" mktoname="Body Border Width (px)" default="0" />
-    <meta class="mktoString" id="googleimportfont" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');" />
-    <meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="Work Sans" />
+    <meta class="mktoString" id="googleimportfont" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');" />
+    <meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="Open Sans" />
 
     <meta class="mktoNumber" id="logowidth" mktoname="Mobile Logo Width (px)" default="190" />
     <meta class="mktoNumber" id="imgmaxwidth" mktoname="Banner Img Mobile Width (px)" default="690" />
@@ -70,6 +70,8 @@ font-family: Arial, serif !important;
 
     <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead" mktoName="Button Text Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnBGColorhead" mktoName="Button BG Color" default="#5c5c5c" />
+    <meta mktoModuleScope="true" class="mktoColor" id="btnClrRed" mktoName="Button Red Color" default="#e72028" />
+    <meta mktoModuleScope="true" class="mktoColor" id="btnClrViolet" mktoName="Button Red Color" default="#3b48a7" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColorhead" mktoName="Button Border Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead1" mktoName="Button Text Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnBGColorhead1" mktoName="Button BG Color" default="#5c5c5c" />
@@ -250,17 +252,13 @@ font-family: Arial, serif !important;
             }
             .imgmaxwidth {
                 width: 100%;
-                max-width:$ {imgmaxwidth}
-                px;
+                max-width:${imgmaxwidth}px;
                 height: auto !important
             }
             .fullWid .logowidth,
             .logowidth {
-                width: 100% !important;
-                max-width:$ {
-                    logowidth
-                }
-                px !important;
+                width: 50% !important;
+                max-width:${logowidth}px !important;
                 height: auto !important
             }
         }
@@ -337,19 +335,18 @@ font-family: Arial, serif !important;
                                                         </tr>
                                                         <tr>
                                                             <td valign="top">
-                                                                <div class="mktoText" id="banner-btns" mktoname="Button">
-                                                                    <div>
-                                                                        <table cellpadding="0" cellspacing="0" border="0" align="${align}">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; border:1px solid ${btnBorderColorhead}; background:transparent; border-radius: ${btnBorderRadius}px;padding:5px;">
-                                                                                        <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 1px 30px; display:inline-block" href="${btnURL}">${btnText}</a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
+                                                                   <div class="mktoText" id="btn" mktoname="Button">
+                                                                        <div>
+                                                                            <table cellpadding="0" cellspacing="0" border="0" align="${alignLeft}">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td bgcolor="transparent" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColorhead}; color:${btnColor}; background:transparent;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 9px 25px; border-radius: ${btnBorderRadius}px;">
+                                                                                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a> </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -411,7 +408,7 @@ font-family: Arial, serif !important;
                                                                         <table cellspacing="0" cellpadding="0" border="0" align="left">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td style="text-align: center; text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: 'Work Sans',Arial, sans-serif; border:1px solid #ffffff; background:transparent; border-radius:${btnBorderRadius}px;padding:5px;"> <a style="min-height:10px; text-decoration:none; color:#ffffff; padding: 1px 10px; display:inline-block" href="#">Read More</a> </td>
+                                                                                    <td style="text-align: center; text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; border:1px solid #ffffff; background:transparent; border-radius:${btnBorderRadius}px;padding:5px;"> <a style="min-height:10px; text-decoration:none; color:#ffffff; padding: 1px 30px; display:inline-block" href="#">Read More</a> </td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -542,19 +539,18 @@ font-family: Arial, serif !important;
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div class="mktoText" id="btn" mktoname="Button">
-                                                        <div>
-                                                            <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:1px solid ${btnBorderColor};background:transparent;border-radius: ${btnBorderRadius}px;padding:5px">
-                                                                            <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor}; padding: 1px 30px; display:inline-block" href="${btnURL}">${btnText2}</a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                                                    <div class="mktoText" id="btn2" mktoname="Button">
+                                                                        <div>
+                                                                            <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td bgcolor="${btnClrRed}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnClrRed}; color:${btnColor}; background-color:${btnClrRed};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 9px 25px; border-radius:${btnBorderRadius}px;">
+                                                                                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText2}</a> </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -581,7 +577,7 @@ font-family: Arial, serif !important;
                                                             <table cellspacing="0" cellpadding="0" border="0" align="center">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td style="min-height:10px;text-align: center;text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: 'Work Sans',Arial, sans-serif;border:1px solid #1c1c1c;background-color:#1c1c1c;border-radius: 10px;padding:5px"> <a style="min-height:10px; text-decoration:none; color:#ffffff; color:#ffffff; padding: 9px 30px; display:inline-block" href="#">Dynamic Button</a> </td>
+                                                                    <td style="min-height:10px;text-align: center;text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:1px solid 1px ${btnClrViolet};background-color:${btnClrViolet};border-radius:${btnBorderRadius}px;padding:5px"> <a style="min-height:10px; text-decoration:none; color:#ffffff; color:#ffffff; padding: 9px 30px; display:inline-block" href="#">Dynamic Button</a> </td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -602,7 +598,7 @@ font-family: Arial, serif !important;
                             <!--Footer Module - Social Media-->
                             <table class="mktoModule" mktoName="Footer Social Media Module" id="FooterModule1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
-                                    <td bgColor="${bannerdark-bg-Color}" valign="top" style="background-color:${bannerdark-bg-Color};vertical-align: top;">
+                                    <td bgColor="${footerbgclr}" valign="top" style="background-color:${footerbgclr};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
                                             <tr>
                                                 <td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
@@ -613,24 +609,24 @@ font-family: Arial, serif !important;
                                                     <table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${logocolwidth}">
                                                         <tr>
 
-                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
-                                                                <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1" style="padding:24% 30%;border-radius:50% 50%;background-color:#ffffff;">
-                                                                    <a href="https://www.sunloan.com/contact/" target="_blank"><img alt="file logo" width="20" height="auto" src="http://info.sunloan.com/rs/270-VYI-174/images/file.png" style="width:20px;height:auto;" /></a>
+                                                            <td width="37" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:37px;padding-right:10px;">
+                                                                <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
+                                                                    <a href="https://www.sunloan.com/contact/" target="_blank"><img alt="file logo" width="40" height="auto" src="http://info.sunloan.com/rs/270-VYI-174/images/file.png" style="width:40px;height:auto;" /></a>
                                                                 </div>
                                                             </td>
-                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
-                                                                <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2" style="padding:21% 30%;border-radius:50% 50%;background-color:#ffffff;">
-                                                                    <a href="https://www.facebook.com/sunloanco" target="_blank"><img alt="facebook logo" width="19" height="auto" src="http://info.sunloan.com/rs/270-VYI-174/images/facebook.png" style="width:19px;height:auto;" /></a>
+                                                          <td width="37" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:37px;padding-right:10px;">
+                                                                <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
+                                                                    <a href="https://www.facebook.com/sunloanco" target="_blank"><img alt="facebook logo" width="40" height="auto" src="http://info.sunloan.com/rs/270-VYI-174/images/facebook.png" style="width:40px;height:auto;" /></a>
                                                                 </div>
                                                             </td>
-                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
-                                                                <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3" style="padding:29% 30%;border-radius:50% 50%;background-color:#ffffff;">
-                                                                    <a href="https://www.instagram.com/sunloancompany/" target="_blank"><img alt="instagram logo" width="25" height="auto" src="http://info.sunloan.com/rs/270-VYI-174/images/instagram.png" style="width:25px;height:auto;" /></a>
+                                                          <td width="37" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:37px;padding-right:10px;">
+                                                                <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3">
+                                                                    <a href="https://www.instagram.com/sunloancompany/" target="_blank"><img alt="instagram logo" width="40" height="auto" src="http://info.sunloan.com/rs/270-VYI-174/images/instagram.png" style="width:40px;height:auto;" /></a>
                                                                 </div>
                                                             </td>
-                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;">
-                                                                <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4" style="padding:29% 30%;border-radius:50% 50%;background-color:#ffffff;">
-                                                                    <a href="https://www.linkedin.com/company/sun-loan-company" target="_blank"><img alt="linkedin logo" width="25" height="auto" src="http://info.sunloan.com/rs/270-VYI-174/images/linkedin.png" style="width:25px;height:auto;" /></a>
+                                                          <td width="37" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:37px;padding-right:10px;">
+                                                                <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4">
+                                                                    <a href="https://www.linkedin.com/company/sun-loan-company" target="_blank"><img alt="linkedin logo" width="40" height="auto" src="http://info.sunloan.com/rs/270-VYI-174/images/linkedin.png" style="width:40px;height:auto;" /></a>
                                                                 </div>
                                                             </td>
 
@@ -652,7 +648,7 @@ font-family: Arial, serif !important;
                             <!--Footer Module-->
                             <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
-                                    <td bgColor="${bannerdark-bg-Color}" valign="top" style="background-color:${bannerdark-bg-Color};vertical-align: top;">
+                                    <td bgColor="${footerbgclr}" valign="top" style="background-color:${footerbgclr};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                             <tr>
                                                 <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
@@ -663,8 +659,13 @@ font-family: Arial, serif !important;
                                                 <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
                                                     <div class="mktoText" mktoName="Footer Text" id="footer-text">
                                                         <div>
-                                                            Lorem Ipsum © 2021
-                                                            <br><br> 1152 Galts Ave, Lorem Ipsum Dolor Sit Amet, Toronto ON A1B 2C3<br><br> 123.456.7890 | <a href="mailto:email@domain.com" style="color: ${CopyColorWhite};">email@domain.com</a></div>
+                                                            &copy; Copyright 2021 Sun Loan Company. <br>
+                                                            All rights reserved.
+                                                            <br><br> Brundage Management Company, Inc.<br>
+                                                                Attn: Credit Dispute Department<br>
+                                                                254 Spencer Lane<br>
+                                                                San Antonio, TX 78201<br><br> 
+                                                                800.786.5626 | <a href="mailto:email@domain.com" style="color: ${CopyColorWhite};">email@domain.com</a></div>
                                                     </div>
                                                 </td>
                                             </tr>
