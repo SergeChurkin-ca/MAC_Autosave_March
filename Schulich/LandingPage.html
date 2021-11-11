@@ -153,616 +153,289 @@
             font-family: '${globalfont}', Arial, sans-serif;$
             font-family: "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
         }
-        
-        img {
-            max-width: 100%;
-            height: auto;
+
+        img{
+          max-width:100%;
+          height:auto;
         }
-        
-        .container_inner {
-            width: 90%;
+        .container_inner{
+          width:90%;
         }
-        
-        #banner {
-            background-color: ${bannerbgcolor};
-            background-image:url('${bannerbgimg}');
-            display: $bannershow};
-            order: ${bannerorder};
+		#banner {
+          background-color:${bannerbgcolor};
+          background-image:url('${bannerbgimg}');
+          display:${bannershow};
+          order:${bannerorder};
+
+		}
+		#formtext {
+          background-color:${formtextbgcolor};
+          display:${formtextshow};
+          order:${formtextorder};
+		}
+		#threecol {
+			background-color:${threecolbgcolor};
+          display:${threecolshow};
+          order:${threecolorder};
+		}
+		#imgright {
+			background-color:${imgrightbgcolor};
+          display:${imgrightshow};
+          order:${imgrightorder};
+		}
+		#imgleft {
+			background-color:${imgleftbgcolor};
+          display:${imgleftshow};
+          order:${imgleftorder};
+		}
+		#twocolicons {
+          background-color:${twocoliconsbgcolor};
+          display:${twocoliconsshow};
+          order:${twocoliconsorder};
+		}
+		#video {
+          background-color:${videobgcolor};
+          display:${videoshow};
+          order:${videoorder};
+		}
+		#video .left {
+          background-color:${videoleftbgcolor};
+		}
+		#btmform {
+          background-color:${btmformbgcolor};
+          display:${btmformshow};
+          order:${btmformorder};
+		}
+		#btmform .container_inner {
+			background-color:${btmforminnerbgcolor};
+		}
+		#footer {
+          background-color:${footerbgcolor};
+		}
+      
+        .logo img{
+          width:${logowidth}px;
+          height:auto;
+          vertical-align:middle;
         }
-        
-        #formtext {
-            background-color: ${formtextbgcolor};
-            display: ${formtextshow};
-            order: ${formtextorder};
+        #footer .logo{
+          padding-bottom:0;
         }
-        
-        #threecol {
-            background-color: ${threecolbgcolor};
-            display: ${threecolshow};
-            order: ${threecolorder};
+		.headlinetext h1 {
+          font-size:${bannerheadsize}px;
+          color:${h1color};
+			font-weight:bold;
+		}
+		.headlinetext p {
+          font-size:${bannercopysize}px;
+          color:${pcolor};
+          font-weight:${pweight};
+		}
+		p {
+          color:${pcolor};
+          font-size:${psize}px;
+          font-weight:${pweight};
+		}
+		li {
+          color:${pcolor};
+          font-size:${psize}px;
+          font-weight:${pweight};
+		}
+		
+		h2 {
+			color:${h2color};
+			font-size:${h2size}px;
+			font-weight:bold;
+		}
+		h3 {
+			color:${h3color};
+			font-size:${h3size}px;
+			font-weight:bold;
+		}
+		h4 {
+			color:${h4color};
+			font-size:${h2size}px;
+			font-weight:bold;
+			margin-top:0;
+		}
+		#banner .button a {
+          background-color:${banbtnbgcolor};
+          border:1px solid ${banbtnbordercolor};
+          border-radius:${banbtnborderradius}px;
+          font-size:${banbtntextsize}px;
+          padding:15px 50px;
+          color:${banbtntextcolor};
+          font-weight:bold;
+          text-decoration:none;
+		}
+		#formtext .mktoForm .mktoLabel {
+          color:${formtextpcolor}!important;
+          font-size:${formtextpsize}px!important;
+          font-weight:${formtextpweight}!important;
+          display:${showformtextlabel}!important;
+		}
+		#formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
+          border:${formtextbordercolor} ${formtextborderheight}px solid;
+          border-radius:${formtextborderradius}px!important;
+          background-color:${formtextfieldcolor}!important;
+          color:${formtextpcolor}!important;
+          box-shadow:0 !important;
+          box-shadow:none !important;
+          height:50px !important;
+          min-height:40px !important;
+          padding: 5px 10px !important;
         }
-        
-        #imgright {
-            background-color: ${imgrightbgcolor};
-            display: ${imgrightshow};
-            order: ${imgrightorder};
+		.mktoForm input, .mktoForm textarea, .mktoForm select {
+          box-shadow:0 !important;
+          box-shadow:none !important;
+          height:50px !important;
+          min-height:40px !important;
+          padding: 5px 10px !important;
         }
-        
-        #imgleft {
-            background-color: ${imgleftbgcolor};
-            display: ${imgleftshow};
-            order: ${imgleftorder};
+        .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+          box-shadow:none !important;
         }
-        
-        #twocolicons {
-            background-color: ${twocoliconsbgcolor};
-            display: ${twocoliconsshow};
-            order: ${twocoliconsorder};
-        }
-        
-        #video {
-            background-color: ${
-                videobgcolor
-            }
-            ;
-            display: ${
-                videoshow
-            }
-            ;
-            order: ${
-                videoorder
-            }
-            ;
-        }
-        
-        #video .left {
-            background-color: ${
-                videoleftbgcolor
-            }
-            ;
-        }
-        
-        #btmform {
-            background-color: ${
-                btmformbgcolor
-            }
-            ;
-            display: ${
-                btmformshow
-            }
-            ;
-            order: ${
-                btmformorder
-            }
-            ;
-        }
-        
-        #btmform .container_inner {
-            background-color: ${
-                btmforminnerbgcolor
-            }
-            ;
-        }
-        
-        #footer {
-            background-color: ${
-                footerbgcolor
-            }
-            ;
-        }
-        
-        .logo img {
-            width: ${
-                logowidth
-            }
-            px;
-            height:auto;
-            vertical-align:middle;
-        }
-        
-        #footer .logo {
-            padding-bottom: 0;
-        }
-        
-        .headlinetext h1 {
-            font-size: ${
-                bannerheadsize
-            }
-            px;
-            color: ${
-                h1color
-            }
-            ;
-            font-weight:bold;
-        }
-        
-        .headlinetext p {
-            font-size: ${
-                bannercopysize
-            }
-            px;
-            color: ${
-                pcolor
-            }
-            ;
-            font-weight: ${
-                pweight
-            }
-            ;
-        }
-        
-        p {
-            color: ${
-                pcolor
-            }
-            ;
-            font-size: ${
-                psize
-            }
-            px;
-            font-weight: ${
-                pweight
-            }
-            ;
-        }
-        
-        li {
-            color: ${
-                pcolor
-            }
-            ;
-            font-size: ${
-                psize
-            }
-            px;
-            font-weight: ${
-                pweight
-            }
-            ;
-        }
-        
-        h2 {
-            color: ${
-                h2color
-            }
-            ;
-            font-size: ${
-                h2size
-            }
-            px;
-            font-weight:bold;
-        }
-        
-        h3 {
-            color: ${
-                h3color
-            }
-            ;
-            font-size: ${
-                h3size
-            }
-            px;
-            font-weight:bold;
-        }
-        
-        h4 {
-            color: ${
-                h4color
-            }
-            ;
-            font-size: ${
-                h2size
-            }
-            px;
-            font-weight:bold;
-            margin-top:0;
-        }
-        
-        #banner .button a {
-            background-color: ${
-                banbtnbgcolor
-            }
-            ;
-            border:1px solid ${
-                banbtnbordercolor
-            }
-            ;
-            border-radius: ${
-                banbtnborderradius
-            }
-            px;
-            font-size: ${
-                banbtntextsize
-            }
-            px;
-            padding:15px 50px;
-            color: ${
-                banbtntextcolor
-            }
-            ;
-            font-weight:bold;
-            text-decoration:none;
-        }
-        
-        #formtext .mktoForm .mktoLabel {
-            color: ${
-                formtextpcolor
-            }
-            !important;
-            font-size: ${
-                formtextpsize
-            }
-            px!important;
-            font-weight: ${
-                formtextpweight
-            }
-            !important;
-            display: ${
-                showformtextlabel
-            }
-            !important;
-        }
-        
-        #formtext .mktoForm input,
-        #formtext .mktoForm textarea,
-        #formtext .mktoForm select {
-            border: ${
-                formtextbordercolor
-            }
-            ${
-                formtextborderheight
-            }
-            px solid;
-            border-radius: ${
-                formtextborderradius
-            }
-            px!important;
-            background-color: ${
-                formtextfieldcolor
-            }
-            !important;
-            color: ${
-                formtextpcolor
-            }
-            !important;
-            box-shadow:0 !important;
-            box-shadow:none !important;
-            height:50px !important;
-            min-height:40px !important;
-            padding: 5px 10px !important;
-        }
-        
-        .mktoForm input,
-        .mktoForm textarea,
-        .mktoForm select {
-            box-shadow: 0 !important;
-            box-shadow: none !important;
-            height: 50px !important;
-            min-height: 40px !important;
-            padding: 5px 10px !important;
-        }
-        
-        .mktoForm input[type=text],
-        .mktoForm input[type=url],
-        .mktoForm input[type=email],
-        .mktoForm input[type=tel],
-        .mktoForm input[type=number],
-        .mktoForm input[type=date],
-        .mktoForm select.mktoField,
-        .mktoForm textarea.mktoField {
-            box-shadow: none !important;
-        }
-        
         .mktoForm .mktoButtonWrap {
-            margin-left: 0 !important;
+          margin-left:0 !important;
         }
-        
-        .mktoForm textarea {
-            height: 100px !important;
-            min-height: 80px !important;
+      	.mktoForm textarea {
+          height:100px !important;
+          min-height:80px !important;
         }
-        
-        .mktoForm .mktoButtonWrap.mktoGlow .mktoButton {
-            box-shadow: none !important;
+        .mktoForm .mktoButtonWrap.mktoGlow .mktoButton{
+          box-shadow:none !important;
         }
-        
-        #formtext .mktoForm input::placeholder,
-        #formtext .mktoForm textarea::placeholder,
-        #formtext .mktoForm select::placeholder {
-            color: ${
-                formtextpcolor
-            }
-            !important;
+      	#formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
+          color:${formtextpcolor}!important;
         }
-        
-        #formtext .mktoForm button.mktoButton {
-            background-color: ${
-                formtextbtnbgcolor
-            }
-            !important;
-            border:1px solid ${
-                formtextbtnbordercolor
-            }
-            !important;
-            border-radius: ${
-                formtextbtnborderradius
-            }
-            px!important;
-            font-size: ${
-                formtextbtntextsize
-            }
-            px!important;
-            padding:15px 50px!important;
-            color: ${
-                formtextbtntextcolor
-            }
-            !important;
-            font-weight:bold!important;
-            text-decoration:none!important;
-            width: auto!important!important;
-            display:inline-block;
+		#formtext .mktoForm button.mktoButton {
+          background-color:${formtextbtnbgcolor}!important;
+          border:1px solid ${formtextbtnbordercolor}!important;
+          border-radius:${formtextbtnborderradius}px!important;
+          font-size:${formtextbtntextsize}px!important;
+          padding:15px 50px!important;
+          color:${formtextbtntextcolor}!important;
+          font-weight:bold!important;
+          text-decoration:none!important;
+          width: auto!important!important;
+          display:inline-block;
+		}
+      ${formtexttwocol}
+		
+		.mktoForm * {
+          font-family: '${globalfont}',Arial, sans-serif !important;
+		}
+		#footer a {
+          color:${footerlinkcolor};
+          font-size:${psize}px;
+          font-weight:${pweight};
+          text-decoration:none;
+		}
+		.button a {
+          background-color:${btnbgcolor};
+          border:1px solid ${btnbordercolor};
+          border-radius:${btnborderradius}px;
+          font-size:${btntextsize}px;
+          padding:15px 50px;
+          color:${btntextcolor};
+          font-weight:bold;
+          text-decoration:none;
+          display:inline-block;
+		}
+		.section {
+          margin-top:${sectionspacing}px;
+			margin-bottom:${sectionspacing}px;
+		}
+		#form {
+          background-color:${formbgcolor};
+		}
+		#btmform .mktoForm .mktoLabel {
+          color:${btmformpcolor}!important;
+          font-size:${btmformpsize}px!important;
+          font-weight:${btmformpweight}!important;
+          display:${showbtmformlabel}!important;
+		}
+		#btmform .mktoForm input, #btmform .mktoForm textarea,  #btmform .mktoForm select {
+          border:${btmformbordercolor} ${btmformborderheight}px solid;
+          border-radius:${btmformborderradius}px!important;
+          background-color:${btmformfieldcolor}!important;
+          color:${btmformpcolor}!important;
         }
-        
-        ${
-            formtexttwocol
+      	#btmform .mktoForm input::placeholder, #btmform .mktoForm textarea::placeholder,  #btmform .mktoForm select::placeholder {
+          color:${btmformpcolor}!important;
         }
-        
-        .mktoForm * {
-            font-family: '${globalfont}',
-            Arial,
-            sans-serif !important;
+		#btmform .mktoForm button.mktoButton {
+          background:${btmformbtnbgcolor}!important;
+          background-color:${btmformbtnbgcolor}!important;
+          border:1px solid ${btmformbtnbordercolor}!important;
+          border-radius:${btmformbtnborderradius}px!important;
+          font-size:${btmformbtntextsize}px!important;
+          padding:15px 50px!important;
+          color:${btmformbtntextcolor}!important;
+          font-weight:bold!important;
+          text-decoration:none!important;
+          width: auto!important!important;
+          display:inline-block;
+		}
+      ${btmformtwocol}
+		#threecol .col33 {
+          background-color:${threecolcolumnbgcolor};
+          border-radius:${threecolradius}px;
+          box-shadow: ${threecolshadow};
+		-webkit-box-shadow: ${threecolshadow};
+		-moz-box-shadow: ${threecolshadow};
+		text-align:center;
+		}
+		.col50 {
+          background-color:${twocoliconscolumnbgcolor};
+          border-radius:${twocoliconsradius}px;
+          box-shadow: ${twocoliconsshadow};
+          -webkit-box-shadow: ${twocoliconsshadow};
+          -moz-box-shadow: ${twocoliconsshadow};
+		}
+		.social-icons i {
+          background-color:${footersocialbgcolor};
+		}
+		.social-icons .fa {
+          color:${footersocialcolor};
+		}
+      	#form{
+          padding:${formtextpad}px ${formtextpad}px;
         }
-        
-        #footer a {
-            color: ${
-                footerlinkcolor
-            }
-            ;
-            font-size: ${
-                psize
-            }
-            px;
-            font-weight: ${
-                pweight
-            }
-            ;
-            text-decoration:none;
-        }
-        
-        .button a {
-            background-color: ${
-                btnbgcolor
-            }
-            ;
-            border:1px solid ${
-                btnbordercolor
-            }
-            ;
-            border-radius: ${
-                btnborderradius
-            }
-            px;
-            font-size: ${
-                btntextsize
-            }
-            px;
-            padding:15px 50px;
-            color: ${
-                btntextcolor
-            }
-            ;
-            font-weight:bold;
-            text-decoration:none;
-            display:inline-block;
-        }
-        
-        .section {
-            margin-top: ${
-                sectionspacing
-            }
-            px;
-            margin-bottom: ${
-                sectionspacing
-            }
-            px;
-        }
-        
-        #form {
-            background-color: ${
-                formbgcolor
-            }
-            ;
-        }
-        
-        #btmform .mktoForm .mktoLabel {
-            color: ${
-                btmformpcolor
-            }
-            !important;
-            font-size: ${
-                btmformpsize
-            }
-            px!important;
-            font-weight: ${
-                btmformpweight
-            }
-            !important;
-            display: ${
-                showbtmformlabel
-            }
-            !important;
-        }
-        
-        #btmform .mktoForm input,
-        #btmform .mktoForm textarea,
-        #btmform .mktoForm select {
-            border: ${
-                btmformbordercolor
-            }
-            ${
-                btmformborderheight
-            }
-            px solid;
-            border-radius: ${
-                btmformborderradius
-            }
-            px!important;
-            background-color: ${
-                btmformfieldcolor
-            }
-            !important;
-            color: ${
-                btmformpcolor
-            }
-            !important;
-        }
-        
-        #btmform .mktoForm input::placeholder,
-        #btmform .mktoForm textarea::placeholder,
-        #btmform .mktoForm select::placeholder {
-            color: ${
-                btmformpcolor
-            }
-            !important;
-        }
-        
-        #btmform .mktoForm button.mktoButton {
-            background: ${
-                btmformbtnbgcolor
-            }
-            !important;
-            background-color: ${
-                btmformbtnbgcolor
-            }
-            !important;
-            border:1px solid ${
-                btmformbtnbordercolor
-            }
-            !important;
-            border-radius: ${
-                btmformbtnborderradius
-            }
-            px!important;
-            font-size: ${
-                btmformbtntextsize
-            }
-            px!important;
-            padding:15px 50px!important;
-            color: ${
-                btmformbtntextcolor
-            }
-            !important;
-            font-weight:bold!important;
-            text-decoration:none!important;
-            width: auto!important!important;
-            display:inline-block;
-        }
-        
-        ${
-            btmformtwocol
-        }
-        
-        #threecol .col33 {
-            background-color: ${
-                threecolcolumnbgcolor
-            }
-            ;
-            border-radius: ${
-                threecolradius
-            }
-            px;
-            box-shadow: ${
-                threecolshadow
-            }
-            ;
-            -webkit-box-shadow: ${
-                threecolshadow
-            }
-            ;
-            -moz-box-shadow: ${
-                threecolshadow
-            }
-            ;
-            text-align:center;
-        }
-        
-        .col50 {
-            background-color: ${
-                twocoliconscolumnbgcolor
-            }
-            ;
-            border-radius: ${
-                twocoliconsradius
-            }
-            px;
-            box-shadow: ${
-                twocoliconsshadow
-            }
-            ;
-            -webkit-box-shadow: ${
-                twocoliconsshadow
-            }
-            ;
-            -moz-box-shadow: ${
-                twocoliconsshadow
-            }
-            ;
-        }
-        
-        .social-icons i {
-            background-color: ${
-                footersocialbgcolor
-            }
-            ;
-        }
-        
-        .social-icons .fa {
-            color: ${footersocialcolor};
-        }
-        
-        #form {
-            padding: ${
-                formtextpad
-            }
-            px ${
-                formtextpad
-            }
-            px;
-        }
-        
-        @media only screen and (max-width: 900px) {
-            .headlinetext h1 {
-                font-size: 35px;
-            }
-            .headlinetext p {
-                font-size: 20px;
-            }
-            p {
-                font-size: 18px;
-            }
-            li {
-                font-size: 18px;
-            }
-            h2 {
-                font-size: 25px;
-            }
-            h3 {
-                font-size: 22px;
-            }
-            h4 {
-                font-size: 18px;
-            }
-            .container_inner {
-                width: 99%;
-            }
-            .button a,
-            #btmform .mktoForm button.mktoButton,
-            #formtext .mktoForm button.mktoButton {
-                font-size: 16px!important;
-                padding: 16px 30px!important;
-            }
-        }
-    </style>
+		
+		@media only screen and (max-width: 900px){
+          .headlinetext h1 {
+              font-size:35px;
+          }
+          .headlinetext p {
+              font-size:20px;
+          }
+          p {
+          font-size:18px;
+          }
+          li {
+          font-size:18px;
+          }
+
+          h2 {
+              font-size:25px;
+          }
+          h3 {
+              font-size:22px;
+          }
+          h4 {
+          font-size:18px;
+          }
+          .container_inner{
+            width:99%;
+          }
+          .button a, #btmform .mktoForm button.mktoButton, #formtext .mktoForm button.mktoButton {
+              font-size:16px!important;
+              padding:16px 30px!important;
+          }
+		}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                </style>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 </head>
 
 <body>
@@ -789,17 +462,13 @@
             </div>
             <div class="row-2">
                 <div class="col-1">
-                <ul class="navbar-2">
-                        <li><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/schulich-logo.png" alt="Schulich logo" /></li>
-                        <li>Menu</li>
-                </ul>
+                        <img class="top-logo" src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/schulich-logo.png" alt="Schulich logo" />
                 </div>
                 <div class="col-2">
                     <h1>Suitability</h1>
                 </div>
             </div>
         </nav>
-
         <!-- END Navbar -->
 
 
@@ -813,6 +482,7 @@
 
 
         <section class="icons-container">
+            <h2>Want to learn more?</h2>
             <ul class="program-icons__list">
                 <li class="program-icons__item">
                     <a class="program-icons__link" href="#details">
