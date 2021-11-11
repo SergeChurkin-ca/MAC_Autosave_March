@@ -14,912 +14,942 @@
 
 <head>
 
-<link rel="stylesheet" href="externalstyle.css" />
-<link rel="stylesheet" href="formstyles.css" />
+    <link rel="stylesheet" href="externalstyle.css" />
+    <link rel="stylesheet" href="formstyles.css" />
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/LP_MAC_Style.css" rel="stylesheet">
-<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/LP_MAC_Style.css" rel="stylesheet">
+    <link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
 
-<meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');" allowHtml="true">
-<meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Lato" allowHtml="true">
-<meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://favicon.io/favicon.ico" allowHtml="true">
-<meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
-<link rel="icon" type="image/x-icon" href="${favicon}" />
-<title>${pageTitle}</title>
-<meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="220" allowHtml="true">
-<meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#1F203E">
-<meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
-<meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
-<meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
-<meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
-<meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
-<meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
-<meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
-<meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="20" allowHtml="true">
-<meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
-<meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
-
-
-<meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#1F203E">
-<meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
-<meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#1F203E">
-<meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
-<meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
-<meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
-
-<meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
-<meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#EEF3F9">
-<meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
-<meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
-<meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#1F203E">
-<meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
-<meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#1F203E">
-<meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
-<meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
-<meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
+    <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');" allowHtml="true">
+    <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Lato" allowHtml="true">
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://favicon.io/favicon.ico" allowHtml="true">
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <link rel="icon" type="image/x-icon" href="${favicon}" />
+    <title>${pageTitle}</title>
+    <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="220" allowHtml="true">
+    <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
+    <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
+    <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
+    <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
+    <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
+    <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
 
 
-<meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
-<meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
-<meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-<meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-<meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
-<meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
-<meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
-<meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
-<meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#ffffff">
-<meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
-<meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
-<meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
-<meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
-<meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
-<meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
-<meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
-<meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
+    <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#1F203E">
+    <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
 
-<meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
-<meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
-<meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-<meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
-
-<meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
-
-<meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
-
-<meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
-<meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
-<meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-<meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
-
-<meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
-<meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
-<meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
-<meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+    <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
+    <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
+    <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
 
 
-<meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
-<meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
-<meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-<meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
-<meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
-<meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
-<meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
-<meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
-<meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
-<meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-<meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
-<meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-<meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
-<meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
-<meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-<meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
+    <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
+    <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}"
+        false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#ffffff">
+    <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
 
-<meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
-<meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
-<meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
-<meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
-<meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
+    <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
 
-<meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
-<meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
-<meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
-<meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
-<meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
-<meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
-<meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
-<meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
+    <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
+    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+
+
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}"
+        false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
+    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
+    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
+    <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
+    <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
+
+    <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
+    <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
+    <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
+    <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
+    <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
+    <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
+    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
 
 
 
-<style>
-    ${googleimport}
-    * {
-        font-family: '${globalfont}',Arial, sans-serif;
-    }
-    img{
-        max-width:100%;
-        height:auto;
-    }
-    .container_inner{
-        width:90%;
-    }
-    #banner {
-        background-color:${bannerbgcolor};
-        background-image:url('${bannerbgimg}');
-        display:${bannershow};
-        order:${bannerorder};
-
-    }
-    #formtext {
-        background-color:${formtextbgcolor};
-        display:${formtextshow};
-        order:${formtextorder};
-    }
-    #threecol {
-        background-color:${threecolbgcolor};
-        display:${threecolshow};
-        order:${threecolorder};
-    }
-    #imgright {
-        background-color:${imgrightbgcolor};
-        display:${imgrightshow};
-        order:${imgrightorder};
-    }
-    #imgleft {
-        background-color:${imgleftbgcolor};
-        display:${imgleftshow};
-        order:${imgleftorder};
-    }
-    #twocolicons {
-        background-color:${twocoliconsbgcolor};
-        display:${twocoliconsshow};
-        order:${twocoliconsorder};
-    }
-    #video {
-        background-color:${videobgcolor};
-        display:${videoshow};
-        order:${videoorder};
-    }
-    #video .left {
-        background-color:${videoleftbgcolor};
-    }
-    #btmform {
-        background-color:${btmformbgcolor};
-        display:${btmformshow};
-        order:${btmformorder};
-    }
-    #btmform .container_inner {
-        background-color:${btmforminnerbgcolor};
-    }
-    #footer {
-        background-color:${footerbgcolor};
-    }
-    
-    .logo img{
-        width:${logowidth}px;
-        height:auto;
-        vertical-align:middle;
-    }
-    #footer .logo{
-        padding-bottom:0;
-    }
-    .headlinetext h1 {
-        font-size:${bannerheadsize}px;
-        color:${h1color};
-        font-weight:bold;
-    }
-    .headlinetext p {
-        font-size:${bannercopysize}px;
-        color:${pcolor};
-        font-weight:${pweight};
-    }
-    p {
-        color:${pcolor};
-        font-size:${psize}px;
-        font-weight:${pweight};
-    }
-    li {
-        color:${pcolor};
-        font-size:${psize}px;
-        font-weight:${pweight};
-    }
-    
-    h2 {
-        color:${h2color};
-        font-size:${h2size}px;
-        font-weight:bold;
-    }
-    h3 {
-        color:${h3color};
-        font-size:${h3size}px;
-        font-weight:bold;
-    }
-    h4 {
-        color:${h4color};
-        font-size:${h2size}px;
-        font-weight:bold;
-        margin-top:0;
-    }
-    #banner .button a {
-        background-color:${banbtnbgcolor};
-        border:1px solid ${banbtnbordercolor};
-        border-radius:${banbtnborderradius}px;
-        font-size:${banbtntextsize}px;
-        padding:15px 50px;
-        color:${banbtntextcolor};
-        font-weight:bold;
-        text-decoration:none;
-    }
-    #formtext .mktoForm .mktoLabel {
-        color:${formtextpcolor}!important;
-        font-size:${formtextpsize}px!important;
-        font-weight:${formtextpweight}!important;
-        display:${showformtextlabel}!important;
-    }
-    #formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
-        border:${formtextbordercolor} ${formtextborderheight}px solid;
-        border-radius:${formtextborderradius}px!important;
-        background-color:${formtextfieldcolor}!important;
-        color:${formtextpcolor}!important;
-        box-shadow:0 !important;
-        box-shadow:none !important;
-        height:50px !important;
-        min-height:40px !important;
-        padding: 5px 10px !important;
-    }
-    .mktoForm input, .mktoForm textarea, .mktoForm select {
-        box-shadow:0 !important;
-        box-shadow:none !important;
-        height:50px !important;
-        min-height:40px !important;
-        padding: 5px 10px !important;
-    }
-    .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField{
-        box-shadow:none !important;
-    }
-    .mktoForm .mktoButtonWrap {
-        margin-left:0 !important;
-    }
-    .mktoForm textarea {
-        height:100px !important;
-        min-height:80px !important;
-    }
-    .mktoForm .mktoButtonWrap.mktoGlow .mktoButton{
-        box-shadow:none !important;
-    }
-    #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
-        color:${formtextpcolor}!important;
-    }
-    #formtext .mktoForm button.mktoButton {
-        background-color:${formtextbtnbgcolor}!important;
-        border:1px solid ${formtextbtnbordercolor}!important;
-        border-radius:${formtextbtnborderradius}px!important;
-        font-size:${formtextbtntextsize}px!important;
-        padding:15px 50px!important;
-        color:${formtextbtntextcolor}!important;
-        font-weight:bold!important;
-        text-decoration:none!important;
-        width: auto!important!important;
-        display:inline-block;
-    }
-    ${formtexttwocol}
-    
-    .mktoForm * {
-        font-family: '${globalfont}',Arial, sans-serif !important;
-    }
-    #footer a {
-        color:${footerlinkcolor};
-        font-size:${psize}px;
-        font-weight:${pweight};
-        text-decoration:none;
-    }
-    .button a {
-        background-color:${btnbgcolor};
-        border:1px solid ${btnbordercolor};
-        border-radius:${btnborderradius}px;
-        font-size:${btntextsize}px;
-        padding:15px 50px;
-        color:${btntextcolor};
-        font-weight:bold;
-        text-decoration:none;
-        display:inline-block;
-    }
-    .section {
-        margin-top:${sectionspacing}px;
-        margin-bottom:${sectionspacing}px;
-    }
-    #form {
-        background-color:${formbgcolor};
-    }
-    #btmform .mktoForm .mktoLabel {
-        color:${btmformpcolor}!important;
-        font-size:${btmformpsize}px!important;
-        font-weight:${btmformpweight}!important;
-        display:${showbtmformlabel}!important;
-    }
-    #btmform .mktoForm input, #btmform .mktoForm textarea,  #btmform .mktoForm select {
-        border:${btmformbordercolor} ${btmformborderheight}px solid;
-        border-radius:${btmformborderradius}px!important;
-        background-color:${btmformfieldcolor}!important;
-        color:${btmformpcolor}!important;
-    }
-    #btmform .mktoForm input::placeholder, #btmform .mktoForm textarea::placeholder,  #btmform .mktoForm select::placeholder {
-        color:${btmformpcolor}!important;
-    }
-    #btmform .mktoForm button.mktoButton {
-        background:${btmformbtnbgcolor}!important;
-        background-color:${btmformbtnbgcolor}!important;
-        border:1px solid ${btmformbtnbordercolor}!important;
-        border-radius:${btmformbtnborderradius}px!important;
-        font-size:${btmformbtntextsize}px!important;
-        padding:15px 50px!important;
-        color:${btmformbtntextcolor}!important;
-        font-weight:bold!important;
-        text-decoration:none!important;
-        width: auto!important!important;
-        display:inline-block;
-    }
-    ${btmformtwocol}
-    #threecol .col33 {
-        background-color:${threecolcolumnbgcolor};
-        border-radius:${threecolradius}px;
-        box-shadow: ${threecolshadow};
-    -webkit-box-shadow: ${threecolshadow};
-    -moz-box-shadow: ${threecolshadow};
-    text-align:center;
-    }
-    .col50 {
-        background-color:${twocoliconscolumnbgcolor};
-        border-radius:${twocoliconsradius}px;
-        box-shadow: ${twocoliconsshadow};
-        -webkit-box-shadow: ${twocoliconsshadow};
-        -moz-box-shadow: ${twocoliconsshadow};
-    }
-    .social-icons i {
-        background-color:${footersocialbgcolor};
-    }
-    .social-icons .fa {
-        color:${footersocialcolor};
-    }
-    #form{
-        padding:${formtextpad}px ${formtextpad}px;
-    }
-    
-    @media only screen and (max-width: 900px){
+    <style>
+        ${googleimport}$
+        
+        * {
+            font-family: '${globalfont}', Arial, sans-serif;$
+            font-family: "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container_inner {
+            width: 90%;
+        }
+        
+        #banner {
+            background-color: ${bannerbgcolor};
+            background-image:url('${bannerbgimg}');
+            display: $bannershow};
+            order: ${bannerorder};
+        }
+        
+        #formtext {
+            background-color: ${formtextbgcolor};
+            display: ${formtextshow};
+            order: ${formtextorder};
+        }
+        
+        #threecol {
+            background-color: ${threecolbgcolor};
+            display: ${threecolshow};
+            order: ${threecolorder};
+        }
+        
+        #imgright {
+            background-color: ${imgrightbgcolor};
+            display: ${imgrightshow};
+            order: ${imgrightorder};
+        }
+        
+        #imgleft {
+            background-color: ${imgleftbgcolor};
+            display: ${imgleftshow};
+            order: ${imgleftorder};
+        }
+        
+        #twocolicons {
+            background-color: ${twocoliconsbgcolor};
+            display: ${twocoliconsshow};
+            order: ${twocoliconsorder};
+        }
+        
+        #video {
+            background-color: ${
+                videobgcolor
+            }
+            ;
+            display: ${
+                videoshow
+            }
+            ;
+            order: ${
+                videoorder
+            }
+            ;
+        }
+        
+        #video .left {
+            background-color: ${
+                videoleftbgcolor
+            }
+            ;
+        }
+        
+        #btmform {
+            background-color: ${
+                btmformbgcolor
+            }
+            ;
+            display: ${
+                btmformshow
+            }
+            ;
+            order: ${
+                btmformorder
+            }
+            ;
+        }
+        
+        #btmform .container_inner {
+            background-color: ${
+                btmforminnerbgcolor
+            }
+            ;
+        }
+        
+        #footer {
+            background-color: ${
+                footerbgcolor
+            }
+            ;
+        }
+        
+        .logo img {
+            width: ${
+                logowidth
+            }
+            px;
+            height:auto;
+            vertical-align:middle;
+        }
+        
+        #footer .logo {
+            padding-bottom: 0;
+        }
+        
         .headlinetext h1 {
-            font-size:35px;
+            font-size: ${
+                bannerheadsize
+            }
+            px;
+            color: ${
+                h1color
+            }
+            ;
+            font-weight:bold;
         }
+        
         .headlinetext p {
-            font-size:20px;
+            font-size: ${
+                bannercopysize
+            }
+            px;
+            color: ${
+                pcolor
+            }
+            ;
+            font-weight: ${
+                pweight
+            }
+            ;
         }
+        
         p {
-        font-size:18px;
+            color: ${
+                pcolor
+            }
+            ;
+            font-size: ${
+                psize
+            }
+            px;
+            font-weight: ${
+                pweight
+            }
+            ;
         }
+        
         li {
-        font-size:18px;
+            color: ${
+                pcolor
+            }
+            ;
+            font-size: ${
+                psize
+            }
+            px;
+            font-weight: ${
+                pweight
+            }
+            ;
         }
-
+        
         h2 {
-            font-size:25px;
+            color: ${
+                h2color
+            }
+            ;
+            font-size: ${
+                h2size
+            }
+            px;
+            font-weight:bold;
         }
+        
         h3 {
-            font-size:22px;
+            color: ${
+                h3color
+            }
+            ;
+            font-size: ${
+                h3size
+            }
+            px;
+            font-weight:bold;
         }
+        
         h4 {
-        font-size:18px;
+            color: ${
+                h4color
+            }
+            ;
+            font-size: ${
+                h2size
+            }
+            px;
+            font-weight:bold;
+            margin-top:0;
         }
-        .container_inner{
-        width:99%;
+        
+        #banner .button a {
+            background-color: ${
+                banbtnbgcolor
+            }
+            ;
+            border:1px solid ${
+                banbtnbordercolor
+            }
+            ;
+            border-radius: ${
+                banbtnborderradius
+            }
+            px;
+            font-size: ${
+                banbtntextsize
+            }
+            px;
+            padding:15px 50px;
+            color: ${
+                banbtntextcolor
+            }
+            ;
+            font-weight:bold;
+            text-decoration:none;
         }
-        .button a, #btmform .mktoForm button.mktoButton, #formtext .mktoForm button.mktoButton {
-            font-size:16px!important;
-            padding:16px 30px!important;
+        
+        #formtext .mktoForm .mktoLabel {
+            color: ${
+                formtextpcolor
+            }
+            !important;
+            font-size: ${
+                formtextpsize
+            }
+            px!important;
+            font-weight: ${
+                formtextpweight
+            }
+            !important;
+            display: ${
+                showformtextlabel
+            }
+            !important;
         }
-    }
-</style>
+        
+        #formtext .mktoForm input,
+        #formtext .mktoForm textarea,
+        #formtext .mktoForm select {
+            border: ${
+                formtextbordercolor
+            }
+            ${
+                formtextborderheight
+            }
+            px solid;
+            border-radius: ${
+                formtextborderradius
+            }
+            px!important;
+            background-color: ${
+                formtextfieldcolor
+            }
+            !important;
+            color: ${
+                formtextpcolor
+            }
+            !important;
+            box-shadow:0 !important;
+            box-shadow:none !important;
+            height:50px !important;
+            min-height:40px !important;
+            padding: 5px 10px !important;
+        }
+        
+        .mktoForm input,
+        .mktoForm textarea,
+        .mktoForm select {
+            box-shadow: 0 !important;
+            box-shadow: none !important;
+            height: 50px !important;
+            min-height: 40px !important;
+            padding: 5px 10px !important;
+        }
+        
+        .mktoForm input[type=text],
+        .mktoForm input[type=url],
+        .mktoForm input[type=email],
+        .mktoForm input[type=tel],
+        .mktoForm input[type=number],
+        .mktoForm input[type=date],
+        .mktoForm select.mktoField,
+        .mktoForm textarea.mktoField {
+            box-shadow: none !important;
+        }
+        
+        .mktoForm .mktoButtonWrap {
+            margin-left: 0 !important;
+        }
+        
+        .mktoForm textarea {
+            height: 100px !important;
+            min-height: 80px !important;
+        }
+        
+        .mktoForm .mktoButtonWrap.mktoGlow .mktoButton {
+            box-shadow: none !important;
+        }
+        
+        #formtext .mktoForm input::placeholder,
+        #formtext .mktoForm textarea::placeholder,
+        #formtext .mktoForm select::placeholder {
+            color: ${
+                formtextpcolor
+            }
+            !important;
+        }
+        
+        #formtext .mktoForm button.mktoButton {
+            background-color: ${
+                formtextbtnbgcolor
+            }
+            !important;
+            border:1px solid ${
+                formtextbtnbordercolor
+            }
+            !important;
+            border-radius: ${
+                formtextbtnborderradius
+            }
+            px!important;
+            font-size: ${
+                formtextbtntextsize
+            }
+            px!important;
+            padding:15px 50px!important;
+            color: ${
+                formtextbtntextcolor
+            }
+            !important;
+            font-weight:bold!important;
+            text-decoration:none!important;
+            width: auto!important!important;
+            display:inline-block;
+        }
+        
+        ${
+            formtexttwocol
+        }
+        
+        .mktoForm * {
+            font-family: '${globalfont}',
+            Arial,
+            sans-serif !important;
+        }
+        
+        #footer a {
+            color: ${
+                footerlinkcolor
+            }
+            ;
+            font-size: ${
+                psize
+            }
+            px;
+            font-weight: ${
+                pweight
+            }
+            ;
+            text-decoration:none;
+        }
+        
+        .button a {
+            background-color: ${
+                btnbgcolor
+            }
+            ;
+            border:1px solid ${
+                btnbordercolor
+            }
+            ;
+            border-radius: ${
+                btnborderradius
+            }
+            px;
+            font-size: ${
+                btntextsize
+            }
+            px;
+            padding:15px 50px;
+            color: ${
+                btntextcolor
+            }
+            ;
+            font-weight:bold;
+            text-decoration:none;
+            display:inline-block;
+        }
+        
+        .section {
+            margin-top: ${
+                sectionspacing
+            }
+            px;
+            margin-bottom: ${
+                sectionspacing
+            }
+            px;
+        }
+        
+        #form {
+            background-color: ${
+                formbgcolor
+            }
+            ;
+        }
+        
+        #btmform .mktoForm .mktoLabel {
+            color: ${
+                btmformpcolor
+            }
+            !important;
+            font-size: ${
+                btmformpsize
+            }
+            px!important;
+            font-weight: ${
+                btmformpweight
+            }
+            !important;
+            display: ${
+                showbtmformlabel
+            }
+            !important;
+        }
+        
+        #btmform .mktoForm input,
+        #btmform .mktoForm textarea,
+        #btmform .mktoForm select {
+            border: ${
+                btmformbordercolor
+            }
+            ${
+                btmformborderheight
+            }
+            px solid;
+            border-radius: ${
+                btmformborderradius
+            }
+            px!important;
+            background-color: ${
+                btmformfieldcolor
+            }
+            !important;
+            color: ${
+                btmformpcolor
+            }
+            !important;
+        }
+        
+        #btmform .mktoForm input::placeholder,
+        #btmform .mktoForm textarea::placeholder,
+        #btmform .mktoForm select::placeholder {
+            color: ${
+                btmformpcolor
+            }
+            !important;
+        }
+        
+        #btmform .mktoForm button.mktoButton {
+            background: ${
+                btmformbtnbgcolor
+            }
+            !important;
+            background-color: ${
+                btmformbtnbgcolor
+            }
+            !important;
+            border:1px solid ${
+                btmformbtnbordercolor
+            }
+            !important;
+            border-radius: ${
+                btmformbtnborderradius
+            }
+            px!important;
+            font-size: ${
+                btmformbtntextsize
+            }
+            px!important;
+            padding:15px 50px!important;
+            color: ${
+                btmformbtntextcolor
+            }
+            !important;
+            font-weight:bold!important;
+            text-decoration:none!important;
+            width: auto!important!important;
+            display:inline-block;
+        }
+        
+        ${
+            btmformtwocol
+        }
+        
+        #threecol .col33 {
+            background-color: ${
+                threecolcolumnbgcolor
+            }
+            ;
+            border-radius: ${
+                threecolradius
+            }
+            px;
+            box-shadow: ${
+                threecolshadow
+            }
+            ;
+            -webkit-box-shadow: ${
+                threecolshadow
+            }
+            ;
+            -moz-box-shadow: ${
+                threecolshadow
+            }
+            ;
+            text-align:center;
+        }
+        
+        .col50 {
+            background-color: ${
+                twocoliconscolumnbgcolor
+            }
+            ;
+            border-radius: ${
+                twocoliconsradius
+            }
+            px;
+            box-shadow: ${
+                twocoliconsshadow
+            }
+            ;
+            -webkit-box-shadow: ${
+                twocoliconsshadow
+            }
+            ;
+            -moz-box-shadow: ${
+                twocoliconsshadow
+            }
+            ;
+        }
+        
+        .social-icons i {
+            background-color: ${
+                footersocialbgcolor
+            }
+            ;
+        }
+        
+        .social-icons .fa {
+            color: ${footersocialcolor};
+        }
+        
+        #form {
+            padding: ${
+                formtextpad
+            }
+            px ${
+                formtextpad
+            }
+            px;
+        }
+        
+        @media only screen and (max-width: 900px) {
+            .headlinetext h1 {
+                font-size: 35px;
+            }
+            .headlinetext p {
+                font-size: 20px;
+            }
+            p {
+                font-size: 18px;
+            }
+            li {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 22px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            .container_inner {
+                width: 99%;
+            }
+            .button a,
+            #btmform .mktoForm button.mktoButton,
+            #formtext .mktoForm button.mktoButton {
+                font-size: 16px!important;
+                padding: 16px 30px!important;
+            }
+        }
+    </style>
 </head>
 
 <body>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="flex">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-<!-- Navbar -->
-<nav>
-    <ul class="navbar-1">
-        <li>Future Students</li>
-        <li>Current Students</li>
-        <li>Alumni</li>
-        <li>Donors</li>
-        <li>Recruiters</li>
-        <li>Media</li>
-        <li>Search</li>
-        <li>MySchulich</li>
-    </ul>
-    <ul class="navbar-2">
-        <ul>
-            <li><span>Schulich School of Business</span></li>
-            <li>Menu</li>
-            <li>Suitability</li>
-        </ul>
-    </ul>
-</nav>
+    <div class="flex">
 
-<!-- END Navbar -->
-
-
-<!-- Form -->
-<section class="container_100" id="formtext">
-    <div class="container_inner section">
-        <div class="right" id="form">
-            <form id="mktoForm_1051" novalidate="novalidate" class="mktoForm mktoHasWidth mktoLayoutAbove" style="font-family: &quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, Tahoma, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 136px;"
-            data-form-local-fragment="#fsaat-0">
-            <style type="text/css"></style>
-            <div class="mktoFormRow" id="fsaat-0">
-                <fieldset class="mktoFormCol" style="padding-right: 10px; margin-bottom: 10px;">
-                    <legend>Fieldset Label</legend>
-                    <div class="mktoFormRow">
-                        <div class="mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset mktoHasWidth" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap">
-                                <div class="mktoHtmlText mktoHasWidth" style="width: 214px;">
-                                    <div style="background: #1e5772!important; padding: 30px; margin-bottom: 30px;">
-                                        <h1><span style="color: #ffffff;">5-Minute Program Suitability</span></h1>
-                                        <p style="color: #ffffff;">Complete the form below to identify the program(s) most suitable for you.</p>
-                                    </div>
-                                </div>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap mktoRequiredField"><label for="Email" id="LblEmail" class="mktoLabel mktoHasWidth" style="width: 174px;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">Email Address*</span></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Email" name="Email" placeholder="JainDoe@email.ca" maxlength="255" aria-labelledby="LblEmail InstructEmail" type="email" class="mktoField mktoEmailField mktoHasWidth" style="width: 174px;"><span id="InstructEmail"
-                                    tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap mktoRequiredField"><label for="FirstName" id="LblFirstName" class="mktoLabel mktoHasWidth" style="width: 174px;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">First Name*</span></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="FirstName" name="FirstName" placeholder="Jain" maxlength="255" aria-labelledby="LblFirstName InstructFirstName" type="text" class="mktoField mktoTextField mktoHasWidth" style="width: 174px;"><span id="InstructFirstName"
-                                    tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap mktoRequiredField"><label for="LastName" id="LblLastName" class="mktoLabel mktoHasWidth" style="width: 174px;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">Last Name*</span></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="LastName" name="LastName" placeholder="Doe" maxlength="255" aria-labelledby="LblLastName InstructLastName" type="text" class="mktoField mktoTextField mktoHasWidth" style="width: 174px;"><span id="InstructLastName"
-                                    tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap mktoRequiredField"><label for="Program_of_Interest__c" id="LblProgram_of_Interest__c" class="mktoLabel mktoHasWidth" style="width: 174px;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">Primary Program of Interest*</span>
-        <div class="arrow"><br></div></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Program_of_Interest__c" name="Program_of_Interest__c" aria-labelledby="LblProgram_of_Interest__c InstructProgram_of_Interest__c" class="mktoField mktoHasWidth" style="width: 174px;"><option value="">Select...</option><option value="MBA (Master of Business Administration)">MBA - Master of Business Administration</option><option value="MBA/JD (Master of Business Administration/Juris Doctor - 4 year)">MBA/Juris Doctor</option><option value="MBA/MFA (Master of Business Administration/Master of Fine Art)">MBA/Master of Fine Arts </option><option value="MBA/MA (Master of Business Administration/Master of Arts in Fine Arts)">MBA/Master of Arts</option><option value="MBA in India">MBA in India</option><option value="DIAc (Diploma in Intermediate Accounting)">DIAc - Diploma in Intermediate Accounting</option><option value="MAcc (Master of Accounting)">MAcc - Master of Accounting</option><option value="MMAI (Master of Management in Artificial Intelligence)">MMAI - Master of Management in Artificial Intelligence</option><option value="MBAN (Master of Business Analytics)">MBAN - Master of Business Analytics</option><option value="MF (Master of Finance)">MF - Master of Finance</option><option value="MMgt (Master of Management)">MMgt - Master of Management</option><option value="MMKG (Master of Marketing)">MMKG - Master of Marketing</option><option value="MREI (Master of Real Estate &amp; Infrastructure)">MREI - Master of Real Estate and Infrastructure</option><option value="MSCM (Master of Supply Chain Management)">MSCM - Master of Supply Chain Management</option></select>
-                                <span id="InstructProgram_of_Interest__c" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="Starting_Year__c" id="LblStarting_Year__c" class="mktoLabel mktoHasWidth" style="width: 174px;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">Desired Program Start Year</span>
-        <div class="arrow"><br></div></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Starting_Year__c" name="Starting_Year__c" aria-labelledby="LblStarting_Year__c InstructStarting_Year__c" class="mktoField mktoHasWidth" style="width: 174px;"><option value="">Select...</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option></select>
-                                <span id="InstructStarting_Year__c" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset mktoHasWidth" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap">
-                                <div class="mktoHtmlText mktoHasWidth" style="width: 214px;">
-                                    <div style="padding-top: 15px; padding-left: 20px; padding-right: 20px;"><span style="color: #1e5772;">Have you taken either the IELTS or TOEFL in the past 2 years? *</span></div>
-                                </div>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap mktoRequiredField"><label for="iELTSTOFEL" id="LbliELTSTOFEL" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div>
-                                <div class="mktoRadioList mktoHasWidth" style="width: 118px;"><input name="iELTSTOFEL" id="mktoRadio_7064_0" value="1" aria-labelledby="LbliELTSTOFEL LblmktoRadio_7064_0 InstructiELTSTOFEL" type="radio" class="mktoField"><label for="mktoRadio_7064_0" id="LblmktoRadio_7064_0">Yes</label>
-                                    <input name="iELTSTOFEL" id="mktoRadio_7064_1" value="0" aria-labelledby="LbliELTSTOFEL LblmktoRadio_7064_1 InstructiELTSTOFEL" type="radio" class="mktoField"><label for="mktoRadio_7064_1" id="LblmktoRadio_7064_1">No</label></div>
-                                <span id="InstructiELTSTOFEL" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoPlaceholder mktoPlaceholderHtmlText_2021-04-16T16 289Z"></div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoPlaceholder mktoPlaceholderUnofficial_TOEFL_Score__c"></div>
-                        <div class="mktoPlaceholder mktoPlaceholderUnofficial_IELTS_Score__c"></div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset mktoHasWidth" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap">
-                                <div class="mktoHtmlText mktoHasWidth" style="width: 214px;">
-                                    <div style="padding-top: 15px; padding-left: 20px; padding-right: 20px;"><span style="color: #1e5772;">Have you taken either the GMAT or the GRE in the past 5 years? *</span></div>
-                                </div>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap mktoRequiredField"><label for="gMATGRE" id="LblgMATGRE" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div>
-                                <div class="mktoRadioList mktoHasWidth mktoRequired" style="width: 118px;"><input name="gMATGRE" id="mktoRadio_7063_0" value="1" aria-required="true" aria-labelledby="LblgMATGRE LblmktoRadio_7063_0 InstructgMATGRE" type="radio" class="mktoField"><label for="mktoRadio_7063_0" id="LblmktoRadio_7063_0">Yes</label>
-                                    <input name="gMATGRE" id="mktoRadio_7063_1" value="0" aria-required="true" aria-labelledby="LblgMATGRE LblmktoRadio_7063_1 InstructgMATGRE" type="radio" class="mktoField"><label for="mktoRadio_7063_1" id="LblmktoRadio_7063_1">No</label></div>
-                                <span id="InstructgMATGRE" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoPlaceholder mktoPlaceholderHtmlText_2021-04-16T16 565Z"></div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoPlaceholder mktoPlaceholderUnofficial_GMAT_Score__c"></div>
-                        <div class="mktoPlaceholder mktoPlaceholderUnofficial_GRE_Score__c"></div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="Work_Experience__c" id="LblWork_Experience__c" class="mktoLabel mktoHasWidth" style="width: 174px;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">How many years of post-graduate, full-time work experience will you have by the desired start date of your preferred program? *</span>
-        <div class="arrow"><br></div></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Work_Experience__c" name="Work_Experience__c" aria-labelledby="LblWork_Experience__c InstructWork_Experience__c" class="mktoField mktoHasWidth" style="width: 174px;"><option value="">Select...</option><option value="More than 18 Years">More than 18 Years</option><option value="15 - 18 Years">15 - 18 Years</option><option value="10 - 14 Years">10 - 14 Years</option><option value="7 - 9 Years">7 - 9 Years</option><option value="4 - 6 Years">4 - 6 Years</option><option value="2 - 3 Years">2 - 3 Years</option><option value="1 - 2 Years">1 - 2 Years</option><option value="Less than 1 Year">Less than 1 Year</option><option value="None">None</option></select>
-                                <span id="InstructWork_Experience__c" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                </fieldset>
-                <div class="mktoClear"></div>
+        <!-- Navbar -->
+        <nav>
+            <div class="row-1">
+                <div class="col-1">
+                    <ul class="navbar-1">
+                        <li>Future Students</li>
+                        <li>Current Students</li>
+                        <li>Alumni</li>
+                        <li>Donors</li>
+                        <li>Recruiters</li>
+                        <li>Media</li>
+                    </ul>
+                </div>    
+                <div class="col-2">
+                    <ul>
+                    <li class="nav-button">MySchulich</li>
+                    </ul>
+                </div>
             </div>
-            <div class="mktoButtonRow"><span class="mktoButtonWrap mktoNative" style="margin-left: 112px;"><button type="button" class="mktoButton" data-dir="next">Next</button></span></div>
-            <div class="mktoFormRow" id="fsaat-1">
-                <fieldset class="mktoFormCol" style="padding-right: 10px; margin-bottom: 10px;">
-                    <legend>Fieldset Label</legend>
-                    <div class="mktoFormRow">
-                        <div class="mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset mktoHasWidth" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap">
-                                <div class="mktoHtmlText mktoHasWidth" style="width: 100%;">
-                                    <div style="padding: 0 20px;">
-                                        <h3 style="border-top: 1px solid  #E4E4E4; padding-bottom: 20px;"><span style="color: #1a1a1a;"><strong><br>Tell us about your academic and professional history: </strong></span></h3>
-                                    </div>
-                                </div>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="Highest_Degree__c" id="LblHighest_Degree__c" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">What is your most recently completed program?</span>
-        <div class="arrow"><br></div></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Highest_Degree__c" name="Highest_Degree__c" aria-labelledby="LblHighest_Degree__c InstructHighest_Degree__c" class="mktoField mktoHasWidth" style="width: 100%;"><option value="">Select...</option><option value="College Diploma or Certificate">College Diploma or Certificate</option><option value="3-Year Bachelor’s Degree">3-Year Bachelor’s Degree</option><option value="4-Year Bachelor’s Degree">4-Year Bachelor’s Degree</option><option value="Master's Degree">Master's Degree</option><option value="Doctorate">Doctorate</option></select>
-                                <span id="InstructHighest_Degree__c" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="Subject_Studied__c" id="LblSubject_Studied__c" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">What was your undergraduate major?</span>
-        <div class="arrow"><br></div></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Subject_Studied__c" name="Subject_Studied__c" aria-labelledby="LblSubject_Studied__c InstructSubject_Studied__c" class="mktoField mktoHasWidth" style="width: 100%;"><option value="">Select...</option><option value="Architecture">Architecture</option><option value="Biological Sciences">Biological Sciences</option><option value="Business or Commerce">Business or Commerce</option><option value="Chemistry">Chemistry</option><option value="Computer Science">Computer Science</option><option value="Economics">Economics</option><option value="Education">Education</option><option value="Engineering">Engineering</option><option value="English">English</option><option value="Fine Arts">Fine Arts</option><option value="Foreign Language">Foreign Language</option><option value="Government">Government</option><option value="History">History</option><option value="Mathematics">Mathematics</option><option value="No Previous Major">No Previous Major</option><option value="Other Humanities">Other Humanities</option><option value="Other Major">Other Major</option><option value="Other Science">Other Science</option><option value="Other Social Science">Other Social Science</option><option value="Philosophy">Philosophy</option><option value="Physics">Physics</option><option value="Political Science">Political Science</option><option value="Psychology">Psychology</option><option value="Sociology">Sociology</option><option value="Statistics">Statistics</option></select>
-                                <span id="InstructSubject_Studied__c" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset mktoHasWidth" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap">
-                                <div class="mktoHtmlText mktoHasWidth" style="width: 100%;">
-                                    <div style="padding-top: 15px; padding-left: 20px; padding-right: 20px;"><span style="color: #1d5772;">Did you complete any of the following courses in your undergraduate degree? (please select all that apply)</span></div>
-                                </div>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="advancedMath" id="LbladvancedMath" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div><span style="color: #000000;"><br></span></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div>
-                                <div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 7.8px;"><input name="advancedMath" id="mktoCheckbox_7079_0" type="checkbox" value="yes" aria-labelledby="LbladvancedMath LblmktoCheckbox_7079_0 InstructadvancedMath" class="mktoField"><label for="mktoCheckbox_7079_0" id="LblmktoCheckbox_7079_0"><span style="color: #1d5772;">Advanced Mathematics (eg. Calculus)</span></label></div>
-                                <span id="InstructadvancedMath" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="businessAnalytics" id="LblbusinessAnalytics" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div><span style="color: #000000;"><br></span></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div>
-                                <div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 7.8px;"><input name="businessAnalytics" id="mktoCheckbox_7076_0" type="checkbox" value="yes" aria-labelledby="LblbusinessAnalytics LblmktoCheckbox_7076_0 InstructbusinessAnalytics" class="mktoField"><label for="mktoCheckbox_7076_0" id="LblmktoCheckbox_7076_0"><span style="color: #1d5772;">Business Analytics (eg. Statistics) and/or Economics (eg. Microeconomics)</span></label></div>
-                                <span id="InstructbusinessAnalytics" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="business" id="Lblbusiness" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div><span style="color: #000000;"><br></span></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div>
-                                <div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 7.8px;"><input name="business" id="mktoCheckbox_7077_0" type="checkbox" value="yes" aria-labelledby="Lblbusiness LblmktoCheckbox_7077_0 Instructbusiness" class="mktoField"><label for="mktoCheckbox_7077_0" id="LblmktoCheckbox_7077_0"><span style="color: #1d5772;">Corporate Finance Business Law</span></label></div>
-                                <span id="Instructbusiness" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="Undergrad_GPA__c" id="LblUndergrad_GPA__c" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div><span style="color: #1e5772;">What is your approximate GPA of your most recently completed program?</span>
-        <div class="arrow"><br></div></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Undergrad_GPA__c" name="Undergrad_GPA__c" aria-labelledby="LblUndergrad_GPA__c InstructUndergrad_GPA__c" class="mktoField mktoHasWidth" style="width: 100%;"><option value="">Select...</option><option value="93">A or A+ (3.8 - 4.0)</option><option value="90">A- (3.6)</option><option value="87">B+ (3.3)</option><option value="83">B (3.0)</option><option value="80">B- (2.6)</option><option value="77">C+ or lower (2.3 - 0.0)</option></select>
-                                <span id="InstructUndergrad_GPA__c" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoPlaceholder mktoPlaceholderIndustry__c"></div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow">
-                        <div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
-                            <div class="mktoOffset" style="width: 10px;"></div>
-                            <div class="mktoFieldWrap"><label for="Designation_Certificate__c" id="LblDesignation_Certificate__c" class="mktoLabel mktoHasWidth" style="width: 100%;"><div class="mktoAsterix">*</div><span style="color: #1d5772;">Do you hold any of the following Professional Designations? (press shift to select multiple selections)</span></label>
-                                <div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Designation_Certificate__c" name="Designation_Certificate__c" aria-labelledby="LblDesignation_Certificate__c InstructDesignation_Certificate__c" class="mktoField mktoHasWidth" multiple="multiple" size="4" style="width: 100%;"><option value="">Select...</option><option value="ACCA – Chartered Certified Accountant">ACCA – Chartered Certified Accountant</option><option value="CA - Chartered Accountant">CA - Chartered Accountant</option><option value="CAPM - Certified Associate in Project Management">CAPM - Certified Associate in Project Management</option><option value="CCP - Certified Credit Professional">CCP - Certified Credit Professional</option><option value="CSC - Canadian Securities Course">CSC - Canadian Securities Course</option><option value="CFA Level I - Chartered Financial Analyst">CFA Level I - Chartered Financial Analyst</option><option value="CFA Level II - Chartered Financial Analyst">CFA Level II - Chartered Financial Analyst</option><option value="CFA Level III - Chartered Financial Analyst">CFA Level III - Chartered Financial Analyst</option><option value="CFA Charterholder - Chartered Financial Analyst">CFA Charterholder - Chartered Financial Analyst</option><option value="CFP - Certified Financial Planner">CFP - Certified Financial Planner</option><option value="CGA - Certified General Accountant">CGA - Certified General Accountant</option><option value="CHRP - Certified Human Resources Professional">CHRP - Certified Human Resources Professional</option><option value="CIM - Canadian Investment Manager">CIM - Canadian Investment Manager</option><option value="CLU - Chartered Life Underwriter">CLU - Chartered Life Underwriter</option><option value="CMA - Certified Management Accountant">CMA - Certified Management Accountant</option><option value="CMMP - Certified Marketing Management Professional">CMMP - Certified Marketing Management Professional</option><option value="CMS - Certified Marketing Specialist">CMS - Certified Marketing Specialist</option><option value="CPA - Certified Professional Accountant">CPA - Certified Professional Accountant</option><option value="CRM - Canadian Risk Management">CRM - Canadian Risk Management</option><option value="FCIP - Fellow Chartered Insurance Professional">FCIP - Fellow Chartered Insurance Professional</option><option value="FRM - Financial Risk Manager">FRM - Financial Risk Manager</option><option value="P.Eng. - Professional Engineer">P.Eng. - Professional Engineer</option><option value="PCM - Professional Certified Marketer">PCM - Professional Certified Marketer</option><option value="PFP - Personal Financial Planner">PFP - Personal Financial Planner</option><option value="PMP - Project Management Professional">PMP - Project Management Professional</option><option value="SCMP - Supply Chain Management Professional">SCMP - Supply Chain Management Professional</option><option value="Six Sigma Black Belt">Six Sigma Black Belt</option><option value="Six Sigma Green Belt">Six Sigma Green Belt</option><option value="Six Sigma Yellow Belt">Six Sigma Yellow Belt</option><option value="Other">Other</option></select>
-                                <span id="InstructDesignation_Certificate__c" tabindex="-1" class="mktoInstruction"></span>
-                                <div class="mktoClear"></div>
-                            </div>
-                            <div class="mktoClear"></div>
-                        </div>
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow"><input type="hidden" name="Program_Fit_Submitted_Date_Time__c" class="mktoField mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;" value="{{system.dateTime}}">
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow"><input type="hidden" name="GA_Source__c" class="mktoField mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;" value="direct">
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow"><input type="hidden" name="GA_Medium__c" class="mktoField mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;" value="none">
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow"><input type="hidden" name="GA_Content__c" class="mktoField mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;" value="none">
-                        <div class="mktoClear"></div>
-                    </div>
-                    <div class="mktoFormRow"><input type="hidden" name="GA_Campaign__c" class="mktoField mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;" value="none">
-                        <div class="mktoClear"></div>
-                    </div>
-                </fieldset>
-                <div class="mktoClear"></div>
-            </div>
-            <div class="mktoButtonRow"><span class="mktoButtonWrap mktoNative" style="margin-left: 112px;"><button type="submit" class="mktoButton">Submit</button></span></div><input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="1051"><input type="hidden" name="munchkinId"
-                class="mktoField mktoFieldDescriptor" value="405-LBQ-280">
-            </form>
-        </div>
-    </div>
-</section>
-<!-- END Form -->
-
-
-<section class="icons-container">
-        <ul class="program-icons__list">
-    <li class="program-icons__item">
-        <a class="program-icons__link" href="#details">
-            <img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/magnifyingglass.png" alt="graphics">
-            <h3 class="program-icons__title">View All Program Details</h3>
-        </a>
-    </li>
-    <li class="program-icons__item">
-        <a class="program-icons__link" href="https://issuu.com/schulichschool/docs/2020_mba_viewbook_out" target="_blank">
-            <img src="brochure.png" alt="graphics">
-            <h3 class="program-icons__title">Read the Program Brochure</h3>
-        </a>
-    </li>
-    <li class="program-icons__item">
-        <a class="program-icons__link" href="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/computer.png">
-            <img src="computer.png" alt="graphics">
-            <h3 class="program-icons__title">Connect With Admissions</h3>
-        </a>
-    </li>
-    <li class="program-icons__item">
-        <a class="program-icons__link" href="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/watch.png">
-            <img src="watch.png" alt="graphics">
-            <h3 class="program-icons__title">Study Part-Time</h3>
-        </a>
-    </li>
-    <li class="program-icons__item">
-        <a class="program-icons__link" href="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/direction.png">
-            <img src="direction.png" alt="graphics">
-            <h3 class="program-icons__title">Accelerate your MBA</h3>
-        </a>
-    </li>
-    <li class="program-icons__item">
-        <a class="program-icons__link" href="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/direction.png">
-            <img src="ticket.png" alt="graphics">
-            <h3 class="program-icons__title">View Upcoming Events</h3>
-        </a>
-    </li>
-</ul>
-</section>
-
-
-<!-- Footer -->
-<footer class="container_100" id="footer">
-    <div class="container_inner section">
-
-        <div class="left logo">
-            <div class="mktoText" id="footerlogo" mktoName="Logo">
-
-            </div>
-            <div class="mktoText" id="footersocial" mktoName="Footer - Social">
-                <ul>
-                    <li>
-                        <a href="http://yorku.ca" target="_blank" title="York University Website"><img class="york-schulich-logo" src="https://thewire.dev/schulich/wp-content/themes/schulich/img/schulich-york-logo.png" alt="Schulich - York University"></a>
-                    </li>
-                    <li>
-                        <a href="https://thewire.dev/about/directions/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/location-sm.png" alt="icon"> Directions</a>
-                    </li>
-                    <li>
-                        <a href="mailto:concierge@schulich.yorku.ca"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/mail-sm.png" alt="icon"> Location Inquiries</a>
-                    </li>
-                    <li>
-                        <a href="/about/contact-directory/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/contacts-sm.png" alt="icon"> Contact Directory</a>
-                    </li>
-                    <li>
-                        <a href="https://calendar.schulich.yorku.ca/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/calendar-sm.png" alt="icon"> Event Calendar</a>
-                    </li>
-                    <li>
-                        <a href="https://thewire.dev/myschulich/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/computer-sm.png" alt="icon"> MySchulich</a>
-                    </li>
+            <div class="row-2">
+                <div class="col-1">
+                <ul class="navbar-2">
+                        <li><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/schulich-logo.png" alt="Schulich logo" /></li>
+                        <li>Menu</li>
                 </ul>
+                </div>
+                <div class="col-2">
+                    <h1>Suitability</h1>
+                </div>
             </div>
-        </div>
-        <div class="right">
-            <div class="threecolumns">
-                <div class="col33">
-                    <div class="mktoText" id="footercol1" mktoName="Footer - Links Col 1">
-                        <h2 class="h1">Information for</h2>
+        </nav>
+
+        <!-- END Navbar -->
+
+
+        <!-- Form -->
+        <script src="//pages.schulich.yorku.ca/js/forms2/js/forms2.min.js"></script>
+        <section class="form-section"><form id="mktoForm_1051"></form></section>
+        <script>
+            MktoForms2.loadForm("//pages.schulich.yorku.ca", "405-LBQ-280", 1051);
+        </script>
+        <!-- END Form -->
+
+
+        <section class="icons-container">
+            <ul class="program-icons__list">
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="#details">
+                        <img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/magnifyingglass.png" alt="graphics">
+                        <h3 class="program-icons__title">View All Program Details</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="https://issuu.com/schulichschool/docs/2020_mba_viewbook_out" target="_blank">
+                        <img src="brochure.png" alt="graphics">
+                        <h3 class="program-icons__title">Read the Program Brochure</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/computer.png">
+                        <img src="computer.png" alt="graphics">
+                        <h3 class="program-icons__title">Connect With Admissions</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/watch.png">
+                        <img src="watch.png" alt="graphics">
+                        <h3 class="program-icons__title">Study Part-Time</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/direction.png">
+                        <img src="direction.png" alt="graphics">
+                        <h3 class="program-icons__title">Accelerate your MBA</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/direction.png">
+                        <img src="ticket.png" alt="graphics">
+                        <h3 class="program-icons__title">View Upcoming Events</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="container_100" id="footer">
+            <div class="container_inner section">
+
+                <div class="left logo">
+                    <div class="mktoText" id="footerlogo" mktoName="Logo">
+
+                    </div>
+                    <div class="mktoText" id="footersocial" mktoName="Footer - Social">
                         <ul>
-                            <li><a href="https://thewire.dev/schulich/future-students/">Future Students</a></li>
-                            <li><a href="https://thewire.dev/schulich/current-students/undergraduate-students/">Current Students Undergraduate</a></li>
-                            <li><a href="https://thewire.dev/schulich/current-students/graduate-students/">Current Students Graduate</a></li>
-                            <li><a href="https://thewire.dev/schulich/alumni/">Alumni</a></li>
-                            <li><a href="https://thewire.dev/schulich/donors/">Donors</a></li>
-                            <li><a href="https://thewire.dev/schulich/student-life-services/career-centre/for-recruiters/">Recruiters</a></li>
-                            <li><a href="https://thewire.dev/schulich/myschulich/">Faculty &amp; Staff</a></li>
-                            <li><a href="https://thewire.dev/schulich/media-centre/">Media</a></li>
+                            <li class="mktoText" id="footerlogo" mktoName="Logo">
+                                <a href="http://yorku.ca" target="_blank" title="York University Website"><img class="york-schulich-logo" src="https://thewire.dev/schulich/wp-content/themes/schulich/img/schulich-york-logo.png" alt="Schulich - York University"></a>
+                            </li>
+                            <li>
+                                <a href="https://thewire.dev/about/directions/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/location-sm.png" alt="icon"> Directions</a>
+                            </li>
+                            <li>
+                                <a href="mailto:concierge@schulich.yorku.ca"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/mail-sm.png" alt="icon"> Location Inquiries</a>
+                            </li>
+                            <li>
+                                <a href="/about/contact-directory/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/contacts-sm.png" alt="icon"> Contact Directory</a>
+                            </li>
+                            <li>
+                                <a href="https://calendar.schulich.yorku.ca/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/calendar-sm.png" alt="icon"> Event Calendar</a>
+                            </li>
+                            <li>
+                                <a href="https://thewire.dev/myschulich/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/computer-sm.png" alt="icon"> MySchulich</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col33">
-                    <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
-                        <h2 class="h1">Go to</h2>
-                        <ul class="nav nav--footer-right">
-                            <li class="nav__item"><a href="https://thewire.dev/schulich/about/">About</a></li>
-                            <li class="nav__item"><a href="https://thewire.dev/schulich/admissions/">Admissions</a></li>
-                            <li class="nav__item"><a href="https://thewire.dev/schulich/faculty/">Faculty Listing</a></li>
-                            <li class="nav__item"><a href="https://thewire.dev/schulich/faculty-research/">Faculty Projects</a></li>
-                            <li class="nav__item"><a href="https://thewire.dev/schulich/student-life-services/student-life/">Student Life at Schulich</a></li>
-                            <li class="nav__item"><a href="https://thewire.dev/schulich/student-life-services/student-services/">Services for Students</a></li>
-                            <li class="nav__item"><a href="https://schulich.yorku.ca/wellness">Wellness Suite</a></li>
-                            <li class="nav__item"><a href="http://site.info.yorku.ca/privacy-legal/">Privacy</a></li>
-                            <li class="nav__item"><a href="https://schulich.yorku.ca/site-map/">Site Map</a></li>
-                        </ul>
+                <div class="right">
+                    <div class="threecolumns">
+                        <div class="col33">
+                            <div class="mktoText" id="footercol1" mktoName="Footer - Links Col 1">
+                                <h2 class="h1">Information for</h2>
+                                <ul>
+                                    <li><a href="https://thewire.dev/schulich/future-students/">Future Students</a></li>
+                                    <li><a href="https://thewire.dev/schulich/current-students/undergraduate-students/">Current Students Undergraduate</a></li>
+                                    <li><a href="https://thewire.dev/schulich/current-students/graduate-students/">Current Students Graduate</a></li>
+                                    <li><a href="https://thewire.dev/schulich/alumni/">Alumni</a></li>
+                                    <li><a href="https://thewire.dev/schulich/donors/">Donors</a></li>
+                                    <li><a href="https://thewire.dev/schulich/student-life-services/career-centre/for-recruiters/">Recruiters</a></li>
+                                    <li><a href="https://thewire.dev/schulich/myschulich/">Faculty &amp; Staff</a></li>
+                                    <li><a href="https://thewire.dev/schulich/media-centre/">Media</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col33">
+                            <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
+                                <h2 class="h1">Go to</h2>
+                                <ul class="nav nav--footer-right">
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/about/">About</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/admissions/">Admissions</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/faculty/">Faculty Listing</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/faculty-research/">Faculty Projects</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/student-life-services/student-life/">Student Life at Schulich</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/student-life-services/student-services/">Services for Students</a></li>
+                                    <li class="nav__item"><a href="https://schulich.yorku.ca/wellness">Wellness Suite</a></li>
+                                    <li class="nav__item"><a href="http://site.info.yorku.ca/privacy-legal/">Privacy</a></li>
+                                    <li class="nav__item"><a href="https://schulich.yorku.ca/site-map/">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="section-bottom">
-        <div class="container">
+            <div class="section-bottom">
+                <div class="container">
 
-    <ul class="social-icons">
-        <li class="social-icons__item">
-            <a class="social-icons__link" target="_blank" href="https://www.facebook.com/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/facebook-sm.png" alt="facebook icon"><span class="visuallyhidden">Facebook</span></a>
-        </li>
-        <li class="social-icons__item">
-            <a class="social-icons__link" target="_blank" href="https://twitter.com/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/twitter-sm.png" alt="twitter icon"><span class="visuallyhidden">Twitter</span></a>
-        </li>
-        <li class="social-icons__item">
-            <a class="social-icons__link" target="_blank" href="https://www.youtube.com/user/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/youtube-sm.png" alt="youtube icon"><span class="visuallyhidden">YouTube</span></a>
-        </li>
-        <li class="social-icons__item">
-            <a class="social-icons__link" target="_blank" href="https://www.linkedin.com/company/schulichbusiness"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/linkedin-sm.png" alt="linkedin icon"><span class="visuallyhidden">LinkedIn</span></a>
-        </li>
-        <li class="social-icons__item">
-            <a class="social-icons__link" target="_blank" href="https://instagram.com/schulichschool/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/instagram-sm.png" alt="instagram icon"><span class="visuallyhidden">Instagram</span></a>
-        </li>
-    </ul>
-    <p class="copyright">© Copyright 2021 The Schulich School of Business, York University.</p>
-</div>
-    </div>
-</footer>
+                    <ul class="social-icons">
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://www.facebook.com/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/facebook-sm.png" alt="facebook icon"><span class="visuallyhidden">Facebook</span></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://twitter.com/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/twitter-sm.png" alt="twitter icon"><span class="visuallyhidden">Twitter</span></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://www.youtube.com/user/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/youtube-sm.png" alt="youtube icon"><span class="visuallyhidden">YouTube</span></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://www.linkedin.com/company/schulichbusiness"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/linkedin-sm.png" alt="linkedin icon"><span class="visuallyhidden">LinkedIn</span></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://instagram.com/schulichschool/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/instagram-sm.png" alt="instagram icon"><span class="visuallyhidden">Instagram</span></a>
+                        </li>
+                    </ul>
+                    <p class="copyright">© Copyright 2021 The Schulich School of Business, York University.</p>
+                </div>
+            </div>
+        </footer>
 
-<!-- END Footer -->
+        <!-- END Footer -->
 
-<script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
-<script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
+        <script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
+        <script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,8 @@ body {
     margin: 0;
 }
 
-form {
+form,
+#formtext {
     display: none;
 }
 
@@ -24,8 +25,23 @@ footer .container {
 
 /* fonts and font colors */
 
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+form {
+    font-family: "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
 a {
     text-decoration: none;
+}
+
+nav,
+nav li,
+nav a {
+    font-size: 11.6px;
+    color: #ffffff;
 }
 
 
@@ -36,24 +52,94 @@ a {
 
 nav {
     width: 100vw;
-}
-
-.navbar-1 {
-    border: solid 1px red;
-    padding: 0 3rem 4rem;
-    margin: 0 auto;
-}
-
-.navbar-2 {
-    border: solid 1px green;
+    background-color: #376886;
 }
 
 nav ul li {
     list-style: none;
 }
 
+.navbar-1,
+.navbar-2 {
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+    display: flex;
+    justify-items: flex-start;
+}
+
+.row-1,
+.row-2 {
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-1 {
+    width: 70%;
+    border: solid 1px red;
+}
+
+.col-2 {
+    border: solid 2px blue;
+    width: 30%;
+}
+
+.col-2,
+.col-2 ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    line-height: 2rem;
+}
+
+.nav-button {
+    border: solid 1px white;
+    padding: 0.2rem 1rem;
+}
+
+.nav-button img {
+    margin-top: 0.5rem;
+    height: 1rem;
+}
+
 
 /* end of navbar */
+
+
+/* form */
+
+.form-section {
+    background-color: #1e546e;
+    width: 100vw !important;
+}
+
+form {
+    margin: 0 auto;
+    width: 75vw;
+    background-color: #ffffff;
+    border: solid 1px red;
+    padding: 1rem;
+}
+
+#formtext {
+    background-color: lightblue;
+    width: 100vw;
+}
+
+#formtext .section {
+    border: solid 1px black;
+    width: 75vw;
+}
+
+.right,
+input {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* end of form */
 
 
 /* icons container */
