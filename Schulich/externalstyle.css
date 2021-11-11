@@ -52,6 +52,14 @@ nav a {
     color: #ffffff;
 }
 
+@media (max-width: 870px) {
+    nav,
+    nav li,
+    nav a {
+        font-size: 0.72rem;
+    }
+}
+
 h3 {
     font-size: 1rem;
     color: #464341;
@@ -67,10 +75,6 @@ h3 {
     display: inline-block;
     padding: 0;
     height: 2.8rem;
-}
-
-.button-item a {
-    /* background-color: red; */
 }
 
 .button-item:hover {
@@ -403,6 +407,10 @@ footer .social-icons {
     min-width: 270px;
 }
 
+.section-bottom img:hover {
+    filter: brightness(50%);
+}
+
 @media (max-width: 1085px) {
     .section-bottom p {
         order: 3;
@@ -452,14 +460,17 @@ footer .social-icons {
 
 /* sections general width */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .row-1,
     .row-2,
     section,
-    .form-section,
+    .form-section form,
     .icons-container,
     footer .section {
         width: 90vw !important;
+    }
+    .form-section {
+        width: 100vw !important;
     }
 }
 
@@ -470,5 +481,37 @@ footer .social-icons {
     footer .section,
     footer .container {
         width: 50vw !important;
+    }
+}
+
+
+/* toggle menu */
+
+.toggle-menu-icon {
+    display: none;
+}
+
+.toggle-check {
+    display: none;
+}
+
+@media(max-width: 630px) {
+    nav .row-1 {
+        display: none;
+    }
+    .toggle-menu-icon {
+        margin-left: 2rem;
+        display: inline-block;
+        height: 1rem;
+        width: auto;
+    }
+    .toggle-check {
+        display: block;
+        padding: 4rem;
+        height: 5rem;
+        width: auto;
+        position: absolute;
+        left: 10rem;
+        top: 0.5rem;
     }
 }
