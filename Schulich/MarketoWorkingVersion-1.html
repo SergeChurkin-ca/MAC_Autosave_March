@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en">
+<![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en">
+    <![endif]-->
+<!--[if IE 8 ]>
+    <html class="ie ie8" lang="en">
+        <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <link rel="stylesheet" href="formstyles.css" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/LP_MAC_Style.css" rel="stylesheet">
+    <link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
+
+    <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');" allowHtml="true">
+    <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Lato" allowHtml="true">
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://favicon.io/favicon.ico" allowHtml="true">
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <link rel="icon" type="image/x-icon" href="${favicon}" />
+    <title>${pageTitle}</title>
+    <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="220" allowHtml="true">
+    <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
+    <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
+    <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
+    <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
+    <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
+    <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
+
+
+    <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#1F203E">
+    <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
+    <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
+    <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
+
+
+    <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
+    <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}"
+        false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#ffffff">
+    <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
+    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+
+
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}"
+        false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
+    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
+    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
+    <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
+    <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
+
+    <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
+    <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
+    <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
+    <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
+    <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
+    <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
+    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
+
+
+
+    <style>
+       html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+     
+
+.row-1,
+.row-2,
+.icons-container,
+footer .section {
+    max-width: 2000px;
+}
+
+.flex,
+nav ul {
+    display: flex;
+}
+
+.flex {
+  flex-direction: column;
+}
+.flex section,
+nav ul,
+footer .section,
+footer .container {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+
+/* fonts and font colors */
+
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+form {
+    font-family: "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav,
+nav li,
+nav a {
+    font-size: 0.87rem;
+    color: #ffffff;
+}
+
+@media (max-width: 870px) {
+    nav,
+    nav li,
+    nav a {
+        font-size: 0.72rem;
+    }
+}
+
+h3 {
+    font-size: 1rem;
+    color: #464341;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    font-weight: 400 !important;
+}
+
+.left li a:hover {
+    font-weight: normal !important;
+}
+
+.button-item {
+    display: inline-block;
+    padding: 0;
+    height: 2.8rem;
+}
+
+.button-item:hover {
+    background-color: #dadada;
+}
+
+.icons-container h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #464341;
+    font-size: 2.21rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+footer h2 {
+    font-size: 0.87rem;
+    color: #807552;
+}
+
+footer a {
+    font-size: 0.75rem;
+    color: #464341;
+}
+
+footer p {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color: #766C4C;
+    font-size: 1rem;
+}
+
+.threecolumns a {
+    font-size: 0.75rem;
+}
+
+.threecolumns a:hover,
+.threecolumns a:focus,
+.threecolumns a:active {
+    color: #807552;
+    font-weight: normal !important;
+    transition: all 0.3s;
+}
+
+.threecolumns li {
+    line-height: 1.5;
+}
+
+
+/* end fonts and font colors */
+
+
+/* navabr */
+
+nav {
+    background-color: #376886;
+  	position: sticky;
+  	top: 0;
+  	z-index: 1;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+li:hover,
+a:hover {
+    cursor: pointer;
+}
+
+.navbar-1,
+.navbar-2 {
+    margin: 0 auto;
+    display: flex;
+    justify-items: flex-start;
+    gap: 1.27rem;
+}
+
+.navbar-1 {
+    padding: 0.7rem 0;
+}
+
+.row-1,
+.row-2 {
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-1 {
+    width: 70%;	
+}
+
+.col-2 {
+    width: 30%;
+}
+
+.col-2,
+.col-2 ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    line-height: 2rem;
+}
+
+.nav-button {
+    background-color: #1e5772;
+    padding: 0.2rem 1.2rem;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.nav-button img {
+    margin-top: 0.5rem;
+    height: 1rem;
+}
+
+.row-2 {
+    margin-top: 1rem;
+    
+}
+
+.top-logo {
+    height: 2.7rem;
+}
+
+.row-2 h1 {
+    font-size: 1.75rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.25;
+    font-weight: 400;
+  	margin-top: 0;
+}
+
+@media (max-width:400px) {
+    nav .row-2 {
+        display: block;
+    }
+    .row-2 h1 {
+        font-size: 1rem;
+    }
+    .row-2 .col-2 {
+        text-align: right;
+        width: 100%;
+        background-color: #376886;
+    }
+}
+
+
+/* end of navbar */
+
+
+/* form */
+
+.form-section {
+    background-color: #1e546e;
+    width: 100vw !important;
+    box-shadow: -3px 6px 4px #aaa;
+}
+
+form {
+    margin: 0 auto;
+    width: 75vw;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+#formtext {
+    background-color: lightblue;
+    width: 100vw;
+}
+
+#formtext .section {
+    border: solid 1px black;
+    width: 75vw;
+}
+
+.right,
+input {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/* --------- end of form */
+
+
+/* icons container */
+
+.icons-container {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.icons-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+.icons-container ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.icons-container ul li {
+    display: flex;
+    width: calc((80vw / 4) - 4rem);
+    min-width: 170px;
+    margin-top: 2rem;
+}
+
+.threecolumns {
+    margin-top: 1rem !important;
+  	display: flex;
+}
+
+.threecolumns ul {
+  list-style: none;
+  padding: 0;
+}
+.col33 {
+  width: 100%;
+  min-width: 250px;
+}
+
+@media (max-width: 800px) {
+    .icons-container ul li {
+        width: calc((80vw / 2) - 5rem);
+    }
+    .icons-container ul li {
+        min-width: 100px;
+    }
+}
+
+.icons-container img {
+    width: auto;
+    margin-bottom: 1rem;
+    height: 4.5rem;
+    max-height: 170px;
+}
+
+
+/* --- end of icons container */
+
+
+/* footer top section  */
+
+footer {
+    border-top: solid 3rem #f3f3f3
+}
+
+footer .section {
+    display: flex !important;
+    width: 75vw !important;
+    margin: 0 auto !important;
+    margin-bottom: 1.5rem !important;
+}
+footer .right {
+  /* width: 50% !important; */
+}
+footer .left {
+  width: 45% !important;
+  margin-right: 2rem;
+}
+.york-schulich-logo {
+    width: 20rem;
+}
+
+.left ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  	padding: 0;
+}
+
+.left ul li {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    margin-top: 0.6rem;
+    background-color: #f3f3f3;
+}
+
+.button-item a {
+    padding: 0.5rem 1rem;
+}
+
+.left ul li:nth-child(1n+2) img {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.right li {
+    white-space: nowrap;
+}
+
+
+/* social icons section bottom */
+
+.section-bottom {
+    background-color: #f3f3f3;
+}
+
+.visuallyhidden {
+    visibility: hidden;
+}
+
+footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: top;
+    padding: 0.3rem;
+}
+
+.social-icons {
+    align-content: center;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.social-icons li {
+    height: 1.7rem;
+    width: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-icons li a {
+    width: 1.5rem;
+    display: flex;
+    padding: 0;
+    justify-items: center;
+}
+
+.social-icons li:nth-child(1) img {
+    width: 1rem;
+}
+.social-icons li img {
+    width: 1.5rem;
+}
+.section-bottom {
+    padding: 1rem 3rem;
+}
+
+.section-bottom .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-bottom p {
+    display: flex;
+    order: 1;
+    min-width: 250px;
+    margin-right: 1rem;
+}
+
+.section-bottom .social-icons {
+    order: 2;
+    min-width: 270px;
+}
+
+.section-bottom img:hover {
+    filter: brightness(50%);
+}
+
+@media (max-width: 1085px) {
+    .section-bottom p {
+        order: 3;
+    }
+}
+
+@media (max-width: 900px) {
+    footer .section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .left {
+        width: 100% !important;
+    }
+    footer .right li {
+        text-align: unset;
+        margin-right: 1rem;
+    }
+    .threecolumns {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+    .col33 {
+        text-align: left !important;
+        width: 50% !important;
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    footer .section {
+        width: 90vw !important;
+    }
+  .section-bottom {
+    padding: 0.5rem;
+  }
+    .york-schulich-logo {
+        width: 100%;
+    }
+    #footersocial ul {
+        display: inline;
+        padding: 1rem;
+    }
+    #footersocial ul li {
+        float: left;
+        margin: 0.4rem;
+    }
+  	.section-bottom .container {
+      width: 95% !important;
+      margin: 0 auto;
+    }
+  	footer p {
+      font-size: 0.6rem;
+    }
+}
+
+
+/* sections general width */
+
+@media (max-width: 800px) {
+    .row-1,
+    .row-2,
+    section,
+    .form-section form,
+    .icons-container,
+    footer .section {
+        width: 90vw !important;
+    }
+    .form-section {
+        width: 100vw !important;
+    }
+}
+
+@media (min-width: 2000px) {
+    .row-1,
+    .row-2,
+    .icons-container,
+    footer .section,
+    footer .container {
+        width: 50vw !important;
+    }
+}
+
+
+/* toggle menu */
+
+.toggle-menu-icon {
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    width: 3rem;
+    padding: 3rem 6rem 0 0;
+}
+
+.toggle-closed {
+    display: none;
+}
+
+.toggle-menu-icon span,
+.toggle-menu-icon img {
+    position: absolute;
+    font-size: 1rem;
+    top: 0.7rem;
+    left: 0.8rem;
+}
+
+.toggle-menu-icon span {
+    margin-left: 1.5rem;
+}
+
+input:hover~.row-2 .toggle-menu-icon,
+.toggle-menu-icon:hover,
+input:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.toggle-check {
+    display: none;
+}
+
+@media(max-width: 630px) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #376886;
+      	padding: 0.5rem;
+    }
+    nav .row-1 {
+        display: none;
+        z-index: 1;
+        height: 20vh;
+        position: absolute;
+        top: 4rem;
+        opacity: 1;
+        z-index: 1;
+        background-color: #1e546e;
+        margin: 0px -100%;
+        padding: 0 100%;
+    }
+    .navbar-1 {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        background-color: #1e546e;
+        gap: 0;
+        margin: 0 auto !important;
+        position: relative;
+    }
+    .navbar-1 li {
+        display: flex;
+        flex: 1 1 40%;
+    }
+    .navbar-1 li a {
+        padding: 1rem 5rem 1rem 1rem;
+        text-align: left;
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        min-width: 250px;
+    }
+    .navbar-1 li a:hover,
+    .navbar-1 li a:focus {
+        background: #1d3c4b;
+    }
+    nav .row-2 {
+        margin-top: 0;
+    }
+    .toggle-menu-icon,
+    .toggle-menu-icon img {
+        margin-left: 0.3rem;
+        display: inline-block;
+        height: 1rem;
+        width: auto;
+    }
+    .toggle-check {
+        display: block;
+        padding: 4rem;
+        height: 5rem;
+        position: absolute;
+        left: 10rem;
+        top: 0.1rem;
+        transform: translateX(2);
+        font-size: 7rem;
+        width: 5rem;
+        height: 50px;
+        opacity: 0;
+        z-index: 3;
+    }
+    .toggle-closed img {
+        width: 0.8rem;
+        height: auto;
+        margin-top: 0.2rem;
+    }
+    input:checked+.row-1 {
+        display: block;
+        transition: all 0.5s;
+    }
+    input:checked~.row-2 .toggle-open {
+        display: none;
+    }
+    input:checked~.row-2 .toggle-closed,
+    input:checked~.row-2 .toggle-menu-icon {
+        display: inline;
+    }
+}
+     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                  </style>
+</style>                                                                                                                                                                                                                                                                                                                                                                                                                                            
+</head>
+
+<body>
+    <div class="flex">
+
+        <!-- Navbar -->
+        <nav>
+           <input class="toggle-check" type="checkbox"/>
+            <div class="row-1">
+                <div class="col-1">
+                    <ul class="navbar-1">
+                        <li><a href="https://thewire.dev/schulich/future-students/">Future Students</a></li>
+                        <li><a href="https://thewire.dev/schulich/donors/">Current Students</a></li>
+                        <li><a href="https://thewire.dev/schulich/donors/">Alumni</a></li>
+                        <li><a href="https://thewire.dev/schulich/donors/">Donors</a></li>
+                        <li><a href="https://thewire.dev/schulich/student-life-services/career-centre/for-recruiters/">Recruiters</a></li>
+                        <li><a href="https://thewire.dev/schulich/media-centre/">Media</a></li>
+                    </ul>
+                </div>    
+                <div class="col-2">
+                    <ul>
+                    <li class="nav-button">MySchulich</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="row-2">
+                <div class="col-1">
+                        <a href="https://thewire.dev/schulich""><img class="top-logo" src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/schulich-logo.png" alt="Schulich logo" /></a>
+                        <div class="toggle-menu-icon">
+                            <div class="toggle-closed">
+                                <img class="toggle-closed" src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/icon-close.png" alt="toggle menu icon" />
+                                <span class="toggle-closed">Close</span>
+                                </div>
+                            <div class="toggle-open">
+                              <img class="toggle-open" src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/hamburger-icon.png" alt="toggle menu icon" />
+                                <span class="toggle-open">Menu</span>
+                            </div>
+                        </div>
+                      
+                </div>
+                <div class="col-2">
+                    <a href="#">
+                        <h1>Suitability</h1>
+                    </a>
+                </div>
+               
+            </div>
+        </nav>
+        <!-- END Navbar -->
+
+
+        <!-- Form -->
+        <script src="//pages.schulich.yorku.ca/js/forms2/js/forms2.min.js"></script>
+        <section class="form-section"><form id="mktoForm_1051"></form></section>
+        <script>
+            MktoForms2.loadForm("//pages.schulich.yorku.ca", "405-LBQ-280", 1051);
+        </script>
+        <!-- END Form -->
+
+
+        <section class="icons-container">
+            <h2>Want to learn more?</h2>
+            <ul class="program-icons__list">
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="#details">
+                        <img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/magnifyingglass.png" alt="graphics">
+                        <h3 class="program-icons__title">View All Program Details</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="#" target="_blank">
+                        <img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/brochure.png" alt="graphics">
+                        <h3 class="program-icons__title">Read the Program Brochure</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="#">
+                        <img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/computer.png" alt="graphics">
+                        <h3 class="program-icons__title">Connect With Admissions</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="#">
+                        <img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/watch.png" alt="graphics">
+                        <h3 class="program-icons__title">Study Part-Time</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="#">
+                        <img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/direction.png" alt="graphics">
+                        <h3 class="program-icons__title">Accelerate your MBA</h3>
+                    </a>
+                </li>
+                <li class="program-icons__item">
+                    <a class="program-icons__link" href="#">
+                        <img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/ticket.png" alt="graphics">
+                        <h3 class="program-icons__title">View Upcoming Events</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="container_100" id="footer">
+            <div class="container_inner section">
+
+                <div class="left logo">
+                    <div class="mktoText" id="footerlogo" mktoName="Logo">
+
+                    </div>
+                    <div class="mktoText" id="footersocial" mktoName="Footer - Social">
+                        <ul>
+                            <li class="mktoText" id="footer-logo" mktoName="Logo-footer">
+                                <a href="http://yorku.ca" target="_blank" title="York University Website"><img class="york-schulich-logo" src="https://thewire.dev/schulich/wp-content/themes/schulich/img/schulich-york-logo.png" alt="Schulich - York University"></a>
+                            </li>
+                            <li class="button-item">
+                                <a href="https://thewire.dev/about/directions/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/location-sm.png" alt="icon"> Directions</a>
+                            </li>
+                            <li class="button-item">
+                                <a href="mailto:concierge@schulich.yorku.ca"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/mail-sm.png" alt="icon"> Location Inquiries</a>
+                            </li>
+                            <li class="button-item">
+                                <a href="/about/contact-directory/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/contacts-sm.png" alt="icon"> Contact Directory</a>
+                            </li>
+                            <li class="button-item">
+                                <a href="https://calendar.schulich.yorku.ca/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/calendar-sm.png" alt="icon"> Event Calendar</a>
+                            </li>
+                            <li class="button-item">
+                                <a href="https://thewire.dev/myschulich/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/computer-sm.png" alt="icon"> MySchulich</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="threecolumns">
+                        <div class="col33">
+                            <div class="mktoText" id="footercol1" mktoName="Footer - Links Col 1">
+                                <h2 class="h1">Information for</h2>
+                                <ul>
+                                    <li><a href="https://thewire.dev/schulich/future-students/">Future Students</a></li>
+                                    <li><a href="https://thewire.dev/schulich/current-students/undergraduate-students/">Current Students Undergraduate</a></li>
+                                    <li><a href="https://thewire.dev/schulich/current-students/graduate-students/">Current Students Graduate</a></li>
+                                    <li><a href="https://thewire.dev/schulich/alumni/">Alumni</a></li>
+                                    <li><a href="https://thewire.dev/schulich/donors/">Donors</a></li>
+                                    <li><a href="https://thewire.dev/schulich/student-life-services/career-centre/for-recruiters/">Recruiters</a></li>
+                                    <li><a href="https://thewire.dev/schulich/myschulich/">Faculty &amp; Staff</a></li>
+                                    <li><a href="https://thewire.dev/schulich/media-centre/">Media</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col33">
+                            <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
+                                <h2 class="h1">Go to</h2>
+                                <ul class="nav nav--footer-right">
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/about/">About</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/admissions/">Admissions</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/faculty/">Faculty Listing</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/faculty-research/">Faculty Projects</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/student-life-services/student-life/">Student Life at Schulich</a></li>
+                                    <li class="nav__item"><a href="https://thewire.dev/schulich/student-life-services/student-services/">Services for Students</a></li>
+                                    <li class="nav__item"><a href="https://schulich.yorku.ca/wellness">Wellness Suite</a></li>
+                                    <li class="nav__item"><a href="http://site.info.yorku.ca/privacy-legal/">Privacy</a></li>
+                                    <li class="nav__item"><a href="https://schulich.yorku.ca/site-map/">Site Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bottom">
+                <div class="container">
+                    <ul class="social-icons">
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://www.facebook.com/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/facebook-sm.png" alt="facebook icon"><span class="visuallyhidden">Facebook</span></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://twitter.com/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/twitter-sm.png" alt="twitter icon"><span class="visuallyhidden">Twitter</span></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://www.youtube.com/user/SchulichSchool"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/youtube-sm.png" alt="youtube icon"><span class="visuallyhidden">YouTube</span></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://www.linkedin.com/company/schulichbusiness"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/linkedin-sm.png" alt="linkedin icon"><span class="visuallyhidden">LinkedIn</span></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a class="social-icons__link" target="_blank" href="https://instagram.com/schulichschool/"><img src="https://pages.schulich.yorku.ca/rs/405-LBQ-280/images/instagram-sm.png" alt="instagram icon"><span class="visuallyhidden">Instagram</span></a>
+                        </li>
+                    </ul>
+                    <p class="copyright">© Copyright 2021 The Schulich School of Business, York University.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- END Footer -->
+
+        <script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
+        <script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
+    </div>
+</body>
+
+</html>
