@@ -499,8 +499,9 @@ footer .social-icons {
     nav .row-1 {
         display: none;
     }
-    .toggle-menu-icon {
-        margin-left: 2rem;
+    .toggle-menu-icon,
+    .toggle-menu-icon img {
+        margin-left: 0.3rem;
         display: inline-block;
         height: 1rem;
         width: auto;
@@ -512,6 +513,11 @@ footer .social-icons {
         width: auto;
         position: absolute;
         left: 10rem;
-        top: 0.5rem;
+        top: 1rem;
+        transform: translateX(2);
+        font-size: 7rem;
+        width: 70px;
+        height: 50px;
+        visibility: hidden;
     }
 }
