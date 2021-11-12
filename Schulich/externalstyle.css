@@ -525,6 +525,7 @@ footer .social-icons {
     margin-left: 1.5rem;
 }
 
+input:hover~.row-2 .toggle-menu-icon,
 .toggle-menu-icon:hover {
     cursor: pointer;
     background: rgba(0, 0, 0, 0.7);
@@ -544,7 +545,6 @@ footer .social-icons {
     nav .row-1 {
         display: none;
         z-index: 1;
-        display: block;
         height: 20vh;
         position: absolute;
         top: 4.3rem;
@@ -595,14 +595,24 @@ footer .social-icons {
         display: block;
         padding: 4rem;
         height: 5rem;
-        width: auto;
         position: absolute;
         left: 10rem;
         top: 0.1rem;
         transform: translateX(2);
         font-size: 7rem;
-        width: 70px;
+        width: 5rem;
         height: 50px;
-        visibility: hidden;
+        opacity: 0;
+        z-index: 3;
+    }
+    input:checked+.row-1 {
+        display: block;
+        transition: all 0.5s;
+    }
+    input:checked~.row-2 .toggle-open {
+        display: none;
+    }
+    input:checked~.row-2 .toggle-closed {
+        display: inline;
     }
 }
