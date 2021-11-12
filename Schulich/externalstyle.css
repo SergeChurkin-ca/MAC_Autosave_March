@@ -489,6 +489,32 @@ footer .social-icons {
 
 .toggle-menu-icon {
     display: none;
+    position: absolute;
+    top: 0;
+    width: 3rem;
+    /* padding-right: 3rem; */
+    padding: 3rem 6rem 0 0;
+}
+
+.toggle-closed {
+    display: none;
+}
+
+.toggle-menu-icon span,
+.toggle-menu-icon img {
+    position: absolute;
+    font-size: 1rem;
+    top: 0.7rem;
+    left: 0.8rem;
+}
+
+.toggle-menu-icon span {
+    margin-left: 1.5rem;
+}
+
+.toggle-menu-icon:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .toggle-check {
@@ -498,6 +524,9 @@ footer .social-icons {
 @media(max-width: 630px) {
     nav .row-1 {
         display: none;
+    }
+    nav .row-2 {
+        margin-top: 0;
     }
     .toggle-menu-icon,
     .toggle-menu-icon img {
