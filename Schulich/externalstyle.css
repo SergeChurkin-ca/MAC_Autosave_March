@@ -526,7 +526,8 @@ footer .social-icons {
 }
 
 input:hover~.row-2 .toggle-menu-icon,
-.toggle-menu-icon:hover {
+.toggle-menu-icon:hover,
+input:hover {
     cursor: pointer;
     background: rgba(0, 0, 0, 0.7);
 }
@@ -605,6 +606,11 @@ input:hover~.row-2 .toggle-menu-icon,
         opacity: 0;
         z-index: 3;
     }
+    .toggle-closed img {
+        width: 0.8rem;
+        height: auto;
+        margin-top: 0.2rem;
+    }
     input:checked+.row-1 {
         display: block;
         transition: all 0.5s;
@@ -612,7 +618,8 @@ input:hover~.row-2 .toggle-menu-icon,
     input:checked~.row-2 .toggle-open {
         display: none;
     }
-    input:checked~.row-2 .toggle-closed {
+    input:checked~.row-2 .toggle-closed,
+    input:checked~.row-2 .toggle-menu-icon {
         display: inline;
     }
 }
