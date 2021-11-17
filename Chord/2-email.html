@@ -8,6 +8,11 @@ font-family: Arial, serif !important;
 }
 </style>
 <![endif]-->
+
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+<meta name="color-scheme" content="only">
+                
 <!-- Global variables -->
 <meta class="mktoColor" id="bodyBgColor" mktoname="EM Body BG Color" default="#F9F7EE" />
 <meta class="mktoColor" id="bodyborderColor" mktoname="Body Border Color" default="#F6F9FC" />
@@ -203,7 +208,29 @@ th{font-weight:normal !important}
 }
 
                                                     
-
+@media (prefers-color-scheme: dark ) {
+  /* Shows Dark Mode-Only Content, Like Images */
+    .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+   
+  /* Hides Light Mode-Only Content, Like Images */
+  .light-img { display:none; display:none !important; }
+  
+  .logocontainer {
+      background-color: #000000 !important;
+  }
+  .main {
+      background-color: #ffffff !important;
+  }
+  .main .mktoText{
+      color: #000000 !important;
+  }
+   
+}
+/* Shows Dark Mode-Only Content, Like Images */
+[data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+ 
+/* Hides Light Mode-Only Content, Like Images */
+[data-ogsc] .light-img { display:none; display:none !important; }
 
 </style>
 </head>
@@ -218,7 +245,7 @@ th{font-weight:normal !important}
 <!--Logo-->
 <table class="mktoModule" mktoName="Logo" id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
-<td bgColor="${logobgclr}" valign="top" style="background-color:${logobgclr};vertical-align: top;">
+<td bgColor="${logobgclr}" class="logocontainer" valign="top" style="background-color:${logobgclr};vertical-align: top;">
 <table class="inner_table fullWid" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px; border-collapse: collapse;border-spacing: 0;" border="0" width="590">
 <tr>
 <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
@@ -227,8 +254,10 @@ th{font-weight:normal !important}
 <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
 <div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
     <a href="#" target="_blank">
-        <img width="190" class="logowidth logo-black" alt="logo" src="http://230-MHA-188.mktoweb.com/rs/230-MHA-188/images/logo-main.png" border="0" style="height:auto !important;" />
-        <img width="190" class="logowidth logo-white" alt="logo" src="https://pages.chord.co/rs/230-MHA-188/images/logo-white.png" border="0" style="height:auto !important;" />
+        <img width="190" class="logowidth light-img" alt="logo" src="http://230-MHA-188.mktoweb.com/rs/230-MHA-188/images/logo-main.png" border="0" style="height:auto !important;" />
+         <!--[if !mso]><! --><div class="dark-img" style="mso-hide: all; display:none; overflow:hidden; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;" align="center">
+         <img width="190" class="logowidth" alt="logo" src="https://pages.chord.co/rs/230-MHA-188/images/logo-white.png" border="0" style="height:auto !important;" />
+         </div><!--<![endif]-->
         </a>
 </div>
 </th>
@@ -251,7 +280,7 @@ th{font-weight:normal !important}
 <v:fill type="frame" src="${banner1_img}" Color="${banner-bg-color}" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
-<table cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="690">
+<table cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="590">
 <tr>
     <td valign="top">
         <table class="inner_table" width="590" style="margin: 0 auto; width: 590px; border-spacing: 0px; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" align="center">
