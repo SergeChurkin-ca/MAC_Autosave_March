@@ -26,6 +26,8 @@ font-family: Arial, serif !important;
     <meta mktomodulescope="true" class="mktoNumber" id="top_pad28" mktoname="Top Padding" default="28" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="top_pad30" mktoname="Top Padding" default="30" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="top_pad40" mktoname="Top Padding" default="40" /> 
+    <meta mktomodulescope="true" class="mktoNumber" id="top_pad50" mktoname="Top Padding" default="50" /> 
+    <meta mktomodulescope="true" class="mktoNumber" id="top_pad60" mktoname="Top Padding" default="60" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="top_pad70" mktoname="Top Padding" default="70" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btm_pad0" mktoname="Bottom Padding" default="0" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btm_pad1" mktoname="Bottom Padding" default="1" /> 
@@ -66,7 +68,10 @@ font-family: Arial, serif !important;
     <meta mktomodulescope="true" class="mktoString" id="btnText4" mktoname="Button Text4" default="Contact Us" />
     <meta mktomodulescope="true" class="mktoString" id="btnText" mktoname="Button Text" default="Read More" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btn1FontSize" mktoname="Button Font Size (px)" default="18" /> 
-    <meta mktomodulescope="true" class="mktoString" id="btnURL" mktoname="Button URL" default="#" /> 
+    <meta mktomodulescope="true" class="mktoString" id="btn1URL" mktoname="Button 1 URL" default="https://blog.hubspot.com/marketing/social-media-strategy-for-your-business" /> 
+     <meta mktomodulescope="true" class="mktoString" id="btn2URL" mktoname="Button 2 URL" default="https://business.adobe.com/blog/basics/shining-light-mysteries-dark-social-media#gs.eqqr5e" />
+     <meta mktomodulescope="true" class="mktoString" id="btn3URL" mktoname="Button 3 URL" default="https://www.marketing-automation.ca/blog-leveraging-marketing-automation-tools-to-boost-the-success-of-other-marketing-platforms.html" />
+     <meta mktomodulescope="true" class="mktoString" id="btn4URL" mktoname="Button 4 URL" default="#" />
     <meta mktomodulescope="true" class="mktoList" id="btnFontWeight" mktoname="Button Weight" values="300,400,500,600,bold" default="bold" /> 
     <meta mktomodulescope="true" class="mktoColor" id="btn2Color" mktoname="Button 2 Text Color" default="#ffffff" /> 
     <meta mktomodulescope="true" class="mktoColor" id="btn2BGColor" mktoname="Button 2 BG Color" default="#f15a23" /> 
@@ -75,7 +80,6 @@ font-family: Arial, serif !important;
     <meta mktomodulescope="true" class="mktoString" id="btn2Text" mktoname="Button 2 Text" default="Read More" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btn2FontSize" mktoname="Button 2 Font Size (px)" default="18" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btnLgFontSize" mktoname="Button 2 Font Size (px)" default="20" /> 
-    <meta mktomodulescope="true" class="mktoString" id="btn2URL" mktoname="Button 2 URL" default="#" /> 
     <meta mktomodulescope="true" class="mktoColor" id="DividerBGColor" mktoname="Divider Color" default="#d7d7d7" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="DividerHeight" mktoname="Divider Height (px)" default="1" /> 
     <meta mktomodulescope="true" class="mktoString" id="DividerWidth" mktoname="Divider Width (%)" default="90" /> 
@@ -233,7 +237,7 @@ th{font-weight:normal !important}
                                 <tr> 
                                   <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly;color: #595959; text-align: ${alignLeft};"> 
                                     <div class="mktoText" mktoname="Text" id="Copy">
-                                      <p><span style="font-size: 14px;font-family: Arial;color: #595959;">Hi {{lead.First Name:default=there}}, <br /><br /> In the era of social media, creating and maintaining an effective social media presence is a must-have for any marketing team. When leveraged effectively it provides digital marketers like us infinite opportunities. Whatever your industry, segment, or audience, a substantial portion of your customers and leads are on social. A strong social strategy allows your business to attract new followers, drive traffic leads and increase revenues. <br /><br /> This month’s newsletter is curated with valuable articles&nbsp;that emphasizes the importance of having social media strategy that boosts your business’ goals and how marketing automation technology and social media tools can go hand in hand to generate frictionless results.<br /><br /> Happy Reading!<br /> - The MAC Team</span></p>
+                                      <p><span style="font-size: 14px;font-family: '${fontfamily}', Arial;color: #595959;">Hi {{lead.First Name:default=there}}, <br /><br /> In the era of social media, creating and maintaining an effective social media presence is a must-have for any marketing team. When leveraged effectively it provides digital marketers like us infinite opportunities. Whatever your industry, segment, or audience, a substantial portion of your customers and leads are on social. A strong social strategy allows your business to attract new followers, drive traffic leads and increase revenues. <br /><br /> This month’s newsletter is curated with valuable articles&nbsp;that emphasizes the importance of having social media strategy that boosts your business’ goals and how marketing automation technology and social media tools can go hand in hand to generate frictionless results.<br /><br /> Happy Reading!<br /> - The MAC Team</span></p>
                                     </div> </td> 
                                 </tr> 
                                 <tr> 
@@ -278,22 +282,15 @@ th{font-weight:normal !important}
                                     <table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
                                       <tbody> 
                                         <tr> 
-                                          <th dir="ltr" width="236" align="left" class="block center" valign="top" style="vertical-align: top;"> 
+                                          <th dir="ltr" width="270" align="left" class="block center" valign="bottom" style="vertical-align: bottom;"> 
                                             
-                                            <div>
-                                              <table cellpadding="0" cellspacing="0" border="0">
-                                                <tbody>
-                                                  <tr>
-                                                    <td height="${top_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                            </div>
+                                        
                                             
                                             <div class="mktoImg" id="imgRight-img307b8679-065a-461b-940a-09e35fc57b97" mktoname="Image" mktolockimgsize="true">
-                                              <a href="https://blog.adobe.com/en/publish/2021/07/12/the-shift-to-cookieless-will-change-marketing-forever-5-reasons-to-get-there-ahead-of-the-competition.html#gs.cqinbu" target="_blank"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/smstrategy.png" width="236" alt="email-marketing5.png" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" /></a>
+                                              <a href="https://blog.hubspot.com/marketing/social-media-strategy-for-your-business" target="_blank">
+                                                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/smstrategy.png" width="270" alt="email-marketing5.png" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" /></a>
                                             </div> </th> 
-                                          <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th> 
+                                          <th class="hidden" style="font-size:1px; line-height: 1px;" width="5">&nbsp;</th> 
                                           <th dir="ltr" align="left" class="block top_pad" valign="top" style="vertical-align: top;"> 
                                             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
                                               <tbody> 
@@ -310,7 +307,7 @@ th{font-weight:normal !important}
                                                   <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
                         "> 
                                                     <div class="mktoText" mktoname="Text" id="imgright-SubHeadline307b8679-065a-461b-940a-09e35fc57b97">
-                                                      <p style="margin:0 auto;"><span style="font-size: 14px; font-family: Arial; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">What is your social media strategy? Is your audience highly engaged with your social media content? Is planning your social media strategy a tedious experience? If you relate to any of these problems read this article to learn how to create an effective social media strategy that aligns with your company’s goals and resources.</span></p>
+                                                      <p style="margin:0 auto;"><span style="font-size: 14px; line-height:145%;font-family: '${fontfamily}',Arial; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">What is your social media strategy? Is your audience highly engaged with your social media content? Is planning your social media strategy a tedious experience? If you relate to any of these problems read this article to learn how to create an effective social media strategy that aligns with your company’s goals and resources.</span></p>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
@@ -323,7 +320,7 @@ th{font-weight:normal !important}
                                                         <table cellpadding="0" cellspacing="0" border="0"> 
                                                           <tbody> 
                                                             <tr> 
-                                                              <td bgcolor="${btn2BGColor}" style="text-align: center;border:1px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btn2BorderRadius}px;"> <a style="text-decoration:none; color:${btn2Color};" href="${btn2URL}">${btnText1}</a> </td> 
+                                                              <td bgcolor="${btn2BGColor}" style="text-align: center;border:1px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btn2BorderRadius}px;"> <a style="text-decoration:none; color:${btn2Color};" href="${btn1URL}">${btnText1}</a> </td> 
                                                             </tr> 
                                                           </tbody> 
                                                         </table> 
@@ -391,7 +388,7 @@ th{font-weight:normal !important}
                                             </div>
 
                                             <div class="mktoImg" id="imgleft-imgf021ea2b-430d-4bef-a4ef-fde1122adf0d" mktoname="Image" mktolockimgsize="true">
-                                              <a href="https://www.marketing-automation.ca/blog-dos-and-donts-when-designing-marketo-emails.html" target="_blank"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/thinking.png" width="236" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" /></a>
+                                              <a href="https://business.adobe.com/blog/basics/shining-light-mysteries-dark-social-media#gs.eqqr5e" target="_blank"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/thinking.png" width="236" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" /></a>
                                             </div> </th> 
                                           <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th> 
                                           <th align="left" class="block top_pad" valign="top" style="vertical-align: top;"> 
@@ -410,7 +407,7 @@ th{font-weight:normal !important}
                                                   <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
                         "> 
                                                     <div class="mktoText" mktoname="Text" id="imgleft-copyf021ea2b-430d-4bef-a4ef-fde1122adf0d">
-                                                      <p style="margin:0;"><span style="font-size: 14px; font-family: Arial; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Ever wonder what the digital equivalent of “word of mouth” is? Well, it’s dark social sharing. This article explains why your social media paid advertising may not be giving you the ROI you need. It also, highlights where your efforts are going and why they maybe going unappreciated, along with how you can remedy the situation with solutions such as Oktopost.</span></p>
+                                                      <p style="margin:0;"><span style="font-size: 14px; line-height:145%;font-family: '${fontfamily}', Arial; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Ever wonder what the digital equivalent of “word of mouth” is? Well, it’s dark social sharing. This article explains why your social media paid advertising may not be giving you the ROI you need. It also, highlights where your efforts are going and why they maybe going unappreciated, along with how you can remedy the situation with solutions such as Oktopost.</span></p>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
@@ -477,21 +474,14 @@ th{font-weight:normal !important}
                                     <table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
                                       <tbody> 
                                         <tr> 
-                                          <th dir="ltr" width="236" align="left" class="block center" valign="top" style="vertical-align: top;"> 
+                                          <th dir="ltr" width="270" align="left" class="block center" valign="bottom" style="vertical-align: bottom;"> 
                                             
-                                            <div>
-                                              <table cellpadding="0" cellspacing="0" border="0">
-                                                <tbody>
-                                                  <tr>
-                                                    <td height="${top_pad28}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                            </div>
+                                          
                                             <div class="mktoImg" id="imgRight-img307b8679-065a-461b-940a-09e35fc57b97e2de6a33-bdc6-4c1f-8f9f-6e9e2f62be9a" mktoname="Image" mktolockimgsize="true">
-                                              <a href="https://blog.hubspot.com/marketing/email-marketing-guide?mkt_tok=MjE3LU5CVy05MDUAAAGAPUfBlU79F_FrM2mAEU111Uv79X7y2Qi8dS8f7Uqdov39Vv0eMJ8J6XW0ZduFFw272ezWQNDm1EiGJpICyQ" target="_blank"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/smtool.png" width="236" alt="email-marketing6.png" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" /></a>
+                                              <a href="https://www.marketing-automation.ca/blog-leveraging-marketing-automation-tools-to-boost-the-success-of-other-marketing-platforms.html" target="_blank">
+                                                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/smtool.png" width="270" alt="email-marketing6.png" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" /></a>
                                             </div> </th> 
-                                          <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th> 
+                                          <th class="hidden" style="font-size:1px; line-height: 1px;" width="1">&nbsp;</th> 
                                           <th dir="ltr" align="left" class="block top_pad" valign="top" style="vertical-align: top;"> 
                                             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
                                               <tbody> 
@@ -508,7 +498,7 @@ th{font-weight:normal !important}
                                                   <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
                         "> 
                                                     <div class="mktoText" mktoname="Text" id="imgright-SubHeadline307b8679-065a-461b-940a-09e35fc57b97e2de6a33-bdc6-4c1f-8f9f-6e9e2f62be9a"> 
-                                                     <p style="margin:0;"><span style="font-size: 14px; font-family: Arial; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Marketing Automation Platforms simplify many key aspects of your overall marketing strategy, but did you know that they also optimize your social media investment? Click here to learn 
+                                                     <p style="margin:0;"><span style="font-size: 14px; line-height:145%;font-family: '${fontfamily}',Arial; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Marketing Automation Platforms simplify many key aspects of your overall marketing strategy, but did you know that they also optimize your social media investment? Click here to learn 
                                                        how you can use Marketing Automation tools to generate qualified leads from social media and other sources.&nbsp; </span></p>
                                                       
                                                     </div> </td> 
@@ -523,7 +513,7 @@ th{font-weight:normal !important}
                                                         <table cellpadding="0" cellspacing="0" border="0"> 
                                                           <tbody> 
                                                             <tr> 
-                                                              <td bgcolor="${btn2BGColor}" style="text-align: center;border:1px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btn2BorderRadius}px;"> <a style="text-decoration:none; color:${btn2Color};" href="${btn2URL}">${btnText3}</a> </td> 
+                                                              <td bgcolor="${btn2BGColor}" style="text-align: center;border:1px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btn2BorderRadius}px;"> <a style="text-decoration:none; color:${btn2Color};" href="${btn3URL}">${btnText3}</a> </td> 
                                                             </tr> 
                                                           </tbody> 
                                                         </table> 
@@ -603,7 +593,7 @@ th{font-weight:normal !important}
                                         <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}"> 
                                           <tbody> 
                                             <tr> 
-                                              <td bgcolor="${btnBGColor}" style="text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnLgFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 15px 45px; border-radius: ${btnBorderRadius}px;"> <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText4}</a> </td> 
+                                              <td bgcolor="${btnBGColor}" style="text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btn2FontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 15px 45px; border-radius: ${btnBorderRadius}px;"> <a style="text-decoration:none; color:${btnColor};" href="${btn4URL}">${btnText4}</a> </td> 
                                             </tr> 
                                           </tbody> 
                                         </table> 

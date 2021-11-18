@@ -35,11 +35,11 @@ font-family: Arial, serif !important;
     <meta mktomodulescope="true" class="mktoNumber" id="btm_pad35" mktoname="Bottom Padding" default="35" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btm_pad40" mktoname="Bottom Padding" default="40" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btm_pad110" mktoname="Bottom Padding" default="110" /> 
-    <meta mktomodulescope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" /> 
+    <meta mktomodulescope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="1" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="headlineFontSize30" mktoname="Headline Font Size" default="30" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="headlineFontSize28" mktoname="Headline Font Size" default="28" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="headlineFontSize18" mktoname="Headline Font Size" default="18" /> 
-    <meta mktomodulescope="true" class="mktoColor" id="headlineFontColor" mktoname="Headline Text Color" default="#1F203E" /> 
+    <meta mktomodulescope="true" class="mktoColor" id="headlineFontColor" mktoname="Headline Text Color" default="#124559" /> 
     <meta mktomodulescope="true" class="mktoColor" id="headlineFontColorwhite" mktoname="Headline Text Color" default="#FFFFFF" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="SubheadlineFontSize" mktoname="Subheadline Font Size" default="18" /> 
     <meta mktomodulescope="true" class="mktoColor" id="SubheadlineFontColor" mktoname="Subheadlinbe Text Color" default="#1F203E" /> 
@@ -56,8 +56,13 @@ font-family: Arial, serif !important;
     <meta mktomodulescope="true" class="mktoColor" id="btnColor" mktoname="Button Text Color" default="#ffffff" /> 
     <meta mktomodulescope="true" class="mktoColor" id="btnBGColor" mktoname="Button BG Color" default="#f15a23" /> 
     <meta mktomodulescope="true" class="mktoColor" id="btnBorderColor" mktoname="Button Border Color" default="#f15a23" /> 
-    <meta mktomodulescope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="3" /> 
-    <meta mktomodulescope="true" class="mktoString" id="btnText" mktoname="Button Text" default="Read More" /> 
+    <meta mktomodulescope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="3" />
+    
+    <meta mktomodulescope="true" class="mktoString" id="btnText1" mktoname="Button Text1" default="Discover Now" />
+    <meta mktomodulescope="true" class="mktoString" id="btnText2" mktoname="Button Text2" default="Learn More" />
+    <meta mktomodulescope="true" class="mktoString" id="btnText3" mktoname="Button Text3" default="Read Guide" />
+    <meta mktomodulescope="true" class="mktoString" id="btnText4" mktoname="Button Text4" default="Contact Us" />
+    
     <meta mktomodulescope="true" class="mktoNumber" id="btn1FontSize" mktoname="Button Font Size (px)" default="18" /> 
     <meta mktomodulescope="true" class="mktoString" id="btnURL" mktoname="Button URL" default="#" /> 
     <meta mktomodulescope="true" class="mktoList" id="btnFontWeight" mktoname="Button Weight" values="300,400,500,600,bold" default="bold" /> 
@@ -65,8 +70,9 @@ font-family: Arial, serif !important;
     <meta mktomodulescope="true" class="mktoColor" id="btn2BGColor" mktoname="Button 2 BG Color" default="#f15a23" /> 
     <meta mktomodulescope="true" class="mktoColor" id="btn2BorderColor" mktoname="Button 2 Border Color" default="#f15a23" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="btn2BorderRadius" mktoname="Button 2 Border Radius (px)" default="3" /> 
-    <meta mktomodulescope="true" class="mktoString" id="btn2Text" mktoname="Button 2 Text" default="Read More" /> 
+    
     <meta mktomodulescope="true" class="mktoNumber" id="btn2FontSize" mktoname="Button 2 Font Size (px)" default="18" /> 
+    <meta mktomodulescope="true" class="mktoNumber" id="btnLgFontSize" mktoname="Button 2 Font Size (px)" default="20" /> 
     <meta mktomodulescope="true" class="mktoString" id="btn2URL" mktoname="Button 2 URL" default="#" /> 
     <meta mktomodulescope="true" class="mktoColor" id="DividerBGColor" mktoname="Divider Color" default="#d7d7d7" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="DividerHeight" mktoname="Divider Height (px)" default="1" /> 
@@ -264,7 +270,7 @@ th{font-weight:normal !important}
                             <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590"> 
                               <tbody> 
                                 <tr> 
-                                  <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                  <td height="${top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                                 </tr> 
                                 <tr> 
                                   <td> 
@@ -303,7 +309,7 @@ th{font-weight:normal !important}
                                                   <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
                         "> 
                                                     <div class="mktoText" mktoname="Text" id="imgright-SubHeadline307b8679-065a-461b-940a-09e35fc57b97">
-                                                      <p>What is your social media strategy? Is your audience highly engaged with your social media content? Is planning your social media strategy a tedious experience? If you relate to any of these problems read this article to learn how to create an effective social media strategy that aligns with your company’s goals and resources.<br /></p>
+                                                      <p><span style="font-size: 14px; font-family: Arial; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">What is your social media strategy? Is your audience highly engaged with your social media content? Is planning your social media strategy a tedious experience? If you relate to any of these problems read this article to learn how to create an effective social media strategy that aligns with your company’s goals and resources.</span></p>
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
@@ -364,7 +370,7 @@ th{font-weight:normal !important}
                             <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590"> 
                               <tbody> 
                                 <tr> 
-                                  <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                  <td height="${top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                                 </tr> 
                                 <tr> 
                                   <td> 
@@ -435,7 +441,6 @@ th{font-weight:normal !important}
                               </tbody> 
                             </table> </td> 
                         </tr> 
-                      </tbody> 
                     </table>
                     <table class="mktoModule" mktoname="Divider Module-1" id="DividerModule09869586-ee9d-42af-bd11-6a1a5f6accdf" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
                       <tbody> 
@@ -464,7 +469,7 @@ th{font-weight:normal !important}
                             <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590"> 
                               <tbody> 
                                 <tr> 
-                                  <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                  <td height="${top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                                 </tr> 
                                 <tr> 
                                   <td> 
@@ -502,10 +507,9 @@ th{font-weight:normal !important}
                                                   <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
                         "> 
                                                     <div class="mktoText" mktoname="Text" id="imgright-SubHeadline307b8679-065a-461b-940a-09e35fc57b97e2de6a33-bdc6-4c1f-8f9f-6e9e2f62be9a"> 
-                                                      <div style="color: #333333; font-family: 'Work Sans', Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: 
-initial; text-decoration-style: initial; text-decoration-color: initial;">
-                                                        <span style="font-size: 18pt; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"><span style="font-size: 14px;">Marketing Automation Platforms simplify many key aspects of your overall marketing strategy, but did you know that they also optimize your social media investment? Click here to learn how you can use Marketing Automation tools to generate qualified leads from social media and other sources.&nbsp;</span> </span>
-                                                      </div> 
+                                                     <p><span style="font-size: 14px; font-family: Arial; color: #595959; background-color: transparent; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">Marketing Automation Platforms simplify many key aspects of your overall marketing strategy, but did you know that they also optimize your social media investment? Click here to learn 
+                                                       how you can use Marketing Automation tools to generate qualified leads from social media and other sources.&nbsp; </span></p>
+                                                      
                                                     </div> </td> 
                                                 </tr> 
                                                 <tr> 
@@ -589,7 +593,7 @@ initial; text-decoration-style: initial; text-decoration-color: initial;">
                             <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590"> 
                               <tbody> 
                                 <tr> 
-                                  <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                  <td height="${top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                                 </tr> 
                                 <tr> 
                                   <td> 
@@ -598,7 +602,7 @@ initial; text-decoration-style: initial; text-decoration-color: initial;">
                                         <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}"> 
                                           <tbody> 
                                             <tr> 
-                                              <td bgcolor="${btnBGColor}" style="text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;"> <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText2}</a> </td> 
+                                              <td bgcolor="${btnBGColor}" style="text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnLgFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 15px 45px; border-radius: ${btnBorderRadius}px;"> <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText2}</a> </td> 
                                             </tr> 
                                           </tbody> 
                                         </table> 
