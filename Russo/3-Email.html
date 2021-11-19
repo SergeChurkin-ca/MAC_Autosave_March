@@ -287,6 +287,10 @@ margin: 0 auto;
 .social-spacer-btm {
 height: 10px;
 }
+.menu-item {
+    // width: 25%;
+    padding: 10px !important;
+}
 }
 @media (max-width: 622px) {
 .hidden-dash {
@@ -307,7 +311,7 @@ text-align: center;
 
 .menu-item {
 display: inline;
-width: 25%;
+// width: 25%;
  padding: 0 10px !important;
  text-align: center;
 }
@@ -346,7 +350,7 @@ text-align: center;
 @media (max-width: 400px) {
 .menu-item {
 display: block;
-width: 100%;
+width: 100% !important;
 padding: 5px 0 !important;
 text-align: center;
 margin: 0 auto !important;
@@ -393,17 +397,17 @@ display: none;
 <tr>
 <td bgcolor="${mod-bg-color-black}" valign="top" style="background-color:${mod-bg-color-black};vertical-align: top;"> 
 
-<table id="menu" style="text-align: center; margin: 0 auto; width:100%; min-width:100%;background-color${mod-bg-color-black}; color: #FFFFFF; font-family:'${fontfamily}',Arial, sans-serif;font-size:${headlineFontSize12}px">
+<table width="100%" id="menu" style="text-align: center; margin: 0 auto; width:100%; min-width:100%;background-color${mod-bg-color-black}; color: #FFFFFF; font-family:'${fontfamily}',Arial, sans-serif;font-size:${headlineFontSize12}px">
 
 <tbody>
 <tr class="menu-container">
     
 <td class="logo light-mode" style="padding:20px 0px 20px 0px;background-color:#000000; text-align:center;"><a href="https://www.russopower.com/" target="_blank"> <img bgcolor="#000000"width="150" class="logowidth" alt="Russo logo" src="https://lp.russopower.com/rs/843-FJG-506/images/logo-dark.png" border="0" style="height:auto !important;width:150px;" /></a></td>
 
-<td class="menu-item nav-link-1" style="padding:20px 0px 20px 0px; text-align:center;"><a class="menu" href="${navlink-link-1}" target="_blank" style="color:${headlineFontColorwhite}">${navlink-text-1}</a></td>
-<td class="menu-item nav-link-2" style="padding:20px 20px 20px 20px; text-align:center;"><a class="menu" href="${navlink-link-2}" target="_blank" style="color:${headlineFontColorwhite}">${navlink-text-2}</a></td>
-<td class="menu-item nav-link-3" style="padding:20px 20px 20px 20px; text-align:center;"><a class="menu" href="${navlink-link-3}" target="_blank" style="color:${headlineFontColorwhite}">${navlink-text-3}</a></td>
-<td class="menu-item nav-link-4" style="padding:20px 20px 20px 20px; text-align:center;"><a class="menu" href="${navlink-link-4}" target="_blank" style="color:${headlineFontColorwhite}">${navlink-text-4}</a></td>
+<td class="menu-item nav-link-1" style="padding:20px 20px 20px 0px; text-align:center;"><a class="menu" href="${navlink-link-1}" target="_blank" style="color:${headlineFontColorwhite};text-decoration:none;">${navlink-text-1}</a></td>
+<td class="menu-item nav-link-2" style="padding:20px 20px 20px 0px; text-align:center;"><a class="menu" href="${navlink-link-2}" target="_blank" style="color:${headlineFontColorwhite};text-decoration:none;">${navlink-text-2}</a></td>
+<td class="menu-item nav-link-3" style="padding:20px 20px 20px 0px; text-align:center;"><a class="menu" href="${navlink-link-3}" target="_blank" style="color:${headlineFontColorwhite};text-decoration:none;">${navlink-text-3}</a></td>
+<td class="menu-item nav-link-4" style="padding:20px 20px 20px 0px; text-align:center;"><a class="menu" href="${navlink-link-4}" target="_blank" style="color:${headlineFontColorwhite};text-decoration:none;">${navlink-text-4}</a></td>
 </tr>
 <tr>
 <td class="hiddenspace" height="${top_pad10}" style="line-height:1px;font-size:1px;display:none;">&nbsp;</td>
