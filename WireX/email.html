@@ -74,7 +74,7 @@ font-family: Arial, serif !important;
   
 <meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#ffffff" />
 <meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#2abad2">
-<meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="2abad2" />
+<meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#2abad2" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="1" />
 <meta mktoModuleScope="true" class="mktoString" id="btnText" mktoName="Button Text" default="Read More">
 <meta mktoModuleScope="true" class="mktoNumber" id="btn1FontSize" mktoname="Button Font Size (px)" default="18" />
@@ -94,7 +94,7 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoList" id="align" mktoName="Content Align" values="left,center,right" default="left" />
   
 <meta mktoModuleScope="true" class="mktoColor" id="footerbgclr" mktoname="Footer Background Color" default="#1c1c1c" />
-<meta mktoModuleScope="true" class="mktoNumber" id="logowidth2" mktoname="Logo Width (px)" default="200" />
+<meta mktoModuleScope="true" class="mktoNumber" id="logowidth2" mktoname="Logo Width (px)" default="150" />
 <meta mktoModuleScope="true" class="mktoNumber" id="logocolwidth" mktoname="Column Width (px)" default="215" />
   
 <title>{{my.ViewAsWebpage Title}}</title>
@@ -270,9 +270,9 @@ th{font-weight:normal !important}
                             <table cellpadding="0" cellspacing="0" border="0" align="${align}">
                                 <tbody>
                                     <tr>
-                                        <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamilySecondary}',Arial, sans-serif; border:1px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
-                                            <a style="min-height:10px; text-decoration:none; text-transform:uppercase;color:${btnColorhead}; padding: 9px 30px; display:inline-block" href="${btnURL}">${btnText}</a>
-                                        </td>
+                                    <td bgcolor="${btnBGColorhead}" style="text-align: center; border:1px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight};line-height:110%; font-family: '${fontfamilySecondary}',Arial, sans-serif; padding: 15px 35px; border-radius: ${btnBorderRadius}px;">
+                                        <a style="text-decoration:none; text-transform: uppercase; color:${btnColorhead};" href="${btnURL}">${btnText}</a> 
+                                    </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -408,8 +408,9 @@ th{font-weight:normal !important}
         <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
             <tbody>
                 <tr>
-                    <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamilySecondary}',Arial, sans-serif;border:1px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
-                        <a style="min-height:10px; text-decoration:none; text-transform:uppercase;color:${btnColor}; color:${btnColor}; padding: 9px 30px; display:inline-block" href="${btnURL}">${btnText2}</a>
+                    <td bgcolor="${btnBGColorhead}" style="text-align: center; border:1px solid ${btnBorderColorhead}; color:${btnBGColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight};line-height:110%; font-family: '${fontfamilySecondary}',Arial, sans-serif; padding: 15px 35px; border-radius: ${btnBorderRadius}px;">
+                        <a style="text-decoration:none; text-transform: uppercase; color:${btnColorhead};" href="${btnURL}">${btnText2}</a> 
+                        </td>
                     </td>
                 </tr>
             </tbody>
@@ -497,7 +498,7 @@ th{font-weight:normal !important}
       100 S Murphy Ave, Suite 200
       Sunnyvale,
       CA 94086, USA<br><br>
-      +1 669-454-3815 | <a href="mailto:info@wirexsystems.com" style="color: ${CopyColorWhite};">info@wirexsystems.com/a></div>
+      +1 669-454-3815 | <a href="mailto:info@wirexsystems.com" style="color: ${CopyColorWhite};">info@wirexsystems.com</div>
     </div>
 </td>
 </tr>
@@ -509,7 +510,7 @@ th{font-weight:normal !important}
 <tr>
 <td align="${alignCenter}" style="text-align: ${alignCenter};">
 <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="https://go.wirexsystems.com/rs/384-KCY-350/images/logo-dark.png" border="0" style="width:${logowidth2}px; height:auto !important;" /></a>
+    <a href="#" target="_blank"><img width="150" class="logowidth" alt="logo" src="https://go.wirexsystems.com/rs/384-KCY-350/images/logo-dark.png" border="0" style="width:${logowidth2}px; height:auto !important;" /></a>
 </div>
 </td>
 </tr>
