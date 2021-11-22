@@ -1,0 +1,296 @@
+body,
+html {
+    height: 100%;
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    color: #56677F;
+}
+
+#policy {
+    display:$ {
+        showprivacy
+    }
+    ;
+    padding:20px;
+    font-size:12px;
+    text-align:center;
+}
+
+a {
+    color: #56677F;
+    font-weight: bold;
+}
+
+
+/* The hero image */
+
+.mktoForm {
+    max-width: 100%;
+}
+
+.hero-image {
+    /* The image used */
+    background-image: url("${header_img}");
+    /* Set a specific height */
+    min-height: 450px;
+    height: auto;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: $ {
+        showHeader
+    }
+    ;
+}
+
+
+/* Place text in the middle of the image */
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    display: $ {
+        showHeaderText
+    }
+    ;
+}
+
+.featuring {
+    width: 70px;
+    height: 70px;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+#form {
+    Width: 100% !important;
+    margin-top: -130px;
+    background-color: #EDF1F7 !important;
+    padding-bottom: 0 !important;
+}
+
+.white {
+    color: #FFF;
+}
+
+#body_text {
+    display: $ {
+        showBodyText
+    }
+    ;
+}
+
+#exampleForm {
+    display: $ {
+        showForm
+    }
+    ;
+}
+
+#featuring {
+    display: $ {
+        boolean1
+    }
+    ;
+}
+
+#form {
+    display: $ {
+        boolean2
+    }
+    ;
+}
+
+.mainContent {
+    display: $ {
+        showMain
+    }
+}
+
+.bannerCol {
+    display: $ {
+        showBanner
+    }
+    ;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+    align-items: center;
+    min-height: 575px;
+    margin-top: 2px;
+}
+
+.col {
+    width: 49%;
+    padding: 0px;
+}
+
+.col .mktoImg img {
+    width: 100%;
+}
+
+.bannerText {
+    text-align: right;
+    padding: 30px;
+}
+
+.bannerText h1 span.spark {
+    color: #5A7CE6;
+}
+
+.bannerText h1 span.live {
+    color: #A4D5D9;
+}
+
+.bannerText h1 {
+    margin: 0px;
+    font-size: 5.5rem !important;
+    text-transform: uppercase;
+    line-height: 5.3rem;
+    color: #1F1D58;
+}
+
+.bannerText h1,
+.bannerText h3 {
+    font-weight: 300;
+}
+
+.bannerText h2 {
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.bannerText h3 {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.bannerText h2,
+.bannerText h3 {
+    color: #1F1D58;
+}
+
+.bannerImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.navbar-brand,
+#mkto_gen_logoImg {
+    width:$ {
+        header_logo_width
+    }
+    !important;
+    height: $ {
+        header_logo_height
+    }
+    ;
+}
+
+@media(max-width: 872px) {
+    .bannerText h1 {
+        font-size: 4rem !important;
+        line-height: 4rem;
+    }
+    .bannerText h2 {
+        font-size: 1.2rem !important;
+    }
+    .bannerText h3 {
+        font-size: 1rem !important;
+    }
+}
+
+@media(max-width: 660px) {
+    .bannerText h1 {
+        font-size: 3rem !important;
+        line-height: 3rem;
+    }
+    .bannerText h2 {
+        font-size: 1rem !important;
+    }
+    .bannerText h3 {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .bannerText h1 {
+        font-size: 4rem !important;
+        line-height: 4rem;
+    }
+    .bannerText h2 {
+        font-size: 1.2rem !important;
+    }
+    .bannerText h3 {
+        font-size: 1rem !important;
+        margin-top: 30px;
+    }
+    .bannerCol {
+        height: inherit;
+    }
+    .bannerCol {
+        flex-direction: column;
+    }
+    .col .mktoImg {
+        height: 100%;
+    }
+    .col .mktoImg img {
+        height: 100%;
+        float: right;
+        width: unset;
+    }
+    .col {
+        width: 100%;
+    }
+    #form {
+        margin-top: 0;
+    }
+    .center {
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width: 361px) {
+    #form h1 {
+        font-size: 20px !important;
+    }
+}
+
+@media(max-width:345px) {
+    .bannerText h1 {
+        font-size: 3rem !important;
+        line-height: 3rem;
+    }
+    .bannerText h2 {
+        font-size: 1rem !important;
+    }
+    .bannerText h3 {
+        font-size: 0.8rem !important;
+    }
+}
+
+#footer {
+    background-color:$ {
+        footerbgcolor
+    }
+    ;
+}
+
+#footer ul {
+    list-style: none;
+}
