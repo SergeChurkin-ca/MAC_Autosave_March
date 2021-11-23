@@ -338,7 +338,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .top-wrapper {
       justify-content: space-between;
       /* flex-wrap: wrap; */
-      /* gap: 2rem; */
+      gap: 1.8rem;
     }
     .footer-column-col1, .footer-column-col2 {
         display: flex;
@@ -373,6 +373,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+    @media (max-widrg: 1400px) {
+        .top-wrapper, .bottom-wrapper {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+    }
     @media (max-width: 1000px) {
         .legal-container {
             flex-wrap: wrap;
@@ -398,6 +404,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .svg-image-icon {
       width: 16px;
+    }
+    /* footer toogle */
+    @media (max-width: 600px) {
+       .top-wrapper {
+           flex-direction: column;
+       }
+       .footer-column {
+           width: 90vw;
+           border-bottom: solid 1px #8f8aa8;
+           padding: 1.5rem 0 0;
+       }
+       .footer-column ul li:nth-child(1n+2) {
+           display: none;
+       }
+       
+    }
+    /* media queiry for main and footer all together */ 
+    @media (max-width:1400px){
+        #footer {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .mainContent, .top-wrapper, .bottom-wrapper {
+            max-width: unset !important;
+            width: 90vw;
+        }
     }
     </style>
 </head>
@@ -564,6 +596,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="footer-column-col1">
     
             <div class="footer-column">
+                <input type="checkbox" id="checkbox-content">
                 <ul>
                     <li>SOLUTIONS</li>
                     <li><a title="Solutions: Transform your workforce" href="/solutions/transform-your-workforce">Transform your workforce</a></li>
@@ -577,6 +610,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </ul>
             </div>
             <div class="footer-column">
+                <input type="checkbox" id="checkbox-content">
                 <ul>
                     <li>TALENT LIFECYCLE MANAGEMENT</li>
                     <li><a title="Talent Lifecycle Management overview" href="/platform/overview">Overview</a></li>
@@ -598,6 +632,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="footer-column-col2">
             <div class="footer-column">
+                <input type="checkbox" id="checkbox-content">
                 <ul>
                     <li>SERVICES</li>
                     <li><a title="Services: Value Consulting" href="/services/value-consulting">Value Consulting</a></li>
@@ -608,6 +643,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </ul>
             </div>
             <div class="footer-column">
+                <input type="checkbox" id="checkbox-content">
                 <ul>
                     <li>WHY BEAMERY</li>
                     <li><a title="Why Beamery: AI &amp; Data" href="/talent-graph-and-ai">AI &amp; Data</a></li>
@@ -618,6 +654,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </ul>
             </div>
             <div class="footer-column">
+                <input type="checkbox" id="checkbox-content">
                 <ul>
                     <li>RESOURCES</li>
                     <li><a href="https://beamery.com/resources" target="_blank" title="Resources: Resource Library">Resource Library</a></li>
