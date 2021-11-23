@@ -282,6 +282,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
 
 /* footer styling */
+    #footer input, .toggler {
+        display: none;
+    }
     .footer-logo {
         width: 9rem;
         height: auto;
@@ -328,7 +331,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       list-style: none;
       display: flex;
       flex-direction: column;
-      padding: 0;
+      padding: 0 0 1.5rem;
+      
     }
     #footer .footer-column {
        /* width: 10vw; */
@@ -356,6 +360,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .footer-column-col1, .footer-column-col2 {
             flex-direction: column;
         }
+     
     }
     .top-wrapper ul li {
         margin: 0.1rem 0;
@@ -389,6 +394,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .legal-container ul li {
             margin: 1rem 1.5rem 0 0;
         }
+        .svg-icons {
+           padding: 1rem 0 !important;
+           margin-bottom: 0 !important;
+       }
     }
     .legal-container a {
         font-size: 0.80rem !important;
@@ -405,20 +414,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .svg-image-icon {
       width: 16px;
     }
+                                                                                    
     /* footer toogle */
     @media (max-width: 600px) {
+        #footer {
+            padding: 3rem 0 1rem;
+        }
        .top-wrapper {
            flex-direction: column;
+           gap: 0;
        }
        .footer-column {
            width: 90vw;
            border-bottom: solid 1px #8f8aa8;
-           padding: 1.5rem 0 0;
+           padding: 0;
+       }
+       .footer-column ul {
+           height: 2.7rem;
        }
        .footer-column ul li:nth-child(1n+2) {
            display: none;
        }
-       
+       .toggler {
+           display: block;
+           position: absolute;
+           left: 90%;
+           z-index: 1;
+           width: 1rem
+       }
+       input[type=checkbox]:checked~ul {
+           height: unset;
+       }
+        input[type=checkbox]:checked~ul li:nth-child(1n+2) {
+            display: unset;
+            opacity: 1;
+            transition: all 0.6s ease-in-out;
+        }
+        input[type=checkbox]:checked~.toggler {
+            transform: rotate(-45deg);
+            transition: all 0.6s;
+        }
+       #footer input {
+           display: block;
+       }
+       #checkbox-content {
+            position: relative;
+            z-index: 2;
+            height: 2em;
+            opacity: 0;
+            top: 2em;
+            left: 90%;
+            width: 3em;
+            display: block;
+            cursor: pointer;
+       }
+       @media (max-width:350px) {
+           #footer ul {
+               font-size: 0.7rem;
+           }
+       }
+    
     }
     /* media queiry for main and footer all together */ 
     @media (max-width:1400px){
@@ -430,6 +485,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             max-width: unset !important;
             width: 90vw;
         }
+       
     }
     </style>
 </head>
@@ -597,6 +653,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
             <div class="footer-column">
                 <input type="checkbox" id="checkbox-content">
+                <svg class="toggler" aria-hidden="true" version="1.1" width="32" height="32" viewBox="0 0 32 32"><title>plus</title><path fill="#ffffff" d="M18.286 0v13.714h13.714v4.571h-13.717l0.002 13.714h-4.571l-0.002-13.714h-13.712v-4.571h13.714v-13.714h4.571z"></path></svg>
                 <ul>
                     <li>SOLUTIONS</li>
                     <li><a title="Solutions: Transform your workforce" href="/solutions/transform-your-workforce">Transform your workforce</a></li>
@@ -611,6 +668,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="footer-column">
                 <input type="checkbox" id="checkbox-content">
+                <svg class="toggler" aria-hidden="true" version="1.1" width="32" height="32" viewBox="0 0 32 32"><title>plus</title><path fill="#ffffff" d="M18.286 0v13.714h13.714v4.571h-13.717l0.002 13.714h-4.571l-0.002-13.714h-13.712v-4.571h13.714v-13.714h4.571z"></path></svg>
                 <ul>
                     <li>TALENT LIFECYCLE MANAGEMENT</li>
                     <li><a title="Talent Lifecycle Management overview" href="/platform/overview">Overview</a></li>
@@ -633,6 +691,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="footer-column-col2">
             <div class="footer-column">
                 <input type="checkbox" id="checkbox-content">
+                <svg class="toggler" aria-hidden="true" version="1.1" width="32" height="32" viewBox="0 0 32 32"><title>plus</title><path fill="#ffffff" d="M18.286 0v13.714h13.714v4.571h-13.717l0.002 13.714h-4.571l-0.002-13.714h-13.712v-4.571h13.714v-13.714h4.571z"></path></svg>
                 <ul>
                     <li>SERVICES</li>
                     <li><a title="Services: Value Consulting" href="/services/value-consulting">Value Consulting</a></li>
@@ -644,6 +703,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="footer-column">
                 <input type="checkbox" id="checkbox-content">
+                <svg class="toggler" aria-hidden="true" version="1.1" width="32" height="32" viewBox="0 0 32 32"><title>plus</title><path fill="#ffffff" d="M18.286 0v13.714h13.714v4.571h-13.717l0.002 13.714h-4.571l-0.002-13.714h-13.712v-4.571h13.714v-13.714h4.571z"></path></svg>
                 <ul>
                     <li>WHY BEAMERY</li>
                     <li><a title="Why Beamery: AI &amp; Data" href="/talent-graph-and-ai">AI &amp; Data</a></li>
@@ -655,6 +715,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="footer-column">
                 <input type="checkbox" id="checkbox-content">
+                <svg class="toggler" aria-hidden="true" version="1.1" width="32" height="32" viewBox="0 0 32 32"><title>plus</title><path fill="#ffffff" d="M18.286 0v13.714h13.714v4.571h-13.717l0.002 13.714h-4.571l-0.002-13.714h-13.712v-4.571h13.714v-13.714h4.571z"></path></svg>
                 <ul>
                     <li>RESOURCES</li>
                     <li><a href="https://beamery.com/resources" target="_blank" title="Resources: Resource Library">Resource Library</a></li>
