@@ -42,10 +42,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     body,
     html {
         height: 100%;
+        width: 100vw;
+        margin: 0 auto;
         background-color: #f9f9f9;
         font-family: 'Roboto', sans-serif;
         color: #56677F;
+        
     }
+    
       
       #policy {display:${showprivacy};padding:20px;font-size:12px;text-align:center;}
    
@@ -54,6 +58,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
       .mktoForm {
        max-width: 100%;
+       padding: 0 !important;
+   }
+   #exampleForm {
+     padding: 30px !important;
    }
       .hero-image {
         /* The image used */
@@ -77,6 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         transform: translate(-50%, -50%);
         color: #FFF;
        display: ${showHeaderText};
+       width: 80vw;
     }
 
     .featuring {
@@ -209,19 +218,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
       }
       
-      @media(max-width: 660px){
-        .bannerText h1{
-          font-size: 3rem !important;
-    	  line-height: 3rem;
-        }
-        
-        .bannerText h2{
-          font-size: 1rem !important;
-        }
-        .bannerText h3{
-          font-size: 0.8rem !important;
-        }
-      }
+    
       
     
       @media only screen and (max-width: 576px) {
@@ -280,17 +277,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
       }
     
+                                        
+
+    .navbar {
+      display: flex;
+      width: 80vw;
+      margin: 0 auto;
+    }
+
+                                        
     .main {
       display: flex;
       width: 80vw;
       max-width: 1400px;
+      margin: 0 auto;
+      justify-content: space-between;
     }
     .main-column-1,
     .main-column-2 {
       display: flex;
-      width: 50%;
+      width: 45%;
       flex-direction: column;
+      width: 
     }
+    .main-column-2 {
+      z-index: 1;
+      max-width: 700px;
+    }
+    .main-column-2 h1 {
+      padding: 0 30px;
+    }
+    .featuring-container .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .rounded-circle {
+      border-radius: 50%;
+    }
+                                        
+
     #footer {
       padding: 5rem;
     }
@@ -298,6 +324,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size: 15px;
       color: #8f8aa8;
       font-weight: 400;
+      text-decoration: none;
     }
     .footer-column ul li:first-child {
       color: #ffffff;
@@ -327,14 +354,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 0;
     }
     #footer .footer-column {
-      width: 10vw;
-      min-width: 250px;
+      // width: 10vw;
+      min-width: 100px;
       
     }
     .top-wrapper {
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      
+      justify-content: space-between;
+      // flex-wrap: wrap;
+      gap: 2rem;
     }
     #footer .legal-container ul, #footer .icons-container ul{
       display: flex;
@@ -350,9 +377,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .svg-image-icon {
       width: 16px;
     }
-    .svg-icons {
-      gap: 2rem;
-    }
+  
     </style>
 </head>
 
@@ -367,7 +392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li class="nav-item">
                     <a href="https://beamery.com/">
                       <div class="mktoImg navbar-brand" id="logoImg" mktoName="Logo Img">
-                        <img src="https://info.beamery.com/rs/918-SFJ-289/images/Beamery_Logo_RGB_Full Color.png" alt="Logo" width='100%'>
+                        <img src="https://info.beamery.com/rs/918-SFJ-289/images/Beamery_Logo_RGB_Full Color.png" alt="Logo" width='100%'/>
                       </div>
                   	</a>
                 </li>
@@ -419,101 +444,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
   	</div>
 
-  <!--                                       
-    <div class="container mainContent">
-         <br />
-    	<br />
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="mktoText" id="body_text" mktoName="Body Text">
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis.
-                    </p>
-                    <p>
-                        Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
-                    </p>
-                    <p><b>
-                     You’ll learn:</b>
-                    </p>
-                    <ul>
-                        <li>
-                            Point one
-                        </li>
-                        <li>
-                            Point two
-                        </li>
-                        <li>
-                            Point three
-                        </li>
-                    </ul>
-                    <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint.
-                    </p>
-                </div>
-                <div class="mktoText" id="featuring" mktoName="Featuring">
-                    <p><b>
-                     Featuring:</b>
-                    </p>
-                    <div class="container center">
-                        <div class="row">
-                            <div class="col-6 col-md-3">
-                                <img class="rounded-circle featuring" src="https://via.placeholder.com/50x50" alt="">
-                                <p class="mt-3" style="font-size:11px">
-                                    <b>First LastName</b>
-                                    <br />Company & Title
-                                </p>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
-                                <p class="mt-3" style="font-size:11px">
-                                    <b>First LastName</b>
-                                    <br />Company & Title
-                                </p>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
-                                <p class="mt-3" style="font-size:11px">
-                                    <b>First LastName</b>
-                                    <br />Company & Title
-                                </p>
-                            </div>
-                            <div class="col-6 col-md-3">
-                                <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
-                                <p class="mt-3" style="font-size:11px">
-                                    <b>First LastName</b>
-                                    <br />Company & Title
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="px-5 py-5" id="form">
-                    <h1 class="mktoText text-center" id="form_title" mktoName="Form Title" style="font-size:29px; text-transform:uppercase; margin-bottom:0;">
-                     Register Now
-                  </h1>
 
-                </div>
-  <div class="mktoForm" id="exampleForm" mktoName="Example Form"></div> <script>MktoForms2.whenReady(function(form){
-  var formEl = form.getFormElem()[0],
-  inputRows = formEl.querySelectorAll('.mktoFormRow'),
-  buttonRow = formEl.querySelector('.mktoButtonRow');
-  
-  window.Country.onchange = function(){                         
-  optInRow = [].filter.call(inputRows,function(itm){ return itm.querySelector('INPUT#GDPR_Opt_In__c');}).shift();
-  if (optInRow) formEl.insertBefore(optInRow,buttonRow);
-};
-});
-</script>
-             
-               
-            </div>
-        </div>
-    </div>
-    -->
-<div className="main">
-<div className="main-column-1">
+<div class="main">
+<div class="main-column-1">
       <div class="mktoText" id="body_text">
       <p>
       Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis.
@@ -546,50 +479,51 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </p>
       <div class="featuring-container">
           <div class="row">
-          <div class="col-6 col-md-3">
-          <img class="rounded-circle featuring" src="https://via.placeholder.com/50x50" alt="">
-          <p class="mt-3" style="font-size:11px">
-          <b>First LastName</b>
-          <br>Company &amp; Title
-          </p>
+          <div class="img-container">
+            <img class="rounded-circle featuring" src="https://via.placeholder.com/50x50" alt="">
+            <p class="mt-3" style="font-size:11px">
+            <b>First LastName</b>
+            <br>Company &amp; Title
+            </p>
           </div>
-          <div class="col-6 col-md-3">
-          <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
-          <p class="mt-3" style="font-size:11px">
-          <b>First LastName</b>
-          <br>Company &amp; Title
-          </p>
+          <div class="img-container">
+            <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
+            <p class="mt-3" style="font-size:11px">
+            <b>First LastName</b>
+            <br>Company &amp; Title
+            </p>
           </div>
-          <div class="col-6 col-md-3">
-          <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
-          <p class="mt-3" style="font-size:11px">
-          <b>First LastName</b>
-          <br>Company &amp; Title
-          </p>
+          <div class="img-container">
+            <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
+            <p class="mt-3" style="font-size:11px">
+            <b>First LastName</b>
+            <br>Company &amp; Title
+            </p>
           </div>
-          <div class="col-6 col-md-3">
-          <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
-          <p class="mt-3" style="font-size:11px">
-          <b>First LastName</b>
-          <br>Company &amp; Title
-          </p>
+          <div class="img-container">
+            <img src="https://via.placeholder.com/50x50" class="rounded-circle featuring" alt="">
+            <p class="mt-3" style="font-size:11px">
+            <b>First LastName</b>
+            <br>Company &amp; Title
+            </p>
           </div>
           </div>
       </div>
       </div>                                      
 
       </div>
-      <div className="main-column-2">
-      <div class="px-5 py-5" id="form">
-      <h1 class="mktoText text-center" id="form_title" style="font-size:29px; text-transform:uppercase; margin-bottom:0;">
-      Register Now
-      </h1>
+      <div class="main-column-2">
+            <div class="px-5 py-5" id="form">
+            <h1 class="mktoText text-center" id="form_title" style="font-size:29px; text-transform:uppercase; margin-bottom:0;">
+            Register Now
+            </h1>
+            </div>
+            <div class="mktoForm" id="exampleForm">
+                <script src="//info.beamery.com/js/forms2/js/forms2.min.js"></script>
+                <form id="mktoForm_1336"></form>
+                <script>MktoForms2.loadForm("//info.beamery.com", "918-SFJ-289", 1336);</script>
+            </div>
 
-      </div>
-      <div class="mktoForm" id="exampleForm"></div>
-  <script src="//info.beamery.com/js/forms2/js/forms2.min.js"></script>
-<form id="mktoForm_1336"></form>
-<script>MktoForms2.loadForm("//info.beamery.com", "918-SFJ-289", 1336);</script>
       </div>
           
           
