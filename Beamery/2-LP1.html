@@ -38,11 +38,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Global Variables -->
   <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#150e3f">
     <style>
+          @font-face {
+            font-display: swap;
+            font-family: Beamery;
+            font-style: normal;
+            font-weight: 700;
+            src: url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Bold.woff2') format("woff2"), 
+            url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Bold.woff') format("woff")
+        }
+        
+        @font-face {
+            font-display: swap;
+            font-family: Beamery;
+            font-style: normal;
+            font-weight: 300;
+            src: url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Light.woff2') format("woff2"), 
+            url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Light.woff') format("woff")
+        }
+        
+        @font-face {
+            font-display: swap;
+            font-family: Beamery;
+            font-style: normal;
+            font-weight: 500;
+            src: url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Medium.woff2') format("woff2"), 
+            url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Medium.woff') format("woff")
+        }
+        
+        @font-face {
+            font-display: swap;
+            font-family: Beamery;
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff2') format("woff2"), 
+            url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff') format("woff")
+        }
+                                                                                    
     body,
     html {
         height: 100%;
         background-color: #f9f9f9;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Beamery', sans-serif;
         color: #56677F;
     }
       
@@ -71,6 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     /* Place text in the middle of the image */
 
+    /* hero container */
     .hero-text {
         position: absolute;
         top: 50%;
@@ -79,7 +116,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         color: #FFF;
        display: ${showHeaderText};
     }
+    .hero-text h1 {
+        font-weight: 700;
+        font-size: calc(2.38776rem + .61224vw);
+    }
+    .hero-text p {
+        font-size: calc(.9426rem + .2449vw);
+        font-weight: 400;
+    }
 
+    /* end of hero container */
+
+    #body_text p, #featuring p, #body_text li {
+        color: #18181b;
+        font-weight: 400;;
+    }
     .featuring {
         width: 70px;
         height: 70px;
@@ -545,8 +596,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero-image">
         <div class="hero-text container">
             <div class="mktoText" id="header_text" mktoName="Header Text">
-                <h1 style="font-size:40px; font-weight:300;">Webinar title: lorem ipsum dolor sit smet consectetur adispicing elit</h1>
-                <p style="font-size:21px"><b>
+                <h1>Webinar title: lorem ipsum dolor sit smet consectetur adispicing elit</h1>
+                <p><b>
                   Friday, April 20, 2018</b>
                 </p>
                 <p style="font-size:21px">
