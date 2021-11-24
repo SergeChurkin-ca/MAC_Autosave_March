@@ -69,6 +69,7 @@
 <!-- Global Variables -->
 <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#150e3f">
 <meta class="mktoString" id="background-banner" mktoName="Background Banner" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
+<meta class="mktoString" id="hero-image" mktoName="Hero Image" default="https://info.beamery.com/rs/918-SFJ-289/images/hero.jpg">
 
 <meta class="mktoString" id="header_logo_width" mktoName="Logo width" default="130px">
 <meta class="mktoString" id="header_logo_height" mktoName="Logo height" default="45px">
@@ -162,12 +163,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        position: absolute;
    } 
    .parallax-inner-1 {
-       bottom: -1rem;
-       left: -1rem;
+       top: 50rem;
+   }
+   .parallax-inner-1 svg {
+       height: 300px;
+       width: 300px;
    }
    .parallax-inner-2 {
-       bottom: 2rem;
-       left: -3rem;
+       top: 40rem;
    }
    .inner_background_banner {
         background-image: url("${background-banner}");
