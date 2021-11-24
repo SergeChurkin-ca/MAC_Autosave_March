@@ -140,37 +140,64 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     html {
         height: 100%;
         background-color:#F4F8FA;
-        font-family: 'Beamery', sans-serif;
+        font-family: 'Beamery', sans-serif !important;
         color: #56677F;
         width: 100%;
         margin: 0 auto;
     }
       
       #policy {display:${showprivacy};padding:20px;font-size:12px;text-align:center;}
+    
     a {
         color: #56677F;
         font-weight: bold;
     }
-    /* The hero image */
-	
       
-   
 
     /* banner */
-   .inner_background_banner {
-       background: ${background-banner} !important;
+    .main_inner_bg {
+        position: relative;
+    }
+   .parallax-inner-1, .parallax-inner-2 {
+       position: absolute;
+   } 
+   .parallax-inner-1 {
+       bottom: -1rem;
+       left: -1rem;
    }
-
-
-    #body_text p, #featuring p, #body_text li {
-        color: #18181b;
-        font-weight: 400;;
+   .parallax-inner-2 {
+       bottom: 2rem;
+       left: -3rem;
+   }
+   .inner_background_banner {
+        background-image: url("${background-banner}");
+        padding: 0 0 150px !important;
+   }
+    #HeaderSection {
+        background: none !important;
     }
-    .featuring {
-        width: 70px;
-        height: 70px;
+    .left_banner_main {
+        color: #ffffff;
     }
-
+    .banner-h1 {
+        font-size: calc(2.38776rem + 1.61224vw);
+        font-weight: 700;
+        letter-spacing: -.045em;
+        line-height: 1.15;
+    }
+    .banner-h2 {
+        font-size: calc(.9426rem + .2449vw);
+        font-weight: 400;
+        letter-spacing: -.01em;
+        line-height: 1.68;
+        margin-bottom: 1.5em;
+    }
+    .banner_testimonial {
+        background: transparent;
+        border: solid 1px #ffffff !important;
+        padding: 2rem !important;
+        border-radius: 10px;
+    }                                                                                                                                                                                                       
     a:hover {
         color: #000000;
         text-decoration: none;
@@ -203,46 +230,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         width: 100%;
       }
       
-      .bannerText{
-        text-align: right;
-        padding: 30px;
-      }
-      
-     .bannerText h1 span.spark{
-        color: #5A7CE6;
-      }
-      
-      .bannerText h1 span.live{
-        color:#A4D5D9;
-      }
-      
-      .bannerText h1{
-        margin: 0px;
-        font-size: 5.5rem !important;
-    	text-transform: uppercase;
-        line-height: 5.3rem;
-        color: #1F1D58;
-      }
-       .bannerText h1,
-      .bannerText h3{
-        font-weight: 300;
-      }
-       .bannerText h2
-       {
-        font-weight: 100;
-         font-size: 2rem;
-         margin: 0px;
-      }
-      .bannerText h3{
-        margin-top: 50px;
-        text-align: left;
-        font-size: 1.2rem;
-      }
-      
-       .bannerText h2,
-      .bannerText h3{
-        color: #1F1D58;
-      }
+    
       
       .bannerImg{
         display: flex;
@@ -562,18 +550,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <div class="wrapper"> 
-  <!-- Section Header -->
-  <div id="HeaderSection" class="flw" style="background-color:${headerbgcolor};display:${ShowHeader};">
-    <div class="main">
-      <div class="sec_header">
-        <div class="header_left">
-          <div class="main_logo">
-            <a href="${LogoLink}"><img src="https://info.beamery.com/rs/918-SFJ-289/images/j1584089013407_logo.png" class="mktoImg" id="HeaderLogo" mktoName="Header Logo Image"/></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
 
   <!--mid container starts here-->
 	<div class="mid-container">
@@ -582,14 +559,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 		<div class="banner_section flw" style="display:${showbannersec};">
 			<div class="inner_background_banner">
+              
+                 <!-- Section Header -->
+                <div id="HeaderSection" class="flw" style="background-color:${headerbgcolor};display:${ShowHeader};">
+                    <div class="main">
+                    <div class="sec_header">
+                        <div class="header_left">
+                        <div class="main_logo">
+                            <a href="${LogoLink}"><img src="https://info.beamery.com/rs/918-SFJ-289/images/j1584089013407_logo.png" class="mktoImg" id="HeaderLogo" mktoName="Header Logo Image"/></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
 				<div class="main">
+              
 					<div class="main_inner_bg">
+                           <div class="parallax-inner-1" style="transform: translate3d(0%, 19.359%, 0px);"><svg width="154" height="168" viewBox="0 0 154 168"><path d="M64.544 3.93a25.121 25.121 0 0 1 24.912 0l51.204 29.226a25.182 25.182 0 0 1 9.305 9.244 25.255 25.255 0 0 1 3.41 12.678v57.844c0 4.533-1.214 8.892-3.41 12.678a25.182 25.182 0 0 1-9.305 9.244l-51.204 29.225a25.121 25.121 0 0 1-24.912 0L13.34 134.844a25.182 25.182 0 0 1-9.305-9.244 25.255 25.255 0 0 1-3.41-12.678V55.078c0-4.533 1.214-8.892 3.41-12.678 2.196-3.786 5.374-7 9.305-9.244z" stroke="#F15852" stroke-width="1.25" fill="none" fill-rule="evenodd"></path></svg></div>
+                            <div class="parallax-inner-2" style="transform: translate3d(0%, 19.359%, 0px);"><svg width="104" height="168" viewBox="0 0 154 168"><path d="M64.544 3.93a25.121 25.121 0 0 1 24.912 0l51.204 29.226a25.182 25.182 0 0 1 9.305 9.244 25.255 25.255 0 0 1 3.41 12.678v57.844c0 4.533-1.214 8.892-3.41 12.678a25.182 25.182 0 0 1-9.305 9.244l-51.204 29.225a25.121 25.121 0 0 1-24.912 0L13.34 134.844a25.182 25.182 0 0 1-9.305-9.244 25.255 25.255 0 0 1-3.41-12.678V55.078c0-4.533 1.214-8.892 3.41-12.678 2.196-3.786 5.374-7 9.305-9.244z" stroke="#F15852" stroke-width="1.25" fill="none" fill-rule="evenodd"></path></svg></div>
+               
 						<div class="left_banner_main">
-							<div class="banner_title">
+                                   
+							<div class="banner-h1">
 							  <div class="mktoText" id="BannerTitle" mktoName="Banner Title">A Talent Operating system for the Healthcare Industry</div>
 							</div>
 							
-							 <div class="banner_text">
+							 <div class="banner-h2">
 							  <div class="mktoText" id="BannerText" mktoName="Banner Text">Beamery is trusted by some of the biggest names in healthcare to help them solve their talent challenges and empower their business.Beamery can:</div>
 							</div>
 							
@@ -602,7 +597,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</ul>
 							</div>
 							
-							<div class="banner_testi">
+							<div class="banner_testimonial">
 								<div class="p_class mktoText" id="banner_testi" mktoName="Banner Testi Text">
 									"Beamery gives us a real opportunity to put candidates at the heart of the experience. So, at all the various different touch points that we have in that candidate journey, we get to enhance the employer brand."
 								</div>
