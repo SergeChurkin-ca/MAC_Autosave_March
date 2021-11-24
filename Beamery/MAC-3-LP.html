@@ -47,7 +47,7 @@
     <meta class="mktoString" id="header_img" mktoName="Header Image" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
     <meta class="mktoColor" id="creating_bg_color" mktoName="Creating Background color" default="#fff">
     <meta class="mktoColor" id="leading_bg_color" mktoName="Leading Background color" default="#fff">
-    <meta class="mktoColor" id="howcan_Bg_color" mktoName="How can Help Background color" default="#F9FAFD">
+    <meta class="mktoColor" id="howcan_Bg_color" mktoName="How can Help Background color" default="#F4F8FA">
     <meta class="mktoColor" id="talking_about_bg_color" mktoName="Talking Background color" default="#fff">
     <meta class="mktoColor" id="applygame_bg_color" mktoName="Apply Game Background color" default="#fff">
     <meta class="mktoColor" id="find_bg_color" mktoName="Findout Background color" default="#F9FAFD">
@@ -72,6 +72,10 @@
     <meta class="mktoString" id="background-banner" mktoName="Background Banner" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
     <meta class="mktoString" id="hero-image" mktoName="Hero Image" default="https://info.beamery.com/rs/918-SFJ-289/images/hero.jpg">
     <meta class="mktoString" id="section-image" mktoName="Hero Image" default="https://via.placeholder.com/100x160">
+    <meta class="mktoString" id="talking-box-image-1" mktoName="Hero Image" default="https://via.placeholder.com/280x280">
+    <meta class="mktoString" id="talking-box-image-2" mktoName="Hero Image" default="https://via.placeholder.com/280x280">
+    <meta class="mktoString" id="talking-box-image-3" mktoName="Hero Image" default="https://via.placeholder.com/280x280">
+    <meta class="mktoString" id="talking-box-image-4" mktoName="Hero Image" default="https://via.placeholder.com/280x280">
 
     <meta class="mktoString" id="header_logo_width" mktoName="Logo width" default="130px">
     <meta class="mktoString" id="header_logo_height" mktoName="Logo height" default="45px">
@@ -168,6 +172,12 @@
             color: #56677F;
             font-weight: bold;
         }
+        .left_banner_main .banner_section_list li:before {
+            background: #ffffff !important;
+        }
+        .banner_section_list li:before {
+            background: #18181B !important;
+        }
         /* banner */
         
         .main_inner_bg {
@@ -180,8 +190,8 @@
         }
         
         .parallax-inner-1 {
-            top: 20rem;
-            left: -26%;
+            top: 42rem;
+            left: -25%;
         }
         
         @media (max-width: 1200px) {
@@ -254,10 +264,32 @@
         }
         
         .section_subtitle,
-        .section_subtitle li {
-            color: #18181B;
+        .section_subtilte li {
+            color: #18181B !important;
             font-weight: 400;
-            font-size: 1.1rem;
+          font-size: 1.1rem;
+        }
+        
+        /* section help */
+        
+        .eu .inner_help {
+            transform: none !important;
+        }
+        .section-help {
+            padding: 2rem 0 !important;
+        }
+        .section-help li {
+            color: #18181B !important;
+        }
+        
+        .section-help img {
+              max-width: 400px;  
+        }
+        
+        /* section apply game changing */
+        
+        .apply_game .section_title, .apply_game .section_subtitle {
+            color: #ffffff !important;
         }
         
         a:hover {
@@ -387,6 +419,10 @@
         
         .eu .btn {
             font-family: 'Beamery', sans-serif !important;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 600 !important;
+            padding: 0.5rem !important;
         }
         /* footer styling */
         
@@ -429,10 +465,7 @@
         }
         
         #footer {
-            background-color:$ {
-                footerbgcolor
-            }
-            ;
+            background-color:${footerbgcolor};
             flex-direction: column;
         }
         
@@ -904,7 +937,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="inner_talking">
                         <div class="talking_box">
                             <div class="left_taking_img">
-                                <img class="mktoImg" id="talkig_box1_img" mktoName="Talking Box-1 Image" src="https://info.beamery.com/rs/918-SFJ-289/images/j1590391622635_talking_about.png" alt="" />
+                                <img class="mktoImg" id="talkig_box1_img" mktoName="Talking Box-1 Image" src="${talking-box-image-1}" alt="" />
                             </div>
 
                             <div class="right_taking_content">
@@ -921,7 +954,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <div class="talking_box">
                             <div class="left_taking_img">
-                                <img class="mktoImg" id="talkig_box2_img" mktoName="Talking Box-2 Image" src="https://info.beamery.com/rs/918-SFJ-289/images/j1590391622635_talking_about.png" alt="" />
+                                <img class="mktoImg" id="talkig_box2_img" mktoName="Talking Box-2 Image" src="${talking-box-image-2}" alt="" />
                             </div>
 
                             <div class="right_taking_content">
@@ -938,7 +971,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <div class="talking_box">
                             <div class="left_taking_img">
-                                <img class="mktoImg" id="talkig_box3_img" mktoName="Talking Box-3 Image" src="https://info.beamery.com/rs/918-SFJ-289/images/j1590391622635_talking_about.png" alt="" />
+                                <img class="mktoImg" id="talkig_box3_img" mktoName="Talking Box-3 Image" src="${talking-box-image-3}" alt="" />
                             </div>
 
                             <div class="right_taking_content">
@@ -955,7 +988,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <div class="talking_box">
                             <div class="left_taking_img">
-                                <img class="mktoImg" id="talkig_box4_img" mktoName="Talking Box-4 Image" src="https://info.beamery.com/rs/918-SFJ-289/images/j1590391622635_talking_about.png" alt="" />
+                                <img class="mktoImg" id="talkig_box4_img" mktoName="Talking Box-4 Image" src="${talking-box-image-4}" alt="" />
                             </div>
 
                             <div class="right_taking_content">
