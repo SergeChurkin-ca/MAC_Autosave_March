@@ -23,6 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
 
   <meta class="mktoString" id="header_img" mktoName="Header Image" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
+      
   <meta class="mktoString" id="header_logo_width" mktoName="Logo width" default="130px">
   <meta class="mktoString" id="header_logo_height" mktoName="Logo height" default="45px">
   <meta class="mktoBoolean" id="showHeader" mktoName="Show Header?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -32,8 +33,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta class="mktoBoolean" id="boolean2" mktoName="Form Show/Hide" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoBoolean" id="showBodyText" mktoName="Show Body Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoBoolean" id="boolean1" mktoName="Featuring Show/Hide" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoBoolean" id="showForm" mktoName="Show Example Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoBoolean" id="showprivacy" mktoName="Show Privacy Policy" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+      
+  <meta class="mktoBoolean" id="showFooterTopWrapper" mktoName="Show/Hide Footer Top Wrapper" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+      
+  <meta class="mktoBoolean" id="showprivacy" mktoName="Show Privacy Policy" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+      
 
 <!-- Global Variables -->
   <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#150e3f">
@@ -135,6 +139,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .featuring {
         width: 70px;
         height: 70px;
+        max-width: 70px;
+        max-height: 70px;
     }
 
     a:hover {
@@ -148,13 +154,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 /* form */
 
     #form {
-        Width: 100% !important;
+        width: 100% !important;
         margin-top: -130px;
         background-color:#ffffff !important;
       	padding-bottom:0 !important;
         padding: 2rem 2rem 5rem !important;
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         gap: 1rem;
     }
     label {
@@ -163,7 +169,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     input, select {
         padding: 1.5rem 1rem !important;
-        margin: 0.2rem 0 !important;
+         margin: 0.5rem 0;
         border: 1px solid rgba(24,24,27,.15);
     }
     button {
@@ -172,16 +178,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     #form .mktoForm input, #form .mktoForm select {
         width: 100%;
-        height: 4rem;
+        height: 3.5rem;
         border-radius: 6px;
         padding: 1.1875rem 1.25rem;
-        margin: 0.5rem 0;
+       
     }
-    #from .mktoCheckboxList input {
+    
+    #form .mktoValid {
+       border: solid 1px rgba(67,29,178,.55) !important;
+    }
+    #form .mktoCheckboxList input {
         width: unset;
     }
-    #form .mktoForm input[type=text]:focus {
-        border: red !important;
+    #form .mktoForm .mktoLabel {
+        max-width: 150px;
+    }
+    #form .mktoForm input[type=text]:focus, #form .mktoForm input[value]:not([value=""])  {
+        border: solid 1px red !important;
+    }
+    #form .mktoForm input[type=text]:active, #form .mktoForm input:not(:placeholder-shown) {
+        border: solid 1px rgba(67,29,178,.55) !important;
+    }
+    #form .mktoForm input[type=text]:visited {
+        border: solid 1px rgba(67,29,178,.55) !important;
     }
     #form .mktoForm {
       background: #ffffff !important;
@@ -214,10 +233,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         display: ${showBodyText};
       }
       
-      #exampleForm{
-        display: ${showForm};
-      }
-
+  
 
       #featuring {
         display: ${boolean1};
@@ -231,16 +247,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         padding: 2rem 0;
       }
 
-      .bannerCol{
-        display: ${showBanner};
-        flex-direction: row;
-        justify-content: space-between;
-        background: #fff;
-        align-items: center;
-        min-height: 575px;
-        margin-top: 2px;
-      }
-      
+    
       .col{
         width: 49%;
        padding: 0px;
@@ -314,8 +321,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .bannerText h3{
           font-size: 1rem !important;
         }
+        .mainContent .row {
+            margin: unset !important;
+        }
+        #footer {
+            overflow-x: hidden !important;
+        }
+        #form .mktoForm {
+            padding: 0 !important;
+        }
       }
-      
+      @media (max-width: 800px) {
+       
+        .mainContent .row .col-sm-6 {
+            width: 100%;
+            max-width: unset !important;
+        }
+        
+      }
       @media(max-width: 660px){
         .bannerText h1{
           font-size: 3rem !important;
@@ -351,12 +374,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        .bannerCol{
         flex-direction: column;
       }
-              .col .mktoImg {
-                height: 100%;}
-      .col .mktoImg img{
+        .col .mktoImg {
+          height: 100%;
+        }
+      	.col .mktoImg img{
             height: 100%;
-    float: right;
-    width: unset;
+    		float: right;
+    		width: unset;
       }
       .col{
         width: 100%;
@@ -372,6 +396,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         #form h1 {
           font-size:20px !important;
         }
+        
     }
       @media(max-width:345px){
         .bannerText h1{
@@ -422,7 +447,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background-color:${footerbgcolor};
     flex-direction: column;
     }
-    #footer, .top-wrapper, .bottom-wrapper {
+    #footer .top-wrapper {
+        display: ${showFooterTopWrapper};
+    }
+    #footer .bottom-wrapper {
       display: flex;
     }
     .top-wrapper, .bottom-wrapper {
@@ -632,34 +660,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
-  	<div class="bannerCol">
-      <div class="mktoText col bannerText" mktoName="Banner Text" id="bannerText">
-        <h1>
-          <span class="spark">
-            Spark
-          </span>
-          
-        </h1>
-        <h1>
-          <span class="live">
-               Live 2020
-          </span>
-        </h1>
-        <h2>
-          by Beamery
-        </h2>
-        <h3>
-          Thank you for registering! You will receive an email confirmation shortly.
-        </h3>
-        
-      </div>
-       <div class="col bannerImg">
-         <div class="mktoImg" mktoName="Banner Img" id="bannerImg">
-            <img src="https://info.beamery.com/rs/918-SFJ-289/images/TY-bannerImg.png">
-         </div>
-       
-      </div>
-  	</div>
+  
    
     <div class="container mainContent">
          <br />
@@ -698,28 +699,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="container center">
                         <div class="row">
                             <div class="col-6 col-md-3">
-                                <img class="square-img featuring" src="https://via.placeholder.com/50x50" alt="">
+                                <img class="square-img featuring" src="https://via.placeholder.com/50x50" alt="speaker photo">
                                 <p class="mt-3" style="font-size:11px">
                                     <b>First LastName</b>
                                     <br />Company & Title
                                 </p>
                             </div>
                             <div class="col-6 col-md-3">
-                                <img src="https://via.placeholder.com/50x50" class="square-img featuring" alt="">
+                                <img src="https://via.placeholder.com/50x50" class="square-img featuring" alt="speaker photo">
                                 <p class="mt-3" style="font-size:11px">
                                     <b>First LastName</b>
                                     <br />Company & Title
                                 </p>
                             </div>
                             <div class="col-6 col-md-3">
-                                <img src="https://via.placeholder.com/50x50" class="square-img featuring" alt="">
+                                <img src="https://via.placeholder.com/50x50" class="square-img featuring" alt="speaker photo">
                                 <p class="mt-3" style="font-size:11px">
                                     <b>First LastName</b>
                                     <br />Company & Title
                                 </p>
                             </div>
                             <div class="col-6 col-md-3">
-                                <img src="https://via.placeholder.com/50x50" class="square-img featuring" alt="">
+                                <img src="https://via.placeholder.com/50x50" class="square-img featuring" alt="speaker photo">
                                 <p class="mt-3" style="font-size:11px">
                                     <b>First LastName</b>
                                     <br />Company & Title
@@ -739,9 +740,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       
                 <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
                  </div>
-                
-                 <div id="policy">By submitting this form, you agree to Beamery’s <a href="https://beamery.com/policy/website-terms" target="_blank" id="">Website Terms of Use</a> and <a href="https://beamery.com/policy/privacy" target="_blank">Privacy Policy</a>.</div>
-                </div>
             
                
             </div>
