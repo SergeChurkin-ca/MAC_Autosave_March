@@ -170,8 +170,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         padding: 1rem Im !important;
         width: 8rem !important;
     }
-    .mktoForm input[type=text]:focus {
-        border: 1px solid rgba(67,29,178,.55) !important;
+    #form .mktoForm input, #form .mktoForm select {
+        width: 100%;
+        height: 4rem;
+        border-radius: 6px;
+        padding: 1.1875rem 1.25rem;
+        margin: 0.5rem 0;
+    }
+    #from .mktoCheckboxList input {
+        width: unset;
+    }
+    #form .mktoForm input[type=text]:focus {
+        border: red !important;
     }
     #form .mktoForm {
       background: #ffffff !important;
