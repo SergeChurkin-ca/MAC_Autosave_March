@@ -87,7 +87,7 @@
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
     <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
-    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="40">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="200">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
 
@@ -137,6 +137,7 @@
       background-image: url('${body-bg-img}');
       background-repeat: no-repeat;
       background-size: cover;
+      overflow-x: hidden;
       } 
       
       #header h1{
@@ -258,17 +259,17 @@
           max-width: 1200px;
       }
       #freetext{
-        background-color:${freeTextBackgroundColor};
-        display:${showsec1};
-        opacity: 0.8;
-        text-align: center;
-        line-height: 3rem;
+            background-color:${freeTextBackgroundColor};
+            display:${showsec1};
+            opacity: 0.8;
+            text-align: center;
+            line-height: 3rem;
       }
-                                                                                                       #freetext2 {
-        background: ${clrGrokkerPlum};
-        color: ${defaultwhite};
-        font-size: ${fontsize18}px;
-        text-align: center;
+        #freetext2 {
+            background: ${clrGrokkerPlum};
+            color: ${defaultwhite};
+            font-size: ${fontsize18}px;
+            text-align: center;
         }                                                                                         
         #freetext2 .section {
             position: relative;
@@ -301,34 +302,15 @@
             }
         }
       /* sqew lines bafore footer decoration */
-      
-      .sqew-line-1 {
-        width: 100vw;
-        height: 10rem;
-        background-color: #f15a23;
-        -moz-transform: scale(1.3) skew(0deg, 8deg);
-        -webkit-transform: scale(1.3) skew(0deg, 8deg);
-        -o-transform: scale(1.3) skew(0deg, 8deg);
-        -ms-transform: scale(1.3) skew(0deg, 8deg);
-        transform: scale(1.3) skew(0deg, 8deg);
-        position: absolute;
-        bottom: 8rem;
-        z-index: 1;
-      }
-      .sqew-line-2 {
-        width: 100vw;
-        height: 15rem;
-        background-color: #ffffff;
-        -moz-transform: scale(1.3) skew(0deg, -10deg);
-        -webkit-transform: scale(1.3) skew(0deg, -10deg);
-        -o-transform: scale(1.3) skew(0deg, -10deg);
-        -ms-transform: scale(1.3) skew(0deg, -10deg);
-        transform: scale(1.3) skew(0deg, -10deg);
-         position: absolute;
-        bottom: 8rem;
-        z-index: 2;
-      }
-
+   
+        .footer-decor-sqew {
+            position: absolute;
+            max-width: unset;
+            right: 0;
+            left: -40rem;
+            bottom: 0rem;
+            z-index: -1;
+        }
       /* end of sqew line */
       #formsection{
         background-color:${mainformbgclr};
@@ -341,8 +323,8 @@
         background-color:${footerbgclr};
         color:${footerfontclr};
         font-size:${footerfontsize}px;
-        border: solid 1px red;
-        height: 15rem;
+        height: 7rem;
+        margin-top: 10rem;
       }
       #footer .flex {
           justify-content: space-around;
@@ -451,11 +433,12 @@
         padding-bottom: ${formTopBottomPadding}px;
         paddging-left: ${formLeftRightPadding}px;
         paddging-right: ${formLeftRightPadding}px;
+        margin-left: 3rem;
       }
       #formsection .lefttext{
         display:${showlefttext};
         border-right: 1px solid #afafaf;
-        padding: 0 2rem 0 0;
+        padding: 0 2rem 0 0 !important;;
       }
       #formsection img {
           max-width: 70%;
@@ -661,26 +644,36 @@
         #brand .logo-container{
           top:40px;
         }
-        .lefttext {
+        #formsection .lefttext {
             border: none;
         }
+        #formsection .form-container {
+            margin: 0;
+        }
+        }
+                                                                                                                                                                                                                                                                                            
         #formsection .lefttext{
           margin-right:0;
           width:100%;
           margin-bottom:20px;
           padding: 0;
+         
         }
         #formsection .w100 {
             width: 100%;
         }
         #formsection .form-container{
           padding:20px;
+          
         }
         #footer .section{
           padding:25px 0;
           align-items:center;
           justify-content: center;
           text-align:center;
+        }
+        .footer-decor-sqew {
+            left: -57rem;
         }
         #footer .logo-container{
           margin-bottom:10px;
@@ -698,6 +691,11 @@
         .mktoForm .mktoFormRow .mktoFormCol{
           margin-left:0 !important;
         }
+      }
+      @media (min-width:2000px) {
+          .footer-decor-sqew {
+              width: 3300px;
+          }
       }
     </style>
   </head>
@@ -774,11 +772,10 @@
 
     <footer id="footer">
         <div class="sqew-decoration-section">
-            <div class="sqew-line-1"></div>
-            <div class="sqew-line-2"></div>
+            
         </div>
       <div class="section flex">
-        
+            <img class="footer-decor-sqew" src="https://info.grokker.com/rs/743-AWQ-437/images/footer-decor.png" alt="" />
             <div class="icons-container">
                 <div class="mktoText" id="footericons" mktoName="Footer - Logo Container">
                  <div class="logo-container" id="bannerlogo-2">
