@@ -26,6 +26,7 @@
 
 
 
+    <meta class="mktoBoolean" id="ShowHeader" mktoName="Show Header?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbannersec" mktoName="Show Banner Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showcreatingsec" mktoName="Show Creating Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtrustsec" mktoName="Show Trust Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
@@ -33,9 +34,9 @@
     <meta class="mktoBoolean" id="show_talkingsec" mktoName="Show Talking Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showapply_game" mktoName="Show Apply Game Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfindout" mktoName="Show Find out Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
 
 
-    <meta class="mktoBoolean" id="showFooterTopWrapper" mktoName="Show/Hide Footer Top Wrapper" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <!------------------- Show/Hide Section Ends ----------------->
 
@@ -43,7 +44,7 @@
     <!---------------------  Backgroundcolor Editable  -------------------------->
 
     <meta class="mktoColor" id="headerbgcolor" mktoName="Header Background color" default="#201E5A">
-
+    <meta class="mktoString" id="header_img" mktoName="Header Image" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
     <meta class="mktoColor" id="creating_bg_color" mktoName="Creating Background color" default="#fff">
     <meta class="mktoColor" id="leading_bg_color" mktoName="Leading Background color" default="#fff">
     <meta class="mktoColor" id="howcan_Bg_color" mktoName="How can Help Background color" default="#F4F8FA">
@@ -62,31 +63,28 @@
     <meta class="mktoString" id="talking_box2btn" mktoName="Talking Box-2 Btn Link" default="#">
     <meta class="mktoString" id="talking_box3btn" mktoName="Talking Box-3 Btn Link" default="#">
     <meta class="mktoString" id="talking_box4btn" mktoName="Talking Box-4 Btn Link" default="#">
+    <meta class="mktoString" id="applygame_img_link" mktoName="Applay Game Image Link" default="https://beamery.com/customers/astrazeneca">
     <meta class="mktoString" id="applygame_link" mktoName="Applay Game Btn Link" default="#">
     <meta class="mktoString" id="find_btn_link" mktoName="Findout Btn Link" default="#">
 
     <!-- Global Variables -->
     <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#150e3f">
     <meta class="mktoString" id="background-banner" mktoName="Background Banner" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
-    <meta class="mktoString" id="talking-box-image-1" mktoName="Speaker 1 Image" default="https://via.placeholder.com/280x280">
-    <meta class="mktoString" id="talking-box-image-2" mktoName="Speaker 2 Image" default="https://via.placeholder.com/280x280">
-    <meta class="mktoString" id="talking-box-image-3" mktoName="Speaker 3 Image" default="https://via.placeholder.com/280x280">
-    <meta class="mktoString" id="talking-box-image-4" mktoName="Speaker 4 Image" default="https://via.placeholder.com/280x280">
-    <meta class="mktoString" id="decorated-shadow-img" mktoName="Decor Shadow Image" default="https://info.beamery.com/rs/918-SFJ-289/images/mobi1-xs.png">
-  	<meta class="mktoString" id="video_img" mktoName="Video Section Background" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
-        
-     <!-- video link image and screen shot -->   
-    <meta class="mktoString" id="applygame_img_link" mktoName="Video Link Image" default="https://beamery.com/customers/astrazeneca">
-    <meta class="mktoString" id="applygame_img_screenshot" mktoName="Video Link Screenshot" default="https://info.beamery.com/rs/918-SFJ-289/images/videoplay.png">
+    <meta class="mktoString" id="hero-image" mktoName="Hero Image" default="https://info.beamery.com/rs/918-SFJ-289/images/hero.jpg">
+    <meta class="mktoString" id="section-image" mktoName="Hero Image" default="https://info.beamery.com/rs/918-SFJ-289/images/solutions_related.jpg">
+    <meta class="mktoString" id="talking-box-image-1" mktoName="Talking Box 1 Image" default="https://via.placeholder.com/280x280">
+    <meta class="mktoString" id="talking-box-image-2" mktoName="Talking Box 2 Image" default="https://via.placeholder.com/280x280">
+    <meta class="mktoString" id="talking-box-image-3" mktoName="Talking Box 3 Image" default="https://via.placeholder.com/280x280">
+    <meta class="mktoString" id="talking-box-image-4" mktoName="Talking Box 4 Image" default="https://via.placeholder.com/280x280">
+    <meta class="mktoString" id="decorated-shadow-img" mktoName="Talking Box Decoration Image" default="https://info.beamery.com/rs/918-SFJ-289/images/mobi1-xs.png">
 
     <meta class="mktoString" id="header_logo_width" mktoName="Logo width" default="130px">
     <meta class="mktoString" id="header_logo_height" mktoName="Logo height" default="45px">
-    <meta class="mktoBoolean" id="showHeaderText" mktoName="Show Header Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showMain" mktoName="Show Main Content?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="boolean2" mktoName="Form Show/Hide" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="boolean1" mktoName="Featuring Show/Hide" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showprivacy" mktoName="Show Privacy Policy" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-
+    <meta class="mktoBoolean" id="showFooterTopWrapper" mktoName="Show/Hide Footer Top Wrapper" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+                                                                                                                                                                                                                
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <!-- Google Tag Manager -->
@@ -165,12 +163,7 @@
             font-size:12px;
             text-align:center;
         }
-        .eu .banner_section::before {
-            background-image: unset !important;
-        }
-        .eu .find_out {
-            padding: 55px 0 0 !important;
-        }
+        
         a {
             color: #56677F;
             font-weight: bold;
@@ -210,7 +203,7 @@
         
         .parallax-inner-2 {
             top: 23rem;
-            left: 102%
+            left: 50%;
         }
         
         @media (max-width: 990px) {
@@ -243,6 +236,7 @@
             font-weight: 700;
             letter-spacing: -.045em;
             line-height: 1.15;
+            width: 50vw;
             position: relative;
             max-width: 900px;
         }
@@ -292,7 +286,7 @@
             min-width: 100px;
         }
                                                                                                                                                                                                                                         
-       .main .right_banner_main {
+         .main .right_banner_main .sec_form {
             display: ${boolean2} !important;
         }
         /* section help */
@@ -300,7 +294,6 @@
         .eu .inner_help {
             transform: none !important;
         }
-        
         .section-help {
             padding: 2rem 0 !important;
         }
@@ -317,11 +310,11 @@
         .apply_game .section_title, .apply_game .section_subtitle {
             color: #ffffff !important;
         }
+        
         .creating_title .link-btn {
             margin-top: 1rem !important;
         }
         
-
         /* section talking box */
         
         .left_taking_img {
@@ -330,7 +323,7 @@
         }
         .img-top{
             position: relative;
-            z-index: 2 !important;
+            z-index: 2;
         }
         .img-decor {
             position: absolute;
@@ -340,11 +333,7 @@
             height: 96% !important;
             max-width: 280px !important;
         }
-        @media (max-width: 600px) {
-            .inner_talking {
-                padding: 0 1rem !important;
-            }
-        }
+        
         a:hover {
             color: #000000;
             text-decoration: none;
@@ -359,15 +348,7 @@
             padding: 2rem 0;
         }
         
-        .bannerCol {
-            display: ${showBanner};
-            flex-direction: row;
-            justify-content: space-between;
-            background: #fff;
-            align-items: center;
-            min-height: 575px;
-            margin-top: 2px;
-        }
+
         
         .col {
             width: 49%;
@@ -398,7 +379,12 @@
                 font-size: 1rem !important;
             }
         }
-        
+        @media (max-width: 767px) {
+            .eu .page_link:after {
+                position: unset !important;
+                width: 20%;
+            }
+        }
         @media(max-width: 660px) {
             .bannerText h1 {
                 font-size: 3rem !important;
@@ -550,15 +536,13 @@
         }
         
         #footer .footer-column {
-            /* width: 10vw; */
             min-width: 100px;
         }
-         #footer .top-wrapper {
+        #footer .top-wrapper {
         display: ${showFooterTopWrapper};
         }
         .top-wrapper {
             justify-content: space-between;
-            /* flex-wrap: wrap; */
             gap: 1.8rem;
         }
         
@@ -744,7 +728,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="inner_background_banner">
 
                     <!-- Section Header -->
-                    <div id="HeaderSection" class="flw" style="background-color:${headerbgcolor};">
+                    <div id="HeaderSection" class="flw" style="background-color:${headerbgcolor};display:${ShowHeader};">
                         <div class="main">
                             <div class="sec_header">
                                 <div class="header_left">
@@ -764,20 +748,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="left_banner_main">
 
                                 <div class="banner-h1">
-                                    <div class="mktoText" id="BannerTitle" mktoName="Banner Title">Find out more about Beamery's Talent Operating System</div>
+                                    <div class="mktoText" id="BannerTitle" mktoName="Banner Title">A Talent Operating system for the Healthcare Industry</div>
                                 </div>
 
                                 <div class="banner-h2">
-                                    <div class="mktoText" id="BannerText" mktoName="Banner Text">We're trusted by some of the biggest organizations in the world to help them solve their talent challenges and empower their business. Beamery can:</div>
+                                    <div class="mktoText" id="BannerText" mktoName="Banner Text">Beamery is trusted by some of the biggest names in healthcare to help them solve their talent challenges and empower their business.Beamery can:</div>
                                 </div>
 
                                 <div class="banner_section_list">
                                     <ul class="mktoText" id="banner_sec_list" mktoName="Banner Section List">
-                                        <li>Help you stand out in a competitive job market where it’s increasingly difficult to find top talent</li>
+                                        <li> Help you stand out in a competitive job market</li>
                                         <li>Increase employee retention and internal mobility</li>
-                                        <li>Helps make data easier to find and to allow for more cost-effective outreach</li>
-                                        <li>Provide end-to-end compliance that safeguards your team, meeting the most demanding global compliance and privacy requirements</li>
-                                        <li>Integrate directly with Workday - we're the only talent CRM that can</li>
+                                        <li>Leverage your talent data more effectively</li>
+                                        <li>Keep that data safe. We’re ISO compliant to keep you secure</li>
                                     </ul>
                                 </div>
 
@@ -790,7 +773,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
 
                             <div class="right_banner_main">
-                              
+                                <div style="display:block;">
+                                    <div class="mktoImg mktoGen" mktoName="Banner Image" id="mkto_gen_banner_img_1"><img id="banner_img_1" src="${hero-image}" alt="hero image"></div>
+                                </div>
                                 
                                     <div id="FormSection" class="sec_form">
                                         <div class="mktoForm" id="myMarketoForm" mktoName="Select Form">
@@ -922,15 +907,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
 
                             <div class="section_subtitle mktoText" id="how_can_help_sub_title" mktoName="How can help Section Sub-Title">
-                                <div>We've created Beamery to solve a lot of the problems you're facing everyday.</div>
+                                <div>We've created Beamery to solve a lot of the problems you're facing everyday. From proactively building talent pipelines, to helping you make sense of your candidate data.</div>
                             </div>
 
                             <div class="banner_section_list">
                                 <ul class="mktoText" id="how_can_list" mktoName="How can help Section List">
+                                    <li> Beamery simplifies the creation of careers sites that perfectly match your brand, while being fully mobile and SEO optimized. Even better, candidates see personalized content and job recommendations.</li>
+                                    <li>Our easy to use Chrome extension eases the capture of new candidate data, as well as automated sorting of contacts into talent pools for nurture and follow-up.</li>
                                     <li>Not only do we have the only Workday Certified CRM integration, but you can integrate Beamery with all of your existing tools and services.</li>
-                                    <li>We help you stand out from the crowd by simplifying the creation of mobile optimized careers sites that match your brand. Even better, candidates are more engaged through personalized, content and job recommendations. </li>
-                                    <li>Your team is enabled to engage with each candidate in a personalized, relevant and timely way - and at scale through automation.</li>
-                                    <li>We value diversity and inclusion, so we built a proactive sourcing model to actively seek out diverse talent, as well as ways to engage with specific groups with the right content.</li>
+                                    <li>We value diversity and inclusion, so we built a proactive sourcing model to actively seek out diverse talent, as well as ways to engage with specific groups with the right content. </li>
                                 </ul>
                             </div>
 
@@ -945,11 +930,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <!-- Apply  game changing section starts-->
 
-            <div class="apply_game flw" style="background:url('${video_img}');background-position:top; display:${showapply_game};background-repeat: no-repeat;">
+            <div class="apply_game flw" style="background:url('${header_img}');background-position:top; display:${showapply_game};">
                 <div class="main">
                     <div class="apply_game_inner">
                         <div class="left_game_img">
-                            <a href="${applygame_img_link}" target="_blank"><img class="lpimg" id="applygame_sec1" mktoname="Apply Game Left Image" src="${applygame_img_screenshot}" alt=""></a>
+                            <a href="${applygame_img_link}" target="_blank"><img class="mktoImg" id="applygame_sec1" mktoName="Apply Game Left Image" src="https://info.beamery.com/rs/918-SFJ-289/images/j1590391622635_AstraZeneca-video_img.png" alt="" /></a>
                         </div>
 
                         <div class="right_game_content">
@@ -963,7 +948,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </div>
 
                                 <div class="link-btn">
-                                    <a href="${applygame_link}" class="page_link"><span class="mktoText" id="apply_game_btn_text" mktoName="Apply Game Btn Text">Watch now</span></a>
+                                    <a href="${applygame_link}" class="page_link"><span class="mktoText" id="apply_game_btn_text" mktoName="Apply Game Btn Text">Read more</span></a>
                                 </div>
                             </div>
                         </div>
@@ -1075,7 +1060,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="main">
                         <div class="fint_out_title">
                             <div class="section_title mktoText" id="findout_title" mktoName="Findout Section Title">
-                                <div>Treat candidates like customers</div>
+                                <div>Find out how we can help </div>
                             </div>
 
                             <div class="find_btn">
