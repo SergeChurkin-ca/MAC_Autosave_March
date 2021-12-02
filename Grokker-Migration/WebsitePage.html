@@ -27,8 +27,12 @@ Button Banner Hover color = #1FA2DC
     
     <meta class="mktoColor" id="section1BgColor" mktoName="Section-1 Background Color" default="#666666">
     <meta class="mktoColor" id="section2BgColor" mktoName="Section-2 Background Color" default="#ffffff">
+        
+
+
     <meta class="mktoColor" id="sectionAssetsBgColor" mktoName="Section Assets Background Color" default="#eeeeee">
     <meta class="mktoString" id="sectionAssetsBgImg" mktoName="Section Assets Background Color" default="https://info.grokker.com/rs/743-AWQ-437/images/banner-bg-full-color.png">
+
     <meta class="mktoColor" id="section4BgColor" mktoName="Section-4 Background Color" default="#ffffff">  
 	<meta class="mktoColor" id="section5BgColor" mktoName="Section-5 Background Color" default="#ffffff">
     <meta class="mktoColor" id="section6BgColor" mktoName="Section-6 Background Color" default="#ffffff">
@@ -121,9 +125,16 @@ Button Banner Hover color = #1FA2DC
     #section2 {
       	background-color: ${section2BgColor};
     }
-	
+    #section2 .row {
+        margin: 0 auto;
+    }
+	#section2 .col-md-6 img {
+        width: 100%;
+        height: auto;
+        max-width: 90vw;
+    }
 
-
+    
 	/* Section 4 */
     #section4 {
       	background-color: ${section4BgColor};
@@ -335,40 +346,114 @@ FORM 2.0 -- Simple Form STYLES ONLY
             </div>
             
             
-			<div><!-- Separator -->
+			
             
             
-             <!-- Section 2 -->   
-      <div id="section2" style="display:${showSection2};"> 
-		<div class="container padding40 paddingbottom-15">
-			<div class="row">
-				<div class="col-md-6" id="main-content">
-                   
-				<div class="mktoText" id="section-2-left" mktoName="Section 2 Left Content" style="padding:0px 20px;">
-					<h2>Section 2 Title</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
-					<p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
-                </div>
-                
-				</div>
-				<div name="main-form" style="display:${showSection2Form};">
-				<div class="col-md-5 col-md-offset-1">
-					<div class="mktoForm" id="primaryForm" mktoName="Primary Form" style="margin-bottom:40px;padding:10px 20px;min-height:80px;">
+     <!-- Section 2 -->   
+              <div id="section2" style="display:${showSection2};"> 
+              
+                <div class="container padding40 paddingbottom-15">
+                    
+                  <div class="row">
+                    <div class="col-md-6" id="main-content-1">
+                      <div class="mktoText" id="row-1-left" mktoName="Row 1 Left Content">
+                        <div class="section-2-img">
+                          <img src="https://via.placeholder.com/500x400/5d4d93/808080" >
+                        </div>
+                      </div>
                     </div>
-				</div>
+                    <div class="col-md-6" id="main-content-2">
+                      <div class="mktoText" id="row-1-right" mktoName="Row 1 Right Content">
+                        <h2>Section 2 Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
+                        <button class="section2-btn">Button</button>
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="row">
+                    <div class="col-md-6" id="main-content-3">
+                      <div class="mktoText" id="row-2-right" mktoName="Row 2 Left Content">
+                        <h2>Section 2 Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
+                        <button class="section2-btn">Button</button>
+                      </div>
+                    </div>
+                        <div class="col-md-6" id="main-content-4">
+                      <div class="mktoText" id="row-2-left" mktoName="Row 2 Right Content">
+                        <div class="section-2-img">
+                          <img src="https://via.placeholder.com/500x400/5d4d93/808080" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="row">
+                    <div class="col-md-6" id="main-content-5">
+                      <div class="mktoText" id="row-3-left" mktoName="Row 3 Left Content">
+                        <div class="section-2-img">
+                          <img src="https://via.placeholder.com/500x400/5d4d93/808080" >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6" id="main-content-6">
+                      <div class="mktoText" id="row-3-right" mktoName="Row 3 Right Content">
+                        <h2>Section 2 Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
+                        <button class="section2-btn">Button</button>
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="row">
+                    <div class="col-md-6" id="main-content-7">
+                      <div class="mktoText" id="row-4-right" mktoName="Row 4 Left Content">
+                        <h2>Section 2 Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
+                        <button class="section2-btn">Button</button>
+                      </div>
+                    </div>
+                        <div class="col-md-6" id="main-content-8">
+                      <div class="mktoText" id="row-4-left" mktoName="Row 4 Right Content">
+                        <div class="section-2-img">
+                          <img src="https://via.placeholder.com/500x400/5d4d93/808080" >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                    <div class="row">
+                    <div class="col-md-6" id="main-content-9">
+                      <div class="mktoText" id="row-5-left" mktoName="Row 5 Left Content">
+                        <div class="section-2-img">
+                          <img src="https://via.placeholder.com/500x400/5d4d93/808080" >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6" id="main-content-10">
+                      <div class="mktoText" id="row-4-right" mktoName="Row 5 Right Content">
+                        <h2>Section 2 Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
+                        <button class="section2-btn">Button</button>
+                      </div>
+                    </div>
+                  </div>
+                  
                 </div>
-			</div>
-            </div>
-       </div>
-            
-            			<div>
-            
-            
-          
-    
-    
-				<div>
+              </div>
+
+              
+				
     
 <!-- Section 3 -->
 <div id="section-form" style="display:${showSection3};">
@@ -389,24 +474,42 @@ FORM 2.0 -- Simple Form STYLES ONLY
 </div>
 <!--End Section 3 -->
                           
-    
-	
 
 	<!-- Footer Bottom -->	      
   <div id="footerSection" style="display:${showFooter};"> 
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
+
 				<div class="col-lg-6 col-sm-6">
                 <div class="mktoText" id="footer-copyright-default" mktoName="Copyright">
-					<p>&copy;2017 My Company Here</p>
+					
+                    <img src="https://na-ab19.marketo.com/rs/grokker/images/logo-lp.png" alt="footer logo" />
+                    <p>Grokker Inc,<br>
+                    560 S Winchester Blvd., Suite 150<br>
+                    San Jose, CA 95128</p>
+                    <a href="tel:4082367582" rel="noopener">408-236-7582</a>
                 </div>
 				</div>
-				<div class="col-lg-6 col-sm-6 footer-links text-right">
+
+				<div class="col-lg-6 col-sm-6 footer-links">
                 <div class="mktoText" id="footer-links-bp" mktoName="Footer Links">
-					<a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Contact Us</a>
+					<ul role="menu">
+                    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.grokker.com/pricing" role="menuitem">Pricing</a></li>
+                    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.grokker.com/resources" role="menuitem">Resources</a></li>
+                    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://support.grokker.com/hc/en-us" role="menuitem" target="_blank" rel="noopener">Customer Support</a></li>
+                    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.grokker.com/blog" role="menuitem">Blog</a></li>
+                    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.grokker.com/careers" role="menuitem">Careers</a></li>
+                    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.grokker.com/about" role="menuitem">About Us</a></li>
+                    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://www.grokker.com/press" role="menuitem">Press</a></li>
+                    <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://grokker.com/tos" role="menuitem">Privacy Policy &amp; Terms</a></li>
+                    </ul>
+                </div>
+                <div class="mktoText" id="footer-cta" mktoName="Footer CTA">
+                    <button class="footer-btn">Contact Sales</button>
                 </div>
 				</div>
+
 			</div>
 		</div>
 	</footer>
