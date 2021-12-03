@@ -3,6 +3,10 @@
     color: #123456;
 }
 
+.mktoForm {
+    max-width: 90vw !important;
+}
+
 .mktoForm fieldset {
     border: 1px solid #aeb0b6;
 }
@@ -15,6 +19,7 @@
     color: #777;
     font-size: 14px;
     font-weight: normal;
+    white-space: nowrap;
 }
 
 .mktoForm input[type=text],
@@ -36,6 +41,8 @@
     margin: 0.5rem 0;
     box-shadow: none;
     white-space: nowrap;
+    width: 40vw !important;
+    max-width: 400px !important;
 }
 
 .mktoForm input[type=text]:focus,
@@ -177,4 +184,8 @@
 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
     background: #000000 !important;
     color: #ffffff !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple {
+    margin-left: unset !important
 }
