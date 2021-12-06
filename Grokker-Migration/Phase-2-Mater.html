@@ -125,7 +125,18 @@ Button Banner Hover color = #1FA2DC
     #section2 {
       	background-color: ${section2BgColor};
     }
-	
+    #section2 .column-1, .column-2  {
+        width: 50% !important;
+    }
+    #section2 .column-2 img{
+        width: 100%;
+        height: auto;
+    }
+	@media ( max-width:959px ) {
+        #section2 .column-1, .column-2 {
+            width: 100% !important;
+        }
+    }
 	/* Section 3 */
     #section3 {
       	background-color: ${section3BgColor};
@@ -387,8 +398,8 @@ FORM 2.0 -- Simple Form STYLES ONLY
               <!-- Section 2 -->   
               <div id="section2" style="display:${showSection2};"> 
                 <div class="container padding40 paddingbottom-15">
-                  <div class="row">
-                    <div class="col-md-6" id="main-content">
+                  <div class="row section paddingtop-40">
+                    <div class="column-1" id="main-content">
 
                       <div class="mktoText" id="section-2-left" mktoName="Section 2 Left Content" style="padding:0px 20px;">
                         <h2>Section 2 Title</h2>
@@ -399,7 +410,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
 
                     </div>
 
-                    <div class="col-lg-6 col-md-6 section5-img" style="float:right;">
+                    <div class="column-2 section-img" style="float:right;">
                       <div class="mktoText img-responsive" id="section-2-image" mktoName="Section 2 Image" >
                      </div>
                     </div>
