@@ -22,7 +22,7 @@
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
    
     <!-- Background, Buttons, and Text Color Meta Tags -->
-    <meta class="mktoColor" id="brandbgclr" mktoName="Banner - Background Color" default="#FFF1E6">
+    <meta class="mktoColor" id="brandbgclr" mktoName="Banner - Background Color" default="#fffaf6">
     <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#bbbbbb">
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
@@ -65,8 +65,8 @@
     <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/600x400/154A3E/c2c2c2">
     <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="225">
     
-    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="80">
-    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="80">
+    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="20">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="20">
     <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
     <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
 
@@ -273,9 +273,6 @@
         padding-bottom:${headerpaddingbtm}px;
       }
         #header .logo-container{
-        position:absolute;
-        top:${sectionpaddingtb}px;
-        left:0;
         width:100%;
         display:${showtoplogo};
       }
@@ -287,8 +284,6 @@
         background-color: ${brandbgclr};
       }
       #brand .logo-container{
-        position:absolute;
-        top:${sectionpaddingtb}px;
         left:0;
         width:100%;
       }
@@ -547,6 +542,9 @@
         #brand .logo-container{
           top:40px;
         }
+        #brand .logo-container img {
+            width: 150px !important;
+        }
         #formsection .lefttext{
           margin-right:0;
           width:100%;
@@ -586,7 +584,7 @@
       <div class="section">
            <div class="logo-container">
             <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
-            <img src="http://go.heywelcome.com/rs/857-SMM-483/images/logo-top.png" alt="logo">
+            <a href="https://www.heywelcome.com"><img src="http://go.heywelcome.com/rs/857-SMM-483/images/logo-top.png" alt="logo"></a>
           </div>
         </div>
       </div>
@@ -678,23 +676,22 @@
 
           <div class="mktoText col" id="footertext1" mktoName="Footer - Text">
            <ul class="social-links">
-                <li class="footer-lists-items">
-                    <a href="https://www.heywelcome.com/blog"  class="footer-links">Blog</a>
-                </li>
+               
                 <li class="footer-lists-items">
                     <a href="https://www.linkedin.com/company/welcomehq/"   target="_blank" class="footer-links">Linkedin</a>
+                </li>
+                   <li class="footer-lists-items">
+                    <a href="https://www.facebook.com/welcomecompensation"  class="footer-links">Facebook</a>
                 </li>
                 <li class="footer-lists-items">
                     <a href="https://twitter.com/welcome_hq"   target="_blank" class="footer-links">Twitter</a>
                 </li>
-                <li class="footer-lists-items">
-                    <a href="https://www.crunchbase.com/organization/welcome-40c8"   target="_blank" class="footer-links">Crunchbase</a>
-                </li>
+           
             </ul>
           </div>
 
             <div class="mktoText logo-container" id="footerlogo" mktoName="Footer - Logo">
-              <a href="#"><img src="https://go.heywelcome.com/rs/857-SMM-483/images/logo-btm.png" alt="footer logo"></a>
+              <a href="https://www.heywelcome.com"><img src="https://go.heywelcome.com/rs/857-SMM-483/images/logo-btm.png" alt="footer logo"></a>
             </div>
         </div>
         
