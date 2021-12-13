@@ -25,7 +25,9 @@
     <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#00C389">
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
-    <meta class="mktoColor" id="background-blend-mode" mktoName="Banner - Text Color" default="none">
+    <meta class="mktoString" id="background-blend-mode" mktoName="Banner - Blend Mode" default="none">
+    <meta class="mktoString" id="header-text-shadow" mktoName="Header Text Shadow" default="0.2">
+    <meta class="mktoString" id="header-txt-shadow-clr" mktoName="Header TExt Shadow Color" default="#000000">
 
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#000">
@@ -33,7 +35,7 @@
 
 
     <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#00C389">
-    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#000000">
+    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
     <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#d4d4d4">
@@ -59,7 +61,7 @@
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
 
     <!-- Banner Section Styling -->
-    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/1400x700/a3a3a3/e6e6e6">
+    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/1400x700/00C389/e6e6e6">
     <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="150">
     
     <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="20">
@@ -82,7 +84,7 @@
     <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Roboto', sans-serif">
 
     <!-- General Button Styling -->
-    <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
+    <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
     <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="5">
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="40">
@@ -172,8 +174,11 @@
         font-size:${btnfontsize}px;
         transition:300ms opacity;
       }
-      .btn a:hover{
-        opacity:${btnhvropacity};
+      .btn:hover, .btn:focus {
+          transform: scale(1.1)
+      }
+      .btn a:hover, .btn a:focus {
+        
       }
       .section{
         width:85%;
@@ -207,6 +212,7 @@
         background-size:cover;
         display:${showbanner};
         background-blend-mode: ${background-blend-mode};
+        text-shadow: ${header-text-shadow}px ${header-text-shadow}px ${header-text-shadow}px ${header-txt-shadow-clr};
       }
       #freetext{
         background-color:${freeTextBackgroundColor};
@@ -453,7 +459,7 @@
         display: block;
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
-}
+    }
       #footer .section{
         padding:${footerpaddingtb}px 0;
         
@@ -462,6 +468,7 @@
         align-items:center;
         justify-content: space-between;
         margin-bottom:20px;
+        align-items: baseline;
       }
       #footer .logo-container img{
         width:${footerlogowidth}px;
@@ -471,24 +478,53 @@
         flex-direction:row;
         margin-left:0;
       }
-      .icons-container ul li, .icons-container ol li{
-        list-style:none;
-        margin-right:10px;
+      #footer .column-3 {
+          flex-direction: column;
       }
-      #footer .icons-container img{
+      #footer ul {
+        list-style:none;
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+      }
+      #footer a {
+          text-decoration: none;
+      }
+      .footer-legal {
+          font-weight: bold;
+          margin: 0;
+          gap: 3rem;
+      }
+      #footer .social-links {
+          margin-top: 1rem;
+      }
+      #footer .icons-container img {
         width:${footericonswidth}px;
       }
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
-      
-      
-      @media screen and (max-width:768px){
-        .flex{
-          flex-wrap:wrap;
-          flex-direction:column;
+      @media (max-width: 1200px) {
+          .column-1 {
+              width: 40%;
+          }
+      }
+      @media (max-width: 900px) {
+        .flex {
+          flex-wrap: wrap;
+          flex-direction: column;
         }
+        .column-1, .column-2, .column-3 {
+            width: 100%;
+            text-align: center;
+        }
+        .footer-legal, .social-links {
+            justify-content: center;
+        }
+      }
+      @media screen and (max-width:768px){
+      
         .flex .col:not(:last-child){
           margin-left:0;
           margin-right:0;
@@ -627,33 +663,43 @@
       <div class="section">
         
         <div class="row1 flex">
-          <div class="logo-container col" style="display:${showfooterlogo};">
-            <div class="mktoText" id="footerlogo" mktoName="Footer - Logo">
-              <a href="#"><img src="https://dummyimage.com/150x80/000/fff" alt="footer logo"></a>
+          <div class="logo-container column-1" style="display:${showfooterlogo};">
+            <div class="mktoText" id="footerlogo" mktoName="Footer - Legal">
+              <ul class="footer-legal">
+                <li><a href="https://www.arizehub.com/terms-and-conditions/">Legal Terms</a></li>
+                <li><a href="https://www.arizehub.com/privacy-policy/">Privacy</a></li>
+                <li><a href="https://www.arizehub.com/open-source-disclosure/">Open Source</a></li>
+              </ul>
+              <p>&copy; Copyright 2021 Arize. All rights reserved. Various trademarks held by their respective owners.</p>
             </div>
           </div>
 
-          <div class="mktoText col" id="footertext1" mktoName="Footer - Text">
-            © Company Name
+          <div class="mktoText column-2" id="footertext1" mktoName="Footer - Text">
+           <p style="font-weight:bold;">Corporate Headquarters</p>
+           <p>5101 E La Palma Ave
+            <br>Suite 206
+            <br>Anaheim, CA 92807</p>
           </div>
 
-          <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
-            Lorem ipsum dolor sit amet
+          <div class="mktoText column-3 flex" id="footertext2" mktoName="Footer - Text 2">
+           <p style="font-weight:bold;">Get in touch</p>
+            <ul class="footer-contact flex">
+                <li><a href="tel:+18333837962" class="elementor-item menu-link" data-kmt="1">(833)383-7962</a></li>
+                <li><a href="https://www.arizehub.com/contact-sales/" class="elementor-item menu-link" data-kmt="1">Request A Demo</a></li>
+                <li><a href="https://www.arizehub.com/contact/" class="elementor-item menu-link" data-kmt="1">Contact Us</a></li>
+            </ul>
+
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/company/arize-corporation/" target="_blank"><img alt="linkedin icon" width="35" height="auto" src="http://558-USD-240.mktoweb.com/rs/558-USD-240/images/linkedin.png" style="width:35px;height:auto;" /></a></li>
+                <li><a href="https://www.facebook.com/Arize-108681854078861/" target="_blank"><img alt="facebook icon" width="35" height="auto" src="http://558-USD-240.mktoweb.com/rs/558-USD-240/images/facebook.png" style="width:35px;height:auto;" /></a></li>
+                <li>	<a href="https://www.instagram.com/arizehub/" target="_blank"><img alt="instagram icon" width="35" height="auto" src="http://558-USD-240.mktoweb.com/rs/558-USD-240/images/instagram.png" style="width:35px;height:auto;" /></a></li>
+                <li><a href="https://twitter.com/ArizeHub" target="_blank"><img alt="twitter icon" width="35" height="auto" src="http://558-USD-240.mktoweb.com/rs/558-USD-240/images/twitter.png" style="width:35px;height:auto;" /></a></li>
+                <li><a href="https://www.youtube.com/channel/UCzS65l-Gnd7zdiUkKmu6Fnw" target="_blank"><img alt="youtube icon" width="35" height="auto" src="http://558-USD-240.mktoweb.com/rs/558-USD-240/images/youtube.png" style="width:35px;height:auto;" /></a></li>
+            </ul>
           </div>
         </div>
         
-        <div class="row2">
-          <div class="icons-container">
-            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
-              <ul>
-                <li><a href="#"><img src="https://dummyimage.com/40x40/757575/fff"></a></li>
-                <li><a href="#"><img src="https://dummyimage.com/40x40/757575/fff"></a></li>
-                <li><a href="#"><img src="https://dummyimage.com/40x40/757575/fff"></a></li>
-                <li><a href="#"><img src="https://dummyimage.com/40x40/757575/fff"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+
         
       </div>
     </footer>
