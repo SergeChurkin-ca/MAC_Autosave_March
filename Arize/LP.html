@@ -89,6 +89,8 @@
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="40">
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
+    <meta class="mktoString" mktoName="Button Hover top/bottom Padding(px)" id="hover-paddtopbtm" default="13">
+    <meta class="mktoString" mktoName="Button Hover left/right Padding(px)" id="hover-padleftright" default="43">
 
     <!-- Form Section Styling -->
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
@@ -172,14 +174,12 @@
         border-radius:${btnborderrds}px;
         text-align:center;
         font-size:${btnfontsize}px;
-        transition:300ms opacity;
+        transition: all 0.2s;
       }
-      .btn:hover, .btn:focus {
-          transform: scale(1.1)
-      }
-      .btn a:hover, .btn a:focus {
-        
-      }
+        .btn a:hover, .btn a:focus {
+            padding: ${hover-paddtopbtm}px ${hover-padleftright}px;
+        }
+     
       .section{
         width:85%;
         max-width:1400px;
