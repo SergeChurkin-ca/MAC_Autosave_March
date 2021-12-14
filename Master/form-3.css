@@ -1,132 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+.mktoForm {
+    background: #dbd6d2;
+    width: 100% !important;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.mktoForm .close-form-icon {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+    top: -2.7rem;
+    right: -3rem;
+    width: 30px;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .mktoForm .close-form-icon {
+        width: 50px !important;
+        top: -3.5rem;
+        right: -2rem;
+    }
+}
+
+.mktoHtmlText {
+    width: calc(700px - 3rem) !important;
+    padding: 10px 25px 10px 15px;
+    border: none !important;
+    font-family: 'Playfair Display', sans-serif;
+    color: #003349;
+    line-height: 15px;
+    position: relative;
+}
+
+.mktoHtmlText h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.mktoForm select {
+    font-size: 14px !important;
+}
+
+.mktoHtmlText h3 {
+    font-size: 14px;
+    font-family: HelveticaNow, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.mktoForm .mktoLabel {
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 0.5rem;
+    white-space: nowrap;
+    margin-bottom: 0rem;
+}
+
+.mktoForm .mktoFormRow:nth-child(5) .mktoLabel {
+    padding-left: 10px;
+    margin-bottom: 0rem;
+}
+
+.mktoForm .mktoFormRow:nth-child(6) .mktoLabel {
+    padding-left: 0px;
+    margin-bottom: 6px;
+}
+
+.mktoForm .mktoOffset {
+    display: none;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField {
+    width: calc((350px - 2rem)) !important;
+    margin: 0.5rem;
+    border: none !important;
+    padding: 10px 25px 10px 15px;
+    min-height: 2.5rem;
+}
+
+.mktoForm select.mktoField,
+#Company {
+    width: calc(700px - 3rem) !important;
+    padding: 10px 25px 10px 15px;
+    border: none !important;
+    min-height: 2.5rem;
+}
+
+.mktoForm .mktoRequiredField .mktoAsterix {
+    display: none;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel:after {
+    content: "*";
+    color: #000000;
+}
+
+.mktoForm .mktoButtonRow {
+    align-self: end;
+}
+
+.mktoForm .mktoRound {
+    margin: 0 auto !important
+}
+
+.mktoForm .mktoButtonWrap.mktoRound .mktoButton {
+    background: #003349 !important;
+    border: none !important;
+    padding: 15px 42px !important;
+    margin: 1rem 1.4rem 2rem 0 !important;
+    font-size: 14px;
+}
+
+.mktoForm .mktoButtonWrap.mktoRound .mktoButton:hover,
+.mktoForm .mktoButtonWrap.mktoRound .mktoButton:active {
+    background: #039db8 !important;
+    cursor: pointer;
+}
+
+
+/* input on focus */
+
+.mktoForm input[type=text]:active,
+.mktoForm input[type=url]:active,
+.mktoForm input[type=email]:active,
+.mktoForm input[type=tel]:active,
+.mktoForm input[type=number]:active,
+.mktoForm input[type=date]:active,
+.mktoForm select.mktoField:active,
+.mktoForm textarea.mktoField:active,
+.mktoForm input[type=text]:focus,
+.mktoForm input[type=url]:focus,
+.mktoForm input[type=email]:focus,
+.mktoForm input[type=tel]:focus,
+.mktoForm input[type=number]:focus,
+.mktoForm input[type=date]:focus,
+.mktoForm select.mktoField:focus,
+.mktoForm textarea.mktoField:focus {
+    border: none !important;
+    outline-color: rgb(0, 95, 204) !important;
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+
+/* error msg */
+
+.mktoForm .mktoError .mktoErrorMsg {
+    padding: 0.7rem;
+    text-shadow: none !important;
+    color: #000000 !important;
+    background: #f3eded !important;
+    border: solid 0.5px #666666 !important;
+    box-shadow: rgb(0 0 0 / 65%) 0 2px 7px, inset #f3eded 0 1px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.mktoForm .mktoError .mktoErrorMsg::before {
+    content: "";
+    background-image: url('http://438-LAO-187.mktoweb.com/rs/438-LAO-187/images/exclamation-solid-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: orange;
+    background-size: 5px 15px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.mktoForm .mktoError .mktoErrorArrow {
+    color: #f3eded !important;
+    background-color: #f3eded !important;
+    border: transparent !important;
+    border-top: solid 0.5px #666666 !important;
+    border-left: solid 0.5px #666666 !important;
+}
+
+.mktoForm .mktoError .mktoErrorArrowWrap {
+    left: 15px;
+    top: -4px;
+    width: 20px !important;
+    height: 12px !important;
+}
+
+
+/* mediaqueries */
+
+@media (max-width: 800px) {
     .mktoForm {
-        background: #dbd6d2;
-        width: 100% !important;
-        max-width: 700px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: initial !important;
     }
-    
-    .mktoForm .mktoLabel {
-        font-weight: bold;
-        font-size: 14px;
-        padding-left: 0.5rem;
-        white-space: nowrap;
-        margin-bottom: 0.5rem;
+    .mktoFormCol {
+        float: none !important;
     }
-    
-    .mktoForm .mktoFormRow:nth-child(5) .mktoLabel {
-        padding-left: 0;
-        margin-bottom: 0.8rem;
-    }
-    
-    .mktoForm .mktoOffset {
-        display: none;
-    }
-    
+    .mktoFieldWrap,
+    .mktoForm select.mktoField,
+    #Company,
     .mktoForm input[type=text],
     .mktoForm input[type=url],
     .mktoForm input[type=email],
     .mktoForm input[type=tel],
     .mktoForm input[type=number],
     .mktoForm input[type=date],
-    .mktoForm textarea.mktoField {
-        width: calc((350px - 2rem)) !important;
-        margin: 0.5rem;
-        border: none !important;
-        padding: 10px 25px 10px 15px;
+    .mktoForm textarea.mktoField,
+    .mktoForm .mktoHtmlText,
+    .mktoButton {
+        width: 80vw !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
     }
-    
-    .mktoForm select.mktoField,
-    #Company {
-        width: calc(700px - 3rem) !important;
-        padding: 10px 25px 10px 15px;
-        border: none !important;
+    .mktoForm.mktoLayoutAbove .mktoLabel {
+        padding: unset !important;
     }
-    
-    .mktoForm .mktoRequiredField .mktoAsterix {
-        display: none;
+    .mktoForm h2,
+    .mktoForm h3 {
+        padding: 0 !important
     }
-    
-    .mktoForm .mktoRequiredField label.mktoLabel:after {
-        content: "*";
-        color: #000000;
+    .mktoForm h2 {
+        line-height: 42px;
     }
-    
     .mktoForm .mktoButtonRow {
-        align-self: end;
+        align-self: unset !important;
     }
-    
-    .mktoForm .mktoRound {
-        margin: 0 auto !important
-    }
-    
     .mktoForm .mktoButtonWrap.mktoRound .mktoButton {
-        background: #003349 !important;
-        border: none !important;
-        padding: 13px 42px !important;
-        margin: 1rem 1.4rem 2rem 0 !important;
-        font-size: 14px;
+        margin: 2rem auto 1.5rem !important;
+        padding: 20px !important;
     }
-    
-    .mktoForm .mktoButtonWrap.mktoRound .mktoButton:hover,
-    .mktoForm .mktoButtonWrap.mktoRound .mktoButton:active {
-        background: #039db8 !important;
-        cursor: pointer;
-    }
-    /* input on focus */
-    
-    .mktoForm input[type=text]:active,
-    .mktoForm input[type=url]:active,
-    .mktoForm input[type=email]:active,
-    .mktoForm input[type=tel]:active,
-    .mktoForm input[type=number]:active,
-    .mktoForm input[type=date]:active,
-    .mktoForm select.mktoField:active,
-    .mktoForm textarea.mktoField:active,
-    .mktoForm input[type=text]:focus,
-    .mktoForm input[type=url]:focus,
-    .mktoForm input[type=email]:focus,
-    .mktoForm input[type=tel]:focus,
-    .mktoForm input[type=number]:focus,
-    .mktoForm input[type=date]:focus,
-    .mktoForm select.mktoField:focus,
-    .mktoForm textarea.mktoField:focus {
-        border: none !important;
-        outline-color: rgb(0, 95, 204) !important;
-        outline-width: 1px;
-        outline-style: solid;
-    }
-    /* error msg */
-    
-    .mktoForm .mktoError .mktoErrorMsg {
-        padding: 0.7rem;
-        text-shadow: none !important;
-        color: #000000 !important;
-        background: #f3eded !important;
-        border: solid 1px #000000 !important;
-        box-shadow: rgb(0 0 0 / 65%) 0 2px 7px, inset #f3eded 0 1px 0px;
-        display: flex;
-        align-items: center;
-    }
-    
-    .mktoForm .mktoError .mktoErrorMsg::before {
-        content: "";
-        background-image: url('http://438-LAO-187.mktoweb.com/rs/438-LAO-187/images/exclamation-solid-white.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: orange;
-        background-size: 5px 15px;
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
-    }
-    
-    .mktoForm .mktoError .mktoErrorArrow {
-        color: #f3eded !important;
-        background-color: #f3eded !important;
-        border: transparent !important;
-        border-top: solid 1px #000000 !important;
-        border-left: solid 1px #000000 !important;
-    }
+}
