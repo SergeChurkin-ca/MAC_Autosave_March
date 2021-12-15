@@ -1,8 +1,9 @@
-.mktoForm h3 {
-    font-size: 14px;
-    color: #333333;
-    line-height: 150%;
-    font-weight: normal;
+.mktoForm {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 95vw !important;
+    align-items: center;
 }
 
 .mktoForm .mktoFieldWrap {
@@ -10,8 +11,30 @@
     flex-direction: column;
 }
 
+.mktoForm .mktoFormRow,
+.mktoForm .mktoButtonRow {
+    width: 100%;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(1) .mktoFormCol {
+    margin-bottom: -0.2rem !important;
+}
+
+.mktoForm span,
+.mktoForm strong {
+    padding: 0 !important;
+}
+
 .mktoForm .mktoGutter {
     height: 0.3rem !important;
+}
+
+.mktoForm h3 {
+    font-size: 14px;
+    color: #333333;
+    line-height: 150%;
+    font-weight: normal;
+    padding: 0 !important;
 }
 
 .mktoForm .mktoRequiredField .mktoAsterix {
@@ -22,6 +45,7 @@
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
+    color: #5d5d5d;
 }
 
 .mktoForm input[type=text],
@@ -39,6 +63,7 @@
     border: 2px solid #d0d0d0 !important;
     border-radius: 3px;
     color: #5d5d5d !important;
+    min-height: 2.5rem;
 }
 
 .mktoForm input[type=text]:active,
@@ -128,9 +153,22 @@
     color: #5d5d5d;
 }
 
+@media (max-width: 480px) {
+    .mktoForm .mktoRadioList>input,
+    .mktoForm .mktoCheckboxList>input {
+        margin: -1.9rem 6rem 0 -37vw !important;
+        width: 100% !important;
+    }
+}
+
 .mktoForm .mktoRadioList>input,
 .mktoForm .mktoCheckboxList>input {
     accent-color: #5d5d5d;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(17) .mktoFormCol {
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
 }
 
 
@@ -153,6 +191,39 @@
     color: #ffffff !important;
     padding: 12px 25px !important;
     border-radius: 3px !important;
-    font-size: 16px;
+    font-size: 16px !important;
     border: none !important;
+}
+
+
+/* mediaqueries */
+
+@media (max-width: 800px) {
+    .mktoForm {
+        width: initial !important;
+    }
+    .mktoFormCol {
+        float: none !important;
+    }
+    .mktoFieldWrap,
+    .mktoForm select.mktoField,
+    #Company,
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm input[type=email],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=number],
+    .mktoForm input[type=date],
+    .mktoForm textarea.mktoField,
+    .mktoForm .mktoHtmlText {
+        width: 80vw !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+}
+
+@media (max-width:480px) {
+    .mktoForm .mktoFormCol .mktoLabel {
+        margin-bottom: 0.5rem;
+    }
 }
