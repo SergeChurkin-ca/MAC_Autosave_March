@@ -1,7 +1,8 @@
-.mktoForm h2 {
+.mktoForm h3 {
     font-size: 14px;
     color: #333333;
     line-height: 150%;
+    font-weight: normal;
 }
 
 .mktoForm .mktoFieldWrap {
@@ -9,13 +10,18 @@
     flex-direction: column;
 }
 
-.mktoForm .mktoAsterix {
+.mktoForm .mktoGutter {
+    height: 0.3rem !important;
+}
+
+.mktoForm .mktoRequiredField .mktoAsterix {
     display: none;
 }
 
 .mktoForm .mktoLabel {
     font-size: 16px;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .mktoForm input[type=text],
@@ -99,4 +105,54 @@
 
 .mktoForm .mktoError .mktoErrorArrowWrap {
     display: none;
+}
+
+
+/* checkboxes  */
+
+.mktoForm .mktoFieldWrap {
+    margin-top: 1rem;
+}
+
+.mktoForm .mktoRadioList>input,
+.mktoForm .mktoCheckboxList>input {
+    height: 24px !important;
+    margin: -1.9rem 6rem 0 -17rem !important;
+    width: 100% !important;
+}
+
+.mktoForm .mktoRadioList>label,
+.mktoForm .mktoCheckboxList>label {
+    font-size: 13px;
+    margin: -1.6rem 0 3rem 2.5rem !important;
+    color: #5d5d5d;
+}
+
+.mktoForm .mktoRadioList>input,
+.mktoForm .mktoCheckboxList>input {
+    accent-color: #5d5d5d;
+}
+
+
+/* diclaimer text */
+
+.mktoForm .mktoFormRow:nth-of-type(19) .mktoFormCol {
+    margin-top: -3rem;
+}
+
+
+/* button */
+
+.mktoForm .mktoButtonWrap.mktoSimple {
+    margin-left: 10px !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    margin-top: 1rem;
+    background: #dc1836 !important;
+    color: #ffffff !important;
+    padding: 12px 25px !important;
+    border-radius: 3px !important;
+    font-size: 16px;
+    border: none !important;
 }
