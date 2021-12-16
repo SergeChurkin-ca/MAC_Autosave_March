@@ -148,7 +148,38 @@
             font-weight: 400;
             src: url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff2') format("woff2"), url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff') format("woff")
         }
-        
+                                                                                                                                                                                                                
+        /* unset default form style */
+        .eu .mktoForm input[type="text"], 
+        .eu .mktoForm input[type="url"],
+        .eu .mktoForm input[type="email"],
+        .eu .mktoForm input[type="tel"], 
+        .eu .mktoForm input[type="number"],
+        .eu .mktoForm input[type="date"],
+        .eu .mktoForm textarea.mktoField,
+        .eu .mktoForm select.mktoField {
+                 margin: 0;
+                padding: 10px;
+                background: #fff;
+                width: 100% !important;
+                border: 2px solid #d0d0d0 !important;
+                border-radius: 6px !important;
+                color: #5d5d5d !important;
+                min-height: 2.5rem;
+                box-shadow: none !important;
+                padding: 2rem 1.5rem !important;
+        }
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+            background-color: #f15852 !important;
+            border-radius: 6px !important;
+            color: #fff !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            margin: 0 1.5rem 0 0 !important;
+            padding: 1.375rem 1.6875rem !important;
+            text-transform: uppercase !important;
+        }
+        /* end of unser form styl
         body,
         html {
             height: 100%;
