@@ -73,9 +73,9 @@
     <meta class="mktoString" id="talking-box-image-3" mktoName="Speaker 3 Image" default="https://via.placeholder.com/280x280">
     <meta class="mktoString" id="talking-box-image-4" mktoName="Speaker 4 Image" default="https://via.placeholder.com/280x280">
     <meta class="mktoString" id="decorated-shadow-img" mktoName="Decor Shadow Image" default="https://info.beamery.com/rs/918-SFJ-289/images/mobi1-xs.png">
-  	<meta class="mktoString" id="video_img" mktoName="Video Section Background" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
-        
-     <!-- video link image and screen shot -->   
+    <meta class="mktoString" id="video_img" mktoName="Video Section Background" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
+
+    <!-- video link image and screen shot -->
 
     <meta class="mktoString" id="video_link" mktoName="Video Link" default="https://www.youtube.com/watch?v=ZZfbvRlsCis">
 
@@ -148,38 +148,90 @@
             font-weight: 400;
             src: url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff2') format("woff2"), url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff') format("woff")
         }
-                                                                                                                                                                                                                
         /* unset default form style */
-        .eu .mktoForm input[type="text"], 
+        
+        .eu .mktoForm div.mktoLogicalField {
+            margin-top: -4rem;
+            margin-bottom: 3.5rem;
+        }
+        
+        .eu .mktoForm label.mktoLabel {
+            visibility: hidden !important;
+            position: absolute !important;
+            top: 3.1rem;
+            left: 1.5rem;
+        }
+        
+        .eu .mktoFieldWrap.checkboxField label.mktoLabel.mktoHasWidth {
+            visibility: visible !important;
+            padding: 0 1rem !important;
+            position: relative !important;
+            white-space: unset !important;
+            top: unset !important;
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+        }
+        
+        .eu .mktoForm input[type="text"],
         .eu .mktoForm input[type="url"],
         .eu .mktoForm input[type="email"],
-        .eu .mktoForm input[type="tel"], 
+        .eu .mktoForm input[type="tel"],
         .eu .mktoForm input[type="number"],
         .eu .mktoForm input[type="date"],
         .eu .mktoForm textarea.mktoField,
         .eu .mktoForm select.mktoField {
-                 margin: 0;
-                padding: 10px;
-                background: #fff;
-                width: 100% !important;
-                border: 2px solid #d0d0d0 !important;
-                border-radius: 6px !important;
-                color: #5d5d5d !important;
-                min-height: 2.5rem;
-                box-shadow: none !important;
-                padding: 2rem 1.5rem !important;
+            margin: 0;
+            padding: 10px;
+            background: #fff;
+            width: initial !important;
+            border: 2px solid #d0d0d0 !important;
+            border-radius: 6px !important;
+            color: #5d5d5d !important;
+            min-height: 2.5rem;
+            box-shadow: none !important;
+            box-sizing: content-box !important;
+            padding: 0.7rem 1.5rem !important;
         }
+        
         .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+            height: unset !important;
             background-color: #f15852 !important;
             border-radius: 6px !important;
             color: #fff !important;
             font-size: 16px !important;
             font-weight: 700 !important;
             margin: 0 1.5rem 0 0 !important;
-            padding: 1.375rem 1.6875rem !important;
+            padding: 27px !important;
             text-transform: uppercase !important;
         }
-        /* end of unser form styl
+        
+        .mktoForm .mktoFormRow,
+        .mktoForm .mktoButtonRow {
+            width: unset !important;
+        }
+        
+        .mktoForm .mktoButtonWrap.mktoSimple {
+            margin: 1rem 0 !important;
+        }
+        
+        .eu .mktoForm input[type="text"],
+        .eu .mktoForm input[type="url"],
+        .eu .mktoForm input[type="email"],
+        .eu .mktoForm input[type="tel"],
+        .eu .mktoForm input[type="number"],
+        .eu .mktoForm input[type="date"],
+        .eu .mktoForm textarea.mktoField,
+        .eu .mktoForm select.mktoField {
+            color: #000000 !important;
+        }
+        
+        .eu .mktoForm .mktoError {
+            top: 0 !important;
+        }
+        .mktoForm div.mktoLogicalField.mktoInvalid {
+            border: none !important;
+        }
+        /* end of unser form style */
         body,
         html {
             height: 100%;
@@ -191,36 +243,20 @@
         }
         
         #policy {
-            display:${showprivacy};
-            padding:20px;
-            font-size:12px;
-            text-align:center;
+            
+            font-size:15px !important;
         }
-        .eu .banner_section::before {
-            background-image: unset !important;
-        }
-        .eu .find_out {
-            padding: 55px 0 0 !important;
-        }
-        a {
-            color: #56677F;
-            font-weight: bold;
-        }
-        .left_banner_main .banner_section_list li:before {
-            background: #ffffff !important;
-        }
-        .banner_section_list li:before {
-            background: #18181B !important;
-        }
+  
         /* banner */
         
         .main_inner_bg {
             position: relative;
         }
+        
         .eu .main_logo img {
             filter: brightness(0) invert(1);
         }
- 
+        
         .inner_background_banner {
             background-image: url("${background-banner}");
             background-repeat: no-repeat;
@@ -236,10 +272,11 @@
             color: #ffffff;
             background: none !important;
         }
+        
         .right_banner_main {
             background: none !important;
         }
-                                                                                                                                                                                                                                        
+        
         .banner-h1 {
             font-size: calc(2.38776rem + 1.61224vw);
             font-weight: 700;
@@ -264,7 +301,6 @@
             padding: 1.5rem !important;
             border-radius: 10px;
         }
-                                                                                                                                                                                                                                        
         /* section creative */
         
         .section_title {
@@ -279,12 +315,12 @@
             font-weight: 400;
             font-size: 1.1rem;
         }
-                                                                                                                                                                                                                                        
         /* leading logo */
+        
         .leading_logo {
             gap: 1rem;
         }
-                                                                                                                                                                                                                                        
+        
         .leading_box {
             background: #F4F8FA;
             padding: 1rem !important;
@@ -294,9 +330,10 @@
             width: 20vw !important;
             min-width: 100px;
         }
-                                                                                                                                                                                                                                        
-       .main .right_banner_main {
-            display: ${boolean2} !important;
+        
+        .main .right_banner_main {
+            display: ${boolean2};
+            !important;
         }
         /* section help */
         
@@ -307,24 +344,26 @@
         .section-help {
             padding: 2rem 0 !important;
         }
+        
         .section-help li {
             color: #18181B !important;
         }
         
         .section-help img {
-              max-width: 400px;  
+            max-width: 400px;
         }
-        
         /* section apply game changing */
         
-        .apply_game .section_title, .apply_game .section_subtitle {
+        .apply_game .section_title,
+        .apply_game .section_subtitle {
             color: #ffffff !important;
         }
+        
         .creating_title .link-btn {
             margin-top: 1rem !important;
         }
         
-		.eu .left_game_img {
+        .eu .left_game_img {
             text-align: center;
         }
         /* section talking box */
@@ -333,10 +372,12 @@
             position: relative;
             padding: 0 0.5rem !important;
         }
-        .img-top{
+        
+        .img-top {
             position: relative;
             z-index: 2 !important;
         }
+        
         .img-decor {
             position: absolute;
             left: -1rem;
@@ -345,11 +386,13 @@
             height: 96% !important;
             max-width: 280px !important;
         }
+        
         @media (max-width: 600px) {
             .inner_talking {
                 padding: 0 1rem !important;
             }
         }
+        
         a:hover {
             color: #000000;
             text-decoration: none;
@@ -384,8 +427,6 @@
             justify-content: flex-end;
         }
         
-
-        
         @media(max-width: 872px) {
             .bannerText h1 {
                 font-size: 4rem !important;
@@ -398,12 +439,14 @@
                 font-size: 1rem !important;
             }
         }
-            @media (max-width: 767px) {
+        
+        @media (max-width: 767px) {
             .eu .page_link:after {
                 position: unset !important;
                 width: 20%;
             }
         }
+        
         @media(max-width: 660px) {
             .bannerText h1 {
                 font-size: 3rem !important;
@@ -481,7 +524,6 @@
             font-weight: 600 !important;
             padding: 0.5rem !important;
         }
-                                                                                                                                                                                                                                        
         /* footer styling */
         
         #footer input,
@@ -536,6 +578,7 @@
         
         .top-wrapper,
         .bottom-wrapper {
+            
             max-width: 1400px;
             width: 80vw;
             margin: 0 auto;
@@ -558,9 +601,11 @@
             /* width: 10vw; */
             min-width: 100px;
         }
-         #footer .top-wrapper {
-        display: ${showFooterTopWrapper};
+        
+        #footer .top-wrapper {
+            display: ${showFooterTopWrapper};
         }
+        
         .top-wrapper {
             justify-content: space-between;
             /* flex-wrap: wrap; */
@@ -791,16 +836,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
 
                             <div class="right_banner_main">
-                              
-                                
-                                    <div id="FormSection" class="sec_form">
-                                        <div class="mktoForm" id="myMarketoForm" mktoName="Select Form">
-                                            <!-- <script src="//app-lon08.marketo.com/js/forms2/js/forms2.min.js"></script>
+
+
+                                <div id="FormSection" class="sec_form">
+                                    <div class="mktoForm" id="myMarketoForm" mktoName="Select Form">
+                                        <!-- <script src="//app-lon08.marketo.com/js/forms2/js/forms2.min.js"></script>
 									<form id="mktoForm_1158"></form>
 									<script>MktoForms2.loadForm("//app-lon08.marketo.com", "918-SFJ-289", 1158);</script> -->
-                                        </div>
                                     </div>
-                                
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -929,7 +974,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="banner_section_list">
                                 <ul class="mktoText" id="how_can_list" mktoName="How can help Section List">
                                     <li>Not only do we have the only Workday Certified CRM integration, but you can integrate Beamery with all of your existing tools and services.</li>
-                                    <li>We help you stand out from the crowd by simplifying the creation of mobile optimized careers sites that match your brand. Even better, candidates are more engaged through personalized, content and job recommendations. </li>
+                                    <li>We help you stand out from the crowd by simplifying the creation of mobile optimized careers sites that match your brand. Even better, candidates are more engaged through personalized, content and job recommendations.
+                                    </li>
                                     <li>Your team is enabled to engage with each candidate in a personalized, relevant and timely way - and at scale through automation.</li>
                                     <li>We value diversity and inclusion, so we built a proactive sourcing model to actively seek out diverse talent, as well as ways to engage with specific groups with the right content.</li>
                                 </ul>
@@ -950,8 +996,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="main">
                     <div class="apply_game_inner">
                         <div class="left_game_img">
-                           
-                          	  <iframe height="300" width="100%" class="videoIframe js-videoIframe" src="${video_link}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${video_link}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+
+                            <iframe height="300" width="100%" class="videoIframe js-videoIframe" src="${video_link}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${video_link}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
                         </div>
 
                         <div class="right_game_content">
@@ -985,7 +1031,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div>We know what we're talking about</div>
                         </div>
 
-                        <div class="section_subtitle mktoText" id="talking_about_sub_title" mktoName="Talking About Sub-Title"> 
+                        <div class="section_subtitle mktoText" id="talking_about_sub_title" mktoName="Talking About Sub-Title">
                             <div>A lot of thought goes into how we build Beamery - here's just some of our most relevant insights and content</div>
                         </div>
                     </div>
