@@ -89,7 +89,107 @@
         font-weight: 400;
         src: url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff2') format("woff2"), url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff') format("woff")
       }
-
+ /* unset default form style */
+        #form .mktoForm {
+          width: 100% !important;
+          padding: 0 !important;
+        }
+        .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap {
+          width: 100% !important;
+        }
+        .eu .mktoForm div.mktoLogicalField {
+            margin-top: -4rem;
+            margin-bottom: 3.5rem;
+        }
+        #form .mktoForm input, #form .mktoForm select {
+          height: unset !important;
+        }
+        .eu .mktoForm label.mktoLabel {
+            visibility: hidden !important;
+            position: absolute !important;
+            top: 3.1rem;
+            left: 1.5rem;
+        }
+        
+        .eu .mktoFieldWrap.checkboxField label.mktoLabel.mktoHasWidth {
+            visibility: visible !important;
+            padding: 0 1rem !important;
+            position: relative !important;
+            white-space: unset !important;
+            top: unset !important;
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+        }
+        
+        .eu .mktoForm input[type="text"],
+        .eu .mktoForm input[type="url"],
+        .eu .mktoForm input[type="email"],
+        .eu .mktoForm input[type="tel"],
+        .eu .mktoForm input[type="number"],
+        .eu .mktoForm input[type="date"],
+        .eu .mktoForm textarea.mktoField,
+        .eu .mktoForm select.mktoField,
+        .mktoForm input[type=text],
+        .mktoForm input[type=url],
+        .mktoForm input[type=email],
+        .mktoForm input[type=tel],
+        .mktoForm input[type=number],
+        .mktoForm input[type=date],
+        .mktoForm textarea.mktoField,
+        .mktoForm select.mktoField {
+            margin: 0;
+            padding: 10px;
+            background: #fff;
+            width: initial !important;
+            border: 2px solid #d0d0d0 !important;
+            border-radius: 6px !important;
+            color: #5d5d5d !important;
+            min-height: 2.5rem;
+            box-shadow: none !important;
+            padding: 0.7rem 1.5rem !important;
+        }
+        
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+            height: unset !important;
+            background-color: #f15852 !important;
+            border-radius: 6px !important;
+            color: #fff !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            margin: 0 1.5rem 0 0 !important;
+            padding: 27px !important;
+            text-transform: uppercase !important;
+        }
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover, .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+            background-color: #431db2 !important;
+        }
+        .mktoForm .mktoFormRow,
+        .mktoForm .mktoButtonRow {
+            width: unset !important;
+        }
+        
+        .mktoForm .mktoButtonWrap.mktoSimple {
+            margin: 1rem 0 !important;
+        }
+        
+        .eu .mktoForm input[type="text"],
+        .eu .mktoForm input[type="url"],
+        .eu .mktoForm input[type="email"],
+        .eu .mktoForm input[type="tel"],
+        .eu .mktoForm input[type="number"],
+        .eu .mktoForm input[type="date"],
+        .eu .mktoForm textarea.mktoField,
+        .eu .mktoForm select.mktoField {
+            color: #000000 !important;
+        }
+        
+        .eu .mktoForm .mktoError {
+            top: 0 !important;
+        }
+        .mktoForm div.mktoLogicalField.mktoInvalid {
+            border: none !important;
+        }
+        /* end of unser form style */
       body,
       html {
         height: 100%;
@@ -98,12 +198,12 @@
         color: #56677F;
       }
 
-      #policy {
-        display: ${showprivacy};
-        padding:20px;
-        font-size:12px;
-        text-align:center;
-      }
+     
+        #policy {
+            display:${showprivacy};
+            font-size:15px !important;
+        }
+  
 
       a {
         color: #56677F;
@@ -518,9 +618,9 @@
       .top-wrapper,
       .bottom-wrapper {
         max-width: 1400px;
-        width: 80vw;
+        width: 84vw;
         margin: 0 auto;
-        max-width: 1140px;
+        max-width: 1200px;
       }
 
       .bottom-wrapper {
@@ -702,9 +802,24 @@
         .top-wrapper,
         .bottom-wrapper {
           max-width: unset !important;
-          width: 90vw;
+          width: 93vw;
         }
       }
+             @media (max-width: 800px) {
+            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
+                width: 90% !important;
+            }
+        }
+        @media (max-width: 600px) {
+            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
+                width: 80% !important;
+            }
+        }
+        @media (max-width: 400px) {
+            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
+                width: 70% !important;
+            }
+        }
     </style>
   </head>
 
@@ -896,7 +1011,7 @@
             <ul>
               <li>RESOURCES</li>
               <li><a href="https://beamery.com/resources" target="_blank" title="Resources: Resource Library">Resource Library</a></li>
-              <li><a title="Resources: Press" href="https://beamery.com/resources/press">Press</a></li>
+              <li><a title="Resources: Press" href="https://beamery.com/press">Press</a></li>
             </ul>
           </div>
 
@@ -943,42 +1058,7 @@
     <!--/.Footer-->
 
     <script>
-      /*
-         * @author Sanford Whiteman
-         * @version v1.104
-         * @license MIT License: This license must appear with all reproductions of this software.
-         *
-         * Create a completely barebones, user-styles-only Marketo form
-         * by removing inline STYLE attributes and disabling STYLE and LINK elements
-         */
-      function destyleMktoForm(mktoForm, moreStyles) {
-        var formEl = mktoForm.getFormElem()[0],
-            arrayify = getSelection.call.bind([].slice);
-
-        // remove element styles from <form> and children
-        var styledEls = arrayify(formEl.querySelectorAll("[style]")).concat(formEl);
-        styledEls.forEach(function(el) {
-          el.removeAttribute("style");
-        });
-
-        // disable remote stylesheets and local <style>s
-        var styleSheets = arrayify(document.styleSheets);
-        styleSheets.forEach(function(ss) {
-          if ([mktoForms2BaseStyle, mktoForms2ThemeStyle].indexOf(ss.ownerNode) != -1 || formEl.contains(ss.ownerNode)) {
-            ss.disabled = true;
-          }
-        });
-
-        if (!moreStyles) {
-          formEl.setAttribute("data-styles-ready", "true");
-          console.log("Styles ready at: " + performance.now())
-        }
-      };
-
-      MktoForms2.whenRendered(function(form) {
-        destyleMktoForm(form);
-      });
-
+  
       (function() {
         // Please include the email domains you would like to block in this list
         var invalidDomains = ["@gmail.", "@yahoo.", "@hotmail.", "@live.", "@aol.", "@outlook."];
