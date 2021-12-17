@@ -90,7 +90,7 @@
         src: url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff2') format("woff2"), url('https://info.beamery.com/rs/918-SFJ-289/images/FKGroteskNeue-Regular.woff') format("woff")
       }
  /* unset default form style */
-        #form .mktoForm {
+        #form .mktoForm, .mktoForm .mktoHasWidth {
           width: 100% !important;
           padding: 0 !important;
         }
@@ -104,21 +104,27 @@
         #form .mktoForm input, #form .mktoForm select {
           height: unset !important;
         }
-        .eu .mktoForm label.mktoLabel {
+        .mktoForm label.mktoLabel {
             visibility: hidden !important;
             position: absolute !important;
             top: 3.1rem;
             left: 1.5rem;
+            white-space: unset !important;
         }
         
-        .eu .mktoFieldWrap.checkboxField label.mktoLabel.mktoHasWidth {
+         .mktoFieldWrap.checkboxField label.mktoLabel.mktoHasWidth {
             visibility: visible !important;
             padding: 0 1rem !important;
-            position: relative !important;
+            position: absolute;
             white-space: unset !important;
             top: unset !important;
             margin-top: 1rem;
             margin-bottom: 4rem;
+            width: 100% !important;
+        }
+        .mktoForm .disclaimer {
+          visibility: visible !important;
+          margin-top: -1.1rem;
         }
         
         .eu .mktoForm input[type="text"],
@@ -189,7 +195,12 @@
         .mktoForm div.mktoLogicalField.mktoInvalid {
             border: none !important;
         }
+        .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+          float: left !important;
+        }
         /* end of unser form style */
+
+
       body,
       html {
         height: 100%;
@@ -198,7 +209,7 @@
         color: #56677F;
       }
 
-     
+    
         #policy {
             display:${showprivacy};
             font-size:15px !important;
@@ -292,10 +303,7 @@
       #form h1 {
         color: #150e3f;
       }
-      label {
-        position: absolute;
-        z-index: -1;
-      }
+  
 
       input,
       select {
