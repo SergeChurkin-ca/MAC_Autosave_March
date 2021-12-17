@@ -94,6 +94,12 @@
           width: 100% !important;
           padding: 0 !important;
         }
+        #form mktoCheckboxList{
+          border: none !important;
+        }
+        .mktoForm .mktoCheckboxList>label {
+          position: absolute;
+        }
         .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap {
           width: 100% !important;
         }
@@ -122,9 +128,16 @@
             margin-bottom: 4rem;
             width: 100% !important;
         }
+        @media (max-width: 900px) {
+          #form .mktoForm, .mktoForm .mktoHasWidth {
+            margin-top: 10px !important;
+          }
+        }
         .mktoForm .disclaimer {
           visibility: visible !important;
-          margin-top: -1.1rem;
+          margin-top: -1.8rem;
+          margin-right: 2rem;
+          margin-left: 1rem;
         }
         
         .eu .mktoForm input[type="text"],
@@ -155,7 +168,7 @@
             padding: 0.7rem 1.5rem !important;
         }
         
-        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+        #form .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
             height: unset !important;
             background-color: #f15852 !important;
             border-radius: 6px !important;
@@ -163,10 +176,11 @@
             font-size: 16px !important;
             font-weight: 700 !important;
             margin: 0 1.5rem 0 0 !important;
-            padding: 27px !important;
+            padding: 12px 27px !important;
             text-transform: uppercase !important;
+            width: unset !important;
         }
-        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover, .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+        #form .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover, #form .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
             background-color: #431db2 !important;
         }
         .mktoForm .mktoFormRow,
@@ -213,6 +227,7 @@
         #policy {
             display:${showprivacy};
             font-size:15px !important;
+            margin-top: 3rem;
         }
   
 
@@ -325,17 +340,11 @@
         padding: 1.1875rem 1.25rem;
       }
 
-      #form .mktoValid {
-        border: solid 1px rgba(67, 29, 178, .55) !important;
-      }
-
+   
       #form .mktoCheckboxList input {
         width: unset;
       }
 
-      #form .mktoForm .mktoLabel {
-        max-width: 150px;
-      }
 
       #form .mktoForm input[type=text]:focus,
       #form .mktoForm input[value]:not([value=""]) {
@@ -366,16 +375,6 @@
 
       .mktoErrorMsg {
         color: red !important;
-      }
-
-      #form .mktoButtonWrap.mktoRound .mktoButton,
-      #form .mktoForm .mktoButton {
-        margin-top: 16px;
-        padding: 0.7em 1em !important;
-        border-radius: 5px;
-        text-transform: uppercase;
-        color: #ffffff !important;
-        background: #F15852 !important;
       }
 
       .white {
@@ -492,6 +491,13 @@
           width: 100%;
           max-width: unset !important;
         }
+        .order1 {
+          order: 2;
+          margin-top: 2rem;
+        }
+        .order2 {
+          order: 1;
+        }
       }
 
       @media(max-width: 660px) {
@@ -504,6 +510,9 @@
         }
         .bannerText h3 {
           font-size: 0.8rem !important;
+        }
+        .mktoForm .mktoGutter, .mktoForm .mktoOffset {
+          display: block !important;
         }
       }
 
@@ -542,13 +551,7 @@
         .center {
           text-align: left !important;
         }
-        .order1 {
-          order: 2;
-          margin-top: 2rem;
-        }
-        .order2 {
-          order: 1;
-        }
+      
       }
 
       @media only screen and (max-width: 361px) {
@@ -696,7 +699,7 @@
         justify-content: flex-start;
       }
 
-      @media (max-widrg: 1400px) {
+      @media (max-width: 1400px) {
         .top-wrapper,
         .bottom-wrapper {
           margin-right: -15px;
@@ -705,6 +708,7 @@
       }
 
       @media (max-width: 1000px) {
+        
         .legal-container {
           flex-wrap: wrap;
         }
@@ -813,21 +817,22 @@
           width: 93vw;
         }
       }
-             @media (max-width: 800px) {
-            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
-                width: 90% !important;
-            }
-        }
-        @media (max-width: 600px) {
-            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
-                width: 80% !important;
-            }
-        }
-        @media (max-width: 400px) {
-            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
-                width: 70% !important;
-            }
-        }
+ @media (max-width: 800px) {
+    .mktoForm input[type="text"],
+    .mktoForm input[type="url"],
+    .mktoForm input[type="email"],
+    .mktoForm input[type="tel"],
+    .mktoForm input[type="number"],
+    .mktoForm input[type="date"],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField, #form .mktoForm input, #form .mktoForm select,
+    .mktoForm .mktoFormRow, .mktoForm .mktoButtonRow, 
+    .mktoForm .mktoHtmlText {
+        width: 90% !important;
+    }
+}
+
+
     </style>
   </head>
 
