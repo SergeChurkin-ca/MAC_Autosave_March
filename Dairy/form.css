@@ -1,0 +1,82 @@
+/* Add your custom CSS below */
+
+form {
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mktoForm label {
+    /* color: #fff; */
+}
+
+.mktoButton {
+    background-color: #df7642 !important;
+    background-image: none !important;
+    border: none !important;
+    padding: 10px !important;
+}
+
+
+/* general flexing */
+
+.mktoForm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw !important;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+
+/* hide offset and gutter   */
+
+.mktoForm .mktoOffset,
+.mktoForm .mktoGutter {
+    display: none;
+}
+
+
+/* field wrap */
+
+.mktoForm .mktoFieldWrap {
+    display: flex !important;
+    width: calc((100vw / 3) - 1rem);
+}
+
+
+/* row wrap */
+
+.mktoForm .mktoFormRow {
+    width: calc((100vw / 3) - 7vw);
+    flex: 1 0 200px;
+    max-width: 350px;
+}
+
+
+/* label */
+
+.mktoForm .mktoLabel {
+    order: 2;
+    width: 80% !important;
+}
+
+
+/* checkbox container */
+
+.mktoForm .mktoLogicalField {
+    order: 1;
+    width: 5% !important;
+    margin: 0 1rem;
+}
