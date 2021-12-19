@@ -54,6 +54,7 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoBoolean" id="showSection8" mktoName="Show Section 8?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showFooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 	
+
     <meta class="mktoString" mktoName="Form Headline font size px" id="formheadlinefontsize" default="25">
     <meta class="mktoColor" mktoName="Form Headline color" id="formHeadLineColor" default="#ffffff">
   	<style>
@@ -157,22 +158,7 @@ Button Banner Hover color = #1FA2DC
     #section8 {
       	background-color: ${section8BgColor};
     }
-	/* Form Section + Headline */
-    
-    #formheadline{
-        font-size: ${formheadlinefontsize}px !important;
-        color: ${formHeadLineColor} !important;
-        text-align:center !important;
-        margin-bottom: 10px !important;
-        margin-left: 17.33% !important;
-        width: 441px;
-        max-width: 92vw !important;
-      }
-    @media (max-width: 992px) {
-        #formheadline {
-            margin-left: 0 !important;
-        }
-    }
+	
 	/* Footer Section  */
 	
 	 #footerSection {
@@ -317,7 +303,27 @@ FORM 2.0 -- Simple Form STYLES ONLY
     border-radius: 3px;
     box-shadow: none !important;
 }
-
+     #formheadline {
+        font-size: ${formheadlinefontsize}px !important;
+        color: ${formHeadLineColor} !important;
+        text-align:center !important;
+        margin-bottom: 10px !important;
+        margin-left: 17.33% !important;
+        width: 441px;
+        max-width: 92vw !important;
+      }
+#form-textcopy {
+		 
+		margin-bottom: 10px !important;
+		margin-left: 17.33% !important;
+		width: 441px;
+		max-width: 92vw !important;
+	 } 
+      @media (max-width: 992px) {
+        #formheadline, #form-textcopy {
+          margin-left: 0 !important;
+        }
+      }
 	</style>
       
 </head>
@@ -411,20 +417,25 @@ FORM 2.0 -- Simple Form STYLES ONLY
                 </div>
                 
 				</div>
-				<div name="main-form" style="display:${showSection2Form};">
+
+              <div name="main-form" style="display:${showSection2Form};">
                 <div class="mktoText" id="formheadline" mktoName="Form - Headline">
-                    <h2  class="bold">Form Headline</h2>
+                  <h2 class="bold">Form Headline</h2>
                 </div>    
+
 				<div class="col-md-5 col-md-offset-1">
 					<div class="mktoForm" id="primaryForm" mktoName="Primary Form" style="margin-bottom:40px;padding:10px 20px;min-height:80px;">
                     </div>
+					<p class="mktoText" id="form-textcopy" mktoName="Form - Text Copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae expedita facilis ipsa unde facere sunt nisi fugiat voluptatem, alias, culpa asperiores quis, ea aut placeat iste aspernatur amet officiis rem.</p>
 				</div>
+
+
                 </div>
 			</div>
             </div>
        </div>
             
-            			<div>
+				<div>
             
             
             <!-- Section 3 -->
@@ -624,7 +635,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
                 </div>
 				</div>
 			</div>
-		</div> 
+		</div>
 	</footer>
     </div>
 	<!-- End Footer Bottom -->
