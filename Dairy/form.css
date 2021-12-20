@@ -23,15 +23,14 @@ form {
 }
 
 .mktoForm .mktoAsterix {
-    float: none !important;
-    margin: 0.5rem 1rem !important;
+    padding: 0 1.5rem;
 }
 
 .mktoButton {
     background-color: #df7642 !important;
     background-image: none !important;
     border: none !important;
-    padding: 10px !important;
+    padding: 1.3rem !important;
 }
 
 
@@ -44,14 +43,6 @@ form {
     margin: 0 auto !important;
     justify-content: space-between;
     max-width: 1400px !important;
-}
-
-
-/* hide offset and gutter   */
-
-.mktoForm .mktoOffset,
-.mktoForm .mktoGutter {
-    display: none;
 }
 
 
@@ -71,20 +62,37 @@ form {
     max-width: 350px;
 }
 
-.mktoForm .mktoFormRow:nth-of-type(1),
-.mktoForm .mktoFormRow:nth-of-type(2) {
-    width: calc((100vw / 2) -7vw) !important;
+.mktoForm .mktoFormRow:nth-of-type(1) {
+    width: 100%;
+    padding: 0 1.5rem;
     max-width: unset !important;
     flex: unset;
+    display: flex;
+    justify-content: center;
 }
 
-.mktoForm .mktoFormRow:nth-of-type(1) {
-    padding: 0 1.5rem;
-    width: 30%;
+.mktoForm .mktoFormRow:nth-of-type(1) .mktoFieldWrap {
+    width: 100%;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.mktoForm .mktoFormRow:nth-of-type(2) {
-    width: 70%;
+.mktoForm .mktoFormRow:nth-of-type(1) .mktoLabel {
+    order: 1 !important;
+    width: 25% !important;
+    min-width: 250px;
+    margin: 1rem 0 0 0.3rem;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(1) input {
+    order: 2;
+    margin: 1rem 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 2px 0 0 !important
 }
 
 
@@ -105,8 +113,29 @@ form {
 }
 
 
+/* button row */
+
+.mktoForm .mktoButtonRow,
+.mktoForm .mktoFormRow:nth-last-of-type(2) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    margin-top: 1rem !important;
+}
+
+
 /* temp bug extra row hide */
 
-.mktoForm .mktoFormRow:nth-of-type(3) .mktoFormCol:nth-of-type(2) {
+.mktoForm .mktoFormRow:nth-of-type(2) .mktoFormCol:nth-of-type(2) {
     display: none;
+}
+
+@media (max-width: 600px) {
+    .mktoFormRow {
+        padding: 0 !important;
+    }
+    .mktoForm .mktoFieldWrap {
+        width: 100% !important;
+    }
 }
