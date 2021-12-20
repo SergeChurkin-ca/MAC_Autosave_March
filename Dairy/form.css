@@ -101,6 +101,7 @@ input[type="checkbox"] {
 .mktoForm .mktoLabel {
     order: 2;
     width: 80% !important;
+    margin-left: 3rem !important;
 }
 
 
@@ -138,4 +139,44 @@ input[type="checkbox"] {
     .mktoForm .mktoFieldWrap {
         width: 100% !important;
     }
+}
+
+
+/* custome checkbox */
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label:before {
+    border: 1px solid #333;
+    content: "\00a0";
+    display: inline-block;
+    font: 20px;
+    font-weight: bold !important;
+    height: 16px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+    background: #ffffff;
+}
+
+input[type="checkbox"]:checked+label:before {
+    background: #fff;
+    color: #333;
+    content: "\2713";
+    text-align: center;
+}
+
+input[type="checkbox"]:checked+label:after {
+    font-weight: bold;
+}
+
+input[type="checkbox"]:focus+label::before {
+    outline: rgb(59, 153, 252) auto 5px;
 }
