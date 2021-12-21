@@ -253,6 +253,7 @@
         background-size: cover;
         position: relative;
         display: ${showHeader};
+        padding-bottom: 0.5rem;
       }
       /* Place text in the middle of the image */
       /* hero container */
@@ -812,16 +813,19 @@
         }
         .mainContent,
         .top-wrapper,
-        .bottom-wrapper {
+        .bottom-wrapper,
+        #body_text {
           max-width: unset !important;
           width: 90vw;
           margin: 0 auto;
+          max-width: 100% !important;
         }
         #footer .bottom-wrapper {
             margin-top: 1rem;
 
         }
       }
+      
  @media (max-width: 800px) {
     .mktoForm input[type="text"],
     .mktoForm input[type="url"],
@@ -831,10 +835,15 @@
     .mktoForm input[type="date"],
     .mktoForm textarea.mktoField,
     .mktoForm select.mktoField, #form .mktoForm input, #form .mktoForm select,
-    .mktoForm .mktoFormRow, .mktoForm .mktoButtonRow, 
+     .mktoForm .mktoButtonRow, 
     .mktoForm .mktoHtmlText {
         width: 100% !important;
+        font-size: initial !important;
     }
+    .mktoForm .mktoFormRow {
+        width: 71vw !important;
+    }
+    
 }
 
 
