@@ -81,6 +81,7 @@
 
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family" id="header-fontfamily" default="Poppins">
     <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="Proxima Nova">
 
     <!-- General Button Styling -->
@@ -125,9 +126,11 @@
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
+        font-family: ${header-fontfamily} !important;
       }
       #header p {
         font-size: ${header-p-fontsize}px;
+        font-family: ${header-fontfamily} !important;
       }
       h1 {
         font-size: ${h1fontsize}px;
