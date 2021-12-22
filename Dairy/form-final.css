@@ -45,6 +45,10 @@ form {
     max-width: 1200px !important;
 }
 
+.mktoForm .mktoOffset {
+    height: 0.5rem !important;
+}
+
 
 /* field wrap */
 
@@ -57,9 +61,9 @@ form {
 /* row wrap */
 
 .mktoForm .mktoFormRow {
-    width: calc((100vw / 3) - 8vw);
-    flex: 1 0 200px;
-    max-width: 350px;
+    width: calc((100vw / 4) - 8vw);
+    flex: 1 0 250px;
+    max-width: 250px;
 }
 
 .mktoForm .mktoFormRow:nth-of-type(1) {
@@ -102,6 +106,7 @@ input[type="checkbox"] {
     order: 2;
     width: 80% !important;
     margin-left: 3rem !important;
+    font-size: 16px;
 }
 
 
@@ -142,6 +147,15 @@ input[type="checkbox"] {
     }
     .mktoForm .mktoFieldWrap {
         width: 100% !important;
+    }
+    .mktoForm .mktoFormCol {
+        width: 80vw !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .mktoForm .mktoFormRow:nth-of-type(1) input {
+        width: 80vw !important;
     }
 }
 

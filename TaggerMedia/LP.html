@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
     <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="#">
-    
+
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
 
@@ -20,21 +20,22 @@
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-   
+
     <!-- Background, Buttons, and Text Color Meta Tags -->
     <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#bbbbbb">
-    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#000">
-    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#000">
+    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
+    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
 
-    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#FFF9F6">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#000">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#000">
 
 
-    <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#474747">
+    <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#3562F6">
+    <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Color" default="#2542A4">
     <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
 
-    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#FFF9F6">
     <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#d4d4d4">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#000">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
@@ -46,22 +47,25 @@
     <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#000">
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#FFF">
 
-    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#1c1c1c">
-    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
-    
-    <!-- Font Size Meta Tags -->
-    <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
-    <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="20">
+    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#353535">
 
-    
+    <!-- Font Size Meta Tags -->
+    <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
+    <meta class="mktoString" mktoName="Freetext - H1(Freetext) Font Size (px)" id="freeTextH1size" default="32">
+    <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="26">
+    <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
+    <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="26.6">
+
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
 
     <!-- Banner Section Styling -->
-    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/1400x700/a3a3a3/e6e6e6">
+    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/1400x700/313131/808080">
     <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="150">
-    
-    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="80">
-    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="80">
+    <meta class="mktoString" mktoName="Banner Background Blend Mode" id="background-blend-mode" default="none">
+
+    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="30">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="30">
     <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
     <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
 
@@ -81,7 +85,7 @@
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
-    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="8">
+    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="4">
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="35">
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="8">
@@ -92,7 +96,7 @@
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
 
-    
+
 
 
     <style>
@@ -108,24 +112,32 @@
         font-family: ${fontfamily} !important;
       }
 
-    @font-face {
+      @font-face {
         font-family: "Proxima Nova";
         src: url('https://go.taggermedia.com/rs/628-JXS-973/images/proxima-nova.woff2') format('woff2');
         src: url('https://go.taggermedia.com/rs/628-JXS-973/images/proxima-nova.eot') format('eot');
         src: url('https://go.taggermedia.com/rs/628-JXS-973/images/ProximaNova-Medium.woff') format('woff');
         src: url('https://go.taggermedia.com/rs/628-JXS-973/images/ProximaNova-Medium.ttf') format('truetype');
         src: url('https://go.taggermedia.com/rs/628-JXS-973/images/ProximaNova-Medium.otf');
-    }
+      }
 
       body {background:#fff;} 
-      
-      h1{
+
+      #header h1 {
+        font-size: ${header-h1fontsize}px;
+      }
+      #header p {
+        font-size: ${header-p-fontsize}px;
+      }
+      h1 {
         font-size: ${h1fontsize}px;
+
       }
 
-      h2{
+      h2 {
         font-size: ${h2fontsize}px;
       }
+
       p,ul,ol{
         margin:10px 0;
       }
@@ -147,7 +159,7 @@
       .logo-container a{
         text-decoration:none;
       }
-      
+
       .flex{
         display: -webkit-flex;
         display:flex;
@@ -179,8 +191,8 @@
         font-size:${btnfontsize}px;
         transition:300ms opacity;
       }
-      .btn a:hover{
-        opacity:${btnhvropacity};
+      .btn a:hover, .btn a:focus {
+        background: ${btnhoverbackground};
       }
       .section{
         width:85%;
@@ -190,7 +202,7 @@
       }
       .form-container{
         min-height:20px;
-        
+
       }
 
       .mktoForm input[type="text"],
@@ -203,9 +215,9 @@
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
       }
-      
-      
-      
+
+
+
       #header{
         background-color:${bannerclr};
         background-image:url('${bannerimage}');
@@ -213,7 +225,7 @@
         background-position:center;
         background-size:cover;
         display:${showbanner};
-        background-blend-mode: multiply;
+        background-blend-mode: ${background-blend-mode};
       }
       #freetext{
         background-color:${freeTextBackgroundColor};
@@ -229,7 +241,7 @@
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
-       #brand .section{
+      #brand .section{
         display:flex;
         flex-direction:column;
         justify-content:center;
@@ -238,8 +250,8 @@
         padding-top:${logopaddingtop}px;
         padding-bottom:${logopaddingbtm}px;
       }
-      
-      
+
+
       #header .section{
         display:flex;
         flex-direction:column;
@@ -249,8 +261,7 @@
         padding-top:${headerpaddingtop}px;
         padding-bottom:${headerpaddingbtm}px;
       }
-        #header .logo-container{
-        position:absolute;
+      #header .logo-container{
         top:${sectionpaddingtb}px;
         left:0;
         width:100%;
@@ -263,7 +274,6 @@
         display:${showtoplogo-1};
       }
       #brand .logo-container{
-        position:absolute;
         top:${sectionpaddingtb}px;
         left:0;
         width:100%;
@@ -291,6 +301,7 @@
 
       #freetext h1 {
         color: ${freeTextHeaderColor} !important;
+        font-size: ${freeTextH1size}px;
       }
 
       #freetext p,
@@ -336,7 +347,7 @@
         width:99% !important;
         max-width:700px !important;
         margin: 0 auto !important;
-        ${googlefontfamily}
+        ${fontfamily}
       }
       .mktoForm .mktoGutter{
         width:0 !important;
@@ -428,7 +439,7 @@
         border: 1px solid ${formButtonColor} !important;
         color:${btnfontclr};
         text-align: center !important;
-		letter-spacing: 0.1em !important;
+        letter-spacing: 0.1em !important;
         font-size:${btnfontsize}px !important;
         -moz-border-radius: ${btnborderrds}px !important;
         -webkit-border-radius: ${btnborderrds}px !important;
@@ -464,15 +475,16 @@
         display: block;
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
-}
+      }
       #footer .section{
         padding:${footerpaddingtb}px 0;
-        
+
       }
       #footer .row1{
         align-items:center;
         justify-content: space-between;
-        margin-bottom:20px;
+        margin-bottom:20px; 
+        align-items: baseline;
       }
       #footer .logo-container img{
         width:${footerlogowidth}px;
@@ -493,8 +505,21 @@
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
-      
-      
+      #footerlinks {
+        display: flex;
+      }
+      #footerlinks h4{
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        font-size: 14px;
+      }
+      #footer ul {
+        list-style: none;
+      }
+      #footer .social-icons {
+        display: flex;
+        gap: 0.5rem;
+      }
       @media screen and (max-width:768px){
         .flex{
           flex-wrap:wrap;
@@ -537,8 +562,8 @@
           justify-content:center;
         }
       }
-      
-      
+
+
       @media screen and (max-width:550px){
         .mktoForm .mktoFormRow{
           display:block !important;
@@ -547,14 +572,24 @@
           margin-left:0 !important;
         }
       }
+      @media (max-width: 900px ) {
+        #footer .row1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #footerlinks {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
   <body>
     <header id="brand">
       <div class="section">
-           <div class="logo-container">
-            <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
-            <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
+        <div class="logo-container">
+          <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
+            <a href="https://www.taggermedia.com/"><img src="https://go.taggermedia.com/rs/628-JXS-973/images/tagger-logo.png" alt="logo"></a>
           </div>
         </div>
       </div>
@@ -562,7 +597,7 @@
     <div id="header">
       <div class="section">
         <div class="logo-container">
-           <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
+          <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
             <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
           </div>
         </div>
@@ -574,11 +609,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-        
+
       </div>
     </div>
-      
-    
+
+
     <div id="freetext">
       <div class="section">
         <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
@@ -604,11 +639,11 @@
         </div>
       </div>
     </div>
-    
-    
+
+
     <div id="formsection">
       <div class="section flex">
-        
+
         <div class="w50 lefttext">
           <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
             <h2>
@@ -622,52 +657,77 @@
             </p>
           </div>
         </div>
-        
+
         <div class="form-container w100">
           <div class="mktoText" id="formheadline" mktoName="Form - Headline">
             <h2  class="bold">Form Headline</h2>
           </div>
           <div class="mktoForm" id="form1" mktoName="Form"></div>
         </div>
-        
+
       </div>
     </div>
-    
-    
+
+
     <footer id="footer">
       <div class="section">
-        
+
         <div class="row1 flex">
           <div class="logo-container col" style="display:${showfooterlogo};">
-            <div class="mktoText" id="footerlogo" mktoName="Footer - Logo">
-              <a href="#"><img src="https://dummyimage.com/150x80/000/fff" alt="footer logo"></a>
+            <div class="mktoText" id="footerlinks" mktoName="Footer - Logo">
+              <ul class="footer_list-1">
+                <li>
+                  <h4>Policy</h4>
+                </li>
+
+                <li class="footer__link"><a href="/privacy-policy">Privacy Policy</a></li>
+                <li class="footer__link"><a href="/privacy-policy-creator">Creator Privacy Policy</a></li>
+                <li class="footer__link"><a href="/terms-of-use">Terms of Use</a></li>
+                <li class="footer__link"><a href="/creator-terms-and-conditions">Creator T&amp;C</a></li>
+
+              </ul>
+              <ul class="footer_list-2">
+                <li>
+                  <h4>Contact</h4>
+                </li>
+                <li class="footer__link"><a href="mailto:demo@taggermedia.com">demo@taggermedia.com</a></li>
+                <li class="footer__link"><a href="tel:8882014517">(888) 201-4517</a></li>
+              </ul>
             </div>
           </div>
 
           <div class="mktoText col" id="footertext1" mktoName="Footer - Text">
-            © Company Name
+            Tagger Media Inc. &copy; 2021
           </div>
 
           <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
-            Lorem ipsum dolor sit amet
+              <div class="footer-social" id="footericons-social" mktoName="Footer - Social Media Icons/Links">
+                <ul class="social-icons">
+                  <li id="footer-icon1">
+                    <a href="https://www.youtube.com/channel/UCtiIJqX2kZZrsq6_In525PA" target="_blank"><img alt="" width="35" height="auto" src="https://go.taggermedia.com/rs/628-JXS-973/images/youtube.png" style="width:35px;height:auto;" /></a>
+                  </li>
+                  <li id="footer-icon2">
+                    <a href="https://www.instagram.com/taggermedia/" target="_blank"><img alt="" width="35" height="auto" src="https://go.taggermedia.com/rs/628-JXS-973/images/instagram.png" style="width:35px;height:auto;" /></a>
+                  <li id="footer-icon3">
+                    <a href="https://www.facebook.com/TaggerMedia1/" target="_blank"><img alt="" width="35" height="auto" src="https://go.taggermedia.com/rs/628-JXS-973/images/facebook.png" style="width:35px;height:auto;" /></a>
+                  </li>
+                  <li id="footer-icon4">
+                    <a href="https://twitter.com/taggermedia" target="_blank"><img alt="" width="35" height="auto" src="https://go.taggermedia.com/rs/628-JXS-973/images/twitter.png" style="width:35px;height:auto;" /></a>
+                  </li>
+                  <li id="footer-icon5">
+                    <a href="https://www.tiktok.com/@taggermedia" target="_blank"><img alt="" width="35" height="auto" src="https://go.taggermedia.com/rs/628-JXS-973/images/tiktok.png" style="width:35px;height:auto;" /></a>
+                  </li>
+                  <li id="footer-icon6">
+                    <a href="https://pl.pinterest.com/taggermedia/" target="_blank"><img alt="" width="35" height="auto" src="https://go.taggermedia.com/rs/628-JXS-973/images/pinterest.png" style="width:35px;height:auto;" /></a>
+                  </li>
+                </ul>
+              </div>
+        
           </div>
         </div>
-        
-        <div class="row2">
-          <div class="icons-container">
-            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
-              <ul>
-                <li><a href="#"><img src="https://dummyimage.com/40x40/757575/fff"></a></li>
-                <li><a href="#"><img src="https://dummyimage.com/40x40/757575/fff"></a></li>
-                <li><a href="#"><img src="https://dummyimage.com/40x40/757575/fff"></a></li>
-                <li><a href="#"><img src="https://dummyimage.com/40x40/757575/fff"></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
+
       </div>
     </footer>
-    
+
   </body>
 </html>
