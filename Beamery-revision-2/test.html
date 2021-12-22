@@ -25,7 +25,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -33,7 +32,7 @@
     <link rel="icon" href="https://info.beamery.com/rs/918-SFJ-289/images/orange-bexa-16x16.png" type="image/gif">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     <script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
-	
+
     <meta class="mktoString" id="header_img" mktoName="Header Image" default="https://info.beamery.com/rs/918-SFJ-289/images/Mobi 2.png">
 
     <meta class="mktoString" id="fontsize-h1" mktoName="Header 1/Hero Font size" default="30">
@@ -93,14 +92,13 @@
  /* unset default form style */
         #form .mktoForm, .mktoForm .mktoHasWidth {
           width: 100% !important;
-          max-width: 100% !important;
           padding: 0 !important;
         }
         #form mktoCheckboxList{
           border: none !important;
         }
         .mktoForm .mktoCheckboxList>label {
-          position: absolute;
+          position: absolute !important;
           top: 2rem;
         }
         .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap {
@@ -127,7 +125,7 @@
                position: relative !important;
                white-space: unset !important;
                top: unset !important;
-               
+               margin-top: 2rem;
         }
         @media (max-width: 900px) {
           #form .mktoForm, .mktoForm .mktoHasWidth {
@@ -136,9 +134,12 @@
         }
         .mktoForm .disclaimer {
           visibility: visible !important;
+          margin-top: -1.8rem;
           margin-right: 2rem;
+          margin-left: 1rem;
         }
  
+      
       
         .eu .mktoForm input[type="text"],
         .eu .mktoForm input[type="url"],
@@ -227,6 +228,7 @@
         #policy {
             display:${showprivacy};
             font-size:15px !important;
+            margin-top: 3rem;
         }
   
 
@@ -252,7 +254,6 @@
         background-size: cover;
         position: relative;
         display: ${showHeader};
-        padding-bottom: 1rem;
       }
       /* Place text in the middle of the image */
       /* hero container */
@@ -293,7 +294,6 @@
         height: 70px;
         max-width: 70px;
         max-height: 70px;
-        margin: 0 3px;
       }
 
       a:hover {
@@ -478,7 +478,6 @@
         }
         .mainContent .row {
           margin: unset !important;
-        
         }
         #footer {
           overflow-x: hidden !important;
@@ -488,11 +487,10 @@
         }
       }
 
-      @media (max-width: 850px) {
+      @media (max-width: 800px) {
         .mainContent .row .col-sm-6 {
           width: 100%;
           max-width: unset !important;
-          flex: unset !important;
         }
         .order1 {
           order: 2;
@@ -500,12 +498,6 @@
         }
         .order2 {
           order: 1;
-        }
-        .col-md-3 img {
-          width: auto !mportant;
-          height: 120px !important;
-          max-width: 120px !important;
-
         }
       }
 
@@ -656,11 +648,13 @@
       }
 
       #footer .footer-column {
+        /* width: 10vw; */
         min-width: 100px;
       }
 
       .top-wrapper {
         justify-content: space-between;
+        /* flex-wrap: wrap; */
         gap: 1.8rem;
       }
 
@@ -829,11 +823,6 @@
 
         }
       }
- @media (max-width: 900px) {
-     #policy {
-      margin-top: -2rem !important;
-    }
- }     
  @media (max-width: 800px) {
     .mktoForm input[type="text"],
     .mktoForm input[type="url"],
@@ -850,9 +839,7 @@
     }
     .mktoForm .mktoFormRow {
         width: 71vw !important;
-        max-width: 99% !important;
     }
-  
     
 }
 
