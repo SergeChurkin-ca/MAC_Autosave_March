@@ -99,13 +99,51 @@ a {
 /* media queries */
 
 @media (max-width: 767px) {
+    .main-container {
+        display: flex !important;
+        flex-wrap: wrap;
+        width: unset !important;
+        padding: 0 1rem !important;
+    }
+    .main-container .row-number-2 {
+        padding: 0 1rem !important;
+    }
     .row-number-3 .row-fluid {
         display: flex;
         flex-wrap: wrap;
     }
-    .dan-moore {
+    .row-number-4 {
+        margin: 0 auto;
+    }
+    .row-fluid .span5 {
         margin-top: 2rem;
         display: flex !important;
         justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-group {
+        padding: 0 1rem !important;
+    }
+}
+
+@media (max-width: 525px) {
+    .span12 {
+        padding: 3.5rem 0 3.2rem !important;
+    }
+    .footer-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+    }
+    .footer-group .row-number-8 {
+        order: 3;
+    }
+    .footer-container .row-number-7 .row-fluid {
+        text-align: center;
+        line-height: 20px;
+        margin-top: 0.2rem;
+        margin-bottom: 0.5rem;
     }
 }
