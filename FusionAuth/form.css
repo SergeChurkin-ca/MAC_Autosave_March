@@ -1,0 +1,49 @@
+form {
+    background: #e2e8f0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    border-radius: 5px;
+    max-width: 300px;
+    margin-left: 0.5rem;
+}
+
+label {
+    visibility: hidden;
+}
+
+.hs-error-msgs,
+.hs-error-msgs label {
+    visibility: visible;
+    color: red;
+    padding: 0;
+    margin: 0.5rem auto;
+}
+
+input {
+    border: none;
+    width: calc(100% - 1rem);
+    padding: 0.4rem 0.5rem;
+    font-size: 11px;
+    margin: 0.2rem auto;
+    display: flex;
+}
+
+.hs-button {
+    background: #f97316;
+    text-decoration: none;
+    padding: 0.7rem;
+    text-align: left;
+    margin: 1rem auto 1.5rem;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    form {
+        margin: 0 auto;
+    }
+}

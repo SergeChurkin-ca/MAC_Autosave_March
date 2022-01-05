@@ -204,12 +204,9 @@
             padding: 20px !important;
             text-transform: uppercase !important;
         }
-        
-        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover,
-        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover, .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
             background-color: #431db2 !important;
         }
-        
         .mktoForm .mktoFormRow,
         .mktoForm .mktoButtonRow {
             width: unset !important;
@@ -233,12 +230,10 @@
         .eu .mktoForm .mktoError {
             top: 0 !important;
         }
-        
         .mktoForm div.mktoLogicalField.mktoInvalid {
             border: none !important;
         }
         /* end of unser form style */
-        
         body,
         html {
             height: 100%;
@@ -250,12 +245,10 @@
         }
         
         #policy {
-            display:$ {
-                showprivacy
-            }
-            ;
+            display:${showprivacy};
             font-size:15px !important;
         }
+  
         /* banner */
         
         .main_inner_bg {
@@ -342,10 +335,7 @@
         }
         
         .main .right_banner_main {
-            display: $ {
-                boolean2
-            }
-            ;
+            display: ${boolean2};
             !important;
         }
         /* section help */
@@ -380,11 +370,9 @@
             text-align: center;
         }
         /* section talking box */
-        
         .eu .left_taking_img .mktoGen.mktoImg {
             display: flex !important;
         }
-        
         .left_taking_img {
             position: relative;
             padding: 0 0.5rem !important;
@@ -420,10 +408,7 @@
         }
         
         .mainContent {
-            display: $ {
-                showMain
-            }
-            ;
+            display: ${showMain};
             padding: 2rem 0;
         }
         
@@ -458,9 +443,9 @@
             .bannerText h3 {
                 font-size: 1rem !important;
             }
-            .eu .banner_section .right_banner_main,
-            .eu .left_banner_main {
+            .eu .banner_section .right_banner_main, .eu .left_banner_main {
                 width: 100% !important;
+
             }
             .sec_form {
                 max-width: 450px !important;
@@ -553,13 +538,11 @@
             padding: 0.5rem !important;
         }
         /* treat candidates like customers */
-        
-        .eu .find_out,
-        .eu .findout_sec {
+      
+        .eu .find_out, .eu .findout_sec {
             transform: none !important;
             padding: 2rem 0 !important;
         }
-        
         .find_btn {
             margin-top: 1.5rem;
         }
@@ -600,14 +583,13 @@
         .footer-column ul li:first-child {
             color: #ffffff;
             font-weight: 700x;
-            margin-bottom: 2rem;
+            margin-bottom: 2em;
+            white-space: nowrap;
+            font-size: 15px;
         }
         
         #footer {
-            background-color:$ {
-                footerbgcolor
-            }
-            ;
+            background-color:${footerbgcolor};
             flex-direction: column;
         }
         
@@ -620,6 +602,7 @@
         
         .top-wrapper,
         .bottom-wrapper {
+            
             max-width: 1400px;
             width: 84vw;
             margin: 0 auto;
@@ -635,7 +618,7 @@
             list-style: none;
             display: flex;
             flex-direction: column;
-            padding: 0 0 1.5rem;
+            padding: 0 0.5rem 1.5rem;
         }
         
         #footer .footer-column {
@@ -644,10 +627,7 @@
         }
         
         #footer .top-wrapper {
-            display: $ {
-                showFooterTopWrapper
-            }
-            ;
+            display: ${showFooterTopWrapper};
         }
         
         .top-wrapper {
@@ -817,43 +797,19 @@
                 margin: 0 auto !important;
             }
         }
-        
         @media (max-width: 800px) {
-            .eu .mktoForm input[type="text"],
-            .eu .mktoForm input[type="url"],
-            .eu .mktoForm input[type="email"],
-            .eu .mktoForm input[type="tel"],
-            .eu .mktoForm input[type="number"],
-            .eu .mktoForm input[type="date"],
-            .eu .mktoForm textarea.mktoField,
-            .eu .mktoForm select.mktoField {
+            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
                 width: 90% !important;
                 max-width: 97% !important;
             }
         }
-        
         @media (max-width: 600px) {
-            .eu .mktoForm input[type="text"],
-            .eu .mktoForm input[type="url"],
-            .eu .mktoForm input[type="email"],
-            .eu .mktoForm input[type="tel"],
-            .eu .mktoForm input[type="number"],
-            .eu .mktoForm input[type="date"],
-            .eu .mktoForm textarea.mktoField,
-            .eu .mktoForm select.mktoField {
+            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
                 width: 80% !important;
             }
         }
-        
         @media (max-width: 400px) {
-            .eu .mktoForm input[type="text"],
-            .eu .mktoForm input[type="url"],
-            .eu .mktoForm input[type="email"],
-            .eu .mktoForm input[type="tel"],
-            .eu .mktoForm input[type="number"],
-            .eu .mktoForm input[type="date"],
-            .eu .mktoForm textarea.mktoField,
-            .eu .mktoForm select.mktoField {
+            .eu .mktoForm input[type="text"], .eu .mktoForm input[type="url"], .eu .mktoForm input[type="email"], .eu .mktoForm input[type="tel"], .eu .mktoForm input[type="number"], .eu .mktoForm input[type="date"], .eu .mktoForm textarea.mktoField, .eu .mktoForm select.mktoField {
                 width: 70% !important;
             }
         }

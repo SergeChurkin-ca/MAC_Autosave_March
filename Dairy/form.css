@@ -30,7 +30,9 @@ form {
     background-color: #df7642 !important;
     background-image: none !important;
     border: none !important;
-    padding: 1.3rem !important;
+    padding: 1.6rem 5.5rem !important;
+    font-size: 17px !important;
+    width: auto !important;
 }
 
 
@@ -41,8 +43,12 @@ form {
     flex-wrap: wrap !important;
     width: 80vw !important;
     margin: 0 auto !important;
-    justify-content: space-between;
-    max-width: 1400px !important;
+    justify-content: space-evenly;
+    max-width: 1200px !important;
+}
+
+.mktoForm .mktoOffset {
+    height: 0.5rem !important;
 }
 
 
@@ -50,16 +56,18 @@ form {
 
 .mktoForm .mktoFieldWrap {
     display: flex !important;
-    width: calc((100vw / 3) - 1rem);
+    width: calc((100vw / 4) - 1rem);
+    min-width: 270px;
 }
 
 
 /* row wrap */
 
 .mktoForm .mktoFormRow {
-    width: calc((100vw / 3) - 8vw);
-    flex: 1 0 200px;
-    max-width: 350px;
+    width: calc((100vw / 4) - 8vw);
+    flex: 1 0 250px;
+    max-width: 250px;
+    height: 3rem;
 }
 
 .mktoForm .mktoFormRow:nth-of-type(1) {
@@ -69,6 +77,8 @@ form {
     flex: unset;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
+    min-width: 90vw !important;
 }
 
 .mktoForm .mktoFormRow:nth-of-type(1) .mktoFieldWrap {
@@ -102,6 +112,7 @@ input[type="checkbox"] {
     order: 2;
     width: 80% !important;
     margin-left: 3rem !important;
+    font-size: 16px;
 }
 
 
@@ -125,6 +136,10 @@ input[type="checkbox"] {
     margin-top: 1rem !important;
 }
 
+.mktoForm .mktoFormRow:nth-last-of-type(2) .mktoFieldWrap {
+    width: 100% !important;
+}
+
 
 /* temp bug extra row hide */
 
@@ -138,6 +153,12 @@ input[type="checkbox"] {
     }
     .mktoForm .mktoFieldWrap {
         width: 100% !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .mktoForm .mktoFormRow:nth-of-type(1) input {
+        width: 80vw !important;
     }
 }
 
@@ -179,4 +200,50 @@ input[type="checkbox"]:checked+label:after {
 
 input[type="checkbox"]:focus+label::before {
     outline: rgb(59, 153, 252) auto 5px;
+}
+
+@media (max-width: 850px) {
+    .mktoForm .mktoFormRow:nth-of-type(1) .mktoFieldWrap {
+        flex-wrap: nowrap !important;
+    }
+    .mktoForm .mktoFormRow:nth-of-type(1) input {
+        width: 30vw !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .mktoForm .mktoFormRow:nth-of-type(1) {
+        margin-bottom: 6rem !important;
+    }
+    .mktoForm .mktoFormRow:nth-of-type(1) input {
+        width: 70vw !important;
+    }
+    .mktoForm .mktoFormRow:nth-of-type(1) .mktoFieldWrap {
+        flex-wrap: wrap !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .mktoForm .mktoFormRow {
+        max-width: unset !important;
+    }
+    .mktoForm .mktoFieldWrap {
+        align-items: baseline !important;
+    }
+    .mktoForm .mktoLogicalField {
+        display: flex;
+        justify-content: end;
+        margin: 0 0.5rem !important;
+    }
+    .mktoForm .mktoLabel {
+        margin-left: 1rem !important;
+        width: 95% !important;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .mktoForm .mktoFieldWrap {
+        min-width: 220px !important;
+    }
 }
