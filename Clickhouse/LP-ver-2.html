@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
     <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="#">
-
+    
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
 
     <!-- Show and Hide Meta Tags -->
-    <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbrandlogo" mktoName="Show Top Brand Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -21,51 +21,51 @@
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
+    <!-- Top Brand Logo Styling -->
+    <meta class="mktoString" mktoName="Top Brand - Logo Width (px)" id="brandlogowidth" default="200">
+    
     <!-- Background, Buttons, and Text Color Meta Tags -->
     <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#bbbbbb">
-    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
-    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#212529">
+    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#212529">
 
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
-    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#226">
-    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#413f3d">
+    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#212529">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#212529">
 
 
-    <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#454eff">
-    <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Color" default="#241c68">
-    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#E3F1FE">
+    <meta class="mktoColor" id="btnborder" mktoName="Free-Text - Btn Background Color" default="#257AF4">
+    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#257AF4">
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
     <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#d4d4d4">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#000">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
-    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#454eff">
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#212529">
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
     <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#000">
-    <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#413f3d">
-    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#413f3d">
-    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
-    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#241c68">
+    <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#212529">
+    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#212529">
+    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#000">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#FFF">
 
-    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#fcf7ed">
-    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#6a6968">
-
+    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#F1F6F9">
+    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#6C757D">
+    
     <!-- Font Size Meta Tags -->
-    <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
-    <meta class="mktoString" mktoName="Freetext - H1(Freetext) Font Size (px)" id="freeTextH1size" default="32">
-    <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="26">
-    <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
-    <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="26.6">
+    <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="35.5">
+    <meta class="mktoString" mktoName="Global - Header - H1(Titles) Font Size (px)" id="headerH1size" default="40">
+    <meta class="mktoString" mktoName="Global - Header P Font Size (px)" id="headerPfontsize" default="21.5">
+    <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="21.5">
 
-    <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
+    
+    <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16.5">
+
 
     <!-- Banner Section Styling -->
-    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/1400x700/454eff/808080">
-    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="180">
-    <meta class="mktoString" mktoName="Banner Background Blend Mode" id="background-blend-mode" default="none">
-
-    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="15">
-    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="15">
+    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/690x360/fefaf0/B3B8C4">
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="150">
     <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
     <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
 
@@ -73,35 +73,34 @@
     <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
 
     <!-- Footer Section Styling -->
-    <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
+    <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="10">
     <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
-    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="40">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="25">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
 
     <!-- Google Fonts -->
-    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="Inter">
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Hind+Siligur:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Hind Siliguri', sans-serif">
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
-    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="6">
-    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
-    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="38">
+    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="8">
+    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="32">
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="12">
 
     <!-- Form Section Styling -->
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
-    <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
 
-
+    
 
 
     <style>
       ${googlefontimport}
-      * {
+      *{
         padding:0;
         border: 0;
         margin: 0;
@@ -109,55 +108,51 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         font-family: Helvetica, sans-serif;
-        font-family: ${fontfamily}, sans-serif !important;
+        font-family: ${googlefontfamily} !important;
       }
-
-
+        @font-face {
+        font-family: 'Noto Sans';
+        src: url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
       body {background:#fff;} 
-
-      #header h1 {
-        font-size: ${header-h1fontsize}px;
-        font-family: ${fontfamily} !important;
-      }
-      #header p {
-        font-size: ${header-p-fontsize}px;
-        font-family: ${fontfamily} !important;
-      }
-      h1 {
+      
+      h1{
         font-size: ${h1fontsize}px;
-
       }
-
-      h2 {
+      header h1 {
+        font-size: ${headerH1size}px;
+      }
+      h2{
         font-size: ${h2fontsize}px;
       }
-
       p,ul,ol{
         margin:10px 0;
       }
       ul,ol{
         margin-left:45px;
       }
-      p, li{
+      #header p, li{
         line-height:1.5;
-        font-size:${pfontsize}px;
+        font-size:${headerPfontsize}px;
       }
       b, .bold, em{
         font-weight:bold;
       }
-      a {text-decoration: none}
       img{
         vertical-align:bottom;
         max-width:100%;
         height:auto;
       }
-      .logo-container a{
-        text-decoration:none;
-      }
-
+      
       .flex{
         display: -webkit-flex;
         display:flex;
+      }
+      .flex .col {
+          width: calc((100vw / 3) - 1rem);
       }
       .flex .col:not(:last-child){
         margin-right:30px;
@@ -176,7 +171,7 @@
         text-decoration:none;
       }
       .btn a{
-        border: 1px solid ${btnfontclr};
+        border: 1px solid ${btnborder};
         background: ${btnbgclr};
         padding: ${btnpaddingtb}px ${btnpaddinglr}px;
         -moz-border-radius: ${btnborderrds}px;
@@ -185,11 +180,11 @@
         text-align:center;
         font-size:${btnfontsize}px;
         transition:300ms opacity;
+        font-family: 'Noto Sans', sans-serif !important;
       }
-      .btn a:hover, .btn a:focus {
-        background: ${btnhoverbackground};
+      .btn a:hover, .btn a:focus{
+        background: ${btnborder};
         color: #ffffff;
-
       }
       .section{
         width:85%;
@@ -199,7 +194,7 @@
       }
       .form-container{
         min-height:20px;
-
+        
       }
 
       .mktoForm input[type="text"],
@@ -212,9 +207,9 @@
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
       }
-
-
-
+      
+      
+      
       #header{
         background-color:${bannerclr};
         background-image:url('${bannerimage}');
@@ -222,7 +217,7 @@
         background-position:center;
         background-size:cover;
         display:${showbanner};
-        background-blend-mode: ${background-blend-mode};
+        background-blend-mode: normal;
       }
       #freetext{
         background-color:${freeTextBackgroundColor};
@@ -238,17 +233,14 @@
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
-      #brand .section{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        max-height:350px;
-        position:relative;
-        padding-top:${logopaddingtop}px;
-        padding-bottom:${logopaddingbtm}px;
+      
+      #brand .section {
+        display: ${showbrandlogo}; 
       }
-
-
+      #brand .logo-container {
+        width: ${brandlogowidth}px;
+      }
+      
       #header .section{
         display:flex;
         flex-direction:column;
@@ -259,23 +251,13 @@
         padding-bottom:${headerpaddingbtm}px;
       }
       #header .logo-container{
+        position:absolute;
         top:${sectionpaddingtb}px;
         left:0;
         width:100%;
         display:${showtoplogo};
       }
       #header .logo-container img{
-        width:${toplogowidth}px;
-      }
-      #brand{
-        display:${showtoplogo-1};
-      }
-      #brand .logo-container{
-        top:${sectionpaddingtb}px;
-        left:0;
-        width:100%;
-      }
-      #brand .logo-container img{
         width:${toplogowidth}px;
       }
       #header #bannertext{
@@ -298,13 +280,13 @@
 
       #freetext h1 {
         color: ${freeTextHeaderColor} !important;
-        font-size: ${freeTextH1size}px;
       }
 
       #freetext p,
       #freetext ul,
       #freetext li {
         color: ${freeTextTextColor} !important;
+        font-size: ${pfontsize}px;
       }
 
       #formlefttext h2 {
@@ -344,7 +326,7 @@
         width:99% !important;
         max-width:700px !important;
         margin: 0 auto !important;
-        ${fontfamily}
+        ${googlefontfamily}
       }
       .mktoForm .mktoGutter{
         width:0 !important;
@@ -416,7 +398,6 @@
         width: 20px !important;
         height: 20px !important;
         margin-top: 3px !important;
-        margin-right: 5px!important;
       }
       .mktoForm a, .mktoForm a:visited{
         color:#3a3a3a !important;
@@ -432,11 +413,12 @@
         margin-top:10px;
       }
       .mktoButtonWrap button.mktoButton {
-        background: ${formButtonColor} !important;
+        background-color: ${formButtonColor} !important;
+        background-image: linear-gradient(to bottom, ${formButtonColor}, ${formButtonColor}) !important;
         border: 1px solid ${formButtonColor} !important;
         color:${btnfontclr};
         text-align: center !important;
-        letter-spacing: 0.1em !important;
+		letter-spacing: 0.1em !important;
         font-size:${btnfontsize}px !important;
         -moz-border-radius: ${btnborderrds}px !important;
         -webkit-border-radius: ${btnborderrds}px !important;
@@ -446,7 +428,8 @@
       }
 
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
-        background: ${formButtonColor} !important;
+        background-color: ${formButtonColor} !important;
+        background-image: linear-gradient(to bottom, ${formButtonColor}, ${formButtonColor}) !important;
         color: ${formButtonTextColor} !important;
         border: 1px solid ${formButtonColor} !important;
       }
@@ -464,46 +447,38 @@
         background: ${formButtonHoverBGColor} !important;
       }
 
-      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
-        margin-left: 1.5em;
-        margin-top: 0.1em;
-        margin-bottom: 0.3em;
-        line-height: 2em!important;
-        display: block;
-        min-height: 12px;
-        font-size: ${formfontsize-1}px!important;
-      }
+      
       #footer .section{
         padding:${footerpaddingtb}px 0;
-
+        
       }
       #footer .row1{
         align-items:center;
         justify-content: space-between;
-        algin-items: start;
+        margin-bottom:20px;
       }
       #footer .logo-container img{
         width:${footerlogowidth}px;
       }
+      .icons-container ul, .icons-container ol{
+        display:flex;
+        flex-direction:row;
+        margin-left:0;
+        gap: 2rem;
+      }
+      .icons-container ul li, .icons-container ol li{
+        list-style:none;
+        margin-right:10px;
+      }
+
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
-      #footerlinks {
-        display: flex;
+      
+      .footer-col-1 {
+          min-width: 180px;
       }
-      #footerlinks h4{
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        font-size: 14px;
-      }
-      #footer ul {
-        list-style: none;
-      }
-    #footer .icons-container {
-        justify-content: right;
-        display: flex;
-    }
       @media screen and (max-width:768px){
         .flex{
           flex-wrap:wrap;
@@ -522,7 +497,7 @@
           padding-top:40px;
           padding-bottom:40px;
         }
-        #brand .logo-container{
+        #header .logo-container{
           top:40px;
         }
         #formsection .lefttext{
@@ -533,7 +508,7 @@
         #formsection .form-container{
           padding:20px;
         }
-        #footer .section, .icons-container{
+        #footer .section{
           padding:25px 0;
           align-items:center;
           justify-content: center;
@@ -542,37 +517,18 @@
         #footer .logo-container{
           margin-bottom:10px;
         }
-     
- 
+        .icons-container ul, .icons-container ol{
+          justify-content:center;
+        }
       }
-
-
+      
+      
       @media screen and (max-width:550px){
         .mktoForm .mktoFormRow{
           display:block !important;
         }
         .mktoForm .mktoFormRow .mktoFormCol{
           margin-left:0 !important;
-        }
-      }
-      @media (max-width: 900px ) {
-        #footer .row1 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        .logo-container {
-            margin: 0 auto !important;
-        }
-        #footertext2 {
-            text-align: center;
-        }
-        #footertext1 {
-            text-align: center;
-            margin: 10px auto;
-        }
-        #footerlinks {
-          flex-direction: column;
         }
       }
     </style>
@@ -582,18 +538,20 @@
       <div class="section">
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
-            <a href="https://routable.com/"><img src="http://239-TFC-705.mktoweb.com/rs/239-TFC-705/images/Routable.png" alt="logo"></a>
+            <a href="https://www.clickhouse.com/" target="_blank"><img src="https://discover.clickhouse.com/rs/238-FPC-317/images/logo-clickhouse-wb.png" alt="logo"></a>
           </div>
         </div>
       </div>
     </header>
-    <div id="header">
+    <header id="header">
       <div class="section">
+        
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
             <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
           </div>
         </div>
+        
         <div class="mktoText" id="bannertext" mktoName="Banner - Text">
           <h1>
             Lorem Ipsum
@@ -602,11 +560,10 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-
+        
       </div>
-    </div>
-
-
+    </header>
+    
     <div id="freetext">
       <div class="section">
         <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
@@ -632,11 +589,11 @@
         </div>
       </div>
     </div>
-
-
+    
+    
     <div id="formsection">
       <div class="section flex">
-
+        
         <div class="w50 lefttext">
           <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
             <h2>
@@ -650,46 +607,35 @@
             </p>
           </div>
         </div>
-
+        
         <div class="form-container w100">
           <div class="mktoText" id="formheadline" mktoName="Form - Headline">
             <h2  class="bold">Form Headline</h2>
           </div>
           <div class="mktoForm" id="form1" mktoName="Form"></div>
         </div>
-
+        
       </div>
     </div>
-
-
-
+    
+    
     <footer id="footer">
       <div class="section">
         
         <div class="row1 flex">
-          <div class="logo-container col" style="display:${showfooterlogo};">
-            <div class="mktoText" id="footerlogo" mktoName="Footer - Logo">
-              <a href="https://routable.com/"><img src="http://239-TFC-705.mktoweb.com/rs/239-TFC-705/images/Routable.png" alt="logo"></a>
-            </div>
+            
+          <div class="mktoText footer-col-1" id="footertext1" mktoName="Footer - Text">
+           <p>&copy; 2016–2021 ClickHouse, Inc.</p>
           </div>
 
-          <div class="mktoText col" id="footertext1" mktoName="Footer - Text">
-            &copy; 2017-2022 Routable Inc. All rights reserved.<br><br>
-            1152 Galts Ave, Lorem Ipsum Dolor Sit Amet, Toronto ON A1B 2C3<br><br>
-          </div>
-
-          <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
-          <h4><a href="https://routable.com/legal/terms-of-service/">Terms of Service</a></h4>
-          <h4><a href="https://routable.com/legal/privacy/">Privacy Policy</a></h4>
+          <div class="mktoText footer-col-2" id="footertext2" mktoName="Footer - Text 2">
+            <p>ClickHouse source code is published under the Apache 2.0 License. Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</p>
           </div>
         </div>
         
-  
         
       </div>
     </footer>
-
-  
-
+    
   </body>
 </html>
