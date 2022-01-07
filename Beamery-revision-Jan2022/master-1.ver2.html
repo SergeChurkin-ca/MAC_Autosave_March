@@ -92,15 +92,11 @@
       }
   
  /* unset default form style */
-  
- /* unset default form style */
-
-
-      #form .mktoForm, .mktoForm .mktoHasWidth {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 0 !important;
-      }
+        #form .mktoForm, .mktoForm .mktoHasWidth {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding: 0 !important;
+        }
         #form mktoCheckboxList{
           border: none !important;
         }
@@ -110,7 +106,6 @@
         }
         .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap {
           width: 100% !important;
-          margin-bottom: 0 !important;
         }
         .eu .mktoForm div.mktoLogicalField {
             margin-top: -4rem;
@@ -180,15 +175,16 @@
         .eu .mktoForm input[type="date"],
         .eu .mktoForm textarea.mktoField,
         .eu .mktoForm select.mktoField,
-        #form .mktoForm input[type=text],
-        #form .mktoForm input[type=url],
-        #form .mktoForm input[type=email],
-        #form .mktoForm input[type=tel],
-        #form .mktoForm input[type=number],
-        #form .mktoForm input[type=date],
-        #form .mktoForm textarea.mktoField,
-        #form .mktoForm select.mktoField {
+        .mktoForm input[type=text],
+        .mktoForm input[type=url],
+        .mktoForm input[type=email],
+        .mktoForm input[type=tel],
+        .mktoForm input[type=number],
+        .mktoForm input[type=date],
+        .mktoForm textarea.mktoField,
+        .mktoForm select.mktoField {
             margin: 0;
+            padding: 10px;
             background: #fff;
             width: initial !important;
             border: 2px solid #d0d0d0 !important;
@@ -196,7 +192,7 @@
             color: #5d5d5d !important;
             min-height: 2.5rem;
             box-shadow: none !important;
-            padding: 1rem 1.5rem !important;
+            padding: 0.7rem 1.5rem !important;
         }
         
         #form .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
@@ -219,9 +215,6 @@
             width: unset !important;
         }
         
-        .mktoForm .mktoButtonRow {
-          margin-top: 16px !important;
-        }
         .mktoForm .mktoButtonWrap.mktoSimple {
             margin: 1rem 0 !important;
         }
@@ -371,13 +364,13 @@
 
       input,
       select {
-        // padding: 1.5rem 1rem !important;
+        padding: 1.5rem 1rem !important;
         margin: 0.5rem 0;
         border: 1px solid rgba(24, 24, 27, .15);
       }
 
       button {
-        padding: 1rem !important;
+        padding: 1rem Im !important;
         width: 8rem !important;
       }
 
@@ -386,7 +379,7 @@
         width: 100%;
         height: 3.5rem;
         border-radius: 6px;
-        // padding: 1.1875rem 1.25rem;
+        padding: 1.1875rem 1.25rem;
       }
 
    
@@ -567,6 +560,9 @@
         }
         .bannerText h3 {
           font-size: 0.8rem !important;
+        }
+        .mktoForm .mktoGutter, .mktoForm .mktoOffset {
+          // display: block !important;
         }
       }
 
