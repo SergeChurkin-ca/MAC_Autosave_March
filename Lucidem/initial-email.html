@@ -17,13 +17,15 @@ font-family: Arial, serif !important;
     <meta class="mktoString" id="headline-fontfamily" mktoName="Font Family Name" default="Red Hat Text" />	
     <meta class="mktoString" id="googleimportfont2" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');" />
     <meta class="mktoString" id="subheadline-fontfamily" mktoName="Font Family Name" default="Source Sans Pro" />	
+    <meta class="mktoString" id="googleimportfont3" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');" />
+    <meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="Red Hat Text" />	
 
 
     <meta class="mktoNumber" id="logowidth" mktoname="Mobile Logo Width (px)" default="100" /> 
     <meta class="mktoNumber" id="imgmaxwidth" mktoname="Banner Img Mobile Width (px)" default="100" /> 
     <meta mktomodulescope="true" class="mktoColor" id="mod-bg-color" mktoname="Background Color" default="#ffffff" /> 
-    <meta mktomodulescope="true" class="mktoColor" id="banner-bg-color" mktoname="Banner Tint Color" default="#adadad" /> 
-    <meta mktomodulescope="true" class="mktoColor" id="bannerdark-bg-Color" mktoname="Background Color" default="#1c1c1c" /> 
+    <meta mktomodulescope="true" class="mktoColor" id="banner-bg-color" mktoname="Banner Tint Color" default="#3772ff" /> 
+    <meta mktomodulescope="true" class="mktoColor" id="bannerdark-bg-Color" mktoname="Background Color" default="#343A40" /> 
     <meta mktomodulescope="true" class="mktoColor" id="logobgclr" mktoname="Logo Background Color" default="#ffffff" /> 
     <meta mktomodulescope="true" class="mktoNumber" id="regLogoWidth" mktoname="Logo Width (px)" default="220" /> 
     <meta mktomodulescope="true" class="mktoList" id="bgimg" mktoname="Banner Background (Image or Color?)" values="image,color" default="image" /> 
@@ -332,7 +334,7 @@ th{font-weight:normal !important}
                                           <td height="${top_pad90}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                                         </tr> 
                                         <tr> 
-                                          <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${headlineFontColorwhite};font-weight:bold; font-size: ${headlineFontSize30}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}"> 
+                                          <td style="font-family: '${headline-fontfamily}',Arial, sans-serif; color: ${headlineFontColorwhite};font-weight:bold; font-size: ${headlineFontSize30}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}"> 
                                             <div class="mktoText" mktoname="Headline" id="bannerheaddy"> 
                                               <div>
                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -343,7 +345,7 @@ th{font-weight:normal !important}
                                           <td height="10" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                                         </tr> 
                                         <tr> 
-                                          <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${CopyColorWhite}; font-size: ${CopySize18}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}"> 
+                                          <td style="font-family: '${subheadline-fontfamily}',Arial, sans-serif; color: ${CopyColorWhite}; font-size: ${CopySize18}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}"> 
                                             <div class="mktoText" mktoname="Text" id="bannertextdy"> 
                                               <div>
                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -421,7 +423,7 @@ th{font-weight:normal !important}
                                   <td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                                 </tr> 
                                 <tr> 
-                                  <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize28}px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor}; text-align: ${alignLeft};"> 
+                                  <td align="${alignLeft}" style="font-family: '${subheadline-fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize28}px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor}; text-align: ${alignLeft};"> 
                                     <div class="mktoText" mktoname="Headline" id="Headline-text2"> 
                                       <div>
                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -620,7 +622,7 @@ th{font-weight:normal !important}
                                   <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};"> 
                                     <div class="mktoText" mktoname="Footer Text" id="footer-text"> 
                                       <div>
-                                         © Copyright Lucidum 2021 
+                                         © Copyright Lucidum 2022
                                         <br /> 
                                         <br /> 
                                         <a href="https://www.google.com/maps/place/950+S+Bascom+Ave+%233011,+San+Jose,+CA+95128,+USA/data=!4m2!3m1!1s0x808fcb3369b1be3d:0x4e4e5fe170c90b17?sa=X&amp;ved=2ahUKEwj527yl_Pr0AhUvjokEHezACzsQ8gF6BAgMEAE" style="color: rgb(0, 0, 0); color: ${CopyColorWhite}; text-decoration: none"> 950 S. Bascom Ave #3011, San Jose CA 95128</a> 
