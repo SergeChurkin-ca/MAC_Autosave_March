@@ -27,8 +27,8 @@
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
 
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#FFF9F6">
-    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#000">
-    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#000">
+    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#365254">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#413f3d">
 
 
     <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#365254">
@@ -40,13 +40,13 @@
     <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#000">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
-    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#1c1c1c">
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#354254">
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
     <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#000">
     <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#000">
-    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#000">
-    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#000">
-    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#FFF">
+    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#413f3d">
+    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#000000">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#00A199">
 
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#365254">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
@@ -87,7 +87,7 @@
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
     <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="2">
-    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
+    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="35">
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="11">
 
@@ -431,6 +431,7 @@
         margin-top:10px;
       }
       .mktoButtonWrap button.mktoButton {
+        box-shadow: none !important;
         background: ${formButtonColor} !important;
         border: 1px solid ${formButtonColor} !important;
         color:${btnfontclr};
@@ -442,6 +443,7 @@
         border-radius:${btnborderrds}px !important;
         opacity:1;
         transition:300ms opacity;
+        white-space: nowrap !important;
       }
 
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
@@ -455,6 +457,8 @@
         color: ${formButtonHoverColor} !important;
         background-color: ${formButtonHoverBGColor} !important;
         background: ${formButtonHoverBGColor} !important;
+        border: none !important;
+        white-space: nowrap !important;
       }
 
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
@@ -598,7 +602,9 @@
           display: none;
         }
         #footer .footer_list-1 {
-          gap: 1rem;
+          gap: 0.5rem;
+          flex-direction: column;
+          align-items: center;
         }
       }
       @media (max-width: 900px ) {
