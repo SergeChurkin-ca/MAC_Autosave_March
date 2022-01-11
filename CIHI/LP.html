@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
-    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="#">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://pages.cihi.ca/rs/287-VKI-861/images/favicon.ico">
 
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
@@ -76,7 +76,7 @@
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
     <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
-    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="40">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="1">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
 
@@ -485,17 +485,12 @@
       #footer .logo-container img{
         width:${footerlogowidth}px;
       }
-      .icons-container ul, .icons-container ol{
-        display:flex;
-        flex-direction:row;
-        margin-left:0;
+
+      #footer .social-icons img{
+        width:${footericonswidth}rem;
       }
-      .icons-container ul li, .icons-container ol li{
-        list-style:none;
-        margin-right:10px;
-      }
-      #footer .icons-container img{
-        width:${footericonswidth}px;
+      #footer .social-icons li:first-child img {
+        width: calc(${footericonswidth}rem - 0.3rem);
       }
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
@@ -513,14 +508,18 @@
         list-style: none;
         display: flex;
         gap: 1rem;
+        align-items: baseline;
       }
-      #footer .footer_list-1 li:nth-child(2):after {
+       #footer .footer_list-1 li:nth-child(1):after,  #footer .footer_list-1 li:nth-child(2):after,  #footer .footer_list-1 li:nth-child(3):after   {
+        margin-left: 1rem;
+      }
+      #footer .footer_list-1 li:nth-child(1):after {
           content: "|";
           font-size: 15px;
           display: inline;
       }
       
-      #footer .footer_list-1 li:nth-child(2):before {
+      #footer .footer_list-1 li:nth-child(2):after {
           content: "|";
           font-size: 15px;
           display: inline;
@@ -585,6 +584,21 @@
         }
         .mktoForm .mktoFormRow .mktoFormCol{
           margin-left:0 !important;
+        }
+        #footer .footer_list-1 {
+          gap: 0;
+        }
+        #footer .footer_list-1 li:nth-child(1):after, #footer .footer_list-1 li:nth-child(2):after, #footer .footer_list-1 li:nth-child(3):after {
+          margin-left: 0.2rem;
+          margin-right: 0.5rem;
+        }
+      }
+      @media screen and (max-width: 430px) {
+        #footer .footer_list-1 li:nth-child(1):after, #footer .footer_list-1 li:nth-child(2):after, #footer .footer_list-1 li:nth-child(3):after {
+          display: none;
+        }
+        #footer .footer_list-1 {
+          gap: 1rem;
         }
       }
       @media (max-width: 900px ) {
@@ -692,21 +706,21 @@
             <div class="footer-social" id="footericons-social" mktoName="Footer - Social Media Icons/Links">
               <ul class="social-icons">
                 <li id="footer-icon1">
-                  <a href="https://www.facebook.com/CIHI.ICIS" target="_blank"><img alt="facebook icon" width="11" height="auto" src="https://pages.cihi.ca/rs/287-VKI-861/images/facebook-white.png" style="width:11px;height:auto;" /></a>
+                  <a href="https://www.facebook.com/CIHI.ICIS" target="_blank"><img alt="facebook icon" src="https://pages.cihi.ca/rs/287-VKI-861/images/facebook-white.png"/></a>
                 </li>
                 <li id="footer-icon2">
-                  <a href="https://twitter.com/cihi_icis" target="_blank"><img alt="twitter icon" width="15" height="auto" src="https://pages.cihi.ca/rs/287-VKI-861/images/twitter-white.png" style="width:15px;height:auto;" /></a>
+                  <a href="https://twitter.com/cihi_icis" target="_blank"><img alt="twitter icon" src="https://pages.cihi.ca/rs/287-VKI-861/images/twitter-white.png"  /></a>
                 <li id="footer-icon3">
-                  <a href="https://www.instagram.com/cihi_icis/" target="_blank"><img alt="instagram icon" width="15" height="auto" src="https://pages.cihi.ca/rs/287-VKI-861/images/instagram-white.png" style="width:15px;height:auto;" /></a>
+                  <a href="https://www.instagram.com/cihi_icis/" target="_blank"><img alt="instagram icon" src="https://pages.cihi.ca/rs/287-VKI-861/images/instagram-white.png"  /></a>
                 </li>
                 <li id="footer-icon4">
-                  <a href="https://www.youtube.com/user/CIHICanada" target="_blank"><img alt="youtube icon" width="15" height="auto" src="https://pages.cihi.ca/rs/287-VKI-861/images/youtube-white.png" style="width:15px;height:auto;" /></a>
+                  <a href="https://www.youtube.com/user/CIHICanada" target="_blank"><img alt="youtube icon" src="https://pages.cihi.ca/rs/287-VKI-861/images/youtube-white.png"  /></a>
                 </li>
                 <li id="footer-icon5">
-                  <a href="https://www.linkedin.com/company/canadian-institute-for-health-information/" target="_blank"><img alt="linkedin icon" width="15" height="auto" src="https://pages.cihi.ca/rs/287-VKI-861/images/linkedin-white.png" style="width:15px;height:auto;" /></a>
+                  <a href="https://www.linkedin.com/company/canadian-institute-for-health-information/" target="_blank"><img alt="linkedin icon" src="https://pages.cihi.ca/rs/287-VKI-861/images/linkedin-white.png"  /></a>
                 </li>
                 <li id="footer-icon6">
-                  <a href="https://www.youtube.com/user/CIHICanada" target="_blank"><img alt="youtube icon" width="15" height="auto" src="https://pages.cihi.ca/rs/287-VKI-861/images/youtube-white.png" style="width:15px;height:auto;" /></a>
+                  <a href="https://www.cihi.ca/en/feed" target="_blank"><img alt="youtube icon" src="https://pages.cihi.ca/rs/287-VKI-861/images/rss-white.png"  /></a>
                 </li>
               </ul>
             </div>
