@@ -400,11 +400,13 @@
         font-weight: 400 !important;
 
       }
-      .mktoForm input[type=checkbox]:checked+label:before,
-.mktoForm input[type=checkbox]:focus+label:before,
-.mktoForm input[type=radio]:focus+label:before {
-    box-shadow: none !important;
-}
+    .mktoForm input[type=checkbox]:checked+label:before,
+    .mktoForm input[type=checkbox]:focus+label:before,
+    .mktoForm input[type=radio]:focus+label:before,
+    .mktoForm input[type=checkbox]+label:before,
+    .mktoForm input[type=radio]+label:before {
+        box-shadow: none !important;
+    }
       .mktoForm textarea.mktoField {
         height: 7rem !important;
         min-height: 40px !important;
