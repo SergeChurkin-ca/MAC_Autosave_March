@@ -37,7 +37,7 @@
     <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#FFF9F6">
-    <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
+    <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="transparent">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#000">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
     <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#354254">
@@ -200,16 +200,29 @@
         min-height:20px;
 
       }
-
-      .mktoForm input[type="text"],
-      .mktoForm input[type="url"], 
-      .mktoForm input[type="email"], 
-      .mktoForm input[type="tel"], 
-      .mktoForm input[type="number"], 
-      .mktoForm input[type="date"], 
-      .mktoForm textarea.mktoField, 
-      .mktoForm select.mktoField {
-        color: ${formTextColor} !important;
+.mktoForm.mktoLayoutAbove .mktoRequiredField .mktoAsterix {
+  display: none !important;
+}
+.mktoForm input[type="text"],
+.mktoForm input[type="url"],
+.mktoForm input[type="email"],
+.mktoForm input[type="tel"],
+.mktoForm input[type="number"],
+.mktoForm input[type="date"],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField,
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm select.mktoField,
+.mktoForm textarea.mktoField {
+    color: ${formTextColor} !important;
+        box-shadow: none !imporant;
+        border: solid 1px #2E3133 !important;
+        border-radius: 8px !important;
       }
 
 
