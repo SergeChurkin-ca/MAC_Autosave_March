@@ -27,7 +27,11 @@
 }
 
 .header-text hr {
-    width: 10rem;
+    width: 8rem;
+    opacity: 0.5;
+    border: 0 none;
+    height: 0.2rem;
+    background-color: #334155;
 }
 
 .row-fluid {
@@ -36,7 +40,6 @@
 }
 
 .header-container .row-number-2 {
-    border: solid 1px red;
     width: 960px;
     max-width: 100vw;
     margin: 0 auto;
@@ -45,6 +48,37 @@
 .header-container .row-number-2 .row-fluid {
     justify-content: left !important;
 }
+
+.header-container .span12 {
+    margin: -0.6rem 0 -0.6rem 0rem;
+    padding-left: 1rem;
+}
+
+
+/* banner text width image */
+
+.banner .row-number-2 {
+    width: 960px;
+    margin: 0 auto;
+    max-width: 100vw;
+}
+
+.banner .span5,
+.banner .span7 {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 !important;
+    width: 50%;
+}
+
+.banner .span7 {
+    justify-content: center;
+    padding-left: 4rem;
+}
+
+
+/* content */
 
 ul,
 ol {
@@ -70,6 +104,10 @@ ol li::marker {
 
 
 /* dan moore image */
+
+.main-container .row-number-4 .row-fluid {
+    justify-content: left;
+}
 
 .dan-moore .row-number-5 .row-fluid {
     display: flex;
@@ -150,6 +188,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+    .header-container .span12 {
+        padding-left: 0.4rem;
+    }
     .footer-group {
         padding: 0 1rem !important;
     }
@@ -172,5 +213,24 @@ a {
         line-height: 20px;
         margin-top: 0.2rem;
         margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .banner .span5 {
+        width: 50%
+    }
+    .banner .spant7 {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner .row-fluid {
+        flex-wrap: wrap;
+    }
+    .banner .row-number-2 {
+        width: 90vw;
     }
 }
