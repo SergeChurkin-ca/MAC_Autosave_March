@@ -13,9 +13,9 @@
     <link rel="icon" href="${faviconlink}" type="image/png">
 
     <!-- Custom Ordering of Sections -->
-    <meta class="mktoString" mktoName="Section 3/Form Order Number" id="section-1-order" default="1">
-    <meta class="mktoString" mktoName="Section 1/Text Order Number" id="section-2-order" default="2">
-    <meta class="mktoString" mktoName="Section 2/Text Order Number" id="section-3-order" default="3">
+    <meta class="mktoString" mktoName="Section 3/Form Order Number" id="section-3-order" default="1">
+    <meta class="mktoString" mktoName="Section 2/Text Order Number" id="section-2-order" default="2">
+    <meta class="mktoString" mktoName="Section 1/Text Order Number" id="section-1-order" default="3">
 
 
     <!-- Show and Hide Meta Tags -->
@@ -607,13 +607,18 @@
         }
 
         .section-container-3 {
-            order: ${section-1-order};
+            order: ${section-3-order};
         }
         .section-container-2 {
             order: ${section-2-order};
         }
         .section-container-1 {
             order: ${section-1-order};
+        }
+        @media (max-width: 600px) {
+            .section-container-1, .section-container-2, .section-container-3  {
+                width: 100% !important;
+            }
         }
     </style>
   </head>
@@ -741,9 +746,23 @@
             orderNum2 = window.getComputedStyle(onSecondRow).order
             orderNum3 = window.getComputedStyle(onThirdRow).order
 
-            orderNum1 == 1 ? onFirstRow.style = "width: 100%;" : onFirstRow.style = "width: 40%;"      
-            orderNum2 == 1 ? onSecondRow .style = "width: 100%;" : onSecondRow .style = "width: 40%;"      
-            orderNum3 == 1 ? onThirdRow.style = "width: 100%;" : onThirdRow.style = "width: 40%;"      
+            orderNum1 == 1 ? onFirstRow.style = "width: 100%;" : onFirstRow.style = "width: 45%;"      
+            orderNum2 == 1 ? onSecondRow .style = "width: 100%;" : onSecondRow .style = "width: 45%;"      
+            orderNum3 == 1 ? onThirdRow.style = "width: 100%;" : onThirdRow.style = "width: 45%;"      
+
+
+
+    function myFunction(x) {
+    if (x.matches) { // If media query matches
+        onFirstRow.style = "width: 100%;";
+        onSecondRow .style = "width: 100%;";
+        onThirdRow.style = "width: 100%;"; 
+    } 
+  }
+  
+let x = window.matchMedia("(max-width: 600px)")
+myFunction(x) 
+
 
     </script>
   
