@@ -1,6 +1,30 @@
 /* Add your custom CSS below */
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+.mktoForm .mktoRequiredField .mktoAsterix,
+.mktoForm .mktoGutter,
+.mktoForm .mktoOffset {
+    display: none;
+}
+
+.mktoForm {
+    width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px pink;
+    margin: 0 auto;
+    max-width: 700px;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.mktoForm .mktoFormRow,
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap {
+    width: 100%;
+}
+
 .mktoForm .mktoLabel,
 .mktoForm input[type=text],
 .mktoForm input[type=url],
@@ -12,39 +36,75 @@
 .mktoForm select.mktoField,
 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
     font-family: 'IBM Plex Serif', serif !important;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    width: 100% !important;
+    outline: none;
+    padding: 0.3rem 0;
+    border-bottom: solid 1px rgb(55, 163, 177);
 }
 
-display: block;
-width: 100%;
-font-family: inherit;
-color: rgb(55,
-163,
-177);
-padding: 0px 0px 8px;
-border: none;
-outline: none;
-border-radius: 0px;
-appearance: none;
-background-image: none;
-background-position: initial;
-background-size: initial;
-background-repeat: initial;
-background-attachment: initial;
-background-origin: initial;
-background-clip: initial;
-transform: translateZ(0px);
-font-size: 30px;
--webkit-font-smoothing: antialiased;
-line-height: unset;
--webkit-text-fill-color: rgba(55,
-163,
-177,
-0.3);
-animation: 1ms ease 0s 1 normal none running native-autofill-in;
-transition: background-color 1e+08s ease 0s,
-box-shadow 0.1s ease-out 0s;
-box-shadow: rgb(55 163 177 / 30%) 0px 1px;
-background-color: transparent !important;
+.mktoForm input[type=text]:focus,
+.mktoForm input[type=url]:focus,
+.mktoForm input[type=email]:focus,
+.mktoForm input[type=tel]:focus,
+.mktoForm input[type=number]:focus,
+.mktoForm input[type=date]:focus,
+.mktoForm select.mktoField:focus,
+.mktoForm textarea.mktoField:focus {
+    outline: none;
+    border-bottom: solid 3px rgb(55, 163, 177);
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel {
+    display: none;
+}
+
+.mktoButtonWrap {
+    margin: 0 !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    background-color: rgb(242, 98, 100) !important;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+.mktoForm .mktoError {
+    position: absolute;
+    left: 0;
+    right: unset !important;
+}
+
+.mktoForm .mktoError .mktoErrorArrow {
+    display: none;
+}
+
+.mktoForm .mktoError .mktoErrorMsg {
+    border: none;
+    text-shadow: none;
+    margin-top: -1.7rem;
+    border-radius: 1px;
+    box-shadow: none;
+    color: rgb(175, 4, 4);
+    background: #f6e6e5;
+}
+
+.mktoForm .mktoError .mktoErrorMsg:before {
+    content: '!';
+    color: white;
+    padding: 0.5rem;
+}
+
+.mktoForm .mktoError .mktoErrorMsg:after {
+    content: ' ';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid rgb(175, 4, 4);
+    z-index: 0;
+    position: absolute;
+    left: 0.5rem;
+    top: -1.5rem;
+}
