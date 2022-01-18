@@ -28,7 +28,6 @@ function unSubscribeToAllFunction() {
 
 // add event listener - if individual subscribtion options are changed - bulk selection is removed
 
-
 Array.from(document.querySelectorAll('input[type="radio"]')).map(x => x.addEventListener('change', uncheckOptions))
 
 function uncheckOptions() {
