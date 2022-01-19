@@ -113,7 +113,8 @@
     font-size: 15px;
 }
 
-.mktoForm input.mktoInvalid {
+.mktoForm input.mktoInvalid,
+.mktoForm input.mktoInvalid:focus {
     border: solid 1px #dc1836 !important;
 }
 
@@ -173,6 +174,10 @@
     .mktoForm .mktoCheckboxList>input {
         margin: 0rem 6rem 0 -37vw !important;
         width: 100% !important;
+    }
+    .mktoForm .mktoRadioList>label,
+    .mktoForm .mktoCheckboxList>label {
+        margin: -1.2rem 0 1rem 14vw !important;
     }
 }
 
