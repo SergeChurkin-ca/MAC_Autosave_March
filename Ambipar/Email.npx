@@ -74,7 +74,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="btnBGColorhead" mktoName="Button BG Color" default="#ccff00">
     <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColorhead" mktoName="Button Border Color" default="#ccff00" />
 
-    <meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#444" />
+    <meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#000000" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#ccff00">
     <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#ccff00" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="10" />
@@ -83,7 +83,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="btn1FontSize" mktoname="Button Font Size (px)" default="18" />
     <meta mktoModuleScope="true" class="mktoString" id="btnURL" mktoName="Button URL" default="#">
     <meta mktoModuleScope="true" class="mktoString" id="btnURL-dynamic" mktoName="Button URL dynamic" default="#">
-    <meta mktoModuleScope="true" class="mktoList" id="btnFontWeight" mktoName="Button Weight" values="300,400,500,600,bold" default="bold" />
+    <meta mktoModuleScope="true" class="mktoList" id="btnFontWeight" mktoName="Button Weight" values="300,400,500,600,bold" default="700" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="DividerBGColor" mktoname="Divider Color" default="#d7d7d7" />
     <meta mktoModuleScope="true" class="mktoNumber" id="DividerHeight" mktoname="Divider Height (px)" default="1" />
@@ -319,7 +319,7 @@ font-family: Arial, serif !important;
 <v:fill type="frame" src="${banner1_img}" Color="${banner-bg-color}" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
-                                        <table cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="690">
+                                        <table cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="100%">
                                             <tr>
                                                 <td valign="top">
                                                     <table class="inner_table" width="590" style="margin: 0 auto; width: 590px; border-spacing: 0px; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" align="center">
@@ -561,7 +561,7 @@ font-family: Arial, serif !important;
                                                                 <tbody>
                                                                     <tr>
                                                                         <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
-                                                                            <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor}; padding: 5px 35px 1px; display:inline-block" href="${btnURL}">${btnText2}</a>
+                                                                            <a style="min-height:10px; text-decoration:none; color:${btnColor}; padding: 5px 35px 1px; display:inline-block" href="${btnURL}">${btnText2}</a>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
@@ -594,7 +594,7 @@ font-family: Arial, serif !important;
                                                             <table cellspacing="0" cellpadding="0" border="0" align="center">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td style="min-height:10px;text-align: center;text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: 'Work Sans',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: 10px;padding:5px"> <a style="min-height:10px; text-decoration:none; color:${btnColor}; padding: 5px 35px; display:inline-block" href="#">Dynamic Button</a> </td>
+                                                                        <td style="min-height:10px;text-align: center;text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: 10px;padding:5px"> <a style="min-height:10px; text-decoration:none; color:${btnColor}; padding: 5px 35px; display:inline-block" href="#">Dynamic Button</a> </td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -627,17 +627,17 @@ font-family: Arial, serif !important;
 
                                                         <tr>
 
-                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
+                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;">
                                                                 <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
                                                                     <a href="https://www.facebook.com/ambipargroup/" target="_blank"><img alt="facebook icon" width="24" height="auto" src="http://865-AGV-911.mktoweb.com/rs/865-AGV-911/images/ic-facebook.png" style="width:24px;height:auto;" /></a>
                                                                 </div>
                                                             </td>
-                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
+                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;">
                                                                 <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
                                                                     <a href="https://twitter.com/ambipargroup" target="_blank"><img alt="linkedin icon" width="24" height="auto" src="http://865-AGV-911.mktoweb.com/rs/865-AGV-911/images/ic-twitter.png" style="width:24px;height:auto;" /></a>
                                                                 </div>
                                                             </td>
-                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
+                                                            <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;">
                                                                 <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3">
                                                                     <a href="mailto:vendas@ambipar.com" target="_blank"><img alt="youtube icon" width="24" height="auto" src="http://865-AGV-911.mktoweb.com/rs/865-AGV-911/images/ic-email.png" style="width:24px;height:auto;" /></a>
                                                                 </div>
@@ -686,11 +686,11 @@ font-family: Arial, serif !important;
                                                 <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
                                                     <div class="mktoText" mktoName="Footer Text" id="footer-text">
                                                         
-                                                        Av. Angelica, 2330 ed. New England, 5th floor<br>
-                                                        São Paulo | ZIP 01228-200<br>
+                                                    Ambipar Holding: 3520 Executive Center Drive, #250<br>
+                                                    Austin , Texas 7873<br>
                                                     </div>
                                                     <div>
-                                                    <a href="tel:+55 (11) 3526-3526" style="color: ${CopyColorWhite};">+55 (11) 3526-3526</a> | <a href="mailto:vendas@ambipar.com" style="color: ${CopyColorWhite};">vendas@ambipar.com</a></div>
+                                                    <a href="tel:+1 123-456-7890" style="color: ${CopyColorWhite};">+1 123-4456-7890</a> | <a href="mailto:sales@ambipar.com" style="color: ${CopyColorWhite};">sales@ambipar.com</a></div>
                                                     </div>
                                                 </td>
                                             </tr>
