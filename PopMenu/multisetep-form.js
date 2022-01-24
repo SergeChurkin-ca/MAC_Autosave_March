@@ -64,8 +64,7 @@ MktoForms2.whenReady(function(form) {
         // id each wrapper row in DOM order
         row.id = fsaatPrefix + rowIdx;
 
-        var navButtonRow = rowPos.isLast ?
-            submitButtonRow :
+        var navButtonRow = rowPos.isLast ? submitButtonRow :
             submitButtonRow.cloneNode(true),
             newRowAxis = row.nextSibling,
             nextEnabled = !rowPos.isLast,
@@ -88,7 +87,7 @@ MktoForms2.whenReady(function(form) {
             navButtons[dir].setAttribute("data-dir", dir);
             navButtons[dir].innerHTML = userConfig.buttons[dir].label;
             //  !!! add classname 
-            navButtons[dir].classList.add("form-nav-btn")
+            navButtons[dir].classList.add("nav-btn-" + dir)
 
         });
 

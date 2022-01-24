@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Multistep Form</title>
+    <style>
+      .form-container{
+         width:750px;
+   	   background-color: #F2F3E9;
+         border-color: #adadad;
+         border: 1px solid #cbcbcb;
+	      box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+        margin:0 auto;
+      }
+      .mktoForm {
+    text-align: left;
+    width: 95%!important;
+    margin:0 auto 30px;
+
+}
+.mktoForm .mktoFormRow {
+    width: 100%;
+}
+.mktoForm .mktoFieldWrap {
+    width: 100%;
+}
+      .mktoForm .mktoGutter {
+    display:none;
+}
+      .mktoForm .mktoFormCol {
+        width:100%;
+      }
+.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+   padding: .4375rem .75rem!important;
+    width: 100%!important;
+    color: #16325C!important;
+border-color: #adadad!important;
+font-family: "Open Sans", "Helvetica", "Arial", sans-serif!important;
+background: #FFFFFF!important;
+font-size: 14px!important;
+border-radius: 4px!important;
+border: 1px solid #898f94!important;
+}
+.mktoForm .mktoLabel {
+    float: left;
+    line-height: 1.2em;
+    padding-top: 0.3em;
+    width: 100%!important;
+    color: #000000!important;
+   font-family: "Open Sans", "Helvetica", "Arial", sans-serif!important;
+   font-size: 16px!important;
+}
+.mktoForm .mktoRequiredField label.mktoLabel {
+    font-weight: normal!important;
+}
+.mktoButtonRow {
+    width: 100%;
+}
+span.mktoButtonWrap.mktoSimple {
+   margin-left:0!important;
+}
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton{
+   background: #eb0000!important;
+   width:100%!important;
+color: #F2F3E9!important;
+border-color: #eb0000!important;
+font-family: "Open Sans", "Helvetica", "Arial", sans-serif!important;
+font-size: 16px!important;
+border-radius: 4px!important;
+} 
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+    background: #56b569!important;
+  border-color: #56b569!important;
+}
+    textarea{
+      height:120px;
+    }
+.mktoForm > .mktoFormRow fieldset {
+   border: none;
+}
+.mktoForm > .mktoFormRow,
+.mktoForm > .mktoButtonRow,
+.mktoForm > .mktoFormRow fieldset legend {
+   display: none;   
+}
+.mktoForm > .mktoButtonRow button[type="button"] {
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+.mktoForm .mktoCheckboxList > .mktoError {
+   right: auto !important;
+   bottom: -54px !important;
+} 
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+     <div>
+       <h1 style="text-align:center;">
+         MultiStep FORM EXAMPLE
+       </h1>
+     </div>
+    <div class="mktoForm" id="primary-Form" mktoName="Multistep Form">
+      
+    </div>
+    </div>
+    
+    
+    <script>
+    var userConfig = {
+   buttons: {
+      prev: {
+         label: "Previous",
+         disabled: false
+      },
+      next: {
+         label: "Next"
+      }
+   },
+   requiredFields: [
+      {
+         name: "FirstName",
+         message: "This field is required."
+      }, 
+      {
+         name: "LastName",
+         message: "This field is required."
+      },
+      {
+         name: "Email",
+         message: "This field is required."
+      }
+   ]
+};   
+
+        MktoForms2.whenReady( function (form) { 
+            var formEl = form.getFormElem()[0];
+
+ var arrayify = getSelection.call.bind([].slice);
+
+   var fieldRowStor = ".mktoForm > .mktoFormRow",
+      buttonRowStor = ".mktoForm > .mktoButtonRow",
+      buttonStor = ".mktoButtonRow .mktoButton",
+      fsaatPrefix = "fsaat-",
+      localFragmentAttr = "data-form-local-fragment";
+   
+   var CSSOM_RULEPOS_FIRST = 0;
+
+   var fieldRows = formEl.querySelectorAll(fieldRowStor),
+      submitButtonRow = formEl.querySelector(buttonRowStor),
+      submitButton = submitButtonRow.querySelector(buttonStor);
+   
+   userConfig.requiredFields
+     .map(function(fieldDesc) {
+        fieldDesc.label = formEl.querySelector("[for='"+ fieldDesc.name + "']");
+        fieldDesc.refEl = formEl.querySelector("[name='" + fieldDesc.name + "']");
+        return fieldDesc;
+     })
+     .forEach(function(fieldDesc){
+        fieldDesc.label.parentNode.classList.add("mktoRequiredField");
+     });
+   
+    var dynableSheet = arrayify(document.styleSheets)
+     .filter(function(sheet){
+       return sheet.ownerNode.nodeName == "STYLE";
+     })[0];   
+   
+   arrayify(fieldRows).forEach(function(row, rowIdx) {
+      var rowPos = {
+         isFirst: rowIdx == 0,
+         isLast: rowIdx == fieldRows.length - 1
+      };
+
+      // id each wrapper row in DOM order
+      row.id = fsaatPrefix + rowIdx;
+
+      var navButtonRow = rowPos.isLast
+            ? submitButtonRow
+            : submitButtonRow.cloneNode(true),
+         newRowAxis = row.nextSibling,
+         nextEnabled = !rowPos.isLast,
+         prevEnabled = !rowPos.isFirst && !userConfig.buttons.prev.disabled,
+         newButtonAxis,
+         newButtonTmpl,
+         navButtons = {};
+
+      if (nextEnabled) {
+         navButtons.next = navButtonRow.querySelector(buttonStor);
+      }
+
+      if (prevEnabled) {
+         newButtonTmpl = newButtonAxis = navButtons.next || submitButton;
+         navButtons.prev = newButtonTmpl.cloneNode();
+      }
+
+      Object.keys(navButtons).forEach(function(dir) {
+         navButtons[dir].type = "button";
+         navButtons[dir].setAttribute("data-dir", dir);
+         navButtons[dir].innerHTML = userConfig.buttons[dir].label;
+      });
+
+      if (nextEnabled) {
+         row.parentNode.insertBefore(navButtonRow, newRowAxis);
+      }
+
+      if (prevEnabled) {
+         newButtonAxis.parentNode.insertBefore(navButtons.prev, newButtonAxis);
+      }
+            
+      navButtonRow.addEventListener("click", function(e) {
+         if (e.target.tagName == "BUTTON" && e.target.type == "button" ) {            
+            if (e.target.getAttribute("data-dir") == "next" && !isCustomValid(true,row)) {
+               return;
+            }
+            fsaatSet(row, e.target.getAttribute("data-dir"));
+         }
+      });
+      
+      dynableSheet.insertRule(
+         [
+           ".mktoForm[" + localFragmentAttr + "='#" + row.id + "']" + " " + ".mktoFormRow#" + row.id + ",",
+           ".mktoForm[" + localFragmentAttr + "='#" + row.id + "']" + " " + ".mktoFormRow#" + row.id + " + " + ".mktoButtonRow", 
+           "{ display: block; }"
+         ].join(" "),
+         CSSOM_RULEPOS_FIRST
+      );
+      
+   });
+
+   function fsaatSet(current, dir) {
+      var FSAAT_DIR_PREV = "prev",
+          FSAAT_DIR_NEXT = "next";
+      
+      var dir = dir || FSAAT_DIR_NEXT,
+         currentIndex, 
+         newHash;
+
+      if (current instanceof HTMLElement) {
+         currentIndex = +current.id.split(fsaatPrefix)[1];
+      } else if (!isNaN(current)) {
+         currentIndex = current;
+      } else {
+         currentIndex = -1;
+      }
+
+      newHash = "#" + fsaatPrefix + (dir == FSAAT_DIR_NEXT ? ++currentIndex : --currentIndex);
+
+      formEl.setAttribute(localFragmentAttr, newHash);
+   }    
+   
+   function isCustomValid(native, currentStep){
+      form.submittable(false);
+      
+      var currentStep = currentStep || formEl,
+          currentValues = form.getValues();
+
+      var currentUnfilled = userConfig.requiredFields
+        .filter(function(fieldDesc) {
+          return currentStep.contains(fieldDesc.refEl) && (!currentValues[fieldDesc.name] || (fieldDesc.refEl.type == "checkbox" && currentValues[fieldDesc.name] == "no"));
+        });
+
+      if (currentUnfilled.length) {
+         form.showErrorMessage(currentUnfilled[0].message,MktoForms2.$(currentUnfilled[0].refEl));
+         return false;
+      } else {
+         form.submittable(true);
+         return true;
+      }         
+   }
+   
+   form.onValidate(isCustomValid);
+   fsaatSet();
+
+});
+
+</script>
+  </body>
+</html>

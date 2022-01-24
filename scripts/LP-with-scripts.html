@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://www.conviva.com/wp-content/themes/conviva2020/favicon.png">
+    <link href="https://www.conviva.com/wp-content/themes/conviva2020/assets/images/apple-icon-touch.png" rel="apple-touch-icon" /> 
+    <meta name="description" content="Conviva has built and deployed a unique and new intelligent video measurement and analytics architecture for the next generation of TV." />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"> 
+
+    <meta class="mktoString" id="bgimage" mktoName="Hero Image URL" default="https://pages.conviva.com/rs/138-XJA-134/images/bg-shine.png">
+    <meta class="mktoColor" id="herocolor" mktoName="Hero Sec BG Color" default="#ffffff">	  
+    <meta class="mktoColor" id="contentcolor" mktoName="Left Image Text Right Form Sec BG Color" default="#ffffff">
+    <meta class="mktoColor" id="contentcolorb" mktoName="Left Image Text BG Color" default="#ffffff">
+    <meta class="mktoColor" id="contentcolortw" mktoName="Left Text Bullet Right Form Sec BG Color" default="#ffffff">
+    <meta class="mktoColor" id="contentcolorth" mktoName="Right Text Bullet Left Form Sec BG Color" default="#ffffff">
+    <meta class="mktoColor" id="contentcolorfo" mktoName="Left Text Right Form Sec BG Color" default="#ffffff">
+    <meta class="mktoColor" id="contentcolorfi" mktoName="2 Column Text Sec BG Color" default="#ffffff">
+    <meta class="mktoColor" id="contentcolorsi" mktoName="1 Column Text Sec BG Color" default="#ffffff">
+    <meta class="mktoColor" id="contentcolorsibb" mktoName="1 Column Text Sec BG Color Above BTM 3col" default="#ffffff">	  
+    <meta class="mktoColor" id="contentcolorse" mktoName="1 Column Image Text Sec BG Color" default="#ffffff"> 
+    <meta class="mktoColor" id="contentcolorei" mktoName="Left Image Right Text Sec BG Color" default="#ffffff">	  
+    <meta class="mktoColor" id="spseccolor" mktoName="1 Speaker Section BG Color" default="#ffffff">
+    <meta class="mktoColor" id="spseccolortw" mktoName="2 Speaker Section BG Color" default="#ffffff">
+    <meta class="mktoColor" id="spseccolorth" mktoName="3 Speaker Section BG Color" default="#ffffff">
+    <meta class="mktoColor" id="spseccolorfo" mktoName="4 Speaker Section BG Color" default="#ffffff">
+    <meta class="mktoColor" id="spseccolorfi" mktoName="5 Speaker Section BG Color" default="#ffffff">	  	  
+    <meta class="mktoColor" id="quotecolor" mktoName="Quote BG Color" default="#efefef">
+    <meta class="mktoColor" id="colseccolor" mktoName="3 Column Section BG Color" default="#efefef">
+    <meta class="mktoColor" id="colseccolora" mktoName="2 Column Section BG Color" default="#efefef">
+    <meta class="mktoColor" id="colseccolorbtm" mktoName="3 Column Section BG Color Bottom" default="#efefef">
+    <meta class="mktoColor" id="colseccolorabtm" mktoName="2 Column Section BG Color Bottom" default="#efefef">	  
+    <meta class="mktoColor" id="colseccolorb" mktoName="1 Column Section BG Color" default="#efefef">
+    <meta class="mktoColor" id="colseccolorc" mktoName="2 Column Section BG Color Big Right" default="#efefef">
+    <meta class="mktoColor" id="twoltrihowcolor" mktoName="Left Text Right Image CTA Section BG Color" default="#ffffff">
+    <meta class="mktoColor" id="twoltrihowcolora" mktoName="Right Text Left Image CTA Section BG Color" default="#ffffff">	  
+    <meta class="mktoColor" id="ccseccolor" mktoName="Bottom Center Content Section BG Color" default="#003033">
+    <meta class="mktoColor" id="cccseccolor" mktoName="Bottom Center CTA Section BG Color" default="#efefef">
+    <meta class="mktoColor" id="cccseccolormdl" mktoName="Middle Center CTA Section BG Color" default="#efefef">	  
+
+    <meta class="mktoString" id="ctatext" mktoName="Top CTA Text" default="CTA TEXT">
+    <meta class="mktoString" id="ctalink" mktoName="Top CTA Link" default="#">
+    <meta class="mktoString" id="ctatexttw" mktoName="Right Col CTA Text" default="CTA Text">
+    <meta class="mktoString" id="ctalinktw" mktoName="Right CTA Link" default="#">
+    <meta class="mktoString" id="ctatextth" mktoName="Left CTA Text" default="CTA Text">
+    <meta class="mktoString" id="ctalinkth" mktoName="Left CTA Link" default="#">
+    <meta class="mktoString" id="ctatextfo" mktoName="Bottom Center CTA Text" default="CTA Text">
+    <meta class="mktoString" id="ctalinkfo" mktoName="Bottom Center CTA Link" default="#">
+    <meta class="mktoString" id="ctatextfomdl" mktoName="Middle Center CTA Text" default="CTA Text">
+    <meta class="mktoString" id="ctalinkfomdl" mktoName="Middle Center CTA Link" default="#">	  
+    <meta class="mktoString" id="ctatextfi" mktoName="Bottom Sec CTA Text" default="CTA Text">
+    <meta class="mktoString" id="ctalinkfi" mktoName="Bottom Sec CTA Link" default="#">
+
+    <meta class="mktoString" id="lwidth" mktoName="Left Width for Sec Image Text" default="7">
+    <meta class="mktoString" id="rwidth" mktoName="Right Width for Sec Image Text" default="5">
+    <meta class="mktoString" id="lwidthtw" mktoName="Left Width for Sec Text Bullet" default="7">
+    <meta class="mktoString" id="rwidthtw" mktoName="Right Width for Sec Text Bullet" default="5">
+    <meta class="mktoString" id="lwidthth" mktoName="Left Width for Sec Text Bullet Right" default="5">
+    <meta class="mktoString" id="rwidthth" mktoName="Right Width for Sec Text Bullet Right" default="7">
+    <meta class="mktoString" id="lwidthfo" mktoName="Left Width for Sec Text" default="7">
+    <meta class="mktoString" id="rwidthfo" mktoName="Right Width for Sec Text" default="5">	  
+
+    <meta class="mktoBoolean" id="toprightctashow" mktoName="Show Top CTA?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">		  
+
+    <meta class="mktoBoolean" id="showform" mktoName="Show Form for Sec Image Text?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformtw" mktoName="Show Form for Sec Text Bullet?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformth" mktoName="Show Form for Sec Text Bullet Right?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformfo" mktoName="Show Form for Sec Text?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	  
+    <meta class="mktoBoolean" id="contentshow" mktoName="Show Left Image Text Right Form Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowb" mktoName="Show Left Image Text Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowtw" mktoName="Show Left Text Bullet Right Form Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowth" mktoName="Show Right Text Bullet Left Form Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowfo" mktoName="Show Left Text Right Form Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowfi" mktoName="Show 2 Column Text Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowsi" mktoName="Show 1 Column Text Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowse" mktoName="Show 1 Column Image Text Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowei" mktoName="Show Left Image Right Text Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="contentshowsibb" mktoName="Show 1 Column Text Sec Above BTM 3Col?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	  
+
+    <meta class="mktoBoolean" id="spsechow" mktoName="Show 1 Speaker Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="spsechowtw" mktoName="Show 2 Speaker Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="spsechowth" mktoName="Show 3 Speaker Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="spsechowfo" mktoName="Show 4 Speaker Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="spsechowfi" mktoName="Show 5 Speaker Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	  
+    <meta class="mktoBoolean" id="secquoteshow" mktoName="Show Quote Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	  
+    <meta class="mktoBoolean" id="seceventshow" mktoName="Show Event Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	  
+    <meta class="mktoBoolean" id="sec5show" mktoName="Show 3 Column Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="sec5showa" mktoName="Show 2 Column Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="sec5showbtm" mktoName="Show 3 Column Sec Bottom?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="sec5showabtm" mktoName="Show 2 Column Sec Bottom?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	  
+    <meta class="mktoBoolean" id="sec5showb" mktoName="Show a Column Sec?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="sec5showc" mktoName="Show 2 Column Sec Big Right?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="twoltrihow" mktoName="Show 2 Column Sec Left Text Right Image CTA?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="twoltrihowa" mktoName="Show 2 Column Sec Right Text Left Image CTA?" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	  
+    <meta class="mktoBoolean" id="cccshow" mktoName="Show Bottom Center CTA Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="cccshowmdl" mktoName="Show Middle Center CTA Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	  
+    <meta class="mktoBoolean" id="ccshow" mktoName="Show Bottom Center Content Sec?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+
+
+
+    <title>Integrated Analytics for Your Entire Streaming Video Business | Conviva</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/05cac157ab.js" crossorigin="anonymous"></script>
+
+    <!-- form autohide -->
+    <link id="teknkl-ZoomInfo-CSS-1.0.1" rel="stylesheet" href="https://pages.conviva.com/rs/138-XJA-134/images/formAutohidePopulatedFields.css">
+    
+    <style>
+ 
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+      a {
+        color: #8BC400;
+      }		
+
+      * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+      }
+      body {background:#fff;
+        margin:0px;padding: 0px;
+        font-family: 'Poppins', Arial, sans-serif;
+        height: 100%;width: 100%} 
+
+      p{
+        font-family: 'Poppins', Arial, sans-serif;
+        font-weight: 300;
+        color: #003033;
+        font-size: 16px;
+      }
+      .bodytext{
+        font-family: 'Poppins', Arial, sans-serif;
+        font-weight: 300;
+        color: #003033;
+        font-size: 18px;
+        line-height: 27px;
+      }
+      #colsection a:hover {
+        color: #8bc400 !important;
+      }
+      #colsection2 a:hover {
+        color: #8bc400 !important;
+      }
+      #colsection3 a:hover {
+        color: #8bc400 !important;
+      }
+      #colsection4 a:hover {
+        color: #8bc400 !important;
+      }
+      ul {
+        /* list-style: none;  Remove default bullets */
+        font-size: 16px;font-weight: 300;line-height: 1.6;
+      }
+
+      ul li::before {
+        /*content: "\2022";   Add content: \2022 is the CSS Code/unicode for a bullet */
+        /*color: #8bc400;  Change the color */
+        /* display: inline-block;  Needed to add space between the bullet and the text*/  
+        /*width: 12px;  Also needed for space (tweak if needed) */
+        /*margin-left: -1em;  Also needed for space (tweak if needed) */
+        /*font-size:  22px;
+        margin-top:  1px;*/
+      }		
+      ol { counter-reset: item; font-size: 15px;font-weight: 300;line-height: 1.5; }
+      ol li { display: block; }
+      ol li:before {
+        content: counter(item) ". ";
+        counter-increment: item;
+        color: #8bc400;
+        width: 20px;
+        display: inline-block;
+
+      }	
+
+      .container_100{
+        width: 100%;overflow: hidden;
+
+      }
+
+      .container_inner{
+        max-width: 1200px;width: 100%;
+        margin: 0 auto}
+
+      #header{
+        background-color: #ffffff;
+        width: 100%;
+        top:0;
+        padding: 20px 0px 20px 0px;
+
+      }
+
+      #hero{
+        width: 100%;
+        background:url(${bgimage});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: table;
+        background-color: ${contentcolor};
+        height:100%;
+        overflow:hidden;
+        margin:0px auto;
+      }
+
+      #hero .overlay{
+        display:table-cell;
+        vertical-align: middle;
+        overflow: hidden;
+        padding: 60px 0px 60px 0px;
+      }
+
+      .formbox{
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
+      }
+
+
+      .formarea{
+        background-color: #D9D9D7;
+        padding: 20px 30px 30px 30px;
+        border-radius: 3px;
+      }
+
+      #content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshow};
+        background-color: ${contentcolor};
+      }
+      #contentb{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowb};
+        background-color: ${contentcolorb};
+      }
+      #content2{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowtw};
+        background-color: ${contentcolortw};
+      }
+      #content3{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowth};
+        background-color: ${contentcolorth};
+      }
+      #content4{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowfo};
+        background-color: ${contentcolorfo};
+      }
+      #content5{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowfi};
+        background-color: ${contentcolorfi};
+      }
+      #content6{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowsi};
+        background-color: ${contentcolorsi};
+      }
+      #content6bb{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowsibb};
+        background-color: ${contentcolorsibb};
+      }
+      #content7{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowse};
+        background-color: ${contentcolorse};
+      }
+      #content8{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: ${contentshowei};
+        background-color: ${contentcolorei};
+      }
+      #eventsection{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #ffffff;
+        display: ${seceventshow};
+      }
+      #colsection{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${colseccolor};
+        display: ${sec5show};
+      }
+      #colsection2{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${colseccolora};
+        display: ${sec5showa};
+      }
+      #colsectiona{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${colseccolorbtm};
+        display: ${sec5showbtm};
+      }
+      #colsection2b{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${colseccolorabtm};
+        display: ${sec5showabtm};
+      }
+      #colsection3{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${colseccolorb};
+        display: ${sec5showb};
+      }
+      #colsection4{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${colseccolorc};
+        display: ${sec5showc};
+      }
+      #content9{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${twoltrihowcolor};
+        display: ${twoltrihow};
+      }
+      #content10{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${twoltrihowcolora};
+        display: ${twoltrihowa};
+      }
+      #contentcenterctamdl{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${cccseccolormdl};
+        display: ${cccshowmdl};
+      }
+      #contentcentercta{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${cccseccolor};
+        display: ${cccshow};
+      }
+      #contentcenter{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${ccseccolor};
+        display: ${ccshow};
+      }
+      #speakersec{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${spseccolor};
+        display: ${spsechow};
+      }
+      #speakersec2{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${spseccolortw};
+        display: ${spsechowtw};
+      }
+      #speakersec3{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${spseccolorth};
+        display: ${spsechowth};
+      }
+      #speakersec4{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${spseccolorfo};
+        display: ${spsechowfo};
+      }
+      #speakersec5{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: ${spseccolorfi};
+        display: ${spsechowfi};
+      }
+
+
+      #section6{
+        padding: 2em 0px;
+        background-color:#003033;
+      }
+      #socials img {
+        max-width:  18px;
+      }
+
+      #quotesection{
+        padding: 50px 0px 50px 0px;
+        background-color:${quotecolor};
+        text-align: center;
+        margin: 0 auto;
+        display: ${secquoteshow};
+      }
+      #quotelogoimg{
+        max-width: 120px;
+      }
+      #quotelogoimg img {
+        width: 100%;
+      }
+      #leftimage8 img{
+        width: 100%;
+        max-width: 565px;
+      }
+      #colsection img{
+        width: 100%;
+      }
+      #colsection2 img{
+        width: 100%;
+      }
+      #colsection3 img{
+        width: 100%;
+      }
+      #colsection4 img{
+        width: 100%;
+      }
+      #colsectiona img{
+        width: 100%;
+      }
+      #colsection2b img{
+        width: 100%;
+      }
+      .photo{
+        margin-right: 20px;
+        float: left;
+      }
+      .photo img{
+        border-radius: 60px;
+        vertical-align: middle;
+        width: 110px;
+      }
+      .detail {
+        display: inline-block;
+        overflow: hidden;
+        float: left;
+        width: calc(100% - 130px);
+      }
+      .eventdate{
+        background: #003033;
+        text-align: center;
+        vertical-align: middle;
+        color: #ffffff;
+        font-weight: 400;
+        padding: 30px;
+      }
+      .eventcopy{
+        background: #efefef;
+        text-align: left;
+        padding: 30px;
+      }
+
+      .mobileheadline{ margin: 10px auto}
+      .ctabtn{margin: 0 auto;text-align: center;}
+      .ctabtn a{
+        background-color: #8bc400;
+        background-image: -webkit-gradient(linear, left top, right bottom, from(#8bc400), to(#9ddd00));
+        background-image: -webkit-linear-gradient(45deg, #8bc400, #9ddd00);
+        background-image: -moz-linear-gradient(45deg, #8bc400, #9ddd00);
+        background-image: -o-linear-gradient(45deg, #8bc400, #9ddd00);
+        background-image: linear-gradient(to left top, #8bc400, #9ddd00);
+        padding: 15px 20px;border-radius: 3px;color: #003033 !important;text-decoration: none;display:inline-block}
+      .ctabtn a:hover{
+        background-color: #8BC400;
+        background-image:  none;
+      }
+      .ctabtntw{margin: 0 auto;text-align: center;}
+      .ctabtntw a{background-color: transparent;padding: 15px 20px;border-radius: 3px;color: #FFFFFF; border: 1px solid #ffffff;text-decoration: none;display:inline-block}
+
+      .socials{text-align: right;}
+
+      .footernav1{list-style: none;font-size: 17px;}
+      .footernav2{list-style: none;font-size: 15px;font-weight: 300}
+      .footernav1 li, .footernav2 li{background: none;display: inline-block;margin-right: 20px;padding: 0px}
+      .footerlogo img{float: left;max-width: 150px;width: 100%}
+
+      .right-center{
+        text-align: right;
+      }		
+
+      @media(max-width: 1200px){
+        .container_inner{
+          max-width: 90%
+        }
+      }
+
+      @media(max-width: 992px){
+
+      }
+      @media(max-width: 768px){
+
+        .right-center{
+          text-align: center;
+          padding-top: 20px;
+        }
+      }
+      @media (max-width: 576px) {
+
+        #header img,  #header {
+          text-align: center;margin: 0 auto
+        }
+        .socials{text-align: center;margin: 10px 0px}
+        .footerlogo img{float: none;max-width: 150px;width: 100%;margin: 0 auto;text-align: center;}
+        .footerlogo{margin: 0 auto;text-align: center;}
+        .footernav1, .footernav2{font-size: 15px;font-weight: normal}
+        .footernav1 li, .footernav2 li{display: block;margin: 5px 10px;}
+
+        .footernav1{display: inline-block;max-width: 50%;vertical-align: top;text-align: left;}
+        .footernav2{display: inline-block;max-width: 50%;text-align: left;}
+        .mobileheadline div{width: 90%;margin: 0 auto;text-align: center;}
+        .formbox{width:100%;margin: 0px auto }
+        .formheader{background-color: #B1040E}
+        .formarea{background-color: #DAD7CB}
+
+        .headline .container_inner{max-width: 100%}
+        #hero .overlay{padding-bottom: 0px}
+        #hero{background-position:center top;}
+        .mobileheadline{ margin: 10px auto 2em auto}
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+        .btmlogo{
+          padding-top: 30px;
+        }
+      }
+
+      @media (min-width: 576px) {
+        .w-sm-20 {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+          max-width: 20%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .w-md-20 {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+          max-width: 20%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .w-lg-20 {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+          max-width: 20%;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .w-xl-20 {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+          max-width: 20%;
+        }
+      }
+
+
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38467132-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-38467132-1');
+    </script>    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                })(window,document,'script','dataLayer','GTM-KSF5BK8');</script>
+    <!-- End Google Tag Manager -->    
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSF5BK8"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+      <div class="container_100">
+
+        <div id="header">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mktoText" mktoName="Text" id="logo">
+                  <a href="https://www.conviva.com/" target="_blank"><img src="https://www.conviva.com/wp-content/themes/conviva2020/assets/images/conviva-logo.svg" width="275"></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="ctabtn right-center" style="display: ${toprightctashow};">
+                  <a href="${ctalink}" target="_blank" style="color:#003033 !important;">${ctatext}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="hero">
+          <div class="overlay">
+            <div class="headline">
+              <div class="container_inner">
+                <div class="row">
+                  <div class="col-md-12 align-self-center mobileheadline">
+                    <div class="mktoText" mktoName="Hero Top Text" id="toptext">
+                      <p style="font-size: 14px; color: #b2b4b1; font-weight: 400; line-height: 26px; text-transform: uppercase; letter-spacing: 0.05rem">TEXT GOES HERE</p>       
+                    </div>
+                    <div class="mktoText" mktoName="Headline Text" id="headline">
+                      <p style="font-size: 56px; color: #ffffff; font-weight: 400; line-height: 67px;">Headline goes there</p>        
+                    </div>
+                    <div class="mktoText" mktoName="SubHeadline Text" id="subheadline">
+                      <p style="font-size: 18px; color: #ffffff; font-weight: 300; line-height: 26px;">Subheadline goes there</p>          
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div id="content">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-${lwidth}">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytext">
+                  <table cellpadding="0" cellspacing="0" border="0" align="left"><tr>
+                    <td style="padding-right: 10px;"><img src="http://pages.conviva.com/rs/138-XJA-134/images/copy-img-ph.png" width="150" border="0" /></td>
+                    </tr></table>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.          
+                </div>
+              </div>
+              <div class="col-md-${rwidth} mobileform" style="display: ${showform};">
+                <div class="formbox">
+                  <div class="formarea">
+                    <div class="mktoForm" id="form1" mktoName="Form">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>    
+        </div>
+
+        <div id="contentb">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextbb">
+                  <table cellpadding="0" cellspacing="0" border="0" align="left"><tr>
+                    <td style="padding-right: 10px;"><img src="http://pages.conviva.com/rs/138-XJA-134/images/copy-img-ph.png" width="150" border="0" /></td>
+                    </tr></table>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.          
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>    
+        </div>  
+
+        <div id="content2">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-${lwidthtw}">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextcc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br><ul style="font-size: 18px;line-height: 1.5;color:#003033;">
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  </ul>         
+                </div>
+              </div>
+              <div class="col-md-${rwidthtw} mobileform" style="display: ${showformtw};">
+                <div class="formbox">
+                  <div class="formarea">
+                    <div class="mktoForm" id="form2" mktoName="Form">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>    
+        </div>
+
+        <div id="content3">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-${lwidthth} mobileform" style="display: ${showformth};">
+                <div class="formbox">
+                  <div class="formarea">
+                    <div class="mktoForm" id="form3" mktoName="Form">
+
+                    </div>
+                  </div>
+                </div>
+              </div>	
+              <div class="col-md-${rwidthth}">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextdd">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br><ol style="font-size: 18px;line-height: 1.5;color:#003033;">
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  </ol>         
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>    
+        </div>
+
+        <div id="content4">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-${lwidthfo}">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextee">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.     
+                </div>
+                <div class="mktoText" mktoName="Speaker Section in the Body" id="spkrtext5body" style="padding-top: 30px;">
+                  <div class="photo">
+                    <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                  </div>
+                  <div class="detail" style="padding-bottom: 30px;">
+                    <div class="bodytext"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                      <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                    </div>
+                  </div>
+
+                  <div class="photo">
+                    <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                  </div>
+                  <div class="detail" style="padding-bottom: 30px;">
+                    <div class="bodytext"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                      <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                    </div>
+                  </div>
+
+                  <div class="photo">
+                    <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                  </div>
+                  <div class="detail" style="padding-bottom: 30px;">
+                    <div class="bodytext"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                      <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                    </div>
+                  </div>
+
+                  <div class="photo">
+                    <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                  </div>
+                  <div class="detail" style="padding-bottom: 30px;">
+                    <div class="bodytext"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                      <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                    </div>
+                  </div>
+
+                  <div class="photo">
+                    <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                  </div>
+                  <div class="detail" style="padding-bottom: 30px;">
+                    <div class="bodytext"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                      <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                    </div>
+                  </div>
+
+                </div>  
+              </div>
+              <div class="col-md-${rwidthfo} mobileform" style="display: ${showformfo};">
+                <div class="formbox">
+                  <div class="formarea">
+                    <div class="mktoForm" id="form4" mktoName="Form">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>    
+        </div>
+
+        <div id="content5">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextff">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextffb">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>    
+        </div>
+
+        <div id="content6">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextfdb">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
+                </div>
+              </div>
+
+            </div>
+          </div>    
+        </div>
+
+        <div id="content7">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextfda">
+                  <table cellpadding="0" cellspacing="0" border="0" align="left"><tr>
+                    <td style="padding-right: 10px;"><img src="http://pages.conviva.com/rs/138-XJA-134/images/copy-img-ph.png" width="150" border="0" /></td>
+                    </tr></table>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
+                </div>
+              </div>
+
+            </div>
+          </div>    
+        </div>
+
+        <div id="content8">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mktoText" mktoName="Left Image" id="leftimage8">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/img-half-ph.png" border="0" />    
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextgsd">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
+                </div>
+              </div>
+
+            </div>
+          </div>    
+        </div> 
+
+        <div id="speakersec">
+          <div class="container_inner">
+            <div class="row">
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg1">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext1"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div style="clear: both;"></div>
+
+            </div>
+
+          </div>    
+        </div>
+
+        <div id="speakersec2">
+          <div class="container_inner">
+            <div class="row">
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg2">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext2"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg2b">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext2b"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>	
+              <div style="clear: both;"></div>
+            </div>
+
+          </div>    
+        </div>
+
+        <div id="speakersec3">
+          <div class="container_inner">
+            <div class="row">
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg3">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext3"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg3b">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext3b"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg3c">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext3c"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+
+          </div>    
+        </div>
+
+        <div id="speakersec4">
+          <div class="container_inner">
+            <div class="row">
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg4">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext4"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg4b">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext4b"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg4c">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext4c"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg4d">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext4d"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+
+          </div>    
+        </div>
+
+        <div id="speakersec5">
+          <div class="container_inner">
+            <div class="row">
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg5">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext5"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg5b">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext5b"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg5c">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext5c"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg5d">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail" style="padding-bottom: 30px;">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext5d"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div class="photo">
+                <div class="mktoText" mktoName="Speaker Image" id="spkrimg5e">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/spkr-ph-img.png" border="0" />
+                </div>
+              </div>
+              <div class="detail">
+                <div class="mktoText bodytext" mktoName="Speaker Text" id="spkrtext5e"><span style="font-size: 18px; color: #8bc425; font-weight: 400;">John Doe</span><br>
+                  <span style="font-size: 18px; font-weight: 400;">CEO</span><br>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in. Quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                </div>
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+
+          </div>    
+        </div>
+
+        <div id="contentcenterctamdl">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="ctabtn text-center">
+                  <a href="${ctalinkfomdl}" style="color:#003033 !important;">${ctatextfomdl}</a>
+                </div> 
+              </div>
+            </div>
+
+
+          </div>    
+        </div>
+
+
+        <div id="quotesection">
+          <div class="container_inner">
+            <div class="row">
+              <div style="margin: 0 auto;">
+                <div class="mktoImg" mktoName="Quote Icon Image" id="quoteimg" style="margin-bottom: 30px;"><img src="http://pages.conviva.com/rs/138-XJA-134/images/quote-icon.png" width="67" height="53" border="0" /></div></div>
+              <div class="mktoText bodytext" mktoName="Quote Text" id="quotetext" style="padding-bottom: 20px;">
+                <em>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</em>
+                <br><br>
+                <span style="color: #8bc400; font-weight: 400;">John Doe</span><br>
+                CEO, Conviva
+              </div>
+              <div style="margin: 0 auto;">
+                <div class="mktoText" mktoName="Quote Logo Image" id="quotelogoimg"><img src="https://www.conviva.com/wp-content/themes/conviva2020/assets/images/conviva-logo.svg" width="275"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="eventsection">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-2 eventdate">
+                <div class="mktoText" mktoName="Event Date Text" id="eventtextdate">
+                  <span style="color: #ffffff; font-size: 48px;">
+                    DEC<br>
+                    24</span>     
+                </div>
+              </div>
+              <div class="col-md-10 eventcopy">
+                <div class="mktoText bodytext" mktoName="Event Text" id="eventtext">
+                  <span style="color: #003033; font-size: 18px; font-weight: 400;">EVENT</span><br>
+                  <span style="color: #8bc400; font-size: 18px; font-weight: 400;">Lorem ipsum dolor amet</span><br>
+                  <span style="font-size:16px">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo constequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</span>   
+                </div>
+              </div>
+            </div>
+
+
+          </div>    
+        </div>  
+
+
+        <div id="colsection">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="mktoText" mktoName="Column 1 Image" id="sec5fourcol1img" style="padding-bottom: 30px;">
+                  <img src="https://pages.conviva.com/rs/138-XJA-134/images/528x256.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec5fourcol1a" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec5fourcol1b" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec5fourcol1c">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 1 Secondary CTA" id="sec5fourcolcta1"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mktoText" mktoName="Column 2 Image" id="sec5fourcol2img" style="padding-bottom: 30px;">
+                  <img src="https://pages.conviva.com/rs/138-XJA-134/images/528x256.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec5fourcol2a" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec5fourcol2b" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec5fourcol2c">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 2 Secondary CTA" id="sec5fourcolcta2"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div> 
+              </div>
+              <div class="col-md-4">
+                <div class="mktoText" mktoName="Column 3 Image" id="sec5fourcol3img" style="padding-bottom: 30px;">
+                  <img src="https://pages.conviva.com/rs/138-XJA-134/images/528x256.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec5fourcol3a" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec5fourcol3b" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec5fourcol3c">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 3 Secondary CTA" id="sec5fourcolcta3"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="colsection2">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mktoText" mktoName="Column 1 Image" id="sec6fourcol1img" style="padding-bottom: 30px;">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/half-img-ph.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec6fourcol1a" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec6fourcol1b" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec6fourcol1c">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 1 Secondary CTA" id="sec6fourcolcta1"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mktoText" mktoName="Column 2 Image" id="sec6fourcol2img" style="padding-bottom: 30px;">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/half-img-ph.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec6fourcol2a" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec6fourcol2b" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec6fourcol2c">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 2 Secondary CTA" id="sec6fourcolcta2"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="colsection3">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mktoText" mktoName="Column 1 Image" id="sec7fourcol1img" style="padding-bottom: 30px;">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/fulwidth-img-ph.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec7fourcol1a" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec7fourcol1b" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec7fourcol1c">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 1 Secondary CTA" id="sec7fourcolcta1"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="colsection4">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="mktoText" mktoName="Column 1 Image" id="sec8fourcol1img" style="padding-bottom: 30px;">
+                  <img src="https://pages.conviva.com/rs/138-XJA-134/images/528x256.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec8fourcol1a" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec8fourcol1b" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec8fourcol1c">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="mktoText" mktoName="Column 1 Secondary CTA" id="sec8fourcolcta1"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="mktoText" mktoName="Column 2 Image" id="sec8fourcol2img" style="padding-bottom: 30px;">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/twothird-img-ph.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec8fourcol2a" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec8fourcol2b" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec8fourcol2c">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 2 Secondary CTA" id="sec8fourcolcta2"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div id="content9">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextqw">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br><ul style="font-size: 18px;line-height: 1.5;color:#003033;">
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  </ul>         
+                </div>
+              </div>
+              <div class="col-md-5" style="text-align: center;">
+                <div class="mktoText text-center" mktoName="Column 2 Image" id="con9rightimg" style="padding-bottom: 30px;">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/secondcol-img-ph.png">
+                </div>
+                <div class="ctabtn text-center">
+                  <a href="${ctalinktw}" target="_blank" style="color:#003033 !important;">${ctatexttw}</a>
+                </div>  
+              </div>
+            </div>
+
+
+          </div>    
+        </div>
+
+        <div id="content10">
+          <div class="container_inner">
+            <div class="row">
+
+              <div class="col-md-5" style="text-align: center;">
+                <div class="mktoText text-center" mktoName="Column 2 Image" id="con10rightimg" style="padding-bottom: 30px;">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/secondcol-img-ph.png">
+                </div>
+                <div class="ctabtn text-center">
+                  <a href="${ctalinkth}" target="_blank" style="color:#003033 !important;">${ctatextth}</a>
+                </div>  
+              </div>
+
+              <div class="col-md-7">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextrtw">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br><ul style="font-size: 18px;line-height: 1.5;color:#003033;">
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  <li>Excepteur sint occaecat sunt in culpa qui officia</li>
+                  </ul>         
+                </div>
+              </div>
+            </div>
+
+
+          </div>    
+        </div>		  
+
+        <div id="contentcentercta">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="ctabtn text-center">
+                  <a href="${ctalinkfo}" target="_blank" style="color:#003033 !important;">${ctatextfo}</a>
+                </div> 
+              </div>
+            </div>
+
+
+          </div>    
+        </div>
+
+        <div id="contentcenter">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12" style="text-align: center">
+                <div class="mktoText" mktoName="Headline Text" id="headlinetw">
+                  <p style="font-size: 50px; color: #ffffff; font-weight: 400; line-height: 60px;">Headline goes there</p>        
+                </div>
+                <div class="mktoText" mktoName="SubHeadline Text" id="subheadlinetw">
+                  <p style="font-size: 18px; color: #ffffff; font-weight: 300; line-height: 26px;">Subheadline goes there</p>          
+                </div>
+                <div class="ctabtntw text-center">
+                  <a href="${ctalinkfi}">${ctatextfi}</a>
+                </div> 
+              </div>
+            </div>
+
+
+          </div>    
+        </div>
+
+        <div id="content6bb">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mktoText bodytext" mktoName="Body Text" id="bodytextfdbbb">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis novstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Consectetur adipiscing elit, sed do eiusmod<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
+                </div>
+              </div>
+
+            </div>
+          </div>    
+        </div>		  
+
+        <div id="colsectiona">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-12" style="text-align: center">
+                <div class="mktoText" mktoName="Column Section Title" id="headlinecolsectiona">
+                  <p style="font-size: 40px; color: #003033; font-weight: 400; line-height: 50px; margin-bottom: 32px">Recommended Content</p>        
+                </div>
+              </div>      
+              <div class="col-md-4">
+                <div class="mktoText" mktoName="Column 1 Image" id="sec5fourcol1imga" style="padding-bottom: 30px;">
+                  <img src="https://pages.conviva.com/rs/138-XJA-134/images/528x256.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec5fourcol1aa" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec5fourcol1ba" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec5fourcol1ca">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 1 Secondary CTA" id="sec5fourcolcta1a"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mktoText" mktoName="Column 2 Image" id="sec5fourcol2imga" style="padding-bottom: 30px;">
+                  <img src="https://pages.conviva.com/rs/138-XJA-134/images/528x256.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec5fourcol2aa" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec5fourcol2ba" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec5fourcol2ca">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 2 Secondary CTA" id="sec5fourcolcta2a"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div> 
+              </div>
+              <div class="col-md-4">
+                <div class="mktoText" mktoName="Column 3 Image" id="sec5fourcol3imga" style="padding-bottom: 30px;">
+                  <img src="https://pages.conviva.com/rs/138-XJA-134/images/528x256.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec5fourcol3aa" style="color:#068089; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec5fourcol3ba" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec5fourcol3ca">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 3 Secondary CTA" id="sec5fourcolcta3a"><a href="#" target="_blank" style="text-decoration: none; color: #068089 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="colsection2b">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mktoText" mktoName="Column 1 Image" id="sec6fourcol1imgb" style="padding-bottom: 30px;">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/half-img-ph.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec6fourcol1ab" style="color:#8BC400; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec6fourcol1bb" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec6fourcol1cb">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 1 Secondary CTA" id="sec6fourcolcta1b"><a href="#" target="_blank" style="text-decoration: none; color: #8BC400 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mktoText" mktoName="Column 2 Image" id="sec6fourcol2imgb" style="padding-bottom: 30px;">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/half-img-ph.png">
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Top Text" id="sec6fourcol2ab" style="color:#8BC400; font-size: 14px; text-transform: uppercase; font-weight: 300;">
+
+                  Lorem ipsum dolor
+                </div>
+                <div class="mktoText bodytext" mktoName="Column 1 Header Text" id="sec6fourcol2bb" style="font-weight: 400; font-size: 18px; padding-top: 10px; padding-bottom: 10px;">
+                  Loremipsum dolor sit amet
+                </div> 
+                <div class="mktoText bodytext" mktoName="Column 1 Text" id="sec6fourcol2cb">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                <div class="mktoText" mktoName="Column 2 Secondary CTA" id="sec6fourcolcta2b"><a href="#" target="_blank" style="text-decoration: none; color: #8BC400 ; font-weight: 400;">Learn More →</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>		  
+
+        <div id="section6">
+          <div class="container_inner">
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="mktoText" id="socials" mktoName="socials">
+                  <table align="left" class="center-on-narrow" width="159" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="21"><a href="https://twitter.com/conviva" target="_blank"><img src="https://pages.conviva.com/rs/138-XJA-134/images/Twitter-icon.png" border="0" /></a></td>
+                      <td width="25"></td>
+                      <td width="12"><a href="https://www.facebook.com/convivainc/" target="_blank"><img src="https://pages.conviva.com/rs/138-XJA-134/images/Facebook-icon.png" border="0" /></a></td>
+                      <td width="25"></td>
+                      <td width="21"><a href="https://www.linkedin.com/company/conviva" target="_blank"><img src="https://pages.conviva.com/rs/138-XJA-134/images/LinkedIn-icon.png" border="0" /></a></td>
+                      <td width="25"></td>
+                      <td width="21"><a href="https://www.instagram.com/conviva_inc/" target="_blank"><img src="https://pages.conviva.com/rs/138-XJA-134/images/Instagram-icon.png" border="0" /></a></td>			
+                    </tr>
+                  </table>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="mktoText center-on-narrow" id="footercopya" mktoName="Footer copy">
+                  <p style="margin: 0; font-family: 'Poppins', Arial, sans-serif; font-size: 12px; font-weight: 300; line-height: 16px; color: #8BC400;"><br><br>
+                    <a href="https://www.conviva.com/legal/" target="_blank" style="color: #ffffff; text-decoration: underline;">Legal/Privacy</a><br>
+                    Copyright © 2021 Conviva. All rights reserved.
+                  </p></div>
+              </div>
+              <div class="col-sm-4"><div class="mktoText btmlogo" id="btmlogo" mktoName="Bottom Logo">
+                <a href="https://www.conviva.com/" target="_blank">
+                  <img src="http://pages.conviva.com/rs/138-XJA-134/images/logo-btm.png" width="100" style="display: block; width: 100px; max-width: 100px; text-align: center; margin: 0 auto;" alt="Conviva logo" border="0"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <script id="teknklFormsPlus-Tag-0.2.3" src="https://pages.conviva.com/rs/138-XJA-134/images/teknkl-formsplus-tag-0.2.3.js"></script>
+    <script id="teknklZoomInfo-JS-1.0.1" src="https://pages.conviva.com/rs/138-XJA-134/images/teknkl-zoominfo-smartreveal-1.0.1.js"></script>
+
+  </body>
+</html>
