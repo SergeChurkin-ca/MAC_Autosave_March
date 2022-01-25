@@ -15,3 +15,5 @@ function removeLastBtn() {
 }
 
 removeLastBtn()
+
+// clean up please wait message
