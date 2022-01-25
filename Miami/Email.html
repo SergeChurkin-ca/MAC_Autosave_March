@@ -60,24 +60,24 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="headlineFontColor" mktoname="Headline Text Color" default="#444" />
     <meta mktoModuleScope="true" class="mktoColor" id="headlineFontColorwhite" mktoname="Headline Text Color" default="#FFFFFF" />
     <meta mktoModuleScope="true" class="mktoNumber" id="SubheadlineFontSize" mktoname="Subheadline Font Size" default="18" />
-    <meta mktoModuleScope="true" class="mktoColor" id="SubheadlineFontColor" mktoname="Subheadlinbe Text Color" default="#1F203E" />
+    <meta mktoModuleScope="true" class="mktoColor" id="SubheadlineFontColor" mktoname="Subheadlinbe Text Color" default="#4c4c4c" />
     <meta mktoModuleScope="true" class="mktoNumber" id="CopySize18" mktoname="Text Font Size" default="18" />
     <meta mktoModuleScope="true" class="mktoNumber" id="CopySize" mktoname="Text Font Size" default="16" />
-    <meta mktoModuleScope="true" class="mktoColor" id="CopyColor" mktoname="Text Color" default="#1F203E" />
+    <meta mktoModuleScope="true" class="mktoColor" id="CopyColor" mktoname="Text Color" default="#4c4c4c" />
     <meta mktoModuleScope="true" class="mktoColor" id="CopyColorWhite" mktoname="Text Color" default="#FFFFFF" />
 
     <meta mktoModuleScope="true" class="mktoImg" id="banner1_img" mktoName="Background Image" default="https://dummyimage.com/600x400/1b4194/c2c2c2">
     <meta mktoModuleScope="true" id="outlook-ht1" class="mktoNumber" mktoname="BG Image Outlook Height (px)" default="360" min="0" max="1000" step="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="20" />
 
-    <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead" mktoName="Button Text Color" default="#444" />
-    <meta mktoModuleScope="true" class="mktoColor" id="btnBGColorhead" mktoName="Button BG Color" default="#ccff00">
-    <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColorhead" mktoName="Button Border Color" default="#ccff00" />
+    <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead" mktoName="Button Text Color" default="#1b4194" />
+    <meta mktoModuleScope="true" class="mktoColor" id="btnBGColorhead" mktoName="Button BG Color" default="#ffffff">
+    <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColorhead" mktoName="Button Border Color" default="#ffffff" />
 
-    <meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#000000" />
-    <meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#ccff00">
-    <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#ccff00" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="10" />
+    <meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#ffffff" />
+    <meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#f15a29">
+    <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#f15a29" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="1" />
     <meta mktoModuleScope="true" class="mktoString" id="btnText" mktoName="Button Text" default="Read More">
     <meta mktoModuleScope="true" class="mktoString" id="btnText-dynamic" mktoName="Button Text dynamic" default="Read More">
     <meta mktoModuleScope="true" class="mktoNumber" id="btn1FontSize" mktoname="Button Font Size (px)" default="18" />
@@ -158,7 +158,7 @@ font-family: Arial, serif !important;
       /* Various OL fixes */
 
       body {
-        font-family:'${fontfamily}', sans-serif;
+        font-family:'${fontfamily}', serif;
       }
 
       body {
@@ -287,7 +287,7 @@ font-family: Arial, serif !important;
                         <tr>
                           <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
                             <div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
-                              <a href="https://www.miamicorp.com/home" target="_blank"><img width="250" class="logowidth" alt="logo" src="https://go.miamicorp.com/rs/415-SHE-959/images/logo-top.png" border="0" style="height:auto !important;" /></a>
+                              <a href="https://www.miamicorp.com/" target="_blank"><img width="250" class="logowidth" alt="logo" src="https://go.miamicorp.com/rs/415-SHE-959/images/logo-top.png" border="0" style="height:auto !important;" /></a>
                             </div>
                           </th>
                         </tr>
@@ -344,7 +344,7 @@ font-family: Arial, serif !important;
                                         <tbody>
                                           <tr>
                                             <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; border:3px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
-                                              <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 7px 35px 3px; display:inline-block" href="${btnURL}">${btnText}</a>
+                                              <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 10px 35px;display:inline-block" href="${btnURL}">${btnText}</a>
                                             </td>
                                           </tr>
                                         </tbody>
@@ -413,7 +413,7 @@ font-family: Arial, serif !important;
                                         <tbody>
                                           <tr>
                                             <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; border:3px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
-                                              <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 7px 35px 3px; display:inline-block" href="${btnURL-dynamic}">${btnText-dynamic}</a>
+                                              <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 10px 35px;display:inline-block" href="${btnURL-dynamic}">${btnText-dynamic}</a>
                                             </td>
                                           </tr>
                                         </tbody>
@@ -551,7 +551,7 @@ font-family: Arial, serif !important;
                                   <tbody>
                                     <tr>
                                       <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
-                                        <a style="min-height:10px; text-decoration:none; color:${btnColor}; padding: 5px 35px 1px; display:inline-block" href="${btnURL}">${btnText2}</a>
+                                        <a style="min-height:10px; text-decoration:none; color:${btnColor}; padding: 10px 35px; display:inline-block" href="${btnURL}">${btnText2}</a>
                                       </td>
                                     </tr>
                                   </tbody>
@@ -584,7 +584,7 @@ font-family: Arial, serif !important;
                                 <table cellspacing="0" cellpadding="0" border="0" align="center">
                                   <tbody>
                                     <tr>
-                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: 10px;padding:5px"> <a style="min-height:10px; text-decoration:none; color:${btnColor}; padding: 5px 35px; display:inline-block" href="#">Dynamic Button</a> </td>
+                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: 10px;padding:5px"> <a style="min-height:10px; text-decoration:none; color:${btnColor}; padding: 10px 35px; display:inline-block" href="#">Dynamic Button</a> </td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -619,7 +619,7 @@ font-family: Arial, serif !important;
 
                                 <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;">
                                   <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
-                                    <a href="https://www.facebook.com/miamicorp/" target="_blank"><img alt="facebook icon" width="24" height="auto" src="https://go.miamicorp.com/rs/415-SHE-959/images/facebook-white.png" style="width:24px;height:auto;" /></a>
+                                    <a href="https://www.facebook.com/miamicorp/" target="_blank"><img alt="facebook icon" width="24" height="auto" src="https://go.miamicorp.com/rs/415-SHE-959/images/facebook-white.png" style="width:17px;height:auto;" /></a>
                                   </div>
                                 </td>
                                 <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;">
