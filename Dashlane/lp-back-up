@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="#">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script type="text/javascript" src="//cdn.bizible.com/scripts/bizible.js" async=""></script>
+  
+
+  <!-- Show/Hide Section -->
+  <meta class="mktoBoolean" id="headershow" mktoName="Show Header Bar?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="heroshow" mktoName="Show Hero 1?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="hero2show" mktoName="Show Banner w/Form ?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="showform2" mktoName="Show Form" default="true" false_value="trueclass" true_value="falseclass" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="sec1show" mktoName="Show Section 1?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="sec2show" mktoName="Show Section 2?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="sec3show" mktoName="Show Section 3?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="sec4show" mktoName="Show Section 4?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+   <meta class="mktoBoolean" id="sec5show" mktoName="Show Section 5?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+   <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+  
+  <title>Dashlane</title>
+  <style type="text/css">
+     @font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Regular.eot'); /* IE9 Compat Modes */
+  src: url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+      font-weight: normal;
+      font-style: normal;
+       }
+    
+    @font-face {
+  font-family: 'GT Walsheim Pro Bold';
+	
+    src: url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Bold.eot'); /* IE9 Compat Modes */
+  src: url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://go.dashlane.com/rs/403-EXY-689/images/GTWalsheimPro-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: bold;
+       font-style: normal;
+    }
+  </style>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+
+    }
+
+    body {
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      font-family: 'GT Walsheim Pro', sans-serif;
+      height: 100%;
+      width: 100%
+    }
+    
+    .container_100 {
+      width: 100%;
+
+    }
+
+    .container_inner {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: 'GT Walsheim Pro Bold', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 44px;
+      align-items: center;
+      color: #08272F;
+    }
+
+    h2 {
+      font-family: 'GT Walsheim Pro Bold', sans-serif;
+      font-size: 40px;
+      font-weight:bold;
+      line-height: 44px;
+      color: #08272F;
+    }
+
+    h3 {
+      font-family: 'GT Walsheim Pro Bold', sans-serif;
+      font-size: 28px;
+      line-height: 32px;
+      color:#08272F;
+    }
+    
+    h4 {
+      font-family: 'GT Walsheim Pro', sans-serif;
+      font-size: 18px;
+      line-height: 20px;
+      color: #026272;
+      text-transform:uppercase;
+    }
+
+    p {
+      font-family: 'GT Walsheim Pro', sans-serif;
+      font-size: 20px;
+      line-height: 28px;
+    }
+	
+    /*Header*/
+    #header {
+      background-color: #08272F;
+      width: 100%;
+      padding: 20px 0px 20px 0px;
+      display: ${headershow};
+    }
+    
+    /*Hero 1*/
+    #hero {
+      width: 100%;
+      margin: 0px auto;
+      background:#F0F8FA;
+      color: #08272F;
+      padding: 6.6em 0px;
+      display: ${heroshow};}
+    
+    #hero img {
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .headline-1{
+      padding-right:60px;
+    }
+    .btn-container {
+      width: 100%;
+        margin: 2em auto 0;    
+    }
+    .btn-container a{
+      text-decoration:none;
+      color:#fff;
+    }
+    .top-btn{
+      background:#026272;
+      padding: 12px 22px;
+      border:2px solid #026272;
+      border-radius: 4px;
+      width:151px;
+      font-weight: 500;
+    }
+    .top-btn-1{
+      background:#026272;
+      border:2px solid #026272;
+      padding: 12px 22px;
+      border-radius: 4px;
+      width: 176px;
+      margin:0 auto;
+      font-weight: 500;
+    }
+      
+      @media (max-width: 768px) {
+       #hero {
+	  background:#F0F8FA;
+     }
+      }
+    
+    .col-md-5 {
+      margin-bottom: 45px;
+    }
+    
+    /*Hero 2*/
+    #hero2 {
+	  background: linear-gradient(90deg, #026272 65%, #F0F8FA 35%);
+      display: ${hero2show};
+      color: #fff;
+      width: 100%;
+      padding: 6.2em 0px;
+      margin: 0px auto;
+    }
+    
+    #hero2 h1 {
+      color: #fff;
+      font-size:52px;
+      line-height:54px;
+    }
+    
+    .li-icon {
+      margin-right: 13px;
+    }
+
+    
+    #list-lists p {
+      margin-bottom: 16px;
+    }
+    
+    @media (max-width: 768px) {
+       #hero2 {
+	  background: linear-gradient(180deg, #026272 80%, #F0F8FA 20%);
+     }
+      #list-lists p {
+      margin-bottom: 12px;
+    }
+    }
+    
+    /*Section 1*/
+
+    #section1 {
+	  background-color: #fff;
+      display: ${sec1show};
+      width: 100%;
+      padding: 24px 0px;
+      margin: 0px auto;
+    }
+    
+
+    
+    
+    
+    /*Section 2*/
+    #section2 {
+	  background-color: #F0F8FA;
+      display: ${sec4show};
+      color: #08272F;
+      width: 100%;
+      padding: 5em 0px;
+      margin: 0px auto;
+    }
+    
+    #section2 h2 {
+      text-align: center;
+      margin-bottom: 30px; 
+    }
+        .container_logo_1 {
+        margin: 0 auto;
+  		display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+      align-items: baseline;
+      gap: 50px 50px; 
+    }
+    .social-icon{
+      max-width:250px;
+      margin: 20px auto 0;
+  		display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+    }
+    .container_logo {
+      width: 85%;
+        margin: 0 auto 40px;
+  	display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+      align-items: baseline;
+      gap: 50px 50px; 
+    }
+    .container_textwidth{
+      max-width:800px;
+      margin:0 auto;
+      color:#08272F;
+      text-align:center;
+    }
+    #list-lists {
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 850px) {
+      .container_logo {
+        width: 100%;
+      }
+    }
+    
+    /*Section 3*/
+    
+    #section3 {
+      background-color: #F3F5F7;
+      display: ${sec2show};
+      color: #08272F;
+      width: 100%;
+      padding: 6.2em 0px;
+      margin: 0px auto;
+      text-align:center;
+    }
+    
+    #section3 h1, #section3 h2, #section3 h3 {
+      color: #08272F;
+    }
+    
+    .box-one, .box-two, .box-three {
+      padding: 18px 19px 10px 19px;
+      width: 30%;
+    }  
+    
+    .box-one, .box-two {
+      margin-right: 5%;
+    }
+    
+    .container {
+    padding: 0px;
+      margin: 0px 15px;
+    }
+    
+    
+    
+    /*Section 4*/
+    #section4 {
+	  background-color: #FFFFFF;
+      display: ${sec3show};
+      color: #08272F;
+      width: 100%;
+      padding: 7em 0px 5em;
+      margin: 0px auto;
+    }
+    #section4 h3{
+      max-width:850px;
+      margin:0 auto;
+    }
+        #section4 p{
+      font-size: 24px;
+      line-height: 34px;
+     color: #08272F;
+   	margin-top:20px;
+    margin-bottom:29px;
+    }
+    #section5{
+      background-color: #FFFFFF;
+      display: ${sec5show};
+      color: #08272F;
+      width: 100%;
+      padding: 2.5em 0px;
+      margin: 0px auto;
+      text-align:center;
+    }
+    #section5 h4{
+      color: #08272F;
+    }  
+    #section5 #privacy-text span{
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: #4A5B69;
+    }
+        #section5 #privacy-text a{
+		color: #026272;
+       text-decoration:underline;
+    }
+    #footer{
+      background-color: #08272F;
+      display: ${footershow};
+      color: #fff;
+     	padding: 40px 0px; 
+      font-size:14px;
+      line-height:18px;
+      text-align:center;
+    }
+    #footer p{
+      font-size:14px;
+      line-height:18px;
+    }
+    .content { display:none;};
+    
+    
+    /*FORM*/
+    .mktoForm {
+      max-width: 100%;
+      width: 100%;
+      color: #09363F;
+    }
+
+    form {
+      width: 100% !important
+    }
+
+    .formarea p {
+      color: #09363F;
+      font-size: 16px;
+    }
+
+    .formarea h4 {
+      color: #09363F;
+      font-size: 32px;
+      font-weight: bold;
+      font-family: 'GT Walsheim Pro Bold', sans-serif;
+    }
+    
+    
+    .trueclass .mobileform {
+      display: none
+    }
+
+    .trueclass .mobileheadline h1,
+    .trueclass .mobileheadline h2,
+    .trueclass .mobileheadline {
+      text-align: center;
+      display: block;
+    }
+
+    .trueclass .mobileheadline {
+      width: 100%;
+      max-width: 800px;
+      -webkit-box-flex: initial;
+      -ms-flex: initial;
+      flex: initial;
+    }
+
+    .formbox {
+      width: 100%;
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+
+
+    .formarea {
+      background-color:#fff;
+      border-radius: 8px;
+      padding: 0px 40px 40px 40px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @media(max-width: 1200px) {
+      .container_inner {
+        max-width: 90%
+      }
+    }
+
+    @media (max-width: 768px) {
+      .box-one, .box-two, .box-three {
+        width: 100%;
+        margin: 0px 0px 16px 0px;
+      }
+      	.headline-1{
+      padding: 0px 15px;
+      margin-bottom:45px;
+    }
+     .container {
+        margin:0px auto!important;
+      }
+    }
+
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 36px;
+        line-height: 48px;
+        text-align: left;
+        display: block;
+      }
+
+      h2 {
+      font-size: 32px;
+      line-height: 38px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 28px;
+      line-height: 32px;
+      text-align: left;
+    }
+      h4 {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: left;
+    }
+
+      p {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: left;
+    }
+      
+      #hero {
+        padding: 3em 0px;
+      }
+      
+      #hero2 {
+        padding: 3em 0px;
+      }
+      
+      #section1 {
+        padding: 1.7em 0px;
+      }
+      
+      #section2 {
+        padding: 1.7em 0px;
+      }
+      
+      #section3 {
+        padding: 2.5em 0px;
+      }
+      
+      #section4 {
+        padding: 2.5em 0px;
+      }
+      
+      #section5 {
+        padding: 2em 0px;
+      }
+      #footer{
+        padding:1.5em 0px;
+      }
+      .formbox {
+		text-align: left;
+      }
+      
+      
+      .formarea h4 {
+        font-size: 28px;
+        line-height: 32px;
+      }
+      
+      .formarea p {
+        font-size: 14px;
+		line-height: 20px;
+      }
+      
+      
+	.formarea {
+    padding: 0px 20px 20px 20px;
+
+    }
+      .mobileform {
+        padding: 0px;
+        margin: 0px; 
+      }
+      
+
+       #list-lists p{
+      font-size: 14.5px;
+      line-height: 17px;
+    }
+    
+      #hero {
+      background: #F0F8FA;
+      }
+      #hero2 h1 {
+        font-size:44px;
+      }
+      .top-btn{
+        margin:0 auto;
+      }
+      #section3 h3, #section3 h4, #section3 p{
+        text-align:center;
+      }
+      #section5 h4, #section5 p, #section2 p, #section4 p {
+        text-align:center;
+      }
+      #footer p{
+        text-align:center;
+      }
+
+      .box-one, .box-two, .box-three {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container_100">
+
+            <div id="header">
+                <div class="container_inner">
+                    <a href="https://www.dashlane.com/" target="_blank"><img src="https://go.dashlane.com/rs/403-EXY-689/images/Lock-up-white%402x.png" width="200" height="auto" /></a>
+                </div>
+            </div>
+          
+          <div id="hero">
+            <div class="container_inner">
+              <div class="row ">
+
+                <div class="col-md-6 mobileheadline headline-1">
+                  <div class="mktoText" mktoName="Hero 1 Title" id="hero-title">
+                      <h1>Total password protection</h1>
+                  </div>
+                  <div class="mktoText" mktoName="Hero 1 Copy" id="hero-description">
+                    <p>
+                      Weak, stolen, or reused employee passwords are the #1 cause of breaches. Get started with Dashlane, the password manager that’s as easy to use as it is secure. 
+                    </p>
+                  </div>
+                  
+                  <div class="btn-container">
+                      <div class="mktoText rating-copy" mktoName="Btn Copy" id="btn-text">
+                        <a href="#form-container"><div class="top-btn"><span style="font-size:16px">Request demo</span></div></a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                
+
+                <div class="col-md-6 mobileform">
+                      
+                      <div class="mktoImg" id="headerimg" mktoName="Header Img">
+                        <img src="https://go.dashlane.com/rs/403-EXY-689/images/vantage_reusingpasswords 2.png" width="100%" height="auto" />
+                      </div>
+                </div>
+
+              </div>
+            </div>
+      </div>
+          
+           
+          <div id="section1">
+            <div class="container_inner">
+              <div class="container_logo_1">
+                <div class="mktoImg company-logo" mktoName="CCPA image" id="logo1a">
+                 <img src="https://go.dashlane.com/rs/403-EXY-689/images/CCPA Compliant%402x.png" alt="CCPA Compliant Logo" width="160px" max-width="160px" height="80px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="AICPA image" id="logo2a">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/AICPA SOC 2%402x.png" alt="AICPA Logo" width="160px" max-width="160px" height="80px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="Fido image" id="logo3a">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/fido%402x.png" alt="Fido Logo" width="160px" max-width="160px" height="80px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="EU GDPR image" id="logo4a">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/EU GDPR%402x.png" alt="EU GDPR Logo"  width="160px" max-width="160px" height="80px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="Privacy shield image" id="logo5a">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/Privacy shield certified %402x.png" alt="Privacy shield certified Logo"  width="160px" max-width="160px" height="80px"/>
+                </div>
+                
+              </div> 
+            </div>
+          </div>
+
+           <div id="section3">
+            <div class="container_inner">
+
+              <div class="mktoText black-title" mktoName="3 Col Title" id="title2">
+                <h3>Security for your business. Simplicity for your team.</h3>
+              </div>
+
+                            
+		 	<div class="container">
+              <div class="row">
+        <div class="mktoText box-one" mktoName="Box 1 Text" id="row1text">
+            <h4>Personalized security alerts</h4>
+            <p>With Dark Web Monitoring, receive alerts if any employee data ends up on the dark web.</p>
+        </div>
+        
+        <div class="mktoText box-two" mktoName="Box 2 Text" id="row2text">
+            <h4>SSO integration</h4>
+            <p>Get the most control over your company data by integrating Dashlane with your SSO provider—and simplify how your employees sign in.</p>
+        </div>
+        
+        <div class="mktoText box-three" mktoName="Box 3 Text" id="row3text">
+            <h4>Easy-to-use employee features</h4>
+            <p>Between our one-click Password Changer, powerful autofill, and syncing across all devices, it’s never been easier for your team to manage their passwords.</p>
+        </div>
+    </div> 
+       <div class="btn-container">
+        <div class="mktoText rating-copy" mktoName="3 Col Btn Text" id="btn-text-3">
+            <a href="#form-container"><div class="top-btn-1"><span style="font-size:16px">Contact our team</span></div></a>
+       </div>
+
+                  </div>
+              </div>   
+           </div>
+          </div>        
+          
+            
+          
+          <div id="hero2">
+            <div class="container_inner">
+              <div class="row ${showform2}">
+
+                <div class="col-md-6 mobileheadline headline-1">
+                  <div class="mktoText" mktoName="Hero 2 Title" id="hero2-title">
+                      <h1>Get in touch</h1>
+                  </div>
+                  <div class="mktoText" mktoName="Hero 2 Copy" id="hero2-description">
+                    <p>
+                      Have questions about our product, pricing, security, implementation, or anything else? Let our security experts be your guide. With Dashlane, enjoy:  
+                    </p>
+                  </div>
+
+                  <div class="mktoText" mktoName="Hero 2 List" id="list-lists">
+                      <p><span><img class="li-icon" src="https://go.dashlane.com/rs/403-EXY-689/images/check-icon.png" width="20px" /></span>Patented, zero-knowledge security architecture</p>
+                      <p><span><img class="li-icon" src="https://go.dashlane.com/rs/403-EXY-689/images/check-icon.png" width="20px" /></span>Smart Spaces keep work and personal data separate</p>
+                      <p><span><img class="li-icon" src="https://go.dashlane.com/rs/403-EXY-689/images/check-icon.png" width="20px" /></span>The easiest and safest way to share passwords</p>
+
+                  </div>
+                </div>
+
+                <div class="col-md-6 mobileform">
+                  <div id="form-container" class="formbox">
+                    <div class="formarea">
+                      
+                      <div class="mktoForm" id="form2" mktoName="Form">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+      </div>
+          
+           <div id="section4">
+            <div class="container_inner">
+              <div class="mktoText" mktoName="EPromos Title" id="ePromos-title">
+              <h3 style="text-align:center">
+                “We went from really having no idea how secure our passwords were to having peace of mind with Dashlane.”
+              </h3>
+              </div>
+              <div class="container_textwidth">
+             <div class="mktoText" mktoName="EPromos Text" id="description2a">
+                <p>
+                  — Steven Stanley, Senior VP of Technology, ePromos
+                </p>
+              </div>
+              </div>
+              
+              <div class="container_logo">
+                <div class="mktoImg company-logo" mktoName="EPromos image" id="logo1f">
+                 <img src="https://go.dashlane.com/rs/403-EXY-689/images/image 72.png" alt="img" width="177.71px" max-width="177.71px" height="45px"/>
+                </div>
+                
+              </div> 
+              
+            </div>
+          </div>
+       
+          <div id="section2">
+            <div class="container_inner">
+              <div class="mktoText" mktoName="Section 4 Ttile" id="sectitle4">
+              <h2>
+                Join the 20,000+ companies using Dashlane
+              </h2>
+              </div>
+              <div class="container_logo">
+                
+                <div class="mktoImg company-logo" mktoName="PepsiCo image" id="logo1">
+                 <img src="https://go.dashlane.com/rs/403-EXY-689/images/PepsiCo_logo.png" alt="img" width="105.19px" max-width="105.19px" height="29.2px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="Wayfair image" id="logo2">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/Wayfair_logo.png" alt="img" width="89.22px" max-width="89.22px" height="19.46px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="Canadian_Olympic image" id="logo3">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/Canadian_Olympic_Committee_logo.png" alt="img" width="41.37px" max-width="41.37px" height="62px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="Clickup image" id="logo4">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/clickup-logo.png" alt="img" width="100.56px" max-width="100.56px" height="24.46px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="Bentobox image" id="logo5">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/bentobox-logo.png" alt="img" width="120.21px" max-width="120.21px" height="37.24px"/>
+                </div>
+                <div class="mktoImg company-logo" mktoName="Bain_Capital image" id="logo6">
+                   <img src="https://go.dashlane.com/rs/403-EXY-689/images/Bain_Capital_logo.png" alt="img" width="106.59px" max-width="106.59px" height="17.93px" />
+                </div>
+                
+              </div> 
+              <div class="container_textwidth">
+             <div class="mktoText" mktoName="Section 4 Copy" id="sec4description">
+                <p>
+                  From small businesses to large enterprises, Dashlane helps teams around the world protect and improve their organization’s cybersecurity instantly.
+                </p>
+              </div>
+                <div class="btn-container">
+                      <div class="mktoText rating-copy" mktoName="Section 4 Btn Text" id="btn-text-2">
+                        <a href="#form-container"><div class="top-btn-1"><span style="font-size:16px">Contact our team</span></div></a>
+                    </div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+        <div id="section5">
+			<div class="container_inner">
+              <div class="mktoText" mktoName="Section 5 Ttile" id="sectitle5">
+              <h4>
+                Connect with us
+              </h4>
+              </div> 
+              <div class="mktoForm" id="form3" mktoName="Get News Form" style="display:none;">
+              </div>
+              <div class="mktoText" mktoName="Section 5 Privacy copy" id="privacy-text" style="display:none;">
+                <p>
+                  <span>We’ll never sell your email address. Read more in our <a href="https://www.dashlane.com/privacy">Privacy Policy.</a></span>
+                </p>
+              </div>
+              <div class="social-icon">
+                <div class="mktoImg" mktoName="Facebook Logo" id="logof">
+                 <a href="https://facebook.com/GetDashlane" target="_blank"><img src="https://go.dashlane.com/rs/403-EXY-689/images/facebook.svg" alt="Facebook Logo" width="26.25px" max-width="26.25px" height="26.25px"/></a>
+                </div>
+                <div class="mktoImg" mktoName="Twitter Logo" id="logot">
+                   <a href="https://twitter.com/dashlane" target="_blank"><img src="https://go.dashlane.com/rs/403-EXY-689/images/twitter.svg" alt="Twitter Logo" width="26.25px" max-width="26.25px" height="26.25px"/></a>
+                </div>
+                <div class="mktoImg" mktoName="Youtube Logo" id="logou">
+                   <a href="https://youtube.com/channel/UC29QiP0ZFzBVTnCeLytXXCg" target="_blank"><img src="https://go.dashlane.com/rs/403-EXY-689/images/you-tube.svg" alt="Youtube Logo" width="26.25px" max-width="26.25px" height="26.25px"/></a>
+                </div>
+                <div class="mktoImg" mktoName="Instagram Logo" id="logoi">
+                   <a href="https://instagram.com/dashlane" target="_blank"><img src="https://go.dashlane.com/rs/403-EXY-689/images/instagram.svg" alt="Instagram Logo"  width="26.25px" max-width="26.25px" height="26.25px"/></a>
+                </div>
+              </div>
+          </div>
+        </div>
+          
+          <footer id="footer">
+          <div class="container_inner">
+            <div class="mktoText" mktoName="Footer Copy" id="footer_text">
+            <p>
+              © 2022 Dashlane Inc. All rights reserved.
+              </p>
+              <p>
+                Dashlane and the Dashlane logo are trademarks of Dashlane SAS, registered in the U.S. and other countries.
+              </p>
+            </div>
+            </div>
+          </footer>
+
+                
+      </div>
+    </div>
+ 
+     <script>
+        MktoForms2.whenReady(function (form) {
+            var emailFields = ["Email", "Email_Address_2__c"],
+                emailBannedPatterns = [
+                    /@gmail\./,
+                    /@yahoo\./,
+                    /@hotmail\./,
+                    /@live\./,
+                    /@aol\./,
+                  	/@test\./,
+                    /@outlook\./
+                ],
+                emailBannedMessage = "Please insert a valid work email address.",
+                showMessageNearSubmit = false;
+
+            /* --- NO NEED TO EDIT BELOW THIS LINE! --- */
+
+            form.onValidate(function (nativeValid) {
+                if (!nativeValid) return;
+
+                var formEl = form.getFormElem()[0],
+                    currentValues = form.getValues(),
+                    buttonEl = formEl.querySelector(".mktoButtonWrap"),
+                    highlightEl,
+                    allEmailsAllowed;
+
+                allEmailsAllowed = !emailFields.some(function (fieldName) {
+                    if (isEmailBanned(currentValues[fieldName])) {
+                        return highlightEl = formEl.querySelector("[name='" + fieldName + "']");
+                    }
+                });
+
+                buttonEl.removeAttribute("data-error-message");
+                if (!allEmailsAllowed) {
+                    form.showErrorMessage(emailBannedMessage, MktoForms2.$(highlightEl));
+                    if (showMessageNearSubmit) {
+                        buttonEl.setAttribute("data-error-message", emailBannedMessage);
+                    }
+                }
+
+                form.submittable(allEmailsAllowed);
+            });
+
+            function isEmailBanned(emailAddress) {
+                return emailBannedPatterns.some(function (pattern) {
+                    return new RegExp(pattern.source + "[a-z0-9-.]+$", "i").test(emailAddress);
+                });
+            }
+        });
+    </script>  
+</body>
+
+</html>
