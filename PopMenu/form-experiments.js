@@ -104,8 +104,12 @@ MktoForms2.whenReady(function(form) {
                     return;
                 }
                 fsaatSet(row, e.target.getAttribute("data-dir"));
+
             }
+
         });
+
+
 
         dynableSheet.insertRule(
             [

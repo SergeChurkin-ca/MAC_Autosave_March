@@ -17,3 +17,17 @@ function removeLastBtn() {
 removeLastBtn()
 
 // clean up please wait message
+
+
+
+// now do validation to prevent click next
+/* 
+what's happening:
+
+on click changes display value of next row only if all previous values are !== ''
+
+
+
+*/
+
+Array.from(document.querySelectorAll('input')).map(x => x.value)
