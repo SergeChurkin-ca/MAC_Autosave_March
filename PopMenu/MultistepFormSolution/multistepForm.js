@@ -41,10 +41,6 @@ var userConfig = {
             message: "This field is required."
         },
         {
-            name: "State",
-            message: "This field is required."
-        },
-        {
             name: "Website",
             message: "This field is required."
         }

@@ -1,0 +1,15 @@
+{
+    "name": "websearch--with-json",
+    "version": "1.0.0",
+    "main": "fiddling-with-json.js",
+    "scripts": {
+        "start": "npm run build && npm run dev && npm run open",
+        "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "http-server": "^14.1.0"
+    }
+}
