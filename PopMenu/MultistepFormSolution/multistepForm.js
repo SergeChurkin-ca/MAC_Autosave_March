@@ -52,6 +52,8 @@ MktoForms2.whenReady(function(form) {
 
     var arrayify = getSelection.call.bind([].slice);
 
+
+
     var fieldRowStor = ".mktoForm > .mktoFormRow",
         buttonRowStor = ".mktoForm > .mktoButtonRow",
         buttonStor = ".mktoButtonRow .mktoButton",
@@ -164,6 +166,12 @@ MktoForms2.whenReady(function(form) {
     }
 
     function isCustomValid(native, currentStep) {
+
+        let emailValue = document.getElementById('Email')
+
+        //validate email format
+        const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
         form.submittable(false);
 
         var currentStep = currentStep || formEl,
@@ -171,8 +179,10 @@ MktoForms2.whenReady(function(form) {
 
         var currentUnfilled = userConfig.requiredFields
             .filter(function(fieldDesc) {
-                return currentStep.contains(fieldDesc.refEl) && (!currentValues[fieldDesc.name] || (fieldDesc.refEl.type == "checkbox" && currentValues[fieldDesc.name] == "no"));
+                return currentStep.contains(fieldDesc.refEl) && (!currentValues[fieldDesc.name] || (fieldDesc.refEl.type == "checkbox" && currentValues[fieldDesc.name] == "no") || (emailValue.getAttribute("aria-invalid", "true") == "true") || (!emailValue.value.match(res) && emailValue.value !== ''));
+
             });
+
 
         if (currentUnfilled.length) {
             form.showErrorMessage(currentUnfilled[0].message, MktoForms2.$(currentUnfilled[0].refEl));
@@ -181,6 +191,7 @@ MktoForms2.whenReady(function(form) {
             form.submittable(true);
             return true;
         }
+
     }
 
 

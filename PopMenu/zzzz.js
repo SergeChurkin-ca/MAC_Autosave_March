@@ -1,33 +1,13 @@
-for (let i = 0; i < document.getElementsByClassName('nav-btn-next').length; i++) {
-    let cloned = document.getElementsByClassName('nav-btn-next')[i].cloneNode(true)
-    cloned.classList.add('cloned-btn-next')
-    cloned.style = "float: right;"
-    document.getElementsByClassName('mktoButtonWrap')[i].appendChild(cloned)
-
-    Array.from(document.querySelectorAll('.nav-btn-prev')).map(x => x.innerText = '')
-    Array.from(document.querySelectorAll('.cloned-btn-next')).map(x => x.innerText = '')
-}
-
-
-function removeLastBtn() {
-    let numRows = Array.from(document.querySelectorAll('.mktoButtonRow')).length
-    Array.from(document.querySelectorAll('.mktoButtonRow'))[numRows - 1].classList.add('lastRow')
-}
-
-removeLastBtn()
-
-// clean up please wait message
+let emailValue = document.getElementById('Email')
+const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+emailValue.value.match(res) !== null
 
 
 
-// now do validation to prevent click next
 /* 
-what's happening:
 
-on click changes display value of next row only if all previous values are !== ''
+how i get that email value not make pass?
 
-
-
+only if email value has something wrong
+or only if it ==== than if filters out
 */
-
-Array.from(document.querySelectorAll('input')).map(x => x.value)
