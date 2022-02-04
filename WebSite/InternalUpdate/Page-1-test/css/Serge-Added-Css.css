@@ -1,0 +1,72 @@
+    /* logo section */
+    
+    #logos-sec ul {
+        display: flex;
+        flex-direction: row;
+        margin: 25px 50px;
+        padding: 0;
+        justify-content: space-between;
+    }
+    
+    #logos-sec ul li {
+        width: 25%;
+        padding: 20px;
+        margin-bottom: 10px;
+        min-width: 50px;
+    }
+    
+    #logos-sec li p {
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .logos-gallery li img {
+        width: 85%;
+    }
+    
+    .logos-gallery li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* -- end of logo section */
+    /* media queries */
+    
+    @media screen and (min-device-width: 1024px) and (max-device-width: 1200px) {
+        #logos-sec ul li:last-child {
+            float: none;
+        }
+        #logos-sec ul {
+            text-align: center;
+        }
+    }
+    
+    @media only screen and (max-width: 991px) {
+        #logos-sec ul li {
+            margin-right: 3%;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        #logos-sec ul {
+            text-align: center;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        #logos-sec ul {
+            flex-wrap: wrap;
+        }
+        #logos-sec ul li {
+            width: 40%;
+        }
+    }
+    
+    @media only screen and (max-width: 448px) {
+        #logos-sec ul li {
+            width: 100%;
+        }
+    }
