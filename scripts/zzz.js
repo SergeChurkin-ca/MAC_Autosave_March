@@ -1,13 +1,9 @@
-/* 3 now implement event listener on change and trigger */
-
-let allarray = Array.from(document.querySelectorAll('input'))
-allarray.map(x => allarray.indexOf(x) == 0 ? x.style.display = "block" : x.style.display = "none")
-
-allarray[0].onchange = handleChange;
-
-function handleChange() {
-    allarray.map(x => x.getAttribute('aria-invalid') == 'true' || allarray.indexOf(x) == 0 || x.value == '' ?
-        x.style.display = 'block' : x.style.display = 'none')
-
-
-}
+(function() {
+    window._zi = { formId: '7308a240-c98a-4510-b6c6-fb5a2fdd26b2', formLoadTimeout: 4000, development: false };
+    var zi = document.createElement('script');
+    zi.type = 'text/javascript';
+    zi.async = true;
+    zi.src = 'https://ws-assets.zoominfo.com/formcomplete.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(zi, s);
+})();
