@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
-    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="http://962-QMP-613.mktoweb.com/rs/962-QMP-613/images/favicon.ico">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="http://236-ETM-200.mktoweb.com/rs/236-ETM-200/images/favicon.ico">
 
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
@@ -80,7 +80,7 @@
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
     <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="250">
-    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="22">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="35">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
 
@@ -91,7 +91,7 @@
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
     <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="40">
-    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
+    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="40">
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
 
@@ -187,7 +187,7 @@
       }
       .btn a:hover, .btn a:focus {
         background: ${btnhoverbackground};
-        border: 1px solid ${btnbgclr};
+        border: 2px solid ${btnbgclr};
         color: ${btnbgclr};
 
       }
@@ -296,6 +296,7 @@
       #freetext h1 {
         color: ${freeTextHeaderColor} !important;
         font-size: ${freeTextH1size}px;
+        font-weight: 400;
       }
 
       #freetext p,
@@ -306,6 +307,7 @@
 
       #formlefttext h2 {
         color: ${formSectionHeaderColor} !important;
+        font-weight: 400;
       }
 
       #formsection p,
@@ -374,7 +376,8 @@
       }
       .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
         min-height:25px !important;
-        height:40px !important;
+        height: unset !important;
+        letter-spacing: unset !important;
       }
       .mktoForm textarea.mktoField{
         height:70px !important;
@@ -436,10 +439,9 @@
       }
       .mktoButtonWrap button.mktoButton {
         background: ${formButtonColor} !important;
-        border: ${formButtonColor} !important;
+        border: solid 2px ${formButtonColor} !important;
         color:${btnfontclr};
         text-align: center !important;
-        letter-spacing: 0.1em !important;
         font-size:${btnfontsize}px !important;
         -moz-border-radius: ${btnborderrds}px !important;
         -webkit-border-radius: ${btnborderrds}px !important;
@@ -447,6 +449,7 @@
         opacity:1;
         transition:300ms opacity;
         box-shadow: none !important;
+        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
       }
 
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
@@ -459,17 +462,12 @@
 
       .mktoForm button.mktoButton:hover, .mktoForm button.mktoButton:focus{
         opacity:${btnhvropacity};
-        color: ${formButtonHoverColor} !important;
-        background-color: ${formButtonHoverBGColor} !important;
+        color: ${formButtonColor} !important;
         background: ${formButtonHoverBGColor} !important;
-        border: solid 3px ${formButtonBorder};
+        border: solid 3px ${formButtonColor};
       }
 
-      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
-        color: ${formButtonHoverColor} !important;
-        background-color: ${formButtonHoverBGColor} !important;
-        background: ${formButtonHoverBGColor} !important;
-      }
+     
 
       .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
         margin-left: 1.5em;
@@ -521,9 +519,7 @@
       #footer .icons-container img{
         width:${footericonswidth}px;
       }
-      #footer .icons-container #footer-icon3 {
-        width: calc(${footericonswidth}px - 10px);
-      }
+     
       #footer .icons-container {
         justify-content: right;
         display: flex;
@@ -533,9 +529,11 @@
         color:${footerfontclr};
         font-size:${footerfontsize}px;
         font-weight: 700;
+        margin: 0;
       }
       #footer a:hover, #footer a:focus {
         color: ${footerhoverclr};
+        text-decoration: underline;
       }
       #footertext2 ul, #footericons ul {
         display: flex;
@@ -543,17 +541,23 @@
         gap: 1rem;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        
       }
-
+        #footertext2 ul {
+            flex-direction: column;
+            align-items: left !important;
+            gap: 0;
+        }
+        #footertext2 li {
+            height: 1.5rem;
+        }
       #footer ul {
-        margin: 0 auto !important;
+        margin: 0 1rem 0 1rem !important;
       }
       #footer ul li {
         list-style: none;
         display: flex;
-        height: 3rem;
-        align-items: center;
+        
       }
 
 
@@ -584,20 +588,22 @@
         #formsection .form-container{
           padding:20px;
         }
-        .row1 {
+        #footer .row1, #footer #footertext2 {
           justify-content: center !important;
+          flex-direction: column;
+          align-items: center;
         }
         #footer .logo-container {
           margin-bottom: 1rem !important;
-        }
-        .row1 p {
           text-align: center;
         }
+    
         #footertext2 li {
           height: 1rem !important;
+          justify-content: center;
         }
         #footer .icons-container {
-          marign-top: 1rem;
+          margin-top: 1rem;
         }
       }
 
@@ -710,10 +716,10 @@
              
             </div>
              <div>
-            2022 &copy; All Rights Reserved. Solis Mammography<br>
+            <p>2022 &copy; All Rights Reserved. Solis Mammography<br>
                 15601 Dallas Parkway, Suite 300<br>
                     Addison, Texas 75001<br>
-                <a href="tel:+1-833-795-0942">833-795-0942</a> | <a href="mailto:email@email.com"></a>email@email.com</div>
+                <a href="tel:+1-833-795-0942">833-795-0942</a> | <a href="mailto:email@email.com"></a>email@email.com</p></div>
              </div>
 
 
