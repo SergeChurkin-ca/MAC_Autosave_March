@@ -87,14 +87,6 @@ a:hover {
     max-width: 241px;
 }
 
-#topheader .navbar-inverse {
-    display: inline-block;
-    background-color: transparent;
-    border-color: transparent;
-    margin-bottom: 0px;
-    border: 0px;
-}
-
 .logo {
     display: inline-block;
     position: absolute;
@@ -105,6 +97,10 @@ a:hover {
 .navbar-inverse .navbar-nav>.active>a:hover {
     background-color: #fff !important;
     color: #f15a24 !important;
+}
+
+.navbar-brand {
+    padding: 0 !important;
 }
 
 #topheader .navbar-nav>li>a {
@@ -240,9 +236,13 @@ a:hover {
     padding-right: 222px;
 }
 
-.image {
+.banner .image {
     margin-left: -74%;
     margin-top: 35px;
+}
+
+#bannerhero .col-md-3 {
+    text-align: center;
 }
 
 #logos-sec {
@@ -280,6 +280,7 @@ left: 120px;  margin: 10px auto;  position: absolute; }*/
     background: linear-gradient( 163deg, #f15a24 0%, #f15a24 50%, #f9b348 50.05%, #f9b348 100%);
     padding-top: 70px;
     padding-bottom: 70px;
+    overflow: hidden;
 }
 
 #bannerhero h1 {
@@ -309,6 +310,10 @@ left: 120px;  margin: 10px auto;  position: absolute; }*/
     line-height: 31px;
 }
 
+#bannerhero span b {
+    white-space: nowrap;
+}
+
 #bannerhero button {
     background-color: #124559;
     width: 250px;
@@ -325,6 +330,7 @@ left: 120px;  margin: 10px auto;  position: absolute; }*/
 .banner_container {
     max-width: 700px;
     width: 100%;
+    max-width: 90%;
 }
 
 .colr-black {
@@ -2761,6 +2767,10 @@ input[type="submit"] {
 
 #form-sec .common-heading {
     margin: 58px 0 65px;
+}
+
+.mktoForm {
+    max-width: 95% !important;
 }
 
 #form-sec input[type="text"],

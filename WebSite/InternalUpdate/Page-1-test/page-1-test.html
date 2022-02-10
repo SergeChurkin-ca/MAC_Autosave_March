@@ -1,5 +1,5 @@
 <!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" /> -->
     <link rel="stylesheet" type="text/css" href="rfp_css/nav-dropdown.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="icon" href="/images/favicon.png" sizes="32x32">
@@ -210,176 +210,82 @@
 <body>
     <header id="topheader">
         <div class="container">
-
-            <!-- 
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid nopadding">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+            <div class="col-md-12 nopadding">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid nopadding">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
                             </button>
-
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn" href="about-us.html">About Us</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="https://www.marketing-automation.ca/our-team/">Meet Our Team</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn">Products</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="https://www.marketing-automation.ca/marketo-master-email-template/">Marketo Master
-                        Email Template</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li class="dropdown active"><a class="nav-link dropdown-toggle" href="what-we-do.html">What We Do</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown">
-                                        <a class="nav-link dropdown-toggle dropbtn" href="marketo.html">Marketo</a>
-                                        <ul class="dropdown-menu" style="position: relative; background-color: #f0f0f0; box-shadow: 0 0px 0px rgba(0,0,0,0); min-width: 100%">
-                                            <li><a href="strategic_consulting.html " style="font-weight: normal;">Strategic Consulting</a>
-                                            </li>
-                                            <li><a href="custom_marketo_email_landingpage_templates.html" style="font-weight: normal;">Custom Marketo Email & Landing Page Templates</a></li>
-                                            <li><a href="custom_tailored_training.html" style="font-weight: normal;">Custom Tailored
-                            Training</a></li>
-                                            <li><a href="platform_integrations.html" style="font-weight: normal;">Platform Integrations</a>
-                                            </li>
-                                            <li><a href="marketo_system_audits.html" style="font-weight: normal;">Marketo System Audits</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a class="nav-link dropdown-toggle dropbtn" href="hubspot.html">Hubspot</a>
-                                        <ul class="dropdown-menu" style="position: relative; background-color: #f0f0f0; box-shadow: 0 0px 0px rgba(0,0,0,0); min-width: 100%">
-                                            <li><a href="hubspot_strategic_consulting.html " style="font-weight: normal;">Strategic
-                            Consulting</a></li>
-                                            <li><a href="custom_hubspot_email_landingpage_templates.html" style="font-weight: normal;">Custom Hubspot Email & Landing Page Templates</a></li>
-                                            <li><a href="hubspot_custom_tailored_training.html" style="font-weight: normal;">Custom Tailored
-                            Training</a></li>
-                                            <li><a href="hubspot_platform_integrations.html" style="font-weight: normal;">Platform
-                            Integrations</a></li>
-                                            <li><a href="hubspot_system_audits.html" style="font-weight: normal;">Hubspot System Audits</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="adobe-marketing-cloud/index.html">Adobe Marketing Cloud</a></li>
-                                    <li><a href="MACpack/index.html">MACpack Services</a></li>
-                                    <li><a href="marketing-cloud.html">Salesforce Marketing Cloud</a></li>
-                                    <li><a href="pardot.html">Salesforce Pardot</a></li>
-                                    <li><a href="crm-consulting-canada.html">Salesforce Sales Cloud</a></li>
-                                    <li><a href="what-we-do.html">Eloqua</a></li>
-                                    <li><a href="rfp.html">RFP Assistance</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="our-work.html">Our Work</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn" href="contact-us.html">Contact Us</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="careers.html">Careers</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <a class="navbar-brand p0 pull-righth" ref="index.html"><img src="images/MAC-Logo.svg" class="maclogo" alt="Marketing Automation Canada Logo - Marketing Automation Consulting" /></a>
-                    </div>
-
-                </div>
-                <div class="logo">
-
-                </div>
-            </nav> -->
-
-
-
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid nopadding">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#myNavbar">
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                    </div>
-
-                    <a class="navbar-brand pull-right navbar-right" ref="index.html">
-                        <img src="images/MAC-Logo.svg" class="maclogo" alt="Marketing Automation Canada Logo - Marketing Automation Consulting" />
-                    </a>
-
-                    <nav class="collapse navbar-collapse navbar-left" id="myNavbar" role="navigation">
-                        <ul class="nav navbar-nav">
-                            <ul class="dropdown-menu">
-                                <li><a href="https://www.marketing-automation.ca/our-team/">Meet Our Team</a></li>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn" href="about-us.html">About Us</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://www.marketing-automation.ca/our-team/">Meet Our Team</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn">Products</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://www.marketing-automation.ca/marketo-master-email-template/">Marketo Master Email Template</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li class="dropdown active"><a class="nav-link dropdown-toggle" href="what-we-do.html">What We Do</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown">
+                                            <a class="nav-link dropdown-toggle dropbtn" href="marketo.html">Marketo</a>
+                                            <ul class="dropdown-menu" style="position: relative; background-color: #f0f0f0; box-shadow: 0 0px 0px rgba(0,0,0,0); min-width: 100%">
+                                                <li><a href="strategic_consulting.html " style="font-weight: normal;">Strategic Consulting</a>
+                                                </li>
+                                                <li><a href="custom_marketo_email_landingpage_templates.html" style="font-weight: normal;">Custom Marketo Email & Landing Page Templates</a></li>
+                                                <li><a href="custom_tailored_training.html" style="font-weight: normal;">Custom Tailored Training</a></li>
+                                                <li><a href="platform_integrations.html" style="font-weight: normal;">Platform Integrations</a>
+                                                </li>
+                                                <li><a href="marketo_system_audits.html" style="font-weight: normal;">Marketo System Audits</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="nav-link dropdown-toggle dropbtn" href="hubspot.html">Hubspot</a>
+                                            <ul class="dropdown-menu" style="position: relative; background-color: #f0f0f0; box-shadow: 0 0px 0px rgba(0,0,0,0); min-width: 100%">
+                                                <li><a href="hubspot_strategic_consulting.html " style="font-weight: normal;">Strategic Consulting</a></li>
+                                                <li><a href="custom_hubspot_email_landingpage_templates.html" style="font-weight: normal;">Custom Hubspot Email & Landing Page Templates</a></li>
+                                                <li><a href="hubspot_custom_tailored_training.html" style="font-weight: normal;">Custom Tailored Training</a></li>
+                                                <li><a href="hubspot_platform_integrations.html" style="font-weight: normal;">Platform Integrations</a></li>
+                                                <li><a href="hubspot_system_audits.html" style="font-weight: normal;">Hubspot System Audits</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="adobe-marketing-cloud/index.html">Adobe Marketing Cloud</a></li>
+                                        <li><a href="MACpack/index.html">MACpack Services</a></li>
+                                        <li><a href="marketing-cloud.html">Salesforce Marketing Cloud</a></li>
+                                        <li><a href="pardot.html">Salesforce Pardot</a></li>
+                                        <li><a href="crm-consulting-canada.html">Salesforce Sales Cloud</a></li>
+                                        <li><a href="what-we-do.html">Eloqua</a></li>
+                                        <li><a href="rfp.html">RFP Assistance</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="our-work.html">Our Work</a></li>
+                                <li><a href="resources.html">Resources</a></li>
+                                <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn" href="contact-us.html">Contact Us</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="careers.html">Careers</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
-                            </li>
-                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn">Products</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="https://www.marketing-automation.ca/marketo-master-email-template/">Marketo Master
-                                    Email Template</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li class="dropdown active"><a class="nav-link dropdown-toggle" href="what-we-do.html">What We Do</a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown">
-                                        <a class="nav-link dropdown-toggle dropbtn" href="marketo.html">Marketo</a>
-                                        <ul class="dropdown-menu" style="position: relative; background-color: #f0f0f0; box-shadow: 0 0px 0px rgba(0,0,0,0); min-width: 100%">
-                                            <li><a href="strategic_consulting.html " style="font-weight: normal;">Strategic Consulting</a>
-                                            </li>
-                                            <li><a href="custom_marketo_email_landingpage_templates.html" style="font-weight: normal;">Custom Marketo Email & Landing Page Templates</a></li>
-                                            <li><a href="custom_tailored_training.html" style="font-weight: normal;">Custom Tailored
-                                        Training</a></li>
-                                            <li><a href="platform_integrations.html" style="font-weight: normal;">Platform Integrations</a>
-                                            </li>
-                                            <li><a href="marketo_system_audits.html" style="font-weight: normal;">Marketo System Audits</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a class="nav-link dropdown-toggle dropbtn" href="hubspot.html">Hubspot</a>
-                                        <ul class="dropdown-menu" style="position: relative; background-color: #f0f0f0; box-shadow: 0 0px 0px rgba(0,0,0,0); min-width: 100%">
-                                            <li><a href="hubspot_strategic_consulting.html " style="font-weight: normal;">Strategic
-                                        Consulting</a></li>
-                                            <li><a href="custom_hubspot_email_landingpage_templates.html" style="font-weight: normal;">Custom Hubspot Email & Landing Page Templates</a></li>
-                                            <li><a href="hubspot_custom_tailored_training.html" style="font-weight: normal;">Custom Tailored
-                                        Training</a></li>
-                                            <li><a href="hubspot_platform_integrations.html" style="font-weight: normal;">Platform
-                                        Integrations</a></li>
-                                            <li><a href="hubspot_system_audits.html" style="font-weight: normal;">Hubspot System Audits</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="adobe-marketing-cloud/index.html">Adobe Marketing Cloud</a></li>
-                                    <li><a href="MACpack/index.html">MACpack Services</a></li>
-                                    <li><a href="marketing-cloud.html">Salesforce Marketing Cloud</a></li>
-                                    <li><a href="pardot.html">Salesforce Pardot</a></li>
-                                    <li><a href="crm-consulting-canada.html">Salesforce Sales Cloud</a></li>
-                                    <li><a href="what-we-do.html">Eloqua</a></li>
-                                    <li><a href="rfp.html">RFP Assistance</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="our-work.html">Our Work</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn" href="contact-us.html">Contact Us</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="careers.html">Careers</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+
+                        </div>
+                    </div>
+                </nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/MAC-Logo.svg" class="maclogo" alt="Marketing Automation Canada Logo - Marketing Automation Consulting" /></a>
                 </div>
-        </div>
-        </nav>
-
-
-
-
-
+            </div>
         </div>
 
     </header>
@@ -388,16 +294,23 @@
     <div id="bannerhero">
         <div class="container">
             <div class="banner_container">
-                <h1>
-                    <font>Adobe Marketing Cloud
-                        <font>Experts</font>
-                </h1>
-                <span>Available by-the-hour, with no minimums or retainers. <b>Only $130 / hr.</b>
-          </span>
-                <div class="adobeBadgeImg">
-                    <img src="https://github.com/MarketingAutomationCanada/adobePage/blob/master/images/Adobe_Solution_Partner_Gold_white.png?raw=true" alt="">
+
+                <div class="col-md-9">
+                    <h1>
+                        <font>Adobe Marketing Cloud Experts</font>
+                    </h1>
+                    <span>Available by-the-hour, with no minimums or retainers. <b>Only $130 / hr.</b></span>
+                    <div class="adobeBadgeImg">
+                        <img src="https://github.com/MarketingAutomationCanada/adobePage/blob/master/images/Adobe_Solution_Partner_Gold_white.png?raw=true" alt="Adobe Solutions Partner Badge">
+                    </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="image"><img src="images/MAC-Hero-Graphic.png" alt="Marketing Automation Consulting"></div>
+
+                </div>
+
             </div>
+
         </div>
     </div>
     <!-- banner ends -->
@@ -407,11 +320,7 @@
             <div class="common-heading platformHeading">
                 <h2>platforms we service</h2>
             </div>
-            <!-- <div class="adobeBadge">
-                <div class="adobeBadgeImg">
-                  <img src="images/Adobe_Solution_Partner_badge_Gold.png" alt="">
-                </div>
-              </div> -->
+
             <ul class="logos-gallery">
                 <li>
                     <img src="images/Adobe_Analytics_logo_SCREEN_RGB_1024px.png" alt="Adobe Analytics Cloud " />
@@ -564,8 +473,8 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
                                             <h3>MAC team has managed 95% of all of our marketing automation initiatives. They are incredibly trustworthy and have your best interests in mind.</h3>
                                             <p>
                                                 <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3746716" target="_blank">
-                          CONTINUE READING &rarr;
-                        </a>
+    CONTINUE READING &rarr;
+</a>
                                             </p><br>
 
 
@@ -599,8 +508,8 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
                                                 questions as I worked to develop other aspects of the program.</h3>
                                             <p>
                                                 <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3711525" target="_blank">
-                          CONTINUE READING &rarr;
-                        </a>
+    CONTINUE READING &rarr;
+</a>
                                             </p><br>
                                             <br>
                                             <p><b>Bailey D</b><br>Senior Marketing Coordinator<br>Higher Education</p>
@@ -634,8 +543,8 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
                                             </h3>
                                             <p>
                                                 <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3788532" target="_blank">
-                          CONTINUE READING &rarr;
-                        </a>
+    CONTINUE READING &rarr;
+</a>
                                             </p><br>
 
                                             <br>
@@ -669,8 +578,8 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
                                                 us on the platform.</h3>
                                             <p>
                                                 <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3825863" target="_blank">
-                          CONTINUE READING &rarr;
-                        </a>
+    CONTINUE READING &rarr;
+</a>
                                             </p>
                                             <br><br>
                                             <p><b>Emma C</b><br>General Manager Marketing</p>
@@ -703,8 +612,8 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
                                                 retainer required.</h3>
                                             <p>
                                                 <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3786565" target="_blank">
-                          CONTINUE READING &rarr;
-                        </a>
+    CONTINUE READING &rarr;
+</a>
                                             </p>
                                             <br>
                                             <br>
@@ -738,8 +647,8 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
                                                 drafted a very detailed project management timeline and communicated with many moving parts/departments internally. And we had fun while we completed the project.</h3>
                                             <p>
                                                 <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3724263" target="_blank">
-                          CONTINUE READING &rarr;
-                        </a>
+    CONTINUE READING &rarr;
+</a>
                                             </p>
 
                                             <br><br>
@@ -776,18 +685,12 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
             </div>
         </div>
 
-
-
-
-
-
-
     </section>
     <section id="seeall" style="background: #f15a25">
         <div class="container">
             <div class="row">
                 <a href="https://www.g2.com/products/marketing-automation-canada/reviews#reviews" target="_blank"><button
-            type="Learn More">See all our reviews on G2 Crowd</button></a>
+type="Learn More">See all our reviews on G2 Crowd</button></a>
             </div>
         </div>
     </section>
@@ -939,8 +842,8 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
     <div class="slanted-bottom">
         <div class="inner-div">
             <svg class="triangle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 100" style="enable-background:new 0 0 800 100;" xml:space="preserve">
-        <polyline id="XMLID_2_" class="st0" points="0,124.5 0,0 600,130 " />
-      </svg>
+<polyline id="XMLID_2_" class="st0" points="0,124.5 0,0 600,130 " />
+</svg>
         </div>
     </div>
     <script type="text/javascript">
@@ -954,9 +857,9 @@ color: #124559;">Staff Augmentation & White Label Services</h3>
         })();
     </script>
     <noscript>
-    <img height="1" width="1" style="display:none;" alt=""
-      src="https://dc.ads.linkedin.com/collect/?pid=97516&fmt=gif" />
-  </noscript>
+<img height="1" width="1" style="display:none;" alt=""
+src="https://dc.ads.linkedin.com/collect/?pid=97516&fmt=gif" />
+</noscript>
     <script>
         jQuery(function($) {
             if ($(window).width() > 769) {
