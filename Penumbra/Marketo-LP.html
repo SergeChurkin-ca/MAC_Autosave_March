@@ -9,13 +9,36 @@
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
     <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/favicon.ico">
 
-
+    <!-- Logo -->
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="180">
+    <meta class="mktoBoolean" id="show-banner" mktoName="Show Banner" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" mktoName="Logo tom margin" id="logo-top-margin" default="1">
+    <meta class="mktoString" mktoName="Logo bottom margin" id="logo-bottom-margin" default="1">
+    
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily-headline" default="Poppins">
-    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Source Sans Pro:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="Source Sans Pro">
-
+    <meta class="mktoString" mktoName="Google Font - Family Headline" id="fontfamily-headline" default="Poppins">
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport2" default="@import url('https://fonts.googleapis.com/css2?family=Source Sans Pro:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family Primary" id="fontfamily" default="Source Sans Pro">
+        
+    <!-- Font Size -->
+    <meta class="mktoString" mktoName="H1 font size px" id="h1-fontsize" default="22">
+    <meta class="mktoString" mktoName="H2 font size px" id="h2-fontsize" default="18">
+    <meta class="mktoString" mktoName="H3 font size px" id="h3-fontsize" default="14">
+    <meta class="mktoString" mktoName="P font size px" id="p-fontsize" default="14">
+    <meta class="mktoString" mktoName="article font size px" id="article-fontsize" default="14">
+    <meta class="mktoString" mktoName="asize font size px" id="aside-fontsize" default="12">
+    <meta class="mktoString" mktoName="footer font size large px" id="footer-fontsize" default="18">
+    <meta class="mktoString" mktoName="footer font size small px" id="footer-smfontsize" default="8">
+        
+    <!-- Colors -->
+    <meta class="mktoColor" id="headline-text-color" mktoName="Headline text color" default="#0047bb">        
+    <meta class="mktoColor" id="p-text-color" mktoName="Paragraph text color" default="#141414">        
+    <meta class="mktoColor" id="footer-txt-color" mktoName="Footer text color" default="#000000">        
+    <meta class="mktoColor" id="button-bg-color" mktoName="Button Background" default="#231f20">        
+    <meta class="mktoColor" id="button-hover-color" mktoName="Button Hover background" default="#231f20">        
+    <meta class="mktoColor" id="button-hover-brb-color" mktoName="Button Border on hover" default="#231f20">        
+                                                    
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
     <link rel="stylesheet" href="style.css">
@@ -47,41 +70,41 @@
             -moz-box-sizing: border-box;
             box-sizing: border-box;
             font-family: Helvetica, sans-serif;
-            font-family: 'Source Sans Pro', sans-serif !important;
+            font-family: ${fontfamily}, sans-serif !important;
         }
         
         h1,
         h2,
         aside,
         aside button a {
-            font-family: 'Poppins', sans-serif !important;
+            font-family: ${fontfamily-headline}, sans-serif !important;
         }
         
         h1 {
-            font-size: 22px;
+            font-size: ${h1-fontsize}px;
         }
         
         h2 {
-            font-size: 18px
+            font-size: ${h2-fontsize}px;
         }
         
         h3 {
-            font-size: 14px;
+            font-size: ${h3-fontsize}px;
         }
         
         aside p {
-            font-size: 12px;
+            font-size: ${aside-fontsize}px;
         }
         
         p,
         li {
             line-height: 25px;
-            color: #141414;
-            font-size: 14px;
+            color: ${p-text-color};
+            font-size: ${p-fontsize}px;
         }
         
         article li {
-            font-size: 13px;
+            font-size: ${article-fontsize}px;
         }
         
         .statement br {
@@ -89,13 +112,13 @@
         }
         
         footer .row-1 p {
-            color: #000000;
+            color: ${footer-txt-color};
         }
         
         h1,
         h2,
         article li::marker {
-            color: #0047bb;
+            color: ${headline-text-color}
         }
         
         aside p,
@@ -113,12 +136,12 @@
         
         footer .row-2 p {
             color: #9aa1a4;
-            font-size: 18px;
+            font-size: ${footer-fontsize}px;
             letter-spacing: 0.25rem;
         }
         
         footer .row-4 p {
-            font-size: 8px;
+            font-size: ${footer-smfontsize}px;
             line-height: 12px;
             text-align: center;
         }
@@ -129,15 +152,15 @@
         .logo-container {
             display: flex;
             justify-content: center;
-            width: 180px;
-            margin: 0 auto;
-            margin: 1rem auto;
+            width: ${toplogowidth}px;
+            
+            margin: ${logo-top-margin}rem auto ${logo-bottom-margin}rem;
         }
         /* -- end of logo */
         /* banner */
         
         .banner {
-            display: flex;
+            display: ${show-banner};
             width: fit-content;
             margin-bottom: 2rem;
         }
@@ -239,17 +262,19 @@
         /* aside button */
         
         aside button {
-            background-color: #231f20;
+            background-color: ${button-bg-color};
             padding: 0.5rem 1.5rem;
             border-radius: 25px;
             margin-top: 0.7rem;
-            border: solid 2px #231f20;
+            border: solid 2px $ ${button-bg-color};
         }
         
         aside button:hover,
         aside button:focus {
             border: solid 2px #ffffff;
             transition: all 0.1s;
+             background-color: ${button-hover-color};
+             border: solid 2px $ ${button-hover-brb-color};
         }
         
         aside button:active {
@@ -263,6 +288,7 @@
         
         footer {
             text-align: center;
+            margin-bottom: 2rem;
         }
         
         footer .row-1 p {
@@ -492,7 +518,7 @@
                         empower possibilities &trade;
                     </p>
                 </div>
-                <div class="mktoText row-3" id="row-3" mktoName="footer icons">
+                <div class="mktoText row-3 icons-container" id="row-3" mktoName="footer icons">
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/REALSystemVR/"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/facebook-violet.png" alt=""></a>
