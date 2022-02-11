@@ -84,9 +84,6 @@
     .common-heading h2:before {
         width: 17%;
     }
-    #logos-sec ul li {
-        margin-right: 4%;
-    }
     #banner h1 {
         font-size: 3vw;
     }
@@ -255,9 +252,6 @@
     }
     .slanted-bottom:after {
         height: 51px;
-    }
-    #logos-sec ul li {
-        margin-right: 3%;
     }
     .title-box:before {
         left: 14%;
@@ -531,8 +525,7 @@
         text-align: center;
     }
     #logos-sec ul li {
-        width: auto;
-        margin-right: 2%;
+        margin: 0 auto;
         margin-bottom: 10px;
     }
     #logos-sec ul li:last-child {
@@ -892,6 +885,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+    #logos-sec ul li {
+        width: 50%;
+    }
     .left-footer-sec,
     .right-footer-sec {
         width: 100%;
@@ -960,9 +956,6 @@
     .about-us-title h1 {
         line-height: 45px;
     }
-    #logos-sec ul li {
-        margin: 0px 8px;
-    }
     #logos-sec ul li img {
         width: 100%;
     }
@@ -988,6 +981,12 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+    }
+    .mktoForm input[type="email"],
+    .mktoForm input[type="text"],
+    .mktoForm textarea.mktoField {
+        height: 50px !important;
+        margin-top: 20px !important;
     }
 }
 
@@ -1141,9 +1140,6 @@
 }
 
 @media only screen and (max-width: 340px) {
-    #logos-sec ul li {
-        margin: 0 5px;
-    }
     #filter-gallery {
         background-color: #54bcab !important;
         margin-top: -71%;

@@ -1115,12 +1115,25 @@ left: 120px;  margin: 10px auto;  position: absolute; }*/
     margin: 25px 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #logos-sec ul li {
     display: inline-block;
-    margin: 0 23px;
-    text-align: center
+    text-align: center;
+    min-width: 50px;
+    width: 25%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+
+.logos-gallery li img {
+    width: 85%;
+    max-width: 200px;
 }
 
 
