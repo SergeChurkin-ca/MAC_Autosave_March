@@ -1,0 +1,119 @@
+.mktoForm {
+    width: 90% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    border: solid 1px red;
+}
+
+.mktoForm .mktoGutter,
+.mktoForm .mktoOffset,
+.mktoForm .mktoAsterix {
+    display: none !important;
+}
+
+.mktoForm input[type=text]::placeholder,
+.mktoForm input[type=url]::placeholder,
+.mktoForm input[type=email]::placeholder,
+.mktoForm input[type=tel]::placeholder,
+.mktoForm input[type=number]::placeholder,
+.mktoForm input[type=date]::placeholder {
+    display: none !important;
+}
+
+.mktoForm input[type=text]::-webkit-input-placeholder {
+    display: none !important;
+}
+
+.mktoForm input[type=text]::-moz-placeholder {
+    display: none !important;
+}
+
+.mktoForm input[type=text]:-ms-input-placeholder {
+    display: none !important;
+}
+
+.mktoForm input[type=text]:-moz-placeholder {
+    display: none !important;
+}
+
+.mktoForm .mktoFormCol {
+    width: 100% !important;
+}
+
+.mktoForm .mktoLabel {
+    white-space: nowrap;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel:after {
+    content: "*";
+    color: #ff5b4a;
+}
+
+.mktoForm .mktoFieldWrap {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm select.mktoField,
+.mktoForm textarea.mktoField,
+.mktoForm .mktoButtonWrap.mktoGlow .mktoButton {
+    box-shadow: none !important;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm select.mktoField,
+.mktoForm textarea.mktoField {
+    width: 100% !important;
+    padding: 5px 5px 0 0;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm input.mktoField.mktoInvalid,
+.mktoForm select.mktoField.mktoInvalid,
+.mktoForm textarea.mktoField.mktoInvalid,
+.mktoForm div.mktoLogicalField.mktoInvalid,
+.mktoForm select.mktoField {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 1rem 0;
+}
+
+mktoForm input[type="text"]:focus,
+.mktoForm input[type="url"]:focus,
+.mktoForm input[type="email"]:focus,
+.mktoForm input[type="tel"]:focus,
+.mktoForm input[type="number"]:focus,
+.mktoForm input[type="date"]:focus,
+.mktoForm select.mktoField:focus,
+.mktoForm textarea.mktoField:focus {
+    outline: 0;
+    border-bottom: 1px solid #000000;
+}
+
+.mktoButtonRow {
+    margin-left: 0 !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoGlow .mktoButton {
+    background-color: #000000;
+    padding: 0.8rem 1rem;
+}
