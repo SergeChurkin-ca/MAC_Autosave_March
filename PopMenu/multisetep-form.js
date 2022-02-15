@@ -24,26 +24,26 @@ var userConfig = {
             name: "Company",
             message: "This field is required."
         },
-        {
-            name: "Greatest_Challenge__c",
-            message: "This field is required."
-        },
-        {
-            name: "Locations__c",
-            message: "This field is required."
-        },
-        {
-            name: "Phone",
-            message: "This field is required."
-        },
+        // {
+        //     name: "Greatest_Challenge__c",
+        //     message: "This field is required."
+        // },
+        // {
+        //     name: "Locations__c",
+        //     message: "This field is required."
+        // },
+        // {
+        //     name: "Phone",
+        //     message: "This field is required."
+        // },
         {
             name: "Country",
             message: "This field is required."
         },
-        {
-            name: "Website",
-            message: "This field is required."
-        }
+        // {
+        //     name: "Website",
+        //     message: "This field is required."
+        // }
     ]
 };
 
@@ -167,13 +167,10 @@ MktoForms2.whenReady(function(form) {
 
     function isCustomValid(native, currentStep) {
 
-        // let emailInvalid = ['x', 'xx', 'xxx']
         let emailValue = document.getElementById('Email')
 
-
+        //validate email format
         const res = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        // res.test(String(emailValue.value).toLowerCase()) ? emailValue.setAttribute("aria-invalid", false) : emailValue.setAttribute("aria-invalid", true)
-        // emailValue.value.match(res)
 
         form.submittable(false);
 

@@ -6,8 +6,5 @@ emailValue.value.match(res) !== null
 
 /* 
 
-how i get that email value not make pass?
-
-only if email value has something wrong
-or only if it ==== than if filters out
+only if equls to wrong 
 */
