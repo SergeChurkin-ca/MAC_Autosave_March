@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
 .mktoForm {
     width: 90% !important;
     max-width: 900px !important;
     margin: 0 auto !important;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .mktoForm .mktoGutter,
@@ -42,6 +44,8 @@
 .mktoForm .mktoLabel {
     white-space: nowrap;
     margin-top: 0.5rem;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 .mktoForm .mktoRequiredField label.mktoLabel:after {
@@ -136,6 +140,7 @@
     background-image: none !important;
     margin-top: 2rem !important;
     border: none !important;
+    font-size: 18px !important;
 }
 
 .mktoForm .mktoButtonWrap.mktoGlow .mktoButton:hover,
