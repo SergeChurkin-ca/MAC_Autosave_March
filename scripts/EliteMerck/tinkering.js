@@ -31,9 +31,9 @@ for (let i = 0; i < selectfieldsnum; i++) {
 
     function myFunction() {
         if (document.querySelectorAll('input[type="checkbox"]')[i].checked == true) {
-            document.querySelectorAll('.select-toggle')[i].style = 'display: flex; gap: 1rem; align-items: center;'
+            document.querySelectorAll('.select-toggle')[i].style = 'visibility: visible; height: unset;'
         } else {
-            document.querySelectorAll('.select-toggle')[i].style = 'display: none;'
+            document.querySelectorAll('.select-toggle')[i].style = 'visibility: hidden;'
         }
     }
 }

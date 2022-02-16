@@ -1,11 +1,27 @@
+.tool-item {
+    align-items: top;
+}
+
+.booklet {
+    width: 100% !important;
+    margin-left: 3rem;
+}
+
+.booklet-info h3 {
+    padding-bottom: 1rem;
+}
+
 .select-toggle {
-    display: none;
-    width: 80%;
+    visibility: hidden;
+    height: 0;
+    width: 90%;
     justify-content: space-between;
+    margin-left: 1rem;
 }
 
 .select-toggle .sc-formfield-label {
-    margin-left: 1rem;
+    margin-left: 4px;
+    margin-bottom: 1rem;
 }
 
 .sc-formfield-label {
@@ -14,13 +30,14 @@
 
 label {
     white-space: nowrap;
+    margin-left: 0 !important;
 }
 
 .smartcapture-controls {
     display: flex;
     margin-top: 3rem;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
     margin: 0;
 }
 
@@ -65,17 +82,20 @@ select {
     padding: 0 !important;
 }
 
-.form-row form .stylingblock-content-wrapper:nth-child(8),
-.form-row form .stylingblock-content-wrapper:nth-child(9) {
+.form-row form .stylingblock-content-wrapper:nth-child(4),
+.form-row form .stylingblock-content-wrapper:nth-child(5) {
     width: 48%;
+    min-width: unset !important;
+    display: inline-table;
 }
 
-.form-row form .stylingblock-content-wrapper:nth-child(8) {
+.form-row form .stylingblock-content-wrapper:nth-child(4) {
     margin-right: 4%;
     margin-top: 2rem;
 }
 
-.form-row form .stylingblock-content-wrapper:nth-child(10) {
+.form-row form .stylingblock-content-wrapper:nth-child(6),
+.form-row form .stylingblock-content-wrapper:nth-child(8) {
     width: 100%;
 }
 
@@ -96,8 +116,16 @@ select {
 }
 
 @media (max-width: 800px) {
+    form {
+        width: 95% !important;
+        margin: 0;
+    }
     .tool-item {
         flex-direction: row !important;
+    }
+    .smartcapture-controls {
+        align-items: flex-start;
+        justify-content: space-between;
     }
     .select-toggle {
         flex-wrap: wrap;
@@ -114,17 +142,16 @@ select {
     }
 }
 
-@media (max-width: 768px) {
-    .smartcapture-controls {
-        align-items: flex-start;
-        justify-content: space-between;
+@media (max-width: 730px) {
+    .form-row form .stylingblock-content-wrapper:nth-child(2) .stylingblock-content-wrapper,
+    .form-row form .stylingblock-content-wrapper:nth-child(3) .stylingblock-content-wrapper {
+        margin: 0 auto;
     }
-}
-
-@media (max-width: 540px) {
-    form {
-        width: 95% !important;
-        margin: 0;
+    .tool-item {
+        flex-direction: column !important;
+    }
+    .booklet {
+        margin: 0 auto;
     }
     .smartcapture-controls {
         flex-direction: column;
