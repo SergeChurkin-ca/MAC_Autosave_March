@@ -24,26 +24,26 @@ var userConfig = {
             name: "Company",
             message: "This field is required."
         },
-        // {
-        //     name: "Greatest_Challenge__c",
-        //     message: "This field is required."
-        // },
-        // {
-        //     name: "Locations__c",
-        //     message: "This field is required."
-        // },
-        // {
-        //     name: "Phone",
-        //     message: "This field is required."
-        // },
+        {
+            name: "Greatest_Challenge__c",
+            message: "This field is required."
+        },
+        {
+            name: "Locations__c",
+            message: "This field is required."
+        },
+        {
+            name: "Phone",
+            message: "This field is required."
+        },
         {
             name: "Country",
             message: "This field is required."
         },
-        // {
-        //     name: "Website",
-        //     message: "This field is required."
-        // }
+        {
+            name: "Website",
+            message: "This field is required."
+        }
     ]
 };
 
