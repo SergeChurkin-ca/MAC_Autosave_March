@@ -81,9 +81,35 @@
             font-family: 'Work Sans', sans-serif !important;
         }
         
-        .mktoForm .mktoFormRow:nth-last-of-type(-n+4) legend {
+        .mktoForm .mktoFormRow:nth-child(10) {
             margin-top: 2rem;
+        }
+        
+        .mktoForm .mktoFormRow:nth-child(10) .mktoLabel,
+        .mktoForm .mktoFormRow:nth-child(11) .mktoLabel,
+        .mktoForm .mktoFormRow:nth-child(14) .mktoLabel {
             font-weight: bold !important;
+        }
+        
+        .mktoForm .mktoFormRow:nth-last-of-type(-n+4) legend {
+            margin-top: 0 !important;
+            font-weight: bold !important;
+        }
+        
+        .mktoForm .mktoFormRow:nth-child(11) {
+            margin-top: 1rem;
+            width: 100% !important;
+        }
+        
+        .mktoForm .mktoFormRow:nth-child(11) legend {
+            display: none;
+        }
+        
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+            font-weight: bold;
+            text-transform: uppercase;
+            max-width: unset !important;
+            width: auto !important;
         }
         
         #footer #bottom {
