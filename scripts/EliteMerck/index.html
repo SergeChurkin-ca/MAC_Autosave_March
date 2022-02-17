@@ -13,6 +13,7 @@
                 body {
                     font-family: Arial Narrow, sans-serif;
                     line-height: 1.5;
+                    overflow-x: hidden;
                 }
                 
                 a:link,
@@ -41,11 +42,11 @@
                     width: 12px;
                     margin-right: 4px;
                 }
-                /*.container {
+                /* .container {
     max-width:900px;
     width:100%;
     margin:0 auto;
-  }*/
+    }*/
                 
                 .brand {
                     padding: 15px 0;
@@ -53,6 +54,200 @@
                 
                 .brand img {
                     width: 210px;
+                }
+            </style>
+
+            <style>
+                .tool-item {
+                    align-items: top;
+                }
+                
+                .booklet {
+                    width: 100% !important;
+                    margin-left: 3rem;
+                }
+                
+                .booklet-info h3 {
+                    padding-bottom: 1rem;
+                }
+                
+                .select-toggle {
+                    visibility: hidden;
+                    height: 0;
+                    width: 90%;
+                    justify-content: space-between;
+                    margin-left: 1rem;
+                }
+                
+                .select-toggle .sc-formfield-label {
+                    margin-left: 4px;
+                    margin-bottom: 1rem;
+                }
+                
+                .sc-formfield-label {
+                    display: flex;
+                }
+                
+                label {
+                    white-space: nowrap;
+                    margin-left: 0 !important;
+                }
+                
+                .smartcapture-controls {
+                    display: flex;
+                    margin-top: 3rem;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    margin: 0;
+                }
+                
+                .form-row {
+                    width: 94vw;
+                }
+                
+                m-row form .stylingblock-content-wrapper:nth-child(2) {
+                    margin-bottom: 2rem;
+                }
+                
+                .form-row form .stylingblock-content-wrapper:nth-child(3) .stylingblock-content-wrapper,
+                .form-row form .stylingblock-content-wrapper:nth-child(4) .stylingblock-content-wrapper,
+                .form-row form .stylingblock-content-wrapper:nth-child(6) .stylingblock-content-wrapper,
+                .form-row form .stylingblock-content-wrapper:nth-child(7) .stylingblock-content-wrapper {
+                    padding: 0;
+                }
+                
+                .form-row form .stylingblock-content-wrapper:nth-child(3),
+                .form-row form .stylingblock-content-wrapper:nth-child(4),
+                .form-row form .stylingblock-content-wrapper:nth-child(6),
+                .form-row form .stylingblock-content-wrapper:nth-child(7) {
+                    width: 100%;
+                }
+                
+                select,
+                option {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                
+                select {
+                    padding: 0.5rem;
+                    background-color: #f2f2f2;
+                    border-radius: 2px;
+                    border: solid 1px #6e6b6b;
+                    outline: none;
+                }
+                
+                .form-row form .stylingblock-content-wrapper:nth-child(4) .stylingblock-content-wrapper,
+                .form-row form .stylingblock-content-wrapper:nth-child(8) .stylingblock-content-wrapper,
+                .form-row form .stylingblock-content-wrapper:nth-child(10) .stylingblock-content-wrapper {
+                    padding: 0 !important;
+                }
+                
+                .form-row form .stylingblock-content-wrapper:nth-child(4),
+                .form-row form .stylingblock-content-wrapper:nth-child(5),
+                .form-row form .stylingblock-content-wrapper:nth-child(9),
+                .form-row form .stylingblock-content-wrapper:nth-child(10) {
+                    width: 48%;
+                    min-width: unset !important;
+                    display: inline-table;
+                }
+                
+                .form-row form .stylingblock-content-wrapper:nth-child(4),
+                .form-row form .stylingblock-content-wrapper:nth-child(9) {
+                    margin-right: 4%;
+                }
+                
+                .form-row form .stylingblock-content-wrapper:nth-child(6),
+                .form-row form .stylingblock-content-wrapper:nth-child(8) {
+                    width: 100%;
+                }
+                
+                .contactform-row {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 0.5rem auto;
+                }
+                
+                .contactform-row .sc-formfield-input {
+                    width: 100%;
+                }
+                
+                .contactform-row select {
+                    padding: 0.4rem;
+                    border: solid 1px #000000;
+                    width: 100%;
+                }
+                
+                @media (max-width: 800px) {
+                    form {
+                        width: 95% !important;
+                        margin: 0;
+                    }
+                    .tool-item {
+                        flex-direction: row !important;
+                    }
+                    .smartcapture-controls {
+                        align-items: flex-start;
+                        justify-content: space-between;
+                    }
+                    .select-toggle {
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                    }
+                    .select-toggle .sc-formfield-label {
+                        margin: 0 2rem 0 0;
+                    }
+                    .select-toggle .sc-formfield-input {
+                        margin: 0;
+                    }
+                    .checkmark {
+                        left: 2px !important;
+                    }
+                }
+                
+                @media (max-width: 730px) {
+                    .form-row form .stylingblock-content-wrapper:nth-child(2) .stylingblock-content-wrapper,
+                    .form-row form .stylingblock-content-wrapper:nth-child(3) .stylingblock-content-wrapper {
+                        margin: 0 auto;
+                    }
+                    .tool-item {
+                        flex-direction: column !important;
+                    }
+                    .booklet {
+                        margin: 0 auto;
+                    }
+                    .smartcapture-controls {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .select-toggle {
+                        margin: 1rem auto;
+                    }
+                    .form-row form .stylingblock-content-wrapper:nth-child(n+4) .smartcapture-controls {
+                        align-items: flex-start;
+                    }
+                    .select-toggle .sc-formfield-label,
+                    .select-toggle .sc-formfield-input {
+                        margin: 0 auto;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    label {
+                        white-space: break-spaces;
+                        text-align: center;
+                    }
+                    .check-container {
+                        height: 1rem;
+                    }
+                }
+                
+                @media (max-width: 370px) {
+                    .chkbx-validate,
+                    .form-row form .stylingblock-content-wrapper:nth-child(n+4),
+                    .smartcapture-submit-button-wrapper {
+                        width: 94% !important;
+                        min-width: unset !important;
+                    }
                 }
             </style>
 
@@ -69,17 +264,16 @@
                 </div>
             </header>
             <!-- Header  -->
-
             <div class="container-fluid">
 
                 <div class="row">
                     <div class="col-md-12 text-center grey-section">
-                        <h3>Commandez nos outils pour vos patients atteints de VPH <br>et des maladies connexes</h3>
+                        <h3>Order our HPV and related diseases patient tools</h3>
                         <p class="orange">
-                            Afin de recevoir nos outils destinés aux patients, veuillez sélectionner une / des langue(s) ci-dessous.
+                            If you are interested in ordering any of the patient tools below, please choose which language(s) you would like to receive.
                         </p>
                         <p>
-                            Emplissez et soumettez le formulaire pour demander la livraison de ces livrets à votre clinique sans frais.
+                            Fill out and submit the form to automatically have these items delivered to your clinic at no cost.
                         </p>
                     </div>
                 </div>
@@ -91,14 +285,15 @@
                             #smartcapture-block-blizf338v5k {
                                 background-color: transparent;
                                 margin-top: 0px;
-                                margin-right: 0px;
+                                margin-right: auto;
                                 margin-bottom: 0px;
-                                margin-left: 0px;
+                                margin-left: auto;
                                 padding-top: 0px;
                                 padding-right: 0px;
                                 padding-bottom: 0px;
                                 padding-left: 0px;
                                 text-align: left;
+                                width: 100%;
                             }
                             
                             #smartcapture-block-blizf338v5k .smartcapture-controls {
@@ -163,9 +358,11 @@
 
                         <div data-type="slot" data-key="h0vj76ru76"></div>
                         <div class="smartcapture-submit-button-wrapper">
-                            <button type="submit" class="sc-button">Soumettre</button>
+                            <button type="submit" class="sc-button">Submit</button>
                         </div>
-                        <p class="orange">*Champs requis</p>
+
+                        <p class="orange">*Required fields
+                        </p>
 
 
 
@@ -174,11 +371,11 @@
                                 window.ScForm.init({
                                     "gearID": "blizf338v5k",
                                     "smartCaptureFormID": 0,
-                                    "sourceKey": "3F907600-50EC-4B9D-830F-F8E8E4502674",
+                                    "sourceKey": "1C1C1ACB-6732-45AB-8E73-BAA2D921EE52",
                                     "source": "dataExtension",
                                     "triggeredSend": "",
-                                    "confirmationMessage": "<div style=\"text-align: center;\">\n\t<h1 style=\"text-align: center;\">\n\t\tNous avons re&ccedil;u votre demande.</h1><h3 style=\"text-align: center;\">\n\t\tVotre colis devrait arriver dans les 10 jours ouvrables.</h3></div>",
-                                    "buttonText": "Soumettre",
+                                    "confirmationMessage": "<div style=\"text-align: center;\">\n\t<h1 style=\"text-align: center;\">\n\t\tYour request has been received.</h1>&nbsp;<h3 style=\"text-align: center;\">\n\t\tYour shipment should arrive within 10 business days.</h3></div>",
+                                    "buttonText": "Submit",
                                     "formStyling": {
                                         "background-color": "transparent",
                                         "margin-top": "0px",
@@ -210,8 +407,7 @@
                                         "line-height": "normal",
                                         "padding": "10px"
                                     },
-                                    "onSubmitGotoUrlType": 2,
-                                    "onSubmitGotoUrl": "http://www.google.com"
+                                    "onSubmitGotoUrlType": 2
                                 });
                             };
                             window.appDomain = window.appDomain || '' || '<ctrl:eval>Platform.Variable.GetValue("@appDomain")||""</ctrl:eval>';
@@ -248,6 +444,7 @@
                 </div>
             </div>
 
+
             <!-- Footer  -->
 
             <footer id="site-footer" class="site-footer container ">
@@ -255,36 +452,38 @@
 
                 <div class="site-footer-logos">
                     <div class="site-footer-primary-logo">
-                        <img width="200" height="61" src="https://image.email.merck.ca/lib/fe8b1373776105747c/m/3/277-1919-footerlogo.png" class="attachment-medium size-medium" alt=""> </div>
+                        <img width="200" height="61" src="https://image.email.merck.ca/lib/fe8b1373776105747c/m/3/277-1919-footerlogo.png" class="attachment-medium size-medium" alt="Merck logo"> </div>
 
                     <ul class="site-footer-secondary-logos">
                         <li class="site-footer-secondary-logos__item">
-                            <img width="127" height="85" src="https://image.email.merck.ca/lib/fe8b1373776105747c/m/3/CCPP+French+RGB.png" class="attachment-medium size-medium" alt="CCPP"> </li>
+                            <img width="150" height="57" src="https://image.email.merck.ca/lib/fe8b1373776105747c/m/3/PAAB+English+RGB.png" class="attachment-medium size-medium" alt="IMC Logo"> </li>
                         <li class="site-footer-secondary-logos__item">
-                            <img width="100" height="106" src="https://image.email.merck.ca/lib/fe8b1373776105747c/m/3/ho_footer_logo_fr.png" class="attachment-medium size-medium" alt=""> </li>
+                            <img width="100" height="106" src="https://image.email.merck.ca/lib/fe8b1373776105747c/m/1/289853ac-81f4-4a7f-ac1d-303af68ad3e6.png" class="attachment-medium size-medium" alt=""> </li>
                     </ul>
 
                 </div>
 
                 <div class="site-footer-content">
                     <div class="site-footer-copyright">
-                        <p>Merck Canada Inc.,<br>16750 route Transcanadienne,<br>Kirkland (Québec), Canada H9H 4M7<br><a href="http://www.merck.ca">www.merck.ca</a></p>
-                        <p>Ce site Web est destiné aux professionnels de la santé du Canada.<br>© 2021 Merck Canada Inc. Tous droits réservés.</p>
+                        <p>Merck Canada Inc.,<br>16750 Trans-Canada Hwy.,<br>Kirkland (Quebec), Canada H9H 4M7<br><a href="http://www.merck.ca">www.merck.ca</a></p>
+                        <p>This site is intended for Canadian healthcare professionals.<br>© 2021 Merck Canada Inc. All rights reserved.</p>
                     </div>
 
                     <div class="site-footer-privacy-container">
 
 
+
                         <nav class="menu-footer-privacy-container">
                             <ul id="menu-footer-privacy" class="site-footer-privacy-nav">
-                                <li id="menu-item-6269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6269">CA-NON-01189</li>
+                                <li id="menu-item-6269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6269">CA-NON-01188</li>
                             </ul>
                         </nav>
                     </div>
+
+
+
                 </div>
-
             </footer>
-
         </td>
     </tr>
 </table>

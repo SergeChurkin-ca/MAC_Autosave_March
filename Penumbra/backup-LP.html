@@ -16,8 +16,9 @@
     <meta class="mktoString" mktoName="Logo bottom margin" id="logo-bottom-margin" default="1">
     
     <!-- Google Fonts -->
-    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins+Sans&family=Source+Sans+Pro:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
     <meta class="mktoString" mktoName="Google Font - Family Headline" id="fontfamily-headline" default="Poppins">
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport2" default="@import url('https://fonts.googleapis.com/css2?family=Source Sans Pro:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
     <meta class="mktoString" mktoName="Google Font - Family Primary" id="fontfamily" default="Source Sans Pro">
         
     <!-- Font Size -->
@@ -43,8 +44,7 @@
 
     <style>
         /* general styling */
-         ${googlefontimport}
-         
+        
         .wrapper {
             width: 75vw;
             margin: 0 auto;
@@ -188,9 +188,7 @@
             margin-top: 1rem;
         }
         /* articles */
-        .mktoGen.mktoImg {
-            display: flex !important;
-        }
+        
         main article:nth-child(2n+2) {
             flex-direction: row-reverse;
             display: flex;
@@ -424,122 +422,87 @@
 
             </section>
 
-            <article class="article-1 flex-container">
-                
+            <article class="mktoText article-1 flex-container" id="article-1" mktoName="Article 1">
                 <div class="img-container">
-                    <div class="mktoImg" id="aricle-1-img" mktoName="Article 1 img">
-                        <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-1.png" alt="vr demo screen">
-                    </div>
+                    <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-1.png" alt="vr demo screen">
                 </div>
-                
                 <div class="article-context">
-                    <div class="mktoText" id="article-1" mktoName="Article 1">
-                        <h2>Upper Extremity (UE)</h2>
-                        <ul>
-                            <li>Range of Motion (ROM)</li>
-                            <li>Endurance</li>
-                            <li>Strengthening</li>
-                            <li>Coordination</li>
-                        </ul>
-                    </div>
+                    <h2>Upper Extremity (UE)</h2>
+                    <ul>
+                        <li>Range of Motion (ROM)</li>
+                        <li>Endurance</li>
+                        <li>Strengthening</li>
+                        <li>Coordination</li>
+                    </ul>
                 </div>
             </article>
-            
-            <article class="article-2 flex-container">
-                
+            <article class="mktoText article-2 flex-container" id="article-2" mktoName="Article 2">
                 <div class="img-container">
-                    <div class="mktoImg" id="aricle-2-img" mktoName="Article 2 img">
-                        <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-2.png" alt="vr demo screen">
-                    </div>
+                    <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-2.png" alt="vr demo screen">
                 </div>
-                
                 <div class="article-context">
-                    <div class="mktoText" id="article-2" mktoName="Article 2">
-                        <h2>Core and Balance</h2>
-                        <ul>
-                            <li>Postural control and stability</li>
-                            <li>Seated dynamic reaching with rotational trunk control</li>
-                            <li>Reaching from base of suppor</li>
-                        </ul>
-                    </div>
+                    <h2>Core and Balance</h2>
+                    <ul>
+                        <li>Postural control and stability</li>
+                        <li>Seated dynamic reaching with rotational trunk control</li>
+                        <li>Reaching from base of suppor</li>
+                    </ul>
                 </div>
             </article>
-            
-            <article class=" article-3 flex-container">
-                
+            <article class="mktoText article-3 flex-container" id="article-3" mktoName="Article 3">
                 <div class="img-container">
-                    <div class="mktoImg" id="aricle-3-img" mktoName="Article 3 img">
-                        <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-3.png" alt="vr demo screen">
-                    </div>
+                    <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-3.png" alt="vr demo screen">
                 </div>
-                
                 <div class="article-context">
-                    <div class="mktoText" id="article-3" mktoName="Article 3">
-                        <h2>Functional Uses, ADL Training</h2>
-                        <ul>
-                            <li>Increased independence with self-care tasks</li>
-                            <li>Weight shifting</li>
-                            <li>Environmental scanning</li>
-                            <li>Dynamic reaching</li>
-                        </ul>
-                    </div>        
+                    <h2>Functional Uses, ADL Training</h2>
+                    <ul>
+                        <li>Increased independence with self-care tasks</li>
+                        <li>Weight shifting</li>
+                        <li>Environmental scanning</li>
+                        <li>Dynamic reaching</li>
+                    </ul>
                 </div>
             </article>
-            
-            <article class="article-4 flex-container">
+            <article class="mktoText article-4 flex-container" id="article-4" mktoName="Article 4">
                 <div class="img-container">
-                    <div class="mktoImg" id="aricle-4-img" mktoName="Article 4 img">
-                        <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-4.png" alt="vr demo screen">
-                    </div>
+                    <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-4.png" alt="vr demo screen">
                 </div>
                 <div class="article-context">
-                    <div class="mktoText" id="article-4" mktoName="Article 4">
-                        <h2>Cognition</h2>
-                        <ul>
-                            <li>Awareness of surroundings</li>
-                            <li>Decision making during ADLs</li>
-                            <li>Memory recall</li>
-                            <li>Visual skills addressing visuospatial awareness, attention processing, and sequencing</li>
-                        </ul>
-                    </div>
+                    <h2>Cognition</h2>
+                    <ul>
+                        <li>Awareness of surroundings</li>
+                        <li>Decision making during ADLs</li>
+                        <li>Memory recall</li>
+                        <li>Visual skills addressing visuospatial awareness, attention processing, and sequencing</li>
+                    </ul>
                 </div>
             </article>
-            <article class="article-5 flex-container">
+            <article class="mktoText article-5 flex-container" id="article-5" mktoName="Article 5">
                 <div class="img-container">
-                    <div class="mktoImg" id="aricle-5-img" mktoName="Article 5 img">
-                        <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/artivle-5.png" alt="vr demo screen">
-                    </div>
+                    <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/artivle-5.png" alt="vr demo screen">
                 </div>
                 <div class="article-context">
-                    <div class="mktoText" id="article-5" mktoName="Article 5">
-                        <h2>Distraction</h2>
-                        <ul>
-                            <li>Pain and stress management</li>
-                            <li>Decreased movement avoidance</li>
-                            <li>Tolerance of a busy environment</li>
-                        </ul>
-                    </div>
+                    <h2>Distraction</h2>
+                    <ul>
+                        <li>Pain and stress management</li>
+                        <li>Decreased movement avoidance</li>
+                        <li>Tolerance of a busy environment</li>
+                    </ul>
                 </div>
             </article>
-            
-            <article class="article-6 flex-container">
+            <article class="mktoText article-6 flex-container" id="article-6" mktoName="Article 6">
                 <div class="img-container">
-                    <div class="mktoImg" id="aricle-6-img" mktoName="Article 6 img">
-                        <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/artivle-6.png" alt="vr demo screen">
-                    </div>
+                    <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/artivle-6.png" alt="vr demo screen">
                 </div>
-                
                 <div class="article-context">
-                    <div class="mktoText" id="article-6" mktoName="Article 6">
-                        <h2>Low stimulation environments</h2>
-                        <ul>
-                            <li>Habituation to new environments</li>
-                            <li>Reduced environmental cues</li>
-                            <li>Memory recall</li>
-                            <li>Promotion of relaxed state</li>
-                            <li>Stress management</li>
-                        </ul>
-                    </div>
+                    <h2>Low stimulation environments</h2>
+                    <ul>
+                        <li>Habituation to new environments</li>
+                        <li>Reduced environmental cues</li>
+                        <li>Memory recall</li>
+                        <li>Promotion of relaxed state</li>
+                        <li>Stress management</li>
+                    </ul>
                 </div>
             </article>
         </main>
