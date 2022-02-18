@@ -38,15 +38,17 @@
     <meta class="mktoString" id="btextpdbtm" mktoName="Body Text Padding Bottom" default="50">	
 
     <meta class="mktoBoolean" id="showform" mktoName="Show Form?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec-bodyText2" mktoName="Show Body Text 2" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	
     <meta class="mktoBoolean" id="showsec2" mktoName="Show Section2?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">	
-    
+    <meta class="mktoBoolean" id="showsec-aftervideo" mktoName="Show Section After Video?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
     <!-- PDF file section -->
-     <meta class="mktoBoolean" id="pdfsection-show" mktoName="Show PDF Section?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="pdfsection-show" mktoName="Show PDF Section?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="pdfflie" mktoName="PDF File URL" default="https://info.freenome.com/rs/541-NPN-086/images/Freenome Blood Collection Guide_Standard Shipping Kit.pdf">
     <meta class="mktoString" id="pdfflie-poster" mktoName="PDF File Poster" default="https://info.freenome.com/rs/541-NPN-086/images/Blood Collection Guide.png">
     <meta class="mktoString" id="pdf-margin-top" mktoName="PDF Section Margin top" default="2">
     <meta class="mktoString" id="pdf-margin-btm" mktoName="PDF Section Margin bottom" default="2">
-      
+
     <!-- Video Section -->
     <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="videoshowDealineTop" mktoName="Show Video Top" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -109,7 +111,10 @@
         padding-bottom: ${btextpdbtm}px;
         font-weight: 400;
       }
-      #bodytexttw{
+      #bodytexttw {
+        display: ${showsec-bodyText2};
+      }
+      #bodytexttw, #section-aftervideo {
         font-size: 16px;
         color: #383846;
         line-height: 28px;
@@ -159,23 +164,23 @@
       #pdffile-text, #pdffile-poster, #pdffile-text-paragraph {
         display: ${pdfsection-show};
       }        
-                                                                                       
+
       #pdffile-text span {
-          font-size: 22px;
-          color: #222222;
-          font-weight: 700;
-        }
+        font-size: 22px;
+        color: #222222;
+        font-weight: 700;
+      }
       #pdffile-text-paragraph p {
         font-size: 18px;
         color: #222222;
         font-weight: 400;
       }
-       
-       #videotext {
+
+      #videotext {
         text-align: center;
         margin-bottom: 3rem;
         display: ${videoshowDealineTop};
-                                                                                    
+
       }
       #videotext h2 {
         color: ${videoheadlineclr};
@@ -227,6 +232,9 @@
           line-height: ${hdrhgtmo}px;
         }
       }
+      .videoPoster:before {
+        top: 51% !important;
+      }
     </style>
 
   </head>
@@ -272,8 +280,8 @@
               <div class="col-md-8">
                 <div class="shape2"><img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/shape2.png" width="212" height="107" border="0" /></div>
                 <div class="shape3"><img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/shape3.png" width="120" height="60" border="0" /></div>
-        
-                
+
+
                 <div class="mktoText" mktoName="Top Text" id="toptext">
                   Become a PREEMPT CRC clinical trial site.
                 </div>
@@ -299,113 +307,119 @@
                 </div>
               </div>
             </div>
-            
-               <!-- PDF File Section -->
-                <div class="pdf-section">
-                  <div class="mktoText" mktoName="PDF File text" id="pdffile-text">
-                    <span>Blood Collection Guide</span>
-                  </div>
-                  <div class="second-row">
-                    <div class="mktoImg" mktoName="pdffile-poster" id="pdffile-poster">
-                      <a href="${pdfflie}" target="_blank" title="Blood Collection Guide Checklist">
+
+            <!-- PDF File Section -->
+            <div class="pdf-section">
+              <div class="mktoText" mktoName="PDF File text" id="pdffile-text">
+                <span>Blood Collection Guide</span>
+              </div>
+              <div class="second-row">
+                <div class="mktoImg" mktoName="pdffile-poster" id="pdffile-poster">
+                  <a href="${pdfflie}" target="_blank" title="Blood Collection Guide Checklist">
                     <img src="${pdfflie-poster}" alt="Blood Collection Guide.png" height="236" width="182"></a>
-                    </div>
-                      <div class="mktoText" mktoName="PDF File Paragraph" id="pdffile-text-paragraph">
-                    
-                      <p>A one-page Blood Collection Guide with tips for you to print and follow along with each blood collection</p>
-                    </div>
-                    
-                  </div>
                 </div>
-      <!-- end of PDF file section --></div>
-                                                                                                    
-          </div>    
-        </div>
-   
-      
-        <!-- Youtube Video -->
-        <div class="container_100" id="video">
-          <div class="container_inner section">
-            <div class="left">
-              <div class="mktoText" id="videotext" mktoName="Youtube Video - Copy">
-                <h2>Rising to the Challenge</h2>
-                <p>Learn how Freenomers are bringin our mission to life</p>
-              </div>
-            </div>
-            <div class="video-container">
-              
-              <div class="mktoText" id="videohedline1" mktoName="Video Headline 1">
-<span>Standard Packing</span>
-<p>Tips and best practices for the blood draw, including shipping with our standard packing materials</p>
-</div>
- 
-<div class="mktoText" id="videohedline2" mktoName="Video Headline 2">
-<span>NanoCool Packing</span>
-<p>Tips and best practices for the blood draw, including all the steps to pack with a NanoCool box</p>
-</div>
- 
+                <div class="mktoText" mktoName="PDF File Paragraph" id="pdffile-text-paragraph">
 
-              <div class="videoWrapper videoWrapper169 js-videoWrapper video-1">
-                <!-- YouTube iframe. -->
-                <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
-                <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
-                <iframe class="videoIframe js-videoIframe" src="${videoembed1}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed1}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-
-                <!-- the poster frame - in the form of a button to make it keyboard accessible -->
-                <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter1});">Play video</button>
-                <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text1" mktoName="Video Button 1 Text">external close button</span></button>
-              </div>
-
-              <div class="videoWrapper videoWrapper169 js-videoWrapper video-2">
-                <!-- YouTube iframe. -->
-                <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
-                <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
-                <iframe class="videoIframe js-videoIframe" src="${videoembed2}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed2}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-
-                <!-- the poster frame - in the form of a button to make it keyboard accessible -->
-                <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter2});">Play video</button>
-                <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text2" mktoName="Video Button 2 Text">external close button</span></button>
+                  <p>A one-page Blood Collection Guide with tips for you to print and follow along with each blood collection</p>
+                </div>
 
               </div>
             </div>
-          </div>
-        </div>
-        <!-- END Video -->
+            <!-- end of PDF file section --></div>
 
-
-        <div id="section2" style="display: ${showsec2};">
-          <div class="container_inner">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="mktoText" id="middletxt" mktoName="Middle Text">
-                  Example Potential Earnings
-                </div>
-                <div class="mktoText" id="middlegraphic" mktoName="Middle Graphic">
-                  <img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/earnings.png" style="max-width: 747px;" width="100%" border="0" />
-                </div>
-                <div style="clear: both;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="footer">
-          <div class="container_inner">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="mktoSnippet" mktoName="Copyright Snippet" id="copyrightsnippet">
-                </div>
-                <div style="clear: both;"></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
+        </div>    
       </div>
+
+
+      <!-- Youtube Video -->
+      <div class="container_100" id="video">
+        <div class="container_inner section">
+          <div class="left">
+            <div class="mktoText" id="videotext" mktoName="Youtube Video - Copy">
+              <h2>Rising to the Challenge</h2>
+              <p>Learn how Freenomers are bringin our mission to life</p>
+            </div>
+          </div>
+          <div class="video-container">
+
+            <div class="mktoText" id="videohedline1" mktoName="Video Headline 1">
+              <span>Standard Packing</span>
+              <p>Tips and best practices for the blood draw, including shipping with our standard packing materials</p>
+            </div>
+
+            <div class="mktoText" id="videohedline2" mktoName="Video Headline 2">
+              <span>NanoCool Packing</span>
+              <p>Tips and best practices for the blood draw, including all the steps to pack with a NanoCool box</p>
+            </div>
+
+
+            <div class="videoWrapper videoWrapper169 js-videoWrapper video-1">
+              <!-- YouTube iframe. -->
+              <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+              <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+              <iframe class="videoIframe js-videoIframe" src="${videoembed1}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed1}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+
+              <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+              <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter1});">Play video</button>
+              <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text1" mktoName="Video Button 1 Text">external close button</span></button>
+            </div>
+
+            <div class="videoWrapper videoWrapper169 js-videoWrapper video-2">
+              <!-- YouTube iframe. -->
+              <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+              <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+              <iframe class="videoIframe js-videoIframe" src="${videoembed2}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed2}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+
+              <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+              <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter2});">Play video</button>
+              <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text2" mktoName="Video Button 2 Text">external close button</span></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Video -->
+
+      
+     <div class="mktoText" id="section-aftervideo" style="display: ${showsec-aftervideo};" mktoName="Section After Video">
+                  <span style="font-weight: 700;">Early CRC detection can dramatically improve survival rates.</span><br> 
+                  That’s why we are looking to validate a simple blood test for early CRC detection.
+                </div>
+      
+
+      <div id="section2" style="display: ${showsec2};">
+        <div class="container_inner">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mktoText" id="middletxt" mktoName="Middle Text">
+                Example Potential Earnings
+              </div>
+              <div class="mktoText" id="middlegraphic" mktoName="Middle Graphic">
+                <img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/earnings.png" style="max-width: 747px;" width="100%" border="0" />
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="container_inner">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mktoSnippet" mktoName="Copyright Snippet" id="copyrightsnippet">
+              </div>
+              <div style="clear: both;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
     </div>
-    <script src="https://info.freenome.com/rs/541-NPN-086/images/mac-jquery.min.js"></script>
-    <script src="https://info.freenome.com/rs/541-NPN-086/images/video-script.js"></script>
+    </div>
+  <script src="https://info.freenome.com/rs/541-NPN-086/images/mac-jquery.min.js"></script>
+  <script src="https://info.freenome.com/rs/541-NPN-086/images/video-script.js"></script>
   </body>
 </html>
