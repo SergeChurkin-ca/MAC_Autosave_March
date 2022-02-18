@@ -44,6 +44,8 @@
      <meta class="mktoBoolean" id="pdfsection-show" mktoName="Show PDF Section?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="pdfflie" mktoName="PDF File URL" default="https://info.freenome.com/rs/541-NPN-086/images/Freenome Blood Collection Guide_Standard Shipping Kit.pdf">
     <meta class="mktoString" id="pdfflie-poster" mktoName="PDF File Poster" default="https://info.freenome.com/rs/541-NPN-086/images/Blood Collection Guide.png">
+    <meta class="mktoString" id="pdf-margin-top" mktoName="PDF Section Margin top" default="2">
+    <meta class="mktoString" id="pdf-margin-btm" mktoName="PDF Section Margin bottom" default="2">
       
     <!-- Video Section -->
     <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -52,11 +54,12 @@
     <meta class="mktoString" mktoName="Video Module Padding Bottom" id="vid-mod-padding-bottom" default="80">
     <meta class="mktoString" mktoName="Video Module Margin Top" id="vid-mod-mg-top" default="1">
     <meta class="mktoString" mktoName="Video Module Margin Bottom" id="vid-mod-mg-bottom" default="1">
+    <meta class="mktoString" mktoName="Video Background" id="vid-mod-background" default="linear-gradient(0deg, rgba(203, 231, 2, 1) 0%, rgba(203, 231, 2, 1) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100%)">
 
-    <meta class="mktoString" id="videoposter1" mktoName="Video -1 Poster" default="https://info.freenome.com/rs/541-NPN-086/images/video-poster-1.jpeg" allowHtml="true">
-    <meta class="mktoString" id="videoembed1" mktoName="Video -1 Embed URL" default="https://www.youtube.com/embed/4fk3tBpSTos" allowHtml="true">
-    <meta class="mktoString" id="videoposter2" mktoName="Video - 2 Poster" default="https://info.freenome.com/rs/541-NPN-086/images/video-poster-1.jpeg" allowHtml="true">
-    <meta class="mktoString" id="videoembed2" mktoName="Video - 2 Embed URL" default="https://www.youtube.com/embed/4fk3tBpSTos" allowHtml="true">
+    <meta class="mktoString" id="videoposter1" mktoName="Video -1 Poster" default="https://info.freenome.com/rs/541-NPN-086/images/videoposter1.png" allowHtml="true">
+    <meta class="mktoString" id="videoembed1" mktoName="Video -1 Embed URL" default="https://www.youtube.com/watch?v=ZXhfxbjZk0Y" allowHtml="true">
+    <meta class="mktoString" id="videoposter2" mktoName="Video - 2 Poster" default="https://info.freenome.com/rs/541-NPN-086/images/videoposter2.png" allowHtml="true">
+    <meta class="mktoString" id="videoembed2" mktoName="Video - 2 Embed URL" default="https://www.youtube.com/watch?v=5DbYAWyfUHY" allowHtml="true">
     <meta class="mktoColor" id="videoheadlineclr" mktoName="Video Headline Color" default="#BBD532">
     <meta class="mktoColor" id="videotextclr" mktoName="Video Text Color" default="#000000">
     <meta class="mktoBoolean" id="ext-vid-close-btn" mktoName="Show Video Ext Button?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -141,11 +144,33 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
       }
-      
-      #pdffile-text, #pdf-file-poster {
+      .pdf-section {
+        margin-top: ${pdf-margin-top}rem;
+        margin-bottom: ${pdf-margin-btm}rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 70%;
+      }
+      .pdf-section .second-row {
+        display: flex;
+        gap: 2rem;
+      }
+      #pdffile-text, #pdffile-poster, #pdffile-text-paragraph {
         display: ${pdfsection-show};
-      }                                                                              
-      
+      }        
+                                                                                       
+      #pdffile-text span {
+          font-size: 22px;
+          color: #222222;
+          font-weight: 700;
+        }
+      #pdffile-text-paragraph p {
+        font-size: 18px;
+        color: #222222;
+        font-weight: 400;
+      }
+       
        #videotext {
         text-align: center;
         margin-bottom: 3rem;
@@ -155,11 +180,21 @@
       #videotext h2 {
         color: ${videoheadlineclr};
       }
+      .video-container span {
+        font-size: 20px;
+        font-weight: 700;
+        color: #383846;
+      }
+      .video-container p {
+        font-size: 18px;
+        color: #222222;
+        font-weight: 400;
+      }
       #videotext p {
         color: ${videotextclr};
       }
       #video {
-        background: linear-gradient(0deg, rgba(203, 231, 2, 1) 0%, rgba(203, 231, 2, 1) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100%);
+        background: ${vid-mod-background};
         display:${videoshow};
         padding: ${vid-mod-padding-top}px 0px ${vid-mod-padding-bottom}px 0px;
         margin: ${vid-mod-mg-top}px 0px ${vid-mod-mg-bottom}px 0px;
@@ -269,12 +304,17 @@
                 <div class="pdf-section">
                   <div class="mktoText" mktoName="PDF File text" id="pdffile-text">
                     <span>Blood Collection Guide</span>
-                    <p>A one-page Blood Collection Guide with tips for you to print and follow along with each blood collection</p>
                   </div>
-                  
-                  <div class="mktoImg" mktoName="pdffile-poster" id="pdffile-poster">
-                    <a href="${pdfflie}" target="_blank" title="Blood Collection Guide Checklist">
-                  <img src="${pdfflie-poster}" alt="Blood Collection Guide.png" height="236" width="182"></a>
+                  <div class="second-row">
+                    <div class="mktoImg" mktoName="pdffile-poster" id="pdffile-poster">
+                      <a href="${pdfflie}" target="_blank" title="Blood Collection Guide Checklist">
+                    <img src="${pdfflie-poster}" alt="Blood Collection Guide.png" height="236" width="182"></a>
+                    </div>
+                      <div class="mktoText" mktoName="PDF File Paragraph" id="pdffile-text-paragraph">
+                    
+                      <p>A one-page Blood Collection Guide with tips for you to print and follow along with each blood collection</p>
+                    </div>
+                    
                   </div>
                 </div>
       <!-- end of PDF file section --></div>
