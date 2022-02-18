@@ -15,6 +15,29 @@
     <meta class="mktoString" mktoName="Logo tom margin" id="logo-top-margin" default="1">
     <meta class="mktoString" mktoName="Logo bottom margin" id="logo-bottom-margin" default="1">
     
+    
+    <!-- Articles -->
+    <meta class="mktoBoolean" id="article-1-show" mktoName="Show Article 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="article-2-show" mktoName="Show Article 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="article-3-show" mktoName="Show Article 3?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="article-4-show" mktoName="Show Article 4?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="article-5-show" mktoName="Show Article 5?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="article-6-show" mktoName="Show Article 6?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+        
+    <meta class="mktoBoolean" id="article-1-direction" mktoName="Article 1 direction?" default="true" true_value="row-reverse" false_value="row" false_value_name="Row" true_value_name="Reverse">
+    <meta class="mktoBoolean" id="article-2-direction" mktoName="Article 2 direction?" default="true" true_value="row" false_value="row-reverse" false_value_name="Reverse" true_value_name="Row">
+    <meta class="mktoBoolean" id="article-3-direction" mktoName="Article 3 direction?" default="true" true_value="row-reverse" false_value="row" false_value_name="Row" true_value_name="Reverse">
+    <meta class="mktoBoolean" id="article-4-direction" mktoName="Article 4 direction?" default="true" true_value="row" false_value="row-reverse" false_value_name="Reverse" true_value_name="Row">
+    <meta class="mktoBoolean" id="article-5-direction" mktoName="Article 5 direction?" default="true" true_value="row-reverse" false_value="row" false_value_name="Row" true_value_name="Reverse">
+    <meta class="mktoBoolean" id="article-6-direction" mktoName="Article 6 direction?" default="true" true_value="row" false_value="row-reverse" false_value_name="Reverse" true_value_name="Row">
+        
+        
+    <!-- Aside Containers -->
+    <meta class="mktoBoolean" id="aside-1-show" mktoName="Show Aside 1? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="aside-2-show" mktoName="Show Aside 2? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" mktoName="Aside Image 1" id="asideimage-1" default="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png">
+    <meta class="mktoString" mktoName="Aside Image 2" id="asideimage-2" default="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png">
+  
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins+Sans&family=Source+Sans+Pro:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
     <meta class="mktoString" mktoName="Google Font - Family Headline" id="fontfamily-headline" default="Poppins">
@@ -174,7 +197,7 @@
         
         main {
             width: calc(100% - 17rem);
-            /* padding-right: 2rem; */
+           
         }
         /* -- end of main -- */
         /* statement  */
@@ -191,10 +214,7 @@
         .mktoGen.mktoImg {
             display: flex !important;
         }
-        main article:nth-child(2n+2) {
-            flex-direction: row-reverse;
-            display: flex;
-        }
+    
         
         main article .img-container {
             padding-right: 2rem;
@@ -230,6 +250,30 @@
             margin-top: 0.5rem;
             max-width: 200px;
         }
+        .article-1 {
+            display: ${article-1-show};
+            flex-direction: ${article-1-direction};
+        }
+        .article-2 {
+            display: ${article-2-show};
+            flex-direction: ${article-2-direction};
+        }
+        .article-3 {
+            display: ${article-3-show};
+            flex-direction: ${article-3-direction};
+        }
+        .article-4 {
+            display: ${article-4-show};
+            flex-direction: ${article-4-direction};
+        }
+        .article-5 {
+            display: ${article-5-show};
+            flex-direction: ${article-5-direction};
+        }
+        .article-6 {
+            display: ${article-6-show};
+            flex-direction: ${article-6-direction};
+        }
         /* aside */
         
         aside {
@@ -252,13 +296,15 @@
         }
         
         .aside-container-1 {
-            background: url('http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png');
+            background-image:url('${asideimage-1}');
             background-size: cover;
+            display: ${aside-1-show};
         }
         
         .aside-container-2 {
-            background: url('http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png');
+            background-image:url('${asideimage-2}');
             background-size: cover;
+             display: ${aside-2-show};
         }
         /* aside button */
         
@@ -546,45 +592,47 @@
 
         <footer>
             <div class="footer-container">
-                <div class="mktoText row-1" id="row-1" mktoName="footer text row 1">
-                    <p>Empower your patients today with engaging therapeutic and wellness activities tat offer endless possibilities.</p>
-                </div>
-                <div class="mktoText row-2" id="row-2" mktoName="footer text row 2">
-                    <p>
-                        empower possibilities &trade;
-                    </p>
-                </div>
-                <div class="mktoText row-3 icons-container" id="row-3" mktoName="footer icons">
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/REALSystemVR/"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/facebook-violet.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/realsystemVR/"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/instagram-iolet.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/realsystemVR"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/twitter-violet.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/mvi-health-inc"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/linbkedin-violet.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCCiPI8OVuW_6E5NwbBhAmcg"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/youtube-violet.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mktoText row-4" id="row-4" mktoName="footer text row 4">
-                    <p>The opinions and clinical experiences presented herein are for informational purposes only. The results may not be predictive for all patients. Individual results may vary depending on patient-specific attributes and other factors.
-                        Rendering for illustrative purposes only. Images used with permission. Consents on file at Penumbra, Inc.</p>
-                    <p>
-                        Caution: Federal (USA) law restricts this device to sale by or on the order of a healthcare provider. Prior to use, please refer to the Instructions for Use (IFU) for complete product indications, contraindications, warnings, precautions, potential adverse
-                        events, and detailed instructions for use. Please click here for the complete IFU. Please contact your local REAL Care Specialist for more information.
-                    </p>
-                    <p>
-                        Copyright ©2019-2021 Penumbra, Inc. All rights reserved. The REAL Hero logo, REAL, Happy Valley, and TherapyView are registered trademarks or trademarks of Penumbra, Inc. in the USA and other countries. All other trademarks are the property of their respective
-                        16267, Rev. I 09/21 USA
-                    </p>
-                    <p>16267, Rev. I 09/21 USA</p>
+                <div class="mktoSnippet" id="penumbra-footer-snippet" mktoName="Footer Snippet" mktoDefaultSnippetId="99">
+                    <div class="row-1" id="row-1">
+                        <p>Empower your patients today with engaging therapeutic and wellness activities tat offer endless possibilities.</p>
+                    </div>
+                    <div class="row-2" id="row-2">
+                        <p>
+                            empower possibilities &trade;
+                        </p>
+                    </div>
+                    <div class="row-3 icons-container" id="row-3">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/REALSystemVR/"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/facebook-violet.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/realsystemVR/"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/instagram-iolet.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/realsystemVR"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/twitter-violet.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/mvi-health-inc"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/linbkedin-violet.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCCiPI8OVuW_6E5NwbBhAmcg"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/youtube-violet.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row-4" id="row-4">
+                        <p>The opinions and clinical experiences presented herein are for informational purposes only. The results may not be predictive for all patients. Individual results may vary depending on patient-specific attributes and other factors.
+                            Rendering for illustrative purposes only. Images used with permission. Consents on file at Penumbra, Inc.</p>
+                        <p>
+                            Caution: Federal (USA) law restricts this device to sale by or on the order of a healthcare provider. Prior to use, please refer to the Instructions for Use (IFU) for complete product indications, contraindications, warnings, precautions, potential adverse
+                            events, and detailed instructions for use. Please click here for the complete IFU. Please contact your local REAL Care Specialist for more information.
+                        </p>
+                        <p>
+                            Copyright ©2019-2021 Penumbra, Inc. All rights reserved. The REAL Hero logo, REAL, Happy Valley, and TherapyView are registered trademarks or trademarks of Penumbra, Inc. in the USA and other countries. All other trademarks are the property of their respective
+                            16267, Rev. I 09/21 USA
+                        </p>
+                        <p>16267, Rev. I 09/21 USA</p>
+                    </div>
                 </div>
             </div>
         </footer>
