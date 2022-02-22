@@ -1,0 +1,53 @@
+<div id="three-columns" class="container_100" style="padding-top:{{ module.module_styles.padding_top }}px;padding-bottom:{{ module.module_styles.padding_bottom }}px; background-image: linear-gradient(to bottom, #1b7d88, #176f79);">
+    <div class="container_inner" style="text-align:{{ module.align_text }}">
+        <div class="divider"></div>
+        <div class="three-columns">
+
+            <!-- First Column -->
+            <div class="col30 mg-left">
+                {% if module.column_1_image.src %} {% set sizeAttrs = 'width="{{ module.column_1_image.width }}" height="{{ module.column_1_image.height }}"' %} {% if module.column_1_image.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"'
+                %} {% elif module.column_1_image.size_type == 'auto_custom_max' %} {% set sizeAttrs = 'width="{{ module.column_1_image.max_width }}" height="{{ module.column_1_image.max_height }}" style="max-width: 100%; height: auto;"' %} {% endif %}
+                {% set loadingAttr = module.column_1_image.loading != 'disabled' ? 'loading="{{ module.column_1_image.loading }}"' : '' %}
+                <img class="icon-img" src="{{ module.column_1_image.src }}" alt="{{ module.column_1_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %}
+                <!-- Column 1 text -->
+                <div class="column-text">
+                    {% inline_rich_text field="column_1_text" value="{{ module.column_1_text }}" %}
+                </div>
+
+            </div>
+            <!-- Second Column -->
+            <div class="col30 mg-left">
+                {% if module.column_2_image.src %} {% set sizeAttrs = 'width="{{ module.column_2_image.width }}" height="{{ module.column_2_image.height }}"' %} {% if module.column_2_image.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"'
+                %} {% elif module.column_2_image.size_type == 'auto_custom_max' %} {% set sizeAttrs = 'width="{{ module.column_2_image.max_width }}" height="{{ module.column_2_image.max_height }}" style="max-width: 100%; height: auto;"' %} {% endif %}
+                {% set loadingAttr = module.column_2_image.loading != 'disabled' ? 'loading="{{ module.column_2_image.loading }}"' : '' %}
+                <img class="icon-img" src="{{ module.column_2_image.src }}" alt="{{ module.column_2_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %}
+                <!-- Column 2 text -->
+                <div class="column-text">
+                    {% inline_rich_text field="column_2_text" value="{{ module.column_2_text }}" %}
+                </div>
+            </div>
+            <!-- Third Column -->
+            <div class="col30 mg-left">
+
+                {% if module.image_1_sol3.src %} {% set sizeAttrs = 'width="{{ module.image_1_sol3.width }}" height="{{ module.image_1_sol3.height }}"' %} {% if module.image_1_sol3.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+                {% elif module.image_1_sol3.size_type == 'auto_custom_max' %} {% set sizeAttrs = 'width="{{ module.image_1_sol3.max_width }}" height="{{ module.image_1_sol3.max_height }}" style="max-width: 100%; height: auto;"' %} {% endif %} {% set loadingAttr
+                = module.image_1_sol3.loading != 'disabled' ? 'loading="{{ module.image_1_sol3.loading }}"' : '' %}
+                <img src="{{ module.image_1_sol3.src }}" alt="{{ module.image_1_sol3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %} {% if module.column_3_image.src %} {% set sizeAttrs = 'width="{{ module.column_3_image.width }}" height="{{ module.column_3_image.height
+                }}"' %} {% if module.column_3_image.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %} {% elif module.column_3_image.size_type == 'auto_custom_max' %} {% set sizeAttrs = 'width="{{ module.column_3_image.max_width
+                }}" height="{{ module.column_3_image.max_height }}" style="max-width: 100%; height: auto;"' %} {% endif %} {% set loadingAttr = module.column_3_image.loading != 'disabled' ? 'loading="{{ module.column_3_image.loading }}"' : '' %}
+                <img class="icon-img" src="{{ module.column_3_image.src }}" alt="{{ module.column_3_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %}
+
+
+                <!-- Column 3 text -->
+                <div class="column-text">
+                    {% inline_rich_text field="column_3_text" value="{{ module.column_3_text }}" %}
+                </div>
+            </div>
+
+        </div>
+        <!-- Bottom text -->
+        <div class="bottom-text">
+            {% inline_rich_text field="bottom_text" value="{{ module.bottom_text }}" %}
+        </div>
+    </div>
+</div>

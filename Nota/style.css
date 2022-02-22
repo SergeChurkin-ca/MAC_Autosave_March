@@ -1,0 +1,1724 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nunito+Sans:wght@300;400;600;800&display=swap');
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: underline;
+    color: #05BB7A;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    color: #0a2837;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #0a2837;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.92;
+    letter-spacing: -0.32px;
+    color: #7e9195;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#banner .formheadline p {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #0a2836;
+}
+
+p {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #0a2837;
+}
+
+.cardtext p.sm {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #0a2836;
+}
+
+h1.singleheadline {
+    font-size: 55px;
+    margin: 150px auto;
+    margin-bottom: 170px;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.formheadlineicon {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+.formheadline {
+    display: inline-block;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    width: 85%;
+}
+
+.formheadline h1 {
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: -0.37px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.hs-fieldtype-text label {
+    display: none;
+}
+
+.formheadlineicon img {
+    display: block;
+}
+
+.hs-fieldtype-text input {
+    border-radius: 4px;
+    background-color: #eff3f3;
+    padding: 18px;
+    border: 0px;
+    width: 100%;
+    color: #fff;
+}
+
+#bannerform1 .hs-fieldtype-text input {
+    border-radius: 4px;
+    background-color: #eff3f3;
+    padding: 18px;
+    border: 0px;
+    width: 100%;
+    color: #000;
+}
+
+textarea.hs-input {
+    border-radius: 4px;
+    background-color: #eff3f3;
+    padding: 18px;
+    border: 0px;
+    width: 100%;
+}
+
+.hs-form-field select {
+    border-radius: 4px;
+    background-color: #eff3f3;
+    padding: 8px;
+    border: 10px #eff3f3 solid;
+    width: 100%;
+    color: #7e9195;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+.hs-fieldtype-select.field.hs-form-field label {
+    display: none;
+}
+
+#ebookform div#bannerform1 {
+    margin-top: -20px!important;
+    z-index: 999!important;
+}
+
+.formsingle .hs_submit.hs-submit {
+    padding-top: 0px !important;
+}
+
+h2.margtop {
+    margin-top: 60px;
+}
+
+.hs_notes label {
+    display: none;
+}
+
+ul.no-list.hs-error-msgs.inputs-list {
+    color: #7e9195;
+}
+
+.hs-fieldtype-text input::placeholder,
+textarea.hs-input::placeholder,
+.hs-form-field select::placeholder {
+    color: #7e9195;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+label {
+    color: #7e9195;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+label.hs-error-msg {
+    display: block!important;
+    color: #7e9195;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.field.hs-form-field {
+    margin-bottom: 35px;
+}
+
+label.hs-main-font-element {
+    color: #125a67;
+    font-weight: bold;
+}
+
+body input.hs-button.primary.large {
+    display: inline-block!important;
+    padding: 15px 55px!important;
+    border-radius: 6px!important;
+    font-size: 20px!important;
+    font-weight: bold!important;
+    font-stretch: normal!important;
+    font-style: normal!important;
+    line-height: 1.35!important;
+    letter-spacing: normal!important;
+    text-align: center!important;
+    text-decoration: none!important;
+    background-color: #097d88!important;
+    background: #097d88!important;
+    color: #fff!important;
+    border: 0!important;
+    background-image: none!important;
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    appearance: none!important;
+    -webkit-border-radius: 6px!important;
+    -moz-border-radius: 6px!important;
+}
+
+input[type="submit"],
+input[type="submit" i] {
+    display: inline-block!important;
+    padding: 15px 55px!important;
+    border-radius: 6px!important;
+    font-size: 20px!important;
+    font-weight: bold!important;
+    font-stretch: normal!important;
+    font-style: normal!important;
+    line-height: 1.35!important;
+    letter-spacing: normal!important;
+    text-align: center!important;
+    text-decoration: none!important;
+    background-color: #097d88!important;
+    background: #097d88!important;
+    color: #fff!important;
+    border: 0!important;
+    background-image: none!important;
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    appearance: none!important;
+    -webkit-border-radius: 6px!important;
+    -moz-border-radius: 6px!important;
+}
+
+.hs_submit.hs-submit {
+    padding-top: 30px!important;
+}
+
+.formheadlineicon img {
+    height: auto!important;
+    max-width: 25px;
+}
+
+.title {
+    text-align: center;
+}
+
+#sales p {
+    color: #ffffff;
+    font-size: 22px
+}
+
+#cta p {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+ul.bullets {
+    padding-left: 0px;
+    padding-top: 10px
+}
+
+ul.bullets li {
+    background: url(https://f.hubspotusercontent00.net/hubfs/7289002/website2020/check-img.png) no-repeat left center;
+    padding: 0px 0px 0px 50px;
+    list-style: none;
+    margin: 0;
+}
+
+.form {
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 rgba(52, 54, 55, 0.06);
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 55px 52px;
+    margin-bottom: 40px;
+}
+
+input[type="checkbox" i] {
+    margin-right: 10px;
+}
+
+.inputs-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.hs-button,
+button {
+    cursor: pointer;
+}
+
+.bullets strong,
+.bullets b {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.36;
+}
+
+.bullets p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+}
+
+div#bannertext1 {
+    margin-bottom: 90px;
+}
+
+.cardtext p {
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.29px;
+    text-align: left;
+    color: #125b67;
+}
+
+.textcol h4 {
+    font-size: 18px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #7e9195;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.textcol h2 {
+    font-size: 28px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.42px;
+    color: #0a2836;
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+
+.textcol p {
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    color: #425c65;
+}
+
+.callouttext h4 {
+    font-size: 18px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.06;
+}
+
+.callouttext h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+#awards h2 {
+    font-size: 32px;
+    font-family: 'DM Serif Text', serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.42px;
+    text-align: center;
+    color: #0a2836;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.btncenter {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#awards p {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0a2836;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.awardslogo {
+    height: 92px;
+    vertical-align: top;
+    text-align: center;
+    max-height: 93px;
+}
+
+.awardslogo img {
+    max-height: 93px;
+}
+
+#banner p {
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+#footer h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+#nav {
+    margin-bottom: 75px;
+    vertical-align: middle;
+}
+
+#nav-2 {
+    margin-bottom: 25px;
+    vertical-align: middle;
+}
+
+.navlogo {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.navlinks {
+    display: inline-block;
+    width: 69%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+a.navigation {
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footerlinks a {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+.navlinks a.button {
+    padding: 15px 26px;
+    height: auto;
+    font-size: 16px;
+}
+
+.footerlinks a:hover {
+    color: #1b7d88
+}
+
+.collg p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.44;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #adbdbd;
+}
+
+#footercol1 a {
+    font-weight: bold;
+    color: #adbdbd;
+    text-decoration: none;
+}
+
+#footercol1 a:hover,
+#footercol1 a:focus {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+.container_100 {
+    width: 100%;
+    display: inline-block;
+}
+
+.container_inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+#banner .col50 {
+    vertical-align: bottom
+}
+
+.col50 {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#banner .col50 img {
+    width: 100%;
+    height: auto;
+}
+
+.col33 {
+    width: 32.5%;
+    display: inline-block;
+    padding: 10x;
+    vertical-align: top;
+}
+
+.cards_container_2 .col33 {
+    text-align: center;
+    width: 31%;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.divider {
+    width: 100%;
+    height: 0px;
+    margin: 20px auto;
+    margin-bottom: 63px;
+    border: none!important;
+}
+
+#seenlogos .col33 {
+    vertical-align: bottom;
+}
+
+#left {
+    text-align: left;
+}
+
+#right {
+    text-align: right;
+}
+
+#center {
+    text-align: center;
+}
+
+#headline {
+    margin-bottom: 90px;
+}
+
+#banner .container_inner,
+#sales .container_inner,
+#cta .container_inner,
+#footer .container_inner,
+#ebook .container_inner,
+#ebookform .container_inner {
+    max-width: 1495px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.cards_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.cardicon {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cardtext {
+    width: 100%;
+    max-width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.col {
+    width: 30%;
+    display: inline-block;
+}
+
+#mid {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#twocol .imgcol {
+    width: 55%;
+    float: right;
+    text-align: center;
+}
+
+#twocol .textcol {
+    width: 44%;
+    float: left;
+    padding: 20px 0;
+}
+
+#twocolleft .imgcol {
+    width: 55%;
+    float: left;
+    text-align: center;
+}
+
+#twocolleft .textcol {
+    width: 44%;
+    float: right;
+}
+
+#about .imgcol-1 {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#about .textcol-1 {
+    width: 50%;
+    float: right;
+    padding: 20px 0 20px 40px;
+}
+
+#about-1 .imgcol-1 {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#about-1 .textcol-1 {
+    width: 50%;
+    float: Left;
+    padding: 20px 40px 20px 0px;
+}
+
+.inlinelogos {
+    margin-top: 45px
+}
+
+.imgcol {
+    width: 45%;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    vertical-align: top;
+}
+
+.textcol {
+    width: 53%;
+    display: inline-block;
+}
+
+.imgcol-1 {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.textcol-1 {
+    width: 48%;
+    display: inline-block;
+}
+
+a.button {
+    display: inline-block;
+    padding: 15px 55px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+.carousel-indicators .active {
+    background-color: #1b7d88 !important;
+}
+
+a#twolines.button {
+    padding: 15px 55px;
+}
+
+a.button:hover,
+a.button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #0d3f48;
+    transform: translateY(-0.25em);
+    border-bottom: 0px!important
+}
+
+a.buttonebook:hover,
+a.buttonebook:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #0d3f48;
+    transform: translateY(-0.25em);
+    border-bottom: 0px!important
+}
+
+a.buttonebook {
+    display: inline-block!important;
+    padding: 23px 55px!important;
+    border-radius: 6px!important;
+    font-size: 20px!important;
+    font-weight: bold!important;
+    font-stretch: normal!important;
+    font-style: normal!important;
+    line-height: 1.35!important;
+    letter-spacing: normal!important;
+    text-align: center!important;
+    text-decoration: none!important;
+    background-color: #f3b51d!important;
+    background: #f3b51d!important;
+    color: #125a67!important;
+    border: 0!important;
+}
+
+.leftbtn {
+    display: inline-block;
+    margin-right: 20px;
+    height: 75px;
+    margin-top: 50px;
+    vertical-align: top;
+}
+
+.rightbtn {
+    display: inline-block;
+    height: 75px;
+    margin-top: 50px;
+    vertical-align: top;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.inline.mid {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#footer .col {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer .collg {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+a.card,
+.col33>.card {
+    width: 100%;
+    padding: 10px 10px;
+    display: table;
+    text-decoration: none;
+}
+
+.cardicon img {
+    display: block;
+    margin: 0 auto;
+}
+
+a.card:hover,
+a.card:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #666666;
+    transform: translateY(-0.25em);
+    border-bottom: 0px!important
+}
+
+#links .col50 {
+    padding: 10px;
+}
+
+.footerlinks li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footerlinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socialyt {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.socialli {
+    display: inline-block;
+}
+
+#testimonials .col50 {
+    vertical-align: top;
+}
+
+.title {
+    text-align: center;
+}
+
+.quoteperson {
+    width: 100%;
+    margin-bottom: 35px;
+    filter: grayscale(1);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 1s, filter 1s;
+}
+
+.quoteperson.quoteperson-active {
+    filter: grayscale(0);
+    opacity: 1;
+    display: block;
+}
+
+.quoteimage {
+    width: 110px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.quotename {
+    display: inline-block;
+    max-width: 350px;
+    width: 100%;
+    margin-left: 45px;
+    vertical-align: middle;
+}
+
+.quotename p {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #125b67;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.pill1 img,
+.pill2 img,
+.pill3 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.pill1 {
+    background-color: #0f73e5;
+    display: block;
+    padding: 13px 20px;
+    border-radius: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.pill2 {
+    background-color: #43a000;
+    display: block;
+    padding: 13px 20px;
+    border-radius: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.pill3 {
+    background-color: #01467f;
+    display: block;
+    padding: 13px 20px;
+    border-radius: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+#ebook div#bannertext1 img {
+    max-width: 472px!important;
+    width: 100%!important;
+}
+
+#ebook .leftbtn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #7e9195;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.quote {
+    display: none;
+}
+
+.quote-active {
+    display: block;
+}
+
+.quote h2 {
+    font-size: 28px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.42px;
+    text-align: left;
+    color: #0a2836;
+    margin-top: 0px;
+}
+
+.quote p {
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0a2836;
+    font-family: "Nunito Sans", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.quotedot-container {
+    text-align: center;
+    display: none;
+}
+
+.quotedot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #89eabf;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.quotedot.quotedot-active {
+    background: #1ae5be;
+}
+
+@media screen and (max-width: 1075px) {
+    a.button {
+        padding: 15px 25px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .formheadline {
+        width: 79%;
+    }
+    .formheadlineicon {
+        Width: 15%;
+        padding: 0px;
+    }
+    .formheadline h1 {
+        font-size: 20px;
+    }
+    #awards img {
+        max-height: 93px;
+        vertical-align: middle;
+    }
+    a#twolines.button {
+        padding: 15px 25px;
+    }
+    .imgcol img {
+        width: 100%;
+        height: auto;
+    }
+    #banner .container_inner,
+    #sales .container_inner,
+    #cta .container_inner,
+    #footer .container_inner,
+    #ebook .container_inner,
+    #ebookform .container_inner {
+        max-width: 900px;
+    }
+    .container_inner {
+        max-width: 900px;
+    }
+    h2.margtop {
+        margin-top: 10px;
+    }
+    h1.singleheadline {
+        font-size: 45px;
+        margin-top: 50px;
+        padding-bottom: 70px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 1200px;
+    }
+    .section {
+        padding-top: 40px!important;
+        padding-bottom: 40px!important;
+    }
+    .navlinks a.button {
+        padding: 15px 15px;
+    }
+    .textcol {
+        vertical-align: top;
+    }
+    .imgcol {
+        vertical-align: top;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1075px) {
+    .col33 img {
+        width: 80%;
+        height: auto;
+    }
+    .cards_container_2 .col33 {
+        text-align: center;
+        width: 29%;
+    }
+    .cards_container_2 a.card,
+    .col33>.card {
+        min-height: 350px;
+    }
+    #left img {
+        max-width: 130px;
+    }
+    #left {
+        text-align: center;
+    }
+    .pill1,
+    .pill2,
+    .pill3 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #bannergrey .col50 img {
+        width: 100%;
+        height: auto;
+    }
+    #right {
+        text-align: center;
+    }
+    #center {
+        text-align: center;
+    }
+    .inline {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .inline.mid {
+        padding-left: 0px;
+        padding-right: 0px
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container_inner {
+        width: 100%;
+    }
+    element {}
+    .footer__navigation ul {
+        padding: 0;
+    }
+    .inlinelogos {
+        width: 70%;
+        margin: 0 auto;
+    }
+    table p,
+    table span {
+        font-size: 12px!important;
+    }
+    td {
+        padding: 0px !important;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 1.12;
+        text-align: center;
+    }
+    div#bannertext1 {
+        margin-bottom: 60px;
+    }
+    #banner p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    #awards p {
+        font-size: 12px;
+    }
+    p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.57
+    }
+    #awards .col33 {
+        margin-bottom: 50px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 1.17
+    }
+    h2 img {
+        height: 20px;
+        width: auto!important;
+    }
+    .textcol h4 {
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 14px;
+        line-height: 1.5
+    }
+    #awards h2 {
+        margin-top: 10px;
+        font-size: 28px;
+    }
+    .last {
+        margin-bottom: 0px!important
+    }
+    #sales p {
+        font-size: 16px;
+    }
+    #cta p {
+        font-size: 16px;
+    }
+    .textcol h4 {
+        text-align: left;
+        font-size: 16px;
+    }
+    .callouttext h1,
+    .imgcol p {
+        text-align: left;
+    }
+    .textcol h2 {
+        text-align: left;
+    }
+    .quotename p {
+        text-align: center;
+    }
+    .quote p {
+        font-size: 14px;
+        line-height: 1.57;
+        padding-top: 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    h5 {
+        text-align: center;
+    }
+    .quote h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+        display: none;
+    }
+    .cards_container_2 .col33 {
+        text-align: center;
+        width: 100%;
+    }
+    .cards_container_2 a.card,
+    .col33>.card {
+        min-height: auto;
+    }
+    .col {
+        width: 100%%;
+        display: inline-block;
+    }
+    #footer h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .collg p {
+        text-align: center;
+        font-size: 14px;
+    }
+    #banner .bullets p {
+        text-align: left;
+        font-size: 14px;
+    }
+    #mid {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .footerlinks a {
+        font-size: 16px;
+    }
+    #footer .col {
+        width: 100%;
+        display: inline-block;
+    }
+    .leftbtn {
+        display: inline-block;
+        margin-left: 0px;
+    }
+    .col50 {
+        width: 100%!important;
+        display: inline-block;
+    }
+    .nav-logo {}
+    .footer__navigation {
+        text-align: left;
+    }
+    #headline {
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 20px;
+    }
+    .mission h2 img {
+        height: auto;
+        width: 65%;
+    }
+    .imgcol-1 img {
+        width: 100%;
+    }
+    .col33 {
+        width: 100%;
+    }
+    #cards_container_2 .col33 {
+        width: 100%;
+    }
+    #left {
+        text-align: center;
+    }
+    #right {
+        text-align: center;
+    }
+    #center {
+        text-align: center;
+    }
+    .awardslogo {
+        height: auto;
+    }
+    .imgcol img {
+        width: 100%;
+        height: auto;
+    }
+    .quoteperson {
+        display: none;
+    }
+    .quotedot-container {
+        display: block;
+    }
+    .formheadline h1 {
+        font-size: 28px;
+    }
+    #twocol .imgcol {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    #twocol .textcol {
+        width: 100%;
+        float: none;
+    }
+    #twocol-1 .imgcol {
+        width: 100%;
+        float: none;
+        text-align: center;
+        order: 2;
+    }
+    #twocol-1 .textcol {
+        width: 100%;
+        float: none;
+        order: 1;
+    }
+    #twocolleft .imgcol {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    #twocolleft-1 .imgcol {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    #about .imgcol-1 {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    #about .textcol-1 {
+        width: 100%;
+        float: none;
+        padding: 10px 0;
+    }
+    #about-1 .textcol-1 {
+        width: 100%;
+        float: none;
+        padding: 10px 0;
+    }
+    #about-1 .imgcol-1 {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .textcol {
+        width: 100%;
+        float: none;
+    }
+    .imgcol {
+        width: 100%;
+        float: none;
+        padding: 10px!important;
+        text-align: center;
+    }
+    .textcol-1 {
+        width: 100%;
+        float: none;
+    }
+    .imgcol-1 {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    #twocolleft .textcol {
+        width: 100%;
+        float: none;
+    }
+    #twocolleft-1 .textcol {
+        width: 100%;
+        float: none;
+    }
+    .col50 img {
+        width: 100%;
+        height: auto;
+    }
+    a.button {
+        padding: 13px 15px;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 100%;
+        display: inline-block;
+        height: auto;
+    }
+    a#twolines.button {
+        padding: 13px 15px;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 100%;
+        display: inline-block;
+        height: auto;
+    }
+    .leftbtn {
+        display: block;
+        width: 100%;
+        margin-right: 0px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .rightbtn {
+        display: block;
+        width: 100%;
+        margin-right: 0px;
+        height: auto;
+        margin-top: 20px;
+    }
+    #alert a {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+    .navlinks {
+        display: none;
+    }
+    .navmobile {
+        display: inline-block;
+    }
+    #nav {
+        margin-bottom: 30px;
+        vertical-align: middle;
+    }
+    #nav .container_inner {
+        position: relative;
+    }
+    .notalogo {
+        /*width:160px;
+    height:auto;*/
+        width: auto;
+        height: 40px;
+    }
+    div#alert {
+        z-index: 99999999!important;
+        position: relative;
+    }
+    a#twolines br {
+        display: none;
+    }
+    #twolines span {
+        font-size: 16px!important;
+        padding-right: 5px;
+    }
+    .mobileimg {
+        display: none;
+    }
+    #seenlogos .col33 {
+        margin-bottom: 25px;
+    }
+    .section {
+        padding-top: 30px!important;
+        padding-bottom: 30px!important;
+    }
+    #seenin .section {
+        padding-top: 0px!important;
+    }
+    .inline {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .cards_container {
+        padding: 0px;
+    }
+    .cardtext {
+        width: 60%;
+        max-width: 250px;
+        padding-left: 10px;
+    }
+    .divider {
+        margin-bottom: 30px;
+    }
+    .quoteperson {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    #testimonials .col50 {
+        padding: 0px;
+    }
+    .quotename {
+        text-align: center;
+        margin: 20px auto;
+        margin-left: 0px;
+    }
+    .quote img {
+        width: 100px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .quote {
+        text-align: center;
+    }
+    .btncenter {
+        width: 100%;
+    }
+    #flex {
+        display: flex;
+        flex-direction: column;
+    }
+    #seenlogos {
+        display: flex;
+        flex-direction: column;
+    }
+    #left {
+        order: 2;
+    }
+    #center {
+        order: 1;
+    }
+    #right {
+        order: 3;
+    }
+    #flex .imgcol {
+        order: 2;
+    }
+    #flex .text {
+        order: 2;
+    }
+    div#footercol1 {
+        order: 3;
+        text-align: center;
+        width: 100%;
+    }
+    div#footercol2 {
+        order: 1;
+        text-align: center;
+        width: 100%;
+    }
+    div#footercol3 {
+        order: 2;
+        text-align: center;
+        width: 100%;
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    .logobox img {
+        width: 100%;
+        max-width: 200px;
+    }
+    #bannertext1 {
+        order: 2;
+    }
+    #bannerform1 {
+        order: 1;
+    }
+    #footer .collg {
+        width: 100%;
+        margin-right: 0%;
+    }
+    .bullets strong,
+    .bullets b {
+        font-size: 18px;
+    }
+    .notoppad {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .form {
+        padding: 30px;
+    }
+    .hs-fieldtype-text.field.hs-form-field {
+        margin-bottom: 20px;
+    }
+    .actions {
+        text-align: center;
+    }
+    .cardtext p {
+        font-size: 18px;
+    }
+    .inline.mid {
+        padding-left: 0px;
+        padding-right: 0px
+    }
+    h2.margtop {
+        margin-top: 0px;
+        font-size: 32px!important;
+    }
+    h1.singleheadline {
+        font-size: 35px;
+        margin-top: 20px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    #ebook div#bannertext1 {
+        margin-bottom: 30px;
+        margin-top: 0px;
+        text-align: center;
+    }
+    #ebook #bannerform1 {
+        padding-bottom: 0px;
+    }
+    #ebook #nav {
+        margin-bottom: 30px;
+    }
+    #bannergrey h2 {
+        text-align: center;
+    }
+    #banner.demobanner {
+        background: rgb(251, 249, 248);
+        background: linear-gradient(359deg, rgba(251, 249, 248, 1) 0%, rgba(251, 249, 248, 1) 3%, rgba(18, 91, 103, 1) 3.1%, rgba(13, 63, 72, 1) 98%);
+    }
+    #banner {
+        background: #0A2837;
+    }
+    .banner,
+    .bannergrey,
+    .bannerbrown {
+        padding-top: 0!important;
+    }
+    .navbar {
+        background: #fff!important;
+        height: 65vh!important;
+        transform: translateY(-120%)!important;
+    }
+    .navbar ul {
+        align-items: flex-start;
+        padding-left: 20px!important;
+    }
+    .navbar ul li a {
+        color: #425c65!important;
+        font-size: 18px!important;
+    }
+    .navmobile .button {
+        border: 2px solid #097d88!important;
+        color: #097d88!important;
+        max-width: 300px;
+    }
+    .showNav {
+        transform: translateY(-10%)!important;
+    }
+    .showClose {
+        background-image: url("https://fs.hubspotusercontent00.net/hubfs/7289002/close.png")!important;
+    }
+    #nav {
+        padding-top: 30px;
+    }
+    .mobile-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .mission {
+        width: 100%;
+    }
+    .mission h2 {
+        font-size: 32px!important;
+    }
+    .mobile-flex .imgcol-1 {
+        order: 2;
+    }
+    .mobile-flex .textcol-1 {
+        order: 1;
+    }
+    .mobile-flex .textcol-1 p {
+        text-align: left;
+    }
+    .footer-text p,
+    .footer-subtext p {
+        text-align: left;
+    }
+    .container_inner {
+        padding: 0 15px;
+    }
+}
+
+nav.navbar {
+    z-index: 100;
+}

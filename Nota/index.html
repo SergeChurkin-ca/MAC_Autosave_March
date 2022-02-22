@@ -1,0 +1,84 @@
+<div id="banner" class="container_100 {{ module.module_styles.banner_background_color }}" style="background-color:{{ module.background_color.color }};background:url('{{ module.module_styles.bg_image.src }}'), {{ module.background_color.color }}; background-size:cover;background-repeat:no-repeat;">
+    <div id="nav">
+        <div class="container_inner">
+            <div class="navlogo">
+                <a href="https://www.trustnota.com/"><img src="{{ module.module_styles.logo_color }}" alt="Nota Trust" class="notalogo"></a>
+            </div>
+            <nav class="dropdownmenu navlinks">
+                <ul>
+                    <li><a href="https://www.trustnota.com/about-us" class="navigation">About Us</a>
+                    </li>
+                    <li><a href="https://www.trustnota.com/pricing" class="navigation">Pricing</a></li>
+
+                    <li><a href="#" class="navigation">Resources</a>
+                        <ul class="submenu" id="submenu">
+                            <li><a href="https://www.trustnota.com/blog">Blog</a></li>
+                            <li><a href="https://www.trustnota.com/en/press">News &#38; Events</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://app.trustnota.com/login" target="{{ module.nav_button_open_link_ }}" class="navigation">Log In</a></li>
+                    <li><a class="button" href="{{ module.nav_btn_url.href }}" style="border:2px solid {{ module.nav_btn_bg_color.color }};color:{{ module.nav_btn_text_color.color }}; text-decoration: none;">{{ module.nav_btn_text }}</a></li>
+                </ul>
+            </nav>
+
+            <div class="navmobile">
+                <button class="ham"></button>
+                <nav class="navbar">
+                    <ul>
+                        <li style="text-align:center;"><span class="menuLink" style="font-size:16px;">&nbsp;</span></li>
+                        <li style="text-align:center;"><span class="menuLink" style="font-size:16px; font-weight:700;color:#0a2837">Menu</span></li>
+                        <li style="text-align:center;"><a href="https://www.trustnota.com/about-us" class="menuLink">About Us</a></li>
+                        <li><a class="menuLink" href="https://www.trustnota.com/pricing">Pricing</a></li>
+                        <li><a class="menuLink" href="https://www.trustnota.com/blog">Resources</a>
+                            <ul id="submenu">
+                                <li><a href="https://www.trustnota.com/blog">Blog</a></li>
+                                <li><a href="https://www.trustnota.com/en/press">News &#38; Events</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menuLink" href="https://app.trustnota.com/login">Log In</a></li>
+                        <li><a class="button" href="{{ module.nav_btn_url.href }}" style="border:2px solid {{ module.nav_btn_bg_color.color }};color:{{ module.nav_btn_text_color.color }}; text-decoration: none;" target="_blank">Learn More</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container_inner" style="text-align:center;">
+
+        <div class="{{ module.module_styles.headline_width }}" id="headline">
+            {% inline_rich_text field="headline" value="{{ module.headline }}" %}
+            <div class="rightbtn" style="{{ module.module_styles.show_buttons_ }}">
+                <a class="button" id="twolines" href="{{ module.right_btn_url.href }}" style="background-color:{{ module.right_btn_bg_color.color }};color:{{ module.right_btn_text_color.color }}" target="{{ module.right_btn_open_link_ }}"><span style="font-size:18px;">{{ module.right_btn_text }}<br></span></a>
+                <p style="color:#7e9195;">{{ module.already_account }}</p>
+            </div>
+        </div>
+        <div class="mobileimg" style="{{ module.module_styles.show_image_ }}">
+            {% if module.image_field.src %} {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %} {% if module.image_field.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %} {% elif
+            module.image_field.size_type == 'auto_custom_max' %} {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.image_field.max_width }}px; max-height: {{ module.image_field.max_height }}px"' %} {% endif %}
+            <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ sizeAttrs }}> {% endif %}
+        </div>
+
+        <div class="clear">
+
+        </div>
+    </div>
+</div>
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    var header = document.getElementById("nav");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            //header.classList.add("sticky");
+            document.body.classList.add("sticky");
+        } else {
+            //header.classList.remove("sticky");
+            document.body.classList.remove("sticky");
+        }
+    }
+</script>
