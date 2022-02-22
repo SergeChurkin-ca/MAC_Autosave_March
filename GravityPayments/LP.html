@@ -32,24 +32,24 @@
 
 
     <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#107ab0">
-    <meta class="mktoColor" id="btnbrdclr" mktoName="Free-Text - Btn Border Color" default="#3483bc">
-    <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Color" default="#ffffff">
+    <meta class="mktoColor" id="btnbrdclr" mktoName="Free-Text - Btn Border Color" default="#107ab0">
+    <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Color" default="#348ebc">
     <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#f9fafa">
     <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="none">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#0a0a0a">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#0a0a0a">
-    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#107ab0">
-    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
     <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#253750">
 
     <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#253750">
     <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#0a0a0a">
 
-    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
-    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#3483bc">
-    <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#3483bc">
+  <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#519d18">
+    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
+    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#6bac3b">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#6bac3b">
+    <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#519d18">
 
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#253750">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
@@ -86,14 +86,16 @@
 
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="Montserrat">
+    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="Proxima Nova">
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
-    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="40">
+    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="5">
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="40">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="form-btnpaddinglr" default="15">
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="form-btnpaddingtb" default="10">
 
     <!-- Form Section Styling -->
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
@@ -106,6 +108,7 @@
 
     <style>
       ${googlefontimport}
+
       * {
         padding:0;
         border: 0;
@@ -187,438 +190,453 @@
       }
       .btn a:hover, .btn a:focus {
         background: ${btnhoverbackground};
-        border: 2px solid ${btnbgclr};
-        color: ${btnbgclr};
+        border: 2px solid ${btnhoverbackground};
+          color: #ffffff;
 
-      }
-      .section{
-        width:85%;
-        max-width:1400px;
-        margin:0 auto;
-        padding:${sectionpaddingtb}px 0;
-      }
-      .form-container{
-        min-height:20px;
-
-      }
-
-      .mktoForm input[type="text"],
-      .mktoForm input[type="url"], 
-      .mktoForm input[type="email"], 
-      .mktoForm input[type="tel"], 
-      .mktoForm input[type="number"], 
-      .mktoForm input[type="date"], 
-      .mktoForm textarea.mktoField, 
-      .mktoForm select.mktoField {
-        color: ${formTextColor} !important;
-        box-shadow: none !important;
-      }
-
-
-
-      #header{
-        background-color:${bannerclr};
-        background-image:url('${bannerimage}');
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:cover;
-        display:${showbanner};
-        background-blend-mode: ${background-blend-mode};
-      }
-      #freetext{
-        background-color:${freeTextBackgroundColor};
-        display:${showsec1};
-      }
-      #formsection{
-        background-color:${mainformbgclr};
-        display:${showformsec};
-      }
-
-
-      #brand .section{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        max-height:350px;
-        position:relative;
-        padding-top:${logopaddingtop}px;
-        padding-bottom:${logopaddingbtm}px;
-      }
-
-
-      #header .section{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        min-height:500px;
-        position:relative;
-        padding-top:${headerpaddingtop}px;
-        padding-bottom:${headerpaddingbtm}px;
-      }
-      #header .logo-container{
-        top:${sectionpaddingtb}px;
-        left:0;
-        width:100%;
-        display:${showtoplogo};
-      }
-      #header .logo-container img{
-        width:${toplogowidth}px;
-      }
-      #brand{
-        display:${showtoplogo-1};
-      }
-      #brand .logo-container{
-        top:${sectionpaddingtb}px;
-        left:0;
-        width:100%;
-      }
-      #brand .logo-container img{
-        width:${toplogowidth}px;
-      }
-      #header #bannertext{
-        padding-top:80px;
-        padding-bottom:30px;
-      }
-
-      #header h1 {
-        color: ${bannerHeaderColor} !important;
-      }
-
-      #header p,
-      #header ul,
-      #header li {
-        color: ${bannerTextColor} !important;
-      }
-      #freetext .btn {
-        margin-top:30px;
-      }
-
-      #freetext h1 {
-        color: ${freeTextHeaderColor} !important;
-        font-size: ${freeTextH1size}px;
-        font-weight: 400;
-      }
-
-      #freetext p,
-      #freetext ul,
-      #freetext li {
-        color: ${freeTextTextColor} !important;
-      }
-
-      #formlefttext h2 {
-        color: ${formSectionHeaderColor} !important;
-        font-weight: 400;
-      }
-
-      #formsection p,
-      #formsection ul,
-      #formsection li {
-        color: ${formSectionTextColor} !important;
-      }
-      #formsection .section{
-        justify-content: space-between;
-      }
-      #formsection .form-container{
-        background-color:${formbgclr};
-        padding-top: ${formTopBottomPadding}px;
-        padding-bottom: ${formTopBottomPadding}px;
-      }
-      #formsection .lefttext{
-        display:${showlefttext};
-        margin-right:40px;
-      }
-
-
-
-      .mktoForm .mktoRequiredField .mktoAsterix {
-        display: none !impor!ant;
-      }
-      #formheadline{
-        font-size: ${formheadlinefontsize}px;
-        color: ${formHeadLineColor} !important;
-        text-align:center;
-        margin-bottom: 10px;
-      }
-
-      #formheadline h2{
-        color: ${formHeadLineColor} !important;
-        font-size: ${formheadlinefontsize}px !important;
-      }
-      form.mktoForm{
-        width:99% !important;
-        max-width:700px !important;
-        margin: 0 auto !important;
-        ${fontfamily}
-      }
-      .mktoForm .mktoGutter{
-        width:0 !important;
-      }
-      .mktoForm .mktoOffset {
-        height: 7px !important;
-      }
-      .mktoForm .mktoLabel{
-        width:90% !important;
-        font-size:${formfontsize}px !important;
-        color: ${formLabelColor} !important;
-        margin-bottom: 1rem !important;
-      }
-      .mktoForm .mktoFormRow{
-        display:flex !important;
-      }
-      .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
-        margin-left:20px;
-      }
-      .mktoForm .mktoFormRow .mktoFormCol:first-child{
-        margin-left:0 !important;
-      }
-      .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap, .mktoForm input, .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm .mktoButtonRow{
-        width:100% !important;
-      }
-      .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
-        min-height:25px !important;
-        height: unset !important;
-        letter-spacing: unset !important;
-      }
-      .mktoForm textarea.mktoField{
-        height:70px !important;
-        min-height:40px !important;
-      }
-      .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
-        border: 1px solid #D0D3D4 !important;
-        background: #ffffff !important;
-        color: ${formTextColor} !important;
-        -moz-border-radius: 0 !important;
-        -webkit-border-radius: 0 !important;
-        border-radius: 0 !important;
-        padding-left: 10px !important;
-        font-size:${formfontsize}px !important;
-      }
-      .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color:#3a3a3a !important;
-      }
-      .mktoForm input::-moz-placeholder { /* Firefox 19+ */
-        color:#3a3a3a !important;
-      }
-      .mktoForm input:-ms-input-placeholder { /* IE 10+ */
-        color:#3a3a3a !important;
-      }
-      .mktoForm input:-moz-placeholder { /* Firefox 18- */
-        color:#3a3a3a !important;
-      }
-      .mktoForm select.mktoField{
-        background-color:#ffffff !important;
-        background-image: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/select-arrow.png') !important;
-        background-repeat: no-repeat !important;
-        background-position:97% 50% !important;
-        -moz-appearance: none; 
-        -webkit-appearance: none; 
-        appearance: none;
-        background-size: 24px !important;
-      }
-      .mktoForm input:invalid, .mktoForm select.mktoField:invalid, .mktoForm textarea.mktoField:invalid{
-        box-shadow: none !important;
-      }
-      .mktoLogicalField.mktoCheckboxList input{
-        width: 20px !important;
-        height: 20px !important;
-        margin-top: 3px !important;
-        margin-right: 5px!important;
-      }
-      .mktoForm a, .mktoForm a:visited{
-        color:#3a3a3a !important;
-      }
-      .mktoForm .mktoLogicalField.mktoCheckboxList{
-        order:1;
-        margin-right: 8px !important;
-      }
-      .mktoForm .mktoButtonWrap{
-        margin-left: 0 !important;
-      }
-      .mktoForm .mktoButtonRow{
-        margin-top:10px;
-      }
-      .mktoButtonWrap button.mktoButton {
-        background: ${formButtonColor} !important;
-        border: solid 2px ${formButtonColor} !important;
-        color:${btnfontclr};
-        text-align: center !important;
-        font-size:${btnfontsize}px !important;
-        -moz-border-radius: ${btnborderrds}px !important;
-        -webkit-border-radius: ${btnborderrds}px !important;
-        border-radius:${btnborderrds}px !important;
-        opacity:1;
-        transition:300ms opacity;
-        box-shadow: none !important;
-        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
-      }
-
-      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
-        background: ${formButtonColor} !important;
-        color: ${formButtonTextColor} !important;
-        border: 3px solid ${formButtonBorder} !important;
-        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
-        height: unset !important;
-      }
-
-      .mktoForm button.mktoButton:hover, .mktoForm button.mktoButton:focus{
-        opacity:${btnhvropacity};
-        color: ${formButtonColor} !important;
-        background: ${formButtonHoverBGColor} !important;
-        border: solid 3px ${formButtonColor};
-      }
-
-     
-
-      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
-        margin-left: 1.5em;
-        margin-top: 0.1em;
-        margin-bottom: 0.3em;
-        line-height: 2em!important;
-        display: block;
-        min-height: 12px;
-        font-size: ${formfontsize-1}px!important;
-      }
-      #footer{
-        display:${showfooter};
-        background-color:${footerbgclr};
-        color:${footerfontclr};
-        font-size:${footerfontsize}px;
-      }
-
-      #footer .row1 {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-
-      .footer-container {
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-      #footer .section{
-        padding:${footerpaddingtb}px 0;
-
-      }
-
-      .footer-logo img {
-        width:${footerlogowidth}px;
-        height: auto;
-        margin-bottom: 2rem;
-      }
-      #footer .logo-container {
-        display: flex;
-        justify-content: center;
-        text-align: left;
-        margin-bottom: 2rem;
-
-      }
-      #footer col:nth-child(2) {
-        margin: 0 1rem 0 0;
-      }
-      #footer .icons-container img{
-        width:${footericonswidth}px;
-      }
-     
-      #footer .icons-container {
-        justify-content: right;
-        display: flex;
-
-      }
-      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
-        color:${footerfontclr};
-        font-size:${footerfontsize}px;
-        font-weight: 700;
-        margin: 0;
-      }
-      #footer a:hover, #footer a:focus {
-        color: ${footerhoverclr};
-        text-decoration: underline;
-      }
-      #footertext2 ul, #footericons ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        flex-direction: row;
-        justify-content: center;
-        
-      }
-        #footertext2 ul {
-            flex-direction: column;
-            align-items: left !important;
-            gap: 0;
         }
-        #footertext2 li {
-            height: 1.5rem;
+        .section{
+          width:85%;
+          max-width:1400px;
+          margin:0 auto;
+          padding:${sectionpaddingtb}px 0;
         }
-      #footer ul {
-        margin: 0 1rem 0 1rem !important;
-      }
-      #footer ul li {
-        list-style: none;
-        display: flex;
-        
-      }
+        .form-container{
+          min-height:20px;
+
+        }
+
+        .mktoForm input[type="text"],
+        .mktoForm input[type="url"], 
+        .mktoForm input[type="email"], 
+        .mktoForm input[type="tel"], 
+        .mktoForm input[type="number"], 
+        .mktoForm input[type="date"], 
+        .mktoForm textarea.mktoField, 
+        .mktoForm select.mktoField {
+          color: ${formTextColor} !important;
+          box-shadow: none !important;
+          padding: 0.7rem !important;
+          border-radius: 4px !important;
+        }
 
 
 
-      @media screen and (max-width:768px){
-        .flex{
-          flex-wrap:wrap;
+        #header{
+          background-color:${bannerclr};
+          background-image:url('${bannerimage}');
+          background-repeat:no-repeat;
+          background-position:center;
+          background-size:cover;
+          display:${showbanner};
+          background-blend-mode: ${background-blend-mode};
+        }
+        #freetext{
+          background-color:${freeTextBackgroundColor};
+          display:${showsec1};
+        }
+        #formsection{
+          background-color:${mainformbgclr};
+          display:${showformsec};
+        }
+
+
+        #brand .section{
+          display:flex;
           flex-direction:column;
+          justify-content:center;
+          max-height:350px;
+          position:relative;
+          padding-top:${logopaddingtop}px;
+          padding-bottom:${logopaddingbtm}px;
         }
 
-        .w50{
-          width:100%;
+
+        #header .section{
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          min-height:500px;
+          position:relative;
+          padding-top:${headerpaddingtop}px;
+          padding-bottom:${headerpaddingbtm}px;
         }
-        .section, #header .section{
-          width:90%;
-          padding:40px 0;
-          padding-top:40px;
-          padding-bottom:40px;
+        #header .logo-container{
+          top:${sectionpaddingtb}px;
+          left:0;
+          width:100%;
+          display:${showtoplogo};
+        }
+        #header .logo-container img{
+          width:${toplogowidth}px;
+        }
+        #brand{
+          display:${showtoplogo-1};
         }
         #brand .logo-container{
-          top:40px;
-        }
-        #formsection .lefttext{
-          margin-right:0;
+          top:${sectionpaddingtb}px;
+          left:0;
           width:100%;
-          margin-bottom:20px;
+        }
+        #brand .logo-container img{
+          width:${toplogowidth}px;
+        }
+        #header #bannertext{
+          padding-top:80px;
+          padding-bottom:30px;
+        }
+
+        #header h1 {
+          color: ${bannerHeaderColor} !important;
+        }
+
+        #header p,
+        #header ul,
+        #header li {
+          color: ${bannerTextColor} !important;
+        }
+        #freetext .btn {
+          margin-top:30px;
+        }
+
+        #freetext h1 {
+          color: ${freeTextHeaderColor} !important;
+          font-size: ${freeTextH1size}px;
+          font-weight: 400;
+        }
+
+        #freetext p,
+        #freetext ul,
+        #freetext li {
+          color: ${freeTextTextColor} !important;
+        }
+
+        #formlefttext h2 {
+          color: ${formSectionHeaderColor} !important;
+          font-weight: 400;
+        }
+
+        #formsection p,
+        #formsection ul,
+        #formsection li {
+          color: ${formSectionTextColor} !important;
+        }
+        #formsection .section{
+          justify-content: space-between;
         }
         #formsection .form-container{
-          padding:20px;
+          background-color:${formbgclr};
+          padding-top: ${formTopBottomPadding}px;
+          padding-bottom: ${formTopBottomPadding}px;
         }
-        #footer .row1, #footer #footertext2 {
-          justify-content: center !important;
-          flex-direction: column;
-          align-items: center;
+        #formsection .lefttext{
+          display:${showlefttext};
+          margin-right:40px;
         }
-        #footer .logo-container {
+
+
+
+        .mktoForm .mktoRequiredField .mktoAsterix {
+          display: none !impor!ant;
+        }
+        #formheadline{
+          font-size: ${formheadlinefontsize}px;
+          color: ${formHeadLineColor} !important;
+          text-align:center;
+          margin-bottom: 10px;
+        }
+
+        #formheadline h2{
+          color: ${formHeadLineColor} !important;
+          font-size: ${formheadlinefontsize}px !important;
+        }
+        form.mktoForm{
+          width:99% !important;
+          max-width:700px !important;
+          margin: 0 auto !important;
+          ${fontfamily}
+        }
+        .mktoForm .mktoGutter{
+          width:0 !important;
+        }
+        .mktoForm .mktoOffset {
+          height: 7px !important;
+        }
+        .mktoForm .mktoLabel{
+          width:90% !important;
+          font-size:${formfontsize}px !important;
+          color: ${formLabelColor} !important;
           margin-bottom: 1rem !important;
-          text-align: center;
         }
-    
-        #footertext2 li {
-          height: 1rem !important;
-          justify-content: center;
-        }
-        #footer .icons-container {
-          margin-top: 1rem;
-        }
-      }
-
-
-      @media screen and (max-width:550px){
         .mktoForm .mktoFormRow{
-          display:block !important;
+          display:flex !important;
         }
-        .mktoForm .mktoFormRow .mktoFormCol{
+        .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
+          margin-left:20px;
+        }
+        .mktoForm .mktoFormRow .mktoFormCol:first-child{
           margin-left:0 !important;
         }
-      }
+        .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap, .mktoForm input, .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm .mktoButtonRow{
+          width:100% !important;
+        }
+        .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
+          min-height:25px !important;
+          height: unset !important;
+          letter-spacing: unset !important;
+        }
+        .mktoForm textarea.mktoField{
+          height:70px !important;
+          min-height:40px !important;
+        }
+        .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+          border: 1px solid #D0D3D4 !important;
+          background: #ffffff !important;
+          color: ${formTextColor} !important;
+          -moz-border-radius: 0 !important;
+          -webkit-border-radius: 0 !important;
+          border-radius: 0 !important;
+          padding-left: 10px !important;
+          font-size:${formfontsize}px !important;
+        }
+        .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color:#3a3a3a !important;
+        }
+        .mktoForm input::-moz-placeholder { /* Firefox 19+ */
+          color:#3a3a3a !important;
+        }
+        .mktoForm input:-ms-input-placeholder { /* IE 10+ */
+          color:#3a3a3a !important;
+        }
+        .mktoForm input:-moz-placeholder { /* Firefox 18- */
+          color:#3a3a3a !important;
+        }
+        .mktoForm select.mktoField{
+          background-color:#ffffff !important;
+          background-image: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/select-arrow.png') !important;
+          background-repeat: no-repeat !important;
+          background-position:97% 50% !important;
+          -moz-appearance: none; 
+          -webkit-appearance: none; 
+          appearance: none;
+          background-size: 24px !important;
+        }
+        .mktoForm input:invalid, .mktoForm select.mktoField:invalid, .mktoForm textarea.mktoField:invalid{
+          box-shadow: none !important;
+        }
+        .mktoLogicalField.mktoCheckboxList input{
+          width: 20px !important;
+          height: 20px !important;
+          margin-top: 3px !important;
+          margin-right: 5px!important;
+        }
+        .mktoForm a, .mktoForm a:visited{
+          color:#3a3a3a !important;
+        }
+        .mktoForm .mktoLogicalField.mktoCheckboxList{
+          order:1;
+          margin-right: 8px !important;
+        }
+        .mktoForm .mktoButtonWrap{
+          margin-left: 0 !important;
+        }
+        .mktoForm .mktoButtonRow{
+          margin-top:10px;
+        }
+        .mktoButtonWrap button.mktoButton {
+          background: ${formButtonColor} !important;
+          border: solid 2px ${formButtonColor} !important;
+          color:${btnfontclr};
+          text-align: center !important;
+          font-size:${btnfontsize}px !important;
+          -moz-border-radius: ${btnborderrds}px !important;
+          -webkit-border-radius: ${btnborderrds}px !important;
+          border-radius:${btnborderrds}px !important;
+          opacity:1;
+          transition:300ms opacity;
+          box-shadow: none !important;
+          padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
+        }
+
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+          background: ${formButtonColor} !important;
+          color: ${formButtonTextColor} !important;
+          border: 3px solid ${formButtonBorder} !important;
+          padding: ${form-btnpaddingtb}px ${form-btnpaddinglr}px !important;
+          height: unset !important;
+        }
+
+        .mktoForm button.mktoButton:hover, .mktoForm button.mktoButton:focus, .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+          opacity:${btnhvropacity};
+          color: #ffffff !important;
+          background: ${formButtonHoverBGColor} !important;
+          border: solid 3px ${formButtonHoverBGColor};
+        }
 
 
 
+        .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+          margin-left: 1.5em;
+          margin-top: 0.1em;
+          margin-bottom: 0.3em;
+          line-height: 2em!important;
+          display: block;
+          min-height: 12px;
+          font-size: ${formfontsize-1}px!important;
+        }
+        #footer{
+          display:${showfooter};
+          background-color:${footerbgclr};
+          color:${footerfontclr};
+          font-size:${footerfontsize}px;
+        }
+
+        #footer .row1 {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          border-bottom: solid 2px #ffffff;
+        }
+
+        .footer-container {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+        #footer .section{
+          padding:${footerpaddingtb}px 0;
+
+        }
+
+        .footer-logo img {
+          width:${footerlogowidth}px;
+          height: auto;
+          margin-bottom: 2rem;
+        }
+        #footer .logo-container {
+          display: flex;
+          justify-content: center;
+          text-align: left;
+          margin-bottom: 2rem;
+
+        }
+        #footer col:nth-child(2) {
+          margin: 0 1rem 0 0;
+        }
+        #footer .icons-container img{
+          width:${footericonswidth}px;
+        }
+
+        #footer .icons-container {
+          justify-content: right;
+          display: flex;
+          margin-bottom: 2rem;
+        }
+        #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
+          color:${footerfontclr};
+          font-size:${footerfontsize}px;
+          font-weight: 400;
+          margin: 0;
+        }
+        #footer a:hover, #footer a:focus {
+          color: ${footerhoverclr};
+          text-decoration: underline;
+        }
+        #footertext2 ul, #footericons ul {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          flex-direction: row;
+          justify-content: center;
+
+        }
+        #footertext2 ul {
+          flex-direction: column;
+          align-items: left !important;
+          gap: 0;
+        }
+        #footertext2 li {
+          height: 1.5rem;
+        }
+        #footer ul {
+          margin: 0 1rem 0 1rem !important;
+        }
+        #footer ul li {
+          list-style: none;
+          display: flex;
+
+        }
+
+
+
+        @media screen and (max-width:768px){
+          .flex{
+            flex-wrap:wrap;
+            flex-direction:column;
+          }
+
+          .w50{
+            width:100%;
+          }
+          .section, #header .section{
+            width:90%;
+            padding:40px 0;
+            padding-top:40px;
+            padding-bottom:40px;
+          }
+          #brand .logo-container{
+            top:40px;
+          }
+          #formsection .lefttext{
+            margin-right:0;
+            width:100%;
+            margin-bottom:20px;
+          }
+          #formsection .form-container{
+            padding:20px;
+          }
+          #footer .row1, #footer #footertext2 {
+            justify-content: center !important;
+            flex-direction: column;
+            align-items: center;
+          }
+          #footer .logo-container {
+            margin-bottom: 1rem !important;
+            text-align: center;
+          }
+
+          #footertext2 li {
+            height: 1rem !important;
+            justify-content: center;
+          }
+          #footer .icons-container {
+            margin-top: 1rem;
+          }
+        }
+        #footer .row2 {
+          width: 60%;
+        }
+
+
+        @media screen and (max-width:550px){
+          .mktoForm .mktoFormRow{
+            display:block !important;
+          }
+          .mktoForm .mktoFormRow .mktoFormCol{
+            margin-left:0 !important;
+          }
+        }
+
+
+
+
+        @font-face {
+          font-family: "Proxima Nova";
+          src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.woff2') format('woff2');
+          src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.eot') format('eot');
+          src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.woff') format('woff');
+          src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.ttf') format('truetype');
+          src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.otf');
+        }
     </style>
   </head>
   <body>
@@ -635,7 +653,7 @@
       <div class="section">
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
-             <a href="https://gravitypayments.com/"><img src="https://dummyimage.com/150x80/000/fff" alt="logo"></a>
+            <a href="https://gravitypayments.com/"><img src="https://dummyimage.com/150x80/000/fff" alt="logo"></a>
           </div>
         </div>
         <div class="mktoText" id="bannertext" mktoName="Banner - Text">
@@ -708,78 +726,78 @@
 
 
     <footer id="footer">
-    <div class="footer-container section flex">
+      <div class="footer-container section flex">
 
         <div class="row1">
-            <div class="logo-container col" style="display:${showfooterlogo};">
-                <div class="mktoText" class="footer-logo" id="footer-contacts" mktoName="Footer - Logo">
+          <div class="logo-container col" style="display:${showfooterlogo};">
+            <div class="mktoText" class="footer-logo" id="footer-contacts" mktoName="Footer - Logo">
 
-                </div>
-                <div>
-                    <p> &copy; 2022 Gravity Payments. All Rights Reserved.<br> 5601 22nd Ave NW, Suite 200 Seattle, WA 98107<br>
-
-                        <a href="tel:+1-866-701-4700">866-70104700</a> |
-                        <a href="mailto:info@gravitypayments.com"></a>info@gravitypayments.com
-                        <</p>
-                </div>
             </div>
+            <div>
+              <p> &copy; 2022 Gravity Payments. All Rights Reserved.<br> 5601 22nd Ave NW, Suite 200 Seattle, WA 98107<br>
 
-
-            <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
-                <ul>
-                    <li>
-                        <a href="https://gravitypayments.com/about/">About</a>
-                    </li>
-                    <li>
-                        <a href="https://gravitypayments.com/contact/">Contact</a>
-                    </li>
-
-
-                </ul>
+                <a href="tel:+1-866-701-4700">866-70104700</a> |
+                <a href="mailto:info@gravitypayments.com"></a>info@gravitypayments.com
+                <</p>
             </div>
+          </div>
 
-            <div class="icons-container col">
-                <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
-                    <ul>
-                        <li id="footer-icon1">
-                            <a href="https://www.facebook.com/gravitypayments" target="_blank">
-                                <img alt="facebook icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/facebook.png" /></a>
-                        </li>
-                        <li id="footer-icon2">
 
-                            <a href="https://twitter.com/gravitypymts" target="_blank">
-                                <img alt="twitter icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/twitter.png" /></a>
-                        </li>
+          <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
+            <ul>
+              <li>
+                <a href="https://gravitypayments.com/about/">About</a>
+              </li>
+              <li>
+                <a href="https://gravitypayments.com/contact/">Contact</a>
+              </li>
 
-                        <li id="footer-icon3">
-                            <a href="https://www.instagram.com/gravitypymts/" target="_blank">
-                                <img alt="instagram icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/instagram.png" /></a>
-                        </li>
-                        <li id="footer-icon4">
-                            <a href="https://www.linkedin.com/company/gravity-payments" target="_blank ">
-                                <img alt="linkedin icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/linkedin.png" /></a>
-                        </li>
-                        <li id="footer-icon5">
-                            <a href="https://www.youtube.com/c/GravityPaymentsVideos" target="_blank">
-                                <img alt="youtube icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/youtube.png" /></a>
-                        </li>
-                    </ul>
-                </div>
+
+            </ul>
+          </div>
+
+          <div class="icons-container col">
+            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
+              <ul>
+                <li id="footer-icon1">
+                  <a href="https://www.facebook.com/gravitypayments" target="_blank">
+                    <img alt="facebook icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/facebook.png" /></a>
+                </li>
+                <li id="footer-icon2">
+
+                  <a href="https://twitter.com/gravitypymts" target="_blank">
+                    <img alt="twitter icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/twitter.png" /></a>
+                </li>
+
+                <li id="footer-icon3">
+                  <a href="https://www.instagram.com/gravitypymts/" target="_blank">
+                    <img alt="instagram icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/instagram.png" /></a>
+                </li>
+                <li id="footer-icon4">
+                  <a href="https://www.linkedin.com/company/gravity-payments" target="_blank ">
+                    <img alt="linkedin icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/linkedin.png" /></a>
+                </li>
+                <li id="footer-icon5">
+                  <a href="https://www.youtube.com/c/GravityPaymentsVideos" target="_blank">
+                    <img alt="youtube icon" src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/youtube.png" /></a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
 
         <div class="row2">
-            <div class="mktoText" class="footer-logo" id="footerlogo" mktoName="Footer - Logo">
-                <a href="https://gravitypayments.com/"><img src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/gravity-logo-all-white.png" alt="footer logo"></a>
-            </div>
-            <p>
-<a href="/privacy-policy/">Privacy Policy</a> · <a href="/terms-of-use/">Terms of Use</a> · © 2022 Gravity Payments. All Rights Reserved.
-<br>Gravity Payments, Inc. is a registered ISO/MSP of Wells Fargo Bank, N.A., Concord, CA, and Synovus Bank, Columbus, GA. The Clover name and logo are owned by Clover Network, Inc. a wholly owned subsidiary of First Data corporation, and are registered or used in the U.S. and many foreign countries.
-</p>
+          <div class="mktoText" class="footer-logo" id="footerlogo" mktoName="Footer - Logo">
+            <a href="https://gravitypayments.com/"><img src="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/gravity-logo-all-white.png" alt="footer logo"></a>
+          </div>
+          <p>
+            <a href="/privacy-policy/">Privacy Policy</a> · <a href="/terms-of-use/">Terms of Use</a> · © 2022 Gravity Payments. All Rights Reserved.
+            <br>Gravity Payments, Inc. is a registered ISO/MSP of Wells Fargo Bank, N.A., Concord, CA, and Synovus Bank, Columbus, GA. The Clover name and logo are owned by Clover Network, Inc. a wholly owned subsidiary of First Data corporation, and are registered or used in the U.S. and many foreign countries.
+          </p>
         </div>
-    </div>
+      </div>
 
-</footer>
+    </footer>
 
 
   </body>
