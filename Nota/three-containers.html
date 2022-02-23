@@ -33,10 +33,10 @@
                     {% if module.image_1_sol3.src %} {% set sizeAttrs = 'width="{{ module.image_1_sol3.width }}" height="{{ module.image_1_sol3.height }}"' %} {% if module.image_1_sol3.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
                     {% elif module.image_1_sol3.size_type == 'auto_custom_max' %} {% set sizeAttrs = 'width="{{ module.image_1_sol3.max_width }}" height="{{ module.image_1_sol3.max_height }}" style="max-width: 100%; height: auto;"' %} {% endif %} {% set
                     loadingAttr = module.image_1_sol3.loading != 'disabled' ? 'loading="{{ module.image_1_sol3.loading }}"' : '' %}
-                    <img src="{{ module.image_1_sol3.src }}" alt="{{ module.image_1_sol3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %} {% if module.column_3_image.src %} {% set sizeAttrs = 'width="{{ module.column_3_image.width }}" height="{{
-                    module.column_3_image.height }}"' %} {% if module.column_3_image.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %} {% elif module.column_3_image.size_type == 'auto_custom_max' %} {% set sizeAttrs
-                    = 'width="{{ module.column_3_image.max_width }}" height="{{ module.column_3_image.max_height }}" style="max-width: 100%; height: auto;"' %} {% endif %} {% set loadingAttr = module.column_3_image.loading != 'disabled' ? 'loading="{{
-                    module.column_3_image.loading }}"' : '' %}
+                    <img class="icon-side-img" src="{{ module.image_1_sol3.src }}" alt="{{ module.image_1_sol3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %} {% if module.column_3_image.src %} {% set sizeAttrs = 'width="{{ module.column_3_image.width
+                    }}" height="{{ module.column_3_image.height }}"' %} {% if module.column_3_image.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %} {% elif module.column_3_image.size_type == 'auto_custom_max' %} {%
+                    set sizeAttrs = 'width="{{ module.column_3_image.max_width }}" height="{{ module.column_3_image.max_height }}" style="max-width: 100%; height: auto;"' %} {% endif %} {% set loadingAttr = module.column_3_image.loading != 'disabled'
+                    ? 'loading="{{ module.column_3_image.loading }}"' : '' %}
                     <img class="icon-img" src="{{ module.column_3_image.src }}" alt="{{ module.column_3_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %}
                 </div>
 
