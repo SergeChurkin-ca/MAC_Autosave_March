@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        #bodyId {
+            background: #ffffff;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 14px;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        div#outerWrapDiv {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        
+        div#innerWrapDiv {
+            position: relative;
+            background: #ffffff;
+            padding: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            margin-bottom: 0px;
+            text-align: left;
+        }
+        /* Width of Full Page */
+        
+        div#innerWrapDiv {
+            width: 775px;
+        }
+        /* Main Content Area - Controls height of page */
+        
+        div#mktContent {
+            background: #eeeeee;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 14px;
+            position: relative;
+            height: 650px;
+            width: 100%;
+        }
+        /* Thin Column in Content */
+        
+        div#mktColumn {
+            height: 100%;
+            width: 200px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background: #dddddd;
+        }
+        
+        div#mktHeader {
+            height: 100px;
+            background: #cccccc;
+        }
+        
+        div#mktFooter {
+            height: 50px;
+            background: #cccccc;
+        }
+    </style>
+</head>
+
+<body id="bodyId" class="mktEditable" align="center">
+    <div id="outerWrapDiv" class="mktEditable">
+        <div id="innerWrapDiv">
+            <div class="mktoContent"></div>
+            <div id="mktHeader" class="mktEditable">
+                <!-- Logo and Header -->
+            </div>
+            <div id="mktContent" class="mktEditable">
+                <!-- Base of Landing Page Content -->
+                <div id="mktColumn" class="mktEditable">
+                    <!-- Column.  Usually Leave this blank. -->
+                </div>
+            </div>
+            <div id="mktFooter" class="mktEditable">
+                <!-- Footer links -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
