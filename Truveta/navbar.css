@@ -1,0 +1,116 @@
+/* navbar mobile */
+
+.header-container .row-number-1 {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90vw;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    border-bottom: solid 1px #00c3b4;
+    transition: all 0.2s;
+}
+
+.navbar-desktop {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar-mobile {
+    position: absolute;
+    display: none;
+    width: 100vw !important;
+    margin: 0 auto !important;
+    height: 100vh !important;
+    background: #ffffff;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    height: 0rem !important;
+}
+
+.navbar-mobile a {
+    font-size: 20px;
+}
+
+.navbar-mobile li {
+    margin: 1rem 0;
+}
+
+.icons-container .icon-1,
+.icons-container .icon-2 {
+    position: absolute;
+    top: -3rem;
+    right: 2rem;
+}
+
+.icons-container .icon-2 {
+    top: -3.4rem;
+}
+
+.icons-container .icon-2 {
+    display: none;
+}
+
+.icons-container svg {
+    fill: #000 !important;
+    width: 2.5rem;
+}
+
+.icon-wrapper span {
+    background: none !important;
+    position: absolute !important;
+    top: 2rem;
+    right: 2rem;
+}
+
+
+/* toogle  menu */
+
+.navbar-menu-mobile {
+    display: none;
+}
+
+.navbar-mobile input[type=checkbox] {
+    position: absolute;
+    right: 1.5rem;
+    top: -3.3rem;
+    padding: 3rem;
+    width: 3rem;
+    height: 3rem;
+    opacity: 0;
+    z-index: 1;
+}
+
+.navbar-mobile input[type=checkbox]:checked~.navbar-menu-mobile {
+    display: block;
+    background: #ffffff;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar-mobile input[type=checkbox]:checked~.icons-container .icon-1 {
+    display: none;
+    transition: all 0.2s;
+}
+
+.navbar-mobile input[type=checkbox]:checked~.icons-container .icon-2 {
+    display: flex;
+    transition: all 0.2s;
+}

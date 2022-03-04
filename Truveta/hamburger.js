@@ -11,3 +11,16 @@ function hamburgerFunction() {
     document.getElementsByClassName('toggle-icon-2').style = 'display: block;';
     Array.from(document.querySelectorAll('.hs-menu-item')).map((x) => x.removeEventListener('click', hamburgerFunction))
 }
+
+document.querySelectorAll('input[type="checkbox"]')[0].addEventListener('click', myFunction)
+
+
+function myFunction() {
+    console.log('check if tis working')
+
+    if (document.querySelectorAll('input[type="checkbox"]')[0].checked == true) {
+        document.body.style = 'overflow: hidden'
+    } else {
+        document.body.style = 'overflow: unset'
+    }
+}
