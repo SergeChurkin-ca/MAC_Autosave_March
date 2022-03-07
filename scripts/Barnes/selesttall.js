@@ -1,19 +1,35 @@
-MktoForms2.whenReady(function(form) {
-    let queryLength = Array.from(document.querySelectorAll('input[type="checkbox"]'))
+   MktoForms2.whenReady(function(form) {
 
-    let firstCheckBox = queryLength[0]
+       let queryLength = Array.from(document.querySelectorAll('input[type="checkbox"]'))
 
-    firstCheckBox.addEventListener('change', checkUncheck)
+       let firstGroupCheckBox = queryLength[0]
+       let secondGroupCheckBox = queryLength[4]
 
-    function checkUncheck() {
-        for (i = 1; i < queryLength.length - 1; i++) {
-            if (firstCheckBox.checked) {
-                queryLength[i].checked = true
-                console.log('checked')
-            } else if (!firstCheckBox.checked) {
-                queryLength[i].checked = false
-                console.log('unchecked')
-            }
-        }
-    }
-})
+
+
+       firstGroupCheckBox.addEventListener('change', checkUncheck1)
+       secondGroupCheckBox.addEventListener('change', checkUncheck2)
+
+       function checkUncheck1() {
+           console.log('first function works')
+           for (i = 1; i < 4; i++) {
+               if (firstGroupCheckBox.checked) {
+                   queryLength[i].checked = true
+               } else if (!firstGroupCheckBox.checked) {
+                   queryLength[i].checked = false
+               }
+           }
+       }
+
+       function checkUncheck2() {
+           console.log('second function works')
+           for (i = 4; i < 11; i++) {
+               if (secondGroupCheckBox.checked) {
+                   queryLength[i].checked = true
+               } else if (!secondGroupCheckBox.checked) {
+                   queryLength[i].checked = false
+               }
+           }
+       }
+
+   })
