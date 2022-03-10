@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +26,7 @@
     <meta class="mktoBoolean" id="show-section7" mktoName="Show Section 7?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
       
                         
-    <meta class="mktoBoolean" id="banner-form" mktoName="Show Form In Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-formin-banner" mktoName="Show Form In Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -137,7 +138,6 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                                 })(window,document,'script','dataLayer','GTM-KRM37B7');</script>
     <!-- End Google Tag Manager -->
-
 
 
     <style>
@@ -305,7 +305,7 @@
       }
       #banner-form .form-container {
         margin: 0 !important;
-        display: ${show-formin-banner};
+        display: ${show-banner-form};
       }
                                                                                                                                                                                                                                                                                                                         
       #banner-form .col-left {
@@ -324,79 +324,9 @@
         padding: 5rem 1rem;
         text-align: center;
       }
-      #freetext{
-        background-color:${freeTextBackgroundColor};
-        display:${showsec1};
-      }
-      #formsection{
-        background-color:${mainformbgclr};
-        display:${showformsec};
-      }
-      #footer{
-        display:${showfooter};
-        background-color:${footerbgclr};
-        color:${footerfontclr};
-        font-size:${footerfontsize}px;
-      }
-      #brand .section{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        max-height:350px;
-        position:relative;
-        padding-top:${logopaddingtop}px;
-        padding-bottom:${logopaddingbtm}px;
-      }
-
-
-      #header .section{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        min-height:500px;
-        position:relative;
-        padding-top:${headerpaddingtop}px;
-        padding-bottom:${headerpaddingbtm}px;
-      }
-      #header .logo-container{
-        width:100%;
-        display:${showtoplogo};
-      }
-      #header .logo-container img{
-        width:${toplogowidth}px;
-      }
-      #brand{
-        display:${showtoplogo-1};
-        background-color: ${brandbgclr};
-      }
-      #brand .logo-container{
-        left:0;
-        width:100%;
-      }
-      #brand .logo-container img, #banner-form img{
-        width:${toplogowidth}px;
-      }
-      #header #bannertext{
-        padding-top:80px;
-        padding-bottom:30px;
-      }
-
-      #header h1 {
-        color: ${bannerHeaderColor} !important;
-      }
-#header p {
-  color: ${bannerTextColor} !important;
-}
-      #banner-form p, #header p, #section2 p,
-   #section4 p,
-   #section5 p,
-   #section6 p,
-   #section7 p,#freetext p, #formsection p, ul, li, #footer a {
-        
-        font-family: ${fontfamily-secondary} !important;
-      }
       
-   
+      
+      
 /* section 2 */
 
 #section2 {
@@ -477,10 +407,75 @@
     display: ${show-section7};
 }   
       
+      
+      #freetext{
+        background-color:${freeTextBackgroundColor};
+        display:${showsec1};
+      }
+      #formsection{
+        background-color:${mainformbgclr};
+        display:${showformsec};
+      }
+      #footer{
+        display:${showfooter};
+        background-color:${footerbgclr};
+        color:${footerfontclr};
+        font-size:${footerfontsize}px;
+      }
+      #brand .section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        max-height:350px;
+        position:relative;
+        padding-top:${logopaddingtop}px;
+        padding-bottom:${logopaddingbtm}px;
+      }
+
+
+      #header .section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        min-height:500px;
+        position:relative;
+        padding-top:${headerpaddingtop}px;
+        padding-bottom:${headerpaddingbtm}px;
+      }
+      #header .logo-container{
+        width:100%;
+        display:${showtoplogo};
+      }
+      #header .logo-container img{
+        width:${toplogowidth}px;
+      }
+      #brand{
+        display:${showtoplogo-1};
+        background-color: ${brandbgclr};
+      }
+      #brand .logo-container{
+        left:0;
+        width:100%;
+      }
+      #brand .logo-container img, #banner-form img{
+        width:${toplogowidth}px;
+      }
+      #header #bannertext{
+        padding-top:80px;
+        padding-bottom:30px;
+      }
+
+      #header h1 {
+        color: ${bannerHeaderColor} !important;
+      }
+
+      #freetext p, #formsection p, ul, li, #footer a {
+        color: ${bannerTextColor} !important;
+        font-family: ${fontfamily-secondary} !important;
+      }
       #freetext .btn {
         margin-top:30px;
       }
-      
     
       #freetext h1 {
         color: ${freeTextHeaderColor} !important;
@@ -732,7 +727,7 @@
         }
         #banner-form-logo .banner-leftcol-text {
             color: ${banner-form-leftcol-color} !important;
-            font-family: ${fontfamily-secondary} !important;
+            font-family: ${fontfamily-secondary};
             margin: 1.5rem 0 !important;
         }
         #banner-form .col-left, #banner-form .col-right {
@@ -816,8 +811,9 @@
     </div>
     <!-- end of 1.1: Banner Section -->
 
+
     <!-- 1.2: New Banner with form section  -->
-    <div class="banner-form flex" id="banner2-form">
+    <div class="banner-form flex" id="banner-form">
       <div class="section">
         <div class="col-left">
           <div class="mktoText" mktoName="Banner form logo" id="banner-form-logo">
@@ -838,8 +834,7 @@
     </div>
     <!-- end of 1.2: New Banner with form section  -->
 
-                                                                                                                                                              
-
+    
   <!-- Section 2 -->
     <div id="section2" class="section">
         <div class="mktoText section-content" mktoName="Section 2 Content" id="section2-content">
@@ -913,7 +908,8 @@
         </div>
     </div>
 
-
+    
+    
     <!-- 2: Free text with CTA -->
     <div id="freetext">
       <div class="section">
