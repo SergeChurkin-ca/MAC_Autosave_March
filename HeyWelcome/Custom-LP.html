@@ -206,6 +206,10 @@
       #header h1 {
         color: ${bannerHeaderColor} !important;
       }
+      #banner-form-logo {
+        max-width: 600px;
+        float: right;
+      }
       #banner-form-logo .banner-leftcol-text {
         color: ${banner-form-leftcol-color} !important;
         font-family: ${fontfamily-secondary};
@@ -329,10 +333,29 @@
         background: ${btnHoverClr};
       }
       .section{
-        width:85%;
+        width: 85%;
         max-width:1400px;
         margin:0 auto;
         padding:${sectionpaddingtb}px;
+        
+      }
+      #banner-form .section,
+      #section2,
+      #section3,
+      #section4,
+      #section5,
+      #section6,
+      #section7 {
+        width: 100vw !important;
+        max-width: unset !important;
+        border: solid 1px red;
+      }
+      
+      .section-content {
+        width: 85%;
+        max-width: 1400px;
+        margin: 0 auto;
+        border: solid 1px red;
       }
       .form-container{
         min-height:20px;
@@ -340,6 +363,7 @@
         margin-bottom: 2rem !important;
 
       }
+     
 
       .mktoForm input[type="text"],
       .mktoForm input[type="url"], 
@@ -387,10 +411,7 @@
         margin-top: 1.5rem;
         margin-bottom: 2rem;
       }
-      #banner-form .form-container {
-        margin: 0 !important;
-        display: ${show-formin-banner};
-      }
+ 
 
       #banner-form .col-left {
         padding: ${banner-form-colleft-pdTopBtm}rem ${banner-form-colleft-pdRightLeft}rem;
@@ -401,14 +422,16 @@
         flex: 1 0 450px;
       }
       #banner-form .form-container{
+        margin: 0 !important;
+        display: ${show-formin-banner};
         background-color:${formbgclr};
-        padding-top: ${formTopBottomPadding}px;
-        padding-bottom: ${formTopBottomPadding}px;
         max-width: unset !important;
-        padding: 5rem 1rem;
+        padding: 5rem 3rem;
         text-align: center;
       }
-
+      #banner-form .form-container-inner {
+        max-width: 600px;
+      }
       /* section 2 */
 
       #section2 {
@@ -841,6 +864,12 @@
         #banner-form p {
           font-size: ${banner-form-p-size}px;
         }
+        #banner-form-logo {
+          float: none !important;
+        }
+        .form-container-inner {
+          margin: 0 auto;
+        }
         #formsection .lefttext{
           margin-right:0;
           width:100%;
@@ -920,6 +949,7 @@
     <!-- 1.2: New Banner with form section  -->
     <div class="banner-form flex" id="banner-form">
       <div class="section">
+        
         <div class="col-left">
           <div class="mktoText" mktoName="Banner form logo" id="banner-form-logo">
             <a href="https://www.heywelcome.com"><img src="http://go.heywelcome.com/rs/857-SMM-483/images/logo-top.png" alt="logo"></a>
@@ -929,12 +959,15 @@
           </div>
         </div>
         <div class="col-right form-container w100">
+          <div class="form-container-inner">
           <div class="mktoText" id="bannerform-formheadline" mktoName="Form - Headline">
             <h2  class="bold">Form Headline</h2>
             <p class="form-text">Drop your email below to schedule a demo with our team</p>
           </div>
           <div class="mktoForm" id="bannerform" mktoName="Form"></div>
+          </div>
         </div>
+        
       </div>
     </div>
     <!-- end of 1.2: New Banner with form section  -->
@@ -953,7 +986,8 @@
     </div>
     <!-- Section 3 -->
     <div id="section3" class="section">
-      <div class="mktoText section-content" mktoName="Section 3 Content" id="section3-content">
+      <div class="section-content">
+      <div class="mktoText" mktoName="Section 3 Content" id="section3-content">
         <h1>Lorem Impsum?</h1>
         <ul>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
@@ -967,6 +1001,7 @@
           <h2 class="bold">Form Headline</h2>
         </div>
         <div class="mktoForm" id="form2-float" mktoName="Form"></div>
+      </div>
       </div>
     </div>
     <!-- Section 4 -->
