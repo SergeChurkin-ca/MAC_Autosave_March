@@ -187,7 +187,7 @@
         src: url('https://go.heywelcome.com/rs/857-SMM-483/images/EuclidCircularA-Regular.otf');
       }
 
-      body {background:#fff;} 
+      body {background:#fff;overflow-x:hidden}; 
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
@@ -247,7 +247,7 @@
     color: ${section5-p-clr};
 }
 
-#section6 p {
+#section6 p, #section6 a {
     color: ${section6-p-clr};
 }
 
@@ -456,6 +456,10 @@
         display: ${show-section3};
         padding-top: 5rem;
       }
+      #section3 #formheadline2 {
+        text-align: center;
+        margin: 0 auto 2rem;
+      }
 
 
       /* section 4 */
@@ -470,6 +474,7 @@
         padding: 1rem 2rem;
         background: none;
         font-family: ${fontfamily-secondary};
+        margin: 2rem auto;
       }
       #section4 button:hover, #section4 button:focus {
         border: solid 1px ${section4-button-bg};
@@ -490,6 +495,7 @@
         background: none;
         border: solid 1px #ffffff;
         color: ${section5-btn-clr};
+        margin: 2rem auto;
       }
       #section5 button:hover, #section5 button:focus {
         background: ${section5-btn-hover};
@@ -526,6 +532,7 @@
     background: ${section7-button-bgclr};
     border: solid 1px ${section7-button-bgclr};
     color: #ffffff;
+    margin: 2rem auto 1rem;
   }
   #section7 button:hover, #section7 button:focus {
     background: ${section7-button-hover};
