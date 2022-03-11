@@ -66,7 +66,7 @@
 
     <!-- Banner Section Styling -->
     <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/600x400/003087/ffffff">
-    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="116">
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="100">
     <meta class="mktoString" mktoName="Banner Background Blend Mode" id="background-blend-mode" default="none">
 
     <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="30">
@@ -79,7 +79,7 @@
 
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
-    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
+    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="120">
     <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="25">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
@@ -126,17 +126,20 @@
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
+        letter-spacing: -6.4px;
       }
       #header p {
         font-size: ${header-p-fontsize}px;
       }
       h1 {
         font-size: ${h1fontsize}px;
+        letter-spacing: -6.4px;
 
       }
 
       h2 {
         font-size: ${h2fontsize}px;
+        letter-spacing: -6.4px;
       }
 
       p,ul,ol{
@@ -191,7 +194,7 @@
         transition:300ms opacity;
         font-weight: 700;
         font-family: 'Open Sans', sans-serif !important;
-        
+
       }
       .btn a:hover, .btn a:focus {
         background: ${btnhoverbackground};
@@ -350,6 +353,7 @@
       }
       #formheadline{
         font-size: ${formheadlinefontsize}px;
+        letter-spacing: -6.4px;
         color: ${formHeadLineColor} !important;
         text-align:center;
         margin-bottom: 10px;
@@ -379,7 +383,7 @@
         color: ${formLabelColor} !important;
         margin-bottom: 1rem !important;
         text-tranform: uppercase;
-         font-family: 'Open Sans', sans-serif !important;
+        font-family: 'Open Sans', sans-serif !important;
       }
       .mktoForm .mktoFormRow{
         display:flex !important;
@@ -525,11 +529,14 @@
         padding:${footerpaddingtb}px 0;
 
       }
-
+      #footer .logo-container .inner-row-1 {
+    display: flex;
+    padding: 0 5rem 0 0;
+}
       .footer-logo img {
         width:${footerlogowidth}px;
         height: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
       }
       #footer .logo-container {
         display: flex;
@@ -551,17 +558,31 @@
       #footer .icons-container {
         justify-content: right;
         display: flex;
-        margin-bottom: 2rem;
+        gap: 2rem;
+        flex-direction: column;
+        margin-top: 3rem;
       }
-      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
+      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li,
+      {
         color:${footerfontclr};
         font-size:${footerfontsize}px;
         font-weight: 700;
-        line-height: 31px;
+        line-height: 22px;
         margin: 0;
         text-transform: uppercase;
-        font-family: 'Open Sans', sans-serif !important;
+        font-family: ${fontfamily}, sans-serif !important;
       }
+      .mktoForm input[type="text"],
+.mktoForm input[type="url"],
+.mktoForm input[type="email"],
+.mktoForm input[type="tel"],
+.mktoForm input[type="number"],
+.mktoForm input[type="date"],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField,
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+  fontfamily: ${fontfamily} !important;
+}
       #footer a:hover, #footer a:focus {
         color: ${footerhoverclr};
         text-decoration: underline;
@@ -577,10 +598,8 @@
       #footericons ul {
         align-items: center;
       }
-      #footertext2 ul {
-        flex-direction: column;
-        align-items: left !important;
-        gap: 0;
+      #footertext2 {
+      margin: 3rem 0 0 5rem;
       }
       #footertext2 li {
         height: 1.5rem;
@@ -593,7 +612,6 @@
         display: flex;
 
       }
-
 
 
       @media screen and (max-width:768px){
@@ -653,9 +671,7 @@
         }
       }
 
-
-
-    @font-face {
+      @font-face {
         font-family: "Lulo One Bold";
         src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/lulo-one.woff2') format('woff2');
         src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/lulo-one.eot') format('eot');
@@ -750,70 +766,74 @@
 
 
 
-
-    <footer id="footer">
-      <div class="footer-container section flex">
+<footer id="footer">
+    <div class="footer-container section flex">
 
         <div class="row1">
-          <div class="logo-container col" style="display:${showfooterlogo};">
-            <div class="mktoText" class="footer-logo" id="footer-contacts" mktoName="Footer - Logo">
-              <a href="https://www.teamimpact.org"><img src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/Team IMPACT logo_Dark Backgrounds.png" alt="footer logo"></a>
+            <div class="logo-container col" style="display:${showfooterlogo};">
+
+                <div class="inner-row-1">
+                    <div class="mktoText" class="footer-logo" id="footer-contacts" mktoName="Footer - Logo">
+                        <a href="https://www.teamimpact.org"><img src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/Team IMPACT logo_Dark Backgrounds.png" alt="footer logo"></a>
+                    </div>
+                    <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
+                        <ul>
+                            <li><a href="https://www.teamimpact.org/careers/">Careers</a></li>
+                            <li><a href="https://www.teamimpact.org/about-us/faqs/">FAQs</a></li>
+                            <li><a href="https://www.teamimpact.org/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="inner-row-2">
+                    <div>
+                        <p>500 VICTORY ROAD<br> QUINCY, MA 02171<br>
+                            <a href="tel:+1-617-801-0248">617-801-0248</a> |
+                            <a href="INFO@TEAMIMPACT.ORG">INFO@TEAMIMPACT.ORG</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-              <p>500 VICTORY ROAD<br>
-                QUINCY, MA 02171<br>
 
-                <a href="tel:+1-617-801-0248">617-801-0248</a> |
-                <a href="INFO@TEAMIMPACT.ORG">INFO@TEAMIMPACT.ORG</a>
-              </p>
+
+            <div class="icons-container col">
+<div class="mktoForm" id="footer-form" mktoName="Footer form">              
+              <script src="//654-XNK-969.mktoweb.com/js/forms2/js/forms2.min.js"></script>
+<form id="mktoForm_1005"></form>
+<script>MktoForms2.loadForm("//654-XNK-969.mktoweb.com", "654-XNK-969", 1005);</script>
+</div>
+                <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
+                    <ul>
+                        <li id="footer-icon1">
+                            <a href="https://www.facebook.com/GoTeamIMPACT/" target="_blank">
+                                <img alt="facebook icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/facebook-white.png" /></a>
+                        </li>
+                        <li id="footer-icon2">
+
+                            <a href="https://twitter.com/GoTeamIMPACT" target="_blank">
+                                <img alt="twitter icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/twitter-white.png" /></a>
+                        </li>
+
+                        <li id="footer-icon3">
+                            <a href="https://www.linkedin.com/company/team-impact-inc-/" target="_blank">
+                                <img alt="linkedin icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/linkedin-white.png" /></a>
+                        </li>
+                        <li id="footer-icon4">
+                            <a href="https://www.instagram.com/goteamimpact/" target="_blank ">
+                                <img alt="instagram icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/instagram-white.png" /></a>
+                        </li>
+                        <li id="footer-icon5">
+                            <a href="https://www.youtube.com/user/TeamIMPACTVIDEOS" target="_blank">
+                                <img alt="youtube icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/youtube-white.png" /></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-
-          <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
-            <ul>
-              <li><a href="https://www.teamimpact.org/terms-conditions/">Terms &amp; Conditions</a></li>
-              <li><a href="https://www.teamimpact.org/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="https://www.teamimpact.org/donor-privacy-policy/">Donor Policy</a></li>
-              <li><a href="https://www.teamimpact.org/ccpa/">CCPA</a></li>
-              <li>COPYRIGHT &copy; 2022. ALL RIGHTS RESERVED.</li>
-
-            </ul>
-          </div>
-
-
-          <div class="icons-container col">
-            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
-              <ul>
-                <li id="footer-icon1">
-                  <a href="https://www.facebook.com/GoTeamIMPACT/" target="_blank">
-                    <img alt="facebook icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/facebook-white.png" /></a>
-                </li>
-                <li id="footer-icon2">
-
-                  <a href="https://twitter.com/GoTeamIMPACT" target="_blank">
-                    <img alt="twitter icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/twitter-white.png" /></a>
-                </li>
-
-                <li id="footer-icon3">
-                  <a href="https://www.linkedin.com/company/team-impact-inc-/" target="_blank">
-                    <img alt="linkedin icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/linkedin-white.png" /></a>
-                </li>
-                <li id="footer-icon4">
-                  <a href="https://www.instagram.com/goteamimpact/" target="_blank ">
-                    <img alt="instagram icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/instagram-white.png" /></a>
-                </li>
-                <li id="footer-icon5">
-                  <a href="https://www.youtube.com/user/TeamIMPACTVIDEOS" target="_blank">
-                    <img alt="youtube icon" src="http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/youtube-white.png" /></a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
 
-      </div>
+    </div>
 
-    </footer>
+</footer>
 
 
   </body>
