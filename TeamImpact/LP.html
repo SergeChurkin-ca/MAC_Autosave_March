@@ -80,13 +80,13 @@
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
     <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
-    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="35">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="25">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
 
     <!-- Google Fonts -->
-    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Open+Sand:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="Veneer">
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="Lulo One Bold">
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="20">
@@ -542,7 +542,8 @@
         margin: 0 1rem 0 0;
       }
       #footer .icons-container img{
-        width:${footericonswidth}px;
+        height:${footericonswidth}px;
+        width:100%!important;
       }
       #footer-icon1 img {
         width: calc(${footericonswidth}px - 12px) !important;
@@ -654,14 +655,13 @@
 
 
 
-
-      @font-face {
-        font-family: "Veneer";
-        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/Veneer.woff2') format('woff2');
-        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/Veneer.eot') format('eot');
-        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/Veneer.woff') format('woff');
-        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/Veneer.ttf') format('truetype');
-        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/Veneer.otf');
+    @font-face {
+        font-family: "Lulo One Bold";
+        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/lulo-one.woff2') format('woff2');
+        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/lulo-one.eot') format('eot');
+        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/lulo-one.woff') format('woff');
+        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/lulo-one.ttf') format('truetype');
+        src: url('http://654-XNK-969.mktoweb.com/rs/654-XNK-969/images/lulo-one.otf');
       }
     </style>
   </head>
