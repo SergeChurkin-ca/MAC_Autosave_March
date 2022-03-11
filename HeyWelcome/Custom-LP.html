@@ -20,6 +20,7 @@
 
     <meta class="mktoBoolean" id="show-section2" mktoName="Show Section 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-section3" mktoName="Show Section 3?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section3-form" mktoName="Show Sec 3 Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-section4" mktoName="Show Section 4?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-section5" mktoName="Show Section 5?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-section6" mktoName="Show Section 6?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -515,6 +516,7 @@
         
       }
       #section3 .form-container {
+        display: ${show-section3-form};
         border: solid 1px lightgray;
         padding: 2rem 0;
         border-radius: 12px;
