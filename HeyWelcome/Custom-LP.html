@@ -40,6 +40,7 @@
 
     <meta class="mktoColor" id="section2-bgclr" mktoName="Section 2 Background Color" default="#154A3E">
     <meta class="mktoColor" id="section3-bgclr" mktoName="Section 3 Background Color" default="#ffffff">
+    <meta class="mktoColor" id="section3-form-bg" mktoName="Section 3 Background Color" default="#ffffff">
     <meta class="mktoColor" id="section4-bgclr" mktoName="Section 4 Background Color" default="#FFF1E6">
     <meta class="mktoColor" id="section4-button-bg" mktoName="Section 4 Background Color" default="#196856">
     <meta class="mktoColor" id="section4-button-hover" mktoName="Section 4 Button Hover Color" default="#196856">
@@ -49,18 +50,30 @@
     <meta class="mktoColor" id="section7-bgclr" mktoName="Section 7 Background Color" default="#FFF1E6">
     <meta class="mktoColor" id="section7-button-bgclr" mktoName="Section 7 Btn Background Color" default="#196856">
     <meta class="mktoColor" id="section7-button-hover" mktoName="Section 7 Btn Hover BG Color" default="#16594a">
-      
+
     <meta class="mktoColor" id="section2-p-clr" mktoName="Section 2 Copy Color" default="#000000">
     <meta class="mktoColor" id="section3-p-clr" mktoName="Section 3 Copy Color" default="#000000">
     <meta class="mktoColor" id="section4-p-clr" mktoName="Section 4 Copy Color" default="#000000">
     <meta class="mktoColor" id="section4-btn-hoverclr" mktoName="Section4 Btn Hover clr" default="#ffffff">
     <meta class="mktoColor" id="section5-p-clr" mktoName="Section 5 Copy Color" default="#ffffff">
     <meta class="mktoColor" id="section5-btn-clr" mktoName="Section 5 Button Color" default="#ffffff">
-    
+
+    <meta class="mktoString" mktoName="Section2 Padding top" id="section2-pad-top" default="4">
+    <meta class="mktoString" mktoName="Section2 Padding btm" id="section2-pad-btm" default="3">
+    <meta class="mktoString" mktoName="Section3 Padding top" id="section3-pad-top" default="8">
+    <meta class="mktoString" mktoName="Section3 Padding btm" id="section3-pad-btm" default="2">
+    <meta class="mktoString" mktoName="Section3 Form Mg Top" id="section3-form-mg-top" default="-13">
+    <meta class="mktoString" mktoName="Section4 Padding top" id="section4-pad-top" default="2">
+    <meta class="mktoString" mktoName="Section4 Padding btm" id="section4-pad-btm" default="0">
+    <meta class="mktoString" mktoName="Section5 Padding top" id="section5-pad-top" default="3">
+    <meta class="mktoString" mktoName="Section5 Padding btm" id="section5-pad-btm" default="2">
+    <meta class="mktoString" mktoName="Section6 Padding top" id="section6-pad-top" default="4">
+    <meta class="mktoString" mktoName="Section6 Padding btm" id="section6-pad-btm" default="4">
+    <meta class="mktoString" mktoName="Section7 Padding top" id="section7-pad-top" default="4">
+    <meta class="mktoString" mktoName="Section7 Padding btm" id="section7-pad-btm" default="3">
+
     <meta class="mktoColor" id="section6-p-clr" mktoName="Section 6 Copy Color" default="#000000">
     <meta class="mktoColor" id="section7-p-clr" mktoName="Section 7 Copy Color" default="#000000">
-
-
 
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
@@ -103,6 +116,11 @@
     <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="26.6">
     <meta class="mktoString" mktoName="Banner-Form P Font Size (px)" id="banner-form-p-size" default="20">
 
+    <meta class="mktoString" mktoName="Section2 h1 font size" id="section2-h1-size" default="32">
+    <meta class="mktoString" mktoName="Section3 h1 font size" id="section3-h1-size" default="32">
+    <meta class="mktoString" mktoName="Section6 h1 font size" id="section6-h1-size" default="32">
+    <meta class="mktoString" mktoName="Section7 h1 font size" id="section7-h1-size" default="32">
+
 
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
 
@@ -115,13 +133,16 @@
     <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
     <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
 
+
+
+
     <!-- Banner Form Section Styling -->
     <meta class="mktoString" mktoName="BannerFrom Col Left Pad Top/Btm" id="banner-form-colleft-pdTopBtm" default="3">
     <meta class="mktoString" mktoName="BannerFrom Col Left Pad Top/Btm" id="banner-form-colleft-pdRightLeft" default="7">
 
     <!-- Free-Text Section Styling -->
     <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="33">
-    
+
 
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
@@ -216,14 +237,14 @@
         margin: 1.5rem 0 !important;
       }
 
-    
+
       #freetext p, #formsection p, ul, li, #footer a {
         color: ${bannerTextColor} !important;
         font-family: ${fontfamily-secondary} !important;
       }
-      
-      
-  #banner-form p,
+
+
+      #banner-form p,
       #section2 p,
       #section4 p,
       #section5 p,
@@ -232,33 +253,38 @@
         font-family: ${fontfamily-secondary} !important;
       }      
       #banner-form p {
-    color: ${section2-p-clr};
-}
+        color: ${section2-p-clr};
+      }
 
-#section2 p {
-    color: ${section2-p-clr};
-}
+      #section2 p {
+        color: ${section2-p-clr};
+        width: 46%;
+      }
 
-#section3 p, #section3 ul, #section3 li {
-    color: ${section3-p-clr} !important;
-}
+      #section3 p, #section3 ul, #section3 li {
+        color: ${section3-p-clr} !important;
+      }
 
-#section4 p {
-    color: ${section4-p-clr};
-}
+      #section4 p {
+        color: ${section4-p-clr};
+        max-width: 1000px;
+        margin: 0 auto;
+      }
 
-#section5 p, #section5 a {
-    color: ${section5-p-clr};
-}
+      #section5 p, #section5 a {
+        color: ${section5-p-clr};
+        max-width: 1000px;
+        margin: 0 auto;
+      }
 
-#section6 p, #section6 a {
-    color: ${section6-p-clr};
-}
+      #section6 p, #section6 a {
+        color: ${section6-p-clr};
+      }
 
-#section7 p {
-    color: ${section7-p-clr};
-}
-                                                                                                                                                                                                  
+      #section7 p {
+        color: ${section7-p-clr};
+      }
+
       #freetext h1 {
         color: ${freeTextHeaderColor} !important;
         font-size: ${freeTextH1size}px;
@@ -337,7 +363,7 @@
         max-width:1400px;
         margin:0 auto;
         padding:${sectionpaddingtb}px;
-        
+
       }
       #banner-form .section,
       #section2,
@@ -348,14 +374,31 @@
       #section7 {
         width: 100vw !important;
         max-width: unset !important;
-        border: solid 1px red;
+
       }
-      
+
+      #section2 h1 {
+        font-size: ${section2-h1-size}px;
+      }
+
+      #section3 h1 {
+        font-size: ${section3-h1-size}px;
+      }
+
+      #section6 h1 {
+        font-size: ${section6-h1-size}px;
+      }
+
+      #section7 h1 {
+        font-size: ${section7-h1-size}px;
+      }
+
+
       .section-content {
         width: 85%;
         max-width: 1400px;
         margin: 0 auto;
-        border: solid 1px red;
+
       }
       .form-container{
         min-height:20px;
@@ -363,7 +406,7 @@
         margin-bottom: 2rem !important;
 
       }
-     
+
 
       .mktoForm input[type="text"],
       .mktoForm input[type="url"], 
@@ -411,7 +454,7 @@
         margin-top: 1.5rem;
         margin-bottom: 2rem;
       }
- 
+
 
       #banner-form .col-left {
         padding: ${banner-form-colleft-pdTopBtm}rem ${banner-form-colleft-pdRightLeft}rem;
@@ -419,7 +462,7 @@
       #banner-form .col-left, #banner-form .col-right {
         background-color: ${banner-form-left-bg};
         width: 50%;
-        flex: 1 0 450px;
+      
       }
       #banner-form .form-container{
         margin: 0 !important;
@@ -436,48 +479,48 @@
 
       #section2 {
         background-color: ${section2-bgclr};
+        padding: ${section2-pad-top}rem 0 ${section2-pad-btm}rem;
         display: ${show-section2};
         min-height: 250px;
+        flex-direction: column;
+        margin-bottom: -9rem;
       }
-
-      #section2 h1 {
-        font-size: 44px;
+      #section2 .section-content {
+        margin: 0 auto 1rem;
       }
-
-      #section2 p {
-        font-size: 18px;
+      #section2-images {
+        display: flex;
+        gap: 2rem;
       }
-
       #section2 h1,
       #section2 p {
         color: #ffffff;
       }
 
-      #section2 .section-content-images {
-        position: relative;
-      }
-
-      #section2 .section-content-images img {
-        position: absolute;
-      }
-
-      #section2 .section-content-images img:nth-child(1) {
-        top: 0.5rem;
-        left: 1rem;
-      }
-
-      #section2 .section-content-images img:nth-child(2) {
-        top: 0.5rem;
-        left: 13rem;
-      }
-
-
       /* section 3 */
 
       #section3 {
         background-color: ${section3-bgclr};
+        padding: ${section3-pad-top}rem 0 ${section3-pad-btm}rem;
         display: ${show-section3};
-        padding-top: 5rem;
+
+      }
+      #section3 .section-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      #section3 #section3-content, #section3 .form-container {
+        width: 50%;
+        
+      }
+      #section3 .form-container {
+        border: solid 1px lightgray;
+        padding: 2rem 0;
+        border-radius: 12px;
+        box-shadow: 2px 2px 2px #e1dede;
+        margin-top: ${section3-form-mg-top}rem;
+        background: ${section3-form-bg};
       }
       #section3 #formheadline2 {
         text-align: center;
@@ -489,15 +532,20 @@
 
       #section4 {
         background-color: ${section4-bgclr};
+        padding: ${section4-pad-top}rem 0 ${section4-pad-btm}rem;
         display: ${show-section4};
         text-align: center;
+      }
+      #section4 img {
+        margin-bottom: 2rem;
       }
       #section4 button {
         border: solid 1px #196856;
         padding: 1rem 2rem;
         background: none;
-        font-family: ${fontfamily-secondary};
+        font-family: ${fontfamily-secondary} !important;
         margin: 2rem auto;
+        cursor: pointer;
       }
       #section4 button:hover, #section4 button:focus {
         border: solid 1px ${section4-button-bg};
@@ -509,9 +557,13 @@
 
       #section5 {
         background-color: ${section5-bgclr};
+        padding: ${section5-pad-top}rem 0 ${section5-pad-btm}rem;
         display: ${show-section5};
         text-align: center;
         justify-content: center;
+      }
+      #section5 img {
+        margin-bottom: 2rem;
       }
       #section5 button {
         padding: 1rem 2rem;
@@ -519,6 +571,8 @@
         border: solid 1px #ffffff;
         color: ${section5-btn-clr};
         margin: 2rem auto;
+        font-family: ${fontfamily-secondary} !important;
+        cursor: pointer;
       }
       #section5 button:hover, #section5 button:focus {
         background: ${section5-btn-hover};
@@ -530,8 +584,9 @@
 
       #section6 {
         background-color: ${section6-bgclr};
+        padding: ${section6-pad-top}rem 0 ${section6-pad-btm}rem;
         display: ${show-section6};
-    
+
       }
       #section6 .section-content {
         gap: 3rem;
@@ -543,6 +598,7 @@
       #section7 {
         background-color: ${section7-bgclr};
         display: ${show-section7};
+        padding: ${section7-pad-top}rem 0 ${section7-pad-btm}rem;
       }
       #section7 .section-content {
         flex-direction: column;
@@ -550,16 +606,18 @@
         justify-content: center;
         margin: 0 auto;
       }   
-  #section7 button {
-    padding: 1rem 2rem;
-    background: ${section7-button-bgclr};
-    border: solid 1px ${section7-button-bgclr};
-    color: #ffffff;
-    margin: 2rem auto 1rem;
-  }
-  #section7 button:hover, #section7 button:focus {
-    background: ${section7-button-hover};
-  }
+      #section7 button {
+        padding: 1rem 2rem;
+        background: ${section7-button-bgclr};
+        border: solid 1px ${section7-button-bgclr};
+        color: #ffffff;
+        margin: 2rem auto 1rem;
+        font-family: ${fontfamily-secondary} !important;
+        cursor: pointer;
+      }
+      #section7 button:hover, #section7 button:focus {
+        background: ${section7-button-hover};
+      }
 
       #freetext{
         background-color:${freeTextBackgroundColor};
@@ -827,9 +885,28 @@
         margin-right: auto !important;
       }
       .social-links a, .list-legal a {
-        text-decoration: none;;
+        text-decoration: none;
       }
-
+      @media (max-width: 1215px) {
+        #section2 p {
+          width: 100%;
+        }
+        #section3 #section3-content, #section3 .form-container {
+          width: 100%;
+          margin: 0 auto !important;
+        }
+        #section3 .form-container {
+          margin-top: 2rem;
+        }
+      }
+      @media (max-width: 900px) {
+        #banner-form-logo {
+          float: none !important;
+        }
+        .form-container-inner {
+          margin: 0 auto !important;
+        }
+      }
       @media screen and (max-width:800px){
         #footer .row1 {
           align-items: center;
@@ -864,12 +941,8 @@
         #banner-form p {
           font-size: ${banner-form-p-size}px;
         }
-        #banner-form-logo {
-          float: none !important;
-        }
-        .form-container-inner {
-          margin: 0 auto;
-        }
+
+
         #formsection .lefttext{
           margin-right:0;
           width:100%;
@@ -949,7 +1022,7 @@
     <!-- 1.2: New Banner with form section  -->
     <div class="banner-form flex" id="banner-form">
       <div class="section">
-        
+
         <div class="col-left">
           <div class="mktoText" mktoName="Banner form logo" id="banner-form-logo">
             <a href="https://www.heywelcome.com"><img src="http://go.heywelcome.com/rs/857-SMM-483/images/logo-top.png" alt="logo"></a>
@@ -960,14 +1033,14 @@
         </div>
         <div class="col-right form-container w100">
           <div class="form-container-inner">
-          <div class="mktoText" id="bannerform-formheadline" mktoName="Form - Headline">
-            <h2  class="bold">Form Headline</h2>
-            <p class="form-text">Drop your email below to schedule a demo with our team</p>
-          </div>
-          <div class="mktoForm" id="bannerform" mktoName="Form"></div>
+            <div class="mktoText" id="bannerform-formheadline" mktoName="Form - Headline">
+              <h2  class="bold">Form Headline</h2>
+              <p class="form-text">Drop your email below to schedule a demo with our team</p>
+            </div>
+            <div class="mktoForm" id="bannerform" mktoName="Form"></div>
           </div>
         </div>
-        
+
       </div>
     </div>
     <!-- end of 1.2: New Banner with form section  -->
@@ -979,7 +1052,7 @@
         <h1>Lorem Impsum</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate sequi voluptates maiores, fugit delectus aperiam aliquam.</p>
       </div>
-      <div class="mktoText section-content-images" mktoName="Section 2 Images" id="section2-images">
+      <div class="mktoText section-content" mktoName="Section 2 Images" id="section2-images">
         <img src="https://dummyimage.com/160x139/c3c3db/151d8c" alt="badge 1">
         <img src="https://dummyimage.com/160x139/c3c3db/151d8c" alt="badge 2">
       </div>
@@ -987,21 +1060,21 @@
     <!-- Section 3 -->
     <div id="section3" class="section">
       <div class="section-content">
-      <div class="mktoText" mktoName="Section 3 Content" id="section3-content">
-        <h1>Lorem Impsum?</h1>
-        <ul>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        </ul>
-      </div>
-      <div class="form-container w100">
-        <div class="mktoText" id="formheadline2" mktoName="Form - Headline">
-          <h2 class="bold">Form Headline</h2>
+        <div class="mktoText" mktoName="Section 3 Content" id="section3-content">
+          <h1>Lorem Impsum?</h1>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
         </div>
-        <div class="mktoForm" id="form2-float" mktoName="Form"></div>
-      </div>
+        <div class="form-container w100">
+          <div class="mktoText" id="formheadline2" mktoName="Form - Headline">
+            <h2 class="bold">Form Headline</h2>
+          </div>
+          <div class="mktoForm" id="form2-float" mktoName="Form"></div>
+        </div>
       </div>
     </div>
     <!-- Section 4 -->
@@ -1037,11 +1110,11 @@
         <div className="left-col">
           <img src="https://dummyimage.com/110x110/c3c3db/151d8c" alt="badge">
         </div>
-<div className="right-col">
+        <div className="right-col">
           <h1>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</h1>
           <p>Team</p>
           <a href="#">Learn more</a>
-</div>
+        </div>
       </div>
     </div>
     <!-- Section 7 -->
@@ -1154,13 +1227,7 @@
           </div>
         </div>
 
-        <div class="row2">
-          <div class="icons-container">
-            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
 
-            </div>
-          </div>
-        </div>
 
       </div>
     </footer>
