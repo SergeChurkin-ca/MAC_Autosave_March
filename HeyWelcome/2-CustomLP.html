@@ -463,7 +463,7 @@
       #banner-form .col-left, #banner-form .col-right {
         background-color: ${banner-form-left-bg};
         width: 50%;
-      
+
       }
       #banner-form .form-container{
         margin: 0 !important;
@@ -492,6 +492,7 @@
       #section2-images {
         display: flex;
         gap: 2rem;
+        flex-wrap: wrap;
       }
       #section2 h1,
       #section2 p {
@@ -513,7 +514,7 @@
       }
       #section3 #section3-content, #section3 .form-container {
         width: 50%;
-        
+
       }
       #section3 .form-container {
         display: ${show-section3-form};
@@ -939,6 +940,7 @@
 
         #banner-form .col-left, #banner-form .col-right {
           width: 100%;
+          padding: 1rem;
         }
         #banner-form p {
           font-size: ${banner-form-p-size}px;
@@ -975,6 +977,9 @@
         }
         .mktoForm .mktoFormRow .mktoFormCol{
           margin-left:0 !important;
+        }
+        #section2-images {
+          justify-content: center;
         }
       }
     </style>
