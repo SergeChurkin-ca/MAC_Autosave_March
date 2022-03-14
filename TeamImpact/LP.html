@@ -212,7 +212,9 @@
         min-height:20px;
 
       }
-
+      #form1 > div:first-of-type {
+        width: 100%;
+      }
       #form1 .mktoForm input[type="text"],
       #form1 .mktoForm input[type="url"], 
       #form1 .mktoForm input[type="email"], 
@@ -227,6 +229,7 @@
         border-radius: 4px !important;
         background: #dee0e5 !important;
         padding: 1rem !important;
+        width: 100% !important;
       }
 
 
@@ -365,6 +368,10 @@
         font-size: ${formheadlinefontsize}px !important;
         text-transform: uppercase;
       }
+      
+      #form1 .mktoForm {
+        flex-direction: column;
+      }
       form.mktoForm{
         width:99% !important;
         max-width:700px !important;
@@ -419,16 +426,29 @@
         padding-left: 10px !important;
         font-size:${formfontsize}px !important;
       }
-      .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      #form1 .mktoForm .mktoRequiredField label.mktoLabel {
+        display: block !important;
+      }
+     #form1 .mktoForm input[type="text"]::placeholder,
+#form1 .mktoForm input[type="url"]::placeholder,
+#form1 .mktoForm input[type="email"]::placeholder,
+#form1 .mktoForm input[type="tel"]::placeholder,
+#form1 .mktoForm input[type="number"]::placeholder,
+#form1 .mktoForm input[type="date"]::placeholder,
+#form1 .mktoForm textarea.mktoField::placeholder,
+#form1 .mktoForm select.mktoField::placeholder {
+  color: #7F8082;
+}
+      #form1 .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color:#3a3a3a !important;
       }
-      .mktoForm input::-moz-placeholder { /* Firefox 19+ */
+      #form1 .mktoForm input::-moz-placeholder { /* Firefox 19+ */
         color:#3a3a3a !important;
       }
-      .mktoForm input:-ms-input-placeholder { /* IE 10+ */
+      #form1 .mktoForm input:-ms-input-placeholder { /* IE 10+ */
         color:#3a3a3a !important;
       }
-      .mktoForm input:-moz-placeholder { /* Firefox 18- */
+      #form1 .mktoForm input:-moz-placeholder { /* Firefox 18- */
         color:#3a3a3a !important;
       }
       .mktoForm select.mktoField{
@@ -463,7 +483,7 @@
       .mktoForm .mktoButtonRow{
         margin-top:10px;
       }
-      #form1 .mktoButtonWrap button.mktoButton {
+       #form1 .mktoButtonWrap button.mktoButton {
         background: ${formButtonColor} !important;
         border: solid 2px ${formButtonColor} !important;
         color:${btnfontclr};
@@ -477,8 +497,11 @@
         box-shadow: none !important;
         padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
       }
-
-      #form1 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+#footer .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+  padding: 15.2px 50px !important;
+  font-size: 20px !important;
+}
+       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
         background: ${formButtonColor} !important;
         color: ${formButtonTextColor} !important;
         border: 3px solid ${formButtonColor} !important;
@@ -488,11 +511,11 @@
         margin-top: 2rem;
       }
 
-      .mktoForm button.mktoButton:hover, .mktoForm button.mktoButton:focus, .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+      #form1 .mktoForm button.mktoButton:hover, .mktoForm button.mktoButton:focus, .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
         opacity:${btnhvropacity};
         color: #ffffff !important;
         background: ${formButtonHoverBGColor} !important;
-        border: solid 3px ${formButtonHoverBGColor} !important;
+        border: solid 2px ${formButtonHoverBGColor} !important;
       }
 
 
