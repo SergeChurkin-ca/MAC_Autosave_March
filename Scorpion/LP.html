@@ -44,14 +44,14 @@
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
     <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#091d44">
     <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#091d44">
-    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#191919">
+    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#707070">
     <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#299dfa">
     <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#299dfa">
 
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#86898f">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#BDBEC7">
-    <meta class="mktoColor" id="footerhoverclr" mktoName="Footer - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="footerhoverclr" mktoName="Footer - Hover Text Color" default="#ffffff">
 
     <!-- Font Size Meta Tags -->
     <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
@@ -78,14 +78,14 @@
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
     <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="250">
-    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="22">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="1.2">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
 
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Copy Font Family" id="fontfamily" default="Lausanne 400">
-    <meta class="mktoString" mktoName="Headline Font Family" id="fontfamily-headline" default="Lausanne 750">
+    <meta class="mktoString" mktoName="Copy Font Family" id="fontfamily" default="Lausanne_400">
+    <meta class="mktoString" mktoName="Headline Font Family" id="fontfamily-headline" default="Lausanne_750">
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
@@ -183,7 +183,7 @@
         text-align:center;
         font-size:${btnfontsize}px;
         transition:300ms opacity;
-        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2) inset,0 3px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2),0 3px 5px rgba(0, 0, 0, 0.3);
       }
       .btn a:hover, .btn a:focus {
         background: ${btnhoverbackground};
@@ -296,6 +296,7 @@
       #freetext h1 {
         color: ${freeTextHeaderColor} !important;
         font-size: ${freeTextH1size}px;
+        font-family: ${fontfamily-headline}, sans-serif !important;
       }
 
       #freetext p,
@@ -306,6 +307,7 @@
 
       #formlefttext h2 {
         color: ${formSectionHeaderColor} !important;
+        font-family: ${fontfamily-headline}, sans-serif !important;;
       }
 
       #formsection p,
@@ -341,6 +343,7 @@
       #formheadline h2{
         color: ${formHeadLineColor} !important;
         font-size: ${formheadlinefontsize}px !important;
+        font-family: ${fontfamily-headline};
       }
       form.mktoForm{
         width:99% !important;
@@ -486,12 +489,17 @@
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
-
+      #footer .row0 {
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 1px #007FFD;
+      }
       #footer .row1 {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 1.5rem;
       }
 
       .footer-container {
@@ -515,14 +523,20 @@
         margin-bottom: 2rem;
 
       }
+      #footer .row1 p {
+        line-height: 27px;
+      }
       #footer col:nth-child(2) {
         margin: 0 1rem 0 0;
       }
-      #footer .icons-container img{
-        width:${footericonswidth}px;
+      #footer svg{
+        width:${footericonswidth}rem;
       }
-      #footer .icons-container #footer-icon3 {
-        width: calc(${footericonswidth}px - 10px);
+      #footer svg:hover, #footer svg:focus {
+        fill: ${footerhoverclr};
+      }
+      #footer svg {
+        fill: ${footerfontclr};
       }
       #footer .icons-container {
         justify-content: right;
@@ -610,30 +624,30 @@
         }
       }
 
-    
 
 
-@font-face {
-font-family:  'Lausanne 400', sans-serif !important;
-src: url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-400.eot') format('embedded-opentype'),
-url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-400.woff2') format('woff2'),
-url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-400.woff') format('woff'),
-url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-400.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family:  'Lausanne 750', sans-serif !important;
-src: url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.eot');
-src: url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.eot') format('embedded-opentype'),
-url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.woff2') format('woff2'),
-url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.woff') format('woff'),
-url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.ttf') format('truetype');
-font-weight: bold;
-font-style: normal;
 
-}
-    
+      @font-face {
+        font-family: 'Lausanne_400', sans-serif !important;
+        src: url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-400.eot') format('embedded-opentype'),
+          url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-400.woff2') format('woff2'),
+          url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-400.woff') format('woff'),
+          url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-400.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Lausanne_750', sans-serif !important;
+        src: url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.eot');
+        src: url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.eot') format('embedded-opentype'),
+          url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.woff2') format('woff2'),
+          url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.woff') format('woff'),
+          url('https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/Lausanne-800.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+
+      }
+
 
     </style>
   </head>
@@ -726,14 +740,16 @@ font-style: normal;
 
     <footer id="footer">
       <div class="footer-container section flex">
-
+        <div class="row0">
+          <div class="mktoText" class="footer-logo" id="footerlogo" mktoName="Footer - Logo" style="display:${showfooterlogo};">
+            <a href="https://www.scorpion.co"><img src="http://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/logo-btm-asphalygrey.png" alt="footer logo"></a>
+          </div>
+        </div>
         <div class="row1">
-          <div class="logo-container col" style="display:${showfooterlogo};">
-            <div class="mktoText" class="footer-logo" id="footerlogo" mktoName="Footer - Logo">
-              <a href="https://www.scorpion.co"><img src="https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/logo-web-btm.png" alt="footer logo"></a>
-            </div>
+          <div class="logo-container col">
+
             <p>
-              Scorpion &copy; 2022 All Rights Reserved. 
+              Scorpion &copy; 2022 All Rights Reserved.
             </p>
           </div>
 
@@ -742,16 +758,21 @@ font-style: normal;
             <ul>
               <li>
                 <a href="https://www.scorpion.co/technology/" target="" aria-label="Technology">Technology</a>
-              </li><li>
-              <a href="https://www.scorpion.co/marketing/" target="" aria-label="Marketing">Marketing</a>
-              </li><li>
-              <a href="https://www.scorpion.co/who-we-help/" target="" aria-label="Who We Help">Who We Help</a>
-              </li><li>
-              <a href="https://www.scorpion.co/resources/" target="" aria-label="Resources">Resources</a>
-              </li><li>
-              <a href="https://www.scorpion.co/who-we-are/" target="" aria-label="Who We Are">Who We Are</a>
-              </li><li>
-              <a href="https://www.scorpion.co/get-started/" target="" aria-label="Get Started">Get Started</a>
+              </li>
+              <li>
+                <a href="https://www.scorpion.co/marketing/" target="" aria-label="Marketing">Marketing</a>
+              </li>
+              <li>
+                <a href="https://www.scorpion.co/who-we-help/" target="" aria-label="Who We Help">Who We Help</a>
+              </li>
+              <li>
+                <a href="https://www.scorpion.co/resources/" target="" aria-label="Resources">Resources</a>
+              </li>
+              <li>
+                <a href="https://www.scorpion.co/who-we-are/" target="" aria-label="Who We Are">Who We Are</a>
+              </li>
+              <li>
+                <a href="https://www.scorpion.co/get-started/" target="" aria-label="Get Started">Get Started</a>
               </li>
             </ul>
           </div>
@@ -760,31 +781,46 @@ font-style: normal;
             <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
               <ul>
                 <li id="footer-icon1">
-                  <a href="https://www.facebook.com/Scorpion.co/" target="_blank"><img alt="facebook icon" src="https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/facebook-smoke.png"/></a>
+                  <a href="https://www.facebook.com/Scorpion.co/" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#facebook">
+                    <path d="M20.762 0C14.563 0 13.152 4.601 13.152 7.544L13.152 11.658L9.562 11.658L9.562 18.016L13.144 18.016C13.144 26.175 13.144 36 13.144 36L20.684 36C20.684 36 20.684 26.076 20.684 18.016L25.77 18.016L26.438 11.658L20.692 11.658L20.692 7.924C20.692 6.517 21.628 6.191 22.287 6.191L26.345 6.191L26.345 0.024L20.762 0Z"></path>
+                    </svg></a>
                 </li>
                 <li id="footer-icon2">
 
-                  <a href="https://twitter.com/Scorpiondotco" target="_blank"><img alt="twitter icon"  src="https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/twitter-smoke.png" /></a>
+                  <a href="https://twitter.com/Scorpiondotco" target="_blank">
+                    <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#twitter">
+                      <path d="M25.3 3.379C21.146 3.379 18.125 6.452 18.125 10.383C18.125 10.874 18.125 11.243 18.251 11.489L18.125 11.489C10.951 11.489 6.168 10.014 2.518 5.59C1.888 6.697 1.259 7.803 1.259 9.154C1.259 11.611 2.895 13.7 4.909 15.051L4.909 15.051C3.65 15.051 2.266 14.438 1.259 13.823L1.259 13.823C1.259 17.386 6.294 21.44 9.692 22.055C9.251 22.485 8.439 22.629 7.548 22.629C5.898 22.629 3.977 22.135 3.65 22.055L3.65 22.055C4.657 24.88 7.678 26.723 10.825 26.723C8.307 28.69 5.286 29.672 1.762 29.672C1.133 29.672 0.629 29.672 0 29.55L0 29.55C3.272 31.637 7.803 32.621 12.083 32.621C25.678 32.621 32.601 22.177 32.601 12.594C32.601 12.225 32.601 11.734 32.601 11.365C33.859 10.505 35.118 9.154 36 7.68L36 7.68C34.615 8.294 32.727 9.032 31.216 9.154C32.727 8.294 34.237 6.205 34.866 4.485L34.866 4.485C33.733 5.223 32.349 6.083 30.964 6.574L30.083 5.714C28.699 4.363 27.44 3.379 25.3 3.379Z"></path>
+                    </svg></a>
                 </li>
 
                 <li id="footer-icon3">
-                  <a href="https://www.youtube.com/channel/UC8TNl_ItEdtLbaEEDYWLNwA" target="_blank"><img alt="youtube icon"  src="https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/youtube-smoke.png"/></a>
+                  <a href="https://www.youtube.com/channel/UC8TNl_ItEdtLbaEEDYWLNwA" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#youtube">
+                    <path d="M32.628 30.375q-7.805 1.124-14.626 1.124-3.024 0-6.681-0.28t-5.801-0.562l-2.144-0.28q-0.948-0.176-1.67-1.318t-1.056-2.76-0.492-3.024-0.158-2.566v-5.415q0-8.965 3.376-9.669 7.805-1.124 14.626-1.124 3.024 0 6.681 0.28t5.801 0.562l2.144 0.28q1.02 0.14 1.74 1.284t1.036 2.796 0.456 3.024 0.14 2.566v5.415q0 1.266-0.104 2.566t-0.422 2.988-1.056 2.812-1.792 1.3zM24.365 17.12l-9.213-5.625q-0.388-0.352-1.02-0.192t-0.632 0.51v12.377q0 0.388 0.632 0.528t1.02-0.212l9.213-5.625q0.388-0.352 0.388-0.88t-0.388-0.88z"></path>
+                    </svg></a>
                 </li>
                 <li id="footer-icon4">
 
-                  <a href="https://www.linkedin.com/company/scorpion/" target="_blank"><img alt="linkedin icon"  src="https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/linkedin-smoke.png"/></a>
+                  <a href="https://www.linkedin.com/company/scorpion/" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#linkedin">
+                    <path d="M4.286 1.688C1.695 1.688 0 3.347 0 5.536C0 7.684 1.647 9.378 4.187 9.378L4.238 9.378C6.875 9.378 8.517 7.677 8.517 5.529C8.467 3.342 6.875 1.688 4.286 1.688ZM27.096 11.936C23.076 11.936 20.557 14.106 20.091 15.627L20.091 12.149L12.208 12.149C12.311 13.996 12.208 34.312 12.208 34.312L20.091 34.312L20.091 22.319C20.091 21.653 20.06 20.986 20.262 20.508C20.805 19.176 21.969 17.792 24.063 17.792C26.799 17.792 28.044 19.842 28.044 22.843L28.044 34.312L36 34.312L36 21.989C36 15.125 32.082 11.936 27.096 11.936ZM0.908 12.15L0.908 34.312L7.924 34.312L7.924 12.15L0.908 12.15Z"></path>
+                    </svg></a>
                 </li>
                 <li id="footer-icon5">
 
-                  <a href="https://www.instagram.com/scorpion.co/" target="_blank"><img alt="instagram icon"  src="https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/instagram-smoke.png"/></a>
+                  <a href="https://www.instagram.com/scorpion.co/" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#instagram">
+                    <path d="M25.283 35.997L10.737 35.997C4.816 35.989 0.018 31.191 0.01 25.271L0.01 10.723C0.018 4.802 4.816 0.006 10.737-0.002L25.283-0.002C31.204 0.006 36.001 4.802 36.01 10.723L36.01 25.271C36.001 31.191 31.204 35.989 25.283 35.997ZM32.385 10.723C32.388 6.802 29.213 3.62 25.291 3.615C25.289 3.615 25.287 3.615 25.283 3.615L10.737 3.615C6.815 3.615 3.636 6.794 3.636 10.715L3.636 25.271C3.636 29.192 6.815 32.371 10.737 32.371L25.283 32.371C29.205 32.371 32.385 29.192 32.385 25.271L32.385 10.723ZM27.342 10.987C26.093 10.987 25.08 9.975 25.08 8.726C25.08 7.477 26.093 6.464 27.342 6.464C28.59 6.464 29.603 7.477 29.603 8.726C29.603 9.975 28.59 10.987 27.342 10.987ZM18.01 27.305C12.869 27.305 8.701 23.138 8.701 17.997C8.701 12.856 12.869 8.688 18.01 8.688C23.151 8.688 27.319 12.856 27.319 17.997C27.311 23.135 23.148 27.298 18.01 27.305ZM18.01 12.306C14.867 12.306 12.319 14.854 12.319 17.997C12.319 21.14 14.867 23.688 18.01 23.688C21.153 23.688 23.701 21.14 23.701 17.997C23.701 14.854 21.153 12.306 18.01 12.306Z"></path>
+                    </svg></a>
                 </li>
                 <li id="footer-icon6">
 
-                  <a href="https://www.yelp.com/biz/scorpion-valencia-3" target="_blank"><img alt="yelp icon"  src="https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/yelp-smoke.png"/></a>
+                  <a href="https://www.yelp.com/biz/scorpion-valencia-3" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#yelp">
+                    <path d="M4.349 24.666a1.628 1.628 0 0 0 1.372 0.888H5.813A45.636 45.636-0.067 0 0 11.733 23.79l2.412-0.752a1.78 1.78 0 0 0 1.312-1.688A1.852 1.852-0.067 0 0 14.297 19.418l-1.702-0.68h0C6.445 16.406 6.413 16.406 6.065 16.33a1.628 1.628 0 0 0-1.508 0.784a12.496 12.496 0 0 0-0.68 5.938A4.7 4.7-0.067 0 0 4.349 24.666Zm12.884-0.074a1.944 1.944 0 0 0-2.2 0.496l-1.086 1.266l-0.104 0.12C9.549 31.354 9.533 31.478 9.413 31.734a1.404 1.404 0 0 0-0.092 0.664a1.66 1.66 0 0 0 0.408 0.904A13.788 13.788-0.067 0 0 16.647 36l0.376 0a1.614 1.614 0 0 0 1.296-1.008c0.12-0.316 0.12-0.348 0.136-6.116 0 0 0-2.398 0-2.472A1.764 1.764-0.067 0 0 17.235 24.574ZM17.625 1.2v0a1.628 1.628 0 0 0-1.252-1.132C14.685-0.364 8.523 1.338 7.331 2.512a1.596 1.596 0 0 0-0.454 1.596c0.18 0.362 6.888 10.656 7.656 11.816s1.404 1.614 2.168 1.614a1.748 1.748 0 0 0 0.512-0.074c0.964-0.284 1.404-1.206 1.324-2.728C18.455 12.352 17.717 1.728 17.625 1.2Zm4.204 19.276a2.05 2.05 0 0 1-1.206-0.858a1.72 1.72 0 0 1 0-2.108l1.508-1.99c3.436-4.52 3.512-4.688 3.816-4.868a1.642 1.642 0 0 1 1.642 0a12.66 12.66 0 0 1 4.324 6.208v0.092a1.508 1.508 0 0 1-0.68 1.508c-0.302 0.18-0.362 0.224-6.768 1.732A9.224 9.224-0.067 0 1 21.829 20.46ZM31.583 25.718c-0.272-0.196-0.302-0.212-5.938-2.018l-2.398-0.784a1.852 1.852 0 0 0-2.064 0.62A1.824 1.824-0.067 0 0 21.033 25.734l0.964 1.508c3.36 5.304 3.498 5.516 3.784 5.728a1.508 1.508 0 0 0 0.936 0.316a1.9 1.9 0 0 0 0.692-0.136a12.646 12.646 0 0 0 4.792-5.938A1.508 1.508-0.067 0 0 31.583 25.718Z"></path>
+                    </svg></a>
                 </li>
                 <li id="footer-icon7">
 
-                  <a href="https://www.bbb.org/us/ca/valencia/profile/digital-marketing/scorpion-llc-1216-13207426" target="_blank"><img alt="better business bureau icon"  src="https://558-NFT-751.mktoweb.com/rs/558-NFT-751/images/bbb.smoke.png"   /></a>
+                  <a href="https://www.bbb.org/us/ca/valencia/profile/digital-marketing/scorpion-llc-1216-13207426" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#bbb">
+                    <path d="M13.451 14.864L10.737 18.225a4.261 4.261 0 0 0 0.914 5.882l4.982 3.27c0.854 0.555 0.932 1.111 0.51 1.709l0.721 0.496l2.521-3.182A4.05 4.05-0.049 0 0 19.452 20.236L14.484 16.907a1.079 1.079 0 0 1-0.33-1.575L13.451 14.864ZM17.74 0L13.556 5.249a6.107 6.107 0 0 0 1.501 8.459l6.884 4.591a3.284 3.284 0 0 1 0.555 4.5l0.584 0.404l4.757-6.001a6.001 6.001 0 0 0-1.336-9L19.062 3.343a1.934 1.934 0 0 1-0.689-2.999L17.74 0ZM6.701 33.001H12.326L14.2 36h7.499l1.874-2.999H29.201l-1.874-1.501H8.575L6.701 33.001Z"></path>
+                    </svg></a>
                 </li>
               </ul>
             </div>
