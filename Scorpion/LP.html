@@ -26,7 +26,7 @@
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
 
-    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#f2f2f5">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#191919">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#707070">
 
@@ -36,18 +36,18 @@
     <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Bg Color" default="#085CBD">
     <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
 
-    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
-    <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="none">
-    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#191919">
-    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#707070">
-    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#2f3df3">
+    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#f2f2f5">
+    <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="#bfddff">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#ffffff">
+    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#007ffd">
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
-    <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#091d44">
+    <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#ffffff">
     <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#091d44">
     <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#707070">
     <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
-    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#299dfa">
-    <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#299dfa">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#085CBD">
+    <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#085CBD">
 
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#86898f">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#BDBEC7">
@@ -98,7 +98,7 @@
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
-    <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
+    <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="2">
 
 
 
@@ -212,6 +212,16 @@
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
         box-shadow: none !important;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color: rgba(189, 190, 199, 0.15) !important;
+        border-top-right-radius: 0.222em;
+        border-top-left-radius: 0.222em;
+        border-bottom-right-radius: 0.222em !important;
+        border-bottom-left-radius: 0.222em !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        border-top: 0 !important;
       }
 
 
@@ -319,9 +329,16 @@
         justify-content: space-between;
       }
       #formsection .form-container{
+        max-width: 700px;
         background-color:${formbgclr};
-        padding-top: ${formTopBottomPadding}px;
-        padding-bottom: ${formTopBottomPadding}px;
+        padding-top: ${formTopBottomPadding}rem;
+        padding-bottom: ${formTopBottomPadding}rem;
+        border-radius: 0.333em;
+        border: solid 1px rgba(242, 242, 245, 0.1);
+        box-shadow: 0 0.556em 1.667em rgba(0, 0, 0, 0.15);
+        padding: 2.667em;
+        background-image: linear-gradient(to bottom, rgba(8, 92, 189, 0.5), rgba(70, 64, 178, 0.55));
+
       }
       #formsection .lefttext{
         display:${showlefttext};
@@ -362,6 +379,10 @@
         font-size:${formfontsize}px !important;
         color: ${formLabelColor} !important;
         margin-bottom: 1rem !important;
+        font-weight: 400 !important;
+      }
+      .mktoForm.mktoLayoutAbove .mktoRequiredField .mktoAsterix {
+        color: ${formLabelColor} !important;
       }
       .mktoForm .mktoFormRow{
         display:flex !important;
@@ -435,21 +456,25 @@
         margin-left: 0 !important;
       }
       .mktoForm .mktoButtonRow{
-        margin-top:10px;
+        display: flex;
+        margin: 2rem auto 0 !important;
+        justify-content: center !important;
       }
-      .mktoButtonWrap button.mktoButton {
+      .mktoButtonWrap button.mktoButton, .mktoForm .mktoButtonWrap.mktoGlow .mktoButton {
         background: ${formButtonColor} !important;
         border: ${formButtonColor} !important;
         color:${btnfontclr};
         text-align: center !important;
-        letter-spacing: 0.1em !important;
+        letter-spacing: unset !important;
         font-size:${btnfontsize}px !important;
         -moz-border-radius: ${btnborderrds}px !important;
         -webkit-border-radius: ${btnborderrds}px !important;
         border-radius:${btnborderrds}px !important;
         opacity:1;
         transition:300ms opacity;
-        box-shadow: none !important;
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2),0 3px 5px rgba(0, 0, 0, 0.3) !important;
+        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
+        height: unset !important;
       }
 
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
@@ -460,7 +485,7 @@
         height: unset !important;
       }
 
-      .mktoForm button.mktoButton:hover, .mktoForm button.mktoButton:focus{
+      .mktoForm button.mktoButton:hover, .mktoForm button.mktoButton:focus, .mktoForm .mktoButtonWrap.mktoGlow .mktoButton:hover, .mktoForm .mktoButtonWrap.mktoGlow .mktoButton:focus {
         opacity:${btnhvropacity};
         color: ${formButtonHoverColor} !important;
         background-color: ${formButtonHoverBGColor} !important;
