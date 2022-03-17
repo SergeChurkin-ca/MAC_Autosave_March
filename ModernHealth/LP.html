@@ -39,6 +39,12 @@
     <meta class="mktoString" mktoName="Subhead Bottom Spacing" id="shsp" default="60" allowHtml= "true">
     <meta class="mktoString" mktoName="Bodytext Bottom Spacing" id="btsp" default="24" allowHtml= "true">  
 
+      <!-- Speaker section -->
+      <meta class="mktoBoolean" id="show-content2" mktoName="Show 2 Sec with Speakers ?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"></meta>
+      <meta class="mktoBoolean" id="showlspeaker1" mktoName="Show Left Speaker 1?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+<meta class="mktoBoolean" id="showlspeaker2" mktoName="Show Left Speaker 2?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+<meta class="mktoBoolean" id="showlspeaker3" mktoName="Show Left Speaker 3?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+<meta class="mktoBoolean" id="showlspeaker4" mktoName="Show Left Speaker 4?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
 
     <title>Successdemo</title>
     <!-- Linkedin Pixel Script On page load-->
@@ -266,6 +272,14 @@
         }
       }
 
+     #content2 {
+       display: ${show-content2};
+     }                       
+                                            #content2 .content2-text {
+                                              
+      }
+
+
       @media (max-width: 1000px) {
         .header-text, .form-container {
           width: 100% !important;
@@ -339,6 +353,177 @@
           </div>
 
         </div>
+
+                                              
+
+
+  <div id="content2">
+          <div class="container_inner">
+            <div class="row">
+              <div class="content2-text">
+                <div
+                  class="mktoText bodytext"
+                  mktoName="Body Text"
+                  id="bodytext"
+                  style="padding-top: 0px">
+                  <span style="font-size: 18px; font-weight: 600"
+                    >What You’ll Learn:</span
+                  >
+                  <br /><br /><br />
+                  Mental health impacts all 5 pillars of wellbeing: emotional,
+                  physical, professional, financial, and relationship health. We
+                  recently surveyed adults aged 21-65 across a variety of
+                  industries about these 5 pillars.
+                  <br /><br />
+                  Read this report to learn:<br />
+                  <ul>
+                    <li>
+                      How Covid-19 has impacted all 5 areas of your employees’
+                      wellbeing
+                    </li>
+                    <li>
+                      Why 67% of employees feel their employers are responsible
+                      for helping out
+                    </li>
+                    <li>How to evaluate mental health solutions in 2021</li>
+                  </ul>
+                  P.S. You’ll also get exclusive access to our upcoming
+                  evidence-based reports on 2021 mental health trends later in
+                  February.
+                </div>
+                <div class="bodyspkrsec">
+                  <div
+                    class="mktoText"
+                    mktoName="Speaker Header Text"
+                    id="spkrhdtext"
+                    style="
+                      font-size: 18px;
+                      color: #22303f;
+                      font-weight: 600;
+                      padding-bottom: 40px;
+                    "
+                  >
+                    About the panel:
+                  </div>
+                  <div class="row div-spkr" style="display:${showlspeaker1};">
+                    <div class="col-sm-3 spkr-imgb">
+                      <div
+                        class="mktoText"
+                        mktoName="Speaker 1 Image"
+                        id="spkrimgaa"
+                        style="padding-bottom: 20px"
+                      >
+                        <img
+                          src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png"
+                          width="130"
+                          style="max-width: 140px"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-9">
+                      <div
+                        class="mktoText spk-textb"
+                        mktoName="Speaker 1 Text"
+                        id="spkrtxtbb"
+                      >
+                        <b>Julius Narkus</b><br />
+                        Demand Gen<br />
+                        Modern Health
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row div-spkr" style="display:${showlspeaker2};">
+                    <div class="col-sm-3 spkr-imgb">
+                      <div
+                        class="mktoText"
+                        mktoName="Speaker 2 Image"
+                        id="spkrimgbb"
+                        style="padding-bottom: 20px"
+                      >
+                        <img
+                          src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png"
+                          width="130"
+                          style="max-width: 140px"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-9">
+                      <div
+                        class="mktoText spk-textb"
+                        mktoName="Speaker 2 Text"
+                        id="spkrtxtcc"
+                      >
+                        <b>Julius Narkus</b><br />
+                        Demand Gen<br />
+                        Modern Health
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display: ${showtwspkrsecb};">
+                    <div class="row div-spkr" style="display:${showlspeaker3};">
+                      <div class="col-sm-3 spkr-imgb">
+                        <div
+                          class="mktoText"
+                          mktoName="Speaker 3 Image"
+                          id="spkrimgcc"
+                          style="padding-bottom: 20px"
+                        >
+                          <img
+                            src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png"
+                            width="130"
+                            style="max-width: 140px"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-9">
+                        <div
+                          class="mktoText spk-textb"
+                          mktoName="Speaker 3 Text"
+                          id="spkrtxtdd"
+                        >
+                          <b>Julius Narkus</b><br />
+                          Demand Gen<br />
+                          Modern Health
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row" style="display:${showlspeaker4};">
+                      <div class="col-sm-3 spkr-imgb">
+                        <div
+                          class="mktoText"
+                          mktoName="Speaker 4 Image"
+                          id="spkrimgdd"
+                          style="padding-bottom: 20px"
+                        >
+                          <img
+                            src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png"
+                            width="130"
+                            style="max-width: 140px"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-9">
+                        <div
+                          class="mktoText spk-textb"
+                          mktoName="Speaker 4 Text"
+                          id="spkrtxtee"
+                        >
+                          <b>Julius Narkus</b><br />
+                          Demand Gen<br />
+                          Modern Health
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+
+
 
 
         <div id="section6">
