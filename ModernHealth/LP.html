@@ -33,9 +33,8 @@
     <meta class="mktoString" id="link3" mktoName="Card 3 URL" default="#"> 
     <meta class="mktoString" id="card3" mktoName="Card 3 Img" default="https://join.modernhealth.com/rs/783-NRS-103/images/webinarMH.png">
     <meta class="mktoColor" id="mainbgclr" mktoName="Section BG Color" default="#1E42D3">
-    <meta class="mktoBoolean" id="showimg" mktoName="Show Card 1?" default="true" false_value="none" true_value="inline-block" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showimg-2" mktoName="Show Card 2?" default="true" false_value="none" true_value="inline-block" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showimg-3" mktoName="Show Card 3?" default="true" false_value="none" true_value="inline-block" false_value_name="Hide" true_value_name="Show">	 
+    <meta class="mktoBoolean" id="show-eventbanner" mktoName="Show Event Banner ?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-form" mktoName="Show Form ?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" mktoName="Title Bottom Spacing" id="ttsp" default="60" allowHtml= "true">
     <meta class="mktoString" mktoName="Subhead Bottom Spacing" id="shsp" default="60" allowHtml= "true">
     <meta class="mktoString" mktoName="Bodytext Bottom Spacing" id="btsp" default="24" allowHtml= "true">  
@@ -112,7 +111,7 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        gap: 2rem;
+        gap: 6rem;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
@@ -123,8 +122,9 @@
         -ms-flex-align: center;
         align-items: flex-start;
         margin: 2rem auto;
+        justify-content: space-evenly;
       }
- 
+
       .logo {
         text-align: center;
         padding-bottom: 50px;
@@ -154,7 +154,7 @@
         font-family: 'Poppins', Arial, sans-serif;  
         font-weight: normal;
         font-size: 14px;
-        line-height: 28px;
+        line-height: 38px;
       }
       #main{
         background-color:${mainbgclr};
@@ -179,18 +179,52 @@
       }
 
       .header-text {
-          width: calc(60% - 1rem) !important;
+        width: calc((60% - 1vw) - 10%) !important;
       }
-
+      #header-banner {
+        display: ${show-eventbanner} !important;
+      }
+      .header-text .mktoGen.mktoImg {
+        display: flex !important;
+        justify-content: center !important;
+      }
       .form-container {
-          width: calc(40% - 1rem) !important;
+        display: ${show-form};
+        width: calc(40% - 3rem) !important;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 15px rgba(77, 101, 128, 0.25);
+        border-radius: 8px;
+        padding: 2rem;
       }
-                                                                                        
+      #form-headline {
+        color: #000000;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 38px !important;
+      }                                                                       
       #form1 {
-          display: flex;
-          max-width: 100% !important;
+        display: flex;
+        max-width: 100% !important;
       }
-                                                                                        
+      .mktoForm .mktoAsterix {
+        display: none !important;
+      }
+      .mktoForm input[type="text"],
+      .mktoForm input[type="url"],
+      .mktoForm input[type="email"],
+      .mktoForm input[type="tel"],
+      .mktoForm input[type="number"],
+      .mktoForm input[type="date"],
+      .mktoForm textarea.mktoField,
+      .mktoForm select.mktoField {
+        padding: 8px !important;
+        border-radius: 8px !important;
+      }
+      .mktoButton {
+        height: unset !important;
+        padding: 0.7rem 3rem !important;
+        border-radius: 8px !important;
+      }                                                              
       #section6{
         padding-top: 10px;
         padding-bottom: 60px;
@@ -198,7 +232,7 @@
       }
 
       #headtext{
-        font-size: 40px;
+        font-size: 36px;
         color: #22303f;
         font-family: 'SK Modernist', sans-serif;
         font-weight: 700;
@@ -227,16 +261,37 @@
         #content{
           background:none;
         }
+        .mktoForm .mktoFormRow:nth-child(2), .mktoForm .mktoFormRow:nth-child(3) {
+          width: 100% !important;
+        }
       }
 
-
+      @media (max-width: 1000px) {
+        .header-text, .form-container {
+          width: 100% !important;
+        }
+        #header-banner {
+          display: ${show-eventbanner} !important;
+          justify-content: center;
+        }
+        .form-container {
+          max-width: 700px !important;
+          margin: 0 auto;
+        }
+        .mktoForm .mktoFormRow:nth-child(2), .mktoForm .mktoFormRow:nth-child(3) {
+          width: 47% !important;
+        }
+      }
 
       @media(max-width: 479px){
-        #headtext{
+        #headtext {
           font-size: 28px;
           line-height: 36px;
         }
-
+        .mktoForm .mktoFormRow:nth-child(2), .mktoForm .mktoFormRow:nth-child(3) {
+          width: 100% !important;
+        }
+      }
     </style>
 
   </head>
@@ -262,13 +317,15 @@
                 <div class="mktoText" mktoName="SubHeadline Text" id="subheadtext">
                   Schedule a meeting with our executive leadership team to discuss your employee mental health needs.
                 </div>
-                <div class="mktoImage" name="Banner" id="header-banner">
-                    <img src="https://join.modernhealth.com/rs/783-NRS-103/images/LinkedIn - HR Transform 1.png" alt="event banner" />
+                <div class="mktoImg" mktoName="Banner" id="header-banner">
+                  <img src="https://join.modernhealth.com/rs/783-NRS-103/images/LinkedIn - HR Transform 1.png" alt="event banner" />
                 </div>
               </div>
 
               <div class="form-container">
-                <div class="mmktoForm" name="Form" id="form1">
+                <h2 class="mktoText form-headline" mktoName="Form Headline" id="form-headline"> Schedule a Meeting at HR Transform</h2>
+                <div class="mmktoForm" mktoName="Form" id="form1">
+
                   <script src="//join.modernhealth.com/js/forms2/js/forms2.min.js"></script>
                   <form id="mktoForm_1065"></form>
                   <script>
