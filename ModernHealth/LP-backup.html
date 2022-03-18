@@ -41,13 +41,13 @@
 
     <!-- Speaker section -->
     <meta class="mktoBoolean" id="show-content2" mktoName="Show 2 Sec with Speakers ?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"></meta>
-	  <meta class="mktoBoolean" id="show-content2-text" mktoName="Show 2 Text?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"></meta>
-    <meta class="mktoBoolean" id="showlspeaker1" mktoName="Show Left Speaker 1?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
-    <meta class="mktoBoolean" id="showlspeaker2" mktoName="Show Left Speaker 2?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
-    <meta class="mktoBoolean" id="showlspeaker3" mktoName="Show Left Speaker 3?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
-    <meta class="mktoBoolean" id="showlspeaker4" mktoName="Show Left Speaker 4?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
-    <meta class="mktoBoolean" id="showtwspkrsec" mktoName="Show Speakers Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
-    <meta class="mktoBoolean" id="showtwspkrsecb" mktoName="Show 2 More Speakers Bottom Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
+  <meta class="mktoBoolean" id="show-content2-text" mktoName="Show 2 Text?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"></meta>
+<meta class="mktoBoolean" id="showlspeaker1" mktoName="Show Left Speaker 1?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+<meta class="mktoBoolean" id="showlspeaker2" mktoName="Show Left Speaker 2?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+<meta class="mktoBoolean" id="showlspeaker3" mktoName="Show Left Speaker 3?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+<meta class="mktoBoolean" id="showlspeaker4" mktoName="Show Left Speaker 4?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+<meta class="mktoBoolean" id="showtwspkrsec" mktoName="Show Speakers Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
+<meta class="mktoBoolean" id="showtwspkrsecb" mktoName="Show 2 More Speakers Bottom Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
 
 <title>Successdemo</title>
 <!-- Linkedin Pixel Script On page load-->
@@ -561,6 +561,60 @@
 
     });
   </script>
+
+  <script>
+    MktoForms2.whenReady(function(form) {
+      var emailFields = ["Email", "Email_Address_2__c"],
+          emailBannedPatterns = [
+            /@lyra\./,
+            /@spring\./,
+            /@betterup\./,
+            /@talkspace\./,
+            /@ginger\./,
+            /@calm\./,
+            /@livongo\./,
+            /@betterhelp\./,
+            /@joyable\./
+          ],
+          emailBannedMessage = "Please insert a valid work email address.",
+          showMessageNearSubmit = false;
+
+      /* --- NO NEED TO EDIT BELOW THIS LINE! --- */
+
+      form.onValidate(function(nativeValid) {
+        if (!nativeValid) return;
+
+        var formEl = form.getFormElem()[0],
+            currentValues = form.getValues(),
+            buttonEl = formEl.querySelector(".mktoButtonWrap"),
+            highlightEl,
+            allEmailsAllowed;
+
+        allEmailsAllowed = !emailFields.some(function(fieldName) {
+          if (isEmailBanned(currentValues[fieldName])) {
+            return highlightEl = formEl.querySelector("[name='" + fieldName + "']");
+          }
+        });
+
+        buttonEl.removeAttribute("data-error-message");
+        if (!allEmailsAllowed) {
+          form.showErrorMessage(emailBannedMessage, MktoForms2.$(highlightEl));
+          if (showMessageNearSubmit) {
+            buttonEl.setAttribute("data-error-message", emailBannedMessage);
+          }
+        }
+
+        form.submittable(allEmailsAllowed);
+      });
+
+      function isEmailBanned(emailAddress) {
+        return emailBannedPatterns.some(function(pattern) {
+          return new RegExp(pattern.source + "[a-z0-9-.]+$", "i").test(emailAddress);
+        });
+      }
+    });
+  </script>
+
   <script>
     (function(d, b, a, s, e) {
       var t = b.createElement(a),
