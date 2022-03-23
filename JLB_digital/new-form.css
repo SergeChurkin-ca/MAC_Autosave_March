@@ -22,6 +22,45 @@ fieldset {
     font-family: 'Montserrat', sans-serif Im !important;
 }
 
+.mktoForm .mktoRadioList>label,
+.mktoForm .mktoCheckboxList>label {
+    margin-left: 2em !important;
+}
+
+.mktoForm input[type=checkbox]+label:before,
+.mktoForm input[type=radio]+label:before {
+    margin-left: -2em !important;
+}
+
+.mktoForm.mktoLayoutAbove textarea.mktoField {
+    padding: 15px 20px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel::after {
+    content: "*";
+    color: #FF0000;
+    margin-left: 3px;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel,
+.mktoForm .mktoLabel {
+    font-size: 14px;
+    font-weight: 400 !important;
+    margin-bottom: 0.8rem;
+}
+
+.mktoForm .mktoRadioList>label,
+.mktoForm .mktoCheckboxList>label {
+    font-size: 14px;
+}
+
+.mktoForm.mktoLayoutAbove textarea.mktoField {
+    padding: 15px 20px;
+    box-shadow: none;
+}
+
 .mktoForm .mktoFormRow {
     display: flex;
     margin: 0.2rem 0 !important;
@@ -48,29 +87,13 @@ fieldset {
     font-size: 14px !important;
 }
 
-.mktoForm .mktoRequiredField label.mktoLabel,
-.mktoForm .mktoLabel {
+.mktoForm .mktoRequiredField label.mktoLabel {
     font-size: 14px;
     font-weight: 400 !important;
     margin-bottom: 0.8rem;
 }
 
-.mktoForm .mktoRadioList>label,
-.mktoForm .mktoCheckboxList>label {
-    font-size: 14px;
-}
-
-.mktoForm .mktoRadioList>label,
-.mktoForm .mktoCheckboxList>label {
-    margin-left: 2em !important;
-}
-
-.mktoForm input[type=checkbox]+label:before,
-.mktoForm input[type=radio]+label:before {
-    margin-left: -2em !important;
-}
-
-.mktoForm .mktoRequiredField label.mktoLabel::after {
+.mktoForm label.mktoLabel::after {
     content: "*";
     color: #FF0000;
     margin-left: 3px;
@@ -92,11 +115,6 @@ fieldset {
     height: 62px !important;
     padding: 15px 15px;
     border-radius: 3px;
-}
-
-.mktoForm.mktoLayoutAbove textarea.mktoField {
-    padding: 15px 20px;
-    box-shadow: none;
 }
 
 
