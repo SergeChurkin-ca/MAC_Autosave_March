@@ -24,36 +24,7 @@
     <link href="css/style.css" rel="stylesheet">
     <!--responsive css-->
     <link href="css/responsive.css" rel="stylesheet">
-
-    <link rel="next" href="thank-you.html">
     <style>
-        h1 {
-            font-size: 30px;
-            text-transform: uppercase;
-        }
-        
-        #services-home {
-            margin-top: 50px;
-        }
-        
-        #services-home .red h3 {
-            color: #f15a23;
-        }
-        
-        #services-home .red h3::after {
-            border-color: #f15a23;
-        }
-        
-        #banner h2 {
-            font-size: 22px;
-        }
-        
-        @media (max-width:480px) {
-            #banner h2 {
-                font-size: 14px;
-            }
-        }
-        
         .navbar-nav>li>a:hover,
         .dropdown:hover .dropbtn {
             background-color: #fff !important;
@@ -303,6 +274,7 @@
             }
         }
     </style>
+
 </head>
 
 <body>
@@ -317,12 +289,12 @@
            </button>
                         <div class="collapse navbar-collapse desktop" id="header-navbar">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active"><a href="index.html">Home</a></li>
+                                <li class="nav-item"><a href="index.html">Home</a></li>
                                 <li class="nav-item"><a href="about.html">ABOUT US</a></li>
-                                <li class="nav-item"><a href="pricing.html">PRICING</a></li>
+                                <li class="nav-item active"><a href="pricing.html">PRICING</a></li>
                                 <li class="dropdown">
-                                    <a href="http://crm-consulting-canada.ca/what-we-do.html" class="dropdown-toggle dropbtn">WHAT WE DO</a>
-                                    <ul class="dropdown-menu">
+                                    <a href="http://crm-consulting-canada.ca/what-we-do.html" class="dropdown-toggle dropbtn" data-toggle="dropdown" role="button" aria-expanded="false">WHAT WE DO</a>
+                                    <ul class="dropdown-menu" role="menu">
                                         <li><a href="sales-cloud.html">Sales Cloud</a></li>
                                         <li><a href="service-cloud.html">Service Cloud</a></li>
                                         <li><a href="salesforce-CPQ.html">Salesforce CPQ</a></li>
@@ -346,9 +318,9 @@
         <div class="collapse navbar-collapse mobile" id="header-navbar">
             <div class="container">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="about.html">ABOUT US</a></li>
-                    <li class="nav-item"><a href="pricing.html">PRICING</a></li>
+                    <li class="nav-item active"><a href="pricing.html">PRICING</a></li>
                     <li class="dropdown">
                         <a href="http://crm-consulting-canada.ca/what-we-do.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">WHAT WE DO</a>
                         <ul class="dropdown-menu" role="menu">
@@ -367,143 +339,90 @@
     </div>
     <!--header ends//-->
     <div class="clearfix"></div>
-    <!--banner section starts-->
-    <div id="banner">
+    <!--pricing banner starts-->
+    <div id="pricing-banner">
         <div class="container">
-            <h1 style="line-height: 1.5;"> By-The-Hour <span>Salesforce Sales Cloud</span> Implementations, Consulting, Admin Work and Team Training</h1>
-            <h2>Expert services from North American team.<br>No offshoring. Quick turn arounds. Support for full Salesforce ecosystem.</h2>
-            <div class="banner-img"><img src="images/banner-img.png"></div>
-            <div class="bottom-caption">
-                <h2 style="font-size: 26px;">No monthly minimums or retainers.<br><b class="priceUpdate">$130CAD</b></h2>
+            <div class="top-banner-img">
+                <img src="images/pricing-banner-img.png">
+            </div>
+            <h1>PRICING</h1>
+        </div>
+    </div>
+    <!--pricing banner ends//-->
+    <div class="clearfix"></div>
+    <!--pricing lets talk section starts-->
+    <div id="pricing-lets-talk">
+        <div class="container">
+            <div class="heading">
+                <h2>BY-THE-HOUR BILLING</h2>
+            </div>
+            <div class="content-block">
+                <img src="images/lets-talk-icon.png">
+                <p>No mandatory minimums or retainers. Get a Certified Salesforce Consultant in your Salesforce Sales Cloud instance. All time tracked with full transparency, on digital timesheets. Can set monthly or weekly maximums for budgeting purposes.</p>
+                <h6><span class="priceUpdate">$100 </span>/ hr, pay as you go, for Certified Salesforce Solutions Engineer and Art / Coding Services<br> <span class="priceUpdate2">$125</span> / hr, pay as you go, for Certified Salesforce Consultants</h6>
+                <a href="contact.html" class="btn btn-primary">Let's Talk</a>
             </div>
         </div>
     </div>
-    <!--banner section starts-->
+    <!--pricing lets talk section ends//-->
     <div class="clearfix"></div>
-    <div class="container bottom-caption-mob">
-        <h2>No retainers or monthly minimums. Just by-the-hour support, tracked to the minute.</h2>
-    </div>
-    <!--services section starts-->
-    <div id="services-home">
+    <!--pacakes section starts-->
+    <div id="package-section">
         <div class="container">
             <div class="heading">
-                <h2>Why CRM Consulting Corp?</h2>
+                <h2>OFF-THE-SHELF PACKAGES</h2>
             </div>
-            <div class="row green">
-                <div class="col-md-4"><img src="images/b1.png" width="80%"></div>
-                <div class="col-md-8">
-                    <h3>Get the deep experience of an agency at the cost of an admin</h3>
-                    <p>A Salesforce agency (like us) has multiple people with multiple backgrounds, so there's rarely a Salesforce need that can't be met. An internal admin "knows what they know", and tends to get stuck on more difficult issues, or spend
-                        much more time than a very experienced asset would</p>
-                </div>
-            </div>
-            <div class="row blue">
-                <div class="col-md-4 order-4 order-md-12"><img src="images/strategic-support.png" width="80%"></div>
-                <div class="col-md-8 order-8 order-md-1">
-                    <h3>By-the-hour SalesForce Sales Cloud consulting, admin work and training</h3>
-                    <p>Our certified SFDC admins can assist you in getting the most out of your CRM, including:</p>
-                    <ul>
-                        <li>On-call consulting Expert services to improve and troubleshoot your instance</li>
-                        <li>Custom-tailored education plans for the internal training of your team</li>
-                        <li>Data clean up</li>
-                        <li>Integration work</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row yellow">
-                <div class="col-md-4"><img src="images/salesforce-training-services.png" width="80%"></div>
-                <div class="col-md-8">
-                    <h3>Support for wide variety of clouds</h3>
-                    <p>We provide expert services on a wide variety of the Salesforce ecosystem, including:</p>
-                    <ul>
-                        <li>Sales Cloud consultation and management</li>
-                        <li>Service Cloud integration and implementation</li>
-                        <li>Community Cloud integration and setup</li>
-                        <li>CPQ consulting and application management</li>
-                        <li>Education Cloud consulting and platform management</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row red">
-                <div class="col-md-4 order-4 order-md-12"><img src="images/b4.png" width="80%"></div>
-                <div class="col-md-8 order-8 order-md-1">
-                    <h3>No offshoring. All North American team for quick turn arounds and great communication</h3>
-                    <p>We don’t do any offshoring or outsourcing. All of our team are full-time assets, located in Toronto, Canada. That means you’re speaking with people in your timezone, with excellent SLAs and precise communication</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--services section ends//-->
-    <div class="clearfix"></div>
-    <!--apart section starts-->
-    <div id="apart-section">
-        <div class="container">
-            <div class="heading">
-                <h2>What sets us apart</h2>
-            </div>
-            <div class="top-img"><img src="images/apart-top-img.png"></div>
             <div class="row">
-                <div class="col-md-4">
-                    <img src="images/invoice-icon.png">
-                    <p>Billing by the hour. No mandatory minimums or retainers. $100 / hr.</p>
-                    <a href="pricing.html" class="btn btn-primary">Learn More</a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-list">
+                        <h3>Implementation package:</h3>
+                        <img src="images/implementation.png">
+                        <div class="content">
+                            <p>Quickly implement and configure Salesforce Sales Cloud with certified Salesforce Admins. Perform complex migrations and strategic enhancements. Set up dashboards and reports to empower you to understand your business.</p>
+                            <h6>Starting at <span class="priceUpdate3">$3000.</span></h6>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Let’s Talk</a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/staff-in-house-icon.png">
-                    <p>All staff in-house (Toronto) for better communication. No off-shoring or outsourcing.</p>
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-list">
+                        <h3>Salesforce Audit:</h3>
+                        <img src="images/audit-icon.png">
+                        <div class="content">
+                            <p>Get More out of Salesforce. Perform audit of current usage and provide recommendation on how to improve on under-utilized and under-performing aspects of your Salesforce ecosystem.</p>
+                            <h6>Starting at <span class="priceUpdate4">$1000.</span></h6>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Let’s Talk</a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/automation-expert-icon.png">
-                    <p>Work directly with your certified SalesForce Sales Cloud expert -- no middleman.</p>
-                    <a href="what-we-do.html" class="btn btn-primary">Learn More</a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-list">
+                        <h3>AppExchange Integrations:</h3>
+                        <img src="images/intergation-icon.png">
+                        <div class="content">
+                            <p>Deploy Salesforce AppExchange apps with experienced experts. Deliver comprehensive roadmap of integration proccess and identify best way to transform your CRM into your most valuable asset.</p>
+                            <h6>Starting at <span class="priceUpdate5">$1500.</span></h6>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Let’s Talk</a>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img src="images/in-house-design-icon.png">
-                    <p>In-house design and coding services.</p>
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/strategic-services-icon.png">
-                    <p>Full suite of strategic services from industry veterans.</p>
-                    <a href="pricing.html" class="btn btn-primary">Learn More</a>
-                </div>
-                <div class="col-md-4">
-                    <img src="images/notes-icon.png">
-                    <p>Fast turn around times, experience with many client verticals. Clients across the globe.</p>
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                <div class="col-lg-3 col-md-6">
+                    <div class="content-list">
+                        <h3>Database Cleanup:</h3>
+                        <img src="images/database-folder-icon.png">
+                        <div class="content">
+                            <p>Optimize your CRM database by performing field and record audit. Remove duplicates, merge records, streamline field usage, and clean unreliable data.</p>
+                            <h6>Starting at <span class="priceUpdate6">$1500.</span></h6>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Let’s Talk</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--apart section ends//-->
+    <!--pacakes section ends//-->
     <div class="clearfix"></div>
-    <!--contact section starts-->
-    <div id="contact-home">
-        <div class="container">
-            <div class="heading">
-                <h2>CONTACT US</h2>
-            </div>
-            <script src="//app-ab26.marketo.com/js/forms2/js/forms2.min.js"></script>
-            <form id="mktoForm_1159"></form>
-            <script>
-                MktoForms2.loadForm("//app-ab26.marketo.com", "217-NBW-905", 1159);
-            </script>
-            <script>
-                MktoForms2.whenReady(function(form) {
-                    //Add an onSuccess handler
-                    form.onSuccess(function(values, followUpUrl) {
-                        //Take the lead to a different page on successful submit, ignoring the form's configured followUpUrl.
-                        location.href = document.querySelector('LINK[rel="next"]').href;
-                        //return false to prevent the submission handler continuing with its own processing
-                        return false;
-                    });
-                });
-            </script>
-        </div>
-    </div>
-    <!--contact section ends//-->
-    <div class="clearfix"></div>
+
     <!--footer starts-->
     <footer>
         <div class="container">
@@ -557,8 +476,8 @@
         <div class="slanted-bottom">
             <div class="inner-div">
                 <svg class="triangle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 100" style="enable-background:new 0 0 800 100;" xml:space="preserve">
-        <polyline id="XMLID_2_" class="st0" points="0,124.5 0,0 600,130 "></polyline>
-      </svg>
+         <polyline id="XMLID_2_" class="st0" points="0,124.5 0,0 600,130 "></polyline>
+         </svg>
             </div>
         </div>
     </footer>
@@ -597,6 +516,7 @@
     <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=97516&fmt=gif" />
 </noscript>
+
     <script>
         jQuery(function($) {
             if ($(window).width() > 769) {
@@ -615,32 +535,83 @@
             }
         });
     </script>
+    <!-- Dynamic geo ip pricing -->
     <script type="application/javascript">
         const geoip = (json) => {
-
+            //obtain the countryCode from json output;
             let countryCode = json.country_code3;
-            console.log(countryCode)
+
+            //object with definition of multiple prices;
             let prices = {
-                priceByCountry: {
+                basePrice: {
                     USA: '$100.00 USD',
                     CAN: '$130.00 CAD',
+                },
+                architectPrice: {
+                    USA: '$125.00 USD',
+                    CAN: '$160.00 CAD'
+                },
+                implementationPrice: {
+                    USA: '$3,000.00 USD',
+                    CAN: '$3,900.00 CAD'
+                },
+                sfAuditPrice: {
+                    USA: '$1,000.00 USD',
+                    CAN: '$1,300.00 CAD'
+                },
+                appExchangePrice: {
+                    USA: '$1,500.00 USD',
+                    CAN: '$2,000.00 CAD'
+                },
+                dbCleaningPrice: {
+                    USA: '$1,5000.00 USD',
+                    CAN: '$2,0000.00 CAD'
                 }
             };
 
-            let price = prices['priceByCountry'][countryCode];
+            //set each price based on the country code;
+            let priceBase = prices['basePrice'][countryCode];
+            let priceArchitect = prices['architectPrice'][countryCode];
+            let priceImplementation = prices['implementationPrice'][countryCode];
+            let priceSfAudit = prices['sfAuditPrice'][countryCode];
+            let priceAppExchange = prices['appExchangePrice'][countryCode];
+            let priceDbCleaning = prices['dbCleaningPrice'][countryCode];
 
-            price == null ? newPrice = '$100 USD' : newPrice = price;
 
+            //establish a default value for each price, if no country code is found;
+            priceBase == null ? newPrice = '$100 USD' : newPrice = priceBase;
+            priceArchitect == null ? newPrice2 = '$125.00 USD' : newPrice2 = priceArchitect;
+            priceImplementation == null ? newPrice3 = '$3,000.00 USD' : newPrice3 = priceImplementation;
+            priceSfAudit == null ? newPrice4 = '$1,000.00 USD' : newPrice4 = priceSfAudit;
+            priceAppExchange == null ? newPrice5 = '$2,000.00 USD' : newPrice5 = priceAppExchange;
+            priceDbCleaning == null ? newPrice6 = '$200.00 USD' : newPrice6 = priceDbCleaning;
+
+            //obtain all element from the DOM for each price value;
             let pricetoUpdate = document.getElementsByClassName('priceUpdate');
+            let pricetoUpdate2 = document.getElementsByClassName('priceUpdate2');
+            let pricetoUpdate3 = document.getElementsByClassName('priceUpdate3');
+            let pricetoUpdate4 = document.getElementsByClassName('priceUpdate4');
+            let pricetoUpdate5 = document.getElementsByClassName('priceUpdate5');
+            let pricetoUpdate6 = document.getElementsByClassName('priceUpdate6');
 
-            for (let i = 0; i < pricetoUpdate.length; i++) {
-                let str = pricetoUpdate[i].innerHTML;
-                pricetoUpdate[i].innerHTML = newPrice;
-            }
+            //run through all instances of the price and update it respectively;
+            const priceUpdater = (ogPrice, newPrice) => {
+                for (let i = 0; i < ogPrice.length; i++) {
+                    let str = ogPrice[i].innerHTML;
+                    ogPrice[i].innerHTML = newPrice;
+                };
+            };
 
+            // calling priceUpdater() on each of the prices that need to be updated;
+            priceUpdater(pricetoUpdate, newPrice);
+            priceUpdater(pricetoUpdate2, newPrice2);
+            priceUpdater(pricetoUpdate3, newPrice3);
+            priceUpdater(pricetoUpdate4, newPrice4);
+            priceUpdater(pricetoUpdate5, newPrice5);
+            priceUpdater(pricetoUpdate6, newPrice6);
         }
-        console.log('ding dong')
     </script>
+
     <script async src="https://get.geojs.io/v1/ip/geo.js"></script>
 </body>
 
