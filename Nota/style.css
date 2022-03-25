@@ -118,6 +118,28 @@
     cursor: pointer;
 }
 
-.carret-up {
+.carret-down {
     display: none
+}
+
+
+/* animation with script */
+
+.animated {
+    animation: appear 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
 }

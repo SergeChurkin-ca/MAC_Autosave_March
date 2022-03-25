@@ -2,30 +2,46 @@ document.querySelectorAll('.stack-container').length
 let containersLength = Array.from(document.querySelectorAll('.stack-container')).length
 
 
-document.querySelectorAll('.three-columns-wrapper')[0].style = "height: 25rem;"
+
 
 for (let i = 3; i < containersLength; i++) {
-    Array.from(document.querySelectorAll('.stack-container'))[i].style = "transition: all 1s; visibility: hidden; height: 0; padding: 0;"
+    // Array.from(document.querySelectorAll('.stack-container'))[i].style = "display: none;"
 
-    Array.from(document.querySelectorAll('.stack-container'))[i].querySelectorAll('*')[0].style = "height: 0; display: none;"
+    Array.from(document.querySelectorAll('.stack-container'))[i].style = "position: absolute; top: 30rem;"
+        // Array.from(document.querySelectorAll('.stack-container'))[i].querySelectorAll('*')[0].style = "height: 0; display: none;"
     document.querySelectorAll('.carret-up')[0].style = "transform: rotateX(178deg);"
 }
 
 
+document.querySelectorAll('.carret-up')[0].addEventListener('click', unToggleFunction)
 
 
-document.querySelectorAll('.carret-up')[0].addEventListener('click', toggleFunction)
-
-
-
-function toggleFunction() {
+function unToggleFunction() {
     for (let i = 3; i < containersLength; i++) {
-        Array.from(document.querySelectorAll('.stack-container'))[i].style = "transition: all 1s; visibility: visible; height: unset; padding: 3.5rem 2.5rem 0;"
 
-        Array.from(document.querySelectorAll('.stack-container'))[i].querySelectorAll('*')[0].style = "height: unset; display: initial; transition: all 1s"
+        if (document.querySelector('.carret-up').className.match('untoggled') === null) {
 
-        document.querySelectorAll('.carret-up')[0].style = "transform: rotateX(0deg);"
-        document.querySelectorAll('.three-columns-wrapper')[0].style = "height: unset; transition: all 0.3s;"
+            // Array.from(document.querySelectorAll('.stack-container')).map(x => x.style = "display:flex;")
+            Array.from(document.querySelectorAll('.stack-container')).map(x => x.style = "position:unset; transition: all 0.5s")
+
+
+            // document.querySelector('.stack-container').classList.toggle('show');
+            Array.from(document.querySelectorAll('.stack-container')).map(x => x.classList.toggle('animated'))
+
+
+
+            document.querySelectorAll('.carret-up')[0].style = "transform: rotateX(0deg);"
+            document.querySelectorAll('.carret-up')[0].classList.add('untoggled')
+
+        } else if (document.querySelector('.carret-up').className.match('untoggled') !== null) {
+
+            for (let a = 3; a < containersLength; a++) {
+                Array.from(document.querySelectorAll('.stack-container'))[a].style = "display: none"
+
+                document.querySelectorAll('.carret-up')[0].style = "transform: rotateX(178deg);"
+                document.querySelectorAll('.carret-up')[0].classList.remove('untoggled')
+                console.log('check function')
+            }
+        }
     }
-
 }
