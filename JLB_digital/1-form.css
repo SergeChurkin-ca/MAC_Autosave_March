@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+fieldset {
+    border: none !important;
+}
+
+.mktoForm.mktoLayoutAbove .mktoRequiredField .mktoAsterix,
+.mktoForm .mktoOffset,
+.mktoForm fieldset legend {
+    display: none;
+}
+
+.mktoForm {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 1rem 5rem 1rem;
+    width: auto !important;
+    font-family: 'Montserrat', sans-serif Im !important;
+}
+
+.mktoForm .mktoRadioList>label,
+.mktoForm .mktoCheckboxList>label {
+    margin-left: 2em !important;
+}
+
+.mktoForm input[type=checkbox]+label:before,
+.mktoForm input[type=radio]+label:before {
+    margin-left: -2em !important;
+}
+
+.mktoForm.mktoLayoutAbove textarea.mktoField {
+    padding: 15px 20px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel::after {
+    content: "*";
+    color: #FF0000;
+    margin-left: 3px;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel,
+.mktoForm .mktoLabel {
+    font-size: 14px;
+    font-weight: 400 !important;
+    margin-bottom: 0.8rem;
+}
+
+.mktoForm .mktoRadioList>label,
+.mktoForm .mktoCheckboxList>label {
+    font-size: 14px;
+}
+
+.mktoForm.mktoLayoutAbove textarea.mktoField {
+    padding: 11px 20px;
+    box-shadow: none;
+}
+
+.mktoForm .mktoFormRow {
+    display: flex;
+    margin: 0.2rem 0 !important;
+}
+
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap,
+.mktoForm.mktoLayoutAbove textarea.mktoField {
+    width: 100% !important;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm select.mktoField {
+    width: 100% !important;
+    box-shadow: none;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    height: 52px !important;
+    padding: 15px 20px;
+    font-size: 14px !important;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel {
+    font-size: 14px;
+    font-weight: 400 !important;
+    margin-bottom: 0.8rem;
+}
+
+.mktoForm .mktoButtonRow {
+    display: flex;
+    justify-content: center;
+}
+
+.mktoForm .mktoButtonWrap {
+    margin: 0 auto !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoRound .mktoButton {
+    background: #db2400 !important;
+    border: 0 !important;
+    font-size: 18px !important;
+    height: 62px !important;
+    padding: 15px 15px;
+    border-radius: 3px;
+}
+
+
+/* error message */
+
+.mktoForm .mktoError {
+    position: unset !important;
+    top: 0;
+    left: 0;
+}
+
+.mktoForm .mktoError .mktoErrorMsg {
+    color: #db2400 !important;
+    text-shadow: none !important;
+}
+
+.mktoForm .mktoError .mktoErrorArrow {
+    display: none !important;
+}
+
+.mktoForm .mktoError .mktoErrorMsg {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: flex;
+    border: solid 1px #ffffff !important;
+}
+
+@media (max-width:600px) {
+    .mktoForm {
+        padding: 1rem !important;
+    }
+}
