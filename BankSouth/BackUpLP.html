@@ -10,8 +10,6 @@
 
     <!-- Show and Hide Meta Tags -->
     <meta class="mktoBoolean" id="showlogo" mktoName="Show Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="show-nav-cta1" mktoName="Show Nav Cta 1" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="show-nav-cta2" mktoName="Show Nav Cta 2" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="bgmode" mktoName="Banner Background Mode?" default="true" true_value="normal" false_value="multiply" false_value_name="Blend" true_value_name="Normal">
     <meta class="mktoBoolean" id="showcards" mktoName="Show Card Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -221,28 +219,6 @@
       .container{
         max-width:1200px;
         margin:0 auto;
-      }
-      .navigation {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .navigation p {
-        margin: 0 0 5px 0;
-      }
-      .nav-inner {
-        display: flex;
-        flex-wrap: wrap;
-         align-items: center;
-         gap: 3rem;
-         margin-right: 25px;
-      }
-      .navigation .btn-primary {
-        display: ${show-nav-cta1};
-      }
-      .navigation .btn-secondary {
-        display: ${show-nav-cta2};
       }
       .page_block{
         max-width:1000px;
@@ -945,11 +921,6 @@
           text-shadow: 0 2px 5px rgba(0,0,0,.8);
         }
       }
-      @media only screen and (max-width: 665px) {
-          .nav-inner {
-          margin: 25px;
-        }
-      }
       @media only screen and (max-width: 575px) {
         .logo {
           padding: 15px 0;
@@ -1070,13 +1041,9 @@
   </head>
   <body>
     <nav style="display:${showlogo};">
-      <div class="container navigation" style="padding: 0;">
+      <div class="container" style="padding: 0;">
         <div class="logo">
           <img alt="logo" src="https://go.banksouth.com/rs/566-EGP-122/images/logo_BankSouth.png" border="0">
-        </div>
-        <div class="mktoText nav-inner" id="nav-inner" mktoName="Nav Cta buttons">
-        <p><a class="btn-primary" href="#">Example Button Text ></a></p>
-        <p><a class="btn-secondary" href="#">Example Link Text</a></p>
         </div>
       </div>
     </nav>
