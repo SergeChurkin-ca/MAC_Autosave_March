@@ -17,6 +17,7 @@
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-formlabel" mktoName="Show Form Label" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -30,6 +31,7 @@
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#00291F">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#212529">
 
+    <meta class="mktoColor" id="link-color" mktoName="Free-Text - Link " default="#1262eb">
 
     <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#00291F">
     <meta class="mktoColor" id="btnbrdclr" mktoName="Free-Text - Btn Border Color" default="#00291F">
@@ -63,8 +65,13 @@
     <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="26">
     <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
     <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="26.6">
-
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
+
+    <meta class="mktoString" mktoName="P Line Height" id="p-line-height" default="1.4">
+    <meta class="mktoString" mktoName="H Line Height" id="h-line-height" default="1.2">
+
+    <meta class="mktoString" mktoName="Body Letter Spacing (px)" id="body-letterspacing" default="0.24">
+    <meta class="mktoString" mktoName="Button Letter Spacing (em)" id="button-letterspacing" default="0.1">
 
     <!-- Banner Section Styling -->
     <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/600x400/00291F/ffffff">
@@ -93,6 +100,7 @@
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
+    <meta class="mktoString" mktoName="From Button -  Size (px)" id="form-btnfontsize" default="18">
     <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="0">
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="40">
@@ -103,6 +111,7 @@
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
+    <meta class="mktoString" mktoName="Form - margin row bottom (rem)" id="form-margin-bottom" default="1">
 
 
 
@@ -121,26 +130,34 @@
       }
 
       .mktoForm .mktoButton {
-          font-family: ${fontfamily-secondary}, sans-serif !important;
+        font-family: ${fontfamily-secondary}, sans-serif !important;
       }
 
-      body {background:#fff;} 
+      body {background:#fff; letter-spacing: ${body-letterspacing}px;} 
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
+        line-height: ${h-line-height};
       }
       #header p {
         font-size: ${header-p-fontsize}px;
+
       }
       h1 {
         font-size: ${h1fontsize}px;
-
+        line-height: ${h-line-height};
+        font-wieght: 500;
       }
 
       h2 {
         font-size: ${h2fontsize}px;
+        line-height: ${h-line-height};
+        font-wieght: 500;
       }
-
+      h3, h4, h5, h6 {
+        line-height: ${h-line-height};
+        font-wieght: 500;
+      }
       p,ul,ol{
         margin:10px 0;
       }
@@ -148,13 +165,14 @@
         margin-left:45px;
       }
       p, li{
-        line-height:1.5;
+        line-height: ${p-line-height};
         font-size:${pfontsize}px;
+        font-weight: 400;
       }
       b, .bold, em{
         font-weight:bold;
       }
-      a {text-decoration: none}
+      a {text-decoration: none; color: ${link-color};}
       img{
         vertical-align:bottom;
         max-width:100%;
@@ -189,12 +207,13 @@
         border-radius:${btnborderrds}px;
         text-align:center;
         font-size:${btnfontsize}px;
+        letter-spacing: ${button-letterspacing}em;
         transition:300ms opacity;
       }
       .btn a:hover, .btn a:focus {
         background: ${btnhoverbackground};
         border: 2px solid ${btnhoverbackground};
-        color: ${btnbgclr};
+        color: ${btnhoverfontclr};
 
       }
       .section{
@@ -218,10 +237,57 @@
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
         box-shadow: none !important;
-        padding: 8px 3px !important;
+        padding: 18px 15px !important;
+        border: solid 1px #212529 !important;
+        border-width: 0.5px !important;
+        letter-spacing: ${body-letterspacing} !important;
       }
 
-
+      .mktoForm input[type=text]:active,
+      .mktoForm input[type=url]:active,
+      .mktoForm input[type=email]:active,
+      .mktoForm input[type=tel]:active,
+      .mktoForm input[type=number]:active,
+      .mktoForm input[type=date]:active,
+      .mktoForm select.mktoField:active,
+      .mktoForm textarea.mktoField:active,
+      .mktoForm input[type=text]:focus,
+      .mktoForm input[type=url]:focus,
+      .mktoForm input[type=email]:focus,
+      .mktoForm input[type=tel]:focus,
+      .mktoForm input[type=number]:focus,
+      .mktoForm input[type=date]:focus,
+      .mktoForm select.mktoField:focus,
+      .mktoForm textarea.mktoField:focus {
+        border: none !important;
+        outline-color: #4cd3cc !important;
+        outline-width: 1px;
+        outline-style: solid;
+      }
+      
+      .mktoForm .mktoLabel{
+        display: ${show-formlabel} !important;
+        width:90% !important;
+        font-size:${formfontsize}px !important;
+        color: ${formLabelColor} !important;
+        margin-bottom: 1rem !important;
+        width:  max-content !important;
+        position: absolute;
+        top: 19px;
+        left: 14px;
+      }
+ 
+      .mktoForm .mktoFormRow:focus-within label,
+      .mktoForm .mktoFormRow:focus-visible label,
+      .mktoForm .mktoFormRow:target label,
+      .mktoForm .mktoFormRow:focus label, 
+      .mktoForm .mktoFormRow:active label,
+      .mktoForm .mktoFormRow:visited label,
+      .mktoForm .mktoFormRow:visited label.mktoLabel {
+          top: -7px;
+          color: red;
+          transtion: all 0.15s;
+      }
 
       #header{
         background-color:${bannerclr};
@@ -237,7 +303,7 @@
         display:${showsec1};
       }
       #freetext ul {
-          margin-left: 1rem !important;
+        margin-left: 1rem !important;
       }
       #formsection{
         background-color:${mainformbgclr};
@@ -306,7 +372,7 @@
       #freetext h1 {
         color: ${freeTextHeaderColor} !important;
         font-size: ${freeTextH1size}px;
-        font-weight: 400;
+        font-weight: 500;
       }
 
       #freetext p,
@@ -317,7 +383,7 @@
 
       #formlefttext h2 {
         color: ${formSectionHeaderColor} !important;
-        font-weight: 400;
+        font-weight: 500;
       }
 
       #formsection p,
@@ -340,9 +406,7 @@
 
 
 
-      .mktoForm .mktoRequiredField .mktoAsterix {
-        display: none !impor!ant;
-      }
+
       #formheadline{
         font-size: ${formheadlinefontsize}px;
         color: ${formHeadLineColor} !important;
@@ -366,14 +430,10 @@
       .mktoForm .mktoOffset {
         height: 7px !important;
       }
-      .mktoForm .mktoLabel{
-        width:90% !important;
-        font-size:${formfontsize}px !important;
-        color: ${formLabelColor} !important;
-        margin-bottom: 1rem !important;
-      }
+
       .mktoForm .mktoFormRow{
         display:flex !important;
+        margin-bottom: ${form-margin-bottom}rem;
       }
       .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
         margin-left:20px;
@@ -387,7 +447,7 @@
       .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
         min-height:25px !important;
         height: unset !important;
-        letter-spacing: unset !important;
+        letter-spacing: ${button-letterspacing}em !important;
       }
       .mktoForm textarea.mktoField{
         height:70px !important;
@@ -403,17 +463,28 @@
         padding-left: 10px !important;
         font-size:${formfontsize}px !important;
       }
+      
+      
       .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color:#3a3a3a !important;
+        font-size: 16px;
+        color: #73716e !important;
+        font-weight: 400 !important;
       }
+      
       .mktoForm input::-moz-placeholder { /* Firefox 19+ */
-        color:#3a3a3a !important;
+        font-size: 16px;
+        color: #73716e !important;
+        font-weight: 400 !important;
       }
       .mktoForm input:-ms-input-placeholder { /* IE 10+ */
-        color:#3a3a3a !important;
+        font-size: 16px;
+        color: #73716e !important;
+        font-weight: 400 !important;
       }
       .mktoForm input:-moz-placeholder { /* Firefox 18- */
-        color:#3a3a3a !important;
+        font-size: 16px;
+        color: #73716e !important;
+        font-weight: 400 !important;
       }
       .mktoForm select.mktoField{
         background-color:#ffffff !important;
@@ -447,24 +518,25 @@
       .mktoForm .mktoButtonRow{
         margin-top:10px;
       }
- 
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
         background: ${formButtonColor} !important;
+        font-size: ${form-btnfontsize}px !important;
         color: ${formButtonTextColor} !important;
         border: 3px solid ${formButtonColor} !important;
         padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
         height: unset !important;
         text-transform: uppercase;
+        letter-spacing: ${button-letterspacing}em !important;
       }
 
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover, .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus{
         opacity:${btnhvropacity};
-        color: ${formButtonColor} !important;
+        color: ${formButtonHoverTextColor} !important;
         background: ${formButtonHoverBGColor} !important;
         border: solid 3px ${formButtonHoverBGColor} !important;
       }
 
-     
+
 
       .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
         margin-left: 1.5em;
@@ -512,19 +584,19 @@
         align-items: center;
         flex-wrap: wrap;
       }
-    #footer .logo-container .inner-container-1 {
+      #footer .logo-container .inner-container-1 {
         display: flex;
         align-items: center;
         gap: 1rem;
-    }
-    #footer .logo-container .inner-container-1 p {
+      }
+      #footer .logo-container .inner-container-1 p {
         margin-top: 0.3rem;
         white-space: nowrap;
-    }
+      }
       #footer .icons-container img{
         width:${footericonswidth}px;
       }
-     
+
       #footer .icons-container {
         justify-content: right;
         display: flex;
@@ -548,13 +620,13 @@
         gap: 1rem;
         flex-direction: row;
         justify-content: center;
-        
+
       }
       #footertext2 ul {
-          margin-top: 1.1rem;
+        margin-top: 1.1rem;
       }
-     
-     
+
+
       #footer ul {
         display: flex;
         flex-direction: row;
@@ -563,13 +635,13 @@
       #footer ul li {
         list-style: none;
         display: flex;
-        
+
       }
 
       @media (max-width: 1200px) {
-             #footertext2 ul {
-            justify-content: left !important;
-            margin-top: 0 !important;
+        #footertext2 ul {
+          justify-content: left !important;
+          margin-top: 0 !important;
         }
       }
 
@@ -607,12 +679,12 @@
         #footer .logo-container {
           margin-bottom: 1rem !important;
           text-align: center;
-          
+
         }
         #footer ul {
-            gap: 1rem !important;
+          gap: 1rem !important;
         }
-     
+
         #footertext2 li {
           height: 0.3rem !important;
         }
@@ -632,26 +704,29 @@
       }
 
       @font-face {
-            font-family: 'NeueMontreal', sans-serif !important;
-            src: url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.woff2') format('woff2'),
-                 url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.eot') format('eot'),
-                 url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.woff') format('woff'),
-                 url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.ttf') format('truetype'),
-                 url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.otf');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'SohneMono', sans-serif !important;
-            src: url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.woff2') format('woff2'),
-                 url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.eot') format('eot'),
-                 url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.woff') format('woff'),
-                 url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.ttf') format('truetype'),
-                 url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.otf');
-            font-weight: normal;
-            font-style: normal;
-        }
+        font-display: swap;
+        font-family: NeueMontreal;
+        src: url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.woff2') format('woff2'),
+          url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.eot') format('eot'),
+          url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.woff') format('woff'),
+          url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.ttf') format('truetype'),
+          url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/NeueMontreal-Regular.otf');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-display: swap;
+        font-family: SohneMono;
+        src: url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.woff2') format('woff2'),
+          url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.eot') format('eot'),
+          url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.woff') format('woff'),
+          url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.ttf') format('truetype'),
+          url('https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/SohneMono-Leicht.otf');
+        font-weight: normal;
+        font-style: normal;
+      }
+
     </style>
   </head>
   <body>
@@ -659,7 +734,7 @@
       <div class="section">
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo-1" mktoName="Top Logo">
-            <a href="https://www.indexexchange.com/"><img src="https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/Index_Exchange_Logo_Full_Evergreen.png" alt="logo"></a>
+            <a href="https://www.indexexchange.com/"><img src="http://go.indexexchange.com/rs/942-BIU-279/images/index-exchange-logo-evergreen.svg" alt="logo"></a>
           </div>
         </div>
       </div>
@@ -668,7 +743,7 @@
       <div class="section">
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
-            <a href="https://www.indexexchange.com/"><img src="https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/Index_Exchange_Logo_Full_Stone.png" alt="logo"></a>
+            <a href="https://www.indexexchange.com/"><img src="http://go.indexexchange.com/rs/942-BIU-279/images/index-exchange-logo-stone.svg" alt="logo"></a>
           </div>
         </div>
         <div class="mktoText" id="bannertext" mktoName="Banner - Text">
@@ -737,31 +812,31 @@
       </div>
     </div>
 
-        <footer id="footer">
-            <div class="footer-container section flex">
-                <div class="row1">
-                    <div class="logo-container col" style="display:${showfooterlogo};">
-                        <div class="inner-container-1">
-                            <div class="mktoText" class="footer-logo" id="footerlogo" mktoName="Footer - Logo">
-                                <a href="https://www.indexexchange.com/"><img src="https://942-BIU-279.mktoweb.com/rs/942-BIU-279/images/Index_Exchange_Logo_Full_Stone.png" alt="logo"></a>
-                            </div>
-                            <div>
-                                <p style="color: #33544C;">Copyright 2022
-                            </div>
-                        </div>
-                        <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
-                            <ul>
-                                <li><a href="https://www.indexexchange.com/privacy/">Privacy</a></li>
-                                <li><a target="_blank" rel="noopener" href="https://sar.indexexchange.com/">User Privacy Rights Form</a></li>
-                                <li><a href="https://www.indexexchange.com/terms-of-use/">Terms of Use</a></li>
-                                <li><a target="_blank" rel="noopener" href="https://optout.networkadvertising.org/?c=1">Opt Out</a></li>
-                                <li><a target="_blank" rel="noopener" href="https://optout.privacyrights.info/?c=1">Do Not Sell My Personal Information</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <footer id="footer">
+      <div class="footer-container section flex">
+        <div class="row1">
+          <div class="logo-container col" style="display:${showfooterlogo};">
+            <div class="inner-container-1">
+              <div class="mktoText" class="footer-logo" id="footerlogo" mktoName="Footer - Logo">
+                <a href="https://www.indexexchange.com/"><img src="http://go.indexexchange.com/rs/942-BIU-279/images/index-exchange-logo-stone.svg" alt="logo"></a>
+              </div>
+              <div class="mktoText copyright" id="copyright" mktoName="Footer - Copyright">
+                <p style="color: #33544C;">Copyright 2022
+              </div>
+            </div>
+            <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
+              <ul>
+                <li><a href="https://www.indexexchange.com/privacy/">Privacy</a></li>
+                <li><a target="_blank" rel="noopener" href="https://sar.indexexchange.com/">User Privacy Rights Form</a></li>
+                <li><a href="https://www.indexexchange.com/terms-of-use/">Terms of Use</a></li>
+                <li><a target="_blank" rel="noopener" href="https://optout.networkadvertising.org/?c=1">Opt Out</a></li>
+                <li><a target="_blank" rel="noopener" href="https://optout.privacyrights.info/?c=1">Do Not Sell My Personal Information</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         </footer>
 
 
-  </body>
-</html>
+      </body>
+    </html>
