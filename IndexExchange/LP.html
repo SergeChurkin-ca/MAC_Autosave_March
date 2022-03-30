@@ -517,10 +517,12 @@
       }
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
         background: ${formButtonColor} !important;
+        display: flex !important;
+        gap: 3rem;
         font-size: ${form-btnfontsize}px !important;
         color: ${formButtonTextColor} !important;
         border: 3px solid ${formButtonColor} !important;
-        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
+        padding: ${btnpaddingtb}px calc(${btnpaddinglr}px - 25px) !important;
         height: unset !important;
         text-transform: uppercase;
         letter-spacing: ${button-letterspacing}em !important;
