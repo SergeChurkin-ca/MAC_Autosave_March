@@ -41,7 +41,7 @@
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
     <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="none">
-    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#00291F">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#73716e">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#212529">
     <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#00291F">
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#ffffff">
@@ -129,6 +129,12 @@
         font-family: ${fontfamily}, sans-serif !important;
       }
 
+      .mktoForm .mktoButton {
+        font-family: ${fontfamily-secondary}, sans-serif !important;
+      }
+      .mktoForm .mktoButton:after {
+        content: "\2192"
+      }
       .mktoForm .mktoButton {
         font-family: ${fontfamily-secondary}, sans-serif !important;
       }
@@ -265,29 +271,18 @@
         outline-style: solid;
       }
       
-      .mktoForm .mktoLabel{
+      .mktoForm .mktoLabel {
         display: ${show-formlabel} !important;
         width:90% !important;
         font-size:${formfontsize}px !important;
         color: ${formLabelColor} !important;
         margin-bottom: 1rem !important;
         width:  max-content !important;
-        position: absolute;
-        top: 19px;
-        left: 14px;
+        font-weight: 400 !important;
       }
  
-      .mktoForm .mktoFormRow:focus-within label,
-      .mktoForm .mktoFormRow:focus-visible label,
-      .mktoForm .mktoFormRow:target label,
-      .mktoForm .mktoFormRow:focus label, 
-      .mktoForm .mktoFormRow:active label,
-      .mktoForm .mktoFormRow:visited label,
-      .mktoForm .mktoFormRow:visited label.mktoLabel {
-          top: -7px;
-          color: red;
-          transtion: all 0.15s;
-      }
+  
+  
 
       #header{
         background-color:${bannerclr};
@@ -298,6 +293,7 @@
         display:${showbanner};
         background-blend-mode: ${background-blend-mode};
       }
+      
       #freetext{
         background-color:${freeTextBackgroundColor};
         display:${showsec1};
@@ -515,6 +511,7 @@
       .mktoForm .mktoButtonWrap{
         margin-left: 0 !important;
       }
+      
       .mktoForm .mktoButtonRow{
         margin-top:10px;
       }
