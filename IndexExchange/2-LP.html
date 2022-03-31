@@ -272,16 +272,26 @@
       }
 
       .mktoForm .mktoLabel {
-        display: ${show-formlabel} !important;
-        width:90% !important;
-        font-size:${formfontsize}px !important;
-        color: ${formLabelColor} !important;
-        margin-bottom: 1rem !important;
-        width:  max-content !important;
-        font-weight: 400 !important;
+            display: block !important;
+            width: 90% !important;
+            font-size: 16px !important;
+            color: #73716e !important;
+            margin-bottom: 1rem !important;
+            width: max-content !important;
+            font-weight: 400 !important;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            z-index: 50;
+            padding: 0 0.5rem 0 0.5rem;
+            background: #ffffff;
       }
 
-
+.mktoForm .mktoFieldWrap:focus-within>.mktoLabel {
+            top: -3px;
+            transition: all 0.5s;
+            font-size: 12px !important;
+        }
 
 
       #header{
@@ -407,7 +417,7 @@
         font-size: ${formheadlinefontsize}px;
         color: ${formHeadLineColor} !important;
         text-align:center;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
       }
 
       #formheadline h2{
@@ -692,6 +702,63 @@
         }
       }
 
+                                                                                                                                                                                                                                                                                                                                        
+/* form error msg */
+
+.mktoForm .mktoError .mktoErrorMsg {
+    text-shadow: none !important;
+    color: #000000 !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    border: solid 0.5px #666666 !important;
+    box-shadow: rgb(0 0 0 / 65%) 0 2px 7px, inset #f3eded 0 1px 0px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.mktoForm input.mktoInvalid {
+    border: solid 1px #dc1836 !important;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(4) .mktoErrorMsg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mktoForm .mktoError {
+    display: flex;
+    position: absolute;
+    right: unset !important;
+    left: unset !important;
+    bottom: unset !important;
+    font-size: 15px;
+    margin-bottom: 1rem;
+   background: #fff9f9;
+    border: 1.5px solid #c02b0a;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 11%), 0 0 4px rgb(18 25 97 / 4%);
+    margin-bottom: 8px;
+    margin-top: -60px;
+    padding: 11px 0 14px 10px;
+    width: 100%;
+}
+
+.mktoForm .mktoError .mktoErrorMsg {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #dc1836 !important;
+    text-shadow: none !important;
+    outline: none !important;
+    padding: 0 !important;
+}
+
+.mktoForm .mktoError .mktoErrorArrowWrap {
+    display: none;
+}
+mktoForm .mktoError .mktoErrorMsg .mktoErrorDetail {
+    white-space: nowrap !important;
+}
 
       @media screen and (max-width:550px){
         .mktoForm .mktoFormRow{
@@ -836,6 +903,21 @@
         </div>
         </footer>
 
+    <script>
+        
+ MktoForms2.whenReady(function(form) {
 
+    console.log(Array.from(document.querySelectorAll('input')))
+
+    const targetedInput = Array.from(document.querySelectorAll('input')).map(x => x.addEventListener('keydown', myFunction))
+
+    function myFunction(e) {
+        console.log(e.target.parentNode.querySelectorAll('label'))
+        console.log(e.target.parentNode, " this is paretn node")
+        e.target.parentNode.querySelector('label').style = " top: -3px; transition: all 0.5s; font-size: 12px !important;"
+    }
+})
+    </script>
+    
       </body>
     </html>
