@@ -4,14 +4,14 @@ I don't know if this is much to go off of but they sent across a rough sketch of
 
 
  Essentially, they want:
- - the header 
- - the title module, 
- - 5-6 togglable text modules, 
+ - !done! the header 
+ - !done! the title module, 
+ - !done! var to add! 5-6 togglable text modules, 
          - copy .content2 and remove bodyspkr, rename class nad togglabale
 
  - CTA buttons (wherever you'd see fit),
- - a module for a form 
- - and two images on the right side as well. 
-  - and footer
+ - !done! a module for a form 
+ - !done! and two images on the right side as well. 
+  - !done! and footer
  
- - All of which can be hidden without leaving any empty space on the page.
+ - !done! All of which can be hidden without leaving any empty space on the page.
