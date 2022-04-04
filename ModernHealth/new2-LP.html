@@ -36,7 +36,7 @@
     <meta class="mktoBoolean" id="show-header" mktoName="Show Header ?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-eventbanner" mktoName="Show Event Banner ?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-bannertext" mktoName="Show Banner Text ?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
-    
+
     <meta class="mktoString" mktoName="Title Bottom Spacing" id="ttsp" default="60" allowHtml= "true">
     <meta class="mktoString" mktoName="Subhead Bottom Spacing" id="shsp" default="60" allowHtml= "true">
     <meta class="mktoString" mktoName="Bodytext Bottom Spacing" id="btsp" default="24" allowHtml= "true">  
@@ -58,16 +58,16 @@
     <meta class="mktoBoolean" id="showlspeaker2" mktoName="Show Left Speaker 2?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
     <meta class="mktoBoolean" id="showlspeaker3" mktoName="Show Left Speaker 3?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
     <meta class="mktoBoolean" id="showlspeaker4" mktoName="Show Left Speaker 4?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
-    
+
     <meta class="mktoBoolean" id="show-content-cta1" mktoName="Show Cta 1" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-content-cta2" mktoName="Show Cta 2" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-content-cta3" mktoName="Show Cta 3" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-content-cta4" mktoName="Show Cta 4" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-content-cta5" mktoName="Show Cta 5" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-content-cta6" mktoName="Show Cta 6" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
-	!-- Content section margins/paddings -->
+    <!-- Content section margins/paddings -->
     <meta class="mktoString" mktoName="Content Text margin top" id="content2-text-mgTop" default="1">
-     <meta class="mktoString" mktoName="Content Text margin bottom" id="content2-text-mgBottom" default="30">
+    <meta class="mktoString" mktoName="Content Text margin bottom" id="content2-text-mgBottom" default="30">
     <meta class="mktoBoolean" id="showtwspkrsecb" mktoName="Show 2 More Speakers Bottom Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
 
     <title>Successdemo</title>
@@ -310,7 +310,7 @@
         font-family: 'Poppins', Arial, sans-serif;  
       }
 
-                                                
+
 
       @media(max-width: 1140px){
         #content{
@@ -334,7 +334,7 @@
       .content2-text {
         margin: ${content2-text-mgTop}px 0 ${content2-text-mgBottom}px;
       }
-      
+
       .bodyspkrsec {
         border: 1px solid #1e42d3;
         display: ${showtwspkrsec};
@@ -362,24 +362,24 @@
       .content-cta {
         margin-top: 1rem;
         cursor: pointer;
-          border-radius: 10px;
-  font-weight: 700;
-  background-color: #2b56df !important;
-  color: #fff !important;
-  transition: color .15s ease-out,background-color .3s ease-out;
-  width: 150px;
-  font-size: 16px !important;
-  height: 50px;
-  border: 0 !important;
-  background-image: none !important;
-  text-align: center;
+        border-radius: 10px;
+        font-weight: 700;
+        background-color: #2b56df !important;
+        color: #fff !important;
+        transition: color .15s ease-out,background-color .3s ease-out;
+        width: 150px;
+        font-size: 16px !important;
+        height: 50px;
+        border: 0 !important;
+        background-image: none !important;
+        text-align: center;
       }
-            .content-cta a {
-              color: #fff;
-            }                                                           
-.button {
-  text-align: center;
-}
+      .content-cta a {
+        color: #fff;
+      }                                                           
+      .button {
+        text-align: center;
+      }
 
       @media (max-width: 1000px) {
         .header-text, .form-container {
@@ -396,6 +396,12 @@
         #content2 .container_inner {
           flex-direction: column;
           align-items: center;
+        }
+        #bannertext {
+          text-align: left !important;
+        }
+        ul li::before {
+          margin-left: -2em !important;
         }
         aside {
           padding-left: 0;
@@ -497,7 +503,7 @@
                   <img src="https://dummyimage.com/600x400/b4cff7/fff" alt="event banner" />
                 </div>
               </div>
-               <div class="img-container" style="display:${show-aside-img2}">
+              <div class="img-container" style="display:${show-aside-img2}">
                 <div class="mktoImg" mktoName="Aside Image 2" id="aside-img-2">
                   <img src="https://dummyimage.com/600x400/b4cff7/fff" alt="event banner" />
                 </div>
@@ -505,230 +511,230 @@
             </aside>
 
 
-                       <section>                                                   
-            <div class="mktoText" mktoName="Title Text" id="titletext">
-              Title Module
-            </div>
-            <div class="mktoText" mktoName="Subtitle Text" id="subtitletext">
-              Subtitile module
-            </div>                                                      
+            <section>                                                   
+              <div class="mktoText" mktoName="Title Text" id="titletext">
+                Title Module
+              </div>
+              <div class="mktoText" mktoName="Subtitle Text" id="subtitletext">
+                Subtitile module
+              </div>                                                      
 
-            <div class="text-module-1 row">
-              <div class="content2-text" style="display:${show-textmod-1}">
-                <div class="mktoText bodytext" mktoName="Body Text" id="bodytext1" style="padding-top: 0px">
-                  <span style="font-size: 18px; font-weight: 600">1 Text Module</span>
-                  <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
-                  <br/><br /> Read this report to learn:<br />
-                  <ul>
-                    <li>
-                      How Covid-19 has impacted all 5 areas of your employees’ wellbeing
-                    </li>
-                    <li>
-                      Why 67% of employees feel their employers are responsible for helping out
-                    </li>
-                    <li>How to evaluate mental health solutions in 2021</li>
-                  </ul>
-                  P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
-                </div>
-                <div class="mktoText button" mktoName="Content CTA 1" id="content-cta1" style="display:${show-content-cta1}">
-                  <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="text-module-2 row">
-              <div class="content2-text" style="display:${show-textmod-2}">
-                <div class="mktoText bodytext" mktoName="Body Text" id="bodytext2" style="padding-top: 0px">
-                  <span style="font-size: 18px; font-weight: 600">2 Text Module</span>
-                  <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
-                  <br/><br /> Read this report to learn:<br />
-                  <ul>
-                    <li>
-                      How Covid-19 has impacted all 5 areas of your employees’ wellbeing
-                    </li>
-                    <li>
-                      Why 67% of employees feel their employers are responsible for helping out
-                    </li>
-                    <li>How to evaluate mental health solutions in 2021</li>
-                  </ul>
-                  P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
-                </div>
-                   <div class="mktoText button" mktoName="Content CTA 2" id="content-cta2" style="display:${show-content-cta2}">
-                  <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
-                </div>
-              </div>
-            </div>
-            <div class="text-module-3 row">
-              <div class="content2-text" style="display:${show-textmod-3}">
-                <div class="mktoText bodytext" mktoName="Body Text" id="bodytext3" style="padding-top: 0px">
-                  <span style="font-size: 18px; font-weight: 600">3 Text Module</span>
-                  <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
-                  <br/><br /> Read this report to learn:<br />
-                  <ul>
-                    <li>
-                      How Covid-19 has impacted all 5 areas of your employees’ wellbeing
-                    </li>
-                    <li>
-                      Why 67% of employees feel their employers are responsible for helping out
-                    </li>
-                    <li>How to evaluate mental health solutions in 2021</li>
-                  </ul>
-                  P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
-                </div>
-                   <div class="mktoText button" mktoName="Content CTA 3" id="content-cta3" style="display:${show-content-cta3}">
-                  <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
-                </div>
-              </div>
-            </div>
-            <div class="text-module-4 row">
-              <div class="content2-text" style="display:${show-textmod-4}">
-                <div class="mktoText bodytext" mktoName="Body Text" id="bodytext4" style="padding-top: 0px">
-                  <span style="font-size: 18px; font-weight: 600">4 Text Module</span>
-                  <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
-                  <br/><br /> Read this report to learn:<br />
-                  <ul>
-                    <li>
-                      How Covid-19 has impacted all 5 areas of your employees’ wellbeing
-                    </li>
-                    <li>
-                      Why 67% of employees feel their employers are responsible for helping out
-                    </li>
-                    <li>How to evaluate mental health solutions in 2021</li>
-                  </ul>
-                  P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
-                </div>
-                   <div class="mktoText button" mktoName="Content CTA 4" id="content-cta4" style="display:${show-content-cta4}">
-                  <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
-                </div>
-              </div>
-            </div>
-            <div class="text-module-5 row">
-              <div class="content2-text" style="display:${show-textmod-5}">
-                <div class="mktoText bodytext" mktoName="Body Text" id="bodytext5" style="padding-top: 0px">
-                  <span style="font-size: 18px; font-weight: 600">5 Text Module</span>
-                  <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
-                  <br/><br /> Read this report to learn:<br />
-                  <ul>
-                    <li>
-                      How Covid-19 has impacted all 5 areas of your employees’ wellbeing
-                    </li>
-                    <li>
-                      Why 67% of employees feel their employers are responsible for helping out
-                    </li>
-                    <li>How to evaluate mental health solutions in 2021</li>
-                  </ul>
-                  P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
-                </div>
-                   <div class="mktoText button" mktoName="Content CTA 5" id="content-cta5" style="display:${show-content-cta5}">
-                  <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
-                </div>
-              </div>
-            </div>
-            <div class="text-module-6 row">
-              <div class="content2-text" style="display:${show-textmod-6}">
-                <div class="mktoText bodytext" mktoName="Body Text" id="bodytext6" style="padding-top: 0px">
-                  <span style="font-size: 18px; font-weight: 600">6 Text Module</span>
-                  <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
-                  <br/><br /> Read this report to learn:<br />
-                  <ul>
-                    <li>
-                      How Covid-19 has impacted all 5 areas of your employees’ wellbeing
-                    </li>
-                    <li>
-                      Why 67% of employees feel their employers are responsible for helping out
-                    </li>
-                    <li>How to evaluate mental health solutions in 2021</li>
-                  </ul>
-                  P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
-                </div>
-                   <div class="mktoText button" mktoName="Content CTA 6" id="content-cta6" style="display:${show-content-cta6}">
-                  <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="speaker-module row">
-              <div class="content2-text" style="display:${showtwspkrsec}">
-                <div class="mktoText bodytext" mktoName="Body Text" id="bodytext" style="padding-top: 0px">
-                  <span style="font-size: 18px; font-weight: 600">Speaker Section</span>
-                  <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
-                  <br/><br /> Read this report to learn:<br />
-                  <ul>
-                    <li>
-                      How Covid-19 has impacted all 5 areas of your employees’ wellbeing
-                    </li>
-                    <li>
-                      Why 67% of employees feel their employers are responsible for helping out
-                    </li>
-                    <li>How to evaluate mental health solutions in 2021</li>
-                  </ul>
-                  P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
-                </div>
-                <div class="bodyspkrsec">
-                  <div class="mktoText" mktoName="Speaker Header Text" id="spkrhdtext" style="font-size: 18px;color: #22303f; font-weight: 600; padding-bottom: 40px;">
-                    About the panel:
+              <div class="text-module-1 row">
+                <div class="content2-text" style="display:${show-textmod-1}">
+                  <div class="mktoText bodytext" mktoName="Body Text" id="bodytext1" style="padding-top: 0px">
+                    <span style="font-size: 18px; font-weight: 600">1 Text Module</span>
+                    <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                    <br/><br /> Read this report to learn:<br />
+                    <ul>
+                      <li>
+                        How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                      </li>
+                      <li>
+                        Why 67% of employees feel their employers are responsible for helping out
+                      </li>
+                      <li>How to evaluate mental health solutions in 2021</li>
+                    </ul>
+                    P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
                   </div>
-                  <div class="row div-spkr" style="display:${showlspeaker1};">
-                    <div class="speaker-img-containerspkr-imgb">
-                      <div class="mktoText" mktoName="Speaker 1 Image" id="spkrimgaa" style="padding-bottom: 20px">
-                        <img src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png" width="130" style="max-width: 140px" />
-                      </div>
-                    </div>
-                    <div class="speaker-text-container">
-                      <div class="mktoText spk-textb" mktoName="Speaker 1 Text" id="spkrtxtbb">
-                        <b>Julius Narkus</b><br /> Demand Gen<br /> Modern Health
-                      </div>
-                    </div>
+                  <div class="mktoText button" mktoName="Content CTA 1" id="content-cta1" style="display:${show-content-cta1}">
+                    <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
                   </div>
 
-                  <div class="row div-spkr" style="display:${showlspeaker2};">
-                    <div class="speaker-img-containerspkr-imgb">
-                      <div class="mktoText" mktoName="Speaker 2 Image" id="spkrimgbb" style="padding-bottom: 20px">
-                        <img src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png" width="130" style="max-width: 140px" />
-                      </div>
-                    </div>
-                    <div class="speaker-text-container">
-                      <div class="mktoText spk-textb" mktoName="Speaker 2 Text" id="spkrtxtcc">
-                        <b>Julius Narkus</b><br /> Demand Gen<br /> Modern Health
-                      </div>
-                    </div>
+                </div>
+
+              </div>
+
+              <div class="text-module-2 row">
+                <div class="content2-text" style="display:${show-textmod-2}">
+                  <div class="mktoText bodytext" mktoName="Body Text" id="bodytext2" style="padding-top: 0px">
+                    <span style="font-size: 18px; font-weight: 600">2 Text Module</span>
+                    <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                    <br/><br /> Read this report to learn:<br />
+                    <ul>
+                      <li>
+                        How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                      </li>
+                      <li>
+                        Why 67% of employees feel their employers are responsible for helping out
+                      </li>
+                      <li>How to evaluate mental health solutions in 2021</li>
+                    </ul>
+                    P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
                   </div>
-                  <div style="display: ${showtwspkrsecb};">
-                    <div class="row div-spkr" style="display:${showlspeaker3};">
+                  <div class="mktoText button" mktoName="Content CTA 2" id="content-cta2" style="display:${show-content-cta2}">
+                    <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="text-module-3 row">
+                <div class="content2-text" style="display:${show-textmod-3}">
+                  <div class="mktoText bodytext" mktoName="Body Text" id="bodytext3" style="padding-top: 0px">
+                    <span style="font-size: 18px; font-weight: 600">3 Text Module</span>
+                    <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                    <br/><br /> Read this report to learn:<br />
+                    <ul>
+                      <li>
+                        How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                      </li>
+                      <li>
+                        Why 67% of employees feel their employers are responsible for helping out
+                      </li>
+                      <li>How to evaluate mental health solutions in 2021</li>
+                    </ul>
+                    P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
+                  </div>
+                  <div class="mktoText button" mktoName="Content CTA 3" id="content-cta3" style="display:${show-content-cta3}">
+                    <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="text-module-4 row">
+                <div class="content2-text" style="display:${show-textmod-4}">
+                  <div class="mktoText bodytext" mktoName="Body Text" id="bodytext4" style="padding-top: 0px">
+                    <span style="font-size: 18px; font-weight: 600">4 Text Module</span>
+                    <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                    <br/><br /> Read this report to learn:<br />
+                    <ul>
+                      <li>
+                        How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                      </li>
+                      <li>
+                        Why 67% of employees feel their employers are responsible for helping out
+                      </li>
+                      <li>How to evaluate mental health solutions in 2021</li>
+                    </ul>
+                    P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
+                  </div>
+                  <div class="mktoText button" mktoName="Content CTA 4" id="content-cta4" style="display:${show-content-cta4}">
+                    <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="text-module-5 row">
+                <div class="content2-text" style="display:${show-textmod-5}">
+                  <div class="mktoText bodytext" mktoName="Body Text" id="bodytext5" style="padding-top: 0px">
+                    <span style="font-size: 18px; font-weight: 600">5 Text Module</span>
+                    <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                    <br/><br /> Read this report to learn:<br />
+                    <ul>
+                      <li>
+                        How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                      </li>
+                      <li>
+                        Why 67% of employees feel their employers are responsible for helping out
+                      </li>
+                      <li>How to evaluate mental health solutions in 2021</li>
+                    </ul>
+                    P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
+                  </div>
+                  <div class="mktoText button" mktoName="Content CTA 5" id="content-cta5" style="display:${show-content-cta5}">
+                    <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="text-module-6 row">
+                <div class="content2-text" style="display:${show-textmod-6}">
+                  <div class="mktoText bodytext" mktoName="Body Text" id="bodytext6" style="padding-top: 0px">
+                    <span style="font-size: 18px; font-weight: 600">6 Text Module</span>
+                    <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                    <br/><br /> Read this report to learn:<br />
+                    <ul>
+                      <li>
+                        How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                      </li>
+                      <li>
+                        Why 67% of employees feel their employers are responsible for helping out
+                      </li>
+                      <li>How to evaluate mental health solutions in 2021</li>
+                    </ul>
+                    P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
+                  </div>
+                  <div class="mktoText button" mktoName="Content CTA 6" id="content-cta6" style="display:${show-content-cta6}">
+                    <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="speaker-module row">
+                <div class="content2-text" style="display:${showtwspkrsec}">
+                  <div class="mktoText bodytext" mktoName="Body Text" id="bodytext" style="padding-top: 0px">
+                    <span style="font-size: 18px; font-weight: 600">Speaker Section</span>
+                    <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                    <br/><br /> Read this report to learn:<br />
+                    <ul>
+                      <li>
+                        How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                      </li>
+                      <li>
+                        Why 67% of employees feel their employers are responsible for helping out
+                      </li>
+                      <li>How to evaluate mental health solutions in 2021</li>
+                    </ul>
+                    P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
+                  </div>
+                  <div class="bodyspkrsec">
+                    <div class="mktoText" mktoName="Speaker Header Text" id="spkrhdtext" style="font-size: 18px;color: #22303f; font-weight: 600; padding-bottom: 40px;">
+                      About the panel:
+                    </div>
+                    <div class="row div-spkr" style="display:${showlspeaker1};">
                       <div class="speaker-img-containerspkr-imgb">
-                        <div class="mktoText" mktoName="Speaker 3 Image" id="spkrimgcc" style="padding-bottom: 20px">
+                        <div class="mktoText" mktoName="Speaker 1 Image" id="spkrimgaa" style="padding-bottom: 20px">
                           <img src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png" width="130" style="max-width: 140px" />
                         </div>
                       </div>
                       <div class="speaker-text-container">
-                        <div class="mktoText spk-textb" mktoName="Speaker 3 Text" id="spkrtxtdd">
+                        <div class="mktoText spk-textb" mktoName="Speaker 1 Text" id="spkrtxtbb">
                           <b>Julius Narkus</b><br /> Demand Gen<br /> Modern Health
                         </div>
                       </div>
                     </div>
-                    <div class="row div-spkr" style="display:${showlspeaker4};">
+
+                    <div class="row div-spkr" style="display:${showlspeaker2};">
                       <div class="speaker-img-containerspkr-imgb">
-                        <div class="mktoText" mktoName="Speaker 4 Image" id="spkrimgdd" style="padding-bottom: 20px">
+                        <div class="mktoText" mktoName="Speaker 2 Image" id="spkrimgbb" style="padding-bottom: 20px">
                           <img src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png" width="130" style="max-width: 140px" />
                         </div>
                       </div>
                       <div class="speaker-text-container">
-                        <div class="mktoText spk-textb" mktoName="Speaker 4 Text" id="spkrtxtee">
+                        <div class="mktoText spk-textb" mktoName="Speaker 2 Text" id="spkrtxtcc">
                           <b>Julius Narkus</b><br /> Demand Gen<br /> Modern Health
+                        </div>
+                      </div>
+                    </div>
+                    <div style="display: ${showtwspkrsecb};">
+                      <div class="row div-spkr" style="display:${showlspeaker3};">
+                        <div class="speaker-img-containerspkr-imgb">
+                          <div class="mktoText" mktoName="Speaker 3 Image" id="spkrimgcc" style="padding-bottom: 20px">
+                            <img src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png" width="130" style="max-width: 140px" />
+                          </div>
+                        </div>
+                        <div class="speaker-text-container">
+                          <div class="mktoText spk-textb" mktoName="Speaker 3 Text" id="spkrtxtdd">
+                            <b>Julius Narkus</b><br /> Demand Gen<br /> Modern Health
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row div-spkr" style="display:${showlspeaker4};">
+                        <div class="speaker-img-containerspkr-imgb">
+                          <div class="mktoText" mktoName="Speaker 4 Image" id="spkrimgdd" style="padding-bottom: 20px">
+                            <img src="http://join.modernhealth.com/rs/783-NRS-103/images/spkr-image.png" width="130" style="max-width: 140px" />
+                          </div>
+                        </div>
+                        <div class="speaker-text-container">
+                          <div class="mktoText spk-textb" mktoName="Speaker 4 Text" id="spkrtxtee">
+                            <b>Julius Narkus</b><br /> Demand Gen<br /> Modern Health
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-            </div>
-                </section>
+              </div>
+            </section>
           </div>
-          
-      
+
+
         </div>
 
 
