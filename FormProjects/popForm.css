@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@font-face {
+    font-family: 'HelveticaNow';
+    src: url('http://lp.edenworkplace.com/rs/438-LAO-187/images/HelveticaNowText-Regular.eot');
+    src: url('http://lp.edenworkplace.com/rs/438-LAO-187/images/HelveticaNowText-Regular.ttf') format('truetype'), url('http://lp.edenworkplace.com/rs/438-LAO-187/images/HelveticaNowText-Regular.woff') format('woff'), url('http://lp.edenworkplace.com/rs/438-LAO-187/images/HelveticaNowText-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .mktoForm select.mktoField {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -46,6 +54,24 @@
     width: 100% !important;
 }
 
+.mktoForm input[type="text"]::placeholder {
+    font-family: 'HelveticaNow', sans-serif !important;
+    color: #807e7b !important;
+    font-size: 16px !important;
+}
+
+.mktoForm input[type="text"]:-ms-input-placeholder {
+    font-family: 'HelveticaNow', sans-serif !important;
+    color: #807e7b !important;
+    font-size: 16px !important;
+}
+
+.mktoForm input[type="text"]::-ms-input-placeholder {
+    font-family: 'HelveticaNow', sans-serif !important;
+    color: #807e7b !important;
+    font-size: 16px !important;
+}
+
 
 /* unset defaults here*/
 
@@ -72,14 +98,14 @@
 }
 
 .mktoForm .mktoFormRow:nth-of-type(2) {
-    width: 75% !important
+    width: 73% !important
 }
 
 .mktoForm .mktoButtonRow {
     width: fit-content !important;
     display: flex;
     align-items: center;
-    padding: 0 0 0 1% !important;
+    padding: 0 0 0 3% !important;
 }
 
 .mktoForm .close-form-icon {
@@ -126,7 +152,7 @@
 
 .mktoHtmlText h3 {
     font-size: 14px;
-    font-family: HelveticaNow, sans-serif;
+    font-family: HelveticaNow, sans-serif !important;
     font-weight: 400;
     margin-bottom: 1rem !important;
 }
@@ -173,14 +199,15 @@
 .mktoForm .mktoButtonWrap.mktoRound .mktoButton,
 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
     background: transparent !important;
-    color: #000 !important;
+    color: #414141 !important;
+    line-height: 20px !important;
     border: solid 1.5px #414142 !important;
-    padding: 18px 42px !important;
+    padding: 15px 42px !important;
     margin: 0 !important;
-    font-size: 14px;
+    font-size: 16px;
     height: unset !important;
     border-radius: 7px;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
 }
 
 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover,
