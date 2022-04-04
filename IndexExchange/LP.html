@@ -19,6 +19,12 @@
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-formlabel" mktoName="Show Form Label" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-imgright" mktoName="Show Img Right Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-imgleft" mktoName="Show Img Left Section" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-imgright-txt" mktoName="Show Img Right Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-imgleft-txt" mktoName="Show Img Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+         <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-video-txt" mktoName="Show Video Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show"></meta>
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
@@ -58,6 +64,11 @@
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#00291F">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
     <meta class="mktoColor" id="footerhoverclr" mktoName="Footer - Hover Text Color" default="#4CD3CC">
+
+    <!-- Video section -->
+ 
+    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
+    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
     <!-- Font Size Meta Tags -->
     <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
@@ -114,7 +125,13 @@
     <meta class="mktoString" mktoName="Form - margin row bottom (rem)" id="form-margin-bottom" default="1">
 
 
-
+    <!-- sections order -->
+    <meta class="mktoString" id="freetext-order" mktoName="Freetext - Order" default="1" allowHtml="true">
+ <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="3" allowHtml="true">
+ <meta class="mktoString" id="imghright-order" mktoName="Img Right Section Order" default="4" allowHtml="true">
+ <meta class="mktoString" id="imgleft-order" mktoName="Img Left Section Order" default="5" allowHtml="true">
+     <meta class="mktoString" id="formsection-order" mktoName="Formsection - Order" default="2" allowHtml="true">
+    
 
     <style>
       ${googlefontimport}
@@ -139,8 +156,14 @@
         font-family: ${fontfamily-secondary}, sans-serif !important;
       }
 
-      body {background:#fff; letter-spacing: ${body-letterspacing}px;} 
-
+      body {background:#fff; letter-spacing: ${body-letterspacing}px; display: flex; flex-direction: column;} 
+      #header {
+        order: 0;
+      }
+      .flex {
+        display: flex !important;
+        gap: 2rem !important;
+      }
       #header h1 {
         font-size: ${header-h1fontsize}px;
         line-height: ${h-line-height};
@@ -272,16 +295,26 @@
       }
 
       .mktoForm .mktoLabel {
-        display: ${show-formlabel} !important;
-        width:90% !important;
-        font-size:${formfontsize}px !important;
-        color: ${formLabelColor} !important;
+        display: block !important;
+        width: 90% !important;
+        font-size: 16px !important;
+        color: #73716e !important;
         margin-bottom: 1rem !important;
-        width:  max-content !important;
+        width: max-content !important;
         font-weight: 400 !important;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        z-index: 50;
+        padding: 0 0.5rem 0 0.5rem;
+        background: #ffffff;
       }
 
-
+      .mktoForm .mktoFieldWrap:focus-within>.mktoLabel {
+        top: -3px;
+        transition: all 0.5s;
+        font-size: 12px !important;
+      }
 
 
       #header{
@@ -297,13 +330,16 @@
       #freetext{
         background-color:${freeTextBackgroundColor};
         display:${showsec1};
+        order: ${freetext-order};
       }
-      #freetext ul {
+      
+      #freetext ul, #video ul {
         margin-left: 1rem !important;
       }
       #formsection{
         background-color:${mainformbgclr};
         display:${showformsec};
+        order: ${formsection-order};
       }
 
 
@@ -338,6 +374,7 @@
       }
       #brand{
         display:${showtoplogo-1};
+        order: -1;
       }
       #brand .logo-container{
         top:${sectionpaddingtb}px;
@@ -371,9 +408,9 @@
         font-weight: 500;
       }
 
-      #freetext p,
-      #freetext ul,
-      #freetext li {
+      #freetext p, #vdeio p,
+      #freetext ul, #video ul,
+      #freetext li, #video li {
         color: ${freeTextTextColor} !important;
       }
 
@@ -407,7 +444,7 @@
         font-size: ${formheadlinefontsize}px;
         color: ${formHeadLineColor} !important;
         text-align:center;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
       }
 
       #formheadline h2{
@@ -535,7 +572,66 @@
         border: solid 3px ${formButtonHoverBGColor} !important;
       }
 
+	#video {
+          background-color:${videobgcolor};
+          display:${videoshow};
+          order:${videoorder};
+		}
+      #video .container_inner, #imgright .container_inner, #imgleft .container_inner {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+       .left, .right {
+        width: calc(50% - 1rem);
+        flex: 1 0 350px;
+       
+      }
+      #imgright {
+        display: ${show-imgright};
+        order: ${imghright-order};
+      }
+      #imgleft {
+        display: ${show-imgleft};
+        order: ${imgleft-order};
+      }
+      #imgright .left {
+        display: ${show-imgright-txt};
+      }
+      #imgleft .left {
+        display: ${show-imgleft-txt};
+      }
+      #imgright img, #imgleft img {
+        display: flex;
+        margin: 0 auto;
+      }
+      .mktoGen.mktoImg {
+        display: flex !important;
+        margin: 0 auto !important;
+      }
+      #video .left {
+        display: ${show-video-txt};
+      }
+      #video .right {
+        margin: 0 auto !important;
+        max-width: 700px;
+      }
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
 
+      }
+
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
 
       .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
         margin-left: 1.5em;
@@ -546,13 +642,17 @@
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
+
       #footer{
         display:${showfooter};
         background-color:${footerbgclr};
         color:${footerfontclr};
         font-size:${footerfontsize}px;
+        order: 100;
       }
-
+#footerlogo {
+  display: ${showfooterlogo};
+}
       #footer .row1 {
         display: flex;
         align-items: flex-start;
@@ -693,6 +793,63 @@
       }
 
 
+      /* form error msg */
+
+      .mktoForm .mktoError .mktoErrorMsg {
+        text-shadow: none !important;
+        color: #000000 !important;
+        background: rgba(255, 255, 255, 0.6) !important;
+        border: solid 0.5px #666666 !important;
+        box-shadow: rgb(0 0 0 / 65%) 0 2px 7px, inset #f3eded 0 1px 0px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+      }
+
+      .mktoForm input.mktoInvalid {
+        border: solid 1px #dc1836 !important;
+      }
+
+      .mktoForm .mktoFormRow:nth-of-type(4) .mktoErrorMsg {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .mktoForm .mktoError {
+        display: flex;
+        position: absolute;
+        right: unset !important;
+        left: unset !important;
+        bottom: unset !important;
+        font-size: 15px;
+        margin-bottom: 1rem;
+        background: #fff9f9;
+        border: 1.5px solid #c02b0a;
+        border-radius: 5px;
+        box-shadow: 0 1px 4px rgb(0 0 0 / 11%), 0 0 4px rgb(18 25 97 / 4%);
+        margin-bottom: 8px;
+        margin-top: -60px;
+        padding: 11px 0 14px 10px;
+        width: 100%;
+      }
+
+      .mktoForm .mktoError .mktoErrorMsg {
+        background: none !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: #dc1836 !important;
+        text-shadow: none !important;
+        outline: none !important;
+        padding: 0 !important;
+      }
+
+      .mktoForm .mktoError .mktoErrorArrowWrap {
+        display: none;
+      }
+      .mktoForm .mktoError .mktoErrorMsg .mktoErrorDetail {
+        white-space: nowrap !important;
+      }
+
       @media screen and (max-width:550px){
         .mktoForm .mktoFormRow{
           display:block !important;
@@ -811,6 +968,71 @@
       </div>
     </div>
 
+    <!-- Video -->
+    <div class="container_100" id="video">
+      <div class="container_inner section">
+        <div class="left">
+          <div class="mktoText" id="videotext" mktoName="Video - Copy">
+            <h2>Lorem Ipsum Dolor Sit Amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+            <ul>
+              <li>Fusce vel nisi vel velit finibus congue.</li>
+              <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
+              <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="videoWrapper videoWrapper169 js-videoWrapper">
+            <!-- YouTube iframe. -->
+            <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+            <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+            <iframe class="videoIframe js-videoIframe" src="${videoembed}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed2?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Video -->
+
+
+       <!-- Image Right -->
+   <div class="container_100" id="imgright">
+      <div class="container_inner section">
+         <div class="left">
+            <div class="mktoText" id="imgrighttext" mktoName="Image Right - Copy">
+               <h2>Lorem Ipsum Dolor Sit Amet</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+            </div>
+        
+         </div>
+         <div class="right">
+            <div class="mktoImg" id="imgrightimg" mktoName="Image Right - Image">
+               <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- END Image Right -->
+   <!-- Image Left -->
+   <div class="container_100" id="imgleft">
+      <div class="container_inner section">
+         <div class="right">
+            <div class="mktoImg" id="imgleftimg" mktoName="Image Left - Image">
+               <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
+            </div>
+         </div>
+         <div class="left">
+            <div class="mktoText" id="imgLefttext" mktoName="Image Left - Copy">
+               <h2>Lorem Ipsum Dolor Sit Amet</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+            </div>
+
+         </div>
+      </div>
+   </div>                                                                                                                                                                              
+                                                                                                                                                                            
+                                                                                                                                                                            
     <footer id="footer">
       <div class="footer-container section flex">
         <div class="row1">
@@ -836,6 +1058,26 @@
         </div>
         </footer>
 
+      <script>
+
+        MktoForms2.whenReady(function(form) {
+
+          console.log(Array.from(document.querySelectorAll('input')))
+
+          const targetedInput = Array.from(document.querySelectorAll('input')).map(x => x.addEventListener('keydown', myFunction))
+
+          function myFunction(e) {
+            console.log(e.target.parentNode.querySelectorAll('label'))
+            console.log(e.target.parentNode, " this is paretn node")
+            e.target.parentNode.querySelector('label').style = " top: -3px; transition: all 0.5s; font-size: 12px !important;"
+          }
+        })
+      </script>
+      <script>
+
+      </script>
+      <script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
+      <script src='https://go.indexexchange.com/rs/942-BIU-279/images/video-script.js'></script>
 
       </body>
     </html>
