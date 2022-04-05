@@ -14,7 +14,7 @@ Changes to landing page template:
 In mobile:
 1. !done! Have the videos’ width at 100%
 2. !done! Copyright should align left, not center
-3. !done? Any landing pages with icons: have the icon center and not expanded to 100% because it gets blurry
+3. !done! Any landing pages with icons: have the icon center and not expanded to 100% because it gets blurry
 
 
 https://docs.google.com/spreadsheets/d/1I86UaLFGHyHYR9TznRhC1A0oHkkdScze/edit#gid=694454895
