@@ -11,11 +11,6 @@
     max-width: 85vw !important;
 }
 
-.mktoForm .mktoFormRow:nth-of-type(2) .mktoRadioList,
-.mktoForm .mktoFormRow:nth-of-type(2) .mktoCheckboxList {
-    width: 100% !important;
-}
-
 .mktoForm .mktoFormRow:nth-of-type(3),
 .mktoForm .mktoFormRow:nth-of-type(5),
 .mktoForm .mktoFormRow:nth-of-type(6) {
@@ -28,42 +23,18 @@
     margin-right: -2rem;
 }
 
-.mktoForm .mktoFormRow:nth-of-type(9),
 .mktoForm .mktoFormRow:nth-of-type(10) {
-    width: 50% !important;
-}
-
-.mktoForm .mktoFormRow:nth-of-type(10) {
-    float: right !important;
-    margin-top: -25.8rem;
-}
-
-.mktoForm .mktoFormRow:nth-of-type(11),
-.mktoForm .mktoFormRow:nth-of-type(8) {
     margin-top: 2rem;
 }
 
-.mktoForm .mktoFormRow:nth-of-type(12) {
+.mktoForm .mktoFormRow:nth-of-type(11) {
     margin-top: -2.5rem;
     margin-bottom: 1rem !important;
-}
-
-.mktoForm .mktoFormRow:nth-of-type(9) fieldset .mktoFormRow,
-.mktoForm .mktoFormRow:nth-of-type(10) fieldset .mktoFormRow {
-    margin-top: 0 !important;
-    margin-bottom: 0.2rem !important;
-    float: none !important;
-    width: 100% !important;
 }
 
 fieldset .mktoButtonRow {
     gap: 0;
     max-width: 85vw !important;
-}
-
-.mktoButtonRow .mktoFormRow:nth-of-type(9) .mktoButtonRow,
-.mktoButtonRow .mktoFormRow:nth-of-type(10) .mktoButtonRow {
-    width: 100% !important;
 }
 
 fieldset .mktoFormRow .mktoFieldDescriptor {
@@ -97,7 +68,7 @@ fieldset .mktoFormRow .mktoFieldDescriptor {
     text-align: center;
     margin: 0 auto;
     font-size: 28px;
-    width: 100%;
+    width: 80%;
 }
 
 .mktoForm h2 {
@@ -138,7 +109,7 @@ fieldset .mktoFormRow .mktoFieldDescriptor {
     margin: 1rem 0 !important;
     font-weight: 700;
     font-size: 16px;
-    width: 100% !important;
+    white-space: nowrap;
 }
 
 .col-label {
@@ -220,6 +191,16 @@ fieldset .mktoFormRow .mktoFieldDescriptor {
     font-size: 16px;
 }
 
+.mktoForm .mktoFormRow:nth-of-type(9) .mktoRadioList>label,
+.mktoForm .mktoFormRow:nth-of-type(9) .mktoCheckboxList>label {
+    line-height: 26px !important;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(9) .mktoRadioList>input,
+.mktoForm .mktoFormRow:nth-of-type(9) .mktoCheckboxList>input {
+    margin-top: 6px !important;
+}
+
 .mktoForm fieldset .mktoFieldWrap {
     flex-direction: row !important;
     justify-content: flex-end !important;
@@ -227,18 +208,10 @@ fieldset .mktoFormRow .mktoFieldDescriptor {
     align-items: center;
     width: 1.5rem !important;
     height: 1.5rem;
-    width: 100% !important;
 }
 
 .mktoForm fieldset .mktoCheckboxList>input {
     height: 2rem !important;
-}
-
-.mktoForm .mktoFormRow:nth-of-type(9) fieldset .mktoRadioList,
-.mktoForm .mktoFormRow:nth-of-type(9) fieldset .mktoCheckboxList,
-.mktoForm .mktoFormRow:nth-of-type(10) fieldset .mktoRadioList,
-.mktoForm .mktoFormRow:nth-of-type(10) fieldset .mktoCheckboxList {
-    width: 2rem !important;
 }
 
 
@@ -277,7 +250,6 @@ fieldset .mktoFormRow .mktoFieldDescriptor {
     padding: 1rem !important;
     font-size: 16px !important;
     font-weight: 600 !important;
-    text-transform: uppercase;
 }
 
 @media (max-width: 740px) {
