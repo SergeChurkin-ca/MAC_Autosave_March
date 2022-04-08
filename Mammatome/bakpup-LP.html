@@ -4,37 +4,42 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
     <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="#">
-    
+
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
-  <link rel="stylesheet" href="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/font-awesome.css">
+    <link rel="stylesheet" href="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/font-awesome.css">
     <!-- Show and Hide Meta Tags -->
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+        <meta class="mktoBoolean" id="mobilelogo" mktoName="Mobile Show Top Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="bgmode" mktoName="Banner Background Mode" default="true" true_value="normal" false_value="multiply" false_value_name="Blend" true_value_name="Normal">
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-        <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+        <meta class="mktoBoolean" id="showformrequired" mktoName="Show Form Required?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showTextIcon" mktoName="Show TextIcon" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    
-     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtexticon" mktoName="Show TextIcon Section" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
-<meta class="mktoBoolean" id="showfooterimg" mktoName="Show Bottom Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooterimg" mktoName="Show Bottom Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    
+
     <meta class="mktoBoolean" id="showfootersocial" mktoName="Show Footer Social?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterrow-2" mktoName="Show Footer Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-   
+
     <!-- Background, Buttons, and Text Color Meta Tags -->
     <meta class="mktoColor" id="bodyclr" mktoName="Body - Background Color" default="#c8c8c8">
     <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#fff">
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#000">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#000">
-    
+
     <meta class="mktoColor" id="freeTextBGColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHColor" mktoName="Free-Text - Title Color" default="#000">
     <meta class="mktoColor" id="freeTextColor" mktoName="Free-Text - Text Color" default="#5f6062">
@@ -62,12 +67,12 @@
 
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#fff">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#5f6062">
-    
+
     <!-- Font Size Meta Tags -->
     <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
     <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="20">
 
-    
+
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
 
     <!-- Banner Section Styling -->
@@ -90,8 +95,8 @@
 
 
     <!-- Google Fonts -->
-    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
     <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="Roboto">
+    <meta class="mktoString" mktoName="Google Font - Family" id="footer-googlefontfamily" default="Roboto Condensed">
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
@@ -99,7 +104,7 @@
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="35">
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="8">
-    
+
     <meta class="mktoString" mktoName="Icon Width (%)" id="iconwidth" default="20">
     <meta class="mktoString" mktoName="Description Width (%)" id="deswidth" default="80">
 
@@ -107,32 +112,38 @@
     <meta class="mktoString" mktoName="Form Container Width (%)" id="formwidth" default="55">
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="13">
-    <meta class="mktoString" mktoName="Form Header - Top/Bottomm Padding (px)" id="formhdTopBottomPadding" default="20">
-    <meta class="mktoString" mktoName="Form Header- Left/Right Padding (px)" id="formhdLRPadding" default="20">
-    <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="20">
+
+    <meta class="mktoString" mktoName="Form Header - Top Padding (px)" id="formhTopPadding" default="20">
+    <meta class="mktoString" mktoName="Form Header - Left/Right Padding (px)" id="formhdLRPadding" default="20">
+    <meta class="mktoString" mktoName="Form Header - Bottomm Padding (px)" id="formhBottomPadding" default="10">
+
+    <meta class="mktoString" mktoName="Form - Top Padding (px)" id="formTopPadding" default="5">
     <meta class="mktoString" mktoName="Form - Left/Right Padding (px)" id="formLRPadding" default="20">
-    
-     <meta class="mktoString" mktoName="Form Border Radius" id="formborderr" default="10">
+    <meta class="mktoString" mktoName="Form - Bottomm Padding (px)" id="formBottomPadding" default="20"> 
+
+    <meta class="mktoString" mktoName="Form Border Radius" id="formborderr" default="10">
     <meta class="mktoString" mktoName="Form Border" id="formborder" default="1">
     <meta class="mktoColor" mktoName="Form Border Color" id="formbordercolor" default="#eee">
-    
+
     <meta class="mktoString" mktoName="Bottom Img Link" id="botimg" default="#">
     <meta class="mktoString" mktoName="Thank you Msg" id="thankyoumsg" default="Thank you for submitting you information. A Breast Care Specialist will reach out to you shortly.">
 
-    
+
 
 
     <style>
-@font-face {
-  font-family: 'FontAwesome';
-  	src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
-  	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), 
-    url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), 
-    url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), 
-    url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), 
-    url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
-}	
-      ${googlefontimport}
+           @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+      
+      @font-face {
+        font-family: 'FontAwesome';
+        src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
+        src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), 
+          url('../fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), 
+          url('../fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), 
+          url('../fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), 
+          url('../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');
+      }	
       *{
         padding:0;
         border: 0;
@@ -140,12 +151,17 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        font-family: Helvetica, sans-serif;
-        font-family: '${googlefontfamily}', sans-serif !important;
+        font-family: '${googlefontfamily}', sans-serif;
+      }
+      #footer #footertext2 {
+        font-family: '${footer-googlefontfamily}', sans-serif !important;
+      }
+      .hero-header {
+    margin-bottom: 20px;
       }
       #header_img {
-    width: 1200px;
-}
+        width: 1200px;
+      }
       .hr{
         width:100%;
         color:#999;
@@ -153,18 +169,30 @@
         margin:5% auto;
       }
       p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-      
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      P sup {
+        vertical-align: middle !important;
+
+      }
       body {
         background:${bodyclr};
         color:#5f6062;
         line-height: 1.5;
         font-size: 1rem;
-		font-weight: 400;
+        font-weight: 400;
       } 
-
+#requiredtext p {
+          font-family: 'Roboto Condensed', sans-serif!important;
+      font-weight:400!important;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+    margin-bottom: 0;
+          color: #5f6062;
+    line-height: 1.2em;
+    }
       h1{
         font-size: ${h1fontsize}px;
         line-height: 1.4em;
@@ -182,8 +210,8 @@
       ul,ol{
         margin-left:45px;
       }
-      p, li{
-       	line-height: 1.2em;
+      p, li {
+        line-height: 1.2em;
         font-size:${pfontsize}px;
       }
       b, .bold, em{
@@ -201,6 +229,7 @@
         display: -webkit-flex;
         display:flex;
       }
+
       .flex .col:not(:last-child){
         margin-right:30px;
       }
@@ -212,7 +241,7 @@
       }
       .col-1 img{
         max-width: 100%;
-		height: auto;
+        height: auto;
       }
       .col-2{
         width:${deswidth}%;
@@ -255,7 +284,21 @@
       .form-container{
         min-height:20px;
         padding:10px;
-        
+
+      }
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
 
       .mktoForm input[type="text"],
@@ -267,10 +310,18 @@
       .mktoForm textarea.mktoField, 
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
+        box-shadow: none !important;
       }
-      
-      
-      
+
+      .mktoForm input[type=checkbox], 
+      .mktoForm input[type=radio],
+      mktoForm input[type=checkbox] + label:before, 
+      .mktoForm input[type=radio] + label:before  {
+        box-shadow: none !important;
+        background: #f3f3f3 !important;
+      }
+    
+	
       #header{
         background-color:${bannerclr};
         background-image:url('${bannerimage}');
@@ -304,7 +355,7 @@
       }
       #brand .logo-container{
         width:100%;
-       	padding-top:${headerpaddingtop}px;
+        padding-top:${headerpaddingtop}px;
         padding-bottom:${headerpaddingbtm}px;
         padding-left:${logoleftpadding}px;
         padding-right:${logoleftpadding}px;
@@ -346,7 +397,7 @@
       #header li {
         color: ${bannerTextColor} !important;
       }
-      
+
       .header_img img{
         width:100%;
       }
@@ -385,18 +436,18 @@
         justify-content: space-between;
       }
       #formsection .formmain{
-         
+
         border:${formborder}px solid ${formbordercolor}; 
       }
       #formsection .formhead{
         background-color:${formhdbgclr};
-        padding: ${formhdTopBottomPadding}px ${formhdLRPadding}px;
+        padding: ${formhTopPadding}px ${formhdLRPadding}px ${formhBottomPadding}px;
         border-radius:${formborderr}px ${formborderr}px 0px 0px;
-        
+
       }
       #formsection .form-container{
         background-color:${formbgclr};
-        padding: ${formTopBottomPadding}px ${formLRPadding}px;
+        padding: ${formTopPadding}px ${formLRPadding}px ${formBottomPadding}px;
         border-radius:0px 0px ${formborderr}px ${formborderr}px ;
       }
       #formsection .lefttext{
@@ -458,8 +509,8 @@
         font-size: 16px!important;
       }
       .mktoForm .mktoRequiredField .mktoAsterix {
-    display: none!important;
-}
+        display: none!important;
+      }
       .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color:#3a3a3a !important;
       }
@@ -510,7 +561,7 @@
         border: 1px solid ${formButtonColor} !important;
         color:${btnfontclr};
         text-align: center !important;
-		letter-spacing: 0.1em !important;
+        letter-spacing: 0.1em !important;
         font-size:${btnfontsize}px !important;
         -moz-border-radius: ${btnborderrds}px !important;
         -webkit-border-radius: ${btnborderrds}px !important;
@@ -543,7 +594,7 @@
       .mktoForm .mktoHtmlText.mktoHasWidth{
         width:100%!important;
       }
-      
+
       #footer .section{
         padding:${footerpaddingtb}px ${footerpaddinglr}px;
       }
@@ -570,35 +621,73 @@
         max-height:50px!important;
       }
       .fab-section {
-    width: 100%;
-    text-align: center;
-    font-size: 22px;
-    margin: 0 auto;
-    margin-bottom: 0px;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-.fab {
-    padding-right: 30px;
-   color:${footerfontclr};
-}
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      .fab {
+        padding-right: 30px;
+        color:${footerfontclr};
+      }
       #fab_icons a:hover, .fab:hover {
-    color: #732282;
-}
+        color: #732282;
+      }
       #footer .icons-container img{
         width:${footericonswidth}px;
       }
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
+        font-family: ${footer-googlefontfamily} !imporant;
       }
-      
-      
+
+
       @media screen and (max-width:768px){
         .flex, .row{
           flex-wrap:wrap;
           flex-direction:column;
         }
+        div#headertext {
+    width: 90%;
+    margin: 0 auto!important;
+}
+        h2 {
+    text-align: center;
+        }
+        .container .content_space {
+    padding-right: 0px;
+}
+
+#formsection p, #formsection ul, #formsection li {
+    font-size:18px;
+  text-align:left;
+}
+div#formlefttext {
+    background-color: rgba(255,255,255,0.6);
+}
+.lefttext img, .lefttext iframe {
+    width: 100%!important;
+    margin: 0 auto;
+    max-width: 100%!important;
+}
+
+.lefttext {
+    padding-right: 0!important;
+  height:auto!important;
+}
+#formsection .form-container {
+    padding: 0;
+}
+        .nopadmob {padding-top:0px!important;
+        }
+        .mktoForm .mktoFormCol .mktoLabel {
+    padding-top: 15px!important;
+    padding-bottom: 5px!important;
+}
         .flex .col:not(:last-child){
           margin-left:0;
           margin-right:0;
@@ -612,16 +701,13 @@
         .section, #header .section{
           width:90%;
           padding:40px 0;
-          padding-top:40px;
+          padding-top:15px;
           padding-bottom:40px;
         }
-        .lefttext img, .lefttext iframe{
-        width:95%;
-        margin:0 auto;
-      }
+
         .text img{
-         width:95%;
-        margin:0 auto;
+          width:95%;
+          margin:0 auto;
         }
         #header .logo-container{
           top:40px;
@@ -631,14 +717,11 @@
           width:100%;
           margin-bottom:20px;
         }
-        #formsection .form-container{
-          padding:20px;
-        }
         #footer .section{
           padding:25px 0;
           align-items:center;
           justify-content: center;
-          text-align:center;
+
         }
         #footer .logo-container{
           margin-bottom:10px;
@@ -647,8 +730,8 @@
           justify-content:center;
         }
       }
-      
-      
+
+
       @media screen and (max-width:550px){
         .mktoForm .mktoFormRow{
           display:block !important;
@@ -657,73 +740,213 @@
           margin-left:0 !important;
         }
         #brand .logo-container img{
-        min-height:30px;
-      }
+          min-height:30px;
+        }
         .logo-1{
-          display:none;
+          display:${mobilelogo};
         }
         .logo_inner{
           display:inline-block;
         }
+        .flex-img-container {
+          justify-content: center;
+          display: flex;
+        }
       }
+
     </style>
   </head>
   <body>
     <header class="container" id="brand">
       <div>
-           <div class="logo-container">
-            <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
-              <div class="logo_inner" style="display:flex;justify-content:space-between;">
-                <div class="logo-1" style="margin-top:10px;">
-                  <a href="www.mammotome.com" style="text-align:left;"><img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/Mammotome_logo_purple_800x95.png" alt="logo"></a>
-                </div>
-                <div class="logo-2" >
-                  <a href="www.mammotome.com" style="text-align:right;"><img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/Circle_M_Purple.png" alt="logo"></a>
-                </div>
-                 
-              
+        <div class="logo-container">
+          <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
+            <div class="logo_inner" style="display:flex;justify-content:space-between;">
+              <div class="logo-1" style="margin-top:10px;">
+                <a href="www.mammotome.com" style="text-align:left;"><img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/Mammotome_logo_purple_800x95.png" alt="logo"></a>
               </div>
-           
+              <div class="logo-2" >
+                <a href="www.mammotome.com" style="text-align:right;"><img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/Circle_M_Purple.png" alt="logo"></a>
+              </div>
+
+
+            </div>
+
           </div>
         </div>
       </div>
     </header>
     <main class="main">
-    <header class="container" id="header">
-      <div class="section">
-        <div class="logo-container">
-          <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
-            <a href="www.mammotome.com"><img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/Mammotome_logo_purple_800x95.png" alt="logo"></a>
+      <header class="container" id="header">
+        <div class="section">
+          <div class="logo-container">
+            <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
+              <a href="www.mammotome.com"><img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/Mammotome_logo_purple_800x95.png" alt="logo"></a>
+            </div>
+          </div>
+
+          <div class="mktoText" id="bannertext" mktoName="Banner - Text">
+            <h1>
+              Lorem Ipsum
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
+
+        </div>
+      </header>
+      <div class="container">
+        <div class="mktoImg header_img" id="header_img" mktoName="Header Img">
+          <img src="https://storage.pardot.com/861033/1611599118bskH5qfv/header.jpg">
+        </div>
+      </div> 
+      <div class="container" id="formsection">
+        <div class="mktoText" id="headertext" mktoName="Header text">
+          <h2 class="text-center"> Lorem ipsum dolor sit amet</h2>
+        </div>
+        <div class="section flex"> 
+          <div class="w100 lefttext">
+            <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
+              <h2>
+                Lorem ipsum dolor sit amet
+              </h2>
+              <div class="videoWrapper">
+                <iframe class="videoIframe js-videoIframe" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0"></iframe>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div class="text-icon" style="display:${showTextIcon};">
+              <div class="row">
+                <div class="col-1 flex-img-container">
+                  <div class="mktoImg icon_img" id="icon_img" mktoName="Icon 1 Img">
+                    <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="mktoText" id="col-1" mktoName="Description 1 Text">
+                    <h2 class="title-description">Improve Patient Experience</h2>
+                    <p>Reduces procedure time and eliminates compression.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1 flex-img-container">
+                  <div class="mktoImg icon_img" id="icon_img-2" mktoName="Icon 2 Img">
+                    <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="mktoText" id="col-2" mktoName="Description 2 Text">
+                    <h2 class="title-description">Improve Patient Experience</h2>
+                    <p>Reduces procedure time and eliminates compression.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1 flex-img-container">
+                  <div class="mktoImg icon_img" id="icon_img-3" mktoName="Icon 3 Img">
+                    <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="mktoText" id="col-3" mktoName="Description 3 Text">
+                    <h2 class="title-description">Improve Patient Experience</h2>
+                    <p>Reduces procedure time and eliminates compression.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                <div class="mktoText" id="freetexticon" mktoName="Text Under Icon">
+                  <p>
+                    Reduces procedure time and eliminates compression.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mktoText btn text-center" id="freetextbtn2" mktoName="Free-Text - Button Content" style="margin-top:20px;">
+              <a href="#">Button</a>
+            </div>
+          </div>
+
+          <div class="w50">
+            <div class="formmain">
+              <div class="mktoText formhead" id="formheadline" mktoName="Form - Headline">
+                <h2  class="bold">Form Headline</h2>
+              </div>
+              <div class="form-container"><div id="requiredtext" style="display:${showformrequired};"><p>
+                All fields are required
+                </p></div>
+                <div class="mktoForm" id="form1" mktoName="Form"></div>
+                <div id="confirmform" style="display:none;"><p>${thankyoumsg}</p></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container" id="texticon">
+        <div class="section">
+          <div class="row">
+            <div class="col-1 flex-img-container">
+              <div class="mktoImg icon_img" id="icon_img-a" mktoName="Icon A Img">
+                <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="mktoText" id="col-a" mktoName="Description A Text">
+                <h2 class="title-description">Improve Patient Experience</h2>
+                <p>Reduces procedure time and eliminates compression.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row hr">
+            <img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/grey-line.png" width="100%">
+          </div>
+          <div class="row">
+            <div class="col-1 flex-img-container">
+              <div class="mktoImg icon_img" id="icon_img-b" mktoName="Icon B Img">
+                <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="mktoText" id="col-b" mktoName="Description B Text">
+                <h2 class="title-description">Improve Patient Experience</h2>
+                <p>Reduces procedure time and eliminates compression.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row hr">
+            <img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/grey-line.png" width="100%">
+          </div>
+          <div class="row">
+            <div class="col-1 flex-img-container">
+              <div class="mktoImg icon_img" id="icon_img-c" mktoName="Icon C Img">
+                <a href=""><img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg"></a>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="mktoText" id="col-c" mktoName="Description C Text">
+                <h2 class="title-description">Improve Patient Experience</h2>
+                <p>Reduces procedure time and eliminates compression.</p>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div class="mktoText" id="bannertext" mktoName="Banner - Text">
-          <h1>
-            Lorem Ipsum
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-        
       </div>
-    </header>
-       <div class="container">
-        <div class="mktoImg header_img" id="header_img" mktoName="Header Img">
-            <img src="https://storage.pardot.com/861033/1611599118bskH5qfv/header.jpg">
-        </div>
-    </div> 
-    <div class="container" id="formsection">
-      <div class="mktoText" id="headertext" mktoName="Header text">
-      <h2 class="text-center"> Lorem ipsum dolor sit amet</h2>
-      </div>
-      <div class="section flex"> 
-        <div class="w100 lefttext">
-          <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
-            <h2>
+
+
+      <div class="container" id="freetext">
+        <div class="section">
+          <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
+            <h1>
               Lorem ipsum dolor sit amet
-            </h2>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video player" frameborder="0"></iframe>
+            </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -731,176 +954,45 @@
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div class="text-icon" style="display:${showTextIcon};">
-          <div class="row">
-            <div class="col-1">
-              <div class="mktoImg icon_img" id="icon_img" mktoName="Icon 1 Img">
-              <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
-              </div>
-            </div>
-              <div class="col-2">
-                <div class="mktoText" id="col-1" mktoName="Description 1 Text">
-                <h2 class="title-description">Improve Patient Experience</h2>
-                <p>Reduces procedure time and eliminates compression.</p>
-                </div>
-                </div>
-            </div>
-          <div class="row">
-            <div class="col-1">
-              <div class="mktoImg icon_img" id="icon_img-2" mktoName="Icon 2 Img">
-              <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="mktoText" id="col-2" mktoName="Description 2 Text">
-              <h2 class="title-description">Improve Patient Experience</h2>
-              <p>Reduces procedure time and eliminates compression.</p>
-              </div>
-              </div>
-            </div>
-          <div class="row">
-              <div class="col-1">
-                  <div class="mktoImg icon_img" id="icon_img-3" mktoName="Icon 3 Img">
-                  <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
-                  </div>
-              </div>
-              <div class="col-2">
-                    <div class="mktoText" id="col-3" mktoName="Description 3 Text">
-                    <h2 class="title-description">Improve Patient Experience</h2>
-                    <p>Reduces procedure time and eliminates compression.</p>
-                    </div>
-              </div>
-            </div>
-            <div class="text">
-              <div class="mktoText" id="freetexticon" mktoName="Text Under Icon">
-                <p>
-                  Reduces procedure time and eliminates compression.
-                </p>
-              </div>
-            </div>
-            </div>
-          <div class="mktoText btn text-center" id="freetextbtn2" mktoName="Free-Text - Button Content" style="margin-top:20px;">
-          <a href="#">Button</a>
-        </div>
-        </div>
-        
-        <div class="w50">
-          <div class="formmain">
-            <div class="mktoText formhead" id="formheadline" mktoName="Form - Headline">
-            <h2  class="bold">Form Headline</h2>
+          <div class="mktoText" id="freetextcopy2" mktoName="Free-Text - Copy 2">
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+            </ul>
           </div>
-          <div class="form-container">
-            <div class="mktoForm" id="form1" mktoName="Form"></div>
-            <div id="confirmform" style="display:none;"><p>${thankyoumsg}</p></div>
+          <div class="mktoText btn" id="freetextbtn1" mktoName="Free-Text - Button Content">
+            <a href="#">Button</a>
           </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div class="container" id="texticon">
-      <div class="section">
-        <div class="row">
-            <div class="col-1">
-              <div class="mktoImg icon_img" id="icon_img-a" mktoName="Icon A Img">
-              <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="mktoText" id="col-a" mktoName="Description A Text">
-              <h2 class="title-description">Improve Patient Experience</h2>
-              <p>Reduces procedure time and eliminates compression.</p>
-              </div>
-              </div>
-            </div>
-       <div class="row hr">
-         <img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/grey-line.png" width="100%">
-        </div>
-          <div class="row">
-              <div class="col-1">
-                  <div class="mktoImg icon_img" id="icon_img-b" mktoName="Icon B Img">
-                  <img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg">
-                  </div>
-              </div>
-              <div class="col-2">
-                    <div class="mktoText" id="col-b" mktoName="Description B Text">
-                    <h2 class="title-description">Improve Patient Experience</h2>
-                    <p>Reduces procedure time and eliminates compression.</p>
-                    </div>
-              </div>
-            </div>
-        <div class="row hr">
-          <img src="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/grey-line.png" width="100%">
-        </div>
-      		<div class="row">
-              <div class="col-1">
-                  <div class="mktoImg icon_img" id="icon_img-c" mktoName="Icon C Img">
-                  <a href=""><img src="https://storage.pardot.com/861033/1611599118dPfUVyKJ/icon_1_improve_patient.jpg"></a>
-                  </div>
-              </div>
-              <div class="col-2">
-                    <div class="mktoText" id="col-c" mktoName="Description C Text">
-                    <h2 class="title-description">Improve Patient Experience</h2>
-                    <p>Reduces procedure time and eliminates compression.</p>
-                    </div>
-              </div>
-            </div>
-  </div>
-    </div>
-    
-    
-     <div class="container" id="freetext">
-      <div class="section">
-        <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
-          <h1>
-            Lorem ipsum dolor sit amet
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="mktoText" id="freetextcopy2" mktoName="Free-Text - Copy 2">
-          <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-          </ul>
-        </div>
-        <div class="mktoText btn" id="freetextbtn1" mktoName="Free-Text - Button Content">
-          <a href="#">Button</a>
         </div>
       </div>
-    </div>
-     <div class="container" style="display:${showfooterimg};">
+      <div class="container" style="display:${showfooterimg};">
         <div class="mktoImg header_img" id="footer_img" mktoName="Footer Img">
-            <img src="https://storage.pardot.com/861033/1611599118bskH5qfv/header.jpg">
+          <img src="https://storage.pardot.com/861033/1611599118bskH5qfv/header.jpg">
         </div>
-    </div> 
-      </main>
+      </div> 
+    </main>
     <footer class="container" id="footer">
       <div class="section">
-      <div class="row2" style="display:${showfootersocial};">
+        <div class="row2" style="display:${showfootersocial};">
           <div class="icons-container text-center">
             <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
-             <div class="fab fab-section" id="fab_icons">
+              <div class="fab fab-section" id="fab_icons">
                 <a href="https://www.facebook.com/MammotomeOfficial/" target="_blank">
-                    <i class="fab fa-facebook-f"></i></a>
+                  <i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/mammotome/?hl=en" target="_blank">
-                    <i class="fab fa-instagram"></i>
+                  <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://twitter.com/mammotome?lang=en" target="_blank">
-                    <i class="fab fa-twitter"></i>
+                  <i class="fab fa-twitter"></i>
                 </a>
                 <a href="https://www.linkedin.com/company/mammotome" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
+                  <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="https://www.youtube.com/c/Mammotome" target="_blank">
-                    <i class="fab fa-youtube"></i>
+                  <i class="fab fa-youtube"></i>
                 </a>
-				</div>
+              </div>
             </div>
           </div>
         </div> 
@@ -914,26 +1006,28 @@
     </footer>
     <script>
 
-MktoForms2.whenReady(function (form){
+      MktoForms2.whenReady(function (form){
 
-  //Add an onSuccess handler
+        //Add an onSuccess handler
 
-   form.onSuccess(function(values, followUpUrl){
+        form.onSuccess(function(values, followUpUrl){
 
-    //get the form's jQuery element and hide it
+          //get the form's jQuery element and hide it
 
-    form.getFormElem().hide();
+          form.getFormElem().hide();
 
-    document.getElementById('confirmform').style.display = 'block';
+          document.getElementById('confirmform').style.display = 'block';
 
-    //return false to prevent the submission handler from taking the lead to the follow up url.
+          //return false to prevent the submission handler from taking the lead to the follow up url.
 
-    return false;
+          return false;
 
-  });
+        });
 
-});
+      });
 
-</script>
+    </script>
+
+
   </body>
 </html>
