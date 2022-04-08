@@ -1,9 +1,18 @@
-.mktoForm select.mktoField {
-    padding-top: 13.5px !important;
-    padding-bottom: 13.5px !important;
+.mktoForm .mktoFormRow:nth-last-of-type(-n+4) .mktoFieldWrap {
+    display: flex;
 }
 
-.mktoForm .mktoFormRow:nth-of-type(11),
-.mktoForm .mktoFormRow:nth-of-type(8) {
-    margin-top: 2rem;
+.mktoForm .mktoFormRow:nth-last-of-type(-n+4) .mktoLabel {
+    padding: 0 !important;
+    min-width: 91px !important;
+}
+
+.mktoForm .mktoRadioList,
+.mktoForm .mktoCheckboxList {
+    padding: 0 !important;
+}
+
+.mktoForm input[type="checkbox"],
+.mktoForm input[type="radio"] {
+    width: 1rem !important
 }
