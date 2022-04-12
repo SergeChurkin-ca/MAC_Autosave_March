@@ -11,6 +11,7 @@
     <meta content="telephone=no" name="format-detection">
     <!-- Modules background -->
     <meta mktoModuleScope="true" class="mktoColor" id="body-bg-color" mktoName="Body Background Color" default="#ffffff" />
+    <meta mktoModuleScope="true" class="mktoColor" id="gold-bg-color" mktoName="Header Background Color" default="#CB9C35" />
     <meta mktoModuleScope="true" class="mktoColor" id="header-bg-color" mktoName="Header Background Color" default="#000000" />
     <meta mktoModuleScope="true" class="mktoColor" id="banner-1-bgcolor" mktoName="Banner 1 Background Color" default="#000000" />
     <meta mktoModuleScope="true" class="mktoColor" id="banner-2-bgcolor" mktoName="Banner 2 Background Color" default="#000000" />
@@ -24,11 +25,12 @@
     <meta mktoModuleScope="true" class="mktoColor" id="terms-bg-color" mktoName="Tearms Background Color" default="#000000" />
     <meta class="mktoNumber" id="top-logowidth" mktoName="Logo Mobile Width (px)" default="250" />
     <!-- Text color -->
+    <meta mktoModuleScope="true" class="mktoColor" id="clr-black" mktoName="Text Main Color" default="#000000" />
     <meta mktoModuleScope="true" class="mktoColor" id="txt-main-clr" mktoName="Text Main Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="clr-accent" mktoName="Text Main Color" default="#c89403" />
     <meta mktoModuleScope="true" class="mktoColor" id="subhead-clr" mktoName="Subhead Color" default="#97a8d1" />
     <!-- Font Size -->
-    
+
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize20" mktoName="Headline Font Size" default="20" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize21" mktoName="Headline Font Size" default="21" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize24" mktoName="Headline Font Size" default="24" />
@@ -53,11 +55,14 @@
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad5" mktoName="Top Padding" default="5" />
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad10" mktoName="Top Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad15" mktoName="Top Padding" default="15" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="top_pad40" mktoName="Top Padding" default="40" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad0" mktoName="Bottom Padding" default="0" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad5" mktoName="Bottom Padding" default="5" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad10" mktoName="Bottom Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad15" mktoName="Bottom Padding" default="15" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="left_pad10" mktoName="Left Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="left_pad40" mktoName="Left Padding" default="40" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="right_pad10" mktoName="Right Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="right_pad40" mktoName="Right Padding" default="40" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-padding-top" mktoName="Bottom Padding" default="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-padding-bottom" mktoName="Bottom Padding" default="1" />
@@ -80,7 +85,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
 </xml>
 <![endif]-->
     <style type="text/css">
-   
+
 
       #outlook a {
         padding: 0;
@@ -162,6 +167,9 @@ ul {margin-left: 26px !important; padding-left: 20px}
         }
         .twocol-img {
           width: 100% !important;
+        }
+        .column-1 p, .column-2 p {
+            width: 100% !important;
         }
       }
       @media only screen and (max-width:600px) {
@@ -529,37 +537,33 @@ ul {margin-left: 26px !important; padding-left: 20px}
                       <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                           <tr style="border-collapse:collapse">
-                            <td style="padding:0;Margin:0; background-color:${banner-1-bgcolor};" bgcolor="${banner-1-bgcolor}" align="left">
+                            <td style="padding:0;Margin:0; background-color:${gold-bg-color};" bgcolor="${gold-bg-color}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
-                                  <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
+
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:560px" valign="top" align="center">
 
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
-                                          <tr class="es-mobile-hidden" style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;font-size:0px" align="center">
-                                              <div class="mktoImg" mktoName="Banner Desktop" id="banner-desktop">
-                                                <img class="adapt-img" src="http://667-VZQ-827.mktoweb.com/rs/667-VZQ-827/images/111722_Gold_Banner20D.jpg" alt="banner" style="line-height:14px;display:block;border:0;-ms-interpolation-mode:bicubic" width="560" height="37"></div>
+                                          <tr class="spacer-top">
+                                            <td style="line-height:1px;font-size:1px;" height="${top_pad5}">&nbsp;</td>
+                                          </tr>
+                                          <tr style="border-collapse:collapse">
+                                            <td bgcolor="${gold-bg-color}" style="padding:0;Margin:0;background-color:${gold-bg-color}" align="center">
+                                              <h2 class="mktoText" mktoName="Banner 1 Text" id="banner-1" style="Margin:0;line-height:25px;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica,sans-serif;font-size:${copyFontSize14}px;font-style:normal;font-weight:bold;color:${clr-black};text-align:center !important"><strong>Available EXCLUSIVELY through <br>Phil and Carepoint Pharmacy</strong>
+                                              </h2>
                                             </td>
                                           </tr>
-                                          <tr class="es-desk-hidden" style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;font-size:0px" align="center">
-                                              <div class="mktoImg" mktoName="Banner Mobile" id="banner-mobile">
-                                                <img class="adapt-img" src="http://667-VZQ-827.mktoweb.com/rs/667-VZQ-827/images/111722_Gold_Banner_M.jpg" alt="banner" style="font-family:Arial, sans-serif;line-height:14px;-ms-interpolation-mode:bicubic" width="560" height="37"></div>
-                                            </td>
+                                          <tr class="spacer-bottom">
+                                            <td style="line-height:1px;font-size:1px;" height="${btm_pad5}">&nbsp;</td>
                                           </tr>
                                         </tbody>
                                       </table>
                                     </td>
                                   </tr>
-                                  <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
+
                                 </tbody>
                               </table>
                             </td>
@@ -570,7 +574,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                   </tr>
                 </tbody>
               </table>
-              
+
               <table class="mktoModule es-content" mktoName="Banner 2" id="banner-2" mktoaddbydefault="true" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%" cellspacing="0" cellpadding="0"
                      align="center">
                 <tbody>
@@ -580,7 +584,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                       <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                           <tr class="es-mobile-hidden" style="border-collapse:collapse">
-                            <td style="padding:0;Margin:0;padding-top:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${banner-2-bgcolor};" bgcolor="${banner-2-bgcolor}" align="left">
+                            <td style="padding:0;Margin:0;padding-top:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${banner-2-bgcolor};" bgcolor="${banner-2-bgcolor}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -611,7 +615,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                           <!--[if !mso]><!-- -->
 
                           <tr class="es-mobile-hidden" style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
-                            <td style="padding:0;Margin:0;padding-top:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${banner-2-bgcolor}" bgcolor="${banner-2-bgcolor}" align="left">
+                            <td style="padding:0;Margin:0;padding-top:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${banner-2-bgcolor}" bgcolor="${banner-2-bgcolor}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -639,7 +643,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                   </tr>
                 </tbody>
               </table>
-              
+
               <table class="mktoModule es-content" mktoName="Headline" id="headline" mktoaddbydefault="true" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%" cellspacing="0" cellpadding="0"
                      align="center">
                 <tbody>
@@ -651,7 +655,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                           <!--[if !mso]><!-- -->
 
                           <tr class="es-desk-hidden" style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
-                            <td style="padding:0;Margin:0;padding-top:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${headline-bgcolor}" bgcolor="${headline-bgcolor}" align="left">
+                            <td style="padding:0;Margin:0;padding-top:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${headline-bgcolor}" bgcolor="${headline-bgcolor}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -681,7 +685,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                           <!--<![endif]-->
 
                           <tr style="border-collapse:collapse">
-                            <td class="es-m-p10t" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${headline-bgcolor}" bgcolor="${headline-bgcolor}" align="left">
+                            <td class="es-m-p10t" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${headline-bgcolor}" bgcolor="${headline-bgcolor}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -712,7 +716,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                             </td>
                           </tr>
                           <tr style="border-collapse:collapse">
-                            <td style="padding:0;Margin:0;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${headline-bgcolor}" bgcolor="${headline-bgcolor}" align="left">
+                            <td style="padding:0;Margin:0;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${headline-bgcolor}" bgcolor="${headline-bgcolor}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -771,25 +775,25 @@ ul {margin-left: 26px !important; padding-left: 20px}
                           <tr>
 
 
-                            <td class="column-1" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-1" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
-                                           <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-top">
+                                            <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
+                                          </tr>
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;padding-bottom:20px" align="left">
                                               <p class="mktoText" id="two-cols-1" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute prescription
                                                 medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.<sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup></p>
                                             </td>
                                           </tr>
-                                             <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-bottom">
+                                            <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
+                                          </tr>
                                         </tbody>
                                       </table>
                                     </td>
@@ -800,25 +804,25 @@ ul {margin-left: 26px !important; padding-left: 20px}
 
 
 
-                            <td class="column-2" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-2" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
-                                           <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-top">
+                                            <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
+                                          </tr>
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;padding-bottom:20px" align="left">
                                               <p class="mktoText" id="two-colsimg-2" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute prescription
                                                 medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.<sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup></p>
                                             </td>
                                           </tr>
-                                             <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-bottom">
+                                            <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
+                                          </tr>
                                         </tbody>
                                       </table>
                                     </td>
@@ -837,98 +841,90 @@ ul {margin-left: 26px !important; padding-left: 20px}
                 </tbody>
               </table>
 
-              <!-- Two columns Image and text -->
-              <table class="mktoModule es-content" mktoName="Two Columns Img-Text" id="two-cols-imgtext" mktoaddbydefault="true" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%" cellspacing="0"
-                     cellpadding="0" align="center">
-                <tbody>
-                  <tr style="border-collapse:collapse">
-                    <td style="padding:0;Margin:0;" align="center">
+             <!-- Two columns Image and text -->
+<table class="mktoModule es-content" mktoName="Two Columns Img-Text" id="two-cols-imgtext" mktoaddbydefault="true" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%" cellspacing="0"
+    cellpadding="0" align="center">
+    <tbody>
+        <tr style="border-collapse:collapse">
+            <td style="padding:0;Margin:0;" align="center">
 
-                      <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px" cellspacing="0" cellpadding="0" align="center">
-                        <tbody>
-                          <tr>
+                <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px" cellspacing="0" cellpadding="0" align="center">
+                    <tbody>
+                        <tr>
 
+                            <td class="column-1" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                                <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
+                                    <tbody>
 
-                            <td class="column-1" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
-                              <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
-                                <tbody>
-                                  <tr style="border-collapse:collapse">
-                                    <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
-                                      <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                           <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
-                                          <tr style="border-collapse:collapse">
-                                            <td class="es-m-p10r" style="padding:0;Margin:0;padding-bottom:20px" align="left">
-                                              <p class="mktoText" id="two-colsimg-1" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Image and Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute
-                                                prescription medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.<sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup></p>
+                                        <tr style="border-collapse:collapse">
+                                            <td class="center" align="left" valign="top" style="vertical-align: top;">
+                                                <div class="mktoImg" mktoname="Image" id="leftImage-b">
+                                                    <div>
+                                                        <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" border="0" style="width:200px; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                                        />
+                                                    </div>
+                                                </div>
                                             </td>
-                                          </tr>
-                                             <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
-                                        </tbody>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                  <tr style="border-collapse:collapse">
-                                    <td class="center" align="left" valign="top" style="vertical-align: top;">
-                                      <div class="mktoImg" mktoname="Image" id="leftImage-b">
-                                        <div>
-                                          <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" border="0" style="width:200px; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
-                                        </div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                                        </tr>
+                                        <tr style="border-collapse:collapse">
+                                            <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
+                                                <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td class="es-m-p10r" style="padding:0;Margin:0;padding-top:20px;padding-bottom:20px" align="left">
+                                                                <p class="mktoText" id="two-colsimg-1" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Image and Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute
+                                                                    prescription medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.<sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup></p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
                             </td>
 
-
-                            <td class="column-2" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
-                              <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
-                                <tbody>
-                                  <tr style="border-collapse:collapse">
-                                    <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
-                                      <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
-                                        <tbody>
-                                           <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
-                                          <tr style="border-collapse:collapse">
-                                            <td class="es-m-p10r" style="padding:0;Margin:0;padding-bottom:20px" align="left">
-                                              <p class="mktoText" id="two-cols-2" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute prescription
-                                                medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.<sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup></p>
+                            <td class="column-2" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                                <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr style="border-collapse:collapse">
+                                            <td class="center" align="left" valign="top" style="vertical-align: top;">
+                                                <div class="mktoImg" mktoname="Image" id="leftImage-b2">
+                                                    <div>
+                                                        <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" border="0" style="width:200px; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                                        />
+                                                    </div>
+                                                </div>
                                             </td>
-                                          </tr>
-                                             <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
-                                        </tbody>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                  <tr style="border-collapse:collapse">
-                                    <td class="center" align="left" valign="top" style="vertical-align: top;">
-                                      <div class="mktoImg" mktoname="Image" id="leftImage-b2">
-                                        <div>
-                                          <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" border="0" style="width:200px; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
-                                        </div>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                                        </tr>
+                                        <tr style="border-collapse:collapse">
+                                            <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
+                                                <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                        <tr style="border-collapse:collapse">
+                                                            <td class="es-m-p10r" style="padding:0;Margin:0;padding-top:20px;padding-bottom:20px" align="left">
+                                                                <p class="mktoText" id="two-cols-2" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute prescription
+                                                                    medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.<sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup></p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- end of Two columns Image and text -->
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- end of Two columns Image and text -->
+
+
               <!-- Col Img Right -->
               <table class="mktoModule es-content" mktoName="Col Img Right" id="cols-img-right" mktoaddbydefault="true" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%" cellspacing="0"
                      cellpadding="0" align="center">
@@ -940,25 +936,25 @@ ul {margin-left: 26px !important; padding-left: 20px}
                         <tbody>
                           <tr>
 
-                            <td class="column-1" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-1" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-right:${right_pad10}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
-                                           <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-top">
+                                            <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
+                                          </tr>
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;padding-bottom:20px" align="left">
-                                              <p class="mktoText" id="two-cols-1a" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute prescription
+                                              <p width="220" class="mktoText" id="two-cols-1a" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:220px;">Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute prescription
                                                 medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.<sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup></p>
                                             </td>
                                           </tr>
-                                             <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-bottom">
+                                            <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
+                                          </tr>
                                         </tbody>
                                       </table>
                                     </td>
@@ -967,16 +963,16 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               </table>
                             </td>
 
-                            <td class="column-2" valign="top" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-cols-bgcolor};vertical-align:top;" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-2" valign="top" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};vertical-align:top;" bgcolor="${two-cols-bgcolor}" align="left">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
-                                           <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-top">
+                                            <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
+                                          </tr>
                                           <tr style="border-collapse:collapse">
                                             <td class="center" align="left" valign="top" style="vertical-align: top;">
                                               <div class="mktoImg" mktoname="Image" id="leftImage-b3">
@@ -986,9 +982,9 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                               </div>
                                             </td>
                                           </tr>
-                                             <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-bottom">
+                                            <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
+                                          </tr>
                                         </tbody>
                                       </table>
                                     </td>
@@ -1014,16 +1010,16 @@ ul {margin-left: 26px !important; padding-left: 20px}
                         <tbody>
                           <tr>
 
-                            <td class="column-1" valign="top" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-cols-bgcolor};vertical-align:top;" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-1" valign="top" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};vertical-align:top;" bgcolor="${two-cols-bgcolor}" align="left">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
-                                           <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-top">
+                                            <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
+                                          </tr>
                                           <tr style="border-collapse:collapse">
                                             <td class="center" align="left" valign="top" style="vertical-align: top;">
                                               <div class="mktoImg" mktoname="Image" id="leftImage-b4">
@@ -1033,9 +1029,9 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                               </div>
                                             </td>
                                           </tr>
-                                             <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-bottom">
+                                            <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
+                                          </tr>
                                         </tbody>
                                       </table>
                                     </td>
@@ -1043,25 +1039,25 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                 </tbody>
                               </table>
                             </td>
-                            <td class="column-2" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-2" style="Margin:0;padding-bottom:10px;padding-top:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:480px" valign="top" align="center">
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
-                                           <tr class="spacer-top">
-                                    <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-top">
+                                            <td style="line-height:1px;font-size:1px;" height="${top_pad0}">&nbsp;</td>
+                                          </tr>
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;padding-bottom:20px" align="left">
-                                              <p class="mktoText" id="two-cols-1b" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute prescription
+                                              <p width="220" class="mktoText" id="two-cols-1b" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:200px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported use of oral acute prescription
                                                 medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.<sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup></p>
                                             </td>
                                           </tr>
-                                             <tr class="spacer-bottom">
-                                    <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
-                                  </tr>
+                                          <tr class="spacer-bottom">
+                                            <td style="line-height:1px;font-size:1px;" height="${btm_pad0}">&nbsp;</td>
+                                          </tr>
                                         </tbody>
                                       </table>
                                     </td>
@@ -1087,7 +1083,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                       <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px;" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                           <tr style="border-collapse:collapse;">
-                            <td style="padding:0;Margin:0;padding-bottom:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color};" bgcolor="${content-bg-color}" align="left">
+                            <td style="padding:0;Margin:0;padding-bottom:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color};" bgcolor="${content-bg-color}" align="left">
                               <!--[if mso]>
 <table style="width:480px" cellpadding="0" cellspacing="0">
 <tr>
@@ -1151,7 +1147,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                             </td>
                           </tr>
                           <tr class="es-mobile-hidden" style="border-collapse:collapse">
-                            <td style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
+                            <td style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
                               <!--[if mso]>
 <table style="width:480px" cellpadding="0" cellspacing="0">
 <tr>
@@ -1210,7 +1206,7 @@ style="font-size:75%;line-height:0;vertical-align:0.4em">®</sup>)
                             </td>
                           </tr>
                           <tr class="es-desk-hidden" style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
-                            <td class="esdev-adapt-off" style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
+                            <td class="esdev-adapt-off" style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
 
                               <table class="esdev-mso-table" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:480px" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -1265,7 +1261,7 @@ style="font-size:75%;line-height:0;vertical-align:0.4em">®</sup>)
                             </td>
                           </tr>
                           <tr style="border-collapse:collapse">
-                            <td style="Margin:0;padding-top:10px;padding-bottom:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
+                            <td style="Margin:0;padding-top:10px;padding-bottom:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
                               <!--[if mso]>
 <table style="width:480px" cellpadding="0" cellspacing="0">
 <tr>
@@ -1325,7 +1321,7 @@ style="font-size:75%;line-height:0;vertical-align:0.4em">®</sup>)
                             </td>
                           </tr>
                           <tr class="es-mobile-hidden" style="border-collapse:collapse">
-                            <td style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
+                            <td style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
                               <!--[if mso]>
 <table style="width:480px" cellpadding="0" cellspacing="0">
 <tr>
@@ -1380,7 +1376,7 @@ style="font-size:75%;line-height:0;vertical-align:0.4em">10-12<span style="font-
                             </td>
                           </tr>
                           <tr class="es-desk-hidden" style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
-                            <td class="esdev-adapt-off" style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
+                            <td class="esdev-adapt-off" style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
 
                               <table class="esdev-mso-table" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:480px" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -1433,7 +1429,7 @@ style="font-size:75%;line-height:0;vertical-align:0.4em">10-12<span style="font-
                             </td>
                           </tr>
                           <tr style="border-collapse:collapse">
-                            <td style="Margin:0;padding-top:10px;padding-bottom:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
+                            <td style="Margin:0;padding-top:10px;padding-bottom:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
                               <!--[if mso]>
 <table style="width:480px" cellpadding="0" cellspacing="0">
 <tr>
@@ -1491,7 +1487,7 @@ style="color:${subhead-clr}"><span style="font-size:${headlineFontSize21}px;line
                             </td>
                           </tr>
                           <tr class="es-mobile-hidden" style="border-collapse:collapse">
-                            <td style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
+                            <td style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
                               <!--[if mso]>
 <table style="width:480px" cellpadding="0" cellspacing="0">
 <tr>
@@ -1546,7 +1542,7 @@ style="color:${subhead-clr}"><span style="font-size:${headlineFontSize21}px;line
                             </td>
                           </tr>
                           <tr class="es-desk-hidden" style="display:none;float:left;overflow:hidden;width:0;max-height:0;line-height:0;mso-hide:all;border-collapse:collapse">
-                            <td class="esdev-adapt-off" style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
+                            <td class="esdev-adapt-off" style="Margin:0;padding-top:5px;padding-bottom:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
 
                               <table class="esdev-mso-table" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;width:480px" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -1730,7 +1726,7 @@ style="font-size:75%;line-height:0;vertical-align:0.4em">12</sup></p>
                       <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                           <tr style="border-collapse:collapse">
-                            <td style="Margin:0;padding-top:10px;padding-bottom:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${center-cta-bgcolor}" bgcolor="${center-cta-bgcolor}" align="left">
+                            <td style="Margin:0;padding-top:10px;padding-bottom:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${center-cta-bgcolor}" bgcolor="${center-cta-bgcolor}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -1784,7 +1780,7 @@ href="https://www.trudhesahcp.com/patient-profiles/" class="es-button es-button-
                       <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                           <tr style="border-collapse:collapse">
-                            <td class="es-m-p0t es-m-p10r" style="Margin:0;padding-top:20px;padding-bottom:30px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${video-bg-color}" bgcolor="${video-bg-color}" align="left">
+                            <td class="es-m-p0t es-m-p10r" style="Margin:0;padding-top:20px;padding-bottom:30px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${video-bg-color}" bgcolor="${video-bg-color}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -1843,7 +1839,7 @@ style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r
                       <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                           <tr style="border-collapse:collapse">
-                            <td class="es-m-p0t es-m-p10r" style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-ctas-bgcolor}"  bgcolor="${two-ctas-bgcolor}">
+                            <td class="es-m-p0t es-m-p10r" style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-ctas-bgcolor}"  bgcolor="${two-ctas-bgcolor}">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -1886,7 +1882,7 @@ style="height:33px; v-text-anchor:middle; width:279px" arcsize="121%" strokecolo
                             </td>
                           </tr>
                           <tr style="border-collapse:collapse">
-                            <td class="es-m-p0t es-m-p10r" style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${two-ctas-bgcolor}" bgcolor="${two-ctas-bgcolor}" align="left">
+                            <td class="es-m-p0t es-m-p10r" style="Margin:0;padding-top:20px;padding-bottom:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-ctas-bgcolor}" bgcolor="${two-ctas-bgcolor}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -1951,7 +1947,7 @@ style="height:42px;v-text-anchor:middle;width:177px;" arcsize="95%" strokecolor=
                       <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:${txt-main-clr};width:560px" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                           <tr style="border-collapse:collapse">
-                            <td style="padding:0;Margin:0;padding-top:20px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${info-bg-color}" bgcolor="${info-bg-color}" align="left">
+                            <td style="padding:0;Margin:0;padding-top:20px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${info-bg-color}" bgcolor="${info-bg-color}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -2119,7 +2115,7 @@ style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r
                             </td>
                           </tr>
                           <tr style="border-collapse:collapse">
-                            <td style="padding:0;Margin:0;padding-left:${left_pad40}px;padding-left:${right_pad40}px;background-color:${info-bg-color}" bgcolor="${info-bg-color}" align="left">
+                            <td style="padding:0;Margin:0;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${info-bg-color}" bgcolor="${info-bg-color}" align="left">
 
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -2163,7 +2159,7 @@ style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
                                           <tr style="border-collapse:collapse">
-                                            <td class="es-m-txt-l es-infoblock" style="Margin:0;padding-bottom:20px;padding-top:40px;padding-left:${left_pad40}px;padding-left:${right_pad40}px;line-height:14px;font-size:${copyFontSize12}px;color:${txt-main-clr} !important" align="left">
+                                            <td class="es-m-txt-l es-infoblock" style="Margin:0;padding-bottom:20px;padding-top:40px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;line-height:14px;font-size:${copyFontSize12}px;color:${txt-main-clr} !important" align="left">
                                               <p class="mktoText" mktoName="References Copy" id="references-copy" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:14px;color:${txt-main-clr} !important;font-size:${copyFontSize12}px"><strong>References: 1.&nbsp;</strong>Aurora SK, Shrewsbury SB, Ray S, 
                                                 Hindiyeh N, Nguyen L.
                                                 A link between gastrointestinal disorders and migraine: insights into the gut-brain connection.
