@@ -23,8 +23,9 @@
     <meta mktoModuleScope="true" class="mktoColor" id="terms-bg-color" mktoName="Tearms Background Color" default="#000000" />
     <meta class="mktoNumber" id="top-logowidth" mktoName="Logo Mobile Width (px)" default="250" />
     <!-- Text color -->
-    <meta mktoModuleScope="true" class="mktoColor" id="txt-main-clr" mktoName="Text Mains Color" default="#ffffff" />
-    <meta mktoModuleScope="true" class="mktoColor" id="subhead-clr" mktoName="Text Mains Color" default="#97a8d1" />
+    <meta mktoModuleScope="true" class="mktoColor" id="txt-main-clr" mktoName="Text Main Color" default="#ffffff" />
+    <meta mktoModuleScope="true" class="mktoColor" id="clr-accent" mktoName="Text Main Color" default="#c89403" />
+    <meta mktoModuleScope="true" class="mktoColor" id="subhead-clr" mktoName="Subhead Color" default="#97a8d1" />
     <!-- Font Size -->
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize14" mktoName="Headline Font Size" default="14" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize20" mktoName="Headline Font Size" default="20" />
@@ -538,7 +539,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                               <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
                                                 <tbody>
                                                   <tr style="border-collapse:collapse">
-                                                    <td style="padding:0;Margin:0;border-bottom:2px solid #c89403;background:none;height:1px;width:100%;margin:0px"></td>
+                                                    <td style="padding:0;Margin:0;border-bottom:2px solid ${clr-accent};background:none;height:1px;width:100%;margin:0px"></td>
                                                   </tr>
                                                 </tbody>
                                               </table>
@@ -785,7 +786,7 @@ title="Trudhesa logo" width="${top-logowidth}" height="63"></a>
                                               <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="25%" height="100%" cellspacing="0" cellpadding="0" border="0">
                                                 <tbody>
                                                   <tr style="border-collapse:collapse">
-                                                    <td class="mktoText" mktoName="Division Line" id="divisionline-1" style="padding:0;Margin:0;border-bottom:1px solid #c89403;background:none;height:1px;width:100%;margin:0px"></td>
+                                                    <td class="mktoText" mktoName="Division Line" id="divisionline-1" style="padding:0;Margin:0;border-bottom:1px solid ${clr-accent};background:none;height:1px;width:100%;margin:0px"></td>
                                                   </tr>
                                                 </tbody>
                                               </table>
@@ -1595,7 +1596,7 @@ style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r
                                             <td class="es-m-txt-c es-m-p30r es-m-p10l" style="padding:0;Margin:0;padding-top:20px;padding-bottom:20px" align="left">
                                               <!--[if mso]><a href="https://www.trudhesahcp.com/how-to-prescribe/?utm_medium=email&utm_source=impel&utm_campaign=trudhesa-branded-2021&utm_content=em-b-cta-2" target="_blank" hidden>
 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://www.trudhesahcp.com/how-to-prescribe/?utm_medium=email&utm_source=impel&utm_campaign=trudhesa-branded-2021&utm_content=em-b-cta-2" 
-style="height:33px; v-text-anchor:middle; width:279px" arcsize="121%" strokecolor="#c89403" strokeweight="2px" fillcolor="#000000">
+style="height:33px; v-text-anchor:middle; width:279px" arcsize="121%" strokecolor="${clr-accent}" strokeweight="2px" fillcolor="#000000">
 <w:anchorlock></w:anchorlock>
 <center style='color:${txt-main-clr}; font-family:helvetica,"helvetica neue", arial, verdana, sans-serif; font-size:10px; font-weight:700; line-height:10px;  mso-text-raise:1px'>${btn2Text}</center>
 </v:roundrect></a>
@@ -1643,14 +1644,14 @@ style="height:33px; v-text-anchor:middle; width:279px" arcsize="121%" strokecolo
                                             <td class="es-m-txt-l es-m-p30r es-m-p10l" style="padding:0;Margin:0;padding-top:20px;padding-bottom:20px" align="left">
                                               <!--[if mso]><a href="mailto:yourteam@impelnp.com" target="_blank">
 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="mailto:yourteam@impelnp.com" 
-style="height:42px;v-text-anchor:middle;width:177px;" arcsize="95%" strokecolor="#c89403" strokeweight="2px" fillcolor="#000000">
+style="height:42px;v-text-anchor:middle;width:177px;" arcsize="95%" strokecolor="${clr-accent}" strokeweight="2px" fillcolor="#000000">
 <w:anchorlock></w:anchorlock>
 <center style='color:${txt-main-clr};font-family:helvetica,"helvetica neue", arial, verdana, sans-serif;font-size:10px;font-weight:700;'>${btn3Text}</center>
 </v:roundrect></a>
 <![endif]-->
                                               <!--[if !mso]><!-- --><span class="mktoText msohide es-button-border" mktoName="Two CTAs - CTA 2" id="twoctas-cta-2" style="border:2px solid ${cta-border-clr};background:${two-ctas-bgcolor};display:inline-block;border-radius:40px;width:auto;mso-hide:all
                                                 "><a href="mailto:yourteam@impelnp.com" class="es-button es-button-1635893855076" target="_blank" style="mso-style-priority:100 
-                                                !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:${txt-main-clr};font-size:${btnFontSize11}px;border-style:solid;border-color:${two-ctas-bgcolor};border-width:10px50px;display:inline-block;background:${two-ctas-bgcolor};border-radius:40px;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-weight:bold;font-style:normal;line-height:13px;width:auto;text-align:center">${btn3Text}</a></span>
+                                                !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:${txt-main-clr};font-size:${btnFontSize11}px;border-style:solid;border-color:${two-ctas-bgcolor};border-width:10px 50px;display:inline-block;background:${two-ctas-bgcolor};border-radius:40px;font-family:helvetica, 'helvetica neue', arial, verdana, sans-serif;font-weight:bold;font-style:normal;line-height:13px;width:auto;text-align:center">${btn3Text}</a></span>
                                               <!--<![endif]-->
                                             </td>
                                           </tr>
@@ -1695,7 +1696,7 @@ style="height:42px;v-text-anchor:middle;width:177px;" arcsize="95%" strokecolor=
                                         <tbody>
                                           <tr style="border-collapse:collapse">
                                             <td style="padding:0;Margin:0;padding-bottom:10px;padding-top:20px" align="left">
-                                              <p class="mktoText" mktoName="Info Headline" id="info-headline" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#c89403;font-size:${copyFontSize14}px"><strong><span style="font-family:georgia, times, 'times new roman', serif">Important Safety 
+                                              <p class="mktoText" mktoName="Info Headline" id="info-headline" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:${clr-accent};font-size:${copyFontSize14}px"><strong><span style="font-family:georgia, times, 'times new roman', serif">Important Safety 
                                                 Information</span></strong></p>
                                               <p></p>
                                             </td>
@@ -2220,8 +2221,7 @@ style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r
                   </tr>
                 </tbody>
               </table>
-              <table class="mktoModule" mktoName="Divider Module" id="DividerModule" mktoaddbydefault="true" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" width="100%" cellspacing="0" cellpadding="0" border="0
-                           " align="center">
+              <table class="mktoModule" mktoName="Divider Module" id="DividerModule" mktoaddbydefault="true" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tbody>
                   <tr>
                     <td style="background-color:${DividerBGColor};vertical-align: top;" valign="top" bgcolor="${DividerBGColor}">
