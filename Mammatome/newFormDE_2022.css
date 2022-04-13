@@ -1,0 +1,283 @@
+.mktoForm {
+    max-width: 741px !important;
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 3rem 2.5rem !important;
+    border-radius: 8px;
+}
+
+.mktoForm .mktoFormRow {
+    display: flex;
+    max-width: 85vw !important;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(2),
+.mktoForm .mktoFormRow:nth-of-type(3),
+.mktoForm .mktoFormRow:nth-of-type(4),
+.mktoForm .mktoFormRow:nth-of-type(5) {
+    gap: 2rem;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(2) .mktoFieldDescriptor:nth-of-type(2),
+.mktoForm .mktoFormRow:nth-of-type(3) .mktoFieldDescriptor:nth-of-type(2),
+.mktoForm .mktoFormRow:nth-of-type(4) .mktoFieldDescriptor:nth-of-type(2),
+.mktoForm .mktoFormRow:nth-of-type(5) .mktoFieldDescriptor:nth-of-type(2) {
+    margin-right: -2rem;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(9),
+.mktoForm .mktoFormRow:nth-of-type(7) {
+    margin-top: 2rem;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(10) {
+    margin-top: -2.5rem;
+    margin-bottom: 1rem !important;
+}
+
+fieldset .mktoButtonRow {
+    gap: 0;
+    max-width: 85vw !important;
+}
+
+fieldset .mktoFormRow .mktoFieldDescriptor {
+    margin: 0 !important
+}
+
+.mktoForm .mktoAsterix,
+.mktoForm .mktoOffset,
+.mktoForm .mktoGutter {
+    display: none !important;
+}
+
+.mktoForm fieldset {
+    border: none;
+}
+
+.mktoForm .mktoRequiredField .mktoLabel:after {
+    content: "*";
+}
+
+.mktoForm .mktoHtmlText {
+    width: 100% !important;
+}
+
+.mktoForm h1 {
+    font-size: 1.3rem;
+    color: #3d3e40;
+    line-height: 37px;
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 28px;
+    width: 80%;
+}
+
+.mktoForm h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.mktoForm hr {
+    border: solid 1px #eeeeee;
+    padding: 0 !important;
+}
+
+.disclaimer {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px !important;
+}
+
+.mktoForm .mktoFieldWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap,
+.mktoForm input,
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField,
+.mktoForm .mktoButtonRow {
+    width: 100% !important;
+}
+
+.mktoForm textarea {
+    min-height: 17vh;
+}
+
+.mktoForm .mktoLabel {
+    margin: 1rem 0 !important;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.col-label {
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+
+.mktoForm .mktoRadioList .mktoLabel,
+.mktoForm fieldset legend {
+    font-weight: 700;
+}
+
+.mktoForm fieldset .mktoLabel {
+    font-weight: 400;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    background-color: #F7F7F7;
+    border: solid 1px #ECECEC;
+    font-size: 16px;
+    color: #000000;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding: 10px !important;
+    line-height: 1.5;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    background-color: #F7F7F7;
+    border: solid 1px #ECECEC;
+    font-size: 16px;
+    color: #000000;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.mktoForm select.mktoField {
+    padding-top: 13.5px !important;
+    padding-bottom: 13.5px !important;
+}
+
+.mktoForm textarea.mktoField {
+    resize: none;
+}
+
+.mktoForm .mktoRadioList,
+.mktoForm .mktoCheckboxList {
+    width: 100% !important;
+}
+
+.mktoForm .mktoRadioList>input,
+.mktoForm .mktoCheckboxList>input {
+    width: 1rem !important;
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.mktoForm .mktoRadioList>label,
+.mktoForm .mktoCheckboxList>label,
+.mktoForm legend {
+    font-size: 16px;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(8) .mktoRadioList>label,
+.mktoForm .mktoFormRow:nth-of-type(8) .mktoCheckboxList>label {
+    line-height: 26px !important;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(8) .mktoRadioList>input,
+.mktoForm .mktoFormRow:nth-of-type(8) .mktoCheckboxList>input {
+    margin-top: 6px !important;
+}
+
+.mktoForm fieldset .mktoFieldWrap {
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    flex-direction: row-reverse !important;
+    align-items: center;
+    width: 1.5rem !important;
+    height: 1.5rem;
+}
+
+.mktoForm fieldset .mktoCheckboxList>input {
+    height: 2rem !important;
+}
+
+
+/* error message */
+
+.mktoForm .mktoError {
+    position: relative !important;
+    right: unset !important;
+    left: unset !important;
+    bottom: unset !important;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.mktoForm .mktoError .mktoErrorMsg {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #f2545b !important;
+    text-shadow: none !important;
+    padding: 0 !important;
+}
+
+.mktoForm .mktoError .mktoErrorArrowWrap {
+    display: none;
+}
+
+.mktoForm .mktoButtonWrap {
+    margin: 2rem auto 0 !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    width: 100%;
+    background: #5f8dda !important;
+    margin: 0 auto !important;
+    padding: 1rem !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+@media (max-width: 740px) {
+    .mktoForm {
+        max-width: 80vw !important;
+    }
+    .mktoForm .mktoFormRow:nth-of-type(10) {
+        float: none !important;
+        margin-top: 1rem !important;
+    }
+    .mktoForm h1 {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .mktoForm {
+        padding: 3rem 0.5rem !important;
+        max-width: 95vw !important;
+    }
+    .mktoForm .mktoFormRow {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+    .mktoForm .mktoFormRow:nth-of-type(9) fieldset .mktoFormRow {
+        gap: 0 !important
+    }
+}
