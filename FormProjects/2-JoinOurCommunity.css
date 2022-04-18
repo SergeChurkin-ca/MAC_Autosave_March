@@ -3,13 +3,18 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.mktoForm a {
+    color: #000 !important;
+}
+
 .mktoForm {
     margin: 0 auto;
     width: 100%;
     max-width: 700px;
     background-color: #d0d0d0;
-    padding: 1rem;
-    width: 90vw !important;
+    padding: 1rem 3rem 2rem;
+    width: 84vw !important;
+    position: relative;
 }
 
 .mktoForm label.mktoLabel,
@@ -26,7 +31,7 @@
     justify-content: center;
     padding: 1rem;
     background-color: #e5e3e3;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
     color: #000 !important;
 }
 
@@ -45,6 +50,11 @@
 
 .mktoForm .mktoHtmlText {
     margin-top: 1rem !important;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(2),
+.mktoForm .mktoFormRow:nth-of-type(3) {
+    width: 97%;
 }
 
 .mktoForm .mktoFormRow:nth-of-type(3) .mktoFormCol:nth-of-type(1) {
@@ -94,7 +104,7 @@
 }
 
 .mktoForm .mktoFormRow:nth-last-of-type(2) {
-    width: 73% !important;
+    width: 70.5% !important;
     background: #e5e3e3;
     padding: 12px;
 }
@@ -117,12 +127,13 @@
 }
 
 .mktoForm .mktoButtonRow {
-    float: right;
-    margin-top: -3.5rem;
+    position: absolute;
+    right: 1.8rem;
+    bottom: 2.5rem;
 }
 
 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
-    padding: 1rem 3rem !important;
+    padding: 0.8rem 1.3rem !important;
     color: #000 !important;
     font-weight: 700;
     background: #d7f000 !important;
@@ -141,6 +152,9 @@
 }
 
 @media (max-width: 760px) {
+    .mktoForm {
+        padding: 1rem 2rem 2rem !important;
+    }
     .mktoForm .mktoFormRow {
         flex-wrap: wrap;
     }
@@ -156,6 +170,9 @@
         float: none !important;
         margin-top: 2rem;
     }
+    .mktoForm .mktoFormRow:nth-last-of-type(2) {
+        width: 61% !important;
+    }
     .mktoForm .mktoFormRow:nth-of-type(3) .mktoFormCol:nth-of-type(1) {
         width: 100% !important;
     }
@@ -165,7 +182,25 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 630px) {
+    .mktoForm .mktoFormRow:nth-last-of-type(2) {
+        width: 53% !important;
+    }
+}
+
+@media (max-width: 510px) {
+    .mktoForm .mktoFormRow {
+        width: 100% !important;
+    }
+    .mktoForm .mktoFormRow:nth-last-of-type(2) {
+        width: 94% !important;
+        margin: 0 auto;
+    }
+    .mktoForm .mktoButtonRow {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
     .mktoForm .mktoFormRow,
     .mktoForm .mktoFormCol,
     .mktoForm .mktoFormRow:nth-of-type(3) .mktoFormCol:nth-of-type(2),
