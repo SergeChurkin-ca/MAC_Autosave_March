@@ -26,6 +26,8 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"> 
 
+    <meta class="mktoString" id="logo-align" mktoName="Align Logo" default="left">
+        
     <meta class="mktoString" id="link1" mktoName="Card 1 URL" default="#">
     <meta class="mktoString" id="card1" mktoName="Card 1 Img" default="https://join.modernhealth.com/rs/783-NRS-103/images/readourstoryMH.png">
     <meta class="mktoString" id="link2" mktoName="Card 2 URL" default="#">
@@ -42,8 +44,12 @@
     <meta class="mktoString" mktoName="Bodytext Bottom Spacing" id="btsp" default="24" allowHtml= "true">  
 
     <!-- Content section toggle-->
+    <meta class="mktoBoolean" id="show-content1" mktoName="Show Content 1" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" mktoName="Content 1 order " id="content1-order" default="1">
     <meta class="mktoBoolean" id="show-content2" mktoName="Show Main Content?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" mktoName="Content 2 order " id="content2-order" default="2">
     <meta class="mktoBoolean" id="show-aside" mktoName="Show Aside?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="aside-left" mktoName="Aside Left?" default="true" false_value="row-reverse" true_value="row" false_value_name="Right" true_value_name="Left">
     <meta class="mktoBoolean" id="show-form" mktoName="Show Form ?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-aside-img1" mktoName="Show Aside Img 1?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-aside-img2" mktoName="Show Aside Img2 " default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
@@ -54,6 +60,7 @@
     <meta class="mktoBoolean" id="show-textmod-5" mktoName="Show Txt Module 5?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-textmod-6" mktoName="Show Txt Module 6?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtwspkrsec" mktoName="Show Speakers Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
+    <meta class="mktoString" mktoName="Speaker moodule order " id="content3-order" default="3">
     <meta class="mktoBoolean" id="showlspeaker1" mktoName="Show Left Speaker 1?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
     <meta class="mktoBoolean" id="showlspeaker2" mktoName="Show Left Speaker 2?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
     <meta class="mktoBoolean" id="showlspeaker3" mktoName="Show Left Speaker 3?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
@@ -65,9 +72,13 @@
     <meta class="mktoBoolean" id="show-content-cta4" mktoName="Show Cta 4" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-content-cta5" mktoName="Show Cta 5" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-content-cta6" mktoName="Show Cta 6" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
-    <!-- Content section margins/paddings -->
+        
+    <!-- Content section margins/paddings/width -->
+    <meta class="mktoString" mktoName="Content 2 text sect. width" id="content2-section-width" default="60">
+    <meta class="mktoString" mktoName="Content 2 gap" id="content2-gap" default="3">
     <meta class="mktoString" mktoName="Content Text margin top" id="content2-text-mgTop" default="1">
     <meta class="mktoString" mktoName="Content Text margin bottom" id="content2-text-mgBottom" default="30">
+    <meta class="mktoString" mktoName="Content 2 Img Margin Top/Bottom" id="sectionimg-mg-top-bottom" default="2">
     <meta class="mktoBoolean" id="showtwspkrsecb" mktoName="Show 2 More Speakers Bottom Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
 
     <title>Successdemo</title>
@@ -126,12 +137,18 @@
       .row {
         margin: 0 auto !important;
       }
+      .container_100 {
+          display: flex;
+          flex-direction: column;
+      }
       #content{
+        display: ${show-content1};
         padding-top: 30px;
         background:url();
         background-repeat: no-repeat;
         background-size: auto;
         background-position-y: top 10%;
+        order: ${content1-order};
       }
       img {
         border: 0;
@@ -160,7 +177,7 @@
       }
 
       .logo {
-        text-align: center;
+        text-align: ${logo-align} !important;
         padding-bottom: 50px;
       }
 
@@ -217,10 +234,13 @@
       }
       #header-banner {
         display: ${show-eventbanner} !important;
+        width: 100%;
       }
       #header-banner img {
         display: flex;
         margin: 0 auto;
+        width: 100%;
+        height: auto;
       }
       .header-text .mktoGen.mktoImg {
         display: flex !important;
@@ -231,8 +251,7 @@
       }
       aside {
         max-width: 30vw !important;
-        min-width: 300px;
-        padding-left: 2rem;
+        
       }
       aside .img-container {
         margin: 2rem 0;
@@ -282,6 +301,7 @@
         padding-top: 10px;
         padding-bottom: 60px;
         background-color:#1e42d3;
+        order: 100;
       }
 
       #headtext, #titletext{
@@ -323,18 +343,27 @@
 
       #content2 {
         display: ${show-content2};
+        order: ${content2-order};
         margin-top: 3rem;
         margin-bottom: 3rem;
         min-height: 
       }                       
       #content2 .container_inner {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: ${aside-left};
+        gap: 2rem;
+        gap: ${content2-gap}rem;
       }
       .content2-text {
         margin: ${content2-text-mgTop}px 0 ${content2-text-mgBottom}px;
       }
-
+        #content2 section {
+            width: ${content2-section-width}vw !important;
+        }
+        #content2 img {
+            display: flex;
+            margin: ${sectionimg-mg-top-bottom}rem auto !important;
+        }
       .bodyspkrsec {
         border: 1px solid #1e42d3;
         display: ${showtwspkrsec};
@@ -343,6 +372,9 @@
         min-width: 300px;
         max-width: 450px;
         margin-top: 3rem !important;
+      }
+      #content3 {
+          order: ${content3-order};
       }
       .div-spkr {
         border-bottom: 1px solid #e9eef4;
@@ -411,8 +443,10 @@
           min-width: 18px;
         }
         aside {
-          padding-left: 0;
           max-width: unset !important;
+        }
+        #content2 section {
+            width: 100% !important;
         }
         .form-container {
           max-width: 700px !important;
@@ -525,9 +559,9 @@
               </div>                                                      
 
               <div class="text-module-1 row">
-                <div class="content2-text" style="display:${show-textmod-1}">
+                <div class="content1-text" style="display:${show-textmod-1}">
                   <div class="mktoText bodytext" mktoName="Body Text" id="bodytext1" style="padding-top: 0px">
-                    <span style="font-size: 18px; font-weight: 600">1 Text Module</span>
+                    <span style="font-size: 18px; font-weight: 600">2 Text Module</span>
                     <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
                     <br/><br /> Read this report to learn:<br />
                     <ul>
@@ -544,9 +578,7 @@
                   <div class="mktoText button" mktoName="Content CTA 1" id="content-cta1" style="display:${show-content-cta1}">
                     <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
                   </div>
-
                 </div>
-
               </div>
 
               <div class="text-module-2 row">
@@ -660,8 +692,16 @@
                 </div>
               </div>
 
-              <div class="speaker-module row">
-                <div class="content2-text" style="display:${showtwspkrsec}">
+           
+            </section>
+          </div>
+
+
+        </div>
+
+        <div id="content3">
+               <div class="speaker-module row containr_inner" style="display:${showtwspkrsec};order:${speaker-order}">
+                <div class="content2-text" >
                   <div class="mktoText bodytext" mktoName="Body Text" id="bodytext" style="padding-top: 0px">
                     <span style="font-size: 18px; font-weight: 600">Speaker Section</span>
                     <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
@@ -734,15 +774,9 @@
                     </div>
                   </div>
                 </div>
-
+      </div>
               </div>
-            </section>
-          </div>
-
-
         </div>
-
-
 
         <div id="section6">
           <div class="container_inner">
