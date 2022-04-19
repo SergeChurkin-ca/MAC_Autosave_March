@@ -60,7 +60,7 @@
     <meta class="mktoBoolean" id="show-textmod-5" mktoName="Show Txt Module 5?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-textmod-6" mktoName="Show Txt Module 6?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtwspkrsec" mktoName="Show Speakers Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
-    <meta class="mktoString" mktoName="Speaker moodule order " id="content3-order" default="3">
+    <meta class="mktoString" mktoName="Speaker moodule order " id="content3-order" default="4">
     <meta class="mktoBoolean" id="showlspeaker1" mktoName="Show Left Speaker 1?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
     <meta class="mktoBoolean" id="showlspeaker2" mktoName="Show Left Speaker 2?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
     <meta class="mktoBoolean" id="showlspeaker3" mktoName="Show Left Speaker 3?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
@@ -73,14 +73,30 @@
     <meta class="mktoBoolean" id="show-content-cta5" mktoName="Show Cta 5" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-content-cta6" mktoName="Show Cta 6" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
         
+    <meta class="mktoString" mktoName="Content 4 order " id="content4-order" default="3">
+    <meta class="mktoBoolean" id="show-content4" mktoName="Show 3 Columns Section" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show3cols-img-1" mktoName="Show 3 Cols Img 1?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+    <meta class="mktoBoolean" id="show3cols-img-2" mktoName="Show 3 Cols Img 2?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+    <meta class="mktoBoolean" id="show3cols-img-3" mktoName="Show 3 Cols Img 3?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+    <meta class="mktoBoolean" id="show-3cols-col1" mktoName="Show 3 Cols Col 1?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+    <meta class="mktoBoolean" id="show-3cols-col2" mktoName="Show 3 Cols Col 2?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />
+    <meta class="mktoBoolean" id="show-3cols-col3" mktoName="Show 3 Cols Col 3?" default="true" false_value="none" true_value="flex" false_value_name="Hide" true_value_name="Show" />   
+    
+    <meta class="mktoBoolean" id="show-3cols-cta1" mktoName="Show 3 Cols Cta 1" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-3cols-cta2" mktoName="Show 3 Cols Cta 2" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-3cols-cta3" mktoName="Show 3 Cols Cta 3" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
+        
     <!-- Content section margins/paddings/width -->
     <meta class="mktoString" mktoName="Content 2 text sect. width" id="content2-section-width" default="60">
     <meta class="mktoString" mktoName="Content 2 gap" id="content2-gap" default="3">
+    <meta class="mktoString" mktoName="Content 4 gap" id="content4-gap" default="3">
     <meta class="mktoString" mktoName="Content Text margin top" id="content2-text-mgTop" default="1">
     <meta class="mktoString" mktoName="Content Text margin bottom" id="content2-text-mgBottom" default="30">
     <meta class="mktoString" mktoName="Content 2 Img Margin Top/Bottom" id="sectionimg-mg-top-bottom" default="2">
+    <meta class="mktoString" mktoName="3 Cols Img Margin Top/Bottom" id="3cols-mg-top-bottom" default="2">
     <meta class="mktoBoolean" id="showtwspkrsecb" mktoName="Show 2 More Speakers Bottom Section?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show" />
-
+    
+                                                                                                                                                                                                        
     <title>Successdemo</title>
     <!-- Linkedin Pixel Script On page load-->
     <script type="text/javascript"> 
@@ -258,7 +274,6 @@
       }
       .form-container {
         display: ${show-form};
-        // width: 40% !important;
         width: fit-content !important;
         background: #FFFFFF;
         box-shadow: 0px 2px 15px rgba(77, 101, 128, 0.25);
@@ -330,7 +345,22 @@
         font-family: 'Poppins', Arial, sans-serif;  
       }
 
-
+    #content4 {
+           order: ${content4-order};
+      }
+    #content4 section {
+        display: flex;
+        gap: ${content4-gap}rem;
+        flex-wrap: wrap;
+    }
+    
+   
+    #content4 img {
+        margin: ${3cols-mg-top-bottom}rem auto;
+        display: flex;
+    }
+ 
+                                                                                                                                                                                                                                                
 
       @media(max-width: 1140px){
         #content{
@@ -375,7 +405,9 @@
       }
       #content3 {
           order: ${content3-order};
+          margin-top: 3rem;
       }
+                                                                                                                                                                                                                                
       .div-spkr {
         border-bottom: 1px solid #e9eef4;
         margin-bottom: 15px !important;
@@ -412,7 +444,8 @@
       .button {
         text-align: center;
       }
-
+   
+    
       @media (max-width: 1000px) {
         .header-text, .form-container {
           width: 100% !important;
@@ -561,7 +594,7 @@
               <div class="text-module-1 row">
                 <div class="content1-text" style="display:${show-textmod-1}">
                   <div class="mktoText bodytext" mktoName="Body Text" id="bodytext1" style="padding-top: 0px">
-                    <span style="font-size: 18px; font-weight: 600">2 Text Module</span>
+                    <span style="font-size: 18px; font-weight: 600">1 Text Module</span>
                     <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
                     <br/><br /> Read this report to learn:<br />
                     <ul>
@@ -691,17 +724,109 @@
                   </div>
                 </div>
               </div>
-
-           
             </section>
           </div>
 
-
         </div>
 
-        <div id="content3">
-               <div class="speaker-module row containr_inner" style="display:${showtwspkrsec};order:${speaker-order}">
+    <div id="content4" style="display: ${show-content4};">
+    <div class="container_inner">
+        <section>
+            <div class="3col-module-1" style="display: ${show-3cols-col1};flex: 1 0 250px;">
+                <div class="content1-text" >
+                    <div style="padding-top: 0px">
+                        <span class="mktoText" mktoName="3 Cols Title 1" id="3cols-title-1" style="font-size: 18px; font-weight: 600">Column 1 Title</span>
+                        <div class="mktoImg" mktoName="3 Columns Img 1" id="3cols-img-1" style="display:${show3cols-img-1}">
+                            <img src="https://dummyimage.com/400x300/b4cff7/fff" alt="section image" />
+                        </div>
+
+                        Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                        <br/><br /> Read this report to learn:<br />
+                        <div class="mktoText 3cols-text-1" mktoName="3 Cols Text 1" id="3cols-text-1" style="padding-top: 0px">
+                            <ul>
+                                <li>
+                                    How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                                </li>
+                                <li>
+                                    Why 67% of employees feel their employers are responsible for helping out
+                                </li>
+                                <li>How to evaluate mental health solutions in 2021</li>
+                            </ul>
+                            P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
+                        </div>
+                    </div>
+                    <div class="mktoText button" mktoName="3 Cols CTA 1" id="3cols-cta1" style="display:${show-3cols-cta1}">
+                        <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="3col-module-2" style="display: ${show-3cols-col2};flex: 1 0 250px;">
                 <div class="content2-text" >
+                    <div style="padding-top: 0px">
+                        <span class="mktoText" mktoName="3 Cols Title 2" id="3cols-title-2" style="font-size: 18px; font-weight: 600">Column 2 Title</span>
+                        <div class="mktoImg" mktoName="3 Columns Img 2" id="3cols-img-2" style="display:${show3cols-img-2}">
+                            <img src="https://dummyimage.com/400x300/b4cff7/fff" alt="section image" />
+                        </div>
+
+                        Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                        <br/><br /> Read this report to learn:<br />
+                        <div class="mktoText 3cols-text-2" mktoName="3 Cols Text 2" id="3cols-text-2" style="padding-top: 0px">
+                            <ul>
+                                <li>
+                                    How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                                </li>
+                                <li>
+                                    Why 67% of employees feel their employers are responsible for helping out
+                                </li>
+                                <li>How to evaluate mental health solutions in 2021</li>
+                            </ul>
+                            P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
+                        </div>
+                    </div>
+                    <div class="mktoText button" mktoName="3 Cols CTA 1" id="3cols-cta2" style="display:${show-3cols-cta2}">
+                        <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="3col-module-3" style="display: ${show-3cols-col3};flex: 1 0 250px;">
+                <div class="content3-text" >
+                    <div style="padding-top: 0px">
+                        <span class="mktoText" mktoName="3 Cols Title 2" id="3cols-title-3" style="font-size: 18px; font-weight: 600">Column 3 Title</span>
+                        <div class="mktoImg" mktoName="3 Columns Img 3" id="3cols-img-3" style="display:${show3cols-img-3}">
+                            <img src="https://dummyimage.com/400x300/b4cff7/fff" alt="section image" />
+                        </div>
+
+                        Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
+                        <br/><br /> Read this report to learn:<br />
+                        <div class="mktoText 3cols-text-3" mktoName="3 Cols Text 3" id="3cols-text-3" style="padding-top: 0px">
+                            <ul>
+                                <li>
+                                    How Covid-19 has impacted all 5 areas of your employees’ wellbeing
+                                </li>
+                                <li>
+                                    Why 67% of employees feel their employers are responsible for helping out
+                                </li>
+                                <li>How to evaluate mental health solutions in 2021</li>
+                            </ul>
+                            P.S. You’ll also get exclusive access to our upcoming evidence-based reports on 2021 mental health trends later in February.
+                        </div>
+                    </div>
+                    <div class="mktoText button" mktoName="3 Cols CTA 1" id="3cols-cta3" style="display:${show-3cols-cta3}">
+                        <button class="content-cta"><a href="https://www.w3docs.com/" class="button">Button</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                            
+        <div id="content3">
+               <div class="speaker-module row container_inner" style="display:${showtwspkrsec};order:${content3-order}">
+                <div class="content2-text">
                   <div class="mktoText bodytext" mktoName="Body Text" id="bodytext" style="padding-top: 0px">
                     <span style="font-size: 18px; font-weight: 600">Speaker Section</span>
                     <br/><br /> Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
@@ -775,7 +900,11 @@
                   </div>
                 </div>
       </div>
-              </div>
+        </div>
+              
+
+
+
         </div>
 
         <div id="section6">
