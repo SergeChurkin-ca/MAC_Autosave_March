@@ -1,48 +1,52 @@
-<!-- 2.Header Date -->
-<table class="mktoModule" mktoName="2.Header Date" id="header" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<!--2 Col Module-->
+<table class="mktoModule" mktoName="Two Column with Image" id="twoColImg" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
     <tr>
-        <td bgColor="${mod-bg-color}" valign="top" style="background-image:url('${2Header_img}');background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: ${bgmode};background-color:${mod-bg-color};vertical-align: top;">
-            <table class="inner_table_fullwidth" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:690px;border-collapse: collapse;border-spacing: 0;" border="0" width="690">
+
+        <td bgColor="${mod-bg-color}" valign="top" style="background-image:url('${2Header_img}');background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode:${bgmode};background-color:${mod-bg-color};vertical-align: top;">
+
+            <!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:${outlook-ht1}px;">
+<v:fill type="frame" src="${banner1_img}" Color="${banner-bg-color}" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+            <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
                 <tr>
-                    <td height="${top_pad60}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
                 <tr>
                     <td>
                         <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                             <tr>
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="30">&nbsp;</th>
-                                <th width="150" align="left" class="block" valign="top" style="vertical-align: top;">
+                                <th width="285" align="left" class="block" valign="top" style="vertical-align: top;">
                                     <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                         <tr>
-                                            <th width="100%" class="center block" align="${alignLeftlogo}" style="width: 690px; max-width:100%; text-align: ${alignLeftlogo};">
-                                                <div class="mktoImg" id="header-Logo" mktoName="2.Header Logo" mktoLockImgSize="false">
-                                                    <a href="https://bestpass.com/" target="_blank"><img width="${logowidth}" class="logowidth" alt="logo" src="https://drive.bestpass.com/rs/764-JWG-155/images/40pxHigh-Bestpass_logo.png" border="0" style="height:auto !important;width:${logowidth};"
-                                                        /></a>
+                                            <td class="center" align="left" valign="top" style="vertical-align: top;">
+                                                <div class="mktoImg" mktoname="Image" id="leftImage-b">
+                                                    <div>
+                                                        <a href="https://bestpass.com/" target="_blank"><img width="${logowidth}" class="logowidth" alt="logo" src="https://drive.bestpass.com/rs/764-JWG-155/images/40pxHigh-Bestpass_logo.png" border="0" style="height:auto !important;width:${logowidth};"
+                                                            /></a>
+                                                    </div>
                                                 </div>
-                                            </th>
+                                            </td>
                                         </tr>
+
 
                                     </table>
                                 </th>
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="40">&nbsp;</th>
-
+                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
                                 <th width="285" align="left" class="block top_pad" valign="top" style="vertical-align: middle;">
                                     <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 
+
                                         <tr>
-                                            <td bgcolor="${banner-bg-color}" height="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                        </tr>
-                                        <tr>
-                                            <td bgcolor="${banner-bg-color}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly;text-align:${alignCenter};background-color:${banner-bg-color};color: ${headlineFontColorwhite};font-weight:bold; font-size: ${headlineFontSize34}px;font-style:${font-style};">
+                                            <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter}; ">
                                                 <div class="mktoText" mktoName="Text" id="SubHeadline-text-a">
                                                     <div>05.05.2022</div>
                                                 </div>
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                            <td bgcolor="${banner-bg-color}" height="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                        </tr>
+
                                     </table>
                                 </th>
                             </tr>
@@ -50,10 +54,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td height="${btm_pad60}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
             </table>
         </td>
     </tr>
 </table>
-<!-- end of 2.Header-Date -->
+<!--2 Col Module-->
