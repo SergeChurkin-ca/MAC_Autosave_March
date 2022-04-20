@@ -1,0 +1,104 @@
+.mktoForm {
+    margin: 0 auto;
+    width: 650px !important;
+    max-width: 650px;
+}
+
+.mktoForm .mktoButton,
+.mktoForm input[type=text]::placeholder,
+.mktoForm input[type=url]::placeholder,
+.mktoForm input[type=email]::placeholder,
+.mktoForm input[type=tel]::placeholder,
+.mktoForm input[type=number]::placeholder,
+.mktoForm input[type=date]::placeholder,
+.mktoForm textarea.mktoField::placeholder {
+    text-transform: uppercase;
+}
+
+.mktoForm input[type=text]::placeholder,
+.mktoForm input[type=url]::placeholder,
+.mktoForm input[type=email]::placeholder,
+.mktoForm input[type=tel]::placeholder,
+.mktoForm input[type=number]::placeholder,
+.mktoForm input[type=date]::placeholder,
+.mktoForm textarea.mktoField::placeholder {
+    color: #000 !important;
+    font-weight: 700 !important;
+    font-size: 15px;
+}
+
+.mktoForm .mktoLabel,
+.mktoForm .mktoGutter,
+.mktoForm .mktoOffset,
+.mktoForm .mktoClear {
+    display: none;
+}
+
+.mktoForm .mktoFormRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.8rem !important;
+}
+
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap {
+    float: none;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    border-radius: 7px !important;
+    border: solid 2px #acadad !important;
+    padding: 12px 10px !important;
+    min-height: 2.5rem !important;
+    font-size: 15px !important;
+}
+
+.mktoForm .mktoButtonRow {
+    width: 100% !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    border-radius: 7px;
+    background: #f15a42 !important;
+    border: solid 1px #f15a42 !important;
+    color: #fff !important;
+    width: 100% !important;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    padding: 18px !important;
+}
+
+@media (max-width:680px) {
+    .mktoForm {
+        width: 90vw !important;
+        margin: 0 auto;
+    }
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm input[type=email],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=number],
+    .mktoForm input[type=date],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField {
+        width: 100% !important;
+    }
+    .mktoForm .mktoFormCol,
+    .mktoForm .mktoFieldWrap {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .mktoForm .mktoFormRow {
+        flex-direction: column;
+    }
+}

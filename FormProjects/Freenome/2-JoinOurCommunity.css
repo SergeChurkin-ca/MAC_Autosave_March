@@ -52,11 +52,6 @@
     margin-top: 1rem !important;
 }
 
-.mktoForm .mktoFormRow:nth-of-type(2),
-.mktoForm .mktoFormRow:nth-of-type(3) {
-    width: 97%;
-}
-
 .mktoForm .mktoFormRow:nth-of-type(3) .mktoFormCol:nth-of-type(1) {
     width: 51% !important;
 }
@@ -104,7 +99,7 @@
 }
 
 .mktoForm .mktoFormRow:nth-last-of-type(2) {
-    width: 70.5% !important;
+    width: 67.5% !important;
     background: #e5e3e3;
     padding: 12px;
 }
@@ -128,7 +123,7 @@
 
 .mktoForm .mktoButtonRow {
     position: absolute;
-    right: 1.8rem;
+    right: 3.3rem;
     bottom: 2.5rem;
 }
 
@@ -151,12 +146,19 @@
     box-shadow: 2px 1px #221818 !important;
 }
 
+@media (max-width:785px) {
+    .mktoForm .mktoFormRow:nth-last-of-type(2) {
+        width: 60% !important;
+    }
+}
+
 @media (max-width: 760px) {
     .mktoForm {
         padding: 1rem 2rem 2rem !important;
     }
     .mktoForm .mktoFormRow {
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .mktoForm input[type="text"],
     .mktoForm input[type="url"],
@@ -167,11 +169,10 @@
         min-height: 2.5rem !important;
     }
     .mktoForm .mktoButtonRow {
-        float: none !important;
-        margin-top: 2rem;
-    }
-    .mktoForm .mktoFormRow:nth-last-of-type(2) {
-        width: 61% !important;
+        position: relative !important;
+        float: right !important;
+        right: 0 !important;
+        top: -4rem !important;
     }
     .mktoForm .mktoFormRow:nth-of-type(3) .mktoFormCol:nth-of-type(1) {
         width: 100% !important;
@@ -197,9 +198,8 @@
         margin: 0 auto;
     }
     .mktoForm .mktoButtonRow {
-        position: relative;
-        top: 0;
-        right: 0;
+        float: none !important;
+        top: 1rem !important;
     }
     .mktoForm .mktoFormRow,
     .mktoForm .mktoFormCol,
