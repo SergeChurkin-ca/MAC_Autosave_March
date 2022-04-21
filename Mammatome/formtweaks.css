@@ -1,0 +1,71 @@
+.mktoForm input[type="checkbox"]:checked+label::before,
+.mktoForm input[type="radio"]:checked+label::before,
+.mktoForm input[type="checkbox"]:focus+label::before,
+.mktoForm input[type="radio"]:focus+label::before,
+.mktoForm input[type="checkbox"]:active+label::before,
+.mktoForm input[type="radio"]:active+label::before {
+    text-align: center;
+    color: #000;
+    outline: solid 1px #595959 !important;
+    background-color: #595959 !important;
+    border: solid 3px #fff !important;
+    height: 9px !important;
+    width: 9px !important;
+}
+
+
+/*  */
+
+<style>input {
+    border: 1px solid #c5ccd0!important;
+    background-color: #fff!important;
+}
+
+.mktoButtonWrap button.mktoButton {
+    width: 100%!important;
+    border-radius: 6px!important;
+}
+
+#icon_img-3 {
+    display: none;
+}
+
+.logo-1 img {
+    margin: 10px 20px 20px!important;
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+}
+
+#footer_img {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.mktoForm .mktoFormRow:nth-last-of-type(-n+8) .mktoFieldWrap {
+    display: unset !important;
+}
+
+.mktoForm .mktoFormRow:nth-last-of-type(-n+8) .mktoLabel {
+    padding: unset !important;
+    min-width: 91px !important;
+}
+
+.mktoForm .mktoFormRow:nth-last-of-type(-n+4) .mktoFieldWrap {
+    display: flex;
+}
+
+.mktoForm .mktoFormRow:nth-last-of-type(-n+4) .mktoLabel {
+    padding: 0 !important;
+    min-width: 91px !important;
+}
+
+@media only and screen (max-width:650px) {
+    #footer_img {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+</style>

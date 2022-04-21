@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="http://435-TDP-284.mktoweb.com/rs/435-TDP-284/images/font-awesome.css">
     <!-- Show and Hide Meta Tags -->
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-        <meta class="mktoBoolean" id="mobilelogo" mktoName="Mobile Show Top Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="mobilelogo" mktoName="Mobile Show Top Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
-    
+
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="bgmode" mktoName="Banner Background Mode" default="true" true_value="normal" false_value="multiply" false_value_name="Blend" true_value_name="Normal">
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-        <meta class="mktoBoolean" id="showformrequired" mktoName="Show Form Required?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformrequired" mktoName="Show Form Required?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showTextIcon" mktoName="Show TextIcon" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -132,9 +132,9 @@
 
 
     <style>
-           @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 
-      
+
       @font-face {
         font-family: 'FontAwesome';
         src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -157,7 +157,7 @@
         font-family: '${footer-googlefontfamily}', sans-serif !important;
       }
       .hero-header {
-    margin-bottom: 20px;
+        margin-bottom: 20px;
       }
       #header_img {
         width: 1200px;
@@ -172,9 +172,13 @@
         margin-top: 0;
         margin-bottom: 1rem;
       }
-      P sup {
-        vertical-align: middle !important;
+      sup {
+        vertical-align: super;
 
+      }
+      footer sup {
+        position: relative;
+        top: 3px;
       }
       body {
         background:${bodyclr};
@@ -183,16 +187,16 @@
         font-size: 1rem;
         font-weight: 400;
       } 
-#requiredtext p {
-          font-family: 'Roboto Condensed', sans-serif!important;
-      font-weight:400!important;
-    padding-left: 35px;
-    padding-right: 35px;
-    text-align: center;
-    margin-bottom: 0;
-          color: #5f6062;
-    line-height: 1.2em;
-    }
+      #requiredtext p {
+        font-family: 'Roboto Condensed', sans-serif!important;
+        font-weight:400!important;
+        padding-left: 35px;
+        padding-right: 35px;
+        text-align: center;
+        margin-bottom: 0;
+        color: #5f6062;
+        line-height: 1.2em;
+      }
       h1{
         font-size: ${h1fontsize}px;
         line-height: 1.4em;
@@ -320,8 +324,22 @@
         box-shadow: none !important;
         background: #f3f3f3 !important;
       }
-    
-	
+
+      .mktoForm input[type="checkbox"]:checked+label::before,
+      .mktoForm input[type="radio"]:checked+label::before,
+      .mktoForm input[type="checkbox"]:focus+label::before,
+      .mktoForm input[type="radio"]:focus+label::before,
+      .mktoForm input[type="checkbox"]:active+label::before,
+      .mktoForm input[type="radio"]:active+label::before {
+        text-align: center;
+        color: #000;
+        outline: solid 1px #595959 !important;
+        background-color: #595959 !important;
+        border: solid 3px #fff !important;
+        height: 9px !important;
+        width: 9px !important;
+      }
+
       #header{
         background-color:${bannerclr};
         background-image:url('${bannerimage}');
@@ -594,6 +612,26 @@
       .mktoForm .mktoHtmlText.mktoHasWidth{
         width:100%!important;
       }
+      .mktoForm .mktoFormRow:nth-last-of-type(-n+8) .mktoFieldWrap {
+        display: flex;
+      }
+
+      .mktoForm .mktoFormRow:nth-last-of-type(-n+8) .mktoLabel {
+        padding: 0 !important;
+        min-width: 91px !important;
+      }
+
+      .mktoForm .mktoRadioList,
+      .mktoForm .mktoCheckboxList {
+        padding: 0 !important;
+      }
+
+      .mktoForm input[type="checkbox"],
+      .mktoForm input[type="radio"] {
+        width: 1rem !important
+      }
+
+
 
       #footer .section{
         padding:${footerpaddingtb}px ${footerpaddinglr}px;
@@ -652,42 +690,42 @@
           flex-direction:column;
         }
         div#headertext {
-    width: 90%;
-    margin: 0 auto!important;
-}
+          width: 90%;
+          margin: 0 auto!important;
+        }
         h2 {
-    text-align: center;
+          text-align: center;
         }
         .container .content_space {
-    padding-right: 0px;
-}
+          padding-right: 0px;
+        }
 
-#formsection p, #formsection ul, #formsection li {
-    font-size:18px;
-  text-align:left;
-}
-div#formlefttext {
-    background-color: rgba(255,255,255,0.6);
-}
-.lefttext img, .lefttext iframe {
-    width: 100%!important;
-    margin: 0 auto;
-    max-width: 100%!important;
-}
+        #formsection p, #formsection ul, #formsection li {
+          font-size:18px;
+          text-align:left;
+        }
+        div#formlefttext {
+          background-color: rgba(255,255,255,0.6);
+        }
+        .lefttext img, .lefttext iframe {
+          width: 100%!important;
+          margin: 0 auto;
+          max-width: 100%!important;
+        }
 
-.lefttext {
-    padding-right: 0!important;
-  height:auto!important;
-}
-#formsection .form-container {
-    padding: 0;
-}
+        .lefttext {
+          padding-right: 0!important;
+          height:auto!important;
+        }
+        #formsection .form-container {
+          padding: 0;
+        }
         .nopadmob {padding-top:0px!important;
         }
         .mktoForm .mktoFormCol .mktoLabel {
-    padding-top: 15px!important;
-    padding-bottom: 5px!important;
-}
+          padding-top: 15px!important;
+          padding-bottom: 5px!important;
+        }
         .flex .col:not(:last-child){
           margin-left:0;
           margin-right:0;
