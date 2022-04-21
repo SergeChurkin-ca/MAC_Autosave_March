@@ -107,6 +107,8 @@
       <meta class="mktoString" mktoName="Content 3 Margin Bottom (rem)" id="content3-mgBtm" default="1">
       <meta class="mktoString" mktoName="3 Cols Margin Top (rem)" id="content4-mgTop" default="1">
       <meta class="mktoString" mktoName="3 Cols Margin Bottom (rem)" id="content4-mgBtm" default="1">
+      <meta class="mktoString" mktoName="2 Cols Margin Top (rem)" id="content5-mgTop" default="1">
+      <meta class="mktoString" mktoName="2 Cols Margin Bottom (rem)" id="content5-mgBtm" default="1">
       
       <meta class="mktoString" mktoName="Content 2 text sect. width" id="content2-section-width" default="60">
       <meta class="mktoString" mktoName="Content 2 gap" id="content2-gap" default="3">
@@ -278,7 +280,7 @@
         #header-banner img {
           display: flex;
           margin: 0 auto;
-          width: 100vw;
+          width: 100vw !important;
           max-width: unset !important;
           height: auto;
         }
@@ -385,11 +387,30 @@
           margin: ${3cols-mg-top-bottom}rem auto;
           display: flex;
       }
+      
   #content5 {
     style=display: ${show-content5};
     order: ${content5-order};
+    margin-top: ${content5-mgTop}rem;
+    margin-bottom: ${content5-mgBtm}rem;
   }
-                                                                                                                                              
+  #content5 section {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+#content5 img {
+  width: 100%;
+  height: auto;
+}
+#content5 .column-img {
+  width: 40% !important;
+  flex: 1 0 200px;
+}
+ #content5 .column-txt {
+   width: 60% !important;
+   flex: 1 0 200px;
+ }                                                                                                                                                     
 
         @media(max-width: 1140px){
           #content{
@@ -494,7 +515,6 @@
             justify-content: center;
           }
           #header-banner img {
-            width: 100% !important;
             height: auto;
           }
           #content2 .container_inner {
@@ -879,7 +899,7 @@
 <div id="content5" style="display: ${show-content5};">
     <div class="container_inner">
         <section>
-            <div class="2col-module-1" style="display: ${show-2cols-row1} !important;flex-direction:${2col-row1-direction};gap:2rem;">
+            <div class="2col-module-1" style="display: ${show-2cols-row1} !important;flex-direction:${2col-row1-direction};gap:2rem;flex-wrap:wrap;">
                 <div class="column-img">
                     <div style="padding-top: 0px">
                         <div class="mktoImg" mktoName="2 Columns Img 1" id="2cols-img-1" style="display:flex;">
@@ -889,8 +909,8 @@
                 </div>
                 <div class="column-txt">
 
-                    <span class="mktoText" mktoName="2 Cols Title 1" id="2cols-title-1" style="font-size: 18px; font-weight: 600;text-align:center;">Column 1 Title</span>
-                    <div class="mktoText 3cols-text-1" mktoName="2 Cols Text 1" id="2cols-text-1" style="padding-top: 0px">
+                    <span class="mktoText" mktoName="2 Cols Title 1" id="2cols-title-1" style="font-size: 18px; font-weight: 600;text-align:center;">Row 1 Title</span>
+                    <div class="mktoText 3cols-text-1" mktoName="2 Cols Text 1" id="2cols-text-1" style="padding-top: 0px;">
                         Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
                         <br/><br /> Read this report to learn:<br />
                         <ul>
@@ -917,7 +937,7 @@
                 </div>
                 <div class="column-txt">
 
-                    <span class="mktoText" mktoName="2 Cols Title 2" id="2cols-title-2" style="font-size: 18px; font-weight: 600;text-align:center;">Column 1 Title</span>
+                    <span class="mktoText" mktoName="2 Cols Title 2" id="2cols-title-2" style="font-size: 18px; font-weight: 600;text-align:center;">Row 2 Title</span>
                     <div class="mktoText 3cols-text21" mktoName="2 Cols Text 2" id="2cols-text-2" style="padding-top: 0px">
                         Mental health impacts all 5 pillars of wellbeing: emotional, physical, professional, financial, and relationship health. We recently surveyed adults aged 21-65 across a variety of industries about these 5 pillars.
                         <br/><br /> Read this report to learn:<br />
@@ -936,6 +956,7 @@
             </div>
         </section>
     </div>
+</div>   
     <!-- end of Two columns section  -->
  
   <!-- Speakers  -->
