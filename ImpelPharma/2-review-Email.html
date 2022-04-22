@@ -43,6 +43,7 @@
     <meta mktoModuleScope="true" class="mktoNumber" id="btnFontSize11" mktoName="Button Font Size" default="11" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btnFontSize13" mktoName="Button Font Size" default="13" />
 
+    <meta mktoModuleScope="true" class="mktoNumber" id="LineHeight14" mktoName="Line Height (px)" default="14" />
     <meta mktoModuleScope="true" class="mktoNumber" id="LineHeight17" mktoName="Line Height (px)" default="17" />
     <meta mktoModuleScope="true" class="mktoNumber" id="LineHeight" mktoName="Line Height (px)" default="25" />
     <meta mktoModuleScope="true" class="mktoNumber" id="LineHeight29" mktoName="Line Height (px)" default="29" />
@@ -58,6 +59,12 @@
     <meta mktoModuleScope="true" class="mktoString" id="btn1URL" mktoName="Button 1 URL" default="https://www.trudhesahcp.com/patient-profiles/">
     <meta mktoModuleScope="true" class="mktoString" id="btn2URL" mktoName="Button 2 URL" default="https://www.trudhesahcp.com/how-to-prescribe">
     <meta mktoModuleScope="true" class="mktoString" id="btn3URL" mktoName="Button 3 URL" default="yourteam@impelnp.com">
+
+    <meta mktoModuleScope="true" class="mktoString" id="p-border-style" mktoName="P border style" default="solid" />                                
+    <meta mktoModuleScope="true" class="mktoColor" id="p-border-color" mktoName="P Border Color" default="#ffffff" /> 
+    <meta mktoModuleScope="true" class="mktoNumber" id="p-border-width" mktoName="P Border width" default="1" />                             
+    <meta mktoModuleScope="true" class="mktoNumber" id="p-border-radius" mktoName="P Border radius" default="1" />                             
+
 
     <meta mktoModuleScope="true" class="mktoColor" id="references-bg-color" mktoName="Header Background Color" default="#000000" />
     <meta mktoModuleScope="true" class="mktoColor" id="footer-bg-color" mktoName="Header Background Color" default="#000000" />
@@ -84,11 +91,19 @@
     <meta mktoModuleScope="true" class="mktoNumber" id="right_pad0" mktoName="Right Padding" default="0" />
     <meta mktoModuleScope="true" class="mktoNumber" id="right_pad10" mktoName="Right Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="right_pad40" mktoName="Right Padding" default="40" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="logo-padding-top" mktoName="Bottom Padding" default="1" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="logo-padding-top" mktoName="Top Padding" default="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-padding-bottom" mktoName="Bottom Padding" default="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="bulletImg-paddingleft" mktoName="Bullet Point Img Pad Left (px)" default="0" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="txt_left_pad0" mktoName="Left Padding" default="0" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="txt_right_pad0" mktoName="Left Padding" default="0" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-paddingleft" mktoName="Img left pad (px)" default="0" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-paddingright" mktoName="Img right pad (px)" default="10" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="txt_left_pad0" mktoName="Text Left Padding" default="0" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="txt_right_pad0" mktoName="Text Right Padding" default="0" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="txt_bottom_pad0" mktoName="Text Bottom Padding" default="0" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="txt_top_pad0" mktoName="Text Top Padding" default="0" />
+    
+    <meta mktoModuleScope="true" class="mktoString" id="container-align-center" mktoName="Container Align" default="center" />
+    <meta mktoModuleScope="true" class="mktoString" id="align-left" mktoName="Text Align" default="left" />
+    <meta mktoModuleScope="true" class="mktoString" id="align" mktoName="Align" default="center" />
 
     <meta mktoModuleScope="true" class="mktoNumber" id="content-p-width" mktoname="Content Paragraph Width %" default="100" />
     <meta mktoModuleScope="true" class="mktoNumber" id="content-headline-width" mktoname="Content Headline Width %" default="100" />
@@ -1262,13 +1277,13 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:none;" cellspacing="0" cellpadding="0" align="right">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
-                                    <td style="padding:0;Margin:0;width:430px" align="left">
+                                    <td style="padding:0;Margin:0;" align="left">
 
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
                                           <tr style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;padding-left:${txt_left_pad0}px;padding-right:${txt_right_pad0}px;" align="left">
-                                              <p width="${content-p-width}%" id="content-1-copya" mktoName="Conten 1 Copy" class="mktoText" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px;max-width:440px;width:${content-p-width}%;">Autonomic dysfunction is thought to be the shared pathophysiology of migraine and gut comorbidities. Gastrointestinal (GI) disorders can limit what oral medications
+                                            <td style="padding:0;Margin:0;" align="${container-align-center}">
+                                              <p width="${content-p-width}%" id="content-1-copya" mktoName="Conten 1 Copy" class="mktoText" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:${content-p-width}%;padding-left:${txt_left_pad0}px;padding-right:${txt_right_pad0}px;padding-top:${txt_top_pad0}px;padding-bottom:${txt_bottom_pad0}px;text-align:${align-left};border:${p-border-style} ${p-border-width}px ${p-border-color};border-radius:${p-border-radius}px">Autonomic dysfunction is thought to be the shared pathophysiology of migraine and gut comorbidities. Gastrointestinal (GI) disorders can limit what oral medications
                                                 can achieve by impacting drug absorption.<sup style="font-size:75%;line-height:0;vertical-align:0.4em">1,4,5</sup></p>
                                             </td>
                                           </tr>
@@ -1314,12 +1329,12 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               <table class="es-left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;" cellspacing="0" cellpadding="0" align="left">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
-                                    <td class="es-m-p20b" style="padding:0;Margin:0;width:75px" align="left">
+                                    <td class="es-m-p20b" style="padding:0;Margin:0;" align="left">
 
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
                                           <tr style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;font-size:0px" align="right">
+                                            <td style="padding-left:${img-paddingleft}px;padding-right:${img-paddingright}px;padding-top:0;padding-bottom:0;Margin:0;font-size:0px" align="right">
                                               <div id="content-1-checkmarka" mktoName="Content 1 checkmark" class="mktoImg">
                                                 <img src="http://667-VZQ-827.mktoweb.com/rs/667-VZQ-827/images/111722_checkmark.png" alt="checkmark" style="line-height:14px;display:block;border:0;outline:none;-ms-interpolation-mode:bicubic" width="27" height="20">
                                               </div>
@@ -1335,7 +1350,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
 <td style="width:15px"></td>
 <td style="width:390px" valign="top"><![endif]-->
 
-                              <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right" cellspacing="0" cellpadding="0" align="right">
+                              <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:none;" cellspacing="0" cellpadding="0" align="right">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:390px" align="left">
@@ -1511,7 +1526,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                         <tbody>
 
                           <tr style="border-collapse:collapse">
-                            <td style="Margin:0;padding-top:${top_pad10}px;padding-bottom:${btm_pad20}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="lef">
+                            <td style="Margin:0;padding-top:${top_pad10}px;padding-bottom:${btm_pad20}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
                               <!--[if mso]>
 <table style="width:480px" cellpadding="0" cellspacing="0">
 <tr>
@@ -1520,14 +1535,14 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:none;" cellspacing="0" cellpadding="0" align="right">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
-                                    <td style="padding:0;Margin:0;width:430px" align="left">
+                                    <td style="padding:0;Margin:0;" align="left">
 
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
                                           <tr style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;padding-left:${txt_left_pad0}px;padding-right:30px" align="left">
+                                             <td style="padding:0;Margin:0;" align="${container-align-center}">
 
-                                              <p width="${content-p-width}%" id="content-2-copya" mktoName="Content 2 copy" class="mktoText" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:${content-p-width}%">Many treatments for migraine need to be taken within 60 minutes of migraine attack onset to be most effective. But research shows patients often delay taking treatment
+                                               <p width="${content-p-width}%" id="content-2-copya" mktoName="Conten 2 Copy" class="mktoText" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:${content-p-width}%;padding-left:${txt_left_pad0}px;padding-right:${txt_right_pad0}px;padding-top:${txt_top_pad0}px;padding-bottom:${txt_bottom_pad0}px;text-align:${align-left};border:${p-border-style} ${p-border-width}px ${p-border-color};border-radius:${p-border-radius}px">Many treatments for migraine need to be taken within 60 minutes of migraine attack onset to be most effective. But research shows patients often delay taking treatment
                                                 for migraine symptoms.
 
                                                 <sup style="font-size:75%;line-height:0;vertical-align:0.4em">8,9<span style="font-family:georgia, times, 'times new roman', serif">*</span></sup><b></b><br></p>
@@ -1574,12 +1589,12 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               <table class="es-left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;" cellspacing="0" cellpadding="0" align="left">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
-                                    <td class="es-m-p20b" style="padding:0;Margin:0;width:75px" align="left">
+                                    <td class="es-m-p20b" style="padding:0;Margin:0;" align="left">
 
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
                                           <tr style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;font-size:0px" align="right">
+                                            <td style="padding-left:${img-paddingleft}px;padding-right:${img-paddingright}px;padding-top:0;padding-bottom:0;Margin:0;font-size:0px" align="right">
                                               <div id="content-2-checkmarka" mktoName="Content 1 checkmark" class="mktoImg">
                                                 <img src="http://667-VZQ-827.mktoweb.com/rs/667-VZQ-827/images/111722_checkmark.png" alt="checkmark" style="line-height:14px;display:block;border:0;outline:none;-ms-interpolation-mode:bicubic" width="27" height="20">
                                               </div>
@@ -1595,7 +1610,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
 <td style="width:15px"></td>
 <td style="width:390px" valign="top"><![endif]-->
 
-                              <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right" cellspacing="0" cellpadding="0" align="right">
+                              <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:none;" cellspacing="0" cellpadding="0" align="right">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:390px" align="left">
@@ -1771,7 +1786,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                         <tbody>
 
                           <tr style="border-collapse:collapse">
-                            <td style="Margin:0;padding-top:${top_pad10}px;padding-bottom:${btm_pad20}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="lef">
+                            <td style="Margin:0;padding-top:${top_pad10}px;padding-bottom:${btm_pad20}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${content-bg-color}" bgcolor="${content-bg-color}" align="left">
                               <!--[if mso]>
 <table style="width:480px" cellpadding="0" cellspacing="0">
 <tr>
@@ -1780,14 +1795,14 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:none;" cellspacing="0" cellpadding="0" align="right">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
-                                    <td style="padding:0;Margin:0;width:430px" align="left">
+                                    <td style="padding:0;Margin:0;" align="left">
 
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
                                           <tr style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;padding-left:${txt_left_pad0};padding-right:30px" align="left">
+                                           <td style="padding:0;Margin:0;" align="${container-align-center}">
 
-                                              <p width="${content-p-width}%" class="mktoText" id="content-3-copya" mktoName="Content 3 copy" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:${content-p-width}%;">Migraine-associated GI issues may impact complete and consistent absorption of oral treatments.
+                                               <p width="${content-p-width}%" id="content-3-copya" mktoName="Conten 3 Copy" class="mktoText" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:${content-p-width}%;padding-left:${txt_left_pad0}px;padding-right:${txt_right_pad0}px;padding-top:${txt_top_pad0}px;padding-bottom:${txt_bottom_pad0}px;text-align:${align-left};border:${p-border-style} ${p-border-width}px ${p-border-color};border-radius:${p-border-radius}px">Migraine-associated GI issues may impact complete and consistent absorption of oral treatments.
                                                 <sup style="font-size:75%;line-height:0;vertical-align:0.4em">13</sup>&nbsp;Studies of some oral treatments reported the incidence of recurrence varied from 6%
                                                 to 50%.<sup style="font-size:75%;line-height:0;vertical-align:0.4em">14,15</sup>&nbsp;In separate studies, sustained pain freedom 24 hours postdose was achieved
                                                 by about 16% of patients.<sup style="font-size:75%;line-height:0;vertical-align:0.4em">14,16</sup><b></b><br></p>
@@ -1834,12 +1849,12 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               <table class="es-left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left;" cellspacing="0" cellpadding="0" align="left">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
-                                    <td class="es-m-p20b" style="padding:0;Margin:0;width:75px" align="left">
+                                    <td class="es-m-p20b" style="padding:0;Margin:0;" align="left">
 
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
                                           <tr style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;font-size:0px" align="right">
+                                            <td style="padding-left:${img-paddingleft}px;padding-right:${img-paddingright}px;padding-top:0;padding-bottom:0;Margin:0;font-size:0px" align="right">
                                               <div id="content-3-checkmarka" mktoName="Content 1 checkmark" class="mktoImg">
                                                 <img src="http://667-VZQ-827.mktoweb.com/rs/667-VZQ-827/images/111722_checkmark.png" alt="checkmark" style="line-height:14px;display:block;border:0;outline:none;-ms-interpolation-mode:bicubic" width="27" height="20">
                                               </div>
@@ -1855,7 +1870,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
 <td style="width:15px"></td>
 <td style="width:390px" valign="top"><![endif]-->
 
-                              <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right" cellspacing="0" cellpadding="0" align="right">
+                              <table class="es-right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:none;" cellspacing="0" cellpadding="0" align="right">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td style="padding:0;Margin:0;width:390px" align="left">
@@ -1864,7 +1879,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                         <tbody>
                                           <tr style="border-collapse:collapse">
                                             <td style="padding:0;Margin:0;padding-right:25px" align="left">
-                                              <p class="mktoText" id="copy-3-pointa" mktoname="Copy 3 point" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px"><strong>Trudhesa provides consistent delivery of proven long-lasting DHE, for sustained 
+                                              <p class="mktoText" id="content-3-pointa" mktoname="Copy 3 point" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px"><strong>Trudhesa provides consistent delivery of proven long-lasting DHE, for sustained 
                                                 relief&nbsp;time after time.<sup style="font-size:75%;line-height:0;vertical-align:0.4em">2,6,12</sup></strong></p>
                                             </td>
                                           </tr>
@@ -2102,7 +2117,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                       <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                         <tbody>
                                           <tr style="border-collapse:collapse">
-                                            <td style="padding:0;Margin:0;" align="center">
+                                            <td style="padding:0;Margin:0;" align="${align}">
                                               <!--[if mso]><a href="${btn1URL}" target="_blank" hidden>
 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="${btn1URL}"
 style="height:35px; v-text-anchor:middle; width:372px" arcsize="49%" strokecolor="#e8af26" strokeweight="2px" fillcolor="#000000">
@@ -2299,7 +2314,7 @@ style="height:33px; v-text-anchor:middle; width:279px" arcsize="121%" strokecolo
               </table>
               <!-- end of two CTAs module 2 -->
 
-              <table class="mktoModule es-content" id="importantinfo" mktoName="Important Info" mktoaddbydefault="true" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%" cellspacing="0"
+              <table class="mktoModule es-content" id="importantinfo" mktoName="ISI" mktoaddbydefault="true" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%" cellspacing="0"
                      cellpadding="0" align="center">
                 <tbody>
                   <tr style="border-collapse:collapse">
@@ -2320,7 +2335,7 @@ style="height:33px; v-text-anchor:middle; width:279px" arcsize="121%" strokecolo
                                         <tbody>
                                           <tr style="border-collapse:collapse">
                                             <td style="padding:0;Margin:0;padding-bottom:10px;" align="left">
-                                              <p class="mktoText" mktoName="Info Headline" id="info-headline" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:${clr-accent};font-size:${copyFontSize14}px"><strong><span style="font-family:georgia, times, 'times new roman', serif">Important Safety 
+                                              <p class="mktoText" mktoName="ISI Headline" id="info-headline" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:${clr-accent};font-size:${copyFontSize14}px"><strong><span style="font-family:georgia, times, 'times new roman', serif">Important Safety 
                                                 Information</span></strong></p>
                                               <p></p>
                                             </td>
@@ -2332,7 +2347,7 @@ style="height:33px; v-text-anchor:middle; width:279px" arcsize="121%" strokecolo
                                           </tr>
                                           <tr style="border-collapse:collapse">
                                             <td style="padding:0;Margin:0" align="left">
-                                              <p class="mktoText" mktoName="Info copy" id="info-copy" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:18px;color:${txt-main-clr}!important;font-size:${copyFontSize12}px !important">Trudhesa is an ergotamine derivative indicated for the acute treatment of migraine with or without aura in adults.</p>
+                                              <p class="mktoText" mktoName="ISI copy" id="info-copy" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:18px;color:${txt-main-clr}!important;font-size:${copyFontSize12}px !important">Trudhesa is an ergotamine derivative indicated for the acute treatment of migraine with or without aura in adults.</p>
                                             </td>
                                           </tr>
                                           <tr style="border-collapse:collapse">
@@ -2342,7 +2357,7 @@ style="height:33px; v-text-anchor:middle; width:279px" arcsize="121%" strokecolo
                                                 <tbody>
                                                   <tr style="border-collapse:collapse">
                                                     <td align="left" style="padding:0;Margin:0;padding-top:20px;padding-right:20px">
-                                                      <p style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:18px;color: ${txt-main-clr} !important;font-size:${copyFontSize12}px !important"><b>WARNING: PERIPHERAL ISCHEMIA FOLLOWING COADMINISTRATION WITH POTENT CYP3A4 INHIBITORS</b></p>
+                                                      <p class="mktoText" mktoName="ISI copy 2" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:18px;color: ${txt-main-clr} !important;font-size:${copyFontSize12}px !important"><b>WARNING: PERIPHERAL ISCHEMIA FOLLOWING COADMINISTRATION WITH POTENT CYP3A4 INHIBITORS</b></p>
                                                     </td>
                                                   </tr>
                                                   <tr style="border-collapse:collapse">
@@ -2508,7 +2523,7 @@ style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r
                                         <tbody>
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-txt-l es-infoblock" style="Margin:0;padding-bottom:${btm_pad20}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;line-height:14px;font-size:${copyFontSize12}px;color:${txt-main-clr} !important" align="left">
-                                              <p class="mktoText" mktoName="References Copy" id="references-copy" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:14px;color:${txt-main-clr} !important;font-size:${copyFontSize12}px"><strong>References: 1.&nbsp;</strong>Aurora SK, Shrewsbury SB, Ray S, Hindiyeh N, Nguyen L. A link between gastrointestinal disorders and migraine: insights into the
+                                              <p class="mktoText" mktoName="References Copy" id="references-copy" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight14}px;color:${txt-main-clr} !important;font-size:${copyFontSize12}px"><strong>References: 1.&nbsp;</strong>Aurora SK, Shrewsbury SB, Ray S, Hindiyeh N, Nguyen L. A link between gastrointestinal disorders and migraine: insights into the
                                                 gut-brain connection.
                                                 <i>Headache</i>. 2021;61(4):576-589.
                                                 <b>2.</b>&nbsp;Shrewsbury SB, Jeleva M, Satterly KH, Lickliter J, Hoekman J. STOP 101: a phase 1, randomized, open-label, comparative bioavailability study of
