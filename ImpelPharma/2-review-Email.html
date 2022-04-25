@@ -100,10 +100,17 @@
     <meta mktoModuleScope="true" class="mktoNumber" id="txt_right_pad0" mktoName="Text Right Padding" default="0" />
     <meta mktoModuleScope="true" class="mktoNumber" id="txt_bottom_pad0" mktoName="Text Bottom Padding" default="0" />
     <meta mktoModuleScope="true" class="mktoNumber" id="txt_top_pad0" mktoName="Text Top Padding" default="0" />
-    
+    <meta mktoModuleScope="true" class="mktoNumber" id="col1_left_pad" mktoName="Col 1 left padding" default="40" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="col1_right_pad" mktoName="Col 1 right padding" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="col2_left_pad" mktoName="Col 2 left padding" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="col2_right_pad" mktoName="Col 2 right padding" default="40" />
+
+  
     <meta mktoModuleScope="true" class="mktoString" id="container-align-center" mktoName="Container Align" default="center" />
     <meta mktoModuleScope="true" class="mktoString" id="align-left" mktoName="Text Align" default="left" />
     <meta mktoModuleScope="true" class="mktoString" id="align" mktoName="Align" default="center" />
+    <meta mktoModuleScope="true" class="mktoString" id="col1-valign" mktoName="Col 1 Vertical Align" default="top" />
+    <meta mktoModuleScope="true" class="mktoString" id="col2-valign" mktoName="Col 2 Vertical Align" default="top" />
 
     <meta mktoModuleScope="true" class="mktoNumber" id="content-p-width" mktoname="Content Paragraph Width %" default="100" />
     <meta mktoModuleScope="true" class="mktoNumber" id="content-headline-width" mktoname="Content Headline Width %" default="100" />
@@ -882,7 +889,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                           <tr>
 
 
-                            <td class="column-1" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-1" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${col1_left_pad}px;padding-right:${col1_right_pad}px;background-color:${two-cols-bgcolor};vertical-align:${col1-valign};" bgcolor="${two-cols-bgcolor}" align="left" valign="${col1-valign};">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
@@ -892,7 +899,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
 
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;" align="left">
-                                              <p class="mktoText" id="two-cols-1" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
+                                              <p class="mktoText" id="two-cols-1" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
                                                 use of oral acute prescription medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.
                                                 <sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup>
                                               </p>
@@ -907,7 +914,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               </table>
                             </td>
 
-                            <td class="column-2" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-2" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${col2_left_pad}px;padding-right:${col2_right_pad}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor};vertical-align:${col2-valign};" align="left" valign="${col2-valign}">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
@@ -917,7 +924,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
 
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;" align="left">
-                                              <p class="mktoText" id="two-colsimg-2" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
+                                              <p class="mktoText" id="two-colsimg-2" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
                                                 use of oral acute prescription medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.
                                                 <sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup>
                                               </p>
@@ -954,7 +961,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                         <tbody>
                           <tr>
 
-                            <td class="column-1" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-1" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${col1_left_pad}px;padding-right:${col1_right_pad}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor};vertical-align:${col1-valign};" align="left" valign="${col1-valign}">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
 
@@ -962,8 +969,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                                       <div class="mktoImg" mktoname="Image" id="leftImage-b">
                                         <div>
-                                          <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" border="0" style="width:200px; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
-                                               />
+                                          <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" height="auto" border="0" style="width:200px; height:auto;-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"/>
                                         </div>
                                       </div>
                                     </td>
@@ -974,7 +980,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                         <tbody>
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;padding-top:20px;" align="left">
-                                              <p class="mktoText" id="two-colsimg-1" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Image and Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who
+                                              <p class="mktoText" id="two-colsimg-1" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px">Image and Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who
                                                 reported use of oral acute prescription medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.
                                                 <sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup>
                                               </p>
@@ -989,14 +995,14 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               </table>
                             </td>
 
-                            <td class="column-2" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-2" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${col2_left_pad}px;padding-right:${col2_right_pad}px;background-color:${two-cols-bgcolor};vertical-align:${col2-valign};" bgcolor="${two-cols-bgcolor}" align="left" valign="${col2-valign}">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
                                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                                       <div class="mktoImg" mktoname="Image" id="leftImage-b2">
                                         <div>
-                                          <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" border="0" style="width:200px; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                          <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" height="auto" border="0" style="width:200px; height:auto;-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                                                />
                                         </div>
                                       </div>
@@ -1008,7 +1014,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                         <tbody>
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;padding-top:20px;" align="left">
-                                              <p class="mktoText" id="two-cols-2" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
+                                              <p class="mktoText" id="two-cols-2" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
                                                 use of oral acute prescription medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.
                                                 <sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup>
                                               </p>
@@ -1042,7 +1048,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                         <tbody>
                           <tr>
 
-                            <td class="column-1" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad10}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-1" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${col1_left_pad}px;padding-right:${col1_right_pad}px;background-color:${two-cols-bgcolor};vertical-align:${col1-valign};" bgcolor="${two-cols-bgcolor}" align="left" valign="${col1-valign}">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
@@ -1052,7 +1058,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
 
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;" align="left">
-                                              <p width="220" class="mktoText" id="two-cols-1a" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:220px;">Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
+                                              <p width="220" class="mktoText" id="two-cols-1a" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:220px;">Text Column 1<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
                                                 use of oral acute prescription medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.
                                                 <sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup>
                                               </p>
@@ -1067,8 +1073,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                               </table>
                             </td>
 
-                            <td class="column-2" valign="top" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};vertical-align:top;" bgcolor="${two-cols-bgcolor}"
-                                align="left">
+                            <td class="column-2" valign="top" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}pxpadding-left:${col2_left_pad}px;padding-right:${col2_right_pad}px;background-color:${two-cols-bgcolor};vertical-align:${col2-valign};" bgcolor="${two-cols-bgcolor}" align="left" valign="${col2-valign}">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
@@ -1080,7 +1085,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                             <td class="center" align="left" valign="top" style="vertical-align: top;">
                                               <div class="mktoImg" mktoname="Image" id="leftImage-b3">
                                                 <div>
-                                                  <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" border="0" style="width:200px; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                                  <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" height="auto" border="0" style="width:200px; height:auto; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                                                        />
                                                 </div>
                                               </div>
@@ -1113,8 +1118,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                         <tbody>
                           <tr>
 
-                            <td class="column-1" valign="top" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};vertical-align:top;" bgcolor="${two-cols-bgcolor}"
-                                align="left">
+                            <td class="column-1" valign="top" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${col1_left_pad}px;padding-right:${col1_right_pad}px;background-color:${two-cols-bgcolor};vertical-align:${col1-valign};" bgcolor="${two-cols-bgcolor}" align="left" valign="${col1-valign}">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
@@ -1126,7 +1130,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                             <td class="center" align="left" valign="top" style="vertical-align: top;">
                                               <div class="mktoImg" mktoname="Image" id="leftImage-b4">
                                                 <div>
-                                                  <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" border="0" style="width:200px; -ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                                  <img class="twocol-img" src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" alt="image" width="200" height="auto" border="0" style="width:200px; height:auto;-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                                                        />
                                                 </div>
                                               </div>
@@ -1140,7 +1144,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
                                 </tbody>
                               </table>
                             </td>
-                            <td class="column-2" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${left_pad40}px;padding-right:${right_pad40}px;background-color:${two-cols-bgcolor};" bgcolor="${two-cols-bgcolor}" align="left">
+                            <td class="column-2" style="Margin:0;padding-bottom:${btm_pad10}px;padding-top:${top_pad40}px;padding-left:${col2_left_pad}px;padding-right:${col2_right_pad}px;background-color:${two-cols-bgcolor};vertical-align:${col2-valign};" bgcolor="${two-cols-bgcolor}" align="left" valign="${col2-valign}">
                               <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr style="border-collapse:collapse">
@@ -1150,7 +1154,7 @@ ul {margin-left: 26px !important; padding-left: 20px}
 
                                           <tr style="border-collapse:collapse">
                                             <td class="es-m-p10r" style="padding:0;Margin:0;padding-bottom:20px" align="left">
-                                              <p width="220" class="mktoText" id="two-cols-1b" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:17px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:200px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
+                                              <p width="220" class="mktoText" id="two-cols-1b" mktoName="Two Cols - 1" style="Margin:0;padding-left:0;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:${LineHeight17}px;color:${txt-main-clr};font-size:${copyFontSize14}px;width:200px">Text Column 2<br><br> Did you know that patient dissatisfaction with oral medication is vastly underreported? A survey of 3930 US adults with migraine who reported
                                                 use of oral acute prescription medication showed that <b>96% of patients said they were dissatisfied</b> with at least one aspect of their migraine treatment.
                                                 <sup style="font-size:75%;line-height:120%;vertical-align:0.4em">4</sup>
                                               </p>
@@ -2622,18 +2626,18 @@ style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r
                 </tbody>
               </table>
 
-              <table class="mktoModule" mktoName="Divider Module" id="DividerModule" mktoaddbydefault="true" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+              <table class="mktoModule es-content" mktoName="Divider Module" id="DividerModule" mktoaddbydefault="true" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
                 <tbody>
                   <tr>
-                    <td style="background-color:${DividerBGColor};vertical-align: top;" valign="top" bgcolor="${DividerBGColor}">
+                    <td style="background-color:${body-bg-color};vertical-align: top;" valign="top" bgcolor="${body-bg-color}">
 
-                      <table class="" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" width="${DividerWidth}%" cellspacing="0" cellpadding="0" border="0" align="center">
+                           <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:560px;" cellspacing="0" cellpadding="0" align="center">
                         <tbody>
                           <tr>
                             <td style="line-height:1px;font-size:1px;" height="${top_pad10}">&nbsp;</td>
                           </tr>
                           <tr>
-                            <td class="center" style="line-height:1px;font-size:1px; background-color: ${body-bg-color};" height="${DividerHeight}" bgcolor="${body-bg-color}">&nbsp;</td>
+                            <td class="center" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};" height="${DividerHeight}" bgcolor="${DividerBGColor}">&nbsp;</td>
                           </tr>
                           <tr>
                             <td style="line-height:1px;font-size:1px;" height="${btm_pad10}">&nbsp;</td>
