@@ -13,8 +13,8 @@ font-family: Arial, serif !important;
 <meta class="mktoColor" id="bodyBgColor" mktoname="Email Body Background Color" default="#F6F9FC" />
 <meta class="mktoColor" id="bodyborderColor" mktoname="Body Border Color" default="#F6F9FC" />
 <meta class="mktoNumber" id="bodyborderWid" mktoname="Body Border Width (px)" default="0" />
-<meta class="mktoString" id="fontfamilyembed" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');" />
-<meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="SpeziaWeb-Regular" />	
+<meta class="mktoString" id="goglefontimport" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');" />
+<meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="SpeziaWebRegular" />	
 <meta class="mktoNumber" id="logowidth" mktoname="Logo Mobile Width (px)" default="220" />
 <meta class="mktoNumber" id="imgmaxwidth" mktoname="Banner Img Mobile Width (px)" default="600" />
 <meta class="mktoNumber" id="footer-1-iconwidth" mktoname="Foooter Icon 1 width (px)" default="24" />
@@ -31,7 +31,6 @@ font-family: Arial, serif !important;
   
 <meta mktoModuleScope="true" class="mktoNumber" id="regLogoWidth" mktoname="Logo Width (px)" default="220" />
 <meta mktoModuleScope="true" class="mktoNumber" id="vidWidth" mktoname="Video Image Width (px)" default="450" />
-<meta mktoModuleScope="true" class="mktoNumber" id="imgWidth" mktoname="Image Width (px)" default="690" />
 <meta mktoModuleScope="true" class="mktoNumber" id="imgWidth" mktoname="Image Width (px)" default="690" />
   
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad0" mktoname="Top Padding" default="0" />
@@ -70,6 +69,7 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="SubheadlineFontSize" mktoname="Subheadline Font Size" default="18" />
 <meta mktoModuleScope="true" class="mktoColor" id="SubheadlineFontColor" mktoname="Subheadlinbe Text Color" default="#000000" />
 <meta mktoModuleScope="true" class="mktoNumber" id="CopySize18" mktoname="Text Font Size" default="18" />
+<meta mktoModuleScope="true" class="mktoNumber" id="CopySize14" mktoname="Text Font Size" default="14" />
 <meta mktoModuleScope="true" class="mktoNumber" id="CopySize" mktoname="Text Font Size" default="16" />
 <meta mktoModuleScope="true" class="mktoColor" id="CopyColor" mktoname="Text Color" default="#000000" />
 <meta mktoModuleScope="true" class="mktoColor" id="CopyColorwhite" mktoname="Text Color" default="#FFFFFF" />
@@ -100,7 +100,6 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoString" id="btn2Text" mktoName="Button 2 Text" default="Read More">
 <meta mktoModuleScope="true" class="mktoNumber" id="btn2FontSize" mktoname="Button 2 Font Size (px)" default="18" />
 <meta mktoModuleScope="true" class="mktoString" id="btn2URL" mktoName="Button 2 URL" default="#">
-<meta mktoModuleScope="true" class="mktoString" id="btn3Text" mktoName="Button 3 Text" default="Read More">
     
 <meta mktoModuleScope="true" class="mktoColor" id="btn3Color" mktoName="Button 3 Text Color" default="#ffffff" />
 <meta mktoModuleScope="true" class="mktoColor" id="btn3BGColor" mktoName="Button 3 BG Color" default="#35459C">
@@ -147,7 +146,7 @@ font-family: Arial, serif !important;
 <meta name="format-detection" content="email=no" />
 <meta name="x-apple-disable-message-reformatting">
 <style>
-${fontfamilyembed}
+${goglefontimport}
 </style>
 <style media="all">
 /* CLIENT-SPECIFIC STYLES */
@@ -176,6 +175,7 @@ margin-bottom: 20px;
 }
 /* Various OL fixes */
 body {
+font-family:'${fontfamily}', sans-serif;
 -webkit-text-size-adjust: 100% !important;
 -ms-text-size-adjust: 100% !important;
 }
@@ -260,12 +260,11 @@ th{font-weight:normal !important}
 }
 
 @font-face {
-  font-family: 'SpeziaWeb-Regular';
-  src: url('SpeziaWeb-Regular.eot');
-  src: url('SpeziaWeb-Regular.eot?#iefix') format('embedded-opentype'),
-       url('SpeziaWeb-Regular.ttf') format('truetype'),
-       url('SpeziaWeb-Regular.woff') format('woff'),
-       url('SpeziaWeb-Regular.woff2') format('woff2');
+  font-family: 'SpeziaWebRegular';
+  src: url('http://go.ouster.com/rs/893-FVD-854/images/SpeziaWeb-Regular.eot');
+  src: url('http://go.ouster.com/rs/893-FVD-854/images/SpeziaWeb-Regular.ttf') format('truetype'),
+       url('http://go.ouster.com/rs/893-FVD-854/images/SpeziaWeb-Regular.woff') format('woff'),
+       url('http://go.ouster.com/rs/893-FVD-854/images/SpeziaWeb-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -282,33 +281,33 @@ th{font-weight:normal !important}
 
 <!--Logo and nav-->
 <table class="mktoModule" mktoName="Logo and Nav" id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-<tr>
-<td bgColor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;">
-<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px; border-collapse: collapse;border-spacing: 0;" border="0" width="590">
-<tr>
-<td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-<tr>
-<th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
-<div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="http://go.ouster.com/rs/893-FVD-854/images/logo-white.png" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;" /></a>
-</div>
-</th>
-<th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
- <td valign="middle" align="right" style="font-family:${fontfamily}, Helvetica, Arial, sans-serif; color:${copyColorwhite}; font-size: 9px; line-height: 12px;"> 
-<div id="text04" mktoname="Copy text" class="mktoText">
-<p>Products | Blog | Contact Us</p>
-</div></td> 
-</th>
-</tr>
-<tr>
-<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
+    <tr>
+        <td bgColor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;">
+            <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px; border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+                <tr>
+                    <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+
+                    <th width="100%" class="center block" align="${alignLeft}" style="width: 690px; max-width:100%; text-align: ${alignLeft};">
+                        <div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
+                            <a href="#" target="_blank"><img class="logowidth" alt="logo" src="http://go.ouster.com/rs/893-FVD-854/images/logo-white.png" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;" /></a>
+                        </div>
+                    </th>
+                    <th width="100%" class="center block" align="${alignRight}" style="width: 690px; max-width:100%; text-align: ${alignRight};">
+                        <div class="mktoText" mktoName="Nav Text" id="nav-text" style="font-family:${fontfamily}, Helvetica, Arial, sans-serif; color:${CopyColorwhite}; font-size:${CopySize14}px; line-height: 12px;">
+                            <p><a href="#" style="color:${CopyColorwhite};text-decoration:none;">Products</a> | <a href="#" style="color:${CopyColorwhite};text-decoration:none;">Blog</a> | <a href="#" style="color:${CopyColorwhite};text-decoration:none;">Contact Us</a></p>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 </table>
-</td>
-</tr>
-</table>
-<!--Logo-->   
+<!--Logo--> 
   
 <!--Banner-->
 <table class="mktoModule" mktoName="Banner" mktoAddByDefault="true" id="banner1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
