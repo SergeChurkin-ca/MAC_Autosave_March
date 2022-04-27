@@ -4,6 +4,13 @@
     max-width: 650px;
 }
 
+.mktoForm .mktoRequiredField .mktoForm input[type=text]::-webkit-input-placeholder::after {
+    display: block !important;
+    content: "*" !important;
+    color: #000 !important;
+    font-size: 18px !important;
+}
+
 .mktoForm .mktoButton,
 .mktoForm input[type=text]::placeholder,
 .mktoForm input[type=url]::placeholder,
@@ -21,7 +28,8 @@
 .mktoForm input[type=tel]::placeholder,
 .mktoForm input[type=number]::placeholder,
 .mktoForm input[type=date]::placeholder,
-.mktoForm textarea.mktoField::placeholder {
+.mktoForm textarea.mktoField::placeholder,
+.mktoForm select.mktoField {
     color: #000 !important;
     font-weight: 700 !important;
     font-size: 15px;
@@ -86,6 +94,8 @@
     .mktoForm {
         width: 90vw !important;
         margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
     }
     .mktoForm input[type=text],
     .mktoForm input[type=url],
