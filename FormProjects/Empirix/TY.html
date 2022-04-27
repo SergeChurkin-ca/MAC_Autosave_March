@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+
+    <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="#">
+
+    <title>${pagetitle}</title>
+    <link rel="icon" href="${faviconlink}">
+
+    <!-- Google Fonts -->
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Montserrat', sans-serif">
+
+    <style>
+      * {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: Helvetica, sans-serif;
+        font-family: $ {googlefontfamily} !important;
+      }
+
+      body {
+        background: #fff;
+        height: 100vh;
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+        scrollbar-width: none;
+      }
+
+      body::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+      }
+      footer .row2 span {
+        font-size: 13px;
+      }
+      footer .row1 h2 {
+        font-size: 20px;
+      }
+      footer .row1 ul {
+        font-size: 15px;
+      }
+      .inner-container {
+        width: 70vw;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+      }
+
+      flex {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        flex: 1 0 300px;
+      }
+
+      .form-container {
+        max-width: 700px;
+        margin: 7vh auto 10vh;
+      }
+
+      .formheadline {
+        text-align: center;
+      }
+
+      .formheadline img {
+        width: 120px;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      footer {
+        background-color: #212639;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+      }
+
+      footer .row1,
+      footer .row2 {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2rem auto;
+        flex-wrap: wrap;
+
+      }
+
+      footer a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      footer a:hover,
+      footer a:focus {
+        color: #f15a42;
+      }
+
+      footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        margin: 1rem auto 1.5rem;
+      }
+
+      footer img {
+        width: 120px;
+        height: auto;
+        max-width: 100%;
+      }
+
+      @media (max-width: 400px) {
+        footer .row1 {
+          flex-direction: column;
+          text-align: center;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <main class="inner-container">
+        <div class="form-container w100">
+          <div class="mktoText formheadline" mktoName="Form - Headline" id="formheadline">
+            <div class="form=logo">
+              <img src="https://info.empirxhealth.com/rs/220-NDM-359/images/EmpiRx-EM-Logo.png" alt="form logo">
+            </div>
+          </div>
+          <div class="mktoTetx" id="pageheadline" mktoName="Page Headline"><h1 style="margin-top: 10rem; margin-bottom:10rem;">Thank you for submission</h1></div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="inner-container">
+
+          <div class="row1">
+            <div class="column1 flex">
+              <div class="footer-logo-container">
+                <a href="https://www.empirxhealth.com/">
+                  <img width="348" height="238" src="https://www.empirxhealth.com/wp-content/uploads/2020/05/EmpiRx-Health-Logo-White.png" class="footer-logo" alt="logo"> </a>
+              </div>
+            </div>
+            <div class="column2 flex">
+              <h2><a href="https://www.empirxhealth.com/">Our Approach</a></h2>
+              <ul>
+                <li>
+                  <a href="https://www.empirxhealth.com/pay-for-performance/">
+                    <span>Pay-For-Performance</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.empirxhealth.com/clinical-innovation/">
+                    <span>Clinical Innovation</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.empirxhealth.com/white-glove-service/">
+                    <span>White-Glove Service</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.empirxhealth.com/insights-hub/">
+                    <span>Our News</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="column3 flex">
+              <h2><a href="https://www.empirxhealth.com/about-us/">Our Team</a></h2>
+              <ul>
+                <li>
+                  <a href="https://www.empirxhealth.com/lets-talk/">
+                    <span>Let 's Talk</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://portal.myempirxhealth.com" target="_blank">
+                    <span>Member Login</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/empirx-health-llc/" target="_blank">
+                    <span>Our LinkedIn</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="column4 flex">
+              <h2><a href="https://www.empirxhealth.com/lets-talk/">Contact Us</a></h2>
+              <ul>
+                <li>
+                  <a href="https://www.empirxhealth.com/lets-talk/">
+                    <span>Let's Talk</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://portal.myempirxhealth.com" target="_blank">
+                    <span>Member Login</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/empirx-health-llc/" target="_blank">
+                    <span>Our LinkedIn</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row2 flex">
+            <p><span style="color: #ffffff;">© 2022 EmpiRx Health, LLC. All Rights Reserved. </span><br><span style="color: #ffffff;">All registered trademarks, service marks, word marks, and logos, including “EmpiRx Health” may not be used or reproduced without written permission from EmpiRx Health.<br><span style="color: #f85a3e;"><a style="color: #ffffff;" href="https://www.empirxhealth.com/privacy-policy/">View our Privacy Policy.</a></span></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+</html>
