@@ -18,17 +18,26 @@
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-banner-form" mktoName="Show Banner with Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
+    <!-- Sections order -->
+    <meta class="mktoString" id="banner-form-order" mktoName="Banner Form Order" default="1">
+    <meta class="mktoString" id="header-order" mktoName="Header Order" default="2">
+    <meta class="mktoString" id="freetext-order" mktoName="Freetext Order" default="3">
+    <meta class="mktoString" id="formsection-order" mktoName="Banner Form Order" default="4">
+                                                                        
+
     <!-- Background, Buttons, and Text Color Meta Tags -->
-    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#333333">
-    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#161616">
-    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#161616">
 
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#161616">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#000000">
+        
+    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#333333">
+    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#161616">
+    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#161616"></meta>
 
 
     <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#42c1c6">
@@ -38,7 +47,7 @@
     <meta class="mktoColor" id="btnhoverclr" mktoName="Btn Hover Color" default="#000000">
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
-    <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="form1bgclr" mktoName="Form 1- Background Color" default="#ffffff">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#161616">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#161616">
     <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#42c1c6">
@@ -59,9 +68,9 @@
     <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
     <meta class="mktoString" mktoName="Freetext - H1(Freetext) Font Size (px)" id="freeTextH1size" default="32">
     <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="26">
+    <meta class="mktoString" mktoName="BannerForm - p Font Size (px)" id="banner-form-p-size" default="20">
     <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
     <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="26.6">
-
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="13">
 
     <!-- Banner Section Styling -->
@@ -77,6 +86,27 @@
     <!-- Free-Text Section Styling -->
     <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
 
+    <!-- Banner Form Section Styling -->
+    <meta class="mktoBoolean" id="banner-form-dir" mktoName="BannerForm - Form Left?" default="true" true_value="row-reverse" false_value="row" false_value_name="Right" true_value_name="Left">
+    <meta class="mktoBoolean" id="banner-form-secitondirection" mktoName="BannerForm - Section Row?" default="true" true_value="row" false_value="column" false_value_name="Column" true_value_name="Row">
+    <meta class="mktoBoolean" id="show-bannerform-img" mktoName="Show BannerForm Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" mktoName="Banner From BG- Image" id="banner-form-image" default="http://743-IGL-412.mktoweb.com/rs/743-IGL-412/images/banner.jpeg">
+     <meta class="mktoString" mktoName="Banner Form Bg Blend Mode" id="banner-form-bgblend-mode" default="none">
+     <meta class="mktoString" mktoName="BannerForm - Img Width (rem)" id="banner-form-img-width" default="50">
+    <meta class="mktoColor" id="form-2clr" mktoName="Form 2 Headline Color" default="#f4f4f4">
+    <meta class="mktoColor" id="banner-form-clr" mktoName="Banner Form  - Background Color" default="#f4f4f4">
+    <meta class="mktoColor" id="bannerFormHeaderColor" mktoName="BannerForm - Header Color" default="#161616">
+    <meta class="mktoColor" id="bannerFormTextColor" mktoName="BannerForm  - Text Color" default="#161616">
+    <meta class="mktoString" mktoName="BannnerForm - Top Padding (px)" id="bannerform-pad-top" default="1">
+    <meta class="mktoString" mktoName="BannnerForm - Bottom Padding (px)" id="bannerform-pad-btm" default="20">
+    <meta class="mktoString" mktoName="BannnerForm - Left Padding (px)" id="bannerform-pad-left" default="60">
+    <meta class="mktoString" mktoName="BannnerForm - Right Padding (px)" id="bannerform-pad-right" default="60">
+     <meta class="mktoColor" id="form2bgclr" mktoName="Form 2- Background Color" default="#f4f4f4">
+     <meta class="mktoString" id="form2-border-width" mktoName="Form 2- Brdr With" default="1">
+     <meta class="mktoColor" id="form2-border-clr" mktoName="Form 2- Brdr Clr" default="#000">
+     <meta class="mktoString" id="form2-border-rad" mktoName="Form 2- Brdr Radius" default="3">
+        
+        
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top Padding (px)" id="footerpadding-top" default="60">
     <meta class="mktoString" mktoName="Footer - Bottom Padding (px)" id="footerpadding-btm" default="0">
@@ -120,14 +150,17 @@
 
 
 
-      body {background:#fff;} 
+      body {background:#fff;display: flex; flex-direction:column;} 
 
-      #header h1 {
+      #header h1, #banner-form h1 {
         font-size: ${header-h1fontsize}px;
         font-family: ${fontfamily-headline}, sans-serif !important;
       }
       #header p {
         font-size: ${header-p-fontsize}px;
+      }
+      #banner-form p {
+          font-size: ${banner-form-p-size}px
       }
       h1 {
         font-size: ${h1fontsize}px;
@@ -204,8 +237,8 @@
       }
       .form-container{
         min-height:20px;
-
       }
+      
 
       .mktoForm input[type="text"],
       .mktoForm input[type="url"], 
@@ -238,15 +271,18 @@
         background-position:center;
         background-size:cover;
         display:${showbanner};
+        order: ${header-order};
         background-blend-mode: ${background-blend-mode};
       }
       #freetext{
         background-color:${freeTextBackgroundColor};
         display:${showsec1};
+        order: ${freetext-order};
       }
       #formsection{
         background-color:${mainformbgclr};
         display:${showformsec};
+        order: ${formsection-order};
       }
 
 
@@ -281,6 +317,7 @@
       }
       #brand{
         display:${showtoplogo-1};
+        order: -100;
       }
       #brand .logo-container{
         top:${sectionpaddingtb}px;
@@ -335,7 +372,7 @@
       }
       #formsection .form-container{
         max-width: 700px;
-        background-color:${formbgclr};
+        background-color:${form1bgclr};
         padding-top: ${formTopBottomPadding}rem;
         padding-bottom: ${formTopBottomPadding}rem;
         border-radius: 0.333em;
@@ -362,6 +399,7 @@
         color: ${formHeadLineColor} !important;
         font-size: ${formheadlinefontsize}px !important;
         font-family: ${fontfamily}, sans-serif !important;
+        text-align: center;
       }
       .mktoForm {
         padding: 1rem !important;
@@ -437,7 +475,7 @@
       }
       .mktoForm input:-ms-input-placeholder { /* IE 10+ */
         color:#3a3a3a !important;
-        font-family: ${fontfamily,} sans-serif !important;
+        font-family: ${fontfamily} sans-serif !important;
       }
       .mktoForm input:-moz-placeholder { /* Firefox 18- */
         color:#3a3a3a !important;
@@ -526,11 +564,67 @@
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
+      #bannerform-text h1{
+          color: ${bannerFormHeaderColor};
+      }
+      #bannerform-text p{
+          color: ${bannerFormTextColor};
+      }
+      
+      #banner-form {
+        display: ${show-banner-form};
+        order: ${banner-form-order};
+        background-color:${banner-form-clr};
+        background-image:url('${banner-form-image}');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        background-blend-mode: ${banner-form-bgblend-mode};
+        padding: ${bannerform-pad-top}px ${bannerform-pad-right}px ${bannerform-pad-btm}px ${bannerform-pad-left}px;
+      }
+      #banner-form .section-container, #banner-form .form-container {
+           margin: 2rem auto 1rem;
+      }
+      #banner-form .form-container {
+          background-color: ${form2bgclr};
+          border: solid ${form2-border-width}px ${form2-border-clr};
+          border-radius:${form2-border-rad}px;
+      }
+      #banner-form .section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        flex-direction: ${banner-form-dir};
+        justify-content: space-between;
+        width: 100% !important;
+      }
+      #banner-form .w50 {
+          flex: 1 0 400px;
+          max-width: 90vw;
+      }
+      #bannerform-formheadline h2 {
+          text-align: center;
+          color: ${form-2clr};
+      }
+      #banner-form .section-container {
+          display: flex;
+          gap: 2rem;
+          flex-direction: ${banner-form-secitondirection};
+         
+      }
+    #banner-form-img img {
+        width: ${banner-form-img-width}rem;
+    }
+    #banner-form-img {
+        display: ${show-bannerform-img};
+    }
+                                                                                                                                                                                                                                                                                                                
       #footer{
         display:${showfooter};
         background-color:${footerbgclr};
         color:${footerfontclr};
         font-size:${footerfontsize}px;
+        order: 100;
       }
 
       #footer .row1 {
@@ -720,6 +814,12 @@
         .mktoForm .mktoFormRow .mktoFormCol{
           margin-left:0 !important;
         }
+        #banner-form .section {
+            justify-content: center;
+        }
+        #banner-form .section-container {
+            flex-wrap: wrap;
+        }
       }
 
 
@@ -801,14 +901,41 @@
         </div>
 
         <div class="form-container w100">
-          <div class="mktoText" id="formheadline" mktoName="Form - Headline">
+          <div class="mktoText" id="formheadline" mktoName="Form 1 - Headline">
             <h2  class="bold">Form Headline</h2>
           </div>
-          <div class="mktoForm" id="form1" mktoName="Form"></div>
+          <div class="mktoForm" id="form1" mktoName="Form 1"></div>
         </div>
 
       </div>
     </div>
+    
+    
+        <div id="banner-form">
+      <div class="section">
+          <div class="section-container w50">
+        <div class="mktoText" id="bannerform-text" mktoName="Banner Form - Text">
+          <h1>
+            Lorem Ipsum
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+          <div class="mktoText" id="banner-form-img" mktoName="Banner Form Image">
+           <img src="http://743-IGL-412.mktoweb.com/rs/743-IGL-412/images/img1.png" alt="company graphics">
+          </div>
+        </div>
+           <div class="form-container w50">
+          <div class="mktoText" id="bannerform-formheadline" mktoName="Form 2 - Headline">
+            <h2  class="bold">Form Headline</h2>
+          </div>
+          <div class="mktoForm" id="form2" mktoName="Form 2"></div>
+        </div>
+
+      </div>
+    </div>
+
 
 
     <footer id="footer">
