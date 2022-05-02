@@ -28,7 +28,7 @@ we are building one responsive template
 (6) Icon List - two modules: horziontal icons "Icon List" and another - colun module " Icon List With Text" 
 (7) Secondary Image with Primary or Secondary CTA - for the there are: 2 cols with img and CTA, or 3 cols with img + cta, or "Hero Image Module with Headline, Subheadline and Cneter CTA module" - image resizes with padding left/right
 (8) Block CTA - Center CTA, or text modules
-(9) Footer - Fooer and Footer socical icons
+(9) Footer - Footer and Footer socical icons
 (10) Ad Block #1 - Left justified text and CTA - this is "Hero Image Left, Text + CTA Right"
 (11) Ad Block #2 - Right justified text and CTA - this is "Hero Image Left, Text + CTA Right"
 (12) Headline block - "Headline Module"
