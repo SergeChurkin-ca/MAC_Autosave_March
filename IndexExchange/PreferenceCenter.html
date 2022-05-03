@@ -47,7 +47,7 @@
   <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#00291F">
 
   <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#00291F">
-  <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#212529">
+  <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#00291F">
 
   <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#00291F">
   <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#4CD3CC">
@@ -59,15 +59,16 @@
 
   
   <!-- Font Size Meta Tags -->
-  <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
+  <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="45">
   <meta class="mktoString" mktoName="Freetext - H1(Freetext) Font Size (px)" id="freeTextH1size" default="32">
-  <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="26">
+  <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="24">
   <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
+  <meta class="mktoString" mktoName="Form Left Tetx Headline (px)" id="formlefttext-headline" default="45">
   <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="26.6">
-  <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
+  <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="24">
 
-  <meta class="mktoString" mktoName="P Line Height" id="p-line-height" default="1.4">
-  <meta class="mktoString" mktoName="H Line Height" id="h-line-height" default="1.2">
+  <meta class="mktoString" mktoName="P Line Height" id="p-line-height" default="1.25">
+  <meta class="mktoString" mktoName="H Line Height" id="h-line-height" default="1.1">
 
   <meta class="mktoString" mktoName="Body Letter Spacing (px)" id="body-letterspacing" default="0.24">
   <meta class="mktoString" mktoName="Button Letter Spacing (em)" id="button-letterspacing" default="0.1">
@@ -147,9 +148,11 @@
     #header h1 {
       font-size: ${header-h1fontsize}px;
       line-height: ${h-line-height};
+      font-weight: 400;
     }
     #header p {
       font-size: ${header-p-fontsize}px;
+      line-height: ${p-line-height};
 
     }
     h1 {
@@ -177,6 +180,7 @@
       line-height: ${p-line-height};
       font-size:${pfontsize}px;
       font-weight: 400;
+      line-height: 30px;
     }
     b, .bold, em{
       font-weight:bold;
@@ -371,7 +375,9 @@
   
     #formlefttext h2 {
       color: ${formSectionHeaderColor} !important;
-      font-weight: 500;
+      font-weight: 400;
+       font-size: ${formlefttext-headline}px;
+       line-height: 49.5px;
     }
 
     #formsection p,
@@ -398,7 +404,7 @@
       text-align:center;
       margin-bottom: 50px;
     }
-
+    
     #formheadline h2{
       color: ${formHeadLineColor} !important;
       font-size: ${formheadlinefontsize}px !important;
@@ -814,10 +820,10 @@
       </div>
       <div class="mktoText" id="bannertext" mktoName="Banner - Text">
         <h1>
-          Lorem Ipsum
+          Email Preference Center
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          Select which lists you would like to receive email communication from (select all that apply).
         </p>
       </div>
 
