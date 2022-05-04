@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        * {
+            font-family: 'Helvetica', sans-serif;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+            /* Safari and Chrome */
+        }
+        
+        body {
+            background: #fff;
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            background: #fff;
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+        }
+        
+        .wrapper {
+            width: 70vw;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        
+        .inner-container {
+            width: 70%;
+            margin: 0 auto;
+            border: solid 1px red;
+        }
+        /* typography */
+        
+        .logo h1 {
+            text-transform: uppercase;
+            color: #00559f;
+            font-size: 29px;
+            font-family: 'DejaVuSans', sans-serif;
+        }
+        
+        .logo span,
+        h4 span {
+            color: #ffcb04;
+        }
+        
+        .hero h2,
+        .hero h3 {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: #00559f;
+            margin-top: 2rem;
+            justify-content: flex-start;
+            text-align: left;
+            line-height: 30px;
+        }
+        
+        .txt-container h4 {
+            color: #ffffff;
+            line-height: 5px;
+            font-size: 20px;
+        }
+        
+        .promoicons-container h4,
+        .promoicons-container p {
+            color: #ffffff;
+        }
+        /* end of typpography */
+        
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+        
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* hero section */
+        
+        .logo img {
+            width: 7vw;
+            height: auto;
+            max-height: 100%;
+            min-width: 100px;
+        }
+        
+        .logo {
+            flex-direction: row;
+            border: solid 1px red;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .hero {
+            background: url(https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/UM-Propane-Advantage-Rackcard-bg2.jpg);
+            background-position: 54% 24%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .hero-img {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .hero-img .txt-container,
+        .hero-img .img-container {
+            width: 50%;
+        }
+        
+        .hero-img img {
+            position: relative;
+            z-index: 20;
+        }
+        
+        .division-wave {
+            position: relative;
+            margin-top: -8rem;
+            margin-bottom: -1rem;
+        }
+        /* end of hero */
+        /* promotions and form  */
+        
+        .promoicons-container,
+        .form-container {
+            background-color: #094DA4;
+            padding-top: 1rem;
+        }
+        
+        .promoicon {
+            padding: 0 5rem;
+            position: relative;
+        }
+        
+        .promoicons-container .row2 {
+            text-align: center;
+            position: relative;
+        }
+        
+        .form-container {
+            background-color: #00549f;
+        }
+        /* end of promotions and form */
+        
+        .icons-container {
+            width: 100%;
+            border-radius: 50%;
+            background: #ffffff;
+            position: relative;
+            z-index: 30;
+            padding: 1rem 8rem;
+            flex-direction: row;
+            gap: 1rem;
+            margin-top: -2rem;
+        }
+        
+        .icons-container .icon {
+            height: 2÷rem;
+            width: fit-content !important;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        /* footer */
+        
+        footer {
+            padding: 0 3rem;
+            text-align: center;
+            font-size: 10px;
+            margin-top: 1rem;
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: 'DejaVuSans';
+            src: url('https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/DejaVuSans.eot');
+            src: url('https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/DejaVuSans.ttf') format('truetype'), url('https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/DejaVuSans.woff') format('woff'), url('https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/DejaVuSans.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper flex">
+
+        <header>
+
+            <div class="hero-container flex">
+                <div class="hero">
+                    <div class="logo flex inner-container">
+                        <a href="#"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Ultramar-Logo.png" alt="logo"></a>
+                        <h1>delivering<span> more </span>for you</h1>
+                    </div>
+                    <div class="headline inner-container">
+                        <h2>Upgrade to Propane and get your First <br> Fill Free-Up to 1000L!
+                        </h2>
+                    </div>
+
+                    <div class="hero-img inner-container">
+                        <div class="txt-container">
+
+                            <h4>Meet Our Family</h4>
+                            <h4>Of Eco-Friendly</h4>
+                            <h4><span>Propane</span></h4>
+                            <h4><span>Heating Systems</span></h4>
+                        </div>
+                        <div class="img-container">
+                            <img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/all-equipment-3.png" alt="hero image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="division-wave">
+            <img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/divisionwave.png" alt="">
+        </div>
+
+        <section class="promoicons-container flex">
+            <div class="row1 flex inner-container">
+                <div class="promoicon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/promo-icons.png" alt="promo icon 1"></div>
+            </div>
+            <div class="row2 flex inner-container">
+                <h4>Limited Time Offer!</h4>
+                <p>until September 30, 2022</p>
+            </div>
+        </section>
+        <section class="form-container">
+            <div class="mktoForm" mktoName="Form 1" id="form-1"></div>
+        </section>
+        <section class="icons-container flex inner-container">
+            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Kerr-Logo-Vector1-no-background.png" alt="partner icon 1"></div>
+            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/AIREASE_ALL_WITHTAG_LOGOEPS-%28002%29.png" alt="partner icon 2"></div>
+            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Navien-Logo-With-TWHB.png" alt="partner icon 3"></div>
+            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/bradford white logo.JPG" alt="partner icon 4"></div>
+            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Viessmann logo.png" alt="partner icon 5"></div>
+        </section>
+        <footer>
+            <p>
+                Conditions apply. Up to 1000 L free with the purchase of a propane heating system, 500 L free with the purchase of a propane water heater. Cannot combine offers. Financing payments can be deferred 3 months from date of installation. Check with your local
+                branch to confirm propane service areas. <sup>&trade;</sup>Ultramar and Parkland reserve the right to cancel, terminate, modify or suspend this offer at any time with or without prior notice. <sup>&trade;</sup>Ultramar
+                is a registered trademark of Valero Energy Inc. used under license by Parkland Corporation. 06-04-22v1
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
