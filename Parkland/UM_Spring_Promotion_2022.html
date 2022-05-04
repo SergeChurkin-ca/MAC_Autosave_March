@@ -40,17 +40,19 @@
         }
         
         .inner-container {
-            width: 70%;
+            width: 61%;
             margin: 0 auto;
             border: solid 1px red;
         }
         /* typography */
         
-        .logo h1 {
+        .logo h1,
+        .logo span {
             text-transform: uppercase;
             color: #00559f;
-            font-size: 29px;
-            font-family: 'DejaVuSans', sans-serif;
+            font-size: 40px;
+            font-family: 'Fjalla One', sans-serif;
+            font-weight: 400;
         }
         
         .logo span,
@@ -65,21 +67,29 @@
             justify-content: center;
             text-align: center;
             color: #00559f;
-            margin-top: 2rem;
             justify-content: flex-start;
             text-align: left;
             line-height: 30px;
         }
         
+        .headline h2 {
+            font-size: 28px;
+        }
+        
         .txt-container h4 {
             color: #ffffff;
-            line-height: 5px;
-            font-size: 20px;
+            font-size: 26px;
+            margin: 0.3rem 0;
         }
         
         .promoicons-container h4,
         .promoicons-container p {
             color: #ffffff;
+            font-size: 35px;
+        }
+        
+        .promoicons-container p {
+            font-size: 22px;
         }
         /* end of typpography */
         
@@ -96,7 +106,7 @@
         /* hero section */
         
         .logo img {
-            width: 7vw;
+            width: 9vw;
             height: auto;
             max-height: 100%;
             min-width: 100px;
@@ -104,11 +114,14 @@
         
         .logo {
             flex-direction: row;
-            border: solid 1px red;
             justify-content: center;
             align-items: center;
             gap: 1.5rem;
-            margin-top: 1rem;
+        }
+        /* headline */
+        
+        .headline {
+            padding: 2rem 0.5rem;
         }
         
         .hero {
@@ -124,9 +137,17 @@
             flex-direction: row;
         }
         
-        .hero-img .txt-container,
+        .txt-container {
+            margin-top: 5rem;
+        }
+        
+        .hero-img .txt-container {
+            width: 40%;
+        }
+        
         .hero-img .img-container {
-            width: 50%;
+            width: 73%;
+            margin-right: -5rem;
         }
         
         .hero-img img {
@@ -141,6 +162,14 @@
         }
         /* end of hero */
         /* promotions and form  */
+        
+        .promoicons-container h4 {
+            margin: 2rem 0 0;
+        }
+        
+        .promoicons-container p {
+            margin: 0 0 3rem;
+        }
         
         .promoicons-container,
         .form-container {
@@ -169,7 +198,7 @@
             background: #ffffff;
             position: relative;
             z-index: 30;
-            padding: 1rem 8rem;
+            padding: 1rem 12vw;
             flex-direction: row;
             gap: 1rem;
             margin-top: -2rem;
@@ -200,6 +229,9 @@
             font-style: normal;
         }
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    </style>
 </head>
 
 <body>
@@ -221,10 +253,10 @@
                     <div class="hero-img inner-container">
                         <div class="txt-container">
 
-                            <h4>Meet Our Family</h4>
-                            <h4>Of Eco-Friendly</h4>
-                            <h4><span>Propane</span></h4>
-                            <h4><span>Heating Systems</span></h4>
+                            <h4>Meet Our Family<br>
+                                <h4>Of Eco-Friendly<br>
+                                    <h4><span>Propane</span><br>
+                                        <h4><span>Heating Systems</span></h4>
                         </div>
                         <div class="img-container">
                             <img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/all-equipment-3.png" alt="hero image">
