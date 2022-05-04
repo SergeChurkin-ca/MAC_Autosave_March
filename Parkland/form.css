@@ -1,0 +1,33 @@
+.mktoForm {
+    background: #094DA4;
+    width: 655px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: solid 3px white;
+    width: unset !important;
+    max-width: 600px;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel,
+.mktoForm .mktoRadioList>label,
+.mktoForm .mktoCheckboxList>label,
+.mktoForm div,
+.mktoForm span,
+.mktoForm label,
+.mktoForm p {
+    color: #ffffff;
+}
+
+.mktoForm .mktoSimple {
+    margin-left: 0 !important;
+}
+
+.mktoForm .mktoFormRow:nth-last-of-type(2) .mktoLabel {
+    margin-bottom: 2rem;
+}
+
+.mktoForm .mktoFormRow:nth-last-of-type(2) .mktoRadioList,
+.mktoForm .mktoFormRow:nth-last-of-type(2) .mktoCheckboxList {
+    float: none;
+}
