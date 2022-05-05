@@ -1,10 +1,34 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en">
+   <![endif]-->
+<!--[if IE 7 ]>
+   <html class="ie ie7" lang="en">
+      <![endif]-->
+<!--[if IE 8 ]>
+      <html class="ie ie8" lang="en">
+         <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
+<!--<![endif]-->
 
 <head>
     <title></title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta class="mktoBoolean" id="show-heroimg" mktoName="Show Hero Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-promoicon" mktoName="Show Promo Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-form" mktoName="Show Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon1" mktoName="Show Partner Icon 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon2" mktoName="Show Partner Icon 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon3" mktoName="Show Partner Icon 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon4" mktoName="Show Partner Icon 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon5" mktoName="Show Partner Icon 5?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+        
+    <meta class="mktoColor" id="promocontainer-bg" mktoName="Promo Section Bg Color" default="#094DA4">
+
     <link href="css/style.css" rel="stylesheet">
 
     <style>
@@ -42,7 +66,6 @@
         .inner-container {
             width: 61%;
             margin: 0 auto;
-            border: solid 1px red;
         }
         /* typography */
         
@@ -154,6 +177,7 @@
             margin-right: -5rem;
             flex: 1 0 350px;
             max-width: 100%;
+            display: ${show-heroimg};
         }
         
         .hero-img img {
@@ -175,27 +199,33 @@
         }
         
         .promoicons-container p {
-            margin: 0 0 3rem;
+            margin: 0 0 0.5rem;
         }
         
         .promoicons-container,
         .form-container {
-            background-color: #094DA4;
+            background-color: ${promocontainer-bg};
             padding-top: 1rem;
+            
         }
         
         .form-container {
             padding: 2rem 4rem 4rem;
+            display: ${show-form};
         }
-        
+        #form1 {
+            border: solid 3px #ffffff;
+        }
         .form-container .mktoForm {
             max-width: 100%;
+            
         }
         
         .promoicon {
             padding: 0 5rem;
             position: relative;
             max-width: 100%;
+            display: ${show-promoicon};
         }
         
         .promoicons-container .row2 {
@@ -223,6 +253,22 @@
             justify-content: center;
             align-content: center;
         }
+        .icons-container .icon1 {
+            display: ${show-icon1};
+        }
+        .icons-container .icon2 {
+            display: ${show-icon2};
+        }
+        .icons-container .icon3 {
+            display: ${show-icon3};
+        }
+        .icons-container .icon4 {
+            display: ${show-icon4};
+        }
+        .icons-container .icon5 {
+            display: ${show-icon5};
+        }
+     
         /* footer */
         
         footer {
@@ -308,17 +354,17 @@
 
             <div class="hero-container flex">
                 <div class="hero">
-                    <div class="logo flex inner-container">
+                    <div class="mktoText logo flex inner-container" id="navlogo" mktoName="Logo">
                         <a href="#"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Ultramar-Logo.png" alt="logo"></a>
                         <h1>delivering<span> more </span>for you</h1>
                     </div>
-                    <div class="headline inner-container">
+                    <div class="mktoText headline inner-container" mktoName="Headline" id="headline">
                         <h2>Upgrade to Propane and get your First <br> Fill Free-Up to 1000L!
                         </h2>
                     </div>
 
                     <div class="hero-img inner-container">
-                        <div class="txt-container">
+                        <div class="mktoText txt-container" mktoName="Banner Text" id="banner-txt">
 
                             <h4>Meet Our Family<br>
                                 <h4>Of Eco-Friendly<br>
@@ -326,7 +372,10 @@
                                         <h4><span>Heating Systems</span></h4>
                         </div>
                         <div class="img-container">
-                            <img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/all-equipment-3.png" alt="hero image">
+                            <div class="mktoImg" mktoName="Hero Image" id="heroimg">
+
+                                <img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/all-equipment-3.png" alt="hero image">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -335,33 +384,31 @@
         </header>
 
         <div class="division-wave">
-            <img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/divisionwave.png" alt="">
+            <div class="mktoImg" mktoName="Docor elem i division wave" id="divion-wave-decor">
+            <img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/divisionwave.png" alt="decoration element">
+                </div>
         </div>
 
         <section class="promoicons-container flex">
             <div class="row1 flex inner-container">
-                <div class="promoicon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/promo-icons.png" alt="promo icon 1"></div>
+                <div class="promoicon">
+                <div class="mktoImg" mktoName="Promo Icon 1" id="promo-icon1"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/promo-icons.png" alt="promo icon 1"></div>
             </div>
-            <div class="row2 flex inner-container">
+            </div>
+            <div class="mktoText row2 flex inner-container" mktoName="Limited Time Offer" id="lim-time-offer">
                 <h4>Limited Time Offer!</h4>
                 <p>until September 30, 2022</p>
             </div>
         </section>
         <section class="form-container flex">
-            <!-- <div class="mktoForm" mktoName="Form 1" id="form-1"> -->
-            <script src="//pages.bluewaveenergy.ca/js/forms2/js/forms2.min.js"></script>
-            <form id="mktoForm_8097"></form>
-            <script>
-                MktoForms2.loadForm("//pages.bluewaveenergy.ca", "452-UJJ-105", 8097);
-            </script>
-            <!-- </div> -->
+            <div class="mktoForm" mktoName="Form 1" id="form1"></div>
         </section>
         <section class="icons-container flex inner-container">
-            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Kerr-Logo-Vector1-no-background.png" alt="partner icon 1"></div>
-            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/AIREASE_ALL_WITHTAG_LOGOEPS-%28002%29.png" alt="partner icon 2"></div>
-            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Navien-Logo-With-TWHB.png" alt="partner icon 3"></div>
-            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/bradford white logo.JPG" alt="partner icon 4"></div>
-            <div class="icon"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Viessmann logo.png" alt="partner icon 5"></div>
+            <div class="icon icon1"><div class="mktoImg" mktoName="Patneer Logo 1" id="partner-logo-1"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Kerr-Logo-Vector1-no-background.png" alt="partner icon 1"></div></div>
+            <div class="icon icon2"><div class="mktoImg" mktoName="Patneer Logo 2" id="partner-logo-2"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/AIREASE_ALL_WITHTAG_LOGOEPS-%28002%29.png" alt="partner icon 2"></div></div>
+            <div class="icon icon3"><div class="mktoImg" mktoName="Patneer Logo 3" id="partner-logo-3"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Navien-Logo-With-TWHB.png" alt="partner icon 3"></div></div>
+            <div class="icon icon4"><div class="mktoImg" mktoName="Patneer Logo 4" id="partner-logo-4"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/bradford white logo.JPG" alt="partner icon 4"></div></div>
+            <div class="icon icon5"><div class="mktoImg" mktoName="Patneer Logo 5" id="partner-logo-5"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Viessmann logo.png" alt="partner icon 5"></div></div>
         </section>
         <footer>
             <p>
