@@ -138,7 +138,6 @@
             display: flex;
             flex-direction: row;
             min-height: 430px;
-            flex-wrap: wrap;
         }
         
         .txt-container {
@@ -153,12 +152,14 @@
         .hero-img .img-container {
             width: 73%;
             margin-right: -5rem;
-            flex: 1 0 300px;
+            flex: 1 0 350px;
+            max-width: 100%;
         }
         
         .hero-img img {
             position: relative;
             z-index: 20;
+            min-width: 225px;
         }
         
         .division-wave {
@@ -194,6 +195,7 @@
         .promoicon {
             padding: 0 5rem;
             position: relative;
+            max-width: 100%;
         }
         
         .promoicons-container .row2 {
@@ -203,7 +205,7 @@
         /* end of promotions and form */
         
         .icons-container {
-            width: 100%;
+            width: 100% !important;
             border-radius: 50%;
             background: #ffffff;
             position: relative;
@@ -232,7 +234,7 @@
         /* end of footer */
         /* media queries */
         
-        @media (max-width: 1075px) {
+        @media (max-width: 1115px) {
             .wrapper {
                 width: 80vw;
             }
@@ -244,6 +246,44 @@
             }
             .hero {
                 background-position: 54% -4vh;
+            }
+            .hero-img img {
+                max-width: 400px;
+                width: 35vw;
+            }
+            .hero-img .img-container {
+                text-align: center;
+                margin-right: unset;
+            }
+        }
+        
+        @media (max-width: 880px) {
+            .hero-img {
+                flex-wrap: wrap;
+            }
+            .promoicons-container {
+                padding-top: 3rem;
+            }
+        }
+        
+        @media (max-width: 700px) {
+            .inner-container {
+                width: 90%
+            }
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            .promoicon {
+                padding: 0;
+            }
+            .promoicons-container {
+                padding-top: 6rem;
+                z-index: 10;
+                margin-top: 0rem;
+            }
+            .form-container {
+                padding: 2rem 1rem 4rem !important;
             }
         }
     </style>
