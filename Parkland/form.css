@@ -31,3 +31,19 @@
 .mktoForm .mktoFormRow:nth-last-of-type(2) .mktoCheckboxList {
     float: none;
 }
+
+@media (max-width: 915px) {
+    .mktoForm .mktoFormRow:nth-last-of-type(2) .mktoLabel {
+        width: 100% !important;
+    }
+    .mktoForm .mktoFormRow:nth-of-type(4) .mktoFormCol,
+    .mktoForm .mktoFormRow:nth-of-type(4) .mktoFieldWrap,
+    .mktoForm .mktoFormRow:nth-of-type(4) input[type="text"] {
+        width: 100% !important;
+    }
+    .mktoForm .mktoFormRow:nth-last-of-type(3) textarea,
+    .mktoForm .mktoFormRow:nth-last-of-type(3) .mktoFieldWrap,
+    .mktoForm .mktoFormRow:nth-last-of-type(3) .mktoFieldDescriptor {
+        width: 100% !important;
+    }
+}
