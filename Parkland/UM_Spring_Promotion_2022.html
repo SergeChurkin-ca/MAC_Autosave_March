@@ -21,6 +21,7 @@
     <meta class="mktoBoolean" id="show-heroimg" mktoName="Show Hero Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-promoicon" mktoName="Show Promo Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-form" mktoName="Show Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-call" mktoName="Show Call?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-icon1" mktoName="Show Partner Icon 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-icon2" mktoName="Show Partner Icon 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-icon3" mktoName="Show Partner Icon 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -28,6 +29,15 @@
     <meta class="mktoBoolean" id="show-icon5" mktoName="Show Partner Icon 5?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
         
     <meta class="mktoColor" id="promocontainer-bg" mktoName="Promo Section Bg Color" default="#094DA4">
+    <meta class="mktoColor" id="logo-txt-color" mktoName="Logo Text Color" default="#00559f">
+    <meta class="mktoColor" id="logo-accent-color" mktoName="Logo Span Color" default="#ffcb04">
+    <meta class="mktoColor" id="hero-h2-color" mktoName="Hero h2 Color" default="#00559f">
+    <meta class="mktoColor" id="hero-h4-color" mktoName="Hero h2 Color" default="#ffffff">
+    <meta class="mktoColor" id="promo-text-clr" mktoName="Promo Text Color" default="#ffffff">
+        
+<meta class="mktoString" id="logo-width" mktoName="Logo width (vw)" default="9" allowHtml="true">
+<meta class="mktoString" id="promo-row2-btm-pad" mktoName="Promo Text Bottom Pad (rem)" default="1" allowHtml="true">
+<meta class="mktoString" id="call-mg-top" mktoName="Call Margin top(rem)" default="0" allowHtml="true">
 
     <link href="css/style.css" rel="stylesheet">
 
@@ -45,6 +55,7 @@
         body::-webkit-scrollbar {
             display: none;
             /* Safari and Chrome */
+            
         }
         
         body {
@@ -55,6 +66,8 @@
             background: #fff;
             -ms-overflow-style: none;
             /* Internet Explorer 10+ */
+            overflow-x: hidden;
+            margin: 0 !important;
         }
         
         .wrapper {
@@ -72,7 +85,7 @@
         .logo h1,
         .logo span {
             text-transform: uppercase;
-            color: #00559f;
+            color: ${logo-txt-color};
             font-size: 40px;
             font-family: 'Fjalla One', sans-serif;
             font-weight: 400;
@@ -80,7 +93,7 @@
         
         .logo span,
         h4 span {
-            color: #ffcb04;
+            color: ${logo-accent-color};
         }
         
         .hero h2,
@@ -89,7 +102,7 @@
             display: flex;
             justify-content: center;
             text-align: center;
-            color: #00559f;
+            color: ${hero-h2-color};
             justify-content: flex-start;
             text-align: left;
             line-height: 30px;
@@ -101,17 +114,20 @@
         }
         
         .txt-container h4 {
-            color: #ffffff;
+            color: ${hero-h4-color};
             font-size: 28px;
             margin: 0.3rem 0;
         }
         
         .promoicons-container h4,
         .promoicons-container p {
-            color: #ffffff;
+            color: ${promo-text-clr};
             font-size: 35px;
         }
-        
+        #call h3, #call a {
+            color: ${promo-text-clr};
+            margin: 0;
+        }
         .promoicons-container p {
             font-size: 22px;
         }
@@ -130,7 +146,7 @@
         /* hero section */
         
         .logo img {
-            width: 9vw;
+            width: ${logo-width}vw;
             height: auto;
             max-height: 100%;
             min-width: 100px;
@@ -211,16 +227,24 @@
         
         .form-container {
             padding: 2rem 4rem 4rem;
-            display: ${show-form};
+           
         }
         #form1 {
             border: solid 3px #ffffff;
+             display: ${show-form};
         }
         .form-container .mktoForm {
             max-width: 100%;
             
         }
-        
+        /* end of form */
+        #call {
+            display: ${show-call};
+            margin-top: ${call-mg-top}rem;
+        }
+        #call a {
+            text-decoration: none;
+        }
         .promoicon {
             padding: 0 5rem;
             position: relative;
@@ -231,6 +255,7 @@
         .promoicons-container .row2 {
             text-align: center;
             position: relative;
+            padding-bottom: ${promo-row2-btm-pad}rem;
         }
         /* end of promotions and form */
         
@@ -313,6 +338,9 @@
         }
         
         @media (max-width: 700px) {
+            .wrapper {
+                width: 100vw;
+            }
             .inner-container {
                 width: 90%
             }
@@ -402,6 +430,10 @@
         </section>
         <section class="form-container flex">
             <div class="mktoForm" mktoName="Form 1" id="form1"></div>
+             <div class="mktoText flex inner-container" mktoName="Call" id="call">
+                <h3>Call 1-888-888-8888</h3>
+                <h3><a href="#">link</a></h3>
+            </div>
         </section>
         <section class="icons-container flex inner-container">
             <div class="icon icon1"><div class="mktoImg" mktoName="Patneer Logo 1" id="partner-logo-1"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Kerr-Logo-Vector1-no-background.png" alt="partner icon 1"></div></div>
@@ -410,6 +442,7 @@
             <div class="icon icon4"><div class="mktoImg" mktoName="Patneer Logo 4" id="partner-logo-4"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/bradford white logo.JPG" alt="partner icon 4"></div></div>
             <div class="icon icon5"><div class="mktoImg" mktoName="Patneer Logo 5" id="partner-logo-5"><img src="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/Viessmann logo.png" alt="partner icon 5"></div></div>
         </section>
+          
         <footer>
             <p>
                 Conditions apply. Up to 1000 L free with the purchase of a propane heating system, 500 L free with the purchase of a propane water heater. Cannot combine offers. Financing payments can be deferred 3 months from date of installation. Check with your local
