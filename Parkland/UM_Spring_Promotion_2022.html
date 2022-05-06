@@ -17,6 +17,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+     <meta class="mktoString" mktoName="Banner Background" id="bannerimage" default="https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/UM-Propane-Advantage-Rackcard-bg2.jpg">
 
     <meta class="mktoBoolean" id="show-heroimg" mktoName="Show Hero Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-promoicon" mktoName="Show Promo Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -166,7 +168,7 @@
         }
         
         .hero {
-            background: url(https://pages.bluewaveenergy.ca/rs/452-UJJ-105/images/UM-Propane-Advantage-Rackcard-bg2.jpg);
+            background:url('${bannerimage}');
             background-position: 54% 33%;
             background-repeat: no-repeat;
             background-size: cover;
