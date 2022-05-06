@@ -11,6 +11,12 @@
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
 
+     <!-- Sections Order -->
+     <meta class="mktoString" mktoName="Header Order" id="header-order" default="1">
+     <meta class="mktoString" mktoName="FreeText Order" id="freetext-order" default="2">
+     <meta class="mktoString" mktoName="Form Section Order" id="formsection-order" default="3">
+     <meta class="mktoString" mktoName="Video Section Order" id="video-order" default="4">
+       
     <!-- Show and Hide Meta Tags -->
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -44,7 +50,7 @@
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
     <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#585B5E">
     <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#585B5E">
-    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#000000">
     <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#8f4017">
     <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#8f4017">
@@ -100,7 +106,17 @@
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="0">
 
-
+    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
+    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+         <meta class="mktoString" mktoName="Video Module Padding Top" id="vid-mod-padding-top" default="0">
+    <meta class="mktoString" mktoName="Video Txt Pad Top/Btn" id="vid-txt-pad-topbtm" default="1">
+    <meta class="mktoString" mktoName="Video Txt Pad Left/Right" id="vid-txt-pad-leftright" default="1">
+    <meta class="mktoString" mktoName="Video Module Padding Bottom" id="vid-mod-padding-bottom" default="80">
+    <meta class="mktoString" mktoName="Video Module Margin Top" id="vid-mod-mg-top" default="0">
+    <meta class="mktoString" mktoName="Video Module Margin Bottom" id="vid-mod-mg-bottom" default="0">
 
     <style>
       ${googlefontimport}
@@ -117,7 +133,7 @@
 
 
 
-      body {background:#fff;} 
+      body {background:#fff;display:flex; flex-direction: column} 
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
@@ -236,8 +252,20 @@
         background-color:${mainformbgclr};
         display:${showformsec};
       }
-
-
+      
+      #brand {
+        order: -100;
+      }
+      #header {
+        order: ${header-order};
+      }
+      #freetext {
+        order: ${freetext-order};
+      }
+      #formsection {
+        order: ${formsection-order};
+      }
+      
       #brand .section{
         display:flex;
         flex-direction:column;
@@ -498,11 +526,50 @@
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
+
+      .video-container {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .video-container .w50 {
+        flex: 1 0 300px;
+      }
+      #video {
+        background-color:${videobgcolor};
+        display:${videoshow};
+        order:${video-order};
+         padding: ${vid-mod-padding-top}px 0 ${vid-mod-padding-bottom}px 0 ;
+        margin: ${vid-mod-mg-top}px 0 ${vid-mod-mg-bottom}px;
+      }
+      #videotext {
+        padding: ${vid-txt-pad-topbtm}rem ${vid-txt-pad-leftright}rem;
+      }
+      #video .left {
+        background-color:${videoleftbgcolor};
+      }
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+
       #footer{
         display:${showfooter};
         background-color:${footerbgclr};
         color:${footerfontclr};
         font-size:${footerfontsize}px;
+        order: 100;
       }
 
       #footer .row1 {
@@ -739,6 +806,31 @@
       </div>
     </div>
 
+    <!-- Youtube Video -->
+    <div class="container_100" id="video">
+      <div class="video-container section">
+        <div class="left w50">
+          <div class="mktoText" id="videotext" mktoName="Youtube Video - Copy">
+            <h2>Lorem Ipsumn</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis amet repellendus impedit magnam quaerat similique ipsa praesentium, sequi, minus molestias id! Ad fugit, cum deleniti dignissimos impedit harum iure facilis.</p>
+          </div>
+        </div>
+        <div class="video w50">
+          <div class="videoWrapper videoWrapper169 js-videoWrapper">
+            <!-- YouTube iframe. -->
+            <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+            <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+            <iframe class="videoIframe js-videoIframe" src="${videoembed}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+
+            <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+            <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter});">Play video</button>
+            <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text2" mktoName="Video Button 2 Text">external close button</span></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Video -->
 
     <footer id="footer">
       <div class="footer-container section flex">
@@ -791,6 +883,8 @@
 
     </footer>
 
+  <script src='https://go.sambanova.ai/rs/639-JEM-474/images/mac-jquery.min.js'></script>
+  <script src="https://go.sambanova.ai/rs/639-JEM-474/images/video-script.js"></script>
 
   </body>
 </html>

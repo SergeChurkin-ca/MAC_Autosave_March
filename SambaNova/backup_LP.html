@@ -94,6 +94,7 @@
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="16">
 
     <!-- Form Section Styling -->
+    <meta class="mktoString" mktoName="Form Container Width (%)" id="form-container-width" default="60">
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
@@ -198,7 +199,7 @@
       }
       .form-container{
         min-height:20px;
-
+        width: ${form-container-width}% !important;
       }
 
       .mktoForm input[type="text"],
@@ -599,6 +600,9 @@
         #brand .logo-container{
           top:40px;
         }
+        .form-container {
+          width: 100% !important;
+        }
         #formsection .lefttext{
           margin-right:0;
           width:100%;
@@ -711,7 +715,7 @@
     <div id="formsection">
       <div class="section flex">
 
-        <div class="w50 lefttext">
+        <div class="w100 lefttext">
           <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
             <h2>
               Lorem ipsum dolor sit amet
