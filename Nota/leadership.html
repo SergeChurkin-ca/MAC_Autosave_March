@@ -1,0 +1,63 @@
+<div id="links" class="container_100 section leadership" style="background-color:{{ module.field_group.background_color.color }};padding-top:{{ module.field_group.padding_top }}px;padding-bottom:{{ module.field_group.padding_bottom }}px;">
+    <div class="container_inner">
+
+        <div class="cards_container_2">
+            {{ module.title }}
+            <div class="divider-2"></div>
+            <div class="flex-container">
+                <div class="card-inner-container block-reveal" style="display:{{ module.show_or_hide_cards.show_card_6 }};">
+                    <div class="card">
+                        <div class="cardicon" id="cardicon6">
+                            <img class="cardicon-img" src="{{ module.card_6.card_6_icon.src }}" alt="{{ module.card_6.card_6_icon.alt }}" {{ sizeAttrs }}>
+                        </div>
+                        <div class="cardtext" id="brief-text6">
+                            {% inline_rich_text field="card_6.card_6_text" value="{{ module.card_6.card_6_text }}" %}
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner-container block-reveal" style="display:{{ module.show_or_hide_cards.show_card_1 }};">
+                    <div class="card">
+                        <div class="cardicon" id="cardicon1">
+                            <img class="cardicon-img" src="{{ module.card_1.card_1_icon.src }}" alt="{{ module.card_1.card_1_icon.alt }}" {{ sizeAttrs }}>
+                        </div>
+                        <div class="cardtext" id="brief-text1">
+                            {% inline_rich_text field="card_1.card_1_text" value="{{ module.card_1.card_1_text }}" %}
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner-container block-reveal" style="display:{{ module.show_or_hide_cards.show_card_4 }};">
+                    <div class="card">
+                        <div class="cardicon" id="cardicon4">
+                            <img class="cardicon-img" src="{{ module.card_4.card_4_icon.src }}" alt="{{ module.card_4.card_4_icon.alt }}" {{ sizeAttrs }}>
+                        </div>
+                        <div class="cardtext" id="brief-text4">
+                            {% inline_rich_text field="card_4.card_4_text" value="{{ module.card_4.card_4_text }}" %}
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner-container block-reveal" style="display:{{ module.show_or_hide_cards.show_card_5 }};">
+                    <div class="card">
+                        <div class="cardicon" id="cardicon5">
+                            <img class="cardicon-img" src="{{ module.card_5.card_5_icon.src }}" alt="{{ module.card_5.card_5_icon.alt }}" {{ sizeAttrs }}>
+                        </div>
+                        <div class="cardtext" id="brief-text5">
+                            {% inline_rich_text field="card_5.card_5_text" value="{{ module.card_5.card_5_text }}" %}
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner-container block-reveal" style="display:{{ module.show_or_hide_cards.show_card_2 }};">
+                    <div class="card">
+                        <div class="cardicon" id="cardicon2">
+                            <img class="cardicon-img" src="{{ module.card_2.card_2_icon.src }}" alt="{{ module.card_2.card_2_icon.alt }}" {{ sizeAttrs }}>
+                        </div>
+                        <div class="cardtext" id="brief-text2">
+                            {% inline_rich_text field="card_2.card_2_text" value="{{ module.card_2.card_2_text }}" %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
