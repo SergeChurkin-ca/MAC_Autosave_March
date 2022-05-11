@@ -60,8 +60,37 @@
             flex-direction: column;
         }
         
+        .header {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
         .checkmark .container {
             padding: 0.75rem 0;
+        }
+        
+        .checkmark .row {
+            flex-wrap: nowrap;
+        }
+        
+        .checkmark-container {
+            width: fit-content;
+        }
+        
+        .checkmark p {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            width: fit-content;
+        }
+        
+        .checkmark {
+            text-align: center !important;
+        }
+        
+        .checkmark i {
+            font-size: 2.5rem !important;
+            margin-right: 1rem;
         }
         
         main {
@@ -237,10 +266,6 @@
             display: flex;
         }
         
-        .checkmark {
-            text-align: center !important;
-        }
-        
         .flex-container {
             display: flex;
             flex-direction: column;
@@ -264,6 +289,19 @@
             #mainForm-1 {
                 margin: 0 auto 2rem !important;
             }
+            .checkmark .row {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+            .checkmark-container {
+                width: 50% !important;
+            }
+            .checkmark p {
+                width: 100%;
+                margin: 0.4rem auto;
+                margin: 0 auto;
+            }
         }
         
         @media only screen and (max-width: 767px) {
@@ -286,6 +324,9 @@
         }
         
         @media only screen and (max-width: 600px) {
+            .checkmark-container {
+                width: 80% !important;
+            }
             .testimonial {
                 width: 100%;
                 margin: 0 auto;
@@ -332,7 +373,7 @@
     <section class="banner">
         <div class="container text-center">
             <div class="header" pardot-region="header-text">
-                <h1><span style="color:#ffffff;">6 Ways Hygienic Electrical Infrastructure Streamlines Preventative Maintenance and Manufacturing Operations
+                <h1><span style="color:#ffffff;">6 Ways Hygienically Designed Infrastructure Makes Your Preventative Maintenance More Efficient.
                     </span></h1>
                 <h2 class="mt-4"><span style="color:#ecf0f1;">  </span></h2>
             </div>
@@ -342,17 +383,17 @@
 
     <section class="checkmark">
         <div class="container">
-            <div class="row justify-content-around">
-                <div class="col-md-4">
-                    <p pardot-region="icon-header-1" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i> Prevent corrosion and contamination
+            <div class="row justify-content-between">
+                <div class="checkmark-container">
+                    <p pardot-region="icon-header-1" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i>Prevent corrosion <br>and contamination
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <p pardot-region="icon-header-2" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i> Improve hygiene, cleanability, and safety
+                <div class="checkmark-container">
+                    <p pardot-region="icon-header-2" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i>Improve hygiene, <br>cleanability, and safety
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <p pardot-region="icon-header-3" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i> Reduce maintenance costs over time </p>
+                <div class="checkmark-container">
+                    <p pardot-region="icon-header-3" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i>Reduce maintenance <br>costs over time </p>
                 </div>
             </div>
         </div>
@@ -390,7 +431,7 @@
                 </div>
             </div>
             <div class="col-md-3 px-3">
-                <img class="info-img" src="https://storage.pardot.com/391962/16517642949u0lPiIQ/rss_intent_based_1_pager_lp_brochure_graphic.png" alt="graphic image">
+                <img pardot-region="info-image" pardot-region-type="image" class="info-img" src="https://storage.pardot.com/391962/16517642949u0lPiIQ/rss_intent_based_1_pager_lp_brochure_graphic.png" alt="graphic image">
             </div>
         </section>
 
