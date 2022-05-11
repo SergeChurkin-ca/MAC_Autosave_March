@@ -1,0 +1,25 @@
+/* accordion banner */
+
+.accordion .item-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    height: 3rem;
+}
+
+.accordion {
+    display: flex;
+}
+
+.hidden-box {
+    display: none;
+}
+
+.open .hidden-box {
+    display: block;
+}
+
+.active {
+    background-color: lightblue;
+}
