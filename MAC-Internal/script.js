@@ -1,3 +1,4 @@
+// toggling tabs
 const items = document.querySelectorAll(".item-title");
 
 for (var i = 0; i < items.length; i++) {
@@ -10,3 +11,14 @@ for (var i = 0; i < items.length; i++) {
 
     });
 }
+
+// arrow accordion 
+
+const containers = document.querySelectorAll("li", ":after");
+
+containers.forEach((item) => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("open");
+        item.previousElementSibling.classList.toggle("expand")
+    });
+});

@@ -1,3 +1,42 @@
+@import url('decoration.css');
+
+/* general setup */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.btn {
+    margin: 0 auto;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* end of general setup  */
+
+
+/* header */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1,
+.col-2 {
+    width: 50%;
+}
+
+
+/* end of header */
+
+
 /* accordion banner */
 
 .accordion {
@@ -15,6 +54,12 @@
 
 .hidden-box {
     display: none;
+    top: 4rem;
+}
+
+.open,
+.closed {
+    width: 25%;
 }
 
 .open .hidden-box {
@@ -27,4 +72,25 @@
 
 .active {
     background-color: lightblue;
+    border-bottom: none !important;
+}
+
+
+/* end of accordion banner */
+
+
+/* toggling hiddeng content */
+
+.hidden-content {
+    display: none;
+}
+
+.expand,
+.open .hidden-content {
+    display: block;
+}
+
+.services-list li {
+    width: 100%;
+    float: left;
 }

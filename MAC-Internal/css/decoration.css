@@ -1,0 +1,29 @@
+.arrow-expand {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    display: flex;
+    padding: 5px;
+}
+
+
+/* .arrow-expand svg {
+    border: solid 1.5px;
+    border-radius: 50%;
+    width: 2rem;
+    height: auto;
+} */
+
+.services-list li:after {
+    content: "";
+    background-image: url('../assets/arrow-down-solid.svg');
+    background-size: 20px 20px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.open:after {
+    transform: rotate(180deg);
+}
