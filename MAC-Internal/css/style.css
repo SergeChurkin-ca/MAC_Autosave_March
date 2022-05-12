@@ -1,4 +1,5 @@
 @import url('decoration.css');
+@import url('typography.css');
 
 /* general setup */
 
@@ -42,6 +43,8 @@ header {
 .accordion {
     display: flex;
     position: relative;
+    background: lightblue;
+    /* border: solid 2px; */
 }
 
 .accordion .item-title {
@@ -54,11 +57,15 @@ header {
 
 .hidden-box {
     display: none;
-    top: 4rem;
+    top: 4.5rem;
+    border-left: solid 2px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
 }
 
 .open,
-.closed {
+.closed,
+.item {
     width: 25%;
 }
 
@@ -83,14 +90,17 @@ header {
 
 .hidden-content {
     display: none;
+    transition: all 1s;
 }
 
 .expand,
 .open .hidden-content {
     display: block;
+    transition: all 1s;
 }
 
 .services-list li {
     width: 100%;
     float: left;
+    margin: 0.5rem auto;
 }
