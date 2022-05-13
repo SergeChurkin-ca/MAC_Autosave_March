@@ -353,11 +353,11 @@ font-family: Arial, serif !important;
 
         /* Custom Dark Mode Background Color */
         .darkmode { background-color: #20282F !important; }
-        .text-dark {color:#253750 !important;}
+
         /* Custom Dark Mode Font Colors */
         h1, h2, p, span, a, b { color: #ffffff !important; }
         .mktoText {color: #ffffff !important;}
-
+        .text-dark {color:#253750 !important;}
         /* Custom Dark Mode Text Link Color */
         .link { color: #91ADD4 !important; }
       }
@@ -413,11 +413,17 @@ font-family: Arial, serif !important;
                 <table class="mktoModule" mktoName="Banner" mktoAddByDefault="true" id="banner1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td class="nobannerimg ${bgimg}" bgColor="${banner-bg-color}" valign="top" background="${banner1_img}" style="background-image:url('${banner1_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: ${bgmode};">
-                      <!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:${outlook-ht1}px;">
-<v:fill type="frame" src="${banner1_img}" Color="${banner-bg-color}" />
+   
+  
+  
+  <!--
+  [if gte mso 9]>                                   
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:300px;">
+<v:fill type="tile" src="${banner1_img}" Color="ffffff" />
 <v:textbox inset="0,0,0,0">
-<![endif]-->
+<![endif]
+-->
+
                       <table cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="690">
                         <tr>
                           <td valign="top">
@@ -482,11 +488,13 @@ font-family: Arial, serif !important;
                 <table class="mktoModule" mktoName="Banner + Dynamic CTA" mktoAddByDefault="false" id="banner1dy" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td class="nobannerimg ${bgimg}" bgColor="${banner-bg-color}" valign="top" background="${banner1_img}" style="background-image:url('${banner1_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: ${bgmode};">
-                      <!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:${outlook-ht1}px;">
-<v:fill type="frame" src="${banner1_img}" Color="${banner-bg-color}" />
+                      <!--
+                      [if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;display:block;height:300px;display:block">
+<v:fill type="tile" src="${banner1_img}" Color="${banner-bg-color}" />
 <v:textbox inset="0,0,0,0">
-<![endif]-->
+<![endif]
+-->
                       <table cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="690">
                         <tr>
                           <td valign="top">
@@ -547,6 +555,7 @@ font-family: Arial, serif !important;
                 </table>
                 <!--Banner  Ends-->
 
+	
 
                 <!-- Hero Image Right, Text + CTA Left -->
                 <table class="mktoModule" mktoName="Hero Image Right, Text + CTA Left" id="imgRight1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1110,7 +1119,7 @@ font-family: Arial, serif !important;
                     <td class="darkmode" bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                       <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
                         <tr>
-                          <td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                         <tr>
                           <td>
@@ -1590,8 +1599,8 @@ font-family: Arial, serif !important;
             <tr>
               <td class="darkmode" class="nobannerimg ${bgimg}" class="darkmode" bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                 <!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:${outlook-ht1}px;">
-<v:fill type="frame" src="${banner-color_img}" Color="${banner-bg-color}" />
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;display:block;height:${outlook-ht1}px;">
+<v:fill type="tile" src="${banner-color_img}" Color="${banner-bg-color}" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
                 <table class="inner_table-colorbanner" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px;border-spacing: 0px;border-collapse: collapse;" border="0" width="640">
@@ -1666,8 +1675,9 @@ font-family: Arial, serif !important;
             <tr>
               <td class="nobannerimg ${bgimg}" bgColor="${banner-bg-color}" valign="top" background="${banner2_img}" style="background-image:url('${banner2_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: ${bgmode};">
                 <!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:${outlook-ht1}px;">
-<v:fill type="frame" src="${banner2_img}" Color="${banner-bg-color}" />
+                
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;display:block;height:300px;">
+<v:fill type="tile" src="${banner2_img}" Color="${banner-bg-color}" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
                 <table cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="690">
