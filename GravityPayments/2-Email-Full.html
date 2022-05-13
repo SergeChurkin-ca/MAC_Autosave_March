@@ -24,6 +24,7 @@ font-family: Arial, serif !important;
 
     <meta mktoModuleScope="true" class="mktoColor" id="mod-bg-color" mktoName="Background Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="banner-bg-color" mktoName="Banner Tint Color" default="#91c73d" />
+    <meta mktoModuleScope="true" class="mktoColor" id="banner-color-bg-color" mktoName="Banner Tint Color" default="#91c73d" />
     <meta mktoModuleScope="true" class="mktoColor" id="bannerdark-bg-Color" mktoName="Background Color" default="#131313" />
     <meta mktoModuleScope="true" class="mktoColor" id="banner-lite-Color" mktoName="Background Color" default="#ffffff" />
 
@@ -44,6 +45,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad25" mktoname="Top Padding (px)" default="25" />
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad30" mktoname="Top Padding (px)" default="30" />
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad40" mktoname="Top Padding (px)" default="40" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="top_pad60" mktoname="Top Padding (px)" default="60" />
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad70" mktoname="Top Padding (px)" default="70" />
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad90" mktoname="Top Padding (px)" default="90" />
     <meta mktoModuleScope="true" class="mktoNumber" id="top_pad100" mktoname="Top Padding (px)" default="100" />
@@ -68,6 +70,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="right_pad40" mktoname="Right Padding (px)" default="40" />
     <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding (px)" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-top_pad" mktoname="Logo Top Padding (px)" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="margin_top" mktoname="Logo Top Padding (px)" default="30" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="margin_bottom" mktoname="Logo Top Padding (px)" default="30" />
 
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize40" mktoname="Headline Font Size" default="40" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize32" mktoname="Headline Font Size" default="32" />
@@ -87,6 +91,7 @@ font-family: Arial, serif !important;
 
     <meta mktoModuleScope="true" class="mktoImg" id="banner1_img" mktoName="Background Image" default="https://go.gravitypayments.com/rs/526-GXU-388/images/banner.png">
     <meta mktoModuleScope="true" class="mktoImg" id="banner2_img" mktoName="Background Image" default="https://go.gravitypayments.com/rs/526-GXU-388/images/image 22.png">
+    <meta mktoModuleScope="true" class="mktoImg" id="banner-color_img" mktoName="Background Image" default="https://dummyimage.com/179x142/EDF3EC/EDF3EC">
     <meta mktoModuleScope="true" id="outlook-ht1" class="mktoNumber" mktoname="BG Image Outlook Height (px)" default="360" min="0" max="1000" step="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="20" />
 
@@ -248,6 +253,10 @@ font-family: Arial, serif !important;
         }
         .inner_table2 {
           width: 100% !important;
+          margin: 0 auto !important;
+        }
+        .inner_table-colorbanner {
+          width: 90% !important;
           margin: 0 auto !important;
         }
         .logomob {
@@ -1529,9 +1538,88 @@ font-family: Arial, serif !important;
               </td>
             </tr>
           </table>
-          <!--2 Col Module-->                                                                                                  
+          <!--2 Col Module-->        
+
+
+          <!--Color Banner-->
+                <table class="mktoModule" mktoName="Color Banner" mktoAddByDefault="true" id="banner-color" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                  
+                  <tr>
+                    <td class="nobannerimg ${bgimg}" valign="top"  >
+                      <!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:${outlook-ht1}px;">
+<v:fill type="frame" src="${banner-color_img}" Color="${banner-bg-color}" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+                      <table class="inner_table-colorbanner main" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="690">
+                      <tr>
+                        <td height="${margin_top}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                      </tr>
+                        <tr>
+                          <td class="nobannerimg ${bgimg}" background="${banner-color_img}" bgColor="${banner-color-bg-color}" valign="top" style="background-image:url('${banner-color_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: ${bgmode};">
+                            <table class="inner_table" width="590" style="margin: 0 auto; width: 590px; border-spacing: 0px; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" align="center">
+                              <tr>
+                                <td height="${top_pad60}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${headlineFontColor};font-weight:bold; font-size: ${headlineFontSize32}px; line-height: 105%; mso-line-height-rule: exactly; text-align: ${alignCenter}">
+                                  <div class="mktoText" mktoName="Headline" id="banner-color-head">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${headlineFontColor}; font-size: ${CopySize20}px; line-height: 125%; mso-line-height-rule: exactly; text-align: ${alignCenter}">
+                                  <div class="mktoText" mktoName="Text" id="banner-color-text">
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="25" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td valign="top">
+                                  <div class="mktoText" id="banner-color-btns" mktoname="Button">
+                                    <div>
+                                      <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
+                                        <tbody>
+                                          <tr>
+                                            <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; border:3px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
+                                              <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 2px 15px; display:inline-block" href="${btnURL}">${btnText}</a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="${btm_pad60}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                        <td height="${margin_top}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                      </tr>
+                      </table>
+                      <!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]-->
+                    </td>
+                  </tr>
+                </table>
+                <!-- Color Banner  Ends-->
+
+
           <!--Banner-->
-                <table class="mktoModule" mktoName="Banner + Dynamic CTA" mktoAddByDefault="false" id="banner1dy" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <table class="mktoModule" mktoName="Banner Hero + Center CTA" mktoAddByDefault="false" id="banner-hero" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td class="nobannerimg ${bgimg}" bgColor="${banner-bg-color}" valign="top" background="${banner2_img}" style="background-image:url('${banner2_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: ${bgmode};">
                       <!--[if gte mso 9]>
@@ -1548,7 +1636,7 @@ font-family: Arial, serif !important;
                               </tr>
                               <tr>
                                 <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${headlineFontColorwhite};font-weight:bold; font-size: ${headlineFontSize40}px; line-height: 105%; mso-line-height-rule: exactly; text-align: ${alignCenter}">
-                                  <div class="mktoText" mktoName="Headline" id="bannerheaddy">
+                                  <div class="mktoText" mktoName="Headline" id="banner-hero-head">
                                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                                   </div>
                                 </td>
@@ -1559,7 +1647,7 @@ font-family: Arial, serif !important;
                               </tr>
                               <tr>
                                 <td valign="top">
-                                  <div class="mktoText" mktoName="Banner Dynamic CTA" id="banner-btnsdy">
+                                  <div class="mktoText" mktoName="Banner Dynamic CTA" id="banner-hero-btn">
                                     <div>
                                       <table cellspacing="0" cellpadding="0" border="0" align="${alignCenter}">
                                         <tbody>
