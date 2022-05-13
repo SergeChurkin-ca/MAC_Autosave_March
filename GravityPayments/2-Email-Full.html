@@ -123,8 +123,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoString" id="btn2Text" mktoName="Button 2 Text" default="Read More">
     <meta mktoModuleScope="true" class="mktoNumber" id="btn2FontSize" mktoname="Button 2 Font Size (px)" default="18" />
     <meta mktoModuleScope="true" class="mktoString" id="btn2URL" mktoName="Button 2 URL" default="#">
-
-
+    
     <meta mktoModuleScope="true" class="mktoColor" id="DividerBGColor" mktoname="Divider Color" default="#d7d7d7" />
     <meta mktoModuleScope="true" class="mktoNumber" id="DividerHeight" mktoname="Divider Height (px)" default="1" />
     <meta mktoModuleScope="true" class="mktoString" id="DividerWidth" mktoname="Divider Width (%)" default="90" />
@@ -143,6 +142,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="logowidth2" mktoname="Logo Width (px)" default="41" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logocolwidth" mktoname="Column Width (px)" default="170" />
     <meta mktoModuleScope="true" class="mktoNumber" id="icon-width" mktoname="Icon Width (px)" default="30" />
+
+    <meta mktoModuleScope="true" class="mktoString" id="color-banner-borderrad" mktoName="Banner Border Radius (px)" default="10">
 
     <title>{{my.ViewAsWebpage Title}}</title>
     <link rel="icon" href="{{my.Favicon URL}}" type="image/x-icon">
@@ -1545,18 +1546,18 @@ font-family: Arial, serif !important;
                 <table class="mktoModule" mktoName="Color Banner" mktoAddByDefault="true" id="banner-color" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   
                   <tr>
-                    <td class="nobannerimg ${bgimg}" valign="top"  >
+                    <td class="nobannerimg ${bgimg}" class="darkmode" bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                       <!--[if gte mso 9]>
 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:${outlook-ht1}px;">
 <v:fill type="frame" src="${banner-color_img}" Color="${banner-bg-color}" />
 <v:textbox inset="0,0,0,0">
 <![endif]-->
-                      <table class="inner_table-colorbanner main" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:690px;border-spacing: 0px;border-collapse: collapse;" border="0" width="690">
+                      <table class="inner_table-colorbanner" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px;border-spacing: 0px;border-collapse: collapse;" border="0" width="640">
                       <tr>
                         <td height="${margin_top}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
                       </tr>
                         <tr>
-                          <td class="nobannerimg ${bgimg}" background="${banner-color_img}" bgColor="${banner-color-bg-color}" valign="top" style="background-image:url('${banner-color_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: ${bgmode};">
+                          <td class="nobannerimg ${bgimg}" background="${banner-color_img}" bgColor="${banner-color-bg-color}" valign="top" style="background-image:url('${banner-color_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: ${bgmode};border-radius:${color-banner-borderrad}px">
                             <table class="inner_table" width="590" style="margin: 0 auto; width: 590px; border-spacing: 0px; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" align="center">
                               <tr>
                                 <td height="${top_pad60}" style="line-height:1px;font-size:1px;">&nbsp;</td>
