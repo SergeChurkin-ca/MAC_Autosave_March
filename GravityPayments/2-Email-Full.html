@@ -56,6 +56,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="iconlist_btm_pad2" mktoname="IconList Btm Pag" default="2" />
     <meta mktoModuleScope="true" class="mktoNumber" id="iconlist_btm_pad15" mktoname="IconList Btm Pag" default="15" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad0" mktoname="Bottom Padding (px)" default="0" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad1" mktoname="Bottom Padding (px)" default="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad5" mktoname="Bottom Padding (px)" default="5" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad10" mktoname="Bottom Padding (px)" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad15" mktoname="Bottom Padding (px)" default="15" />
@@ -94,6 +95,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoImg" id="banner-color_img" mktoName="Background Image" default="https://dummyimage.com/179x142/EDF3EC/EDF3EC">
     <meta mktoModuleScope="true" id="outlook-ht1" class="mktoNumber" mktoname="BG Image Outlook Height (px)" default="360" min="0" max="1000" step="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad" mktoname="Button Buttom Padding" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad40" mktoname="Button Buttom Padding" default="40" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead" mktoName="Button Text Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnBGColorhead" mktoName="Button BG Color" default="#519D18">
@@ -322,7 +325,7 @@ font-family: Arial, serif !important;
         }
         .block2 {
           display: block;
-
+          width: 100%;
         }
       }
       @media only screen and (max-width: 340px) {
@@ -349,8 +352,8 @@ font-family: Arial, serif !important;
         .light-logo { display:none; display:none !important; }
 
         /* Custom Dark Mode Background Color */
-        .darkmode { background-color: #253750 !important; }
-
+        .darkmode { background-color: #20282F !important; }
+        .text-dark {color:#253750 !important;}
         /* Custom Dark Mode Font Colors */
         h1, h2, p, span, a, b { color: #ffffff !important; }
         .mktoText {color: #ffffff !important;}
@@ -551,19 +554,12 @@ font-family: Arial, serif !important;
                     <td class="darkmode" bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                       <table class="inner_table2" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:690px;border-collapse: collapse;border-spacing: 0;" border="0" width="690">
                         <tr>
-                          <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          <td height="${top_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                         <tr>
                           <td>
-                            <table dir="rtl" cellpadding="0" cellspacing="0" align="right" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table dir="ltr" cellpadding="0" cellspacing="0" align="right" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                               <tr>
-                                <th dir="ltr" width="300" align="left" class="block2 right" valign="top" style="vertical-align: top;">
-                                  <div class="mktoImg" mktoname="Image" id="imgRight-img">
-                                    <div>
-                                      <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/image 21.png" width="100%" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:padding:0px; margin:0px auto; border-spacing:0;max-width:100%;"/>
-                                    </div>
-                                  </div>
-                                </th>
                                 <th class="hidden2" style="font-size:1px; line-height: 1px;" width="${right_pad40}">&nbsp;</th>
                                 <th dir="ltr" align="left" class="block2 top_pad" valign="top" style="vertical-align: top;">
                                   <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -588,13 +584,13 @@ font-family: Arial, serif !important;
                                       <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                     </tr>
                                     <tr>
-                                      <td align="${cta-align}"> 
+                                      <td align="${cta-align}">
                                         <div class="mktoText" id="imgright-btn1" mktoname="Button">
                                           <div>
                                             <table cellpadding="0" cellspacing="0" border="0">
                                               <tbody>
                                                 <tr>
-                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 10px 25px;; border-radius: ${btnBorderRadius}px;">
+                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 10px 25px;; border-radius:${btnBorderRadius}px;">
                                                     <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                   </td>
                                                 </tr>
@@ -604,97 +600,111 @@ font-family: Arial, serif !important;
                                         </div>
                                       </td>
                                     </tr>
+                                    <tr>
+                                      <td height="${cta-btm-pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
                                   </table>
                                 </th>
                                 <th class="hidden2" style="font-size:1px; line-height: 1px;" width="${left_pad40}">&nbsp;</th>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--Image Right Text Left with btn-->   
-
-                <!-- Hero Image Left, Text + CTA Right-->
-                <table class="mktoModule" mktoName="Hero Image Left, Text + CTA Right" id="imgleft1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td class="darkmode" bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                      <table class="inner_table2" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:690px;border-collapse: collapse;border-spacing: 0;" border="0" width="690">
-                        <tr>
-                          <td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                              <tr>
-                                <th width="236" align="align" class="block2 right" valign="top" style="vertical-align: top;">
-                                  <div class="mktoImg" mktoname="Image" id="imgleft-img">
-                                    <div>
-                                      <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/iStock-1323925825 1.png" width="236" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;"
-                                           />
+                                <th dir="rtl" width="300" align="right" class="block2 right" valign="top" style="vertical-align: top;">
+                                  <div class="mktoImg" mktoname="Image" id="imgRight-img" width="300" style="width:300px;">
+                                    <div style="padding-bottom: 20px; padding-left: 20px;background-image:url('https://go.gravitypayments.com/rs/526-GXU-388/images/dots-decor.png');background-position:bottom left;background-size:35px;background-repeat:no-repeat;">
+                                      <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/image 21.png" width="300" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:padding:0px; margin:0px auto; border-spacing:0;max-width:100%;" />
                                     </div>
                                   </div>
                                 </th>
-                                <th class="hidden2" style="font-size:1px; line-height: 1px;" width="${left_pad40}">&nbsp;</th>
-                                <th align="center" class="block2 top_pad" valign="top" style="vertical-align: top;">
-                                  <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                    <tr>
-                                      <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px; font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
-                                        <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>Lorem Ipsum Dolor Sit Amet</div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};">
-                                        <div class="mktoText" mktoName="Text" id="imgleft-copy">
-                                          <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                      <td align="${cta-align}">
-                                        <div class="mktoText" id="imgleft-btn1" mktoname="Button">
-                                          <div>
-                                            <table cellpadding="0" cellspacing="0" border="0">
-                                              <tbody>
-                                                <tr>
-                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 10px 25px;; border-radius: ${btnBorderRadius}px;">
-                                                    <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </th>
-                                <th class="hidden2" style="font-size:1px; line-height: 1px;" width="${right_pad40}">&nbsp;</th>
+
                               </tr>
                             </table>
                           </td>
                         </tr>
                         <tr>
-                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          <td height="${btm_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                 </table>
-                <!-- end of Hero Image Left, Text + CTA Right-->
+                <!--Image Right Text Left with btn-->
+
+             <!-- Hero Image Left, Text + CTA Right-->
+<table class="mktoModule" mktoName="Hero Image Left, Text + CTA Right" id="imgleft1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <td class="darkmode" bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+            <table class="inner_table2" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:690px;border-collapse: collapse;border-spacing: 0;" border="0" width="690">
+                <tr>
+                    <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <tr>
+                              <th class="hidden2" style="font-size:1px; line-height: 1px;" width="${left_pad40}">&nbsp;</th>
+                                <th align="center" class="block2 top_pad" valign="top" style="vertical-align: top;">
+                                    <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                        <tr>
+                                            <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px; font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
+                                                <div class="mktoText" mktoName="Headline" id="imgleft-headline">
+                                                    <div>Lorem Ipsum Dolor Sit Amet</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};">
+                                                <div class="mktoText" mktoName="Text" id="imgleft-copy">
+                                                    <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="${cta-align}">
+                                                <div class="mktoText" id="imgleft-btn1" mktoname="Button">
+                                                    <div>
+                                                        <table cellpadding="0" cellspacing="0" border="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 10px 25px;; border-radius: ${btnBorderRadius}px;">
+                                                                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="${cta-btm-pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th class="hidden2" style="font-size:1px; line-height: 1px;" width="${right_pad40}">&nbsp;</th>
+                                <th width="300" align="right" class="block2 right" valign="top" style="vertical-align: top;">
+                                    <div class="mktoImg" mktoname="Image" id="imgleft-img">
+                                        <div>
+                                            <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/iStock-1323925825 1.png" width="300" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;max-width:100%;" />
+                                        </div>
+                                    </div>
+                                </th>
+                                
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- end of Hero Image Left, Text + CTA Right-->
 
                 <!-- Hero Image Right, Text + CTA Left -->
                 <table class="mktoModule" mktoName="Hero Image Right, Text + CTA Left" id="imgRight1-2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -706,16 +716,8 @@ font-family: Arial, serif !important;
                         </tr>
                         <tr>
                           <td>
-                            <table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table dir="ltr" cellpadding="0" cellspacing="0" align="right" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                               <tr>
-                                <th dir="ltr" width="300" align="left" class="block2 right" valign="top" style="vertical-align: top;">
-                                  <div class="mktoImg" mktoname="Image" id="imgRight-img-2">
-                                    <div>
-                                      <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/image 21.png" width="300" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;"
-                                           />
-                                    </div>
-                                  </div>
-                                </th>
                                 <th class="hidden2" style="font-size:1px; line-height: 1px;" width="${right_pad40}">&nbsp;</th>
                                 <th dir="ltr" align="left" class="block2 top_pad" valign="top" style="vertical-align: top;">
                                   <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -730,8 +732,7 @@ font-family: Arial, serif !important;
                                       <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                     </tr>
                                     <tr>
-                                      <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
-                                                 ">
+                                      <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}">
                                         <div class="mktoText" mktoName="Text" id="imgright-SubHeadline-2">
                                           <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
                                         </div>
@@ -741,8 +742,8 @@ font-family: Arial, serif !important;
                                       <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                     </tr>
                                     <tr>
-                                      <td align="${cta-align}"> 
-                                        <div class="mktoText" id="imgright-btn1-2" mktoname="Button">
+                                      <td align="${cta-align}">
+                                        <div class="mktoText" id="imgright-btn" mktoname="Button">
                                           <div>
                                             <table cellpadding="0" cellspacing="0" border="0">
                                               <tbody>
@@ -757,21 +758,32 @@ font-family: Arial, serif !important;
                                         </div>
                                       </td>
                                     </tr>
+                                    <tr>
+                                      <td height="${cta-btm-pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
                                   </table>
                                 </th>
                                 <th class="hidden2" style="font-size:1px; line-height: 1px;" width="${left_pad40}">&nbsp;</th>
+                                <th dir="rtl" width="300" align="right" class="block2 right" valign="top" style="vertical-align: top;">
+                                  <div class="mktoImg" mktoname="Image" id="imgRight-img-2">
+                                    <div>
+                                      <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/image 21.png" width="300" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:padding:0px; margin:0px auto; border-spacing:0;max-width:100%;" />
+                                    </div>
+                                  </div>
+                                </th>
+
                               </tr>
                             </table>
                           </td>
                         </tr>
                         <tr>
-                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          <td height="${btm_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                 </table>
-                <!--Image Right Text Left with btn-->   
+                <!--Image Right Text Left with btn-->
 
 
                 <!--3 Col image with CTA-->
@@ -1270,11 +1282,13 @@ font-family: Arial, serif !important;
                           <th width="${icon-width}" align="left" class="center" valign="top" style="vertical-align: top;">
                             <div class="mktoImg" mktoname="Image" id="icon-list-1">
                               <div>
-                                <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                <img class="image-positive" src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                <img class="image-negative" src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector-reverse.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:none;" />
+
                               </div>
                             </div>
                           </th>
-                          <th class="hidden2" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                          <th class="hidden3" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
 
                           <th align="left" class="block" valign="top" style="vertical-align:${valign-middle};">
                             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1288,15 +1302,13 @@ font-family: Arial, serif !important;
                             </table>
                           </th>
                         </tr>
-                        <tr>
-                          <td height="${iconlist_btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
+
                       </table>
                     </td>
                   </tr>
 
                   <tr>
-                    <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="${btm_pad1}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                   </tr>
                 </table>
               </td>
@@ -1322,11 +1334,12 @@ font-family: Arial, serif !important;
                           <th width="${icon-width}" align="left" class="center" valign="top" style="vertical-align: top;">
                             <div class="mktoImg" mktoname="Image" id="icon-list-2">
                               <div>
-                                <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector%281%29.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                <img class="image-positive" src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector%281%29.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                <img class="image-negative" src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector%281%29-reverse.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:none;" />
                               </div>
                             </div>
                           </th>
-                          <th class="hidden2" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                          <th class="hidden3" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
 
                           <th align="left" class="block" valign="top" style="vertical-align:${valign-middle};">
                             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1340,15 +1353,13 @@ font-family: Arial, serif !important;
                             </table>
                           </th>
                         </tr>
-                        <tr>
-                          <td height="${iconlist_btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
+
                       </table>
                     </td>
                   </tr>
 
                   <tr>
-                    <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="${btm_pad1}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                   </tr>
                 </table>
               </td>
@@ -1363,8 +1374,6 @@ font-family: Arial, serif !important;
                   <tr>
                     <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                   </tr>
-
-
                   <tr>
                     <td>
                       <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1375,11 +1384,12 @@ font-family: Arial, serif !important;
                           <th width="${icon-width}" align="left" class="center" valign="top" style="vertical-align: top;">
                             <div class="mktoImg" mktoname="Image" id="icon-list-3">
                               <div>
-                                <img src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector%282%29.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                <img class="image-positive" src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector%282%29.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                <img class="image-negative" src="https://go.gravitypayments.com/rs/526-GXU-388/images/Vector%282%29-reverse.png" width="${icon-width}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:none;" />
                               </div>
                             </div>
                           </th>
-                          <th class="hidden2" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                          <th class="hidden3" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
 
                           <th align="left" class="block" valign="top" style="vertical-align:${valign-middle};">
                             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1393,15 +1403,13 @@ font-family: Arial, serif !important;
                             </table>
                           </th>
                         </tr>
-                        <tr>
-                          <td height="${iconlist_btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
+
                       </table>
                     </td>
                   </tr>
 
                   <tr>
-                    <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="${btm_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                   </tr>
                 </table>
               </td>
@@ -1598,7 +1606,7 @@ font-family: Arial, serif !important;
                         </tr>
                         <tr>
                           <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${headlineFontColor};font-weight:bold; font-size: ${headlineFontSize32}px; line-height: 105%; mso-line-height-rule: exactly; text-align: ${alignCenter}">
-                            <div class="mktoText" mktoName="Headline" id="banner-color-head">
+                            <div class="mktoText text-dark" mktoName="Headline" id="banner-color-head">
                               <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                             </div>
                           </td>
@@ -1607,8 +1615,8 @@ font-family: Arial, serif !important;
                           <td height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                         <tr>
-                          <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${headlineFontColor}; font-size: ${CopySize20}px; line-height: 125%; mso-line-height-rule: exactly; text-align: ${alignCenter}">
-                            <div class="mktoText" mktoName="Text" id="banner-color-text">
+                          <td class="text-dark" style="font-family: '${fontfamily}',Arial, sans-serif; color: ${headlineFontColor}; font-size: ${CopySize20}px; line-height: 125%; mso-line-height-rule: exactly; text-align: ${alignCenter}">
+                            <div class="mktoText text-dark" mktoName="Text" id="banner-color-text">
                               <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                             </div>
                           </td>
