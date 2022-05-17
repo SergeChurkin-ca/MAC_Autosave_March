@@ -29,7 +29,7 @@ const arrow = document.querySelectorAll(".arrow-container > .arrow-toggle")
 for (let i = 0; i < arrows.length; i++) {
     arrows[i].addEventListener('click', function() {
         let current = document.getElementsByClassName('toggled-content');
-        current[0].className = current[0].className.replace('toggled-content', 'untoggled');
-        arrow[i].style = 'transform:rotate(180deg);'
+        current[0].classList.toggle('untoggled');
+        arrow[i].classList.toggle('rotate')
     })
 }

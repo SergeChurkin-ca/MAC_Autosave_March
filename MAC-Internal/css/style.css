@@ -200,11 +200,13 @@ header .col-1 .btn {
 /* end of accordion banner */
 
 
-/* toggling hiddeng content */
+/* toggling hidden content */
 
 .hidden-content {
     display: none;
     transition: all 1s;
+    float: left;
+    width: 90%;
 }
 
 .expand,
@@ -256,4 +258,14 @@ main {
 .toggled-content {
     display: none;
     transition: all 0.5s;
+}
+
+.untoggled {
+    display: block;
+    transition: all 1s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: all 0.2s;
 }
