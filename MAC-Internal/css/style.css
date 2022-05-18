@@ -294,16 +294,47 @@ main {
 
 /* sections */
 
+main .inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .section-1,
 .section-2,
 .section-3 {
-    width: 60vw;
+    width: 70vw;
     margin-top: 2rem;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding: 1.5rem 2rem;
+    padding: 0;
     background: #fff;
     max-width: 900px;
+}
+
+main .section-inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0 4rem;
+}
+
+.section-1 .section-title {
+    background-color: #53BCAB;
+}
+
+.section-2 .section-title {
+    background-color: #F15A24;
+}
+
+.section-3 .section-title {
+    background-color: #2CA08E;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0;
+    padding: 0.9rem;
+    margin-bottom: 1.5rem;
 }
 
 .arrow-container {
@@ -313,7 +344,12 @@ main {
 
 .arrow-toggle {
     position: absolute;
-    top: 0.6rem;
+    top: -1.8rem;
+    left: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
 }
 
 .toggled-content {
@@ -330,6 +366,3 @@ main {
     transform: rotate(180deg);
     transition: all 0.2s;
 }
-
-
-/* packages sections */
