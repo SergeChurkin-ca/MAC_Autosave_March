@@ -117,13 +117,13 @@ header .col-1 .btn {
 .mktoForm {
     display: flex !important;
     justify-content: space-between !important;
-    max-width: 400px !important;
+    max-width: 450px !important;
     margin-right: 0rem !important;
 }
 
 .mktoForm .mktoFormRow {
-    width: calc(49% - 0.4rem) !important;
-    margin: 0.8% 0.2rem;
+    width: calc(49.5% - 0.2rem) !important;
+    margin: 0.8% 0rem;
 }
 
 .mktoForm input[type="text"],
@@ -134,7 +134,22 @@ header .col-1 .btn {
 .mktoForm input[type="date"],
 .mktoForm textarea.mktoField,
 .mktoForm select.mktoField {
-    padding: 9px 12px !important;
+    padding: 13px 15px !important;
+}
+
+.mktoForm input[type="text"]::placeholder,
+.mktoForm input[type="url"]::placeholder,
+.mktoForm input[type="email"]::placeholder,
+.mktoForm input[type="tel"]::placeholder,
+.mktoForm input[type="number"]::placeholder,
+.mktoForm input[type="date"]::placeholder,
+.mktoForm textarea.mktoField::placeholder,
+.mktoForm select.mktoField::placeholder {
+    color: #124559 !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif;
+    mix-blend-mode: darken;
 }
 
 .mktoButton {
@@ -175,7 +190,7 @@ header .banner {
     align-items: center;
     justify-content: center;
     height: 3.5rem;
-    margin: 1.5rem 0 0 0;
+    margin: 1.3rem 0 0 0;
     padding: 0 2rem;
     background-color: #1B998B;
 }
@@ -190,7 +205,16 @@ header .banner {
     background-color: #fff;
     margin: 2rem;
     border-radius: 15px;
-    padding: 2rem 4rem;
+    padding: 4rem 6rem;
+    height: 25rem;
+    position: relative;
+}
+
+.box-inner .btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
 }
 
 .box-inner h2,
@@ -225,7 +249,7 @@ header .banner {
     background-color: #54BCAB !important;
     border-bottom: none !important;
     height: 4rem !important;
-    margin-top: 0.5rem !important;
+    margin-top: 0.2rem !important;
     border-top: solid 0.7rem #1B998B !important;
     font-size: 18px !important;
 }
@@ -261,7 +285,7 @@ header .banner {
 
 main {
     position: absolute;
-    top: 115vh;
+    top: 130vh;
     width: 100%;
     background-color: #F9B348;
     padding-bottom: 4rem;
@@ -306,3 +330,6 @@ main {
     transform: rotate(180deg);
     transition: all 0.2s;
 }
+
+
+/* packages sections */

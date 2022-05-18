@@ -13,7 +13,7 @@ for (let i = 0; i < items.length; i++) {
 
 // arrow accordion 
 
-const containers = document.querySelectorAll("li", ":after");
+const containers = document.querySelectorAll(".list-row-1", ":after");
 
 containers.forEach((item) => {
     item.addEventListener("click", () => {
