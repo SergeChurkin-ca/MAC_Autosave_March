@@ -81,6 +81,10 @@ a {
 
 /* header */
 
+header .flex {
+    margin-top: 1rem;
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -95,12 +99,20 @@ header .inner-container {
 header .col-1 .btn {
     margin-right: 100%;
     font-weight: 700;
+    position: relative;
+    z-index: 20;
+}
+
+header .row {
+    border: solid 1px red;
+    flex-wrap: wrap;
 }
 
 .col-1,
 .col-2 {
     width: 50%;
     position: relative;
+    flex: 1 0 450px;
 }
 
 .col-1 .btn {
@@ -164,10 +176,6 @@ header .col-1 .btn {
 
 
 /* menu box banner */
-
-header .flex {
-    margin-top: 1rem;
-}
 
 header .banner {
     margin-top: 3rem;

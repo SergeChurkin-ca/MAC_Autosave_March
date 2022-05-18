@@ -1,14 +1,14 @@
 /* tow circles */
 
 .dot1 {
-    width: 42vh;
-    height: 36vh;
+    width: 45vh;
+    height: 39vh;
     background-color: #54BCAB;
     border-radius: 50%;
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     opacity: 0.8;
-    right: -2%;
+    right: -5%;
     z-index: 2;
 }
 
@@ -20,9 +20,33 @@
     position: absolute;
     bottom: 0;
     opacity: 0.8;
-    right: 59%;
+    right: 62%;
     bottom: 8rem;
     z-index: 1;
+}
+
+@media (max-width: 1368px) {
+    .dot2 {
+        right: 72%;
+    }
+}
+
+@media(max-width: 1125px) {
+    .dot2 {
+        right: 43%;
+    }
+}
+
+@media(max-width: 961px) {
+    .dot2 {
+        right: 52%;
+    }
+}
+
+@media(max-width: 789px) {
+    .dot2 {
+        right: 64%;
+    }
 }
 
 .form-container {
