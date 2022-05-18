@@ -2,13 +2,13 @@
 
 .dot1 {
     width: 42vh;
-    height: 33vh;
+    height: 36vh;
     background-color: #54BCAB;
     border-radius: 50%;
     position: absolute;
     bottom: 2rem;
     opacity: 0.8;
-    right: -5%;
+    right: -2%;
     z-index: 2;
 }
 
@@ -20,7 +20,7 @@
     position: absolute;
     bottom: 0;
     opacity: 0.8;
-    right: 56%;
+    right: 59%;
     bottom: 8rem;
     z-index: 1;
 }
@@ -32,22 +32,29 @@
 .services-list li:after {
     content: "";
     background-image: url('../assets/arrow-down-solid.svg');
-    background-size: 20px 20px;
+    background-size: 23px 23px;
+    background-position: center;
     display: block;
-    width: 22px;
-    height: 22px;
+    width: 38px;
+    height: 38px;
     background-repeat: no-repeat;
     float: right;
-    border: solid;
+    border: solid 2px #124559;
     border-radius: 50%;
-    margin-top: -1rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
 }
 
 .open:after {
-    transform: rotate(180deg);
-    filter: invert(1);
-    background-color: white;
-    border: solid 2px white !important;
+    background-image: url('../assets/arrow-white.svg') !important;
+    background-color: #124559;
+    border: solid 2px #124559 !important;
     transition: all 0.1s;
+}
+
+.item-title,
+.btn,
+.services-list li::after,
+.arrow-toggle {
+    cursor: pointer;
 }

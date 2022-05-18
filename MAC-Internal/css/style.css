@@ -3,6 +3,10 @@
 
 /* general setup */
 
+html {
+    scrollbar-width: none;
+}
+
 body {
     background: #fff;
     -ms-overflow-style: none;
@@ -32,7 +36,6 @@ body::-webkit-scrollbar {
     width: 80vw;
     margin: 0 auto;
     max-width: 1200px;
-    border: solid 5px pink;
 }
 
 .btn {
@@ -270,14 +273,14 @@ header .banner {
 .expand,
 .open .hidden-content {
     display: block;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 .services-list li {
     width: 100%;
     float: left;
     margin: 0.5rem auto;
-    border-bottom: solid 1px #124559;
+    border-bottom: solid 1.5px #124559;
 }
 
 
@@ -315,7 +318,17 @@ main .inner-container {
 main .section-inner {
     width: 90%;
     margin: 0 auto;
-    padding: 1rem 0 4rem;
+    padding: 0.5rem 0 4rem;
+    text-align: center;
+}
+
+main .section-1 .section-inner,
+main .toggled-content {
+    text-align: left;
+}
+
+main .toggled-content {
+    padding-top: 1rem;
 }
 
 .section-1 .section-title {
@@ -337,6 +350,10 @@ main .section-inner {
     margin-bottom: 1.5rem;
 }
 
+main .price {
+    margin-bottom: 2rem;
+}
+
 .arrow-container {
     margin: 0rem auto;
     position: relative;
@@ -344,7 +361,7 @@ main .section-inner {
 
 .arrow-toggle {
     position: absolute;
-    top: -1.8rem;
+    bottom: -6rem;
     left: 0;
     right: 0;
     width: 60px;
@@ -365,4 +382,13 @@ main .section-inner {
 .rotate {
     transform: rotate(180deg);
     transition: all 0.2s;
+}
+
+main .services-list li:last-child,
+main .list-row:last-child {
+    margin-bottom: 3rem !important;
+}
+
+.list-row-1 {
+    margin-bottom: 0.5rem !important;
 }
