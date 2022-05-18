@@ -1,9 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
 header h1,
 header p,
 header h2 {
     color: #fff;
 }
 
+header h1 {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 39px;
+    max-width: 550px;
+}
+
+header p {
+    margin-top: 0.5rem;
+    max-width: 550px;
+    font-size: 19px;
+}
+
 .list-row-1 span {
     font-weight: 800;
+}
+
+.btn a,
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    font-size: 15px !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+}
+
+.banner h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.banner .box-inner h3 {
+    color: #124559;
 }

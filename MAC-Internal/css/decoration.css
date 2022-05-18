@@ -1,3 +1,34 @@
+/* tow circles */
+
+.dot1 {
+    width: 42vh;
+    height: 33vh;
+    background-color: #54BCAB;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2rem;
+    opacity: 0.8;
+    right: -5%;
+    z-index: 2;
+}
+
+.dot2 {
+    width: 12vh;
+    height: 12vh;
+    background-color: #F9B348;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.8;
+    right: 56%;
+    bottom: 8rem;
+    z-index: 1;
+}
+
+.form-container {
+    z-index: 3;
+}
+
 .services-list li:after {
     content: "";
     background-image: url('../assets/arrow-down-solid.svg');
@@ -9,6 +40,8 @@
     float: right;
     border: solid;
     border-radius: 50%;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
 }
 
 .open:after {

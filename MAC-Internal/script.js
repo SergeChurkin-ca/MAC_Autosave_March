@@ -22,14 +22,12 @@ containers.forEach((item) => {
     });
 });
 
-// toggle sections
 
-const arrows = document.querySelectorAll(".arrow-container");
-const arrow = document.querySelectorAll(".arrow-container > .arrow-toggle")
-for (let i = 0; i < arrows.length; i++) {
-    arrows[i].addEventListener('click', function() {
-        let current = document.getElementsByClassName('toggled-content');
-        current[0].classList.toggle('untoggled');
-        arrow[i].classList.toggle('rotate')
-    })
-}
+const items2 = document.querySelectorAll(".arrow-container");
+
+items2.forEach((item) => {
+    item.addEventListener("click", () => {
+        item.previousElementSibling.classList.toggle("untoggled");
+        item.childNodes[0].classList.toggle('rotate')
+    });
+});

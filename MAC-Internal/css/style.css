@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    width: 100%
 }
 
 .row {
@@ -28,8 +29,10 @@ body::-webkit-scrollbar {
 }
 
 .inner-container {
-    width: 90%;
+    width: 80vw;
     margin: 0 auto;
+    max-width: 1200px;
+    border: solid 5px pink;
 }
 
 .btn {
@@ -58,8 +61,7 @@ a {
     border: #F15A24 !important;
     color: #fff !important;
     border-radius: 25px !important;
-    padding: 0.6rem 2rem !important;
-    font-weight: 700 !important;
+    padding: 0.6rem 2.3rem !important;
 }
 
 .btn-green {
@@ -73,10 +75,6 @@ a {
 
 /* navbar */
 
-navbar {
-    width: 100%
-}
-
 
 /* header */
 
@@ -84,7 +82,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     background-color: #124559;
-    height: 100vh
+    height: 100rem;
 }
 
 header .inner-container {
@@ -99,14 +97,28 @@ header .col-1 .btn {
 .col-1,
 .col-2 {
     width: 50%;
+    position: relative;
 }
+
+.col-1 .btn {
+    margin-top: 0.5rem;
+}
+
+.col-2 {
+    margin-top: 5rem !important;
+}
+
+
+/* decoration circles */
 
 
 /* form */
 
 .mktoForm {
     display: flex !important;
-    justify-content: space-between !important
+    justify-content: space-between !important;
+    max-width: 400px !important;
+    margin-right: 0rem !important;
 }
 
 .mktoForm .mktoFormRow {
@@ -125,17 +137,37 @@ header .col-1 .btn {
     padding: 9px 12px !important;
 }
 
+.mktoButton {
+    margin-top: 1rem !important;
+}
+
 
 /* end of header */
 
 
-/* accordion banner */
+/* menu box banner */
+
+header .flex {
+    margin-top: 1rem;
+}
+
+header .banner {
+    margin-top: 3rem;
+    width: 100%;
+}
 
 .menu-box {
     display: flex;
     position: relative;
     gap: 0.2rem;
-    margin-top: 2rem;
+    margin: 1rem auto 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.banner h2 {
+    width: 100%;
+    margin: 0 auto 0.5rem;
 }
 
 .menu-box .item-title {
@@ -151,6 +183,7 @@ header .col-1 .btn {
 .hidden-box {
     display: none;
     top: 4.5rem;
+    max-width: 1200px;
 }
 
 .box-inner {
@@ -194,6 +227,7 @@ header .col-1 .btn {
     height: 4rem !important;
     margin-top: 0.5rem !important;
     border-top: solid 0.7rem #1B998B !important;
+    font-size: 18px !important;
 }
 
 
@@ -219,6 +253,7 @@ header .col-1 .btn {
     width: 100%;
     float: left;
     margin: 0.5rem auto;
+    border-bottom: solid 1px #124559;
 }
 
 
@@ -226,9 +261,10 @@ header .col-1 .btn {
 
 main {
     position: absolute;
-    top: 99vh;
+    top: 115vh;
     width: 100%;
     background-color: #F9B348;
+    padding-bottom: 4rem;
 }
 
 
@@ -238,11 +274,12 @@ main {
 .section-2,
 .section-3 {
     width: 60vw;
-    border: solid;
     margin-top: 2rem;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 1.5rem 2rem;
+    background: #fff;
+    max-width: 900px;
 }
 
 .arrow-container {
