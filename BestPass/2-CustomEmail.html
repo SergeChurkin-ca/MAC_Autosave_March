@@ -74,9 +74,12 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-top_pad" mktoname="Logo Top Padding (px)" default="20" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-top_pad35" mktoname="Logo Top Padding (px)" default="35" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-top_pad30" mktoname="Logo Top Padding (px)" default="30" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="logo-top_pad25" mktoname="Logo Top Padding (px)" default="25" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-bottom_pad" mktoname="Logo Bottom Padding (px)" default="20" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-bottom_pad25" mktoname="Logo Bottom Padding (px)" default="25" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="logo-bottom_pad25" mktoname="Logo Bottom Padding (px)" default="25" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="logo-bottom_pad18" mktoname="Logo Bottom Padding (px)" default="18" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="social-top_pad40" mktoname="Social Top Padding (px)" default="40" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="social-bottom_pad25" mktoname="Social Bottom Padding (px)" default="25" />
     <meta mktoModuleScope="true" class="mktoNumber" id="video-top_pad" mktoname="Logo Top Padding (px)" default="120" />
     <meta mktoModuleScope="true" class="mktoNumber" id="video-btm_pad" mktoname="Logo Top Padding (px)" default="120" />
     <meta mktoModuleScope="true" class="mktoNumber" id="box-padding-top-bottom" mktoname="Box Pad Top/Bottom (px)" default="35" />
@@ -138,7 +141,9 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoList" id="btnFontWeight" mktoName="Button Weight" values="300,400,500,600,bold" default="700" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="DividerBGColor" mktoname="Divider Color" default="#eff0f0" />
+    <meta mktoModuleScope="true" class="mktoColor" id="DividerBGColorWhite" mktoname="Divider Color White" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoNumber" id="DividerHeight" mktoname="Divider Height (px)" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="DividerHeight10" mktoname="Divider Height (px)" default="10" />
     <meta mktoModuleScope="true" class="mktoString" id="DividerWidth" mktoname="Divider Width (%)" default="100" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btnFontSize" mktoname="Button Font Size (px)" default="16" />
     <meta mktoModuleScope="true" class="mktoString" id="btnText2" mktoName="Button Text" default="BUTTON">
@@ -1229,7 +1234,7 @@ font-family: Arial, serif !important;
                     <td bgColor="${mod-bg-color}" valign="top" style="background-color:${DividerBGColor};vertical-align: top;">
                       <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
                         <tr>
-                          <td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
+                          <td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight10}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
                         </tr>
                       </table>
                     </td>
@@ -1350,7 +1355,7 @@ font-family: Arial, serif !important;
               <td bgColor="${mod-bg-color}" valign="top" style="background-color:${DividerBGColor};vertical-align: top;">
                 <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
                   <tr>
-                    <td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
+                    <td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight10}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
                   </tr>
                 </table>
               </td>
@@ -1636,7 +1641,7 @@ font-family: Arial, serif !important;
 
                 <table class="center" cellpadding="0" cellspacing="0" align="left" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
-                    <td height="${logo-top_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="${logo-top_pad25}" style="line-height:1px;font-size:1px;height:${logo-top_pad25}px;">&nbsp;</td>
                   </tr>
                   <tr>
                     <td align="${alignCenter}" style="text-align: ${alignCenter};">
@@ -1646,7 +1651,7 @@ font-family: Arial, serif !important;
                     </td>
                   </tr>
                   <tr>
-                    <td height="${logo-bottom_pad25}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="${logo-bottom_pad18}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                   </tr>
                   <tr>
                     <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif;  line-height: 125%; mso-line-height-rule: exactly; text-align: ${alignCenter};">
@@ -1669,8 +1674,8 @@ font-family: Arial, serif !important;
               <th valign="bottom" class="block" bgColor="${footerbgclr2}" style="background-color:${footerbgclr2};vertical-align:bottom;">
 
                 <table class="inner_table2 center" cellpadding="0" cellspacing="0" align="left" style="margin:0 auto; width:390px;border-collapse: collapse;border-spacing: 0;" border="0" width="390">
-                  <tr>
-                    <td height="${logo-top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                <tr>
+                    <td height="${social-top_pad40}" style="line-height:1px;font-size:1px;height:${social-top_pad40}px">&nbsp;</td>
                   </tr>
 
                   <tr>
@@ -1705,7 +1710,7 @@ font-family: Arial, serif !important;
                     </td>
                   </tr>
                   <tr>
-                    <td height="${logo-bottom_pad25}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="${social-bottom_pad25}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                   </tr>
                   <tr>
                     <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif;  line-height: 140%; mso-line-height-rule: exactly; text-align: ${alignLeft};">
@@ -1732,7 +1737,19 @@ font-family: Arial, serif !important;
 
     <!--Footer Module-->
 
-
+    <!--Divider Module-->
+          <table class="mktoModule" mktoName="Divider Module White" id="DividerModule-white" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+            <tr>
+              <td bgColor="${mod-bg-color}" valign="top" style="background-color:${DividerBGColor};vertical-align: top;">
+                <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
+                  <tr>
+                    <td class="center" bgcolor="${DividerBGColorWhite}" height="${DividerHeight10}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColorWhite};">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--Divider Module-->
 
     </td>
   </tr>
