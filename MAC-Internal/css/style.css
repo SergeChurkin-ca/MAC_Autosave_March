@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
     width: 100%
 }
 
-.row {
+.container-row {
     flex-direction: row;
 }
 
@@ -103,29 +103,29 @@ header .inner-container {
     padding-top: 1.5rem;
 }
 
-header .col-1 .btn {
+header .column-1 .btn {
     margin-right: 100%;
     font-weight: 700;
     position: relative;
     z-index: 20;
 }
 
-header .row {
+header .container-row {
     flex-wrap: wrap;
 }
 
-.col-1,
-.col-2 {
+.column-1,
+.column-2 {
     width: 50%;
     position: relative;
     flex: 1 0 450px;
 }
 
-.col-1 .btn {
+.column-1 .btn {
     margin-top: 0.5rem;
 }
 
-.col-2 {
+.column-2 {
     margin-top: 5rem !important;
 }
 
