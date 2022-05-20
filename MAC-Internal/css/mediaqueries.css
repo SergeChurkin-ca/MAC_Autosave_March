@@ -80,6 +80,14 @@
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
+            float: none !important;
+        }
+        .services-list li::after {
+            float: none !important;
+            margin-left: auto;
+            width: 25px;
+            height: 25px;
+            background-size: 17px 17px;
         }
     }
     
