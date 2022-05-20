@@ -1,6 +1,7 @@
 @import url('decoration.css');
 @import url('typography.css');
 @import url('mediaqueries.css');
+@import url('footer.css');
 
 /* general setup */
 
@@ -50,7 +51,7 @@ ul {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -73,6 +74,11 @@ a {
 }
 
 .btn a {
+    color: #fff;
+}
+
+.btn a:hover,
+.btn a:focus {
     color: #fff;
 }
 
