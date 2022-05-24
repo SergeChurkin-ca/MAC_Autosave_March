@@ -19,8 +19,7 @@ font-family: Arial, serif !important;
   
 <meta mktoModuleScope="true" class="mktoColor" id="logo-bg-color" mktoName="Background Color" default="#F6F9FC" />
 <meta mktoModuleScope="true" class="mktoColor" id="mod-bg-color" mktoName="Background Color" default="#ffffff" />
-<meta mktoModuleScope="true" class="mktoColor" id="footer-bg-color" mktoName="Footer Background Color" default="linear-gradient(180deg, #182454 50%, #050711 100%)" />
-<meta mktoModuleScope="true" class="mktoColor" id="footer2-bg-color" mktoName="Footer Background Color" default="linear-gradient(180deg, #050711 50%, , #182454 100%)" />
+<meta mktoModuleScope="true" class="mktoColor" id="footer-bg-color" mktoName="Footer Background Color" default="#182454" />
 <meta mktoModuleScope="true" class="mktoColor" id="banner-bg-color" mktoName="Banner Tint Color" default="#ffffff" />
 <meta mktoModuleScope="true" class="mktoColor" id="video-bg-color" mktoName="Video Fallback Background Color" default="#1c1c1c" />
 <meta mktoModuleScope="true" class="mktoColor" id="bannerdark-bg-Color" mktoName="Background Color" default="#11162f" />
@@ -49,6 +48,7 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad30" mktoname="Bottom Padding" default="30" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad40" mktoname="Bottom Padding" default="40" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad110" mktoname="Bottom Padding" default="110" />
+<meta mktoModuleScope="true" class="mktoNumber" id="social_btm_pad20" mktoname="Social Bottom Padding" default="20" />
 <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" />
 <meta mktoModuleScope="true" class="mktoNumber" id="logo-top_pad" mktoname="Logo Top Padding" default="20" />
 <meta mktoModuleScope="true" class="mktoNumber" id="video-top_pad" mktoname="Video Top Padding" default="110" />
@@ -583,7 +583,7 @@ th{font-weight:normal !important}
                                 <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
                                     <tbody>
                                         <tr>
-                                            <td bgcolor="${btn2BGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btn2BorderRadius}px;">
+                                            <td bgcolor="${btn2BGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:2px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btn2BorderRadius}px;">
                                                 <a style="text-decoration:none; color:${btn2Color};" href="${btn2URL}">${btn2Text}</a>
                                             </td>
                                         </tr>
@@ -1135,7 +1135,7 @@ th{font-weight:normal !important}
         <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
             <tbody>
                 <tr>
-                    <td bgcolor="${btnBGColorhead}" style="text-align: center;border:2px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
+                    <td bgcolor="${btnBGColorhead}" style="text-align: center;border:4px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
                         <a style="text-decoration:none; color:${btnColorhead};" href="${btnURL}">${btnText2}</a>
                     </td>
                 </tr>
@@ -1164,32 +1164,33 @@ th{font-weight:normal !important}
 
   
 <tr>
-<td bgColor="${footer-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;background:${footer2-bg-color};">
- <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+<td bgColor="${footer-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;background:${footer-bg-color};">
+ <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;text-align:${alignCenter}!important;width:300px;" border="0" width="300"> 
     <tr> 
-       <td class="footer-leftcol" width="1" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:1px"></td> 
-       <td width="40" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:40px">
+       
+       <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
-         	<a href="https://www.facebook.com/smarthopapp/"><img width="33" height="auto" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/facebook-square-white.png" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="https://www.facebook.com/smarthopapp/"><img width="33" height="auto" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/facebook-square-white.png" style="width:25px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
-       <td width="40" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:40px">
+       <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
-         	<a href="https://www.instagram.com/smarthopapp/"><img width="33" height="auto" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/instagram-white.png" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="https://www.instagram.com/smarthopapp/"><img width="33" height="auto" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/instagram-white.png" style="width:25px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
-       <td width="40" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:40px">
+       <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3">
-         	<a href="https://www.linkedin.com/company/smarthop/"><img width="33" height="auto" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/linkedin-square-white.png" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="https://www.linkedin.com/company/smarthop/"><img width="33" height="auto" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/linkedin-square-white.png" style="width:25px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
-       <td width="40" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:40px">
+       <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4">
-         	<a href="https://twitter.com/smarthop"><img width="33" height="auto" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/twitter-square-brands.png" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="https://twitter.com/smarthop"><img width="33" height="auto" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/twitter-square-brands.png" style="width:25px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
-   
-       <td class="footer-rightcol" width="489" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:489px"></td> 
+       <tr>
+<td height="${social_btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
      </tr> 
   </table>
 </td>
@@ -1197,7 +1198,7 @@ th{font-weight:normal !important}
 
   
 <tr>
-<td align="${alignCenter}" style="padding-top:15px;font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};">
+<td align="${alignCenter}" style="padding-top:15px;font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorwhite}; text-align: ${alignCenter};">
 <div class="mktoText" mktoName="Footer Text" id="footer-text">
     <div>&copy; 2022 SmartHop. All rights reserved. 
 <br><br>
