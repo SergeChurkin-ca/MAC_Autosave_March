@@ -106,6 +106,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#519D18">
     <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#519D18" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="6" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius2" mktoname="Button Border Radius (px)" default="4" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btn2BorderRadius2" mktoname="Button Border Radius (px)" default="4" />
     <meta mktoModuleScope="true" class="mktoString" id="btnText" mktoName="Button Text" default="Read More">
     <meta mktoModuleScope="true" class="mktoString" id="cta-left-Text" mktoName="Button Text" default="Read More">
     <meta mktoModuleScope="true" class="mktoString" id="cta-center-Text" mktoName="Button Text" default="Read More">
@@ -125,6 +127,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="btn2BorderRadius" mktoname="Button 2 Border Radius (px)" default="8" />
     <meta mktoModuleScope="true" class="mktoString" id="btn2Text" mktoName="Button 2 Text" default="Read More">
     <meta mktoModuleScope="true" class="mktoNumber" id="btn2FontSize" mktoname="Button 2 Font Size (px)" default="18" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btn1FontSize16" mktoname="Button 1 Font Size (px)" default="16" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btn2FontSize16" mktoname="Button 2 Font Size (px)" default="16" />
     <meta mktoModuleScope="true" class="mktoString" id="btn2URL" mktoName="Button 2 URL" default="#">
 
     <meta mktoModuleScope="true" class="mktoColor" id="DividerBGColor" mktoname="Divider Color" default="#F6F9FC" />
@@ -627,7 +631,7 @@ font-family: Arial, serif !important;
                                             <table cellpadding="0" cellspacing="0" border="0">
                                               <tbody>
                                                 <tr>
-                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize16}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.66px; border-radius:${btnBorderRadius}px;">
+                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize16}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.66px; border-radius:${btnBorderRadius2}px;">
                                                     <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                   </td>
                                                 </tr>
@@ -706,7 +710,7 @@ font-family: Arial, serif !important;
                                             <table cellpadding="0" cellspacing="0" border="0">
                                               <tbody>
                                                 <tr>
-                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize16}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.66px; border-radius: ${btnBorderRadius}px;">
+                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize16}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.66px; border-radius: ${btnBorderRadius2}px;">
                                                     <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                   </td>
                                                 </tr>
@@ -785,7 +789,7 @@ font-family: Arial, serif !important;
                                             <table cellpadding="0" cellspacing="0" border="0">
                                               <tbody>
                                                 <tr>
-                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize16}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.66px; border-radius: ${btnBorderRadius}px;">
+                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize16}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.66px; border-radius: ${btnBorderRadius2}px;">
                                                     <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                   </td>
                                                 </tr>
@@ -909,7 +913,7 @@ font-family: Arial, serif !important;
                                 <table cellpadding="0" cellspacing="0" border="0" align="${alignLeft}">
                                   <tbody>
                                     <tr>
-                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize16}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding: 2.21px 36.96px;">
+                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize16}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius2}px;padding: 2.21px 36.96px;">
                                         <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor}; display:inline-block" href="${btnURL}">${btnText2}</a>
                                       </td>
                                     </tr>
@@ -1167,7 +1171,7 @@ font-family: Arial, serif !important;
                                 <table cellpadding="0" cellspacing="0" border="0" align="${alignLeft}">
                                   <tbody>
                                     <tr>
-                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize16}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding: 2.21px 36.96px;">
+                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize16}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius2}px;padding: 2.21px 36.96px;">
                                         <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor};display:inline-block" href="${btnURL}">${btnText2}</a>
                                       </td>
                                     </tr>
@@ -1239,7 +1243,7 @@ font-family: Arial, serif !important;
                                             <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
                                               <tbody>
                                                 <tr>
-                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btn1FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.67px; border-radius: ${btnBorderRadius}px;">
+                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btn1FontSize16}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.67px; border-radius: ${btnBorderRadius2}px;">
                                                     <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                   </td>
                                                 </tr>
@@ -1294,7 +1298,7 @@ font-family: Arial, serif !important;
                                             <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
                                               <tbody>
                                                 <tr>
-                                                  <td bgcolor="${btn2BGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.66px; border-radius: ${btn2BorderRadius}px;">
+                                                  <td bgcolor="${btn2BGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize16}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 6.22px 24.66px; border-radius: ${btn2BorderRadius2}px;">
                                                     <a style="text-decoration:none; color:${btn2Color};" href="${btn2URL}">${btn2Text}</a>
                                                   </td>
                                                 </tr>
