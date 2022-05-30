@@ -27,7 +27,7 @@
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
 
-    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">#header 
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#001529">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#001529">
 
@@ -244,11 +244,13 @@
       .mktoForm textarea.mktoField, 
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
-        box-shadow: none !important;
+        box-shadow: rgba(23, 51, 71, 0.2) 0px 0px 7px 0px !important;
         padding: 18px 15px !important;
-        border: solid 1px #212529 !important;
+        border: solid 1px rgb(232, 232, 232) !important;
         border-width: 0.5px !important;
         letter-spacing: ${body-letterspacing} !important;
+        background: #F5F5F5 !important;
+        border-radius: 3.6px !important;
       }
 
       .mktoForm input[type=text]:active,
@@ -554,11 +556,18 @@
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
-
+      @media screen and (max-width: 1200px) {
+        #footer .flex {
+          justify-content: flex-start;
+        }
+      }
       @media screen and (max-width:768px){
         .flex{
           flex-wrap:wrap;
           flex-direction:column;
+        }
+        #footer .flex {
+          flex-direction: row;
         }
 
         .w50{
@@ -653,6 +662,10 @@
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
+      .footer-row2 .inner-row2 p, .footer-row2 .inner-row2 a{
+        font-size: calc(${footerfontsize}px - 5px) !important;
+        font-weight: 400 !important;
+      }
 
       #footer .section{
         padding:${footerpaddingtb}px 0;
@@ -664,12 +677,24 @@
         height: auto;
         margin-bottom: 1rem;
       }
-      #footer .section {
-        width: 100vw;
-      }
+  
       .footer-row1 {
         background-color: ${footerbgclr};
       } 
+      .footer-row2 .section {
+        padding: 2.5rem 0 !important;
+      }
+      .footer-row2 .inner-row1 {
+        border-bottom: solid 0.5px #3f5b6f;
+        padding: 0 0 1.4rem;
+      }
+      .footer-row2 .flex {
+        justify-content: space-between;
+        padding: 1.5rem 0;
+      }
+      .footer-row1 .section {
+        padding: 3.5rem 0 !important;
+      }
       .footer-row2 {
         background-color: ${footerbgclr2};
       }
@@ -677,11 +702,13 @@
         color:${footerfontclr};
         font-family: ${fontfamily-headline}, sans-serif !important;
         font-size:${footerfontsize}px;
-        font-weight: 600;
+        font-weight: 400;
         margin: 0;
       }
       #footer ul {
-        justify-content: space-evenly;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
       #footer li {
         list-style:none;
@@ -780,9 +807,9 @@
     </div>
 
     <footer id="footer">
-      <div class="section mktoText" mktoName="Footer menu" id="footer-menu">
+      <div class="footer-row1">
 
-        <div class="inner-section footer-row1">
+        <div class="section mktoText" mktoName="Footer menu" id="footer-menu">
           <ul class="flex">
             <li><a href="https://constellationmortgagesolutions.com/">Home</a></li>
             <li><a href="https://constellationmortgagesolutions.com/platform-solutions/">Platform Solutions</a></li>
@@ -796,12 +823,15 @@
           </ul>
         </div>
 
-        <div class="section mktoText " mktoName="Footer Contac" id="footer-contact">
-          <div class="inner-section footer-row2">
+        <div class="footer-row2" >
+          <div class="section mktoText" mktoName="Footer Contact" id="footer-contact">
             
-            <p>Ready to talk to a solutions specialist? <a href="https://constellationmortgagesolutions.com/schedule-a-demo/">Get started</a> or <a href="https://constellationmortgagesolutions.com/contact-us/">contact us here</a>.</p>
-            <p>Copyright © 2022 Constellation Mortgage Solutions | All Rights Reserved</p>
-            <p><a target="_blank" href="https://privacy-central.securiti.ai/#/dsr/6506ec9c-46b4-4985-891d-98c22251777e">CCPA – Do Not Sell My Personal Information</span></a></p>
+            <p class="inner-row1">Ready to talk to a solutions specialist? <a href="https://constellationmortgagesolutions.com/schedule-a-demo/">Get started</a> or <a href="https://constellationmortgagesolutions.com/contact-us/">contact us here</a>.</p>
+            
+            <div class="flex inner-row2">
+              <p>Copyright © 2022 Constellation Mortgage Solutions | All Rights Reserved</p>
+              <p><a target="_blank" href="https://privacy-central.securiti.ai/#/dsr/6506ec9c-46b4-4985-891d-98c22251777e">CCPA – Do Not Sell My Personal Information</span></a></p>
+            </div>
           </div>
       </div>
     </footer>
