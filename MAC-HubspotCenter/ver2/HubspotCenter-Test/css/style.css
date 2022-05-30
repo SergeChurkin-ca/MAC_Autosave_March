@@ -1,0 +1,418 @@
+@import url('decoration.css');
+@import url('typography.css');
+@import url('mediaqueries.css');
+@import url('footer.css');
+
+/* general setup */
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    background: #fff;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none !important;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%
+}
+
+.container-row {
+    flex-direction: row;
+}
+
+.inner-container {
+    width: 90vw;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+    max-width: 1029px;
+}
+
+.btn {
+    margin: 0 auto;
+    display: flex;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/* end of general setup  */
+
+
+/* buttons */
+
+.btn,
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    background: #F15A24 !important;
+    border: #F15A24 !important;
+    color: #fff !important;
+    border-radius: 25px !important;
+    padding: 0.6rem 2.3rem !important;
+}
+
+.btn-green {
+    background: #124559 !important;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn a:hover,
+.btn a:focus {
+    color: #fff;
+}
+
+
+/* navbar */
+
+
+/* #bannernew */
+
+#bannernew .flex {
+    margin-top: 1rem;
+}
+
+#bannernew {
+    /* display: flex; */
+    flex-wrap: wrap;
+    background-color: #124559;
+    height: 106rem;
+}
+
+#bannernew .inner-container {
+    padding-top: 1.5rem;
+}
+
+#bannernew .column-1 .btn {
+    margin-right: 100%;
+    font-weight: 700;
+    position: relative;
+    z-index: 20;
+}
+
+#bannernew .container-row {
+    flex-wrap: wrap;
+}
+
+.column-1,
+.column-2 {
+    width: 50%;
+    position: relative;
+    flex: 1 0 450px;
+}
+
+.column-1 .btn {
+    margin-top: 0.5rem;
+}
+
+.column-2 {
+    margin-top: 5rem !important;
+}
+
+
+/* decoration circles */
+
+
+/* form */
+
+.mktoForm {
+    display: flex !important;
+    justify-content: space-between !important;
+    max-width: 450px !important;
+    margin-right: 0rem !important;
+}
+
+.mktoForm .mktoFormRow {
+    width: calc(49.5% - 0.2rem) !important;
+    margin: 0.8% 0rem;
+}
+
+@media (max-width: 484px) {
+    .mktoForm .mktoFormRow {
+        width: 100% !important;
+    }
+}
+
+.mktoForm input[type="text"],
+.mktoForm input[type="url"],
+.mktoForm input[type="email"],
+.mktoForm input[type="tel"],
+.mktoForm input[type="number"],
+.mktoForm input[type="date"],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    padding: 13px 15px !important;
+    min-height: 2.5rem !important;
+}
+
+.mktoForm input[type="text"]::placeholder,
+.mktoForm input[type="url"]::placeholder,
+.mktoForm input[type="email"]::placeholder,
+.mktoForm input[type="tel"]::placeholder,
+.mktoForm input[type="number"]::placeholder,
+.mktoForm input[type="date"]::placeholder,
+.mktoForm textarea.mktoField::placeholder,
+.mktoForm select.mktoField::placeholder {
+    color: #124559 !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif;
+    mix-blend-mode: darken;
+}
+
+.mktoButton {
+    margin-top: 1rem !important;
+}
+
+
+/* end of #bannernew */
+
+
+/* menu box banner */
+
+#bannernew .banner {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.menu-box {
+    display: flex;
+    position: relative;
+    gap: 0.2rem;
+    margin: 1rem auto 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.banner h2 {
+    width: 100%;
+    margin: 0 auto 0.5rem;
+}
+
+.menu-box .item-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    margin: 1.3rem 0 0 0;
+    padding: 0 2rem;
+    background-color: #1B998B;
+}
+
+.hidden-box {
+    display: none;
+    top: 4.5rem;
+    max-width: 1200px;
+}
+
+.box-inner {
+    background-color: #fff;
+    margin: 2rem;
+    border-radius: 15px;
+    padding: 4rem 6rem;
+    height: 46rem;
+    position: relative;
+}
+
+.box-inner .btn {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    width: fit-content;
+}
+
+.box-inner h2,
+.box-inner ul {
+    color: #124559 !important;
+}
+
+.box-inner ul {
+    padding: 0;
+    list-style: inside;
+}
+
+.open,
+.closed,
+.item {
+    /* width: 25%; */
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.banner .open .hidden-box {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #54BCAB;
+    width: 100% !important;
+}
+
+.menu-box .active2 {
+    background-color: #54BCAB !important;
+    border-bottom: none !important;
+    height: 4.3rem !important;
+    margin-top: 0.2rem !important;
+    border-top: solid 0.7rem #1B998B !important;
+    font-size: 18px !important;
+}
+
+
+/* end of accordion banner */
+
+
+/* toggling hidden content */
+
+.hidden-content {
+    display: none;
+    transition: all 1s;
+    float: left;
+    width: 90%;
+}
+
+.expand,
+.open .hidden-content {
+    display: block;
+    transition: all 0.3s;
+}
+
+.services-list li {
+    width: 100%;
+    float: left;
+    margin: 0.5rem auto;
+    border-bottom: solid 1.5px #124559;
+}
+
+
+/* main */
+
+main {
+    /* position: absolute; */
+    top: 130vh;
+    width: 100%;
+    background-color: #F9B348;
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+}
+
+
+/* sections */
+
+main .inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    width: 70vw;
+    margin-top: 2rem;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 0;
+    background: #fff;
+    max-width: 900px;
+}
+
+main .section-inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 0 4rem;
+    text-align: center;
+}
+
+main .section-1 .section-inner,
+main .toggled-content {
+    text-align: left;
+}
+
+main .toggled-content {
+    padding-top: 1rem;
+}
+
+.section-1 .section-title {
+    background-color: #53BCAB;
+}
+
+.section-2 .section-title {
+    background-color: #F15A24;
+}
+
+.section-3 .section-title {
+    background-color: #2CA08E;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0;
+    padding: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+main .price {
+    margin-bottom: 2rem;
+}
+
+.arrow-container {
+    margin: 0rem auto;
+    position: relative;
+}
+
+.arrow-toggle {
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.toggled-content {
+    display: none;
+    transition: all 0.5s;
+}
+
+.untoggled {
+    display: block;
+    transition: all 1s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: all 0.2s;
+}
+
+main .services-list li:last-child,
+main .list-row:last-child {
+    margin-bottom: 3rem !important;
+}
+
+.list-row-1 {
+    margin-bottom: 0.5rem !important;
+}

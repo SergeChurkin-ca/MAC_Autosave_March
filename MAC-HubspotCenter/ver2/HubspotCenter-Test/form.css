@@ -1,0 +1,43 @@
+.mktoForm {
+    width: 100% !important;
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mktoForm .mktoLabel,
+.mktoForm .mktoAsterix,
+.mktoForm .mktoGutter,
+.mktoForm .mktoOffset {
+    display: none;
+}
+
+.mktoForm .mktoFormRow {
+    width: 50%;
+}
+
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap {
+    width: 100%;
+}
+
+.mktoForm input[type="text"],
+.mktoForm input[type="url"],
+.mktoForm input[type="email"],
+.mktoForm input[type="tel"],
+.mktoForm input[type="number"],
+.mktoForm input[type="date"],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    width: 100% !important;
+}
+
+.mktoForm .mktoFormRow:nth-last-of-type(2) {
+    width: 100% !important;
+}
+
+.mktoForm .mktoButtonRow,
+.mktoForm .mktoButtonWrap {
+    margin: 0 auto;
+}

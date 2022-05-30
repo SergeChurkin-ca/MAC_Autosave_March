@@ -1,0 +1,41 @@
+/* tow circles */
+
+#bannernew {
+    background-image: url('https://marketing-automation.ca/TEST/HubspotCenter-Test/assets/MAC-circles.svg');
+    background-repeat: no-repeat;
+    background-position: 59vw 2vh;
+}
+
+.form-container {
+    z-index: 3;
+}
+
+.services-list li:after {
+    content: "";
+    background-image: url('../assets/arrow-down-solid.svg');
+    background-size: 23px 23px;
+    background-position: center;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    float: right;
+    border: solid 2px #124559;
+    border-radius: 50%;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+
+.open:after {
+    background-image: url('../assets/arrow-white.svg') !important;
+    background-color: #124559;
+    border: solid 2px #124559 !important;
+    transition: all 0.1s;
+}
+
+.item-title,
+.btn,
+.services-list li::after,
+.arrow-toggle {
+    cursor: pointer;
+}
