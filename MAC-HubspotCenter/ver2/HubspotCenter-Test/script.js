@@ -57,22 +57,25 @@ jQuery(function($) {
 
 
 
+
+
+
+
 // add height to #bannernew depending on hieght of container with form
 const bannerNew = document.getElementById('bannernew')
+let innerContainerInitHeight;
+if (window.innerWidth < 1065) {
+    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight + document.querySelectorAll('.inner-container')[0].clientHeight - 220;
+} else {
+    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight;
+}
 
-window.addEventListener('load', function() {
-    const innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].offsetHeight;
-    bannerNew.style = `height: calc(${innerContainerInitHeight}px + 550px) !important;`
-})
-
-
-
-
+bannerNew.style = `height: calc(${innerContainerInitHeight}px + 800px) !important;`
 
 function chageBannerHeight() {
-    const innerContainerHeight = document.querySelectorAll('.inner-container')[0].offsetHeight
+    const innerContainerHeight = document.querySelectorAll('.inner-container')[0].clientHeight
     bannerNew.style = `height: calc(${innerContainerHeight}px + 550px) !important;`
-    console.log(window.innerWidth)
+    console.log(innerContainerInitHeight, 'second height')
 }
 
 window.addEventListener('resize', chageBannerHeight)
