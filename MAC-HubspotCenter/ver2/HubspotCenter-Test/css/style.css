@@ -3,6 +3,7 @@
 @import url('typography.css');
 @import url('mediaqueries.css');
 @import url('footer.css');
+@import url('../form.css');
 
 /* general setup */
 
@@ -91,10 +92,8 @@ a {
 /* #bannernew */
 
 #bannernew {
-    /* display: flex; */
     flex-wrap: wrap;
     background-color: #124559;
-    height: 106rem;
 }
 
 #bannernew .inner-container {
@@ -110,13 +109,14 @@ a {
 
 #bannernew .container-row {
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .column-1,
 .column-2 {
     width: 50%;
     position: relative;
-    flex: 1 0 450px;
+    flex: 1 0 470px;
 }
 
 .column-1 .btn {
@@ -129,21 +129,6 @@ a {
 
 
 /* decoration circles */
-
-
-/* form */
-
-.mktoForm {
-    display: flex !important;
-    justify-content: space-between !important;
-    max-width: 450px !important;
-    margin-right: 0rem !important;
-}
-
-.mktoForm .mktoFormRow {
-    width: calc(49.5% - 0.2rem) !important;
-    margin: 0.8% 0rem;
-}
 
 @media (max-width: 484px) {
     .mktoForm .mktoFormRow {
@@ -183,10 +168,10 @@ a {
 }
 
 
-/* end of #bannernew */
-
-
 /* menu box banner */
+
+
+/* bannernew height is determined by .js */
 
 #bannernew .banner {
     margin-top: 3rem;

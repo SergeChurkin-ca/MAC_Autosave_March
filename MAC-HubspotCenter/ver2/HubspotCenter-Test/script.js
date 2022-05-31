@@ -53,3 +53,26 @@ jQuery(function($) {
         });
     }
 });
+
+
+
+
+// add height to #bannernew depending on hieght of container with form
+const bannerNew = document.getElementById('bannernew')
+
+window.addEventListener('load', function() {
+    const innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].offsetHeight;
+    bannerNew.style = `height: calc(${innerContainerInitHeight}px + 550px) !important;`
+})
+
+
+
+
+
+function chageBannerHeight() {
+    const innerContainerHeight = document.querySelectorAll('.inner-container')[0].offsetHeight
+    bannerNew.style = `height: calc(${innerContainerHeight}px + 550px) !important;`
+    console.log(window.innerWidth)
+}
+
+window.addEventListener('resize', chageBannerHeight)

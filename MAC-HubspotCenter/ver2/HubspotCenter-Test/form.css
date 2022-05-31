@@ -4,6 +4,7 @@
     max-width: 500px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .mktoForm .mktoLabel,
@@ -14,7 +15,14 @@
 }
 
 .mktoForm .mktoFormRow {
-    width: 50%;
+    width: 100% !important;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(1),
+.mktoForm .mktoFormRow:nth-of-type(2),
+.mktoForm .mktoFormRow:nth-of-type(3),
+.mktoForm .mktoFormRow:nth-of-type(4) {
+    width: 49% !important;
 }
 
 .mktoForm .mktoFormCol,
@@ -29,11 +37,7 @@
 .mktoForm input[type="number"],
 .mktoForm input[type="date"],
 .mktoForm textarea.mktoField,
-.mktoForm select.mktoField {
-    width: 100% !important;
-}
-
-.mktoForm .mktoFormRow:nth-last-of-type(2) {
+.mktoFolect.mktoField {
     width: 100% !important;
 }
 
