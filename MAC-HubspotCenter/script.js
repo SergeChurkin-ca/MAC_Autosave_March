@@ -8,6 +8,7 @@ for (let i = 0; i < items.length; i++) {
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
         this.parentNode.className = "open"
+
     });
 }
 

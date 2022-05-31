@@ -38,7 +38,7 @@
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
     <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
-    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#FF7F30">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#556565">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#556565">
     <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#FF7F30">
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
@@ -522,7 +522,14 @@
       }
       #footer .col {
         width: calc((100% / 5) - 2rem);
+        flex: 1 0 150px;
       }
+      #footer .col:nth-child(3) {
+        width: calc((100% / 5) - 6rem);
+      }
+    #footer .col:nth-child(5)  {
+      flex: 1 0 160px !important;
+    }
       #footer .section{
         padding:${footerpaddingtb}px 0;
 
@@ -566,15 +573,20 @@
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
-        text-transform: uppercase;
+      }
+      #footer .footer-menu li, #footer .footer-menu a {
+        text-transform: uppercase !important;
       }
       #footer .footer-menu strong, #footer .footer-contact strong {
         font-size: cal(2px + ${footerfontsize}px);
         color: rgba(255,255,255,.398547);
         text-transform: uppercase;
       }
+      #footer .footer-contact ul {
+        margin: 1rem 0 1rem 1rem !important;
+      }
       #footer .address {
-           color: rgba(255,255,255,.398547);
+        color: rgba(255,255,255,.398547);
       }
       #footer .row2 p {
         text-align: center !important;
@@ -607,53 +619,56 @@
         display: flex;
         align-items: center;
       }
-    .sub-menu a {
+      .sub-menu a {
         font-weight: 600;
-    }
-    .sub-menu li {
+      }
+      .sub-menu li {
         margin: 0.8rem 0;
-    }
-     #footer .social {
-        margin-top: 1.5rem !important;
+      }
+      #footer .social {
+        margin-top: 2rem !important;
+        margin-left: 0 !important;
         width: 100% !important;
         justify-content: flex-start;
         gap: 2rem;
         max-width: 200px;
       }
-    @media (max-width: 900px) {
-        .logo-container {
-            order: 10;
+      @media (max-width: 1075px) {
+        #footer .logo-container {
+          order: 10;
         }
-      .row1 {
-        flex-direction: column;
-        align-content: center;
+        .row1 {
+          align-content: center;
+        }
+        #footer .col {
+          display: flex;
+          margin: 0 auto;
+          align-items: center;
+        }
+        #footer .col:nth-child(1) {
+          width: 100%;
+          flex: 1 0 100%;
+        }
+       
+        #footer .social {
+          margin: 2rem auto 0 !important;
+        }
+        footer ul li, #footer strong {
+          margin: 0 auto 0 0 !important;
+          
+        }
+        #footer .icons-container {
+          padding: 0 !important;
+        }
+        .adress {
+          text-align: center;
+        }
       }
-      #footer .col {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-        align-items: center;
-      }
-      #footericons ul {
-        justify-content: center !important;
-        width: 20vw;
-      }
-      footer ul li, #footer strong {
-        margin: 0 auto !important;
-        justify-content: center;
-      }
-      #footer .icons-container {
-        padding: 0 !important;
-      }
-    }
-    
-    
+
+
       @media screen and (max-width:768px){
         .flex{
           flex-wrap:wrap;
-          flex-direction:column;
         }
 
         .w50{
@@ -682,14 +697,15 @@
         #footer .logo-container {
           margin-bottom: 1rem !important;
         }
-        .row1 p {
-          text-align: center;
-        }
+
         #footertext2 li {
           height: 1rem !important;
         }
         #footer .icons-container {
           marign-top: 1rem;
+        }
+        #footer .footer-menu {
+          margin: 0 !important;
         }
       }
 
@@ -701,19 +717,22 @@
         .mktoForm .mktoFormRow .mktoFormCol{
           margin-left:0 !important;
         }
+        #footer .col:nth-child(5) {
+          flex: 1 0 60% !important;
+        }
       }
 
 
-@font-face {
-  font-family: "BarlowSemiCondensed-Medium";
-  src: url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.eot');
-  src: url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.eot?#iefix') format('embedded-opentype'),
-       url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.ttf') format('truetype'),
-       url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.woff') format('woff'),
-       url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+      @font-face {
+        font-family: "BarlowSemiCondensed-Medium";
+        src: url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.eot');
+        src: url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+          url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.ttf') format('truetype'),
+          url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.woff') format('woff'),
+          url('https://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/BarlowSemiCondensed-Medium.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
 
 
     </style>
@@ -804,147 +823,147 @@
 
 
     <footer id="footer">
-    <div class="footer-container section flex">
+      <div class="footer-container section flex">
 
         <div class="row1">
 
-            <div class="logo-container col">
-                <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
-                    <a href="https://use.rently.com/"><img src="http://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/logo-white.png" alt="logo"></a>
-                </div>
-
-                <p>
-                    Copyright 2022 Rently. All Rights Reserved.
-                    <br>
-                    <a href="https://use.rently.com/terms-of-use/">Terms of Use</a> |
-                    <a href="https://use.rently.com/privacy-policy/">Privacy Policy</a> |
-                    <a href="https://use.rently.com/sms-terms/">SMS Terms</a>
-                </p>
-                <div class="address">
-                    Street to Suite<sup>™</sup> Self Touring and Instant Property Access Technology<br>
-                    <br> Patented Technology: 9881347B2, 9,875590B2, 8869574B2, 9127478B2, 9303431B2, 10,552928B2, 10325426B2, 10217301B2
-                </div>
-                <ul class="social flex">
-                    <li><a href="https://www.facebook.com/rentlysolutions/" target="_blank" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a></li>
-                    <li><a href="https://www.linkedin.com/company/rently/" target="_blank" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
-                    <li><a href="https://twitter.com/RentlySolutions" target="_blank" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
-                    <li><a href="https://www.instagram.com/rentlysolutions" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
-                </ul>
+          <div class="logo-container col">
+            <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
+              <a href="https://use.rently.com/"><img src="http://512-NYL-795.mktoweb.com/rs/512-NYL-795/images/logo-white.png" alt="logo"></a>
             </div>
 
-            <div class="col">
-                <ul id="menu-footer-menu" class="footer-menu">
-                    <li><strong>Solutions</strong></li>
-                    <ul class="sub-menu">
-                        <li class="item ">
-                            <a href="https://use.rently.com/single-family-self-guided-tours/" class="title">Single family Self-touring</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/multifamily-self-guided-tours/" class="title">Multifamily Self-touring</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/enterprise-smart-home/" class="title">Enterprise Smart Home</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/build-to-rent/" class="title">Build to Rent</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/agent-scheduler/" class="title">Agent Scheduler</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/" class="title">Call Center</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/iqual-plus/" class="title">iQual Plus</a>
-                        </li>
-                    </ul>
+            <p>
+              Copyright 2022 Rently. All Rights Reserved.
+              <br>
+              <a href="https://use.rently.com/terms-of-use/">Terms of Use</a> |
+              <a href="https://use.rently.com/privacy-policy/">Privacy Policy</a> |
+              <a href="https://use.rently.com/sms-terms/">SMS Terms</a>
+            </p>
+            <div class="address">
+              Street to Suite<sup>™</sup> Self Touring and Instant Property Access Technology<br>
+              <br> Patented Technology: 9881347B2, 9,875590B2, 8869574B2, 9127478B2, 9303431B2, 10,552928B2, 10325426B2, 10217301B2
+            </div>
+            <ul class="social flex">
+              <li><a href="https://www.facebook.com/rentlysolutions/" target="_blank" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a></li>
+              <li><a href="https://www.linkedin.com/company/rently/" target="_blank" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
+              <li><a href="https://twitter.com/RentlySolutions" target="_blank" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
+              <li><a href="https://www.instagram.com/rentlysolutions" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+            </ul>
+          </div>
 
-                </ul>
-            </div>
-            <div class="col">
-                <ul id="menu-footer-menu" class="footer-menu">
-                    <li><strong>Company</strong></li>
-                    <ul class="sub-menu">
-                        <li class="item ">
-                            <a href="https://use.rently.com/about/" class="title">About</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/blog/" class="title">Blog</a>
-                        </li>
-                        <li class="item ">
-                            <a target="_blank" href="https://jobs.lever.co/rently" class="title">Careers</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/get-help/" class="title">Get Help</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://use.rently.com/rently-news/" class="title">News</a>
-                        </li>
-                        <li class="item ">
-                            <a href="https://status.rently.com/" class="title">System Status</a>
-                        </li>
-                    </ul>
-                </ul>
-            </div>
-            <div class="col">
+          <div class="col">
             <ul id="menu-footer-menu" class="footer-menu">
-            <li><strong>Popular Cities</strong></li>
+              <li><strong>Solutions</strong></li>
+              <ul class="sub-menu">
+                <li class="item ">
+                  <a href="https://use.rently.com/single-family-self-guided-tours/" class="title">Single family Self-touring</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/multifamily-self-guided-tours/" class="title">Multifamily Self-touring</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/enterprise-smart-home/" class="title">Enterprise Smart Home</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/build-to-rent/" class="title">Build to Rent</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/agent-scheduler/" class="title">Agent Scheduler</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/" class="title">Call Center</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/iqual-plus/" class="title">iQual Plus</a>
+                </li>
+              </ul>
 
-                <ul class="sub-menu">
-                    <li class="item ">
-                        <a target="_blank" href="https://homes.rently.com/?search=Atlanta,%20GA" class="title">Atlanta, GA</a>
-                    </li>
-                    <li class="item ">
-                        <a target="_blank" href="https://homes.rently.com/?search=Charlotte,%20NC" class="title">Charlotte, NC</a>
-                    </li>
-                    <li class="item ">
-                        <a target="_blank" href="https://homes.rently.com/?search=Chicago,%20IL" class="title">Chicago, IL</a>
-                    </li>
-                    <li class="item ">
-                        <a target="_blank" href="https://homes.rently.com/?search=Dallas,%20TX" class="title">Dallas, TX</a>
-                    </li>
-                    <li class="item ">
-                        <a target="_blank" href="https://homes.rently.com/?search=Phoenix,%20AZ" class="title">Phoenix, AZ</a>
-                    </li>
-                    <li class="item ">
-                        <a target="_blank" href="https://homes.rently.com/?search=Los%20Angeles,%20CA" class="title">Los Angeles, CA</a>
-                    </li>
-                </ul>
-                <ul>
-            </div> 
-            <div class="col">
+            </ul>
+          </div>
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li><strong>Company</strong></li>
+              <ul class="sub-menu">
+                <li class="item ">
+                  <a href="https://use.rently.com/about/" class="title">About</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/blog/" class="title">Blog</a>
+                </li>
+                <li class="item ">
+                  <a target="_blank" href="https://jobs.lever.co/rently" class="title">Careers</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/get-help/" class="title">Get Help</a>
+                </li>
+                <li class="item ">
+                  <a href="https://use.rently.com/rently-news/" class="title">News</a>
+                </li>
+                <li class="item ">
+                  <a href="https://status.rently.com/" class="title">System Status</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li><strong>Popular Cities</strong></li>
+
+              <ul class="sub-menu">
+                <li class="item ">
+                  <a target="_blank" href="https://homes.rently.com/?search=Atlanta,%20GA" class="title">Atlanta, GA</a>
+                </li>
+                <li class="item ">
+                  <a target="_blank" href="https://homes.rently.com/?search=Charlotte,%20NC" class="title">Charlotte, NC</a>
+                </li>
+                <li class="item ">
+                  <a target="_blank" href="https://homes.rently.com/?search=Chicago,%20IL" class="title">Chicago, IL</a>
+                </li>
+                <li class="item ">
+                  <a target="_blank" href="https://homes.rently.com/?search=Dallas,%20TX" class="title">Dallas, TX</a>
+                </li>
+                <li class="item ">
+                  <a target="_blank" href="https://homes.rently.com/?search=Phoenix,%20AZ" class="title">Phoenix, AZ</a>
+                </li>
+                <li class="item ">
+                  <a target="_blank" href="https://homes.rently.com/?search=Los%20Angeles,%20CA" class="title">Los Angeles, CA</a>
+                </li>
+              </ul>
+              <ul>
+                </div> 
+              <div class="col">
                 <div class="footer-contact">
-                    <div class="box">
-                        <strong>Self-Touring Sales &amp; Support</strong>
-                        <ul>
-                            <li class="c-phone"><a href="tel:1-888-340-6340">1-888-340-6340</a></li>
-                            <li class="c-email"><a href="mailto:sales@rently.com">sales@rently.com</a></li>
-                            <li class="c-support"><a href="mailto:support@rently.com">support@rently.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <strong>Smart Home Sales and Support</strong>
-                        <ul>
-                            <li class="c-email"><a href="mailto:sales@rently.com">sales@rently.com</a></li>
-                            <li class="c-support"><a href="mailto:support@rentlykeyless.com">support@rentlykeyless.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <strong>Corporate HQ</strong>
-                        <ul>
-                            <li class="c-address">Rently Los Angeles <br>6300 Wilshire Blvd, Suite 620, <br>Los Angeles, CA 90048</li>
-                        </ul>
-                    </div>
+                  <div class="box">
+                    <strong>Self-Touring Sales &amp; Support</strong>
+                    <ul>
+                      <li class="c-phone"><a href="tel:1-888-340-6340">1-888-340-6340</a></li>
+                      <li class="c-email"><a href="mailto:sales@rently.com">sales@rently.com</a></li>
+                      <li class="c-support"><a href="mailto:support@rently.com">support@rently.com</a></li>
+                    </ul>
+                  </div>
+                  <div class="box">
+                    <strong>Smart Home Sales and Support</strong>
+                    <ul>
+                      <li class="c-email"><a href="mailto:sales@rently.com">sales@rently.com</a></li>
+                      <li class="c-support"><a href="mailto:support@rentlykeyless.com">support@rentlykeyless.com</a></li>
+                    </ul>
+                  </div>
+                  <div class="box">
+                    <strong>Corporate HQ</strong>
+                    <ul>
+                      <li class="c-address">Rently Los Angeles <br>6300 Wilshire Blvd, Suite 620, <br>Los Angeles, CA 90048</li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+              </div>
+            <div class="row2">
+              <p>&nbsp;</p>
             </div>
-        </div>
-        <div class="row2">
-            <p>&nbsp;</p>
-        </div>
 
-    </div>
-</footer>
+          </div>
+          </footer>
 
 
-  </body>
-</html>
+        </body>
+      </html>

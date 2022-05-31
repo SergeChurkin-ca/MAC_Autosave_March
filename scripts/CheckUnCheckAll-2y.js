@@ -1,20 +1,14 @@
-<script>
+< script >
     MktoForms2.whenReady(function(form) {
 
-        // check and uncheck subsribtion options
-        // checkbox event listener
+        // select only all updates
+        let allUpdates = Array.from(document.querySelectorAll('input[type="checkbox"]'))
+        allUpdates[0].addEventListener('change', selectAllUpdates)
 
-        let unSubscribeButton = document.querySelectorAll('input[type="checkbox"]')[document.querySelectorAll('input[type="checkbox"]').length - 1]
-
-        unSubscribeButton.addEventListener('change', unSubscribeToAllFunction);
-
-        function unSubscribeToAllFunction() {
-            console.log('chirp')
-            for (let i = 0; i < document.querySelectorAll('input[type="checkbox"]').length; i++) {
-                document.querySelectorAll('input[type="checkbox"]')[i].checked = false
-
+        function selectAllUpdates() {
+            for (let i = 0; i < 6; i++) {
+                allUpdates[i].checked = true
             }
         }
-        console.log('check if function works')
-    });
-</script>
+    }); <
+/script>
