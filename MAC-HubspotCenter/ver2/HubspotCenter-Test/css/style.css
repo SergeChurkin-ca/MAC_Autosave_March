@@ -3,7 +3,7 @@
 @import url('typography.css');
 @import url('mediaqueries.css');
 @import url('footer.css');
-@import url('../form.css');
+@import url('form.css');
 
 /* general setup */
 
@@ -128,46 +128,6 @@ a {
 }
 
 
-/* decoration circles */
-
-@media (max-width: 484px) {
-    .mktoForm .mktoFormRow {
-        width: 100% !important;
-    }
-}
-
-.mktoForm input[type="text"],
-.mktoForm input[type="url"],
-.mktoForm input[type="email"],
-.mktoForm input[type="tel"],
-.mktoForm input[type="number"],
-.mktoForm input[type="date"],
-.mktoForm textarea.mktoField,
-.mktoForm select.mktoField {
-    padding: 13px 15px !important;
-    min-height: 2.5rem !important;
-}
-
-.mktoForm input[type="text"]::placeholder,
-.mktoForm input[type="url"]::placeholder,
-.mktoForm input[type="email"]::placeholder,
-.mktoForm input[type="tel"]::placeholder,
-.mktoForm input[type="number"]::placeholder,
-.mktoForm input[type="date"]::placeholder,
-.mktoForm textarea.mktoField::placeholder,
-.mktoForm select.mktoField::placeholder {
-    color: #124559 !important;
-    font-weight: 400 !important;
-    font-size: 18px !important;
-    font-family: 'Poppins', sans-serif;
-    mix-blend-mode: darken;
-}
-
-.mktoButton {
-    margin-top: 1rem !important;
-}
-
-
 /* menu box banner */
 
 
@@ -238,7 +198,6 @@ a {
 .open,
 .closed,
 .item {
-    /* width: 25%; */
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -256,8 +215,8 @@ a {
 .menu-box .active2 {
     background-color: #54BCAB !important;
     border-bottom: none !important;
-    height: 4.3rem !important;
-    margin-top: 0.2rem !important;
+    height: 4.3rem;
+    margin-top: 0.2rem;
     border-top: solid 0.7rem #1B998B !important;
     font-size: 18px !important;
 }
@@ -292,7 +251,6 @@ a {
 /* main */
 
 main {
-    /* position: absolute; */
     top: 130vh;
     width: 100%;
     background-color: #F9B348;

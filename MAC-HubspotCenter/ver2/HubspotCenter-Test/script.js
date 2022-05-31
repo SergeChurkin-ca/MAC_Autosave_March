@@ -65,7 +65,7 @@ jQuery(function($) {
 const bannerNew = document.getElementById('bannernew')
 let innerContainerInitHeight;
 if (window.innerWidth < 1065) {
-    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight + document.querySelectorAll('.inner-container')[0].clientHeight - 220;
+    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight + document.querySelectorAll('.inner-container')[0].clientHeight - 205;
 } else {
     innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight;
 }
@@ -75,7 +75,6 @@ bannerNew.style = `height: calc(${innerContainerInitHeight}px + 800px) !importan
 function chageBannerHeight() {
     const innerContainerHeight = document.querySelectorAll('.inner-container')[0].clientHeight
     bannerNew.style = `height: calc(${innerContainerHeight}px + 550px) !important;`
-    console.log(innerContainerInitHeight, 'second height')
 }
 
 window.addEventListener('resize', chageBannerHeight)

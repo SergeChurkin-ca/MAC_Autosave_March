@@ -12,6 +12,20 @@
         }
     }
     
+    @media (max-width: 960px) {
+        .menu-box {
+            margin-top: 3rem !important;
+        }
+        .menu-box .item-title {
+            height: 4.5rem !important;
+            margin: 0.3rem 0 0 0 !important;
+        }
+        .menu-box .active2 {
+            height: 6rem !important;
+            margin-top: -1rem !important;
+        }
+    }
+    
     @media (max-width: 900px) {
         #footer .inner-container {
             display: flex;
@@ -58,17 +72,12 @@
         }
     }
     
-    @media (max-width: 940px) {
-        #bannernew {
-            /* height: 120rem !important; */
-        }
-    }
-    
-    @media (max-width: 865px) {}
-    
     @media (max-width: 740px) {
         .banner .box-inner {
             padding: 3rem 3rem 6rem;
+        }
+        .banner .menu-box .active2 {
+            font-size: 15px !important;
         }
     }
     
@@ -84,20 +93,25 @@
         .menu-box .item,
         .menu-box .open,
         .menu-box .closed {
-            /* width: 24.47% !important; */
             width: calc((100% / 4) - 0.15rem) !important;
         }
         .hidden-content {
             width: 80% !important;
+        }
+        .banner .menu-box .active2 {
+            height: 6.5rem !important;
+            margin-top: -2rem !important;
+        }
+        .menu-box .item-title {
+            height: 5.5rem !important;
+            margin: -0.7rem 0 0 0 !important;
+            padding: 0 1rem !important;
         }
     }
     
     @media (max-width: 484px) {
         .flex {
             flex: 100% !important;
-        }
-        #bannernew {
-            /* height: 125rem !important; */
         }
         main {
             top: 191vh !important;
@@ -106,7 +120,6 @@
             height: fit-content !important;
         }
         .box-inner {
-            height: 27rem !important;
             padding: 2rem 2rem 7rem !important;
             margin: 2rem 1rem !important;
         }
@@ -156,6 +169,9 @@
     }
     
     @media (max-width: 400px) {
+        .box-inner {
+            height: 47rem !important;
+        }
         .item-title {
             font-size: 14px !important;
         }
@@ -178,18 +194,12 @@
     }
     
     @media (max-width: 395px) {
-        #bannernew {
-            /* height: 127rem !important; */
-        }
         main {
             top: 195vh !important;
         }
     }
     
     @media (max-width: 340px) {
-        #bannernew {
-            /* height: 135rem !important; */
-        }
         main {
             top: 204vh !important;
         }
@@ -205,8 +215,11 @@
         }
     }
     
-    @media (max-width: 310px) {
+    @media (max-width: 320px) {
         .box-inner li {
             font-size: 14px !important;
+        }
+        .banner .menu-box .active2 {
+            font-size: 13px !important;
         }
     }
