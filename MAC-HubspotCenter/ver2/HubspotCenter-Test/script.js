@@ -56,18 +56,16 @@ jQuery(function($) {
 
 
 
-
-
-
-
-
 // add height to #bannernew depending on hieght of container with form
 const bannerNew = document.getElementById('bannernew')
 let innerContainerInitHeight;
-if (window.innerWidth < 1065) {
-    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight + document.querySelectorAll('.inner-container')[0].clientHeight - 205;
+if (window.innerWidth < 1065 && window.innerWidth > 505) {
+    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight + document.querySelectorAll('.inner-container')[0].clientHeight - 195;
+} else if (window.innerWidth < 505) {
+    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight + document.querySelectorAll('.inner-container')[0].clientHeight - 90;
+    console.log('chipr')
 } else {
-    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight;
+    innerContainerInitHeight = document.querySelectorAll('.inner-container')[0].clientHeight + 100;
 }
 
 bannerNew.style = `height: calc(${innerContainerInitHeight}px + 800px) !important;`

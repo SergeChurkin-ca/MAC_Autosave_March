@@ -39,7 +39,6 @@ body::-webkit-scrollbar {
 .inner-container {
     width: 90vw;
     margin: 0 auto;
-    /* max-width: 1200px; */
     max-width: 1029px;
 }
 
@@ -84,9 +83,6 @@ a {
 .btn a:focus {
     color: #fff;
 }
-
-
-/* navbar */
 
 
 /* #bannernew */
@@ -173,7 +169,7 @@ a {
     margin: 2rem;
     border-radius: 15px;
     padding: 4rem 6rem;
-    height: 46rem;
+    height: 43rem;
     position: relative;
 }
 
@@ -240,11 +236,15 @@ a {
     transition: all 0.3s;
 }
 
+.services-list li,
+.services-list .list-row-1 {
+    margin: 0.5rem auto;
+    border-bottom: solid 1.5px #124559;
+}
+
 .services-list li {
     width: 100%;
     float: left;
-    margin: 0.5rem auto;
-    border-bottom: solid 1.5px #124559;
 }
 
 
@@ -286,7 +286,6 @@ main .section-inner {
     text-align: center;
 }
 
-main .section-1 .section-inner,
 main .toggled-content {
     text-align: left;
 }
