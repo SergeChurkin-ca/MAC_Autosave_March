@@ -45,21 +45,24 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad10" mktoname="Bottom Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad15" mktoname="Bottom Padding" default="15" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad20" mktoname="Bottom Padding" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad25" mktoname="Bottom Padding" default="25" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad35" mktoname="Bottom Padding" default="35" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad30" mktoname="Bottom Padding" default="30" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad40" mktoname="Bottom Padding" default="40" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad80" mktoname="Bottom Padding" default="80" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad110" mktoname="Bottom Padding" default="110" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="head-top_pad20" mktoname="Headline Bottom Padding" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="head-top_pad10" mktoname="Headline Bottom Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logo-top_pad" mktoname="Logo Top Padding" default="20" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="video-top_pad" mktoname="Video Top Padding" default="110" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="video-btm_pad" mktoname="Video Bottom Padding" default="110" />
+
 
     <meta mktoModuleScope="true" class="mktoNumber" id="navbarFontSize" mktoname="Headline Font Size" default="14" />
     <meta mktoModuleScope="true" class="mktoNumber" id="navbarFontSize24" mktoname="Headline Font Size" default="24" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize24" mktoname="Headline Font Size" default="24" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize34" mktoname="Headline Font Size" default="33" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize30" mktoname="Headline Font Size" default="30" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize29" mktoname="Headline Font Size" default="29" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize28" mktoname="Headline Font Size" default="28" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize18" mktoname="Headline Font Size" default="18" />
     <meta mktoModuleScope="true" class="mktoColor" id="brandGoldFontColor" mktoname="Headline Text Color" default="#502C1E" />
@@ -80,17 +83,17 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColorhead" mktoName="Button Border Color" default="#ffffff" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#ffffff" />
-    <meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#93a1a9">
+    <meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#502C1E">
     <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#93a1a9" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="0" />
-    <meta mktoModuleScope="true" class="mktoString" id="btnText" mktoName="Button Text" default="Give Hair What It Needs">
+    <meta mktoModuleScope="true" class="mktoString" id="btnText" mktoName="Button Text" default="Place Your Next Order">
     <meta mktoModuleScope="true" class="mktoNumber" id="btn1FontSize" mktoname="Button Font Size (px)" default="18" />
     <meta mktoModuleScope="true" class="mktoString" id="btnURL" mktoName="Button URL" default="#">
     <meta mktoModuleScope="true" class="mktoList" id="btnFontWeight" mktoName="Button Weight" values="300,400,500,600,bold" default="bold" />
 
 
-    <meta mktoModuleScope="true" class="mktoColor" id="DividerBGColor" mktoname="Divider Color" default="#F6F9FC" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="DividerHeight" mktoname="Divider Height (px)" default="1" />
+    <meta mktoModuleScope="true" class="mktoColor" id="DividerBGColor" mktoname="Divider Color" default="#93a1a9" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="DividerHeight" mktoname="Divider Height (px)" default="10" />
     <meta mktoModuleScope="true" class="mktoString" id="DividerWidth" mktoname="Divider Width (%)" default="100" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btnFontSize" mktoname="Button Font Size (px)" default="14" />
 
@@ -100,6 +103,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoList" id="alignRight" mktoName="Align" values="left,center,right" default="right" />
     <meta mktoModuleScope="true" class="mktoList" id="alignbtn" mktoName="Align Button" values="left,center,right" default="center" />
     <meta mktoModuleScope="true" class="mktoList" id="align" mktoName="Content Align" values="left,center,right" default="left" />
+
+    <meta mktoModuleScope="true" class="mktoString" id="imgheight" mktoname="Two Img height" default="300" />
 
     <title>{{my.ViewAsWebpage Title}}</title>
     <link rel="icon" href="{{my.Favicon URL}}" type="image/x-icon">
@@ -429,8 +434,8 @@ font-family: Arial, serif !important;
                               <tr>
                                 <th width="220" align="left" class="block center" valign="top" style="vertical-align: top;">
                                   <div class="mktoText" mktoname="Headline" id="headline">
-                                    <div style="color:${headlineFontColorwhite};font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize34}px;font-weight:400 !important;line-height:145%;">
-                                      You Know Hair Better
+                                    <div style="color:${headlineFontColorwhite};font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize29}px;font-weight:400 !important;line-height:145%;">
+                                      You Know<br> Hair Better
                                     </div>
                                   </div>
                                 </th>
@@ -439,7 +444,7 @@ font-family: Arial, serif !important;
                                   <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 
                                     <tr>
-                                      <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                      <td height="${head-top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                     </tr>
                                     <tr>
                                       <td style="font-family:'VerdanaPro-Regular',Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColorwhite}">
@@ -519,7 +524,7 @@ font-family: Arial, serif !important;
 
 
                               <tr>
-                                <td align="left"  class="center" style="color:${headlineFontColorwhite};font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize34}px;font-weight:400 !important;line-height:145%;">
+                                <td align="left"  class="center" style="color:${headlineFontColorwhite};font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize29}px;font-weight:400 !important;line-height:145%;">
                                   <div class="mktoText" mktoName="Banner Headline" id="banner-headline">
                                     <div>You Know What Hair Needs</div>
                                   </div>
@@ -540,7 +545,7 @@ font-family: Arial, serif !important;
                                 </td>
                               </tr> 
                               <tr>
-                                <td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                <td  height="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
                               </tr>
                               <tr>
                                 <td align="right" class="center" style="font-family:'VerdanaPro-Regular',Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColorwhite}">
@@ -577,7 +582,7 @@ font-family: Arial, serif !important;
                     <td bgColor="${mod-bg-color-white}" valign="top" style="background-Color:${mod-bg-color-white};vertical-align: top;">
                       <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
                         <tr>
-                          <td height="${top_pad20}" style="line-height:1px;˜font-size:1px;">&nbsp;</td>
+                          <td height="${top_pad40}" style="line-height:1px;˜font-size:1px;">&nbsp;</td>
                         </tr>
                         <tr>
                           <td>
@@ -791,7 +796,7 @@ font-family: Arial, serif !important;
                           </td>
                         </tr>
                         <tr>
-                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          <td height="${btm_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                       </table>
                     </td>
@@ -800,271 +805,257 @@ font-family: Arial, serif !important;
                 <!--end of 2 Col Module 3-->
 
 
-
-
-
-
                 <!--Image Right Text Left-->
                 <table class="mktoModule" mktoName="2 Col Image Right" id="imgRight1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                       <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
                         <tr>
-                          <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          <td height="${top_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                         <tr>
                           <td>
                             <table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                               <tr>
-
-                              <th width="300" dir="ltr" align="left" class="block top_pad" valign="top" style="vertical-align: middle;">
-                                <table>
-                                  <tr>
-                                    <td>
-                                      <th dir="ltr" width="150" align="left" class="block center" valign="top" style="vertical-align: top;">
-                                        <div class="mktoImg" mktoname="Image" id="imgRight-img">
+                                <th width="300" dir="ltr" align="right" class="block top_pad" valign="top" style="vertical-align: middle;">
+                                  <table class="center">
+                                    <tr>
+                                      <td>
+                                      <th dir="ltr"  align="left" class="block center" valign="top" style="vertical-align: top;">
+                                        <div class="mktoImg" mktoname="Image" id="imgRight-img1">
                                           <div>
-                                            <img src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/template-2-img1b.png"  border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:auto;"
+                                            <img src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/template-2-img1b.png"  height="${imgheight}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:auto;height:${imgheight}px!important;"
                                                  />
                                           </div>
                                         </div>
                                       </th>
                                       <th style="font-size:1px; line-height: 1px;" width="5">&nbsp;</th>
-                                      <th dir="ltr" width="150" align="left" class="block center" valign="top" style="vertical-align: top;">
-                                        <div class="mktoImg" mktoname="Image" id="imgRight-img">
+                                      <th dir="ltr"   align="left" class="block center" valign="top" style="vertical-align: top;">
+                                        <div class="mktoImg" mktoname="Image" id="imgRight-img2">
                                           <div>
-                                            <img src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/template-2-img1a.png"  border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width: auto;"
+                                            <img src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/template-2-img1a.png"  height="${imgheight}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width: auto;height:${imgheight}px!important;"
                                                  />
                                           </div>
                                         </div>
                                       </th>
                                     </td>
-                                  </tr>
-                                </table>
-
-                              </th>
-
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-                                <th width="300" dir="ltr" align="left" class="block top_pad" valign="top" style="vertical-align: middle;">
-                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-
-
-                                    <tr>
-                                      <td align="left"  class="center" style="color:${headlineFontColorwhite};font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize34}px;font-weight:400 !important;line-height:145%;">
-                                        <div class="mktoText" mktoName="Banner Headline" id="banner-headline">
-                                          <div>The Power of Pure</div>
-                                        </div>
-                                      </td>
-                                    </tr> 
-                                    <tr>
-                                      <td height="30" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="font-family:'VerdanaPro-Regular',Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color:${CopyColorwhite}">
-                                        <div class="mktoText" mktoName="Text" id="imgright-SubHeadline1">
-                                          <div>For this client, our Innersense stylist used our Detox Hair Mask to remove buildup from the hair, followed by our Hydrating Cream Hairbath to deeply cleanse her strands and replenish essential nutrients. She sealed the final style with I Create Shine, our gloss-inducing finishing serum packed with pure active extracts to lock moisture into her hair and help it reflect natural light for its most brilliant shine.</div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="font-family:'VerdanaPro-Regular',Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorwhite}">
-                                        <div class="mktoText" mktoName="Text" id="imgright-SubHeadline2">
-                                          <div>Coconut, rice bran and avocado oil extracts deliver intense but gentle cleanses that purify and revitalize hair, sans sulfates.</div>
-                                        </div>
-                                      </td>
-                                    </tr>
-
-
-                                    <tr>
-                                      <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                    </tr>
-
-                                  </table>
-                                </th>
                               </tr>
                             </table>
-                          </td>
+                        </th>
+                        <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                        <th width="300" dir="ltr" align="left" class="block top_pad" valign="top" style="vertical-align: middle;">
+                          <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <tr>
+                              <td align="left"  class="center" style="color:${headlineFontColorwhite};font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize29}px;font-weight:400 !important;line-height:145%;">
+                                <div class="mktoText" mktoName="Banner Headline" id="headline3">
+                                  <div>The Power of Pure</div>
+                                </div>
+                              </td>
+                            </tr> 
+                            <tr>
+                              <td height="30" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td style="font-family:'VerdanaPro-Regular',Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color:${CopyColorwhite}">
+                                <div class="mktoText" mktoName="Text" id="imgright-SubHeadline1">
+                                  <div>For this client, our Innersense stylist used our Detox Hair Mask to remove buildup from the hair, followed by our Hydrating Cream Hairbath to deeply cleanse her strands and replenish essential nutrients. She sealed the final style with I Create Shine, our gloss-inducing finishing serum packed with pure active extracts to lock moisture into her hair and help it reflect natural light for its most brilliant shine.</div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td style="font-family:'VerdanaPro-Regular',Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorwhite}">
+                                <div class="mktoText" mktoName="Text" id="imgright-SubHeadline2">
+                                  <div>Coconut, rice bran and avocado oil extracts deliver intense but gentle cleanses that purify and revitalize hair, sans sulfates.</div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                            </tr>
+
+                          </table>
+                        </th>
                         </tr>
-                        <tr>
-                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
                 </table>
-                <!--Image Right Text Left with btn-->    
-
-
-                <!--Image Left Text Right with btn-->
-                <table class="mktoModule" mktoName="2 Col Small Image Left with btn" id="smimgleft2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
-                        <tr>
-                          <td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                              <tr>
-                                <th width="170" align="left" class="block center" valign="top" style="vertical-align: top;">
-                                  <div class="mktoImg" mktoname="Image" id="smimgleft-img">
-                                    <div>
-                                      <img src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/template-1-img2.png" width="230" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
-                                           />
-                                    </div>
-                                  </div>
-                                </th>
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="45">&nbsp;</th>
-                                <th align="left" class="block top_pad" valign="top" style="vertical-align: middle;">
-                                  <table class="center" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-
-
-
-                                    <tr>
-                                      <td align="left"  class="center" style="color:${headlineFontColorwhite};font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize34}px;font-weight:400 !important;line-height:145%;">
-                                        <div class="mktoText" mktoName="Banner Headline" id="banner-headline">
-                                          <div>Share Pure Performance</div>
-                                        </div>
-                                      </td>
-                                    </tr> 
-                                    <tr>
-                                      <td height="30" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="font-family:'VerdanaPro-Regular',Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${copyColorwhite}">
-                                        <div class="mktoText" mktoName="Text" id="imgleft-SubHeadline">
-                                          <div>Saturate scalp and strands in pure actives with any of our shampoos, Pure Harmony for fine to medium hair, Hydrate Cream for thick and thirsty hair, or Color Awakening for color and chemically-treated.</div>
-                                        </div>
-                                      </td>
-                                    </tr> 
-                                    <tr>
-                                      <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                      <td >
-                                        <div class="mktoText" id="imgleft-btn1" mktoname="Button">
-                                          <div>
-                                            <table class="center" cellpadding="0" cellspacing="0" border="0">
-                                              <tbody>
-                                                <tr>
-                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family:'VerdanaPro-SemiBold',Arial, sans-serif; padding: 13px 20px; border-radius: ${btnBorderRadius}px;">
-                                                    <a style="text-decoration:none; color:${btnColor};text-transform:uppercase;" href="${btnURL}">${btnText}</a>
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </th>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td height="${btm_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--Image Left Text Right with btn-->
-
-
-                <!--Image Module 3 -->
-                <table class="mktoModule" mktoName="Image Module 3" id="ImageModule3" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px;border-collapse: collapse;margin: 0 auto;">
-                        <tr>
-                          <td height="${top_pad0}" style="line-height:${top_pad0}px;font-size:${top_pad0}px;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td class="fullWid center" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px;">
-                            <div class="mktoImg" mktoname="Image" id="Image3" mktoLockImgSize="false">
-                              <div>
-                                <img class="imgmaxwidth" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/template-1-banner3.png" width="${imgWidth}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; width:${imgWidth}px; padding:0px; margin:0px auto; border-spacing:0;max-width:100%;"
-                                     />
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td height="${btm_pad0}" style="line-height:${btm_pad0}px;font-size:${btm_pad0}px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--end of Image Module 3-->
-
-
-                <!--Footer Module-->
-                <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td bgColor="${footer-bg-color}" valign="top" style="background-color:${footer-bg-color};vertical-align: top;">
-                      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                        <tr>
-                          <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-
-                        <tr>
-                          <td align="${alignCenter}" style="text-align: ${alignCenter};">
-                            <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-                              <a href="#" target="_blank"><img class="logowidthl" alt="logo" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/logo-whie.png" width="220" border="0" /></a>
-                            </div>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td align="${alignCenter}" style="padding-top:15px;font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorwhite}; text-align: ${alignCenter};font-weight:600;">
-                            <div class="mktoText" mktoName="Footer Text" id="footer-text">
-                              <div>&copy; INNERSENSE ORGANIC BEAUTY INC.
-
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-
-                        <tr>
-                          <td height="${btm_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--Footer Module-->
-
-                <!--Divider Module-->
-                <table class="mktoModule" mktoName="Divider Module2" id="DividerModule2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                      <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
-                        <tr>
-                          <td height="${top_pad0}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td height="${btm_pad0}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--Divider Module-->
-              </td>
+                  </td>
+            </tr>
+            <tr>
+              <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
             </tr>
           </table>
         </td>
       </tr>
     </table>
-  </body>
+    <!--Image Right Text Left with btn-->    
+
+
+    <!--Image Left Text Right with btn-->
+    <table class="mktoModule" mktoName="2 Col Small Image Left with btn" id="smimgleft2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+      <tr>
+        <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+          <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+            <tr>
+              <td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                  <tr>
+                    <th width="170" align="left" class="block center" valign="top" style="vertical-align: middle;">
+                      <div class="mktoImg" mktoname="Image" id="smimgleft-img">
+                        <div>
+                          <img src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/template-2-img2.png" width="230" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                               />
+                        </div>
+                      </div>
+                    </th>
+                    <th class="hidden" style="font-size:1px; line-height: 1px;" width="45">&nbsp;</th>
+                    <th align="left" class="block top_pad" valign="top" style="vertical-align: middle;">
+                      <table class="center" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                        <tr>
+                          <td align="left"  class="center" style="color:${headlineFontColorwhite};font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize29}px;font-weight:400 !important;line-height:145%;">
+                            <div class="mktoText" mktoName="Banner Headline" id="headline2">
+                              <div>Share Pure Performance</div>
+                            </div>
+                          </td>
+                        </tr> 
+                        <tr>
+                          <td height="30" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td style="font-family:'VerdanaPro-Regular',Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorwhite}">
+                            <div class="mktoText" mktoName="Text" id="imgleft-SubHeadline">
+                              <div>Through July 30th, order our Detox Hair Mask, any of our three purifying hairbaths, and I Create Shine for double Innersense Circle Points, and pass a long a Free Gift with Purchase for clients that bundle together any combination of two. </div>
+                            </div>
+                          </td>
+                        </tr> 
+                        <tr>
+                          <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td >
+                            <div class="mktoText" id="imgleft-btn1" mktoname="Button">
+                              <div>
+                                <table class="center" cellpadding="0" cellspacing="0" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family:'VerdanaPro-SemiBold',Arial, sans-serif; padding: 13px 20px; border-radius: ${btnBorderRadius}px;">
+                                        <a style="text-decoration:none; color:${btnColor};text-transform:uppercase;" href="${btnURL}">${btnText}</a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </th>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="${btm_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!--Image Left Text Right with btn-->
+
+
+    <!--Image Module 3 -->
+    <table class="mktoModule" mktoName="Image Module 3" id="ImageModule3" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+      <tr>
+        <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+          <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px;border-collapse: collapse;margin: 0 auto;">
+            <tr>
+              <td height="${top_pad0}" style="line-height:${top_pad0}px;font-size:${top_pad0}px;">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="fullWid center" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px;">
+                <div class="mktoImg" mktoname="Image" id="Image3" mktoLockImgSize="false">
+                  <div>
+                    <img class="imgmaxwidth" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/template-2-banner2.png" width="${imgWidth}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; width:${imgWidth}px; padding:0px; margin:0px auto; border-spacing:0;max-width:100%;"
+                         />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td height="${btm_pad0}" style="line-height:${btm_pad0}px;font-size:${btm_pad0}px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!--end of Image Module 3-->
+
+
+    <!--Footer Module-->
+    <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+      <tr>
+        <td bgColor="${footer-bg-color}" valign="top" style="background-color:${footer-bg-color};vertical-align: top;">
+          <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+            <tr>
+              <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+
+            <tr>
+              <td align="${alignCenter}" style="text-align: ${alignCenter};">
+                <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
+                  <a href="#" target="_blank"><img class="logowidthl" alt="logo" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/logo-whie.png" width="220" border="0" /></a>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="${alignCenter}" style="padding-top:15px;font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorwhite}; text-align: ${alignCenter};font-weight:600;">
+                <div class="mktoText" mktoName="Footer Text" id="footer-text">
+                  <div>&copy; INNERSENSE ORGANIC BEAUTY INC.
+
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td height="${btm_pad25}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!--Footer Module-->
+
+    <!--Divider Module-->
+    <table class="mktoModule" mktoName="Divider Module2" id="DividerModule2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+      <tr>
+        <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+          <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
+            <tr>
+              <td height="${top_pad0}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="${btm_pad0}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!--Divider Module-->
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
 </html>
