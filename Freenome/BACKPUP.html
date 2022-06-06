@@ -1,552 +1,822 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MWL44QC');
-    </script>
-    <!-- End Google Tag Manager -->
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://info.freenome.com/rs/541-NPN-086/images/favicon.png" sizes="32x32">
-    <link rel="stylesheet" href="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/LP-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Freenome Risk Prediction White Paper">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://info.freenome.com/rs/541-NPN-086/images/risk-LP-favicon.png">
+
+    <title>${pagetitle}</title>
+    <link rel="icon" href="${faviconlink}">
     <link href="https://info.freenome.com/rs/541-NPN-086/images/videosection-style.css" rel="stylesheet">
-
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <meta class="mktoString" id="bgimage" mktoName="Hero Image URL" default="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/top-bg.jpg">
-
-    <meta class="mktoString" id="greybgcolor" mktoName="Grey Section BG Color" default="#8E9BAC">
-
-    <meta class="mktoString" id="logowidth" mktoName="Logo Width" default="368">
-    <meta class="mktoString" id="logohgt" mktoName="Logo Height" default="36">
-    <meta class="mktoString" id="hdrhgtde" mktoName="Header Line Height Desktop" default="76">
-    <meta class="mktoString" id="hdrhgtmo" mktoName="Header Line Height Mobile" default="46">
-    <meta class="mktoString" id="hdrimgpo" mktoName="Banner Image Position" default="center">
-    <meta class="mktoString" id="shapehgt" mktoName="Green Bracket Height" default="84">
-
-    <meta class="mktoString" id="bnrpdtop" mktoName="Banner Padding Top" default="50">
-    <meta class="mktoString" id="bnrpdbtm" mktoName="Banner Padding Bottom" default="150">
-    <meta class="mktoString" id="greypdtop" mktoName="Grey Padding Top" default="60">
-    <meta class="mktoString" id="greypdbtm" mktoName="Grey Padding Bottom" default="60">
-    <meta class="mktoString" id="ftrpdtop" mktoName="Footer Padding Top" default="60">
-    <meta class="mktoString" id="ftrpdbtm" mktoName="Footer Padding Bottom" default="60">
-    <meta class="mktoString" id="ttextpdtop" mktoName="Body TopText Padding Top" default="100">
-    <meta class="mktoString" id="ttextpdbtm" mktoName="Body TopText Padding Bottom" default="30">
-    <meta class="mktoString" id="btextpdbtm" mktoName="Body Text Padding Bottom" default="50">
-
-    <meta class="mktoBoolean" id="showform" mktoName="Show Form?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showsec-bodyText2" mktoName="Show Body Text 2" default="false" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showsec2" mktoName="Show Section2?" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showsec-aftervideo" mktoName="Show Section After Video?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-
-    <!-- PDF file section -->
-    <meta class="mktoBoolean" id="pdfsection-show" mktoName="Show PDF Section?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoString" id="pdfflie" mktoName="PDF File URL" default="https://info.freenome.com/rs/541-NPN-086/images/Freenome Blood Collection Guide_Standard Shipping Kit.pdf">
-    <meta class="mktoString" id="pdfflie-poster" mktoName="PDF File Poster" default="https://info.freenome.com/rs/541-NPN-086/images/Blood Collection Guide.png">
-    <meta class="mktoString" id="pdf-margin-top" mktoName="PDF Section Margin top" default="2">
-    <meta class="mktoString" id="pdf-margin-btm" mktoName="PDF Section Margin bottom" default="2">
-
-    <!-- Video Section -->
-    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="videoshowDealineTop" mktoName="Show Video Top" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoString" mktoName="Video Module Padding Top" id="vid-mod-padding-top" default="1">
-    <meta class="mktoString" mktoName="Video Module Padding Bottom" id="vid-mod-padding-bottom" default="80">
-    <meta class="mktoString" mktoName="Video Module Margin Top" id="vid-mod-mg-top" default="1">
-    <meta class="mktoString" mktoName="Video Module Margin Bottom" id="vid-mod-mg-bottom" default="1">
-    <meta class="mktoString" mktoName="Video Background" id="vid-mod-background" default="linear-gradient(0deg, rgba(203, 231, 2, 1) 0%, rgba(203, 231, 2, 1) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100%)">
-
-    <meta class="mktoString" id="videoposter1" mktoName="Video -1 Poster" default="https://info.freenome.com/rs/541-NPN-086/images/videoposter1.png" allowHtml="true">
-    <meta class="mktoString" id="videoembed1" mktoName="Video -1 Embed URL" default="https://www.youtube.com/watch?v=ZXhfxbjZk0Y" allowHtml="true">
-    <meta class="mktoString" id="videoposter2" mktoName="Video - 2 Poster" default="https://info.freenome.com/rs/541-NPN-086/images/videoposter2.png" allowHtml="true">
-    <meta class="mktoString" id="videoembed2" mktoName="Video - 2 Embed URL" default="https://www.youtube.com/watch?v=5DbYAWyfUHY" allowHtml="true">
-    <meta class="mktoColor" id="videoheadlineclr" mktoName="Video Headline Color" default="#BBD532">
-    <meta class="mktoColor" id="videotextclr" mktoName="Video Text Color" default="#000000">
-    <meta class="mktoBoolean" id="ext-vid-close-btn" mktoName="Show Video Ext Button?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <link href="//na-ab19.marketo.com/rs/398-CQS-166/images/bootstrap.css" rel="stylesheet">
 
 
-    <title>Freenome</title>
-    <script src="https://kit.fontawesome.com/05cac157ab.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-        .title {
-            line-height: $ {
-                hdrhgtde
-            }
-            px;
-        }
-        
-        #banner {
-            width: 100%;
-            background:url(${bgimage});
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-top: $ {
-                bnrpdtop
-            }
-            px;
-            padding-bottom: $ {
-                bnrpdbtm
-            }
-            px;
-            display:table;
-            height:100%;
-            overflow:hidden;
-            margin:0px auto;
-            background-position: $ {
-                hdrimgpo
-            }
-            ;
-        }
-        
-        #section2 {
-            background-color: $ {
-                greybgcolor
-            }
-            ;
-            padding-top: $ {
-                greypdtop
-            }
-            px;
-            padding-bottom: $ {
-                greypdtop
-            }
-            px;
-        }
-        
-        #toptext {
-            font-size: 28px;
-            color: #8A97A8;
-            padding-top: $ {
-                ttextpdtop
-            }
-            px;
-            font-family: 'Montserrat',
-            sans-serif;
-            line-height: 36px;
-            font-weight: 700;
-            padding-bottom: $ {
-                ttextpdbtm
-            }
-            px;
-        }
-        
-        #bodytext {
-            font-size: 18px;
-            color: #383846;
-            line-height: 32px;
-            font-family: 'Montserrat', sans-serif;
-            padding-bottom: $ {
-                btextpdbtm
-            }
-            px;
-            font-weight: 400;
-        }
-        
-        #bodytexttw {
-            display: $ {
-                showsec-bodyText2
-            }
-            ;
-        }
-        
-        #bodytexttw,
-        #section-aftervideo {
-            font-size: 16px;
-            color: #383846;
-            line-height: 28px;
-            font-family: 'Montserrat', sans-serif;
-            padding-bottom: 100px;
-            font-weight: 400;
-            background: url(https://info.freenome.com/rs/541-NPN-086/images/shape4-2.png);
-            background-repeat: no-repeat;
-            padding-left: 30px;
-            padding-top: 10px;
-            background-size: 22px $ {
-                shapehgt
-            }
-            px;
-        }
-        
-        #section-aftervideo {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto
-        }
-        
-        #middletxt {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 32px;
-            color: #D8F000;
-            padding-bottom: 40px;
-        }
-        
-        #fttext {
-            color: #F6F9FF;
-            font-size: 16px;
-            line-height: 28px;
-            opacity: 0.8;
-            font-weight: 400;
-            padding-bottom: 20px;
-        }
-        
-        #formhead {
-            font-size: 18px;
-            line-height: 18px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-        }
-        
-        .pdf-section {
-            margin-top: $ {
-                pdf-margin-top
-            }
-            rem;
-            margin-bottom: $ {
-                pdf-margin-btm
-            }
-            rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            width: 70%;
-        }
-        
-        .pdf-section .second-row {
-            display: flex;
-            gap: 2rem;
-        }
-        
-        #pdffile-text,
-        #pdffile-poster,
-        #pdffile-text-paragraph {
-            display: $ {
-                pdfsection-show
-            }
-            ;
-        }
-        
-        #pdffile-text span {
-            font-size: 22px;
-            color: #222222;
-            font-weight: 700;
-        }
-        
-        #pdffile-text-paragraph p {
-            font-size: 18px;
-            color: #222222;
-            font-weight: 400;
-        }
-        
-        #videotext {
-            text-align: center;
-            margin-bottom: 3rem;
-            display: $ {
-                videoshowDealineTop
-            }
-            ;
-        }
-        
-        #videotext h2 {
-            color: $ {
-                videoheadlineclr
-            }
-            ;
-        }
-        
-        .video-container span {
-            font-size: 20px;
-            font-weight: 700;
-            color: #383846;
-        }
-        
-        .video-container p {
-            font-size: 18px;
-            color: #222222;
-            font-weight: 400;
-        }
-        
-        #videotext p {
-            color: $ {
-                videotextclr
-            }
-            ;
-        }
-        
-        #video {
-            background: $ {
-                vid-mod-background
-            }
-            ;
-            display:$ {
-                videoshow
-            }
-            ;
-            padding: $ {
-                vid-mod-padding-top
-            }
-            px 0px $ {
-                vid-mod-padding-bottom
-            }
-            px 0px;
-            margin: $ {
-                vid-mod-mg-top
-            }
-            px 0px $ {
-                vid-mod-mg-bottom
-            }
-            px 0px;
-        }
-        
-        .video-container {
-            display: grid;
-            gap: 3rem;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        }
-        
-        .video-1 {
-            grid-row-start: 2 !important;
-        }
-        
-        .external-vid-close-btn {
-            display: $ {
-                ext-vid-close-btn
-            }
-            ;
-        }
-        
-        #footer {
-            padding-top: $ {
-                ftrpdtop
-            }
-            px;
-            padding-bottom: $ {
-                ftrpdbtm
-            }
-            px;
-        }
-        
-        @media(max-width: 1140px) {
-            #content {
-                background: none;
-            }
-        }
-        
-        @media(max-width: 768px) {
-            .title {
-                line-height: $ {
-                    hdrhgtmo
-                }
-                px;
-            }
-        }
-        
-        .videoPoster:before {
-            top: 51% !important;
-        }
-        /* this styles is to override positioning */
-        
-        .videoPoster:after {
-            top: 50% !important;
-            left: 50% !important;
-            margin: -17px 0 0 -9px;
-            border-left: 32px solid #383846;
-            border-top: 20px solid transparent;
-            border-bottom: 20px solid transparent;
-        }
-    </style>
+  <!-- Show and Hide Meta Tags -->
+  <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="showsmtext" mktoName="Show Small Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
-</head>
+  <!-- Background, Buttons, and Text Color Meta Tags -->
+  <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#bbbbbb">
+  <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#383846">
+  <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#383846">
 
+  <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
+  <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#383846">
+  <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#383846">
+
+
+  <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#4F2EFF">
+  <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
+
+  <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
+  <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
+  <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#60606B">
+  <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#383846">
+  <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#4F2EFF">
+  <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fffff">
+  <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#8E9BAC">
+  <meta class="mktoColor" id="formHeadLineColor2" mktoName="Form - SubHeadline Color" default="#8E9BAC">
+  <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#383846">
+  <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#383846">
+  <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
+  <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#392dbd">
+  <meta class="mktoColor" id="smtextbgclr" mktoName="Small text - Background Color" default="#ffffff">
+
+  <meta class="mktoColor" id="wtBackgroundColor" mktoName="Right - Highlights Background Color" default="#EAECF0">
+  <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#383846">
+  <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
+
+  <!-- Font Size Meta Tags -->
+  <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
+  <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="20">
+
+
+  <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
+
+  <!-- Banner Section Styling -->
+  <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://info.freenome.com/rs/541-NPN-086/images/White-Paper-Mockup%402x.png">
+  <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="200">
+
+  <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="80">
+  <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="80">
+  <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
+  <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
+
+  <!-- Free-Text Section Styling -->
+  <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+
+  <!-- Footer Section Styling -->
+  <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="20">
+  <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="14">
+
+
+  <!-- Brand Fonts -->
+  <meta class="mktoString" mktoName="Font Family" id="googlefontfamily" default="'GTWalsheimRegular'">
+  <meta class="mktoString" mktoName="Font Family - Bold" id="googlefontfamily2" default="'GTWalsheimBold'">
+
+  <!-- General Button Styling -->
+  <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
+  <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="8">
+  <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
+  <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="0">
+  <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="8">
+
+  <!-- Form Section Styling -->
+  <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="23">
+  <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="12">
+  <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="12">
+  <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
+
+
+
+  <style>
+    @font-face{
+      font-family:'GTWalsheimRegular';
+      src:url(https://static1.squarespace.com/static/54e4c4c4e4b06b5b9b5b6e2c/t/5ad088adaa4a99abb2e5db9f/1523615919032/GTWalsheimRegular.eot);
+      src:url(https://static1.squarespace.com/static/54e4c4c4e4b06b5b9b5b6e2c/t/5ad088adaa4a99abb2e5db9f/1523615919032/GTWalsheimRegular.eot) format("embedded-opentype"),
+  	      url(https://static1.squarespace.com/static/54e4c4c4e4b06b5b9b5b6e2c/t/5ad08947f950b750de90a510/1523616072519/GTWalsheimRegular.woff2) format("woff2"),
+          url(https://static1.squarespace.com/static/54e4c4c4e4b06b5b9b5b6e2c/t/5ad089406d2a73d7d245cfdc/1523616065495/GTWalsheimRegular.woff) format("woff"),
+          url(https://static1.squarespace.com/static/54e4c4c4e4b06b5b9b5b6e2c/t/5ad0893b758d4672dc3800da/1523616061608/GTWalsheimRegular.ttf) format("truetype");
+      font-weight:400;
+      font-style:normal
+    }
+    
+    @font-face{
+      font-family:'GTWalsheimBold';
+      src:url('https://info.freenome.com/rs/541-NPN-086/images/GT Walsheim Pro Bold Regular.eot');
+      src:url('https://info.freenome.com/rs/541-NPN-086/images/GT Walsheim Pro Bold Regular.eot') format('embedded-opentype'),
+  	      url('https://info.freenome.com/rs/541-NPN-086/images/GT Walsheim Pro Bold Regular.woff2') format('woff2'),
+          url('https://info.freenome.com/rs/541-NPN-086/images/GT Walsheim Pro Bold Regular.woff') format('woff'),
+          url('https://info.freenome.com/rs/541-NPN-086/images/GT Walsheim Pro Bold Regular.ttf') format('truetype');
+      font-weight:700;
+      font-style:normal
+    }
+    
+    *{
+      padding:0;
+      border: 0;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: ${googlefontfamily} !important;
+      vertical-align: middle;
+    }
+
+    body {background:#fff;} 
+
+    h1{
+      font-size: ${h1fontsize}px;
+      font-family: ${googlefontfamily2} !important;
+    }
+
+    h2{
+      font-size: ${h2fontsize}px;
+      font-family: ${googlefontfamily2} !important;
+    }
+    p,ul,ol{
+      margin:10px 0;
+    }
+    ul,ol{
+      margin-left:45px;
+    }
+    p, li{
+      line-height:1.5;
+      font-size:${pfontsize}px;
+    }
+    b, .bold, em{
+      font-weight:bold;
+      font-family: ${googlefontfamily2} !important;
+    }
+    img{
+      vertical-align:bottom;
+      max-width:100%;
+      height:auto;
+    }
+    .logo-container a{
+      text-decoration:none;
+    }
+
+    .flex{
+      display: -webkit-flex;
+      display:flex;
+    }
+    .flex .col:not(:last-child){
+      margin-right:30px;
+    }
+    .flex .col:last-child{
+      margin-right:0;
+    }
+    .w50{
+      width:48%;
+    }
+    .w100{
+      width:100%;
+    }
+    .btn a, .btn a:visited{
+      color: ${btnfontclr};
+      text-decoration:none;
+    }
+    .btn a{
+      border: 1px solid ${btnbgclr};
+      background: ${btnbgclr};
+      padding: ${btnpaddingtb}px ${btnpaddinglr}px;
+      -moz-border-radius: ${btnborderrds}px;
+      -webkit-border-radius: ${btnborderrds}px;
+      border-radius:${btnborderrds}px;
+      text-align:center;
+      font-size:${btnfontsize}px;
+      transition:300ms opacity;
+    }
+    .btn a:hover{
+      opacity:${btnhvropacity};
+    }
+    .section{
+      width:85%;
+      max-width:1400px;
+      margin:0 auto;
+      padding:${sectionpaddingtb}px 0;
+    }
+    .form-container{
+      min-height:20px;
+    }
+    
+    .form-container hr {
+      border-top: 3px solid #D8F000; 
+    }
+    
+    .list-container {
+    	display: grid;
+    	grid-template-columns: 1fr 1fr;
+      	gap: 15px;
+    }
+    
+    .list-container ul {
+      margin-left: 17px !important;
+      list-style-image: url(https://info.freenome.com/rs/541-NPN-086/images/Rectangle-list.png);
+    }
+    
+    .list-container li {
+    	margin-bottom: 10px;
+    }
+    
+    .list-container h4 {
+      font-size: 16px;
+      font-weight: bold;
+      padding-bottom: 12px;
+      color: ${freeTextHeaderColor} !important;
+      font-family: ${googlefontfamily2} !important
+    }
+    
+    .img-btn-container {
+      position: relative;
+      text-align: center;
+    }
+    
+    .img-btn-container .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 16px;
+      padding: 12px 14px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      background-color: #4F2EFF;
+    }
+    
+    .img-btn-container svg {
+    	margin-right: 8px; 
+    }
+    
+    .img-btn-container img {
+    	filter: drop-shadow(0px 50px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 32.4074px 46.8519px rgba(0, 0, 0, 0.0531481)) drop-shadow(0px 19.2593px 25.4815px rgba(0, 0, 0, 0.0425185)) drop-shadow(0px 10px 13px rgba(0, 0, 0, 0.035)) drop-shadow(0px 4.07407px 6.51852px rgba(0, 0, 0, 0.0274815)) drop-shadow(0px 0.925926px 3.14815px rgba(0, 0, 0, 0.0168519));
+      	margin-top: 50px;
+    }
+
+    .mktoForm input[type="text"],
+    .mktoForm input[type="url"], 
+    .mktoForm input[type="email"], 
+    .mktoForm input[type="tel"], 
+    .mktoForm input[type="number"], 
+    .mktoForm input[type="date"], 
+    .mktoForm textarea.mktoField, 
+    .mktoForm select.mktoField {
+      color: ${formTextColor} !important;
+    }
+
+	.whitepaper-container {
+      background-color:${wtBackgroundColor};
+      padding: 20px;
+    }
+    
+    .whitepaper-container h2 {
+    	margin: 10px 0 !important;
+      	font-size: 23px;
+      	color: ${freeTextHeaderColor}
+      font-family: ${googlefontfamily2} !important;
+    }
+    
+    .whitepaper-container p {
+    	margin-bottom: 20px !important;
+      	font-size: 16px;
+      	line-height: 24px;
+      	color: ${freeTextTextColor}
+    }
+
+    #header{
+      background-image:url('${bannerimage}');
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:cover;
+      display:${showbanner};
+    }
+    #freetext{
+      background-color:${freeTextBackgroundColor};
+      display:${showsec1};
+    }
+    #formsection{
+      background-color:${mainformbgclr};
+      display:${showformsec};
+    }
+    
+    #smtextsection{
+      background-color:${smtextbgclr};
+      display:${showsmtext};
+    }
+    
+    #footer{
+      display:${showfooter};
+      background-color:${footerbgclr};
+      color:${footerfontclr};
+      font-size:${footerfontsize}px;
+    }
+
+
+    #header .section{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      min-height:500px;
+      position:relative;
+      padding-top:${headerpaddingtop}px;
+      padding-bottom:${headerpaddingbtm}px;
+    }
+    #header .logo-container{
+      position:absolute;
+      top:${sectionpaddingtb}px;
+      left:0;
+      width:100%;
+      display: flex;
+     justify-content: space-between;
+      align-items: flex-end;
+    }
+    .logo-img{
+      width:${toplogowidth}px;
+    }
+    #header #bannertext{
+      padding-top:80px;
+      padding-bottom:30px;
+    }
+
+    #header h1 {
+      color: ${bannerHeaderColor} !important;
+      font-family: ${googlefontfamily2} !important;
+    }
+
+    #header p,
+    #header ul,
+    #header li {
+      color: ${bannerTextColor} !important;
+    }
+    #freetext .btn {
+      margin-top:30px;
+    }
+
+    #freetext h1 {
+      color: ${freeTextHeaderColor} !important;
+      font-family: ${googlefontfamily2} !important;
+    }
+
+    #freetext p,
+    #freetext ul,
+    #freetext li {
+      color: ${freeTextTextColor} !important;
+    }
+
+    #formlefttext h2 {
+      color: ${formHeadLineColor2} !important;
+      font-family: ${googlefontfamily2} !important;
+    }
+
+    #formsection p,
+    #formsection ul,
+    #formsection li {
+      color: ${formSectionTextColor} !important;
+    }
+    #formsection .section{
+      justify-content: space-between;
+    }
+    #formsection .form-container{
+      background-color:${formbgclr};
+      padding-top: ${formTopBottomPadding}px;
+      padding-bottom: ${formTopBottomPadding}px;
+    }
+    #formsection .lefttext{
+      display:${showlefttext};
+    }
+    
+    .lefttext h1 {
+      font-size: 40px;
+      font-weight: bold; 
+      line-height: 125%;
+      margin-bottom: 30px;
+       color: ${freeTextHeaderColor} !important;
+      font-family: ${googlefontfamily2} !important;
+    }
+    
+    .lefttext h2{
+    	color: ${formHeadLineColor} !important;
+        font-size: 28px;
+		line-height: 125%;
+      	font-weight: bold; 
+      	margin-bottom: 30px;
+      font-family: ${googlefontfamily2} !important;
+    }
+    
+    .lefttext h4{
+    	color: ${freeTextHeaderColor} !important;
+        font-size: 19px;
+		line-height: 125%;
+      	font-weight: bold; 
+      	margin-bottom: 12px;
+      font-family: ${googlefontfamily2} !important;
+    }
+    
+    #smtextsection .section{
+      padding-top:0;
+      padding-bottom: 60px;
+    }
+      
+    #smtextsection .sm-text p{
+      	font-size: 10px;
+    }
+
+    #formheadline{
+      font-size: ${formheadlinefontsize}px;
+      color: ${formHeadLineColor} !important;
+      text-align:left;
+      margin-bottom: 10px;
+    }
+
+    #formheadline h2{
+      color: ${formHeadLineColor} !important;
+      font-size: ${formheadlinefontsize}px !important;
+      font-family: ${googlefontfamily2} !important;
+    }
+    
+    #formheadline p {
+      color: ${freeTextTextColor} !important;
+      font-size: 19px !important;
+    }
+    
+    form.mktoForm{
+      width:99% !important;
+      max-width:700px !important;
+      margin: 20px 0 !important;
+      
+    }
+    .mktoForm .mktoGutter{
+      width:0 !important;
+    }
+    .mktoForm .mktoOffset {
+      height: 7px !important;
+    }
+    .mktoForm .mktoLabel{
+      width:90% !important;
+      font-size:${formfontsize}px !important;
+      color: ${formLabelColor} !important;
+      padding-bottom: 3px;
+    }
+    .mktoForm .mktoFormRow{
+      display:flex !important;
+    }
+    .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
+      margin-left:20px;
+    }
+    .mktoForm .mktoFormRow .mktoFormCol:first-child{
+      margin-left:0 !important;
+    }
+    .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap, .mktoForm input, .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm .mktoButtonRow{
+      width:100% !important;
+    }
+    .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
+      min-height:25px !important;
+      height:40px !important;
+    }
+    .mktoForm textarea.mktoField{
+      height:70px !important;
+      min-height:40px !important;
+    }
+    .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+      border: 1px solid #D0D3D4 !important;
+      background: #ffffff !important;
+      color: ${formTextColor} !important;
+      -moz-border-radius: 0 !important;
+      -webkit-border-radius: 0 !important;
+      border-radius: 0 !important;
+      padding-left: 10px !important;
+      font-size:${formfontsize}px !important;
+    }
+    .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color:#3a3a3a !important;
+    }
+    .mktoForm input::-moz-placeholder { /* Firefox 19+ */
+      color:#3a3a3a !important;
+    }
+    .mktoForm input:-ms-input-placeholder { /* IE 10+ */
+      color:#3a3a3a !important;
+    }
+    .mktoForm input:-moz-placeholder { /* Firefox 18- */
+      color:#3a3a3a !important;
+    }
+    .mktoForm select.mktoField{
+      background-color:#ffffff !important;
+      background-image: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/select-arrow.png') !important;
+      background-repeat: no-repeat !important;
+      background-position:97% 50% !important;
+      -moz-appearance: none; 
+      -webkit-appearance: none; 
+      appearance: none;
+      background-size: 24px !important;
+    }
+    .mktoForm input:invalid, .mktoForm select.mktoField:invalid, .mktoForm textarea.mktoField:invalid{
+      box-shadow: 0px 0px 0px 3px #e83131 !important;
+    }
+    .mktoLogicalField.mktoCheckboxList input{
+      width: 20px !important;
+      height: 20px !important;
+      margin-top: 3px !important;
+      margin-right: 5px!important;
+    }
+    .mktoForm a, .mktoForm a:visited{
+      color:#3a3a3a !important;
+    }
+    .mktoForm .mktoLogicalField.mktoCheckboxList{
+      order:1;
+      margin-right: 8px !important;
+    }
+    .mktoForm .mktoButtonWrap{
+      margin-left: 0 !important;
+    }
+    .mktoForm .mktoButtonRow{
+      margin-top:10px;
+    }
+    .mktoButtonWrap button.mktoButton {
+      background: ${formButtonColor} !important;
+      border: 1px solid ${formButtonColor} !important;
+      color:${btnfontclr};
+      text-align: center !important;
+      letter-spacing: 0.1em !important;
+      font-size:${btnfontsize}px !important;
+      -moz-border-radius: ${btnborderrds}px !important;
+      -webkit-border-radius: ${btnborderrds}px !important;
+      border-radius:${btnborderrds}px !important;
+      opacity:1;
+      transition:300ms opacity;
+    }
+
+    .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+      background: ${formButtonColor} !important;
+      color: ${formButtonTextColor} !important;
+      border: 1px solid ${formButtonColor} !important;
+    }
+
+    .mktoForm button.mktoButton:hover{
+      opacity:${btnhvropacity};
+      color: ${formButtonHoverColor} !important;
+      background-color: ${formButtonHoverBGColor} !important;
+      background: ${formButtonHoverBGColor} !important;
+    }
+
+    .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+      color: ${formButtonHoverColor} !important;
+      background-color: ${formButtonHoverBGColor} !important;
+      background: ${formButtonHoverBGColor} !important;
+    }
+
+    .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+      margin-left: 1.5em;
+      margin-top: 0.1em;
+      margin-bottom: 0.3em;
+      line-height: 2em!important;
+      display: block;
+      min-height: 12px;
+      font-size: ${formfontsize-1}px!important;
+    }
+    
+    .icon-container {
+      color: #fff;
+      
+    }
+    
+    .icon-container span {
+      font-size: 22px;
+    }
+    
+
+    #footer .section{
+      padding:${footerpaddingtb}px 0;
+
+    }
+    #footer .row1{
+      align-items:center;
+      justify-content: space-between;
+      margin-bottom:20px;
+    }
+    #footer .logo-container {
+      display: flex;
+     justify-content: center;
+      gap: 16.37px;
+      align-items: center;
+
+    }
+    #footer .logo-container img{
+      width:50px;
+    }
+    #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
+      color:${footerfontclr} !important;
+      font-size:${footerfontsize}px !important;
+    }
+
+
+    @media screen and (max-width:850px){
+      .flex{
+        flex-wrap:wrap;
+        flex-direction:column;
+      }
+      .flex .col:not(:last-child){
+        margin-left:0;
+        margin-right:0;
+      }
+      .w50{
+        width:100%;
+      }
+      .section, #header .section{
+        width:90%;
+        padding:40px 0;
+        padding-top:40px;
+        padding-bottom:40px;
+      }
+      #formsection .lefttext{
+        margin-right:0;
+        width:100%;
+        margin-bottom:20px;
+      }
+      #formsection .form-container{
+        padding:20px;
+      }
+      #footer .section{
+        padding:25px 0;
+        align-items:center;
+        justify-content: center;
+        text-align:left;
+      }
+      #footer .logo-container{
+        margin-bottom:10px;
+      }
+      #footer .logo-container {
+ 		flex-wrap: wrap;
+	}
+    }
+
+
+    @media screen and (max-width:550px){
+      .mktoForm .mktoFormRow{
+        display:block !important;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol{
+        margin-left:0 !important;
+      }
+      .list-container {
+        grid-template-columns: 1fr;
+      }
+      .img-btn-container {
+      	margin-top: 20px;
+      }
+      .list-container {
+      	gap: 0px;
+      }
+      .img-btn-container img {
+      	margin-top: 0px; 
+      }
+    }
+  </style>
+  </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWL44QC"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="wrapper">
-        <div class="container_100">
-
-            <div id="content">
-                <div class="container_inner">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="logo">
-                                <div class="mktoImg" mktoName="Logo" id="logo">
-                                    <a href="https://www.freenome.com/" target="_blank"><img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/top-logos.png" width="${logowidth}" height="${logohgt}" alt="Logo" border="0" /></a>
-                                </div>
-                            </div>
-                            <div class="shape1"><img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/shape1.png" width="100" height="72" border="0" /></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="banner">
-                <div class="container_inner">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mktoText title" mktoName="Title" id="title">
-                                Simple to participate.<br><span style="background-color: #D8F000;">Substantial impact.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="content">
-                <div class="container_inner">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="shape2"><img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/shape2.png" width="212" height="107" border="0" /></div>
-                            <div class="shape3"><img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/shape3.png" width="120" height="60" border="0" /></div>
-
-
-                            <div class="mktoText" mktoName="Top Text" id="toptext">
-                                Become a PREEMPT CRC clinical trial site.
-                            </div>
-                            <div class="mktoText" mktoName="Body Text" id="bodytext">
-                                Help advance early CRC detection during its earliest, most treatable stages, and receive up to $1,000 per completed patient.<br><br> Once you sign up, we will provide you with the resources and support needed to simply
-                                contribute to the study.
-                            </div>
-                            <div class="mktoText" mktoName="Body Text2" id="bodytexttw">
-                                <span style="font-weight: 700;">Early CRC detection can dramatically improve survival rates.</span><br> That’s why we are looking to validate a simple blood test for early CRC detection.
-                            </div>
-                        </div>
-                        <div class="col-md-4 mobileform" style="display: ${showform};">
-                            <div class="formbox">
-                                <div class="formarea">
-                                    <div class="mktoText" mktoName="Form Head Text" id="formhead" style="padding-top: 10px; padding-bottom: 30px;">
-                                        Become a clinical trial site
-                                    </div>
-                                    <div class="mktoForm" id="form1" mktoName="Form">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PDF File Section -->
-                    <div class="pdf-section">
-                        <div class="mktoText" mktoName="PDF File text" id="pdffile-text">
-                            <span>Blood Collection Guide</span>
-                        </div>
-                        <div class="second-row">
-                            <div class="mktoImg" mktoName="pdffile-poster" id="pdffile-poster">
-                                <a href="${pdfflie}" target="_blank" title="Blood Collection Guide Checklist">
-                                    <img src="${pdfflie-poster}" alt="Blood Collection Guide.png" height="236" width="182"></a>
-                            </div>
-                            <div class="mktoText" mktoName="PDF File Paragraph" id="pdffile-text-paragraph">
-
-                                <p>A one-page Blood Collection Guide with tips for you to print and follow along with each blood collection</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- end of PDF file section -->
-                </div>
-
-            </div>
+  
+  <div id="header">
+    <div class="section">
+      <div class="logo-container">
+        <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
+          <a href="https://www.freenome.com/" target="_blank"><img class="logo-img" src="https://info.freenome.com/rs/541-NPN-086/images/Logo-Freenome.png" alt="logo"></a>
         </div>
-
-
-        <!-- Youtube Video -->
-        <div class="container_100" id="video">
-            <div class="container_inner section">
-                <div class="left">
-                    <div class="mktoText" id="videotext" mktoName="Youtube Video - Copy">
-                        <h2>Rising to the Challenge</h2>
-                        <p>Learn how Freenomers are bringin our mission to life</p>
-                    </div>
-                </div>
-                <div class="video-container">
-
-                    <div class="mktoText" id="videohedline1" mktoName="Video Headline 1">
-                        <span>Standard Packing</span>
-                        <p>Tips and best practices for the blood draw, including shipping with our standard packing materials</p>
-                    </div>
-
-                    <div class="mktoText" id="videohedline2" mktoName="Video Headline 2">
-                        <span>NanoCool Packing</span>
-                        <p>Tips and best practices for the blood draw, including all the steps to pack with a NanoCool box</p>
-                    </div>
-
-
-                    <div class="videoWrapper videoWrapper169 js-videoWrapper video-1">
-                        <!-- YouTube iframe. -->
-                        <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
-                        <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
-                        <iframe class="videoIframe js-videoIframe" src="${videoembed1}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed1}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-
-                        <!-- the poster frame - in the form of a button to make it keyboard accessible -->
-                        <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter1});">Play video</button>
-                        <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text1" mktoName="Video Button 1 Text">external close button</span></button>
-                    </div>
-
-                    <div class="videoWrapper videoWrapper169 js-videoWrapper video-2">
-                        <!-- YouTube iframe. -->
-                        <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
-                        <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
-                        <iframe class="videoIframe js-videoIframe" src="${videoembed2}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed2}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-
-                        <!-- the poster frame - in the form of a button to make it keyboard accessible -->
-                        <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter2});">Play video</button>
-                        <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text2" mktoName="Video Button 2 Text">external close button</span></button>
-
-                    </div>
-                </div>
-            </div>
+         <div class="mktoText icon-container" id="icon" mktoName="Banner - Icon">
+          <img src="https://info.freenome.com/rs/541-NPN-086/images/white-paper-icon.png" alt="icon" width="34" height="43">&nbsp;
+           <span>White Paper</span>
         </div>
-        <!-- END Video -->
-
-
-        <div class="mktoText" id="section-aftervideo" style="display: ${showsec-aftervideo};" mktoName="Section After Video">
-            <span style="font-weight: 700;">Early CRC detection can dramatically improve survival rates.</span><br> That’s why we are looking to validate a simple blood test for early CRC detection.
-        </div>
-
-
-        <div id="section2" style="display: ${showsec2};">
-            <div class="container_inner">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="mktoText" id="middletxt" mktoName="Middle Text">
-                            Example Potential Earnings
-                        </div>
-                        <div class="mktoText" id="middlegraphic" mktoName="Middle Graphic">
-                            <img src="https://541-NPN-086.mktoweb.com/rs/541-NPN-086/images/earnings.png" style="max-width: 747px;" width="100%" border="0" />
-                        </div>
-                        <div style="clear: both;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="footer">
-            <div class="mktoSnippet" id="Footersnippet" mktoName="Footer Snippet"></div>
-        </div>
-
+      </div>
 
     </div>
-    <script src="https://info.freenome.com/rs/541-NPN-086/images/mac-jquery.min.js"></script>
-    <script src="https://info.freenome.com/rs/541-NPN-086/images/video-script.js"></script>
-</body>
+  </div>
 
+
+  <div id="formsection">
+    <div class="section flex">
+
+      <div class="w50 lefttext">
+        <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
+          <h1>
+            Partner with Freenome and use our innovative risk predictor to understand who in your population is likely to develop CRC
+          </h1>
+          <h2>
+            Work with us to use resources more effectively with colorectal cancer risk prediction
+          </h2>
+          <h4>
+            Opportunity to improve CRC screening
+          </h4>
+          <p>
+           Colorectal cancer (CRC) is the most preventable cancer but least prevented form of cancer*. Early detection of CRC through screening can improve health outcomes and lower costs, but with so many patients in need of screening and limited capacity for outreach and colonoscopies, more efficient and effective use of limited resources is crucial to improve health outcomes.
+          </p>
+          
+          <h4>
+            Assessing risk can make a difference
+          </h4>
+          <p>
+           Freenome developed risk prediction models that leverage electronic health record (EHR) or claims data or both to indicate how likely each patient is to develop CRC in the next two years. This enables more targeted use of resources to patients with greatest need.
+          </p>
+          
+          <h4>
+            Use your data and optimize resources
+          </h4>
+          <p>
+          Using their data, and without the need for custom workflows, health plans and providers can bring risk prediction to their organization and utilize outputs from the model to direct the right screening resources to the right patients. Organizations can also partner with Freenome on custom, optimized outreach to further drive adherence and improve outcomes.
+          </p>
+        </div>
+      </div>
+
+      <div class="w50">
+        <div class="whitepaper-container">
+          <div class="mktoText" id="garyheadline" mktoName="Right - Headline">
+           <h2 class="bold">See how it works in our white paper</h2>
+          <p>
+              In this white paper, we discuss our machine learning approach to training a CRC risk prediction model using a large EHR dataset from the United Kingdom. The model has a two-year predictive horizon and is intended to be used on a population consistent with clinical and coverage guidelines. 
+          </p>
+          </div>
+          
+          <div class="list-container">
+            <div>
+              <div class="mktoText" id="list-text" mktoName="Right - List text">
+              <h4>
+              	Key highlights include:
+              </h4>
+              <ul>
+                <li>Performance of this model yielded an area under the curve (AUC) of 0.768</li>
+                <li>When applied to real longitudinal patient data, the model correctly identified 80% of CRC patients an average of 3+ years before they were diagnosed</li>
+                 <li>Screen-eligible patients representing the top 15% in risk had 50% of the CRC cases</li>
+              </ul>
+                </div>
+            </div>
+            <div class="img-btn-container">
+              <img src="https://info.freenome.com/rs/541-NPN-086/images/ipad-mockup.png" width="200">
+               <button class="btn">
+                 <div class="mktoText" id="buttontext" mktoName="Right - Button text" style="vertical-align: middle;">
+                 <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.9753 21.7857C12.0938 21.7857 12.209 21.7594 12.3209 21.7067C12.4393 21.6606 12.5611 21.5816 12.6861 21.4698L15.8059 18.5376C15.977 18.3731 16.0625 18.1789 16.0625 17.9552C16.0625 17.7248 15.9803 17.5372 15.8157 17.3924C15.6578 17.2476 15.4702 17.1752 15.253 17.1752C15.0226 17.1752 14.8153 17.2608 14.631 17.4319L13.3772 18.7153L12.7849 19.4163L12.8935 18.0243V10.0276C12.8935 9.78403 12.8046 9.57342 12.6269 9.39572C12.4492 9.21801 12.232 9.12916 11.9753 9.12916C11.7186 9.12916 11.5015 9.21801 11.3237 9.39572C11.146 9.57342 11.0572 9.78403 11.0572 10.0276V18.0243L11.1658 19.4163L10.5833 18.7153L9.30976 17.4319C9.13864 17.2608 8.93461 17.1752 8.69767 17.1752C8.48047 17.1752 8.2896 17.2476 8.12506 17.3924C7.9671 17.5372 7.88812 17.7248 7.88812 17.9552C7.88812 18.1789 7.97368 18.3731 8.14481 18.5376L11.2744 21.4698C11.3929 21.5816 11.508 21.6606 11.6199 21.7067C11.7384 21.7594 11.8569 21.7857 11.9753 21.7857Z" fill="white"/>
+                  <path d="M14.8482 16.0202V14.0457H19.1724C20.1201 14.0457 20.8276 13.835 21.2949 13.4138C21.7622 12.986 21.9959 12.4364 21.9959 11.7651C21.9959 10.9951 21.7458 10.3698 21.2456 9.88934C20.7454 9.40888 20.0675 9.09296 19.2118 8.94158C19.0934 8.92184 19.0407 8.84944 19.0539 8.72439C19.0736 8.48745 19.0901 8.23735 19.1033 7.97408C19.1164 7.70423 19.1164 7.44096 19.1033 7.18428C19.0572 6.28259 18.8104 5.45331 18.3628 4.69642C17.9153 3.93953 17.3163 3.33401 16.566 2.87988C15.8157 2.41916 14.9568 2.18881 13.9893 2.18881C13.2258 2.18881 12.5545 2.31386 11.9753 2.56396C11.4027 2.81406 10.9058 3.15631 10.4846 3.5907C10.0699 4.01851 9.71452 4.50555 9.41835 5.05183C9.36569 5.15055 9.28013 5.18017 9.16166 5.14068C8.48375 4.94981 7.84204 4.93006 7.23653 5.08144C6.63102 5.22624 6.14068 5.55861 5.76553 6.07856C5.39037 6.59851 5.21596 7.3192 5.24229 8.24064C5.24887 8.37227 5.18634 8.43809 5.05471 8.43809C4.10695 8.43809 3.35993 8.71122 2.81366 9.2575C2.27396 9.80378 2.00411 10.5113 2.00411 11.3801C2.00411 11.8671 2.12258 12.3147 2.35952 12.7227C2.59646 13.1242 2.942 13.4467 3.39613 13.6902C3.85027 13.9272 4.40642 14.0457 5.06458 14.0457H9.09256V16.0202H5.06458C4.02468 16.0202 3.12629 15.8128 2.3694 15.3982C1.61251 14.9835 1.02674 14.4307 0.612094 13.7396C0.204031 13.042 0 12.2686 0 11.4196C0 10.6693 0.141506 9.98148 0.424517 9.35623C0.707528 8.73097 1.10572 8.21102 1.61909 7.79637C2.13904 7.38173 2.75771 7.10859 3.47511 6.97696C3.50144 6.31221 3.66598 5.71986 3.96874 5.19991C4.27808 4.67338 4.67297 4.2357 5.15343 3.88687C5.64048 3.53804 6.1703 3.30111 6.7429 3.17605C7.32209 3.04442 7.89469 3.04771 8.46072 3.18593C8.85562 2.61332 9.3262 2.10324 9.87248 1.65569C10.4188 1.20814 11.0374 0.856021 11.7285 0.599336C12.4196 0.342652 13.1798 0.21431 14.0091 0.21431C14.9897 0.21431 15.9046 0.395305 16.7536 0.757296C17.6092 1.11271 18.3529 1.61949 18.9848 2.27766C19.6232 2.92924 20.1201 3.70259 20.4755 4.59769C20.8309 5.48621 21.0053 6.4603 20.9988 7.51995C21.9334 7.88852 22.6672 8.45783 23.2003 9.22788C23.7334 9.99136 24 10.8733 24 11.8737C24 12.6767 23.8058 13.3908 23.4175 14.016C23.0358 14.6413 22.4862 15.1316 21.7688 15.487C21.058 15.8424 20.2123 16.0202 19.2316 16.0202H14.8482Z" fill="#D8F000"/>
+                  </svg>
+                 <a href="https://info.freenome.com/rs/541-NPN-086/images/Freenome_WhitePaper_RiskPrediction_Mar2022.pdf" target="_blank" style="text-decoration: none;">Download white paper</a>
+                   </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="form-container">
+          <hr>
+          <div class="mktoText" id="formheadline" mktoName="Form - Headline">
+            <h2 class="bold">Ready to learn more?</h2>
+            <p>
+              Contact us for an introduction to our capabilities.
+            </p>
+          </div>
+          <div class="mktoForm" id="form1" mktoName="Form"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <div id="smtextsection">
+    <div class="section">
+      <div class="mktoText sm-text" id="formlefttext2a" mktoName="Bottom Small Text">
+        <p>
+          * Itzkowitz SH. Incremental advances in excremental cancer detection tests. J Natl Cancer Inst. 2009 Sept;101(18):1225–1227
+        </p>
+      </div>
+  	</div>
+  </div>
+  
+
+  <footer id="footer">
+    <div class="section">
+ 		<div class="logo-container col">
+          <div class="mktoText" id="footerlogo" mktoName="Footer - Logo">
+            <a href="https://www.freenome.com/" target="_blank"><img src="https://info.freenome.com/rs/541-NPN-086/images/footer-fn-logo.png" alt="footer logo"></a>
+          </div>
+          
+          <div class="mktoText" id="footer-text" mktoName="Footer - text">
+            <p>Freenome is a biotechnology company on a mission to create tools that empower everyone to prevent, detect, and treat their disease. To achieve this, we are developing a blood test for the early detection of cancer.</p>
+          </div>
+        </div>
+      
+      
+
+    </div>
+  </footer>
+  <script src="https://info.freenome.com/rs/541-NPN-086/images/mac-jquery.min.js"></script>
+  <script src="https://info.freenome.com/rs/541-NPN-086/images/video-script.js"></script>
+</body>
 </html>
