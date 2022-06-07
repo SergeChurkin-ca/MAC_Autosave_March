@@ -15,7 +15,8 @@
     <meta class="mktoString" mktoName="Logo tom margin" id="logo-top-margin" default="1">
     <meta class="mktoString" mktoName="Logo bottom margin" id="logo-bottom-margin" default="1">
 
-
+    <!-- Layout -->
+    <meta class="mktoString" mktoName="Aside Container width (px)" id="aside-container-width" default="500">
     <!-- Articles -->
     <meta class="mktoBoolean" id="article-1-show" mktoName="Show Article 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="article-2-show" mktoName="Show Article 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -33,6 +34,7 @@
 
 
     <!-- Aside Containers -->
+    <meta class="mktoBoolean" id="show-aside" mktoName="Show Aside Container? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="aside-1-show" mktoName="Show Aside 1? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="aside-2-show" mktoName="Show Aside 2? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" mktoName="Aside Image 1" id="asideimage-1" default="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png">
@@ -81,6 +83,7 @@
       .flex-container {
         display: flex;
       }
+      
 
       img {
         width: 100%;
@@ -200,7 +203,7 @@
       /* main*/
 
       main {
-        width: calc(100% - 17rem);
+        // width: calc(100% - 17rem);
 
       }
       /* -- end of main -- */
@@ -222,22 +225,26 @@
 
       main article .img-container {
         padding-right: 2rem;
+        flex: 1 0 200px;
       }
 
       article .img-container,
       .article-context {
         width: calc((100% / 2));
       }
-
+       
       .article-context {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-right: 0.5rem;
+        flex: 1 0 200px;
       }
+   
 
       article.flex-container {
         padding: 2.5rem 0;
+        flex-wrap: wrap;
       }
 
       article.flex-container:nth-of-type(1n+2) {
@@ -282,14 +289,17 @@
 
       aside {
         float: right;
-        display: flex;
+        display: ${show-aside};
         flex-direction: column;
         gap: 1.5rem;
+        margin-left: 2.5rem;
       }
 
-      .aside-container-1,
+      .form-container, .aside-container-1,
       .aside-container-2 {
         width: 240px;
+        width: ${aside-container-width}px;
+        max-width: 50vw;
         height: 270px;
         border-radius: 10px;
         display: flex;
@@ -391,12 +401,14 @@
         }
       }
 
-      @media (max-width: 860px) {
+      @media (max-width: 1060px) {
         aside {
           float: none;
           flex-direction: row;
           justify-content: space-around;
           margin-bottom: 2rem;
+          margin-left: 0;
+          flex-wrap: wrap;
         }
         main {
           width: 100%;
@@ -445,6 +457,11 @@
 
 
       <aside>
+<div class="form-container">
+          <div class="mktoForm" mktoName="Form 1" id="form1">
+          <script src="//info.penumbrainc.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1006"></form> <script>MktoForms2.loadForm("//info.penumbrainc.com", "815-GYF-786", 1006);</script>
+          </div>
+          </div>
         <div class="mktoText aside-container-1" id="aside-container-1" mktoName="aside 1">
           <h3>Curious how REAL &reg; System can support your patients?</h3>
           <button>
@@ -603,5 +620,6 @@
       </footer>
     </div>
   </body>
+
 
 </html>

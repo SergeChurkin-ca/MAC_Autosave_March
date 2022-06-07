@@ -14,8 +14,8 @@
     <meta class="mktoBoolean" id="show-banner" mktoName="Show Banner" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" mktoName="Logo tom margin" id="logo-top-margin" default="1">
     <meta class="mktoString" mktoName="Logo bottom margin" id="logo-bottom-margin" default="1">
-    
-    
+
+
     <!-- Articles -->
     <meta class="mktoBoolean" id="article-1-show" mktoName="Show Article 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="article-2-show" mktoName="Show Article 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -23,26 +23,26 @@
     <meta class="mktoBoolean" id="article-4-show" mktoName="Show Article 4?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="article-5-show" mktoName="Show Article 5?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="article-6-show" mktoName="Show Article 6?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-        
+
     <meta class="mktoBoolean" id="article-1-direction" mktoName="Article 1 direction?" default="true" true_value="row-reverse" false_value="row" false_value_name="Row" true_value_name="Reverse">
     <meta class="mktoBoolean" id="article-2-direction" mktoName="Article 2 direction?" default="true" true_value="row" false_value="row-reverse" false_value_name="Reverse" true_value_name="Row">
     <meta class="mktoBoolean" id="article-3-direction" mktoName="Article 3 direction?" default="true" true_value="row-reverse" false_value="row" false_value_name="Row" true_value_name="Reverse">
     <meta class="mktoBoolean" id="article-4-direction" mktoName="Article 4 direction?" default="true" true_value="row" false_value="row-reverse" false_value_name="Reverse" true_value_name="Row">
     <meta class="mktoBoolean" id="article-5-direction" mktoName="Article 5 direction?" default="true" true_value="row-reverse" false_value="row" false_value_name="Row" true_value_name="Reverse">
     <meta class="mktoBoolean" id="article-6-direction" mktoName="Article 6 direction?" default="true" true_value="row" false_value="row-reverse" false_value_name="Reverse" true_value_name="Row">
-        
-        
+
+
     <!-- Aside Containers -->
     <meta class="mktoBoolean" id="aside-1-show" mktoName="Show Aside 1? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="aside-2-show" mktoName="Show Aside 2? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" mktoName="Aside Image 1" id="asideimage-1" default="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png">
     <meta class="mktoString" mktoName="Aside Image 2" id="asideimage-2" default="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png">
-  
+
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins+Sans&family=Source+Sans+Pro:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
     <meta class="mktoString" mktoName="Google Font - Family Headline" id="fontfamily-headline" default="Poppins">
     <meta class="mktoString" mktoName="Google Font - Family Primary" id="fontfamily" default="Source Sans Pro">
-        
+
     <!-- Font Size -->
     <meta class="mktoString" mktoName="H1 font size px" id="h1-fontsize" default="22">
     <meta class="mktoString" mktoName="H2 font size px" id="h2-fontsize" default="18">
@@ -52,26 +52,34 @@
     <meta class="mktoString" mktoName="asize font size px" id="aside-fontsize" default="12">
     <meta class="mktoString" mktoName="footer font size large px" id="footer-fontsize" default="18">
     <meta class="mktoString" mktoName="footer font size small px" id="footer-smfontsize" default="8">
-        
+
     <!-- Colors -->
-    <meta class="mktoColor" id="headline-text-color" mktoName="Headline text color" default="#0047bb">        
-    <meta class="mktoColor" id="p-text-color" mktoName="Paragraph text color" default="#141414">        
-    <meta class="mktoColor" id="footer-txt-color" mktoName="Footer text color" default="#000000">        
-    <meta class="mktoColor" id="button-bg-color" mktoName="Button Background" default="#231f20">        
-    <meta class="mktoColor" id="button-hover-color" mktoName="Button Hover background" default="#231f20">        
-    <meta class="mktoColor" id="button-hover-brb-color" mktoName="Button Border on hover" default="#231f20">        
-                                                    
+    <meta class="mktoColor" id="headline-text-color" mktoName="Headline text color" default="#0047bb">
+    <meta class="mktoColor" id="p-text-color" mktoName="Paragraph text color" default="#141414">
+    <meta class="mktoColor" id="footer-txt-color" mktoName="Footer text color" default="#000000">
+    <meta class="mktoColor" id="button-bg-color" mktoName="Button Background" default="#231f20">
+    <meta class="mktoColor" id="button-hover-color" mktoName="Button Hover background" default="#231f20">
+    <meta class="mktoColor" id="button-hover-brb-color" mktoName="Button Border on hover" default="#231f20">
+
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
 
     <style>
         /* general styling */
-         ${googlefontimport}
-         
+        
+        $ {
+            googlefontimport
+        }
+        
         .wrapper {
             width: 75vw;
             margin: 0 auto;
             max-width: 1200px;
+        }
+        
+        header#logo {
+            text-align: center;
+            padding: 15px;
         }
         
         .flex-container {
@@ -92,41 +100,70 @@
             -moz-box-sizing: border-box;
             box-sizing: border-box;
             font-family: Helvetica, sans-serif;
-            font-family: ${fontfamily}, sans-serif !important;
+            font-family: $ {
+                fontfamily
+            }
+            ,
+            sans-serif !important;
         }
         
         h1,
         h2,
         aside,
         aside button a {
-            font-family: ${fontfamily-headline}, sans-serif !important;
+            font-family: $ {
+                fontfamily-headline
+            }
+            ,
+            sans-serif !important;
         }
         
         h1 {
-            font-size: ${h1-fontsize}px;
+            font-size: $ {
+                h1-fontsize
+            }
+            px;
         }
         
         h2 {
-            font-size: ${h2-fontsize}px;
+            font-size: $ {
+                h2-fontsize
+            }
+            px;
         }
         
         h3 {
-            font-size: ${h3-fontsize}px;
+            font-size: $ {
+                h3-fontsize
+            }
+            px;
         }
         
         aside p {
-            font-size: ${aside-fontsize}px;
+            font-size: $ {
+                aside-fontsize
+            }
+            px;
         }
         
         p,
         li {
             line-height: 25px;
-            color: ${p-text-color};
-            font-size: ${p-fontsize}px;
+            color: $ {
+                p-text-color
+            }
+            ;
+            font-size: $ {
+                p-fontsize
+            }
+            px;
         }
         
         article li {
-            font-size: ${article-fontsize}px;
+            font-size: $ {
+                article-fontsize
+            }
+            px;
         }
         
         .statement br {
@@ -134,13 +171,18 @@
         }
         
         footer .row-1 p {
-            color: ${footer-txt-color};
+            color: $ {
+                footer-txt-color
+            }
+            ;
         }
         
         h1,
         h2,
         article li::marker {
-            color: ${headline-text-color}
+            color: $ {
+                headline-text-color
+            }
         }
         
         aside p,
@@ -158,12 +200,18 @@
         
         footer .row-2 p {
             color: #9aa1a4;
-            font-size: ${footer-fontsize}px;
+            font-size: $ {
+                footer-fontsize
+            }
+            px;
             letter-spacing: 0.25rem;
         }
         
         footer .row-4 p {
-            font-size: ${footer-smfontsize}px;
+            font-size: $ {
+                footer-smfontsize
+            }
+            px;
             line-height: 12px;
             text-align: center;
         }
@@ -174,15 +222,26 @@
         .logo-container {
             display: flex;
             justify-content: center;
-            width: ${toplogowidth}px;
-            
-            margin: ${logo-top-margin}rem auto ${logo-bottom-margin}rem;
+            width: $ {
+                toplogowidth
+            }
+            px;
+            margin: $ {
+                logo-top-margin
+            }
+            rem auto $ {
+                logo-bottom-margin
+            }
+            rem;
         }
         /* -- end of logo */
         /* banner */
         
         .banner {
-            display: ${show-banner};
+            display: $ {
+                show-banner
+            }
+            ;
             width: fit-content;
             margin-bottom: 2rem;
         }
@@ -197,7 +256,6 @@
         
         main {
             width: calc(100% - 17rem);
-           
         }
         /* -- end of main -- */
         /* statement  */
@@ -211,10 +269,10 @@
             margin-top: 1rem;
         }
         /* articles */
+        
         .mktoGen.mktoImg {
             display: flex !important;
         }
-    
         
         main article .img-container {
             padding-right: 2rem;
@@ -250,29 +308,71 @@
             margin-top: 0.5rem;
             max-width: 200px;
         }
+        
         .article-1 {
-            display: ${article-1-show};
-            flex-direction: ${article-1-direction};
+            display: $ {
+                article-1-show
+            }
+            ;
+            flex-direction: $ {
+                article-1-direction
+            }
+            ;
         }
+        
         .article-2 {
-            display: ${article-2-show};
-            flex-direction: ${article-2-direction};
+            display: $ {
+                article-2-show
+            }
+            ;
+            flex-direction: $ {
+                article-2-direction
+            }
+            ;
         }
+        
         .article-3 {
-            display: ${article-3-show};
-            flex-direction: ${article-3-direction};
+            display: $ {
+                article-3-show
+            }
+            ;
+            flex-direction: $ {
+                article-3-direction
+            }
+            ;
         }
+        
         .article-4 {
-            display: ${article-4-show};
-            flex-direction: ${article-4-direction};
+            display: $ {
+                article-4-show
+            }
+            ;
+            flex-direction: $ {
+                article-4-direction
+            }
+            ;
         }
+        
         .article-5 {
-            display: ${article-5-show};
-            flex-direction: ${article-5-direction};
+            display: $ {
+                article-5-show
+            }
+            ;
+            flex-direction: $ {
+                article-5-direction
+            }
+            ;
         }
+        
         .article-6 {
-            display: ${article-6-show};
-            flex-direction: ${article-6-direction};
+            display: $ {
+                article-6-show
+            }
+            ;
+            flex-direction: $ {
+                article-6-direction
+            }
+            ;
         }
         /* aside */
         
@@ -298,30 +398,48 @@
         .aside-container-1 {
             background-image:url('${asideimage-1}');
             background-size: cover;
-            display: ${aside-1-show};
+            display: $ {
+                aside-1-show
+            }
+            ;
         }
         
         .aside-container-2 {
             background-image:url('${asideimage-2}');
             background-size: cover;
-             display: ${aside-2-show};
+            display: $ {
+                aside-2-show
+            }
+            ;
         }
         /* aside button */
         
         aside button {
-            background-color: ${button-bg-color};
+            background-color: $ {
+                button-bg-color
+            }
+            ;
             padding: 0.5rem 1.5rem;
             border-radius: 25px;
             margin-top: 0.7rem;
-            border: solid 2px $ ${button-bg-color};
+            border: solid 2px $ $ {
+                button-bg-color
+            }
+            ;
         }
         
         aside button:hover,
         aside button:focus {
             border: solid 2px #ffffff;
             transition: all 0.1s;
-             background-color: ${button-hover-color};
-             border: solid 2px $ ${button-hover-brb-color};
+            background-color: $ {
+                button-hover-color
+            }
+            ;
+            border: solid 2px $ $ {
+                button-hover-brb-color
+            }
+            ;
         }
         
         aside button:active {
@@ -400,7 +518,7 @@
             }
             article,
             main article {
-                flex-direction: column;
+                flex-direction: column !important;
             }
             article .img-container,
             .article-context {
@@ -428,13 +546,13 @@
     <div class="wrapper">
 
         <header class="logo section" id="logo">
-            <div class="mktoText logo-container" id="logocontainer" mktoName="Logo Top">
-                <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/REALSystem_logo-EM.png" class="logo" alt="logo">
+            <div class="mktoSnippet" id="penumbra-logo-snippet" mktoName="Logo Snippet" mktoDefaultSnippetId="1">
+
             </div>
         </header>
 
         <section class="banner section" id="banner">
-            <div class="mktoText banner-container" id="banner-container" mktoName="Banner">
+            <div class="mktoImg banner-container" id="banner-container" mktoName="Banner">
                 <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/banner.png" alt="banner">
             </div>
         </section>
@@ -444,15 +562,15 @@
             <div class="mktoText aside-container-1" id="aside-container-1" mktoName="aside 1">
                 <h3>Curious how REAL &reg; System can support your patients?</h3>
                 <button>
-                    <a href="">Schedule a Free Demo</a>
-                </button>
+            <a href="">Schedule a Free Demo</a>
+          </button>
             </div>
             <div class="mktoText aside-container-2" id="aside-container-2" mktoName="aside 2">
                 <h3>Not ready for demo?</h3>
                 <p>Subscribe to receive emails about REAL, VR in Healthcare, Patient Stories and more!</p>
                 <button>
-                    <a href="">Join Now</a>
-                </button>
+            <a href="">Join Now</a>
+          </button>
             </div>
         </aside>
 
@@ -471,13 +589,13 @@
             </section>
 
             <article class="article-1 flex-container">
-                
+
                 <div class="img-container">
                     <div class="mktoImg" id="aricle-1-img" mktoName="Article 1 img">
                         <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-1.png" alt="vr demo screen">
                     </div>
                 </div>
-                
+
                 <div class="article-context">
                     <div class="mktoText" id="article-1" mktoName="Article 1">
                         <h2>Upper Extremity (UE)</h2>
@@ -490,15 +608,15 @@
                     </div>
                 </div>
             </article>
-            
+
             <article class="article-2 flex-container">
-                
+
                 <div class="img-container">
                     <div class="mktoImg" id="aricle-2-img" mktoName="Article 2 img">
                         <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-2.png" alt="vr demo screen">
                     </div>
                 </div>
-                
+
                 <div class="article-context">
                     <div class="mktoText" id="article-2" mktoName="Article 2">
                         <h2>Core and Balance</h2>
@@ -510,15 +628,15 @@
                     </div>
                 </div>
             </article>
-            
+
             <article class=" article-3 flex-container">
-                
+
                 <div class="img-container">
                     <div class="mktoImg" id="aricle-3-img" mktoName="Article 3 img">
                         <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-3.png" alt="vr demo screen">
                     </div>
                 </div>
-                
+
                 <div class="article-context">
                     <div class="mktoText" id="article-3" mktoName="Article 3">
                         <h2>Functional Uses, ADL Training</h2>
@@ -528,10 +646,10 @@
                             <li>Environmental scanning</li>
                             <li>Dynamic reaching</li>
                         </ul>
-                    </div>        
+                    </div>
                 </div>
             </article>
-            
+
             <article class="article-4 flex-container">
                 <div class="img-container">
                     <div class="mktoImg" id="aricle-4-img" mktoName="Article 4 img">
@@ -567,14 +685,14 @@
                     </div>
                 </div>
             </article>
-            
+
             <article class="article-6 flex-container">
                 <div class="img-container">
                     <div class="mktoImg" id="aricle-6-img" mktoName="Article 6 img">
                         <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/artivle-6.png" alt="vr demo screen">
                     </div>
                 </div>
-                
+
                 <div class="article-context">
                     <div class="mktoText" id="article-6" mktoName="Article 6">
                         <h2>Low stimulation environments</h2>
@@ -592,47 +710,8 @@
 
         <footer>
             <div class="footer-container">
-                <div class="mktoSnippet" id="penumbra-footer-snippet" mktoName="Footer Snippet" mktoDefaultSnippetId="99">
-                    <div class="row-1" id="row-1">
-                        <p>Empower your patients today with engaging therapeutic and wellness activities tat offer endless possibilities.</p>
-                    </div>
-                    <div class="row-2" id="row-2">
-                        <p>
-                            empower possibilities &trade;
-                        </p>
-                    </div>
-                    <div class="row-3 icons-container" id="row-3">
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/REALSystemVR/"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/facebook-violet.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/realsystemVR/"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/instagram-iolet.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/realsystemVR"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/twitter-violet.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/mvi-health-inc"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/linbkedin-violet.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCCiPI8OVuW_6E5NwbBhAmcg"><img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/youtube-violet.png" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row-4" id="row-4">
-                        <p>The opinions and clinical experiences presented herein are for informational purposes only. The results may not be predictive for all patients. Individual results may vary depending on patient-specific attributes and other factors.
-                            Rendering for illustrative purposes only. Images used with permission. Consents on file at Penumbra, Inc.</p>
-                        <p>
-                            Caution: Federal (USA) law restricts this device to sale by or on the order of a healthcare provider. Prior to use, please refer to the Instructions for Use (IFU) for complete product indications, contraindications, warnings, precautions, potential adverse
-                            events, and detailed instructions for use. Please click here for the complete IFU. Please contact your local REAL Care Specialist for more information.
-                        </p>
-                        <p>
-                            Copyright ©2019-2021 Penumbra, Inc. All rights reserved. The REAL Hero logo, REAL, Happy Valley, and TherapyView are registered trademarks or trademarks of Penumbra, Inc. in the USA and other countries. All other trademarks are the property of their respective
-                            16267, Rev. I 09/21 USA
-                        </p>
-                        <p>16267, Rev. I 09/21 USA</p>
-                    </div>
+                <div class="mktoSnippet" id="penumbra-footer-snippet" mktoName="Footer Snippet" mktoDefaultSnippetId="34">
+
                 </div>
             </div>
         </footer>
