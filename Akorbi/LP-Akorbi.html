@@ -30,6 +30,8 @@
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#487ca5">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#487ca5">
 
+    <meta class="mktoColor" id="text-shadow" mktoName="Free-Text - Text Color" default="#010101">
+
 
     <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#ffffff">
     <meta class="mktoColor" id="btnbrdclr" mktoName="Free-Text - Btn Border Color" default="#355B79">
@@ -228,7 +230,7 @@
         background-size:cover;
         display:${showbanner};
         background-blend-mode: ${background-blend-mode};
-        text-shadow: 2px 3px 3px rgb(0 0 0 / 50%);
+        text-shadow: 2px 3px 3px ${text-shadow};
       }
       #freetext{
         background-color:${freeTextBackgroundColor};
