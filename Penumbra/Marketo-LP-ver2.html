@@ -34,11 +34,18 @@
 
 
     <!-- Aside Containers -->
-    <meta class="mktoBoolean" id="show-aside" mktoName="Show Aside Container? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="aside-1-show" mktoName="Show Aside 1? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="aside-2-show" mktoName="Show Aside 2? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" mktoName="Order in Aside 1" id="order-in-aside1" default="1">
+    <meta class="mktoString" mktoName="Order in Aside 2" id="order-in-aside2" default="2">
+    <meta class="mktoString" mktoName="Order in Aside 3" id="order-in-aside3" default="3">
+    <meta class="mktoBoolean" id="show-aside" mktoName="Show Aside Container?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-form" mktoName="Show Form1 Container?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="aside-1-show" mktoName="Show Aside 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="aside-2-show" mktoName="Show Aside 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" mktoName="Aside Image 1" id="asideimage-1" default="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png">
     <meta class="mktoString" mktoName="Aside Image 2" id="asideimage-2" default="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/aside-1.png">
+    <!-- Form -->
+    <meta class="mktoColor" id="form-container-bgcolor" mktoName="Form background" default="#e5e5e5">     
+    <meta class="mktoColor" id="form-btn-bg" mktoName="Form btn background" default="#0747bb">     
 
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins+Sans&family=Source+Sans+Pro:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
@@ -82,6 +89,9 @@
 
       .flex-container {
         display: flex;
+      }
+      .full-width {
+        width: 100%;
       }
       
 
@@ -285,6 +295,58 @@
         display: ${article-6-show};
         flex-direction: ${article-6-direction};
       }
+      /* form */
+      .form-container {
+        background-color: ${form-container-bgcolor};
+        padding: 2rem 2vw !important;
+        display: ${show-form};
+      }
+      .mktoForm .mktoOffset,
+      .mktoForm .mktoGutter {
+        display: none !important;
+      }
+      .mktoForm {
+        width: 100% !important;
+      }
+      .mktoForm .mktoFieldWrap, .mktoForm .mktoFormCol {
+          float: none !important;
+          width: 100% !important;
+      }
+      .mktoForm .mktoFieldWrap {
+        display: flex;
+        flex-direction: column;
+   
+      }
+     .mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    width: 100% !important;
+    margin-top: 0.3rem !important;
+    border: solid 0.5px #000000;
+    padding: 5px 3px !important;
+}
+
+      .mktoForm .mktoButtonRow {
+        margin: 1rem auto 0 !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+      }
+      .mktoForm .mktoButtonWrap.mktoSimple {
+        margin: 0 auto !important;
+        
+      }
+      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+        background-color: ${form-btn-bg} !important;
+        border: ${form-btn-bg} !important;
+        background-image: none !important;
+        padding: 0.75rem 2.5rem !important;
+      }
       /* aside */
 
       aside {
@@ -294,7 +356,7 @@
         gap: 1.5rem;
         margin-left: 2.5rem;
       }
-
+      
       .form-container, .aside-container-1,
       .aside-container-2 {
         width: 240px;
@@ -308,17 +370,23 @@
         vertical-align: top;
         padding: 2rem 1rem;
       }
+      .form-container {
+        height: fit-content !important;
+        order: ${order-in-aside1};
+      }
 
       .aside-container-1 {
         background-image:url('${asideimage-1}');
         background-size: cover;
         display: ${aside-1-show};
+        order: ${order-in-aside2};
       }
 
       .aside-container-2 {
         background-image:url('${asideimage-2}');
         background-size: cover;
         display: ${aside-2-show};
+        order: ${order-in-aside3};
       }
       /* aside button */
 
@@ -426,7 +494,11 @@
           margin-top: 1rem;
         }
       }
-
+@media (max-width: 700px) {
+  .form-container, .aside-container-1, .aside-container-2 {
+    max-width: 74vw;
+  }
+}
       @media (max-width:420px) {
         aside {
           flex-direction: column;
@@ -459,7 +531,7 @@
       <aside>
 <div class="form-container">
           <div class="mktoForm" mktoName="Form 1" id="form1">
-          <script src="//info.penumbrainc.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1006"></form> <script>MktoForms2.loadForm("//info.penumbrainc.com", "815-GYF-786", 1006);</script>
+         
           </div>
           </div>
         <div class="mktoText aside-container-1" id="aside-container-1" mktoName="aside 1">
@@ -494,7 +566,7 @@
         <article class="article-1 flex-container">
 
           <div class="img-container">
-            <div class="mktoImg" id="aricle-1-img" mktoName="Article 1 img">
+            <div class="mktoImg full-width" id="aricle-1-img" mktoName="Article 1 img">
               <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-1.png" alt="vr demo screen">
             </div>
           </div>
@@ -515,7 +587,7 @@
         <article class="article-2 flex-container">
 
           <div class="img-container">
-            <div class="mktoImg" id="aricle-2-img" mktoName="Article 2 img">
+            <div class="mktoImg full-width" id="aricle-2-img" mktoName="Article 2 img">
               <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-2.png" alt="vr demo screen">
             </div>
           </div>
@@ -535,7 +607,7 @@
         <article class=" article-3 flex-container">
 
           <div class="img-container">
-            <div class="mktoImg" id="aricle-3-img" mktoName="Article 3 img">
+            <div class="mktoImg full-width" id="aricle-3-img" mktoName="Article 3 img">
               <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-3.png" alt="vr demo screen">
             </div>
           </div>
@@ -555,7 +627,7 @@
 
         <article class="article-4 flex-container">
           <div class="img-container">
-            <div class="mktoImg" id="aricle-4-img" mktoName="Article 4 img">
+            <div class="mktoImg full-width" id="aricle-4-img" mktoName="Article 4 img">
               <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/article-4.png" alt="vr demo screen">
             </div>
           </div>
@@ -573,7 +645,7 @@
         </article>
         <article class="article-5 flex-container">
           <div class="img-container">
-            <div class="mktoImg" id="aricle-5-img" mktoName="Article 5 img">
+            <div class="mktoImg full-width" id="aricle-5-img" mktoName="Article 5 img">
               <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/artivle-5.png" alt="vr demo screen">
             </div>
           </div>
@@ -591,7 +663,7 @@
 
         <article class="article-6 flex-container">
           <div class="img-container">
-            <div class="mktoImg" id="aricle-6-img" mktoName="Article 6 img">
+            <div class="mktoImg full-width" id="aricle-6-img" mktoName="Article 6 img">
               <img src="http://815-GYF-786.mktoweb.com/rs/815-GYF-786/images/artivle-6.png" alt="vr demo screen">
             </div>
           </div>
