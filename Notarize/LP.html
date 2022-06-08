@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/621474389a0b3938afe328f2_Favicon-32px.png">
+    
+    <title>${pagetitle}</title>
+    <link rel="icon" href="${faviconlink}">
+    <link href="https://info.notarize.com/rs/624-MLH-882/images/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Show and Hide Meta Tags -->
+    <meta class="mktoBoolean" id="showheader" mktoName="Show Header Section" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Header Content" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="showformsec" mktoName="Show Body Section" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    	<meta class="mktoBoolean" id="tycopyshow" mktoName="Show Body Content" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    	<meta class="mktoBoolean" id="mainformshow" mktoName="Show Body Form" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+        <meta class="mktoBoolean" id="preforreg" mktoName="Show Custom Form Style" default="true" true_value="65%" false_value="500px" false_value_name="Regular" true_value_name="Preference">
+ <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+   
+    <!-- Background, Buttons, and Text Color Meta Tags -->
+    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#1175D1">
+
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Header - Background√ Color" default="#1175D1">
+    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Header - Title Color" default="#ffffff">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Header - Text Color" default="#ffffff">
+
+    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#1175D1">
+    <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#666666">
+    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
+    
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#1175D1">
+    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
+    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#1374BC">
+
+    
+    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#1c1c1c">
+    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
+    
+    <!-- Font Size Meta Tags -->
+    <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="50">
+    <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="20">
+
+    
+    <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
+
+    <!-- Banner Section Styling -->
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="225">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="50">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="50">
+
+    <!-- Free-Text Section Styling -->
+    <meta class="mktoString" mktoName="Body Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="50">
+
+    <!-- Footer Section Styling -->
+    <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
+    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="32">
+    <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
+
+
+    <!-- Google Fonts -->
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Inter', sans-serif">
+    <meta class="mktoString" mktoName="Heading Font - Family" id="headingfontfamily" default="'Quarto-Black'">
+
+    <!-- General Button Styling -->
+    <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="14">
+    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="8">
+    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="15">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
+
+    <!-- Form Section Styling -->
+    <meta class="mktoString" mktoName="Form Section - Bottom Padding(px)" id="form-section-btm" default="150">
+    <meta class="mktoString" mktoName="Message Section - Bottom Padding(px)" id="msg-section-btm" default="250">
+    <meta class="mktoString" mktoName="Button Section - Bottom Padding(px)" id="btn-section-btm" default="250">
+    <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
+    <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
+
+    
+
+
+    <style>
+      ${googlefontimport}
+      
+      @font-face {
+      font-family: 'Quarto-Black';
+      src: url('https://info.notarize.com/rs/624-MLH-882/images/Quarto-Black.eot'); /* IE9 Compat Modes */
+      src: url('https://info.notarize.com/rs/624-MLH-882/images/Quarto-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('https://info.notarize.com/rs/624-MLH-882/images/Quarto-Black.woff2') format('woff2'), /* Super Modern Browsers */
+           url('https://info.notarize.com/rs/624-MLH-882/images/Quarto-Black.woff') format('woff'), /* Pretty Modern Browsers */
+           url('https://info.notarize.com/rs/624-MLH-882/images/Quarto-Black.ttf')  format('truetype') /* Safari, Android, iOS */
+    }
+
+      *{
+        padding:0;
+        border: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: ${googlefontfamily} !important;
+      }
+      
+      body {background:#fff;} 
+      
+      .tycopy {
+        display:${tycopyshow};
+      }
+      .preform-cont {
+        display:${mainformshow};
+      }
+      
+      h1{
+        font-size: ${h1fontsize}px;
+        font-family: ${headingfontfamily} !important;
+      }
+
+      h2{
+        font-size: ${h2fontsize}px;
+        font-family: ${headingfontfamily} !important;
+      }
+      p,ul,ol{
+        margin:10px 0;
+      }
+      ul,ol{
+        margin-left:45px;
+      }
+      p, li{
+        line-height:1.5;
+        font-size:${pfontsize}px;
+      }
+      b, .bold, em{
+        font-weight:bold;
+      }
+      img{
+        vertical-align:bottom;
+        max-width:100%;
+        height:auto;
+      }
+      .logo-footer {
+          max-width: unset;
+          width: ${footerlogowidth}px;
+          max-width: 100vw;
+      }
+      
+      .flex{
+        display: -webkit-flex;
+        display:flex;
+      }
+      .flex .col:not(:last-child){
+        margin-right:30px;
+      }
+      .flex .col:last-child{
+        margin-right:0;
+      }
+      .w50{
+        width:48%;
+      }
+      .w100{
+        width:100%;
+      }
+     
+      .section{
+        width:85%;
+        max-width:1400px;
+        margin:0 auto;
+        padding:${sectionpaddingtb}px 0;
+        z-index: 2;
+        text-align: center;
+        display: block;
+      }
+      .form-container{
+        min-height:20px;
+        
+      }
+
+      .mktoForm input[type="text"],
+      .mktoForm input[type="url"], 
+      .mktoForm input[type="email"], 
+      .mktoForm input[type="tel"], 
+      .mktoForm input[type="number"], 
+      .mktoForm input[type="date"], 
+      .mktoForm textarea.mktoField, 
+      .mktoForm select.mktoField {
+        color: ${formTextColor} !important;
+      }
+      
+      
+      
+      #header{
+        background-color:${bannerclr};
+        display:${showheader};
+      }
+      #freetext{
+        background-color:${freeTextBackgroundColor};
+        display:${showsec1};
+      }
+      #formsection{
+        background-color:${mainformbgclr};
+        display:${showformsec};
+        padding-bottom: ${form-section-btm}px;
+      }
+      
+      
+      #footer{
+        display:${showfooter};
+        background-color:${footerbgclr};
+        color:${footerfontclr};
+        font-size:${footerfontsize}px;
+      }
+      
+      
+      
+      #header .section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        position:relative;
+        padding-top:${headerpaddingtop}px;
+        padding-bottom:${headerpaddingbtm}px;
+      }
+      #header .logo-container{
+        position:absolute;
+        top:${sectionpaddingtb}px;
+        left:0;
+        width:100%;
+        text-align: left;
+      }
+      #header .logo-container img{
+        width:${toplogowidth}px;
+      }
+      #header #bannertext{
+        padding-top:80px;
+        padding-bottom:30px;
+      }
+
+      #freetext .btn {
+        margin-top:30px;
+      }
+
+      #freetext h1 {
+        color: ${freeTextHeaderColor} !important;
+      }
+
+      #freetext p,
+      #freetext ul,
+      #freetext li {
+        color: ${freeTextTextColor} !important;
+      }
+
+      
+      #formsection .section{
+        justify-content: space-between;
+        position: relative;
+      }
+      #formsection .form-container{
+        background-color:${formbgclr};
+        padding-top: ${formTopBottomPadding}px;
+        padding-bottom: ${formTopBottomPadding}px;
+        min-height: 350px
+      }
+      
+      #messagesection .section{
+        justify-content: space-between;
+        position: relative;
+      }
+      
+	  #btnsection .section{
+        justify-content: space-between;
+        position: relative;
+      }
+     .mktoForm .mktoAsterix {
+    display: none!important;
+     }
+      label#LblUnsubscribed {
+    margin-top: 8px!important;
+}
+      .mktoFieldWrap.mktoRequiredField {
+    display: block!important;
+}
+      form.mktoForm{
+        width:${preforreg}!important;
+        max-width:${preforreg} !important;
+        margin: 75px auto !important;
+        ${googlefontfamily}
+      }
+      .mktoForm .mktoGutter{
+        width:0 !important;
+      }
+      .mktoForm .mktoLabel{
+        order:2!important;
+        width:100% !important;
+        font-size:${formfontsize}px !important;
+        color: ${formLabelColor} !important;
+            line-height: 1.5em;
+        
+      }
+      .mktoForm .mktoLabel b {
+        color:#333333!important;
+        font-weight:600!important;
+      }
+      .mktoForm .mktoFormRow{
+        display:flex !important;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
+        margin-left:20px;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol:first-child{
+        margin-left:0 !important;
+      }
+      .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap, .mktoForm input, .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm .mktoButtonRow{
+        width:100% !important;
+      }
+      .mktoForm .mktoFieldWrap {
+    display: inline-flex;
+    float: left;
+            margin: 20px 0px 15px 0px;
+}
+      .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
+        min-height:25px !important;
+        height:40px !important;
+      }
+      .mktoForm textarea.mktoField{
+        height:70px !important;
+        min-height:40px !important;
+      }
+      .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+        border: 1px solid #D0D3D4 !important;
+        background: #ffffff !important;
+        color: ${formTextColor} !important;
+        -moz-border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding-left: 10px !important;
+        font-size:${formfontsize}px !important;
+      }
+      .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input::-moz-placeholder { /* Firefox 19+ */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input:-ms-input-placeholder { /* IE 10+ */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input:-moz-placeholder { /* Firefox 18- */
+        color:#3a3a3a !important;
+      }
+      .mktoForm select.mktoField{
+        background-color:#ffffff !important;
+        background-image: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/select-arrow.png') !important;
+        background-repeat: no-repeat !important;
+        background-position:97% 50% !important;
+        -moz-appearance: none; 
+        -webkit-appearance: none; 
+        appearance: none;
+        background-size: 24px !important;
+      }
+      .mktoForm input:invalid, .mktoForm select.mktoField:invalid, .mktoForm textarea.mktoField:invalid{
+        box-shadow: 0px 0px 0px 3px #e83131 !important;
+      }
+      .mktoLogicalField.mktoCheckboxList input{
+        width: 20px !important;
+        height: 20px !important;
+        margin-top: 3px !important;
+        border-radius: 50%!important;
+      }
+      .mktoForm a, .mktoForm a:visited{
+        color:#3a3a3a !important;
+      }
+      .mktoForm .mktoLogicalField.mktoCheckboxList{
+        order:1;
+        margin-right: 8px !important;
+        width:50px!important;
+      }
+      .mktoForm .mktoButtonWrap{
+        margin-left: 0 !important;
+      }
+      .mktoForm .mktoButtonRow{
+        margin-top:10px;
+      }
+      .mktoButtonWrap button.mktoButton {
+        background-color: ${formButtonColor} !important;
+        background-image: linear-gradient(to bottom, ${formButtonColor}, ${formButtonColor}) !important;
+        border: 1px solid ${formButtonColor} !important;
+        color:${formButtonTextColor};
+        text-align: center !important;
+		letter-spacing: 0.1em !important;
+        font-size:${btnfontsize}px !important;
+        -moz-border-radius: ${btnborderrds}px !important;
+        -webkit-border-radius: ${btnborderrds}px !important;
+        border-radius:${btnborderrds}px !important;
+        opacity:1;
+        transition:300ms opacity;
+      }
+
+      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+        background-color: ${formButtonColor} !important;
+        background-image: linear-gradient(to bottom, ${formButtonColor}, ${formButtonColor}) !important;
+        color: ${formButtonTextColor} !important;
+        border: 1px solid ${formButtonColor} !important;
+        font-size:${btnfontsize}px !important;
+        border-radius: 30px !important; 
+        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important; 
+      }
+
+      .mktoForm button.mktoButton:hover{
+        opacity:${btnhvropacity};
+        color: ${formButtonHoverColor} !important;
+        background-color: ${formButtonHoverBGColor} !important;
+        background: ${formButtonHoverBGColor} !important;
+      }
+
+      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+        color: ${formButtonHoverColor} !important;
+        background-color: ${formButtonHoverBGColor} !important;
+        background: ${formButtonHoverBGColor} !important;
+      }
+
+      
+      #footer .container{
+        padding:${footerpaddingtb}px 0;
+        
+      }
+      #footer .row1{
+        align-items:center;
+        justify-content: space-between;
+        margin-bottom:20px;
+      }
+      #footer .logo-container img{
+        width:${footerlogowidth}px;
+      }
+      .icons-container ul, .icons-container ol{
+        display:flex;
+        flex-direction:row;
+        margin-left:0;
+      }
+      .icons-container ul li, .icons-container ol li{
+        list-style:none;
+        margin-right:10px;
+      }
+      #footer .icons-container img{
+        width:${footericonswidth}px;
+        height: auto;
+      }
+      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li, link-title-white{
+        color:${footerfontclr};
+        font-size:${footerfontsize}px;
+      }
+      	
+      .login {
+        border: 2px solid #fff;
+        color: #fff;
+        padding: 15px 35px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 30px;
+      }
+      .login a {
+      	text-decoration: none;
+        color: #fff;
+        text-transform: uppercase
+      }
+      .button_container {
+        margin-top:25px;
+      }
+      .button {
+        border: none;
+        color: #fff;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 30px;
+        background-color: #1175D1;
+      }
+      .button a {
+      	text-decoration: none;
+        color: #fff;
+        text-transform: uppercase
+      }
+      
+      
+       .home-text-background {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 845px;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        padding-top: 100px;
+        padding-bottom: 160px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 33px;
+        background-color: #fff;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(0, #fff));
+        background-image: linear-gradient(180deg, transparent 80%, #fff 0);
+    }
+
+    .man-circle {
+        position: absolute;
+        left: auto;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        margin-top: 430px;
+        margin-right: -123px;
+      	width:70px;
+    }
+
+    .women-img {
+        position: absolute;
+        left: 0;
+        top: auto;
+        right: auto;
+        bottom: 0;
+        margin-bottom: 550px;
+        margin-left: -121px;
+      	width:70px;
+    }
+
+    .svg-home {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        z-index: -1;
+        height: 40%;
+        margin-top: 80px;
+        margin-left: 0px;
+        -o-object-fit: fill;
+        object-fit: fill;
+      	z-index:-1;
+    }
+      
+      .svg-home2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        z-index: -1;
+        height: 45%;
+        margin-top: 570px;
+        margin-left: 710px;
+        -o-object-fit: fill;
+        object-fit: fill;
+      	z-index:-1;
+    }
+      .mktoForm .mktoOffset {
+    display: none!important;
+}
+      
+      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+            margin-top: 8px !important;
+              font-size: 14px !important;
+              margin-top: 8px !important;
+            display: grid !important;
+            flex-wrap: wrap;
+          grid-template-columns: 1fr;
+        }
+
+        .mktoFormRow:nth-child(4) legend {
+            display: none !important;
+        }
+
+        .mktoForm .mktoRadioList > input, .mktoForm .mktoCheckboxList > input {
+            width: 30px !important;
+          margin-right: 20px !important; 
+           appearance: none!important;
+    height: 30px!important;
+        }
+.mktoForm .mktoRadioList > input:checked, .mktoForm .mktoCheckboxList > input:checked {
+   background-color: #ffffff!important;
+    background-image: url('https://info.notarize.com/rs/624-MLH-882/images/form-circle.svg')!important;
+    background-size: 20px auto!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+}
+
+
+        .mktoForm fieldset legend {
+              font-size: 20px;
+              margin: 0px !important;
+            padding-top: 50px !important;
+          font-weight: bold;
+        }
+
+        
+   
+      
+      @media screen and (max-width:768px){
+        .flex{
+          flex-wrap:wrap;
+          flex-direction:column;
+        }
+        h1 {
+    font-size: 35px;
+        }
+        .section.flex {
+    padding: 0px;
+}
+        .flex .col:not(:last-child){
+          margin-left:0;
+          margin-right:0;
+        }
+        .w50{
+          width:100%;
+        }
+        .section, #header .section{
+          width:90%;
+          padding:40px 0;
+          padding-top:40px;
+          padding-bottom:40px;
+        }
+        #freetext .section {
+            padding-top: 80px !important;
+            padding-bottom: 30px !important;
+        }
+
+        #header .logo-container{
+          top:40px;
+        }
+        #formsection .lefttext{
+          margin-right:0;
+          width:100%;
+          margin-bottom:20px;
+        }
+        #formsection .form-container{
+          padding:15px;
+        }
+        #footer .section{
+          padding:25px 0;
+          align-items:center;
+          justify-content: center;
+          text-align:center;
+        }
+        #footer .logo-container{
+          margin-bottom:10px;
+        }
+        .icons-container ul, .icons-container ol{
+          justify-content:center;
+        }
+        .women-img {
+            left: 150px;;
+        }
+        .man-circle {
+            left: 390px;
+            top: 50px;
+        }
+        .svg-home {
+            left: -54px;
+        }
+      }
+      
+      
+      @media screen and (max-width:550px){
+        .mktoForm .mktoFormRow{
+          display:block !important;
+        }
+        .mktoForm .mktoFormRow .mktoFormCol{
+          margin-left:0 !important;
+        }
+        
+        .man-circle, .women-img, .svg-home2 {
+        	display: none; 
+        }
+        form.mktoForm {
+          width: 100% !important;
+    		max-width: 100% !important;
+        }
+         
+        .mktoForm fieldset legend {
+        	padding-top: 20px !important;
+        }
+        #header .logo-container img {
+         width: 155px !important;
+        }
+        .login {
+              font-size: 14px;
+              padding: 15px 30px;
+        }
+        
+        form.mktoForm{
+        margin: 0 auto !important;
+      }
+        #formsection 
+        {
+            padding-bottom: 50px;
+        }
+        .mktoForm .mktoButtonRow {
+        	margin-left: 10px !Important;
+        }
+      }
+      
+      
+      @media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (max-device-height: 480px) {
+      	mktoMobileShow .mktoForm, .mktoForm * {
+    padding: 0px !important;
+}
+        .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+          padding: 0px 15px !important
+        }
+      }
+    </style> 
+  </head>
+  <body>
+    <header id="header">
+      <div class="section">
+        
+        <div class="logo-container">
+          <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
+            <img src="https://info.notarize.com/rs/624-MLH-882/images/logo-wt.png" alt="logo">
+          </div>
+        </div>
+        
+        
+      </div>
+    </header>
+    
+    <div id="freetext">
+      <div class="section">
+        <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
+          <h1>
+            Email Unsubscribe
+          </h1>
+          <p>
+            We have to see you go...
+          </p>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    <div id="formsection">
+      <div class="section flex">
+        
+        <div class="form-container w100 home-text-background">
+          
+          <div class="tycopy">
+          <div class="mktoText" id="freetextcopy3" mktoName="Free-Text - Copy 3">
+          <img class="pd-b-20" src="https://info.notarize.com/rs/624-MLH-882/images/check-icon.png" width="40" height="40">
+          <p class="pd-b-50">
+            At any time, you can update your preferences by<br>visiting our Communication Preference Page.
+          </p>
+        </div>
+          <div class="button_container" id="btn">
+            <div class="mktoText button" id="btn-btn" mktoName="Button"><a href="#">Update Preference</a>
+            </div>
+         </div> 
+          </div>
+          
+          <div class="preform-cont">
+            
+          
+         <div class="mktoForm" id="form" mktoName="Form">
+           
+          </div></div>
+          <img src="https://info.notarize.com/rs/624-MLH-882/images/star-bg-pattern.png" loading="lazy" alt="" class="man-circle">
+          <img src="https://info.notarize.com/rs/624-MLH-882/images/star-bg-pattern.png" loading="lazy" alt="notary" class="women-img">
+        </div>
+        <img src="https://info.notarize.com/rs/624-MLH-882/images/bg-pattern3.png" alt="" class="svg-home">
+        <img src="https://info.notarize.com/rs/624-MLH-882/images/bg-pattern2.png" alt="" class="svg-home2">
+      </div>
+    </div>
+    
+    <footer class="footer footer2 wf-section" id="footer">
+        <div class="container"><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0aa8"
+                href="https://www.notarize.com/?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                aria-current="page" class="link-home w-inline-block w--current" style=""><img
+                    src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/6204f5be596d5b8f99e763ad_s-logo.svg"
+                     alt="" class="logo-footer"></a>
+            <div class="w-layout-grid grid-footer2">
+                <div id="w-node-_85a605b1-57aa-16b2-3901-6d620f0c0aab-0f0c0aa6" class="links">
+                    <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0aac" class="link-about" style="width: 100%;">
+                        <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0aad" class="link-title-white" style="">About
+                            Notarize</div><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0aaf"
+                            href="https://www.notarize.com/about?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">Company</a><a data-w-id="a4cb89fe-1666-e5ff-9fa6-324b9e5c5df8"
+                            href="https://www.notarize.com/contact-sales?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">Contact
+                            Sales</a><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ab1"
+                            href="https://www.notarize.com/careers?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">Careers</a><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ab3"
+                            href="https://www.notarize.com/press?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">Press</a><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ab5"
+                            href="https://www.notarize.com/how-it-works?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">How It Works</a><img
+                            src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61e7dae613cf3cc593c3500a_arrow-footer.svg"
+                             alt="" class="arrow-footer hide"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(90deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                    </div>
+                    <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0abc" class="link-about"
+                        style="width: 100%; height: 58px;">
+                        <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0abd" class="link-title-white" style="">
+                            Solutions</div><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0abf"
+                            href="https://www.notarize.com/for-business?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">For Businesses</a><a
+                            data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ac1"
+                            href="https://www.notarize.com/title-agents?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">For Title Agents</a><a
+                            data-w-id="c1aa9c00-b13f-bb63-9871-8599824c0697"
+                            href="https://www.notarize.com/lenders?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">For
+                            Lenders</a><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ac3"
+                            href="https://www.notarize.com/notary?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">For Notaries</a><a
+                            data-w-id="2b5860a1-e8fa-6a6f-a278-b94b52b1b3c3"
+                            href="https://dev.notarize.com/?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            target="_blank" class="link-footer"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">For
+                            Developers</a><img
+                            src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61e7dae613cf3cc593c3500a_arrow-footer.svg"
+                             alt="" class="arrow-footer hide"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                    </div>
+                    <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ac8" class="link-about"
+                        style="width: 100%; height: 58px;">
+                        <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ac9" class="link-title-white" style="">
+                            Resources</div><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0acd"
+                            href="https://www.notarize.com/blog?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">Blog</a><a data-w-id="4bf36476-5c59-2cda-c0ba-0f086059a4d5"
+                            href="https://www.notarize.com/case-studies?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">Case
+                            Studies</a><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ad3"
+                            href="https://www.notarize.com/blog?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer hide" style="">Blog</a><a
+                            data-w-id="6f1b662a-e351-31ec-64fb-058f65380048"
+                            href="https://www.notarize.com/knowledge-center?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">Knowledge Center</a><a
+                            href="https://go.notarize.com/academy?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            data-w-id="f4c2d6c9-238c-995d-8d00-13952c324394" target="_blank" class="link-footer"
+                            style="">Notarize Academy</a><a
+                            href="https://www.notarize.com/local?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            data-w-id="7cd01fdf-11c5-3599-c741-2104f1fe7224" class="link-footer"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">Local</a><img
+                            src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61e7dae613cf3cc593c3500a_arrow-footer.svg"
+                             alt="" class="arrow-footer hide">
+                    </div>
+                    <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ad6" class="link-about"
+                        style="width: 100%; height: 58px;">
+                        <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ad7" class="link-title-white" style="">Support
+                        </div><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ad9"
+                            href="https://support.notarize.com/hc/en-us?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            target="_blank" class="link-footer" style="">Customer Support</a><a
+                            data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0adb"
+                            href="https://www.notarize.com/faq?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">FAQs</a><a data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0add"
+                            href="https://www.notarize.com/pricing?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                            class="link-footer" style="">Pricing</a><img
+                            src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61e7dae613cf3cc593c3500a_arrow-footer.svg"
+                             alt="" class="arrow-footer hide">
+                    </div>
+                </div>
+                <div id="w-node-_85a605b1-57aa-16b2-3901-6d620f0c0ae2-0f0c0aa6" class="div-soc2">
+                    <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ae3" class="text-block-soc" style="">Stay Connected
+                    </div>
+                    <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ae5" class="icons-container"><a
+                            href="https://twitter.com/notarize" target="_blank" class="link-block w-inline-block"><img
+                                src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61e5d245c148b475776901c8_twitter.svg"
+                                 alt="twitter"></a><a href="https://www.facebook.com/notarize"
+                            target="_blank" class="link-block w-inline-block"><img
+                                src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61e5d245a430c123391dec2c_facebook.svg"
+                                 alt="facebook"></a><a href="https://www.linkedin.com/company/notarize"
+                            target="_blank" class="link-block w-inline-block"><img
+                                src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61e5d296ddf7cf3ab5e4818c_linkedin.svg"
+                                 alt="linkedin"></a></div>
+                </div>
+                <div class="copyright2" style="">We at Notarize pride
+                    ourselves on providing helpful resources to help demystify notarization. We are not lawyers, and
+                    don’t give legal advice, so always check with your own attorneys, advisors, or document recipients
+                    if you have unanswered questions about notarization or digitally notarized documents.<br></div>
+                <div id="w-node-_85a605b1-57aa-16b2-3901-6d620f0c0aef-0f0c0aa6" class="links-footer" style="">
+                    <div class="mktoText other-references" mktoName="Copyright year" id="copyright-year">© Notarize<sup>sm</sup> 2022</div>
+                    <div class="line-vertically">|</div><a
+                        href="https://www.notarize.com/accessibility?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                        class="other-references">Accessibility</a>
+                    <div class="line-vertically">|</div><a
+                        href="https://www.notarize.com/general-terms?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                        class="other-references">General Terms</a>
+                    <div class="line-vertically">|</div><a
+                        href="https://www.notarize.com/privacy-policy?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
+                        class="other-references">Privacy</a>
+                        <div class="google-app"><a
+                            href="https://play.google.com/store/apps/details?id=com.notarize.signer&amp;hl=en_US"
+                            target="_blank" class="google w-inline-block"><img
+                                src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61fbca6740b19920dd15e98e_googleplay.svg"
+                                loading="lazy" alt="google play"></a><a
+                            href="https://itunes.apple.com/us/app/notarize/id1022005141?mt=8" target="_blank"
+                            class="appstore w-inline-block"><img
+                                src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61fbca7b6ea8b75d1add6b64_appstore.svg"
+                                loading="lazy" alt="app store"></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- uncheck all -->
+<script>
+MktoForms2.whenReady(function(form) {
+const currentForm = form.getFormElem()[0];
+// get checkboxes from form
+const checkboxes = currentForm.querySelectorAll('input[type="checkbox"]');
+// check if unsubscribe checkbox exists BY name attrib containing "nsubscribe"
+const unsubscribeCheckbox = currentForm.querySelector('input[name*="nsubscribe"]');
+// if we have the unsubscribe checkbox within the form, add event listeners
+if (unsubscribeCheckbox){
+// loop through checkboxes
+for (let i = 0; i < checkboxes.length; i++) {
+// watch for changes
+checkboxes[i].addEventListener('change', function(e){
+// if unsubscribe was checked, uncheck others
+if (e.target == unsubscribeCheckbox && e.target.checked) {
+// loop through checkboxes
+for (let h = 0; h < checkboxes.length; h++) {
+// set unchecked if checkbox is NOT the unsubscribe checkbox
+if (checkboxes[h] != unsubscribeCheckbox) checkboxes[h].checked = false;
+}
+} else{
+// otherwise uncheck unsubscribe
+unsubscribeCheckbox.checked = false;
+}
+});
+}
+}
+});
+</script>
+  </body>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61e3dfb18ff77bf377f7ce24"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/js/notarize.a8e108509.js"
+        type="text/javascript"></script>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</html>
