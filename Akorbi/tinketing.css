@@ -1,0 +1,22 @@
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover,
+.mktoForm button.mktoButton:hover,
+.mktoForm button.mktoButton:focus,
+.mktoForm .mktoButtonWrap.mktoGlow .mktoButton:hover,
+.mktoForm .mktoButtonWrap.mktoGlow .mktoButton:focus {
+    border: solid 3px $ {
+        formButtonHoverBGColor
+    }
+    !important;
+    color: $ {
+        formButtonHoverColor
+    }
+    !important;
+    background-color: $ {
+        formButtonHoverBGColor
+    }
+    !important;
+    background: $ {
+        formButtonHvrBorder
+    }
+    !important;
+}
