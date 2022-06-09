@@ -13,30 +13,34 @@
     <link href="https://info.notarize.com/rs/624-MLH-882/images/style.css" rel="stylesheet" type="text/css">
 
     <!-- Show and Hide Meta Tags -->
-    <meta class="mktoBoolean" id="showheader" mktoName="Show Header Section" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showsec1" mktoName="Show Header Content" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-	<meta class="mktoBoolean" id="showformsec" mktoName="Show Body Section" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    	<meta class="mktoBoolean" id="tycopyshow" mktoName="Show Body Content" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    	<meta class="mktoBoolean" id="mainformshow" mktoName="Show Body Form" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-        <meta class="mktoBoolean" id="preforreg" mktoName="Show Custom Form Style" default="true" true_value="65%" false_value="500px" false_value_name="Regular" true_value_name="Preference">
- <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showheader" mktoName="Show Header Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+	<meta class="mktoBoolean" id="showformsec" mktoName="Show Main Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    	<meta class="mktoBoolean" id="tycopyshow" mktoName="Show Thank You Copy?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    	<meta class="mktoBoolean" id="mainformshow" mktoName="Show Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+        <meta class="mktoBoolean" id="preforreg" mktoName="Preference or Regular Form" default="true" true_value="65%" false_value="500px" false_value_name="Regular" true_value_name="Preference">
+
+ <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
    
     <!-- Background, Buttons, and Text Color Meta Tags -->
     <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#1175D1">
 
-    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Header - Background√ Color" default="#1175D1">
-    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Header - Title Color" default="#ffffff">
-    <meta class="mktoColor" id="freeTextTextColor" mktoName="Header - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background√ Color" default="#1175D1">
+    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#ffffff">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#ffffff">
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#1175D1">
     <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#666666">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
-    
+    <meta class="mktoColor" id="btnfontclr" mktoName="Form Button - Background Color" default="#1c1c1c">
     <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#1175D1">
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
     <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#1374BC">
+
+    <meta class="mktoColor" id="mainmsgbgclr" mktoName="Message Section - Background Color" default="#1175D1">
+    <meta class="mktoColor" id="mainbtnbgclr" mktoName="Button Section - Background Color" default="#1175D1">
 
     
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#1c1c1c">
@@ -55,12 +59,12 @@
     <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="50">
 
     <!-- Free-Text Section Styling -->
-    <meta class="mktoString" mktoName="Body Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="50">
+    <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="50">
 
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
     <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
-    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="32">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="40">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
 
@@ -73,13 +77,14 @@
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="14">
     <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="8">
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
-    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="15">
-    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="35">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="8">
 
     <!-- Form Section Styling -->
     <meta class="mktoString" mktoName="Form Section - Bottom Padding(px)" id="form-section-btm" default="150">
     <meta class="mktoString" mktoName="Message Section - Bottom Padding(px)" id="msg-section-btm" default="250">
     <meta class="mktoString" mktoName="Button Section - Bottom Padding(px)" id="btn-section-btm" default="250">
+    <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
 
@@ -143,11 +148,6 @@
         vertical-align:bottom;
         max-width:100%;
         height:auto;
-      }
-      .logo-footer {
-          max-width: unset;
-          width: ${footerlogowidth}px;
-          max-width: 100vw;
       }
       
       .flex{
@@ -390,7 +390,7 @@
         background-color: ${formButtonColor} !important;
         background-image: linear-gradient(to bottom, ${formButtonColor}, ${formButtonColor}) !important;
         border: 1px solid ${formButtonColor} !important;
-        color:${formButtonTextColor};
+        color:${btnfontclr};
         text-align: center !important;
 		letter-spacing: 0.1em !important;
         font-size:${btnfontsize}px !important;
@@ -408,7 +408,7 @@
         border: 1px solid ${formButtonColor} !important;
         font-size:${btnfontsize}px !important;
         border-radius: 30px !important; 
-        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important; 
+        padding: 10px 15px !important; 
       }
 
       .mktoForm button.mktoButton:hover{
@@ -425,7 +425,7 @@
       }
 
       
-      #footer .container{
+      #footer .section{
         padding:${footerpaddingtb}px 0;
         
       }
@@ -448,9 +448,8 @@
       }
       #footer .icons-container img{
         width:${footericonswidth}px;
-        height: auto;
       }
-      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li, link-title-white{
+      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
@@ -885,7 +884,7 @@
                 <div id="w-node-_85a605b1-57aa-16b2-3901-6d620f0c0ae2-0f0c0aa6" class="div-soc2">
                     <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ae3" class="text-block-soc" style="">Stay Connected
                     </div>
-                    <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ae5" class="icons-container"><a
+                    <div data-w-id="85a605b1-57aa-16b2-3901-6d620f0c0ae5" class="ico" style=""><a
                             href="https://twitter.com/notarize" target="_blank" class="link-block w-inline-block"><img
                                 src="https://assets-global.website-files.com/61e3dfb18ff77bf377f7ce24/61e5d245c148b475776901c8_twitter.svg"
                                  alt="twitter"></a><a href="https://www.facebook.com/notarize"
@@ -901,7 +900,7 @@
                     don’t give legal advice, so always check with your own attorneys, advisors, or document recipients
                     if you have unanswered questions about notarization or digitally notarized documents.<br></div>
                 <div id="w-node-_85a605b1-57aa-16b2-3901-6d620f0c0aef-0f0c0aa6" class="links-footer" style="">
-                    <div class="mktoText other-references" mktoName="Copyright year" id="copyright-year">© Notarize<sup>sm</sup> 2022</div>
+                    <div class="other-references">© Notarize<sup>sm</sup> 2022</div>
                     <div class="line-vertically">|</div><a
                         href="https://www.notarize.com/accessibility?utm_medium=cpc&amp;utm_source=google&amp;utm_campaign=GoogleSearch_International_Broad&amp;utm_content=574863991342&amp;utm_term=online+notary"
                         class="other-references">Accessibility</a>
