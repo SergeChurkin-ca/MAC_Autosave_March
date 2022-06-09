@@ -71,20 +71,7 @@
     <meta class="mktoString" mktoName="Heading Font - Family" id="headingfontfamily" default="'Quarto-Black'">
 
     <!-- General Button Styling --
-    <meta class="mktoColor" id="btn1-clr" mktoName="Button1 - txt color" default="#fff">
-    <meta class="mktoString" mktoName="Button1 Top/Bottom Padding (px)" id="btn1-pad-tb" default="10">   
-    <meta class="mktoString" mktoName="Button1 Left/Right Padding (px)" id="btn1-pad-lr" default="15">   
-    <meta class="mktoString" mktoName="Button1 Font size" id="btn1-fz" default="16">   
-    <meta class="mktoString" mktoName="Button1 - Border Radius (px)" id="btn1-brdr-rad" default="30">
-    <meta class="mktoColor" id="btn1-bg-color" mktoName="Button1 Bg color" default="#1175D1C">   
-
-
-    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#1c1c1c"></meta>
-    <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="14">
-    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="8">
-    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
-    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="15">
-    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
+    <meta class="mktoString" mktoName="TY button text" id="tycopy-btn-txt" default="Update Preference">
 
 
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="14">
@@ -491,14 +478,16 @@
       .button_container {
         margin-top:25px;
       }
-      .button {
+      .button, .tycopy .button {
         border: none;
-        color: ${btn1-clr};
-        padding: ${btn1-pad-tb}px ${btn1-pad-lr}px;
+        color:${btn1-clr} !important;
+        color: #fff !important;
+        padding:${btn1-pad-tb}px ${btn1-pad-lr}px !important;
+        padding:10px 15px !important;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: ${btn1-fz}px;
+        font-size: ${btn1-fz}px !important;
         border-radius: ${btn1-brdr-rad}px;
         background-color: ${btn1-bg-color};
       }
@@ -791,7 +780,7 @@
           </p>
         </div>
           <div class="button_container" id="btn">
-            <div class="mktoText button" id="btn-btn" mktoName="Button"><a href="#">Update Preference</a>
+            <div class="mktoText button" id="btn-btn" mktoName="Button"><a href="#">${tycopy-btn-txt}</a>
             </div>
          </div> 
           </div>
