@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <meta class="mktoString" mktoName="Background Image" id="bgimg" default="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/geometric-banner.png">
+    <meta class="mktoString" mktoName="Button Text" id="btntext" default="DOWNLOAD NOW">
+    <meta class="mktoString" mktoName="Button Link" id="btnlink" default="#">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63656459-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-63656459-3');
+    </script>
+
+<meta class="mktoBoolean" id="showimage" mktoName="Show Icon" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"> 
+<meta class="mktoBoolean" id="showcta" mktoName="Show Button" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"> 
+<meta class="mktoBoolean" id="showads" mktoName="Show Ads Section" default="true" false_value="none" true_value="block" false_value_name="Hide" true_value_name="Show"> 
+
+    <title></title>
+    <style>
+  @font-face{
+  font-family:"CharisSil";
+  src:url(https://professionaled.utexas.edu//profiles/utexas/themes/forty_acres/fonts/charissil/charissil-r.woff) format("woff"),
+    url(https://professionaled.utexas.edu//profiles/utexas/themes/forty_acres/fonts/charissil/charissil-r.woff2) format("woff2"),
+    url(https://professionaled.utexas.edu//profiles/utexas/themes/forty_acres/fonts/charissil/charissil-r.ttf) format("truetype");
+  font-weight:normal;
+  font-style:normal;
+}
+
+    * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Libre Franklin', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;}
+}
+      body {background:#fff;} 
+
+.container{max-width: 1170px}
+/*HEADER*/
+
+
+.topbar{background-color: #f3f4f6;    padding: 15px 0px 15px 0px;
+    height: 64px; border-top: 8px solid #bf5700;}
+.logo img{max-width: 313px;width: 100%}
+.textlogo{padding-top: 24px; padding-bottom:  24px}
+.textlogo p{margin: 0px;font-size:32px;color:#333F48;font-family: 'CharisSil', Georgia, serif;line-height:32px;}
+.textlogo img{max-width:485px;width: 100%}
+/*banner*/
+#banner {margin: 0 auto;text-align: center;
+  background: url(${bgimg});
+  background-position: top center;
+  background-size: 100% auto;
+padding-top: 6em;
+overflow: hidden;
+background-color: #bf5700;
+min-height: 400px;
+}
+
+.block{background-image: linear-gradient(to bottom, transparent, transparent 50%, #ffffff 50%, #ffffff);
+    background-size: cover;
+    background-repeat: no-repeat;}
+.block .row{    background-color: #ffffff;
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.25);
+    padding: 20px 30px;}
+
+/*Content*/
+
+#content{padding: 3em 0px;min-height: 300px; }
+h1{font-size:30px;line-height: 1.25em;font-weight: 600;color:#bf5700;margin-bottom: 20px }
+h2{font-size:25px;line-height: 1.25em;font-weight: 600;margin-bottom: 30px;color:#333f48;text-align: center;}
+h3{font-size:22px;line-height: 1.25em}
+h4{font-size:20px;line-height: 1.25em}
+p, ul, ol{font-size:18px;line-height: 1.5em;color:#282828}
+p a{color:#bf5700 }
+p a:hover{color:#bf5700 }
+
+#image{padding-bottom: 30px;display: ${showimage}}
+#content h2{color:#333f48;margin-bottom:10px;}
+
+
+#content img{max-width: 100%}
+iframe{max-width: 100%}
+
+
+.buttonshow{margin: 0 auto;text-align: center;display: ${showcta}}
+.cta{width: 100%;max-width: 270px;background-color: #bf5700;border-radius: 0px;text-align: center;margin: 30px auto;padding: 20px 0px}
+.cta, .cta a, .cta p, .cta p a{color: #ffffff;font-weight:600;font-size: 18px }
+.cta a:hover{text-decoration: none;background-color: #a04400}
+.cta:hover{background-color: #a04400}
+/*ADs*/
+#ads {background:#e1ddd2;padding: 4em 0px;display: ${showads}}
+.adimg{text-align: center;}
+.adimg img{text-align: center;border:0px;max-width: 100% !important;width: auto;height: auto}
+
+
+
+/*Footer*/
+#footer{background: #333f48;padding:3em 0px;border-top:#ebe8e2 1px solid;}
+.width90{margin:0 auto;text-align: center;width: 90%}
+#footer p{font-size: 14px;font-weight: 400;text-align: left;}
+
+.bottombar{background-color: #bf5700;padding: 10px 0px}
+.bottombar p{font-size: 13px;color:#ffffff;font-weight: 400;text-align: left;margin: 0}
+.bottombar p a, .bottombar p a:hover{color:#ffffff;}
+		.footer-link-button a {
+  background: #fff;
+  padding: 6px 18px;
+  color: #bf5700;
+  border-radius: 8px;
+  font-weight: bold;
+    font-size: .8em;
+}
+		.footer-link-button a::after {
+  content: '\203a';
+  margin-left: 4px;
+  font-size: 1.4rem;
+  line-height: 16px;
+  padding: 5px 0 0;
+  font-weight: normal;
+  margin-bottom: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+		}
+@media (max-width: 1200px){
+  
+  .block .row{
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px){
+  #content img{max-width: 100%;height: auto}
+  .adimg{margin-bottom:30px}
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <div class="topbar">
+          <div class="mktoText container logo" mktoName="Text Logo" id="text-logo">
+            <a href="https://utexas.edu" target="_blank" style="text-decoration: none;
+color: #bf5700; font-weight: 700; font-size: .85rem; letter-spacing: 1px; font-family: 'LibreFrank', sans-serif;">UTEXAS.EDU</a><span style="color: #c6cdd3;
+padding: 0 1.5rem;">|</span><a href="https://provost.utexas.edu/the-office/academic-affairs/extended-education-ventures/" target="_blank" style="font-weight: normal;
+  font-size: .85rem;
+  font-family: 'CharisSil',Georgia,serif;
+  font-style: italic;
+  color: #7a8286;
+  letter-spacing: .25px;
+  float: none;
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: .9rem;
+  display: inline-block;">Extended Education Ventures</a>
+          </div>
+
+        </div>
+        <div class="mktoText container textlogo" mktoName="Logo" id="logo">
+         <a href="https://professionaled.utexas.edu/" target="_blank"><img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/utexas_cpe_logo455.png" width="455" border="0" style="max-width: 455px;" /></a>
+        </div>
+      </div>
+
+      <div id="banner">
+        
+
+          <div class="block">
+            <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <div id="content">
+                  <div class="mktoText" id="image" mktoName="Content Image"><img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/download-icon-blue.png"></div>
+                  <div class="mktoText" id="text" mktoName="Content Text">
+
+                    <h2>Thank you for your inquiry.</h2>
+                    <p>A confirmation email will be sent shortly.</p>
+                  </div>
+                   <div class="buttonshow">
+                    <div class="cta">
+                      <a href="${btnlink}">${btntext}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+        </div>
+      </div>
+
+      
+
+      <div id="ads">
+        <div class="container">          
+          <div class="row">
+            <div class="col-md-12 title"><div class="mktoText" mktoName="Title" id="titletext">
+              <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h2>
+            </div>
+            </div>
+           <div class="col-md-4 adimg">
+              <div class="mktoText" mktoName="Ad 1" id="ad1">
+               <a href="#">
+                <img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/Gated-images-07.png" border="0">
+               </a>
+             </div>
+           </div>
+            <div class="col-md-4 adimg">
+              <div class="mktoText" mktoName="Ad 2" id="ad2">
+               <a href="#">
+                <img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/Gated-images-08.png" border="0">
+               </a>
+             </div>
+           </div>
+            <div class="col-md-4 adimg">
+              <div class="mktoText" mktoName="Ad 3" id="ad3">
+               <a href="#">
+                <img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/Gated-images-09.png" border="0">
+               </a>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5"> <div class="width90" style="text-align: left;"> <div class="mktoText" id="Footercol1" mktoName="Footer Column Left">
+              <a href="https://professionaled.utexas.edu/">
+                <img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/KO_formal_Center_for_Prof_Education310.png" border="0" width="310" height="34" style="max-width: 310px;">
+              </a>
+                <p style="color: #ffffff;"><br>Center for Professional Education<br>
+The University of Texas at Austin<br>
+UTA Building, Suite 2.408<br>
+					1616 Guadalupe Street
+Austin, TX 78701</p></div>
+              
+            </div></div>
+            <div class="col-md-5"> <div class="width90"> <div class="mktoText" id="footercol2" mktoName="Footer Column Center">
+              <p style="color: #ffffff;">Phone: <a href="tel:512-232-6520" style="color: #ffffff; text-decoration: underline;"> 512-232-6520</a> <br>Fax: 512-471-2905<br>Email: <a href="mailto:cpe@austin.utexas.edu" style="color: #ffffff; text-decoration: underline;">cpe@austin.utexas.edu</a></p>
+<p style="color: #ffffff;">Corporate Education Inquiries: <a href="tel:512-232-6006" style="color: #ffffff; text-decoration: underline;">512-232-6006</a> <br>Email: <a href="mailto:cpesolutions@austin.utexas.edu" style="color: #ffffff; text-decoration: underline;">cpesolutions@austin.utexas.edu</a></p>
+<p style="color: #ffffff;">Government Education Inquiries: <a href="tel:512-475-8664" style="color: #ffffff; text-decoration: underline;">512-475-8664</a> <br>Email: <a href="mailto:cpesolutions@austin.utexas.edu" style="color: #ffffff; text-decoration: underline;">cpesolutions@austin.utexas.edu</a></p></div>
+              
+            </div></div>
+
+            <div class="col-md-2">
+              <div class="width90" style="text-align: left;">
+                <div class="mktoText" id="social" mktoName="Socials" style="margin-bottom: 20px;">
+                <a href="https://www.facebook.com/utcpe"><img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/icon-fb.jpg" border="0" alt="Facebook"></a>&nbsp;
+                <a href="https://www.instagram.com/extendedcampusutaustin/"><img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/icon-insta.jpg" border="0" alt="Instagram"></a>&nbsp;
+                <a href="https://www.linkedin.com/school/ut-austin-center-for-professional-education"><img src="https://info.extendedcampus.utexas.edu/rs/726-BWN-173/images/icon-in.jpg" border="0" alt="LinkedIn"></a>
+              </div>
+				  <div class="mktoText footer-link-button" mktoName="Footer Link Button" id="footer-link-button">
+            <a href="https://itsyourcareer.blog">BLOG</a></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+       
+      </div>
+       <div class="bottombar">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6"> <div class="mktoText" id="copyright" mktoName="Copyright">
+                <p>&copy; The University of Texas at Austin 2022</p></div>
+              </div>
+              <div class="col-md-6"> <div class="mktoText" id="footerlinks" mktoName="Bottom Links">
+                <p><a href="https://www.utexas.edu/emergency">Emergency Information</a> &nbsp; | &nbsp; <a href="https://www.utexas.edu/site-policies">Site Policy</a> &nbsp; | &nbsp; <a href="https://www.utexas.edu/web-accessibility-policy">Web Accessibility Policy</a> &nbsp; | &nbsp; <a href="https://www.utexas.edu/web-privacy-policy">Web Privacy Policy</a></p></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+    </div>
+<script>
+  function getParameterByName(name, url) {
+if(!url) url = window.location.href;
+name = name.replace(/[\[\]]/g, '\\$&');
+var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+results = regex.exec(url);
+if(!results) return null;
+if(!results[2]) return '';
+return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+function setCookie(cookiename, cookievalue, exdays) {
+var d = new Date();
+d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+var expires = "expires=" + d.toUTCString();
+document.cookie = cookiename + "=" + cookievalue + ";" + expires + "; path=/ ; domain=" + "utexas.edu";
+}
+var utm_source = getParameterByName('utm_source');
+var utm_medium = getParameterByName('utm_medium');
+var utm_campaign = getParameterByName('utm_campaign');
+var utm_term = getParameterByName('utm_term');
+var utm_content = getParameterByName('utm_content');
+var prev_url = getParameterByName('prev_url');
+if((utm_source != null) && (utm_source != "") && (utm_source != undefined)) {
+setCookie("pd_utm_source", utm_source, 14);
+setCookie("utm_source", utm_source, 14);
+}
+if((utm_medium != null) && (utm_medium != "") && (utm_medium != undefined)) {
+setCookie("pd_utm_medium", utm_medium, 14);
+setCookie("utm_medium", utm_medium, 14);
+}
+if((utm_campaign != null) && (utm_campaign != "") && (utm_campaign != undefined)) {
+setCookie("pd_utm_campaign", utm_campaign, 14);
+setCookie("utm_campaign", utm_campaign, 14);
+}
+if((utm_term != null) && (utm_term != "") && (utm_term != undefined)) {
+setCookie("pd_utm_term", utm_term, 14);
+setCookie("utm_term", utm_term, 14);
+}
+if((utm_content != null) && (utm_content != "") && (utm_content != undefined)) {
+setCookie("pd_utm_content", utm_content, 14);
+setCookie("utm_content", utm_content, 14);
+
+}
+if((prev_url != null) && (prev_url != "") && (prev_url != undefined)) {
+setCookie("pd_prev_url", prev_url, 14);
+setCookie("prev_url", prev_url, 14);
+
+}
+    </script>
+    <script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            ttd_dom_ready( function() {
+                if (typeof TTDUniversalPixelApi === 'function') {
+                    var universalPixelApi = new TTDUniversalPixelApi();
+                    universalPixelApi.init("2ln6jji", ["syjzp44"], "https://insight.adsrvr.org/track/up");
+                }
+            });
+        </script> 
+  </body>
+</html>
