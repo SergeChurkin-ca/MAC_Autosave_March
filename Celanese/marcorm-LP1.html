@@ -20,13 +20,19 @@ Button Banner Hover color = #1FA2DC
 	<meta name="description" content="">		
     
     <!-- Marketo Variable Definitions -->
-    <meta class="mktoColor" id="headerBgColor" mktoName="Header Background Color" default="#eeeeee">
+    <meta class="mktoColor" id="headerBgColor" mktoName="Header Background Color" default="#ffffff">
     <meta class="mktoString" id="logoLink" mktoName="Logo Link" default="https://celanese.com/">    
+    <meta class="mktoString" id="logowidth" mktoName="Logo width (px)" default="163">    
     <meta class="mktoString" id="bannerBackgroundImg" mktoName="Banner Background Image" default="//139-DBZ-834.mktoweb.com/rs/370-JDQ-161/images/banner-bg.jpg">
     
 	<meta class="mktoColor" id="bannerBgColor" mktoName="Banner Background Color" default="#ffffff">
+	<meta class="mktoColor" id="banner-btn-bgcolor" mktoName="Banner Btn Background Color" default="#007da9">
+	<meta class="mktoColor" id="banner-btn-hover-bgcolor" mktoName="Banner Btn Hover Background Color" default="#005c7a">
+	<meta class="mktoColor" id="banner-btn-txtcolor" mktoName="Banner Btn Text Color" default="#ffffff">
+	<meta class="mktoColor" id="banner-btn-hover-txtcolor" mktoName="Banner Btn Hover Text Color" default="#ffffff">
+	<meta class="mktoColor" id="banner-btn-hover-brbdcolor" mktoName="Banner Btn Hover Border Color" default="#005c7a">
     
-  	<meta class="mktoString" id="headerImage" mktoName="Header Image" default="//www.placehold.it/1170x335">
+  	<meta class="mktoString" id="headerImage" mktoName="Header Image" default="https://dummyimage.com/1170x335/333333/ffffff">
   
     <meta class="mktoString" id="bannerButtonLabel" mktoName="Banner Button Label" default="Download Now">
     <meta class="mktoString" id="bannerButtonLink" mktoName="Banner Button Link" default="#">
@@ -69,8 +75,8 @@ Button Banner Hover color = #1FA2DC
 	<link href="//na-ab19.marketo.com/rs/398-CQS-166/images/bootstrap.css" rel="stylesheet">
 	
 	<!-- Template CSS -->
-	<link href="//na-ab19.marketo.com/rs/398-CQS-166/images/style-mkto.css" rel="stylesheet">
-    <link href="//139-DBZ-834.mktoweb.com/rs/370-JDQ-161/images/ce-general-header.css" rel="stylesheet">
+	<link href="https://explore.celanese.com/rs/139-DBZ-834/images/2022-style-mkto.css" rel="stylesheet">
+    <link href="https://explore.celanese.com/rs/139-DBZ-834/images/2022-ce-general-header.css" rel="stylesheet">
   <link href="https://explore.celanese.com/rs/139-DBZ-834/images/2022-general-footer.css" rel="stylesheet">
 
 	<!-- Google Fonts -->
@@ -89,7 +95,22 @@ Button Banner Hover color = #1FA2DC
 /* ==========================================================================
  DO NOT EDIT - UNLESS YOU KNOW WHAT YOUR DOING          - *you're
  ========================================================================== */ 
- 
+        html {
+            scrollbar-width: none;
+        }
+
+      body {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;
+      } 
+      body::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+      }
+    /* logo  */
+    #logoImg-bp img {
+        width: {logowidth}px;
+        height: auto;
+    }
 	/* Header Section  */
     #headerSection {
       	background-color: ${headerBgColor};
@@ -217,11 +238,11 @@ h1, h2, h3, h4, h5, h6 { font-weight: 300; font-family: 'MyriadPro-Regular', "He
 h1, h2, h3, h4, h5, h6 { margin-top: 0;  margin-bottom: 10px;}
 
 h1 {font-size: 44px;}
-h2 {font-weight: 400; margin-bottom: 20px; }
+h2 {font-weight: 600; margin-bottom: 20px; }
 h3 {}
 h4 {font-size: 17px; font-weight: 700; color: #2d2d2d;}
 
-p { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #4D4D4D; margin-bottom: 20px; line-height: 24px;}
+p { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #262626; margin-bottom: 20px; line-height: 24px;}
 
 a {-webkit-transition: all 150ms ease-in; -moz-transition: all 150ms ease-in; -o-transition: all 150ms ease-in; transition: all 150ms ease-in; color: #00a8d6;}
 a:hover, a:focus { text-decoration: none; color: #007DA0; outline: none; } 
@@ -231,8 +252,8 @@ ul { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-
 ::-moz-selection { text-shadow: none; background: #08b4da; color: #FFF;}
 ::selection { text-shadow: none; background: #08b4da; color: #FFF; }
 
-.btn {-webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out; border-radius: 0; padding: 15px 35px; font-weight: bold;}
-.btn:hover, .btn:focus { background-color:#08b4da; color: #FFF;}
+.btn {background-color:${banner-btn-bgcolor};-webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out; border-radius: 0; padding: 15px 35px; font-weight: bold;color:${banner-btn-txtcolor}}
+.btn:hover, .btn:focus { background-color:${banner-btn-hover-bgcolor}; color:${banner-btn-hover-txtcolor};border:${banner-btn-hover-brbdcolor}}
 
 .btn-transparent {background-color: ${bannerButtonBgColor}; color: #ffffff; }
 .btn-transparent:hover {background-color: ${bannerButtonBgHoverColor}}
@@ -488,8 +509,8 @@ FORM 2.0 -- Simple Form STYLES ONLY
 						
 						<!-- Start Logo / Text -->
 						<a class="navbar-brand text-logo" href="${logoLink}">
-                        <div class="mktoImg" id="logoImg-bp" mktoName="Logo" style="min-height:40px; min-width:100px;">
-                        <img height="60" src="//139-DBZ-834.mktoweb.com/rs/370-JDQ-161/images/logo-lp.png">
+                        <div class="mktoImg" id="logoImg-bp" mktoName="Logo">
+                        <img height="60" src="https://explore.celanese.com/rs/139-DBZ-834/images/CElogo4x 1.png">
                         </div>
                         </a>
                         
@@ -606,7 +627,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
                 <div class="mktoText" id="section-3-1" mktoName="Section 3 Point 1">
 					<div class="main-point"><!-- Main Point -->
 						<div class="line-font">
-                        <img src="//www.placehold.it/175x125">
+                        <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
                         </div><!-- Main Point Icon -->
 						<h3>Section 3 Point 1</h3><!-- Main Point Title -->
 						<p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p><!-- Main Point Text -->
@@ -617,7 +638,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
                 <div class="mktoText" id="section-3-2" mktoName="Section 3 Point 2">
 					<div class="main-point">
 						<div class="line-font">
-                        <img src="//www.placehold.it/175x125">
+                        <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
                         </div>
 						<h3>Section 3 Point 2</h3>
 						<p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p>
@@ -628,7 +649,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
                 <div class="mktoText" id="section-3-3" mktoName="Section 3 Point 3">
 					<div class="main-point">
 						<div class="line-font">
-                        <img src="//www.placehold.it/175x125">
+                        <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
                         </div>
 						<h3>Section 3 Point 3</h3>
 						<p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p>
@@ -650,7 +671,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
 			<div class="row paddingtop-40">
 				<div class="col-lg-6 col-md-6">
                 <div class="mktoText img-responsive" id="section-4-image" mktoName="Section 4 Image">
-					<img src="//www.placehold.it/530x380" alt="" title="">
+					<img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
                 </div>
 				</div>
 				<div class="col-lg-6 col-md-6">
@@ -676,7 +697,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
             <div class="row section paddingtop-40">
 				<div class="col-lg-6 col-md-6 section5-img" style="float:right;">
                 <div class="mktoText img-responsive" id="section-5-image" mktoName="Section 5 Image">
-					<img src="//www.placehold.it/530x380" alt="" title="">
+					<img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
                 </div>
 				</div>
 				<div class="col-lg-6 col-md-6" style="float:left;">
@@ -694,7 +715,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
 			<div class="row section paddingbottom-50">
 				<div class="col-md-6">
                 <div class="mktoText img-responsive" id="section-6-image" mktoName="Section 6 Image">
-					<img src="//www.placehold.it/530x380" alt="" title="">
+					<img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
                 </div>
 				</div>
 				<div class="col-md-6">
@@ -832,10 +853,10 @@ FORM 2.0 -- Simple Form STYLES ONLY
 		<div class="container">
                 <div class="mktoText" id="section-8" mktoName="Section 8">
 			<ul class="list-inline clients-logo text-center">
-				<li><img src="//www.placehold.it/175x35/333333/ffffff" alt="" title=""  /></li><!--Image path of logo -->
-				<li><img src="//www.placehold.it/175x35/333333/ffffff" alt="" title="" /></li>
-				<li><img src="//www.placehold.it/175x35/333333/ffffff" alt="" title="" /></li>
-				<li><img src="//www.placehold.it/175x35/333333/ffffff" alt="" title="" /></li>
+				<li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title=""  /></li><!--Image path of logo -->
+				<li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
+				<li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
+				<li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
 			</ul>
           </div>
 		</div>
@@ -865,11 +886,11 @@ FORM 2.0 -- Simple Form STYLES ONLY
 <h1 class="">Follow us</h1>
 <nav class="">
 <ul>
-<li><a href="https://twitter.com/Celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/twitter.gif" alt="Twitter" title="Follow us on Twitter" /></a></li>
-<li><a href="https://www.facebook.com/Celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/facebook.gif" alt="Facebook" title="Follow us on Facebook" /></a></li>
-<li><a href="https://www.linkedin.com/company/celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/linkedin.gif" alt="LinkedIn" title="Follow us on LinkedIn" class="" /></a></li>
-<li><a href="https://www.youtube.com/user/CelaneseCorporation"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/youtube.gif" alt="YouTube" title="Watch us on YouTube" class="" /></a></li>
-<li><a href="http://www.celaneseblog.com/"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/ceblog.gif" alt="Blog" title="Read our blog" /></a></li>
+<li><a href="https://twitter.com/Celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/Twitter.svg" alt="Twitter" title="Follow us on Twitter" /></a></li>
+<li><a href="https://www.facebook.com/Celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/Facebook.svg" alt="Facebook" title="Follow us on Facebook" /></a></li>
+<li><a href="https://www.linkedin.com/company/celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/LinkedIn.svg" alt="LinkedIn" title="Follow us on LinkedIn" class="" /></a></li>
+<li><a href="https://www.youtube.com/user/CelaneseCorporation"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/Youtube.svg" alt="YouTube" title="Watch us on YouTube" class="" /></a></li>
+<li><a href="http://www.celaneseblog.com/"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/rss-solid.svg" alt="Blog" title="Read our blog" /></a></li>
 </ul>
 </nav></section>
 <section id="copyright" class="">

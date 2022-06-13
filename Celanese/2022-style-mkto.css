@@ -1,0 +1,451 @@
+/* ==========================================================================
+Classes
+========================================================================== */
+
+.strong {
+    font-weight: 700;
+}
+
+.subline {
+    font-size: 24px;
+}
+
+.section {
+    padding: 25px 0;
+}
+
+.padding40 {
+    padding: 40px 0;
+}
+
+.paddingtop-40 {
+    padding-top: 40px;
+}
+
+.paddingbottom-40 {
+    padding-bottom: 50px;
+}
+
+.paddingbottom-15 {
+    padding-bottom: 15px;
+}
+
+.paddingbottom-50 {
+    padding-bottom: 50px;
+}
+
+.nopadding-bottom {
+    padding-bottom: 0;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-center img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ==========================================================================
+Color Customizations
+========================================================================== */
+
+.white-text {
+    color: #FFF;
+}
+
+.white-text p {
+    color: #FFF;
+}
+
+.white-text h2 {
+    color: #FFF;
+}
+
+.white-text h3 {
+    color: #FFF;
+}
+
+
+/* ==========================================================================
+Line Font
+========================================================================== */
+
+.line-font {
+    font-size: 48px;
+}
+
+
+/* ==========================================================================
+Headline
+========================================================================== */
+
+.headline {
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.headline h1 {
+    color: #31373a;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #DDD;
+    display: inline-block;
+    font-size: 44px;
+}
+
+.headline h2 {
+    font-size: 36px;
+}
+
+.headline p {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #262626;
+}
+
+#intro .headline p {
+    margin-bottom: 0px;
+    color: #1a1a1a;
+}
+
+
+/* ==========================================================================
+ Navigation
+========================================================================== */
+
+.menu-right {
+    float: right;
+}
+
+.navbar-inverse {
+    margin-bottom: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #000000;
+    padding: 15px 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    display: block;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav>li {
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+    background: #08b4da;
+    border: none;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+.scroll-fixed-navbar {
+    padding-bottom: 0;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    background-color: transparent;
+}
+
+.navbar>.container .navbar-brand {
+    margin-left: 0;
+}
+
+.navbar-brand {
+    height: auto;
+}
+
+.scroll-fixed-navbar {
+    padding: 10px 0;
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==========================================================================
+Logo
+======================================================.==================== */
+
+.navbar-inverse .navbar-brand {
+    /*color: #FFF; font-size: 30px; font-weight: 700;*/
+    padding: 0;
+}
+
+.scroll-fixed-navbar.navbar-inverse .navbar-brand {
+    color: #1a1a1a;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.text-logo {
+    margin-top: 5px
+}
+
+.text-logo i {
+    margin-right: 10px;
+}
+
+
+/* ==========================================================================
+Banner
+========================================================================== */
+
+#banner {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background: #1a1a1a;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.banner-content {
+    clear: both;
+    padding-top: 40px;
+}
+
+.banner-content h1 {
+    font-size: 50px;
+    color: #FFF;
+}
+
+.banner-content h2 {
+    color: #FFF;
+}
+
+.banner-content h5 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFF;
+}
+
+.banner-content p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+
+/* ==========================================================================
+Clients Logo
+========================================================================== */
+
+.clients-logo li {
+    padding: 0 20px;
+}
+
+.clients-logo li img {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    /* For IE8 and earlier */
+}
+
+
+/* ==========================================================================
+Main Point
+========================================================================== */
+
+.main-point {
+    margin-bottom: 20px;
+}
+
+.main-point i {
+    display: block;
+    font-size: 56px;
+    color: #1a1a1a;
+}
+
+.main-point h3 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+
+/* ==========================================================================
+Features
+========================================================================== */
+
+.features {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.features i {
+    float: left;
+    margin-right: 20px;
+}
+
+.features h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 0px;
+}
+
+.features p {
+    clear: both;
+    padding-top: 10px;
+}
+
+.features .line-font img {
+    float: left;
+    margin-right: 20px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* ==========================================================================
+Video Container
+============================================================================ */
+
+.video-container {
+    position: relative;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 430px;
+    border: none;
+}
+
+
+/* ==========================================================================
+Media Queries
+ ========================================================================== */
+
+
+/* ------ Tablet Portrait size to standard 960 (devices and browsers) ------*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    img {
+        margin: 20px auto;
+    }
+    .img-thumbnail {
+        margin: 0;
+    }
+}
+
+
+/* ------ Mobile Landscape Size to Tablet Portrait (devices and browsers) ------*/
+
+@media only screen and (max-width: 767px) {
+    .navbar-inverse {
+        background-color: #FFF;
+        padding: 0;
+    }
+    .navbar>.container .navbar-brand {
+        margin-left: 15px;
+        color: #1a1a1a;
+        margin-top: 15px;
+    }
+    .menu-right {
+        float: none;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+        color: #1a1a1a;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:hover,
+    .navbar-inverse .navbar-nav>.active>a:focus,
+    .navbar-inverse .navbar-nav>li>a:hover {
+        color: #00A8D6;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+    }
+    .section {
+        padding: 10px 0;
+    }
+    .main-point {
+        margin-bottom: 40px;
+    }
+    .video-container {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* ------ Mobile Portrait Size to Mobile Landscape Size (devices and browsers) ------*/
+
+@media only screen and (max-width: 479px) {
+    h2 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+    iframe {
+        max-height: 200px;
+    }
+    .banner-content h1 {
+        font-size: 34px;
+    }
+    .headline h1 {
+        font-size: 30px;
+    }
+    .headline h2 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #515151;
+    }
+    .section {
+        padding: 10px 0;
+    }
+    .main-point h3 {
+        font-size: 20px;
+    }
+    .video-container {
+        margin-bottom: 40px;
+    }
+}
