@@ -31,15 +31,22 @@ Button Banner Hover color = #1FA2DC
 	<meta class="mktoColor" id="banner-btn-txtcolor" mktoName="Banner Btn Text Color" default="#ffffff">
 	<meta class="mktoColor" id="banner-btn-hover-txtcolor" mktoName="Banner Btn Hover Text Color" default="#ffffff">
 	<meta class="mktoColor" id="banner-btn-hover-brbdcolor" mktoName="Banner Btn Hover Border Color" default="#005c7a">
-    
-  	<meta class="mktoString" id="headerImage" mktoName="Header Image" default="https://dummyimage.com/1170x335/333333/ffffff">
-  
+
+	<meta class="mktoColor" id="form-btn-bgcolor" mktoName="Banner Btn Background Color" default="#007da9">
+	<meta class="mktoColor" id="form-btn-hover-bgcolor" mktoName="Banner Btn Hover Background Color" default="#005c7a">
+	<meta class="mktoColor" id="form-btn-txtcolor" mktoName="Banner Btn Text Color" default="#ffffff">
+	<meta class="mktoColor" id="form-btn-hover-txtcolor" mktoName="Banner Btn Hover Text Color" default="#ffffff">
+	<meta class="mktoColor" id="form-btn-hover-brbdcolor" mktoName="Banner Btn Hover Border Color" default="#005c7a">
+  	
     <meta class="mktoString" id="bannerButtonLabel" mktoName="Banner Button Label" default="Download Now">
     <meta class="mktoString" id="bannerButtonLink" mktoName="Banner Button Link" default="#">
-    <meta class="mktoColor" id="bannerButtonBgColor" mktoName="Banner Button Color" default="#7B63B0">
-    <meta class="mktoColor" id="bannerButtonBgHoverColor" mktoName="Banner Button Hover Color" default="#1FA2DC">
-    <meta class="mktoColor" id="section1BgColor" mktoName="Section-1 Background Color" default="#ffffff">
-    <meta class="mktoColor" id="section2BgColor" mktoName="Section-2 Background Color" default="#ffffff">
+
+
+    <meta class="mktoString" id="headerImage" mktoName="Header Image" default="https://dummyimage.com/1170x335/007d9a/ffffff">
+    <meta class="mktoString" id="header-img-width" mktoName="Header Image Width (vw)" default="100">
+    <meta class="mktoColor" id="section1BgColor" mktoName="Section-1 Background Color" default="#f4f4f4">
+    <meta class="mktoColor" id="section2BgColor" mktoName="Section-2 Background Color" default="#f4f4f4">
+    <meta class="mktoColor" id="FormBgColor" mktoName="Form Background Color" default="#ffffff">
     <meta class="mktoColor" id="section3BgColor" mktoName="Section-3 Background Color" default="#777777">
     <meta class="mktoColor" id="section4BgColor" mktoName="Section-4 Background Color" default="#ffffff">  
 	<meta class="mktoColor" id="section5BgColor" mktoName="Section-5 Background Color" default="#ffffff">
@@ -66,6 +73,7 @@ Button Banner Hover color = #1FA2DC
   	<meta class="mktoBoolean" id="showSection9" mktoName="Show Section 9?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection8" mktoName="Show Section 8?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showFooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-bottomGradient" mktoName="Show Bottom Gradient?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   	<meta class="mktoBoolean" id="showCookieBanner" mktoName="Show Cookie Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 	
 	<!-- Mobile Specific Metas -->
@@ -122,7 +130,11 @@ Button Banner Hover color = #1FA2DC
       	background-color: ${bannerBgColor};
 		background-image: url(${bannerBackgroundImg});
     }
-	
+	/* Header setup */
+    .header-image-wrapper img {
+        width: ${header-img-width}vw !important;
+    }
+
 	/* Section 1 */
     #section1 {
       	background-color: ${section1BgColor};
@@ -142,7 +154,7 @@ Button Banner Hover color = #1FA2DC
     #section4 {
       	background-color: ${section4BgColor};
     }
-	
+	 
 	/* Section 5 */
     #section5 {
       	background-color: ${section5BgColor};
@@ -174,7 +186,9 @@ Button Banner Hover color = #1FA2DC
       	background-color: ${footerBgColor};
 		padding:25px 0px 15px 0px;
     }
-	
+	#bottomGradient {
+        display: ${show-bottomGradient};
+    }
 	
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
@@ -234,7 +248,7 @@ Button Banner Hover color = #1FA2DC
 
 body { width: 100%; min-height: 100%; font-family: "Open Sans", "Helvetica Neue", Lucida Sans Unicode, Verdana, Helvetica, sans-serif; font-size: 14px; line-height: 23px; color: #4D4D4D; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
 
-h1, h2, h3, h4, h5, h6 { font-weight: 300; font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #0099CC; text-transform: uppercase; transition: all .50s ease-in-out; -moz-transition: all .50s ease-in-out; -webkit-transition: all .50s ease-in-out;}
+h1, h2, h3, h4, h5, h6 { font-weight: 300; font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #262626; text-transform: uppercase; transition: all .50s ease-in-out; -moz-transition: all .50s ease-in-out; -webkit-transition: all .50s ease-in-out;}
 h1, h2, h3, h4, h5, h6 { margin-top: 0;  margin-bottom: 10px;}
 
 h1 {font-size: 44px;}
@@ -242,7 +256,7 @@ h2 {font-weight: 600; margin-bottom: 20px; }
 h3 {}
 h4 {font-size: 17px; font-weight: 700; color: #2d2d2d;}
 
-p { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #262626; margin-bottom: 20px; line-height: 24px;}
+p { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #262626; margin-bottom: 20px; line-height: 24px; font-size: 18px; line-height:28px;}
 
 a {-webkit-transition: all 150ms ease-in; -moz-transition: all 150ms ease-in; -o-transition: all 150ms ease-in; transition: all 150ms ease-in; color: #00a8d6;}
 a:hover, a:focus { text-decoration: none; color: #007DA0; outline: none; } 
@@ -252,11 +266,10 @@ ul { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-
 ::-moz-selection { text-shadow: none; background: #08b4da; color: #FFF;}
 ::selection { text-shadow: none; background: #08b4da; color: #FFF; }
 
-.btn {background-color:${banner-btn-bgcolor};-webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out; border-radius: 0; padding: 15px 35px; font-weight: bold;color:${banner-btn-txtcolor}}
-.btn:hover, .btn:focus { background-color:${banner-btn-hover-bgcolor}; color:${banner-btn-hover-txtcolor};border:${banner-btn-hover-brbdcolor}}
+.btn {background-color:${banner-btn-bgcolor};-webkit-transition: all .3s ease-in-out; -moz-transition: all .3s ease-in-out; transition: all .3s ease-in-out; border-radius: 0; padding: 15px 35px; font-weight: bold;color:${banner-btn-txtcolor};border:none;}
+.btn:hover, .btn:focus, .btn:focus-visible { background-color:${banner-btn-hover-bgcolor}; color:${banner-btn-hover-txtcolor};border:${banner-btn-hover-brbdcolor}!important;outline:none !important;}
+.btn:active, .btn:visited { border:none;}
 
-.btn-transparent {background-color: ${bannerButtonBgColor}; color: #ffffff; }
-.btn-transparent:hover {background-color: ${bannerButtonBgHoverColor}}
 .img-responsive img {display: block; width: 100% \9; max-width: 100%; height: auto;}
 
 .footer p, .footer a {color: #ffffff; margin-bottom: 10px;}
@@ -267,44 +280,57 @@ ul { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-
 /* ==========================================================================
 FORM 2.0 -- Simple Form STYLES ONLY
 ========================================================================== */  
-  
-  .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
-	  
-	  -webkit-border-radius: 5px;
-	  -khtml-border-radius: 5px;
-	  -moz-border-radius: 5px;
-	  -ms-border-radius: 5px;
-	  -o-border-radius: 5px;
-	  border-radius: 5px;
-	  
-	  color: #fff;
-	  border: none !important;
-	  padding:12px 14px !important;
-	  font-size: 1em;
-	  
-	  background: #64b6dd;
-	  background-color: #64b6dd !important;
-	  background-image:  none !important;
-	  background-image:  none !important;
-	  background-image:  none !important;
-	  background-image:  none !important;
-	  text-transform: none !important;
-	  
-/*	  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#962D9E), to(#64038D)) !important;
-	  background: -webkit-linear-gradient(#962D9E, #64038D) !important;
-	  background: -moz-linear-gradient(#962D9E, #64038D) !important;
-	  background: -ms-linear-gradient(#962D9E, #64038D) !important;
-	  background: -o-linear-gradient(#962D9E, #64038D) !important;
-	  background: linear-gradient(#962D9E, #64038D) !important;
-	  -pie-background: linear-gradient(#962D9E, #64038D) !important;
-*/  
-
+#primaryForm .mktoForm {
+    border: none !important;
+    padding: 1.5rem 0 !important;
 }
-  
-  .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
-	  border: none !important;
-	  background: #227da8!important;
-  }
+#primaryForm {
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%), 0 0 8px rgb(0 0 0 / 8%) !important;
+    background-color: ${formBgColor} !important;
+    border: none !important;
+}  
+.mktoForm .mktoRequiredField label.mktoLabel {
+    color: ${form-lbl-color} !important;
+}
+.mktoForm .mktoButton {
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff !important;
+    border: none !important;
+    padding: 12px 14px !important;
+    font-size: 1em;
+    background-color: ${form-btn-bgcolor} !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 0 !important;
+    padding: 15px 35px !important;
+    font-weight: bold !important;
+    color:$ ${form-btn-txtcolor};
+    border:none;
+    background-image: none !important;
+}
+
+.mktoForm .mktoButton:hover,
+.mktoFom .mktoButton:focus {
+    background-color:${form-btn-hover-bgcolor}!important;
+    color:$ ${form-btn-hover-txtcolor}!important;
+    border:$ ${form-btn-hover-brbdcolor}!important;
+    border:none!important;
+}
+
+.mktoForm .mktoButon:active,
+.mktoForm .mktoButon:visited {
+    border: none!important;
+}
+
+.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField {
+    border: solid 1px #646464 !important;
+    margin-top: 1rem !important;
+}
 	</style>
 
 
@@ -510,10 +536,10 @@ FORM 2.0 -- Simple Form STYLES ONLY
 						<!-- Start Logo / Text -->
 						<a class="navbar-brand text-logo" href="${logoLink}">
                         <div class="mktoImg" id="logoImg-bp" mktoName="Logo">
-                        <img height="60" src="https://explore.celanese.com/rs/139-DBZ-834/images/CElogo4x 1.png">
+                        <img src="https://explore.celanese.com/rs/139-DBZ-834/images/CElogo4x 1.png">
                         </div>
                         </a>
-                        
+                    
 						<!-- End Logo / Text -->
 					</div>
 					
@@ -548,7 +574,7 @@ FORM 2.0 -- Simple Form STYLES ONLY
                         </div>
                         
                     	<div class="text-center" style="display:${showBannerButton};">
-                        <a href="${bannerButtonLink}"><button class="btn btn-transparent btn-big">${bannerButtonLabel}</button></a>
+                        <a href="${bannerButtonLink}"><button class="btn">${bannerButtonLabel}</button></a>
                         </div>
 				</div>
 					</div>
@@ -884,13 +910,13 @@ FORM 2.0 -- Simple Form STYLES ONLY
 </nav></section>
 <section id="followUs" class="">
 <h1 class="">Follow us</h1>
-<nav class="">
+<nav class="footer-nav">
 <ul>
-<li><a href="https://twitter.com/Celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/Twitter.svg" alt="Twitter" title="Follow us on Twitter" /></a></li>
-<li><a href="https://www.facebook.com/Celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/Facebook.svg" alt="Facebook" title="Follow us on Facebook" /></a></li>
-<li><a href="https://www.linkedin.com/company/celanese"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/LinkedIn.svg" alt="LinkedIn" title="Follow us on LinkedIn" class="" /></a></li>
-<li><a href="https://www.youtube.com/user/CelaneseCorporation"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/Youtube.svg" alt="YouTube" title="Watch us on YouTube" class="" /></a></li>
-<li><a href="http://www.celaneseblog.com/"><img src="https://explore.celanese.com/rs/139-DBZ-834/images/rss-solid.svg" alt="Blog" title="Read our blog" /></a></li>
+<li><a href="https://twitter.com/Celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
+<li><a href="https://www.facebook.com/Celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"> <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a></li>
+<li><a href="https://www.linkedin.com/company/celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
+<li><a href="https://www.youtube.com/user/CelaneseCorporation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"> <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></li>
+<li><a href="http://www.celaneseblog.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M25.57 176.1C12.41 175.4 .9117 185.2 .0523 198.4s9.173 24.65 22.39 25.5c120.1 7.875 225.7 112.7 233.6 233.6C256.9 470.3 267.4 480 279.1 480c.5313 0 1.062-.0313 1.594-.0625c13.22-.8438 23.25-12.28 22.39-25.5C294.6 310.3 169.7 185.4 25.57 176.1zM32 32C14.33 32 0 46.31 0 64s14.33 32 32 32c194.1 0 352 157.9 352 352c0 17.69 14.33 32 32 32s32-14.31 32-32C448 218.6 261.4 32 32 32zM63.1 351.9C28.63 351.9 0 380.6 0 416s28.63 64 63.1 64s64.08-28.62 64.08-64S99.37 351.9 63.1 351.9z"/></svg></li>
 </ul>
 </nav></section>
 <section id="copyright" class="">
