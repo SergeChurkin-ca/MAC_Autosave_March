@@ -1,9 +1,38 @@
-<h1 style="text-align: left;"><span style="color: #ffffff;">Are you ready to make your life easier? </span></h1>
-<p style="text-align: left; font-size: 24px;">&nbsp;</p>
-<ul style="list-style:disc">
-    <li style="text-align: left; font-size: 24px;"><span style="color: #ffffff;">Branchless account opening&nbsp;</span></li>
-    <li style="text-align: left; font-size: 24px;"><span style="color: #ffffff;">Integrations with Clio, QuickBooks and LawPay</span></li>
-    <li style="text-align: left; font-size: 24px;"><span style="color: #ffffff;">One-click trust account reconciliation</span></li>
-    <li style="text-align: left; font-size: 24px;"><span style="color: #ffffff;">Check printing right from your office</span></li>
-    <li style="text-align: left; font-size: 24px;"><span style="color: #ffffff;">Support from a real human who knows law firms</span></li>
-</ul>
+<div id="ebookform" class="container_100" style="background-color:{{ module.module_styles.background_color.color }};">
+    <div class="container_inner" id="flex">
+
+        <div class="col50" id="bannertext1" style="padding-top:{{ module.module_styles.padding_top }}px;padding-bottom:{{ module.module_styles.padding_bottom }}px;">
+            {% inline_rich_text field="headline" value="{{ module.headline }}" %} {% if module.image_field_1.src %} {% set sizeAttrs = 'width="{{ module.image_field_1.width }}" height="{{ module.image_field_1.height }}"' %} {% if module.image_field_1.size_type ==
+            'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %} {% elif module.image_field_1.size_type == 'auto_custom_max' %} {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.image_field_1.max_width }}px;
+            max-height: {{ module.image_field_1.max_height }}px"' %} {% endif %} {% set loadingAttr = module.image_field_1.loading != 'disabled' ? 'loading="{{ module.image_field_1.loading }}"' : '' %}
+            <img src="{{ module.image_field_1.src }}" alt="{{ module.image_field_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %}
+
+        </div>
+        <div class="col50" id="bannerform1">
+            <a id="form"></a>
+            <div class="form" style="padding-top:{{ module.module_styles.form_padding_top }}px;padding-bottom:{{ module.module_styles.form_padding_bottom }}px">
+                <div>
+                    <div class="formheadlineicon" style="{{ module.show_form_headline_icon_ }}">
+                        {% if module.image_field.src %} {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %} {% if module.image_field.size_type == 'auto' %} {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %} {% elif
+                        module.image_field.size_type == 'auto_custom_max' %} {% set sizeAttrs = 'width="100%" height="auto" style="max-width: {{ module.image_field.max_width }}px; max-height: {{ module.image_field.max_height }}px"' %} {% endif %} {% set
+                        loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+                        <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> {% endif %}
+                    </div>
+                    <div class="formheadline" style="{{ module.show_form_headline_ }}">
+                        <h1>
+                            {{ module.from_headline }}
+                        </h1>
+                    </div>
+                    <div style="{{ module.show_form_sub_headline_ }}">
+                        <p>
+                            {{ module.from_sub_headline }}
+                        </p>
+                    </div>
+                </div>
+                {% form form_to_use="{{ module.form_field.form_id }}" response_response_type="{{ module.form_field.response_type }}" response_message="{{ module.form_field.message }}" response_redirect_id="{{ module.form_field.redirect_id }}" response_redirect_url="{{module.form_field.redirect_url}}"
+                gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}" %}
+
+            </div>
+        </div>
+    </div>
+</div>
