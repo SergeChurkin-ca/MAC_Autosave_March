@@ -45,6 +45,8 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoString" id="headerImage" mktoName="Header Image" default="https://dummyimage.com/1170x335/007d9a/ffffff">
     <meta class="mktoString" id="header-img-width" mktoName="Header Image Width (vw)" default="100">
     <meta class="mktoColor" id="section1BgColor" mktoName="Section-1 Background Color" default="#e6f4fa">
+    <meta class="mktoString" id="section1_pad_top" mktoName="Section-1 Padding Top (px)" default="30">
+    <meta class="mktoString" id="section1_pad_btm" mktoName="Section-1 Padding Bottom (px)" default="30">
     <meta class="mktoColor" id="section2BgColor" mktoName="Section-2 Background Color" default="#f4f4f4">
     <meta class="mktoColor" id="FormBgColor" mktoName="Form Background Color" default="#ffffff">
     <meta class="mktoColor" id="section3BgColor" mktoName="Section-3 Background Color" default="#777777">
@@ -84,7 +86,6 @@ Button Banner Hover color = #1FA2DC
 	
 	<!-- Template CSS -->
 	<link href="https://explore.celanese.com/rs/139-DBZ-834/images/2022-style-mkto.css" rel="stylesheet">
-	<link href="./2022-style-mkto.css" rel="stylesheet">
     <link href="https://explore.celanese.com/rs/139-DBZ-834/images/2022-ce-general-header.css" rel="stylesheet">
   <link href="https://explore.celanese.com/rs/139-DBZ-834/images/2022-general-footer.css" rel="stylesheet">
 
@@ -139,6 +140,7 @@ Button Banner Hover color = #1FA2DC
 	/* Section 1 */
     #section1 {
       	background-color: ${section1BgColor};
+        padding: ${section1_pad_top}px ${section1_pad_btm}px;
     }
 	
 	 /* Section 2 */
@@ -253,11 +255,12 @@ h1, h2, h3, h4, h5, h6 { font-weight: 300; font-family: 'MyriadPro-Regular', "He
 h1, h2, h3, h4, h5, h6 { margin-top: 0;  margin-bottom: 10px;}
 
 h1 {font-size: 44px;}
-h2 {font-weight: 600 !important; margin-bottom: 20px; }
+h2 {font-weight: 700 !important; margin-bottom: 20px; }
 h3 {}
 h4 {font-size: 17px; font-weight: 700; color: #2d2d2d;}
+.sub-head {font-size: 24px; font-weight: 600; color: #007da9; letter-spacing: 0.038rem;line-height:36px;}
 
-p, li { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #262626; margin-bottom: 20px; line-height: 24px; font-size: 18px; line-height:28px;}
+p, li { font-family: 'MyriadPro-Regular', "Helvetica Neue", Helvetica, Arial, sans-serif; color: #262626; margin-bottom: 20px; line-height: 24px; font-size: 18px; line-height:28px;letter-spacing: 0.033rem;}
 
 a {-webkit-transition: all 150ms ease-in; -moz-transition: all 150ms ease-in; -o-transition: all 150ms ease-in; transition: all 150ms ease-in; color: #00a8d6;}
 a:hover, a:focus { text-decoration: none; color: #007DA0; outline: none; } 
@@ -615,7 +618,9 @@ FORM 2.0 -- Simple Form STYLES ONLY
 				<div class="col-md-6" id="main-content">
                    
 				<div class="mktoText" id="section-2-left" mktoName="Section 2 Left Content" style="padding:0px 20px;">
-					<h2>Section 2 Title</h2>
+					<h2>SECTION 2 TITLE</h2>
+          <h4 class="sub-head">Celanese supplies industrial chemicals used in additives, architectural coatings, inks, films, solvents, pharmaceutical and vinyl foundations.</h4>
+          <hr class="line">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
 					<p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
@@ -636,31 +641,31 @@ FORM 2.0 -- Simple Form STYLES ONLY
             
             
             <!-- Section 3 -->
-                  <div id="section3" style="display:${showSection3};"> 
-	<section id="three-main" class="section30 white-text padding40">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-                <div class="mktoText" id="section-3" mktoName="Section 3 Headline">
-					<div class="headline">
-						<h2>Section 3 Headline</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquando posse.</p>
-					</div>
-                    </div>
-				</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-4">
-                <div class="mktoText" id="section-3-1" mktoName="Section 3 Point 1">
-					<div class="main-point"><!-- Main Point -->
-						<div class="line-font">
-                        <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
-                        </div><!-- Main Point Icon -->
-						<h3>Section 3 Point 1</h3><!-- Main Point Title -->
-						<p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p><!-- Main Point Text -->
-					</div><!-- End Main Point -->
-                    </div>
-				</div>
+          <div id="section3" style="display:${showSection3};"> 
+<section id="three-main" class="section30 white-text padding40">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+        <div class="mktoText" id="section-3" mktoName="Section 3 Headline">
+  <div class="headline">
+    <h2>Section 3 Headline</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquando posse.</p>
+  </div>
+            </div>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-md-4">
+        <div class="mktoText" id="section-3-1" mktoName="Section 3 Point 1">
+  <div class="main-point"><!-- Main Point -->
+    <div class="line-font">
+                <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
+                </div><!-- Main Point Icon -->
+    <h3>Section 3 Point 1</h3><!-- Main Point Title -->
+    <p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p><!-- Main Point Text -->
+  </div><!-- End Main Point -->
+            </div>
+</div>
 				<div class="col-md-4">
                 <div class="mktoText" id="section-3-2" mktoName="Section 3 Point 2">
 					<div class="main-point">
@@ -729,7 +734,9 @@ FORM 2.0 -- Simple Form STYLES ONLY
 				</div>
 				<div class="col-lg-6 col-md-6" style="float:left;">
                 <div class="mktoText" id="section-5" mktoName="Section 5 Text">
-					<h2>Section 5 Title</h2>
+					<h2>SECTION 5 TITLE</h2>
+          <h4 class="sub-head">Sub Header</h4>
+          <hr class="line">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
 					<p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
@@ -748,7 +755,9 @@ FORM 2.0 -- Simple Form STYLES ONLY
 				<div class="col-md-6">
                 <div class="mktoText" id="section-6" mktoName="Section 6 Text">
 					<div>
-						<h2>Section 6 Title</h2>
+						<h2>SECTION 6 TITLE</h2>
+            <h4 class="sub-head">Sub Head</h4>
+            <hr class="line">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
 						<ul class="green-arrow"><!--Green arrow list -->
 							<li>Many addon features</li>
