@@ -12,24 +12,33 @@ div#footerContainer {
 div#footerContainer>footer {
     background-color: #3c3e3e;
     margin: 0 auto;
-    width: 1000px;
+    width: 1170px;
 }
 
 div#footerContainer>footer>h1 {
     color: #ffffff;
     font-family: 'MyriadPro-Regular', sans-serif;
-    font-size: 32px;
-    font-weight: normal;
+    font-size: 20px;
+    font-weight: 700;
     margin-bottom: 0;
     padding-bottom: 16px;
     padding-top: 36px;
     text-transform: uppercase;
 }
 
+.horizontal-gradient {
+    background: linear-gradient(90deg, #f05500, #f79328);
+    border: none;
+    height: .3rem;
+    margin: 0;
+    width: 55px;
+}
+
 div#footerContainer>footer p,
 #footer li {
     color: #ffffff;
     font-size: 18px;
+    font-weight: 400;
     line-height: 1.3;
     letter-spacing: 0.033rem;
     line-height: 28px;
@@ -55,7 +64,7 @@ div#footerContainer>footer>section#about {
 }
 
 div#footerContainer>footer>section#navigation {
-    width: 450px;
+    width: 550px;
 }
 
 div#footerContainer>footer>section#navigation>nav>ul {
@@ -78,6 +87,9 @@ div#footerContainer>footer>section#navigation>nav>ul>li {
 
 div#footerContainer>footer>section#navigation>nav>ul>li>a {
     color: inherit;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
     text-decoration: none;
     transition: color 0.35s;
     -webkit-transition: color 0.35s;
@@ -97,7 +109,7 @@ div#footerContainer>footer>section#followUs>h1 {
     color: #ffffff;
     font-family: 'MyriadPro-Regular', sans-serif;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 700;
     margin-bottom: 12px;
     text-transform: uppercase;
 }
@@ -171,7 +183,7 @@ div#footerContainer>div#bottomGradient {
     height: 94px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
     div#footerContainer {
         margin-top: 20px;
     }
@@ -213,7 +225,7 @@ div#footerContainer>div#bottomGradient {
         vertical-align: top;
         padding-top: 3px;
         padding-right: 10px;
-        font-size: 25px;
+        font-size: 20px;
         margin: 0;
     }
     div#footerContainer>footer>section#followUs>nav {
@@ -275,7 +287,6 @@ div#footerContainer>div#bottomGradient {
         vertical-align: top;
         padding-top: 3px;
         padding-right: 10px;
-        font-size: 25px;
         margin: 0;
     }
     div#footerContainer>footer>section#followUs>nav {
