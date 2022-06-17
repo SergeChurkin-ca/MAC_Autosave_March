@@ -27,6 +27,7 @@ h1 {
     font-size: 58px;
     font-weight: 700;
     line-height: 70.19px;
+    margin: 0;
 }
 
 p {
@@ -35,16 +36,66 @@ p {
     line-height: 21.78px;
 }
 
+section p {
+    line-height: 28px;
+}
+
+
+/* general */
+
+.flex-container {
+    display: flex;
+}
+
+section {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+section .img-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+section img {
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+}
+
 
 /*  banner */
+
+.banner .flex-container {
+    padding: 3rem 3rem 0;
+}
 
 .banner {
     min-height: 735px;
 }
 
+header {
+    background: rgb(255, 255, 255, 0.45);
+    padding: 0.5rem 1.5rem;
+    max-width: 577px;
+    padding: 2rem 1.5rem 2rem;
+}
+
+header h1 {
+    margin: 0 0 2rem;
+}
+
+header p {
+    max-width: 550px;
+}
+
 .banner-button {
     font-weight: 600;
-    line-height: 24px
+    line-height: 24px;
+    line-height: 24px;
+    margin: 1.5rem 5.5vw;
 }
 
 .banner-button p {
@@ -69,4 +120,11 @@ p {
     position: absolute;
     right: 0%;
     left: -52%;
+}
+
+
+/* section 1 */
+
+.img-container {
+    width: calc((100% / 5) - 0.5rem);
 }
