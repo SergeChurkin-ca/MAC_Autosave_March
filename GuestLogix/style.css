@@ -40,11 +40,20 @@ section p {
     line-height: 28px;
 }
 
+.section-5 li {
+    line-height: 28px;
+}
+
 
 /* general */
 
 .flex-container {
     display: flex;
+}
+
+.flex-container-col {
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -59,10 +68,16 @@ section .img-container {
     justify-content: center;
 }
 
-section img {
+.section-1 img {
     width: fit-content;
     height: auto;
     margin: 0 auto;
+    min-width: 90px;
+}
+
+.section-3 img {
+    width: fit-content;
+    height: auto;
 }
 
 
@@ -70,6 +85,8 @@ section img {
 
 .banner .flex-container {
     padding: 3rem 3rem 0;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .banner {
@@ -95,7 +112,8 @@ header p {
     font-weight: 600;
     line-height: 24px;
     line-height: 24px;
-    margin: 1.5rem 5.5vw;
+    margin-left: 3rem;
+    margin-top: -2rem;
 }
 
 .banner-button p {
@@ -128,3 +146,33 @@ header p {
 .img-container {
     width: calc((100% / 5) - 0.5rem);
 }
+
+@media (max-width: 800px) {
+    .banner {
+        min-height: unset !important;
+    }
+    header {
+        margin-top: 1rem !important;
+    }
+    .banner .flex-container {
+        padding: 3rem 1rem 0;
+    }
+    .banner-button {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 34px !important;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+
+/* saved text of module name 2022 CusEx 5 icons */
