@@ -68,6 +68,14 @@ section .img-container {
     justify-content: center;
 }
 
+.section-1 .flex-container {
+    flex-wrap: wrap;
+}
+
+.section-1 .img-container {
+    flex: 1 0 105px;
+}
+
 .section-1 img {
     width: fit-content;
     height: auto;
@@ -155,7 +163,7 @@ header p {
         margin-top: 1rem !important;
     }
     .banner .flex-container {
-        padding: 3rem 1rem 0;
+        padding: 3rem 1rem 1rem;
     }
     .banner-button {
         margin-left: 5%;
@@ -164,15 +172,15 @@ header p {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 34px !important;
+        font-size: 40px !important;
     }
     p {
         font-size: 14px;
     }
+    .banner-button p {
+        white-space: nowrap;
+    }
+    .banner-button span:before {
+        left: -83px;
+    }
 }
-
-
-/* saved text of module name 2022 CusEx 5 icons */
