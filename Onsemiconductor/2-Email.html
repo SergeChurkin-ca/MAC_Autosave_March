@@ -30,6 +30,8 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="vidWidth" mktoname="Video Image Width (px)" default="450" />
 <meta mktoModuleScope="true" class="mktoNumber" id="imgWidth" mktoname="Image Width (px)" default="600" />
 <meta mktoModuleScope="true" class="mktoNumber" id="img-max-width275" mktoname="Image Max Width (px)" default="255" />
+<meta mktoModuleScope="true" class="mktoNumber" id="img-max-width165" mktoname="Image Max Width (px)" default="165" />
+<meta mktoModuleScope="true" class="mktoNumber" id="img-max-width125" mktoname="Image Max Width (px)" default="125" />
 
   
 <meta mktoModuleScope="true" class="mktoNumber" id="pad_lr10" mktoname="Left/Right Padding" default="10" />
@@ -52,7 +54,7 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad30" mktoname="Bottom Padding" default="30" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad40" mktoname="Bottom Padding" default="40" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad110" mktoname="Bottom Padding" default="110" />
-<meta mktoModuleScope="true" class="mktoNumber" id="head-top_pad" mktoname="Headline Bottom Padding" default="15" />
+<meta mktoModuleScope="true" class="mktoNumber" id="head-top_pad" mktoname="Headline Top Padding" default="15" />
 <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" />
 <meta mktoModuleScope="true" class="mktoNumber" id="img-btm_pad" mktoname="Image Bottom Padding" default="0" />  
 <meta mktoModuleScope="true" class="mktoNumber" id="img-btm_pad5" mktoname="Image Bottom Padding" default="5" />  
@@ -88,9 +90,10 @@ font-family: Arial, serif !important;
 
 <meta mktoModuleScope="true" id="outlook-ht1" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="360" min="0" max="1000" step="1" />
 <meta mktoModuleScope="true" id="outlook-ht2" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="290" min="0" max="1000" step="1" />
-<meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad5" mktoname="Button Top Padding" default="5"  />
-<meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad15" mktoname="Button Top Padding" default="15"  />
+<meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad5" mktoname="Button Bottom Padding" default="5"  />
+<meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad15" mktoname="Button Bottom Padding" default="15"  />
 <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad0" mktoname="Button Top Padding" default="0"  />
+<meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad10" mktoname="Button Top Padding" default="10"  />
 <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="20"  />
 
 <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead" mktoName="Button Text Color" default="#ffffff" />
@@ -709,7 +712,7 @@ th{font-weight:normal !important}
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Image" id="leftImage-ab">
                             <div>
-                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-1.png" width="125" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"/>
+                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-1.png" width="125" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;max-width:${img-max-width125}px;"/>
                             </div>
                         </div>
                     </td>
@@ -759,7 +762,7 @@ th{font-weight:normal !important}
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Image" id="leftImage-ba">
                             <div>
-                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-2.png" width="125" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"/>
+                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-2.png" width="125" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;max-width:${img-max-width125}px;"/>
                             </div>
                         </div>
                     </td>
@@ -809,7 +812,7 @@ th{font-weight:normal !important}
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Image" id="leftImage-bc">
                             <div>
-                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-3.png" width="125" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"/>
+                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-3.png" width="125" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;max-width:${img-max-width125}px;"/>
                             </div>
                         </div>
                     </td>
@@ -859,7 +862,7 @@ th{font-weight:normal !important}
                     <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
                         <div class="mktoImg" mktoname="Image" id="leftImage-d">
                             <div>
-                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-4.png" width="125" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-4.png" width="125" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;max-width:${img-max-width125}px;"
                                     />
                             </div>
                         </div>
@@ -935,7 +938,7 @@ th{font-weight:normal !important}
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Image" id="leftImage-abc">
                             <div>
-                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-1.png" width="165" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"/>
+                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-1.png" width="165" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;max-width:${img-max-width165}px;"/>
                             </div>
                         </div>
                     </td>
@@ -985,7 +988,7 @@ th{font-weight:normal !important}
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Image" id="leftImage-bac">
                             <div>
-                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-2.png" width="165" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"/>
+                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-2.png" width="165" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;max-width:${img-max-width165}px;"/>
                             </div>
                         </div>
                     </td>
@@ -1035,7 +1038,7 @@ th{font-weight:normal !important}
                     <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
                         <div class="mktoImg" mktoname="Image" id="leftImage-dc">
                             <div>
-                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-4.png" width="165" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                <img src="https://info.onsemi.com/rs/502-VWR-567/images/onsemi-4.png" width="165" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;max-width:${img-max-width165}px;"
                                     />
                             </div>
                         </div>
