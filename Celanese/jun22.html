@@ -14,7 +14,8 @@ Button Banner Hover color = #1FA2DC
     <!-- script type="text/javascript" src="//cdn.reachforce.com/SmartForms.js" data-token="133111"></script -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <title>Landing Page</title>
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <title>${pageTitle}</title>
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">		
@@ -25,6 +26,7 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoString" id="logowidth" mktoName="Logo width (px)" default="163">    
     <meta class="mktoString" id="bannerBackgroundImg" mktoName="Banner Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/Home_Elements_of_Opportunity_Carousel_image.jpeg">
 
+    <meta class="mktoString" id="banner-padding-top" mktoName="Banner Padding Top (px)" default="140">
     <meta class="mktoColor" id="bannerBgColor" mktoName="Banner Background Color" default="#ffffff">
     <meta class="mktoColor" id="banner-btn-bgcolor" mktoName="Banner Btn Background Color" default="#007da9">
     <meta class="mktoColor" id="banner-btn-hover-bgcolor" mktoName="Banner Btn Hover Background Color" default="#005c7a">
@@ -67,21 +69,21 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoBoolean" id="showHeaderImage" mktoName="Show Header Image?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBanner" mktoName="Show Banner Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBannerButton" mktoName="Show Banner Button?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection2Form" mktoName="Show Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="form-max-width" mktoName="Form Max Width (px)" default="500">
-    <meta class="mktoBoolean" id="showFormLeftText" mktoName="Show Form Left Text?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showFormLeftText" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection3" mktoName="Show Section 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection4" mktoName="Show Section 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection5" mktoName="Show Section 5?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection6" mktoName="Show Section 6?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection7" mktoName="Show Section 7?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showSection9" mktoName="Show Section 9?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection9" mktoName="Show Section 9?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection8" mktoName="Show Section 8?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showFooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="show-bottomGradient" mktoName="Show Bottom Gradient?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showCookieBanner" mktoName="Show Cookie Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-bottomGradient" mktoName="Show Bottom Gradient?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showCookieBanner" mktoName="Show Cookie Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
@@ -137,6 +139,8 @@ Button Banner Hover color = #1FA2DC
       #banner {
         background-color: ${bannerBgColor};
         background-image: url(${bannerBackgroundImg});
+        padding-top: ${banner-padding-top}px !important;
+
       }
       /* Header setup */
       .header-image-wrapper {
@@ -304,7 +308,7 @@ Button Banner Hover color = #1FA2DC
       /* ==========================================================================
       FORM 2.0 -- Simple Form STYLES ONLY
       ========================================================================== */  
-       .mktoForm * {
+      .mktoForm * {
         font-family: 'MyriadPro-Regular' , sans-serif !important;
       }
       #primaryForm .mktoForm {
@@ -679,13 +683,15 @@ Button Banner Hover color = #1FA2DC
             <div name="main-form" class="main-form col-md-12" style="display:${showSection2Form};">
               <div class="col-md-12">
                 <div class="mktoForm" id="primaryForm" mktoName="Primary Form" style="margin-bottom:40px;padding:10px 20px;min-height:80px;">
-                  
+             
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div>
 
 
         <!-- Section 3 -->
@@ -740,7 +746,7 @@ Button Banner Hover color = #1FA2DC
             </div>
           </section>
         </div>
-
+      </div>
       <!--End Section 3 -->
 
       <div><!-- Separator -->
@@ -925,11 +931,7 @@ Button Banner Hover color = #1FA2DC
               </section>
             </div>
             <!-- Video 2 END -->
-
-
-
             <div>
-
 
               <!-- Client Logos -->      
               <div id="section8" style="display:${showSection8};"> 
@@ -947,7 +949,6 @@ Button Banner Hover color = #1FA2DC
                 </div>
               </div>
               <!-- End Client Logos -->
-
 
               <!-- Footer Bottom -->	      
               <div id="footerSection" style="display:${showFooter};"> 
@@ -990,53 +991,106 @@ Button Banner Hover color = #1FA2DC
                 </div> 
               </div>
               <!-- End Footer Bottom -->
-
-
               <script>
                 if ('${showSection2Form}' == 'none') {
                   document.getElementById('main-content').style.setProperty('width','100%','important')
                 } else {}
+                var anchors = document.querySelectorAll('a');
+                anchors.forEach(function (element) {
+                  if (!element.href.includes('https')) {
+                    element.href = element.href.replace('http', 'https')
+                  }
+                });
               </script>
-
-              <meta class="mktoBoolean" id="Tracking" mktoName="Mkto tracking" default="true" true_value_name="Activated" false_value_name="Deactivated" true_value="yes" false_value="no"/>
-
+              <div class="mktoSnippet" id="section-10" mktoName="Section 10 Snippet"></div>
 
 
-              <script>
+              <div class="cookieStatement__container" style="display:${showCookieBanner};">
+                <p class="cookieStatement__message">This website uses 'cookies' to give you the best, most relevant experience. Using this website means you are Ok with this. You can change which cookies are set at any time - and find out more about them - by <a href="/privacy-policy" target="_blank">following this link</a>.</p>
+                <div class="cookieStatement__choices">
+                  <ul>
+                    <li>
+                      <label for="cookieStatement__required" class="cookieStatement__option">
+                        <span class="cookieStatement__label">Necessary</span>
+                        <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__required" checked aria-checked="true" disabled>
+                        <div class="cookieStatement__switch"></div>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="cookieStatement__marketing" class="cookieStatement__option">
+                        <span class="cookieStatement__label">Marketing</span>
+                        <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__marketing" aria-checked="false">
+                        <div class="cookieStatement__switch"></div>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="cookieStatement__analytics" class="cookieStatement__option">
+                        <span class="cookieStatement__label">Analytical</span>
+                        <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__analytics" aria-checked="false">
+                        <div class="cookieStatement__switch"></div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="cookieStatement__confirmation">
+                  <button class="cookieStatement__cta" type="button" id="cookieStatement__acceptAll">Accept All</button>
+                  <button class="cookieStatement__cta" type="button" id="cookieStatement__save">Accept Selected</button>
+                </div>
+                <p class="cookieStatement__message">Information on the processing of your personal data within the USA by Google and Marketo:<br />
+                  By clicking "Accept All", or selecting "Marketing" and/or "Analytical" and then clicking "Accept Selected", you also consent in accordance with Art. 49(1)(a) GDPR that your data may be processed in the USA. The USA is considered by the European Court of Justice to be a country with no adequate level of data protection according to EU standards. In particular, there is a risk that your data may be processed by US authorities for surveillance and investigation purposes, possibly without the opportunity for legal remedies. If you select “Necessary”  and then click on "Accept Selected”, the transfer described above will not take place. You will find more detailed information in <a href="/privacy-policy" target="_blank">our privacy policy</a>.</p>
+              </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script>
+              $(document).ready(function () {
+                if ('${showCookieBanner}' === 'block') {
+                  if (!localStorage.getItem('celaneseCookieConsentDismissed')) $('.cookieStatement__container').addClass('opened')
+                  if (localStorage.getItem('celaneseCookieConsentDateOfAcceptance')) {
+                    const currDate = new Date()
+                    const dateOfAcceptance = new Date(localStorage.getItem('celaneseCookieConsentDateOfAcceptance'))
+                    const timePassed = currDate - dateOfAcceptance
+                    if ( timePassed >= 31536000000) {
+                      $('.cookieStatement__container').addClass('opened')
+                    }
+                  }
+                  if (localStorage.getItem('celaneseMarketingCookiesAccepted')) $('#cookieStatement__marketing').prop('checked', true)
+                  if (localStorage.getItem('celaneseAnalyticsCookiesAccepted')) $('#cookieStatement__analytics').prop('checked', true)
 
-                if (‘${Tracking}'==’no') {
+                  $('#cookieStatement__acceptAll').click(function () {
+                    $('#cookieStatement__marketing').prop('checked', true)
+                    $('#cookieStatement__analytics').prop('checked', true)
+                    localStorage.setItem('celaneseCookieConsentDismissed', true);
+                    localStorage.setItem('celaneseCookieConsentDateOfAcceptance', new Date());
+                    localStorage.setItem('celaneseMarketingCookiesAccepted', true);
+                    localStorage.setItem('celaneseAnalyticsCookiesAccepted', true);
+                    $('.cookieStatement__container').removeClass('opened');
+                    window.location.reload()
+                  })
 
-                  document.cookie = "_mkto_trk=;path=/;domain=.domain.com;expires=0"   
+                  $('#cookieStatement__save').click(function () {
+                    localStorage.setItem('celaneseCookieConsentDismissed', true);
+                    localStorage.setItem('celaneseCookieConsentDateOfAcceptance', new Date());
+                    if ($('#cookieStatement__marketing').is(':checked')) localStorage.setItem('celaneseMarketingCookiesAccepted', true)
+                    if (!$('#cookieStatement__marketing').is(':checked')) localStorage.removeItem('celaneseMarketingCookiesAccepted')
+                    if ($('#cookieStatement__analytics').is(':checked')) localStorage.setItem('celaneseAnalyticsCookiesAccepted', true)
+                    if (!$('#cookieStatement__analytics').is(':checked')) localStorage.removeItem('celaneseAnalyticsCookiesAccepted')
+                    $('.cookieStatement__container').removeClass('opened');
+                    if (!$('#cookieStatement__marketing').is(':checked')) {
+                      window.location.replace(window.location.href + '?marketo_opt_out=true')
+                    } else {
+                      window.location.reload()
+                    }
+                  })
 
+                  // Opt-out button
+                  $('.optOutBtn').click(function() {
+                    localStorage.removeItem('celaneseMarketingCookiesAccepted')
+                    localStorage.removeItem('celaneseAnalyticsCookiesAccepted')
+                    window.location.replace(window.location.href + '?marketo_opt_out=true')
+                  })
                 }
+              });
+            </script>
 
-              </script>
-
-
-
-              <script>
-
-                MktoForms2.whenReady(function(form) {
-
-                  if ('${Tracking}'=='no') {
-
-                    form.addHiddenFields({"_mkt_trk": ""});
-
-                  }
-
-                  form.onSubmit(function(form) {
-
-                    if ('${Tracking}'==’No') {
-
-                        form.vals({"_mkt_trk": ""});
-
-                  }
-
-                                })
-
-                })
-
-              </script>  
-
-              </body>
-            </html>
+            </body>
+          </html>
