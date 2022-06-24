@@ -1,5 +1,27 @@
 @import url('decorations.css');
 
+/* setup  */
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    background: #fff;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    background: url('https://go.gravitypayments.com/rs/526-GXU-388/images/bg-big-gray-circle.svg') right top no-repeat;
+    background-attachment: fixed;
+    transition: 0.5s;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+
 /* typography */
 
 h1,
@@ -36,7 +58,8 @@ h3 {
 h4 {
     font-size: 23.2px;
     font-weight: 700;
-    line-height: 1.2 font-family: 'ProximNova', sans-serif;
+    line-height: 1.2;
+    font-family: 'ProximNova', sans-serif;
 }
 
 h5 {
@@ -149,7 +172,8 @@ img {
 .section-1 .flex-column,
 .section-2 .flex-container,
 .section-3 .flex-container,
-.section-6 .slider-container {
+.section-6 .slider-container,
+.section-7 .flex-column {
     border-radius: 12px;
     box-shadow: 2px 5px 10px rgb(0 0 0 / 4%), -2px -5px 10px rgb(0 0 0 / 4%);
 }
@@ -469,7 +493,7 @@ img {
 }
 
 
-/* end section 4 aimge feature */
+/* end section 4 image feature */
 
 
 /* section 5 icon feature */
@@ -507,7 +531,7 @@ img {
     margin: 0.75rem 0 1rem;
 }
 
-@media (max-width:1080px) {
+@media (max-width:1400px) {
     .section-5 .column-1,
     .section-5 .column-2,
     .section-5 .column-3,
@@ -611,3 +635,77 @@ img {
 
 
 /* end of  6 testimonial slider*/
+
+
+/* section 7 resource card */
+
+
+/* section 1 image card */
+
+.section-7 {
+    margin: 3rem auto 3rem;
+    width: 85%;
+}
+
+.section-7 h4 {
+    margin: 0.5rem 0 0rem;
+}
+
+.section-7 .flex-container {
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.section-7 h2 {
+    text-align: center;
+}
+
+.section-7 .flex-column {
+    background-color: #fff;
+    width: calc((100% / 3) - 4rem);
+    min-width: 230px;
+    justify-content: space-between;
+}
+
+.section-7 .column-1 .img-container {
+    background-image: url('https://go.gravitypayments.com/rs/526-GXU-388/images/iStock-1141493515-980x654.jpeg');
+}
+
+.section-7 .column-2 .img-container {
+    background-image: url('https://go.gravitypayments.com/rs/526-GXU-388/images/shutterstock_617054912-scaled-2-980x540.jpeg');
+}
+
+.section-7 .column-3 .img-container {
+    background-image: url('https://go.gravitypayments.com/rs/526-GXU-388/images/shutterstock_1788616322-scaled-1-980x653.jpeg');
+}
+
+.section-7 .img-container {
+    height: 20vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.section-7 .txt-container {
+    padding: 1.5rem 1.75rem;
+    border: solid 1px red;
+}
+
+
+/* end of section 7 reosaurce card */
+
+.section-7 .txt-container {
+    padding: 0.75rem 1.75rem 0rem;
+}
+
+.section-7 h4 {
+    margin: 0;
+}
+
+.section-7 .badge {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
