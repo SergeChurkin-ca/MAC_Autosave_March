@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/favicon.png">
+
+    <title>${pagetitle}</title>
+    <link rel="icon" href="${faviconlink}">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <script src="https://kit.fontawesome.com/9ce3df6acb.js" crossorigin="anonymous"></script>
+
+    <!-- Show and Hide Meta Tags -->
+    <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    <!-- Background, Buttons, and Text Color Meta Tags -->
+    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#f9fafa">
+    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
+    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
+
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#f9fafa">
+    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#253750">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#0a0a0a">
+
+
+    <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#107ab0">
+    <meta class="mktoColor" id="btnbrdclr" mktoName="Free-Text - Btn Border Color" default="#107ab0">
+    <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Color" default="#348ebc">
+    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
+
+    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#f9fafa">
+    <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="none">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#0a0a0a">
+    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#0a0a0a">
+    <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#253750">
+
+    <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#253750">
+    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#0a0a0a">
+
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#519d18">
+    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
+    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#6bac3b">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#6bac3b">
+    <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#519d18">
+
+    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#253750">
+    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="footerhoverclr" mktoName="Footer - Text Color" default="#ffffff">
+
+    <!-- Font Size Meta Tags -->
+    <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
+    <meta class="mktoString" mktoName="Freetext - H1(Freetext) Font Size (px)" id="freeTextH1size" default="32">
+    <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="26">
+    <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="22">
+    <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="26">
+
+    <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
+
+    <!-- Banner Section Styling -->
+    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://dummyimage.com/600x400/91c73d/ffffff">
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="140">
+    <meta class="mktoString" mktoName="Banner Background Blend Mode" id="background-blend-mode" default="none">
+
+    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="30">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="30">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
+
+    <!-- Free-Text Section Styling -->
+    <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+
+    <!-- Footer Section Styling -->
+    <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
+    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="140">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="35">
+    <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
+
+
+    <!-- Google Fonts -->
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="ProximaNova">
+
+    <!-- General Button Styling -->
+    <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
+    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="5">
+    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="40">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="form-btnpaddinglr" default="15">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="form-btnpaddingtb" default="10">
+
+    <!-- Form Section Styling -->
+    <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
+    <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
+    <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
+    <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
+
+
+
+
+    <style>
+        $ {
+            googlefontimport
+        }
+        
+        ;
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: $ {
+                fontfamily
+            }
+            ,
+            sans-serif !important;
+        }
+        
+        body {
+            background: #f4f4f5;
+        }
+        
+        @font-face {
+            font-family: "ProximaNova";
+            src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.woff2') format('woff2');
+            src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.eot') format('eot');
+            src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.woff') format('woff');
+            src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.ttf') format('truetype');
+            src: url('http://526-GXU-388.mktoweb.com/rs/526-GXU-388/images/ProximaNova-Regular.otf');
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+    <div class="wrapper">
+        <nav class="navbar-1"></nav>
+        <nav class="navbar-2"></nav>
+        <header></header>
+
+        <!-- image card -->
+        <section class="section-1 image-card">
+            <h2>Image Card</h2>
+            <div class="flex-container">
+                <div class="column-1 flex-column">
+                    <div class="img-container flex">
+                    </div>
+                    <div class="txt-container">
+                        <h4>Merchants</h4>
+                        <p> Payment processing solutions tailored to fit the way you do business.</p>
+                    </div>
+                </div>
+                <div class="column-2 flex-column">
+                    <div class="img-container flex">
+                    </div>
+                    <div class="txt-container">
+                        <h4>Merchants</h4>
+                        <p> Payment processing solutions tailored to fit the way you do business.</p>
+                    </div>
+                </div>
+                <div class="column-3 flex-column">
+                    <div class="img-container flex">
+                    </div>
+                    <div class="txt-container">
+                        <h4>Merchants</h4>
+                        <p> Payment processing solutions tailored to fit the way you do business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of aimge card -->
+
+        <!-- large image banner -->
+        <section class="section-2 banner">
+            <div class="flex-container">
+                <div class="column-1">
+                    <p class="preheading">- gravtiy capital</p>
+                    <h2>Practical Funding for Gravity Payments Merchants</h2>
+                    <p>Direct funding to get you the support you need overnight. No compounding interest, no fixed repayments – just good, honest financial support.</p>
+                    <a href="#">
+                        <button class="btn-rect">get funding</button>
+                    </a>
+                </div>
+                <div class="column-2">
+                    <div class="img-container">
+                        <img src="https://gravity2022dev.wpengine.com/wp-content/uploads/2022/05/shutterstock_1824322379-scaled-1.jpg" alt="graphics">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of large image banner -->
+
+        <!-- small banner -->
+        <section class="section-3 banner">
+            <div class="flex-container">
+                <div class="column-1">
+                    <h2>Merchant Solutions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ratione, impedit totam quisquam similique dolorum tempora dolorem aut error inventore iusto, veritatis aspernatur quae! Consequatur animi porro rem dignissimos voluptas?</p>
+                    <a href="#">
+                        <button class="btn-rect">get funding</button>
+                    </a>
+                </div>
+                <div class="column-2">
+                    <div class="img-container">
+                        <img src="https://gravity2022dev.wpengine.com/wp-content/uploads/2022/05/shutterstock_1660490494-scaled-1.jpg" alt="graphics" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of small banner -->
+
+
+
+        <!-- image feature -->
+        <section class="section-4">
+            <div class="flex-container">
+
+
+                <div class="column1">
+                    <div class="img-container">
+                        <img src="https://dummyimage.com/320/230/fff" alt="graphics">
+                    </div>
+                    <h5>Image Feature Heading</h5>
+                    <p>Lorem ipsum dolor sit amet adipiscing consecteteur dolorem proin gravada este aliquam sit amet adipiscing.</p>
+                </div>
+
+
+
+
+                <div class="column-1">
+                    <div class="img-container">
+
+                    </div>
+                    <h5>Image Feature Title</h5>
+                    <p>Image feature content. Lorem ipsum dolor sit amet adipiscing consecteteur dolorem proin gravada este aliquam.</p>
+                    <a href="#">
+                        <button class="btn-rect">get funding</button>
+                    </a>
+                </div>
+                <div class="column-2 flex-container">
+
+                    <div class="icon-feature">
+                        <span><i class="fa-light fa-laptop-mobile fa-2xl icon-navy"></i></span>
+                        <h5>Icon Feature Title</h5>
+                        <p>Icon feature content. Lorem ipsum dolor sit amet adipiscing consecteteur dolorem proin gravada este aliquam sit amet.</p>
+                    </div>
+                    <div class="icon-feature">
+                        <span><i class="fa-light fa-laptop-mobile fa-2xl icon-navy"></i></span>
+                        <h5>Icon Feature Title</h5>
+                        <p>Icon feature content. Lorem ipsum dolor sit amet adipiscing consecteteur dolorem proin gravada este aliquam sit amet.</p>
+                    </div>
+                    <div class="icon-feature">
+                        <span><i class="fa-light fa-laptop-mobile fa-2xl icon-navy"></i></span>
+                        <h5>Icon Feature Title</h5>
+                        <p>Icon feature content. Lorem ipsum dolor sit amet adipiscing consecteteur dolorem proin gravada este aliquam sit amet.</p>
+                    </div>
+                    <div class="icon-feature">
+                        <span><i class="fa-light fa-laptop-mobile fa-2xl icon-navy"></i></span>
+                        <h5>Icon Feature Title</h5>
+                        <p>Icon feature content. Lorem ipsum dolor sit amet adipiscing consecteteur dolorem proin gravada este aliquam sit amet.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- and of image and icon feature -->
+
+
+
+
+        <!-- testimonial slider -->
+        <section class="section-5">
+            <div class="flex-container">
+                <div class="card-1">
+                    <div class="img-container">
+                        <img src="https://dummyimage.com/320/230/fff" alt="graphics">
+                    </div>
+                    <h4>Your Title Goes here</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-2">
+                    <div class="img-container">
+                        <img src="https://dummyimage.com/320/230/fff" alt="graphics">
+                    </div>
+                    <h4>Your Title Goes here</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="card-3">
+                    <div class="img-container">
+                        <img src="https://dummyimage.com/320/230/fff" alt="graphics">
+                    </div>
+                    <h4>Your Title Goes here</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+        <!-- and of testimonial slider -->
+
+
+        <!-- large images slide -->
+        <section class="section-6">
+            <div class="flex-container">
+                <div class="card-1">
+                    <h4>Clover® Flex</h4>
+                    <p>An all-in-one device with the built-in capabilities to help you serve customers better.</p>
+                </div>
+                <div class="card-2">
+                    <h4>Clover® Go</h4>
+                    <p>Accept all types of payments anywhere you have a Wi-Fi or cellular connection.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end of large images slider -->
+
+        <!-- Resurce card -->
+        <div class="section-7">
+            <div class="flex-container">
+                <div class="card-1">
+                    <img src="https://dummyimage.com/320/230/fff" alt="graphics">
+                    <h4>How to leverage debt to modernize your operations.</h4>
+                    <p>Gravity Capital</p>
+                    <p>Industry-specific technology and SaaS products are designed to automate everyday busywork and increase efficiency for small businesses...</p>
+                </div>
+                <div class="card-2">
+                    <img src="https://dummyimage.com/320/230/fff" alt="graphics">
+                    <h4>Visa and Mastercard: Unpacking the Rates Changes</h4>
+                    <p>Uncategorized</p>
+                    <p>Know the story already, but want the advice? Click here to scroll down to fee mitigation strategies for small businesses. Businesses...</p>
+                </div>
+                <div class="card-3">
+                    <img src="https://dummyimage.com/320/230/fff" alt="graphics">
+                    <h4>Integrated Payments: What are they, and why should your business use them?</h4>
+                    <p>Uncategorized</p>
+                    <p>Point of Sale systems and management softwares are everywhere, and at nearly every price point. From inventory, payroll, and booking...</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of reosurce card -->
+
+
+        <!-- CTA Section -->
+        <div class="section-8">
+            <h3>Let us show you how we can support your business.</h3>
+            <a href="#">
+                <button class="btn-rect">get funding</button>
+            </a>
+        </div>
+        <!-- end of CTA Section -->
+
+        <!-- form section -->
+        <div class="section-9">
+            <div class="flex-container">
+                <div class="column-1">
+
+                </div>
+                <div class="column-2 form-container">
+
+                </div>
+            </div>
+        </div>
+        <!-- end of form section -->
+
+        <footer>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
