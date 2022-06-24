@@ -9,7 +9,7 @@ h4,
 h5,
 h6 {
     color: #253750;
-    font-family: 'ProximNova', sans-serif;
+    font-family: 'ProximaNova', sans-serif;
 }
 
 h1 {
@@ -107,6 +107,15 @@ ol li::before {
     line-height: 1.2em;
 }
 
+.slider-container h4 {
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+.slider-container a {
+    text-decoration: none;
+}
+
 
 /* general setup*/
 
@@ -139,7 +148,8 @@ img {
 
 .section-1 .flex-column,
 .section-2 .flex-container,
-.section-3 .flex-container {
+.section-3 .flex-container,
+.section-6 .slider-container {
     border-radius: 12px;
     box-shadow: 2px 5px 10px rgb(0 0 0 / 4%), -2px -5px 10px rgb(0 0 0 / 4%);
 }
@@ -147,6 +157,10 @@ img {
 .section-1 {
     margin: 3rem auto 3rem;
     width: 85%;
+}
+
+.section-1 h4 {
+    margin: 0.5rem 0 0rem;
 }
 
 .section-1 .flex-container {
@@ -372,3 +386,182 @@ img {
 
 
 /* end of section 3 small banner */
+
+
+/* end section 4 image feature */
+
+.section-4 {
+    width: 85%;
+    margin: 2rem auto 2rem;
+}
+
+.section-4 .flex-container {
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.section-4 .column-1,
+.section-4 .column-2,
+.section-4 .column-3 {
+    width: calc((100% / 3) - 2rem);
+}
+
+.section-4 img {
+    border-radius: 12px;
+}
+
+.section-4 h5 {
+    margin: 1.5rem 0 1rem;
+}
+
+@media (max-width: 980px) {
+    .section-4 .column-1,
+    .section-4 .column-2,
+    .section-4 .column-3 {
+        width: fit-content;
+    }
+}
+
+
+/* end section 4 aimge feature */
+
+
+/* section 5 icon feature */
+
+.section-5 {
+    width: 85%;
+    margin: 3rem auto 3rem;
+}
+
+.section-5 .flex-container {
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.section-5 .img-container {
+    height: 5vh;
+    object-fit: contain;
+}
+
+.section-5 img {
+    height: 36px;
+    object-fit: contain;
+    max-width: 36px;
+}
+
+.section-5 .column-1,
+.section-5 .column-2,
+.section-5 .column-3,
+.section-5 .column-4 {
+    width: calc((100% / 4) - 3rem);
+    min-width: 200px;
+}
+
+.section-5 h5 {
+    margin: 0.75rem 0 1rem;
+}
+
+@media (max-width:1080px) {
+    .section-5 .column-1,
+    .section-5 .column-2,
+    .section-5 .column-3,
+    .section-5 .column-4 {
+        width: calc((100% / 2) - 4rem);
+    }
+}
+
+@media (max-width: 520px) {
+    .section-5 .column-1,
+    .section-5 .column-2,
+    .section-5 .column-3,
+    .section-5 .column-4 {
+        width: 100%;
+    }
+}
+
+
+/* end of section 5 icon feature */
+
+
+/* end of section 6 testimonial slider*/
+
+.section-6 {
+    margin: 3rem auto 3rem;
+    width: 85%;
+}
+
+.section-6 .slider-container {
+    max-width: 976px;
+    margin: 0 auto;
+    min-height: 476px;
+    background-color: #fff;
+}
+
+.section-6 .slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-6 .preheading {
+    color: #519d18;
+    text-transform: uppercase;
+}
+
+.section-6 .speaker-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.section-6 .speaker-container img {
+    width: 72px;
+    height: fit-content;
+    margin-right: 1rem;
+}
+
+.section-6 .column-1,
+.section-6 .column-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section-6 .column-1 {
+    width: calc(50% - 2rem);
+    flex-direction: column;
+    padding: 4rem 1rem 4rem 5rem;
+    flex: 1 0 250px;
+}
+
+.section-6 h5,
+.section-6 p {
+    margin: 0;
+}
+
+.section-6 .column-2 {
+    width: cacl((30% - 2rem));
+    padding: 4rem;
+    flex: 1 0 250px;
+}
+
+.section-6 .column-2 {
+    background-image: url('https://go.gravitypayments.com/rs/526-GXU-388/images/bg-halftone-pattern-right.png');
+    background-size: 308px 572px;
+    background-repeat: repeat-y;
+    background-position: right 0px top;
+    align-items: center;
+    padding: 1rem 0 2rem;
+}
+
+.section-6 .column-2 img {
+    width: 215px;
+    height: fit-content;
+}
+
+@media (max-width: 890px) {
+    .section-6 .column-1 {
+        padding: 2rem;
+    }
+}
+
+
+/* end of  6 testimonial slider*/
