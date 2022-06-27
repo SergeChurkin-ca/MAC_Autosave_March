@@ -3,7 +3,8 @@ button {
 }
 
 .btn-rect,
-.mktoButtonWrap button.mktoButton {
+.mktoButtonWrap button.mktoButton,
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
     font-size: 16px !important;
     color: #fff;
     background-color: #519d18;
@@ -32,4 +33,9 @@ button {
 .badge:hover,
 .badge:focus {
     background-color: #519d18;
+}
+
+footer .btn-rect {
+    padding: 0.65rem 7rem !important;
+    white-space: nowrap;
 }

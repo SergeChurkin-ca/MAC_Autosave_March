@@ -22,7 +22,6 @@
 
 
 
-
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -216,6 +215,9 @@
         font-size:${formfontsize}px !important;
         min-height: 2.5rem !important;
       }
+      .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField {
+        box-shadow: none !important;
+      }
       .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color:#3a3a3a !important;
       }
@@ -276,8 +278,6 @@
         border: solid 3px ${formButtonHoverBGColor};
       }
 
-
-
       .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
         margin-left: 1.5em;
         margin-top: 0.1em;
@@ -287,6 +287,14 @@
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
+
+    </style>
+
+    <style>
+
+    .mktoForm .mktoRequiredField label.mktoLabel, .mktoForm .mktoGutter, .mktoForm .mktoOffset {
+        display: none !important;
+    }
 
     </style>
 </head>
@@ -616,14 +624,23 @@
         <li><a href="/support/">Support</a></li>
     </ul>
 </div>
+
+<div class="column-3 flex-container-column">
+<div class="form-container">
+    <h4>Newsletter Signup</h4>
+    <p>Get the latest news, tips, and tricks from Gravity.</p>
+<script src="//go.gravitypayments.com/js/forms2/js/forms2.min.js"></script>
+<form id="mktoForm_1018"></form>
+<script>MktoForms2.loadForm("//go.gravitypayments.com", "526-GXU-388", 1018);</script>
+</div>
+    </div>
            
-            <div class="column-3 flex-container-column">
+            <div class="column-4 flex-container-column">
             <a href="#">
                 <button class="btn-rect">Get Started</button>
             </a>
             </div>
             </div>
-          
         </div>
         <div class="row-2">
             <div class="column-1"></div>
