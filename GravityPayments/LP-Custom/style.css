@@ -256,6 +256,25 @@ footer .form-container {
     box-shadow: 2px 5px 10px rgb(0 0 0 / 4%), -2px -5px 10px rgb(0 0 0 / 4%);
 }
 
+@media (max-width: 680px) {
+    .section-1,
+    .section-3,
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95vw;
+    }
+}
+
 .section-1 {
     margin: 3rem auto 3rem;
     width: 85%;
@@ -401,7 +420,6 @@ footer .form-container {
     }
     .section-2 .column-1 {
         padding: 1.5rem 2rem;
-        border: solid 1px red;
         flex: unset;
     }
     .section-2 img {
@@ -772,6 +790,12 @@ footer .form-container {
     }
 }
 
+@media (max-width: 480px) {
+    .section-6 .column-1 {
+        padding: 2rem 1rem;
+    }
+}
+
 
 /* end of  6 testimonial slider*/
 
@@ -930,6 +954,12 @@ footer .form-container {
     }
 }
 
+@media (max-width: 480px) {
+    .section-9 .form-container {
+        padding: 1rem 0rem;
+    }
+}
+
 
 /* end of section 9 image masthead */
 
@@ -955,12 +985,6 @@ footer .row-1 {
     padding-bottom: 3rem;
     justify-content: space-between;
     gap: 0.5rem;
-}
-
-footer .flex-container-column {}
-
-footer .row-1 .column-1 {
-    /* width: 20%; */
 }
 
 footer .row-1 .column-2 {
