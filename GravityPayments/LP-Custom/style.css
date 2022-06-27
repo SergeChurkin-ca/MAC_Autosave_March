@@ -6,13 +6,17 @@
     }
     
     body {
-        background: #fff;
+        background-color: #f4f4f5;
         -ms-overflow-style: none;
         /* Internet Explorer 10+ */
         scrollbar-width: none;
-        background: url('https://go.gravitypayments.com/rs/526-GXU-388/images/bg-big-gray-circle.svg') right top no-repeat;
+        background-image: url('https://go.gravitypayments.com/rs/526-GXU-388/images/bg-big-gray-circle.svg');
+        background-repeat: no-repeat;
+        background-position: right top;
         background-attachment: fixed;
         transition: 0.5s;
+        padding: 0;
+        margin: 0;
     }
     
     body::-webkit-scrollbar {
@@ -30,16 +34,6 @@
     nav .column-1 {
         color: #253750;
         font-family: 'ProximaNova', sans-serif;
-    }
-    
-    nav {
-        font-size: 16px;
-        font-weight: 500;
-    }
-    
-    nav .column-2 {
-        font-family: 'ProximaNova', sans-serif;
-        color: #519d18;
     }
     
     h1 {
@@ -177,13 +171,63 @@
     }
     /* navbar */
     
+    nav a {
+        text-decoration: none;
+        color: #253750;
+    }
+    
     nav ul {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 0.5rem;
+    }
+    
+    nav {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .navbar-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar-2 .column-1 {
+        gap: 1rem;
+    }
+    
+    .navbar-2 #logo {
+        margin-right: 1rem;
+    }
+    
+    nav .column-2 {
+        font-family: 'ProximaNova', sans-serif;
+        color: #519d18;
+        gap: 1.25rem;
+        position: relative;
+    }
+    
+    nav .column-2 i {
+        margin-right: 0.5rem;
     }
     /* end of navbar */
+    /* toggle menu */
+    
+    .fa-lg {
+        color: #253750;
+        /* display: none; */
+    }
+    
+    .hidden-checkbox {
+        visibility: hidden;
+    }
+    
+    @media (max-width: 1000px) {
+        .toggle-item {
+            display: none;
+        }
+    }
+    /* end of toggle menu */
     /* section 1 image card */
     
     .section-1 .flex-column,
@@ -784,3 +828,97 @@
         }
     }
     /* end of section 9 image masthead */
+    /* footer */
+    
+    footer {
+        margin-top: 5rem;
+        background-color: #fff;
+        width: 100%;
+        padding: 4rem 0 3rem;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: #253750;
+        font-size: 15px;
+    }
+    
+    footer .row-1 {
+        border-bottom: solid 1px #C9CED0;
+        width: 97%;
+        padding-bottom: 3rem;
+    }
+    
+    footer .row-1 .column-1 {
+        width: 30vw;
+    }
+    
+    footer .row-1 .column-2 {
+        width: 40vw;
+    }
+    
+    footer .row-1 .column-3 {
+        width: 25vw;
+    }
+    
+    footer .column-1 ul {
+        padding: 0;
+    }
+    
+    footer .social {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    footer .logo-container img {
+        width: 130px;
+        height: auto;
+    }
+    
+    footer svg {
+        width: 17px;
+        height: 17px;
+        fill: #253750;
+    }
+    
+    .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: row;
+        width: 400px;
+        padding: 0;
+        margin: 0;
+        margin: 0 auto;
+    }
+    
+    .footer-nav li {
+        text-align: left;
+        flex: 1 0 150px;
+        width: calc((400px / 2) - 1rem);
+        margin: 0.2rem 0;
+    }
+    
+    footer .column-3 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    @media (max-width: 680px) {
+        footer .flex-container-column,
+        .logo-container,
+        footer .social {
+            width: 100% !important;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .footer-nav,
+        .footer-nav li {
+            margin: 1rem auto;
+            border: solid 1px red;
+            justify-content: space-around;
+        }
+    }
+    /* end of footer */
