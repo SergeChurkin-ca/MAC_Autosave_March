@@ -36,6 +36,19 @@
     <meta class="mktoString" id="section8-order" mktoName="Section 8 order"  default="8">
     <meta class="mktoBoolean" id="show-section9" mktoName="Show Image Cards" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="section9-order" mktoName="Section 9 order"  default="9">
+    <!-- Font Size -->
+    <meta class="mktoString" id="h1-fontSize" mktoName="H1 font size (px)"  default="40">
+    <meta class="mktoString" id="h2-fontSize" mktoName="H2 font size (px)"  default="32">
+    <meta class="mktoString" id="h3-fontSize" mktoName="H3 font size (px)"  default="28">
+    <meta class="mktoString" id="h4-fontSize" mktoName="H4 font size (px)"  default="23.2">
+    <meta class="mktoString" id="h5-fontSize" mktoName="H5 font size (px)"  default="19.2">
+    <meta class="mktoString" id="h6-fontSize" mktoName="H6 font size (px)"  default="13.328">
+    <meta class="mktoString" id="nav-fontSize" mktoName="Nav font size (px)"  default="16">
+    <meta class="mktoString" id="copy-fontSize" mktoName="Copy font size (px)"  default="16">
+    <meta class="mktoString" id="copy-preheading-fontSize" mktoName="Copy PreHead font size (px)"  default="14">
+    <meta class="mktoString" id="btn-fontSize" mktoName="Button font size (px)"  default="16">
+    <meta class="mktoString" id="badge-fontSize" mktoName="Badge font size (px)"  default="13">
+    <meta class="mktoString" id="bannerP-fontSize" mktoName="Banner P font size (px)"  default="18">
     <!-- Sections Top/Bottom margins -->
     <meta class="mktoString" id="section1-margin-top" mktoName="Section 1 Maring Top"  default="3">
     <meta class="mktoString" id="section1-margin-bottom" mktoName="Section 1 Maring Bottom"  default="3">
@@ -182,48 +195,48 @@
       }
 
       h1 {
-        font-size: 40px;
+        font-size: ${h1-fontSize}px;
         font-weight: 900;
         line-height: 1.2;
         font-family: 'ProximNova', sans-serif;
       }
 
       h2 {
-        font-size: 32px;
+        font-size: ${h2-fontSize}px;
         font-weight: 900;
         line-height: 1.2;
         font-family: 'ProximNova', sans-serif;
       }
 
       h3 {
-        font-size: 28px;
+        font-size: ${h3-fontSize}px;
         font-weight: 800;
         line-height: 1.2;
         font-family: 'ProximNova', sans-serif;
       }
 
       h4 {
-        font-size: 23.2px;
+        font-size: ${h4-fontSize}px;
         font-weight: 700;
         line-height: 1.2;
         font-family: 'ProximNova', sans-serif;
       }
 
       h5 {
-        font-size: 19.2px;
+        font-size: ${h5-fontSize}px;
         font-weight: 700;
         line-height: 1.2;
         font-family: 'ProximNova', sans-serif;
       }
 
       h6 {
-        font-size: 13.328px;
+        font-size: ${h6-fontSize}px;
         font-weight: 700;
         line-height: 1.2;
         font-family: 'ProximNova', sans-serif;
       }
       nav .column-1 li {
-        font-size: 16px;
+        font-size: ${nav-fontSize}px;
         font-family: 'ProximNova', sans-serif;
       }
       p {
@@ -236,17 +249,17 @@
         font-weight: 500;
         line-height: 1.5;
         font-family: 'ProximNova', sans-serif;
-      }
+    }
 
       p {
-        font-size: 16px;
+        font-size: ${copy-fontSize}px;
         font-weight: 500;
         line-height: 1.5;
         font-family: 'ProximNova', sans-serif;
       }
 
       p.preheading {
-        font-size: 14px;
+        font-size: ${copy-preheading-fontSize}px;
         font-weight: 700;
         font-family: 'ProximNova', sans-serif;
       }
@@ -344,7 +357,7 @@
       .btn-rect,
       .mktoButtonWrap button.mktoButton,
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
-        font-size: 16px !important;
+        font-size: ${btn-fontSize}px !important;
         color: #fff;
         background-color: ${btnBgColor};
         border-width: 0px!important;
@@ -361,7 +374,7 @@
       .badge {
         text-transform: capitalize;
         border-radius: 20px;
-        font-size: 13px;
+        font-size: ${badge-fontSize}px;
         font-weight: 600!important;
         color: ${btnTxtColor};
         background-color: ${btnBgColor};
@@ -393,7 +406,7 @@
       }
 
       nav {
-        font-size: 16px;
+        font-size: ${nav-fontSize}px;
         font-weight: 500;
       }
 
@@ -1251,7 +1264,7 @@
       }
 
       .section-9 p {
-        font-size: 18px;
+        font-size: ${bannerP-fontSize}px;
       }
 
       .section-9 .column-1,
@@ -1450,7 +1463,7 @@
         padding: 0.65rem 0.9rem !important;
         border-radius: 0 4px 4px 0 !important;
         font-size: 16px;
-        background-color: #519d18;
+        background-color: ${formButtonColor};
         border-width: 0.5px!important;
       }
 
