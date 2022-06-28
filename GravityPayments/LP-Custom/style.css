@@ -120,6 +120,10 @@ footer .row-3 {
     color: #7e868c;
     line-height: 20.8px;
     text-align: center;
+    margin: 3rem auto;
+    padding: 1rem 1.25rem;
+    font-size: 13px;
+    max-width: 1000px;
 }
 
 ul {
@@ -245,7 +249,7 @@ nav .column-2 i {
 }
 
 .fa-bars {
-    display: none;
+    display: none !important;
     cursor: pointer;
 }
 
@@ -336,7 +340,7 @@ nav .fa-xmark {
         display: none;
     }
     .fa-bars {
-        display: flex;
+        display: flex !important;
         padding-right: 2rem;
         padding-left: 1.25rem;
     }
