@@ -11,4 +11,4 @@ Sections:
 ✔ 7. Testimonial Slider
 ✔ 8. Resource Card
 ✔ 9. CTA Section
-✔ 10. Image masthead with space for form (right justified form)
+✔10. Image masthead with space for form (right justified form)
