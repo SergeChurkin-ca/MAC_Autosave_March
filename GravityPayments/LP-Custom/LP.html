@@ -787,11 +787,19 @@
                 </div>
             </div>
         </div>
-        <div class="row-2">
-            <div class="column-1"></div>
-            <div class="column-2"></div>
+        <div class="row-2 flex-container">
+            <div class="column-1">
+                <h5>Contact Us</h5>
+                <p style="text-align: center;"><a href="tel:2063885900">(206) 388-5900</a> • <a href="tel:8667014700">(866) 701-4700</a></p>
+            </div>
+            <div class="column-2">
+                <h5>Visit Us</h5>
+                <p style="text-align: center;"><a href="/why-gravity/#seattle-office">Seattle</a> • <a href="/why-gravity/#boise-office">Boise</a> • <a href="/why-gravity/#honolulu-office">Honolulu</a></p>
+            </div>
         </div>
-        <div class="row-3"></div>
+        <div class="row-3">
+        <a href="/privacy-policy/" title="Privacy Policy">Privacy Policy</a> · <a href="/terms/" title="Terms of Use">Terms of Use</a> · © 2022 Gravity Payments. All Rights Reserved.<br>Gravity Payments, Inc. is a registered ISO/MSP of Wells Fargo Bank, N.A., Concord, CA, and Synovus Bank, Columbus, GA. The Clover name and logo are owned by Clover Network, Inc. a wholly owned subsidiary of First Data corporation, and are registered or used in the U.S. and many foreign countries.
+        </div>
         </div>
     </footer>
 
@@ -802,11 +810,10 @@
       document.querySelectorAll('.fa-bars')[0].addEventListener("click", toggleFunc)
 
       function toggleFunc() {
-          document.getElementsByClassName("mobile-menu")[0].classList.add("visible")
+          document.getElementsByClassName("mobile-menu")[0].classList.add("visible");
       }
       
       document.querySelectorAll('.fa-xmark')[0].addEventListener("click", hideFunc)
-      
       function hideFunc() {
           document.getElementsByClassName("visible")[0].classList.remove("visible")
       }
