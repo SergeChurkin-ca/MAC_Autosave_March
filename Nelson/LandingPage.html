@@ -9,7 +9,7 @@
     <title>%%title%%</title>
 
     <style>
-            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         * {
             font-family: 'Open Sans', sans-serif;
             box-sizing: border-box;
@@ -20,12 +20,6 @@
             font-size: 100%
         }
         
-        .wrapper {
-            width: 90vw;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
         body {
             background: #fff;
             -ms-overflow-style: none;
@@ -34,12 +28,52 @@
             font-family: Open Sans, sans-serif;
             font-size: 16px;
             line-height: 1.75;
-            color: #4a5b69
+            color: #4a5b69;
         }
         
         body::-webkit-scrollbar {
             display: none;
             /* Safari and Chrome */
+        }
+        
+        .wrapper {
+            width: 90vw;
+            max-width: 1400px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        
+        .form-section {
+            margin: 0 auto;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0 !important;
+        }
+        
+        iframe {
+            width: 90vw !important;
+            min-height: 45vh !important;
+            margin: 2rem auto 0 !important;
+            max-width: 1400px !important;
+        }
+        
+        @media (max-width: 940px) {
+            .form-section,
+            .wrapper {
+                width: 100vw;
+                margin: 0 auto;
+            }
+            header {
+                padding: 0 2rem;
+            }
+            iframe {
+                width: 99vw !important;
+                min-height: 60vh !important;
+            }
         }
         
         nav {
@@ -215,17 +249,35 @@
             margin-bottom: 0
         }
         
+        .grid-container .span-col-2 {
+            grid-column: span 2/auto
+        }
+        
         header {
             text-align: center;
         }
         
         header h3 {
-            color: #003966;
+            color: #003966
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 42px;
+            }
         }
         
         @media(min-width:768px) {
             .container {
-                padding: 0 82px
+                padding: 0 82px;
+            }
+            .grid-container.col-5 {
+                -ms-grid-columns: 1fr 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr)
+            }
+            .grid-container.col-2 {
+                -ms-grid-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr)
             }
         }
         
@@ -233,127 +285,150 @@
             main {
                 margin-top: 60px
             }
-            @media(min-width:1200px) {
-                .container {
-                    padding: 0 32px
-                }
+            .grid-container {
+                grid-gap: 40px;
+                gap: 40px
             }
-            a {
-                color: #017acd
+        }
+        
+        @media(min-width:1200px) {
+            .container {
+                padding: 0 32px
             }
-            footer {
-                padding-bottom: 42px;
-                background-color: #4a5b69;
-                color: #fff;
-                font-size: 14px;
-                line-height: 27px;
-                font-weight: 600
-            }
-            footer section {
-                padding: 0
-            }
-            footer ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0 0 30px
-            }
-            footer ul li.footer-header {
-                color: #ffcc02
-            }
-            footer ul li a {
-                text-decoration: none;
-                color: #fff
-            }
-            footer .subscribe {
-                background-color: #f5f8fa;
-                color: #4a5b69;
-                text-align: center;
-                padding: 42px 0;
-                margin-bottom: 42px
+        }
+        
+        a {
+            color: #017acd
+        }
+        
+        footer {
+            padding-bottom: 42px;
+            background-color: #4a5b69;
+            color: #fff;
+            font-size: 14px;
+            line-height: 27px;
+            font-weight: 600
+        }
+        
+        footer section {
+            padding: 0
+        }
+        
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 30px
+        }
+        
+        footer ul li.footer-header {
+            color: #ffcc02
+        }
+        
+        footer ul li a {
+            text-decoration: none;
+            color: #fff
+        }
+        
+        footer .subscribe {
+            background-color: #f5f8fa;
+            color: #4a5b69;
+            text-align: center;
+            padding: 42px 0;
+            margin-bottom: 42px
+        }
+        
+        footer .subscribe h2 {
+            margin-top: 0;
+            font-size: 22px;
+            font-weight: 300
+        }
+        
+        footer .footer-links {
+            letter-spacing: -.005em;
+            margin-bottom: 72px
+        }
+        
+        footer .footer-logo a {
+            display: inline-block;
+            margin-bottom: 30px
+        }
+        
+        footer .footer-logo a img {
+            display: block;
+            height: 20px
+        }
+        
+        footer .footer-company-info .cta-link {
+            color: #fff!important;
+            font-weight: 400!important;
+            font-size: 14px!important;
+            line-height: 27px!important
+        }
+        
+        footer .footer-company-info .cta-link:after {
+            margin-left: 2px
+        }
+        
+        footer .footer-legal ul li {
+            display: inline;
+            margin-right: 20px
+        }
+        
+        footer .footer-legal ul li:first-child {
+            display: block;
+            margin-bottom: 36px
+        }
+        
+        footer .footer-legal ul li img {
+            width: 32px
+        }
+        
+        @media(min-width:768px) {
+            footer .subscribe .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-gap: 16px;
+                gap: 16px
             }
             footer .subscribe h2 {
-                margin-top: 0;
-                font-size: 22px;
-                font-weight: 300
+                font-size: 27px!important;
+                margin-bottom: 0
             }
-            footer .footer-links {
-                letter-spacing: -.005em;
-                margin-bottom: 72px
+            footer .subscribe .cta-link {
+                font-size: 27px;
+                line-height: 35px
             }
-            footer .footer-logo a {
-                display: inline-block;
-                margin-bottom: 30px
+            footer .container {
+                display: flex;
+                flex-wrap: wrap
             }
-            footer .footer-logo a img {
-                display: block;
-                height: 20px
+            footer .container .footer-links {
+                order: 3;
+                display: flex;
+                flex: 2 1;
+                justify-content: space-between
             }
-            footer .footer-company-info .cta-link {
-                color: #fff!important;
-                font-weight: 400!important;
-                font-size: 14px!important;
-                line-height: 27px!important
+            footer .container .footer-links ul {
+                line-height: 34px
             }
-            footer .footer-company-info .cta-link:after {
-                margin-left: 2px
+            footer .container .footer-logo {
+                order: 1;
+                flex-basis: 100%;
+                margin: 40px 0 32px
             }
-            footer .footer-legal ul li {
-                display: inline;
-                margin-right: 20px
+            footer .container .footer-logo a {
+                margin-bottom: 0
             }
-            footer .footer-legal ul li:first-child {
-                display: block;
-                margin-bottom: 36px
+            footer .container .footer-company-info {
+                order: 2;
+                flex: 1 1
             }
-            footer .footer-legal ul li img {
-                width: 32px
+            footer .container .footer-legal {
+                order: 4;
+                flex-basis: 100%
             }
-            @media(min-width:768px) {
-                footer .subscribe .container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    grid-gap: 16px;
-                    gap: 16px
-                }
-                footer .subscribe h2 {
-                    font-size: 27px!important;
-                    margin-bottom: 0
-                }
-                footer .subscribe .cta-link {
-                    font-size: 27px;
-                    line-height: 35px
-                }
-                footer .container {
-                    display: flex;
-                    flex-wrap: wrap
-                }
-                footer .container .footer-links {
-                    order: 3;
-                    display: flex;
-                    flex: 2 1;
-                    justify-content: space-between
-                }
-                footer .container .footer-links ul {
-                    line-height: 34px
-                }
-                footer .container .footer-logo {
-                    order: 1;
-                    flex-basis: 100%;
-                    margin: 40px 0 32px
-                }
-                footer .container .footer-logo a {
-                    margin-bottom: 0
-                }
-                footer .container .footer-company-info {
-                    order: 2;
-                    flex: 1 1
-                }
-                footer .container .footer-legal {
-                    order: 4;
-                    flex-basis: 100%
-                }
-            }
+        }
     </style>
 
 </head>
@@ -363,23 +438,25 @@
     <nav>
         <div class="wrapper">
             <div class="img-container">
-                <img class="logo-top" src="https://info.nelson.com/l/985611/2022-06-30/61dzv/985611/1656561867K6EBQtlG/logotype_NELSON_blue.svg" alt="logo">
+                <img pardot-region="editable-image" pardot-region-type="image" class="logo-top" src="https://info.nelson.com/l/985611/2022-06-30/61dzv/985611/1656561867K6EBQtlG/logotype_NELSON_blue.svg" alt="logo">
             </div>
         </div>
     </nav>
     <div class="wrapper">
         <header>
-            <h2>Your My Math Path ON journey starts now!</h2>
-            <h4>Sign up below to access your My Math Path Ontario FREE TRIAL.
+            <h3 pardot-region="simple-text1" pardot-region-type="basic">Your My Math Path ON journey starts now!</h3>
+            <h4 pardot-region="simple-text2" pardot-region-type="basic">Sign up below to access your My Math Path Ontario FREE TRIAL.
                 <br><br> By signing up, you will also hear about our latest promotions, offers and news that matter to Ontario educators.</h4>
         </header>
 
-        <div class="form-container">
-            <iframe src="https://info.nelson.com/l/985611/2022-06-29/61dz8" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
-        </div>
+        <section class="form-section">
+            <div pardot-region="form" pardot-region-type="html" class="form-container">
+                <iframe src="https://info.nelson.com/l/985611/2022-06-29/61dz8" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+            </div>
+        </section>
     </div>
 
-
+    <!-- <iframe src="https://mydomain.com/the-form.html" style="width:1px; min-width:100%; border-width: 0px;" allowtransparency="true"></iframe>  -->
     <footer>
 
         <div class="container">
@@ -406,7 +483,7 @@
                 </ul>
             </section>
             <section class="footer-logo">
-                <a href="./"><img src="/images/logotype_NELSON_white.svg" alt="Nelson Logo"></a>
+                <a href="./"><img src="https://info.nelson.com/l/985611/2022-06-30/61f1g/985611/1656561994jqMRgAZg/logotype_NELSON_white.svg" alt="Nelson Logo"></a>
             </section>
             <section class="footer-company-info">
                 <ul>
@@ -430,21 +507,23 @@
                 <ul>
                     <li>© 2022 Nelson</li>
                     <li>
-                        <a href="https://twitter.com/NelsonClassroom/" target="_blank"><img src="/images/icon_Twitter.png" alt="Find Nelson on Twitter"></a>
+                        <a href="https://twitter.com/NelsonClassroom/" target="_blank"><img src="https://info.nelson.com/l/985611/2022-06-30/61dzy/985611/165656188353DBR71A/icon_Twitter.png" alt="Find Nelson on Twitter"></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/NelsonClassroom/" target="_blank"><img src="/images/icon_Facebook.png" alt="Find Nelson on Facebook"></a>
+                        <a href="https://www.facebook.com/NelsonClassroom/" target="_blank"><img src="https://info.nelson.com/l/985611/2022-06-30/61grr/985611/1656594877pBKJAGfz/icon_Facebook.png" alt="Find Nelson on Facebook"></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/NelsonClassroom/" target="_blank"><img src="/images/icon_Instagram.png" alt="Find Nelson on Instagram"></a>
+                        <a href="https://www.instagram.com/NelsonClassroom/" target="_blank"><img src="https://info.nelson.com/l/985611/2022-06-30/61grv/985611/16565948909fmZr659/icon_Instagram.png" alt="Find Nelson on Instagram"></a>
                     </li>
                     <li>
-                        <a href="https://ca.linkedin.com/company/nelson-education" target="_blank" rel="noopener"><img src="/images/icon_LinkedIn.png" alt="Find Nelson on LinkedIn"></a>
+                        <a href="https://ca.linkedin.com/company/nelson-education" target="_blank" rel="noopener"><img src="https://info.nelson.com/l/985611/2022-06-30/61gsk/985611/1656594903HJNh6697/icon_LinkedIn.pngg" alt="Find Nelson on LinkedIn"></a>
                     </li>
                 </ul>
             </section>
         </div>
     </footer>
+
+
 </body>
 
 </html>
