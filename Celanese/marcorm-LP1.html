@@ -14,7 +14,8 @@ Button Banner Hover color = #1FA2DC
     <!-- script type="text/javascript" src="//cdn.reachforce.com/SmartForms.js" data-token="133111"></script -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <title>Landing Page</title>
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <title>${pageTitle}</title>
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">		
@@ -24,7 +25,10 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoString" id="logoLink" mktoName="Logo Link" default="https://celanese.com/">    
     <meta class="mktoString" id="logowidth" mktoName="Logo width (px)" default="163">    
     <meta class="mktoString" id="bannerBackgroundImg" mktoName="Banner Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/Home_Elements_of_Opportunity_Carousel_image.jpeg">
+    <meta class="mktoString" id="position-left" mktoName="Banner Bg Position Left (%)" default="50">
+    <meta class="mktoString" id="position-top" mktoName="Banner Bg Position Top (%)" default="50">
 
+    <meta class="mktoString" id="banner-padding-top" mktoName="Banner Padding Top (px)" default="140">
     <meta class="mktoColor" id="bannerBgColor" mktoName="Banner Background Color" default="#ffffff">
     <meta class="mktoColor" id="banner-btn-bgcolor" mktoName="Banner Btn Background Color" default="#007da9">
     <meta class="mktoColor" id="banner-btn-hover-bgcolor" mktoName="Banner Btn Hover Background Color" default="#005c7a">
@@ -44,12 +48,15 @@ Button Banner Hover color = #1FA2DC
 
     <meta class="mktoString" id="headerImage" mktoName="Header Image" default="https://dummyimage.com/1170x335/007d9a/ffffff">
     <meta class="mktoString" id="header-img-width" mktoName="Header Image Width (vw)" default="100">
+    <meta class="mktoString" id="header-img-wrapper-padTop" mktoName="Header Image Padding Top (px)" default="0">
+    <meta class="mktoString" id="header-img-wrapper-padBottom" mktoName="Header Image Padding Bottom (px)" default="0">
     <meta class="mktoColor" id="section1BgColor" mktoName="Section-1 Background Color" default="#e6f4fa">
     <meta class="mktoString" id="section1_pad_top" mktoName="Section-1 Padding Top (px)" default="30">
     <meta class="mktoString" id="section1_pad_btm" mktoName="Section-1 Padding Bottom (px)" default="30">
     <meta class="mktoColor" id="section2BgColor" mktoName="Section-2 Background Color" default="#f4f4f4">
     <meta class="mktoColor" id="FormBgColor" mktoName="Form Label Color" default="#ffffff">
     <meta class="mktoColor" id="form-lbl-color" mktoName="Form Background Color" default="#262626">
+    <meta class="mktoString" id="btn-font-size" mktoName="Form Button Font Size (px)" default="18">
     <meta class="mktoColor" id="section3BgColor" mktoName="Section-3 Background Color" default="#777777">
     <meta class="mktoColor" id="section4BgColor" mktoName="Section-4 Background Color" default="#ffffff">  
     <meta class="mktoColor" id="section5BgColor" mktoName="Section-5 Background Color" default="#ffffff">
@@ -64,20 +71,23 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoBoolean" id="showHeader" mktoName="Show Header Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showHeaderImage" mktoName="Show Header Image?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBanner" mktoName="Show Banner Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showBannerContent" mktoName="Show Banner Content?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBannerButton" mktoName="Show Banner Button?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection2Form" mktoName="Show Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="form-max-width" mktoName="Form Max Width (px)" default="500">
+    <meta class="mktoBoolean" id="showFormLeftText" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection3" mktoName="Show Section 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection4" mktoName="Show Section 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection5" mktoName="Show Section 5?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection6" mktoName="Show Section 6?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection7" mktoName="Show Section 7?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showSection9" mktoName="Show Section 9?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection9" mktoName="Show Section 9?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection8" mktoName="Show Section 8?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showFooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="show-bottomGradient" mktoName="Show Bottom Gradient?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showCookieBanner" mktoName="Show Cookie Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-bottomGradient" mktoName="Show Bottom Gradient?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showCookieBanner" mktoName="Show Cookie Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
@@ -133,8 +143,15 @@ Button Banner Hover color = #1FA2DC
       #banner {
         background-color: ${bannerBgColor};
         background-image: url(${bannerBackgroundImg});
+        padding-top: ${banner-padding-top}px !important;
+        background-position: ${position-left}% ${position-top}%;
+
       }
       /* Header setup */
+      .header-image-wrapper {
+        padding-top: ${header-img-wrapper-padTop}px !important;
+        padding-bottom: ${header-img-wrapper-padBottom}px !important;
+      }
       .header-image-wrapper img {
         width: ${header-img-width}vw !important;
       }
@@ -149,7 +166,17 @@ Button Banner Hover color = #1FA2DC
       #section2 {
         background-color: ${section2BgColor};
       }
-
+      #section2 .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #section2 #main-content {
+        flex: 1 0 350px;
+      }
+      #section2 .main-form {
+        max-width: ${form-max-width}px;
+        margin: 0 auto;
+      }
       /* Section 3 */
       #section3 {
         background-color: ${section3BgColor};
@@ -286,11 +313,26 @@ Button Banner Hover color = #1FA2DC
       /* ==========================================================================
       FORM 2.0 -- Simple Form STYLES ONLY
       ========================================================================== */  
+      .mktoForm * {
+        font-family: 'MyriadPro-Regular' , sans-serif !important;
+      }
       #primaryForm .mktoForm {
         border: none !important;
         padding: 1.5rem 0 !important;
         width: unset !important;
+        margin: 0 auto;
+
       }
+
+.mktoForm .mktoRequiredField .mktoAsterix {
+  display: none !important;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel:after {
+  content: "*";
+  color: #ea1c2c;
+  padding-left: 7px;
+}
       .mktoForm .mktoFormCol,
       .mktoForm .mktoFieldWrap,
       .mktoForm input[type=text],
@@ -303,7 +345,11 @@ Button Banner Hover color = #1FA2DC
       .mktoForm textarea.mktoField {
         width: 100% !important;
       }
-
+.mktoForm input[type=checkbox]+label:before,
+.mktoForm input[type=radio]+label:before {
+    box-shadow: none !important;
+    border: 0.5px solid #000 !important;
+}
       #primaryForm {
         box-shadow: 0 4px 4px rgb(0 0 0 / 10%), 0 0 8px rgb(0 0 0 / 8%) !important;
         background-color: ${FormBgColor} !important;
@@ -311,6 +357,17 @@ Button Banner Hover color = #1FA2DC
       }  
       .mktoForm .mktoRequiredField label.mktoLabel {
         color: ${form-lbl-color} !important;
+      }
+      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+        margin-right: 1.5rem;
+      }
+      .mktoForm .mktoButtonRow {
+        display: flex;
+        margin-top: 1rem;
+      }
+      .mktoForm .mktoButtonWrap {
+        width: fit-content;
+        margin: 0 auto !important;;
       }
       .mktoForm .mktoButton {
         -webkit-border-radius: 5px;
@@ -320,8 +377,8 @@ Button Banner Hover color = #1FA2DC
         -o-border-radius: 5px;
         color: #fff !important;
         border: none !important;
-        padding: 12px 14px !important;
-        font-size: 1em;
+        padding: 12px 55px !important;
+        font-size: ${btn-font-size}px !important;
         background-color: ${form-btn-bgcolor} !important;
         -webkit-transition: all .3s ease-in-out;
         -moz-transition: all .3s ease-in-out;
@@ -332,6 +389,7 @@ Button Banner Hover color = #1FA2DC
         color:$ ${form-btn-txtcolor};
         border:none;
         background-image: none !important;
+        box-shadow: none !important;
       }
 
       .mktoForm .mktoButton:hover,
@@ -347,10 +405,27 @@ Button Banner Hover color = #1FA2DC
         border: none!important;
       }
 
-      .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField {
-        border: solid 1px #646464 !important;
-        margin-top: 1rem !important;
-      }
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm select.mktoField,
+.mktoForm textarea.mktoField {
+    border: solid 1px #646464 !important;
+    margin-top: 1rem !important;
+    background-color: #fff;
+    line-height: 1.5em !important;
+    color: #666;
+    border: 1px solid #666 !important;
+    border-radius: 3px;
+    padding: 0.6em 0.7em !important;
+    min-height: 1.9em;
+    font-family: kyrial;
+    transition: border-color .2s;
+    box-shadow: none !important;
+}
     </style>
 
 
@@ -581,7 +656,7 @@ Button Banner Hover color = #1FA2DC
     <div style="display:${showBanner};">
       <div id="banner" class="bg-blur">
         <div class="banner-content">
-          <div class="container">
+          <div class="container" style="display:${showBannerContent};">
             <div class="row">
               <!-- Start Header Text -->
               <div class="col-md-12 col-sm-12">
@@ -631,7 +706,7 @@ Button Banner Hover color = #1FA2DC
       <div id="section2" style="display:${showSection2};"> 
         <div class="container padding40 paddingbottom-15">
           <div class="row">
-            <div class="col-md-6" id="main-content">
+            <div class="col-md-12" id="main-content" style="display:${showFormLeftText};">
 
               <div class="mktoText" id="section-2-left" mktoName="Section 2 Left Content" style="padding:0px 20px;">
                 <h2>SECTION 2 TITLE</h2>
@@ -643,10 +718,10 @@ Button Banner Hover color = #1FA2DC
               </div>
 
             </div>
-            <div name="main-form" style="display:${showSection2Form};">
-              <div class="col-md-5 col-md-offset-1">
+            <div name="main-form" class="main-form col-md-12" style="display:${showSection2Form};">
+              <div class="col-md-12">
                 <div class="mktoForm" id="primaryForm" mktoName="Primary Form" style="margin-bottom:40px;padding:10px 20px;min-height:80px;">
-              
+                <script src="//explore.celanese.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1324"></form> <script>MktoForms2.loadForm("//explore.celanese.com", "139-DBZ-834", 1324);</script>
                 </div>
               </div>
             </div>
@@ -894,11 +969,7 @@ Button Banner Hover color = #1FA2DC
               </section>
             </div>
             <!-- Video 2 END -->
-
-
-
             <div>
-
 
               <!-- Client Logos -->      
               <div id="section8" style="display:${showSection8};"> 
@@ -916,7 +987,6 @@ Button Banner Hover color = #1FA2DC
                 </div>
               </div>
               <!-- End Client Logos -->
-
 
               <!-- Footer Bottom -->	      
               <div id="footerSection" style="display:${showFooter};"> 
@@ -959,7 +1029,6 @@ Button Banner Hover color = #1FA2DC
                 </div> 
               </div>
               <!-- End Footer Bottom -->
-
               <script>
                 if ('${showSection2Form}' == 'none') {
                   document.getElementById('main-content').style.setProperty('width','100%','important')
