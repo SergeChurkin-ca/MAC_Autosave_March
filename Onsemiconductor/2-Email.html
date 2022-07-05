@@ -83,6 +83,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="CopyColor" mktoname="Text Color" default="#555555" />
     <meta mktoModuleScope="true" class="mktoColor" id="CopyColorG" mktoname="Text Color" default="#DA7F3C" />
     <meta mktoModuleScope="true" class="mktoColor" id="CopyColorwhite" mktoname="Text Color" default="#FFFFFF" />
+    <meta mktoModuleScope="true" class="mktoColor" id="ctaboxclr" mktoname="Box BG Color" default="#fff" />
     <meta mktoModuleScope="true" class="mktoColor" id="boxclr" mktoname="Box BG Color" default="#F4f5f5" />
 
     <meta mktoModuleScope="true" class="mktoImg" id="banner1_img" mktoName="Background Image" default="https://dummyimage.com/600x360/1F203E/B3B8C4">
@@ -93,6 +94,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" id="outlook-ht1" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="360" min="0" max="1000" step="1" />
     <meta mktoModuleScope="true" id="outlook-ht2" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="290" min="0" max="1000" step="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad5" mktoname="Button Bottom Padding" default="5"  />
+    <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad10" mktoname="Button Bottom Padding" default="10"  />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad15" mktoname="Button Bottom Padding" default="15"  />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad0" mktoname="Button Top Padding" default="0"  />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad10" mktoname="Button Top Padding" default="10"  />
@@ -533,6 +535,96 @@ font-family: Arial, serif !important;
                 <!--Button Module-->
 
 
+                <!--2 CTAs Module-->
+                <table class="mktoModule" mktoName="Two CTAs side by side" id="twoCtas" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                  <tr>
+                    <td bgColor="${mod-bg-color}" valign="top" style="background-color:${mod-bg-color};vertical-align: top;">
+                      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:580px;border-collapse: collapse;border-spacing: 0;" border="0" width="580">
+                        <tr>
+                          <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                              <tr>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;width:${pad_lr10}px;" width="${pad_lr10}" bgColor="${ctaboxclr}">&nbsp;</th>
+                                <th width="275" align="left" class="block" valign="top" style="vertical-align: top; background-color:${ctaboxclr};" bgColor="${ctaboxclr}">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                   
+                                    <tr>
+                                      <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="${alignbtn}">
+                                        <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
+                                          <div>
+                                            <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
+                                              <tbody>
+                                                <tr>
+                                                  <td bgcolor="${btn2BGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btn2Color}; background-color:${btnBGColor};text-decoration:none; font-size:${btn1FontSize}px; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btn2BorderRadius}px;">
+                                                    <a style="text-decoration:none; color:${btn2Color};" href="${btn1URL}">${btn1Text}</a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td height="${cta-btm-pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                  </table>
+                                </th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;width:${pad_lr10}px;" width="${pad_lr10}" bgColor="${ctaboxclr}">&nbsp;</th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;width:${pad_lr10}px;" width="pad_lr20">&nbsp;</th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;width:${pad_lr10}px;" width="${pad_lr10}" bgColor="${ctaboxclr}">&nbsp;</th>
+                                <th width="275" align="left" class="block top_pad" valign="top" style="vertical-align: top; background-color:${ctaboxclr};" bgColor="${ctaboxclr}">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                              
+                                    <tr>
+                                      <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="${alignbtn}">
+                                        <div class="mktoText" id="btn2-btn-as" mktoname="Button">
+                                          <div>
+                                            <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
+                                              <tbody>
+                                                <tr>
+                                                  <td bgcolor="${btn2BGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btn2BorderColor}; color:${btnColor}; background-color:${btn2BGColor};text-decoration:none; font-size:${btn2FontSize}px; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; padding: 13px 35px; border-radius: ${btn2BorderRadius}px;">
+                                                    <a style="text-decoration:none; color:${btn2Color};" href="${btnURL2}">${btnText2}</a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td height="${cta-btm-pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                  </table>
+                                </th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;width:${pad_lr10}px;" width="${pad_lr10}" bgColor="${ctaboxclr}">&nbsp;</th>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--2 CTAs Module-->
+
+
                 <!--2 Col Module-->
                 <table class="mktoModule" mktoName="Two Column with Image" id="twoColImg" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
@@ -545,7 +637,7 @@ font-family: Arial, serif !important;
                           <td>
                             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                               <tr>
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="${pad_lr10}" bgColor="${boxclr}">&nbsp;</th>
+                                <th class="hidden" tyle="font-size:1px; line-height: 1px; width:${${pad_lr10}}px" bgColor="${boxclr}">&nbsp;</th>
                                 <th width="275" align="left" class="block" valign="top" style="vertical-align: top; background-color:${boxclr};" bgColor="${boxclr}">
                                   <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                     <tr>
@@ -611,9 +703,9 @@ font-family: Arial, serif !important;
                                     </tr>
                                   </table>
                                 </th>
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="${pad_lr10}" bgColor="${boxclr}">&nbsp;</th>
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="${pad_lr10}" bgColor="${boxclr}">&nbsp;</th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px; width:${${pad_lr10}}px" width="${pad_lr10}" bgColor="${boxclr}">&nbsp;</th>
+                                <th class="hidden" tyle="font-size:1px; line-height: 1px; width:${${pad_lr10}}px">&nbsp;</th>
+                                <th class="hidden" tyle="font-size:1px; line-height: 1px; width:${${pad_lr10}}px" width="${pad_lr10}" bgColor="${boxclr}">&nbsp;</th>
                                 <th width="275" align="left" class="block top_pad" valign="top" style="vertical-align: top; background-color:${boxclr};" bgColor="${boxclr}">
                                   <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                     <tr>
@@ -677,7 +769,7 @@ font-family: Arial, serif !important;
                                     </tr>
                                   </table>
                                 </th>
-                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="${pad_lr10}" bgColor="${boxclr}">&nbsp;</th>
+                                <th class="hidden" tyle="font-size:1px; line-height: 1px; width:${${pad_lr10}}px" bgColor="${boxclr}">&nbsp;</th>
                               </tr>
                             </table>
                           </td>
