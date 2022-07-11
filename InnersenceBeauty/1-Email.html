@@ -75,7 +75,6 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="headlineFontColorwhite" mktoname="Headline Text Color" default="#FFFFFF" />
     <meta mktoModuleScope="true" class="mktoNumber" id="SubheadlineFontSize" mktoname="Subheadline Font Size" default="18" />
     <meta mktoModuleScope="true" class="mktoColor" id="SubheadlineFontColor" mktoname="Subheadlinbe Text Color" default="#1F203E" />
-    <meta mktoModuleScope="true" class="mktoColor" id="SubheadlineFontColorwhite" mktoname="Subheadlinbe Text Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoNumber" id="CopySize18" mktoname="Text Font Size" default="18" />
     <meta mktoModuleScope="true" class="mktoNumber" id="CopySize" mktoname="Text Font Size" default="14" />
     <meta mktoModuleScope="true" class="mktoColor" id="CopyColorwhite" mktoname="Text Color" default="#ffffff" />
@@ -89,6 +88,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColorhead" mktoName="Button Border Color" default="#93a1a9" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnBGColorhead" mktoName="Button Border Color" default="#93a1a9" />
 
+    <meta mktoModuleScope="true" class="mktoList" id="btn-txt-transform" mktoName="Footer Algin" values="capitalize," default="capitalize" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="btn1Color" mktoName="Button Text Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="btn2Color" mktoName="Button Text Color" default="#ffffff" />
@@ -130,6 +130,11 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoList" id="alignbtn" mktoName="Align Button" values="left,center,right" default="center" />
     <meta mktoModuleScope="true" class="mktoList" id="align" mktoName="Content Align" values="left,center,right" default="left" />
     <meta mktoModuleScope="true" class="mktoList" id="alignFooter" mktoName="Footer Algin" values="left,center,right" default="center" />
+    <meta mktomodulescope="true" class="mktoString" id="nav-1" mktoname="Nav Link 1" default="#" /> 
+    <meta mktomodulescope="true" class="mktoString" id="nav-2" mktoname="Nav Link 2" default="#" /> 
+    <meta mktomodulescope="true" class="mktoString" id="nav-3" mktoname="Nav Link 3" default="#" /> 
+    <meta mktomodulescope="true" class="mktoString" id="nav-4" mktoname="Nav Link 4" default="#" /> 
+    <meta mktomodulescope="true" class="mktoString" id="nav-5" mktoname="Nav Link 5" default="#" /> 
 
     <title>{{my.ViewAsWebpage Title}}</title>
     <link rel="icon" href="{{my.Favicon URL}}" type="image/x-icon">
@@ -339,28 +344,93 @@ font-family: Arial, serif !important;
               <td class="mktoContainer" id="template-wrapper">
 
 
-                <!--Divider Module-->
-                <table class="mktoModule" mktoName="Divider Module 1" id="DividerModule1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                      <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
-                        <tr>
-                          <td height="${top_pad0}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td height="${btm_pad0}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--Divider Module-->
-
-
-                <!--Logo and Navbar-->
+                <!--Shipping Module-->
+                <table class="mktoModule" mktoname="Shipping Top" id="shipping" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+                      <tbody> 
+                        <tr> 
+                          <td bgcolor="#876D4B" valign="top" style="background-Color:#876D4B;vertical-align: top;"> 
+                            <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590"> 
+                              <tbody> 
+                                <tr> 
+                                  <td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                </tr> 
+                                <tr> 
+                                  <td align="${alignLeft}" style="font-family:'VerdanaPro-Regular', Helvetica, sans-serif !important; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: #fff; text-align: ${alignLeft};"> 
+                                    <div class="mktoText" mktoname="Text" id="Copy0c24bc94-6c90-49e4-8a72-d57a24f67953">
+                                      <div style="text-align: center;">
+                                        <span style="font-family: arial, helvetica, sans-serif; font-size: 16px;"><a href="https://innersensebeauty.com/" target="_blank" id="" style="color: #ffffff;">Enjoy Free Shipping on Orders $25+</a></span>
+                                        <br />
+                                      </div>
+                                    </div> </td> 
+                                </tr> 
+                                <tr> 
+                                  <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                </tr> 
+                              </tbody> 
+                            </table> </td> 
+                        </tr> 
+                      </tbody> 
+                    </table>
+                <!--Shipping Module-->
+				<table class="mktoModule" mktoname="Logo" id="logo-1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+                      <tbody> 
+                        <tr> 
+                          <td bgcolor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;"> 
+                            <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px; border-collapse: collapse;border-spacing: 0;" border="0" width="590"> 
+                              <tbody> 
+                                <tr> 
+                                  <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                </tr> 
+                                <tr> 
+                                  <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};"> 
+                                    <div class="mktoImg" id="headerLogo1" mktoname="Header Logo1" mktolockimgsize="false">
+                                      <a href="https://innersensebeauty.com/" target="_blank"><img class="logowidth" alt="logo" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense-logo_v2.png" width="430" border="0" style="height:auto !important;width:${regLogoWidth}px;" height="136" /></a>
+                                    </div> </th> 
+                                </tr> 
+                                <tr> 
+                                  <td height="${btm_pad0}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                </tr> 
+                              </tbody> 
+                            </table> </td> 
+                        </tr> 
+                      </tbody> 
+                    </table>
+						
+                
+                
+                <table class="mktoModule" mktoname="Navbar Module" id="navbarModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+                      <tbody> 
+                        <tr> 
+                          <td bgcolor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;"> 
+                            <table class="inner_table footer-table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+                              <tbody> 
+                                <tr> 
+                                  <td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                </tr> 
+                                <tr> 
+                                  <td bgcolor="${logo-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;"> 
+                                    <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+                                      <tbody> 
+                                        <tr> 
+                                          <td width="100%" align="center" style="text-transform: capitalize;font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important; font-size: ${navbarFontSize}px; font-weight:500;line-height: 145%; text-align: ${alignCenter};color: ${brandGoldFontColor}; width:100%;padding-left:30px;padding-right:30px"> 
+                                            <div class="mktoText" mktoname="Navbar" id="navbar-icons">
+                                              <div>
+                                                <span><a href="${nav-1}" target="_blank" style="text-decoration: none;color: ${brandGoldFontColor};padding-right:10px;">WHAT'S NEW</a></span>&nbsp;&nbsp; <span><a href="${nav-2}" target="_blank" style="color: ${brandGoldFontColor};padding-right:10px;text-decoration: none;">HAIRCARE</a></span>&nbsp;&nbsp; <span><a href="${nav-3}" target="_blank" style="text-decoration: none;color: ${brandGoldFontColor};">ABOUT</a></span>
+                                              </div>
+                                            </div> </td> 
+                                        </tr> 
+                                      </tbody> 
+                                    </table> </td> 
+                                </tr> 
+                                <tr> 
+                                  <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                </tr> 
+                              </tbody> 
+                            </table> </td> 
+                        </tr> 
+                      </tbody> 
+                    </table>
+                <!--Logo and Navbar
                 <table class="mktoModule" mktoName="Logo and Nav" id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td bgColor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;">
@@ -375,7 +445,7 @@ font-family: Arial, serif !important;
                               <a href="#" target="_blank" style="text-decoration:none;"><p style="color:${brandGoldFontColor};font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important;font-size:${navbarFontSize}px;line-height:145%;">
                                 <!--[if mso]>
 <p style="color:${brandGoldFontColor};font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important;font-size:14px;line-height:145%;vertical-align:middle;margin-top:22px;">
-<![endif]-->
+<![endif]
                                 SHOP</p></a>
                             </div>
                           </th>
@@ -385,31 +455,23 @@ font-family: Arial, serif !important;
                               <a href="#" target="_blank" style="text-decoration:none;"><p style="color:${brandGoldFontColor};font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important;font-size:${navbarFontSize}px;line-height:145%;">
                                 <!--[if mso]>
 <p style="color:${brandGoldFontColor};font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important;font-size:14px;line-height:145%;vertical-align:middle;margin-top:22px;">
-<![endif]-->
+<![endif]
                                 ABOUT</p></a>
                             </div>
                           </th>
-
-                          <th width="180" class="center block" align="${alignCenterlogo}" style="width:210px; max-width:100%; text-align: ${alignCenterlogo};">
-                            <div class="mktoText" id="nav-link-3" mktoName="Nav Link 3">
-                              <a href="#" target="_blank" style="text-decoration:none;"><p style="color:${brandGoldFontColor};font-weight:800;font-family:'Ivy-Mode-Light', Helvetica, sans-serif !important;letter-spacing: 2px;font-size:${headlineFontSize24}px;">INNERSENSE</p></a>
-                            </div>
-                          </th>
-
-
                           <th width="100" class="center block" align="${alignRight}" style="width: 100px; max-width:100%; text-align: ${alignRight};">
                             <div class="mktoText" id="nav-link-4" mktoName="Nav Link 4">
                               <a href="#" target="_blank" style="text-decoration:none;"><p style="color:${brandGoldFontColor};font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important;font-size:${navbarFontSize}px;line-height:145%;">
                                 <!--[if mso]>
 <p style="color:${brandGoldFontColor};font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important;font-size:14px;line-height:145%;vertical-align:middle;margin-top:22px;">
-<![endif]-->
+<![endif]
                                 INGREDIENTS</p></a>
                             </div>
                           </th>
                           <th class="hidden" style="font-size:1px; line-height: 1px;" width="15">
                             <!--[if mso]>
 <th class="hidden" style="font-size:1px; line-height: 1px;" width="8">
-<![endif]--> 
+<![endif]
                             &nbsp;</th>
 
                           <th width="100" class="center block" align="${alignRight}" style="width: 100px; max-width:100%; text-align: ${alignRight};">
@@ -417,7 +479,7 @@ font-family: Arial, serif !important;
                               <a href="#" target="_blank" style="text-decoration:none;"><p style="color:${brandGoldFontColor};font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important;font-size:${navbarFontSize}px;line-height:145%;white-space:nowrap;">
                                 <!--[if mso]>
 <p style="color:${brandGoldFontColor};font-family:'FreightSansPro-Semibold', Helvetica, sans-serif !important;font-size:14px;line-height:145%;vertical-align:middle;margin-top:22px;">
-<![endif]-->
+<![endif]
                                 FIND NEAR YOU</p></a>
                             </div>
                           </th>
@@ -430,7 +492,7 @@ font-family: Arial, serif !important;
                     </td>
                   </tr>
                 </table>
-                <!-- end of Logo and Navbar-->     
+            end of Logo and Navbar-->     
 
 
                 <!--Image Module 1 -->
@@ -657,7 +719,7 @@ font-family: Arial, serif !important;
                                               <tbody>
                                                 <tr>
                                                   <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family:'VerdanaPro-SemiBold',Arial, sans-serif; padding: 13px 20px; border-radius: ${btnBorderRadius}px;">
-                                                    <a style="text-decoration:none; color:${btnColor};text-transform:uppercase;" href="${btnURL}">${btnText}</a>
+                                                    <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                   </td>
                                                 </tr>
                                               </tbody>
@@ -756,7 +818,7 @@ font-family: Arial, serif !important;
                                         <tbody>
                                           <tr>
                                             <td style="min-height:10px; text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family:'VerdanaPro-SemiBold',Arial, sans-serif !important;">
-                                              <a style="min-height:10px; text-decoration:none; color:${btnColorhead};border:1px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead}; padding: 13px 35px; border-radius: ${btnBorderRadius}px;text-transform:uppercase;" href="${btnURL}">${btnText}</a>
+                                              <a style="min-height:10px; text-decoration:none; color:${btnColorhead};border:1px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead}; padding: 13px 35px; border-radius: ${btnBorderRadius}px;" href="${btnURL}">${btnText}</a>
                                             </td>
                                           </tr>
                                         </tbody>
@@ -1581,6 +1643,66 @@ font-family: Arial, serif !important;
                 </table>
                 <!--Footer Module-->
 
+<!--Footer Module-->
+<table class="mktoModule" mktoName="Footer Module" id="FooterModuleUS" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${social-bg-Color}" valign="top" style="background-color:${social-bg-Color};vertical-align: top;">
+<table class="inner_table footer-table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+
+  
+<tr>
+<td bgColor="${social-bg-Color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;">
+ <table class="footer-icons ${alignFooter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+    <tr>  
+       <td width="100%" align="center" style="text-align: ${alignFooter}; font-size: 10px; line-height: 1px; width:100%;padding-left:30px;padding-right:30px">
+         <div class="mktoText" mktoName="Social Media Icons" id="sm-icons" style="font-size: 10px;">
+           <a href="https://www.instagram.com/innersenseorganicbeauty/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/insta_gold.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://www.facebook.com/InnersenseOrganic/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/fb_gold.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://vm.tiktok.com/ZMRWq7TF3/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/tic_gold.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://www.youtube.com/channel/UCSka-HshWWvazyizp4q-v_A"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/youtube_gold.png" style="width:33px;height:auto;max-width:" /></a>&nbsp;&nbsp;
+           <a href="https://www.linkedin.com/company/innersense-organic-beauty"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/linkedin_gold.png" style="width:33px;height:auto;" /></a>
+         </div>
+       </td>
+     </tr> 
+  </table>
+</td>
+</tr>
+
+  
+<tr>
+<td bgColor="${social-bg-Color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;">
+ <table class="footer-icons ${alignFooter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+    <tr>  
+       <td width="100%" align="center" valign="middle" style="text-align: ${alignFooter}; font-size: 10px; line-height: 1px; width:100%;padding-left:30px;padding-right:30px">
+         <div class="mktoText" mktoName="Partner Icons" id="pt-icons" style="font-size: 10px;">
+           <a href="https://www.bcorporation.net/en-us/find-a-b-corp/company/innersense-organic-beauty/" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/Certified-B.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+           <a href="https://www.climateneutral.org/brand/innersense-beauty" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/climateneutral.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+           <a href="https://www.business.repurpose.global/innersense" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/V__PlasticNeutral_Product_Black %281%29%282%29.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+           <a href="https://directories.onepercentfortheplanet.org/profile/innersense-organic-beauty?referrer=%2F%3FmemberType%3Dbusiness%26q%3Dinnersense%26page%3D1"target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/planet1.png" style="width:45px;height:auto;vertical-align: middle;" /></a>
+         </div>
+       </td>
+     </tr> 
+  </table>
+</td>
+</tr>  
+  
+<tr>
+<td align="${alignFooter}" style="padding-left: 30px; padding-right: 30px;padding-top:10px;font-family:'VerdanaPro-Regular', Helvetica, sans-serif !important; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${footerTextColor}; text-align: ${alignFooter};">
+  <div class="mktoSnippet" id="footerSnippet" mktoName="Footer Snippet" mktoDefaultSnippetId="1"></div>
+</td>
+</tr> 
+  
+<tr>
+<td height="${btm_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--Footer Module-->
 
                 <!--Social Module-->
                 <table class="mktoModule" mktoName="Social Module EU" id="FooterSocialModuleu" mktoAddByDefault="false" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1632,7 +1754,7 @@ font-family: Arial, serif !important;
 
                         <tr>
                           <td align="${alignFooter}" style="padding-left: 30px; padding-right: 30px;padding-top:10px;font-family:'VerdanaPro-Regular', Helvetica, sans-serif !important; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${footerTextColor}; text-align: ${alignFooter};">
-                            <div class="mktoSnippet" id="footerSnippeteu" mktoName="Footer Snippet EU" mktoDefaultSnippetId="3"></div>
+                            <div class="mktoSnippet" id="footerSnippeteu" mktoName="Footer Snippet EU"></div>
                           </td>
                         </tr> 
 
