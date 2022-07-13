@@ -10,8 +10,8 @@ font-family: Arial, serif !important;
 </style>
 <![endif]-->
     <!-- Global variables -->
-    <meta class="mktoColor" id="bodyBgColor" mktoname="Email Body Background Color" default="#F6F9FC" />
-    <meta class="mktoColor" id="bodyborderColor" mktoname="Body Border Color" default="#F6F9FC" />
+    <meta class="mktoColor" id="bodyBgColor" mktoname="Email Body Background Color" default="#FFF" />
+    <meta class="mktoColor" id="bodyborderColor" mktoname="Body Border Color" default="#FFF" />
     <meta class="mktoNumber" id="bodyborderWid" mktoname="Body Border Width (px)" default="0" />
     <meta class="mktoString" id="fontfamilyembed" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');" />
     <meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="Lato" />
@@ -428,10 +428,33 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--Divider Module-->
-
+<table class="mktoModule" mktoname="Logo" id="logo-1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+                      <tbody> 
+                        <tr> 
+                          <td bgcolor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;"> 
+                            <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px; border-collapse: collapse;border-spacing: 0;" border="0" width="590"> 
+                              <tbody> 
+                                <tr> 
+                                  <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                </tr> 
+                                <tr> 
+                                  <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};"> 
+                                    <div class="mktoImg" id="headerLogo1" mktoname="Header Logo1" mktolockimgsize="false">
+                                      <a href="https://innersensebeauty.com/" target="_blank"><img class="logowidth" alt="logo" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense-logo_v2.png" width="430" border="0" style="height:auto !important;width:${regLogoWidth}px;" height="136" /></a>
+                                    </div> </th> 
+                                </tr> 
+                                <tr> 
+                                  <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td> 
+                                </tr> 
+                              </tbody> 
+                            </table> </td> 
+                        </tr> 
+                      </tbody> 
+                    </table>
+						
 
                             <!--Logo and Navbar-->
-                            <table class="mktoModule" mktoName="Logo and Nav" id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" mktoName="Logo and Nav" id="logo" mktoAddByDefault="false" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
                                     <td bgColor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px; border-collapse: collapse;border-spacing: 0;" border="0" width="590">
@@ -742,7 +765,7 @@ font-family: Arial, serif !important;
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px; line-height:110%; font-family:'VerdanaPro-SemiBold',Arial, sans-serif; padding: 13px 20px; border-radius: ${btnBorderRadius}px;">
-                                                                                                    <a style="text-decoration:none; color:${btnColor};text-transform:uppercase;" href="${btnURL}">${btnText}</a>
+                                                                                                    <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                                                                 </td>
                                                                                             </tr>
                                                                                         </tbody>
@@ -840,7 +863,7 @@ font-family: Arial, serif !important;
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td style="min-height:10px; text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family:'VerdanaPro-SemiBold',Arial, sans-serif !important;">
-                                                                                        <a style="min-height:10px; text-decoration:none; color:${btnColorhead};border:1px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead}; padding: 13px 35px; border-radius: ${btnBorderRadius}px;text-transform:uppercase;"
+                                                                                        <a style="min-height:10px; text-decoration:none; color:${btnColorhead};border:1px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead}; padding: 13px 35px; border-radius: ${btnBorderRadius}px;"
                                                                                             href="${btnURL}">${btnText}</a>
                                                                                     </td>
                                                                                 </tr>
@@ -1660,6 +1683,66 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--Footer Module-->
+              <!--Footer Module-->
+<table class="mktoModule" mktoName="Footer Module" id="FooterModuleUS" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${social-bg-Color}" valign="top" style="background-color:${social-bg-Color};vertical-align: top;">
+<table class="inner_table footer-table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+
+  
+<tr>
+<td bgColor="${social-bg-Color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;">
+ <table class="footer-icons ${alignFooter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+    <tr>  
+       <td width="100%" align="center" style="text-align: ${alignFooter}; font-size: 10px; line-height: 1px; width:100%;padding-left:30px;padding-right:30px">
+         <div class="mktoText" mktoName="Social Media Icons" id="sm-icons" style="font-size: 10px;">
+           <a href="https://www.instagram.com/innersenseorganicbeauty/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/insta_gold.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://www.facebook.com/InnersenseOrganic/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/fb_gold.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://vm.tiktok.com/ZMRWq7TF3/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/tic_gold.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://www.youtube.com/channel/UCSka-HshWWvazyizp4q-v_A"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/youtube_gold.png" style="width:33px;height:auto;max-width:" /></a>&nbsp;&nbsp;
+           <a href="https://www.linkedin.com/company/innersense-organic-beauty"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/linkedin_gold.png" style="width:33px;height:auto;" /></a>
+         </div>
+       </td>
+     </tr> 
+  </table>
+</td>
+</tr>
+
+  
+<tr>
+<td bgColor="${social-bg-Color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;">
+ <table class="footer-icons ${alignFooter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+    <tr>  
+       <td width="100%" align="center" valign="middle" style="text-align: ${alignFooter}; font-size: 10px; line-height: 1px; width:100%;padding-left:30px;padding-right:30px">
+         <div class="mktoText" mktoName="Partner Icons" id="pt-icons" style="font-size: 10px;">
+           <a href="https://www.bcorporation.net/en-us/find-a-b-corp/company/innersense-organic-beauty/" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/Certified-B.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+           <a href="https://www.climateneutral.org/brand/innersense-beauty" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/climateneutral.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+           <a href="https://www.business.repurpose.global/innersense" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/V__PlasticNeutral_Product_Black %281%29%282%29.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+           <a href="https://directories.onepercentfortheplanet.org/profile/innersense-organic-beauty?referrer=%2F%3FmemberType%3Dbusiness%26q%3Dinnersense%26page%3D1"target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/planet1.png" style="width:45px;height:auto;vertical-align: middle;" /></a>
+         </div>
+       </td>
+     </tr> 
+  </table>
+</td>
+</tr>  
+  
+<tr>
+<td align="${alignFooter}" style="padding-left: 30px; padding-right: 30px;padding-top:10px;font-family:'VerdanaPro-Regular', Helvetica, sans-serif !important; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${footerTextColor}; text-align: ${alignFooter};">
+  <div class="mktoSnippet" id="footerSnippet" mktoName="Footer Snippet" mktoDefaultSnippetId="1"></div>
+</td>
+</tr> 
+  
+<tr>
+<td height="${btm_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--Footer Module-->
                             <!--Social Module-->
                             <table class="mktoModule" mktoName="Social Module EU" id="FooterSocialModuleu" mktoAddByDefault="false" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
@@ -1711,7 +1794,7 @@ font-family: Arial, serif !important;
 
                                             <tr>
                                                 <td align="${alignFooter}" style="padding-left: 30px; padding-right: 30px;padding-top:10px;font-family:'VerdanaPro-Regular', Helvetica, sans-serif !important; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${footerTextColor}; text-align: ${alignFooter};">
-                                                    <div class="mktoSnippet" id="footerSnippeteu" mktoName="Footer Snippet EU" mktoDefaultSnippetId="3"></div>
+                                                    <div class="mktoSnippet" id="footerSnippeteu" mktoName="Footer Snippet EU"></div>
                                                 </td>
                                             </tr>
 
@@ -1723,7 +1806,129 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--Social Module-->
+<!--Footer Module-->
+<table class="mktoModule" mktoName="Colored Footer Module" id="FooterModuleUSa" mktoAddByDefault="false" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${footer-bg-color}" valign="top" style="background-color:${footer-bg-color};vertical-align: top;">
+<table class="inner_table footer-table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
 
+  
+<tr>
+<td bgColor="${footer-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;">
+ <table class="footer-icons ${alignFooter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+    <tr>  
+       <td width="100%" align="center" style="text-align: ${alignFooter}; font-size: 10px; line-height: 1px; width:100%;padding-left:30px;padding-right:30px">
+         <div class="mktoText" mktoName="Social Media Icons" id="sm-iconsa" style="font-size: 10px;">
+           <a href="https://www.instagram.com/innersenseorganicbeauty/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_insta_white.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://www.facebook.com/InnersenseOrganic/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_fb_white.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://vm.tiktok.com/ZMRWq7TF3/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_tic_white.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           <a href="https://www.youtube.com/channel/UCSka-HshWWvazyizp4q-v_A"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_youtube_white.png" style="width:33px;height:auto;max-width:" /></a>&nbsp;&nbsp;
+           <a href="https://www.linkedin.com/company/innersense-organic-beauty"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_linkedin_white.png" style="width:33px;height:auto;" /></a>
+         </div>
+       </td>
+     </tr> 
+  </table>
+</td>
+</tr>
+
+  
+<tr>
+<td bgColor="${footer-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;">
+ <table class="footer-icons ${alignFooter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+    <tr>  
+       <td width="100%" align="center" valign="middle" style="text-align: ${alignFooter}; font-size: 10px; line-height: 1px; width:100%;padding-left:30px;padding-right:30px">
+         <div class="mktoText" mktoName="Partner Icons" id="pt-iconsa" style="font-size: 10px;">
+           <a href="https://www.bcorporation.net/en-us/find-a-b-corp/company/innersense-organic-beauty/" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/2018-B-Corp-Logo-White-L.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+               <a href="https://www.climateneutral.org/brand/innersense-beauty" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/ClimateNeutralCertified_Label_Vertical_whiteblock.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+             <a href="https://www.business.repurpose.global/innersense" target="_blank"><img width="65" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/_rPG_Vertical_white.png" style="width:65px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://directories.onepercentfortheplanet.org/profile/innersense-organic-beauty?referrer=%2F%3FmemberType%3Dbusiness%26q%3Dinnersense%26page%3D1"target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/1ftp_BusinessMember_Vertical_White.png" style="width:45px;height:auto;vertical-align: middle;" /></a>
+           </div>
+       </td>
+     </tr> 
+  </table>
+</td>
+</tr>  
+  
+<tr>
+<td align="${alignFooter}" style="padding-left: 30px; padding-right: 30px;padding-top:10px;font-family:'VerdanaPro-Regular', Helvetica, sans-serif !important; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorwhite}; text-align: ${alignFooter};">
+  <div class="mktoSnippet" id="footerSnippeta" mktoName="Footer Snippet" mktoDefaultSnippetId="1"></div>
+</td>
+</tr> 
+  
+<tr>
+<td height="${btm_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--Footer Module-->
+
+                <!--Social Module-->
+                <table class="mktoModule" mktoName="Colored Social Module EU" id="FooterSocialModuleue" mktoAddByDefault="false" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                  <tr>
+                    <td bgColor="${footer-bg-color}" valign="top" style="background-color:${footer-bg-color};vertical-align: top;">
+                      <table class="inner_table footer-table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                        <tr>
+                          <td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+
+
+                        <tr>
+                          <td bgColor="${footer-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;">
+                            <table class="footer-icons ${alignFooter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+                              <tr>  
+                                <td width="100%" align="center" style="text-align: ${alignFooter}; font-size: 10px; line-height: 1px; width:100%;padding-left:30px;padding-right:30px">
+                                  <div class="mktoText" mktoName="Social Media Icons" id="sm-iconsrue" style="font-size: 10px;">
+                                    <a href="https://www.instagram.com/innersenseorganicbeauty/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_insta_white.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           							<a href="https://www.facebook.com/InnersenseOrganic/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_fb_white.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           							<a href="https://vm.tiktok.com/ZMRWq7TF3/"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_tic_white.png" style="width:33px;height:auto;" /></a>&nbsp;&nbsp;
+           							<a href="https://www.youtube.com/channel/UCSka-HshWWvazyizp4q-v_A"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_youtube_white.png" style="width:33px;height:auto;max-width:" /></a>&nbsp;&nbsp;
+           							<a href="https://www.linkedin.com/company/innersense-organic-beauty"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/innersense_linkedin_white.png" style="width:33px;height:auto;" /></a>
+         								&nbsp;&nbsp;
+                                    <a href="https://api.whatsapp.com/send?phone=447781127416&text=It%27s%20lovely%20to%20e-meet%20you!%20How%20can%20team%20Innersense%20help%20you%20today%3F%20%F0%9F%A4%8D"><img width="33" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/whatsapp_white.png" style="width:33px;height:auto;" /></a>
+                                  </div>
+                                </td>
+                              </tr> 
+                            </table>
+                          </td>
+                        </tr>
+
+
+                        <tr>
+                          <td bgColor="${footer-bg-color}" class="center" align="center" valign="top" style="vertical-align: top;padding-top:15px;">
+                            <table class="footer-icons ${alignFooter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
+                              <tr>  
+                                <td width="100%" align="center" valign="middle" style="text-align: ${alignFooter}; font-size: 10px; line-height: 1px; width:100%;padding-left:30px;padding-right:30px">
+                                  <div class="mktoText" mktoName="Partner Icons" id="pt-iconsrue" style="font-size: 10px;">
+                                    <a href="https://www.bcorporation.net/en-us/find-a-b-corp/company/innersense-organic-beauty/" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/2018-B-Corp-Logo-White-L.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.climateneutral.org/brand/innersense-beauty" target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/ClimateNeutralCertified_Label_Vertical_whiteblock.png" style="width:45px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="https://www.business.repurpose.global/innersense" target="_blank"><img width="65" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/_rPG_Vertical_white.png" style="width:65px;height:auto;vertical-align: middle;" /></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="https://directories.onepercentfortheplanet.org/profile/innersense-organic-beauty?referrer=%2F%3FmemberType%3Dbusiness%26q%3Dinnersense%26page%3D1"target="_blank"><img width="45" height="auto" src="https://go.innersensebeauty.com/rs/762-FMQ-821/images/1ftp_BusinessMember_Vertical_White.png" style="width:45px;height:auto;vertical-align: middle;" /></a>
+                                  </div>
+                                </td>
+                              </tr> 
+                            </table>
+                          </td>
+                        </tr>  
+
+                        <tr>
+                          <td align="${alignFooter}" style="padding-left: 30px; padding-right: 30px;padding-top:10px;font-family:'VerdanaPro-Regular', Helvetica, sans-serif !important; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorwhite}; text-align: ${alignFooter};">
+                            <div class="mktoSnippet" id="footerSnippeteue" mktoName="Footer Snippet EU"></div>
+                          </td>
+                        </tr> 
+
+                        <tr>
+                          <td height="${btm_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--Social Module-->
                             <!--Divider Module-->
                             <table class="mktoModule" mktoName="Divider Module2" id="DividerModule2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
