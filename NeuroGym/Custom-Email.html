@@ -77,6 +77,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="icon-width5" mktoname="Icon width 5 (px)" default="25" />
     <meta mktoModuleScope="true" class="mktoNumber" id="icon-width6" mktoname="Icon width 6 (px)" default="40" />
     <meta mktoModuleScope="true" class="mktoNumber" id="icon-width7" mktoname="Icon width 7 (px)" default="23" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="image-width" mktoname="Icon width 7 (px)" default="150" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="image-padding" mktoname="Icon width 7 (px)" default="30" />
 
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize24" mktoname="Headline Font Size" default="24" />
     <meta mktoModuleScope="true" class="mktoNumber" id="headlineFontSize18" mktoname="Headline Font Size" default="18" />
@@ -102,6 +104,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#FF9900">
     <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#FF9900" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="5" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btn2BorderRadius" mktoname="Button Border Radius (px)" default="15" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="btn3BorderRadius" mktoname="Button Border Radius (px)" default="100" />
     <meta mktoModuleScope="true" class="mktoString" id="btnText" mktoName="Button Text" default="Read More">
     <meta mktoModuleScope="true" class="mktoString" id="btnText-dynamic" mktoName="Button Text dynamic" default="Read More">
     <meta mktoModuleScope="true" class="mktoNumber" id="btn1FontSize" mktoname="Button Font Size (px)" default="18" />
@@ -114,6 +118,16 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoString" id="DividerWidth" mktoname="Divider Width (%)" default="90" />
     <meta mktoModuleScope="true" class="mktoNumber" id="btnFontSize" mktoname="Button Font Size (px)" default="16" />
     <meta mktoModuleScope="true" class="mktoString" id="btnText2" mktoName="Button Text" default="Button">
+    <meta mktoModuleScope="true" class="mktoString" id="btn2Text" mktoName="Button Text" default="Text Button">
+    <meta mktoModuleScope="true" class="mktoString" id="btn3Text" mktoName="Button Text" default="Text<br> Button">
+    <meta mktoModuleScope="true" class="mktoString" id="btn4Text" mktoName="Button Text" default="Text Button">
+    <meta mktoModuleScope="true" class="mktoString" id="btn2padding-tb" mktoName="Button 2 Padding Top/Btm" default="13">
+    <meta mktoModuleScope="true" class="mktoString" id="btn2padding-lr" mktoName="Button 2 Padding Top/Btm" default="35">
+    <meta mktoModuleScope="true" class="mktoString" id="btn3padding-tb" mktoName="Button 3 Padding Top/Btm" default="41">
+    <meta mktoModuleScope="true" class="mktoString" id="btn3padding-lr" mktoName="Button 3 Padding Top/Btm" default="35">
+    <meta mktoModuleScope="true" class="mktoString" id="btn4padding-tb" mktoName="Button 4 Padding Top/Btm" default="20">
+    <meta mktoModuleScope="true" class="mktoString" id="btn4padding-lr" mktoName="Button 4 Padding Top/Btm" default="35">
+    <meta mktoModuleScope="true" class="mktoString" id="btn4-width" mktoName="Button 4 width" default="350">
 
     <meta mktoModuleScope="true" class="mktoList" id="alignCenterlogo" mktoName="Logo Align" values="left,center,right" default="center" />
     <meta mktoModuleScope="true" class="mktoList" id="alignCenter" mktoName="Align" values="left,center,right" default="center" />
@@ -130,6 +144,8 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="logowidth2" mktoname="Logo Width (px)" default="80" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logocolwidth" mktoname="Column Width (px)" default="215" />
     <meta mktoModuleScope="true" class="mktoNumber" id="logocolwidth2" mktoname="Column Width (px)" default="100" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="imgcolwidth" mktoname="Column Width (%)" default="100" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="imgcolwidth2" mktoname="Column Width (%)" default="60" />
 
     <title>{{my.ViewAsWebpage Title}}</title>
     <link rel="icon" href="{{my.Favicon URL}}" type="image/x-icon">
@@ -1413,36 +1429,31 @@ font-family: Arial, serif !important;
               <tr>
                 <td width="${icon-width}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${icon-width1}px;padding-right:${icon-padding}px;">
                   <div class="mktoText" mktoName="Icon 1" id="icon11">
-                    <a href="https://www.instagram.com/neurogym/" target="_blank"><img alt="instagram icon" width="${icon-width}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/instagram-slategrey.png" style="width:${icon-width}px!important;height:auto!important;max-width:${icon-width}px!important;"
-                                                                                       /></a>
+                    <a href="https://www.instagram.com/neurogym/" target="_blank"><img alt="instagram icon" width="${icon-width}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/instagram-slategrey.png" style="width:${icon-width}px!important;height:auto!important;max-width:${icon-width}px!important;"/></a>
                   </div>
                 </td>
 
                     <td width="${icon-width2}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${icon-width2}px;padding-right:${icon-padding}px;">
                   <div class="mktoText" mktoName="Icon 2" id="icon12">
-                    <a href="https://www.facebook.com/johnassarafpage" target="_blank"><img alt="facebook icon" width="${icon-width2}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/facebook-slategrey.png" style="width:${icon-width2}px!important;height:auto!important; max-width:${icon-width2}px!important;"
-                                                                                            /></a>
+                    <a href="https://www.facebook.com/johnassarafpage" target="_blank"><img alt="facebook icon" width="${icon-width2}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/facebook-slategrey.png" style="width:${icon-width2}px!important;height:auto!important; max-width:${icon-width2}px!important;"/></a>
                   </div>
                 </td>
 
                    <td width="${icon-width3}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${icon-width3}px;padding-right:${icon-padding}px;">
                   <div class="mktoText" mktoName="Social Icon 3" id="icon13">
-                    <a href="https://www.youtube.com/c/johnassaraf" target="_blank"><img alt="youtube icon" width="${icon-width3}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/youtube-saltegrey.png" style="width:${icon-width3}px!important;height:auto!important; max-width:${icon-width3}px!important;"
-                                                                                         /></a>
+                    <a href="https://www.youtube.com/c/johnassaraf" target="_blank"><img alt="youtube icon" width="${icon-width3}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/youtube-saltegrey.png" style="width:${icon-width3}px!important;height:auto!important; max-width:${icon-width3}px!important;"/></a>
                   </div>
                 </td>
 
                     <td width="${icon-width4}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${icon-width4}px;padding-right:${icon-padding}px;">
                   <div class="mktoText" mktoName="Social Icon 4" id="icon14">
-                    <a href="https://www.linkedin.com/in/johnassaraf/" target="_blank"><img alt="linkedin icon" width="${icon-width4}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/lnin-saltegrey.png" style="width:${icon-width4}px!important;height:auto!important; max-width:${icon-width4}px!important;"
-                                                                                            /></a>
+                    <a href="https://www.linkedin.com/in/johnassaraf/" target="_blank"><img alt="linkedin icon" width="${icon-width4}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/lnin-saltegrey.png" style="width:${icon-width4}px!important;height:auto!important; max-width:${icon-width4}px!important;"/></a>
                   </div>
                 </td>
 
                     <td width="${icon-width5}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${icon-width5}px;">
                   <div class="mktoText" mktoName="Social Icon 5" id="icon15">
-                    <a href="https://twitter.com/johnassaraf" target="_blank"><img alt="instagram icon" width="${icon-width5}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/twitter-slategrey.png" style="width:${icon-width5}px!important;height:auto!important; max-width:${icon-width5}px!important;"
-                                                                                   /></a>
+                    <a href="https://twitter.com/johnassaraf" target="_blank"><img alt="instagram icon" width="${icon-width5}" height="auto" src="http://join.myneurogym.com/rs/519-VOW-812/images/twitter-slategrey.png" style="width:${icon-width5}px!important;height:auto!important; max-width:${icon-width5}px!important;"/></a>
                   </div>
                 </td>
               </tr>
@@ -1627,8 +1638,206 @@ font-family: Arial, serif !important;
 
 </table>
 <!-- end of Module 9 -->
+
+
+ <!--Module 10 Rounded Button Module-->
+<table class="mktoModule" mktoName="Module 10 Rounded Button Module" id="btnModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+<tr>
+<td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<div class="mktoText" id="btn" mktoname="Button">
+    <div>
+        <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
+            <tbody>
+                <tr>
+                    <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding:${btn2padding-tb}px ${btn2padding-lr}px; border-radius: ${btn2BorderRadius}px;">
+                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btn2Text}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</td>
+</tr>
+<tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--end of Module 10 Rounded Button Module-->                                
+
+ <!--Module 10-2 Circle Button Module-->
+<table class="mktoModule" mktoName="Module 10-2 Circle Button Module" id="btnModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+<tr>
+<td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<div class="mktoText" id="btn" mktoname="Button">
+    <div>
+        <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
+            <tbody>
+                <tr>
+                    <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding:${btn3padding-tb}px ${btn3padding-lr}px; border-radius: ${btn3BorderRadius}px;">
+                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btn3Text}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</td>
+</tr>
+<tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--end of Module 10-2 Circle Button Module-->   
+                         
+ <!--Module 10-3 Rectangular Button Module-->
+<table class="mktoModule" mktoName="Module 10-3 Rectangular Button Module" id="btnModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+<tr>
+<td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<div class="mktoText" id="btn" mktoname="Button">
+    <div>
+        <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
+            <tbody>
+                <tr>
+                    <td width="${btn4-width}" bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding:${btn4padding-tb}px ${btn4padding-lr}px; border-radius: ${btn4BorderRadius}px;max-width:${btn4-width}px;">
+                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btn4Text}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</td>
+</tr>
+<tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--end of Module 10-3 Rectangular Button Module-->
                                                                                 
-                                                                                
+
+<!-- Module 11 -->
+<table class="mktoModule" mktoName="Module 11 - Social Media Template #3" id="imgRight5" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;"
+       border="0" width="100%">
+  <tr>
+    <td bgColor="${mod-bg-color}" valign="middle" style="background-Color:${mod-bg-color};vertical-align: middle;">
+       
+      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:540px;border-collapse: collapse;border-spacing: 0;" border="0" width="540">
+        <tr>
+          <td  height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor}; text-align: ${alignCenter};">
+            <div class="mktoText" mktoName="Headline" id="Headline-text8">
+              <div>Text</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align: ${alignCenter};">
+            <div class="mktoText" mktoName="Text" id="imgleft-copy2">
+              <div>Mini Description</div>
+            </div>
+          </td>
+        </tr>     
+        <tr>
+          <td class="center" align="${alignCenter};" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${imgcolwidth}%">
+              <tr>
+                <td height="${social-top_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td width="${image-width}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${image-width1}px;padding-right:${image-padding}px;">
+                  <div class="mktoText" mktoName="image 1" id="image11">
+                    <a href="#" target="_blank"><img alt="image" width="100%" height="auto" src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" style="width:100%!important;height:auto!important;max-width:100%!important;display:block;"/></a>
+                  </div>
+                </td>
+
+                 <td width="${image-width}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${image-width1}px;padding-right:${image-padding}px;">
+                  <div class="mktoText" mktoName="image 1" id="image11">
+                    <a href="#" target="_blank"><img alt="image" width="100%" height="auto" src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" style="width:100%!important;height:auto!important;max-width:100%!important;display:block;"/></a>
+                  </div>
+                </td>
+
+               <td width="${image-width}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${image-width1}px;">
+                  <div class="mktoText" mktoName="image 1" id="image11">
+                    <a href="#" target="_blank"><img alt="image" width="100%" height="auto" src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" style="width:100%!important;height:auto!important;max-width:100%!important;"/></a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td height="${social-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+              </tr>
+
+            </table>
+            <table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${imgcolwidth2}%">
+              <tr>
+                <td height="${social-top_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+              </tr>
+
+              <tr>
+            
+                   <td width="${image-width}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${image-width1}px;padding-right:${image-padding}px;">
+               <div class="mktoText" mktoName="image 1" id="image11">
+                    <a href="#" target="_blank"><img alt="image" width="100%" height="auto" src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" style="width:100%!important;height:auto!important;max-width:100%!important;display:block;"/></a>
+                  </div>
+                </td>
+
+                    <td width="${image-width}" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:${image-width1}px;">
+                 <div class="mktoText" mktoName="image 1" id="image11">
+                    <a href="#" target="_blank"><img alt="image" width="100%" height="auto" src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" style="width:100%!important;height:auto!important;max-width:100%!important;display:block;"/></a>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td height="${social-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+              </tr>
+
+            </table>
+          </td>
+        </tr>
+                                                              
+        <tr>
+          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+</table>
+<!-- end of Module 11 -->
+
+                                                  
 
 <!--Footer Module - Social Media-->
 <table class="mktoModule" mktoName="Footer Social Media Module" id="FooterModule1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
