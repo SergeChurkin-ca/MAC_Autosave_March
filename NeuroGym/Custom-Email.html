@@ -71,6 +71,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="left-col-width3" mktoname="Left Column Widt (%)" default="100" />
     <meta mktoModuleScope="true" class="mktoNumber" id="right-col-width" mktoname="Right Column Widt (%)" default="50" />
     <meta mktoModuleScope="true" class="mktoNumber" id="icon-padding" mktoname="Icon padding right" default="20" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="col-padding0" mktoname="Column padding" default="0" />
     <meta mktoModuleScope="true" class="mktoNumber" id="col-padding" mktoname="Column padding" default="60" />
     <meta mktoModuleScope="true" class="mktoNumber" id="col-padding30" mktoname="Column padding" default="30" />
     <meta mktoModuleScope="true" class="mktoNumber" id="icons-row-padding" mktoname="Icon padding right" default="15" />
@@ -177,7 +178,9 @@ font-family: Arial, serif !important;
     <style media="all">
       /* CLIENT-SPECIFIC STYLES */
       /* Outlook.com / Hotmail */
-
+.mktoModule {
+  border: solid 1px pink;
+}
       .ExternalClass {
         width: 100%;
       }
@@ -733,6 +736,116 @@ font-family: Arial, serif !important;
                 <!-- NEW MODULES -->
                 <!-- ==================================== -->
 
+<!-- Module 1 - 3 columns -->
+<table class="mktoModule" mktoName="Module 1 - Images staggered with middle image forward" id="threeCol" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:540px;border-collapse: collapse;border-spacing: 0;" border="0" width="540">
+<tr>
+<td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+                                                                    <tr>
+                                                                         <tr>
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
+                        <div class="mktoText" mktoName="Left Headline" id="threeHeadline-texta">
+                            <div>Title</div>
+                        </div>
+                    </td>
+                                                                      </tr>
+             <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+<td>
+<table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <th width="180" align="left" class="block" valign="top" style="vertical-align:${valign-middle};">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                            <div>
+                                <img src="https://dummyimage.com/179x200/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${img-btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            </table>
+        </th>
+        <th class="hidden" style="font-size:1px; line-height: 1px;" width="${col-padding0">&nbsp;</th>
+            <th width="180" align="left" class="block" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                            <div>
+                                <img src="https://dummyimage.com/179x250/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                  <tr>
+                    <td height="${img-btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            </table>
+        </th>
+        
+        <th class="hidden" style="font-size:1px; line-height: 1px;" width="${col-padding0}">&nbsp;</th>
+                 <th width="180" align="left" class="block" valign="top" style="vertical-align:${valign-middle};">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                            <div>
+                                <img src="https://dummyimage.com/179x200/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                  <tr>
+                    <td height="${img-btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            </table>
+        </th>
+    </tr>
+</table>
+</td>
+</tr>
+
+         
+        <tr>
+          <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor}; text-align: ${alignCenter};">
+            <div class="mktoText" mktoName="Headline" id="Headline-text4">
+              <div>Title</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td height="${title2_btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+        </tr>
+        <tr>
+          <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}" align="${alignCenter}">
+            <div class="mktoText" mktoName="Text" id="imgright-SubHeadline6">
+              <div>Description: Sed ut perspiciatis unde omnis.</div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+
+                                                                  </table>
+                                                                    
+</td>
+</tr>
+</table>
+<!-- end of Module 1 - 3 columns-->                                                  
+
                 <!--Module 2-->
                 <table class="mktoModule" mktoName="Module 2- Image with box (title - image - button)" id="ResImageModule2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;"
                        border="0" width="100%">
@@ -783,7 +896,7 @@ font-family: Arial, serif !important;
                                     <tr>
                                       <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -865,7 +978,7 @@ font-family: Arial, serif !important;
                                     <tr>
                                       <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};" align="${alignCenter}">
                                         <div class="mktoText" mktoName="Headline" id="imgright-headline">
-                                          <div>TItle</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -922,7 +1035,7 @@ font-family: Arial, serif !important;
                                     <tr>
                                       <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};" align="${alignCenter}">
                                         <div class="mktoText" mktoName="Headline" id="imgright-headline2">
-                                          <div>TItle</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -989,7 +1102,7 @@ font-family: Arial, serif !important;
                         <tr>
                           <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};" align="${alignCenter}">
                             <div class="mktoText" mktoName="Headline" id="imgright-headline3">
-                              <div>TItle</div>
+                              <div>Title</div>
                             </div>
                           </td>
                         </tr>
@@ -1513,7 +1626,7 @@ font-family: Arial, serif !important;
                         <tr>
                           <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};" align="${alignCenter}">
                             <div class="mktoText" mktoName="Headline" id="imgLeft-headline">
-                              <div>TItle</div>
+                              <div>Title</div>
                             </div>
                           </td>
                         </tr>
@@ -1896,7 +2009,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -1932,7 +2045,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -1968,7 +2081,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -2058,7 +2171,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -2094,7 +2207,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -2130,7 +2243,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -2408,7 +2521,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -2444,7 +2557,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -2480,7 +2593,7 @@ font-family: Arial, serif !important;
                          <tr>
                                       <td class="block" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize24}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
-                                          <div>TITLE</div>
+                                          <div>Title</div>
                                         </div>
                                       </td>
                                     </tr>
@@ -2778,6 +2891,101 @@ font-family: Arial, serif !important;
 </table>
 <!--end of Module 16 3 Col-->
 
+<!--Module 17 2 Col Module-->
+<table class="mktoModule" mktoName="Module 17 - Two Column with Image" id="twoColImg" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:540px;border-collapse: collapse;border-spacing: 0;" border="0" width="540">
+<tr>
+<td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <th width="285" align="left" class="block" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Image" id="leftImage-b">
+                            <div>
+                                <img src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" width="285" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"/>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px; font-weight:700;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
+                        <div class="mktoText" mktoName="Headline" id="Headline-text-b">
+                            <div>Lorem Ipsum Dolor Sit Amet</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
+                        <div class="mktoText" mktoName="Text" id="SubHeadline-text-b">
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                    </td>
+                </tr>
+            
+            </table>
+        </th>
+        <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th width="285" align="left" class="block top_pad" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
+                        <div class="mktoImg" mktoname="Image" id="leftImage-a">
+                            <div>
+                                <img src="https://dummyimage.com/285x170/EEF3F9/B3B8C4" width="285" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter}; ">
+                        <div class="mktoText" mktoName="Headline" id="Headline-text-a">
+                            <div>Lorem Ipsum Dolor Sit Amet</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
+                        <div class="mktoText" mktoName="Text" id="SubHeadline-text-a">
+                            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </div>
+                    </td>
+                </tr>
+          
+            </table>
+        </th>
+    </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--end of Module 17 - 2 Col Module-->
+                                                            
 <!--Footer Module - Social Media-->
 <table class="mktoModule" mktoName="Footer Social Media Module" id="FooterModule1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
   <tr>
