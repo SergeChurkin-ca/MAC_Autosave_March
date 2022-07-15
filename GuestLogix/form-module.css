@@ -1,127 +1,113 @@
-.section-7 .flex-container {
-    flex-wrap: wrap;
-    gap: 2rem;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.section-7 .column-1,
-.section-7 .column-2 {
-    width: calc((100% / 2) - 3rem);
-    margin: 0 auto;
-    flex: 1 0 300px;
-    max-width: 550px;
-}
-
-.section-7 .column-1 {
-    background-color: #d9d9d9;
-    border-radius: 20px;
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-}
-
-.section-7 input,
-.section-7 textarea {
-    border: none;
-    border-bottom: solid 1px #d9d9d9;
+.bg-video-wrap {
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    font-size: 18px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    height: 75vh;
+    min-height: 540px
 }
 
-.section-7 label {
-    font-size: 18px;
+video {
+    min-width: 100%;
+    min-height: 75vh;
+    z-index: 1;
 }
 
-.section-7 .hs-form-field {
-    margin: 1rem 0;
+.overlay {
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
-.hs-button {
-    width: auto !important;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    border-radius: 15px;
+.overlay h1 {
+    color: #fff;
 }
 
- ::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: transparent;
+::-webkit-scrollbar {
+    width: 20px;
 }
 
- :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: transparent;
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 5px;
 }
 
- ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: transparent;
+.video {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: block;
+    border: none;
 }
 
- :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: transparent;
+.video-popup {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 10px 10px 10px 10px black;
 }
 
-input::placeholder {
-    color: transparent;
+.popup-bg {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
 }
 
-textarea::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: transparent;
-}
-
-textarea:-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: transparent;
-}
-
-textarea::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: transparent;
-}
-
-textarea:-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: transparent;
-}
-
-textarea::placeholder {
-    color: transparent;
-}
-
-.section-7 input:focus-visible,
-.section-7 textarea:focus-visible {
-    outline: none;
-    border-bottom: solid 2px #d9d9d9;
+.popup-content {
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    width: 800px;
+    height: auto;
+    z-index: 99;
 }
 
 @media (max-width: 800px) {
-    .section-7 .flex-container {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .section-7 .column-1,
-    .section-7 .column-2 {
-        padding-top: 2rem !important;
-        padding: 0.5rem 0 1rem !important;
-    }
-    .section-7 .column-1,
-    .section-7 .column-2 {
+    .popup-content {
+        background: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 100%;
-        margin: 0 auto !important;
-    }
-    .section-7 .flex-container p,
-    .section-7 .column-1 .hs_cos_wrapper,
-    .section-7 form {
-        margin: 0 5% !important;
+        height: auto;
     }
 }
 
-
-/* error message */
-
-.hs-error-msg {
-    color: rgb(244, 5, 5) !important;
+@media (max-width: 480px) {
+    .bg-video-wrap {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+    video {
+        min-width: 100%;
+        min-height: auto;
+        z-index: 1;
+    }
+    .overlay {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: none;
+        z-index: 2;
+    }
 }
