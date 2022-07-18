@@ -66,7 +66,7 @@ font-family: Arial, serif !important;
         }
     </style>
     <style>
-        * {
+    * {
             font-family: 'Open Sans', sans-serif;
         }
         
@@ -199,24 +199,40 @@ font-family: Arial, serif !important;
             .footer-icons.center .footer-rightcol {
                 width: 110px !important;
             }
-            @media only screen and (max-width: 400px) {
-                .inner_table2 {
-                    width: 90% !important;
-                    margin: 0 auto !important;
-                }
-                .block2 {
-                    display: block;
-                    margin: 0 auto;
-                    float: none !important;
-                    width: 100% !important;
-                }
-                .center2 {
-                    text-align: center !important;
-                    margin: 0 auto;
-                    float: none !important;
-                }
+        }
+        
+        @media only screen and (max-width:600px) {
+            .wavy-background {
+                background-size: 130% !important;
+                background-position: left top !important;
             }
         }
+        
+        @media only screen and (max-width:480px) {
+            .wavy-background {
+                background-size: 200% !important;
+                background-position: left top !important;
+            }
+        }
+        
+        @media only screen and (max-width: 400px) {
+            .inner_table2 {
+                width: 90% !important;
+                margin: 0 auto !important;
+            }
+            .block2 {
+                display: block;
+                margin: 0 auto;
+                float: none !important;
+                width: 100% !important;
+            }
+            .center2 {
+                text-align: center !important;
+                margin: 0 auto;
+                float: none !important;
+            }
+        }
+    }
     </style>
 </head>
 
@@ -379,7 +395,7 @@ font-family: Arial, serif !important;
                                             </tr>
                                             <tr>
                                                 <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size:28px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color:#06092E; text-align: left;">
-                                                    <div class="mktoText" mktoName="Headline" id="Headline-text2">
+                                                    <div id="Headline-text2">
                                                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                                                     </div>
                                                 </td>
@@ -402,7 +418,7 @@ font-family: Arial, serif !important;
                                             </tr>
                                             <tr>
                                                 <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size:22px; font-weight:700;line-height: 145%; mso-line-height-rule: exactly; color:#06092E; text-align: left;">
-                                                    <div class="mktoText" mktoName="SubHeadline" id="SubHeadline-text">
+                                                    <div id="SubHeadline-text">
                                                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                                                     </div>
                                                 </td>
@@ -511,6 +527,200 @@ font-family: Arial, serif !important;
                             <!--Button Module-->
 
 
+                            <!--Wavy Headline Module-->
+                            <table pardot-removable pardot-repeatable id="wavy-headline1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:90%;border-collapse: collapse;border-spacing: 0;" border="0" width="90%">
+                                <tr>
+                                    <td class="wavy-background" bgcolor="#fff" valign="top" background="./wave-divider.png" style="background-image:url(./wave-divider.png);background-color:#fff;background-repeat: no-repeat; background-size:contain;background-position:top;vertical-align: middle;">
+                                        <!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:${outlook-ht1}px;">
+<v:fill type="frame" src="./wave-divider.png" Color="${banner-bg-color}" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+                                        <table cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:640px;border-spacing: 0px;border-collapse: collapse;" border="0" width="640">
+                                            <tr>
+                                                <td valign="top">
+                                                    <table class="inner_table" width="590" style="margin: 0 auto; width: 590px; border-spacing: 0px; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                        <tr>
+                                                            <td pardot-region="pardot" height="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="font-family:Arial, sans-serif; color:#fff;font-weight:bold; font-size: 30px; line-height: 145%; mso-line-height-rule: exactly; text-align: left;">
+                                                                <div id="bannerhead">
+                                                                    <div>Headline</div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td pardot-region="pardot" height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                        </tr>
+
+
+                                                        <tr>
+
+                                                            <tr>
+                                                                <td pardot-region="pardot" height="60" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                            </tr>
+                                                    </table>
+                                                </td>
+                                                </tr>
+                                        </table>
+                                        <!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]-->
+                                    </td>
+                                    </tr>
+                            </table>
+                            <!--End of Wavy Headline Module-->
+
+
+                            <!--Image Left Text Right with cta -->
+                            <table pardot-removable pardot-repeatable id="imgleft1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px;border-collapse: collapse;border-spacing: 0;" border="0" width="640">
+                                            <tr>
+                                                <td pardot-region="pardot" height="25" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                        <tr>
+                                                            <th width="300" align="left" class="block center" valign="top" style="vertical-align: top;">
+                                                                <div id="imgleft-img">
+                                                                    <div>
+                                                                        <img class="block" pardot-region="editable-image" pardot-region-type="image" src="./im2.png" width="300" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                                                            <th width="300" align="left" class="block top_pad" valign="top" style="vertical-align: top;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td style="font-family: 'Open Sans',Arial, sans-serif; font-size:16px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: #06092E;width:300px;">
+                                                                            <div pardot-region="simple-text" pardot-region-type="simple" id="imgleft-headline">
+                                                                                Another headline
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td pardot-region="pardot" height="1" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: 'Open Sans',Arial, sans-serif; font-size:16px; line-height: 145%; mso-line-height-rule: exactly; color:#000;">
+                                                                            <div pardot-region="simple-text" pardot-region-type="simple" id="imgleft-copy">
+                                                                                [Try not to have too many lines here or it will create a blank space below the cover – 250 characters] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td pardot-region="pardot" height="5" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div id="imgleft-link">
+                                                                                <div>
+                                                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <a pardot-region="editable-link" pardot-region-type="link" href="#" target="_blank" rel="noreferrer" style="color:#290AC4;">Link</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td pardot-region="pardot" height="10" style="line-height:10px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Image Left Text Right with cta-->
+
+                            <!--Image Right Text Left with btn-->
+                            <table pardot-removable pardot-repeatable id="imgleft1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px;border-collapse: collapse;border-spacing: 0;" border="0" width="640">
+                                            <tr>
+                                                <td pardot-region="pardot" height="20" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                        <tr>
+                                                            <th dir="ltr" width="300" align="left" class="block center" valign="top" style="vertical-align: top;">
+                                                                <div id="imgRight-img">
+                                                                    <div>
+                                                                        <img class="block" pardot-region="editable-image" pardot-region-type="image" src="./img3.png" width="300" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:300px;"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                                                            <th dir="ltr" width="300" align="left" class="block top_pad" valign="top" style="vertical-align: top;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td style="font-family: 'Open Sans',Arial, sans-serif; font-size:16px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: #06092E;">
+                                                                            <div pardot-region="simple-text" pardot-region-type="simple" id="imgleft-headline">
+                                                                                Another headline
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td pardot-region="pardot" height="1" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: 'Open Sans',Arial, sans-serif; font-size:16px; line-height: 145%; mso-line-height-rule: exactly; color:#000000;">
+                                                                            <div pardot-region="simple-text" pardot-region-type="simple" id="imgleft-copy">
+                                                                                [Try not to have too many lines here or it will create a blank space below the cover – 250 characters] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td pardot-region="pardot" height="5" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div id="imgleft-link">
+                                                                                <div>
+                                                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <a pardot-region="editable-link" pardot-region-type="link" href="https://www.google.com/url?q=http://nelson.com&amp;source=gmail-html&amp;ust=1656612434746000&amp;usg=AOvVaw1Po13tX1LEMbV4-rvwkzIL" target="_blank" rel="noreferrer" style="color:#290AC4;">Link</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td pardot-region="pardot" height="10" style="line-height:40px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Image Right Text Left with btn-->
+
                             <!--Wavy Divider Module-->
                             <table pardot-removable pardot-repeatable id="DividerModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
@@ -523,7 +733,7 @@ font-family: Arial, serif !important;
                                                 <td class="fullWid center" align="center" style="text-align:center; font-size: 1px; line-height: 1px;">
                                                     <div id="Image1">
                                                         <div>
-                                                            <img pardot-region="editable-image" pardot-region-type="image" class="imgmaxwidth" src="./wave-divider.png" width="640" border="0" style="-ms-interpolation-mode:bicubic;
+                                                            <img pardot-region="editable-image" pardot-region-type="image" class="imgmaxwidth" src="./wave-divider-2.png" width="640" border="0" style="-ms-interpolation-mode:bicubic;
                                                         border-collapse:collapse; width:640px; padding:0px; margin:0px auto; border-spacing:0;max-width:100%;" />
                                                         </div>
                                                     </div>
@@ -537,178 +747,7 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                 </table>
-                <!--Divider Module-->
-
-
-                <!--Image Left Text Right with cta -->
-                <table pardot-removable pardot-repeatable id="imgleft1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                    <tr>
-                        <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
-                            <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px;border-collapse: collapse;border-spacing: 0;" border="0" width="640">
-                                <tr>
-                                    <td pardot-region="pardot" height="5" style="line-height:5px;font-size:1px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                            <tr>
-                                                <th width="300" align="left" class="block center" valign="top" style="vertical-align: top;">
-                                                    <div id="imgleft-img">
-                                                        <div>
-                                                            <img pardot-region="editable-image" pardot-region-type="image" src="https://info.nelson.com/l/985611/2022-06-29/61cfv/985611/1656532152ogaruRg2/tenmplate_graphics1.png" width="236" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </th>
-                                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-                                                <th width="300" align="left" class="block top_pad" valign="top" style="vertical-align: top;">
-                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                                        <tr>
-                                                            <td style="font-family: 'Open Sans',Arial, sans-serif; font-size:16px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color:#000000;">
-                                                                <div pardot-region="simple-text" pardot-region-type="simple" id="imgleft-headline">
-                                                                    Another headline
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td pardot-region="pardot" height="1" style="line-height:5px;font-size:1px;">&nbsp;</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="font-family: 'Open Sans',Arial, sans-serif; font-size:16px; line-height: 145%; mso-line-height-rule: exactly; color:#000000;">
-                                                                <div pardot-region="simple-text" pardot-region-type="simple" id="imgleft-copy">
-
-                                                                    Another headline [Try not to have too many lines here or it will create a blank space below the cover – 250 characters] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td pardot-region="pardot" height="5" style="line-height:5px;font-size:1px;">&nbsp;</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div id="imgleft-link">
-                                                                    <div>
-                                                                        <table cellpadding="0" cellspacing="0" border="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <a pardot-region="editable-link" pardot-region-type="link" href="https://www.google.com/url?q=http://nelson.com&amp;source=gmail-html&amp;ust=1656612434746000&amp;usg=AOvVaw1Po13tX1LEMbV4-rvwkzIL" target="_blank" rel="noreferrer" style="color:#0000ee">Link</a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </th>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td pardot-region="pardot" height="10" style="line-height:10px;font-size:1px;">&nbsp;</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                <!--Image Left Text Right with cta-->
-
-                <!--Image Right Text Left with btn-->
-                <table pardot-removable pardot-repeatable id="imgleft1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                    <tr>
-                        <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
-                            <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px;border-collapse: collapse;border-spacing: 0;" border="0" width="640">
-                                <tr>
-                                    <td pardot-region="pardot" height="5" style="line-height:5px;font-size:1px;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                            <tr>
-                                                <th dir="ltr" width="300" align="left" class="block center" valign="top" style="vertical-align: top;">
-                                                    <div id="imgRight-img">
-                                                        <div>
-                                                            <img pardot-region="editable-image" pardot-region-type="image" src="https://info.nelson.com/l/985611/2022-06-29/61cfr/985611/1656532137Y53r0DBD/tenmplate_graphics2.png" width="236" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </th>
-                                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-                                                <th dir="ltr" width="300" align="left" class="block top_pad" valign="top" style="vertical-align: top;">
-                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                                        <tr>
-                                                            <td style="font-family: 'Open Sans',Arial, sans-serif; font-size:16px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color:#000000;">
-                                                                <div pardot-region="simple-text" pardot-region-type="simple" id="imgleft-headline">
-                                                                    Another headline
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td pardot-region="pardot" height="1" style="line-height:5px;font-size:1px;">&nbsp;</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="font-family: 'Open Sans',Arial, sans-serif; font-size:16px; line-height: 145%; mso-line-height-rule: exactly; color:#000000;">
-                                                                <div pardot-region="simple-text" pardot-region-type="simple" id="imgleft-copy">
-                                                                    [Try not to have too many lines here or it will create a blank space below the cover – 250 characters] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius. </div>
-
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td pardot-region="pardot" height="5" style="line-height:5px;font-size:1px;">&nbsp;</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div id="imgleft-link">
-                                                                    <div>
-                                                                        <table cellpadding="0" cellspacing="0" border="0">
-                                                                            <tbody>
-                                                                                <tr>
-                                                                                    <td>
-                                                                                        <a pardot-region="editable-link" pardot-region-type="link" href="https://www.google.com/url?q=http://nelson.com&amp;source=gmail-html&amp;ust=1656612434746000&amp;usg=AOvVaw1Po13tX1LEMbV4-rvwkzIL" target="_blank" rel="noreferrer" style="color:#0000ee">Link</a>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </th>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td pardot-region="pardot" height="10" style="line-height:40px;font-size:1px;">&nbsp;</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                <!--Image Right Text Left with btn-->
-
-                <!--Dotted Divider Module-->
-                <table pardot-removable pardot-repeatable id="DividerModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                    <tr>
-                        <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;border-top:4px dotted #ff6600;">
-                            <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                <tr>
-                                    <td pardot-region="pardot" height="1" style="line-height:10px;font-size:1px;">&nbsp;<br></td>
-                                </tr>
-                                <tr>
-                                    <td class="center" bgcolor="#fff" height="5" style="line-height:1px;font-size:1px; background-color:#ffffff;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td pardot-region="pardot" height="5" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                <!--Divider Module-->
+                <!--Wavy Divider Module-->
 
                 <!--2 Col Module-->
                 <table pardot-removable pardot-repeatable id="twoColImg" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -728,8 +767,7 @@ font-family: Arial, serif !important;
                                                             <td class="center" align="left" valign="top" style="vertical-align: top;">
                                                                 <div id="leftImage-b">
                                                                     <div>
-                                                                        <img pardot-region="editable-image" pardot-region-type="image" src="https://info.nelson.com/l/985611/2022-06-29/61cn8/985611/1656538088Vjp4Slzy/template_graphics3.jpg" width="285" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
-                                                                        />
+                                                                        <img pardot-region="editable-image" pardot-region-type="image" src="./img4.png" width="285" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -746,14 +784,14 @@ font-family: Arial, serif !important;
                                                                     <div pardot-region="simple-text" pardot-region-type="simple" id="SubHeadline-text-b">
                                                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                                     </div>
-                                                                    <a pardot-region="editable-link" pardot-region-type="link" href="https://www.google.com/url?q=http://Nelson.com&amp;source=gmail-html&amp;ust=1656624357426000&amp;usg=AOvVaw3gvhCgpNrl3HMrBy-4zu6K" target="_blank" rel="noreferrer" style="color:#0000ee;">add a link or not</a>
+                                                                    <a pardot-region="editable-link" pardot-region-type="link" href="#" target="_blank" rel="noreferrer" style="color:#290AC4;">add a link or not</a>
 
                                                                 </div>
 
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td pardot-region="pardot" height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                            <td pardot-region="pardot" height="30" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                             <td align="center">
@@ -762,7 +800,7 @@ font-family: Arial, serif !important;
                                                                         <table cellpadding="0" cellspacing="0" border="0" align="center">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td bgcolor="#0077a" style="font-weight:700; text-align: center;border:1px solid #0077ab; color:#00000; background-color:#0077ab;text-decoration:none; font-size:18px; line-height:110%; font-family:'Open Sans',Arial, sans-serif; padding: 13px 115px; border-radius:4px;">
+                                                                                    <td bgcolor="#290AC4" style="font-weight:700; text-align: center;border:1px solid #290AC4; color:#000; background-color:#290AC4;text-decoration:none; font-size:18px;line-height:110%; font-family:'Open Sans',Arial, sans-serif; padding: 13px 40px; border-radius:30px;">
                                                                                         <a pardot-region="editable-link" pardot-region-type="link" style="text-decoration:none; color:#ffffff;" href="#">Buy Now</a>
                                                                                     </td>
                                                                                 </tr>
@@ -781,8 +819,7 @@ font-family: Arial, serif !important;
                                                             <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
                                                                 <div id="leftImage-a">
                                                                     <div>
-                                                                        <img pardot-region="editable-image" pardot-region-type="image" src="https://info.nelson.com/l/985611/2022-06-29/61cn5/985611/1656538070ZikZr0Rr/template_graphics4.jpg" width="285" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
-                                                                        />
+                                                                        <img pardot-region="editable-image" pardot-region-type="image" src="./img5.png" width="285" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -797,13 +834,13 @@ font-family: Arial, serif !important;
                                                                     <div pardot-region="simple-text" pardot-region-type="simple" id="SubHeadline-text-b">
                                                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                                     </div>
-                                                                    <a pardot-region="editable-link" pardot-region-type="link" href="https://www.google.com/url?q=http://Nelson.com&amp;source=gmail-html&amp;ust=1656624357426000&amp;usg=AOvVaw3gvhCgpNrl3HMrBy-4zu6K" target="_blank" rel="noreferrer" style="color:#0000ee;">add a link or not</a>
+                                                                    <a pardot-region="editable-link" pardot-region-type="link" href="#" target="_blank" rel="noreferrer" style="color:#290AC4">add a link or not</a>
 
                                                                 </div>
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td pardot-region="pardot" height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                            <td pardot-region="pardot" height="30" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                                         </tr>
                                                         <tr>
                                                             <td align="center">
@@ -812,7 +849,7 @@ font-family: Arial, serif !important;
                                                                         <table cellpadding="0" cellspacing="0" border="0" align="center">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td bgcolor="#007ab" style="font-weight:700; text-align: center;border:1px solid #0077ab; color:#00000; background-color:;text-decoration:none; font-size:18px;line-height:110%; font-family:'Open Sans',Arial, sans-serif; padding: 13px 115px; border-radius:4px;">
+                                                                                    <td bgcolor="#007ab" style="font-weight:700; text-align: center;border:1px solid #290AC4; color:#000; background-color:#290AC4;text-decoration:none; font-size:18px;line-height:110%; font-family:'Open Sans',Arial, sans-serif; padding: 13px 40px; border-radius:30px;">
                                                                                         <a pardot-region="editable-link" pardot-region-type="link" style="text-decoration:none; color:#ffffff" href="#">Buy Now</a>
                                                                                     </td>
                                                                                 </tr>
@@ -1014,4 +1051,4 @@ font-family: Arial, serif !important;
 
 </body>
 
-</html
+</htm
