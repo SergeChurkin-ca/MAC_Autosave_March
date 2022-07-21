@@ -1,50 +1,8 @@
-input:not([type="email"]):not([type="submit"]) {
+.MyNelson_Access_Code,
+.MyNelson_Username,
+.myNelson_Digital_Resource_Name,
+.Online_Order_Confirmation,
+.Connect_School_Access_Code,
+.Connect_School_Digital_Resource_Name {
     display: none;
-}
-
-form[data-zi-mapped-form] input[data-zi-input-enriched="false"] {
-    display: block;
-}
-
-form[data-zi-mapped-form] input[data-zi-input-enriched="true"] {
-    display: none;
-}
-
-
-/* ------- */
-
-.mktoForm .mktoFormRow:nth-of-type(1n+2),
-.mktoForm .mktoButtonRow:nth-child(1n+2) {
-    display: none;
-}
-
-.mktoForm[data-zi-managed="false"],
-.mktoForm[data-zi-managed="true"][data-zi-managed-behaviors-ready="true"] {
-    visibility: visible;
-    position: static;
-}
-
-.mktoForm .mktoFormRow[data-zi-managed="true"] {
-    height: 0;
-    max-height: 0;
-    transition: max-height 200ms ease-out;
-    overflow: hidden;
-}
-
-.mktoForm .mktoFormRow[data-zi-managed="true"][data-zi-empty="true"] {
-    height: auto;
-    max-height: 200px;
-    transition: max-height 200ms ease-in;
-}
-
-.mktoForm .mktoFormRow[data-zi-managed][data-mkto-error-ready] {
-    overflow: visible;
-}
-
-.mktoForm .mktoFormRow[data-zi-field-enriched="true"] {
-    display: none;
-}
-
-.mktoForm .mktoFormRow[data-zi-field-enriched="false"] {
-    display: block;
 }
