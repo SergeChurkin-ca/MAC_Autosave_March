@@ -49,7 +49,7 @@ h1,
 h2 {
     font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
     text-transform: uppercase;
-    line-height: 24px;
+    line-height: 120%;
 }
 
 h1 {
@@ -64,7 +64,7 @@ h3 {
     font-family: 'Novecento-WideLight', Arial, sans-serif;
     text-transform: uppercase;
     font-size: 24px;
-    line-height: 22px;
+    line-height: 110%;
 }
 
 p {
@@ -87,13 +87,8 @@ nav {
 nav {
     justify-content: space-between;
     max-width: 1400px;
-    border: solid 1px red;
     margin: 0 auto;
     align-items: center;
-}
-
-.nav-col {
-    border: solid 1px red;
 }
 
 .top-menu {
@@ -102,10 +97,6 @@ nav {
 
 
 /* logo */
-
-.logo-container {
-    border: solid 1px red;
-}
 
 .logo-top {
     width: auto;
@@ -146,41 +137,51 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     background-color: #290AC4;
-    /* height: 30vh; */
-    padding: 2rem 0;
+    padding: 4rem 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 header .banner {
     display: flex;
     width: 100%;
     height: 50vh;
+    max-height: 520px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 header .col-1 {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 header .col-2 {
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 header .flex-column {
     padding: 1rem 0;
     color: #fff;
-    border: solid 1px red;
+    flex: 1 0 250px;
 }
 
 header .img-container {
     width: 450px;
+    max-width: 450px;
+    max-height: 450px;
     height: 450px;
     border-radius: 50%;
     border: solid 7px #ffffff;
     display: flex;
+}
+
+header .img-container {
+    background: url('https://go.pardot.com/l/153091/2022-07-25/pq579r/153091/1658770755jlCw5WoN/starfish_example.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header .img-container img {
@@ -195,14 +196,21 @@ header .curve {
 header svg {
     width: 100%;
     position: absolute;
-    bottom: -5vh;
+    bottom: -4.5vh;
+}
+
+
+/* headline */
+
+.headline {
+    text-align: center;
+    color: #290AC4;
 }
 
 
 /* main */
 
 main {
-    border: solid 1px red;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -211,7 +219,7 @@ main .flex-row {
     gap: 3rem;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 
 main .col-1,
@@ -222,4 +230,34 @@ main .col-2 {
 
 main .img-container {
     margin-top: 3rem;
+}
+
+
+/* form */
+
+form.form input.text:focus,
+form.form select:focus,
+form.form textarea.standard:focus,
+form.form input.text:focus-visible,
+form.form select:focus-visible,
+form.form textarea.standard:focus-visible {
+    outline: none !important;
+}
+
+@media (max-width: 810px) {
+    .banner {
+        height: 100% !important;
+        max-height: unset !important;
+    }
+    .banner .col-2 {
+        align-items: center;
+        margin: 0 auto;
+    }
+    .banner .curve svg {
+        bottom: -1vh;
+    }
+    .banner .img-container {
+        width: 70vw;
+        height: 70vw;
+    }
 }
