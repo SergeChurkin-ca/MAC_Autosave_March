@@ -1,267 +1,315 @@
-/* general setup */
-
-html {
-    scrollbar-width: none;
-}
-
-body {
-    background: #fff;
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-    scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-    /* Safari and Chrome */
-}
-
-ul li {
-    list-style: none;
-}
-
-.flex,
-.flex-row {
-    display: flex;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-
-/* typograpgy  */
-
-h1,
-h2 {
-    font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
-    text-transform: uppercase;
-    line-height: 120%;
-}
-
-h1 {
-    font-size: 45px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-family: 'Novecento-WideLight', Arial, sans-serif;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 110%;
-}
-
-p {
-    font-family: 'Barlow-Light', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-nav {
-    font-family: 'Barlow-Light', Arial, sans-serif;
-}
-
-.btn {
-    font-family: 'Novecento-WideLight', Arial, sans-serif;
-}
-
-
-/* navbar */
-
-nav {
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-    align-items: center;
-}
-
-.top-menu {
-    gap: 4rem;
-}
-
-
-/* logo */
-
-.logo-top {
-    width: auto;
-    height: 100px;
-}
-
-
-/* buttons */
-
-.button-container {
-    gap: 1rem;
-}
-
-nav .btn {
-    background: #fff;
-    color: #06092E;
-    font-size: 15px !important;
-    letter-spacing: 1px;
-    border: 2px #06092E solid;
-    padding: 0.1rem 1rem;
-    border-radius: 40px;
-    height: 38px;
-    line-height: 15px;
-    width: 7rem;
-    justify-content: center;
-    align-items: center;
-}
-
-nav .btn-contact {
-    background: #06092E;
-    color: #fff;
-}
-
-nav a {
-    color: #06092E;
-}
-
-
-/* header  */
-
-header {
-    max-width: 1400px;
-    margin: 0 auto;
-    background-color: #290AC4;
-    padding: 4rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-
-header .banner {
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    max-height: 520px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-header .col-1 {
-    margin-left: 2rem;
-}
-
-header .col-2 {
-    margin-right: 3rem;
-}
-
-header .flex-column {
-    padding: 1rem 0;
-    color: #fff;
-    flex: 1 0 250px;
-}
-
-header .img-container {
-    width: 450px;
-    max-width: 450px;
-    max-height: 450px;
-    height: 450px;
-    border-radius: 50%;
-    border: solid 7px #ffffff;
-    display: flex;
-}
-
-header .img-container {
-    background: url('https://go.pardot.com/l/153091/2022-07-25/pq579r/153091/1658770755jlCw5WoN/starfish_example.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-header .img-container img {
-    border-radius: 50%;
-}
-
-header .curve {
-    width: 100%;
-    position: relative;
-}
-
-header svg {
-    width: 100%;
-    position: absolute;
-    bottom: -4.5vh;
-}
-
-
-/* headline */
-
-.headline {
-    text-align: center;
-    color: #290AC4;
-}
-
-
-/* main */
-
-main {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-main .flex-row {
-    gap: 3rem;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse;
-    padding: 2rem 0 0 2rem;
-}
-
-main .col-1,
-main .col-2 {
-    width: calc((100% / 2) - 2rem);
-    flex: 1 0 350px;
-}
-
-main .img-container {
-    margin-top: 3rem;
-}
-
-
-/* form */
-
-form.form input.text:focus,
-form.form select:focus,
-form.form textarea.standard:focus,
-form.form input.text:focus-visible,
-form.form select:focus-visible,
-form.form textarea.standard:focus-visible {
-    outline: none !important;
-}
-
-@media (max-width: 810px) {
-    .banner {
-        height: 100% !important;
-        max-height: unset !important;
+    /* general setup */
+    
+    html {
+        scrollbar-width: none;
     }
-    .banner .col-2 {
+    
+    body {
+        background: #fff;
+        margin: 0;
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+        scrollbar-width: none;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+    
+    ul li {
+        list-style: none;
+    }
+    
+    .flex,
+    .flex-row {
+        display: flex;
+    }
+    
+    .flex-row {
+        flex-direction: row;
+    }
+    
+    .flex-column {
+        flex-direction: column;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    /* typograpgy  */
+    
+    h1,
+    h2 {
+        font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
+        text-transform: uppercase;
+        line-height: 120%;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-family: 'Novecento-WideLight', Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 110%;
+    }
+    
+    p,
+    footer li,
+    footer a {
+        font-family: 'Barlow-Light', Arial, sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: #06092E;
+    }
+    
+    footer a:hover,
+    footer a:focus {
+        text-decoration: underline;
+    }
+    
+    footer svg {
+        fill: #06092E;
+    }
+    
+    nav {
+        font-family: 'Barlow-Light', Arial, sans-serif;
+    }
+    
+    .btn {
+        font-family: 'Novecento-WideLight', Arial, sans-serif;
+    }
+    /* navbar */
+    
+    nav {
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0 auto;
         align-items: center;
+        padding: 0 1rem 0 0;
+    }
+    
+    .top-menu {
+        gap: 3rem;
+    }
+    /* logo */
+    
+    .logo-top {
+        width: auto;
+        height: 100px;
+    }
+    /* buttons */
+    
+    .button-container {
+        gap: 1rem;
+    }
+    
+    nav .btn {
+        background: #fff;
+        color: #06092E;
+        font-size: 15px !important;
+        letter-spacing: 1px;
+        border: 2px #06092E solid;
+        padding: 0.1rem 1rem;
+        border-radius: 40px;
+        height: 38px;
+        line-height: 15px;
+        width: 7rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav .btn-contact {
+        background: #06092E;
+        color: #fff;
+    }
+    
+    nav .btn-contact:hover,
+    nav .btn-contact:focus {
+        background-color: #fff;
+        color: #06092E;
+        transition: all 0.2s;
+    }
+    
+    nav .btn-signin:hover,
+    nav .btn-signin:focus {
+        background-color: #06092E;
+        color: #fff;
+        transition: all 0.2s;
+    }
+    
+    nav a {
+        color: #06092E;
+    }
+    /* header  */
+    
+    header {
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: #290AC4;
+        padding: 4rem 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    
+    header .banner {
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        max-height: 520px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    header .col-1 {
+        margin-left: 2rem;
+    }
+    
+    header .col-2 {
+        margin-right: 3rem;
+    }
+    
+    header .flex-column {
+        padding: 1rem 0;
+        color: #fff;
+        flex: 1 0 250px;
+    }
+    
+    header .img-container {
+        width: 450px;
+        max-width: 450px;
+        max-height: 450px;
+        height: 450px;
+        border-radius: 50%;
+        border: solid 7px #ffffff;
+        display: flex;
+    }
+    
+    header .img-container {
+        background: url('https://go.pardot.com/l/153091/2022-07-25/pq579r/153091/1658770755jlCw5WoN/starfish_example.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    header .img-container img {
+        border-radius: 50%;
+    }
+    
+    header .curve {
+        width: 100%;
+        position: relative;
+    }
+    
+    header svg {
+        width: 100%;
+        position: absolute;
+        bottom: -4.5vh;
+    }
+    /* headline */
+    
+    .headline {
+        text-align: center;
+        color: #290AC4;
+    }
+    /* main */
+    
+    main {
+        max-width: 1400px;
         margin: 0 auto;
     }
-    .banner .curve svg {
-        bottom: -1vh;
+    
+    main .flex-row {
+        gap: 3rem;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        padding: 2rem 2rem 0 2rem;
     }
-    .banner .img-container {
-        width: 70vw;
-        height: 70vw;
+    
+    main .col-1,
+    main .col-2 {
+        width: calc((100% / 2) - 2rem);
+        flex: 1 0 350px;
     }
-}
+    
+    main .img-container {
+        margin-top: 3rem;
+    }
+    /* form additional styling - main form css is in form layout template */
+    
+    form.form input.text:focus,
+    form.form select:focus,
+    form.form textarea.standard:focus,
+    form.form input.text:focus-visible,
+    form.form select:focus-visible,
+    form.form textarea.standard:focus-visible {
+        outline: none !important;
+    }
+    
+    @media (max-width: 810px) {
+        .banner {
+            height: 100% !important;
+            max-height: unset !important;
+        }
+        .banner .col-2 {
+            align-items: center;
+            margin: 0 auto;
+        }
+        .banner .curve svg {
+            bottom: -1vh;
+        }
+        .banner .img-container {
+            width: 70vw;
+            height: 70vw;
+        }
+    }
+    /* footer */
+    
+    footer {
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    
+    footer .flex-col {
+        padding: 0 2rem;
+    }
+    
+    footer .flex-col {
+        width: 25%;
+    }
+    
+    footer svg {
+        width: 25px;
+        height: auto;
+    }
+    
+    .footer-logo {
+        width: 10rem;
+        height: auto;
+    }
+    
+    footer .social,
+    footer .social li {
+        padding: 0;
+    }
+    
+    footer .social {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
