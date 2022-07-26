@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <!--[if mso]>
+<style>
+span, td, table, div {
+font-family: Arial, serif !important;
+}
+</style>
+<![endif]-->
+    <meta http-equiv="Content-Type" content="text/html;" />
+    <title>Email Newsletter</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    </style>
+
+    <style media="all">
+        /* CLIENT-SPECIFIC STYLES */
+        /* Outlook.com / Hotmail */
+        
+        .ExternalClass {
+            width: 100%;
+        }
+        
+        .ReadMsgBody,
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+        /* OL07-10-13"Read in browser link" */
+        
+        #outlook a {
+            padding: 0 !important;
+        }
+        
+        p,
+        .undoreset div p,
+        .undoreset p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        /* Various OL fixes */
+        
+        body {
+            -webkit-text-size-adjust: 100% !important;
+            -ms-text-size-adjust: 100% !important;
+        }
+        
+        table {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        
+        @-ms-viewport {
+            width: device-width !important;
+        }
+        
+        img {
+            height: auto !important;
+            -ms-interpolation-mode: bicubic !important;
+        }
+    </style>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+        
+        a {
+            color: #000000
+        }
+        
+        th {
+            font-weight: normal !important
+        }
+        
+        .vidMod.left {
+            margin-left: 50px !important;
+        }
+        
+        .vidMod.right {
+            margin-right: 50px !important;
+        }
+        
+        .footer-icons.left .footer-leftcol {
+            width: 1px !important;
+        }
+        
+        .footer-icons.left .footer-rightcol {
+            width: 489px !important;
+        }
+        
+        .footer-icons.right .footer-leftcol {
+            width: 489px !important;
+        }
+        
+        .footer-icons.right .footer-rightcol {
+            width: 1px !important;
+        }
+        
+        .footer-icons.center .footer-leftcol {
+            width: 245px !important;
+        }
+        
+        .footer-icons.center .footer-rightcol {
+            width: 245px !important;
+        }
+        
+        @media only screen and (max-width: 640px) {
+            .main {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+            .inner_table {
+                width: 90% !important;
+                margin: 0 auto !important;
+            }
+            .inner_table3 {
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            .logomob {
+                max-width: 90% !important;
+                margin: 0 auto !important;
+                height: auto !important
+            }
+            .show {
+                display: block !important;
+                visibility: visible !important;
+            }
+            .res {
+                width: 100% !important;
+                display: block;
+                height: auto !important
+            }
+            .block {
+                display: block;
+                margin: 0 auto;
+                float: none !important;
+                width: 100% !important;
+            }
+            .left_align {
+                text-align: left !important;
+            }
+            .center {
+                text-align: center !important;
+                margin: 0 auto;
+                float: none !important;
+            }
+            .hidden {
+                display: none !important;
+            }
+            .top_pad {
+                padding-top: 20px !important;
+            }
+            .top_pad1 {
+                padding-top: 30px !important;
+            }
+            .mobileimg {
+                width: 100%;
+                height: auto !important
+            }
+            .imgmaxwidth {
+                width: 600px !important;
+                max-width: 100% !important;
+                height: auto !important
+            }
+            .logowidth {
+                width: 100%;
+                max-width: 70px !important;
+                height: auto !important
+            }
+            .vidMod.left {
+                margin-left: unset !important;
+                width: 90% !important;
+                margin: 0 auto !important;
+            }
+            .vidMod.right {
+                margin-left: unset !important;
+                margin-right: unset !important;
+                width: 90% !important;
+                margin: 0 auto !important;
+            }
+            .footer-icons.left .footer-leftcol {
+                width: 1px !important;
+            }
+            .footer-icons.left .footer-rightcol {
+                width: 110px !important;
+            }
+            .footer-icons.right .footer-leftcol {
+                width: 110px !important;
+            }
+            .footer-icons.right .footer-rightcol {
+                width: 1px !important;
+            }
+            .footer-icons.center .footer-leftcol {
+                width: 110px !important;
+            }
+            .footer-icons.center .footer-rightcol {
+                width: 110px !important;
+            }
+            @media only screen and (max-width: 550px) {
+                .inner_table2 {
+                    width: 90% !important;
+                    margin: 0 auto !important;
+                }
+                .block2 {
+                    display: block;
+                    margin: 0 auto;
+                    float: none !important;
+                    width: 100% !important;
+                }
+                .block3 {
+                    display: block;
+                    margin: 0 auto;
+                    float: none !important;
+                    width: 280px !important;
+                }
+                .center2 {
+                    text-align: center !important;
+                    margin: 0 auto;
+                    float: none !important;
+                }
+                .hidden2 {
+                    display: none !important;
+                }
+            }
+        }
+        
+        table {
+            /* border: solid 1px pink; */
+        }
+    </style>
+</head>
+
+<body style="width: 100%; min-width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+
+    <table class="full-container" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing: 0; border-collapse: collapse;margin: 0 auto;">
+        <tr>
+            <td bgcolor="#e2e3e4" style="background-color:#e2e3e4;">
+                <table class="main" id="outer_table" width="690" border="0" cellpadding="0" cellspacing="0" align="center" style="border-spacing: 0; border-collapse: collapse; min-width: 690px; width: 690px; margin: 0 auto; border: 1px solid #ffffff">
+                    <tr>
+                        <td class="email-container" id="template-wrapper">
+
+                            <!--Divider Module-->
+                            <table id="DividerModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                        <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+
+                                            <tr>
+                                                <td class="center" bgcolor="#fff" height="2" style="line-height:1px;font-size:1px; background-color:#ffffff;">&nbsp;</td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Divider Module-->
+
+                            <!--Logo-->
+                            <table id="logo" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-color:#ffffff;vertical-align: top;">
+                                        <table dir="ltr" class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px; border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+                                            <tr>
+                                                <td pardot-region="pardot" height="25" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <th width="200" class="center block" align="center" style="width:150px; max-width:100%; text-align:center;">
+                                                    <div id="headerLogo1">
+                                                        <a href="#" target="_blank"><img pardot-region="logo" pardot-region-type="image" class="logowidth" alt="logo" src="https://www.cnlstrategiccapital.com/core/fileparse.php/2878/urlt/SCAP-Levine-Leichtman-Logo.png" width="200"
+                                                                border="0" style="height:auto !important;width:120px;min-width:200px;max-width:200px;" /></a>
+                                                    </div>
+
+                                                </th>
+                                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+
+                                                <th dir="ltr" width="500" class="center block" align="left" style="width:500px; max-width:100%; text-align: left;">
+                                                    <table>
+                                                        <tr>
+                                                            <td pardot-region="pardot" height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div id="headernav">
+                                                                    <span pardot-region="copy" pardot-region-type="basic" style="font-size:20px;font-family:Arial,sans-serif;color:#002d64;font-weight:700;line-height:145%;word-break: keep-all;"> </span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+
+                                            </tr>
+                                            <tr>
+                                                <td pardot-region="pardot" height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Logo-->
+
+
+                            <!--Banner Module-->
+                            <table pardot-removable id="Banner Module" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="#1c3e71" valign="top" style="background-Color:#1c3e71;vertical-align: top;">
+                                        <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+
+                                            <tr>
+                                                <td pardot-region="pardot" class="center" bgcolor="#a89968" height="8" style="line-height:1px;font-size:1px; background-color:#a89968;">&nbsp;</td>
+                                            </tr>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#ffffff;" pardot-region="pardot" height="1" style="line-height:5px;font-size:1px;background-color: #ffffff;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#829995;" pardot-region="pardot" height="30" style="line-height:5px;font-size:1px;background-color:#829995;">&nbsp;</td>
+                                </tr>
+                                <tr style="background-color: #829995;">
+                                    <td>
+
+                                        <p pardot-region=" copy" pardot-region-type="simple" style="text-align: center; color: #fff; font-size: 32px;"><span style="font-size: 22px;"><b>CNL Strategic Capital Acquires Vektek Holdings</b></span></p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#829995;" pardot-region="pardot" height="30" style="line-height:5px;font-size:1px;background-color:#829995;">&nbsp;</td>
+                                </tr>
+                                </table>
+
+                                <!--Image Module-->
+                                <table pardot-removable id="ImageModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing:0;" border="0" width="100%">
+                                    <tr>
+                                        <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0px;border-collapse: collapse;margin: 0 auto;">
+                                                <tr>
+                                                    <td height="3" style="line-height:5pxpx;font-size:1px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="fullWid center" align="center" style="text-align: center; font-size: 1px; line-height: 1px;">
+                                                        <div id="Image1">
+                                                            <div>
+                                                                <img pardot-region="editable-image" pardot-region-type="image" class="imgmaxwidth" src="https://info.cnlsecurities.com/rs/763-FXA-202/images/scapi-blockheaders2.png" width="100%" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; width:100%; padding:0px; margin:0px auto; border-spacing:0;max-width:100%;"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="5" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--Image Module-->
+                                <!--Banner Module-->
+
+
+                                <!--Image Right Text left -->
+                                <table pardot-removable pardot-repeatable id="emailBody" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                    <tr>
+                                        <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                            <table class="inner_table2" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+
+                                                <tr>
+                                                    <td>
+                                                        <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                            <tr>
+                                                                <th class="hidden2" style="font-size:1px; line-height: 1px;width:28px;" width="28">&nbsp;</th>
+                                                                <th width="400" align="left" class="block2 top_pad" valign="top" style="vertical-align: top;">
+                                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+
+                                                                        <tr>
+                                                                            <td pardot-region="pardot" height="1" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <td pardot-region="copy" pardot-region-type="basic" align="left" style="font-family: Arial, helvetica, sans-serif; font-size: 14px; color: #000000; line-height: 20px;" width="60%">
+                                                                                <p> <br> CNL Strategic Capital is pleased to announce the acquisition of its its eleventh portfolio company, Vektek Holdings (Vektek).<br> &nbsp;</p>
+                                                                                <p>Founded in 1974, Vektek is a designer, engineer and manufacturer of automated workholding solutions for CNC machining.<br> &nbsp;</p>
+                                                                                <p>Vektek’s products serve a large installed base, are low cost and a minimal component of the customers’ engineering spend and CNL Strategic Capital believes has potential to
+                                                                                    result in meaningful return on investment for customers and strong performance for Vektek.<br> &nbsp;</p>
+                                                                                <p>To learn more about this growing and durable company, download the <a href="https://www.cnlstrategiccapital.com/file_id/0156f00003Y6ENe" style="color: #115e67;" target="_blank">Case Study.</a></p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <td pardot-region="copy" pardot-region-type="basic" align="left" style="font-family: Arial, helvetica, sans-serif; font-size: 14px; color: #000000; line-height: 20px;" width="60%">
+                                                                                <p><br> Sincerely,<br> <br> <span style="font-family: Arial, helvetica, sans-serif; font-size: 14px; color: #000000;"><b>} }}</b><br> <i>}</i><br> CNL Securities<br> Member <a href="https://www.FINRA.org" style="color: #333333; text-decoration: none;">FINRA</a>/<a href="https://www.SIPC.org" style="color: #333333; text-decoration: none;">SIPC</a><br> }<br> }</span></p>
+                                                                            </td>
+                                                                        </tr>
+
+
+                                                                        <tr>
+                                                                            <td pardot-region="pardot" height="5" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                                                        </tr>
+
+                                                                    </table>
+                                                                </th>
+
+
+                                                                <th class="hidden2" style="font-size:1px; line-height: 1px;" width="5">&nbsp;</th>
+
+                                                                <th width="180" align="center" class="block2 top_pad" valign="top" style="vertical-align: top;">
+                                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+
+                                                                        <tr class="hidden">
+                                                                            <td pardot-region="pardot" height="100" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <td align="center" style="font-family: Arial, helvetica, sans-serif; font-size: 14px; color: #000000; line-height: 20px;" width="60%">
+                                                                                <div>
+                                                                                    <a href="https://www.cnlstrategiccapital.com/file_id/0156f00003Y6ENe" target="_blank">
+                                                                                        <img class="center block2" border="0" width="83" src="https://info.cnlsecurities.com/rs/763-FXA-202/images/scapi-douglas-cs.png" width="84" style="max-width: 200px;"></a>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <td pardot-region="copy" pardot-region-type="basic" align="center" style="font-family: Arial, helvetica, sans-serif; font-size: 14px; color: #000000; line-height: 20px;" width="60%">
+                                                                                <p><a href="https://www.cnlstrategiccapital.com/file_id/0156f00003Y6ENe" style="color: #115e67;" target="_blank">Vektek Case Study</a></p>
+                                                                            </td>
+                                                                        </tr>
+
+
+                                                                        <tr>
+                                                                            <td pardot-region="pardot" height="5" style="line-height:5px;font-size:1px;">&nbsp;</td>
+                                                                        </tr>
+
+                                                                    </table>
+                                                                </th>
+
+
+                                                            </tr>
+
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            </th>
+
+                                    </tr>
+                                </table>
+                                </td>
+                    </tr>
+                    <tr>
+                        <td pardot-region="pardot" height="0" style="line-height:0px;font-size:1px;">&nbsp;</td>
+                    </tr>
+
+                    <table pardot-removable pardot-repeatable border="0" cellpadding="0" cellspacing="0" height="1" style="border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; height: 1px; background-color: #829995;" width="100%;">
+                        <tbody style="background-color: #829995;">
+                            <tr>
+                                <td height="1" style="border-collapse: collapse; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                <td height="1" style="border-collapse: collapse; mso-line-height-rule: exactly;" width="562">&nbsp;</td>
+                                <td height="1" style="border-collapse: collapse; mso-line-height-rule: exactly;" width="28">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td style="border-collapse: collapse; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                <td style="border-collapse: collapse; mso-line-height-rule: exactly;" width="562">
+                                    <div pardot-region="simple-text" pardot-region-type="simple" style="font-family: arial,helvetica,sans-serif; font-size: 14px; color: #ffffff; line-height: 20px; text-align: center;">
+                                        CNL Strategic Capital is a company that owns high-quality and durable private companies, providing first-time access to a unique private equity strategy for individual investors.
+                                    </div>
+                                </td>
+                                <td style="border-collapse: collapse; mso-line-height-rule: exactly;" width="28">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td height="1" style="border-collapse: collapse; mso-line-height-rule: exactly;" width="30">&nbsp;</td>
+                                <td height="1" style="border-collapse: collapse; mso-line-height-rule: exactly;" width="562">&nbsp;</td>
+                                <td height="1" style="border-collapse: collapse; mso-line-height-rule: exactly;" width="28">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Disclaimer Module -->
+                    <table pardot-removable pardot-repeatable id="DisclaimerModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                        <tr>
+                            <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:640px;border-collapse: collapse;border-spacing: 0;" border="0" width="640">
+                                    <tr>
+                                        <td pardot-region="pardot" height="1" style="padding-top:1px;padding-bottom:1px;line-height:1px;font-size: 1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+
+                                        <td align="left" style="font-family:Arial, sans-serif; font-size: 12px; line-height: 145%; mso-line-height-rule: exactly; color:#4a4a4a; text-align:left;">
+                                            <div style="font-family: Arial, helvetica, sans-serif; font-size: 14px; color: #115e67; line-height: 20px; text-align: center;padding:20px 20px;">
+                                                <br> Financial professionals are invited to contact the managing dealer, CNL Securities, member
+                                                <span style="border-collapse: collapse; mso-line-height-rule: exactly; color: #115e67;"> <a href="https://www.finra.org/" style="border-collapse: collapse; 
+mso-line-height-rule: exactly; color: #115e67;" target="_blank">FINRA</a> </span>/
+                                                <span style="border-collapse: collapse; mso-line-height-rule: exactly; color: #115e67;"><a href="https://www.sipc.org/" style="border-collapse: collapse; mso-line-height-rule: exactly; color: #115e67;" target="_blank">SIPC</a>, </span>                                                at 866-650-0650 or visit
+                                                <a href="https://www.cnlstrategiccapital.com" style="border-collapse: collapse; mso-line-height-rule: exactly; color: #115e67;" target="_blank"> <strong>cnlstrategiccapital.com</strong></a>.
+                                                <br> &nbsp;
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="font-family:Arial, sans-serif; font-size: 12px; line-height: 145%; mso-line-height-rule: exactly; color:#4a4a4a; text-align:left;">
+                                            <div pardot-region="copy" pardot-region-type="basic" id="Copy">
+
+                                                <p><span style="color: #4a4a4a; font-size: 12px;">There is no assurance that these objectives will be met.<br> <br> CNL Strategic Capital is managed by CNL Strategic Capital Management, LLC and sub-managed by Levine Leichtman Strategic Capital LLC. Each managing entity is an investment adviser registered with the U.S. Securities and Exchange Commission. The performance of CNL Strategic Capital may not replicate the experience of these entities. </span></p>
+                                                <p>&nbsp;</p>
+                                                <p><span style="color: #4a4a4a; font-size: 12px;"><strong>FOR BROKER-DEALER AND RIA USE ONLY. </strong><br> <br> Broker-dealers and investment advisors are reminded that CNL Strategic Capital’s communications must be accompanied or preceded by a <a href="https://www.cnlstrategiccapital.com/prospectus" style="border-collapse: collapse; mso-line-height-rule: exactly; color: #115e67;">prospectus</a>. CNL Strategic Capital, LLC is a unique direct participation program (DPP), taxed as a partnership. CNL Securities and its associates cannot provide investment advice for any individual or any individual situation, and are not acting in a fiduciary capacity.<br> <br> This is not an offer to sell nor a solicitation of an offer to buy shares of CNL Strategic Capital. Only the prospectus makes such an offer. This piece must be read in conjunction with the prospectus in order to understand fully all the objectives, risks, charges and expenses associated with an investment and must not be relied upon to make a decision.<br> <br> Neither the U.S. Securities and Exchange Commission, the Attorney General of the State of New York nor any other state regulator has passed on or endorsed the merits of this offering. Any representation to the contrary is unlawful.<br> <br> An investment in CNL Strategic Capital, LLC is considered speculative and involves a high degree of risk, including the loss of all or a substantial amount of your investment. CNL Strategic Capital is not a short-term investment. This offering is not suitable for everyone; investors are expected to meet the minimum financial suitability standards. Some states and broker-dealers may have additional standards. See your firm’s policies and the Suitability Standards section of the prospectus for complete details.<br> <br> CNL Strategic Capital commenced operations in February 2018 and has a limited operating history. It may be unable to successfully implement its business and acquisition strategies or meet its investment objectives. Investors will not have the opportunity to evaluate businesses prior to acquisition.<br> <br> CNL Strategic Capital compensates the managers and CNL Securities for services provided and may also compensate the parties when certain operational and performance thresholds are met. Certain management fees will be paid by investors even if they lose money in the investment. See the prospectus for details.<br> <br> If CNL Strategic Capital is unable to raise substantially more funds, it will be limited in the number of businesses it acquires, which reduces diversification and increases the potential for volatility.<br> <br> Distributions paid are not solely based upon performance. Distributions are not guaranteed in frequency or amount. Distributions will be paid from net investment income, offering proceeds, borrowings or reimbursable expense support; the latter three will reduce future cash available for distributions and be dilutive to future shareholders.<br> <br> An investment in CNL Strategic Capital is illiquid. Shares sold in this offering will not be listed on an exchange or quoted through a quotation system for the foreseeable future, if ever. If investors are able to sell their shares, they will likely receive less than their purchase price.<br> <br> COVID-19 has had a limited impact on CNL Strategic Capital to date, yet the pandemic may have an adverse impact on the portfolio. Further, the spread of COVID-19 has caused severe disruptions in the U.S. and global economy and financial markets, causing issues of unknown magnitude and duration.<br> <br> Please read the prospectus, including the detailed <a href="https://www.cnlsecurities.com/quick-links/prospectus.stml#scapi-risk" id="" style="border-collapse: collapse; mso-line-height-rule: exactly; color: #115e67;" target="_blank">Risk Factors</a> section, for complete information. </span></p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="25" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="font-family:Arial, sans-serif; font-size: 12px; line-height: 145%; mso-line-height-rule: exactly; color:#4a4a4a; text-align:left;">
+                                            <div pardot-region="copy" pardot-region-type="basic" id="Copy">
+                                                <p>© 2022&nbsp;CNL Strategic Capital Management, LLC All Rights Reserved. CNL® and the Squares Within Squares design trademarks are used under license from CNL Intellectual Properties, LLC.</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="30" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" style="font-family:Arial, sans-serif; font-size: 12px; line-height: 145%; mso-line-height-rule: exactly; color:#4a4a4a; text-align:left;">
+                                            <div pardot-region="copy" pardot-region-type="basic" id="Copy">
+                                                <p>
+                                                    SCAPI-0722-2262998-BD</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Disclaimer Module-->
+                    <!-- Disclaimer Module2 -->
+                    <table pardot-removable pardot-repeatable id="DisclaimerModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                        <tr>
+                            <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:680px;border-collapse: collapse;border-spacing: 0;" border="0" width="680">
+                                    <tr>
+                                        <td pardot-region="pardot" height="10" style="padding-top:1px;padding-bottom:1px;line-height:1px;font-size: 1px;">&nbsp;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td align="center" bgcolor="#f2f2f2" style="padding:10px 20px;">
+                                            <table align="center" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td height="5" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #999999;">
+                                                            <div>
+                                                                <p><span style="border-collapse: collapse; mso-line-height-rule: exactly; font-size: 12px;">This email was sent to:<br> CNL Securities provides an email preference center where you can customize he types of emails you want to receive from us. We handle your information in line with our <a href="https://www.cnlsecurities.com/quick-links/privacy-policy.stml" style="text-decoration: underline; color: #999999;" target="_blank">privacy policy.</a><br> <br> <a href="https://info.cnlsecurities.com/UnsubscribePage.html" style="border-collapse: collapse; mso-line-height-rule: exactly; text-decoration: underline; color: 
+#999999;"><strong>MODIFY MY PREFERENCES</strong> </a> </span></p>
+                                                                <p align="center" style="margin: 0px !important; padding: 0px !important; font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-align: center; color: #999999;">
+                                                                    <span style="border-collapse: collapse; mso-line-height-rule: exactly; font-size: 12px;">This email was sent by: </span><br> <span style="border-collapse: collapse; mso-line-height-rule: exactly; font-size: 12px;">CNL Securities, managing dealer, member <a href="https://www.finra.org/" style="border-collapse: collapse; mso-line-height-rule: exactly; color: #868585;">FINRA</a>/ <a href="https://www.sipc.org/" style="border-collapse: collapse; mso-line-height-rule: exactly; color: #868585;">SIPC</a> </span><br>
+                                                                    <span style="border-collapse: collapse; mso-line-height-rule: exactly; font-size: 12px;">450 S. Orange Ave., Orlando, FL 32801</span><br> <span style="border-collapse: collapse; mso-line-height-rule: exactly; font-size: 12px;"><a href="https://www.cnlsecurities.com/" style="border-collapse: collapse; mso-line-height-rule: exactly; color: #737373;" target="_blank">cnlsecurities.com</a> </span></p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Disclaimer Module2-->
+
+                    </td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+
+
+</body>
+
+</htm
