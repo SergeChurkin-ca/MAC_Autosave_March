@@ -34,11 +34,16 @@
             let buttonField = document.querySelectorAll('button[type=submit')[0].parentElement.parentElement.classList.add('buttonRow')
 
 
+            let disclaimer = document.querySelectorAll('.disclaimer')[0]
+
             let wrapper = document.createElement('div');
             wrapper.classList.add('rowwrapper')
 
             document.getElementsByClassName('mktoForm')[0].appendChild(wrapper).appendChild(document.querySelectorAll('input[name=Email')[0].parentElement.parentElement.parentElement)
             document.getElementsByClassName('mktoForm')[0].appendChild(wrapper).appendChild(document.querySelectorAll('button[type=submit')[0].parentElement.parentElement)
+
+            document.getElementsByClassName('emailInputRow')[0].appendChild(disclaimer)
+
         });
     </script>
 </body>
