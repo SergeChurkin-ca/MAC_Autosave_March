@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="form-1.css" rel="stylesheet"> -->
+    <style>
+        body {
+            width: 100vw;
+            border: solid 1px red;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="//info.freenome.com/js/forms2/js/forms2.min.js"></script>
+    <form id="mktoForm_1136"></form>
+    <script>
+        MktoForms2.loadForm("//info.freenome.com", "541-NPN-086", 1136);
+    </script>
+    <script>
+        MktoForms2.whenReady(function(form) {
+            Array.from(document.querySelectorAll('input[type=hidden]')).map((x) => x.closest('.mktoFormRow').style = "display:none;")
+
+            document.querySelectorAll('input[name=Email')[0].parentElement.parentElement.classList.add('inputFieldRow')
+
+        });
+        MktoForms2.whenRendered(function(form) {
+            let inputField = document.querySelectorAll('input[name=Email')[0].parentElement.parentElement.parentElement.classList.add('emailInputRow')
+            let buttonField = document.querySelectorAll('button[type=submit')[0].parentElement.parentElement.classList.add('buttonRow')
+
+
+            let wrapper = document.createElement('div');
+            wrapper.classList.add('rowwrapper')
+
+            document.getElementsByClassName('mktoForm')[0].appendChild(wrapper).appendChild(document.querySelectorAll('input[name=Email')[0].parentElement.parentElement.parentElement)
+            document.getElementsByClassName('mktoForm')[0].appendChild(wrapper).appendChild(document.querySelectorAll('button[type=submit')[0].parentElement.parentElement)
+        });
+    </script>
+</body>
+
+</html>
