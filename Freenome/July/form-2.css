@@ -35,9 +35,7 @@
 }
 
 .mktoForm .mktoFormCol {
-    width: 45%!important;
-    margin-left: 5px!important;
-    margin-right: 5px!important;
+    width: 48%!important;
 }
 
 .mktoForm .mktoFieldWrap {
@@ -54,11 +52,22 @@
 .mktoForm .mktoFormRow {
     clear: both;
     width: 100%!important;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem !important;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(2) {
+    justify-content: flex-start;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(3) .mktoFormCol,
+.mktoForm .mktoFormRow:nth-of-type(4) .mktoFormCol {
+    width: 98% !important;
 }
 
 .mktoForm {
-    width: 100%!important;
-    max-width: 500px!important;
+    max-width: 680px !important;
     margin: 0 auto!important;
 }
 
@@ -66,33 +75,53 @@
     display: none!important;
 }
 
+.mktoButtonWrap {
+    margin-left: 0px!important;
+}
+
 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
     border: none!important;
     font-size: 1em!important;
     background-color: #cbe701!important;
-    color: #383846!important;
+    color: #383846 !important;
     background-image: none!important;
     background-image: none!important;
     background-image: none!important;
     background-image: none!important;
-    font-weight: 300!important;
-    font-style: normal!important;
+    font-weight: 600 !important;
+    font-style: normal !important;
     text-transform: uppercase!important;
     letter-spacing: 3px!important;
     padding: 1em 2.5em!important;
-    font-family: 'GTWalsheimBold' !important;
+    font-family: 'GTWalsheimBold', sans-serif !important;
 }
 
 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
     opacity: 0.7;
 }
 
-.mktoButtonWrap {
-    margin-left: 5px!important;
-}
-
 .mktoFieldDescriptor.mktoFormCol {
     margin-bottom: 5px!important;
+}
+
+.mktoButtonRow {
+    margin-top: -1rem !important;
+}
+
+@media (max-width: 650px) {
+    .mktoForm {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .mktoForm .mktoFormRow {
+        flex-direction: column;
+        max-width: 100% !important;
+    }
+    .mktoForm .mktoFormCol,
+    .mktoForm .mktoFormRow:nth-of-type(3) .mktoFormCol,
+    .mktoForm .mktoFormRow:nth-of-type(4) .mktoFormCol {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
