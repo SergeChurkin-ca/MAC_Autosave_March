@@ -13,8 +13,18 @@
     box-shadow: none !important;
     border-radius: 0 !important;
     max-width: 23rem !important;
+    width: 365px !important;
 }
 
 .mktoForm .mktoError .mktoErrorMsg .mktoErrorDetail {
     width: 100vw !important;
+}
+
+@media (max-width: 360px) {
+    .mktoForm .mktoError .mktoErrorMsg {
+        width: 250px !important;
+    }
+    .mktoForm .mktoError .mktoErrorMsg .mktoErrorDetail {
+        width: unset !important;
+    }
 }
