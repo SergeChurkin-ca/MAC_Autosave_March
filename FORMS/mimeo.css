@@ -33,6 +33,12 @@
     padding: 8px 10px !important;
     width: 100% !important;
     margin-bottom: 1rem !important;
+    border: 1px solid #e1e1e1 !important;
+}
+
+.mktoForm select.mktoField {
+    font-size: 13px !important;
+    border: solid 1px #e1e1e1 !important;
 }
 
 .mktoButtonRow {
@@ -66,8 +72,13 @@
     .mktoForm input[type=tel],
     .mktoForm input[type=number],
     .mktoForm input[type=date],
-    .mktoForm textarea.mktoField,
+    .mktoForm textarea.mktoField {
+        padding: 12px 10px !important;
+        font-size: 13px !important;
+        height: initial !important;
+    }
     .mktoForm select.mktoField {
-        padding: 21px 10px !important;
+        padding: 7px 10px !important;
+        font-size: 13px !important;
     }
 }
