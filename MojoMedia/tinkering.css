@@ -1,0 +1,52 @@
+.form.form {
+    background-color: #af0401;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1140px;
+}
+
+form.form p {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+form.form p label {
+    text-align: left !important;
+    color: #fff;
+}
+
+form.form input {
+    width: 100% !important;
+    padding: 0.6rem !important;
+    background-color: #da291c !important;
+    border: solid 3px #da291c;
+    margin-top: 0.3rem;
+}
+
+.form.form input:focus-visible {
+    outline: #940402 solid 3px;
+}
+
+form.form p.submit {
+    margin: 1.5rem auto !important;
+    width: fit-content;
+}
+
+form.form p.submit input {
+    width: usnet !important;
+    outline: none !important;
+    color: #fff;
+    background: #000 !important;
+    text-transform: uppercase;
+    padding: 0.6rem 4rem !important;
+    font-weight: 600 !important;
+}
+
+.red-color,
+form.form div.error,
+form.form p.error,
+form.form p.error label,
+form.form span.error {
+    color: #fff !important;
+    margin: 0 0 0 0.5rem !important;
+}
