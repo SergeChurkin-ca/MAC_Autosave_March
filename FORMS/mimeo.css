@@ -50,6 +50,7 @@
 .mktoForm select.mktoField {
     font-size: 13px !important;
     border: solid 1px #e1e1e1 !important;
+    background: #fff;
 }
 
 .mktoButtonRow {
@@ -91,5 +92,53 @@
     .mktoForm select.mktoField {
         padding: 7px 10px !important;
         font-size: 13px !important;
+    }
+}
+
+
+/* to override external styl sheet of LP */
+
+.container-sign-up .mktoForm {
+    justify-content: space-between !important;
+}
+
+.container-sign-up .mktoForm .mktoFormRow:nth-child(2),
+.container-sign-up .mktoForm .mktoFormRow:nth-child(3),
+.container-sign-up .mktoForm .mktoFormRow:nth-child(4),
+.container-sign-up .mktoForm .mktoFormRow:nth-child(5),
+.container-sign-up .mktoForm .mktoFormRow:nth-child(6),
+.container-sign-up .mktoForm .mktoFormRow:nth-child(7) {
+    margin: 0 !important;
+    width: 48% !important;
+}
+
+.container-sign-up .mktoForm .mktoFormRow:nth-child(8) input {
+    width: 100% !important;
+}
+
+@media (max-width: 680px) {
+    .container-sign-up .mktoForm .mktoFormRow:nth-child(2),
+    .container-sign-up .mktoForm .mktoFormRow:nth-child(3),
+    .container-sign-up .mktoForm .mktoFormRow:nth-child(4),
+    .container-sign-up .mktoForm .mktoFormRow:nth-child(5),
+    .container-sign-up .mktoForm .mktoFormRow:nth-child(6),
+    .container-sign-up .mktoForm .mktoFormRow:nth-child(7) {
+        width: 100% !important;
+    }
+    .container-sign-up .mktoForm input,
+    .container-sign-up .mktoForm input[type=date],
+    .container-sign-up .mktoForm input[type=email],
+    .container-sign-up .mktoForm input[type=number],
+    .container-sign-up .mktoForm input[type=tel],
+    .container-sign-up .mktoForm input[type=text],
+    .container-sign-up .mktoForm input[type=url],
+    .mktoForm select.mktoField {
+        padding: 10px 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .mktoForm * {
+        padding: 0 !important;
     }
 }
