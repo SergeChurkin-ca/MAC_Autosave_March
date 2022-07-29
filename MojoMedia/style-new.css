@@ -39,8 +39,10 @@
        height: auto;
    }
    
-   img figcaption {
+   figcaption {
        background-color: #bdbdbd;
+       padding: 0.5rem 1rem;
+       font-size: 12px !important;
    }
    
    .banner {
@@ -111,10 +113,6 @@
    .testimonial {
        width: 80%;
        margin: 0 auto;
-   }
-   
-   input {
-       width: 80%;
    }
    
    .checkmark {
@@ -243,7 +241,7 @@
    
    .cta-section {
        background: #dddddd;
-       padding: 4rem 5rem;
+       padding: 4rem 2.5rem;
        width: 100%;
        text-align: center;
    }
@@ -252,6 +250,17 @@
        margin-bottom: 2.5rem;
    }
    /* end of center cta */
+   /* form section */
+   
+   .form-section {
+       background-color: #da291c;
+       padding: 3rem 0;
+   }
+   
+   .form-container {
+       max-width: 1140px !important;
+   }
+   /* end of  form section */
    
    footer .row {
        justify-content: space-between;
