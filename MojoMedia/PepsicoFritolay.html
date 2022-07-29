@@ -15,368 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-        body {
-            -ms-overflow-style: none;
-            /* Internet Explorer 10+ */
-            scrollbar-width: none;
-            font-weight: 400;
-            font-size: 1.125rem;
-            font-family: 'Roboto', sans-serif;
-            overflow-x: hidden;
-        }
-        
-        body::-webkit-scrollbar {
-            display: none;
-            /* Safari and Chrome */
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        .navbar ul {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        
-        .navbar img {
-            width: 5rem;
-            height: auto;
-        }
-        
-        .banner {
-            background-image: url('https://go.pardot.com/l/391962/2022-05-10/cq65cy/391962/1652208971TVN1hEL4/banner.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            min-height: 35vh;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
-        }
-        
-        .header {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-        }
-        
-        .checkmark .container {
-            padding: 0.75rem 0;
-        }
-        
-        .checkmark .row {
-            flex-wrap: nowrap;
-        }
-        
-        .checkmark-container {
-            width: fit-content;
-        }
-        
-        .checkmark p {
-            display: flex;
-            align-items: center;
-            text-align: left;
-            width: fit-content;
-        }
-        
-        .checkmark {
-            text-align: center !important;
-        }
-        
-        .checkmark i {
-            font-size: 2.5rem !important;
-            margin-right: 1rem;
-        }
-        
-        main {
-            flex-wrap: wrap;
-        }
-        
-        main,
-        .list-container {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        main .list-container {
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-        }
-        
-        main .column-1,
-        main .column-2 {
-            padding: 0;
-            flex: 1 0 250px;
-            margin-bottom: 0 !important;
-        }
-        
-        .info-img {
-            max-width: 450px;
-            margin-top: -3rem;
-        }
-        
-        .pad-top {
-            margin-top: 1.5em;
-        }
-        
-        .btn-pad {
-            margin-top: 2em;
-        }
-        
-        .testimonial-1,
-        .testimonial-2 {
-            font-size: 1.25rem;
-        }
-        
-        .testimonial-1 .row {
-            margin-right: 1.5rem !important;
-        }
-        
-        .testimonial-1,
-        .form {
-            flex: 1 0 400px;
-        }
-        
-        #mainForm-1 {
-            margin-top: 5rem;
-            height: fit-content;
-            max-width: 550px !important;
-        }
-        
-        .testimonial {
-            width: 80%;
-            margin: 0 auto;
-        }
-        
-        .field-label {
-            min-width: 100px;
-            text-align: left !important;
-            width: 20%;
-        }
-        
-        input {
-            width: 80%;
-        }
-        
-        .checkmark {
-            background-color: #da291c;
-            color: #fff;
-            padding: 15px 0;
-        }
-        
-        .value {
-            background: #0a0607;
-            color: #fafafa;
-        }
-        
-        h3,
-        h4 {
-            color: #da291c;
-        }
-        
-        p {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        
-        .work,
-        .industry {
-            background-color: rgb(214, 216, 218);
-        }
-        
-        .hygiene {
-            margin-top: 50px;
-        }
-        
-        [type="submit"],
-        button {
-            -webkit-appearance: button;
-            color: #fff;
-            background-color: #da291c;
-            text-transform: uppercase;
-            padding: 7px 35px;
-            border: none;
-        }
-        
-        [type="submit"]:hover,
-        button:hover {
-            color: #da291c;
-            background-color: #fafafa;
-        }
-        
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-        
-        .footer-red {
-            text-decoration: none;
-            color: #da291c;
-            font-weight: 800;
-        }
-        
-        .footer-red:hover {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 800;
-        }
-        
-        .footer-white {
-            text-decoration: none;
-            color: #fff;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        
-        footer span {
-            font-size: 14px;
-        }
-        
-        .footer-white:hover {
-            text-decoration: none;
-            color: #da291c;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        
-        .region-footer {
-            background-color: #111111;
-        }
-        
-        #mainForm-1 label {
-            font-size: 16px !important;
-            text-align: right;
-            padding-right: 5px;
-        }
-        
-        .form {
-            background-color: #D6D8DA;
-            padding: 2rem;
-        }
-        
-        .form_header {
-            font-size: 24px;
-            padding-bottom: 10px;
-            text-align: center;
-        }
-        
-        .submit {
-            text-align: center;
-            margin-left: 5.1rem;
-            margin-top: 1rem;
-        }
-        
-        .form-field {
-            padding-bottom: 1em;
-            display: flex;
-        }
-        
-        .flex-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-        }
-        
-        footer .row {
-            justify-content: space-between;
-            margin-bottom: 1rem;
-        }
-        
-        footer .col-lg-3 {
-            width: 20% !important;
-        }
-        
-        @media only screen and (max-width: 1160px) {
-            #mainForm-1 label,
-            .submit,
-            .form_header {
-                text-align: left;
-            }
-            .form-field {
-                text-align: left;
-            }
-        }
-        
-        @media (max-width: 990px) {
-            #mainForm-1 {
-                margin: 0 auto 2rem !important;
-            }
-            .checkmark .row {
-                flex-wrap: wrap;
-                flex-direction: column;
-                align-items: center;
-            }
-            .checkmark-container {
-                width: 50% !important;
-            }
-            .checkmark p {
-                width: 100%;
-                margin: 0.4rem auto;
-                margin: 0 auto;
-            }
-        }
-        
-        @media only screen and (max-width: 767px) {
-            #mainForm-1 {
-                margin: 0 auto;
-                text-align: center;
-                margin-top: 1.5em;
-                max-width: 100vw !important;
-            }
-            .form-field {
-                text-align: center;
-            }
-            .form_header,
-            .submit {
-                text-align: center;
-            }
-            .pd-m {
-                padding-bottom: 20px;
-            }
-        }
-        
-        @media only screen and (max-width: 600px) {
-            .checkmark-container {
-                width: 80% !important;
-            }
-            .testimonial {
-                width: 100%;
-                margin: 0 auto;
-            }
-            .info-img,
-            .info-img2 {
-                width: 100%;
-            }
-        }
-        
-        @media only screen and (max-width: 483px) {
-            .testimonial-1,
-            .form {
-                flex: auto !important;
-            }
-            .form {
-                padding: 2rem 0.5rem !important;
-            }
-            input {
-                width: 100%;
-            }
-            .form-field {
-                text-align: left;
-                flex-direction: column;
-            }
-            .submit {
-                margin: 0 auto;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="style-new.css">
 </head>
 
 <body>
@@ -392,8 +31,7 @@
     <section class="banner">
         <div class="container text-center">
             <div class="header" pardot-region="header-text">
-                <h1><span style="color:#ffffff;">6 Ways Hygienically Designed Infrastructure Makes Your Preventative Maintenance More Efficient
-                    </span></h1>
+                <h1><span style="color:#ffffff;">Improving Safety, Reliability and Sanitary Conditions in Electrical Infrastructure</span></h1>
                 <h2 class="mt-4"><span style="color:#ecf0f1;">  </span></h2>
             </div>
 
@@ -401,20 +39,7 @@
     </section>
 
     <section class="checkmark">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="checkmark-container">
-                    <p pardot-region="icon-header-1" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i>Prevent corrosion <br>and contamination
-                    </p>
-                </div>
-                <div class="checkmark-container">
-                    <p pardot-region="icon-header-2" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i>Improve hygiene, <br>cleanability, and safety
-                    </p>
-                </div>
-                <div class="checkmark-container">
-                    <p pardot-region="icon-header-3" style="font-size:18px;font-weight:600;"><i class="far fa-check-circle fa-lg"></i>Reduce maintenance <br>costs over time </p>
-                </div>
-            </div>
+        <div class="container" pardot-region="redline">
         </div>
     </section>
 
@@ -456,8 +81,6 @@
                 <a href="https://go.pardot.com/l/391962/2022-05-25/crwxcn/391962/16534818191th1IQuz/rss_6_ways_to_streamline_preventative_maintenance_fa.pdf" target="_blank"> <img pardot-region="info-image" pardot-region-type="image" class="info-img" src="https://storage.pardot.com/391962/1653481146aEOzq9qY/RSS_Internet_base_img_2.png" alt="graphic image"></a>
             </div>
         </section>
-
-
         <div class="col-md-5 px-4 form" id="mainForm-1">
             <div class="form_header" pardot-region="formheader-2">
                 <p><strong>Fill out the form to download the one-pager.
@@ -467,8 +90,53 @@
                 %%content%%
             </div>
         </div>
-
     </main>
+
+
+    <main class="container">
+        <aritcle class="flex-row">
+            <div class="column-1">
+                <h3>The Challenge</h3>
+                <p>To improve safety and reliability of electrical infrastructure in both greenfield projects and existing facilities, the following challenges have been identified:</p>
+                <ul>
+                    <li>• Adherence to long-term corporate standards</li>
+                    <li>• Addressing new standards around new products (stainless steel) and best practices for system reliability</li>
+                    <li>• Consideration around hygienic principles and installation practices to make infrastructure more cleanable while lasting longer in corrosive environments</li>
+                    <li>• Accountability and training on best practices of electrical raceway installations</li>
+                    <li>• Continuous improvement by carrying forward lessons learned from project to project and facility to facility</li>
+                </ul>
+            </div>
+            <div class="img-container flex column-2">
+                <img src="" alt="graphics" pardot-region="article1-img" pardot-region-type="image">
+            </div>
+        </aritcle>
+        <aritcle class="flex-row row-reverse">
+            <div class="column-1">
+                <h3>The Solution</h3>
+                <p>Through ongoing engagement, site visits, and collaboration on capital projects, all collaborators involved addressed current standards and installation practices. With exposure to old and new installations, the team started addressing
+                    what could be done better to meet the historical challenges head-on. Initiatives taken to tackle these issues include:</p>
+                <ul>
+                    <li>• Monthly initiative meetings with Principal and Project Engineers</li>
+                    <li>• Regular site audits before/during/after projects</li>
+                    <li>• Formal installation training and certification on products and best practices for hygienic installations</li>
+                    <li>• Specification and standards development</li>
+                    <li>• Collaboration with third parties (Engineers, OEMs and Contractors) to ensure consistency throughout projects and facilities</li>
+                    <li>• Lessons learned brought improvement to future practices and product design</li>
+                </ul>
+            </div>
+            <div class="img-container flex column-2">
+                <img src="" alt="graphics" pardot-region="article1-img" pardot-region-type="image">
+            </div>
+        </aritcle>
+
+        <section class="cta-section">
+            <h5 pardot-regino="cta1-headline">Want to see what a collaboration with Robroy would look like for your facility and electrical infrastructure?</h5>
+            <a pardot-region="cta1" class="button" href="">REQUEST A DEMO</a>
+
+        </section>
+    </main>
+
+
 
     <footer class="region-footer py-5">
         <div class="container">
