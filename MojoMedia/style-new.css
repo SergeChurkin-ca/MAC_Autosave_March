@@ -34,11 +34,20 @@
        height: auto;
    }
    
+   img {
+       width: 100%;
+       height: auto;
+   }
+   
+   img figcaption {
+       background-color: #bdbdbd;
+   }
+   
    .banner {
-       background-image: url('https://go.pardot.com/l/391962/2022-05-10/cq65cy/391962/1652208971TVN1hEL4/banner.png');
+       background-image: url('https://go.pardot.com/l/391962/2022-07-29/d1mvgk/391962/1659122180Vfl7boAa/rss_1_1_fritolay_lp_header.png');
        background-repeat: no-repeat;
        background-size: cover;
-       background-position: center;
+       background-position: 50% 10%;
        min-height: 35vh;
        display: flex;
        justify-content: center;
@@ -138,14 +147,19 @@
        font-size: 14px;
        font-weight: 600;
        color: #fff;
-       padding: 0.75rem 5rem;
+       padding: 1rem 5rem;
        margin: 0 auto;
+       border-radius: 3px;
+   }
+   
+   .button.a:hover .button.a:focus {
+       color: #fff !important;
    }
    
    [type="submit"],
    button {
        -webkit-appearance: button;
-       color: #fff;
+       color: #fff !important;
        background-color: #da291c;
        text-transform: uppercase;
        padding: 7px 35px;
@@ -212,6 +226,7 @@
        flex-direction: row;
        flex-wrap: wrap;
        gap: 2rem;
+       margin: 1rem 0;
    }
    
    .row-reverse {
@@ -231,6 +246,10 @@
        padding: 4rem 5rem;
        width: 100%;
        text-align: center;
+   }
+   
+   .cta-section h5 {
+       margin-bottom: 2.5rem;
    }
    /* end of center cta */
    
@@ -284,5 +303,3 @@
            flex: auto !important;
        }
    }
-   
-   ;
