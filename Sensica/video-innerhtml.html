@@ -1,0 +1,177 @@
+<div>
+    <h2 style="position: absolute; left: 0; right: 0; top: 4rem; text-align: center; color: #fcfcfc; text-shadow: 1px 1px 3px #adadad; z-index: 100;">BD Sensica&trade; Urine Output System</h2>
+    <iframe class="play2" id="yt-embed" width="100%" height="100%" src="https://www.youtube.com/embed/Q7xNE8D2W9M?enablejsapi=1&amp;origin=https%3A%2F%2Fgo.bd.com" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;"></iframe>
+    <script>
+        // <![CDATA[
+        var tag = document.createElement('script');
+        tag.id = 'iframe-demo';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('yt-embed', {
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            /*$('#play2').on('click', function (e) {
+                 e.preventDefault();
+                 $('#video-1').toggle();
+                 player.playVideo();
+                 $('#play').hide();
+                $('#VideoSec').hide();
+                 $('#video-cover').hide();
+             }*/
+
+        });
+        // ]]>
+    </script>
+</div>
+
+<script>
+    document.querySelectorAll('video')[0].style = "width: 100% !important;"
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Video swap
+        $('.LargeVideoPlayer2 .vid-wrap.swap').hide();
+        $('a.vid-swap1').click(function(e) {
+            e.preventDefault();
+            var activeVideo = $(this).attr('href');
+            $(activeVideo).show();
+            $(activeVideo).next().hide();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        //Video
+        $('.video-clos2').on('click', function() {
+            $('.video-clos2').hide();
+            //var vid1 = document.getElementById("vjs_video_3_html5_api"); 
+            var vid1 = document.getElementById($('#video-1-2 .vjs-tech').attr('id'));
+            /*vid1.load();*/
+            vid1.currentTime = 0;
+            vid1.pause();
+            $("#VideoSec2").show();
+            $("#video-1-2").hide();
+            $("#VideoPlay2 .vid-swap1").css("visibility", "visible");
+            $(this).closest(".vidoe-box1").remove();
+        });
+
+        $(".vid-swap1").click(function() {
+            //alert("Test");
+            $('.video-clos2').show();
+            //var video1 = $("#vjs_video_3_html5_api").get(0);
+            var video1 = document.getElementById($('#video-1-2 .vjs-tech').attr('id'));
+            video1.play();
+
+            $(this).css("visibility", "hidden");
+            //return false;
+        });
+
+        $('.vid-swap1').click(function() {
+            //var vid1 = document.getElementById("vjs_video_3_html5_api"); 
+
+
+            //vid1.play(); 
+
+        });
+
+    });
+</script>
+<!-- <script type="text/javascript" src="https://go.bd.com/rs/565-YXD-236/images/scriptsnew3.js"></script>-->
+<script>
+    $(document).ready(function() {
+        // Video swap
+        $('.LargeVideoPlayer .vid-wrap.swap').hide();
+        $('a.vid-swap').click(function(e) {
+            e.preventDefault();
+            var activeVideo1 = $(this).attr('href');
+            $(activeVideo1).show();
+            $(activeVideo1).next().hide();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        //Video
+        $('.video-clos').on('click', function() {
+            $('.video-clos').hide();
+            // var vid = document.getElementById("vjs_video_3_html5_api"); 
+            var vid = document.getElementById($('#video-1 .vjs-tech').attr('id'));
+            /*vid.load();*/
+            vid.currentTime = 0;
+            vid.pause();
+            $("#VideoSec").show();
+            $("#video-1").hide();
+            $(".vid-swap").css("visibility", "visible");
+            $(this).closest(".vidoe-box1").remove();
+        });
+
+
+
+        $(".maintain-ratio .vid-swap").click(function() {
+            $('.video-clos').show();
+            //var video = $("#vjs_video_3_html5_api").get(0);
+            var video = document.getElementById($('#video-1 .vjs-tech').attr('id'));
+            video.play();
+
+            $(this).css("visibility", "hidden");
+            // return false;
+
+
+
+        });
+
+        $('#vid-swap').click(function() {
+            //var vid = document.getElementById("vjs_video_3_html5_api"); 
+
+
+            //vid.play(); 
+
+        });
+
+    });
+</script>
+<style>
+    .video-clos2 {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-image: url(https://go.bd.com/rs/565-YXD-236/images/close-icn.png);
+        z-index: 9;
+        right: 5px;
+        top: 5px;
+        background-color: #000000;
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .maintain-ratio .vid-swap1 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+</style>
+<style>
+    /* * * * * * * 
+  Insert for Full width Second Video
+ * * * * * * */
+    
+    .insert-full-width {
+        margin: 0 calc(((100vw - 100%) / 2) * -1);
+    }
+</style>
