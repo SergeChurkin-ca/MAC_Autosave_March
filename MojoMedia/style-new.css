@@ -14,24 +14,12 @@
        /* Safari and Chrome */
    }
    
-   ul {
+   footer ul {
        list-style: none;
    }
    
    a {
        text-decoration: none;
-   }
-   
-   .navbar ul {
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       gap: 1.5rem;
-   }
-   
-   .navbar img {
-       width: 5rem;
-       height: auto;
    }
    
    img {
@@ -41,8 +29,22 @@
    
    figcaption {
        background-color: #bdbdbd;
-       padding: 0.5rem 1rem;
-       font-size: 12px !important;
+       padding: 1rem 1.25rem;
+       font-size: 18px !important;
+   }
+   
+   .navbar ul {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       padding: 0;
+       margin: 0.5rem 0;
+       list-style: none;
+   }
+   
+   .navbar img {
+       width: 10rem;
+       height: auto;
    }
    
    .banner {
@@ -50,7 +52,7 @@
        background-repeat: no-repeat;
        background-size: cover;
        background-position: 50% 10%;
-       min-height: 35vh;
+       min-height: 30vh;
        display: flex;
        justify-content: center;
        align-content: center;
@@ -58,9 +60,11 @@
    }
    
    .header {
-       max-width: 900px;
+       max-width: 950px;
        margin: 0 auto;
        display: flex;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
    }
    
    .checkmark .container {
@@ -69,6 +73,9 @@
    
    main {
        flex-wrap: wrap;
+       padding-top: 1rem;
+       margin-top: 3rem;
+       padding-bottom: 5rem;
    }
    
    main,
@@ -85,8 +92,9 @@
    main .column-1,
    main .column-2 {
        padding: 0;
-       flex: 1 0 250px;
        margin-bottom: 0 !important;
+       flex: 1 0 400px;
+       max-width: 93vw;
    }
    
    .pad-top {
@@ -125,6 +133,10 @@
        color: #fafafa;
    }
    
+   h3 {
+       line-height: 200%;
+   }
+   
    h3,
    h4 {
        color: #da291c;
@@ -150,7 +162,8 @@
        border-radius: 3px;
    }
    
-   .button.a:hover .button.a:focus {
+   .cta-section a:hover,
+   .cta-section a:focus {
        color: #fff !important;
    }
    
@@ -218,32 +231,32 @@
    /* articles */
    
    .flex-row {
-       border: solid 1px red;
        width: 100%;
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
-       gap: 2rem;
-       margin: 1rem 0;
+       gap: 4rem;
+       margin: 1.5rem 0 1rem;
    }
    
    .row-reverse {
        flex-direction: row-reverse !important;
    }
    
-   article .column-1,
-   article .column-2 {
-       width: 45%;
-       flex: 1 0 300px;
+   main ul {
+       list-style: disc;
+       padding-left: 1rem !important;
+       margin-top: 1rem;
    }
    /* end of articles */
    /* center cta */
    
    .cta-section {
        background: #dddddd;
-       padding: 4rem 2.5rem;
+       padding: 5rem 2.5rem;
        width: 100%;
        text-align: center;
+       margin: 2rem 0;
    }
    
    .cta-section h5 {
@@ -254,13 +267,14 @@
    
    .form-section {
        background-color: #da291c;
-       padding: 3rem 0;
+       padding: 3rem 0 0rem;
    }
    
    .form-headline {
        color: #fff;
        text-align: center;
-       font-size: 18px;
+       font-size: 22px;
+       margin-bottom: 1.5rem;
    }
    /* end of  form section */
    
@@ -271,6 +285,7 @@
    
    footer .col-lg-3 {
        width: 20% !important;
+       flex: 1 0 250px;
    }
    
    @media (max-width: 990px) {
@@ -312,5 +327,11 @@
    @media only screen and (max-width: 483px) {
        .testimonial-1 {
            flex: auto !important;
+       }
+   }
+   
+   @media (max-width: 380px) {
+       .button {
+           padding: 1rem !important;
        }
    }

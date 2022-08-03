@@ -16,11 +16,12 @@ form.form p label {
 }
 
 form.form input {
-    width: 100% !important;
+    width: calc(100% - 1.2rem) !important;
     padding: 0.6rem !important;
     background-color: #da291c !important;
     border: solid 3px #da291c;
     margin-top: 0.3rem;
+    color: #fff;
 }
 
 .form.form input:focus-visible {
@@ -36,17 +37,10 @@ form.form p.submit input {
     width: usnet !important;
     outline: none !important;
     color: #fff;
-    background: #000 !important;
     text-transform: uppercase;
     padding: 0.6rem 4rem !important;
     font-weight: 600 !important;
-}
-
-.red-color,
-form.form div.error,
-form.form p.error,
-form.form p.error label,
-form.form span.error {
-    color: #fff !important;
-    margin: 0 0 0 0.5rem !important;
+    background-color: #000 !important;
+    border: solid 1px #000;
+    cursor: pointer;
 }
