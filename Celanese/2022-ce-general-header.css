@@ -16,7 +16,7 @@
         justify-content: center;
         overflow: hidden;
         width: 100%;
-        background-color: #ffffff;
+        background-color: #f4f4f4;
         background-image: url("/rs/370-JDQ-161/images/gplay.png");
         padding: 20px 0;
     }
@@ -24,12 +24,11 @@
     .header-image-wrapper,
     .header-image-wrapper * {
         box-sizing: border-box;
-        border-radius: 4px;
     }
     
     .header-image-wrapper>div.filler {
         width: 100%;
-        background-image: url("/rs/370-JDQ-161/images/shattered.png");
+        /* background-image: url("/rs/370-JDQ-161/images/shattered.png"); */
     }
     
     @media screen and (max-width:1170px) {
@@ -55,15 +54,14 @@
     }
     
     .header-image-wrapper>div.filler--orange {
-        background-color: #f05500;
+        background-color: #007da9;
         margin-right: 30px;
         border-top-left-radius: 0;
-        border-bottom-left-radius;
-        0;
+        border-bottom-left-radius: 0;
     }
     
     .header-image-wrapper>div.filler--blue {
-        background-color: #7c4199;
+        background-color: #005c7a !important;
         margin-left: 30px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
