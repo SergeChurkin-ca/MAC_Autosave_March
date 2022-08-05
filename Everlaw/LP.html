@@ -9,7 +9,7 @@
     <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="http://go.everlaw.com/rs/314-QPM-328/images/favicon.ico">
 
     <title>${pagetitle}</title>
-    <link rel="icon" href="${faviconlink}">
+    <link href="http://go.everlaw.com/rs/314-QPM-328/images/videosection-style.css" rel="stylesheet">
 
     <!-- Show and Hide Meta Tags -->
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -100,7 +100,12 @@
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="0">
 
-
+    <!-- Video Section -->
+      <meta class="mktoString" id="videoposter1" mktoName="Video -1 Poster" default="http://go.everlaw.com/rs/314-QPM-328/images/videoposter.png" allowHtml="true">
+    <meta class="mktoString" id="videoembed1" mktoName="Video -1 Embed URL" default="https://www.youtube.com/watch?v=7ub_lItV68A" allowHtml="true">
+    <meta class="mktoColor" id="videoheadlineclr" mktoName="Video Headline Color" default="#22756d">
+    <meta class="mktoColor" id="videotextclr" mktoName="Video Text Color" default="#000000">
+    <meta class="mktoBoolean" id="ext-vid-close-btn" mktoName="Show Video Ext Button?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show"> 
 
     <style>
       ${googlefontimport}
@@ -867,6 +872,9 @@ body {
         </div>
         <!-- END Video -->
 
+<div>
+  
+</div>
    <footer id="footer">
     <div class="footer-container section flex">
 
@@ -927,6 +935,7 @@ body {
     </div>
 </footer>
 
-
+ <script src="http://go.everlaw.com/rs/314-QPM-328/images/mac-jquery.min.js"></script>
+  <script src="http://go.everlaw.com/rs/314-QPM-328/images/video-script.js"></script>
   </body>
 </html>
