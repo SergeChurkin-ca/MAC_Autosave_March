@@ -16,6 +16,7 @@
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec3" mktoName="Show Free-Text Section3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -84,7 +85,7 @@
 
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Font Family" id="fontfamily" default="BrownTT">
+    <meta class="mktoString" mktoName="Font Family" id="fontfamily" default="BrownTTLight">
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
@@ -115,8 +116,15 @@
       }
 
 
+html {
+    scrollbar-width: none;
+}
 
-      body {background:#fff;} 
+body {
+    background: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
@@ -199,7 +207,7 @@
       }
       .form-container{
         min-height:20px;
-
+        margin: 0 auto;
       }
 
       .mktoForm input[type="text"],
@@ -237,6 +245,10 @@
       #freetext{
         background-color:${freeTextBackgroundColor};
         display:${showsec1};
+      }
+      #freetext2{
+        background-color:${freeTextBackgroundColor};
+        display:${showsec3};
       }
       #formsection{
         background-color:${mainformbgclr};
@@ -298,11 +310,11 @@
       #header li {
         color: ${bannerTextColor} !important;
       }
-      #freetext .btn {
+      #freetext .btn, #freetext2 .btn {
         margin-top:40px;
       }
 
-      #freetext h1 {
+      #freetext h1, #freetext2 h1 {
         color: ${freeTextHeaderColor} !important;
         font-size: ${freeTextH1size}px;
         font-family: ${fontfamily}, sans-serif !important;
@@ -310,7 +322,10 @@
 
       #freetext p,
       #freetext ul,
-      #freetext li {
+      #freetext li,
+      #freetext2 p,
+      #freetext2 ul,
+      #freetext2 li  {
         color: ${freeTextTextColor} !important;
       }
 
@@ -375,7 +390,6 @@
         color: ${formLabelColor} !important;
         margin-bottom: 1rem !important;
         font-weight: 400 !important;
-        text-transform: uppercase;
       }
       .mktoForm.mktoLayoutAbove .mktoRequiredField .mktoAsterix {
         color: ${formLabelColor} !important;
@@ -699,13 +713,13 @@
           margin-left:0 !important;
         }
       }
-@font-face {
-        font-family: "BrownTT";
-        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Regular.woff2') format('woff2');
-        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Regular.eot') format('eot');
-        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Regular.woff') format('woff');
-        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Regular.ttf') format('truetype');
-        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Regular.otf');
+      @font-face {
+        font-family: "BrownTTLight";
+        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Light.woff2') format('woff2');
+        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Light.eot') format('eot');
+        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Light.woff') format('woff');
+        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Light.ttf') format('truetype');
+        src: url('http://go.everlaw.com/rs/314-QPM-328/images/BrownTT-Light.otf');
       }
 
 
@@ -796,7 +810,62 @@
 
       </div>
     </div>
+    
+        <div id="freetext2">
+      <div class="section">
+        <div class="mktoText" id="freetextcopy3" mktoName="Free-Text - Copy 2">
+          <h1>
+            Lorem ipsum dolor sit amet
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="mktoText" id="freetextcopy4" mktoName="Free-Text - Copy 3">
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          </ul>
+        </div>
+        <div class="mktoText btn" id="freetextbtn2" mktoName="Free-Text - Button Content">
+          <a href="#">Button</a>
+        </div>
+      </div>
+    </div>
 
+
+
+       <!-- Youtube Video -->
+        <div class="container_100" id="video">
+          <div class="container_inner section">
+            <div class="left">
+              <div class="mktoText" id="videotext" mktoName="Youtube Video - Copy">
+                <h2>Video Section</h2>
+                <p>Subheadline Goes here</p>
+              </div>
+            </div>
+            <div class="video-container">
+
+              <div class="videoWrapper videoWrapper169 js-videoWrapper">
+                <!-- YouTube iframe. -->
+                <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+                <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+                <iframe class="videoIframe js-videoIframe" src="${videoembed1}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed1}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+
+                <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+                <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter1});">Play video</button>
+                <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text1" mktoName="Video Button 1 Text">external close button</span></button>
+              </div>
+
+       
+            </div>
+          </div>
+        </div>
+        <!-- END Video -->
 
    <footer id="footer">
     <div class="footer-container section flex">
