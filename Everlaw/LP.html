@@ -19,6 +19,8 @@
     <meta class="mktoBoolean" id="showsec3" mktoName="Show Free-Text Section3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showvideo" mktoName="Show Video Section?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showvideo-txt" mktoName="Show Video Text?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
@@ -101,8 +103,8 @@
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="0">
 
     <!-- Video Section -->
-      <meta class="mktoString" id="videoposter1" mktoName="Video -1 Poster" default="http://go.everlaw.com/rs/314-QPM-328/images/videoposter.png" allowHtml="true">
-    <meta class="mktoString" id="videoembed1" mktoName="Video -1 Embed URL" default="https://www.youtube.com/watch?v=7ub_lItV68A" allowHtml="true">
+    <meta class="mktoString" id="videoposter1" mktoName="Video -1 Poster" default="http://go.everlaw.com/rs/314-QPM-328/images/videoposter.png" allowHtml="true">
+    <meta class="mktoString" id="videoembed1" mktoName="Video -1 Embed URL" default="https://www.youtube.com/embed/7ub_lItV68A" allowHtml="true">
     <meta class="mktoColor" id="videoheadlineclr" mktoName="Video Headline Color" default="#22756d">
     <meta class="mktoColor" id="videotextclr" mktoName="Video Text Color" default="#000000">
     <meta class="mktoBoolean" id="ext-vid-close-btn" mktoName="Show Video Ext Button?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show"> 
@@ -121,15 +123,15 @@
       }
 
 
-html {
-    scrollbar-width: none;
-}
+      html {
+        scrollbar-width: none;
+      }
 
-body {
-    background: #fff;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
+      body {
+        background: #fff;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
@@ -224,17 +226,17 @@ body {
       .mktoForm textarea.mktoField, 
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
-     background: 0 0;
-    border-bottom: 1px solid #313330 !important;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border: 0;
-    display: block;
-    font-family: "BrownTT";
-    height: 30px;
-    outline: none;
-    
+        background: 0 0;
+        border-bottom: 1px solid #313330 !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        border: 0;
+        display: block;
+        font-family: "BrownTT";
+        height: 30px;
+        outline: none;
+
       }
 
 
@@ -525,6 +527,16 @@ body {
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
+      .external-vid-close-btn {
+        display: none;
+      }
+      #video {
+        display: ${showvideo};
+      }
+      #videotext2 {
+        display: ${showvideo-txt};
+        margin-top: 2rem;
+      }
       #footer{
         display:${showfooter};
         background-color:${footerbgclr};
@@ -589,7 +601,7 @@ body {
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
-       
+
       }
       #footer .btn {
         margin-top: 0.8rem;
@@ -622,7 +634,7 @@ body {
       }
       #footericons ul {
         justify-content: left;
-    
+
       }
       #footer ul {
         margin: 0 auto !important;
@@ -640,32 +652,32 @@ body {
       #footericons {
         margin-top: 2.5rem;
       }
-    @media (max-width: 900px) {
-      .row1 {
-        flex-direction: column;
-        align-content: center;
+      @media (max-width: 900px) {
+        .row1 {
+          flex-direction: column;
+          align-content: center;
+        }
+        #footer .col {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          margin: 0 auto;
+        }
+        #footericons ul {
+          justify-content: center !important;
+          width: 20vw;
+        }
+        footer ul li, #footer strong {
+          margin: 0 auto !important;
+          justify-content: center;
+        }
+        #footer .icons-container {
+          padding: 0 !important;
+        }
       }
-      #footer .col {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-      }
-      #footericons ul {
-        justify-content: center !important;
-        width: 20vw;
-      }
-      footer ul li, #footer strong {
-        margin: 0 auto !important;
-        justify-content: center;
-      }
-      #footer .icons-container {
-        padding: 0 !important;
-      }
-    }
-    
-    
+
+
       @media screen and (max-width:768px){
         .flex{
           flex-wrap:wrap;
@@ -815,8 +827,8 @@ body {
 
       </div>
     </div>
-    
-        <div id="freetext2">
+
+    <div id="freetext2">
       <div class="section">
         <div class="mktoText" id="freetextcopy3" mktoName="Free-Text - Copy 2">
           <h1>
@@ -844,87 +856,91 @@ body {
 
 
 
-       <!-- Youtube Video -->
-        <div class="container_100" id="video">
-          <div class="container_inner section">
-            <div class="left">
-              <div class="mktoText" id="videotext" mktoName="Youtube Video - Copy">
-                <h2>Video Section</h2>
-                <p>Subheadline Goes here</p>
-              </div>
-            </div>
-            <div class="video-container">
-
-              <div class="videoWrapper videoWrapper169 js-videoWrapper">
-                <!-- YouTube iframe. -->
-                <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
-                <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
-                <iframe class="videoIframe js-videoIframe" src="${videoembed1}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed1}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-
-                <!-- the poster frame - in the form of a button to make it keyboard accessible -->
-                <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter1});">Play video</button>
-                <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text1" mktoName="Video Button 1 Text">external close button</span></button>
-              </div>
-
-       
-            </div>
+    <!-- Youtube Video -->
+    <div class="container_100" id="video">
+      <div class="container_inner section">
+        <div class="left">
+          <div class="mktoText" id="videotext" mktoName="Youtube Video - Copy">
+            <h2>Video Section</h2>
+            <p>Subheadline Goes here</p>
           </div>
         </div>
-        <!-- END Video -->
+        <div class="video-container">
 
-<div>
-  
-</div>
-   <footer id="footer">
-    <div class="footer-container section flex">
+          <div class="videoWrapper videoWrapper169 js-videoWrapper">
+            <!-- YouTube iframe. -->
+            <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+            <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+            <iframe class="videoIframe js-videoIframe" src="${videoembed1}" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed1}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+
+            <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+            <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter1});">Play video</button>
+            <button class="external-vid-close-btn" onclick="videoStop()"><span class="mktoText" id="video-btn-text1" mktoName="Video Button 1 Text">external close button</span></button>
+          </div>
+
+
+        </div>
+        <div class="mktoText" id="videotext2" mktoName="Youtube Video - Copy">
+          <h2>Video Text</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis, quae nihil aut ipsa quasi?</p>
+        </div>
+      </div>
+    </div>
+    <!-- END Video -->
+
+    <div>
+
+    </div>
+    <footer id="footer">
+      <div class="footer-container section flex">
 
         <div class="row1">
 
-            <div class="logo-container col">
-                <div class="mktoText" id="footertext1" mktoName="Footer text1" style="display:flex;flex-direction:column;">
-                    <strong style="margin-bottom:20px;">Headquarters</strong>
-                    <div><p style="margin-bottom:7px !important;">2101 Webster Street, Suite 1500<br> Oakland, CA 94612</p><p><a style="color:#097d94;" href="mailto:contact@everlaw.com">contact@everlaw.com</a></p><p style="margin-top:10px !important;"><a href="tel:18443837529">1.844.Everlaw</a></p></div>
-                </div>
-
-            </div>
-            <div class="col">
-                <ul class="mktoText" id="footertext2" mktoName="Footer text2"  style="display:flex;flex-direction:column;">
-                   <strong style="margin-bottom:20px;">London Office</strong>
-                  <div><p style="margin-bottom:7px !important;">32-38 Scrutton Street<br> London, EC2A 4RQ</p><p><a style="color:#097d94;" href="mailto:contact@everlaw.co.uk">contact@everlaw.co.uk</a></p><p style="margin-top:10px !important;"><a href="tel:08000689249">0800.068.9249</a></p></div>
-
-                </ul>
-            </div>
-            <div class="col">
-               <ul class="mktoText" id="footertext3" mktoName="Footer text3"  style="display:flex;flex-direction:column;">
-                   <strong style="margin-bottom:20px;">Washington, D.C. Office</strong>
-                  <div> <p style="margin-bottom:7px !important;">1301 K Street NW, 300W <br>Washington, DC 20005</p><p><a style="color:#097d94;" href="mailto:contact@everlaw.com">contact@everlaw.com</a></p></div>
-                </ul>
+          <div class="logo-container col">
+            <div class="mktoText" id="footertext1" mktoName="Footer text1" style="display:flex;flex-direction:column;">
+              <strong style="margin-bottom:20px;">Headquarters</strong>
+              <div><p style="margin-bottom:7px !important;">2101 Webster Street, Suite 1500<br> Oakland, CA 94612</p><p><a style="color:#097d94;" href="mailto:contact@everlaw.com">contact@everlaw.com</a></p><p style="margin-top:10px !important;"><a href="tel:18443837529">1.844.Everlaw</a></p></div>
             </div>
 
-            <div class="icons-container col">
+          </div>
+          <div class="col">
+            <ul class="mktoText" id="footertext2" mktoName="Footer text2"  style="display:flex;flex-direction:column;">
+              <strong style="margin-bottom:20px;">London Office</strong>
+              <div><p style="margin-bottom:7px !important;">32-38 Scrutton Street<br> London, EC2A 4RQ</p><p><a style="color:#097d94;" href="mailto:contact@everlaw.co.uk">contact@everlaw.co.uk</a></p><p style="margin-top:10px !important;"><a href="tel:08000689249">0800.068.9249</a></p></div>
 
-          <div class="mktoText btn" id="footerbtn" mktoName="Footer Button">
-         <a href="https://www.everlaw.com/newsletter-sign-up/" rel="" class="btn btn-md mb-3" target="_self" style="font-size: 1rem;">Subscribe to Everlaw News</a>
-        </div>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="mktoText" id="footertext3" mktoName="Footer text3"  style="display:flex;flex-direction:column;">
+              <strong style="margin-bottom:20px;">Washington, D.C. Office</strong>
+              <div> <p style="margin-bottom:7px !important;">1301 K Street NW, 300W <br>Washington, DC 20005</p><p><a style="color:#097d94;" href="mailto:contact@everlaw.com">contact@everlaw.com</a></p></div>
+            </ul>
+          </div>
 
-                <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
-                    <ul>
-                        <li id="footer-icon1">
-                            <a href="https://www.facebook.com/everlaw.inc" target="_blank"> <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>icon_facebook</title> <g id="----_footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="component_footer_XLARGE" transform="translate(-736.000000, -554.000000)" fill="#097d94"> <g id="menu" transform="translate(64.000000, 72.000000)"> <g id="location" transform="translate(0.000000, 482.000000)"> <g id="social" transform="translate(672.000000, 0.000000)"> <path d="M19.428,16.006 L17.186,16.006 C17.186,19.59 17.186,24 17.186,24 L13.864,24 C13.864,24 13.864,19.633 13.864,16.006 L12.283,16.006 L12.283,13.182 L13.864,13.182 L13.864,11.354 C13.864,10.047 14.485,8 17.216,8 L19.677,8.01 L19.677,10.752 C19.677,10.752 18.181,10.752 17.891,10.752 C17.6,10.752 17.186,10.898 17.186,11.522 L17.186,13.182 L19.719,13.182 L19.428,16.006 Z M0,32 L32,32 L32,0 L0,0 L0,32 Z" id="icon_facebook"></path> </g> </g> </g> </g> </g> </svg></a>
-                        </li>
+          <div class="icons-container col">
 
-                        <li id="footer-icon4">
-                            <a href="https://twitter.com/everlaw" target="_blank"> 
-                      <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>icon_twitter</title> <g id="----_footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="component_footer_XLARGE" transform="translate(-774.000000, -554.000000)" fill="#097d94"> <g id="menu" transform="translate(64.000000, 72.000000)"> <g id="location" transform="translate(0.000000, 482.000000)"> <g id="social" transform="translate(672.000000, 0.000000)"> <path d="M60.362,12.738 C60.369,12.879 60.372,13.02 60.372,13.162 C60.372,17.5 57.07,22.502 51.032,22.502 C49.178,22.502 47.453,21.959 46,21.027 C46.258,21.059 46.519,21.072 46.783,21.072 C48.322,21.072 49.736,20.549 50.859,19.668 C49.424,19.643 48.211,18.693 47.794,17.389 C47.994,17.428 48.199,17.447 48.411,17.447 C48.711,17.447 49.001,17.408 49.275,17.332 C47.775,17.031 46.643,15.703 46.643,14.113 C46.643,14.1 46.643,14.086 46.643,14.072 C47.086,14.318 47.592,14.467 48.13,14.482 C47.249,13.895 46.67,12.889 46.67,11.75 C46.67,11.148 46.832,10.586 47.114,10.1 C48.732,12.086 51.152,13.393 53.88,13.529 C53.824,13.289 53.795,13.039 53.795,12.781 C53.795,10.969 55.265,9.5 57.078,9.5 C58.021,9.5 58.875,9.898 59.474,10.535 C60.221,10.389 60.924,10.115 61.559,9.74 C61.312,10.506 60.793,11.15 60.115,11.555 C60.779,11.477 61.412,11.301 62,11.039 C61.561,11.697 61.004,12.275 60.362,12.738 Z M38,32 L70,32 L70,0 L38,0 L38,32 Z" id="icon_twitter"></path> </g> </g> </g> </g> </g> </svg></a>
-                        </li>
-                        <li id="footer-icon2">
-                            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFL3UYRvwgv9AAAAYI7LoYolRm5oG5fMvlVXkUsW9vHx6aD-roCBR-h1S83jrR_mt5JTgr9KMnvH-2jWWqxM6K55-Tujm7hi-nKB2nYNuM-E9W5JL5KMFt64wraD7X_D9DKdzI=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Feverlaw" target="_blank">
-                               <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>icon_linkedin</title> <g id="----_footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="component_footer_XLARGE" transform="translate(-812.000000, -554.000000)" fill="#097d94"> <g id="menu" transform="translate(64.000000, 72.000000)"> <g id="location" transform="translate(0.000000, 482.000000)"> <g id="social" transform="translate(672.000000, 0.000000)"> <path d="M100,23.647 L96.57,23.647 L96.57,18.127 C96.57,16.74 96.074,15.793 94.832,15.793 C93.885,15.793 93.32,16.434 93.072,17.049 C92.981,17.27 92.959,17.576 92.959,17.885 L92.959,23.647 L89.53,23.647 C89.53,23.647 89.574,14.297 89.53,13.33 L92.959,13.33 L92.959,14.791 C93.416,14.088 94.23,13.088 96.05,13.088 C98.306,13.088 100,14.563 100,17.732 L100,23.647 Z M85.917,11.922 L85.894,11.922 C84.744,11.922 84,11.127 84,10.139 C84,9.125 84.767,8.354 85.939,8.354 C87.113,8.354 87.836,9.125 87.857,10.139 C87.857,11.127 87.113,11.922 85.917,11.922 Z M84.202,23.647 L87.632,23.647 L87.632,13.33 L84.202,13.33 L84.202,23.647 Z M76,32 L108,32 L108,0 L76,0 L76,32 Z" id="icon_linkedin"></path> </g> </g> </g> </g> </g> </svg></a>
-                        </li>
-
-                    </ul>
-                </div>
+            <div class="mktoText btn" id="footerbtn" mktoName="Footer Button">
+              <a href="https://www.everlaw.com/newsletter-sign-up/" rel="" class="btn btn-md mb-3" target="_self" style="font-size: 1rem;">Subscribe to Everlaw News</a>
             </div>
+
+            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
+              <ul>
+                <li id="footer-icon1">
+                  <a href="https://www.facebook.com/everlaw.inc" target="_blank"> <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>icon_facebook</title> <g id="----_footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="component_footer_XLARGE" transform="translate(-736.000000, -554.000000)" fill="#097d94"> <g id="menu" transform="translate(64.000000, 72.000000)"> <g id="location" transform="translate(0.000000, 482.000000)"> <g id="social" transform="translate(672.000000, 0.000000)"> <path d="M19.428,16.006 L17.186,16.006 C17.186,19.59 17.186,24 17.186,24 L13.864,24 C13.864,24 13.864,19.633 13.864,16.006 L12.283,16.006 L12.283,13.182 L13.864,13.182 L13.864,11.354 C13.864,10.047 14.485,8 17.216,8 L19.677,8.01 L19.677,10.752 C19.677,10.752 18.181,10.752 17.891,10.752 C17.6,10.752 17.186,10.898 17.186,11.522 L17.186,13.182 L19.719,13.182 L19.428,16.006 Z M0,32 L32,32 L32,0 L0,0 L0,32 Z" id="icon_facebook"></path> </g> </g> </g> </g> </g> </svg></a>
+                </li>
+
+                <li id="footer-icon4">
+                  <a href="https://twitter.com/everlaw" target="_blank"> 
+                    <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>icon_twitter</title> <g id="----_footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="component_footer_XLARGE" transform="translate(-774.000000, -554.000000)" fill="#097d94"> <g id="menu" transform="translate(64.000000, 72.000000)"> <g id="location" transform="translate(0.000000, 482.000000)"> <g id="social" transform="translate(672.000000, 0.000000)"> <path d="M60.362,12.738 C60.369,12.879 60.372,13.02 60.372,13.162 C60.372,17.5 57.07,22.502 51.032,22.502 C49.178,22.502 47.453,21.959 46,21.027 C46.258,21.059 46.519,21.072 46.783,21.072 C48.322,21.072 49.736,20.549 50.859,19.668 C49.424,19.643 48.211,18.693 47.794,17.389 C47.994,17.428 48.199,17.447 48.411,17.447 C48.711,17.447 49.001,17.408 49.275,17.332 C47.775,17.031 46.643,15.703 46.643,14.113 C46.643,14.1 46.643,14.086 46.643,14.072 C47.086,14.318 47.592,14.467 48.13,14.482 C47.249,13.895 46.67,12.889 46.67,11.75 C46.67,11.148 46.832,10.586 47.114,10.1 C48.732,12.086 51.152,13.393 53.88,13.529 C53.824,13.289 53.795,13.039 53.795,12.781 C53.795,10.969 55.265,9.5 57.078,9.5 C58.021,9.5 58.875,9.898 59.474,10.535 C60.221,10.389 60.924,10.115 61.559,9.74 C61.312,10.506 60.793,11.15 60.115,11.555 C60.779,11.477 61.412,11.301 62,11.039 C61.561,11.697 61.004,12.275 60.362,12.738 Z M38,32 L70,32 L70,0 L38,0 L38,32 Z" id="icon_twitter"></path> </g> </g> </g> </g> </g> </svg></a>
+                </li>
+                <li id="footer-icon2">
+                  <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFL3UYRvwgv9AAAAYI7LoYolRm5oG5fMvlVXkUsW9vHx6aD-roCBR-h1S83jrR_mt5JTgr9KMnvH-2jWWqxM6K55-Tujm7hi-nKB2nYNuM-E9W5JL5KMFt64wraD7X_D9DKdzI=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Feverlaw" target="_blank">
+                    <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>icon_linkedin</title> <g id="----_footer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="component_footer_XLARGE" transform="translate(-812.000000, -554.000000)" fill="#097d94"> <g id="menu" transform="translate(64.000000, 72.000000)"> <g id="location" transform="translate(0.000000, 482.000000)"> <g id="social" transform="translate(672.000000, 0.000000)"> <path d="M100,23.647 L96.57,23.647 L96.57,18.127 C96.57,16.74 96.074,15.793 94.832,15.793 C93.885,15.793 93.32,16.434 93.072,17.049 C92.981,17.27 92.959,17.576 92.959,17.885 L92.959,23.647 L89.53,23.647 C89.53,23.647 89.574,14.297 89.53,13.33 L92.959,13.33 L92.959,14.791 C93.416,14.088 94.23,13.088 96.05,13.088 C98.306,13.088 100,14.563 100,17.732 L100,23.647 Z M85.917,11.922 L85.894,11.922 C84.744,11.922 84,11.127 84,10.139 C84,9.125 84.767,8.354 85.939,8.354 C87.113,8.354 87.836,9.125 87.857,10.139 C87.857,11.127 87.113,11.922 85.917,11.922 Z M84.202,23.647 L87.632,23.647 L87.632,13.33 L84.202,13.33 L84.202,23.647 Z M76,32 L108,32 L108,0 L76,0 L76,32 Z" id="icon_linkedin"></path> </g> </g> </g> </g> </g> </svg></a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
 
 
         </div>
@@ -932,10 +948,10 @@ body {
           <p>© Everlaw 2022</p>
         </div>
 
-    </div>
-</footer>
+      </div>
+    </footer>
 
- <script src="http://go.everlaw.com/rs/314-QPM-328/images/mac-jquery.min.js"></script>
-  <script src="http://go.everlaw.com/rs/314-QPM-328/images/video-script.js"></script>
+    <script src="http://go.everlaw.com/rs/314-QPM-328/images/mac-jquery.min.js"></script>
+    <script src="http://go.everlaw.com/rs/314-QPM-328/images/video-script.js"></script>
   </body>
 </html>
