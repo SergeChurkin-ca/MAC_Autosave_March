@@ -1,0 +1,97 @@
+form.form {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 9px 10px 13px rgba(0, 0, 0, 0.15), -9px -10px 13px rgba(0, 0, 0, 0.15);
+    padding: 40px 60px !important;
+}
+
+form.form p {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px !important;
+    padding: 0 !important;
+}
+
+.full-width,
+.chbox-field {
+    width: 100% !important;
+}
+
+form.form textarea.standard {
+    width: auto !important;
+}
+
+form.form p label {
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+form.form p.required label,
+form.form span.required label {
+    background: none !important;
+}
+
+form.form select {
+    width: 100%;
+}
+
+form.form input.text {
+    width: auto !important;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.chbox-field {
+    width: 48%;
+}
+
+form.form input,
+form.form select {
+    padding: 8px 5px;
+}
+
+
+/* checkboxes */
+
+.chbox-field .inline {
+    visibility: hidden;
+}
+
+.chbox-field {
+    display: flex;
+    flex-direction: row-reverse !important;
+    justify-content: flex-end;
+}
+
+form.form span.value {
+    margin: 0 !important;
+}
+
+.chbox-field label {
+    width: 60% !important;
+    margin-left: -13px !important;
+    text-transform: unset !important;
+}
+
+
+/* button */
+
+form.form p.submit {
+    margin: 0 !important;
+}
+
+form.form p.submit input {
+    padding: 9px 39px;
+    border-radius: 20px;
+    background-color: #0300ff;
+    border: solid 1px #0300ff;
+    color: #fff;
+    text-transform: uppercase;
+}
