@@ -14,15 +14,17 @@ font-family: Arial, serif !important;
     <meta class="mktoColor" id="bodyborderColor" mktoname="Body Border Color" default="#F6F9FC" />
     <meta class="mktoNumber" id="bodyborderWid" mktoname="Body Border Width (px)" default="0" />
     <meta class="mktoString" id="googleimportfont" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');" />
-    <meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="Montserrat" />
+    <meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="AvenirNextLTPro-Regular" />
+    <meta class="mktoString" id="fontfamily-headline" mktoName="Font Family Name" default="AvenirNextLTPro-Bold" />
+    <meta class="mktoString" id="fontfamily-subheadline" mktoName="Font Family Name" default="AvenirNextLTPro-Medium" />
 
 
     <meta class="mktoNumber" id="logowidth" mktoname="Mobile Logo Width (px)" default="190" />
     <meta class="mktoNumber" id="imgmaxwidth" mktoname="Banner Img Mobile Width (px)" default="690" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="mod-bg-color" mktoName="Background Color" default="#fafbfc" />
-    <meta mktoModuleScope="true" class="mktoColor" id="banner-bg-color" mktoName="Banner Tint Color" default="#04d899" />
-    <meta mktoModuleScope="true" class="mktoColor" id="bannerdark-bg-Color" mktoName="Background Color" default="#04d899" />
+    <meta mktoModuleScope="true" class="mktoColor" id="banner-bg-color" mktoName="Banner Tint Color" default="#0062a9" />
+    <meta mktoModuleScope="true" class="mktoColor" id="bannerdark-bg-Color" mktoName="Background Color" default="#0062a9" />
     <meta mktoModuleScope="true" class="mktoColor" id="banner-lite-Color" mktoName="Background Color" default="#ffffff" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="logobgclr" mktoname="Logo Background Color" default="#ffffff" />
@@ -267,6 +269,39 @@ font-family: Arial, serif !important;
       }
 
 
+      @font-face {
+        font-family: 'AvenirNextLTPro-Bold';
+        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.eot'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.eot?#iefix') format('embedded-opentype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Bold.ttf') format('truetype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Bold.woff') format('woff'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'AvenirNextLTPro-Medium';
+        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.eot'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.eot?#iefix') format('embedded-opentype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.woff2') format('woff2'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Medium.ttf') format('truetype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Medium.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+
+      @font-face {
+        font-family: 'AvenirNextLTPro-Regular';
+        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot?#iefix') format('embedded-opentype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.ttf') format('truetype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.woff') format('woff'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
 
 
 
@@ -324,7 +359,7 @@ font-family: Arial, serif !important;
                                 <td height="${top_pad90}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${bannerFontColor};font-weight:bold; font-size: ${headlineFontSize30}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
+                                <td style="font-family: '${fontfamily-headline}',Arial, sans-serif; color: ${bannerFontColor};font-weight:bold; font-size: ${headlineFontSize30}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
                                   <div class="mktoText" mktoName="Headline" id="bannerhead">
                                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                                   </div>
@@ -334,7 +369,7 @@ font-family: Arial, serif !important;
                                 <td height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${bannerFontColor}; font-size: ${CopySize18}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
+                                <td style="font-family: '${fontfamily-subheadline}',Arial, sans-serif; color: ${bannerFontColor}; font-size: ${CopySize18}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
                                   <div class="mktoText" mktoName="Text" id="bannertext">
                                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                                   </div>
@@ -350,7 +385,7 @@ font-family: Arial, serif !important;
                                       <table cellpadding="0" cellspacing="0" border="0" align="${align}">
                                         <tbody>
                                           <tr>
-                                            <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; border:3px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
+                                            <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily-subheadline}',Arial, sans-serif; border:3px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
                                               <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 6px 18px 4px; display:inline-block" href="${btnURL}">${btnText}</a>
                                             </td>
                                           </tr>
@@ -393,7 +428,7 @@ font-family: Arial, serif !important;
                                 <td height="${top_pad90}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${bannerFontColor};font-weight:bold; font-size: ${headlineFontSize30}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
+                                <td style="font-family: '${fontfamily-headline}',Arial, sans-serif; color: ${bannerFontColor};font-weight:bold; font-size: ${headlineFontSize30}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
                                   <div class="mktoText" mktoName="Headline" id="bannerheaddy">
                                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                                   </div>
@@ -403,7 +438,7 @@ font-family: Arial, serif !important;
                                 <td height="10" style="line-height:1px;font-size:1px;">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td style="font-family: '${fontfamily}',Arial, sans-serif; color: ${bannerFontColor}; font-size: ${CopySize18}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
+                                <td style="font-family: '${fontfamily-subheadline}',Arial, sans-serif; color: ${bannerFontColor}; font-size: ${CopySize18}px; line-height: 145%; mso-line-height-rule: exactly; text-align: ${align}">
                                   <div class="mktoText" mktoName="Text" id="bannertextdy">
                                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                                   </div>
@@ -419,7 +454,7 @@ font-family: Arial, serif !important;
                                       <table cellspacing="0" cellpadding="0" border="0" align="left">
                                         <tbody>
                                           <tr>
-                                            <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; border:3px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
+                                            <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily-subheadline}',Arial, sans-serif; border:3px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
                                               <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 6px 18px 4px; display:inline-block" href="${btnURL-dynamic}">${btnText-dynamic}</a>
                                             </td>
                                           </tr>
@@ -480,7 +515,7 @@ font-family: Arial, serif !important;
                           <td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                         <tr>
-                          <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize28}px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor}; text-align: ${alignLeft};">
+                          <td align="${alignLeft}" style="font-family: '${fontfamily-headline}',Arial, sans-serif; font-size: ${headlineFontSize28}px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor}; text-align: ${alignLeft};">
                             <div class="mktoText" mktoName="Headline" id="Headline-text2">
                               <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                             </div>
@@ -503,7 +538,7 @@ font-family: Arial, serif !important;
                           <td height="${top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                         <tr>
-                          <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${SubheadlineFontSize}px; font-weight:700;line-height: 145%; mso-line-height-rule: exactly; color: ${SubheadlineFontColor}; text-align: ${alignLeft};">
+                          <td align="${alignLeft}" style="font-family: '${fontfamily-subheadline}',Arial, sans-serif; font-size: ${SubheadlineFontSize}px; font-weight:700;line-height: 145%; mso-line-height-rule: exactly; color: ${SubheadlineFontColor}; text-align: ${alignLeft};">
                             <div class="mktoText" mktoName="SubHeadline" id="SubHeadline-text">
                               <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                             </div>
@@ -557,7 +592,7 @@ font-family: Arial, serif !important;
                                 <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
                                   <tbody>
                                     <tr>
-                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
+                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily-subheadline}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
                                         <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor}; padding: 6px 20px 5px; display:inline-block" href="${btnURL}">${btnText2}</a>
                                       </td>
                                     </tr>
@@ -591,7 +626,7 @@ font-family: Arial, serif !important;
                                 <table cellspacing="0" cellpadding="0" border="0" align="center">
                                   <tbody>
                                     <tr>
-                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
+                                      <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily-subheadline}',Arial, sans-serif;border:3px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
                                         <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor}; padding: 6px 20px 5px; display:inline-block" href="#">Dynamic Button</a> </td>
                                     </tr>
                                   </tbody>
@@ -628,14 +663,14 @@ font-family: Arial, serif !important;
 
                                 <td width="20" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:20px;padding-right:25px;">
                                   <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
-                                    <a href="https://www.facebook.com/bionicai/" target="_blank"><img alt="linkedin icon" width="20" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/lnin-blue.png" style="width:20px;height:auto;" /></a>
+                                    <a href="https://www.linkedin.com/company/convex-labs" target="_blank"><img alt="linkedin icon" width="20" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/lnin-blue.png" style="width:20px;height:auto;" /></a>
                                   </div>
                                 </td>
 
 
                                 <td width="29" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:29px;">
                                   <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
-                                    <a href="https://twitter.com/BionicAI" target="_blank"><img alt="twitter icon" width="29" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/tw-blue.png" style="width:29px;height:auto;" /></a>
+                                    <a href="https://twitter.com/ConvexBuilt" target="_blank"><img alt="twitter icon" width="29" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/tw-blue.png" style="width:29px;height:auto;" /></a>
                                   </div>
                                 </td>
 
@@ -666,44 +701,43 @@ font-family: Arial, serif !important;
 
                         <tr>
                           <td align="${alignCenter}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${footer-font-clr}; text-align: ${alignCenter};">
-                            <div>
-                              &copy; Copyright 2020 Bionic. All Rights Reserved. </br>
-                              U.S. HEADQUARTERS<br>
-                               2345 Yale Street<br>
-                              Palo Alto, CA 94306<br>
-                  Phone: <a href="tel:+1-415-794-0180" style="color: ${footer-font-clr};">+1 (415) 794-0180</a> | Email: <a href="mailto:nfo@bionic.ai" style="color: ${footer-font-clr};">nfo@bionic.ai</a></div>
-            </div>
-            </td>
-      </tr>
+                            <div>&copy; 2022 Convex. All Rights Reserved.<br>
+                            U.S. HEADQUARTERS<br>
+                            123 Street Street<br>
+                            City, CA 00005<br>
+                            Phone: <a href="+1-111-112-3456" style="color: ${footer-font-clr};">+1 (111) 112-3456</a> | Email: <a href="mailto:mail.com" style="color: ${footer-font-clr};">info@mail.com</a>
+                        </div>
+                    </td>
+                  </tr>
 
-      <tr>
-        <td height="${logo-top_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-      </tr>
+                  <tr>
+                    <td height="${logo-top_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                  </tr>
 
-      <tr>
-        <td align="${alignCenter}" style="text-align: ${alignCenter};">
-          <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-            <a href="https://www.convex.com/" target="_blank"><img width="30" class="logowidth" alt="logo" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/logo-white.png" border="0" style="width:${logowidth2}px; height:auto !important;max-width:100px !important;" /></a>
-          </div>
+                  <tr>
+                    <td align="${alignCenter}" style="text-align: ${alignCenter};">
+                      <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
+                        <a href="https://www.convex.com/" target="_blank"><img width="30" class="logowidth" alt="logo" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/logo-white.png" border="0" style="width:${logowidth2}px; height:auto !important;max-width:100px !important;" /></a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td height="${btm_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <!--Footer Module-->
+
+
+
         </td>
-      </tr>
-
-      <tr>
-        <td height="${btm_pad35}" style="line-height:1px;font-size:1px;">&nbsp;</td>
       </tr>
     </table>
     </td>
   </tr>
-</table>
-<!--Footer Module-->
-
-
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
 </table>
 </body>
 
