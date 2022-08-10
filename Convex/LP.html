@@ -522,7 +522,8 @@
       }
       #footer .col {
         width: calc((100% / 5) - 2rem);
-        flex: 1 0 220px;
+        min-width: 100px;
+        flex: 1 0 200px;
       }
       #footer .section{
         padding:${footerpaddingtb}px 0;
@@ -547,8 +548,12 @@
       #footer col:nth-child(2) {
         margin: 0 1rem 0 0;
       }
-      #footer svg{
+      #footer .icons-container a{
         width:${footericonswidth}rem;
+        
+      }
+      #footer .icons-container {
+        max-width: 120px;
       }
       #footer svg:hover, #footer svg:focus {
         fill: ${footerhoverclr};
@@ -560,13 +565,13 @@
         justify-content: right;
         display: flex;
         flex-direction: row;
-        padding-left: 5%;
+        margin: 0 !important;
         gap: 1rem;
       }
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
-       
+       height: auto;
       }
       #footer .footer-menu strong{
         font-size: cal(2px + ${footerfontsize}px);
@@ -600,8 +605,7 @@
       #footer ul li {
         list-style: none;
         display: flex;
-        height: 1.5rem;
-        align-items: center;
+        // align-items: center;
       }
 
       #footericons {
@@ -609,23 +613,12 @@
       }
     @media (max-width: 900px) {
       .row1 {
-        flex-direction: column;
-        align-content: center;
       }
       #footer .col {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
         margin: 0 auto;
       }
       #footericons ul {
-        justify-content: center !important;
         width: 20vw;
-      }
-      footer ul li, #footer strong {
-        margin: 0 auto !important;
-        justify-content: center;
       }
       #footer .icons-container {
         padding: 0 !important;
@@ -659,12 +652,7 @@
         #formsection .form-container{
           padding:20px;
         }
-        .row1 {
-          justify-content: center !important;
-        }
-        #footer .logo-container {
-          margin-bottom: 1rem !important;
-        }
+         
         .row1 p {
           text-align: center;
         }
@@ -788,8 +776,8 @@
                 </div>
   <div class="icons-container flex col">
     <ul>
-      <li> <a href="https://www.linkedin.com/company/convex-labs" target="_blank"><img alt="linkedin icon" width="20" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/icons-8-linkedin-1.svg" style="width:20px;height:auto;" /></a></li>
-      <li><a href="https://twitter.com/ConvexBuilt" target="_blank"><img alt="twitter icon" width="29" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/icons-8-twitter-squared-1.svg" style="width:29px;height:auto;" /></a></li>
+      <li><a href="https://www.linkedin.com/company/convex-labs" target="_blank"><img alt="linkedin icon" width="20" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/lnin-blue.png" style="width:20px;height:auto;" /></a></li>
+      <li><a href="https://twitter.com/ConvexBuilt" target="_blank"><img alt="twitter icon" width="29" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/tw-blue.png" style="width:29px;height:auto;" /></a></li>
     </ul>
   </div>
             </div>
