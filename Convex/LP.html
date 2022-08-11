@@ -83,8 +83,8 @@
 
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Copy Font Family" id="fontfamily" default="Montserrat">
-          <meta class="mktoString" id="fontfamily-headline" mktoName="Font Family Name" default="AvenirNextLTPro-Bold" />
+    <meta class="mktoString" mktoName="Copy Font Family" id="fontfamily" default="AvenirNextLTPro-Regular">
+    <meta class="mktoString" id="fontfamily-headline" mktoName="Font Family Name" default="AvenirNextLTPro-Bold" />
     <meta class="mktoString" id="fontfamily-subheadline" mktoName="Font Family Name" default="AvenirNextLTPro-Medium" />
 
     <!-- General Button Styling -->
@@ -578,7 +578,7 @@
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
-       height: auto;
+        height: auto;
       }
       #footer .footer-menu strong{
         font-size: cal(2px + ${footerfontsize}px);
@@ -618,21 +618,21 @@
       #footericons {
         margin-top: 2.5rem;
       }
-    @media (max-width: 900px) {
-      .row1 {
+      @media (max-width: 900px) {
+        .row1 {
+        }
+        #footer .col {
+          // margin: 0 auto;
+        }
+        #footericons ul {
+          width: 20vw;
+        }
+        #footer .icons-container {
+          padding: 0 !important;
+        }
       }
-      #footer .col {
-        // margin: 0 auto;
-      }
-      #footericons ul {
-        width: 20vw;
-      }
-      #footer .icons-container {
-        padding: 0 !important;
-      }
-    }
-    
-    
+
+
       @media screen and (max-width:868px){
         .flex{
           flex-wrap:wrap;
@@ -659,7 +659,7 @@
         #formsection .form-container{
           padding:20px;
         }
-         
+
         .row1 p {
           text-align: center;
         }
@@ -683,25 +683,25 @@
 
     </style>
     <style>
-      
+
       @font-face {
         font-family: 'AvenirNextLTPro-Bold';
-        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.eot'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.eot?#iefix') format('embedded-opentype'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Bold.ttf') format('truetype'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Bold.woff') format('woff'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.woff2') format('woff2');
+        src: url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.eot'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.eot?#iefix') format('embedded-opentype'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Bold.ttf') format('truetype'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Bold.woff') format('woff'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
       }
 
       @font-face {
         font-family: 'AvenirNextLTPro-Medium';
-        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.eot'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.eot?#iefix') format('embedded-opentype'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.woff2') format('woff2'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Medium.ttf') format('truetype'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Medium.ttf') format('woff');
+        src: url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.eot'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.eot?#iefix') format('embedded-opentype'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.woff2') format('woff2'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Medium.ttf') format('truetype'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Medium.ttf') format('woff');
         font-weight: normal;
         font-style: normal;
       }
@@ -709,11 +709,11 @@
 
       @font-face {
         font-family: 'AvenirNextLTPro-Regular';
-        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot?#iefix') format('embedded-opentype'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.ttf') format('truetype'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.woff') format('woff'),
-          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.woff2') format('woff2');
+        src: url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot?#iefix') format('embedded-opentype'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.ttf') format('truetype'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.woff') format('woff'),
+          url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
       }
@@ -808,42 +808,42 @@
     </div>
 
 
-   <footer id="footer">
-    <div class="footer-container section flex">
+    <footer id="footer">
+      <div class="footer-container section flex">
 
         <div class="row1">
 
-            <div class="logo-container flex col">
-                <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
-                    <a href="https://www.convex.com"><img src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/convex-horizontal-white.svg" alt="logo"></a>
-                </div>
-  <div class="icons-container flex col">
-    <ul>
-      <li><a href="https://www.linkedin.com/company/convex-labs" target="_blank"><img alt="linkedin icon" width="20" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/lnin-blue.png" style="width:20px;height:auto;" /></a></li>
-      <li><a href="https://twitter.com/ConvexBuilt" target="_blank"><img alt="twitter icon" width="29" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/tw-blue.png" style="width:29px;height:auto;" /></a></li>
-    </ul>
-  </div>
+          <div class="logo-container flex col">
+            <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
+              <a href="https://www.convex.com"><img src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/convex-horizontal-white.svg" alt="logo"></a>
             </div>
-            <div class="col">
-                <ul id="menu-footer-menu" class="footer-menu">
-                    <li><strong><a href="https://www.convex.com/why-convex/">Why Convex?</a></strong></li>
-                </ul>
+            <div class="icons-container flex col">
+              <ul>
+                <li><a href="https://www.linkedin.com/company/convex-labs" target="_blank"><img alt="linkedin icon" width="20" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/lnin-blue.png" style="width:20px;height:auto;" /></a></li>
+                <li><a href="https://twitter.com/ConvexBuilt" target="_blank"><img alt="twitter icon" width="29" height="auto" src="http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/tw-blue.png" style="width:29px;height:auto;" /></a></li>
+              </ul>
             </div>
-   <div class="col">
-    <ul id="menu-footer-menu" class="footer-menu">
-        <li><strong>Solutions</strong></li>
-        <ul class="sub-menu">
-          <li><b>By Use Case</b></li>
-                  <li><a href="https://www.convex.com/plan-your-go-to-market-strategy/">Plan Your Go-To-Market Strategy</a></li>
+          </div>
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li><strong><a href="https://www.convex.com/why-convex/">Why Convex?</a></strong></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li><strong>Solutions</strong></li>
+              <ul class="sub-menu">
+                <li><b>By Use Case</b></li>
+                <li><a href="https://www.convex.com/plan-your-go-to-market-strategy/">Plan Your Go-To-Market Strategy</a></li>
                 <li><a href="https://www.convex.com/target-key-segments/">Target Key Segments</a></li>
                 <li><a href="https://www.convex.com/engage-prospects/">Engage Prospects</a></li>
+              </ul>
             </ul>
-        </ul>
-    <ul id="menu-footer-menu" class="footer-menu">
-        
-        <ul class="sub-menu">
-          <li><b>By Industry</b></li>
-                   <li><a href="https://www.convex.com/solutions-hvac-industry/">HVAC</a></li>
+            <ul id="menu-footer-menu" class="footer-menu">
+
+              <ul class="sub-menu">
+                <li><b>By Industry</b></li>
+                <li><a href="https://www.convex.com/solutions-hvac-industry/">HVAC</a></li>
                 <li><a href="https://www.convex.com/solutions-security-access-control-industry/">Security &amp; Access Control</a></li>
                 <li><a href="https://www.convex.com/solutions-elevator-industry/">Elevators</a></li>
                 <li><a href="https://www.convex.com/solutions-facilities-janitorial-industry/">Facilities &amp; Janitorial</a></li>
@@ -855,48 +855,48 @@
                 <li><a href="https://www.convex.com/solutions-roofing-industry/">Roofing</a></li>
                 <li><a href="https://www.convex.com/solutions-solar-industry/">Solar</a></li>
                 <li><a href="https://www.convex.com/solutions-grounds-management/">Grounds Management</a></li>
+              </ul>
             </ul>
-        </ul>
-</div>
-<div class="col">
-    <ul id="menu-footer-menu" class="footer-menu">
-        <li><strong>Resources</strong></li>
-        <ul class="sub-menu">
-              <li><a href="https://www.convex.com/resources/">Resource Center</a></li>
+          </div>
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li><strong>Resources</strong></li>
+              <ul class="sub-menu">
+                <li><a href="https://www.convex.com/resources/">Resource Center</a></li>
                 <li><a href="https://www.convex.com/resources/case-studies/">Case Studies</a></li>
                 <li><a href="https://www.convex.com/resources/tools/">Tools</a></li>
                 <li><a href="https://www.convex.com/resources/reports/">Reports</a></li>
                 <li><a href="https://www.convex.com/resources/webinars/">Webinars</a></li>
                 <li><a href="https://www.convex.com/resources/videos/">Videos</a></li>
                 <li><a href="https://www.convex.com/blog/">Blog</a></li>
+              </ul>
             </ul>
-        </ul>
 
-</div>
-<div class="col">
-    <ul id="menu-footer-menu" class="footer-menu">
-        <li><strong>About Convex</strong></li>
-        <ul class="sub-menu">
-          
-     <li><a href="https://www.convex.com/about-us/">About</a></li>
+          </div>
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li><strong>About Convex</strong></li>
+              <ul class="sub-menu">
+
+                <li><a href="https://www.convex.com/about-us/">About</a></li>
                 <li><a href="https://www.convex.com/leadership-team/">Leadership</a></li>
                 <li><a href="https://www.convex.com/careers/">Careers</a></li>
                 <li><b>News</b></li>
                 <li><a href="https://www.convex.com/news-events/press-releases/">In the News</a></li>
+              </ul>
             </ul>
-        </ul>
 
-</div>
+          </div>
 
 
         </div>
         <div class="row2">
           <p>© 2022 Convex. All Rights Reserved. &nbsp;|&nbsp; <a href="https://www.convex.com/terms-of-service/">Terms of Service</a> &nbsp;|&nbsp; <a href="https://www.convex.com/privacy-policy/">Privacy Policy</a>&nbsp; | &nbsp;<a href="https://www.convex.com/disclosure-policy/">Disclosure Policy</a>
-</p>
+          </p>
         </div>
 
-    </div>
-</footer>
+      </div>
+    </footer>
 
 
   </body>
