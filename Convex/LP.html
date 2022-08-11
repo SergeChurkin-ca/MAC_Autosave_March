@@ -84,6 +84,8 @@
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
     <meta class="mktoString" mktoName="Copy Font Family" id="fontfamily" default="Montserrat">
+          <meta class="mktoString" id="fontfamily-headline" mktoName="Font Family Name" default="AvenirNextLTPro-Bold" />
+    <meta class="mktoString" id="fontfamily-subheadline" mktoName="Font Family Name" default="AvenirNextLTPro-Medium" />
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="18">
@@ -118,12 +120,15 @@
 
       body {background:#fff;} 
 
+      h1, h2 {
+        font-family: ${fontfamily-headline}, sans-serif !important;
+      }
       #header h1 {
         font-size: ${header-h1fontsize}px;
-        font-family: ${fontfamily}, sans-serif !important;
       }
       #header p {
         font-size: ${header-p-fontsize}px;
+        font-family:${fontfamily-subheadline};
       }
       h1 {
         font-size: ${h1fontsize}px;
@@ -184,6 +189,7 @@
         transition:300ms opacity;
         text-transform: uppercase;
         font-weight: 800;
+        font-family:${fontfamily-subheadline} !important;;
       }
       .btn a:hover, .btn a:focus {
         background: ${btnhoverbackground};
@@ -309,7 +315,7 @@
 
       #formlefttext h2 {
         color: ${formSectionHeaderColor} !important;
-        font-family: ${fontfamily}, sans-serif !important;;
+        font-family: ${fontfamily-headline}, sans-serif !important;;
       }
 
       #formsection p,
@@ -350,7 +356,7 @@
       #formheadline h2{
         color: ${formHeadLineColor} !important;
         font-size: ${formheadlinefontsize}px !important;
-        font-family: ${fontfamily};
+        font-family: ${fontfamily-headline};
       }
       form.mktoForm{
         width:99% !important;
@@ -453,6 +459,7 @@
         justify-content: center !important;
       }
       .mktoButtonWrap button.mktoButton, .mktoForm .mktoButtonWrap.mktoGlow .mktoButton {
+        font-family:${fontfamily-subheadline} !important;
         background: ${formButtonColor} !important;
         border: ${formButtonColor} !important;
         color:${btnfontclr};
@@ -522,8 +529,8 @@
       }
       #footer .col {
         width: calc((100% / 5) - 2rem);
-        min-width: 100px;
-        flex: 1 0 200px;
+        min-width: 150px;
+        margin-bottom: 0.5rem;
       }
       #footer .section{
         padding:${footerpaddingtb}px 0;
@@ -550,10 +557,10 @@
       }
       #footer .icons-container a{
         width:${footericonswidth}rem;
-        
       }
       #footer .icons-container {
         max-width: 120px;
+        align-items: flex-start;
       }
       #footer svg:hover, #footer svg:focus {
         fill: ${footerhoverclr};
@@ -615,7 +622,7 @@
       .row1 {
       }
       #footer .col {
-        margin: 0 auto;
+        // margin: 0 auto;
       }
       #footericons ul {
         width: 20vw;
@@ -674,6 +681,42 @@
         }
       }
 
+    </style>
+    <style>
+      
+      @font-face {
+        font-family: 'AvenirNextLTPro-Bold';
+        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.eot'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.eot?#iefix') format('embedded-opentype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Bold.ttf') format('truetype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Bold.woff') format('woff'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirbold.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'AvenirNextLTPro-Medium';
+        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.eot'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.eot?#iefix') format('embedded-opentype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirmedium.woff2') format('woff2'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Medium.ttf') format('truetype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Medium.ttf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+
+      @font-face {
+        font-family: 'AvenirNextLTPro-Regular';
+        src: url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot?#iefix') format('embedded-opentype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.ttf') format('truetype'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.woff') format('woff'),
+          url('http://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
 
 
     </style>
