@@ -1,0 +1,266 @@
+/* Add your custom CSS below */
+
+.mktoForm * {
+    font-family: Moderat-Bold, Arial, Helvetica, sans-serif!important;
+}
+
+.mktoForm .mktoButtonRow {
+    margin-top: 15px!important;
+    margin-left: 2.5%!important;
+    margin-right: 2.5%!important;
+    width: 100%!important;
+}
+
+.mktoForm .mktoFormCol {
+    width: 100%!important;
+}
+
+.mktoForm .mktoOffset {
+    display: none!important;
+}
+
+.mktoForm .mktoFieldWrap {
+    width: 100%!important;
+}
+
+.mktoForm .mktoLabel {
+    width: 100%!important;
+}
+
+.mktoForm .mktoGutter {
+    display: none!important;
+}
+
+.mktoForm .mktoAsterix {
+    float: left!important;
+    color: #bf0000!important;
+    padding-right: 5px!important;
+}
+
+span.mktoButtonWrap.mktoSkip {
+    margin-left: 0px!important;
+}
+
+@media (min-width: 768px) {
+    .demo-form-flexible .mktoForm .mktoButtonRow {
+        width: 94%!important;
+        padding: 20px 0!important;
+    }
+    .mktoForm {
+        display: flex !important;
+        flex-flow: row wrap !important;
+        max-width: 450px!important;
+    }
+    .mktoForm .mktoFormRow:nth-child(2),
+    .mktoForm .mktoFormRow:nth-child(3),
+    .mktoForm .mktoFormRow:nth-child(4),
+    .mktoForm .mktoFormRow:nth-child(5) {
+        width: 45% !important;
+    }
+    .mktoForm .mktoFormRow {
+        margin: 0px 2.5%!important;
+    }
+}
+
+select.mktoField {
+    width: 100%!important;
+    margin: 0 !important;
+    padding: 10px 20px 10px 10px !important;
+    border-radius: 5px !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: url('https://www.bluecore.com/wp-content/themes/bluecore2020/assets/dist/img/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 92% center;
+    background-size: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    height: 50px !important;
+}
+
+select.mktoField option:first-of-type {
+    color: transparent;
+}
+
+.mktoLabel {
+    display: block !important;
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+    width: auto !important;
+}
+
+.mktoForm .mktoFormCol {
+    margin-bottom: 16px !important;
+}
+
+.mktoField {
+    width: 100%!important;
+    /*    -webkit-appearance: none !important; */
+    background-color: #fff !important;
+    line-height: 1.5em !important;
+    color: #000 !important;
+    border: 1px solid #aeb0b6 !important;
+    border-radius: 5px !important;
+    padding: 0.2em 0.3em !important;
+    box-shadow: none !important;
+    min-height: 1.9em !important;
+    outline: none !important;
+    height: 50px !important;
+}
+
+.mktoField::-webkit-input-placeholder {
+    color: transparent !important;
+}
+
+.mktoField::-moz-placeholder {
+    color: transparent !important;
+}
+
+.mktoField:-ms-input-placeholder {
+    color: transparent !important;
+}
+
+.mktoField::-ms-input-placeholder {
+    color: transparent !important;
+}
+
+.mktoField::placeholder {
+    color: transparent !important;
+}
+
+.mktoButtonWrap {
+    margin-bottom: 16px !important;
+    width: 100% !important;
+}
+
+.mktoButtonRow .mktoButton {
+    border: none !important;
+    background-color: #EAC86C !important;
+    color: #20479A !important;
+    background-image: none !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    padding: 8px 30px!important;
+    height: 50px;
+    font-size: 16px !important;
+    outline: 0px !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    width: 100% !important;
+    font-family: Moderat-Bold, Arial, Helvetica, sans-serif!important;
+}
+
+@media (min-width: 768px) {
+    .mktoForm {
+        display: flex !important;
+        flex-flow: row wrap !important;
+    }
+    .mktoForm .mktoFormRow:nth-child(2),
+    .mktoForm .mktoFormRow:nth-child(3),
+    .mktoForm .mktoFormRow:nth-child(4),
+    .mktoForm .mktoFormRow:nth-child(5) {
+        width: 45% !important;
+    }
+    .mktoForm .mktoFormRow {
+        margin: 0px 2.5%!important;
+    }
+}
+
+select.mktoField {
+    width: 100%!important;
+    margin: 0 !important;
+    padding: 10px 20px 10px 10px !important;
+    border-radius: 5px !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: url('https://www.bluecore.com/wp-content/themes/bluecore2020/assets/dist/img/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 92% center;
+    background-size: 12px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+select.mktoField option:first-of-type {
+    color: transparent;
+}
+
+.mktoLabel {
+    display: block !important;
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+    width: auto !important;
+}
+
+.mktoForm .mktoFormCol {
+    margin-bottom: 6px !important;
+}
+
+.mktoField {
+    width: 100%!important;
+    /* -webkit-appearance: none !important; */
+    background-color: #fff !important;
+    line-height: 1.5em !important;
+    color: #000 !important;
+    border: 1px solid #aeb0b6 !important;
+    border-radius: 5px !important;
+    padding: 0.2em 0.3em !important;
+    box-shadow: none !important;
+    min-height: 1.9em !important;
+    outline: none !important;
+}
+
+.mktoField::-webkit-input-placeholder {
+    color: transparent !important;
+}
+
+.mktoField::-moz-placeholder {
+    color: transparent !important;
+}
+
+.mktoField:-ms-input-placeholder {
+    color: transparent !important;
+}
+
+.mktoField::-ms-input-placeholder {
+    color: transparent !important;
+}
+
+.mktoField::placeholder {
+    color: transparent !important;
+}
+
+.mktoButtonWrap {
+    margin-bottom: 16px !important;
+    width: 100% !important;
+}
+
+.mktoButtonRow .mktoButton {
+    max-width: 425px!important;
+    border: none !important;
+    background-color: #EAC86C !important;
+    color: #20479A !important;
+    background-image: none !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    height: 50px;
+    font-size: 16px !important;
+    outline: 0px !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    width: 100% !important;
+    font-family: Moderat-Bold, Arial, Helvetica, sans-serif!important;
+}
+
+@media (max-width: 768px) {
+    .mktoForm .mktoButtonRow {
+        margin-left: 0%!important;
+        margin-right: 2%!important;
+        margin-top: 25px!important;
+        width: 100%!important;
+    }
+}
