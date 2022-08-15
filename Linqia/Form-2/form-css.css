@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 }
 
 form.form {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@ form.form {
     justify-content: space-between;
     border-radius: 20px;
     box-shadow: 9px 10px 13px rgba(0, 0, 0, 0.15), -9px -10px 13px rgba(0, 0, 0, 0.15);
-    padding: 40px 60px !important;
+    padding: 65px 80px !important;
     gap: 0 5rem;
     background: #fff;
 }
@@ -102,13 +102,13 @@ form.form input.text {
 
 form.form input,
 form.form select {
-    padding: 12px 13px;
+    padding: 14px 13px;
     border: solid 1px #a6aaa9;
     border-radius: 4px;
 }
 
 form.form select {
-    padding: 14px !important;
+    padding: 19px !important;
 }
 
 
@@ -147,15 +147,23 @@ form.form p.submit {
 }
 
 form.form p.submit input {
+    cursor: pointer;
     width: fit-content;
     font-size: 20px;
     font-family: 'Novecento-WideDemiBold', sans-serif;
-    padding: 9px 39px;
-    border-radius: 20px;
+    padding: 11px 43px;
+    border-radius: 40px;
     background-color: #0300ff;
     border: solid 1px #0300ff;
     color: #fff;
     text-transform: uppercase;
+}
+
+form.form p.submit input:hover,
+form.form p.submit input:focus {
+    background-color: #a8d200;
+    border: solid 1px #a8d200;
+    color: #050930;
 }
 
 

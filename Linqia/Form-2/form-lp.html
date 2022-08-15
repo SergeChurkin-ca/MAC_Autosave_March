@@ -37,6 +37,7 @@
         .flex-row {
             flex-direction: row;
             background-color: #0200ff;
+            padding: 0 1rem;
         }
         
         .flex-column {
@@ -126,16 +127,17 @@
         
         .nav-flex-container {
             width: auto;
-            max-width: 1400px;
+            max-width: 1600px;
             background-color: #0200ff;
             margin: 0 auto;
         }
         
         nav {
             justify-content: space-between;
-            max-width: 1050px;
+            max-width: 1250px;
             margin: 0 auto;
             align-items: center;
+            padding-top: 0.5rem !important;
         }
         
         .top-menu {
@@ -144,9 +146,9 @@
         /* logo */
         
         .logo-top {
-            width: auto;
-            height: 100px;
-            margin-left: -1.75rem;
+            height: auto;
+            width: 150px;
+            margin-top: 7px;
         }
         /* buttons */
         
@@ -157,10 +159,9 @@
         nav .btn {
             font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
             background-color: transparent;
-            color: #06092E;
+            border: solid 2px #fff;
             font-size: 15px !important;
             letter-spacing: 1px;
-            border: 2px #fff solid;
             padding: 0.1rem 1rem;
             border-radius: 40px;
             height: 38px;
@@ -229,7 +230,7 @@
         /* main */
         
         main {
-            max-width: 1400px;
+            max-width: 1600px;
             margin: 0 auto;
         }
         
@@ -262,7 +263,7 @@
         
         article,
         .form-container {
-            max-width: 1400px;
+            max-width: 1600px;
             margin: 0 auto;
         }
         
@@ -290,9 +291,8 @@
             align-items: center;
             background: url('https://go.pardot.com/l/153091/2022-08-12/pq5spg/153091/1660338060tu3oRRBw/waves_banner2.png');
             background-repeat: no-repeat;
-            background-position: 0% 125%;
-            padding-top: 3rem;
-            margin-bottom: 3rem;
+            background-size: 100% 600px;
+            padding-top: 5rem;
         }
         
         .form-container h1 {
@@ -306,18 +306,18 @@
         
         .footer-flex-container {
             background-color: #05082f;
-            max-width: 1440px;
+            max-width: 1600px;
             margin: 0 auto;
         }
         
         footer {
-            max-width: 1400px;
+            max-width: 1600px;
             margin: 0 auto;
             justify-content: space-between;
             padding: 5rem 0 5rem;
             flex-wrap: wrap;
-            max-width: 1100px;
-            /* padding: 5rem 0; */
+            max-width: 1300px;
+            padding: 5rem 0 !important;
         }
         
         footer.flex-row {
@@ -369,26 +369,11 @@
         
         @media (max-width: 940px) {
             iframe {
-                height: 1200px;
+                height: 1250px;
             }
         }
         
         @media (max-width: 810px) {
-            .banner {
-                height: 100% !important;
-                max-height: unset !important;
-            }
-            .banner .col-2 {
-                align-items: center;
-                margin: 0 auto;
-            }
-            .banner .curve svg {
-                bottom: -1vh;
-            }
-            .banner .img-container {
-                width: 70vw;
-                height: 70vw;
-            }
             footer .flex-col {
                 padding: 0 !important;
             }
@@ -430,22 +415,24 @@
             cursor: pointer;
         }
         
-        @media (max-width: 1030px) {
+        @media (max-width: 1100px) {
             .nav-col:nth-child(2) {
                 position: absolute;
                 right: 0;
                 top: -100vh;
                 width: 100%;
-                background-color: #fff;
                 margin-top: -1px;
             }
             .top-menu {
                 flex-direction: column;
-                padding: 2rem 3rem 4rem;
+                padding: 1rem 3rem 6rem;
             }
             .top-menu li {
                 display: flex;
                 justify-content: flex-end;
+            }
+            .top-menu a {
+                font-size: 20px;
             }
             .menu-button {
                 display: block;
@@ -463,13 +450,22 @@
         
         @media (max-width:590px) {
             .menu-button {
-                margin-right: 2rem;
+                margin: 0;
             }
             .button-container .btn {
                 display: none;
             }
             .hidden-btn {
                 display: flex;
+            }
+            .form-container h1 {
+                font-size: 45px;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            .top-menu {
+                align-items: center;
             }
         }
     </style>
@@ -505,7 +501,7 @@
         <nav class="flex-row">
             <div class="logo-container nav-col">
                 <a pardot-region="editable-link1" pardot-region-type="link" href="https://www.linqia.com/">
-                    <img class="logo-top" src="https://go.pardot.com/l/153091/2022-08-12/pq5sk5/153091/1660327904qm0gyzII/linqia_logo_white.svg" alt="logo">
+                    <img class="logo-top" src="https://go.pardot.com/l/153091/2022-08-14/pq5szg/153091/1660532516VjbkPlir/linqia_logo_white.svg" alt="logo">
                 </a>
             </div>
             <div class="nav-col">
@@ -542,7 +538,7 @@
 
     <section pardot-region="form-container" class="form-container flex-column">
         <h1>we'd love to hear from you</h1>
-        <p><iframe allowtransparency="true" frameborder="0" height="800" src="https://go.pardot.com/l/153091/2022-08-09/pq5nm2" style="border: 0" type="text/html" width="100%"></iframe></p>
+        <p><iframe allowtransparency="true" height="950" frameborder="0" src="https://go.pardot.com/l/153091/2022-08-09/pq5nm2" style="border: 0;" type="text/html" width="100%"></iframe></p>
     </section>
 
 
@@ -550,26 +546,26 @@
         <footer class="flex-row">
             <div class="flex-col col-1">
                 <div class="logo-container">
-                    <img class="footer-logo" src="../linqia_lockup_white_logo.svg" alt="footer logo" pardot-region="editable-image2" pardot-region-type="image">
+                    <img class="footer-logo" src="https://go.pardot.com/l/153091/2022-08-14/pq5szc/153091/1660532021lqRN1vEg/linqia_lockup_white_logo.svg" alt="footer logo" pardot-region="editable-image2" pardot-region-type="image">
                 </div>
                 <ul class="social flex-row">
                     <li>
                         <a pardot-region="editable-link-footer1" pardot-region-type="link" href="https://www.facebook.com/linqia"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spr/153091/1660338637MPMHwaYY/Facebook_Icon.png" alt="logo"></a>
                     </li>
                     <li>
-                        <a pardot-region="editable-link-footer5" pardot-region-type="link" href="https://twitter.com/linqia"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5sq2/153091/1660338637meTLomgm/Twitter_Icon.png" alt="logo"></a>
+                        <a pardot-region="editable-link-footer2" pardot-region-type="link" href="https://twitter.com/linqia"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5sq2/153091/1660338637meTLomgm/Twitter_Icon.png" alt="logo"></a>
                     </li>
                     <li>
                         <a pardot-region="editable-link-footer3" pardot-region-type="link" href="https://www.linkedin.com/company/linqia"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spv/153091/1660338637gVKhUKeb/LinkedIn_Icon.png" alt="logo"></a>
                     </li>
                     <li>
-                        <a pardot-region="editable-link-footer2" pardot-region-type="link" href="https://www.instagram.com/linqia/"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spn/153091/16603386377ht6N0ZY/Instagram_Icon.png" alt="logo"></a>
+                        <a pardot-region="editable-link-footer4" pardot-region-type="link" href="https://www.instagram.com/linqia/"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spn/153091/16603386377ht6N0ZY/Instagram_Icon.png" alt="logo"></a>
                     </li>
                     <li>
                         <a pardot-region="editable-link-footer5" pardot-region-type="link" href="https://go.pardot.com/l/153091/2022-08-12/pq5sq5/153091/1660338637zEUwUtDP/TikTok_Icon.png"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5sq5/153091/1660338637zEUwUtDP/TikTok_Icon.png" alt="logo"></a>
                     </li>
                     <li>
-                        <a pardot-region="editable-link-footer4" pardot-region-type="link" href="https://www.pinterest.ca/linqia/"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spy/153091/1660338637lwSZaqab/Pinterest.png" alt="logo"></a>
+                        <a pardot-region="editable-link-footer6" pardot-region-type="link" href="https://www.pinterest.ca/linqia/"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spy/153091/1660338637lwSZaqab/Pinterest.png" alt="logo"></a>
                     </li>
                 </ul>
             </div>
@@ -577,40 +573,40 @@
                 <ul>
                     <li pardot-region="pardot"><strong>BRANDS</strong></li>
                     <li>
-                        <a pardot-region="editable-link14" pardot-region-type="link" href="#">Why Linqia</a>
+                        <a pardot-region="editable-footer7" pardot-region-type="link" href="#">Why Linqia</a>
                     </li>
                     <li>
-                        <a pardot-region="editable-link14" pardot-region-type="link" href="#">Case Studies</a>
+                        <a pardot-region="editable-link8" pardot-region-type="link" href="#">Case Studies</a>
                     </li>
                     <li>
-                        <a pardot-region="editable-link14" pardot-region-type="link" href="#">Influencer Marketing Platform</a>
+                        <a pardot-region="editable-link9" pardot-region-type="link" href="#">Influencer Marketing Platform</a>
                     </li>
                     <li>
-                        <a pardot-region="editable-link14" pardot-region-type="link" href="#">Professional Services</a>
+                        <a pardot-region="editable-link10" pardot-region-type="link" href="#">Professional Services</a>
                     </li>
                     <li>
-                        <a pardot-region="editable-link14" pardot-region-type="link" href="#">Campaign Video Gallery</a>
+                        <a pardot-region="editable-link11" pardot-region-type="link" href="#">Campaign Video Gallery</a>
                     </li>
                 </ul>
             </div>
             <div class="flex-col col-3">
                 <ul>
                     <li pardot-region="pardot2"><strong>CREATORS</strong></li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Why Linqia</a></li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Creator Application</a></li>
+                    <li><a pardot-region="editable-link12" pardot-region-type="link" href="#">Why Linqia</a></li>
+                    <li><a pardot-region="editable-link13" pardot-region-type="link" href="#">Creator Application</a></li>
                     <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Creator SPotlights</a></li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Creator Blog</a></li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Support</a></li>
+                    <li><a pardot-region="editable-link15" pardot-region-type="link" href="#">Creator Blog</a></li>
+                    <li><a pardot-region="editable-link16" pardot-region-type="link" href="#">Support</a></li>
                 </ul>
             </div>
             <div class="flex-col col-4">
                 <ul>
                     <li pardot-region="pardot3"><strong>ABOUT</strong></li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Contact U</a></li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Meet Linqi</a>a</li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Partnerships</a></li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Newsroom</a></li>
-                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Careers</a></li>
+                    <li><a pardot-region="editable-link17" pardot-region-type="link" href="#">Contact U</a></li>
+                    <li><a pardot-region="editable-link18" pardot-region-type="link" href="#">Meet Linqi</a>a</li>
+                    <li><a pardot-region="editable-link19" pardot-region-type="link" href="#">Partnerships</a></li>
+                    <li><a pardot-region="editable-link20" pardot-region-type="link" href="#">Newsroom</a></li>
+                    <li><a pardot-region="editable-link21" pardot-region-type="link" href="#">Careers</a></li>
                 </ul>
             </div>
             <div class="copyright">&copy; COPYRIGHT 2022 LINQIA INC. ALL RIGHTS RESERVED. <a href="#">PRIVACY</a></div>
