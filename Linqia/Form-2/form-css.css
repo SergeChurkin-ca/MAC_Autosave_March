@@ -53,6 +53,10 @@ form.form p {
     width: 100% !important;
 }
 
+.full-width label {
+    width: 200px !important;
+}
+
 form.form textarea.standard {
     width: auto !important;
 }
@@ -211,4 +215,11 @@ form.form span.error {
         gap: 1rem;
         margin-bottom: 1rem !important;
     }
+}
+
+
+/* dropdown select palceholder text workaounds with .js */
+
+option[value=""] {
+    display: none;
 }
