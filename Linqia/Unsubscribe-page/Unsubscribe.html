@@ -190,7 +190,6 @@
         }
         
         section {
-            border: solid 1px red;
             max-width: 1300px;
             margin: 0 auto;
             justify-content: center;
@@ -224,29 +223,74 @@
             line-height: 120%;
         }
         
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: #222222;
+        }
+        
         h1 {
-            font-size: 45px;
+            font-size: 95px;
         }
         
         h2 {
-            font-size: 30px;
+            font-size: 75px;
         }
         
         h3 {
             font-family: 'Novecento-WideLight', Arial, sans-serif;
             text-transform: uppercase;
-            font-size: 24px;
+            font-size: 60px;
             line-height: 110%;
         }
         
-        .copy h1 {
-            font-size: 35px;
-            color: #290AC4;
+        h4 {
+            font-family: 'Novecento-WideLight', Arial, sans-serif;
+            font-size: 45px;
         }
         
-        .copy h2 {
+        h5 {
+            font-size: 36px;
+            font-family: 'Novecento-WideLight', Arial, sans-serif;
+        }
+        
+        h6 {
             font-size: 30px;
-            color: #06092E;
+        }
+        
+        section {
+            margin-bottom: 6rem;
+        }
+        
+        section h5 {
+            margin: 0;
+        }
+        
+        section:nth-child(2) {
+            max-width: 1600px;
+            align-items: center;
+            background-color: #0200ff;
+            margin-bottom: 0;
+            border-top: solid 1px #0200ff;
+            padding: 3rem 0 3rem;
+        }
+        
+        section:nth-child(2) h3,
+        section:nth-child(2) h5 {
+            color: #fff;
+        }
+        
+        .divider {
+            max-width: 1600px;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+        }
+        
+        section p {
+            font-size: 26px;
+            color: #222222;
         }
         
         p,
@@ -369,19 +413,25 @@
             font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
             text-transform: uppercase;
             font-weight: 600;
-            background-color: #FF3080;
+            background-color: #0300ff;
             border-radius: 40px;
             display: block;
             border: none;
-            width: 13rem;
-            height: 50px;
-            font-size: 16px;
+            width: fit-content;
+            padding: 16px 43px;
+            font-size: 20px;
             cursor: pointer;
             margin-top: 2rem !important;
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        
+        .center-cta:hover,
+        .canter-cta:focus {
+            background-color: #a8d200;
+            color: #050930;
         }
         /* header  */
         /* headline */
@@ -442,22 +492,6 @@
         
         .center-cta {
             margin: 1rem auto;
-        }
-        
-        .form-container {
-            align-items: center;
-            background: url('https://go.pardot.com/l/153091/2022-08-12/pq5spg/153091/1660338060tu3oRRBw/waves_banner2.png');
-            background-repeat: no-repeat;
-            background-size: 100% 600px;
-            padding-top: 5rem;
-        }
-        
-        .form-container h1 {
-            text-align: center;
-            color: #fff;
-            margin: 0 auto 1.5rem;
-            font-size: 75px;
-            max-width: 800px;
         }
         /* footer */
         
@@ -677,14 +711,28 @@
             </div>
         </nav>
     </div>
+
+
     <!-- End header -->
     <section class="flex-column">
-        <h1 class="text-white">You are now unsubscribed</h1>
-        <h2 style="text-align: center" class="vc_custom_heading">Sorry to see you go!</h2>
+        <h3>You are now unsubscribed</h3>
+        <h5>Sorry to see you go!</h5>
     </section>
 
+    <div class="divider">
+        <img pardot-region="editable-image" pardot-region-type="image1" src="https://go.pardot.com/l/153091/2022-08-15/pq5t42/153091/1660569405uS1IufOJ/curve_0300ff.png">
+    </div>
+    <section class="flex-colummn">
+        <h5 class="alt uppercase text-white">BRANDS &amp; AGENCIES</h5>
+        <p>Take 30 minutes to learn what Linqia can do for you.</p>
+        <a class="btn center-cta" href="http://go.pardot.com/l/153091/2016-06-23/qlqk3">Request a Demo</a>
+    </section>
 
-
+    <section class="flex-column">
+        <h5>ARE YOU AN INFLUENCER?</h5>
+        <p>Earn money doing what you love and work with great brands.</p>
+        <a class="btn center-cta" href="https://www.linqia.com/influencers/">Learn more</a>
+    </section>
 
     <div class="footer-flex-container">
         <footer class="flex-row">
@@ -783,7 +831,31 @@
     <script type='text/javascript' src='https://www.linqia.com/pardot/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
     <script type='text/javascript' src='https://www.linqia.com/pardot/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=4.12'></script>
     <script type='text/javascript' src='https://www.linqia.com/pardot/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=4.12'></script>
+    <!-- Hamburger menu func -->
+    <script>
+        const hamburger = document.querySelector(".menu-button");
+        hamburger.addEventListener("click", toggleMenu);
 
+        const menu = document.querySelector(".top-menu").parentElement;
+        const menuItems = document.querySelectorAll(".menu-item");
+        const menuIcon = document.querySelector(".menu-button");
+
+        const transformingSpans = document.querySelectorAll(".menu-button>span")
+
+        function toggleMenu() {
+            if (menu.classList.contains("showMenu")) {
+                menu.classList.remove("showMenu");
+                transformingSpans[0].style = "unset"
+                transformingSpans[1].style = "opacity: unset;"
+                transformingSpans[2].style = "unset;"
+            } else {
+                menu.classList.add("showMenu");
+                transformingSpans[0].style = "transform: rotate(45deg);top:11px;"
+                transformingSpans[1].style = "opacity: 0;top: 7px;"
+                transformingSpans[2].style = "transform: rotate(-45deg);top: -5px;}"
+            }
+        }
+    </script>
 </body>
 
 </html>
