@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en">
+   <![endif]-->
+<!--[if IE 7 ]>
+   <html class="ie ie7" lang="en">
+      <![endif]-->
+<!--[if IE 8 ]>
+      <html class="ie ie8" lang="en">
+         <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="1-style.css">
+
+    <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&display=swap');" allowHtml="true">
+    <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Montserrat" allowHtml="true">
+    <meta class="mktoString" id="font-secondary" mktoName="Global - Google Font Name" default="Lato" allowHtml="true">
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://favicon.io/favicon.ico" allowHtml="true">
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <link rel="icon" type="image/x-icon" href="${favicon}" />
+    <title>${pageTitle}</title>
+    <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="160" allowHtml="true">
+    <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
+    <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
+    <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
+    <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
+    <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
+    <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
+
+
+    <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#1F203E">
+    <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
+    <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
+    <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
+
+
+    <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
+
+    <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#ffffff">
+    <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
+    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+
+
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
+
+    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
+    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
+    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
+    <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
+    <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
+
+    <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
+    <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
+    <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
+    <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
+    <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
+    <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
+    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
+
+
+
+    <style>
+        $ {
+            googleimport
+        }
+        
+        ;
+        * {
+            font-family: '${globalfont}',
+            Arial,
+            sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="mktoText flex-container" id="navlogo" mktoName="Logo">
+            <a href="https://www.efilecabinet.com/">
+                <img class="logowidth" alt="logo" src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/logo-top.png" border="0">
+            </a>
+        </div>
+    </nav>
+
+    <header class="banner-fullwidth">
+        <div class="mktoImg" id="bannerimgright" mktoName="Banner - Image">
+            <img src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/July-2022_MOFU-Workflow-Webinar_LP-Header-01.png">
+        </div>
+    </header>
+
+
+    <section class="event section-1">
+        <div class="flex-container flex-row">
+            <h1 class="mtkoText" id="event_header" mktoName="Header 1">
+                FREE WEBINAR
+            </h1>
+            <div class="event-detail flex">
+                <div class="mktoImg" id="icon1" mktoName="icon 1"><img src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/icon1.png" alt="" class="mktoText"></div>
+                <div class="flex-column">
+                    <span>Date: July 28th</span>
+                    <span>Time: 10:00am MT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form section-2">
+        <div class="flex-container flex-row">
+            <div class="flex-container column">
+                <div class="mtkoText" id="formtext-left" mktoName="Form Text Left">
+                    <h2>Take Control of Your Day and Focus on What Really Matters</h2>
+                    <p>
+                        In this webinar, you’ll learn all about one of Rubex’s most popular features—Workflows. Our hosts David Gaisford and Jessica Louizia will take you on a deep dive into how you can streamline document approvals and denials, onboarding for clients and employees,
+                        and any other document-related tasks.
+                    </p>
+                    <p>
+                        Our hosts will show you how to:
+                    </p>
+                    <ul>
+                        <li>Apply steps automatically such as copy, delete, notify, rename, request a signature, and more when a specified action is performed</li>
+                        <li>Experience three levels of efficiency benefits</li>
+                        <li> Complete your complex processes with a single click</li>
+                    </ul>
+                    <p class="strong">
+                        Bonus! David and Jessica will be available for a live Q+A at the end of the session. Come ready to learn!
+                    </p>
+                </div>
+
+                <div class="mtkoText speakers" id="speakers-headline" mktoName="Speakers Headline">
+                    <h2>
+                        Meet Our Hosts
+                    </h2>
+                    <div class="flex-container speaker1">
+                        <div class="mtkoText" id="speaker-1-img" mktoName="Speaker 1 Img">
+                            <img src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/David_Headshot_Optimized.png" alt="speaker 1 headshot">
+                        </div>
+                        <figcaption class="mktoText" id="speaker1-figcaption" mktoName="Speaker 1 Info">David Gaisford, <i>Senior Solutions Engineer</i></figcaption>
+                    </div>
+                    <div class="flex-container speaker2">
+                        <div class="mtkoText" id="speaker-1-img" mktoName="Speaker 2 Img">
+                            <img src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/Jess-Louizia_Headshot.png" alt="speaker 1 headshot">
+                        </div>
+                        <figcaption class="mktoText" id="speaker2-figcaption" mktoName="Speaker 2 Info">Jessica Louizia, <i>Marketing Manager</i></figcaption>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column form-container">
+                <h1>Form Goes Here</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-3">
+        <div class="mktoText flex-container flex-column" mktoName="Section 3 Content" id="section-3-content">
+            <img id="section2-img" src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/Sept-2021-Webinar_Below-Fold-LP-Image.png " alt="graphics ">
+            <h2>Rubex is the ultimate business solution.</h2>
+            <p>While Workflows are amazing, there is so much more that Rubex has to offer. With all of its other powerful capabilities, you can drive your team towards the path of success like never before.</p>
+        </div>
+    </section>
+
+    <div class="section-4">
+        <div class="mktoText flex-container flex-column" mktoName="Section 4 content" id="section3-content">
+            <h3>Sign up for the free live webinar to learn more</h3>
+            <p>Fill out the form near the top of the page to register.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
