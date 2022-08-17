@@ -49,7 +49,6 @@
    <meta class="mktoColor" id="section-4-bgcolor" mktoName="Section 4 Bg color" default="#e7eced">
 
    <!-- Sections top/buttom margins and padding -->
-   <!-- Fonts -->
    <meta class="mktoString" id="header-padding-top" mktoName="Header padding top (rem)" default="4" allowHtml="true">
    <meta class="mktoString" id="section1-padding-top" mktoName="Section 1 padding top" default="2" allowHtml="true">
    <meta class="mktoString" id="section1-padding-bottom" mktoName="Section 1 padding bottom" default="2" allowHtml="true">
@@ -58,11 +57,22 @@
    <meta class="mktoString" id="section3-padding-top" mktoName="Section 3 Padding Top" default="3" allowHtml="true">
    <meta class="mktoString" id="section3-padding-bottom" mktoName="Section 3 Padding bottom" default="3" allowHtml="true">
    <meta class="mktoString" id="section4-margin-top" mktoName="Section 4 Margin Top" default="0" allowHtml="true">
-      <meta class="mktoString" id="section4-padding-top" mktoName="Section 4 Padding Top" default="3" allowHtml="true">
-   <meta class="mktoString" id="section4-padding-bottom" mktoName="Section 4 Padding bottom" default="3" allowHtml="true"></meta>   
+   <meta class="mktoString" id="section4-padding-top" mktoName="Section 4 Padding Top" default="4.5" allowHtml="true">
+   <meta class="mktoString" id="section4-padding-bottom" mktoName="Section 4 Padding bottom" default="4.5" allowHtml="true"></meta>   
    
-                                                                                                   
-
+   <!-- Typography -->
+   <meta class="mktoString" id="h1size" mktoName="GLobal - h1 Font Size (px)" default="20" allowHtml="true">
+   <meta class="mktoString" id="h2size" mktoName="GLobal - h2 Font Size (px)" default="24" allowHtml="true">
+   <meta class="mktoString" id="h3size" mktoName="GLobal - h2 Font Size (px)" default="20" allowHtml="true">
+   <meta class="mktoString" id="section-h2size" mktoName="Section - h2 Font Size (px)" default="30" allowHtml="true">
+   <meta class="mktoString" id="copysize" mktoName="GLobal - Copy Font Size (px)" default="16" allowHtml="true">
+   <meta class="mktoString" id="copysize2" mktoName="GLobal - Copy Font Size  2(px)" default="18" allowHtml="true">
+   <meta class="mktoString" id="spansize" mktoName="GLobal - Span Font Size (px)" default="16" allowHtml="true">
+      
+   <meta class="mktoColor" id="section1-txt-clr" mktoName="Section 1 txt clr" default="#ffffff">
+   <meta class="mktoColor" id="section2-header-clr" mktoName="Section 2 Header clr" default="#ffffff">
+      
+      
     <style>
         $ {googleimport};
         * {font-family: '${globalfont}',Arial,sans-serif;}
@@ -127,7 +137,7 @@ h3,
 h4 {
     font-family: 'Montserrat', sans-serif;
     margin: 10px 0;
-    font-size: 20px;
+    font-size: ${h1size}px;
     font-weight: 700;
 }
 
@@ -139,14 +149,14 @@ figcaption {
 
 .section-1 span {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: ${spansize}px;
     font-weight: 700;
     line-height: 24px;
 }
 
 .section-2 h2 {
     line-height: 1.5;
-    font-size: 24px;
+    font-size: ${h2size}px;
     color: #434343;
 }
 
@@ -155,7 +165,7 @@ figcaption {
 figcaption {
     line-height: 1.5;
     color: #434343;
-    font-size: 16px;
+    font-size: ${copysize}}px;
 }
 
 .section-2 .strong {
@@ -164,23 +174,23 @@ figcaption {
 }
 
 .section-3 h2 {
-    font-size: 30px;
+    font-size: ${section-h2size}px;
     color: #666666;
 }
 
 .section-3 p {
     color: #666666;
-    font-size: 18px;
+    font-size: ${copysize2}px;
 }
 
 .section-4 h3 {
-    font-size: 20px;
+    font-size: ${h3size}px;
     color: #434343;
     line-height: 30px;
 }
 
 .section-4 p {
-    font-size: 18px;
+    font-size: ${copysize2}px;
     color: #434343;
 }
 
@@ -226,7 +236,7 @@ header {
 
 .event h1,
 .event h2 {
-    color: #fff;
+    color: ${section1-txt-clr};
 }
 
 .event .flex-container {
@@ -252,7 +262,7 @@ header {
 .event-detail span {
     font-size: 14px;
     font-weight: 700;
-    color: #fff;
+    color: ${section1-txt-clr};
 }
 
 
@@ -377,7 +387,7 @@ ul {
    display: ${show-section-4};
     background-color: ${section-4-bgcolor};
     margin-top: ${section4-margin-top}rem;
-    padding: 4.5rem 0 4.5rem;
+    padding: ${section4-padding-top}rem 0 ${section4-padding-bottom}rem;
 }
 
 .section-4 {
