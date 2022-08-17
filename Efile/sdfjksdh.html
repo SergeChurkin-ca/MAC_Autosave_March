@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> %%title%% </title>
+    <script id="term-e7e5d07437489" src="https://vidassets.terminus.services/980e7e34-ebb8-4f42-9fd4-ed47f239f045/t.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://robroy.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://robroy.com/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        body {
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            font-weight: 400;
+            font-size: 1.125rem;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+            /* Safari and Chrome */
+        }
+        
+        footer ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        figcaption {
+            background-color: #bdbdbd;
+            padding: 1rem 1.25rem;
+            font-size: 18px !important;
+        }
+        
+        .navbar ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0;
+            margin: 1.5rem 0;
+            list-style: none;
+        }
+        
+        .navbar img {
+            width: 7.5rem;
+            height: auto;
+        }
+        
+        .banner {
+            background-image: url('https://go.pardot.com/l/391962/2022-07-29/d1mvgk/391962/1659122180Vfl7boAa/rss_1_1_fritolay_lp_header.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 10%;
+            min-height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+        
+        .header {
+            max-width: 950px;
+            margin: 0 auto;
+            display: flex;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        .checkmark .container {
+            padding: 0.45rem 0;
+        }
+        
+        main {
+            flex-wrap: wrap;
+            padding-top: 1rem;
+            margin-top: 3rem;
+            padding-bottom: 5rem;
+        }
+        
+        main,
+        .list-container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        main .list-container {
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        main .column-1,
+        main .column-2 {
+            padding: 0;
+            margin-bottom: 0 !important;
+            flex: 1 0 400px;
+            max-width: 93vw;
+        }
+        
+        .pad-top {
+            margin-top: 1.5em;
+        }
+        
+        .btn-pad {
+            margin-top: 2em;
+        }
+        
+        .testimonial-1,
+        .testimonial-2 {
+            font-size: 1.25rem;
+        }
+        
+        .testimonial-1 .row {
+            margin-right: 1.5rem !important;
+        }
+        
+        .testimonial-1 {
+            flex: 1 0 400px;
+        }
+        
+        .testimonial {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .checkmark {
+            background-color: #da291c;
+            color: #fff;
+        }
+        
+        .value {
+            background: #0a0607;
+            color: #fafafa;
+        }
+        
+        h3 {
+            line-height: 200%;
+        }
+        
+        h3,
+        h4 {
+            color: #da291c;
+        }
+        
+        h5 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+        
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        .button {
+            background-color: #da291c;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            padding: 1rem 5rem;
+            margin: 0 auto;
+            border-radius: 3px;
+        }
+        
+        .cta-section a:hover,
+        .cta-section a:focus {
+            color: #fff !important;
+        }
+        
+        [type="submit"],
+        button {
+            -webkit-appearance: button;
+            color: #fff !important;
+            background-color: #da291c;
+            text-transform: uppercase;
+            padding: 7px 35px;
+            border: none;
+        }
+        
+        [type="submit"]:hover,
+        button:hover {
+            color: #da291c;
+            background-color: #fafafa;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-red {
+            text-decoration: none;
+            color: #da291c;
+            font-weight: 800;
+        }
+        
+        .footer-red:hover {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 800;
+        }
+        
+        .footer-white {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        footer span {
+            font-size: 14px;
+        }
+        
+        .footer-white:hover {
+            text-decoration: none;
+            color: #da291c;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .region-footer {
+            background-color: #111111;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+        /* articles */
+        
+        .flex-row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 4rem;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .row-reverse {
+            flex-direction: row-reverse !important;
+        }
+        
+        main ul {
+            list-style: disc;
+            padding-left: 1rem !important;
+            margin-top: 1rem;
+        }
+        /* end of articles */
+        /* center cta */
+        
+        .cta-section {
+            background: #dddddd;
+            padding: 5rem 2.5rem;
+            width: 100%;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .cta-section h5 {
+            margin-bottom: 2.5rem;
+        }
+        /* end of center cta */
+        /* form section */
+        
+        .form-section {
+            background-color: #da291c;
+            padding: 3rem 0 0rem;
+        }
+        
+        .form-headline {
+            color: #fff;
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 1.5rem;
+        }
+        /* end of  form section */
+        
+        footer .row {
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        
+        footer .col-lg-3 {
+            width: 20% !important;
+            flex: 1 0 250px;
+        }
+        
+        @media (max-width: 990px) {
+            .checkmark .row {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+            .checkmark-container {
+                width: 50% !important;
+            }
+            .checkmark p {
+                width: 100%;
+                margin: 0.4rem auto;
+                margin: 0 auto;
+            }
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .pd-m {
+                padding-bottom: 20px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .checkmark-container {
+                width: 80% !important;
+            }
+            .testimonial {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .info-img,
+            .info-img2 {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 483px) {
+            .testimonial-1 {
+                flex: auto !important;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            .button {
+                padding: 1rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar container">
+        <div class="container-fluid">
+            <ul class="flex">
+                <li>
+                    <a pardot-region="pardot" href="#"><img class="logo" src="https://go.pardot.com/l/391962/2022-08-10/d2qym5/391962/1660143652Guan6hgk/robroy_logo_scaled.png" alt="logo"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="container text-center">
+            <div class="header" pardot-region="header-text">
+                <h1><span style="color:#ffffff;">Improving Safety, Reliability and Sanitary Conditions in Electrical Infrastructure</span></h1>
+                <h2 class="mt-4"><span style="color:#ecf0f1;">  </span></h2>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="checkmark">
+        <div class="container" pardot-region="redline">
+        </div>
+    </section>
+
+
+    <main class="container">
+        <aritcle class="flex-row">
+            <div class="column-1" pardot-region="aritcle1">
+                <h3>The Challenge</h3>
+                <p>To improve safety and reliability of electrical infrastructure in both greenfield projects and existing facilities, the following challenges have been identified:</p>
+                <ul>
+                    <li>Adherence to long-term corporate standards</li>
+                    <li>Addressing new standards around new products (stainless steel) and best practices for system reliability</li>
+                    <li>Consideration around hygienic principles and installation practices to make infrastructure more cleanable while lasting longer in corrosive environments</li>
+                    <li>Accountability and training on best practices of electrical raceway installations</li>
+                    <li>Continuous improvement by carrying forward lessons learned from project to project and facility to facility</li>
+                </ul>
+            </div>
+            <div class="img-container flex column-2">
+                <img src="https://go.pardot.com/l/391962/2022-07-29/d1mvgc/391962/1659122041I8ClaR66/article1.png" alt="graphics" pardot-region="article1-img" pardot-region-type="image">
+            </div>
+        </aritcle>
+        <aritcle class="flex-row row-reverse">
+            <div class="column-1" pardot-region="aricle2">
+                <h3>The Solution</h3>
+                <p>Through ongoing engagement, site visits, and collaboration on capital projects, all collaborators involved addressed current standards and installation practices. With exposure to old and new installations, the team started addressing
+                    what could be done better to meet the historical challenges head-on. Initiatives taken to tackle these issues include:</p>
+                <ul>
+                    <li>Monthly initiative meetings with Principal and Project Engineers</li>
+                    <li>Regular site audits before/during/after projects</li>
+                    <li>Formal installation training and certification on products and best practices for hygienic installations</li>
+                    <li>Specification and standards development</li>
+                    <li>Collaboration with third parties (Engineers, OEMs and Contractors) to ensure consistency throughout projects and facilities</li>
+                    <li>Lessons learned brought improvement to future practices and product design</li>
+                </ul>
+            </div>
+            <div class="img-container flex column-2">
+                <img src="https://go.pardot.com/l/391962/2022-07-29/d1mvg8/391962/1659122040E2AZ1z3A/article2.png" alt="graphics" pardot-region="article2-img" pardot-region-type="image">
+            </div>
+        </aritcle>
+
+        <section class="cta-section">
+            <h5 pardot-region="cta1-headline">Want to see what a collaboration with Robroy would look like for your facility and electrical infrastructure?</h5>
+            <a pardot-region="cta1" class="button" href="#">REQUEST A DEMO</a>
+        </section>
+
+        <aritcle class="flex-row">
+            <div class="column-1" pardot-region="article3">
+                <h3>Project Spotlights</h3>
+                <strong>Hygienic Conduit/Fittings</strong><br><br>
+
+                <p>With a commitment to innovation and improving reliability in operations, the local team at the facility requested the Robroy Stainless Hygienic line of conduit, fittings, and support products.</p><br>
+                <p>The stainless conduit system, with a NEMA 4X and IP69K environmental listing, was a good choice to install in the more aggressive areas of sanitation requirements in new production areas. Robroy worked with an engineering construction
+                    Robroy also visited and completed field audit reports at OEMs to improve the electrical installation to better conform to future and developing standards and practices.ack.</p><br>
+                <p>Robroy also visited and completed field audit reports at OEMs to improve the electrical installation to better conform to future and developing standards and practices.</p>
+            </div>
+            <div class="img-container flex column-2">
+                <img src="https://go.pardot.com/l/391962/2022-07-29/d1mvg5/391962/1659122040M9hSgqZs/article3.png" alt="graphics" pardot-region="article3-img" pardot-region-type="image">
+                <figcaption pardot-region="figcaption">Special Thanks To: All installation, technical, maintenance and corporate management teams that were involved</figcaption>
+            </div>
+        </aritcle>
+
+        <section class="cta-section">
+            <h5 pardot-region="cta2-headline">Is cleanability and reliability critical to your facility? Let’s talk electrical infrastructure.</h5>
+            <a pardot-region="cta2" class="button" href="#">REQUEST A DEMO</a>
+        </section>
+        <aritcle class="flex-row row-reverse">
+            <div class="column-1" pardot-region="article4">
+                <strong>PVC-Coated</strong><br><br>
+                <p>
+                    Working on the front end of standards development for this project aided in setting the correct expectation from the beginning. Robroy worked with corporate engineering and the engineering team to detail out the next level of standards and best practices
+                    based on Robroy’s product knowledge and several site visits.
+                </p><br>
+                <p>This included methods for better transitions to protect and maintain the integrity and life of the electrical raceway system. Robroy was able to:</p>
+
+                <ul>
+
+                    <li>Add content to their installer certification program to further address these issues upfront prior to future installations.</li>
+                    <li>Conduct installer training on-site and through virtual programs to make sure all personnel were familiar with the product and the specific installation requirements.</li>
+                    <li>Perform an on-site audit after the project was complete for continuous improvement.</li>
+                </ul>
+                <strong>The result, as compared to a PVC-coated site audit the prior year, was a raceway system that will maintain increased reliability with uncompromised environmental ratings and increased life and corrosion protection with proper installation methods.</strong>
+            </div>
+            <div class="img-container flex column-2">
+                <img src="https://go.pardot.com/l/391962/2022-07-29/d1mvm2/391962/16591238978JFLVZoe/article4.png" alt="graphics" pardot-region="article4-img" pardot-region-type="image">
+                <figcaption pardot-region="figcaption1">Special Thanks To: The engineering firm on project standards and management, the electrical construction company in conformance to training certification and standards, and the manufacturing facilities corporate project management team.</figcaption>
+            </div>
+        </aritcle>
+
+    </main>
+
+
+    <section id="form" class="form-section">
+        <div pardot-region="form" class="container">
+            <h3 class="form-headline">Product Demo Request</h3>
+
+        </div>
+    </section>
+
+
+    <footer class="region-footer py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <p><a class="footer-red" href="http://robroy.com/about">About</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/about/about/who-we-are">Who We Are</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/about/value-statements">Value Statements</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/about/history">History</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/about/bagpiper">The Bagpiper</a></p>
+                </div>
+
+                <div class="col-lg-3">
+                    <p><a class="footer-red" href="http://robroy.com/">Brands</a></p>
+                    <span style="color:#969696;">Non-Metallic Enclosures</span>
+                    <p><a class="footer-white" href="http://robroy.com/brands/attabox">AttaBox</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/brands/stahlin">Stahlin</a></p>
+
+
+                    <span style="color:#969696;">PVC-Coated Raceways</span>
+                    <p><a class="footer-white" href="http://robroy.com/brands/perma-cote">Perma-Cote</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/brands/plasti-bond">Plasti-Bond</a></p>
+
+                    <span style="color:#969696;">Stainless Steel Raceways</span>
+                    <p><a class="footer-white" href="http://robroy.com/brands/robroy-stainless-steel">Robroy Stainless Steel</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/brands/rocket-rack">ROCKET RACK</a></p>
+
+                    <span style="color:#969696;">Non-Coated Raceway Products</span>
+                    <p><a class="footer-white" href="http://robroy.com/brands/ecn-korns">ECN/Korns</a></p>
+
+                    <span style="color:#969696;">Education</span>
+                    <p><a class="footer-white" href="http://robroy.com/brands/corrosion-college">Corrosion College</a></p>
+                </div>
+
+                <div class="col-lg-3">
+                    <p><a class="footer-red" href="http://robroy.com/careers">Careers</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/careers">Apply Today</a></p>
+                    <p><a class="footer-white" href="http://robroy.com/careers/our-divisions">Our Divisions</a></p>
+                </div>
+
+                <div class="col-lg-3">
+                    <p><a class="footer-red" href="http://robroy.com/giving-back">Giving Back</a></p>
+                    <p><a class="footer-red" href="http://robroy.com/news">News</a></p>
+                    <p><a class="footer-red" href="http://robroy.com/growth-initiative">Growth Initiative</a></p>
+                    <p><a class="footer-red" href="http://robroy.com/contact">Contact</a></p>
+                </div>
+            </div>
+            <div>
+                <a class="footer-white" href="http://robroy.com/node/78">Ethics Hotline</a> <span class="footer-white">800.399.2761</span>
+                <a class="footer-white" href="http://robroy.com/node/79">Trademark Policy</a>
+                <a class="footer-white" href="http://robroy.com/node/80">Foreign Corrupt Practices Act Policy</a>
+            </div>
+            <hr style="background: #8a8a8a">
+            <div class="copyright footer-white">
+                <div>&copy;2022 Robroy Industries. All rights reserved.</div>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

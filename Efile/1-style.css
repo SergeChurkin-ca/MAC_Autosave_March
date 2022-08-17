@@ -1,5 +1,6 @@
 /* gerneral setup */
 
+@import url("https://use.fontawesome.com/releases/v6.1.2/css/all.css");
 * {
     padding: 0;
     margin: 0;
@@ -30,13 +31,11 @@ body::-webkit-scrollbar {
     flex-direction: column;
     margin: 0 auto;
     max-width: 1080px;
-    border: solid 1px red;
     padding: 0.75rem;
 }
 
 .flex-row {
     flex-direction: row;
-    border: solid 1px green;
 }
 
 .flex-column {
@@ -69,6 +68,13 @@ figcaption {
     font-family: 'Lato', sans-serif;
 }
 
+.section-1 span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
 .section-2 h2 {
     line-height: 1.5;
     font-size: 24px;
@@ -81,10 +87,6 @@ figcaption {
     line-height: 1.5;
     color: #434343;
     font-size: 16px;
-}
-
-.section-2 figcaption {
-    font-size: 14px;
 }
 
 .section-2 .strong {
@@ -139,6 +141,10 @@ header div {
     display: flex;
 }
 
+header {
+    padding-top: 5rem;
+}
+
 
 /* -- end of header -- */
 
@@ -170,6 +176,10 @@ header div {
     align-items: center;
 }
 
+.event-detail #icon1 {
+    margin-right: 12px;
+}
+
 .event-detail span {
     font-size: 14px;
     font-weight: 700;
@@ -182,21 +192,37 @@ header div {
 
 /* section 2 - with form */
 
+.section-2 {
+    margin-top: 3rem;
+    background-color: #ffffff;
+}
+
 .form .flex-row {
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.2rem;
     flex-wrap: wrap;
 }
 
 .form .column:nth-child(1) {
     width: calc(55% - 1rem);
-    flex: 1 0 400px;
+    flex: 1 0 500px;
 }
 
 .form .column:nth-child(2) {
     width: calc(45% - 3rem);
-    background: lightblue;
     flex: 1 0 300px;
+}
+
+.section-2 ul {
+    margin-left: 15px;
+}
+
+.speakers {
+    padding-top: 4rem;
+}
+
+.speakers .speaker1 {
+    padding-bottom: 2rem;
 }
 
 .speakers,
@@ -213,10 +239,29 @@ header div {
 }
 
 .form-container {
-    border: solid 1px pink;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding: 0;
+    height: fit-content;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-2 li:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f058";
+    margin-right: 8px;
+    color: #125687;
+    font-size: 18px;
 }
 
 
@@ -227,6 +272,12 @@ header div {
 
 .section-3 {
     background-color: #f7f7f7;
+    margin-top: 3rem;
+    padding: 2rem 0 3rem;
+}
+
+.section-3 h2 {
+    margin: 1rem 0 1.5rem;
 }
 
 .section-3 .flex-column {
@@ -246,6 +297,8 @@ header div {
 
 .section-4 {
     background-color: #e7eced;
+    margin-top: 0;
+    padding: 4.5rem 0 4.5rem;
 }
 
 .section-4 {
@@ -264,5 +317,15 @@ header div {
     }
     nav img {
         width: 120px !important;
+    }
+    header {
+        padding-top: 0;
+        margin-top: -1rem;
+    }
+    .column {
+        max-width: 90vw !important;
+    }
+    .section-2 .flex-row {
+        padding: 0;
     }
 }

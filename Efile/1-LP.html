@@ -16,141 +16,398 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="1-style.css">
+    
+    <link rel="stylesheet" href="form.css">
 
     <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&display=swap');" allowHtml="true">
     <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Montserrat" allowHtml="true">
     <meta class="mktoString" id="font-secondary" mktoName="Global - Google Font Name" default="Lato" allowHtml="true">
-    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://favicon.io/favicon.ico" allowHtml="true">
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/favicon.ico" allowHtml="true">
     <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
     <link rel="icon" type="image/x-icon" href="${favicon}" />
     <title>${pageTitle}</title>
     <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="160" allowHtml="true">
-    <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#1F203E">
-    <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
-    <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
-    <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
-    <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
-    <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
-    <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
-    <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
-    <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
 
+    <!-- Toggle Sections -->
+    <meta class="mktoBoolean" id="showheader" mktoName="Show Header" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-1" mktoName="Show Section 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-2" mktoName="Show Section 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-2-txt" mktoName="Show Section 2 Txt?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-2-form" mktoName="Show Section 2 Form?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-2-speakers" mktoName="Show Section 2 Speakers?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-2-speaker1" mktoName="Show Section 2 Speaker 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-2-speaker2" mktoName="Show Section 2 Speaker 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-3" mktoName="Show Section 3?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-4" mktoName="Show Section 4" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 
-    <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#1F203E">
-    <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#1F203E">
-    <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
+   <!-- background colors -->
+   <meta class="mktoColor" id="body-bgcolor" mktoName="Body Bg color" default="#ffffff">
+   <meta class="mktoColor" id="navbar-bgcolor" mktoName="Navbar Bg color" default="#ffffff">
+   <meta class="mktoColor" id="section-1-bgcolor" mktoName="Section 1 Bg color" default="#DB5A39">
+   <meta class="mktoColor" id="section-2-bgcolor" mktoName="Section 2 Bg color" default="#ffffff">
+   <meta class="mktoColor" id="section-3-bgcolor" mktoName="Section 3 Bg color" default="#f7f7f7">
+   <meta class="mktoColor" id="section-4-bgcolor" mktoName="Section 4 Bg color" default="#e7eced">
 
-    <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
-    <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#EEF3F9">
-    <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
-    <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
-    <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#1F203E">
-    <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
-    <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#1F203E">
-    <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
-
-
-    <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
-    <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
-    <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-
-    <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
-    <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
-    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
-    <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#ffffff">
-    <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
-    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
-    <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
-    <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
-    <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
-
-    <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
-    <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
-    <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-    <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
-
-    <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
-
-    <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
-
-    <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
-    <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
-    <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-    <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
-
-    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
-    <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
-    <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
-    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
-
-
-    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
-    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
-
-    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
-    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
-    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
-    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
-    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
-    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
-    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
-
-    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
-    <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
-    <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
-    <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
-
-    <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
-    <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
-    <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
-    <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
-    <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
-    <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
-    <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
-    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
-
-
+   <!-- Sections top/buttom margins and padding -->
+   <!-- Fonts -->
+   <meta class="mktoString" id="header-padding-top" mktoName="Header padding top (rem)" default="4" allowHtml="true">
+   <meta class="mktoString" id="section1-padding-top" mktoName="Section 1 padding top" default="2" allowHtml="true">
+   <meta class="mktoString" id="section1-padding-bottom" mktoName="Section 1 padding bottom" default="2" allowHtml="true">
+   <meta class="mktoString" id="section2-margin-top" mktoName="Section 2 Margin Top" default="3" allowHtml="true">
+   <meta class="mktoString" id="section3-margin-top" mktoName="Section 3 Margin Top" default="3" allowHtml="true">
+   <meta class="mktoString" id="section3-padding-top" mktoName="Section 3 Padding Top" default="3" allowHtml="true">
+   <meta class="mktoString" id="section3-padding-bottom" mktoName="Section 3 Padding bottom" default="3" allowHtml="true">
+   <meta class="mktoString" id="section4-margin-top" mktoName="Section 4 Margin Top" default="0" allowHtml="true">
+      <meta class="mktoString" id="section4-padding-top" mktoName="Section 4 Padding Top" default="3" allowHtml="true">
+   <meta class="mktoString" id="section4-padding-bottom" mktoName="Section 4 Padding bottom" default="3" allowHtml="true"></meta>   
+   
+                                                                                                   
 
     <style>
-        $ {
-            googleimport
-        }
+        $ {googleimport};
+        * {font-family: '${globalfont}',Arial,sans-serif;}
         
-        ;
-        * {
-            font-family: '${globalfont}',
-            Arial,
-            sans-serif;
-        }
+        /* gerneral setup */
+
+@import url("https://use.fontawesome.com/releases/v6.1.2/css/all.css");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    background: ${body-bgcolor};
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0.75rem;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* typography */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p,
+ul,
+figcaption {
+    font-family: 'Lato', sans-serif;
+}
+
+.section-1 span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.section-2 h2 {
+    line-height: 1.5;
+    font-size: 24px;
+    color: #434343;
+}
+
+.section-2 p,
+.section-2 ul,
+figcaption {
+    line-height: 1.5;
+    color: #434343;
+    font-size: 16px;
+}
+
+.section-2 .strong {
+    font-weight: 700;
+    color: #434343;
+}
+
+.section-3 h2 {
+    font-size: 30px;
+    color: #666666;
+}
+
+.section-3 p {
+    color: #666666;
+    font-size: 18px;
+}
+
+.section-4 h3 {
+    font-size: 20px;
+    color: #434343;
+    line-height: 30px;
+}
+
+.section-4 p {
+    font-size: 18px;
+    color: #434343;
+}
+
+
+/* -- end of typography -- */
+
+
+/* navbar */
+
+nav {
+    position: fixed;
+    width: 100vw;
+    background-color: ${navbar-bgcolor};
+}
+
+nav .logowidth {
+    width: 160px;
+}
+
+
+/* -- end of navbar */
+
+
+/* header */
+
+header div {
+    display: ${showheader};
+}
+
+header {
+    padding-top: ${header-padding-top}rem;
+}
+
+
+/* -- end of header -- */
+
+
+/* section 1 - event */
+
+.event {
+    background-color: ${section-1-bgcolor};
+}
+
+.event h1,
+.event h2 {
+    color: #fff;
+}
+
+.event .flex-container {
+    padding-top: ${section1-padding-top}rem;
+    padding-bottom: ${section1-padding-bottom}rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event img {
+    width: 60px;
+}
+
+.event-detail {
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.event-detail #icon1 {
+    margin-right: 12px;
+}
+
+.event-detail span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* -- end of section 1 - event -- */
+
+
+/* section 2 - with form */
+
+.section-2 {
+   display: ${show-section-2};
+    margin-top: ${section2-margin-top}rem;
+    background-color: ${section-2-bgcolor}
+}
+
+.form .flex-row {
+    justify-content: space-between;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.form .column:nth-child(1) {
+   display: ${show-section-2-txt};
+    width: calc(55% - 1rem);
+    flex: 1 0 500px;
+}
+
+.form .column:nth-child(2) {
+   display: ${show-section-2-form};
+    width: calc(45% - 3rem);
+    flex: 1 0 300px;
+}
+
+.section-2 ul {
+    margin-left: 15px;
+}
+
+.speakers {
+   display:${show-section-2-speakers};
+   flex-direction: column;
+    padding-top: 4rem;
+}
+
+.speakers .speaker1 {
+    padding-bottom: 2rem;
+    display: ${show-section-2-speaker1};
+}
+.speakers .speaker2 {
+   display: ${show-section-2-speaker2};
+}
+.speakers,
+.speakers .flex-container,
+.speakers h2 {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form img {
+    width: 143px;
+}
+
+.form-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: fit-content;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-2 li:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f058";
+    margin-right: 8px;
+    color: #125687;
+    font-size: 18px;
+}
+
+
+/* -- end of section 2 - with form -- */
+
+
+/* section 3 */
+
+.section-3 {
+   display: ${show-section-3};
+    background-color: ${section-3-bgcolor};
+     margin-top: ${section3-margin-top}rem;
+    padding: ${section3-padding-top}rem 0 ${section3-padding-bottom}rem;
+}
+
+.section-3 h2 {
+    margin: 1rem 0 1.5rem;
+}
+
+.section-3 .flex-column {
+    text-align: center;
+}
+
+.section-3 img {
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+/* -- send of ection 3 -- */
+
+
+/* section 4  */
+
+.section-4 {
+   display: ${show-section-4};
+    background-color: ${section-4-bgcolor};
+    margin-top: ${section4-margin-top}rem;
+    padding: 4.5rem 0 4.5rem;
+}
+
+.section-4 {
+    text-align: center;
+}
+
+
+/* -- end of section 4 --  */
+
+@media (max-width: 800px) {
+    nav {
+        position: relative;
+    }
+    nav .flex-container {
+        padding: 0.2rem 0.75rem;
+    }
+    nav img {
+        width: 120px !important;
+    }
+    header {
+        padding-top: 0;
+        margin-top: -1rem;
+    }
+    .column {
+        max-width: 90vw !important;
+    }
+    .section-2 .flex-row {
+        padding: 0;
+    }
+}
     </style>
 </head>
 
@@ -195,14 +452,20 @@
                         In this webinar, you’ll learn all about one of Rubex’s most popular features—Workflows. Our hosts David Gaisford and Jessica Louizia will take you on a deep dive into how you can streamline document approvals and denials, onboarding for clients and employees,
                         and any other document-related tasks.
                     </p>
+                    <br>
+                    <br>
                     <p>
                         Our hosts will show you how to:
                     </p>
+                    <br>
                     <ul>
                         <li>Apply steps automatically such as copy, delete, notify, rename, request a signature, and more when a specified action is performed</li>
                         <li>Experience three levels of efficiency benefits</li>
                         <li> Complete your complex processes with a single click</li>
                     </ul>
+                    <br>
+                    <br>
+
                     <p class="strong">
                         Bonus! David and Jessica will be available for a live Q+A at the end of the session. Come ready to learn!
                     </p>
@@ -228,7 +491,11 @@
             </div>
 
             <div class="column form-container">
-                <h1>Form Goes Here</h1>
+                <script src="//691-AQB-946.mktoweb.com/js/forms2/js/forms2.min.js"></script>
+                <form id="mktoForm_1004"></form>
+                <script>
+                    MktoForms2.loadForm("//691-AQB-946.mktoweb.com", "691-AQB-946", 1004);
+                </script>
             </div>
         </div>
     </section>
