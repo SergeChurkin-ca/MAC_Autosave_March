@@ -648,6 +648,17 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
+        flex-wrap: wrap;
+    }
+    .section-11 .column{
+        width: 100%;
+        
+    }
+    .section-11 li {
+        border: solid 1px red;
+        text-align: left;
+        width: 20%;
+        
     }
 
     @media (max-width: 800px) {
@@ -670,6 +681,12 @@
       .section-2 .flex-row {
         padding: 0;
       }
+      .section-11 li {
+        width: 100%;
+      }
+      .section-11 li:nth-child(4n) {
+        margin-bottom: 2rem;
+      } 
     }
   </style>
   </head>
@@ -946,31 +963,22 @@
 
   <section class="section-11">
       <div class="flex-container flex-row">
-        <div class="column1">
+        <div class="column">
             <ul class="flex-container flex-row">
                 <li>Automated Workflows</li>
 <li>eSignature</li>
 <li>Full-Text Search</li>
-Role-Based Permissions
-            </ul>
-        </div>
-        <div class="column1">
-           <ul class="flex-container flex-row">
+<li>Role-Based Permissions</li>
                 <li>Encrypted File Sharing</li>
 <li>Email Import</li>
 <li>Compliance Tools</li>
 <li>Real-Time Notifications</li>
-            </ul>
-        </div>
-        <div class="column1">
-          <ul class="flex-container flex-row">
                 <li>Branded Customization</li>
 <li>Portfolios</li>
 <li>Activity Center</li>
 <li>Advanced Version Control</li>
             </ul>
         </div>
-        <div class="column1">column1</div>
       </div>
     </section>
                                                                                                                                                                                                                            
