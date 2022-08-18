@@ -25,8 +25,8 @@
     <link rel="icon" type="image/x-icon" href="${favicon}" />
     <title>${pageTitle}</title>
     <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="160" allowHtml="true">
-
-    <meta class="mktoString" id="videolink" mktoName="Video -1 Link" default="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/Get a free demo of eFileCabinet Advanced Document Management-1.mp4" allowHtml="true">
+        <meta class="mktoString" id="videolink" mktoName="Video -1 Link" default="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/Get a free demo of eFileCabinet Advanced Document Management-1.mp4" allowHtml="true">
+    <meta class="mktoString" id="section2-bg-img" mktoName="Section 2 Bg Image" default="#" allowHtml="true">
 
     <!-- Toggle Sections -->
     <meta class="mktoBoolean" id="showheader" mktoName="Show Header" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -43,8 +43,10 @@
     <meta class="mktoBoolean" id="show-section-6" mktoName="Show Section 6 - 3 Cols Icons" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-section-7" mktoName="Show Section 7 - banner " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-section-8" mktoName="Show Section 8 " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-section-8-row2" mktoName="Show Section 8 row 2 " default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-section-video" mktoName="Show Video Section " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-section-10-form" mktoName="Show Section 10 Form?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"></meta>   
+    <meta class="mktoBoolean" id="show-section-11" mktoName="Show Section 11 - 4 cols)" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"></meta>   
 
   <!-- Sections order -->
   <meta class="mktoString" id="section2-order" mktoName="Section 2 order" default="2" allowHtml="true">
@@ -55,7 +57,8 @@
   <meta class="mktoString" id="section7-order" mktoName="Section 7 order" default="7" allowHtml="true">
   <meta class="mktoString" id="section8-order" mktoName="Section 8 order" default="8" allowHtml="true">
   <meta class="mktoString" id="sectionvideo-order" mktoName="Section Video - order" default="9" allowHtml="true">
-  <meta class="mktoString" id="form2-order" mktoName="Section Form 2 order" default="10" allowHtml="true">  
+  <meta class="mktoString" id="form2-order" mktoName="Section Form 2 order" default="10" allowHtml="true">
+  <meta class="mktoString" id="section11-order" mktoName="Section 11 - 4 cols order" default="11" allowHtml="true"></meta>    
 
 
   <!-- background colors -->
@@ -63,18 +66,23 @@
   <meta class="mktoColor" id="navbar-bgcolor" mktoName="Navbar Bg color" default="#ffffff">
   <meta class="mktoColor" id="section-1-bgcolor" mktoName="Section 1 Bg color" default="#DB5A39">
   <meta class="mktoColor" id="section-2-bgcolor" mktoName="Section 2 Bg color" default="#ffffff">
+  <meta class="mktoColor" id="section-2-txt-clr" mktoName="Section 2 Txt color" default="#434343">
   <meta class="mktoColor" id="section-3-bgcolor" mktoName="Section 3 Bg color" default="#f7f7f7">
   <meta class="mktoColor" id="section-4-bgcolor" mktoName="Section 4 Bg color" default="#e7eced">
-  <meta class="mktoColor" id="section-5-bgcolor" mktoName="Section 4 Bg color" default="#ffffff">
+  <meta class="mktoColor" id="section-5-bgcolor" mktoName="Section 5 Bg color" default="#ffffff">
   <meta class="mktoColor" id="section-6-bgcolor" mktoName="Section 6 Bg color" default="#e7eced">
   <meta class="mktoColor" id="section-8-bgcolor" mktoName="Section 8 Bg color" default="#F7F7F7">
   <meta class="mktoColor" id="section-video-bgcolor" mktoName="Section 8 Bg color" default="#ffffff">
   <meta class="mktoColor" id="form2-bgcolor" mktoName="Section Form 2 Bg Coloe" default="#D0DFE3">
-
+<meta class="mktoColor" id="section-11-bgcolor" mktoName="Section 11 - 4 cols Bg color" default="#ffffff">
+        
   <!-- Sections top/buttom margins and padding -->
   <meta class="mktoString" id="header-padding-top" mktoName="Header padding top (rem)" default="4" allowHtml="true">
   <meta class="mktoString" id="section1-padding-top" mktoName="Section 1 padding top" default="2" allowHtml="true">
   <meta class="mktoString" id="section1-padding-bottom" mktoName="Section 1 padding bottom" default="2" allowHtml="true">
+    <meta class="mktoString" id="section2-padding-top" mktoName="Section 2 padding top" default="0" allowHtml="true">
+  <meta class="mktoString" id="section2-padding-bottom" mktoName="Section 2 padding bottom" default="0" allowHtml="true">
+    <meta class="mktoList" id="txt-vertical-align" mktoName="Section 2 txt valign" values="start,center,end" default="center"> 
   <meta class="mktoString" id="section2-margin-top" mktoName="Section 2 Margin Top" default="3" allowHtml="true">
   <meta class="mktoString" id="section3-margin-top" mktoName="Section 3 Margin Top" default="3" allowHtml="true">
   <meta class="mktoString" id="section3-padding-top" mktoName="Section 3 Padding Top" default="3" allowHtml="true">
@@ -96,11 +104,14 @@
   <meta class="mktoString" id="section10-margin-top" mktoName="Section 10 Margin Top" default="2.5" allowHtml="true">
   <meta class="mktoString" id="section10-padding-bottom" mktoName="Section 10 Padding bottom" default="2.5" allowHtml="true">
   <meta class="mktoString" id="section10-padding-top" mktoName="Section 10 Padding Top" default="2.5" allowHtml="true">
+  <meta class="mktoString" id="section11-margin-top" mktoName="Section11 - 4 cols Margin Top" default="2.5" allowHtml="true">
+  <meta class="mktoString" id="section11-padding-bottom" mktoName="Section11 - 4cols Padding bottom" default="2.5" allowHtml="true">
+  <meta class="mktoString" id="section11-padding-top" mktoName="Section11 - 4 cols Padding Top" default="2.5" allowHtml="true">
 
   <!-- Typography -->
   <meta class="mktoString" id="h1size" mktoName="GLobal - h1 Font Size (px)" default="20" allowHtml="true">
   <meta class="mktoString" id="h2size" mktoName="GLobal - h2 Font Size (px)" default="24" allowHtml="true">
-  <meta class="mktoString" id="h3size" mktoName="GLobal - h2 Font Size (px)" default="20" allowHtml="true">
+  <meta class="mktoString" id="h3size" mktoName="GLobal - h3 Font Size (px)" default="20" allowHtml="true">
   <meta class="mktoString" id="section-h2size" mktoName="Section - h2 Font Size (px)" default="30" allowHtml="true">
   <meta class="mktoString" id="copysize" mktoName="GLobal - Copy Font Size (px)" default="16" allowHtml="true">
   <meta class="mktoString" id="copysize2" mktoName="GLobal - Copy Font Size  2(px)" default="18" allowHtml="true">
@@ -197,19 +208,20 @@
       line-height: 1.5;
       font-size: ${h2size}px;
       color: #434343;
+      color: ${section-2-txt-clr};
     }
 
     .section-2 p,
     .section-2 ul,
     figcaption {
       line-height: 1.5;
-      color: #434343;
-      font-size: ${copysize}}px;
+      font-size: ${copysize}px;
+      color: ${section-2-txt-clr};
     }
 
     .section-2 .strong {
       font-weight: 700;
-      color: #434343;
+      color: ${section-2-txt-clr};
     }
 
     .section-3 h2 {
@@ -319,7 +331,15 @@
       display: ${show-section-2};
       order: ${section3-order};
       margin-top: ${section2-margin-top}rem;
-      background-color: ${section-2-bgcolor}
+      background-color: ${section-2-bgcolor};
+      background-image: url(${section2-bg-img});
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: ${section2-padding-top}rem;
+      padding-bottom: ${section2-padding-bottom}rem;
+    }
+    .section-2-headline {
+        width: 100%;
     }
     .section-2-headline h1 {
         font-size: 36px;
@@ -337,6 +357,8 @@
       width: calc(55% - 1rem);
       flex: 1 0 500px;
       padding: 0;
+      max-width: 95%;
+      justify-content: center;
     }
 
     .form .column2{
@@ -461,7 +483,7 @@
       display: ${show-section-6};
       margin-top: ${section6-margin-top}rem;
       order: ${section6-order};
-
+        background-color: ${section-6-bgcolor};
     }        
     .section-6 .flex-row {
       flex-wrap: wrap;
@@ -512,6 +534,10 @@
     .section-8 .flex-row {
       flex-wrap: wrap;
       gap: 1.5rem;
+    }
+    .section-8 .row-2 {
+        display: ${show-section-8-row2};
+        flex-direction: row-reverse;
     }
     .section-8 .column {
       width: calc((100% / 2) - 1.5rem);
@@ -610,6 +636,19 @@
       margin-bottom: 1.5rem;
     }
    
+    .section-11 {
+      display: ${show-section-11};
+      margin-top: ${section11-margin-top}rem;
+      order: ${section11-order};
+      background: ${section-11-bgcolor};
+      padding-top: ${section11-padding-top}rem;
+      padding-bottom: ${section11-padding-bottom}rem;
+    }
+    .section-11 .flex-row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
 
     @media (max-width: 800px) {
       nav {
@@ -846,6 +885,38 @@
             </div>
           </div>
         </div>
+
+        <div class="flex-container flex-row row-2">
+          <div class="column">
+            <div class="mktoText" mktoName="Section 8 image" id="section8-img2">
+              <img src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/Rubex_TemplateScreenshotOnScreen.png" alt="graphics" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="mktoText" mktoName="section 8 text" id="section-8-text2">
+              <p><strong>Our Document Management Software Comes With Other Features Too</strong></p>
+              <br>
+              <ul>
+                <li>Secure Cloud Management</li>
+                <li>Compliance Tools</li>
+                <li>Simple and User-Friendly Design</li>
+                <li>Role-Based Permissions</li>
+                <li>Free Mobile App</li>
+                <li>Templates for Automated File Structuring</li>
+                <li>Portfolios for Your Most Used Documents</li>
+                <li>File Retention</li>
+                <li>Full Text Searching</li>
+                <li>Automated Workflows</li>
+                <li>Secure File Sharing Portal</li>
+                <li>File Request</li>
+                <li>Pre-Defined File Names</li>
+                <li>e-Signature</li>
+                <li>Up to 5 TB of Storage Included</li>
+                <li>Integration with Popular Software</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -873,6 +944,36 @@
       </div>
     </section>
 
+  <section class="section-11">
+      <div class="flex-container flex-row">
+        <div class="column1">
+            <ul class="flex-container flex-row">
+                <li>Automated Workflows</li>
+<li>eSignature</li>
+<li>Full-Text Search</li>
+Role-Based Permissions
+            </ul>
+        </div>
+        <div class="column1">
+           <ul class="flex-container flex-row">
+                <li>Encrypted File Sharing</li>
+<li>Email Import</li>
+<li>Compliance Tools</li>
+<li>Real-Time Notifications</li>
+            </ul>
+        </div>
+        <div class="column1">
+          <ul class="flex-container flex-row">
+                <li>Branded Customization</li>
+<li>Portfolios</li>
+<li>Activity Center</li>
+<li>Advanced Version Control</li>
+            </ul>
+        </div>
+        <div class="column1">column1</div>
+      </div>
+    </section>
+                                                                                                                                                                                                                           
   </div>
 
 </body>
