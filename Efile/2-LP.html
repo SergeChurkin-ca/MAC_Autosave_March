@@ -738,19 +738,37 @@
   }
   footer .flex-row {
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: flex-start;
+    gap: 1rem;
   }
   footer .column {
     border: solid 1px #ffffff;
-    width: calc((100% / 3 ) - 1rem);
+    width: calc((45% / 2 ) - 1rem);
   } 
+  footer .column:nth-child(1) {
+    width: 55%;
+    flex: 1 0 400px;
+  }
+  footer .column:nth-child(2),
+  footer .column:nth-child(3) {
+    min-width: 200px;
+  }
 footer h4 {
   font-size: 18px;
 }
-footer p {
+footer p, footer a {
   font-weight: 400;
   font-size: 16px;
+}
+footer li, footer p {
+  margin-bottom: 10px;
+}
+footer a, .social-icons i {
+  color: #ffffff;
+}
+.social-icons i {
+  font-size: 40px;
+  margin-right: 5px;
 }
 
   @media (max-width: 800px) {
@@ -770,7 +788,7 @@ footer p {
     .column {
       max-width: 90vw !important;
     }
-    section .flex-container {
+    section .flex-container, footer .flex-container {
       padding: 0;
       margin: 0 auto;
       width: 90% !important;
@@ -791,6 +809,14 @@ footer p {
     }
     .section-12 .box {
       padding: 2rem;
+    }
+  }
+  @media (max-width:480px) {
+    footer .flex-row {
+      justify-content: center;
+    }
+    footer .column {
+      width: 100%;
     }
   }
 </style>
@@ -1157,10 +1183,10 @@ footer p {
             </h4>
             <br>
       <ul>
-  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="http://www.efilecabinet.com"><i class="fa fa-caret-right" style="font-size: undefined; color: undefined;"></i>Home</a></li>
-  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="http://www.efilecabinet.com/blog/"><i class="fa fa-caret-right" style="font-size: undefined; color: undefined;"></i> Blog</a></li>
-  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="http://www.efilecabinet.com/about-us/"><i class="fa fa-caret-right" style="font-size: undefined; color: undefined;"></i> About Us</a></li>
-  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="http://www.efilecabinet.com/contact-us/"><i class="fa fa-caret-right" style="font-size: undefined; color: undefined;"></i> Contact Us</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="http://www.efilecabinet.com"><i class="fa fa-caret-right" style="font-size: undefined; color: undefined;margin-right:8px;"></i>Home</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="http://www.efilecabinet.com/blog/"><i class="fa fa-caret-right" style="font-size: undefined; color: undefined;margin-right:8px;"></i> Blog</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="http://www.efilecabinet.com/about-us/"><i class="fa fa-caret-right" style="font-size: undefined; color: undefined;margin-right:8px;"></i> About Us</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="http://www.efilecabinet.com/contact-us/"><i class="fa fa-caret-right" style="font-size: undefined; color: undefined;margin-right:8px;"></i> Contact Us</a></li>
  </ul>
           </div>
         </div>
@@ -1176,11 +1202,12 @@ footer p {
                     <p><span style="color: #ffffff;"><i class="fa fa-home" style="font-size: undefined; color: undefined;"></i> &nbsp;4101 N Thanksgiving Way, <br>Lehi UT 84043</span></p>
                     </span>
                     <br>
-                      <span><p><span style="font-size: 30x;"> 
-                      <a href="https://www.facebook.com/eFileCabinet?ref=hl"><i class="fa-brands fa-square-facebook"></i><span>Facebook</span></a>
-                    <a href="https://www.linkedin.com/company/efilecabinet?trk=hb_tab_compy_id_125605"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a>
-                    <a href="https://twitter.com/eFileCabinet"><i class="fa-brands fa-square-twitter"></i><span>Twitter</span></a> 
-                    <a href="https://www.pinterest.com/efilecabinet/"><i class="fa-brands fa-square-pinterest"></i></i><span>Pinterest</span></a></span>
+                    <p><span class="social-icons"> 
+                      <a href="https://www.facebook.com/eFileCabinet?ref=hl"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/efilecabinet?trk=hb_tab_compy_id_125605"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/eFileCabinet"><i class="fa-brands fa-square-twitter"></i></a> 
+                    <a href="https://www.pinterest.com/efilecabinet/"><i class="fa-brands fa-square-pinterest"></i></a>
+                    </span>
                     </p>
                     
           </div>
