@@ -118,6 +118,9 @@
 <meta class="mktoString" id="section12-margin-top" mktoName="Section12 - 2 cols Margin Top" default="0" allowHtml="true">
 <meta class="mktoString" id="section12-padding-bottom" mktoName="Section12 - 2 cols Padding bottom" default="5" allowHtml="true">
 <meta class="mktoString" id="section12-padding-top" mktoName="Section12 - 2 cols Padding Top" default="5" allowHtml="true">
+<meta class="mktoString" id="footer-margin-top" mktoName="footer - Margin Top" default="0" allowHtml="true">
+<meta class="mktoString" id="footer-padding-bottom" mktoName="footer - Padding bottom" default="2" allowHtml="true">
+<meta class="mktoString" id="footer-padding-top" mktoName="Section12 - Padding Top" default="2" allowHtml="true">
 
 <!-- Typography -->
 <meta class="mktoString" id="h1size" mktoName="Global - h1 Font Size (px)" default="20" allowHtml="true">
@@ -731,6 +734,9 @@
     color: #125687;
   }
   footer {
+    margin-top: ${footer-margin-top}rem;
+    padding-top: ${footer-padding-top}rem;
+    padding-bottom: ${footer-padding-bottom}rem;
     display: ${show-footer};
     order: 100;
     background: ${footer-bgcolor};
@@ -742,7 +748,6 @@
     gap: 1rem;
   }
   footer .column {
-    border: solid 1px #ffffff;
     width: calc((45% / 2 ) - 1rem);
   } 
   footer .column:nth-child(1) {
