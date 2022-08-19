@@ -546,7 +546,8 @@
     .section-8 h2,
     .section-8 h4,
     .section-8 p,
-    .section-8 li {
+    .section-8 li,
+    .section-11 li {
       font-size: 36px;
       line-height: 1.5 !important;
       color: #666666;
@@ -575,7 +576,8 @@
       margin-bottom: 1rem;
       text-align:center;
     }
-    .section-8 li:before {
+    .section-8 li:before,
+    .section-11 li:before {
       display: inline-block;
       font-family: FontAwesome;
       font-style: normal;
@@ -655,10 +657,10 @@
         
     }
     .section-11 li {
-        border: solid 1px red;
         text-align: left;
-        width: 20%;
-        
+        width: calc(100% / 4);
+        font-size: ${copysize}px;
+        margin-bottom: 3rem;
     }
 
     @media (max-width: 800px) {
@@ -678,11 +680,17 @@
       .column {
         max-width: 90vw !important;
       }
+      section .flex-container:nth-child(1) {
+        border: solid 1px red;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
       .section-2 .flex-row {
         padding: 0;
       }
       .section-11 li {
         width: 100%;
+        margin-bottom: 0;
       }
       .section-11 li:nth-child(4n) {
         margin-bottom: 2rem;
