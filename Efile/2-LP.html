@@ -327,6 +327,7 @@
       .event-detail {
         margin-right: 2rem;
         align-items: center;
+        white-space: nowrap;
       }
 
       .event-detail #icon1 {
@@ -852,7 +853,7 @@
           </h1>
           <div class="event-detail flex">
             <div class="mktoImg" id="icon1" mktoName="icon 1"><img src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/icon1.png" alt="icon"></div>
-            <div class="flex-column">
+            <div class="mktoText flex-column" mktoName="Event Date" id="event-date">
               <span>Date: July 28th</span>
               <span>Time: 10:00am MT</span>
             </div>
@@ -892,18 +893,18 @@
               </p>
             </div>
 
-            <div class="mtkoText speakers" id="speakers-headline" mktoName="Speakers Headline">
-              <h2>
+            <div class="speakers">
+              <h2 class="mktoText" id="speakers-headline" mktoName="Speakers headline">
                 Meet Our Hosts
               </h2>
               <div class="flex-container speaker1">
-                <div class="mtkoText" id="speaker-1-img" mktoName="Speaker 1 Img">
+                <div class="mktoText" id="speaker-1-img" mktoName="Speaker 1 Img">
                   <img src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/David_Headshot_Optimized.png" alt="speaker 1 headshot">
                 </div>
                 <figcaption class="mktoText" id="speaker1-figcaption" mktoName="Speaker 1 Info">David Gaisford, <i>Senior Solutions Engineer</i></figcaption>
               </div>
               <div class="flex-container speaker2">
-                <div class="mtkoText" id="speaker-1-img" mktoName="Speaker 2 Img">
+                <div class="mktoText" id="speaker-2-img" mktoName="Speaker 2 Img">
                   <img src="http://691-AQB-946.mktoweb.com/rs/691-AQB-946/images/Jess-Louizia_Headshot.png" alt="speaker 1 headshot">
                 </div>
                 <figcaption class="mktoText" id="speaker2-figcaption" mktoName="Speaker 2 Info">Jessica Louizia, <i>Marketing Manager</i></figcaption>
