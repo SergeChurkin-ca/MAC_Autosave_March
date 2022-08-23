@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    background: #fff;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    border: solid 1px red;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+}
+
+
+/* navbar */
+
+nav {
+    background-color: #1d74ff;
+}
+
+nav .logo {
+    background-color: #044ed7;
+}
+
+
+/* -- end of navbar */
+
+
+/* header */
+
+header {
+    background: url('https://go.bd.com/rs/565-YXD-236/images/Masthead 01 d%402x.png') no-repeat;
+    background-size: cover;
+    min-height: 680px;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* end of header */
+
+
+/* section 1 */
+
+.section-1 {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.section-1 .icon {
+    width: 273px;
+    height: 273px;
+    border-radius: 50%;
+}
+
+.section-1 svg {
+    border-radius: 50%;
+    fill: #044ed7;
+    background: #044ed7;
+}
+
+.section-1 .flex-row {
+    border: solid 1px red;
+    justify-content: center;
+}
+
+.section-1 .column {
+    border: solid 1px red;
+}
+
+
+/* end of section 1 */
