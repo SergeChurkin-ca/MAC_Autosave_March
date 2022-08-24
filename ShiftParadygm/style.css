@@ -77,6 +77,27 @@ a {
 }
 
 
+/* buttons and decorations */
+
+
+/* end of buttons and decorations */
+
+.btn {
+    background: #044ED7;
+    color: #ffffff;
+    padding: 2rem 4.5rem;
+    border-radius: 7px;
+    font: normal normal normal 26px/30px FS Albert Pro;
+}
+
+.btn-orange {
+    color: #ffffff;
+    background: #ff6e00;
+    padding: 0.6rem 1.65rem;
+    border-radius: 3px;
+}
+
+
 /* navbar */
 
 nav {
@@ -85,10 +106,34 @@ nav {
 
 nav .logo {
     background-color: #044ed7;
+    width: calc(365px - 8rem);
+    align-items: right;
+    display: flex;
+    justify-content: right;
+    padding: 2rem 4rem;
+}
+
+nav .flex-row {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+nav .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+}
+
+nav li {
+    text-align: center;
 }
 
 nav a {
     color: #f5f5f5;
+    font-size: 22px;
 }
 
 
@@ -103,10 +148,62 @@ header {
     min-height: 680px;
     align-items: center;
     text-align: center;
+    position: relative;
+}
+
+header h1 {
+    color: #ffffff;
+    font: normal normal 300 80px/92px FS Albert Pro;
+}
+
+header p {
+    color: #ffffff;
+    font: normal normal 300 30px/42px FS Albert Pro;
+    margin: 1.5rem 0 3rem;
 }
 
 
 /* end of header */
+
+
+/* sticker */
+
+aside {
+    display: flex;
+    border: solid 1px red;
+    justify-content: flex-end;
+}
+
+.sticker {
+    top: 42%;
+    max-width: 598px;
+    position: fixed;
+    background-color: #ffffff;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1.25rem;
+    box-shadow: 0px 10px 10px #00000033;
+}
+
+.sticker .flex-row {
+    flex-wrap: nowrap;
+}
+
+.sticker img {
+    border-radius: 50% 50%;
+    width: 51px;
+    box-shadow: 0px 3px 6px #00000066;
+}
+
+.sticker p {
+    color: #333333;
+    font: normal normal normal 18px/20px FS Albert Pro;
+    margin: 0 2rem 0 1.5rem;
+}
+
+
+/* end of sticker */
 
 
 /* section 1 */
@@ -182,12 +279,12 @@ header {
 
 .section-2 h3 {
     border: solid 1px red;
-    height: 15%;
+    height: 10%;
 }
 
 .section-2 p {
     border: solid 1px red;
-    height: 30%;
+    height: 25%;
 }
 
 .section-2 .btn {
