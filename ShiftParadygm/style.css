@@ -190,5 +190,29 @@ header {
     height: 30%;
 }
 
+.section-2 .btn {
+    visibility: hidden;
+}
+
+.section-2 .btn-orange {
+    visibility: visible;
+}
+
+.section-2 .column:hover {
+    background-color: lightblue;
+    background-image: url('https://dummyimage.com/480X500/686868/fff');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-2 .column:hover img {
+    visibility: hidden;
+}
+
+.section-2 .column:hover .btn {
+    visibility: visible;
+}
+
 
 /* end of section 2 */
