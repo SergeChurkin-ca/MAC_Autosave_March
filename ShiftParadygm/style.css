@@ -1,350 +1,348 @@
-@font-face {
-    font-family: 'FS Albert Pro';
-    src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.eot');
-    src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.svg') format('svg');
-}
-
-@font-face {
-    font-family: 'FS Albert Pro Light';
-    src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.eot');
-    src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.svg') format('svg');
-}
-
-@font-face {
-    font-family: 'FS Albert Pro Bold';
-    src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.eot');
-    src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.svg') format('svg');
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    width: auto;
-    font-family: "FS Albert Pro", Helvetica, Arial, Verdana, sans-serif;
-}
-
-html {
-    scrollbar-width: none;
-}
-
-body {
-    background: #fff;
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-    scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-    /* Safari and Chrome */
-}
-
-img {
-    max-width: 100%;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.wrapper {
-    border: solid 1px red;
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.center {
-    justify-content: center;
-}
-
-
-/* buttons and decorations */
-
-
-/* end of buttons and decorations */
-
-.btn {
-    background: #044ED7;
-    color: #ffffff;
-    padding: 2rem 4.5rem;
-    border-radius: 7px;
-    font: normal normal normal 26px/30px FS Albert Pro;
-}
-
-.btn-orange {
-    color: #ffffff;
-    background: #ff6e00;
-    padding: 0.6rem 1.65rem;
-    border-radius: 3px;
-}
-
-
-/* navbar */
-
-nav {
-    background-color: #1d74ff;
-}
-
-nav .logo {
-    background-color: #044ed7;
-    width: calc(365px - 8rem);
-    align-items: right;
-    display: flex;
-    justify-content: right;
-    padding: 2rem 4rem;
-}
-
-nav .flex-row {
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-nav .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 75%;
-}
-
-nav li {
-    text-align: center;
-}
-
-nav a {
-    color: #f5f5f5;
-    font-size: 22px;
-}
-
-
-/* -- end of navbar */
-
-
-/* header */
-
-header {
-    background: url('https://go.bd.com/rs/565-YXD-236/images/Masthead 01 d%402x.png') no-repeat;
-    background-size: cover;
-    min-height: 680px;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-header h1 {
-    color: #ffffff;
-    font: normal normal 300 80px/92px FS Albert Pro;
-}
-
-header p {
-    color: #ffffff;
-    font: normal normal 300 30px/42px FS Albert Pro;
-    margin: 1.5rem 0 3rem;
-}
-
-
-/* end of header */
-
-
-/* sticker */
-
-aside {
-    display: flex;
-    border: solid 1px red;
-    justify-content: flex-end;
-}
-
-.sticker {
-    top: calc(700px + 1vw);
-    max-width: 598px;
-    position: fixed;
-    transform: translate(0%, -50%);
-    background-color: #ffffff;
-    border-top-left-radius: 60px;
-    border-bottom-left-radius: 60px;
-    align-items: center;
-    padding: 1rem 1rem 1rem 1.25rem;
-    box-shadow: 0px 10px 10px #00000033;
-    z-index: 1;
-}
-
-.sticker .flex-row {
-    flex-wrap: nowrap;
-}
-
-.sticker img {
-    border-radius: 50% 50%;
-    width: 51px;
-    box-shadow: 0px 3px 6px #00000066;
-}
-
-.sticker p {
-    color: #333333;
-    font: normal normal normal 18px/20px FS Albert Pro;
-    margin: 0 2rem 0 1.5rem;
-}
-
-
-/* end of sticker */
-
-
-/* section 1 */
-
-.section-1 {
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 3.5rem 0 5rem;
-}
-
-.section-1 h2 {
-    color: #333333;
-    font: normal normal 300 50px/60px FS Albert Pro;
-    margin-bottom: 4rem;
-}
-
-.section-1 .flex-row {
-    gap: 5rem;
-}
-
-.section-1 h4 {
-    color: #333333;
-    font: normal normal normal 30px/36px FS Albert Pro;
-    margin-top: 1.5rem;
-}
-
-.section-1 .section-1 .icon {
-    width: 237px;
-    height: 237px;
-    border-radius: 50%;
-}
-
-.section-1 svg {
-    border-radius: 50%;
-    fill: #044ed7;
-    background: #044ed7;
-    max-width: 237px;
-    height: auto;
-}
-
-.section-1 .flex-row {
-    justify-content: center;
-}
-
-.section-1 .column {
-    max-width: 345px;
-    flex: 1;
-}
-
-
-/* end of section 1 */
-
-
-/* section 2  - 4 columns*/
-
-.section-2 .flex-row {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.section-2 h3 {
-    color: #333333;
-    font: normal normal normal 34px/38px FS Albert Pro;
-}
-
-.section-2 .column {
-    flex: 1;
-    max-width: 480px;
-    padding: 5rem 4.5rem 9rem;
-}
-
-.section-2 .column:nth-child(2) .btn {
-    justify-content: left;
-}
-
-.section-2 .img-container {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    margin-top: 1.5rem;
-}
-
-.section-2 .txt-container {
-    height: 50%;
-    position: relative;
-    padding-top: 1rem;
-}
-
-.section-2 img {
-    width: 291px;
-}
-
-.section-2 .btn {
-    margin: 0 auto;
-    display: flex;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.section-2 p {
-    color: #333333;
-    font: normal normal normal 24px/28px FS Albert Pro;
-    margin-top: 2rem;
-}
-
-.section-2 .btn {
-    visibility: hidden;
-    font: normal normal normal 24px/28px FS Albert Pro;
-    margin: 0 auto;
-}
-
-.section-2 .btn-orange {
-    visibility: visible;
-    position: absolute;
-    top: -2.5rem;
-    padding: 0.75rem 1.25rem;
-    border-radius: 30px;
-}
-
-.section-2 .column:hover {
-    background-image: url('https://dummyimage.com/480X500/686868/fff');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.section-2 .column:hover h3,
-.section-2 .column:hover p {
-    color: #ffffff;
-}
-
-.section-2 .column:hover img {
-    visibility: hidden;
-}
-
-.section-2 .column:hover .btn {
-    visibility: visible;
-}
-
-
-/* end of section 2 */
+    @font-face {
+        font-family: 'FS Albert Pro';
+        src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.eot');
+        src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.svg') format('svg');
+    }
+    
+    @font-face {
+        font-family: 'FS Albert Pro Light';
+        src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.eot');
+        src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.svg') format('svg');
+    }
+    
+    @font-face {
+        font-family: 'FS Albert Pro Bold';
+        src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.eot');
+        src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.svg') format('svg');
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        width: auto;
+        font-family: "FS Albert Pro", Helvetica, Arial, Verdana, sans-serif;
+    }
+    
+    html {
+        scrollbar-width: none;
+    }
+    
+    body {
+        background: #fff;
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+        scrollbar-width: none;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .wrapper {
+        border: solid 1px red;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .center {
+        justify-content: center;
+    }
+    /* buttons and decorations */
+    /* end of buttons and decorations */
+    
+    .btn {
+        background: #044ED7;
+        color: #ffffff;
+        padding: 2rem 4.5rem;
+        border-radius: 7px;
+        font: normal normal normal 26px/30px FS Albert Pro;
+    }
+    
+    .btn-orange {
+        color: #ffffff;
+        background: #ff6e00;
+        padding: 0.6rem 1.65rem;
+        border-radius: 3px;
+    }
+    /* navbar */
+    
+    nav {
+        background-color: #1d74ff;
+    }
+    
+    nav .logo {
+        background-color: #044ed7;
+        width: calc(365px - 8rem);
+        align-items: right;
+        display: flex;
+        justify-content: right;
+        padding: 2rem 4rem;
+    }
+    
+    nav .flex-row {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    nav .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 75%;
+    }
+    
+    nav li {
+        text-align: center;
+    }
+    
+    nav a {
+        color: #f5f5f5;
+        font-size: 22px;
+    }
+    /* -- end of navbar */
+    /* header */
+    
+    header {
+        background: url('https://go.bd.com/rs/565-YXD-236/images/Masthead 01 d%402x.png') no-repeat;
+        background-size: cover;
+        min-height: 680px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    header h1 {
+        color: #ffffff;
+        font: normal normal 300 80px/92px FS Albert Pro;
+    }
+    
+    header p {
+        color: #ffffff;
+        font: normal normal 300 30px/42px FS Albert Pro;
+        margin: 1.5rem 0 3rem;
+    }
+    /* end of header */
+    /* sticker */
+    
+    aside {
+        display: flex;
+        border: solid 1px red;
+        justify-content: flex-end;
+    }
+    
+    .sticker {
+        top: calc(700px + 1vw);
+        max-width: 598px;
+        position: fixed;
+        transform: translate(0%, -50%);
+        background-color: #ffffff;
+        border-top-left-radius: 60px;
+        border-bottom-left-radius: 60px;
+        align-items: center;
+        padding: 1rem 1rem 1rem 1.25rem;
+        box-shadow: 0px 10px 10px #00000033;
+        z-index: 1;
+    }
+    
+    .sticker .flex-row {
+        flex-wrap: nowrap;
+    }
+    
+    .sticker img {
+        border-radius: 50% 50%;
+        width: 51px;
+        box-shadow: 0px 3px 6px #00000066;
+    }
+    
+    .sticker p {
+        color: #333333;
+        font: normal normal normal 18px/20px FS Albert Pro;
+        margin: 0 2rem 0 1.5rem;
+    }
+    /* end of sticker */
+    /* section 1 */
+    
+    .section-1 {
+        background-color: #f5f5f5;
+        text-align: center;
+        padding: 3.5rem 0 5rem;
+    }
+    
+    .section-1 h2 {
+        color: #333333;
+        font: normal normal 300 50px/60px FS Albert Pro;
+        margin-bottom: 4rem;
+    }
+    
+    .section-1 .flex-row {
+        gap: 5rem;
+    }
+    
+    .section-1 h4 {
+        color: #333333;
+        font: normal normal normal 30px/36px FS Albert Pro;
+        margin-top: 1.5rem;
+    }
+    
+    .section-1 .section-1 .icon {
+        width: 237px;
+        height: 237px;
+        border-radius: 50%;
+    }
+    
+    .section-1 svg {
+        border-radius: 50%;
+        fill: #044ed7;
+        background: #044ed7;
+        max-width: 237px;
+        height: auto;
+    }
+    
+    .section-1 .flex-row {
+        justify-content: center;
+    }
+    
+    .section-1 .column {
+        max-width: 345px;
+        flex: 1;
+    }
+    /* end of section 1 */
+    /* section 2  - 4 columns*/
+    
+    .section-2 .flex-row {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .section-2 h3 {
+        color: #333333;
+        font: normal normal normal 34px/38px FS Albert Pro;
+    }
+    
+    .section-2 .column {
+        flex: 1;
+        max-width: 480px;
+        padding: 5rem 4.5rem 9rem;
+        position: relative;
+    }
+    
+    .section-2 .column:nth-child(2) .btn {
+        justify-content: left;
+    }
+    
+    .section-2 .img-container {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    
+    .section-2 .txt-container {
+        height: 50%;
+        position: relative;
+        padding-top: 1rem;
+    }
+    
+    .section-2 img {
+        width: 291px;
+    }
+    
+    .section-2 .btn {
+        margin: 0 auto;
+        display: flex;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .section-2 p {
+        color: #333333;
+        font: normal normal normal 24px/28px FS Albert Pro;
+        margin-top: 2rem;
+    }
+    
+    .section-2 .btn {
+        /* visibility: hidden; */
+        font: normal normal normal 24px/28px FS Albert Pro;
+        margin: 0 auto;
+    }
+    
+    .section-2 .btn-orange {
+        visibility: visible;
+        position: absolute;
+        top: -2.5rem;
+        padding: 0.75rem 1.25rem;
+        border-radius: 30px;
+    }
+    /* .section-2 .column:hover {
+        background-image: url('https://dummyimage.com/480X500/686868/fff');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-image 0.2s ease-in-out;
+    } */
+    
+    .section-2 .column:hover h3,
+    .section-2 .column:hover p {
+        color: #ffffff;
+    }
+    
+    .section-2 .front:hover {
+        display: none;
+        opacity: 0;
+    }
+    
+    .rear {
+        opacity: 0;
+        transition: opacity 0.5s;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url('https://dummyimage.com/480X500/686868/fff');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-image 0.5s ease-in-out;
+    }
+    
+    .section-2 .column:hover .rear {
+        background-image: url('https://dummyimage.com/480X500/686868/fff');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+        transition: opacity 0.5s;
+    }
+    /* end of section 2 */
