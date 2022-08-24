@@ -212,13 +212,26 @@ aside {
 .section-1 {
     background-color: #f5f5f5;
     text-align: center;
+    padding: 3.5rem 0 5rem;
+}
+
+.section-1 h2 {
+    color: #333333;
+    font: normal normal 300 50px/60px FS Albert Pro;
+    margin-bottom: 4rem;
 }
 
 .section-1 .flex-row {
-    gap: 3rem;
+    gap: 5rem;
 }
 
-.section-1 .icon {
+.section-1 h4 {
+    color: #333333;
+    font: normal normal normal 30px/36px FS Albert Pro;
+    margin-top: 1.5rem;
+}
+
+.section-1 .section-1 .icon {
     width: 237px;
     height: 237px;
     border-radius: 50%;
@@ -233,30 +246,34 @@ aside {
 }
 
 .section-1 .flex-row {
-    border: solid 1px red;
     justify-content: center;
 }
 
 .section-1 .column {
-    border: solid 1px red;
+    max-width: 345px;
     flex: 1;
-    max-width: 237px;
 }
 
 
 /* end of section 1 */
 
 
-/* section 2 */
+/* section 2  - 4 columns*/
 
 .section-2 .flex-row {
     justify-content: space-evenly;
 }
 
+.section-2 h3 {
+    color: #333333;
+    font: normal normal normal 34px/38px FS Albert Pro;
+    border: solid 1px red;
+}
+
 .section-2 .column {
     flex: 1;
     border: solid 1px red;
-    padding: 3rem;
+    padding: 5rem 5rem;
 }
 
 .section-2 .column:nth-child(2) {
@@ -279,17 +296,19 @@ aside {
 }
 
 .section-2 h3 {
-    border: solid 1px red;
-    height: 10%;
+    height: 12%;
 }
 
 .section-2 p {
-    border: solid 1px red;
-    height: 25%;
+    height: 28%;
+    color: #333333;
+    font: normal normal normal 24px/28px FS Albert Pro;
 }
 
 .section-2 .btn {
     visibility: hidden;
+    font: normal normal normal 24px/28px FS Albert Pro;
+    padding: 2rem 1rem;
 }
 
 .section-2 .btn-orange {
