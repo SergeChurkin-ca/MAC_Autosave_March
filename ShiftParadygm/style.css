@@ -304,13 +304,6 @@
         padding: 0.75rem 1.25rem;
         border-radius: 30px;
     }
-    /* .section-2 .column:hover {
-        background-image: url('https://dummyimage.com/480X500/686868/fff');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: background-image 0.2s ease-in-out;
-    } */
     
     .section-2 .column:hover h3,
     .section-2 .column:hover p {
@@ -320,6 +313,11 @@
     .section-2 .front:hover {
         display: none;
         opacity: 0;
+    }
+    
+    .front {
+        border: solid 1px red;
+        height: 100% !important;
     }
     
     .rear {
