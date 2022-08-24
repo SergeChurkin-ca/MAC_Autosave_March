@@ -185,6 +185,7 @@ aside {
     align-items: center;
     padding: 1rem 1rem 1rem 1.25rem;
     box-shadow: 0px 10px 10px #00000033;
+    z-index: 1;
 }
 
 .sticker .flex-row {
@@ -262,26 +263,35 @@ aside {
 
 .section-2 .flex-row {
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .section-2 h3 {
     color: #333333;
     font: normal normal normal 34px/38px FS Albert Pro;
-    border: solid 1px red;
 }
 
 .section-2 .column {
     flex: 1;
-    border: solid 1px red;
-    padding: 5rem 5rem;
-}
-
-.section-2 .column:nth-child(2) {
-    padding: 2.5rem 3rem;
+    max-width: 480px;
+    padding: 5rem 4.5rem 9rem;
 }
 
 .section-2 .column:nth-child(2) .btn {
     justify-content: left;
+}
+
+.section-2 .img-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.section-2 .txt-container {
+    height: 50%;
+    position: relative;
+    padding-top: 1rem;
 }
 
 .section-2 img {
@@ -292,35 +302,40 @@ aside {
     margin: 0 auto;
     display: flex;
     margin: 0 auto;
+    display: flex;
     justify-content: center;
 }
 
-.section-2 h3 {
-    height: 18%;
-}
-
 .section-2 p {
-    height: 28%;
     color: #333333;
     font: normal normal normal 24px/28px FS Albert Pro;
+    margin-top: 2rem;
 }
 
 .section-2 .btn {
     visibility: hidden;
     font: normal normal normal 24px/28px FS Albert Pro;
-    padding: 2rem 1rem;
+    margin: 0 auto;
 }
 
 .section-2 .btn-orange {
     visibility: visible;
+    position: absolute;
+    top: -2.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 30px;
 }
 
 .section-2 .column:hover {
-    background-color: lightblue;
     background-image: url('https://dummyimage.com/480X500/686868/fff');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.section-2 .column:hover h3,
+.section-2 .column:hover p {
+    color: #ffffff;
 }
 
 .section-2 .column:hover img {
