@@ -34,7 +34,7 @@
                 Looking for an alternative <br> to Foley Catheters?
             </h1>
             <p class="mktoText" mktoName="Header Copy" id="header-copy">We offer a wide range of solutions to meet <br> your needs.</p>
-            <a href="#" class="btn">
+            <a href="#form-section" class="btn">
                 CONTACT US
             </a>
 
@@ -47,7 +47,7 @@
                 <p class="mktoText">
                     Get in contact with one <br> of our <strong>Sales Associates</strong>.
                 </p>
-                <a href="#" class="btn-orange">CONTACT US</a>
+                <a href="#form-section" class="mktoText btn-orange" id="stickyContactButton">CONTACT US</a>
             </div>
         </aside>
 
@@ -234,7 +234,6 @@
 
                 </div>
             </div>
-
             <div class="column">
                 <div class="front">
                     <div class="txt-container">
@@ -312,7 +311,7 @@
         </section>
         <!-- end of section 4  products presenations-->
         <!-- section 5 form -->
-        <section class="section-5">
+        <section class="section-5" id="form-section">
             <div class="flex-column">
                 <h3 class="mktoText form-headline">Let’s have a conversation​</h3>
                 <div class="mktoForm">
@@ -325,11 +324,19 @@
             </div>
         </section>
         <!-- end of section 5 form -->
+
+        <footer class="flex-column">
+            <div class="row flex-row">
+
+            </div>
+        </footer>
+
+
+
+
     </div>
-
-
-    <!-- repositioning checkbox-->
-
+    <!-- repositioning checkbox -->
+    <!-- this script is required to be able to manipulate form check box field-->
     <script>
         MktoForms2.whenReady(function(form) {
             const checkbox = document.querySelectorAll('.mktoCheckboxList')[0];
@@ -342,6 +349,19 @@
             checkbox.appendChild(checkboxLabel)
             upperSibling.classList.add('checkbox-container')
 
+        });
+    </script>
+    <!-- hide contact us sticker on click -->
+    <script>
+        MktoForms2.whenReady(function(form) {
+            const contactBtn = document.getElementById('stickyContactButton')
+            const sticker = document.querySelectorAll('.sticker')[0]
+            contactBtn.addEventListener('click', myFunc)
+
+            function myFunc() {
+                contactBtn.parentNode.classList.add('sticker-move')
+
+            }
         });
     </script>
 

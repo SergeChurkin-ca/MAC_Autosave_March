@@ -25,6 +25,7 @@
     
     html {
         scrollbar-width: none;
+        scroll-behavior: smooth;
     }
     
     body {
@@ -54,6 +55,7 @@
     .wrapper {
         max-width: 1920px;
         margin: 0 auto;
+        clip-path: inset(0px);
     }
     
     .flex {
@@ -476,7 +478,7 @@
     
     .section-5 {
         background-color: #C5C5C5;
-        padding: 5rem 0;
+        padding: 5rem 1rem;
     }
     
     .section-5 .form-headline {
@@ -487,7 +489,28 @@
     }
     
     .section-5 .flex-column {
-        border: solid 1px red;
         margin: 0 auto;
         max-width: 1191px;
     }
+    
+    .sticker-move {
+        animation: move 0.3s ease 1s forwards;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes move {
+        50% {
+            transform: translate(80%, -42%);
+            box-shadow: none;
+        }
+        100% {
+            transform: translate(80%, -42%);
+            box-shadow: none;
+        }
+    }
+    /* @keyframes clip {
+        100% {
+            clip-path: inset(0px 372px 0 0);
+        }
+    } */
