@@ -327,6 +327,24 @@
         <!-- end of section 5 form -->
     </div>
 
+
+    <!-- repositioning checkbox-->
+
+    <script>
+        MktoForms2.whenReady(function(form) {
+            const checkbox = document.querySelectorAll('.mktoCheckboxList')[0];
+            const checkboxLabel = document.querySelectorAll('.mktoCheckboxList')[0].previousElementSibling.previousElementSibling;
+            checkboxLabel.classList.add('checkbox-label');
+            const upperSibling = document.querySelectorAll('.mktoCheckboxList')[0].parentNode.parentNode.parentNode.previousSibling
+            const removable = document.querySelectorAll('.mktoCheckboxList')[0].parentNode.parentNode.parentNode
+            removable.classList.add('removable')
+            upperSibling.appendChild(checkbox)
+            checkbox.appendChild(checkboxLabel)
+            upperSibling.classList.add('checkbox-container')
+
+        });
+    </script>
+
 </body>
 
 </html>

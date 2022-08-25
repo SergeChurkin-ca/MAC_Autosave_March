@@ -1,14 +1,89 @@
+.mktoForm {
+    width: unset !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
 .mktoForm .mktoOffset,
 .mktoForm .mktoGutter {
     display: none !important;
 }
 
-.mktoForm .mktoFieldWrap {
-    display: flex !important;
-    flex-direction: row-reverse !important;
+.mktoForm .mktoLabel {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    visibility: hidden;
 }
 
 .mktoForm .mktoRadioList,
 .mktoForm .mktoCheckboxList {
     width: unset !important;
+}
+
+.mktoForm .mktoFormRow {
+    width: calc((100% / 2) - 1rem);
+}
+
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap {
+    width: 100% !important;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    width: 100% !important;
+    padding: 1.6rem !important;
+    font: normal normal 300 30px/35px FS Albert Pro;
+    color: #333333;
+}
+
+.mktoForm input[type=text]::placeholder,
+.mktoForm input[type=url]::placeholder,
+.mktoForm input[type=email]::placeholder,
+.mktoForm input[type=tel]::placeholder,
+.mktoForm input[type=number]::placeholder,
+.mktoForm input[type=date]::placeholder,
+.mktoForm textarea.mktoField::placeholder,
+.mktoForm select.mktoField::placeholder,
+.mktoForm select.mktoField {
+    font: normal normal 300 30px/35px FS Albert Pro;
+    color: #DADADA;
+}
+
+
+/* dynamic field from .js */
+
+.checkbox-container {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font: normal normal normal 20px/30px FS Albert Pro;
+    color: #333333;
+}
+
+.checkbox-container .mktoLabel {
+    visibility: visible !important;
+}
+
+.checkbox-container .mktoHtmlText {
+    width: 70% !important;
+}
+
+.checkbox-container .mktoLabel {
+    visibility: visible;
+    font: normal normal normal 20px/30px FS Albert Pro;
+    color: #333333;
+    width: 70% !important;
+    position: relative !important;
 }
