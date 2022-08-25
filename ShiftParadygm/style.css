@@ -413,13 +413,16 @@
     }
     
     .section-3 .flex-column:nth-child(2) {
-        width: 20%;
         display: inline-block;
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 38rem;
-        z-index: 1;
+        right: calc((5% + 15vw) - 9vw) !important;
+        z-index: 3;
+    }
+    
+    .section-3 .img-container {
+        height: 100%;
     }
     
     .section-3 .img-container img {
