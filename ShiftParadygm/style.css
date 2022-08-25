@@ -232,7 +232,6 @@
     
     .section-1 .column {
         max-width: 345px;
-        height: 921px;
         flex: 1;
     }
     /* end of section 1 */
@@ -252,6 +251,7 @@
         flex: 1;
         max-width: 480px;
         position: relative;
+        height: 912px;
     }
     
     .section-2 .front {
@@ -323,7 +323,6 @@
     .front,
     .rear {
         padding: 5rem 4.5rem 4.5rem;
-        height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -357,3 +356,48 @@
         justify-content: center;
     }
     /* end of section 2 - 4 columns*/
+    /* section 3 - span */
+    
+    .section-3 {
+        background-color: #FF6E00;
+        flex-wrap: nowrap;
+    }
+    
+    .section-3 .flex-column:nth-child(1) {
+        background-color: #060A3D;
+        justify-content: center;
+        border-top-right-radius: 150rem;
+        border-bottom-right-radius: 150rem;
+    }
+    
+    .section-3 .inner-container {
+        padding: 5.25rem 10rem 3rem;
+    }
+    
+    .section-3 img {
+        height: 100%;
+    }
+    
+    .section-3 h4 {
+        font: normal normal normal 40px/46px FS Albert Pro;
+        color: #ffffff;
+    }
+    
+    .section-3 p {
+        font: normal normal normal 24px/36px FS Albert Pro;
+        color: #ffffff;
+        margin: 0.5rem 0 2rem;
+    }
+    
+    .section-3 .btn {
+        font: normal normal normal 16px/19px FS Albert Pro;
+        width: fit-content;
+        padding: 0.75rem 2.25rem;
+    }
+    
+    .section-3 .flex-column {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+    }
+    /* end of section 3 - span */
