@@ -52,7 +52,6 @@
     }
     
     .wrapper {
-        border: solid 1px red;
         max-width: 1920px;
         margin: 0 auto;
     }
@@ -156,7 +155,6 @@
     
     aside {
         display: flex;
-        border: solid 1px red;
         justify-content: flex-end;
     }
     
@@ -234,6 +232,7 @@
     
     .section-1 .column {
         max-width: 345px;
+        height: 921px;
         flex: 1;
     }
     /* end of section 1 */
@@ -252,8 +251,12 @@
     .section-2 .column {
         flex: 1;
         max-width: 480px;
-        padding: 5rem 4.5rem 9rem;
         position: relative;
+    }
+    
+    .section-2 .front {
+        display: flex;
+        flex-direction: column;
     }
     
     .section-2 .column:nth-child(2) .btn {
@@ -264,37 +267,39 @@
         display: flex;
         margin: 0 auto;
         justify-content: center;
-        margin-top: 1.5rem;
+    }
+    
+    .rear {
+        opacity: 0;
+        transition: opacity 0.5s;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url('https://dummyimage.com/480X500/686868/fff');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-image 0.3s ease-in-out;
     }
     
     .section-2 .txt-container {
-        height: 50%;
         position: relative;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
+        flex: 0 1 320px;
+        display: flex;
+        flex-direction: column;
     }
     
     .section-2 img {
         width: 291px;
     }
     
-    .section-2 .btn {
-        margin: 0 auto;
-        display: flex;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }
-    
     .section-2 p {
         color: #333333;
         font: normal normal normal 24px/28px FS Albert Pro;
-        margin-top: 2rem;
-    }
-    
-    .section-2 .btn {
-        /* visibility: hidden; */
-        font: normal normal normal 24px/28px FS Albert Pro;
-        margin: 0 auto;
+        margin-top: 3rem;
     }
     
     .section-2 .btn-orange {
@@ -315,24 +320,17 @@
         opacity: 0;
     }
     
-    .front {
-        border: solid 1px red;
-        height: 100% !important;
+    .front,
+    .rear {
+        padding: 5rem 4.5rem 4.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
     
-    .rear {
-        opacity: 0;
-        transition: opacity 0.5s;
-        position: absolute;
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        background-image: url('https://dummyimage.com/480X500/686868/fff');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: background-image 0.5s ease-in-out;
+    .section-2 .rear .txt-container {
+        flex: 1;
+        display: flex;
     }
     
     .section-2 .column:hover .rear {
@@ -341,6 +339,21 @@
         background-repeat: no-repeat;
         background-position: center;
         opacity: 1;
-        transition: opacity 0.5s;
+        transition: opacity 0.3s;
     }
-    /* end of section 2 */
+    
+    .section-2 .rear p {
+        margin-top: 40%;
+        flex: 0 1 350px;
+    }
+    
+    .section-2 .btn {
+        font: normal normal normal 24px/28px FS Albert Pro;
+        margin: 5% 0 0;
+        margin: 0 auto;
+        display: flex;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    /* end of section 2 - 4 columns*/
