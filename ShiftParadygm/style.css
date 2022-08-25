@@ -193,6 +193,23 @@
         font: normal normal normal 18px/20px FS Albert Pro;
         margin: 0 2rem 0 1.5rem;
     }
+    
+    .sticker-move {
+        animation: move 0.5s ease 1s forwards;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes move {
+        50% {
+            transform: translate(80%, -42%);
+            box-shadow: -13px 4px 8px #00000033 !important;
+        }
+        100% {
+            transform: translate(80%, -42%);
+            box-shadow: -13px 4px 8px #00000033 !important;
+        }
+    }
     /* end of sticker */
     /* section 1 */
     
@@ -283,7 +300,6 @@
         left: 0;
         top: 0;
         bottom: 0;
-        background-image: url('https://dummyimage.com/480X500/686868/fff');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -339,12 +355,27 @@
     }
     
     .section-2 .column:hover .rear {
-        background-image: url('https://dummyimage.com/480X500/686868/fff');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         opacity: 1;
         transition: opacity 0.3s;
+    }
+    
+    .section-2 .column:nth-child(1) .rear {
+        background-image: url('https://go.bd.com/rs/565-YXD-236/images/bg1darken.png');
+    }
+    
+    .section-2 .column:nth-child(2) .rear {
+        background-image: url('https://go.bd.com/rs/565-YXD-236/images/bg2darken.png');
+    }
+    
+    .section-2 .column:nth-child(3) .rear {
+        background-image: url('https://go.bd.com/rs/565-YXD-236/images/bg3darken.png');
+    }
+    
+    .section-2 .column:nth-child(4) .rear {
+        background-image: url('https://go.bd.com/rs/565-YXD-236/images/bg4darken.png');
     }
     
     .section-2 .rear p {
@@ -492,25 +523,35 @@
         margin: 0 auto;
         max-width: 1191px;
     }
+    /* end of section 5 form */
+    /* footer */
     
-    .sticker-move {
-        animation: move 0.5s ease 1s forwards;
-        animation-delay: 0.5s;
-        animation-iteration-count: 1;
+    footer {
+        background-color: #060A3D;
+        padding: 4rem 1rem;
     }
     
-    @keyframes move {
-        50% {
-            transform: translate(80%, -42%);
-            box-shadow: -13px 4px 8px #00000033 !important;
-        }
-        100% {
-            transform: translate(80%, -42%);
-            box-shadow: -13px 4px 8px #00000033 !important;
-        }
+    footer .row {
+        margin: 0 auto;
+        max-width: 1300px;
+        width: 100% !important;
     }
-    /* @keyframes clip {
-        100% {
-            clip-path: inset(0px 372px 0 0);
-        }
-    } */
+    
+    .footer-menu li a {
+        color: #DADADA;
+        font: normal normal normal 14px/16px FS Albert Pro;
+    }
+    
+    .footer-menu .flex-row {
+        justify-content: space-between;
+        align-items: end;
+        flex: 1;
+        max-width: 900px;
+        border-bottom: solid 1px #C5C5C5;
+        padding-bottom: 1rem;
+    }
+    
+    .footer-logo img {
+        width: 162px;
+        margin-bottom: -9px;
+    }

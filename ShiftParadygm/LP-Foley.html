@@ -326,8 +326,15 @@
         <!-- end of section 5 form -->
 
         <footer class="flex-column">
-            <div class="row flex-row">
-
+            <div class="row flex-row footer-menu">
+                <ul class="flex-row">
+                    <li>
+                        <a class="mktoText footer-logo" href="#"><img src="https://go.bd.com/rs/565-YXD-236/images/logo-top.svg" alt="logo"></a>
+                    </li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PRIVACY & TERMS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
             </div>
         </footer>
 
@@ -362,9 +369,13 @@
                 contactBtn.parentNode.classList.add('sticker-move')
             }
 
-            window.onmousemove = function() {
-                // contactBtn.parentNode.classList.remove('sticker-move');
+
+
+            function scrollFunc() {
+                contactBtn.parentNode.classList.remove('sticker-move')
             }
+
+
         });
     </script>
 
