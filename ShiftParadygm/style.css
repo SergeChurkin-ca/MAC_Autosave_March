@@ -363,6 +363,13 @@
         flex-wrap: nowrap;
     }
     
+    .section-3 .flex-column {
+        position: relative;
+        flex: 1;
+        margin: 0;
+        padding: 0;
+    }
+    
     .section-3 .flex-column:nth-child(1) {
         background-color: #060A3D;
         justify-content: center;
@@ -381,23 +388,18 @@
     .section-3 h4 {
         font: normal normal normal 40px/46px FS Albert Pro;
         color: #ffffff;
+        max-width: 550px;
     }
     
     .section-3 p {
         font: normal normal normal 24px/36px FS Albert Pro;
         color: #ffffff;
         margin: 0.5rem 0 2rem;
+        max-width: 550px;
     }
     
     .section-3 .btn {
         font: normal normal normal 16px/19px FS Albert Pro;
-        width: fit-content;
         padding: 0.75rem 2.25rem;
-    }
-    
-    .section-3 .flex-column {
-        flex: 1;
-        margin: 0;
-        padding: 0;
     }
     /* end of section 3 - span */
