@@ -495,6 +495,12 @@
         position: relative;
     }
     
+    .section-4 .presentation-2,
+    .section-4 .presentation-3,
+    .section-4 .presentation-4 {
+        display: none;
+    }
+    
     .section-4 h4 {
         color: #8b8b8b;
         font: normal normal normal 60px/75px FS Albert Pro;
@@ -509,7 +515,7 @@
     }
     
     .section-4 .column:nth-child(1) {
-        width: calc((100vw / 3) - 1%);
+        width: calc((100vw / 3) - 7%);
     }
     
     .section-4 .column:nth-child(2) {
@@ -517,6 +523,7 @@
         /* margin-left: -42rem; */
         transform: translate(29%, 30%);
         position: absolute;
+        width: 30vw;
     }
     
     .section-4 .column:nth-child(2) img {
@@ -531,7 +538,7 @@
     .section-4 .column:nth-child(3) {
         justify-content: center;
         width: calc((100vw / 2) - 5%);
-        margin-left: 15rem;
+        margin-left: 16rem;
     }
     
     .section-4 .column:nth-child(3) img {
@@ -541,6 +548,8 @@
     .section-4 .column:nth-child(3) .flex-row {
         gap: 2rem;
         flex-wrap: nowrap;
+        /* position: absolute; */
+        bottom: 3rem;
     }
     /* end of section 4 product presentation */
     /* section 5 form */
