@@ -523,12 +523,14 @@
         /* margin-left: -42rem; */
         transform: translate(29%, 30%);
         position: absolute;
-        width: 30vw;
+        width: calc(35vw - 93px);
+        max-width: 672px;
     }
     
     .section-4 .column:nth-child(2) img {
         max-width: 672px;
         width: 100%;
+        border-radius: 50%;
     }
     
     .section-4 .column:nth-child(3) img {
