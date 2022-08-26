@@ -284,12 +284,16 @@
         max-width: 480px;
         position: relative;
         height: 912px;
-        min-width: 435px;
+        /* min-width: 435px; */
     }
     
     .section-2 .front {
         display: flex;
         flex-direction: column;
+    }
+    
+    .section-2 .front p {
+        flex: 1 0 200px
     }
     
     .section-2 .front h3 {
