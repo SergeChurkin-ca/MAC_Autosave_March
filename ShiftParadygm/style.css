@@ -506,19 +506,26 @@
         margin: 1rem 0;
     }
     
+    .section-4 .column:nth-child(1) {
+        width: calc((100vw / 3) - 1%);
+    }
+    
     .section-4 .column:nth-child(2) {
         align-items: center;
-        margin-left: -21rem;
+        margin-left: -42rem;
+        width: calc((100vw / 3) - 14%);
     }
     
     .section-4 .column:nth-child(2) img {
         max-width: 672px;
+        width: 100%;
     }
     
     .section-4 .column:nth-child(3) {
         justify-content: center;
-        width: 45%;
+        width: calc((100vw / 3) - 15%);
         margin-left: 3.5rem;
+        border: solid 1px red;
     }
     
     .section-4 .column:nth-child(3) img {
