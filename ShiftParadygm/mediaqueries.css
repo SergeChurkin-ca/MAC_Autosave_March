@@ -185,6 +185,24 @@
         width: unset;
         padding: 2rem 4.5rem;
     }
+    .section-3 {
+        display: flex !important;
+        flex-direction: column;
+    }
+    .section-3 .flex-column:nth-child(1) {
+        width: 100vw !important;
+        border-radius: 0px !important;
+    }
+    .section-3 .flex-column:nth-child(2) {
+        position: relative;
+    }
+    .section-3 h4,
+    .section-3 p {
+        max-width: 100%;
+    }
+    .section-3 .flex-column:nth-child(2) {
+        left: calc(70% - 1044px) !important
+    }
 }
 
 @media (max-width: 690px) {
