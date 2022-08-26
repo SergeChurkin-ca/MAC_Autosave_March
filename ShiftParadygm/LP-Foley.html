@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="${favicon}" />
     <link href="style.css" rel="stylesheet">
     <link href="form.css" rel="stylesheet">
+    <link href="mediaqueries.css" rel="stylesheet">
 
     <title>Title</title>
 </head>
@@ -19,15 +20,21 @@
         <nav class="flex-row">
             <div class="logo">
                 <div class="mktoText" mktoName="Top Logo" id="toplogo">
-                    <a href="#"><img src="https://go.bd.com/rs/565-YXD-236/images/logo-top.svg" alt="logo"></a>
+                    <a href="https://www.bd.com/en-ca" target="_blank"><img src="https://go.bd.com/rs/565-YXD-236/images/logo-top.svg" alt="logo"></a>
                 </div>
             </div>
             <ul class="menu">
-                <li><a href="#">PureWickTM FEC</a></li>
-                <li><a href="#">PureWickTM MEC</a></li>
-                <li><a href="">SureStepTM MEC Kit</a></li>
-                <li><a href="">SureStepTM Intermitent Trays</a></li>
+                <li class="menu-item"><a href="#">PureWickTM FEC</a></li>
+                <li class="menu-item"><a href="#">PureWickTM MEC</a></li>
+                <li class="menu-item"><a href="">SureStepTM MEC Kit</a></li>
+                <li class="menu-item"><a href="">SureStepTM Intermitent Trays</a></li>
             </ul>
+            <div class="menu-button  button_holder_button visible-sm-inline-block visible-xs-inline-block">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
         </nav>
         <header class="flex-column center">
             <h1 class="mktoText" mtkName="Banner Headline" id="banenr-headline">
@@ -402,13 +409,40 @@
                 contactBtn.parentNode.classList.add('sticker-move')
             }
 
-
             function unhideFunc() {
                 contactBtn.parentNode.classList.remove('sticker-move')
             }
+        });
+    </script>
+    <!-- hamburger menu -->
+    <script>
+        MktoForms2.whenReady(function(form) {
 
 
+            const hamburger = document.querySelectorAll(".menu-button")[0];
+            hamburger.addEventListener("click", toggleMenu);
 
+            const menu = document.querySelector(".menu").parentElement;
+            const menuItems = document.querySelectorAll(".menu-item");
+            const menuIcon = document.querySelector(".menu-button");
+
+            const transformingSpans = document.querySelectorAll(".menu-button>span")
+
+            function toggleMenu() {
+                console.log('check')
+
+                if (menu.classList.contains("showMenu")) {
+                    menu.classList.remove("showMenu");
+                    transformingSpans[0].style = "unset"
+                    transformingSpans[1].style = "opacity: unset;"
+                    transformingSpans[2].style = "unset;"
+                } else {
+                    menu.classList.add("showMenu");
+                    transformingSpans[0].style = "transform: rotate(45deg);top:11px;"
+                    transformingSpans[1].style = "opacity: 0;top: 7px;"
+                    transformingSpans[2].style = "transform: rotate(-45deg);top: -5px;}"
+                }
+            }
         });
     </script>
 
