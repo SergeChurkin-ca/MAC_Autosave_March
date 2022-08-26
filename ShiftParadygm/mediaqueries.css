@@ -1,6 +1,20 @@
+@media (max-width: 1800px) {
+    .section-2 h3 {
+        min-height: 117px;
+    }
+}
+
 @media (max-width: 1600px) {
     nav .logo {
         width: auto;
+    }
+    .section-2 .front,
+    .section-2 .rear {
+        padding: 3.5rem 2.5rem 4.5rem !important;
+        border: solid;
+    }
+    .section-2 .front p {
+        flex: 1 0 250px;
     }
 }
 
@@ -10,10 +24,29 @@
         gap: 1rem;
     }
     header,
-    .section-1,
-    .section-2 {
+    .section-1 {
         padding-left: 5%;
         padding-right: 5%;
+    }
+    .section-2 .front,
+    .section-2 .rear {
+        padding: 2rem 2rem 4.5rem !important;
+        border: solid;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-2 {
+        flex-direction: column;
+    }
+    .section-2 .column {
+        width: 100%;
+        max-width: 100%;
+    }
+    .section-2 .column:hover .rear {
+        background: none;
+        opacity: 0;
+        transition: unset;
     }
 }
 
