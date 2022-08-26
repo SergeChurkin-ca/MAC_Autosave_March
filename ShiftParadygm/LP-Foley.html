@@ -29,10 +29,12 @@
                 <li class="menu-item"><a href="">SureStepTM MEC Kit</a></li>
                 <li class="menu-item"><a href="">SureStepTM Intermitent Trays</a></li>
             </ul>
-            <div class="menu-button  button_holder_button visible-sm-inline-block visible-xs-inline-block">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="menu-button-container">
+                <div class="menu-button  button_holder_button visible-sm-inline-block visible-xs-inline-block">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
         </nav>
@@ -422,7 +424,7 @@
             const hamburger = document.querySelectorAll(".menu-button")[0];
             hamburger.addEventListener("click", toggleMenu);
 
-            const menu = document.querySelector(".menu").parentElement;
+            const menu = document.querySelector(".menu");
             const menuItems = document.querySelectorAll(".menu-item");
             const menuIcon = document.querySelector(".menu-button");
 
@@ -438,9 +440,9 @@
                     transformingSpans[2].style = "unset;"
                 } else {
                     menu.classList.add("showMenu");
-                    transformingSpans[0].style = "transform: rotate(45deg);top:11px;"
+                    transformingSpans[0].style = "transform: rotate(45deg);top:17px;"
                     transformingSpans[1].style = "opacity: 0;top: 7px;"
-                    transformingSpans[2].style = "transform: rotate(-45deg);top: -5px;}"
+                    transformingSpans[2].style = "transform: rotate(-45deg);top: -16.5px;}"
                 }
             }
         });

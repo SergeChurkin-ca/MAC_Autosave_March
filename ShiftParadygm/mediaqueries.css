@@ -1,34 +1,77 @@
 @media (max-width: 1600px) {
     nav .logo {
         width: auto;
-        border: solid 1px red;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
+    .menu {
+        margin: 0 auto;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        position: relative;
+    }
     nav .logo {
         padding: 1.65rem 4rem;
     }
     nav .logo img {
         width: 96.5px;
     }
-    .menu-button {
+    .menu-button-container {
         position: absolute;
         right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 30px;
+        background-color: #B5B5B5;
+    }
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 37px !important;
+        width: 37px !important;
+        cursor: pointer;
     }
     .menu-button span {
-        width: 26px;
-        height: 4px;
-        margin: 4px 0px;
+        width: 37px;
+        height: 3px;
         background: #f5f5f5;
         display: block;
         position: relative;
         -webkit-transition: all 500ms ease-out;
         -moz-transition: all 500ms ease-out;
         transition: all 500ms ease-out;
-        cursor: pointer;
+        cursor: pointer !important;
     }
-    .menu {
-        display: none !important;
+    nav .menu {
+        display: none;
+    }
+    nav .showMenu {
+        display: flex;
+        position: absolute;
+        top: 95px;
+        background-color: #1d74ff;
+        width: 100vw;
+        z-index: 100;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 3rem 0;
+    }
+    .showMenu li {
+        width: calc((100vw / 2) - 50px);
+        text-align: left;
+    }
+}
+
+@media (max-width: 690px) {
+    .showMenu li {
+        width: 95% !important;
     }
 }
