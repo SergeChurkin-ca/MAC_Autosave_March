@@ -394,17 +394,19 @@
         MktoForms2.whenReady(function(form) {
             const contactBtn = document.getElementById('stickyContactButton')
             const sticker = document.querySelectorAll('.sticker')[0]
+            const triggerImg = document.querySelectorAll('.sticker img')[0]
             contactBtn.addEventListener('click', myFunc)
+            triggerImg.addEventListener('click', unhideFunc)
 
             function myFunc() {
                 contactBtn.parentNode.classList.add('sticker-move')
             }
 
 
-
-            function scrollFunc() {
+            function unhideFunc() {
                 contactBtn.parentNode.classList.remove('sticker-move')
             }
+
 
 
         });
