@@ -15,6 +15,12 @@
     .section-2 .front p {
         flex: 1 0 250px;
     }
+    .section-3 .inner-container {
+        padding: 4rem 10rem 5rem 7rem;
+    }
+    .section-3 .flex-column:nth-child(1) {
+        width: 60vw !important;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -26,6 +32,12 @@
     .section-1 {
         padding-left: 5%;
         padding-right: 5%;
+    }
+    .section-3 .inner-container {
+        padding: 4rem 2.5rem;
+    }
+    .section-3 .flex-column:nth-child(2) {
+        left: calc(100% - 1044px) !important;
     }
 }
 
@@ -162,6 +174,16 @@
         order: 3;
         width: 100%;
         margin-top: 1rem;
+    }
+    .btn-container.hidden {
+        display: flex !important;
+        order: 4;
+        padding: 2rem 2.5rem;
+        width: 100%;
+    }
+    .section-2 .btn {
+        width: unset;
+        padding: 2rem 4.5rem;
     }
 }
 
