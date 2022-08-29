@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://go.bd.com/rs/565-YXD-236/images/favicon-white.ico" allowHtml="true">
+
+    <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Foley Landing Page">
+    <title>${pagetitle}</title>
+    <link rel="icon" type="image/x-icon" href="${favicon}" />
+    <link href="style.css" rel="stylesheet"> 
+
+
+    
+  </head>
+  <style>
+    @font-face {
+      font-family: 'FS Albert Pro';
+      src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.eot');
+      src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Regular.svg') format('svg');
+    }
+
+    @font-face {
+      font-family: 'FS Albert Pro Light';
+      src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.eot');
+      src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Light.svg') format('svg');
+    }
+
+    @font-face {
+      font-family: 'FS Albert Pro Bold';
+      src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.eot');
+      src: url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.eot?#iefix') format('embedded-opentype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.woff2') format('woff2'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.woff') format('woff'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.ttf') format('truetype'), url('https://go.bd.com/rs/565-YXD-236/images/FSAlbertWeb-Bold.svg') format('svg');
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      width: auto;
+      font-family: "FS Albert Pro", Helvetica, Arial, Verdana, sans-serif;
+    }
+
+    html {
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fff;
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */
+      scrollbar-width: none;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+      /* Safari and Chrome */
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .wrapper {
+      max-width: 1920px;
+      margin: 0 auto;
+      clip-path: inset(0px);
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inline-row {
+      display: inline;
+    }
+
+    .center {
+      justify-content: center;
+    }
+    /* buttons and decorations */
+    /* end of buttons and decorations */
+
+    .btn {
+      background: #044ED7;
+      color: #ffffff;
+      padding: 2rem 4.5rem;
+      border-radius: 7px;
+      font: normal normal normal 26px/30px FS Albert Pro;
+    }
+
+    .btn-orange {
+      color: #ffffff;
+      background: #ff6e00;
+      padding: 0.6rem 1.65rem;
+      border-radius: 3px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+    /* navbar */
+
+    nav {
+      background-color: #1d74ff;
+    }
+
+    nav .logo {
+      background-color: #044ed7;
+      width: calc(365px - 8rem);
+      align-items: right;
+      display: flex;
+      justify-content: right;
+      padding: 2rem 4rem;
+    }
+
+    nav .logo img {
+      width: 125px;
+    }
+
+    nav .flex-row {
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    nav .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 75%;
+    }
+
+    nav li {
+      text-align: center;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      font-size: 22px;
+    }
+    /* -- end of navbar */
+    /* header */
+
+    header {
+      background: url('https://go.bd.com/rs/565-YXD-236/images/Masthead 01 d%402x.png') no-repeat;
+      background-size: cover;
+      min-height: 680px;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      color: #ffffff;
+      font: normal normal 300 80px/92px FS Albert Pro;
+    }
+
+    header p {
+      color: #ffffff;
+      font: normal normal 300 30px/42px FS Albert Pro;
+      margin: 1.5rem 0 3rem;
+    }
+    /* end of header */
+    /* sticker */
+
+    aside {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .sticker {
+      top: calc(700px + 1vw);
+      max-width: 598px;
+      position: fixed;
+      transform: translate(0%, -50%);
+      background-color: #ffffff;
+      border-top-left-radius: 60px;
+      border-bottom-left-radius: 60px;
+      align-items: center;
+      padding: 1rem 1.25rem 1rem 1.25rem;
+      box-shadow: 0px 10px 10px #00000033;
+      z-index: 10;
+    }
+
+    .sticker .flex-row {
+      flex-wrap: nowrap;
+    }
+
+    .sticker img {
+      border-radius: 50% 50%;
+      width: 51px;
+      box-shadow: 0px 3px 6px #00000066;
+    }
+
+    .sticker p {
+      color: #333333;
+      font: normal normal normal 18px/20px FS Albert Pro;
+      margin: 0 2rem 0 1.5rem;
+      max-width: 190px;
+    }
+
+    .sticker-move {
+      animation: move 0.5s ease 1s forwards;
+      animation-delay: 0.5s;
+      animation-iteration-count: 1;
+    }
+
+    .sticker-move img {
+      cursor: pointer;
+    }
+
+    @keyframes move {
+      50% {
+        transform: translate(80%, -42%);
+        box-shadow: -13px 4px 8px #00000033 !important;
+      }
+      100% {
+        transform: translate(80%, -42%);
+        box-shadow: -13px 4px 8px #00000033 !important;
+      }
+    }
+    /* end of sticker */
+    /* section 1 */
+
+    .section-1 {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 3.5rem 0 5rem;
+    }
+
+    .section-1 h2 {
+      color: #333333;
+      font: normal normal 300 50px/60px FS Albert Pro;
+      margin-bottom: 4rem;
+    }
+
+    .section-1 .flex-row {
+      gap: 5rem;
+    }
+
+    .section-1 h4 {
+      color: #333333;
+      font: normal normal normal 30px/36px FS Albert Pro;
+      margin-top: 1.5rem;
+    }
+
+    .section-1 .section-1 .icon {
+      width: 237px;
+      height: 237px;
+      border-radius: 50%;
+    }
+
+    .section-1 svg {
+      border-radius: 50%;
+      fill: #044ed7;
+      background: #044ed7;
+      max-width: 237px;
+      height: auto;
+    }
+
+    .section-1 .flex-row {
+      justify-content: center;
+    }
+
+    .section-1 .column {
+      max-width: 345px;
+      flex: 1;
+    }
+    /* end of section 1 */
+    /* section 2  - 4 columns*/
+
+    .section-2 .flex-row {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .section-2 h3 {
+      color: #333333;
+      font: normal normal normal 34px/38px FS Albert Pro;
+    }
+
+    .section-2 .column {
+      flex: 1;
+      max-width: 480px;
+      position: relative;
+      height: 912px;
+      /* min-width: 435px; */
+    }
+
+    .section-2 .front {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section-2 .front p {
+      flex: 1 0 200px
+    }
+
+    .section-2 .front h3 {
+      height: 25%;
+    }
+
+    .section-2 .column:nth-child(2) .btn {
+      justify-content: left;
+    }
+
+    .section-2 .img-container {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .rear {
+      opacity: 0;
+      transition: opacity 0.5s;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-image 0.3s ease-in-out;
+    }
+
+    .section-2 .txt-container {
+      position: relative;
+      padding-top: 1.5rem;
+      flex: 0 1 320px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section-2 img {
+      width: 291px;
+    }
+
+    .section-2 p {
+      color: #333333;
+      font: normal normal normal 24px/28px FS Albert Pro;
+      margin-top: 3rem;
+    }
+
+    .section-2 .btn-orange {
+      visibility: visible;
+      position: absolute;
+      top: -2.5rem;
+      padding: 0.75rem 1.25rem;
+      border-radius: 30px;
+    }
+
+    .section-2 .column:hover h3,
+    .section-2 .column:hover p {
+      color: #ffffff;
+    }
+
+    .section-2 .front:hover {
+      display: none;
+      opacity: 0;
+    }
+
+    .front,
+    .rear {
+      padding: 5rem 4rem 4.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section-2 .rear .txt-container {
+      flex: 1;
+      display: flex;
+    }
+
+    .section-2 .column:hover .rear {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    .section-2 .column:nth-child(1) .rear {
+      background-image: url('https://go.bd.com/rs/565-YXD-236/images/bg1darken.png');
+    }
+
+    .section-2 .column:nth-child(2) .rear {
+      background-image: url('https://go.bd.com/rs/565-YXD-236/images/bg2darken.png');
+    }
+
+    .section-2 .column:nth-child(3) .rear {
+      background-image: url('https://go.bd.com/rs/565-YXD-236/images/bg3darken.png');
+    }
+
+    .section-2 .column:nth-child(4) .rear {
+      background-image: url('https://go.bd.com/rs/565-YXD-236/images/bg4darken.png');
+    }
+
+    .section-2 .rear p {
+      margin-top: 40%;
+      flex: 0 1 350px;
+    }
+
+    .section-2 .btn {
+      font: normal normal normal 24px/28px FS Albert Pro;
+      margin: 5% 0 0;
+      margin: 0 auto;
+      display: flex;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+      width: 100%;
+    }
+    /* end of section 2 - 4 columns*/
+    /* section 3 - span */
+
+    .section-3 {
+      background-color: #FF6E00;
+      position: relative;
+    }
+
+    .section-3 .flex-column {
+      position: relative;
+      flex: 1;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      width: 45%;
+      position: relative;
+    }
+
+    .section-3 .flex-column:nth-child(1) {
+      background-color: #060A3D;
+      justify-content: center;
+      border-top-right-radius: 150rem;
+      border-bottom-right-radius: 150rem;
+      width: 70% !important;
+      z-index: 2;
+    }
+
+    .section-3 .inner-container {
+      padding: 5rem 10rem 5rem 17rem;
+    }
+
+    .section-3 img {
+      height: 100%;
+    }
+
+    .section-3 h4 {
+      font: normal normal normal 40px/46px FS Albert Pro;
+      color: #ffffff;
+      max-width: 550px;
+    }
+
+    .section-3 p {
+      font: normal normal normal 24px/36px FS Albert Pro;
+      color: #ffffff;
+      margin: 0.5rem 0 2rem;
+      max-width: 550px;
+    }
+
+    .section-3 .btn {
+      font: normal normal normal 16px/19px FS Albert Pro;
+      padding: 0.75rem 2.25rem;
+    }
+
+    .section-3 .flex-column:nth-child(2) {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: calc(100% - 1181px) !important;
+      z-index: 1;
+    }
+
+    .section-3 .img-container {
+      height: 100%;
+    }
+
+    .section-3 .img-container img {
+      height: 100%;
+      max-width: unset !important;
+    }
+    /* end of section 3 - span */
+    /* section 4 - products presentation */
+
+    .section-4 {
+      background-color: #f5f5f5;
+      flex-wrap: nowrap;
+      position: relative;
+      height: 65rem;
+      max-height: 65rem;
+    }
+
+    .section-4 .presentation-2,
+    .section-4 .presentation-3,
+    .section-4 .presentation-4 {
+      display: none;
+    }
+
+    .section-4 h4 {
+      color: #8b8b8b;
+      font: normal normal normal 60px/75px FS Albert Pro;
+      max-width: 544px;
+    }
+
+    .section-4 p {
+      color: #A7A7A7;
+      font: normal normal normal 22px/36px FS Albert Pro;
+      max-width: 544px;
+      margin: 1rem 0;
+    }
+
+    .section-4 .column1 {
+      align-items: center;
+      width: calc((100vw / 2) - 10%);
+      justify-content: flex-end;
+    }
+
+    .section-4 .column1.presentation-1 {
+      background: url('https://go.bd.com/rs/565-YXD-236/images/bg image Product 01 d.png');
+      background-repeat: no-repeat;
+    }
+
+    .section-4 .column1.presentation-2 {
+      background: url('https://go.bd.com/rs/565-YXD-236/images/bg image Product 02 d.png');
+      background-repeat: no-repeat;
+    }
+
+    .section-4 .column1.presentation-3 {
+      background: url('https://go.bd.com/rs/565-YXD-236/images/bg image Product 03.png');
+      background-repeat: no-repeat;
+    }
+
+    .section-4 .column1.presentation-4 {
+      background: url('https://go.bd.com/rs/565-YXD-236/images/bg image Product 04 d.png');
+      background-repeat: no-repeat;
+    }
+
+    .section-4 .column1 img {
+      max-width: 34rem;
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .section-4 .column2 img {
+      width: 100%;
+    }
+
+    .section-4 .column2 {
+      justify-content: center;
+      padding-left: 100px;
+      width: calc(100vw / 2);
+    }
+
+    .section-4 .column2 img {
+      max-width: 240px;
+      cursor: pointer;
+    }
+
+    .section-4 .column2 .flex-row {
+      gap: 2rem;
+      flex-wrap: nowrap;
+      bottom: 3rem;
+    }
+    /* end of section 4 product presentation */
+    /* section 5 form */
+
+    .section-5 {
+      background-color: #C5C5C5;
+      padding: 5rem 1rem;
+    }
+
+    .section-5 .form-headline {
+      font: normal normal normal 40px/46px FS Albert Pro;
+      color: #044ED7;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-5 .flex-column {
+      margin: 0 auto;
+      max-width: 1191px;
+    }
+    /* end of section 5 form */
+    /* footer */
+
+    footer {
+      background-color: #060A3D;
+      padding: 6rem 1rem 10rem;
+    }
+
+    footer .row {
+      margin: 0 auto;
+      max-width: 1300px;
+      width: 100% !important;
+    }
+
+    .footer-menu li a {
+      color: #DADADA;
+      font: normal normal normal 14px/16px FS Albert Pro;
+    }
+
+    .footer-menu .flex-row {
+      justify-content: space-between;
+      align-items: end;
+      flex: 1;
+      max-width: 900px;
+      border-bottom: solid 0.01em #C5C5C5;
+      padding-bottom: 1.5rem;
+    }
+
+    .footer-logo img {
+      width: 162px;
+      margin-bottom: -9px;
+    }
+
+    footer .social {
+      padding: 4rem 0 4rem;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    footer .social ul {
+      max-width: 900px;
+      width: 100%;
+      border-bottom: solid 0.01em #C5C5C5;
+      padding-bottom: 4rem;
+      gap: 4rem;
+    }
+
+    footer .social svg {
+      width: 100%;
+      height: 25px;
+      fill: #ffffff;
+    }
+
+    footer .copyright {
+      color: #dadada;
+      font: normal normal normal 16px/24px FS Albert Pro;
+    }
+
+    <!-- media queries -->
+    @media (max-width: 1800px) {
+      .section-2 h3 {
+        min-height: 117px;
+      }
+    }
+
+    @media (max-width: 1600px) {
+      nav .logo {
+        width: auto;
+      }
+      .section-2 .front,
+      .section-2 .rear {
+        padding: 3.5rem 2.5rem 4.5rem !important;
+      }
+      .section-2 .front p {
+        flex: 1 0 250px;
+      }
+      .section-3 .inner-container {
+        padding: 4rem 10rem 5rem 7rem;
+      }
+      .section-3 .flex-column:nth-child(1) {
+        width: 60vw !important;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      .menu {
+        margin: 0 auto;
+        gap: 1rem;
+      }
+      header,
+      .section-1 {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      .section-3 .inner-container {
+        padding: 4rem 2.5rem;
+      }
+      .section-3 .flex-column:nth-child(2) {
+        left: calc(100% - 1044px) !important;
+      }
+      .section-4 .column:nth-child(2) {
+        width: calc(39vw - 93px);
+      }
+    }
+
+    @media (max-width: 1260px) {
+      .section-2 .column {
+        flex: unset;
+        max-width: unset;
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      nav {
+        position: relative;
+      }
+      nav .logo {
+        padding: 1.65rem 4rem;
+      }
+      nav .logo img {
+        width: 96.5px;
+      }
+      .menu-button-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 30px;
+        background-color: #B5B5B5;
+      }
+      .menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 37px !important;
+        width: 37px !important;
+        cursor: pointer;
+      }
+      .menu-button span {
+        width: 37px;
+        height: 3px;
+        background: #f5f5f5;
+        display: block;
+        position: relative;
+        -webkit-transition: all 500ms ease-out;
+        -moz-transition: all 500ms ease-out;
+        transition: all 500ms ease-out;
+        cursor: pointer !important;
+      }
+      nav .menu {
+        display: none;
+      }
+      nav .showMenu {
+        display: flex;
+        position: absolute;
+        top: 95px;
+        background-color: #1d74ff;
+        width: 100vw;
+        z-index: 100;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 5rem 0;
+      }
+      .showMenu li {
+        width: calc((100vw / 2) - 50px);
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .section-4 {
+        display: none;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .section-1 .column {
+        width: 100vw;
+        max-width: 100%;
+        flex: unset;
+      }
+      .sticker {
+        transform: translate(80%, -42%);
+        box-shadow: -13px 4px 8px #00000033 !important;
+      }
+      .sticker:hover,
+      .sticker:focus {
+        transform: translate(0%, -50%);
+        transition: all 0.3s ease-in-out;
+      }
+      .section-2 {
+        flex-direction: column;
+      }
+      .section-2 .column {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+      .section-2 .front::after {
+        content: "";
+        width: 80vw;
+        border-bottom: solid 3px #044ED7;
+        margin: 3rem auto
+      }
+      .section-2 .column:hover .rear {
+        background: none;
+        opacity: 0;
+        transition: unset;
+      }
+      .section-2 .column:hover h3,
+      .section-2 .column:hover p {
+        color: unset;
+      }
+      .section-2 .front:hover {
+        display: unset;
+        opacity: unset;
+      }
+      .section-2 .front,
+      .section-2 .rear {
+        padding: 2rem 2rem 4.5rem !important;
+      }
+      .section-2 .front .txt-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+      }
+      .section-2 .img-container {
+        order: 1;
+        justify-content: flex-start;
+        margin: 0;
+        width: calc((100vw / 2) - 20%);
+      }
+      .section-2 h3 {
+        order: 2;
+        width: calc((100vw / 2) - 10%);
+      }
+      .section-2 p {
+        order: 3;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      .btn-container.hidden {
+        display: flex !important;
+        order: 4;
+        padding: 2rem 2.5rem;
+        width: 100%;
+      }
+      .section-2 .btn {
+        width: unset;
+        padding: 2rem 4.5rem;
+      }
+      .section-3 {
+        display: flex !important;
+        flex-direction: column;
+      }
+      .section-3 .flex-column:nth-child(1) {
+        width: 100vw !important;
+        border-radius: 0px !important;
+      }
+      .section-3 .flex-column:nth-child(2) {
+        position: relative;
+      }
+      .section-3 h4,
+      .section-3 p {
+        max-width: 100%;
+      }
+      .section-3 p {
+        margin-bottom: 4rem;
+      }
+      .section-3 .btn {
+        font-size: 18px;
+        padding: 1.25rem 2.2rem;
+      }
+      .section-3 .flex-column:nth-child(2) {
+        left: calc(70% - 1044px) !important
+      }
+    }
+
+    @media (max-width: 690px) {
+      .showMenu li {
+        width: 95% !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .sticker {
+        transform: translate(75%, -42%);
+      }
+      .sticker p {
+        font-size: 12px;
+        max-width: 20vw;
+        margin: 0 0.5rem;
+      }
+      .sticker .btn-orange {
+        font-size: 12px;
+        padding: 0.6rem 1.25rem;
+        margin: 0 auto;
+      }
+    }
+
+    <!-- form -->
+    .mktoForm {
+      width: unset !important;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+      padding: 0 !important;
+    }
+
+    .mktoForm .mktoOffset,
+    .mktoForm .mktoGutter {
+      display: none !important;
+    }
+
+    .mktoForm .mktoLabel {
+      position: absolute;
+      top: -2rem;
+      left: 0;
+      visibility: hidden;
+    }
+
+    .mktoForm .mktoRadioList,
+    .mktoForm .mktoCheckboxList {
+      width: unset !important;
+    }
+
+    .mktoForm .mktoFormRow {
+      width: calc((100% / 2) - 1rem);
+      max-width: 100% !important;
+    }
+
+    .mktoForm .mktoFormCol,
+    .mktoForm .mktoFieldWrap {
+      width: 100% !important;
+    }
+
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm input[type=email],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=number],
+    .mktoForm input[type=date],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField {
+      width: 100% !important;
+      padding: 1.6rem !important;
+      font: normal normal 300 30px/35px FS Albert Pro;
+      color: #333333;
+    }
+
+    .mktoForm input[type=text]::placeholder,
+    .mktoForm input[type=url]::placeholder,
+    .mktoForm input[type=email]::placeholder,
+    .mktoForm input[type=tel]::placeholder,
+    .mktoForm input[type=number]::placeholder,
+    .mktoForm input[type=date]::placeholder,
+    .mktoForm textarea.mktoField::placeholder,
+    .mktoForm select.mktoField::placeholder,
+    .mktoForm select.mktoField {
+      font: normal normal 300 30px/35px FS Albert Pro;
+      color: #DADADA;
+    }
+
+
+    /* dynamic field from .js */
+
+    .checkbox-container {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      font: normal normal normal 20px/30px FS Albert Pro;
+      color: #333333;
+    }
+
+    .checkbox-container .mktoLabel {
+      visibility: visible !important;
+    }
+
+    .checkbox-container .mktoHtmlText {
+      width: 70% !important;
+      margin-left: 2.3rem;
+    }
+
+    .checkbox-container input {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    .checkbox-container .mktoLabel {
+      visibility: visible;
+      font: normal normal normal 20px/30px FS Albert Pro;
+      color: #333333;
+      width: 70% !important;
+      position: relative !important;
+    }
+
+    .removable {
+      display: none;
+    }
+
+
+    /* form button */
+
+    .mktoForm .mktoButtonRow {
+      width: 100% !important;
+      justify-content: flex-start;
+      margin-top: -3rem;
+    }
+
+    .mktoForm .mktoButtonWrap {
+      margin: 0 !important;
+    }
+
+    .mktoForm .mktoButton,
+    .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active {
+      background: #044ED7 !important;
+      color: #ffffff !important;
+      padding: 1.5rem 4.5rem !important;
+      border-radius: 7px !important;
+      font: normal normal normal 26px/30px FS Albert Pro !important;
+    }
+
+    .mktoForm button.mktoButton:disabled {
+      opacity: 1 !important;
+    }
+
+    @media (max-width: 900px) {
+      .mktoForm .mktoFormRow {
+        flex: 1 0 350px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .mktoForm input[type=text],
+      .mktoForm input[type=url],
+      .mktoForm input[type=email],
+      .mktoForm input[type=tel],
+      .mktoForm input[type=number],
+      .mktoForm input[type=date],
+      .mktoForm textarea.mktoField,
+      .mktoForm select.mktoField {
+        height: unset !important;
+      }
+      .mktoForm select.mktoField {
+        font: normal normal 300 30px/35px FS Albert Pro !important;
+      }
+    }
+  </style>
+  <body>
+    <div class="wrapper flex-column">
+      <nav class="flex-row">
+        <div class="logo">
+          <div class="mktoText" mktoName="Top Logo" id="toplogo">
+            <a href="https://www.bd.com/en-ca" target="_blank"><img src="https://go.bd.com/rs/565-YXD-236/images/logo-top.svg" alt="logo"></a>
+          </div>
+        </div>
+        <ul class="menu">
+          <li class="menu-item"><a href="#section4">PureWickTM FEC</a></li>
+          <li class="menu-item"><a href="#section4">PureWickTM MEC</a></li>
+          <li class="menu-item"><a href="#section4">SureStepTM MEC Kit</a></li>
+          <li class="menu-item"><a href="#section4">SureStepTM Intermitent Trays</a></li>
+        </ul>
+        <div class="menu-button-container">
+          <div class="menu-button  button_holder_button visible-sm-inline-block visible-xs-inline-block">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+      </nav>
+      <header class="flex-column center">
+        <h1 class="mktoText" mktoName="Banner Headline" id="banenr-headline">
+          Looking for an alternative <br> to Foley Catheters?
+        </h1>
+        <p class="mktoText" mktoName="Header Copy" id="header-copy">We offer a wide range of solutions to meet <br> your needs.</p>
+        <a href="#form-section" class="btn">
+          CONTACT US
+        </a>
+      </header>
+      <aside>
+        <div class="sticker flex-row">
+          <div class="mktotetx">
+            <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="">
+          </div>
+          <p class="mktoText" mktoName="sticker Text" id="sticker-text">
+            Get in contact with one of our <strong>Sales Associates</strong>.
+          </p>
+          <a href="#form-section" class="mktoText btn-orange" mktoName="Sticker Button Text" id="stickyContactButton">CONTACT US</a>
+        </div>
+      </aside>
+
+
+      <section class="section-1 flex-column center">
+        <h2 class="mktoText" mktoName="Section 1 Headline" id="section-1-headline">Why Foley Alternatives are right for you</h2>
+        <div class="flex-row">
+          <div class="column">
+            <div class="mktoText" mktoName="Bubble 1" id="buble1" class="icon-1">
+              <svg width="255" height="255" viewBox="0 0 255 255">
+                <defs>
+                  <filter id="Rectangle_1740" x="0" y="0" width="255" height="255" filterUnits="userSpaceOnUse">
+                    <feOffset dy="3" input="SourceAlpha"/>
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feFlood flood-opacity="0.161"/>
+                    <feComposite operator="in" in2="blur"/>
+                    <feComposite in="SourceGraphic"/>
+                  </filter>
+                </defs>
+                <g id="bubble_01" data-name="bubble 01" transform="translate(9 6)">
+                  <g id="Group_11989" data-name="Group 11989" transform="translate(-45 -13)">
+                    <g transform="matrix(1, 0, 0, 1, 36, 7)" filter="url(#Rectangle_1740)">
+                      <rect id="Rectangle_1740-2" data-name="Rectangle 1740" width="237" height="237" rx="118.5" transform="translate(9 6)" fill="#044ed7"/>
+                    </g>
+                  </g>
+                  <g id="streamlinehq-interface-weather-humidity-none-interface-essential-200" transform="translate(80.287 80.279)">
+                    <line id="Line_240" data-name="Line 240" y1="76" x2="77" transform="translate(0.247 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                    <path id="Path_11436" data-name="Path 11436" d="M4.85,41.862A26.365,26.365,0,0,0,43.812,18.426,32.107,32.107,0,0,0,40.883,7.06" transform="translate(21.396 31.375)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                    <path id="Path_11437" data-name="Path 11437" d="M44.1,23.35C36.892,11.281,28.865.5,28.865.5S2.5,35.712,2.5,50.3A25.9,25.9,0,0,0,5.429,62.019" transform="translate(9.978 -0.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                  </g>
+                </g>
+              </svg>
+
+            </div>
+            <h4 class="mktoText" mktoName="Bubble Point 1" id="bubblepoint1">
+              Keeps skin dry
+            </h4>
+          </div>
+          <div class="column">
+            <div class="mktoText" mktoName="Bubble 1" id="buble2" class="icon-2">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="255" viewBox="0 0 255 255">
+                <defs>
+                  <filter id="Rectangle_1740" x="0" y="0" width="255" height="255" filterUnits="userSpaceOnUse">
+                    <feOffset dy="3" input="SourceAlpha"/>
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feFlood flood-opacity="0.161"/>
+                    <feComposite operator="in" in2="blur"/>
+                    <feComposite in="SourceGraphic"/>
+                  </filter>
+                </defs>
+                <g id="bubble_02" data-name="bubble 02" transform="translate(9 6)">
+                  <g id="Group_11989" data-name="Group 11989" transform="translate(-45 -13)">
+                    <g transform="matrix(1, 0, 0, 1, 36, 7)" filter="url(#Rectangle_1740)">
+                      <rect id="Rectangle_1740-2" data-name="Rectangle 1740" width="237" height="237" rx="118.5" transform="translate(9 6)" fill="#044ed7"/>
+                    </g>
+                  </g>
+                  <g id="streamlinehq-interface-favorite-give-heart-interface-essential-200" transform="translate(79.965 80.6)">
+                    <g id="Group_12112" data-name="Group 12112" transform="translate(0 46.826)">
+                      <path id="Path_11432" data-name="Path 11432" d="M.5,8.5H12.218A14.647,14.647,0,0,1,26.865,23.147h0" transform="translate(-0.5 -8.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                      <path id="Path_11433" data-name="Path 11433" d="M9.288,11h48.583A11.718,11.718,0,0,1,50.3,22.718h0a2.929,2.929,0,0,1-2.929,2.929H.5" transform="translate(-0.5 3.647)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                    </g>
+                    <path id="Path_11434" data-name="Path 11434" d="M31.689,47.334,8.253,25.656C-4.519,12.824,14.112-12.018,31.689,8.079c17.577-20.038,36.384,4.8,23.436,17.577Z" transform="translate(16.647 -0.508)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h4 class="mktoText" mktoName="Bubble Point 2" id="bubblepoint2">
+              Reduces risk of CAUTI from an indwelling catheter
+            </h4>
+          </div>
+          <div class="column">
+            <div class="mktoText" mktoName="Bubble 3" id="buble3" class="icon-3">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="255" height="255" viewBox="0 0 255 255">
+                <defs>
+                  <filter id="Rectangle_1740" x="0" y="0" width="255" height="255" filterUnits="userSpaceOnUse">
+                    <feOffset dy="3" input="SourceAlpha"/>
+                    <feGaussianBlur stdDeviation="3" result="blur"/>
+                    <feFlood flood-opacity="0.161"/>
+                    <feComposite operator="in" in2="blur"/>
+                    <feComposite in="SourceGraphic"/>
+                  </filter>
+                </defs>
+                <g id="bubble_03" data-name="bubble 03" transform="translate(9 6)">
+                  <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_1740)">
+                    <rect id="Rectangle_1740-2" data-name="Rectangle 1740" width="237" height="237" rx="118.5" transform="translate(9 6)" fill="#044ed7"/>
+                  </g>
+                  <g id="streamlinehq-interface-time-clock-circle-interface-essential-200" transform="translate(81.181 81)">
+                    <circle id="Ellipse_129" data-name="Ellipse 129" cx="38" cy="38" r="38" transform="translate(-0.181 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                    <path id="Path_11435" data-name="Path 11435" d="M7,4.5V19.147L21.882,36.49" transform="translate(30.659 18.936)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h4 class="mktoText" mktoName="Bubble Point 3" id="bubblepoint3">
+              Saves time
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 2 4 columns -->
+      <section class="section-2 flex-row">
+        <div class="column">
+          <div class="front">
+            <div class="txt-container">
+              <h3 class="mktoText" mktoName="Card 1 Headline" id="card1-headline">
+                PureWick™ Female External Catheter
+              </h3>
+              <p class="mktoText" mktoName="Card 1 Copy" id="card1-copy">
+                The PureWick™ Female External Catheter allows for non-invasive urine output management in female patients.
+              </p>
+              <div class="mktoTtext img-container" mktoName="Product 1 Image" id="product1-img">
+                <img src="https://go.bd.com/rs/565-YXD-236/images/product1.png" alt="">
+              </div>
+              <div class="btn-container hidden"><a href="#section4" class="btn">LEARN MORE</a></div>
+            </div>
+
+          </div>
+          <div class="rear">
+            <div class="txt-container">
+              <h3 class="mktoText" mktoName="Card 1 Headline" id="card1-headline2">
+                PureWick™ Female External Catheter
+              </h3>
+              <p class="mktoText" mktoName="Card 1 Copy" id="card1-copy2">
+                The PureWick™ Female External Catheter allows for non-invasive urine output management in female patients.
+              </p>
+              <a href="#section4" class="btn">LEARN MORE</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="front">
+            <div class="txt-container">
+              <a href="#" class="btn-orange">COMING SOON</a>
+              <h3 class="mktoText" mktoName="Card 2 Headline" id="card2-headline">
+                PureWick™ Male External Catheter
+              </h3>
+              <p class="mktoText" mktoName="Card 2 Copy" id="card2-copy">
+                The PureWick™ Male External Catheter allows for non-invasive urine output management in male patients.
+              </p>
+              <div class="mktoTtext img-container" mktoName="Product 1 Image" id="product1-img">
+                <img src="https://go.bd.com/rs/565-YXD-236/images/Product 02 d%402x.jpg" alt="">
+              </div>
+              <div class="btn-container hidden"><a href="#section4" class="btn">LEARN MORE</a></div>
+            </div>
+
+          </div>
+          <div class="rear">
+            <div class="txt-container">
+              <a href="#" class="btn-orange">COMING SOON</a>
+              <h3 class="mktoText" mktoName="Card 2 Headline" id="card2-headline2">
+                PureWick™ Male External Catheter
+              </h3>
+              <p class="mktoText" mktoName="Card 2 Copy" id="card2-copy2">
+                The PureWick™ Male External Catheter allows for non-invasive urine output management in male patients.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="front">
+            <div class="txt-container">
+              <h3 class="mktoText" mktoName="Card 3 Headline" id="card3-headline">
+                SureStep™ Male External Catheter Kit
+              </h3>
+              <p class="mktoText" mktoName="Card 3 Copy" id="card3-copy2">
+                The SureStep™ male external catheter Kit, an all-inclusive kit with guided instructions for catheter placement to help minimize process variation and support correct patient fit.
+              </p>
+              <div class="mktoTtext img-container" mktoName="Product 1 Image" id="product1-img">
+                <img src="https://go.bd.com/rs/565-YXD-236/images/Product 03 d%402x.jpg" alt="">
+              </div>
+              <div class="btn-container hidden"><a href="#section4" class="btn">LEARN MORE</a></div>
+            </div>
+
+          </div>
+          <div class="rear">
+            <div class="txt-container">
+              <h3 class="mktoText" mktoName="Card 3 Headline" id="card3-headline2">
+                SureStep™ Male External Catheter Kit
+              </h3>
+              <p class="mktoText" mktoName="Card 3 Copy" id="card3-copy">
+                The SureStep™ male external catheter Kit, an all-inclusive kit with guided instructions for catheter placement to help minimize process variation and support correct patient fit.
+              </p>
+              <a href="#section4" class="btn">LEARN MORE</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="front">
+            <div class="txt-container">
+              <h3 class="mktoText" mktoName="Card 4 Headline" id="card4-headline">
+                Surestep™ Intermittent Trays
+              </h3>
+              <p class="mktoText" mktoName="Card 4 Copy" id="card4-copy">
+                Standardized kits designed to facilitate same aseptic insertion technique as a Foley Catheter.
+              </p>
+              <div class="mktoTtext img-container" mktoName="Product 1 Image" id="product1-img">
+                <img src="https://go.bd.com/rs/565-YXD-236/images/Product 04 d%402x.jpg" alt="">
+              </div>
+              <div class="btn-container hidden"><a href="#section4" class="btn">LEARN MORE</a></div>
+            </div>
+
+          </div>
+          <div class="rear">
+            <div class="txt-container">
+              <h3 class="mktoText" mktoName="Card 4 Headline" id="card4-headline2">
+                Surestep™ Intermittent Trays
+              </h3>
+              <p class="mktoText" mktoName="Card 4 Copy" id="card4-copy2">
+                Standardized kits designed to facilitate same aseptic insertion technique as a Foley Catheter.
+              </p>
+              <a href="#section4" class="btn">LEARN MORE</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- end of section 2 4 columns -->
+      <!-- section 3 span -->
+      <section class="section-3 inline-row">
+        <div class="flex-column">
+          <div class="inner-container">
+            <h4 class="mktoText" mktoName="Span Headline" id="span-headline">
+              Find the right Foley Alternative
+            </h4>
+            <p class="mktoText" mktoName="Span Copy" id="span-copy">
+              We have a solution that suits your patients needs. Contact us today to get in touch with one of our product specialists.
+            </p>
+            <a href="#form-section" class="btn">CONTACT US</a>
+          </div>
+        </div>
+        <div class="flex-column">
+          <div class="mktoText img-container" mktoName="Span Image" id="span-img">
+            <img src="https://go.bd.com/rs/565-YXD-236/images/Image ropunded d.png" alt="graphics">
+          </div>
+        </div>
+      </section>
+      <!-- end of section 3 span -->
+      <!-- section 4  products presenations-->
+      <section class="section-4 flex-row" id="section4">
+
+        <div class="column1 flex presentation-1">
+          <div class="mktoText  presentation-1" mktoName="Section 4 - img 1" id="section-4-img1"><img src="https://go.bd.com/rs/565-YXD-236/images/product1.png" alt="product image"></div>
+        </div>
+
+        <div class="column1 flex presentation-2">
+          <div class="mktoText  presentation-2" mktoName="Section 4 - img 2" id="section-4-img2"><img src="https://go.bd.com/rs/565-YXD-236/images/productdetail2.png" alt="product image"></div>
+        </div>
+
+        <div class="column1 flex presentation-3">
+          <div class="mktoText  presentation-3" mktoName="Section 4 - img 3" id="section-4-img3"><img src="https://go.bd.com/rs/565-YXD-236/images/Product 01 detail4%402x.png" alt="product image"></div>
+        </div>
+
+        <div class="column1 flex presentation-4">
+          <div class="mktoText  presentation-4" mktoName="Section 4 - img 4" id="section-4-img4"><img src="https://go.bd.com/rs/565-YXD-236/images/Product 01 detail d%402x.png" alt="product image"></div>
+        </div>
+
+
+        <div class="column2 flex-column">
+
+          <h4 class="mktoText presentation-1" mktoName="Section 4 - Headline 1" id="section-4-headline1">PureWick™ Female External Catheter</h4>
+          <h4 class="mktoText presentation-2" mktoName="Section 4 - Headline 2" id="section-4-headline2">PureWick™ Male External Catheter</h4>
+          <h4 class="mktoText presentation-3" mktoName="Section 4 - Headline 3" id="section-4-headline3">SureStep™ Male External Catheter Kit</h4>
+          <h4 class="mktoText presentation-4" mktoName="Section 4 - Headline 4" id="section-4-headline4">SurestepTM Intermittent Trays</h4>
+          <p class="mktoText presentation-1" mktoName="Section 4 - Copy 1" id="section-4-copy1">The PureWick™ Female External Catheter allows for simple, non-invasive urine output management in female patients. Using low pressure wall suction, the PureWick™ Female External Catheter wicks urine away from the patient and into a designated
+            collection canister. With the PureWick™ Female External Catheter, you now have an option for managing female urinary incontinence.</p>
+          <p class="mktoText presentation-2" mktoName="Section 4 - Copy 2" id="section-4-copy2">The PureWickTM Male External Catheter allows for non-invasive urine output management in male patients.</p>
+          <p class="mktoText presentation-3" mktoName="Section 4 - Copy 3" id="section-4-copy3">The SureStep™ male external catheter Kit, an all-inclusive kit with guided instructions for catheter placement to help minimize process variation and support correct patient fit.</p>
+          <p class="mktoText presentation-4" mktoName="Section 4 - Copy 4" id="section-4-copy4">Standardized kits designed to facilitate same aseptic insertion technique as a Foley Catheter.</p>
+          <br>
+          <p>OTHER PRODUCTS</p>
+          <br>
+          <div class="flex-row">
+            <div class="mktoText product-img img1" mktoName="Section 4 - img 2" id="section-4-img2a"><img src="https://go.bd.com/rs/565-YXD-236/images/productdetail2.png" alt="product image"></div>
+            <div class="mktoText product-img img2" mktoName="Section 4 - img 3" id="section-4-img3a"><img src="https://go.bd.com/rs/565-YXD-236/images/productdetail3.png" alt="product image"></div>
+            <div class="mktoText product-img img3" mktoName="Section 4 - img 4" id="section-4-img4a"><img src="https://go.bd.com/rs/565-YXD-236/images/Product 05.png" alt="product image"></div>
+          </div>
+        </div>
+      </section>
+      <!-- end of section 4  products presenations-->
+      <!-- section 5 form -->
+      <section class="section-5" id="form-section">
+        <div class="flex-column">
+          <h3 class="mktoText form-headline" mktoName="Form Headline" id="form-headline">Let’s have a conversation​</h3>
+          <div class="mktoForm" mktoName="Form 1" id="form1">
+            <script src="//go.bd.com/js/forms2/js/forms2.min.js"></script>
+            <form id="mktoForm_37480"></form>
+            <script>
+              MktoForms2.loadForm("//go.bd.com", "565-YXD-236", 37480);
+            </script>
+          </div>
+        </div>
+      </section>
+      <!-- end of section 5 form -->
+
+      <footer class="flex-column">
+        <div class="row flex-row footer-menu">
+          <ul class="flex-row">
+            <li>
+              <a class="mktoText footer-logo" mktoName="Footer logo" id="footer-logo" href="#"><img src="https://go.bd.com/rs/565-YXD-236/images/logo-top.svg" alt="logo"></a>
+            </li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PRIVACY & TERMS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="row flex-row social">
+          <ul class="flex-row">
+            <li>
+              <a href="" class="mktoText" mktoName="social icon 1" id="social-icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mktoText" mktoName="Social Icon 2" id="social-icon2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mktoText" mktoName="Social Icon 3" id="social-icon3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mktoText" mktoName="Social Icon 4" id="social-icon4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="mktoText" mktoName="Social Icon 5" id="social-icon5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row flex-row copyright">
+          <p class="mktoText" mktoName="Copyright" id="copyright">
+            © 2022 BD. All rights reserved. BD and the BD Logo are trademarks of Becton, Dickinson and Company. <br> All other trademarks are the property of their respective owners.
+          </p>
+        </div>
+      </footer>
+
+
+
+
+    </div>
+    <!-- repositioning checkbox -->
+    <!-- this script is required to be able to manipulate form check box field-->
+    <script>
+      MktoForms2.whenReady(function(form) {
+        const checkbox = document.querySelectorAll('.mktoCheckboxList')[0];
+        const checkboxLabel = document.querySelectorAll('.mktoCheckboxList')[0].previousElementSibling.previousElementSibling;
+        checkboxLabel.classList.add('checkbox-label');
+        const upperSibling = document.querySelectorAll('.mktoCheckboxList')[0].parentNode.parentNode.parentNode.previousSibling
+        const removable = document.querySelectorAll('.mktoCheckboxList')[0].parentNode.parentNode.parentNode
+        removable.classList.add('removable')
+        upperSibling.appendChild(checkbox)
+        checkbox.appendChild(checkboxLabel)
+        upperSibling.classList.add('checkbox-container')
+
+      });
+    </script>
+    <!-- hide contact us sticker on click -->
+    <script>
+      MktoForms2.whenReady(function(form) {
+        const contactBtn = document.getElementById('stickyContactButton')
+        const sticker = document.querySelectorAll('.sticker')[0]
+        const triggerImg = document.querySelectorAll('.sticker img')[0]
+        contactBtn.addEventListener('click', myFunc)
+        triggerImg.addEventListener('click', unhideFunc)
+
+        function myFunc() {
+          contactBtn.parentNode.classList.add('sticker-move')
+        }
+
+        function unhideFunc() {
+          contactBtn.parentNode.classList.remove('sticker-move')
+        }
+      });
+    </script>
+    <!-- hamburger menu -->
+    <script>
+      MktoForms2.whenReady(function(form) {
+
+
+        const hamburger = document.querySelectorAll(".menu-button")[0];
+        hamburger.addEventListener("click", toggleMenu);
+
+        const menu = document.querySelector(".menu");
+        const menuItems = document.querySelectorAll(".menu-item");
+        const menuIcon = document.querySelector(".menu-button");
+
+        const transformingSpans = document.querySelectorAll(".menu-button>span")
+
+        function toggleMenu() {
+          console.log('check')
+
+          if (menu.classList.contains("showMenu")) {
+            menu.classList.remove("showMenu");
+            transformingSpans[0].style = "unset"
+            transformingSpans[1].style = "opacity: unset;"
+            transformingSpans[2].style = "unset;"
+          } else {
+            menu.classList.add("showMenu");
+            transformingSpans[0].style = "transform: rotate(45deg);top:17px;"
+            transformingSpans[1].style = "opacity: 0;top: 7px;"
+            transformingSpans[2].style = "transform: rotate(-45deg);top: -16.5px;}"
+          }
+        }
+
+
+      });
+    </script>
+    <!-- changing slides -->
+    <script src="https://go.bd.com/rs/565-YXD-236/images/changingslides.js"></script>
+
+  </body>
+
+</html>
