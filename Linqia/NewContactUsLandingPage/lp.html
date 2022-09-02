@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* general setup */
+        
+        html {
+            scrollbar-width: none;
+        }
+        
+        body {
+            background: #fff;
+            margin: 0;
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+            /* Safari and Chrome */
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        .flex,
+        .flex-row {
+            display: flex;
+        }
+        
+        .flex-row {
+            flex-direction: row;
+            background-color: #0200ff;
+            padding: 0 1rem;
+        }
+        
+        .flex-column {
+            flex-direction: column;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        /* typograpgy  */
+        
+        h1,
+        h2 {
+            font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
+            text-transform: uppercase;
+            line-height: 120%;
+        }
+        
+        h1 {
+            font-size: 45px;
+        }
+        
+        h2 {
+            font-size: 30px;
+        }
+        
+        h3 {
+            font-family: 'Novecento-WideLight', Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 110%;
+        }
+        
+        .copy h1 {
+            font-size: 35px;
+            color: #290AC4;
+        }
+        
+        .copy h2 {
+            font-size: 30px;
+            color: #06092E;
+        }
+        
+        p,
+        footer li,
+        footer a {
+            font-family: 'Barlow-Light', Arial, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: #fff;
+        }
+        
+        .copyright {
+            font-family: 'Novecento-WideLight', Arial, sans-serif;
+            color: #fff;
+            font-size: 12px;
+            width: 100%;
+        }
+        
+        .copyright a {
+            text-decoration: underline;
+            font-size: 12px;
+        }
+        
+        footer a:hover,
+        footer a:focus {
+            text-decoration: underline;
+        }
+        
+        footer svg {
+            fill: #06092E;
+        }
+        
+        nav {
+            font-family: 'Barlow-Light', Arial, sans-serif;
+        }
+        
+        .btn {
+            font-family: 'Novecento-WideLight', Arial, sans-serif;
+        }
+        /* navbar */
+        
+        .nav-flex-container {
+            width: auto;
+            max-width: 1600px;
+            background-color: #0200ff;
+            margin: 0 auto;
+        }
+        
+        nav {
+            justify-content: space-between;
+            max-width: 1250px;
+            margin: 0 auto;
+            align-items: center;
+            padding-top: 0.5rem !important;
+        }
+        
+        nav.flex-row {
+            flex-wrap: wrap;
+        }
+        
+        .top-menu {
+            gap: 3rem;
+        }
+        /* logo */
+        
+        .logo-top {
+            height: auto;
+            width: 150px;
+            margin-top: 7px;
+        }
+        /* buttons */
+        
+        .button-container {
+            gap: 1rem;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        
+        nav .btn {
+            font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
+            background-color: transparent;
+            border: solid 2px #fff;
+            font-size: 15px !important;
+            letter-spacing: 1px;
+            padding: 0.1rem 1rem;
+            border-radius: 40px;
+            height: 38px;
+            line-height: 15px;
+            width: 7rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav .btn-contact {
+            background: #fff;
+            color: #06092E;
+        }
+        
+        nav .btn-contact:hover,
+        nav .btn-contact:focus {
+            background-color: #a8d200;
+            border: solid 2px #a8d200;
+            color: #050930;
+            transition: all 0.2s;
+        }
+        
+        nav .btn-signin {
+            color: #fff;
+            border: solid 2px #fff;
+        }
+        
+        nav .btn-signin:hover,
+        nav .btn-signin:focus {
+            background-color: #a8d200;
+            border: solid 2px #a8d200;
+            color: #050930;
+            border: solid 2px #a8d200;
+            transition: all 0.2s;
+        }
+        
+        nav a {
+            color: #fff;
+        }
+        
+        .center-cta {
+            font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
+            text-transform: uppercase;
+            font-weight: 600;
+            background-color: #FF3080;
+            border-radius: 40px;
+            display: block;
+            border: none;
+            width: 13rem;
+            height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 2rem !important;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* header  */
+        /* headline */
+        
+        .headline {
+            text-align: center;
+            color: #290AC4;
+        }
+        /* main */
+        
+        main {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        main .flex-row {
+            gap: 3rem;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+            padding: 2rem 2rem 0 2rem;
+        }
+        
+        main .col-1,
+        main .col-2 {
+            width: calc((100% / 2) - 2rem);
+            flex: 1 0 350px;
+        }
+        
+        main .img-container {
+            margin-top: 3rem;
+        }
+        /* form additional styling - main form css is in form layout template */
+        
+        form.form input.text:focus,
+        form.form select:focus,
+        form.form textarea.standard:focus,
+        form.form input.text:focus-visible,
+        form.form select:focus-visible,
+        form.form textarea.standard:focus-visible {
+            outline: none !important;
+        }
+        
+        article,
+        .form-container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        main article {
+            width: 70%;
+            margin-bottom: 5rem;
+            position: relative;
+        }
+        
+        .copy {
+            margin-top: 4rem;
+            max-width: 1000px;
+        }
+        
+        .copy h1,
+        .copy h2 {
+            text-align: center;
+        }
+        
+        .center-cta {
+            margin: 1rem auto;
+        }
+        
+        .form-container {
+            align-items: center;
+            background: url('https://go.pardot.com/l/153091/2022-08-12/pq5spg/153091/1660338060tu3oRRBw/waves_banner2.png');
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+            padding-top: 5rem;
+        }
+        
+        .form-container h1 {
+            text-align: center;
+            color: #fff;
+            margin: 0 auto 1.5rem;
+            font-size: 75px;
+            max-width: 800px;
+        }
+        /* footer */
+        
+        .footer-flex-container {
+            background-color: #05082f;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        footer {
+            max-width: 1600px;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding: 5rem 0 5rem;
+            flex-wrap: wrap;
+            max-width: 1300px;
+            padding: 5rem 0 !important;
+        }
+        
+        footer.flex-row {
+            align-items: flex-end !important;
+        }
+        
+        footer.flex-row,
+        footer .flex-row {
+            background-color: #05082f;
+        }
+        
+        footer .flex-col.col-1 {
+            flex: 1 0 250px;
+        }
+        
+        footer .flex-col {
+            flex: 1 0 180px;
+        }
+        
+        footer .flex-col {
+            width: 25%;
+            padding: 0 1%;
+        }
+        
+        footer .col-2 li,
+        footer .col-3 li,
+        footer .col-4 li {
+            margin: 0.25rem 0;
+        }
+        
+        .footer-logo {
+            width: 15rem;
+            height: auto;
+        }
+        
+        footer .social {
+            width: 100%;
+            padding: 1rem 0.6rem 0;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1.25rem;
+        }
+        
+        .copyright {
+            margin-top: 2rem;
+            text-align: center;
+            margin: 5rem auto 0;
+        }
+        
+        @media (max-width: 940px) {
+            iframe {
+                height: 1250px;
+            }
+        }
+        
+        @media (max-width: 810px) {
+            footer .flex-col {
+                padding: 0 !important;
+            }
+        }
+        
+        @media (max-width:405px) {
+            article {
+                padding: 2rem 0 !important;
+            }
+            footer .col-1,
+            .social,
+            footer .flex-col {
+                text-align: center;
+                justify-content: center !important;
+            }
+            footer ul {
+                padding: 0;
+            }
+        }
+        /* toggle mobile nav */
+        
+        .menu-button {
+            align-items: center;
+            margin-top: 0.6rem;
+            margin-right: 0rem;
+            display: none;
+        }
+        
+        .menu-button span {
+            width: 26px;
+            height: 4px;
+            margin: 4px 0px;
+            background: #fff;
+            display: block;
+            position: relative;
+            -webkit-transition: all 500ms ease-out;
+            -moz-transition: all 500ms ease-out;
+            transition: all 500ms ease-out;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 1005px) {
+            .nav-col:nth-child(2) {
+                right: 0;
+                top: -100vh;
+                top: 3.5rem;
+                width: 100%;
+                margin-top: -1px;
+                order: 2;
+            }
+            .top-menu {
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .top-menu li {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .top-menu a {
+                font-size: 18px;
+            }
+            .menu-button {
+                display: block;
+            }
+        }
+        
+        .showMenu {
+            top: 100px !important;
+            transition: all 0.1s;
+        }
+        
+        .hidden-btn {
+            display: none;
+        }
+        
+        @media (max-width:590px) {
+            .menu-button {
+                margin: 0;
+            }
+            .top-menu a {
+                font-size: 16px;
+            }
+            .hidden-btn {
+                display: flex;
+            }
+            .form-container h1 {
+                font-size: 45px;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            .top-menu {
+                align-items: center;
+            }
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: 'Novecento-WideDemiBold';
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53b2/153091/1658495887F9ZZWqpk/Novecento_WideDemiBold.eot');
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53b2/153091/1658495887F9ZZWqpk/Novecento_WideDemiBold.eot?#iefix') format('embedded-opentype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53b5/153091/16584958871toH5KHi/Novecento_WideDemiBold.svg#Novecento-WideDemiBold') format('svg'), url('https://go.pardot.com/l/153091/2022-07-22/pq53b8/153091/1658495887RDVhsgzb/Novecento_WideDemiBold.ttf') format('truetype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bc/153091/1658495887rgnTTn2z/Novecento_WideDemiBold.woff') format('woff'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bg/153091/1658495888bDjmwyGz/Novecento_WideDemiBold.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Novecento-WideLight';
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53bn/153091/165849622057GG9udy/Novecento_WideLight.eot');
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53bn/153091/165849622057GG9udy/Novecento_WideLight.eot?#iefix') format('embedded-opentype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bk/153091/1658496220apdzzg4q/Novecento_WideLight.svg#Novecento-WideLight') format('svg'), url('https://go.pardot.com/l/153091/2022-07-22/pq53br/153091/1658496221TjLLoJ3g/Novecento_WideLight.ttf') format('truetype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bv/153091/16584962215EvC5sKR/Novecento_WideLight.woff') format('woff'), url('https://go.pardot.com/l/153091/2022-07-22/pq53by/153091/1658496221Fji5ruQP/Novecento_WideLight.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Barlow-Light';
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53c5/153091/1658496587duIHjvQo/Barlow_Light.svg#Barlow-Light') format('svg'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cg/153091/1658496588LG3W4WKH/barlow.light.eot'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cg/153091/1658496588LG3W4WKH/barlow.light.eot?#iefix') format('embedded-opentype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53c8/153091/1658496588dvE7eWGP/Barlow_Light.ttf') format('truetype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cc/153091/1658496588qHGpKAit/Barlow_Light.woff') format('woff'), url('https://go.pardot.com/l/153091/2022-07-22/pq53ck/153091/1658496588ZYTWOtyW/barlow.light.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-flex-container">
+        <nav class="flex-row">
+            <div class="logo-container nav-col">
+                <a pardot-region="editable-link1" pardot-region-type="link" href="https://www.linqia.com/">
+                    <img class="logo-top" src="https://go.pardot.com/l/153091/2022-08-14/pq5szg/153091/1660532516VjbkPlir/linqia_logo_white.svg" alt="logo">
+                </a>
+            </div>
+
+
+        </nav>
+    </div>
+
+
+    <section pardot-region="form-container" class="form-container flex-column">
+        <!-- <h1>we'd love to hear from you</h1> -->
+        <p>
+            <!-- form iframe goes here -->
+            <iframe src="https://go.pardot.com/l/153091/2022-09-02/pq6g72" width="100%" height="1500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+        </p>
+    </section>
+
+
+    <div class="footer-flex-container">
+        <footer class="flex-row">
+            <div class="flex-col col-1">
+                <div class="logo-container">
+                    <img class="footer-logo" src="https://go.pardot.com/l/153091/2022-08-14/pq5szc/153091/1660532021lqRN1vEg/linqia_lockup_white_logo.svg" alt="footer logo" pardot-region="editable-image2" pardot-region-type="image">
+                </div>
+                <ul class="social flex-row">
+                    <li>
+                        <a pardot-region="editable-link-footer1" pardot-region-type="link" href="https://www.facebook.com/linqia"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spr/153091/1660338637MPMHwaYY/Facebook_Icon.png" alt="logo"></a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link-footer2" pardot-region-type="link" href="https://twitter.com/linqia"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5sq2/153091/1660338637meTLomgm/Twitter_Icon.png" alt="logo"></a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link-footer3" pardot-region-type="link" href="https://www.linkedin.com/company/linqia"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spv/153091/1660338637gVKhUKeb/LinkedIn_Icon.png" alt="logo"></a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link-footer4" pardot-region-type="link" href="https://www.instagram.com/linqia/"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spn/153091/16603386377ht6N0ZY/Instagram_Icon.png" alt="logo"></a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link-footer5" pardot-region-type="link" href="https://go.pardot.com/l/153091/2022-08-12/pq5sq5/153091/1660338637zEUwUtDP/TikTok_Icon.png"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5sq5/153091/1660338637zEUwUtDP/TikTok_Icon.png" alt="logo"></a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link-footer6" pardot-region-type="link" href="https://www.pinterest.ca/linqia/"><img src="https://go.pardot.com/l/153091/2022-08-12/pq5spy/153091/1660338637lwSZaqab/Pinterest.png" alt="logo"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-col col-2">
+                <ul>
+                    <li pardot-region="pardot"><strong>BRANDS</strong></li>
+                    <li>
+                        <a pardot-region="editable-footer7" pardot-region-type="link" href="#">Why Linqia</a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link8" pardot-region-type="link" href="#">Case Studies</a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link9" pardot-region-type="link" href="#">Influencer Marketing Platform</a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link10" pardot-region-type="link" href="#">Professional Services</a>
+                    </li>
+                    <li>
+                        <a pardot-region="editable-link11" pardot-region-type="link" href="#">Campaign Video Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-col col-3">
+                <ul>
+                    <li pardot-region="pardot2"><strong>CREATORS</strong></li>
+                    <li><a pardot-region="editable-link12" pardot-region-type="link" href="#">Why Linqia</a></li>
+                    <li><a pardot-region="editable-link13" pardot-region-type="link" href="#">Creator Application</a></li>
+                    <li><a pardot-region="editable-link14" pardot-region-type="link" href="#">Creator SPotlights</a></li>
+                    <li><a pardot-region="editable-link15" pardot-region-type="link" href="#">Creator Blog</a></li>
+                    <li><a pardot-region="editable-link16" pardot-region-type="link" href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="flex-col col-4">
+                <ul>
+                    <li pardot-region="pardot3"><strong>ABOUT</strong></li>
+                    <li><a pardot-region="editable-link17" pardot-region-type="link" href="#">Contact U</a></li>
+                    <li><a pardot-region="editable-link18" pardot-region-type="link" href="#">Meet Linqi</a>a</li>
+                    <li><a pardot-region="editable-link19" pardot-region-type="link" href="#">Partnerships</a></li>
+                    <li><a pardot-region="editable-link20" pardot-region-type="link" href="#">Newsroom</a></li>
+                    <li><a pardot-region="editable-link21" pardot-region-type="link" href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="copyright">&copy; COPYRIGHT 2022 LINQIA INC. ALL RIGHTS RESERVED. <a href="#">PRIVACY</a></div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
