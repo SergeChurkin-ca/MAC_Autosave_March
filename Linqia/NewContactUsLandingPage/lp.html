@@ -37,7 +37,6 @@
         .flex-row {
             flex-direction: row;
             background-color: #0200ff;
-            padding: 0 1rem;
         }
         
         .flex-column {
@@ -59,31 +58,6 @@
             font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
             text-transform: uppercase;
             line-height: 120%;
-        }
-        
-        h1 {
-            font-size: 45px;
-        }
-        
-        h2 {
-            font-size: 30px;
-        }
-        
-        h3 {
-            font-family: 'Novecento-WideLight', Arial, sans-serif;
-            text-transform: uppercase;
-            font-size: 24px;
-            line-height: 110%;
-        }
-        
-        .copy h1 {
-            font-size: 35px;
-            color: #290AC4;
-        }
-        
-        .copy h2 {
-            font-size: 30px;
-            color: #06092E;
         }
         
         p,
@@ -156,101 +130,13 @@
         }
         /* buttons */
         
-        .button-container {
-            gap: 1rem;
-            padding: 0;
-            flex-wrap: wrap;
-        }
-        
-        nav .btn {
-            font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
-            background-color: transparent;
-            border: solid 2px #fff;
-            font-size: 15px !important;
-            letter-spacing: 1px;
-            padding: 0.1rem 1rem;
-            border-radius: 40px;
-            height: 38px;
-            line-height: 15px;
-            width: 7rem;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        nav .btn-contact {
-            background: #fff;
-            color: #06092E;
-        }
-        
-        nav .btn-contact:hover,
-        nav .btn-contact:focus {
-            background-color: #a8d200;
-            border: solid 2px #a8d200;
-            color: #050930;
-            transition: all 0.2s;
-        }
-        
-        nav .btn-signin {
-            color: #fff;
-            border: solid 2px #fff;
-        }
-        
-        nav .btn-signin:hover,
-        nav .btn-signin:focus {
-            background-color: #a8d200;
-            border: solid 2px #a8d200;
-            color: #050930;
-            border: solid 2px #a8d200;
-            transition: all 0.2s;
-        }
-        
-        nav a {
-            color: #fff;
-        }
-        
-        .center-cta {
-            font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
-            text-transform: uppercase;
-            font-weight: 600;
-            background-color: #FF3080;
-            border-radius: 40px;
-            display: block;
-            border: none;
-            width: 13rem;
-            height: 50px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 2rem !important;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /* header  */
-        /* headline */
-        
-        .headline {
-            text-align: center;
-            color: #290AC4;
-        }
-        /* main */
-        
-        main {
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-        
-        main .flex-row {
-            gap: 3rem;
-            justify-content: space-between;
-            flex-wrap: wrap-reverse;
-            padding: 2rem 2rem 0 2rem;
-        }
-        
-        main .col-1,
-        main .col-2 {
+        .form-container .column {
             width: calc((100% / 2) - 2rem);
-            flex: 1 0 350px;
+            flex: 1 0 500px;
+        }
+        
+        .form-container .column:nth-child(1) {
+            padding: 1rem 5.5rem;
         }
         
         main .img-container {
@@ -267,62 +153,72 @@
             outline: none !important;
         }
         
-        article,
-        .form-container {
-            max-width: 1600px;
-            margin: 0 auto;
-        }
-        
-        main article {
-            width: 70%;
-            margin-bottom: 5rem;
-            position: relative;
-        }
-        
-        .copy {
-            margin-top: 4rem;
-            max-width: 1000px;
-        }
-        
-        .copy h1,
-        .copy h2 {
-            text-align: center;
-        }
-        
-        .center-cta {
-            margin: 1rem auto;
-        }
-        
         .form-container {
             align-items: center;
-            background: url('https://go.pardot.com/l/153091/2022-08-12/pq5spg/153091/1660338060tu3oRRBw/waves_banner2.png');
             background-repeat: no-repeat;
             background-size: 100% 600px;
             padding-top: 5rem;
+            background-color: #F5F5F5;
+            max-width: 1440px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        
+        .form-container .column:nth-child(2) {
+            padding: 2rem 6rem 3rem 0;
+        }
+        
+        .form-container .column:nth-child(2) p {
+            box-shadow: 1px 3px 16px 6px rgba(0, 0, 0, 0.16);
+            border-radius: 8px;
+            background-color: #ffffff;
         }
         
         .form-container h1 {
-            text-align: center;
-            color: #fff;
+            text-align: left;
+            color: #000000;
             margin: 0 auto 1.5rem;
             font-size: 75px;
             max-width: 800px;
+        }
+        
+        .form-container h2 {
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 31.25px;
+            line-height: 125%;
+            color: #56565F;
+        }
+        
+        .form-container .column:nth-child(1) p {
+            font-family: 'Barlow', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 156.3%;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'case' on;
+            color: #56565F;
+        }
+        
+        .section2 svg {
+            color: #000000;
         }
         /* footer */
         
         .footer-flex-container {
             background-color: #05082f;
-            max-width: 1600px;
+            max-width: 1440px;
             margin: 0 auto;
         }
         
         footer {
-            max-width: 1600px;
             margin: 0 auto;
             justify-content: space-between;
             padding: 5rem 0 5rem;
             flex-wrap: wrap;
-            max-width: 1300px;
+            max-width: 1400px;
             padding: 5rem 0 !important;
         }
         
@@ -517,12 +413,28 @@
     </div>
 
 
-    <section pardot-region="form-container" class="form-container flex-column">
-        <!-- <h1>we'd love to hear from you</h1> -->
-        <p>
-            <!-- form iframe goes here -->
-            <iframe src="https://go.pardot.com/l/153091/2022-09-02/pq6g72" width="100%" height="1500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
-        </p>
+    <section pardot-region="form-container" class="form-container flex-row">
+        <div class="column">
+            <h1>We find your audience & drive results</h1>
+            <h2>Take 30 minutes to learn how Linqia can custom design your next influencer marketing program.</h2>
+            <p>Linqia is the calm in the chaotic sea of influencer marketing. We are a full-service, tech-enabled solution that handles campaigns for the world’s leading brands from influencer selection to creative strategy to scale.</p>
+        </div>
+
+        <div class="column">
+            <p>
+                <!-- form iframe goes here -->
+                <iframe src="https://go.pardot.com/l/153091/2022-09-02/pq6g72" width="100%" height="1200" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+            </p>
+        </div>
+    </section>
+
+    <section pardot-region="quote" class="section2 flex-column">
+        <div pardot-region="logo" class="logo">
+            <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M80.394 42.422C80.394 41.58 80.5 40.738 80.5 39.896C80.5 39.16 80.5 38.318 80.394 37.474C79.132 16.632 61.764 0 40.5 0C19.236 0 1.868 16.632 0.606 37.474C0.606 38.316 0.712 39.158 0.816 40C0.71 39.158 0.606 38.316 0.606 37.578C0.606 38.42 0.5 39.262 0.5 40.104C0.5 40.84 0.5 41.682 0.606 42.526C1.87 63.368 19.238 80 40.5 80C61.762 80 79.132 63.368 80.394 42.526C80.394 41.696 80.292 40.868 80.188 40.038C80.292 40.868 80.394 41.696 80.394 42.42V42.422ZM75.446 42.528C74.182 60.738 59.024 75.054 40.498 75.054C40.168 75.054 39.84 75.046 39.512 75.04C21.436 74.538 6.792 60.312 5.55 42.528C5.444 41.686 5.444 40.844 5.444 40.002C5.444 39.16 5.444 38.318 5.55 37.476C6.816 19.368 21.974 4.948 40.5 4.948C40.83 4.948 41.158 4.956 41.486 4.962C59.562 5.464 74.206 19.69 75.448 37.474C75.554 38.316 75.554 39.158 75.554 40C75.554 40.842 75.554 41.684 75.448 42.526L75.446 42.528Z" fill="black"/>
+</svg>
+
+        </div>
     </section>
 
 

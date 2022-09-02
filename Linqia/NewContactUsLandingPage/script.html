@@ -49,20 +49,28 @@
     let btn = document.querySelector('input[type="submit"]');
 
     btn.disabled = true;
+    btn.classList.add('disabled');
+
 
     Array.from(document.querySelectorAll('#pi_extra_field'))[0].value = 'placeholder';
     Array.from(document.querySelectorAll('#pi_extra_field'))[0].disabled = true;
 
-    const inputText = Array.from(document.querySelectorAll('input[type="text"]'))
-    const messageField = Array.from(document.querySelectorAll('textarea'))[0].addEventListener('change', onChangeFunction)
+    const inputText = Array.from(document.querySelectorAll('input[type="text"]'));
+    const messageField = Array.from(document.querySelectorAll('textarea'))[0];
+
+    messageField.addEventListener('change', onChangeFunction);
+    messageField.addEventListener('keydown', onChangeFunction);
 
     inputText.map((x) => x.addEventListener('change', onChangeFunction))
+    inputText.map((x) => x.addEventListener('keydown', onChangeFunction))
 
     function onChangeFunction() {
-        if (inputText.every(x => x.value.length > 0)) {
+        if (inputText.every(x => x.value.length > 0) && messageField.value.length > 1) {
             btn.disabled = false;
+            btn.classList.remove('disabled')
         } else {
             btn.disabled = true;
+            btn.classList.add('disabled')
         }
     }
 </script>
