@@ -1,15 +1,19 @@
 <script>
     // combining error message with paragraph 
 
-    let errMessage = document.querySelectorAll('.error.no-label')
-    let targetElement = document.querySelectorAll('.form-field.error')
-    for (let i = 0; i < errMessage.length; i++) {
-        targetElement[i].appendChild(errMessage[i])
-    }
+    // let errMessage = document.querySelectorAll('.error.no-label')
+    // let targetElement = document.querySelectorAll('.form-field.error')
+    // for (let i = 0; i < errMessage.length; i++) {
+    //     targetElement[i].appendChild(errMessage[i])
+    // }
 </script>
 <script>
     // creating select placeholder text
-    document.querySelectorAll('option')[0].innerText = 'Select Request Type';
+    document.querySelectorAll('option')[0].innerText = 'Select...';
+    document.querySelector(".country select option").innerText = 'Select...';
+    document.querySelector(".state select option").innerText = 'Select...';
+    document.querySelector(".source select option").innerText = 'Select...';
+
     document.querySelectorAll('.chbox-field>label')[0].innerHTML = `I have read and accept the ` + `<a href="https://www.linqia.com/privacy-policy/" target="_blank" color="#0300ff;">privacy policy</a>`;
 </script>
 <script>
@@ -28,14 +32,7 @@
         }
     });
 </script>
-<script>
-    window.addEventListener("load", function(event) {
-        let cityoption = document.querySelector(".city select option");
-        if (cityoption) {
-            cityoption.innerHTML = "Please select your State";
-        }
-    });
-</script>
+
 <script>
     window.addEventListener("load", function(event) {
         let sourceoption = document.querySelector(".source select option");
@@ -54,6 +51,7 @@
 
     function errValidation() {
         Array.from(document.querySelectorAll('input')).map(x => x.value === '' ? x.style = "border: solid 1px red" : x.style = "initial")
+        Array.from(document.querySelectorAll('.error > input')).map(x => x.style = 'border: solid 1px red;')
     }
 
     Array.from(document.querySelectorAll('#pi_extra_field'))[0].value = 'placeholder';
