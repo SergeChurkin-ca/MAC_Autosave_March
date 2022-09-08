@@ -1,0 +1,115 @@
+    @font-face {
+        font-family: 'AvenirNextLTPro-Regular';
+        src: url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot'), url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.eot?#iefix') format('embedded-opentype'), url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.ttf') format('truetype'), url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/AvenirNextLTPro-Regular.woff') format('woff'), url('https://186-IZZ-202.mktoweb.com/rs/186-IZZ-202/images/avenirregular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    * {
+        font-family: ' AvenirNextLTPro-Regular', sans-serif;
+    }
+    
+    .mktoForm {
+        border-radius: 5px;
+        background-image: -webkit-linear-gradient(189deg, #0062a9, #2a3e55);
+        background-image: linear-gradient(261deg, #0062a9, #2a3e55);
+        width: unset !important;
+        max-width: 540px;
+        padding: 2rem 2rem 0.1rem !important;
+        margin: 0 auto;
+    }
+    
+    .mktoForm .mktoGutter,
+    .mktoForm .mktoOffset,
+    .mktoForm .mktoClear,
+    .mktoForm .mktoAsterix {
+        display: none !important;
+    }
+    
+    .mktoForm .mktoFieldWrap,
+    .mktoForm .mktoFormCol {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .mktoForm .mktoLabel {
+        visibility: hidden;
+    }
+    
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm input[type=email],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=number],
+    .mktoForm input[type=date],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField {
+        position: relative;
+        width: 100% !important;
+        height: 40px;
+        padding: 3px 0 10px;
+        border: 0 none;
+        border-radius: 0;
+        color: #fff;
+        background: transparent;
+        font-size: 16px;
+        -webkit-appearance: none;
+        border-bottom: 0.5px solid #e6e8eb;
+        outline: none !important;
+    }
+    
+    .mktoForm input[type=text]::placeholder,
+    .mktoForm input[type=url]::placeholder,
+    .mktoForm input[type=email]::placeholder,
+    .mktoForm input[type=tel]::placeholder,
+    .mktoForm input[type=number]::placeholder,
+    .mktoForm input[type=date]::placeholder {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        padding: 3px 0 10px;
+        border: 0 none;
+        border-radius: 0;
+        color: #fff;
+        background: transparent;
+        font-size: 16px;
+        -webkit-appearance: none;
+        border-bottom: 0.5px solid #e6e8eb;
+    }
+    
+    .mktoForm .mktoButtonRow {
+        width: 100%;
+        margin: 2rem 0 !important;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+        background-color: rgba(255, 69, 0, 1) !important;
+        border-color: rgba(64, 158, 255, 0) !important;
+        color: #fff !important;
+        padding: 8px 12px !important;
+        border-radius: 4px !important;
+        font-size: 16px !important;
+        background-image: none !important;
+    }
+    
+    .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+        background-color: rgba(204, 55, 0, 1) !important;
+        border-color: rgba(64, 158, 255, 0) !important;
+        color: #fff !important;
+    }
+    
+    .mktoForm .mktoError .mktoErrorMsg {
+        background: #ffffff !important;
+        border: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        color: #000000 !important;
+    }
+    
+    .mktoForm .mktoError .mktoErrorArrow {
+        background-color: #ffffff !important;
+        border: solid 1px #ffffff;
+    }
