@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&display=swap');
+.mktoForm .mktoHtmlText:nth-of-type(1) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #125687;
+    font-weight: 700;
+    text-align: center;
+    width: 100% !important;
+}
+
+#form1 {
+    width: 100% !important;
+}
+
+.mktoForm {
+    background-color: #f7f7f7;
+    width: unset !important;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem 1rem;
+}
+
+.mktoForm .mktoGutter,
+.mktoForm .mktoOffset,
+.mktoForm .mktoClear {
+    display: none !important;
+}
+
+.mktoForm .mktoAsterix {
+    float: left;
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.mktoForm .mktoFormRow {
+    width: 100% !important;
+}
+
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+}
+
+.mktoForm .mktoLabel {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #434343 !important;
+    font-weight: normal !important;
+    width: 100% !important;
+    margin-bottom: 5px;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    width: 100% !important;
+    font-family: 'Lato', arial, sans-serif;
+    font-size: 16px;
+    padding: 8px 12px !important;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 34px !important;
+    box-shadow: none !important;
+}
+
+.mktoForm .mktoButtonRow {
+    margin: 1rem auto 0 !important;
+}
+
+.mktoForm .mktoButton {
+    margin: 1rem auto 0!important;
+    background-color: #DB5A39 !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    margin-top: 7px !important;
+    padding-bottom: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    border-radius: 4px !important;
+    border: solid 3px #DB5A39 !important;
+    font-size: 16px !important;
+}
+
+.mktoForm .mktoSimple {
+    margin: 0 !important;
+}
+
+.mktoForm .mktoButton:hover {
+    transform: scale(0.95);
+    transition: all 0.15s;
+}
+
+
+/* layout row and columns */
+
+.mktoForm .mktoFormRow:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(1) .mktoFormCol {
+    width: 48% !important;
+    flex: 1 0 150px;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(1n+2) {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(1n+2) .mktoFormCol {
+    width: 48% !important;
+    flex: 1 0 150px;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(1n+5) {
+    width: 100% !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.mktoForm .mktoFormRow:nth-of-type(1n+5) .mktoFormCol {
+    width: 100% !important;
+    flex: unset !important;
+}
