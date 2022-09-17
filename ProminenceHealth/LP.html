@@ -25,6 +25,9 @@
   <meta class="mktoString" id="Font_link" mktoName="Font Family" default="Montserrat, sans-serif" />
 <meta class="mktoColor" id="Section1BGColor" mktoName="Section 1 BG Color" default="#FFFFFF">
 <meta class="mktoColor" id="Section2BGColor" mktoName="Section 2 BG Color" default="#FFFFFF">
+    
+<meta class="mktoString" id="videoContainerMaxWidth" mktoName="Section 2 video max width" default="690">
+    
 <meta class="mktoColor" id="Section3BGColor" mktoName="Section 3 BG Color" default="#FFFFFF">
 <meta class="mktoColor" id="sec3-cta-BGColor" mktoName="Section 3 CTA BG Color" default="#00857a">
 <meta class="mktoColor" id="sec3-cta-color" mktoName="Section 3 CTA Text Color" default="#FFFFFF">
@@ -49,7 +52,13 @@
 <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showSection3" mktoName="Show Section 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showSection4" mktoName="Show Section 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    
 <meta class="mktoBoolean" id="showSection5" mktoName="Show Section 5?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showSection5Column1" mktoName="Show Section 5 col 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showSection5Column2" mktoName="Show Section 5 col 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showSection5Column3" mktoName="Show Section 5 col 3?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showSection5Column4" mktoName="Show Section 5 col 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
 <meta class="mktoBoolean" id="showSection6" mktoName="Show Section 6?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showSection7" mktoName="Show Section 7?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showSection7-imgleft1" mktoName="Show Section 7 Img Left 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -64,7 +73,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<link href="https://na-sj09.marketo.com/rs/175-YWH-478/images/style.css" rel="stylesheet" />
+<!-- <link href="https://na-sj09.marketo.com/rs/175-YWH-478/images/style.css" rel="stylesheet" /> -->
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="1100" />
 <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -75,7 +84,7 @@
 <link href="//templates.marketo.net/template1/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <!-- Custom styles for this template -->
-<link href="https://na-sj09.marketo.com/rs/175-YWH-478/images/style.css" rel="stylesheet">
+<link href="/macedits_template.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -610,12 +619,13 @@ max-width: 900px;
     width: 100% !important;
     margin: 0 auto !important;
 }
-}
+
 .video_container {
     
-    max-width: 690px;
+    max-width: ${videoContainerMaxWidth}690px;
     text-align: center;
     border-radius: 2px;
+    margin: 0 auto;
 }
 .videoWrapper {
     position: relative;
@@ -672,34 +682,7 @@ iframe{width:100% !important; height:auto !important;}
 .footer{
     background: ${FooterBGColor} !important;display:${showFooter};
 }
-/* additional flex and workarounds*/
-.section5 .threeNarrow {
-    border: solid 1px red;
-    display: flex;
-    justify-content: space-around;
-}
-.section7 img {
-    width: 100%;
-    height: auto;
-}
-.flex {
-        display: flex;
-        justify-content: space-between;
-        gap: 5rem;
-}
-.flex-row {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.flex-row-reverse {
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-.flex-col {
-   width: calc((100% / 2 ) - 4rem);
-   padding: 3.5rem 0;
-   flex: 1 0 350px;
-}                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                              
 </style>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="//templates.marketo.net/template1/js/ie10-viewport-bug-workaround.js"></script>
@@ -806,43 +789,48 @@ iframe{width:100% !important; height:auto !important;}
   </div>
   <!-- S1 Ends -->
   <div class="clearBoth"></div>
-  <!-- S2 Starts -->
-  <div class="section2 clearfix" style="overflow: hidden; display: ${showSection2};">
-<div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder ">
-  <div class="rowFluid " style="">
-    <div class="span12 blocSpan">
-      <div class="blockSpace">
-        <div id="fullHeader" mktoName="Section 2 Header" class="mktoText" style="display:margin-top:25px;">
-          <h2 class="secLevTitle">Río de la Plata</h2>
+<!-- S2 Starts -->
+<div class="section2 clearfix" style="overflow: hidden; display: ${showSection2};">
+    <div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder ">
+        <div class="rowFluid " style="">
+            <div class="span12 blocSpan">
+                <div class="blockSpace">
+                    <div id="fullHeader" mktoName="Section 2 Header" class="mktoText" style="display:margin-top:25px;">
+                        <h2 class="secLevTitle">Río de la Plata</h2>
+                    </div>
+
+                    <div class="flex flex-row-reverse">
+
+                        <div class="flex-col">
+                            <div class="mktoText" id="fullText" mktoName="Section 2 Text" style="">
+                                <h3 style="margin-top: 17px;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+                                <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
+                                    in.
+                                    <br/></p>
+                                <p><br>Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in.<br/></p>
+
+                            </div>
+                        </div>
+
+                        <div class="flex-col">
+                            <div class="" style="margin:20px 0;">
+                                <!-- S2 Video -->
+                                <div class="video_container">
+                                    <div class="videoWrapper">
+                                        <iframe src="${Section2Video}" frameborder="0" allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class='clearBoth'></div>
+                </div>
+            </div>
         </div>
-		<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
-		<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 nopad right-padd right_content">
-		<div class="mktoText" id="fullText" mktoName="Section 2 Text" style="">
-          <h3 style="margin-top: 17px;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, 
-            dictum felis.<br/></h3> <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. 
-            Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in.<br/></p>
-          <p><br>Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in.<br/></p>
-         
-        </div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 nopad right-padd left_video">
-		<div class="" style="margin:20px 0;">
-		  <!-- S2 Video -->
-		  <div class="video_container">
-               <div class="videoWrapper">
-                 <iframe src="${Section2Video}" frameborder="0" allowfullscreen=""></iframe>
-                </div> 
-              </div>
-		</div>
-		</div>
-		</div>
-        <div class='clearBoth'></div>
-      </div>
     </div>
-  </div>
-  </div>
-  </div>
-  <!-- S2 Ends -->
+</div>
+<!-- S2 Ends -->
   <div class="clearBoth"></div>
   <!-- S3 Starts -->
   <div class="section3 clearfix" style="overflow: hidden; display: ${showSection3};">
@@ -942,7 +930,7 @@ iframe{width:100% !important; height:auto !important;}
     <div class="safeArea" style="">
         <div class="span12 blocSpan" style="overflow: hidden;">
             <div class="threeNarrow " style="">
-                <div class="narrow" style="">
+                <div class="narrow" style="display: ${showSection5Column1}">
                     <div id="Section5Column1" class="mktoText res_center center" mktoName="Section 5 Column 1">
                         <div class="col1Image imageWidth center">
                             <img src="http://via.placeholder.com/300x200" alt="">
@@ -955,7 +943,7 @@ iframe{width:100% !important; height:auto !important;}
                         <div class="sec5-cta"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
                     </div>
                 </div>
-                <div class="narrow ">
+                <div class="narrow" style="display: ${showSection5Column2}">
                     <div id="Section5Column2" class="mktoText res_center center" mktoName="Section 5 Column 2">
                         <div class="col2Image imageWidth">
                             <img src="http://via.placeholder.com/300x200" alt="">
@@ -968,7 +956,7 @@ iframe{width:100% !important; height:auto !important;}
                         <div class="sec5-cta"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
                     </div>
                 </div>
-                <div class="narrow ">
+                <div class="narrow" style="display: ${showSection5Column3}">
                     <div id="Section5Column3" class="mktoText res_center center" mktoName="Section 5 Column 3">
                         <div class="col2Image imageWidth">
                             <img src="http://via.placeholder.com/300x200" alt="">
@@ -981,7 +969,7 @@ iframe{width:100% !important; height:auto !important;}
                         <div class="sec5-cta"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
                     </div>
                 </div>
-                <div class="narrow last">
+                <div class="narrow" style="display: ${showSection5Column4}">
                     <div id="Section5Column4" class="mktoText res_center center" mktoName="Section 5 Column 4">
                         <div class="col3Image imageWidth">
                             <img src="http://via.placeholder.com/300x200" alt="">
