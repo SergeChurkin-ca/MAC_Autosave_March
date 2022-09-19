@@ -24,6 +24,11 @@
         scrollbar-width: none;
     }
     
+    body::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+    
     form.form p.errors {
         display: none !important;
     }
@@ -43,29 +48,23 @@
         cursor: not-allowed !important;
     }
     
-    body::-webkit-scrollbar {
-        display: none;
-        /* Safari and Chrome */
-    }
-    
     form.form {
-        max-width: 617px;
+        max-width: 790px;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         padding: 0 !important;
         justify-content: space-between;
         border-radius: 20px;
-        /* box-shadow: 9px 10px 13px rgba(0, 0, 0, 0.15), -9px -10px 13px rgba(0, 0, 0, 0.15); */
         padding: 65px 80px !important;
-        gap: 0 1rem;
-        background: #fff;
+        gap: 0 2rem;
+        background: transparent;
     }
     
     form.form p {
         display: flex;
         flex-direction: column;
-        margin: 0 0 12px !important;
+        margin: 0 0 23px !important;
         padding: 0 !important;
     }
     
@@ -74,7 +73,7 @@
     }
     
     .full-width label {
-        width: 100% !important;
+        width: 200px !important;
     }
     
     form.form textarea.standard {
@@ -91,7 +90,7 @@
     form.form p label {
         text-align: left;
         text-transform: uppercase;
-        margin-bottom: 2px;
+        margin-bottom: 7px;
         font-family: 'Novecento-WideDemiBold', sans-serif;
         color: #222222;
         font-size: 12.8px;
@@ -120,13 +119,20 @@
         font-size: 16px;
     }
     
-    .half-width {
-        width: 47%;
-        flex: 1 0 200px;
+    .row-1,
+    .row-2,
+    .row-3 {
+        width: 48%;
     }
     
     .chbox-field {
-        width: 47%;
+        width: 100%;
+    }
+    
+    .row-1,
+    .row-2,
+    .row-3 {
+        flex: 1 0 230px;
     }
     
     form.form input,
@@ -176,27 +182,20 @@
     form.form p.submit {
         margin: 0 !important;
         width: 100%;
-        margin-top: 36px !important;
+        align-items: center;
     }
     
     form.form p.submit input {
         cursor: pointer;
         width: fit-content;
         font-size: 16px;
-        font-family: 'Novecento-WideDemiBold', sans-serif;
-        padding: 11px 43px;
+        font-family: 'Novecento-WideDemiBold', sans-serif !important;
+        padding: 11px 153px;
         border-radius: 40px;
         background-color: #0300ff;
         border: solid 1px #0300ff;
         color: #fff;
         text-transform: uppercase;
-        width: 100%;
-    }
-    
-    form.form input:focus-visible,
-    form.form select:focus-visible,
-    form.form textarea:focus-visible {
-        outline: solid 2px #290AC4 !important;
     }
     
     form.form p.submit input:hover,
@@ -250,6 +249,15 @@
             margin-bottom: 1rem !important;
         }
     }
+    
+    @media (max-width: 480px) {
+        form.form p.submit input {
+            padding: 11px 80px;
+        }
+        .form.form {
+            padding: 40px 10px !important;
+        }
+    }
     /* dropdown select palceholder text workaounds with .js */
     
     option[value=""] {
@@ -273,7 +281,7 @@
         background-color: #ffffff;
         font-family: 'Barlow-Light', sans-serif;
         color: #53585f;
-        font-size: 26px;
+        font-size: 16px;
         border-radius: 8px;
     }
     /*style the arrow inside the select element:*/
@@ -287,6 +295,7 @@
         height: 0;
         border: 6px solid transparent;
         border-color: #fff transparent transparent transparent;
+        display: none;
     }
     /*point the arrow upwards when the select box is open (active):*/
     
@@ -319,7 +328,6 @@
         font-weight: 400;
         padding: 12px 13px;
         border: solid 1px #a6aaa9;
-        /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
         cursor: pointer;
         user-select: none;
         font-size: 16px;
