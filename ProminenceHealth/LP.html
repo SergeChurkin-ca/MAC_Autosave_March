@@ -268,11 +268,51 @@
         font-size: 18px;
         line-height: 25px;
       }
+      .section1 h2 {
+        font-size: 28px;
+color:#1c355e;
+font-family:'Montserrat' !important;
+
+      }
+      .section2 #fullHeader {
+        margin-top: 25px;
+      }
+      .section2 .flex-col:nth-child(2) {
+        margin-top: 20px;
+      }
+      .section2 h3 {
+        margin-top: 17px;
+      }
+      .section4 .beforeFooter {
+        padding-top:20px !important; 
+      }
+      .section4 h2 span {
+        color:#1c355e;
+        font-family:${Font_link};
+      }
+      .section4 p {
+        color: #333333;
+      }
       div#Section5Column1 h3, #Section5Column2 h3, #Section5Column3 h3, #Section5Column4 h3 {
         font-family: 'Montserrat';
         font-size:19px;
         line-height:22px;
         font-weight:700;
+        margin-top: 1rem;
+        color: #1c355e;
+      }
+      
+      .threeNarrow p span {
+        color: #333333;
+      }
+      .section6 .beforeFooter {
+        padding-top:20px !important;
+      }
+      .section7 #fullHeader {
+        marign-top: 25px;
+      }
+      .section7 h3 {
+        margin-top: 17px;
       }
       /* Form Normalizer CSS */
       .mktoForm, .mktoForm .mktoFieldWrap, .mktoForm .mktoHtmlText, .mktoForm input, .mktoLogicalField .mktoCheckboxList {width:100% !important;}
@@ -397,13 +437,28 @@
       .footer{background:${FooterBGColor};padding:25px 0;display:${showFooter};}
       .text-left-iphone {text-align: right;}
       .section-underbanner {display:${showsection-underbanner};margin-top:${icons-margin-top}rem;order:${icons-order};}
-      .section1 {overflow:hidden;order:${section1-order};}
-      .section1 icon {background-color:${Section1BGColor};overflow:hidden;order:${section1-order};display:${showSection1};}
-      .section2 {background-color: ${Section2BGColor};overflow: hidden; display: ${showSection2};order:${section2-order};}
-      .section3 {background-color: ${Section3BGColor};overflow: hidden; display: ${showSection3};order:${section3-order};}
-      .section4 {background-color: ${Section4BGColor};}
-      .section5 {background-color: ${Section5BGColor}; padding: 35px 0;}
-      .section6 {background-color: ${Section6BGColor}; padding: 8px 0 0px;}
+      .section-underbanner .icon1 {display:${show-icon1};}
+      .section-underbanner .icon2 {display:${show-icon2};}
+      .section-underbanner .icon3 {display:${show-icon3};}
+      .section-underbanner .icon4 {display:${show-icon4};}
+      .section1 {order:${section1-order};}
+      .section1 icon {background-color:${Section1BGColor};order:${section1-order};display:${showSection1};}
+      .section2 {background-color: ${Section2BGColor};display: ${showSection2};order:${section2-order};}
+      .section2 .flex-col:nth-child(1) {display: ${showSection2-txt};}
+      .section3 {background-color: ${Section3BGColor};display: ${showSection3};order:${section3-order};}
+      .section4 {background-color: ${Section4BGColor};display: ${showSection4};order:${section4-order};}
+      .section5 {background-color: ${Section5BGColor}; padding: 35px 0;display: ${showSection5};order:${section5-order};}
+      .section5 .narrow1 {display: ${showSection5Column1};}
+      .section5 .narrow2 {display: ${showSection5Column2};}
+      .section5 .narrow3 {display: ${showSection5Column3};}
+      .section5 .narrow4 {display: ${showSection5Column4};}
+      .section6 {background-color: ${Section6BGColor}; padding: 8px 0 0px;display: ${showSection6};order:${section6-order};}
+      .section7 {display: ${showSection7}; order:${section7-order};}
+      .section7 .row1 {display: ${showSection7-imgleft1} !important;}
+      .section7 .row2 {display: ${showSection7-imgright1} !important;}
+      .section7 .row3 {display: ${showSection7-imgleft2} !important;}
+      .section7 .row4 {display: ${showSection7-imgright2} !important;}
+      .footer {order:1000;}
       .container-section:after, .container-section:before{display:block;content:"";clear:both;}
       .container-section{max-width:1170px; width:100%; margin:0 auto;}
       .parallax-window {background: transparent;padding:120px 0;display:${showBanner};}
@@ -764,8 +819,8 @@
     <!-- S_Underbanner Starts -->
     <div class="section-underbanner">
       <div class="flex-row">
-        <a href="${underbanner-link1}" class="icon">
-          <div style="display:${show-icon1}">
+        <a href="${underbanner-link1}" class="icon icon1">
+          <div>
             <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/members_icon2.png" alt="icon" class="mktoText" mktoName="Icon 1" id="icon1">
             <h3 class="mktoText" mktoName="Icon 1 txt" id="icon1-txt">
               Icon Headline
@@ -773,7 +828,7 @@
           </div>
         </a>
         <a href="${underbanner-link2}" class="icon">
-          <div style="display:${show-icon2}">
+          <div>
             <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/brokers_icon.png" alt="icon" class="mktoText" mktoName="Icon 2" id="icon2">
             <h3 class="mktoText" mktoName="Icon 2 txt" id="icon2-txt">
               Icon Headline
@@ -782,7 +837,7 @@
           </div>
         </a>
         <a href="${underbanner-link3}" class="icon">
-          <div style="display:${show-icon3}">
+          <div>
             <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/navicon1.png" alt="icon" class="mktoText" mktoName="Icon 3" id="icon3">
             <h3 class="mktoText" mktoName="Icon 3 txt" id="icon3-txt">
               Icon Headline
@@ -790,7 +845,7 @@
           </div>
         </a>
         <a href="${underbanner-link4}" class="icon">
-          <div style="display:${show-icon4}">
+          <div>
             <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/medicare_icon.png" alt="icon" class="mktoText" mktoName="Icon 4" id="icon4">
             <h3 class="mktoText" mktoName="Icon 4 txt" id="icon4-txt">
               Icon Headline
@@ -817,12 +872,12 @@
                 <div class="blockSpace">
                   <div class="margBot25 ">
                     <div class="mktoText italicBig" id="section1Subhead" mktoName="Section 1 Subheader" >
-                      <h2><span style="font-size: 28px;color:#1c355e;font-family:'Montserrat' !important;">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</span></h2>
+                      <h2><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</span></h2>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class=" blocSpan">
+              <div class="blocSpan">
                 <div class="margBot25">
                   <div class="mktoText" id="section1Text" mktoName="Section 1 Text" >
                     <p>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis. Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. 
@@ -867,15 +922,15 @@
         <div class="rowFluid">
           <div class="span12 blocSpan">
             <div class="blockSpace">
-              <div id="fullHeader" mktoName="Section 2 Header" class="mktoText" style="display:margin-top:25px;">
+              <div id="fullHeader" mktoName="Section 2 Header" class="mktoText">
                 <h2 class="secLevTitle">Río de la Plata</h2>
               </div>
 
               <div class="flex flex-row-reverse">
 
-                <div class="flex-col" style="display: ${showSection2-txt};">
+                <div class="flex-col">
                   <div class="mktoText" id="fullText" mktoName="Section 2 Text">
-                    <h3 style="margin-top: 17px;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+                    <h3 >Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
                     <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
                       in.
                       <br/></p>
@@ -885,7 +940,7 @@
                 </div>
 
                 <div class="flex-col">
-                  <div class="" style="margin:20px 0;">
+                  <div>
                     <!-- S2 Video -->
                     <div class="video_container">
                       <div class="videoWrapper">
@@ -907,7 +962,7 @@
     <!-- S3 Starts -->
     <div class="section3 clearfix">
       <div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder ">
-        <div class="rowFluid " style="">
+        <div class="rowFluid " >
           <div class="span12 blocSpan col2_pad">
             <div class="blockSpace">
               <div class="mktoText" id="Section3Header" mktoName="Section 3 Header">
@@ -971,22 +1026,22 @@
       </div>
     </div>
     <!-- S4 Starts -->
-    <div class="greyBlock social section4" style="overflow: hidden; display: ${showSection4};order:${section4-order};">
-      <div class="safeArea" style="">
-        <div class="beforeFooter" style="padding-top:20px !important; ">
-          <div style="" class="span12 blocSpan">
-            <div class="" style="overflow: hidden;">
+    <div class="greyBlock social section4">
+      <div class="safeArea" >
+        <div class="beforeFooter" >
+          <div class="span12 blocSpan">
+            <div>
               <div class="mktoText" id="Section4Header" mktoName="Section 4 Header">
-                <h2 class="secLevTitle"><span style= "color:#1c355e;font-family:${Font_link};">Additional Information on Buenos Aires</span></h2>
+                <h2 class="secLevTitle"><span>Additional Information on Buenos Aires</span></h2>
               </div>
               <div class="">
                 <div class="posRelative">
-                  <div class="mktoImg" id="Section4Image" mktoName="Section 4 Image" mktoImgClass="expandToFit" style=""><img src="https://via.placeholder.com/1182x270.png" alt="End-to-end baggage process" title="End-to-end baggage process" width="100%" /></div>
+                  <div class="mktoImg" id="Section4Image" mktoName="Section 4 Image" mktoImgClass="expandToFit" ><img src="https://via.placeholder.com/1182x270.png" alt="End-to-end baggage process" title="End-to-end baggage process" width="100%" /></div>
                 </div>
               </div>
             </div>
             <div class="mktoText sec3-top-pad" id="Section4Text" mktoName="Section 4 Text">
-              <p class="margBot10"><span style="color:#333333;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. 
+              <p class="margBot10"><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. 
                 Pellentesque eu lacus vulputate, semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar. Pellentesque non hendrerit sem. 
                 Curabitur placerat, ex ut pharetra ultrices, mper turpis.</span>
               </p>
@@ -998,60 +1053,60 @@
     </div>
     <!-- S4 Ends -->
     <!-- S5 Starts -->
-    <div class="greyBlock social section5" style="overflow: hidden; display: ${showSection5};order:${section5-order};">
-      <div class="safeArea" style="">
-        <div class="span12 blocSpan" style="overflow: hidden;">
-          <div class="threeNarrow " style="">
-            <div class="narrow" style="display: ${showSection5Column1}">
+    <div class="greyBlock social section5">
+      <div class="safeArea" >
+        <div class="span12 blocSpan">
+          <div class="threeNarrow " >
+            <div class="narrow narrow1">
               <div id="Section5Column1" class="mktoText res_center center" mktoName="Section 5 Column 1">
                 <div class="col1Image imageWidth center">
                   <img src="http://via.placeholder.com/300x200" alt="">
                 </div>
-                <h3 class="blocTitle"><span style="color:#1c355e;">Aluiche</span></h3>
+                <h3 class="blocTitle"><span>Aluiche</span></h3>
                 <div class="margBot10">
-                  <p><span style="color:#333333;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                  <p><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
                     semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar.</span></p>
                 </div>
-                <a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;"><div class="sec5-cta">Read more</div></a>
+                <a href="#" border="0" target="_blank"><div class="sec5-cta">Read more</div></a>
               </div>
             </div>
-            <div class="narrow" style="display: ${showSection5Column2}">
+            <div class="narrow narrow2">
               <div id="Section5Column2" class="mktoText res_center center" mktoName="Section 5 Column 2">
                 <div class="col2Image imageWidth">
                   <img src="http://via.placeholder.com/300x200" alt="">
                 </div>
-                <h3 class="blocTitle"><span style="color:#1c355e;">Anve</span></h3>
+                <h3 class="blocTitle"><span>Anve</span></h3>
                 <div class="margBot10">
-                  <p><span style="color:#333333;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                  <p><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
                     semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar.</span></p>
                 </div>
-                <a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;"><div class="sec5-cta">Read more</div></a>
+                <a href="#" border="0" target="_blank"><div class="sec5-cta">Read more</div></a>
               </div>
             </div>
-            <div class="narrow" style="display: ${showSection5Column3}">
+            <div class="narrow narrow3">
               <div id="Section5Column3" class="mktoText res_center center" mktoName="Section 5 Column 3">
                 <div class="col2Image imageWidth">
                   <img src="http://via.placeholder.com/300x200" alt="">
                 </div>
-                <h3 class="blocTitle"><span style="color:#1c355e;">Anve</span></h3>
+                <h3 class="blocTitle"><span>Anve</span></h3>
                 <div class="margBot10">
-                  <p><span style="color:#333333;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                  <p><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
                     semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar.</span></p>
                 </div>
-                <a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;"><div class="sec5-cta">Read more</div></a>
+                <a href="#" border="0" target="_blank"><div class="sec5-cta">Read more</div></a>
               </div>
             </div>
-            <div class="narrow" style="display: ${showSection5Column4}">
+            <div class="narrow narrow4" >
               <div id="Section5Column4" class="mktoText res_center center" mktoName="Section 5 Column 4">
                 <div class="col3Image imageWidth">
                   <img src="http://via.placeholder.com/300x200" alt="">
                 </div>
-                <h3 class="blocTitle"><span style="color:#1c355e;">Armunyate</span></h3>
+                <h3 class="blocTitle"><span>Armunyate</span></h3>
                 <div class="margBot10">
-                  <p><span style="color:#333333;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                  <p><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
                     semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar.</span></p>
                 </div>
-                <a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;"><div class="sec5-cta">Read more</div></a>
+                <a href="#" border="0" target="_blank"><div class="sec5-cta">Read more</div></a>
               </div>
             </div>
           </div>
@@ -1060,11 +1115,11 @@
     </div>
     <!-- S5 Ends -->
     <!-- S6 Starts -->
-    <div class="greyBlock social section6" style="overflow: hidden; display: ${showSection6};order:${section6-order};">
+    <div class="greyBlock social section6" >
       <div class="safeArea">
-        <div class="beforeFooter " style="padding-top:20px !important; ">
+        <div class="beforeFooter">
           <div class="form2bg span12 blocSpan">
-            <div style="overflow: hidden;">
+            <div>
               <div class="mktoText res_center" id="Section6Header" mktoName="Section 6 Header">
                 <h2 class="sec6Title sec6_text"><span>Emersion in the Southern Cone</span></h2>
               </div>
@@ -1097,19 +1152,19 @@
     </div>
     <!-- S6 Ends -->
     <!-- S7 Starts -->
-    <div class="section7 clearfix" style="overflow: hidden; display: ${showSection7};order:${section7-order};">
+    <div class="section7 clearfix">
       <div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder ">
-        <div class="rowFluid " style="">
+        <div class="rowFluid " >
           <div class="span12 blocSpan">
             <div class="blockSpace">
-              <div id="fullHeader" mktoName="Section 2 Header" class="mktoText" style="display:margin-top:25px;">
+              <div id="fullHeader" mktoName="Section 2 Header" class="mktoText">
                 <h2 class="secLevTitle">Section 7 Headline </h2>
               </div>
 
-              <div class="flex flex-row" style="display: ${showSection7-imgleft1} !important;">
+              <div class="flex flex-row row1" >
                 <div class="flex-col">
-                  <div class="mktoText" id="fullText2a" mktoName="Section 7 Text 1" style="">
-                    <h3 style="margin-top: 17px;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+                  <div class="mktoText" id="fullText2a" mktoName="Section 7 Text 1" >
+                    <h3>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
                     <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
                       in.
                       <br/></p>
@@ -1124,11 +1179,11 @@
               </div>
             </div>
 
-            <div class="flex flex-row-reverse" style="display: ${showSection7-imgright1}">
+            <div class="flex flex-row-reverse row2">
 
               <div class="flex-col">
-                <div class="mktoText" id="fullText2b" mktoName="Section 7 Text 2" style="">
-                  <h3 style="margin-top: 17px;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+                <div class="mktoText" id="fullText2b" mktoName="Section 7 Text 2" >
+                  <h3>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
                   <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
                     in.
                     <br/></p>
@@ -1143,10 +1198,10 @@
             </div>
           </div>
 
-          <div class="flex flex-row"  style="display: ${showSection7-imgleft2}">
+          <div class="flex flex-row row3">
             <div class="flex-col">
-              <div class="mktoText" id="fullText2c" mktoName="Section 7 Text 3" style="">
-                <h3 style="margin-top: 17px;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+              <div class="mktoText" id="fullText2c" mktoName="Section 7 Text 3" >
+                <h3>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
                 <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
                   in.
                   <br/></p>
@@ -1161,11 +1216,11 @@
           </div>
         </div>
 
-        <div class="flex flex-row-reverse" style="display: ${showSection7-imgright2}">
+        <div class="flex flex-row-reverse row4">
 
           <div class="flex-col">
-            <div class="mktoText" id="fullText2d" mktoName="Section 7 Text 4" style="">
-              <h3 style="margin-top: 17px;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+            <div class="mktoText" id="fullText2d" mktoName="Section 7 Text 4" >
+              <h3>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
               <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
                 in.
                 <br/></p>
@@ -1188,7 +1243,7 @@
 </div>
 <!-- S7 Ends -->
 <!-- Footer Starts -->
-<div class="footer" style="overflow: hidden;order:1000;">
+<div class="footer">
   <div class="safeArea sameHeightPads">
     <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
       <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 nopad res-text-center res-bottom-pad">
