@@ -426,7 +426,7 @@ a.anchorLink:after,
     -o-transition: all 400ms linear;
     -ms-transition: all 400ms linear;
     transition: all 400ms linear;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .blueLink:hover,
@@ -8699,7 +8699,10 @@ only screen and (min-device-pixel-ratio: 1.5) {}
 
 .section-underbanner {
     max-width: 1400px;
-    margin: -3.5rem auto 0;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 0;
+    margin-right: auto;
 }
 
 .section-underbanner h3 {
@@ -8734,6 +8737,7 @@ only screen and (min-device-pixel-ratio: 1.5) {}
     cursor: pointer;
     transition: all 0.4s !important;
     transform: translateY(-10px);
+    text-decoration: none !important;
 }
 
 @media (max-width: 1000px) {
@@ -8763,7 +8767,8 @@ only screen and (min-device-pixel-ratio: 1.5) {}
     }
 }
 
-.section7 img {
+.section7 img,
+.section7 .mktoImg {
     width: 100%;
     height: auto;
 }
