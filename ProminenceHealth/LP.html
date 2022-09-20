@@ -15,6 +15,7 @@
 
 <meta class="mktoString" id="HeaderTextPosition" mktoName="Banner Text Position" default="right">
 <meta class="mktoString" id="Section2Video" mktoName="Video URL" default="https://www.youtube.com/embed/F2sepCUnENg" />
+<meta class="mktoString" id="Section2Video" mktoName="Video URL" default="https://www.youtube.com/embed/F2sepCUnENg" />
 
 <meta class="mktoColor" id="HeaderBGColor" mktoName="Header BG Color" default="#FFFFFF">
 <meta class="mktoColor" id="HeaderTextColor" mktoName="Header Link Color" default="#007a70">
@@ -23,11 +24,15 @@
   <meta class="mktoColor" id="Fcolor1" mktoName="Copy text Color For White Background" default="#444444">
   <meta class="mktoString" id="Fontfam" mktoName="Font Family" default="sans-serif" />
   <meta class="mktoString" id="Font_link" mktoName="Font Family" default="Montserrat, sans-serif" />
-<meta class="mktoColor" id="Section1BGColor" mktoName="Section 1 BG Color" default="#FFFFFF">
+<meta class="mktoString" id="underbanner-link1" mktoName="Under Banner Link 1" default="#" />
+<meta class="mktoString" id="underbanner-link2" mktoName="Under Banner Link 2" default="#" />
+<meta class="mktoString" id="underbanner-link3" mktoName="Under Banner Link 3" default="#" />
+<meta class="mktoString" id="underbanner-link4" mktoName="Under Banner Link 4" default="#" />
 <meta class="mktoColor" id="Section2BGColor" mktoName="Section 2 BG Color" default="#FFFFFF">
-    
-<meta class="mktoString" id="videoContainerMaxWidth" mktoName="Section 2 video max width" default="690">
-    
+  
+<meta class="mktoColor" id="icon-bgcolor" mktoName="Underbanner Icon Baground" default="#772530">
+  
+<meta class="mktoString" id="videoContainerMaxWidth" mktoName="Section 2 video max width" default="1000">
 <meta class="mktoColor" id="Section3BGColor" mktoName="Section 3 BG Color" default="#FFFFFF">
 <meta class="mktoColor" id="sec3-cta-BGColor" mktoName="Section 3 CTA BG Color" default="#00857a">
 <meta class="mktoColor" id="sec3-cta-color" mktoName="Section 3 CTA Text Color" default="#FFFFFF">
@@ -48,8 +53,16 @@
   
 <meta class="mktoBoolean" id="showHeader" mktoName="Show Header?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showBanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  
+<meta class="mktoBoolean" id="showsection-underbanner" mktoName="Show Sect Under Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="show-icon1" mktoName="Show Icon 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="show-icon2" mktoName="Show Icon 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="show-icon3" mktoName="Show Icon 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="show-icon4" mktoName="Show Icon 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
 <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showSection2-txt" mktoName="Show Video Section Txt?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showSection3" mktoName="Show Section 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showSection4" mktoName="Show Section 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     
@@ -330,7 +343,7 @@ div#Section5Column1 h3, #Section5Column2 h3, #Section5Column3 h3, #Section5Colum
   font-family: ${Font_link} !important;
     font-size: 14px;
     font-weight: 500;
-    margin: 20px auto 0;
+    margin: 20px auto 30px;
 	border-radius:6px;
 }
 #section6Form .mktoForm {
@@ -373,7 +386,7 @@ a{text-decoration: none;transition: color 0.2s linear 0s;}
 .headerLinks a:hover{opacity:1;text-decoration:underline !important;}
 .footer{background:${FooterBGColor};padding:25px 0;display:${showFooter};}
 .text-left-iphone {text-align: right;}
-.section1 {background-color: ${Section1BGColor};}
+.section1 icon {background-color: ${Section1BGColor};}
 .section2 {background-color: ${Section2BGColor};}
 .section3 {background-color: ${Section3BGColor};}
 .section4 {background-color: ${Section4BGColor};}
@@ -621,8 +634,7 @@ max-width: 900px;
 }
 
 .video_container {
-    
-    max-width: ${videoContainerMaxWidth}690px;
+    max-width: ${videoContainerMaxWidth}px;
     text-align: center;
     border-radius: 2px;
     margin: 0 auto;
@@ -640,6 +652,15 @@ max-width: 900px;
     width: 100% !important;
     height: 100% !important;
 }
+
+#section7-img1 {
+  
+  position: relative;
+  
+  
+}
+
+
 .mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList {float: left;padding: 0 !important;width: 100% !important;}
 
 
@@ -728,6 +749,45 @@ iframe{width:100% !important; height:auto !important;}
 	</div>
 </div>
 <!-- Banner Ends -->
+<!-- S_Underbanner Starts -->
+<div class="section-underbanner" style="display:${showsection-underbanner}">
+    <div class="flex-row">
+        <a href="${underbanner-link1}" class="icon">
+            <div style="display:${show-icon1}">
+                <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/members_icon2.png" alt="icon" class="mktoText" mktoName="Icon 1" id="icon1">
+                <h3 class="mktoText" mktoName="Icon 1 txt" id="icon1-txt">
+                    Icon Headline
+                </h3>
+            </div>
+        </a>
+        <a href="${underbanner-link2}" class="icon">
+            <div style="display:${show-icon2}">
+                <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/brokers_icon.png" alt="icon" class="mktoText" mktoName="Icon 2" id="icon2">
+                <h3 class="mktoText" mktoName="Icon 2 txt" id="icon2-txt">
+                    Icon Headline
+                </h3>
+
+            </div>
+        </a>
+        <a href="${underbanner-link3}" class="icon">
+            <div style="display:${show-icon3}">
+                <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/navicon1.png" alt="icon" class="mktoText" mktoName="Icon 3" id="icon3">
+                <h3 class="mktoText" mktoName="Icon 3 txt" id="icon3-txt">
+                    Icon Headline
+                </h3>
+            </div>
+        </a>
+        <a href="${underbanner-link4}" class="icon">
+            <div style="display:${show-icon4}">
+                <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/medicare_icon.png" alt="icon" class="mktoText" mktoName="Icon 4" id="icon4">
+                <h3 class="mktoText" mktoName="Icon 4 txt" id="icon4-txt">
+                    Icon Headline
+                </h3>
+            </div>
+        </a>
+    </div>
+</div>
+<!-- S_Underbanner ends -->
 <!-- S1 Starts -->
 <div class="section1 clearfix" style="overflow: hidden;">
 <div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder ">
@@ -801,7 +861,7 @@ iframe{width:100% !important; height:auto !important;}
 
                     <div class="flex flex-row-reverse">
 
-                        <div class="flex-col">
+                        <div class="flex-col" style="display: ${showSection2-txt};">
                             <div class="mktoText" id="fullText" mktoName="Section 2 Text" style="">
                                 <h3 style="margin-top: 17px;">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
                                 <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
