@@ -5,40 +5,35 @@
     let targetElement = document.querySelectorAll('.form-field.error')
     for (let i = 0; i < errMessage.length; i++) {
         targetElement[i].appendChild(errMessage[i]);
-        //   Array.from(document.querySelectorAll('input')).map(x => x.value === '' ? x.style = "border: solid 1px red" : x.style = "initial")
     }
 </script>
 <script>
     // creating select placeholder text
     document.querySelectorAll('option')[0].innerHTML = 'Select...' + '<img style="float:right;margin-top:5px;" src="https://storage.pardot.com/153091/1662567825wAvQgVRq/chevron_down_solid.svg">';
 
-    document.querySelectorAll('.chbox-field>label')[0].innerHTML = `I have read and accept the ` + `<a href="https://www.linqia.com/privacy-policy/" target="_blank" color="#0300ff;">privacy policy</a>`;
+    const privacyPolicyLink = document.createElement('a')
+    privacyPolicyLink.innerHTML = `<a href="https://www.linqia.com/privacy-policy/" target="_blank" color="#0300ff;" style="margin-left:5px;">privacy policy</a>`
+    document.querySelectorAll('.privacy-policy>label')[0].append(privacyPolicyLink)
 </script>
 <!-- fields validation -->
 <script>
     let btn = document.querySelector('input[type="submit"]');
 
-    // btn.disabled = true;
     btn.classList.add('disabled');
 
     Array.from(document.querySelectorAll('#pi_extra_field'))[0].value = 'placeholder';
     Array.from(document.querySelectorAll('#pi_extra_field'))[0].disabled = true;
 
     const inputText = Array.from(document.querySelectorAll('.required > input[type="text"]'));
-    const messageField = Array.from(document.querySelectorAll('textarea'))[0];
 
-    messageField.addEventListener('change', onChangeFunction);
-    messageField.addEventListener('keydown', onChangeFunction);
 
     inputText.map((x) => x.addEventListener('change', onChangeFunction))
     inputText.map((x) => x.addEventListener('keydown', onChangeFunction))
 
     function onChangeFunction() {
-        if (inputText.every(x => x.value.length > 0) && messageField.value.length > 1) {
-            // btn.disabled = false;
+        if (inputText.every(x => x.value.length > 0)) {
             btn.classList.remove('disabled')
         } else {
-            // btn.disabled = true;
             btn.classList.add('disabled')
 
         }
