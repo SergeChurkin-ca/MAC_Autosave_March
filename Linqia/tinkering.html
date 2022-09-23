@@ -1,359 +1,129 @@
-<style type="text/css">
-    @font-face {
-        font-family: 'Novecento-WideDemiBold';
-        src: url('https://go.pardot.com/l/153091/2022-07-22/pq53b2/153091/1658495887F9ZZWqpk/Novecento_WideDemiBold.eot');
-        src: url('https://go.pardot.com/l/153091/2022-07-22/pq53b2/153091/1658495887F9ZZWqpk/Novecento_WideDemiBold.eot?#iefix') format('embedded-opentype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53b5/153091/16584958871toH5KHi/Novecento_WideDemiBold.svg#Novecento-WideDemiBold') format('svg'), url('https://go.pardot.com/l/153091/2022-07-22/pq53b8/153091/1658495887RDVhsgzb/Novecento_WideDemiBold.ttf') format('truetype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bc/153091/1658495887rgnTTn2z/Novecento_WideDemiBold.woff') format('woff'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bg/153091/1658495888bDjmwyGz/Novecento_WideDemiBold.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: 'Barlow-Light';
-        src: url('https://go.pardot.com/l/153091/2022-07-22/pq53c5/153091/1658496587duIHjvQo/Barlow_Light.svg#Barlow-Light') format('svg'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cg/153091/1658496588LG3W4WKH/barlow.light.eot'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cg/153091/1658496588LG3W4WKH/barlow.light.eot?#iefix') format('embedded-opentype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53c8/153091/1658496588dvE7eWGP/Barlow_Light.ttf') format('truetype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cc/153091/1658496588qHGpKAit/Barlow_Light.woff') format('woff'), url('https://go.pardot.com/l/153091/2022-07-22/pq53ck/153091/1658496588ZYTWOtyW/barlow.light.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    html {
-        scrollbar-width: none;
-    }
-    
-    body {
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-        scrollbar-width: none;
-    }
-    
-    body::-webkit-scrollbar {
-        display: none;
-        /* Safari and Chrome */
-    }
-    
-    form.form p.errors {
-        display: none !important;
-    }
-    
-    .errors {
-        width: 100%;
-    }
-    
-    .error.no-label {
-        order: 2;
-    }
-    
-    .disabled {
-        background-color: #A6AAA9 !important;
-        color: #fff !important;
-        border: solid 1px #a6a6aa !important;
-        cursor: not-allowed !important;
-    }
-    
-    form.form {
-        max-width: 790px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 !important;
-        justify-content: space-between;
-        border-radius: 20px;
-        padding: 65px 80px !important;
-        gap: 0 2rem;
-        background: transparent;
-    }
-    
-    form.form p {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 23px !important;
-        padding: 0 !important;
-    }
-    
-    .full-width {
-        width: 100% !important;
-    }
-    
-    .full-width label {
-        width: 200px !important;
-    }
-    
-    form.form textarea.standard {
-        width: auto !important;
-        padding: 11.85px 13px;
-        border: solid 1px #a6aaa9;
-        border-radius: 8px;
-        font-family: 'Barlow-Light', sans-serif;
-        color: #53585f;
-        font-size: 16px;
-        resize: none;
-    }
-    
-    form.form p label {
-        text-align: left;
-        text-transform: uppercase;
-        margin-bottom: 7px;
-        font-family: 'Novecento-WideDemiBold', sans-serif;
-        color: #222222;
-        font-size: 12.8px;
-        width: 100%;
-        font-weight: 600;
-    }
-    
-    form.form p.required label,
-    form.form span.required label {
-        background: none !important;
-    }
-    
-    form.form select {
-        width: 100%;
-        width: auto !important;
-        font-family: 'Barlow-Light', sans-serif;
-        color: #53585f;
-        font-size: 16px;
-        padding: 14px 10px !important;
-    }
-    
-    form.form input.text {
-        width: auto !important;
-        font-family: 'Barlow-Light', sans-serif;
-        color: #53585f;
-        font-size: 16px;
-    }
-    
-    .row-1,
-    .row-2,
-    .row-3 {
-        width: 48%;
-    }
-    
-    .chbox-field {
-        width: 100%;
-    }
-    
-    .row-1,
-    .row-2,
-    .row-3 {
-        flex: 1 0 230px;
-    }
-    
-    form.form input,
-    form.form select {
-        padding: 11.85px 13px;
-        border: solid 1px #a6aaa9;
-        border-radius: 8px;
-    }
-    /* checkboxes */
-    
-    .chbox-field .inline {
-        visibility: hidden;
-    }
-    
-    form.form p label.inline {
-        display: none;
-    }
-    
-    .chbox-field {
-        display: flex;
-        flex-direction: row-reverse !important;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    form.form span.value {
-        margin: 0 !important;
-    }
-    
-    .chbox-field label {
-        width: 80% !important;
-        margin-left: 12px !important;
-        text-transform: unset !important;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        padding: 0 !important;
-    }
-    
-    form.form p.required label::after {
-        content: "*";
-        font-size: 16px;
-        color: #000000;
-        margin-left: 4px;
-    }
-    /* button */
-    
-    form.form p.submit {
-        margin: 0 !important;
-        width: 100%;
-        align-items: center;
-    }
-    
-    form.form p.submit input {
-        cursor: pointer;
-        width: fit-content;
-        font-size: 16px;
-        font-family: 'Novecento-WideDemiBold', sans-serif !important;
-        padding: 11px 153px;
-        border-radius: 40px;
-        background-color: #0300ff;
-        border: solid 1px #0300ff;
-        color: #fff;
-        text-transform: uppercase;
-    }
-    
-    form.form p.submit input:hover,
-    form.form p.submit input:focus {
-        background-color: #a8d200;
-        border: solid 1px #a8d200;
-        color: #050930;
-    }
-    /* error messages */
-    
-    .form-field.error {
-        margin-bottom: 0 !important;
-    }
-    
-    .red-background,
-    form.form p.errors {
-        background: #f60018 !important;
-    }
-    
-    .red-color,
-    form.form div.error,
-    form.form p.error,
-    form.form p.error label,
-    form.form span.error {
-        color: #f60018;
-    }
-    
-    .chbox-field.error {
-        align-items: flex-start !important;
-    }
-    
-    .error.no-label {
-        font-weight: 400;
-        margin-top: 7px !important;
-    }
-    
-    .chbox-field .error.no-label {
-        order: -10;
-        margin: 0 !important
-    }
-    
-    @media (max-width: 880px) {
-        .form.form {
-            padding: 40px 30px !important;
+<p>
+    <script>
+        // contact sales form
+        // combining error message with paragraph 
+
+        let errMessage = document.querySelectorAll('.error.no-label')
+        let targetElement = document.querySelectorAll('.form-field.error')
+        for (let i = 0; i < errMessage.length; i++) {
+            targetElement[i].appendChild(errMessage[i]);
+
         }
-        .chbox-field {
-            width: 100% !important;
+    </script>
+    <script>
+        // creating select placeholder text
+        document.querySelectorAll('option')[0].innerHTML = 'Select...' + '<img style="float:right;margin-top:5px;" src="https://storage.pardot.com/153091/1662567825wAvQgVRq/chevron_down_solid.svg">';
+
+        Array.from(document.querySelectorAll('.pd-select')).map(x => x.querySelectorAll('select option')[0].innerHTML = 'Select...');
+
+        const privacyPolicyLink = document.createElement('a')
+        privacyPolicyLink.innerHTML = `<a href="https://www.linqia.com/privacy-policy/" target="_blank" color="#0300ff;" style="margin-left:5px;">privacy policy</a>`
+        document.querySelectorAll('.privacy-policy>label')[0].append(privacyPolicyLink)
+    </script>
+    <!-- fields validation -->
+    <script>
+        let btn = document.querySelector('input[type="submit"]');
+
+        // btn.disabled = true;
+        btn.classList.add('disabled');
+        document.addEventListener('DOMContentLoaded', function() {
+            onChangeFunction()
+        }, false);
+
+        Array.from(document.querySelectorAll('#pi_extra_field'))[0].value = 'placeholder';
+        Array.from(document.querySelectorAll('#pi_extra_field'))[0].disabled = true;
+
+        const inputText = Array.from(document.querySelectorAll('.required > input[type="text"]'));
+        inputText.map((x) => x.addEventListener('change', onChangeFunction))
+        inputText.map((x) => x.addEventListener('keydown', onChangeFunction))
+
+        function onChangeFunction() {
+            if (inputText.every(x => x.value.length > 0) && Array.from(document.querySelectorAll('.select-selected')).every(x => x.innerText !== 'Select...')) {
+                btn.classList.remove('disabled')
+            } else {
+                btn.classList.add('disabled')
+            }
         }
-        .chbox-field.error {
-            gap: 1rem;
-            margin-bottom: 1rem !important;
+    </script>
+    <script>
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /*for each element, create a new DIV that will act as the selected item:*/
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /*for each element, create a new DIV that will contain the option list:*/
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+                /*for each option in the original select element,
+                                create a new DIV that will act as an option item:*/
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function(e) {
+                    /*when an item is clicked, update the original select box,
+                                        and the selected item:*/
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function(e) {
+                /*when the select box is clicked, close any other select boxes,
+                                and open/close the current select box:*/
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
         }
-    }
-    
-    @media (max-width: 480px) {
-        form.form p.submit input {
-            padding: 11px 80px;
+
+        function closeAllSelect(elmnt) {
+            /*a function that will close all select boxes in the document,
+                        except the current select box:*/
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
         }
-        .form.form {
-            padding: 40px 10px !important;
-        }
-    }
-    /* dropdown select palceholder text workaounds with .js */
-    
-    option[value=""] {
-        display: none;
-    }
-</style>
-<style type="text/css">
-    /*the container must be positioned relative:*/
-    
-    .custom-select {
-        position: relative;
-        font-family: Arial;
-    }
-    
-    .custom-select select {
-        display: none;
-        /*hide original SELECT element:*/
-    }
-    
-    .select-selected {
-        background-color: #ffffff;
-        font-family: 'Barlow-Light', sans-serif;
-        color: #53585f;
-        font-size: 16px;
-        border-radius: 8px;
-    }
-    /*style the arrow inside the select element:*/
-    
-    .select-selected:after {
-        position: absolute;
-        content: "";
-        top: 14px;
-        right: 10px;
-        width: 0;
-        height: 0;
-        border: 6px solid transparent;
-        border-color: #fff transparent transparent transparent;
-        display: none;
-    }
-    /*point the arrow upwards when the select box is open (active):*/
-    
-    .select-arrow-active {
-        border-radius: 8px 8px 0 0 !important;
-    }
-    
-    .select-selected.select-arrow-active:after {
-        border-color: transparent transparent #fff transparent;
-        top: 7px;
-    }
-    /*style the items (options), including the selected item:*/
-    
-    form.form .select-arrow-active,
-    form.form .select-arrow-active,
-    form.form .select-items {
-        outline: #290AC4 2px solid;
-    }
-    
-    .select-items {
-        max-height: 200px !important;
-        overflow: auto;
-        border: solid 1px #a6aaa9;
-        border-radius: 0 0 8px 8px !important;
-    }
-    
-    .select-items div,
-    .select-selected {
-        color: #53585f;
-        font-weight: 400;
-        padding: 12px 13px;
-        border: solid 1px #a6aaa9;
-        cursor: pointer;
-        user-select: none;
-        font-size: 16px;
-    }
-    
-    .select-items div {
-        border: 0;
-    }
-    /*style items (options):*/
-    
-    .select-items {
-        position: absolute;
-        background-color: #ffffff;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 99;
-    }
-    /*hide the items when the select box is closed:*/
-    
-    .select-hide {
-        display: none;
-    }
-    
-    .select-items div:hover,
-    .same-as-selected {
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-</style>
+        /*if the user clicks anywhere outside the select box,
+                then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+    </script>
+</p>

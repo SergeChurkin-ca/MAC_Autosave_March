@@ -28,12 +28,15 @@
     Array.from(document.querySelectorAll('#pi_extra_field'))[0].disabled = true;
 
     const inputText = Array.from(document.querySelectorAll('.required > input[type="text"]'));
+    const dropDownSelects = Array.from(document.querySelectorAll('.select-selected'))
+
 
     inputText.map((x) => x.addEventListener('change', onChangeFunction))
     inputText.map((x) => x.addEventListener('keydown', onChangeFunction))
+    dropDownSelects.map((x) => x.addEventListener('change', onChangeFunction))
 
     function onChangeFunction() {
-        if (inputText.every(x => x.value.length > 0)) {
+        if (inputText.every(x => x.value.length > 0) && dropDownSelects.every(x => x.innerText !== 'Select...')) {
             btn.classList.remove('disabled')
         } else {
             btn.classList.add('disabled')
