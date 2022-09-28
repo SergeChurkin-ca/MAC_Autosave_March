@@ -1,4 +1,4 @@
-// hide hidden fields
+// hide hidden fields, resize text input and text area
 
 Array.from(document.querySelectorAll('input[type=hidden]')).map(x => x.closest('.mktoFormRow').style = "display: none;")
 

@@ -15,8 +15,18 @@
     display: none;
 }
 
+.mktoRequiredField::before {
+    content: "*";
+    position: absolute;
+    left: -13px;
+    top: 9px;
+    font-size: 20px;
+    color: #E76C24;
+}
+
 .mktoForm .mktoFormRow {
     width: calc((100% / 2) - 1rem);
+    margin-bottom: 1.25rem;
 }
 
 .mktoForm .mktoFormCol,
@@ -109,7 +119,6 @@ input[type="submit"] {
     font-size: 24px;
     font-size: 1.2rem;
     font-weight: 700;
-    padding: 1em 1.5em;
     text-transform: uppercase;
     width: 100%;
 }
@@ -140,4 +149,28 @@ textarea {
 .mktoForm textarea.mktoField,
 .mktoForm select.mktoField {
     width: 100% !important;
+    min-height: 36px !important;
+    padding-left: 10px !important;
+}
+
+.mktoForm select.mktoField {
+    padding-left: 5px !important;
+}
+
+.mktoForm textarea.mktoField {
+    padding-top: 10px;
+}
+
+.mktoForm button.mktoButton {
+    padding: 13px 17px !important;
+}
+
+.mktoForm .mktoHtmlText {
+    width: 100% !important;
+}
+
+@media (max-width: 640px) {
+    .mktoForm .mktoFormRow {
+        width: 100% !important
+    }
 }
