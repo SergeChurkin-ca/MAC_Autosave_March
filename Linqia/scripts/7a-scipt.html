@@ -36,7 +36,7 @@
     dropDownSelects.map((x) => x.addEventListener('change', onChangeFunction))
 
     function onChangeFunction() {
-        if (inputText.every(x => x.value.length > 0) && dropDownSelects.every(x => x.innerText !== 'Select...')) {
+        if (inputText.every(x => x.value.length > 0)) {
             btn.classList.remove('disabled')
         } else {
             btn.classList.add('disabled')

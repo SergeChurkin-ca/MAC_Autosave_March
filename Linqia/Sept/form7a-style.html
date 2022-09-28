@@ -78,7 +78,7 @@
     
     form.form textarea.standard {
         width: auto !important;
-        padding: 11.85px 13px;
+        padding: 13.2px 13px;
         border: solid 1px #a6aaa9;
         border-radius: 8px;
         font-family: 'Barlow-Light', sans-serif;
@@ -138,9 +138,8 @@
         flex: 1 0 230px;
     }
     
-    form.form input,
-    form.form select {
-        padding: 11.85px 13px;
+    form.form input {
+        padding: 13.2px 13px;
         border: solid 1px #a6aaa9;
         border-radius: 8px;
     }
@@ -167,7 +166,7 @@
     
     .chbox-field label {
         width: 80% !important;
-        margin-left: 12px !important;
+        margin-left: 20px !important;
         text-transform: unset !important;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
@@ -179,6 +178,19 @@
         font-size: 16px;
         color: #000000;
         margin-left: 4px;
+    }
+    
+    .chbox-field label::after {
+        content: "" !important;
+    }
+    
+    .chbox-field.required label::before {
+        content: "*";
+        position: absolute;
+        font-size: 16px;
+        color: #000000;
+        margin-left: -14px;
+        margin-right: 7px;
     }
     /* button */
     
@@ -335,7 +347,7 @@
     .select-selected {
         color: #53585f;
         font-weight: 400;
-        padding: 12px 13px;
+        padding: 12.4px 13px;
         border: solid 1px #a6aaa9;
         cursor: pointer;
         user-select: none;
