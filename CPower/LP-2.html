@@ -19,12 +19,10 @@
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <!-- Background, Buttons, and Text Color Meta Tags -->
-    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#04d899">
+
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
 
@@ -32,20 +30,15 @@
     <meta class="mktoString" id="freetextpadding-bottom" mktoName="Freetext 2 padding bottom" default="0">
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
 
-    <meta class="mktoColor" id="textAccentcolor" mktoName="Free-Text - Text Color" default="#e76c24">
+    <meta class="mktoColor" id="textAccentcolor" mktoName="Free-Text - Accent Color" default="#e76c24">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#21242c">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#000000">
     <meta class="mktoColor" id="freeTextHeadlineClr" mktoName="Free-Text H2 Clr" default="#e76c24">
 
     <meta class="mktoColor" id="speakerTextcolor" mktoName="Free-Text - Text Color" default="#000000">
     <meta class="mktoColor" id="copycolor" mktoName="Copy Color" default="#000000">
-    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222222">
     <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#000000">
-    <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#005AC8">
-    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#222222">
-    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
-    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#005ac8">
-    <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#005ac8">
+    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#000000">
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
     <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="#f0f0f0">
@@ -58,9 +51,7 @@
     <meta class="mktoColor" id="btnfontclr" mktoName="Btn Text Color" default="#ffffff">
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#332E2D">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#CECEAE">
-    <meta class="mktoColor" id="footericonclr" mktoName="Footer - Text Color" default="#005ac8">
-    <meta class="mktoColor" id="footerhoverclr" mktoName="Footer - Hover Text Color" default="#5b666f">
-    <meta class="mktoColor" id="footericonhoverclr" mktoName="Footer - Hover Text Color" default="#4585d6">
+    <meta class="mktoColor" id="footerhoverclr" mktoName="Footer - Hover Text Color" default="#CECEAE">
 
     <!-- Font Size Meta Tags -->
     <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="50">
@@ -88,10 +79,10 @@
 
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
-    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="133">
+    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="257">
     <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="1.5">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="16">
-    <meta class="mktoString" mktoName="Footer - Font Size (px)" id="sm-text" default="12">
+    <meta class="mktoString" mktoName="Footer - Font Size (px)" id="sm-text" default="8">
 
 
     <!-- Google Fonts -->
@@ -109,7 +100,7 @@
 
     <!-- Form Section Styling -->
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="24">
-    
+
 
 
 
@@ -128,7 +119,7 @@
 
 
 
-      body {background:#fff;} 
+      body {background:#fff;overflow-x:hidden;} 
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
@@ -140,13 +131,10 @@
         font-size: ${header-p-fontsize}px;
         font-family: ${fontfamily}, sans-serif !important;
         font-wieght: 500;
+        line-height: 65px;
       }
       h1 {
         font-size: ${h1fontsize}px;
-
-      }
-      h2 {
-        font-size: ${h2fontsize}px;
 
       }
 
@@ -186,13 +174,13 @@
         width:100%;
       }
       .accent-color {
-        color: ${textAccentcolor};
+        color: ${textAccentcolor} !important;
       }
       .btn, .btn:visited{
         color: ${btnfontclr};
         text-decoration:none;
       }
-   
+
       .btn {
         border: 3px solid ${btnbrdclr};
         background: ${btnbgclr};
@@ -204,8 +192,8 @@
         font-size:${btnfontsize}px;
         transition:300ms opacity;
         font-weight: 800;
-       min-width: 219px; 
-       font-family: ${fontfamily-strong}, sans-serif;
+        min-width: 219px; 
+        font-family: ${fontfamily-strong}, sans-serif;
       }
       .btn:hover, .btn:focus {
         background: ${btnhoverbackground};
@@ -214,7 +202,7 @@
         opacity: ${btnhvropacity};
       }
       .section{
-        max-width:1001px;
+        max-width:1050px;
         margin:0 auto;
         padding:${sectionpaddingtb}px 1%;
       }
@@ -223,16 +211,16 @@
 
       }
 
-
+      .column {
+        max-width: 100% !important;
+      }
 
       #header{
-        background-color:${bannerclr};
         background-image:url('${bannerimage}');
         background-repeat:no-repeat;
         background-position:center;
         background-size:cover;
         display:${showbanner};
-        background-blend-mode: ${background-blend-mode};
       }
 
       #freetext{
@@ -244,8 +232,11 @@
 
       #speaker .flex {
         justify-content: space-between;
+        flex-direction: row;
+        gap: 7rem;
       }
       #speaker .column:nth-child(1) {
+        margin: 0 auto;
       }
       #speaker .speaker-img img,
       #speaker .speaker-img .mktoImgGen {
@@ -272,6 +263,7 @@
       #formsection{
         background-color:${mainformbgclr};
         display:${showformsec};
+        padding: 2rem 0 4rem;
       }
 
 
@@ -333,7 +325,6 @@
 
       #freetext h1 {
         color: ${freeTextHeaderColor} !important;
-        font-size: ${freeTextH1size}px;
         font-family: ${fontfamily}, sans-serif !important;
       }
 
@@ -350,13 +341,12 @@
         justify-content: space-between;
       }
 
-      #twocoltext {
+      #twocoltext div {
         font-family: ${fontfamily-light}, sans-serif !important;
         font-size: ${two-cols-fontsize}px;
         font-weight: 200;
         line-height: 20.8px;
-        color: rgb(51, 51, 51);
-
+        color: ${copycolor};
       }
       #twocoltext strong {
         font-weight: 800 !important;
@@ -364,10 +354,7 @@
         font-family: ${fontfamily-strong}, sans-serif !important;
         color: ${copycolor};
       }
-      #formlefttext h2 {
-        color: ${formSectionHeaderColor} !important;
-        font-family: ${fontfamily}, sans-serif !important;;
-      }
+   
 
       #formsection p,
       #formsection ul,
@@ -380,14 +367,9 @@
       #formsection .form-container{
         max-width: 700px;
         background-color:${formbgclr};
-        padding: ${formTopBottomPadding}rem ${formLeftRightPadding}rem;
         border-radius: 0.333em;
         border: solid 1px rgba(242, 242, 245, 0.1);
 
-      }
-      #formsection .lefttext{
-        display:${showlefttext};
-        margin-right:40px;
       }
 
       #formheadline h3{
@@ -399,15 +381,15 @@
       }
 
 
-#twobuttons {
-    background-color: ${twobuttonsbgcolor};
-    padding: 0.5rem 0;
-}
-#twobuttons .flex {
-    justify-content: space-evenly;
-    max-width: 680px;
-    gap: 2rem;
-}
+      #twobuttons {
+        background-color: ${twobuttonsbgcolor};
+        padding: 0.5rem 0;
+      }
+      #twobuttons .flex {
+        justify-content: space-evenly;
+        max-width: 680px;
+        gap: 2rem;
+      }
       #footer{
         display:${showfooter};
         background-color:${footerbgclr};
@@ -415,15 +397,16 @@
         font-size:${footerfontsize}px;
       }
       #footer .sm-text {
-        font-size: ${sm-text}px;
+        font-size: ${sm-text}px !important;
       }
       #footer .row1 {
         display: flex;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         gap: 0.5rem;
-        border: solid 1px red;
+        width: 99%;
+        margin: 0 auto;
       }
 
       .footer-container {
@@ -432,26 +415,22 @@
       }
       #footer .col {
         width: calc((100% / 3) - 7rem);
-        border: solid 2px white;
-      }
-      #footer .col:nth-child(3) {
-       width: calc((100% / 3) - 15rem);
-      }
-      #footer .section{
-        padding:${footerpaddingtb}px 0;
-        max-width: 1400px;
       }
 
-      #footer-logo img {
+      #footer .section{
+        padding:${footerpaddingtb}px 1%;
+        max-width: 1466px;
+      }
+
+      .footer-logo img {
         width:${footerlogowidth}px;
         height: auto;
-        margin-bottom: 2rem;
       }
- 
+
       #footer .row1 p {
         line-height: 20.8px;
       }
-  
+
       #footer .icons-container {
         justify-content: right;
         display: flex;
@@ -467,12 +446,26 @@
       #footer .footer-menu strong{
         font-size: cal(2px + ${footerfontsize}px);
       }
+
       #footer .row2 {
         margin: 0 auto;
+        width: 99%;
+        justify-content: sapce-between;
+      }
+      #footer .row2 .col {
+        width: 50% !important;
+        text-align: right;
+      }
+      #footer .row1 .col:nth-child(3){
+        max-width: 120px;
+        padding-left: 21px;
       }
       #footer .row2 p, #footer .row2 a {
-        text-align: center !important;
+        text-align: left !important;
         font-size: 12px;
+      }
+      #footer-row2a {
+        text-align: right;
       }
       #footer p {
         margin: 0 !important;
@@ -505,28 +498,25 @@
       #footericons {
         margin-top: 2.5rem;
       }
-      @media (max-width: 940px) {
+      @media (max-width: 780px) {
+        #freetext {
+          padding-top: 1rem !important;
+        }
         .row1 {
           flex-direction: column;
-          align-content: center;
+          align-content: flex-start;
         }
         #footer .col {
           width: 100%;
-          display: flex;
-          justify-content: center;
-          text-align: center;
+        }
+        #footer p {
+          text-align: left;
+        }
+        #footer .row1 .col:nth-child(3) {
+          padding: 0;
+        }
+        #footer .row2 .col:nth-child(2) {
           margin: 0 auto;
-        }
-        #footericons ul {
-          justify-content: center !important;
-          width: 50vw;
-        }
-        footer ul li, #footer strong {
-          margin: 10px auto !important;
-          justify-content: center;
-        }
-        #footer .icons-container {
-          padding: 0 !important;
         }
       }
 
@@ -542,7 +532,6 @@
         }
         .section, #header .section{
           width:90%;
-          padding:40px 0;
           padding-top:40px;
           padding-bottom:40px;
         }
@@ -570,9 +559,40 @@
         #footer .icons-container {
           marign-top: 1rem;
         }
+
       }
 
 
+      @media (max-width: 480px) {
+        #header h1 {
+          font-size: calc(${header-h1fontsize}px - 10px) !important;
+        }
+        #header p {
+          font-size: calc(${header-p-fontsize}px - 10px) !important;
+        }
+        #freetext p {
+          font-size: 16px;
+        }
+        #speaker h2 {
+          font-size: 24px;
+        }
+        #speaker p {
+
+          font-size: 18px;
+        }
+        #freetext2 h2 {
+          font-size: 20px;
+        }
+        #freetext2 p {
+          font-size: 16px !important;
+        }
+        #formsection h3 {
+          font-size: 20px !important;
+        }
+        .mktoForm .mktoButton, .btn {
+          font-size: 16px !important;
+        }
+      }
 
       @font-face {
         font-family: 'CooperHewittMedium';
@@ -591,7 +611,7 @@
           url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/CooperHewitt-Bold.woff') format('woff'),
           url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/cooperhewitt-bold-webfont %281%29.eot'),
           url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/cooperhewitt-bold-webfont %281%29.eot?#iefix') format('embedded-opentype'),
-          url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/cooperhewitt-bold-webfont %281%29.woff2) format('woff2');
+          url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/cooperhewitt-bold-webfont %281%29.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
             }
@@ -602,7 +622,7 @@
           url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/CooperHewitt-Light.woff') format('woff'),
           url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/CooperHewitt-Light.eot'),
           url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/CooperHewitt-Light.eot?#iefix') format('embedded-opentype'),
-          url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/CooperHewitt-Light.woff2) format('woff2');
+          url('https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/CooperHewitt-Light.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
             }
@@ -763,9 +783,7 @@
         </div>
 
         <div class="mktoForm" id="form1" mktoName="Form">
-          <script src="//info.cpowerenergymanagement.com/js/forms2/js/forms2.min.js"></script>
-          <form id="mktoForm_1381"></form>
-          <script>MktoForms2.loadForm("//info.cpowerenergymanagement.com", "377-RWN-330", 1381);</script>
+
         </div>
 
       </div>
@@ -773,18 +791,18 @@
 
 
     <div id="twobuttons">
-    <div class="section flex">
-    
+      <div class="section flex">
+
         <a href="#" class="mktoText btn" id="btn1" mktoName="CTA 1">
-         Sign In
+          Sign In
         </a>
-        
+
         <a href="#" class="mktoText btn" id="btn2" mktoName="CTA 2">
-         Contact Us
+          Contact Us
         </a>
-        
-  
-    </div>
+
+
+      </div>
     </div>
     <footer id="footer">
       <div class="footer-container section flex">
@@ -794,23 +812,21 @@
           <div class="logo-container col">
 
             <div class="mktoText" id="footer-menu1" mktoName="Footer Text 1">
-              <p>CPowered Performance Solutions</p><br>
-              <p>Demand-Side Energy Management 101</p><br>
-              <p>Areas We Serve</p>
+              <p><a href="https://cpowerenergymanagement.com/performance-solutions/">CPowered Performance Solutions</a></p><br>
+              <p><a href="https://cpowerenergymanagement.com/demand-side-energy-management-101/">Demand-Side Energy Management 101</a></p><br>
+              <p><a href="https://cpowerenergymanagement.com/areas-we-serve/">Areas We Serve</a></p>
             </div>
 
-            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
 
-            </div>
           </div>
 
           <div class="col">
             <div class="mktoText" id="footer-menu2" mktoName="Footer Text 2">
-              <p>The Current - The Latest from US Energy Markets</p><br />
-              <p>Energy Engineer's Notebook</p>
-              <p>Market Minute</p>
-              <p>Webinars</p>
-              <p>Subscribe</p>
+              <p><a style="color: #ceceae;" href="/the-current/"><strong style="margin-bottom: 20px;">The Current - The Latest from US Energy Markets</strong></a><br><br>
+                <a href="https://cpowerenergymanagement.com//engineers-notebook/">Energy Engineer's Notebook</a><br>
+                <a href="https://cpowerenergymanagement.com//market-by-market/">Market Minute</a><br>
+                <a href="https://cpowerenergymanagement.com//the-current/#webinars">Webinars</a><br>
+                <a href="https://cpowerenergymanagement.com//subscribe/">Subscribe</a></p>
             </div>
           </div>
 
@@ -818,31 +834,57 @@
 
           <div class="col">
             <div class="mktoText" id="footer-menu3" mktoName="Footer Text 3">
-              <p>Who We Help</p><br />
-              Government
-              Commercial
-              <p>Education</p>
-              <p>Industrial</p>
-              <p>Healthcare</p>
+              <p><span style="color: #ceceae;"><a style="color: #ceceae;" href="https://cpowerenergymanagement.com/"><strong>Who We Help</strong></a><br><br>
+                <a href="https://cpowerenergymanagement.com/government/"><span>Government</span></a><br>
+                <a href="https://cpowerenergymanagement.com//commercial/"><span>Commercial</span></a><br>
+                <a href="https://cpowerenergymanagement.com/education/"><span>Education</span></a><br>
+                <a href="https://cpowerenergymanagement.com//industrial/"><span>Industrial</span></a><br>
+                <a href="https://cpowerenergymanagement.com//healthcare/"><span>Healthcare</span></a><br>
+                </span></p>
             </div>
           </div>
 
-</div>
+        </div>
 
-          <div class="row2">
-            <p><span>Copyright © 2020 Literacy Resources, LLC. All rights reserved. &nbsp; &nbsp;<span style="text-decoration: underline;"><br>
-              <a href="/privacy-policy">Privacy Policy</a></span>&nbsp; &nbsp; &nbsp; <span style="text-decoration: underline;"><a href="/terms-of-service">Terms of Use&nbsp;</a></span> &nbsp;&nbsp; &nbsp;&nbsp;<span style="text-decoration: underline;"><a href="/return-policy">Return Policy</a></span></span>
-            </p>
+        <div class="row2 flex">
+          <div class="col">
+            <div class="mktoText sm-text" id="footer-row2" mktoName="Footer Text 2">
+              <p class="sm-text">1001 Fleet Street, Suite 400</p>
+              <p class="sm-text">Baltimore, MD 21202</p>
+              <p class="sm-text">844-276-9371</p>
+              <p><a class="accent-color sm-text" href="/privacy-policy/">Privacy Policy &nbsp; |&nbsp; </a>
+                <a class="accent-color sm-text" href="/terms-conditions/">Terms &amp; Conditions &nbsp;|&nbsp;</a>
+                <a class="accent-color sm-text" href="https://cpowerenergymanagement.com/do-not-sell-my-personal-info/">Do Not Sell My Info</a></p>                                                                                                                                                                                          
+              <p class="accent-color sm-text">Copyright © 2022 CPower, All rights reserved</p><br><br>
+
+            </div>
           </div>
+          <div class="col">
+            <div class="mktoText footer-logo" id="footer-row2a" mktoName="Footer Logo">
+              <a href="https://cpowerenergymanagement.com/"><img src="https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/CPower_logo_txt.png" alt="logo" /></a>
+
+            </div>
+
+          </div>
+
         </div>
         </footer>
       <!-- scripts for form layout workarounds affected by hidden fields -->
       <script>
         // hide hidden fields, resize text input and text area
         MktoForms2.whenReady(function(form) {
-   
-          Array.from(document.querySelectorAll('textarea')).map(x => x.closest('.mktoFormRow').style = "width: 100% !important;");
+
+          Array.from(document.querySelectorAll('textarea')).map(x => x.closest('.mktoFormRow').style = "width: 100% !important;")
           Array.from(document.querySelectorAll('.mktoHtmlText')).map(x => x.closest('.mktoFormRow').style = "width: 100% !important;");
+
+          var formEl = form.getFormElem()[0],
+
+              hiddenEls = formEl.querySelectorAll('.mktoFormRow INPUT[type="hidden"]');
+          [].forEach.call(hiddenEls, function(el) {
+
+            el.parentNode.style = 'width: 0; height: 0; line-height: 0; min-height: unset !important; margin:0 !important; padding:0 !important;'
+
+          });
 
         });
       </script>
