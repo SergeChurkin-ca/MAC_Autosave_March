@@ -2,6 +2,13 @@
 
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en">
   <head>
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <title>${pageTitle}</title>
+    
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://go.prominencemedicare.com/rs/204-LAX-877/images/php_favicon_144.png" allowHtml="true">
+    <link rel="icon" type="image/x-icon" href="${favicon}" />
+
+
     <meta class="mktoString" id="Btmspacedesktop" mktoName="Header Height Desktop" default="84"> 
     <meta class="mktoString" id="Btmspacemobile" mktoName="Header Height Mobile" default="140">
 
@@ -39,7 +46,7 @@
     <meta class="mktoColor" id="underbannerIconHover2" mktoName="Underbanner Gradient 2" default="#7d2b36">
     <meta class="mktoColor" id="Section1BGColor" mktoName="Section 1 BG Color" default="#FFFFFF">
     <meta class="mktoColor" id="Section2BGColor" mktoName="Section 2 BG Color" default="#FFFFFF">
-    
+
     <meta class="mktoString" id="videoContainerMaxWidth" mktoName="Section 2 video max width" default="1000">
     <meta class="mktoColor" id="Section3BGColor" mktoName="Section 3 BG Color" default="#FFFFFF">
     <meta class="mktoColor" id="sec3-cta-BGColor" mktoName="Section 3 CTA BG Color" default="#00857a">
@@ -52,8 +59,14 @@
     <meta class="mktoColor" id="Section5BGColor" mktoName="Section 5 BG Color" default="#f0f9f8">
     <meta class="mktoColor" id="sec5-cta-BGColor" mktoName="Section 5 CTA BG Color" default="#00857a">
     <meta class="mktoColor" id="sec5-cta-color" mktoName="Section 5 CTA Text Color" default="#FFFFFF">
-    <meta class="mktoColor" id="sec5-hover-cta-BGColor" mktoName="Section 5 CTA BG Color" default="#1c355e">
+    <meta class="mktoColor" id="sec8-cta-BGColor" mktoName="Center CTA BG Color" default="#00857a">
+    <meta class="mktoColor" id="sec8-cta-color" mktoName="Center Text Color" default="#FFFFFF">
+    <meta class="mktoColor" id="sec5-hover-cta-BGColor" mktoName="Section 5 CTA: hover BG Color" default="#1c355e">
     <meta class="mktoColor" id="sec5-hover-cta-color" mktoName="Section 5 CTA Hover Text Color" default="#FFFFFF">
+    <meta class="mktoString" id="sec8-margin-top" mktoName="Center CTA:margin top (px)" default="10">
+    <meta class="mktoString" id="sec8-margin-bottom" mktoName="Center CTA:margin bottom (px)" default="50">
+    <meta class="mktoColor" id="sec8-hover-cta-BGColor" mktoName="Center CTA:hover BG Color" default="#1c355e">
+    <meta class="mktoColor" id="sec8-hover-cta-color" mktoName="Center CTA Hover Text Color" default="#FFFFFF">
     <meta class="mktoColor" id="Section6BGColor" mktoName="Section 6 BG Color" default="#f0f9f8">
     <meta class="mktoColor" id="FooterBGColor" mktoName="Footer BG Color" default="#22355b">
     <meta class="mktoColor" id="FormBGColor" mktoName="Form 1 BG Color" default="#FFFFFF">
@@ -91,6 +104,7 @@
     <meta class="mktoBoolean" id="showFooter" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showForm1" mktoname="Show Form 1?" default="true" true_value="block" false_value="hero2_full_width" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showForm2" mktoname="Show Form 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection8" mktoname="Show Center CTA" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <meta class="mktoString" id="banner-order" mktoName="Banner order" default="1" />
     <meta class="mktoString" id="icons-order" mktoName="Icons order" default="2" />
@@ -101,6 +115,7 @@
     <meta class="mktoString" id="section5-order" mktoName="3or4 Narrow Columns Section 5 order" default="6" />
     <meta class="mktoString" id="section6-order" mktoName="Text Section 6 order" default="7" />
     <meta class="mktoString" id="section7-order" mktoName="Img left/right Section 7 order" default="8" />
+    <meta class="mktoString" id="centerCTA-order" mktoName="Center CTA Order" default="9" />
 
 
     <!-- Other Meta Tags -->
@@ -110,10 +125,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="1100" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://go.prominencemedicare.com/rs/204-LAX-877/images/php_favicon_144.png" allowHtml="true">
-    <link rel="icon" type="image/x-icon" href="${favicon}" />
-    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
-    <title>${pageTitle}</title>
+
     <!-- Bootstrap core CSS -->
     <link href="//templates.marketo.net/template1/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -424,6 +436,18 @@
         margin-top: 20px;
         border-radius:6px;
       }
+      .sec8-cta {
+        background-color: ${sec8-cta-BGColor};
+        color: ${sec8-cta-color};
+        width: 170px;
+        padding: 13px 29px;
+        text-align: center;
+        font-family: ${Fontfam} !important;
+        font-size: 14px;
+        font-weight: 500;
+        margin: ${sec8-margin-top}px auto ${sec8-margin-bottom}px;
+        border-radius:6px;
+      }
       div#Section4Header h2 {
         border-bottom: 5px solid ${border-bottom-color2}  !important;
       }
@@ -438,6 +462,8 @@
       .sec3-cta:hover, .sec3-cta:focus {text-decoration: underline !important;  color: ${sec3-hover-cta-color};}
       .sec5-cta a{color: ${sec5-cta-color};}
       .sec5-cta:hover, .sec5-cta:focus{text-decoration: underline !important; color: ${sec5-hover-cta-color};background-color:${sec5-hover-cta-BGColor};}
+      .sec8-cta a{color: ${sec8-cta-color};}
+      .sec8-cta:hover, .sec8-cta:focus{text-decoration: underline !important; color: ${sec8-hover-cta-color};background-color:${sec8-hover-cta-BGColor};}
       .left_video{float: left;}
       .right_content{float: right;}
       .nopad {padding: 0;}
@@ -472,6 +498,7 @@
       .section7 .row2 {display: ${showSection7-imgright1} !important;}
       .section7 .row3 {display: ${showSection7-imgleft2} !important;}
       .section7 .row4 {display: ${showSection7-imgright2} !important;}
+      .section8 {display: ${showSection8} !important;order:${centerCTA-order};}
       .footer {order:1000;}
       .container-section:after, .container-section:before{display:block;content:"";clear:both;}
       .container-section{max-width:1170px; width:100%; margin:0 auto;}
@@ -843,7 +870,7 @@
             </h3>
           </div>
         </a>
-        <a href="${underbanner-link2}" class="icon">
+        <a href="${underbanner-link2}" class="icon icon2">
           <div>
             <div class="mktoText" mktoName="Icon 2" id="icon2">
               <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/brokers_icon.png" alt="icon" >
@@ -854,7 +881,7 @@
 
           </div>
         </a>
-        <a href="${underbanner-link3}" class="icon">
+        <a href="${underbanner-link3}" class="icon icon3">
           <div>
             <div class="mktoText" mktoName="Icon 3" id="icon3">
               <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/navicon1.png" alt="icon" >
@@ -864,7 +891,7 @@
             </h3>
           </div>
         </a>
-        <a href="${underbanner-link4}" class="icon">
+        <a href="${underbanner-link4}" class="icon icon4">
           <div>
             <div class="mktoText" mktoName="Icon 4" id="icon4">
               <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/medicare_icon.png" alt="icon" >
@@ -1007,8 +1034,8 @@
                               Curabitur placerat, ex ut pharetra ultrices, mper turpis.</p>
 
                           </div>
-                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
-		  <div class="sec3-cta mktoText" id="Section3CTA1" mktoName="Section 3 CTA 1"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
+                          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
+                            <div class="sec3-cta mktoText" id="Section3CTA1" mktoName="Section 3 CTA 1"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
                           </div>
                         </div>
                       </div>
@@ -1029,7 +1056,7 @@
                               Curabitur placerat, ex ut pharetra ultrices, mper turpis.</p>
                           </div>
                           <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
-		 <div class="sec3-cta mktoText" id="Section3CTA2" mktoName="Section 3 CTA 2"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
+                            <div class="sec3-cta mktoText" id="Section3CTA2" mktoName="Section 3 CTA 2"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
                           </div>
                         </div>
                       </div>
@@ -1264,6 +1291,15 @@
   </div>
 </div>
 <!-- S7 Ends -->
+
+<!-- Center CTA Starts -->
+    <div class="section8">
+    <div class="sec8-cta mktoText" id="centerCta" mktoName="Center CTA">
+      <a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Center CTA</a>
+      </div>
+    </div>
+<-- Center CTA Ends -->
+
 <!-- Footer Starts -->
 <div class="footer">
   <div class="safeArea sameHeightPads">
@@ -1300,11 +1336,13 @@
   </div>
   <!-- Footer Ends -->
 </div>
+<!--Upload Button Function -->
+<script src="./uploadBtnFunction.js"></script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="//templates.marketo.net/template1/js/jquery.min.js"></script>
-<script src="//templates.marketo.net/template1/js/bootstrap.min.js"></script>
+<script src="//templates.marketo.net/template1/js/jquery.min.js"></scrip>
+<script src="//templates.marketo.net/template1/js/bootstrap.min.js"></scrip>
 <script src="//templates.marketo.net/template1/js/retina-1.1.0.js"></script>
 
 </body>
