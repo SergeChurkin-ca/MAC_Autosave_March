@@ -1,68 +1,32 @@
-<style>
-    .form .column1,
-    .form .column2 {
-        flex: 1 0 400px
-    }
-    
-    #form1 .mktoForm .mktoLabel {
-        color: #ffffff !important;
-    }
-    
-    #form1 .mktoForm .mktoButton {
-        background-color: #00c6ab !important;
-        border: solid 3px #00c6ab !important;
-    }
-</style>
-<script>
-    /* config area - replace with your instance values */
-
-    var mktoFormConfig = {
-        podId: "//app-sj01.marketo.com",
-        munchkinId: "691-AQB-946",
-        formIds: [1012, 1083]
-    };
-
-    /* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
-
-    function mktoFormChain(config) {
-
-        /* util */
-        var arrayify = getSelection.call.bind([].slice);
-
-        /* const */
-        var MKTOFORM_ID_ATTRNAME = "data-formId";
-
-        /* fix inter-form label bug! */
-        MktoForms2.whenRendered(function(form) {
-            var formEl = form.getFormElem()[0],
-                rando = "_" + new Date().getTime() + Math.random();
-
-            arrayify(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
-                var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
-                if (forEl) {
-                    labelEl.htmlFor = forEl.id = forEl.id + rando;
-                }
-            });
-        });
-
-        /* chain, ensuring only one #mktoForm_nnn exists at a time */
-        arrayify(config.formIds).forEach(function(formId) {
-            var loadForm = MktoForms2.loadForm.bind(MktoForms2, config.podId, config.munchkinId, formId),
-                formEls = arrayify(document.querySelectorAll("[" + MKTOFORM_ID_ATTRNAME + '="' + formId + '"]'));
-
-            (function loadFormCb(formEls) {
-                var formEl = formEls.shift();
-                formEl.id = "mktoForm_" + formId;
-
-                loadForm(function(form) {
-                    formEl.id = "";
-                    if (formEls.length) {
-                        loadFormCb(formEls);
-                    }
-                });
-            })(formEls);
-        });
-    }
-
-    mktoFormChain(mktoFormConfig);
-</script>
+<h2 style="text-align: center;"><strong>Commandez vos &eacute;chantillons gratuits d&egrave;s maintenant</strong></h2>
+<div class="spacer"><br /></div>
+<table width="873" height="86" style="border-color: #a19999; height: 107px; margin-left: 5; margin-right: 5; float: left;" border="1">
+    <tbody>
+        <tr>
+            <td style="text-align: left;">
+                <p style="text-align: justify;"><span style="font-size: 24px;">Mettez en pratique vos connaissances sur les cinq &eacute;tapes simples d&rsquo;injection d&rsquo;insuline acquises au moyen de l&rsquo;application PC Sant&eacute;. Remplissez le formulaire ci-dessous pour obtenir un &eacute;chantillon gratuit d&rsquo;aiguilles &agrave; stylo BD Nano PRO 4 mm.</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="padding: 0 12px 0 12px;"><br />L&rsquo;aiguille BD NanoMC PRO facilite l&rsquo;injection, du d&eacute;but &agrave; la fin, gr&acirc;ce &agrave; :<br /></p>
+<ul style="margin: 0 0 30px 30px !important;">
+    <li><span style="color: #444;">un capuchon externe <strong>plus facile &agrave; fixer</strong><span style="font-size: 14px;"><sup>1&dagger; </sup></span></span>
+    </li>
+    <li><span style="color: #444;">un embout interne <strong>plus facile &agrave; retirer</strong><span style="font-size: 14px;"><sup>1&dagger; </sup></span></span>
+    </li>
+    <li><span style="color: #444;">une base convexe pour une&nbsp;<strong>fiabilit&eacute; accrue&nbsp;</strong>de la profondeur d&rsquo;injection de 4 mm<span style="font-size: 14px;"><sup>2&Dagger; </sup></span></span>
+    </li>
+</ul>
+<p style="padding: 0 12px 0 12px;">Caract&eacute;ristiques de l&rsquo;aiguille &agrave; stylo BD Nano<sup>MC</sup> PRO 4 mm rendant l&rsquo;exp&eacute;rience d&rsquo;injection plus agr&eacute;able qui lui ont permis de surclasser les autres aiguilles1<sup>&dagger;</sup><br /><br /></p>
+<!-- next table-->
+<table border="3" bordercolor="#E5E5E5">
+    <tbody>
+        <tr>
+            <td>
+                <div style="padding-left: 30px;"><strong><span style="font-size: 18px; color: #444;">Remember to <span style="color: #004593;">download the BD<sup>TM</sup> Diabetes Care</span> app for education at your fingertips including; answers to commonly asked questions, diabetes-friendly recipes and self-management tips, such as proper injection technique.</span></strong></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br /> <br /> <br />

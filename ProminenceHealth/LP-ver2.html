@@ -57,12 +57,14 @@
     <meta class="mktoColor" id="Section4HeadlineColor" mktoName="Section 4 Headline Color" default="#ffffff">
     <meta class="mktoColor" id="Section4TxtColor" mktoName="Section 4 Txt Color" default="#ffffff">
     <meta class="mktoColor" id="Section5BGColor" mktoName="Section 5 BG Color" default="#f0f9f8">
+    <meta class="mktoString" id="Section5NarrowMaxWidth" mktoName="Section 5 Col max-width" default="600">
     <meta class="mktoColor" id="sec5-cta-BGColor" mktoName="Section 5 CTA BG Color" default="#00857a">
     <meta class="mktoColor" id="sec5-cta-color" mktoName="Section 5 CTA Text Color" default="#FFFFFF">
     <meta class="mktoColor" id="sec8-cta-BGColor" mktoName="Center CTA BG Color" default="#00857a">
     <meta class="mktoColor" id="sec8-cta-color" mktoName="Center Text Color" default="#FFFFFF">
     <meta class="mktoColor" id="sec5-hover-cta-BGColor" mktoName="Section 5 CTA: hover BG Color" default="#1c355e">
     <meta class="mktoColor" id="sec5-hover-cta-color" mktoName="Section 5 CTA Hover Text Color" default="#FFFFFF">
+    <meta class="mktoString" id="Section5NarrowMaxWidth" mktoName="Section 5 Col max-width" default="500">
     <meta class="mktoString" id="sec8-margin-top" mktoName="Center CTA:margin top (px)" default="10">
     <meta class="mktoString" id="sec8-margin-bottom" mktoName="Center CTA:margin bottom (px)" default="50">
     <meta class="mktoColor" id="sec8-hover-cta-BGColor" mktoName="Center CTA:hover BG Color" default="#1c355e">
@@ -488,6 +490,7 @@
       .section3 {background-color: ${Section3BGColor};display: ${showSection3};order:${section3-order};}
       .section4 {background-color: ${Section4BGColor};display: ${showSection4};order:${section4-order};}
       .section5 {background-color: ${Section5BGColor}; padding: 35px 0;display: ${showSection5};order:${section5-order};}
+      .section5 .narrow {max-width: ${Section5NarrowMaxWidth}px;}
       .section5 .narrow1 {display: ${showSection5Column1};}
       .section5 .narrow2 {display: ${showSection5Column2};}
       .section5 .narrow3 {display: ${showSection5Column3};}

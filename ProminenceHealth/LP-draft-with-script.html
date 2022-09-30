@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en">
+  <head>
+      <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  <script src="https://go.prominencemedicare.com/rs/204-LAX-877/images/uploadBtnFunction.js"></script> 
+	
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <title>${pageTitle}</title>
+    
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://go.prominencemedicare.com/rs/204-LAX-877/images/php_favicon_144.png" allowHtml="true">
+    <link rel="icon" type="image/x-icon" href="${favicon}" />
+
+
+    <meta class="mktoString" id="Btmspacedesktop" mktoName="Header Height Desktop" default="84"> 
+    <meta class="mktoString" id="Btmspacemobile" mktoName="Header Height Mobile" default="140">
+
+    <meta class="mktoString" id="BannerBGImage" mktoName="Banner BG Image" default="https://dummyimage.com/1900x600/000/696868"> 
+    <meta class="mktoString" id="min-height-mobile3" mktoName="Less than 480 Banner Height" default="250">
+    <meta class="mktoString" id="min-height-mobile2" mktoName="Less than 767 Banner Height" default="250">
+    <meta class="mktoString" id="min-height-mobile" mktoName="Less than 991 Banner Height" default="400">
+    <meta class="mktoString" id="min-height1" mktoName="992 - 1400 Banner Height" default="400">
+    <meta class="mktoString" id="min-height-xl" mktoName="1400 - 2000 Banner Height" default="600">
+    <meta class="mktoString" id="min-height-xxl" mktoName="2000+ Banner Height" default="600">
+
+    <meta class="mktoString" id="HeaderTextPosition" mktoName="Banner Text Position" default="right">
+    <meta class="mktoString" id="Section2Video" mktoName="Video URL" default="https://www.youtube.com/embed/F2sepCUnENg" />
+
+    <meta class="mktoColor" id="bannertxtcolor" mktoName="Banner Txtx color" default="#FFFFFF">
+    <meta class="mktoColor" id="HeaderBGColor" mktoName="Header BG Color" default="#FFFFFF">
+    <meta class="mktoColor" id="HeaderTextColor" mktoName="Header Link Color" default="#007a70">
+    <meta class="mktoColor" id="HeaderHoverColor" mktoName="Header Link Hover Color" default="#1c355e">
+    <meta class="mktoColor" id="border-bottom-color" mktoName="Header Bottom Border Color" default="#8b2333">
+    <meta class="mktoColor" id="border-bottom-color2" mktoName="Header 2 Bottom Border Color" default="#8b2333">
+    <meta class="mktoColor" id="Fcolor1" mktoName="Copy text Color For White Background" default="#444444">
+
+    <meta class="mktoString" id="Fontfam" mktoName="Font Family" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Zilla+Slab:wght@500&display=swap');" allowHtml="true">
+    <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Montserrat" allowHtml="true">
+    <meta class="mktoString" id="bannerfont" mktoName="Banner Font" default="Montserrat" allowHtml="true">
+
+
+    <meta class="mktoString" id="icons-margin-top" mktoName="Under Banner Margin Top (rem)" default="-4" />
+    <meta class="mktoString" id="underbanner-link1" mktoName="Under Banner Link 1" default="#" />
+    <meta class="mktoString" id="underbanner-link2" mktoName="Under Banner Link 2" default="#" />
+    <meta class="mktoString" id="underbanner-link3" mktoName="Under Banner Link 3" default="#" />
+    <meta class="mktoString" id="underbanner-link4" mktoName="Under Banner Link 4" default="#" />
+    <meta class="mktoColor" id="underbannerIconBgColor" mktoName="Underbanner Icon Bg Color" default="#8b2333">
+    <meta class="mktoColor" id="underbannerIconHover1" mktoName="Underbanner Gradient 1" default="#3a0909">
+    <meta class="mktoColor" id="underbannerIconHover2" mktoName="Underbanner Gradient 2" default="#7d2b36">
+    <meta class="mktoColor" id="Section1BGColor" mktoName="Section 1 BG Color" default="#FFFFFF">
+    <meta class="mktoColor" id="Section2BGColor" mktoName="Section 2 BG Color" default="#FFFFFF">
+
+    <meta class="mktoString" id="videoContainerMaxWidth" mktoName="Section 2 video max width" default="1000">
+    <meta class="mktoColor" id="Section3BGColor" mktoName="Section 3 BG Color" default="#FFFFFF">
+    <meta class="mktoColor" id="sec3-cta-BGColor" mktoName="Section 3 CTA BG Color" default="#00857a">
+    <meta class="mktoColor" id="sec3-cta-color" mktoName="Section 3 CTA Text Color" default="#FFFFFF">
+    <meta class="mktoColor" id="sec3-hover-cta-BGColor" mktoName="Section 3 CTA Hover BG Color" default="#1c355e">
+    <meta class="mktoColor" id="sec3-hover-cta-color" mktoName="Section 3 CTA Hover Text Color" default="#FFFFFF">
+    <meta class="mktoColor" id="Section4BGColor" mktoName="Section 4 BG Color" default="#007a70">
+    <meta class="mktoColor" id="Section4HeadlineColor" mktoName="Section 4 Headline Color" default="#ffffff">
+    <meta class="mktoColor" id="Section4TxtColor" mktoName="Section 4 Txt Color" default="#ffffff">
+    <meta class="mktoColor" id="Section5BGColor" mktoName="Section 5 BG Color" default="#f0f9f8">
+    <meta class="mktoColor" id="sec5-cta-BGColor" mktoName="Section 5 CTA BG Color" default="#00857a">
+    <meta class="mktoColor" id="sec5-cta-color" mktoName="Section 5 CTA Text Color" default="#FFFFFF">
+    <meta class="mktoColor" id="sec8-cta-BGColor" mktoName="Center CTA BG Color" default="#00857a">
+    <meta class="mktoColor" id="sec8-cta-color" mktoName="Center Text Color" default="#FFFFFF">
+    <meta class="mktoColor" id="sec5-hover-cta-BGColor" mktoName="Section 5 CTA: hover BG Color" default="#1c355e">
+    <meta class="mktoColor" id="sec5-hover-cta-color" mktoName="Section 5 CTA Hover Text Color" default="#FFFFFF">
+    <meta class="mktoString" id="sec8-margin-top" mktoName="Center CTA:margin top (px)" default="10">
+    <meta class="mktoString" id="sec8-margin-bottom" mktoName="Center CTA:margin bottom (px)" default="50">
+    <meta class="mktoColor" id="sec8-hover-cta-BGColor" mktoName="Center CTA:hover BG Color" default="#1c355e">
+    <meta class="mktoColor" id="sec8-hover-cta-color" mktoName="Center CTA Hover Text Color" default="#FFFFFF">
+    <meta class="mktoColor" id="Section6BGColor" mktoName="Section 6 BG Color" default="#f0f9f8">
+    <meta class="mktoColor" id="FooterBGColor" mktoName="Footer BG Color" default="#22355b">
+    <meta class="mktoColor" id="FormBGColor" mktoName="Form 1 BG Color" default="#FFFFFF">
+    <meta class="mktoColor" id="Form2BGColor" mktoName="Form 2 BG Color" default="#FFFFFF">
+    <meta class="mktoColor" id="FormButtonBGColor" mktoName="Form Button BG Color" default="#00857a">
+    <meta class="mktoColor" id="FormButtonhoverBGColor" mktoName="Form Button Hover BG Color" default="#FF0000">
+
+    <meta class="mktoBoolean" id="showHeader" mktoName="Show Header?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showBanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    <meta class="mktoBoolean" id="showsection-underbanner" mktoName="Show Sect Under Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon1" mktoName="Show Icon 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon2" mktoName="Show Icon 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon3" mktoName="Show Icon 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-icon4" mktoName="Show Icon 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection2-txt" mktoName="Show Video Section Txt?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection3" mktoName="Show Section 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection4" mktoName="Show Section 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    <meta class="mktoBoolean" id="showSection5" mktoName="Show Section 5?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection5Column1" mktoName="Show Section 5 col 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection5Column2" mktoName="Show Section 5 col 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection5Column3" mktoName="Show Section 5 col 3?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection5Column4" mktoName="Show Section 5 col 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    <meta class="mktoBoolean" id="showSection6" mktoName="Show Section 6?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection7" mktoName="Show Section 7?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection7-imgleft1" mktoName="Show Section 7 Img Left 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection7-imgright1" mktoName="Show Section 7 Img Right 1?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection7-imgleft2" mktoName="Show Section 7 Img Left 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection7-imgright2" mktoName="Show Section 7 Img Right 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showFooter" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showForm1" mktoname="Show Form 1?" default="true" true_value="block" false_value="hero2_full_width" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showForm2" mktoname="Show Form 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection8" mktoname="Show Center CTA" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    <meta class="mktoString" id="banner-order" mktoName="Banner order" default="1" />
+    <meta class="mktoString" id="icons-order" mktoName="Icons order" default="2" />
+    <meta class="mktoString" id="section1-order" mktoName="Form Section 1 order" default="3" />
+    <meta class="mktoString" id="section2-order" mktoName="Video Section 2 order" default="4" />
+    <meta class="mktoString" id="section3-order" mktoName="Two Columns Section 3 order" default="5" />
+    <meta class="mktoString" id="section4-order" mktoName="Image text Section 4 order" default="6" />
+    <meta class="mktoString" id="section5-order" mktoName="3or4 Narrow Columns Section 5 order" default="6" />
+    <meta class="mktoString" id="section6-order" mktoName="Text Section 6 order" default="7" />
+    <meta class="mktoString" id="section7-order" mktoName="Img left/right Section 7 order" default="8" />
+    <meta class="mktoString" id="centerCTA-order" mktoName="Center CTA Order" default="9" />
+
+
+    <!-- Other Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="1100" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="//templates.marketo.net/template1/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="https://go.prominencemedicare.com/rs/204-LAX-877/images/macedits_template.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+
+      body {
+        font-family: '${Fontfam}', sans-serif !important;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 28px;
+        color:${Fcolor1};
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      #section1Text p {
+        color: #333333;
+        line-height: 28px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      @media only screen and (max-width: 480px){
+        .banner-img{min-height:${min-height-mobile3}px;}
+      } 
+      @media only screen and (max-width: 767px){
+        .banner-img{min-height:${min-height-mobile2}px;}
+      }
+      @media only screen and (max-width: 991px){
+        .banner-img{min-height:${min-height-mobile}px;}
+      }
+      @media only screen and (max-width: 1400px) and (min-width: 992px) {
+        .banner-img{min-height:${min-height1}px;}
+      }
+      @media only screen and (max-width: 2000px) and (min-width: 1400px) {
+        .banner-img{min-height:${min-height-xl}px;}
+      }
+      @media only screen and (min-width: 2000px){
+        .banner-img{min-height:${min-height-xxl}px;}
+      }
+      body.block{ padding-top:${Btmspacedesktop}px;}
+      .footerSmallLinks{width:50%;}
+      .res .blocPadding {
+        min-height: 265px;
+      }
+      .pageHeadPad {
+        padding-top: 50px;
+        /*height: 160px !important;*/
+        color:${Fcolor1};
+      }
+      .center
+      {
+        text-align:center;
+      }
+      .copyright {
+        font-family: ${Fontfam}!important;
+        font-weight: 300;
+        font-size: 15px;
+        color: #FFFFFF;
+        text-align: center;
+        padding-top: 2px;
+      }
+      li, ol{
+        list-style-type: disc !important;
+        list-style-image: disc !important;
+        list-style:disc !important;
+        margin-left:20px;
+      }
+      #FooterLocation{
+        font-weight: 300;
+        font-size: 15px;
+        color: #FFFFFF;
+        padding-top: 5px;
+        font-family: ${Fontfam} !important;
+      }
+      .sec3-top-pad{padding-top: 20px;}
+      .col2_pad{padding-bottom: 55px;}
+      .alignment {
+        text-align: ${HeaderTextPosition};
+        font-family: ${Fontfam} !important;
+        margin: 0px;
+        font-size: 40px;
+        line-height: 50px;
+        color: #747474;
+        font-weight:500;
+      }
+      .sec6_text{text-align: center; color: #333333 !important; font-family: 'Montserrat'; font-size:18px; line-height:25px;font-weight:400;}
+      .safeArea:after, .safeArea:before, .banner:after, .banner:before, #fourColumnLayout:after, #fourColumnLayout:before {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      .center{margin: 0 auto !important;}
+
+      .secLevTitle{
+        font-family: '${Fontfam}', sans-serif !important;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 35px;
+        color: #1c355e;
+        padding-top: 21px !important;
+        clear: both !important;
+        border-bottom: 5px solid ${border-bottom-color};
+      }
+      .sec6Title{
+        font-family:${Fontfam} !important;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 35px;
+        color: #1c355e !important;
+        padding-top: 21px !important;
+        clear: both !important;
+        padding: 22px 0 !important;
+      }
+      .secLevContent{
+        font-family: ${Fontfam} !important;
+        font-size: 16px;
+        line-height: 23px;
+        color: #FFFFFF;
+        padding-top: 21px !important;
+        clear: both !important;
+      }
+      .banner-img{background-image: url('${BannerBGImage}'); padding: 110px 0;background-position: center;background-size: cover;background-repeat:no-repeat;}
+      .right-padd {
+        padding-right: 20px !important;
+      }
+      .banner-img h1 {
+        font-family: 'Zilla Slab', serif !important;
+        color: ${bannertxtcolor};
+      }
+      .left-padd {
+        padding-left: 20px !important;
+      }
+      .top-padd {
+        padding-top: 20px !important;
+      }
+      .blocPadding, .borderedBloc.inner2020Padding {
+        padding: 24px;
+        background-color: ${FormBGColor} !important;
+      }
+      .form2bg{background-color: ${Form2BGColor}; padding: 4px 20px 20px;}
+      .mktoForm .mktoRequiredField .mktoAsterix {
+        display: none !important;
+      }
+      .form-heading h2 {
+        font-size: 28px;
+        line-height: 34px;
+        color: #1c355e !important;
+        text-align: center;
+        font-family:${Fontfam};
+        font-weight: 700;
+      }
+      #fullText h3 {
+        color: #1c355e;
+        font-size: 19px;
+        line-height: 22px;
+        font-weight: 700;
+      }
+      #fullText p, #Section3Text1 p, #Section3Text2 p, #Section4Text p, #Section5Column1 p, #Section5Column2 p, #Section5Column3 p, #Section5Column4 p {
+        color: #333333;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .section1 h2 {
+        font-size: 28px;
+        color:#1c355e;
+      }
+      .section2 #fullHeader {
+        margin-top: 25px;
+      }
+      .section2 .flex-col:nth-child(2) {
+        margin-top: 20px;
+      }
+      .section2 h3 {
+        margin-top: 17px;
+      }
+      .section4 .beforeFooter {
+        padding-top:20px !important; 
+      }
+      .section4 h2 span, .section4 h2 {
+        color: ${Section4HeadlineColor};
+        font-family:${Fontfam};
+      }
+      .section4 p, .section4 span {
+        color: ${Section4TxtColor};
+      }
+      div#Section5Column1 h3, #Section5Column2 h3, #Section5Column3 h3, #Section5Column4 h3 {
+        font-size:19px;
+        line-height:22px;
+        font-weight:700;
+        margin-top: 1rem;
+        color: #1c355e;
+      }
+
+      .threeNarrow p span {
+        color: #333333;
+      }
+      .section6 .beforeFooter {
+        padding-top:20px !important;
+      }
+      .section7 #fullHeader {
+        marign-top: 25px;
+      }
+      .section7 h3 {
+        margin-top: 17px;
+      }
+      /* Form Normalizer CSS */
+      .mktoForm, .mktoForm .mktoFieldWrap, .mktoForm .mktoHtmlText, .mktoForm input, .mktoLogicalField .mktoCheckboxList {width:100% !important;}
+      @media only screen and (min-width:480px) {
+        .mktoFormCol:first-child:nth-last-child(2), .mktoFormCol:first-child:nth-last-child(2) ~ .mktoFormCol {width: 100% !important;}
+        .mktoFormCol:first-child:nth-last-child(3), .mktoFormCol:first-child:nth-last-child(3) ~ .mktoFormCol {width: 50% !important;}
+        .mktoFormCol:first-child:nth-last-child(4), .mktoFormCol:first-child:nth-last-child(4) ~ .mktoFormCol {width: 33.3333% !important;}
+        .mktoFormCol:first-child:nth-last-child(3) ~ .mktoFormCol {padding-left: 0.8em !important;}
+      }
+      @media only screen and (max-width:480px) {.mktoFormCol {width:100% !important;}}
+      .mktoAsterix{display:none !important;}
+      .mktoForm .mktoGutter {display:none !important;}
+      .mktoButtonWrap {margin-left:0 !important;}
+      .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {padding: 0.3em; width: 100% !important;}
+      .mktoForm {clear: both; margin-bottom: 0.3em;box-shadow:none!important;}
+      .mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList {float: left !important; width: auto !important;}
+      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {display: inherit !important;}
+      .mktoForm input[type="radio"], .mktoForm input[type="checkbox"] {width: auto !important;}
+      .mktoForm fieldset legend {margin: inherit !important;}
+
+      #section1Form .mktoFormCol {width:100% !important; padding-left: 0em !important;}	
+      #section1Form .mktoForm input[type="text"], #section1Form .mktoForm input[type="url"],
+      #section1Form .mktoForm input[type="email"], #section1Form .mktoForm input[type="tel"],
+      #section1Form .mktoForm input[type="number"], #section1Form .mktoForm input[type="date"],
+      #section1Form .mktoForm textarea.mktoField, #section1Form .mktoForm select.mktoField {
+        border-bottom: 1px solid #D9D9D9 !important;
+        border-radius: 0;
+        color: #1c355e !important;
+        font-family: ${Fontfam} !important;
+        font-size: 16px !important;
+        height: 31px !important;
+        padding: 0 !important;
+        width: 100% !important;
+        border-top: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        line-height: 19px;
+        background-color: transparent !important;
+      }
+      .mktoHtmlText.mktoHasWidth {
+        width: 100% !important;
+      }
+      #section6Form .mktoForm input[type="text"], #section6Form .mktoForm input[type="url"],
+      #section6Form .mktoForm input[type="email"], #section6Form .mktoForm input[type="tel"],
+      #section6Form .mktoForm input[type="number"], #section6Form .mktoForm input[type="date"],
+      #section6Form .mktoForm textarea.mktoField, #section6Form .mktoForm select.mktoField {
+        border-bottom: 1px solid #D9D9D9 !important;
+        border-radius: 0;
+        color: #1c355e !important;
+        font-family: ${Fontfam} !important;
+        font-size: 16px !important;
+        height: 31px !important;
+        padding: 0 !important;
+        width: 100% !important;
+        border-top: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        line-height: 19px;
+        background-color: transparent !important;
+      }
+      .showSec6Form2{display: ${showForm2};}
+      .leftImg{float: left;}
+      .rightText{float: right;width:68%;}
+
+      .FooterLinks {
+        font-size: 15px;
+        line-height: 28px;
+        text-decoration: none;
+        font-weight: 300;
+        color: #444444;
+        font-family: ${Fontfam} !important;
+      }
+      .sec5-cta {
+        background-color: ${sec5-cta-BGColor};
+        color: ${sec5-cta-color};
+        width: 170px;
+        padding: 13px 29px;
+        text-align: center;
+        font-family: ${Fontfam} !important;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 20px auto 30px;
+        border-radius:6px;
+      }
+      #section6Form .mktoForm {
+        margin: 0 auto !important;
+      }
+      .sec3-cta {
+        background-color: ${sec3-cta-BGColor};
+        color: ${sec3-cta-color};
+        width: 170px;
+        padding: 13px 29px;
+        text-align: center;
+        font-family: ${Fontfam} !important;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+        border-radius:6px;
+      }
+      .sec8-cta {
+        background-color: ${sec8-cta-BGColor};
+        color: ${sec8-cta-color};
+        width: 170px;
+        padding: 13px 29px;
+        text-align: center;
+        font-family: ${Fontfam} !important;
+        font-size: 14px;
+        font-weight: 500;
+        margin: ${sec8-margin-top}px auto ${sec8-margin-bottom}px;
+        border-radius:6px;
+      }
+      div#Section4Header h2 {
+        border-bottom: 5px solid ${border-bottom-color2}  !important;
+      }
+      #mktoForm_1002 button.mktoButton, #mktoForm_1003 button.mktoButton {
+        background: #00857a !important;
+        border-radius: 6px !important;
+        font-family: 'Montserrat' !important;
+        font-weight: 600 !important;
+      }
+      .sec3-cta a{color: ${sec3-cta-color};}
+      .sec3-cta:hover, .sec3-cta:focus{background-color:${sec3-hover-cta-BGColor};}  
+      .sec3-cta:hover, .sec3-cta:focus {text-decoration: underline !important;  color: ${sec3-hover-cta-color};}
+      .sec5-cta a{color: ${sec5-cta-color};}
+      .sec5-cta:hover, .sec5-cta:focus{text-decoration: underline !important; color: ${sec5-hover-cta-color};background-color:${sec5-hover-cta-BGColor};}
+      .sec8-cta a{color: ${sec8-cta-color};}
+      .sec8-cta:hover, .sec8-cta:focus{text-decoration: underline !important; color: ${sec8-hover-cta-color};background-color:${sec8-hover-cta-BGColor};}
+      .left_video{float: left;}
+      .right_content{float: right;}
+      .nopad {padding: 0;}
+      .headerLinks{text-align:right;padding-top:13px;color:${HeaderTextColor};font-weight: 400;}
+      .headerLinks a {color:${HeaderTextColor};font-weight:600;font-family:${Fontfam};}
+      a{text-decoration: none;transition: color 0.2s linear 0s;}
+      .headerLinks a:hover{color:${HeaderHoverColor};}
+      .headerLinks a:hover{opacity:1;text-decoration:underline !important;}
+      .footer{background:${FooterBGColor};padding:25px 0;display:${showFooter};}
+      .text-left-iphone {text-align: right;}
+      .section-underbanner {display:${showsection-underbanner};margin-top:${icons-margin-top}rem;order:${icons-order};}
+      .section-underbanner .icon { background: ${underbannerIconBgColor} center center no-repeat;}
+      .section-underbanner .icon:hover, .section-underbanner .icon:focus {background: linear-gradient(330deg,${underbannerIconHover1}, ${underbannerIconHover2}) center center no-repeat;}
+      .section-underbanner .icon1 {display:${show-icon1};}
+      .section-underbanner .icon2 {display:${show-icon2};}
+      .section-underbanner .icon3 {display:${show-icon3};}
+      .section-underbanner .icon4 {display:${show-icon4};}
+      .section1 {order:${section1-order};}
+      .section1 icon {background-color:${Section1BGColor};order:${section1-order};display:${showSection1};}
+      .section2 {background-color: ${Section2BGColor};display: ${showSection2};order:${section2-order};}
+      .section2 .flex-col:nth-child(1) {display: ${showSection2-txt};}
+      .section3 {background-color: ${Section3BGColor};display: ${showSection3};order:${section3-order};}
+      .section4 {background-color: ${Section4BGColor};display: ${showSection4};order:${section4-order};}
+      .section5 {background-color: ${Section5BGColor}; padding: 35px 0;display: ${showSection5};order:${section5-order};}
+      .section5 .narrow1 {display: ${showSection5Column1};}
+      .section5 .narrow2 {display: ${showSection5Column2};}
+      .section5 .narrow3 {display: ${showSection5Column3};}
+      .section5 .narrow4 {display: ${showSection5Column4};}
+      .section6 {background-color: ${Section6BGColor}; padding: 8px 0 0px;display: ${showSection6};order:${section6-order};}
+      .section7 {display: ${showSection7}; order:${section7-order};}
+      .section7 .row1 {display: ${showSection7-imgleft1} !important;}
+      .section7 .row2 {display: ${showSection7-imgright1} !important;}
+      .section7 .row3 {display: ${showSection7-imgleft2} !important;}
+      .section7 .row4 {display: ${showSection7-imgright2} !important;}
+      .section8 {display: ${showSection8} !important;order:${centerCTA-order};}
+      .footer {order:1000;}
+      .container-section:after, .container-section:before{display:block;content:"";clear:both;}
+      .container-section{max-width:1170px; width:100%; margin:0 auto;}
+      .parallax-window {background: transparent;padding:120px 0;display:${showBanner};}
+      .hero2_full_width .left_content_hero{width:100%  !important;padding-right:0px !important;}
+      .hero2_full_width .right_form_hero{display:none !important;}
+      .twoC {
+        padding-top: 20px !important;
+      }
+      .halfC .rightCol {
+        width: 48%;
+        padding-left:15px;
+      }
+      .floatRight1
+      {
+        text-align:right;
+        float:right
+      }
+      .halfC .leftCol {
+        width: 48%;
+        padding-right:15px;
+      }
+      .quarter {
+        width: 33% !important;
+      }
+      .headerMenu {
+        margin-top: 58px;
+      }
+      iframe{width:100% !important;height:auto !important;}
+      .subContentTitle {
+        color: #FFFFFF !important;
+      }
+      .mktoButtonRow {
+        margin-bottom: -10px !important;
+        margin-top: 15px !important;
+      }
+      div#section1FormHead h2 {
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        font-family: 'Roboto', sans-serif !important;
+        margin-bottom:0px !important;
+      }
+      @media only screen and (max-width: 991px) {
+        .parallax-window{  padding: 35px 0;}
+      }
+      @media only screen and (max-width: 768px) {
+        .header {
+          padding-top:20px;
+        }
+        .video_container {
+
+          margin:0 auto;
+        }
+        .footerSmallLinks
+        {
+          width:100%;
+        }
+        .floatRight1
+        {
+          text-align:center;
+          padding-top:10px;
+        }
+        .alignCenter1
+        {
+          text-align:center;
+        }
+
+        .col1Image,.col2Image,.col3Image
+        {
+          text-align:center;
+        }
+        .headerMenu {
+          margin-top: 20px;
+        }
+        .pageHeadPad {
+          height: auto !important;
+        }
+        .quarter {
+          width: 100% !important;
+        }
+        .halfC .leftCol {
+          width: 100% !important;
+          padding-right: 0px;
+          display:block;
+        }
+        .halfC .rightCol {
+          width: 100% !important;
+          padding-right: 0px;
+          display:block;
+          padding-left:0px !important;
+        }
+        .beforeFooter {
+          display: block;
+          padding: 20px 0 !important;
+        }
+        span.logo a {
+          padding-bottom: 15px !important;
+        }
+        hr.houdini {
+          display:none !important;
+        }
+        div.houdiniSpacer {
+          display:block !important;
+          float:left !important;
+          height:25px !important;
+        }  
+        div#section1FormHead h2{text-align: center;}
+      }
+      @media only screen and (max-width: 767px) {
+        .text-center-iphone {text-align: left !important;}
+        div#FooterLocation{text-align:center !important;}
+        div#FooterLinks{text-align:center !important;}
+        .text-left-iphone {text-align: left;}
+        .blocPadding, .bigPad.testimonialsMain {
+          padding: 25px 10px 10px !important;
+        }
+        .res_center{text-align:center !important;}
+        .sec3-cta{text-align: center !important; margin: 20px auto !important;}
+        .sec5-cta{text-align: center !important; margin: 20px auto !important;}
+        .section5{padding-top: 30px !important;}
+        .right-padd{padding: 0 !important;}
+        .imagesOutside, .rowFluid .blocSpan, .carouselCareers>li, .beforeFooter .wide, .companyServices .blocTitle, .orangeRightBorder, .thirdColItem{margin-bottom: 0 !important;}
+        .col2_pad {
+          padding-bottom: 30px !important;
+        }
+        .smallBotMargin {
+          margin-bottom: 20px;
+        }
+        body.block{padding-top:${Btmspacemobile}px;}
+
+      }
+      @media only screen and (max-width: 767px) and (min-width: 540px) {
+        .sec6_Form2 {
+          max-width: 1180px;
+          width: 100% !important;
+          margin: 0 auto !important;
+          padding: 25px 25px 10px !important;
+        }
+
+      }
+      @media only screen and (max-width:540px){
+
+      }
+      @media only screen and (max-width: 736px) {
+        .res-bottom-pad{padding: 10px 0;}
+        .left-padd{padding-left:0 !important;}
+        .content-top-pad{padding-top: 15px;}
+        .res-text-center{text-align: center !important;}
+        .image-top-pad{padding-top: 25px;}
+        .beforeFooter {
+          padding: 0 !important;}
+        .secLevTitle{padding-top: 0 !important;}
+        .threeNarrow .narrow {
+          margin-bottom: 15px !important;
+        }
+        .section6 {
+          padding: 0px 0 17px !important;
+        }
+        .section4 {
+          padding-bottom: 16px !important;
+        }
+      }
+
+      .blocspan{
+        background-color:#FF0000;}
+      .gradientBigInner{
+        background-color:#cccccc;}
+      .bloctitle{
+        color: #FFFFFF;
+        border-color:#FFFFFF}
+
+
+      #section1Form{max-width: 450px;margin: 0 auto;width:100%;}  
+      #section6Form{max-width: 900px;margin: 0 auto;width:100%;}   
+      #section1Form .mktoForm, #section1Form .mktoForm {float: right;max-width: 450px;
+        padding: 25px 0 10px !important;width: 100% !important;font-family: ${Fontfam} !important;color:#444444 !important;}
+      #section6Form .mktoForm, #section6Form .mktoForm {max-width: 900px;
+        padding: 25px 0 10px !important;width: 100% !important;font-family: ${Fontfam} !important;color:#444444 !important;}
+      #section6Form .mktoLabel {
+        font-weight: 600 !important;
+        padding-bottom: 5px !important;
+        width: 100% !important;
+        font-family: ${Fontfam} !important;
+        font-size: 16px !important;
+        color: #1c355e;
+      }
+      #section1Form .mktoLabel {
+        font-weight: 600 !important;
+        padding-bottom: 5px !important;
+        width: 100% !important;
+        font-family: ${Fontfam} !important;
+        font-size: 16px !important;
+        color: #1c355e;
+      }
+      .mktoForm .mktoFormCol, .mktoFieldWrap{width:100%;}
+      .rightColMktoCustom
+      .imageWidth img {width:241px; height:auto;padding-bottom:15px;}
+      select, option{padding: 5px 15px !important;}
+      .mktoForm textarea.mktoField{height:25px !important;}
+      .mktoButtonWrap {display: block; margin: 22px 0px 10px !important; margin-left: 0 !important;text-align: center !important;}
+      .mktoButtonRow {display: block!important; }
+      .mktoForm .mktoOffset{display:none;}
+      .mktoForm .mktoFormCol{margin-bottom: 20px !important;}
+      .mktoForm .mktoRadioList > label .mktoForm .mktoCheckboxList > label{margin-left: 15px !important;margin-right: 5px !important;color: #ffffff !important;font-weight:normal !important;}
+      .mktoForm .mktoRadioList > input .mktoForm .mktoCheckboxList > input{float:right !important;margin-top: 12px;}
+      .mktoForm .mktoButtonWrap .mktoButton {
+        background-image: none !important;
+        background-position: 90% center;
+        background-repeat: no-repeat;
+        border: medium none !important;
+        color: #FFFFFF !important;
+        font-family: ${Fontfam} !important;
+        font-size: 14px !important;
+        font-weight: 500;
+        padding: 10px 20px !important;
+        width: 169px;
+        background: ${FormButtonBGColor} !important;
+        border-radius:6px !important;
+      }
+      #mktoForm_1002 button.mktoButton:hover, #mktoForm_1003 button.mktoButton:hover {
+        background: #1c355e !important;
+        text-decoration: underline !important;
+      }
+      .mktoForm .mktoButtonWrap .mktoButton:hover{background:${FormButtonhoverBGColor} !important;}
+      #section1Form .mktoForm input[type="text"]:focus, #section1Form .mktoForm input[type="url"]:focus,
+      #section1Form .mktoForm input[type="email"]:focus, #section1Form .mktoForm input[type="tel"]:focus,
+      #section1Form .mktoForm input[type="number"]:focus, #section1Form .mktoForm input[type="date"]:focus,
+      #section1Form .mktoForm textarea.mktoField:focus, #section1Form .mktoForm select.mktoField:focus{
+        border-bottom: 2px solid #1c355e !important;
+      }
+      #section6Form .mktoForm input[type="text"]:focus, #section6Form .mktoForm input[type="url"]:focus,
+      #section6Form .mktoForm input[type="email"]:focus, #section6Form .mktoForm input[type="tel"]:focus,
+      #section6Form .mktoForm input[type="number"]:focus, #section6Form .mktoForm input[type="date"]:focus,
+      #section6Form .mktoForm textarea.mktoField:focus, #section6Form .mktoForm select.mktoField:focus{
+        border-bottom: 2px solid #1c355e !important;
+      }
+      .sec6_Form2{
+        max-width: 900px;
+        width: 100% !important;
+        margin: 0 auto !important;
+      }
+
+      .video_container {
+        max-width: ${videoContainerMaxWidth}px;
+        text-align: center;
+        border-radius: 2px;
+        margin: 0 auto;
+      }
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      #section7-img1 {
+
+        position: relative;
+
+
+      }
+
+
+      .mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList {float: left;padding: 0 !important;width: 100% !important;}
+
+
+      .CheckboxRegion label {max-width: 100% !important;padding-left: 10px !important;padding-right: 35px !important;width: 100% !important;}
+
+
+      /* End Form2 CSS */
+
+      /* LMD Mobile Styling */
+      @media all and (min-width: 100px) and (max-width: 800px) {
+        .footerCol, .footerLastCol {display:none !important;}
+        div.customMktoForm {width:100% !important; display:}
+        .footerCopyrights {
+          text-align: center !important;
+        }
+        iframe{width:100% !important; height:auto !important;}
+      }
+      @media all and (min-width: 1020px) and (max-width: 1200px) {
+        div.rightColMktoCustom {width:60% !important; }
+
+      }
+      .header{
+        background-color: ${HeaderBGColor};
+        background: ${HeaderBGColor};
+        display: ${showHeader};
+        padding: 15px 0 10px;
+        overflow: hidden;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        order: -100;
+      }
+      .banner{
+        background: ${BannerBGImage};
+        background-position: center;
+        background-size: cover;
+        display: ${showBanner};
+        order:${banner-order};
+      }
+
+      .footer{
+        background: ${FooterBGColor} !important;display:${showFooter};
+      }
+
+    </style>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="//templates.marketo.net/template1/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+
+    <!-- Header Starts -->
+    <div class="header">
+      <div class="safeArea posRelative">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 nopad">
+            <div class="safeArea posRelative"> <div class="mktoText" id="HeaderLogo" mktoName="Header Logo"><span class=""> <a href='https://prominencemedicare.com/' title=''> <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/PHP-Logo_noRegistration_460.png" width="175" height="auto" alt="" /> </a> </span></div>
+              <div class="clearBoth"></div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 nopad">
+            <div class="headerLinks text-center-iphone">
+              <div class="mktoText" id="headerLinks" mktoName="Header Links">
+                <a href="https://prominencemedicare.com/contact-prominence-health-plan-medicare-advantage/" target="_blank" border="0">Contact Us</a>&nbsp;&nbsp;<a href="https://prominencemedicare.com/find-a-doctor/" target="_blank" border="0">Find a Doctor</a>&nbsp;&nbsp;<a href="https://prominencemedicare.com/find-a-plan/" target="_blank" border="0">Plan Benefits</a>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <!--<div id="divBreadcrumb" class="breadCrumbs" style="background-color:#eeeeee;">
+<div class="safeArea" vocab="http://schema.org/" typeof="BreadcrumbList"></div>
+</div>-->
+    <!-- Header Ends -->
+    <!-- Banner Starts -->
+    <div class="banner-img banner">
+      <div class="safeArea">
+        <div class="col-lg-5 col-md-5 col-sm-4 hidden-xs nopad">&nbsp;</div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopad"><div class="mktoText" id="BannerHeading" mktoName="Banner Heading"><h1 class="alignment">Ato ne zadiri royale, tu<br class="hidden-xs" /> hori anice hisatori vin.</h1></div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends -->
+    <!-- S_Underbanner Starts -->
+    <div class="section-underbanner">
+      <div class="flex-row">
+        <a href="${underbanner-link1}" class="icon icon1">
+          <div>
+            <div class="mktoText" mktoName="Icon 1" id="icon1">
+              <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/members_icon2.png" alt="icon" >
+            </div>
+            <h3 class="mktoText" mktoName="Icon 1 txt" id="icon1-txt">
+              Icon Headline
+            </h3>
+          </div>
+        </a>
+        <a href="${underbanner-link2}" class="icon icon2">
+          <div>
+            <div class="mktoText" mktoName="Icon 2" id="icon2">
+              <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/brokers_icon.png" alt="icon" >
+            </div>
+            <h3 class="mktoText" mktoName="Icon 2 txt" id="icon2-txt">
+              Icon Headline
+            </h3>
+
+          </div>
+        </a>
+        <a href="${underbanner-link3}" class="icon icon3">
+          <div>
+            <div class="mktoText" mktoName="Icon 3" id="icon3">
+              <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/navicon1.png" alt="icon" >
+            </div>
+            <h3 class="mktoText" mktoName="Icon 3 txt" id="icon3-txt">
+              Icon Headline
+            </h3>
+          </div>
+        </a>
+        <a href="${underbanner-link4}" class="icon icon4">
+          <div>
+            <div class="mktoText" mktoName="Icon 4" id="icon4">
+              <img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/medicare_icon.png" alt="icon" >
+            </div>
+            <h3 class="mktoText" mktoName="Icon 4 txt" id="icon4-txt">
+              Icon Headline
+            </h3>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- S_Underbanner ends -->
+    <!-- S1 Starts -->
+    <div class="section1 clearfix">
+      <div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder">
+        <!-- Two Column with Form Starts -->
+        <div class="twoC">
+          <div class="${showForm1}">
+            <div class="rightCol floatLeft rightColMktoCustom left_content_hero">
+              <div class=" blocSpan">
+                <div id="section1Headline" mktoName="Section 1 Headline">
+                  <div class="mktoText" id="section1HeaderText" mktoName="Section 1 Header">
+                    <h2 class="secLevTitle">The Beauty of Buenos Aires</h2></div>
+                </div>
+              </div>
+              <div class=" blocSpan">
+                <div class="blockSpace">
+                  <div class="margBot25">
+                    <div class="mktoText italicBig" id="section1Subhead" mktoName="Section 1 Subheader">
+                      <h2><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</span></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blocSpan">
+                <div class="margBot25">
+                  <div class="mktoText" id="section1Text" mktoName="Section 1 Text">
+                    <p>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis. Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. 
+                      Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in. 
+                      Donec in enim metus. Nulla luctus ligula vitae ex aliquam pulvinar. Pellentesque non hendrerit sem. Curabitur placerat, ex ut pharetra ultrices, risus risus fringilla ante, in auctor velit magna vel quam. Donec mattis, 
+                      elit in iaculis tristique, justo purus pretium enim, vel eleifend dolor lectus eu nisl. Integer id semper turpis.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- S1 Form -->
+            <div class="quarter floatRight customMktoForm right_form_hero">
+              <div class=" blocSpan">
+                <div id="cpMainContent_cpMainContentFull_ctl02_ctl00_ctl01_ctl00_divHolder" class="gradient bggrey withTopSpace blockSpace">
+                  <div class="blocPadding">
+                    <div class="">
+                      <div>
+                        <div>
+                          <div class="form-heading">
+                            <div class="mktoText" id="FormHeader" mktoName="Form Header">
+                              <h2>Sign Up</h2>
+                            </div>
+                          </div>
+                          <div class="mktoForm clearfix" id="section1Form" mktoName="Form"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- S1 Ends -->
+    <div class="clearBoth"></div>
+    <!-- S2 Starts -->
+    <div class="section2 clearfix">
+      <div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder">
+        <div class="rowFluid">
+          <div class="span12 blocSpan">
+            <div class="blockSpace">
+              <div id="fullHeader" mktoName="Section 2 Header" class="mktoText">
+                <h2 class="secLevTitle">Río de la Plata</h2>
+              </div>
+
+              <div class="flex flex-row-reverse">
+
+                <div class="flex-col">
+                  <div class="mktoText" id="fullText" mktoName="Section 2 Text">
+                    <h3 >Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+                    <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
+                      in.
+                      <br/></p>
+                    <p><br>Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in.<br/></p>
+
+                  </div>
+                </div>
+
+                <div class="flex-col">
+                  <div>
+                    <!-- S2 Video -->
+                    <div class="video_container">
+                      <div class="videoWrapper">
+                        <iframe src="${Section2Video}" frameborder="0" allowfullscreen=""></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class='clearBoth'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- S2 Ends -->
+    <div class="clearBoth"></div>
+    <!-- S3 Starts -->
+    <div class="section3 clearfix">
+      <div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder">
+        <div class="rowFluid">
+          <div class="span12 blocSpan col2_pad">
+            <div class="blockSpace">
+              <div class="mktoText" id="Section3Header" mktoName="Section 3 Header">
+                <h2 class="secLevTitle">Argentina in History</h2>
+              </div>
+              <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
+                <div class="halfC">
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 nopad right-padd">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
+                      <div class="">
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 nopad res_center image-top-pad">
+                          <div class="mktoImg" id="Section3Image1" mktoname="Section 3 Image 1" mktoimgclass="expandToFit">
+                            <img src="https://via.placeholder.com/170x170.png" alt="Image 1" title="Image 1">
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-8 content-top-pad left-padding">
+                          <div class="mktoText" id="Section3Text1" mktoName="Section 3 Text 1">
+                            <p>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                              semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar. Pellentesque non hendrerit sem. 
+                              Curabitur placerat, ex ut pharetra ultrices, mper turpis.</p>
+
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
+                            <div class="sec3-cta mktoText" id="Section3CTA1" mktoName="Section 3 CTA 1"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 nopad left-padd">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
+                      <div class="">
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 nopad image-top-pad res_center">
+                          <div class="mktoImg" id="Section3Image2" mktoname="Section 3 Image 2" mktoimgclass="expandToFit">
+                            <img src="https://via.placeholder.com/170x170.png" alt="Image 2" title="Image 2">
+                          </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-8 content-top-pad left-padding">
+                          <div class="mktoText" id="Section3Text2" mktoName="Section 3 Text 2">
+                            <p>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                              semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar. Pellentesque non hendrerit sem. 
+                              Curabitur placerat, ex ut pharetra ultrices, mper turpis.</p>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
+                            <div class="sec3-cta mktoText" id="Section3CTA2" mktoName="Section 3 CTA 2"><a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Read more</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>	  
+                  <div class="clearBoth"></div>
+                </div>
+                <div class='clearBoth'></div>
+              </div>
+            </div>
+            <div class="span12 blocSpan"> </div>
+          </div>
+          <!-- S3 Ends -->
+          <div class="clearBoth"></div>
+        </div>
+      </div>
+    </div>
+    <!-- S4 Starts -->
+    <div class="greyBlock social section4">
+      <div class="safeArea">
+        <div class="beforeFooter">
+          <div class="span12 blocSpan">
+            <div>
+              <div class="mktoText" id="Section4Header" mktoName="Section 4 Header">
+                <h2 class="secLevTitle"><span>Additional Information on Buenos Aires</span></h2>
+              </div>
+              <div class="">
+                <div class="posRelative">
+                  <div class="mktoImg" id="Section4Image" mktoName="Section 4 Image" mktoImgClass="expandToFit"><img src="https://via.placeholder.com/1182x270.png" alt="End-to-end baggage process" title="End-to-end baggage process" width="100%" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="mktoText sec3-top-pad" id="Section4Text" mktoName="Section 4 Text">
+              <p class="margBot10"><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. 
+                Pellentesque eu lacus vulputate, semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar. Pellentesque non hendrerit sem. 
+                Curabitur placerat, ex ut pharetra ultrices, mper turpis.</span>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- S4 Ends -->
+    <!-- S5 Starts -->
+    <div class="greyBlock social section5">
+      <div class="safeArea">
+        <div class="span12 blocSpan">
+          <div class="threeNarrow">
+            <div class="narrow narrow1">
+              <div id="Section5Column1" class="mktoText res_center center" mktoName="Section 5 Column 1">
+                <div class="col1Image imageWidth center">
+                  <img src="http://via.placeholder.com/300x200" alt="">
+                </div>
+                <h3 class="blocTitle"><span>Aluiche</span></h3>
+                <div class="margBot10">
+                  <p><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                    semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar.</span></p>
+                </div>
+                <a href="#" border="0" target="_blank"><div class="sec5-cta">Read more</div></a>
+              </div>
+            </div>
+            <div class="narrow narrow2">
+              <div id="Section5Column2" class="mktoText res_center center" mktoName="Section 5 Column 2">
+                <div class="col2Image imageWidth">
+                  <img src="http://via.placeholder.com/300x200" alt="">
+                </div>
+                <h3 class="blocTitle"><span>Anve</span></h3>
+                <div class="margBot10">
+                  <p><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                    semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar.</span></p>
+                </div>
+                <a href="#" border="0" target="_blank"><div class="sec5-cta">Read more</div></a>
+              </div>
+            </div>
+            <div class="narrow narrow3">
+              <div id="Section5Column3" class="mktoText res_center center" mktoName="Section 5 Column 3">
+                <div class="col2Image imageWidth">
+                  <img src="http://via.placeholder.com/300x200" alt="">
+                </div>
+                <h3 class="blocTitle"><span>Anve</span></h3>
+                <div class="margBot10">
+                  <p><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                    semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar.</span></p>
+                </div>
+                <a href="#" border="0" target="_blank"><div class="sec5-cta">Read more</div></a>
+              </div>
+            </div>
+            <div class="narrow narrow4">
+              <div id="Section5Column4" class="mktoText res_center center" mktoName="Section 5 Column 4">
+                <div class="col3Image imageWidth">
+                  <img src="http://via.placeholder.com/300x200" alt="">
+                </div>
+                <h3 class="blocTitle"><span>Armunyate</span></h3>
+                <div class="margBot10">
+                  <p><span>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, 
+                    semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar.</span></p>
+                </div>
+                <a href="#" border="0" target="_blank"><div class="sec5-cta">Read more</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- S5 Ends -->
+    <!-- S6 Starts -->
+    <div class="greyBlock social section6">
+      <div class="safeArea">
+        <div class="beforeFooter">
+          <div class="form2bg span12 blocSpan">
+            <div>
+              <div class="mktoText res_center" id="Section6Header" mktoName="Section 6 Header">
+                <h2 class="sec6Title sec6_text"><span>Emersion in the Southern Cone</span></h2>
+              </div>
+            </div>
+            <div class="mktoText res_center sec6_text" id="Section6Text" mktoName="Section 6 Text">
+              <p class="margBot10">Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. 
+                Pellentesque eu lacus vulputate, semper arcu nec, dictum felis. luctus ligula vitae ex aliquam pulvinar. Pellentesque non hendrerit sem. 
+                Curabitur placerat, ex ut pharetra ultrices, mper turpis.</p>
+
+            </div>
+            <!-- S6 Form -->
+            <div class="showSec6Form2 center res_center">
+              <div class=" blocSpan">
+                <div id="cpMainContent_cpMainContentFull_ctl02_ctl00_ctl01_ctl00_divHolder" class="gradient bggrey">
+                  <div class="sec6_Form2">
+                    <div class="">
+                      <div>
+                        <div>
+                          <div class="mktoForm clearfix" id="section6Form" mktoName="Section 6 Form"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- S6 Ends -->
+    <!-- S7 Starts -->
+    <div class="section7 clearfix">
+      <div id="cpMainContent_divPhContainer" class="safeArea contentMain printAreaHolder">
+        <div class="rowFluid">
+          <div class="span12 blocSpan">
+            <div class="blockSpace">
+              <div id="fullHeader2" mktoName="Section 2 Header" class="mktoText">
+                <h2 class="secLevTitle">Section 7 Headline </h2>
+              </div>
+
+              <div class="flex flex-row row1">
+                <div class="flex-col">
+                  <div class="mktoText" id="fullText2a" mktoName="Section 7 Text 1">
+                    <h3>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+                    <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
+                      in.
+                      <br/></p>
+                    <p><br>Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in.<br/></p>
+
+                  </div>
+                </div>
+                <div class="flex-col">
+                  <div class="mktoImg" mktoName="Section7 img 1" id="section7-img1">
+                    <img src="https://via.placeholder.com/500x340.png" alt="Section 7 Img 1" title="Image 3"></img>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-row-reverse row2">
+
+              <div class="flex-col">
+                <div class="mktoText" id="fullText2b" mktoName="Section 7 Text 2">
+                  <h3>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+                  <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
+                    in.
+                    <br/></p>
+                  <p><br>Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in.<br/></p>
+
+                </div>
+              </div>
+              <div class="flex-col">
+                <div class="mktoImg" mktoName="Section 7 img 2" id="section7-img2">
+                  <img src="https://via.placeholder.com/500x340.png" alt="Section 7 Img 1" title="Image 3"></img>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-row row3">
+            <div class="flex-col">
+              <div class="mktoText" id="fullText2c" mktoName="Section 7 Text 3">
+                <h3>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+                <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
+                  in.
+                  <br/></p>
+                <p><br>Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in.<br/></p>
+
+              </div>
+            </div>
+            <div class="flex-col">
+              <div class="mktoImg" mktoName="Section 7 img 3" id="section7-img3">
+                <img src="https://via.placeholder.com/500x340.png" alt="Section 7 Img 1" title="Image 3"></img>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row-reverse row4">
+
+          <div class="flex-col">
+            <div class="mktoText" id="fullText2d" mktoName="Section 7 Text 4">
+              <h3>Maecenas gravida mauris quis consectetur tempor. Aenean at volutpat enim. Pellentesque eu lacus vulputate, semper arcu nec, dictum felis.<br/></h3>
+              <p><br>Fusce et arcu maximus, faucibus erat non, accumsan odio. Donec vitae semper ante, sit amet feugiat risus. Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla
+                in.
+                <br/></p>
+              <p><br>Quisque eu nibh in tortor euismod mattis id id leo. Proin malesuada vehicula nulla, id rutrum dolor fringilla in.<br/></p>
+
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="mktoImg" mktoName="Section 7 img 4" id="section7-img4">
+              <img src="https://via.placeholder.com/500x340.png" alt="Section 7 Img 1" title="Image 3">
+            </div>
+          </div>
+        </div>
+
+        <div class='clearBoth'></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- S7 Ends -->
+
+<!-- Center CTA Starts -->
+    <div class="section8">
+    <div class="sec8-cta mktoText" id="centerCta" mktoName="Center CTA">
+      <a href="#" border="0" target="_blank" style="text-decoration: none;outline: none;">Center CTA</a>
+      </div>
+      <script src="//go.prominencemedicare.com/js/forms2/js/forms2.min.js"></script> 
+      <form id="mktoForm_1333"></form> <script>MktoForms2.loadForm("//go.prominencemedicare.com", "204-LAX-877", 1333);</script>
+    </div>
+<-- Center CTA Ends -->
+
+
+<!-- Footer Starts -->
+<div class="footer">
+  <div class="safeArea sameHeightPads">
+    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 nopad">
+      <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 nopad res-text-center res-bottom-pad">
+        <div class="logo">
+          <div class="mktoText" id="FooterLogo" mktoName="Footer Logo">
+            <a href="https://prominencemedicare.com/" target="_blank"><img src="https://go.prominencemedicare.com/rs/204-LAX-877/images/PHP-Logo_noRegistration_W_406.png" alt="" border="0"  width="175" height="auto" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 nopad copyright res-bottom-pad">
+        <div class="text-center">
+          <div class="mktoText" id="LegalBlock" mktoName="Legal Block">
+            &copy;2021 Prominence Health Plan. All rights reserved.
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 nopad res-bottom-pad">
+        <div class="footerLinks text-left-iphone">
+          <div class="mktoText" id="FooterLinks" mktoName="Social Icons">
+            <a href="https://www.facebook.com/ProminenceHealthPlan" target="_blank"><img src="http://204-LAX-877.mktoweb.com/rs/204-LAX-877/images/Facebook_150_color-white.png" alt="facebook" width="32" height="32"/></a>&nbsp;&nbsp;
+            <!--<a href="#" target="_blank"><img src="http://204-LAX-877.mktoweb.com/rs/204-LAX-877/images/Twitter_150_white_vicornew.png" alt="twitter" width="32" height="32"/></a>&nbsp;&nbsp;-->
+            <a href="https://www.youtube.com/channel/UCIwpJcaFEX7nJ7PHyUv3MKA" target="_blank"><img src="http://204-LAX-877.mktoweb.com/rs/204-LAX-877/images/youTube_Color_150x150-white.png" alt="youtube" width="32" height="32"/></a>&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/company/prominence-health-plan" target="_blank"><img src="http://204-LAX-877.mktoweb.com/rs/204-LAX-877/images/LinkedIn_150_white %281%29_vicornew.png" alt="linkedin" width="32" height="32"/></a>&nbsp;&nbsp;
+            <!--<a href="#" target="_blank"><img src="http://na-sj09.marketo.com/rs/prominencehealthplan/images/instagram-white.png" alt="instagram" width="32" height="32"/></a>-->
+          </div>
+          <div class="mktoText" id="FooterLocation" mktoName="Location Block">
+            <strong>LOCATION</strong><br/>1155 S Congress Avenue, West Palm Beach FL 33406
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Ends -->
+</div>
+<!--Upload Button Function -->
+<script src="./uploadBtnFunction.js"></script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="//templates.marketo.net/template1/js/jquery.min.js"></scrip>
+<script src="//templates.marketo.net/template1/js/bootstrap.min.js"></scrip>
+<script src="//templates.marketo.net/template1/js/retina-1.1.0.js"></script>
+
+</body>
+</html>
