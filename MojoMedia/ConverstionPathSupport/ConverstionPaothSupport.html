@@ -240,6 +240,7 @@
             min-width: 250px;
             display: inline-block;
             text-align: center;
+            border-radius: 3px;
         }
         
         .btn-primary:hover {
@@ -247,22 +248,24 @@
         }
         
         .btn-secondary {
-            background: #000;
-            color: #fff;
+            background: #f2dd17;
+            color: #000000;
             padding: 13px 32px;
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
             min-width: 250px;
             display: inline-block;
-            border: 2px solid #000;
+            border: 2px solid #f2dd17;
             text-align: center;
+            border-radius: 3px;
         }
         
-        .btn-secondary:hover {
-            background: #fff;
-            border: 2px solid #000;
-            color: #000;
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            background: #0096dd;
+            border: 2px solid #0096dd;
+            color: #ffffff;
         }
         
         .work,
@@ -295,7 +298,7 @@
         }
         
         .region-footer {
-            background-color: #111111;
+            background-color: #4e4f51;
         }
         
         #mainForm-1 label {
@@ -356,7 +359,7 @@
             text-align: center;
             color: #fff;
             background: #4e4f51;
-            padding: 40px 0;
+            padding: 40px 0 0;
         }
         
         .three-column h4,
@@ -423,6 +426,11 @@
         
         footer .row:nth-child(1) {
             margin-bottom: 2rem;
+            border-bottom: solid 2px #3b3b3d;
+        }
+        
+        footer .row:nth-child(1) .col-lg-3 {
+            margin: 0 auto;
         }
         
         footer .logo {
@@ -433,27 +441,32 @@
             fill: #fff;
         }
         
-        footer .row .col-lg-3:nth-child(2) ul {
+        footer .row:nth-child(1) .col-lg-3 ul {
             display: flex;
-            gap: 0.1rem;
+            gap: 1.5rem;
+            justify-content: center;
         }
         
-        footer .col-lg-3:nth-child(2) svg {
-            width: 12px;
-            border: solid 1px red;
-            ;
+        footer .row:nth-child(1) .col-lg-3 svg {
+            width: 23px;
         }
         
-        footer .policies ul {
-            display: flex;
-            gap: 2rem;
-            padding: 0;
-            font-size: 15px;
+        footer .row:nth-child(1) .col-lg-3 li:nth-child(1) svg {
+            width: 15px;
         }
         
-        footer .copyright {
-            text-align: right;
-            font-size: 15px;
+        footer .row:nth-child(2) a {
+            color: #f2dd17;
+        }
+        
+        footer .row:nth-child(2) a:hover,
+        footer .row:nth-child(2) a:hover {
+            color: #ffffff;
+        }
+        
+        .copyright {
+            background-color: #383739;
+            color: #ffffff;
         }
         
         @media only screen and (max-width: 1160px) {
@@ -503,9 +516,6 @@
             }
             footer .col-lg-3:nth-child(2) {
                 margin-top: 1rem;
-            }
-            .copyright {
-                text-align: center !important;
             }
         }
         
@@ -721,12 +731,9 @@
 
 
 
-    <footer pardot-region="footer" pardot-type="basic" pardot-repeatable="footer" class="region-footer py-5">
+    <footer pardot-region="footer" pardot-type="basic" pardot-repeatable="footer" class="region-footer py-1">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-
-                </div>
 
                 <div class="col-lg-3">
                     <ul class="standard-icons">
@@ -747,34 +754,36 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-3">
 
-                </div>
 
             </div>
             <div class="row">
-                <div class="policies col-md-8">
-
-                    <nav>
-                        <ul>
-                            <li> <span class="hotline">Ethics Hotline: <a href="tel:800.399.2761">800.399.2761</a></span></li>
-                            <li>
-                                <a href="https://robroy.com/foreign-corrupt-practices-act-policy" target="_blank">Foreign Corrupt Practices Act Policy</a>
-                            </li>
-                            <li>
-                                <a href="https://robroy.com/trademark-policy" target="_blank">Trademark Policy</a>
-                            </li>
-                        </ul>
-                    </nav>
-
+                <div class="col-lg-3">
+                    <p>&gt; <a href="https://rocket-rack.com/contact/">Lunch &amp; Learn Program</a><br> &gt; <a href="https://rocket-rack.com/wp-content/uploads/2022/01/RR_Catalog_1.26.pdf" target="_blank" rel="noopener noreferrer">Download Our Catalog</a><br>                        &gt; <a href="https://rocket-rack.com/catalogue/">View Our Catalog Online</a><br> &gt; <a href="https://rocket-rack.com/contact/">Contact Us</a></p>
                 </div>
-                <div class="copyright col-md-4">
-                    ©2022 Plasti-Bond®. All rights reserved.
+                <div class="col-lg-3">
+                    <p>
+                        <strong>ROCKET RACK<sup>®</sup></strong><br> a Unit of Robroy Industries<br> 1100 US HWY 271 S<br> Gilmer, TX 75644<br>
+                        <strong>P</strong> <span style="color:#00a6dd !important; font-weight: bold;">903.680.4222</span>
+                    </p>
                 </div>
+                <div class="col-lg-3"></div>
             </div>
 
         </div>
     </footer>
+
+    <section pardot-region="copyright" pardot-region="basic" class="copyright py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="https://robroy.com/ethics-hotline">Ethics Hotline 800.399.2761</a>
+                    <a href="https://robroy.com/trademark-policy">Trademark Policy</a>
+                    <a href="https://robroy.com/foreign-corrupt-practices-act-policy">Foreign Corrupt Practices Act Policy</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
