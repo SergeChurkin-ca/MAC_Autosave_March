@@ -1,1 +1,0 @@
-document.getElementById('LblAll_Mammotome_Updates__c').parentNode.clissLIst.add('formfield-custom-override')
