@@ -18,6 +18,9 @@
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsecspeaker" mktoName="Show Speaker Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec2" mktoName="Show Free-Text Section? 2" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showthreecol" mktoName="Show Three Col Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showtwobuttons" mktoName="Show Two Buttons Section?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -63,7 +66,7 @@
     <meta class="mktoString" mktoName="Freetext 2 - H2(Freetext) Font Size (px)" id="freeTextH2size" default="24">
 
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="24">
-    <meta class="mktoString" mktoName="TwoCols Sec Font Size (px)" id="two-cols-fontsize" default="16">
+    <meta class="mktoString" mktoName="TwoCols Sec Font Size (px)" id="two-cols-fontsize" default="14">
 
     <!-- Banner Section Styling -->
     <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://info.cpowerenergymanagement.com/rs/377-RWN-330/images/orange-bkg-right.gif">
@@ -230,7 +233,9 @@
         padding: ${freetextpadding-top}rem 0 ${freetextpadding-bottom}rem;
       }
 
-
+#speaker {
+  display: ${showsecspeaker};
+}
       #speaker .flex {
         justify-content: space-between;
         flex-direction: row;
@@ -254,6 +259,9 @@
         line-height: 39px;
         font-wieght: 700;
       }
+#freetext2 {
+  display: ${showsec2};
+}
 
       #freetext2 h2 {
         font-family: ${fontfamily-strong}, sans-serif;
@@ -336,12 +344,34 @@
         font-size: 25px;
         line-height: 32.5px;
       }
-      #twocoltext .section {
+      #twocoltext {
         border-bottom: #F89C1C solid 3px;
         padding: 0 1% 6rem;
         justify-content: space-between;
+        display: ${showthreecol};
       }
-
+      #twocoltext .flex {
+        flex-direction: column;
+      }
+    
+ 
+      #twocoltext .row {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        marign-bottom: 10px;
+      }
+      #twocoltext .col-md-3 {
+        flex: 1 0 320px;
+      }
+      
+      #twocoltext strong:nth-child(1) {
+        width: 100%;
+      }
+#twocoltext .col-md-3 {
+  width: calc((100% / 3) - 1rem)
+}
       #twocoltext div {
         font-family: ${fontfamily-light}, sans-serif !important;
         font-size: ${two-cols-fontsize}px;
@@ -719,85 +749,99 @@
       </div>
     </div>
 
-    <div id="twocoltext">
-      <div class="section flex">
-        <div class="col-md-3">
-          <div class="mktoText" id="twocolstext1" mktoName="Two Columns Text 1">
-             <strong>National</strong><br><br>
-       Nate Soles<br>
-Vice President, National Accounts<br>
-240-205-9427<br>
-Nathaniel.Soles@CPowerEnergyManagement.com<br><br>
-            
-            Aimee Riley<br>
-            Sr. Account Manager, National Accounts<br>
-            415-235-9835<br>
-            Aimee.Riley@CPowerEnergyManagement.com<br></br>
-            
-            Jim Rybarczyk<br>
-            Account Manager, National Accounts<br>
-            847-220-4337<br>
-            Jim.rybarczyk@cpowerenergymanagement.com<br></br>
-            
-            
-            <strong>PJM</strong><br><br>
-            Ed Drew<br>
-            Regional Vice President, Mid Central Region	<br>
-            (610) 894-6870 <br>
-            Ed.drew@cpowerenergymanagement.com <br><br>
-
-            Donna Karas <br>
-            Director, Account Management, Mid Central Region <br>
-            (610) 813-6362 <br>
-            donna.karas@cpowerenergymanagement.com <br><br>
-
-       
-          </div>   
+    <!-- two col text -->
+<div id="twocoltext">
+    <div class="section flex">
+        <div class="row">
+            <strong>National</strong><br><br>
+            <div class="col-md-3"> <b>Nate Soles</b>
+                <br>Vice President, National Accounts
+                <br> 240-205-9427
+                <br> Nathaniel.Soles@CPowerEnergyManagement.com
+              <br><br>
+            </div>
+            <div class="col-md-3"> <b>Aimee Riley</b>
+            <br> Sr. Account Manager, National Accounts
+                <br> 415-235-9835
+                <br>Aimee.Riley@CPowerEnergyManagement.com
+                <br></br>
+            </div>
+            <div class="col-md-3"> 
+            <b>Jim Rybarczyk</b>
+            <br> Account Manager, National Accounts
+                <br> 847-220-4337
+                <br> Jim.rybarczyk@cpowerenergymanagement.com
+                <br></br>
+            </div>
         </div>
-        <div class="cold-md-3">
-                                <strong>New York</strong><br><br>
-            Keith Black <br>
-            Regional Vice President, Northeast Region<br>	 
-            (860) 241-5537		<br>			
-            Keith.Black@CPowerEnergyManagement.com   <br><br> 
-
-            Ashley Parkin<br>
-            Account Manager <br>
-            410-346-5867 <br>
-            Ashley.Parkin@cpowerenergymanagement.com<br></br>          
-            
-                 <strong>New England</strong><br><br>
-            Keith Black <br>
-            Regional Vice President, Northeast Region<br>	 
-            (860) 241-5537	<br>				
-            Keith.Black@CPowerEnergyManagement.com  <br><br>
-
-            Mandy Bellwood<br>
-            Senior Account Manager<br> 
-            (410) 346-5131<br>
-            Mandy.Bellwood@CPowerEnergyManagement.com<br><br></br>                                                                                                                                                                                                                                                                                                  <div class="mktoText" id="twocolstext2" mktoName="Two Columns Text 2">
-                                                                                                                                                                                                                                                                                                                  
-         </div>
-        </div>
-        <div class="col-md-3">
-          <div class="mktoText" id="twocolstext2" mktoName="Two Columns Text 2">
-        
-
-            <strong>Texas</strong><br><br>
-            Jeff Norman<br>
-            Regional Vice President, West Region	<br> 
-            (240) 205-9427<br>				
-            Jeffrey.Norman@CPowerEnergyManagement.com<br><br>
-
-            Courtney Ryder<br>
-            Account Manager, West Region<br>
-            (410) 346-5828<br> 
-            Courtney.Ryder@CPowerEnergyManagement.com<br>
+  
+    <div class="row">
+        <strong>New England</strong><br><br>
+        <div class="col-md-3"> 
+        <b>Keith Black</b>
+            <br> Regional Vice President, Northeast Region
+            <br> (860) 241-5537
+            <br> Keith.Black@CPowerEnergyManagement.com
+            <br><br>
           </div>
+        <div class="col-md-3"> <b>Mandy Bellwood</b>
+        <br> Senior Account Manager
+            <br> (410) 346-5131
+            <br> Mandy.Bellwood@CPowerEnergyManagement.com
+            <br><br>
         </div>
-      </div>
+        <div class="col-md-3"></div>
     </div>
+            <div class="row">
+            <strong>New York</strong><br><br>
+            <div class="col-md-3"> <b>Keith Black</b>
+                <br> Regional Vice President, Northeast Region
+                <br> (860) 241-5537
+                <br> Keith.Black@CPowerEnergyManagement.com <br><br>
+            </div>
+            <div class="col-md-3"> Ashley Parkin
+                <br> Account Manager
+                <br> 410-346-5867
+                <br> Ashley.Parkin@cpowerenergymanagement.com
+                <br></br>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    <div class="row">
+        <strong>PJM</strong><br><br>
+        <div class="col-md-3"> <b>Ed Drew</b>
+            <br> Vice President, Mid Central Region
+            <br> (610) 894-6870
+            <br> Ed.drew@cpowerenergymanagement.com
+            <br><br>
+            </div>
+        <div class="col-md-3"> <b>Donna Karas</b>
+            <br> Director, Account Management, Mid Central Region
+            <br> (610) 813-6362
+            <br> donna.karas@cpowerenergymanagement.com <br>
+            <br></div>
+                <div class="col-md-3"></div>
+        </div>
 
+        <div class="row">
+            <strong>Texas</strong><br><br>
+            <div class="col-md-3"> Jeff Norman
+                <br> Regional Vice President, West Region
+                <br> (240) 205-9427<br> Jeffrey.Norman@CPowerEnergyManagement.com
+                <br><br>
+            </div>
+            <div class="col-md-3"> <b>Courtney Ryder</b>
+                <br> Account Manager, West Region
+                <br> (410) 346-5828
+                <br> Courtney.Ryder@CPowerEnergyManagement.com
+                <br><br></div>
+            <div class="col-md-3"></div>
+        </div>
+
+    </div>
+  
+</div>
+<!-- end of two col text -->
 
     <div id="formsection">
       <div class="section">
