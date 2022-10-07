@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="background-color:#83a6bc;padding-top:50px;padding-bottom:50px;">
+        <div>
+            %%[ /* Retrieving email variable from URL */ set @email = RequestParameter("e") set @page = RequestParameter("page") /* Retrieving phone number from URL - soheil set @phone = RequestParameter("phone") */ /* Lookup on Email */ set @subscriberKey = Lookup("_Subscribers","Subscriberkey","EmailAddress",@email)
+            set @emailRowSetBusiness = LookupRows("ent.FMB_Business_From_CustomersDE", "EmailAddress", @subscriberKey) set @emailRowCountBusiness = RowCount(@emailRowsetBusiness) set @emailRowSetConsumers = LookupRows("ent.FMB_Consumers_From_CustomersDE",
+            "EmailAddress", @subscriberKey) set @emailRowCountConsumers = RowCount(@emailRowsetConsumers) set @emailRowSetContact = LookupRows("Master_Contact_DE", "ContactID", @subscriberKey) set @emailRowCountContact = RowCount(@emailRowsetContact)
+            set @emailRowSetLead = LookupRows("Master_Lead_DE", "LeadID", @subscriberKey) set @emailRowCountLead = RowCount(@emailRowsetLead) if @emailRowCountBusiness > 0 then set @emailRow = Row(@emailRowSetBusiness, 1) set @Unique_ID = Field(@emailRow,
+            "CustomerID") set @firstname = Field(@emailRow, "FirstName") set @lastname = Field(@emailRow, "LastName") set @zipcode = Field(@emailRow, "ZipCode") set @CommercialBanking = Field(@emailRow, "CommercialBanking") set @PersonalBanking = Field(@emailRow,
+            "PersonalBanking") set @PrivateWealthAdvisors = Field(@emailRow, "PrivateWealthAdvisors") set @phone = Field(@emailRow, "MobilePhone") endif if @emailRowCountConsumers > 0 then set @emailRow = Row(@emailRowSetConsumers, 1) set @Unique_ID =
+            Field(@emailRow, "CustomerID") set @firstname = Field(@emailRow, "FirstName") set @lastname = Field(@emailRow, "LastName") set @zipcode = Field(@emailRow, "ZipCode") set @CommercialBanking = Field(@emailRow, "CommercialBanking") set @PersonalBanking
+            = Field(@emailRow, "PersonalBanking") set @PrivateWealthAdvisors = Field(@emailRow, "PrivateWealthAdvisors") set @phone = Field(@emailRow, "MobilePhone") endif if @emailRowCountContact > 0 then set @emailRow = Row(@emailRowSetContact, 1) set
+            @Unique_ID = Field(@emailRow, "ContactID") set @firstname = Field(@emailRow, "First_Name") set @lastname = Field(@emailRow, "Last_Name") set @zipcode = Field(@emailRow, "Zip_Code") set @CommercialBanking = Field(@emailRow, "CommercialBanking")
+            set @PersonalBanking = Field(@emailRow, "PersonalBanking") set @PrivateWealthAdvisors = Field(@emailRow, "PrivateWealthAdvisors") set @phone = Field(@emailRow, "phone_number") endif if @emailRowCountLead > 0 then set @emailRow = Row(@emailRowSetLead,
+            1) set @Unique_ID = Field(@emailRow, "LeadID") set @firstname = Field(@emailRow, "First_Name") set @lastname = Field(@emailRow, "Last_Name") set @zipcode = Field(@emailRow, "Zip_Code") set @CommercialBanking = Field(@emailRow, "CommercialBanking")
+            set @PersonalBanking = Field(@emailRow, "PersonalBanking") set @PrivateWealthAdvisors = Field(@emailRow, "PrivateWealthAdvisors") set @phone = Field(@emailRow, "phone_number") endif endif /* Unsubscribe or Preference Page */ IF @page == "unsub"
+            THEN set @title = "Unsubscribe" set @body = 'To opt out of receiving email marketing communications please enter your email address then check the box next to each First Merchants marketing communication from which you prefer NOT to receive
+            marketing email messages. Click on the "submit" button to record your opt out preferences.<br /><br />First Merchants will process your opt out request as quickly as possible, please allow 10 business days for your request to take
+            effect.' set @checkAll = "unsubscribe_from_all" set @checkAllName = "Unsubscribe From All" set @unsubChecked = "checked" ELSE set @title = "Preferences for First Merchants Bank Promotional Email" set @body = "From time to time, we may email
+            you offers for products and services that we think may be of value to you. <br />Please let us know what topics you are interested in, simply check the box below and fill in your details and then click submit." set @checkAll = "select_all"
+            set @checkAllName = "Subscribe To All" ENDIF ]%%
+        </div>
+
+        <form action="https://pub.email.firstmerchants.com/thank-you" method="post">
+            <br>
+            <h1><b>%%=v(@title)=%%</b></h1><br>
+
+            <p>%%=v(@body)=%%</p><br><br>
+
+            <label for="emailAddress" style="color:blue">Mobile Phone Number:</label><input type="text" id="phonenumber" name="phone_number" value="%%=v(@phone)=%%" required=""><br><br>
+
+            <label for="emailAddress" style="color:blue">Email Address:</label>
+            <input type="text" id="emailAddress" name="email_address" value="%%=v(@email)=%%" required=""><br><br> %%[ if @page != "unsub" then ]%%
+            <label for="firstName" style="color:blue">First Name:</label><input type="text" id="firstName" name="firstname" value="%%=v(@firstname)=%%"><br><br>
+            <label for="lastName">Last Name:</label><input type="text" id="lastName" name="lastname" value="%%=v(@lastname)=%%"><br><br> %%[ endif ]%% %%[ if @page != "unsub" then ]%%
+            <label for="zipCode">Zip Code:</label><input type="text" id="zipCode" name="zipcode" value="%%=v(@zipcode)=%%"><br><br>
+
+
+            <div class="subscribe-options-container" margin="auto" text-colour="red">
+                <p style="margin-bottom:0.5rem !important; font-weight:800 !important;">Personal Banking</p>
+                <input type="radio" id="PersonalBankingSubscribe" name="PersonalBankingSubscribe" value="true"> %%=v(@PersonalBankingSubscribe)=%%
+                <label for="  Personal Banking">Contact me by email</label><br><br>
+                <input type="radio" id="PersonalBankingUnsubscribe" name="PersonalBankingUnsubscribe" value="true"> %%=v(@PersonalBankingUnsubscribe)=%%
+                <label for="Personal Banking">Unsubscribe from email</label><br><br>
+                <input type="radio" id="PersonalBankingSubscribe" name="PersonalBankingSubscribeSMS" value="true"> %%=v(@PersonalBankingSubscribe)=%%
+                <label for="  Personal Banking">Contact me by Mobile phone SMS text messages</label><br><br>
+                <input type="radio" id="PersonalBankingUnsubscribe" name="PersonalBankingUnsubscribeSMS" value="true"> %%=v(@PersonalBankingUnsubscribe)=%%
+                <label for="Personal Banking">Unsubscribe from Mobile phone SMS text messages</label><br><br>
+
+            </div>
+            <p style="margin-bottom:0.5rem !important; font-weight:800 !important;">Commercial Banking</p>
+            <input type="radio" id="CommercialBankingSubscribe" name="CommercialBankingSubscribe" value="true"> %%=v(@CommercialBankingSubscribe)=%%
+            <label for="Commercial Banking">Contact me by email</label><br><br>
+            <input type="radio" id="CommercialBankingUnsubscribe" name="CommercialBankingUnsubscribe" value="true"> %%=v(@CommercialBankingUnsubscribe)=%%
+            <label for="Commercial Banking">Unsubscribe from email</label><br><br>
+            <input type="radio" id="CommercialBankingSubscribe" name="CommercialBankingSubscribeSMS" value="true"> %%=v(@CommercialBankingSubscribe)=%%
+            <label for="Commercial Banking">Contact me by Mobile phone SMS text messages</label><br><br>
+            <input type="radio" id="CommercialBankingUnsubscribe" name="CommercialBankingUnsubscribeSMS" value="true"> %%=v(@CommercialBankingUnsubscribe)=%%
+            <label for="Commercial Banking">Unsubscribe from Mobile phone SMS text messages</label><br><br>
+
+            <div class="subscribe-options-container">
+                <p style="margin-bottom:0.5rem !important; font-weight:800 !important;">Private Wealth Advisors</p>
+                <input type="radio" id="PrivateWealthAdvisorsSubscribe" name="PrivateWealthAdvisorsSubscribe" value="true"> %%=v(@PrivateWealthAdvisorsSubscribe)=%%
+                <label for="Private Wealth Advisors">Contact me by email</label><br><br>
+                <input type="radio" id="PrivateWealthAdvisorsUnsubscribe" name="PrivateWealthAdvisorsUnsubscribe" value="true"> %%=v(@PrivateWealthAdvisorsUnsubscribe)=%%
+                <label for="Private Wealth Advisors">Unsubscribe from email</label><br><br><br>
+                <input type="radio" id="PrivateWealthAdvisorsSubscribe" name="PrivateWealthAdvisorsSubscribeSMS" value="true"> %%=v(@PrivateWealthAdvisorsSubscribe)=%%
+                <label for="Private Wealth Advisors">Contact me by Mobile phone SMS text messages</label><br><br>
+                <input type="radio" id="PrivateWealthAdvisorsUnsubscribe" name="PrivateWealthAdvisorsUnsubscribeSMS" value="true"> %%=v(@PrivateWealthAdvisorsUnsubscribe)=%%
+                <label for="Private Wealth Advisors">Unsubscribe from Mobile phone SMS text messages</label><br><br><br>
+
+            </div>
+
+            <label class="ckBox" for="checkAll"><input type="checkbox" id="checkAll" name="%%=v(@checkAll)=%%" value="true"> %%=v(@checkAllName)=%%</label><br><br> %%[ endif ]%%
+            <label class="ckBox" for="unsubAll"><input type="checkbox" name="unsubscribe_from_all" id="unsubAll" value="true" %%=v(@unsubChecked)=%%&gt;="" unsubscribe="" from="" all="" email<br=""><br>
+        <input type="hidden" name="page" value="%%=v(@page)=%%">
+          <input type="submit" class="button" value="Submit" style="padding: 13px 20px;
+        border-radius: 2px;
+        transition: all .2s ease-in-out;
+        font-size: 13px;
+        font-size: .8125rem;
+        line-height: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: #517A8A;
+        border: 1px solid transparent;
+        color: #FFF;"> <br><br>
+    
+    
+         
+            </label></form>
+    </div>
+</body>
+
+</html>
