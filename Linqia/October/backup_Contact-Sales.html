@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Contact Sales</title>
+    <link rel="icon" type="image/x-icon" href="https://go.pardot.com/l/153091/2022-09-12/pq6q4g/153091/1662997834B3LiIfrS/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* general setup */
+        
+        html {
+            scrollbar-width: none;
+        }
+        
+        body {
+            background: #fff;
+            margin: 0;
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
+            /* Safari and Chrome */
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        .flex,
+        .flex-row {
+            display: flex;
+        }
+        
+        .flex-row {
+            flex-direction: row;
+        }
+        
+        .flex-column {
+            flex-direction: column;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        /* typograpgy  */
+        
+        h1,
+        h2 {
+            font-family: 'Novecento-WideDemiBold', Arial, sans-serif !important;
+            line-height: 120%;
+        }
+        
+        nav {
+            font-family: 'Barlow-Light', Arial, sans-serif;
+        }
+        
+        .btn {
+            font-family: 'Novecento-WideLight', Arial, sans-serif;
+        }
+        /* navbar */
+        
+        .nav-flex-container {
+            width: auto;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        
+        nav {
+            justify-content: space-between;
+            max-width: 1600px;
+            margin: 0 auto;
+            align-items: center;
+            padding-top: 0.5rem !important;
+        }
+        
+        nav.flex-row {
+            flex-wrap: wrap;
+            padding: 5rem 0 2.5rem;
+            margin: 0 auto;
+            background-color: #ffffff;
+            max-width: unset;
+        }
+        /* logo */
+        
+        nav .logo-container {
+            padding: 1rem 0;
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        
+        .nav-flex-container .wave-container {
+            background-color: #f5f5f5 !important;
+            background-image: url('https://go.pardot.com/l/153091/2022-09-18/pq6xhy/153091/16635492741AhF6jyg/Header_6_Wave.svg');
+            background-size: 100vw;
+            background-repeat: no-repeat;
+            height: 240px;
+            margin-top: -120px;
+        }
+        /* buttons */
+        
+        .form-container .column {
+            width: calc((100% / 2) - 4rem);
+        }
+        
+        .form-container .column:nth-child(1) {
+            padding: 1rem 5.5rem;
+        }
+        
+        main .img-container {
+            margin-top: 3rem;
+        }
+        /* form additional styling - main form css is in form layout template */
+        
+        .form-container {
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+            padding-top: 1rem;
+            background-color: #F5F5F5;
+            max-width: unset;
+            margin: 0 auto;
+        }
+        
+        .form-container .columns-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+        }
+        
+        .form-container .column:nth-child(2) {
+            padding: 2rem 1rem 3rem 0;
+        }
+        
+        .form-container .column:nth-child(2) p {
+            box-shadow: 1px 3px 16px 6px rgba(0, 0, 0, 0.16);
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+        
+        .form-container h1 {
+            text-align: left;
+            color: #000000;
+            margin: 0 auto 1.5rem;
+            font-size: 61.04px;
+            max-width: 800px;
+            text-transform: uppercase;
+        }
+        
+        .form-container h2 {
+            font-family: 'Barlow-Light', Arial, sans-serif !important;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 31.25px;
+            line-height: 125%;
+            color: #56565F;
+        }
+        
+        .form-container .column:nth-child(1) p {
+            font-family: 'Barlow', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 156.3%;
+            letter-spacing: 0.02em;
+            font-feature-settings: 'case' on;
+            color: #56565F;
+        }
+        
+        .section2 {
+            background-color: #f5f5f5;
+            margin: 0rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 110px;
+            padding-bottom: 150px;
+        }
+        
+        .section2 .flex-row {
+            max-width: 1000px;
+            width: 90%;
+        }
+        
+        .section2 .open-quote {
+            margin-right: 3rem;
+        }
+        
+        .section2 .close-quote {
+            margin-left: 3rem;
+        }
+        
+        .section2 svg {
+            color: #000000;
+            margin-top: 0.5rem;
+        }
+        
+        .section2 h3 {
+            font-family: 'Barlow', sans-serif;
+            font-size: 31px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 39px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            margin: 0;
+        }
+        
+        .section2 h4 {
+            font-family: 'Novecento wide', sans-serif;
+            font-size: 20px;
+            font-weight: 650;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: center;
+            text-transform: uppercase;
+            max-width: 600px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            margin: 1rem auto 0;
+        }
+        
+        .copyright {
+            margin-top: 2rem;
+            text-align: center;
+            margin: 5rem auto 0;
+        }
+        
+        @media (max-width: 1400px) {
+            .nav-flex-container .wave-container {
+                height: 180px;
+                margin-top: -100px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .nav-flex-container .wave-container {
+                height: 150px;
+                margin-top: -85px;
+            }
+        }
+        
+        @media (max-width: 940px) {
+            iframe {
+                height: 950px;
+            }
+        }
+        
+        @media (max-width: 810px) {
+            .nav-flex-container .wave-container {
+                margin-top: -60px;
+            }
+        }
+        
+        @media (max-width:405px) {
+            article {
+                padding: 2rem 0 !important;
+            }
+        }
+        /* toggle mobile nav */
+        
+        .menu-button {
+            align-items: center;
+            margin-top: 0.6rem;
+            margin-right: 0rem;
+            display: none;
+        }
+        
+        .menu-button span {
+            width: 26px;
+            height: 4px;
+            margin: 4px 0px;
+            background: #fff;
+            display: block;
+            position: relative;
+            -webkit-transition: all 500ms ease-out;
+            -moz-transition: all 500ms ease-out;
+            transition: all 500ms ease-out;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 1305px) {
+            .form-container .columns-container {
+                flex-wrap: wrap;
+            }
+            .form-container .column {
+                width: 90%;
+                margin: 0 auto;
+                padding: 0 !important;
+            }
+            .form-container h1 {
+                max-width: unset;
+            }
+            .form-container .column:nth-child(2) {
+                display: flex;
+                justify-content: center;
+                padding: 0;
+            }
+            .form-container .column:nth-child(2) p {
+                width: 70%;
+            }
+        }
+        
+        @media (max-width: 1005px) {
+            .nav-col:nth-child(2) {
+                right: 0;
+                top: -100vh;
+                top: 3.5rem;
+                width: 100%;
+                margin-top: -1px;
+                order: 2;
+            }
+            .top-menu {
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .top-menu li {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .top-menu a {
+                font-size: 18px;
+            }
+            .menu-button {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 880px) {
+            .form-container p {
+                width: 100% !important;
+            }
+        }
+        
+        @media (max-width:590px) {
+            .menu-button {
+                margin: 0;
+            }
+            .top-menu a {
+                font-size: 16px;
+            }
+            .hidden-btn {
+                display: flex;
+            }
+            .form-container h1 {
+                font-size: 45px;
+            }
+            .section2 .flex-row svg {
+                width: 25px;
+            }
+        }
+        
+        @media (max-width: 546px) {
+            iframe {
+                height: 1100px;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            .top-menu {
+                align-items: center;
+            }
+        }
+        
+        form.form select::-ms-expand {
+            display: none !important;
+        }
+    </style>
+
+    <style>
+        @font-face {
+            font-family: 'Novecento-WideDemiBold';
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53b2/153091/1658495887F9ZZWqpk/Novecento_WideDemiBold.eot');
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53b2/153091/1658495887F9ZZWqpk/Novecento_WideDemiBold.eot?#iefix') format('embedded-opentype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53b5/153091/16584958871toH5KHi/Novecento_WideDemiBold.svg#Novecento-WideDemiBold') format('svg'), url('https://go.pardot.com/l/153091/2022-07-22/pq53b8/153091/1658495887RDVhsgzb/Novecento_WideDemiBold.ttf') format('truetype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bc/153091/1658495887rgnTTn2z/Novecento_WideDemiBold.woff') format('woff'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bg/153091/1658495888bDjmwyGz/Novecento_WideDemiBold.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Novecento-WideLight';
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53bn/153091/165849622057GG9udy/Novecento_WideLight.eot');
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53bn/153091/165849622057GG9udy/Novecento_WideLight.eot?#iefix') format('embedded-opentype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bk/153091/1658496220apdzzg4q/Novecento_WideLight.svg#Novecento-WideLight') format('svg'), url('https://go.pardot.com/l/153091/2022-07-22/pq53br/153091/1658496221TjLLoJ3g/Novecento_WideLight.ttf') format('truetype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53bv/153091/16584962215EvC5sKR/Novecento_WideLight.woff') format('woff'), url('https://go.pardot.com/l/153091/2022-07-22/pq53by/153091/1658496221Fji5ruQP/Novecento_WideLight.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Barlow-Light';
+            src: url('https://go.pardot.com/l/153091/2022-07-22/pq53c5/153091/1658496587duIHjvQo/Barlow_Light.svg#Barlow-Light') format('svg'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cg/153091/1658496588LG3W4WKH/barlow.light.eot'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cg/153091/1658496588LG3W4WKH/barlow.light.eot?#iefix') format('embedded-opentype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53c8/153091/1658496588dvE7eWGP/Barlow_Light.ttf') format('truetype'), url('https://go.pardot.com/l/153091/2022-07-22/pq53cc/153091/1658496588qHGpKAit/Barlow_Light.woff') format('woff'), url('https://go.pardot.com/l/153091/2022-07-22/pq53ck/153091/1658496588ZYTWOtyW/barlow.light.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-flex-container">
+        <nav class="flex-row">
+            <div class="logo-container nav-col">
+                <a pardot-region="editable-link1" pardot-region-type="link" href="https://www.linqia.com/">
+                    <svg width="119" height="28" viewBox="0 0 119 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 22.913H15.0486V18.8901H4.31289V2.13269C2.84453 1.90525 1.40813 1.65329 0 1.38184V22.913Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.0684 3.69727V22.9132H25.4672V3.72716C23.9816 3.73924 22.5148 3.72936 21.0684 3.69727Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.0501 8.38679C48.0501 12.026 48.1117 15.5419 48.0808 15.5419H48.0501C48.0194 15.5419 45.3139 11.6868 43.8384 9.74377L38.8239 2.9788C37.1336 3.13876 35.4581 3.27879 33.8037 3.38889C33.7255 3.39415 33.6485 3.39757 33.5703 3.4027V22.913H37.8436V15.943C37.8436 11.656 37.7819 8.541 37.8127 8.541H37.8436C37.8743 8.541 40.2415 11.9335 42.1781 14.5858L48.2959 22.913H52.3232V1.38184C50.893 1.57405 49.4684 1.76089 48.0501 1.94076V8.38679Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M70.0198 19.1946C66.0659 19.1946 63.2858 16.3188 63.2858 12.1748C63.2858 8.00012 66.0659 5.15514 70.0198 5.15514C74.0046 5.15514 76.785 8.00012 76.785 12.1748C76.785 16.3188 74.0046 19.1946 70.0198 19.1946ZM70.0193 0.918945C63.8103 0.918945 58.8062 5.65027 58.8062 12.1752C58.8062 17.8962 62.6675 22.2565 67.8262 23.2151V27.0804H72.1199V23.2461C77.3405 22.3184 81.2634 17.958 81.2634 12.1752C81.2634 5.65027 76.2285 0.918945 70.0193 0.918945Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M87.7456 22.9138H92.1444V3.3022C90.6691 2.88218 89.2099 2.37322 87.7456 1.8457V22.9138Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M108.134 6.524C108.165 6.524 108.719 8.3142 109.181 9.51789L111.305 14.9809H104.933L107.057 9.51789C107.518 8.3142 108.072 6.524 108.103 6.524H108.134ZM97.2373 22.9128H101.855L103.455 18.7769H112.782L114.383 22.9128H119L110.45 2.07617C108.744 2.43949 107.026 2.83498 105.295 3.27412L97.2373 22.9128Z" fill="black"/>
+</svg>
+
+                </a>
+            </div>
+
+        </nav>
+        <div class="wave-container">
+        </div>
+    </div>
+
+
+    <section pardot-region="form-container" class="form-container flex-row">
+        <div class="columns-container">
+
+            <div class="column">
+                <h1>We find your audience & drive results</h1>
+                <h2>Take 30 minutes to learn how Linqia can custom design your next influencer marketing program.</h2>
+                <p>Linqia is the calm in the chaotic sea of influencer marketing. We are a full-service, tech-enabled solution that handles campaigns for the world’s leading brands from influencer selection to creative strategy to scale.</p>
+            </div>
+
+            <div class="column">
+                <p>
+                    <!-- form iframe goes here -->
+                    <iframe src="https://go.pardot.com/l/153091/2022-09-02/pq6g72" width="100%" height="900" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section2 flex-column">
+        <div pardot-region="logo" class="logo">
+            <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M46.6062 15.3676C46.6062 14.4196 46.1842 13.5776 45.5542 12.9456C45.9762 12.4196 46.2902 11.6816 46.3962 10.9456C46.3962 9.15564 44.9222 7.68164 43.1322 7.68164H35.5542V18.7336H43.2382C45.1322 18.7336 46.6062 17.2596 46.6062 15.3656V15.3676ZM38.0802 9.99964H42.7122C43.2382 9.99964 43.6602 10.4216 43.6602 10.9476C43.6602 11.4736 43.2382 11.8956 42.7122 11.8956H38.0802V10.0016V9.99964ZM38.0802 16.3156V14.2096H42.8162C43.4482 14.2096 43.8682 14.6316 43.8682 15.2616C43.8682 15.8916 43.4462 16.3136 42.8162 16.3136H38.0802V16.3156Z" fill="black"/>
+<path d="M37.4482 29.9998H43.6582L44.5002 31.8938H47.3422L41.7642 20.8418H39.2382L33.7642 31.8938H36.6062L37.4482 29.9998ZM40.5002 23.6838L42.3942 27.6838H38.6042L40.4982 23.6838H40.5002Z" fill="black"/>
+<path d="M46.1842 64.9476C46.1842 63.0536 44.7102 61.4736 42.8162 61.4736H35.4482V72.5256H38.0802V68.3156H41.1322L44.2902 72.5256H47.4482L44.0802 68.1036C45.3442 67.5776 46.1862 66.4196 46.1862 64.9456L46.1842 64.9476ZM42.6062 65.8956H38.0802V63.7896H42.6062C43.2382 63.7896 43.6582 64.2116 43.6582 64.8416C43.6582 65.4716 43.2362 65.8936 42.6062 65.8936V65.8956Z" fill="black"/>
+<path d="M19.448 37.5785C19.448 35.7885 17.974 34.3145 16.184 34.3145H8.60596V45.3665H16.396C18.29 45.3665 19.764 43.8925 19.764 41.9985C19.764 41.0505 19.342 40.2085 18.712 39.5765C19.134 39.0505 19.448 38.3125 19.448 37.5765V37.5785ZM11.238 36.6305H15.87C16.396 36.6305 16.818 37.0525 16.818 37.5785C16.818 38.1045 16.396 38.5265 15.87 38.5265H11.238V36.6325V36.6305ZM15.974 42.9465H11.238V40.8405H15.974C16.606 40.8405 17.026 41.2625 17.026 41.8925C17.026 42.5225 16.604 42.9445 15.974 42.9445V42.9465Z" fill="black"/>
+<path d="M72.5 37.7904C72.5 35.8964 71.026 34.3164 69.132 34.3164H62.396V45.3684H65.028V41.1584H67.028L70.186 45.3684H73.344L70.08 41.0524C71.448 40.6304 72.502 39.3684 72.502 37.7884L72.5 37.7904ZM68.922 38.7384H65.132V36.6324H68.922C69.448 36.6324 69.974 37.1584 69.974 37.6844C69.974 38.2104 69.552 38.7364 68.922 38.7364V38.7384Z" fill="black"/>
+<path d="M40.6062 39.3684L36.8162 34.3164H33.6582L39.2362 41.4744V45.3684H41.8682V41.4744L47.4482 34.3164H44.2902L40.6062 39.3684Z" fill="black"/>
+<path d="M48.9219 45.5784H58.9219V43.1584H51.5519V41.0524H58.7099V38.6324H51.5519V36.7364H58.9219V34.3164H48.9219V45.5784Z" fill="black"/>
+<path d="M26.8158 34.3164L21.2378 45.3684H24.0798L24.9218 43.4744H31.1318L31.9738 45.3684H34.8158L29.3418 34.3164H26.8158ZM26.0798 41.1584L27.9738 37.1584L29.9738 41.1584H26.0798Z" fill="black"/>
+<path d="M45.5522 50.1056V47.6836H35.5522V58.9476H45.5522V56.5256H38.1842V54.4216H45.3422V51.9996H38.1842V50.1056H45.5522Z" fill="black"/>
+<path d="M80.394 42.422C80.394 41.58 80.5 40.738 80.5 39.896C80.5 39.16 80.5 38.318 80.394 37.474C79.132 16.632 61.764 0 40.5 0C19.236 0 1.868 16.632 0.606 37.474C0.606 38.316 0.712 39.158 0.816 40C0.71 39.158 0.606 38.316 0.606 37.578C0.606 38.42 0.5 39.262 0.5 40.104C0.5 40.84 0.5 41.682 0.606 42.526C1.87 63.368 19.238 80 40.5 80C61.762 80 79.132 63.368 80.394 42.526C80.394 41.696 80.292 40.868 80.188 40.038C80.292 40.868 80.394 41.696 80.394 42.42V42.422ZM75.446 42.528C74.182 60.738 59.024 75.054 40.498 75.054C40.168 75.054 39.84 75.046 39.512 75.04C21.436 74.538 6.792 60.312 5.55 42.528C5.444 41.686 5.444 40.844 5.444 40.002C5.444 39.16 5.444 38.318 5.55 37.476C6.816 19.368 21.974 4.948 40.5 4.948C40.83 4.948 41.158 4.956 41.486 4.962C59.562 5.464 74.206 19.69 75.448 37.474C75.554 38.316 75.554 39.158 75.554 40C75.554 40.842 75.554 41.684 75.448 42.526L75.446 42.528Z" fill="black"/>
+</svg>
+        </div>
+        <div class="flex-row">
+            <div pardot-region="open-quote" class="open-quote">
+                <svg width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.787 4.01466C15.9491 2.08169 19.5301 0.871723 23.1919 0.333724C23.4449 0.297573 27.968 -0.144735 27.968 0.048775V8.46752C19.6534 8.15918 15.5451 12.7864 15.5451 12.7864C15.5451 12.7864 27.3513 13.6008 27.968 25.6112C28.0679 27.5654 27.8978 29.558 27.279 31.4229C27.1004 31.963 26.8792 32.4904 26.6219 32.9986C24.538 37.0921 19.8937 39.7481 15.3622 39.9671C10.5733 40.1989 5.98653 37.6535 3.21572 33.8173C-0.679994 28.4224 -0.0165313 21.4497 2.88612 15.3956C5.17421 10.6216 8.85302 6.42184 12.787 4.01679V4.01466Z" fill="#A8D201"/>
+            <path d="M43.4829 4.01466C46.6449 2.08169 50.2259 0.871723 53.8877 0.333724C54.1408 0.297573 58.6638 -0.144735 58.6638 0.048775V8.46752C50.3493 8.15918 46.2409 12.7864 46.2409 12.7864C46.2409 12.7864 58.0471 13.6008 58.6638 25.6112C58.7638 27.5655 58.5936 29.558 57.9748 31.4229C56.5926 35.5865 53.0584 38.2978 48.9458 39.4865C43.1766 41.1515 37.3926 38.638 33.9116 33.8173C26.9431 24.1695 34.5601 9.46909 43.4829 4.01679V4.01466Z" fill="#A8D201"/>
+            </svg>
+            </div>
+            <div pardot-region="quote" class="quote">
+                <h3>What sets Linqia apart is the entire sequence of capabilities. Throughout the chain, it's all high-quality.</h3>
+                <h4>Denise Vitola | VP Brand Integration PR, Social & Influencer at Bayer </h4>
+            </div>
+            <div pardot-region="close-quote" class="close-quote">
+                <svg width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M46.434 4.0165C43.3289 2.08264 39.8123 0.872123 36.2164 0.333877C35.9679 0.29771 31.5262 -0.1448 31.5262 0.0487979L31.5262 8.47139C39.6912 8.16291 43.7256 12.7923 43.7256 12.7923C43.7256 12.7923 32.1318 13.6071 31.5262 25.6229C31.4281 27.5781 31.5951 29.5715 32.2028 31.4373C32.3782 31.9776 32.5954 32.5052 32.8481 33.0137C34.8945 37.1091 39.4552 39.7662 43.9052 39.9854C48.6079 40.2173 53.1122 37.6707 55.8332 33.8328C59.6588 28.4354 59.0072 21.4595 56.1568 15.4026C53.9099 10.6265 50.2973 6.42478 46.434 4.01863L46.434 4.0165Z" fill="#A8D201"/>
+            <path d="M15.4338 4.01466C12.3286 2.08169 8.81213 0.871724 5.21627 0.333724C4.96778 0.297574 0.526216 -0.144734 0.526217 0.0487756L0.526219 8.46752C8.69102 8.15918 12.7254 12.7864 12.7254 12.7864C12.7254 12.7864 1.13179 13.6008 0.526225 25.6112C0.428082 27.5655 0.595134 29.558 1.2028 31.4229C2.56012 35.5865 6.03068 38.2978 10.0692 39.4865C15.7345 41.1515 21.4143 38.638 24.8327 33.8173C31.6757 24.1695 24.1958 9.46909 15.4338 4.01679L15.4338 4.01466Z" fill="#A8D201"/>
+            </svg>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>
