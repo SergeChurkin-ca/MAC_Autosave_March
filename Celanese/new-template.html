@@ -26,6 +26,7 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoString" id="logowidth" mktoName="Logo width (px)" default="163">    
     <meta class="mktoString" id="bannerBackgroundImg" mktoName="Banner Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/Home_Elements_of_Opportunity_Carousel_image.jpeg">
 	<meta class="mktoString" id="banner2BackgroundImg" mktoName="Banner 2 Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/bg-hero.jpg">
+	<meta class="mktoString" id="banner3BackgroundImg" mktoName="Banner 2 Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/bg-forest.png">
     <meta class="mktoString" id="banner-padding-top" mktoName="Banner Padding Top (px)" default="140">
     <meta class="mktoBoolean" id="background-attachment" mktoName="Banner Bg Img Fixed?" default="false" true_value="fixed" false_value="unset" false_value_name="No" true_value_name="Fixed">
     <meta class="mktoString" id="banner-padding-bottom" mktoName="Banner Padding Bottom (px)" default="70">
@@ -45,7 +46,6 @@ Button Banner Hover color = #1FA2DC
 
     <meta class="mktoString" id="bannerButtonLabel" mktoName="Banner Button Label" default="Download Now">
     <meta class="mktoString" id="bannerButtonLink" mktoName="Banner Button Link" default="#">
-
 
     <meta class="mktoString" id="headerImage" mktoName="Header Image" default="https://dummyimage.com/1170x335/007d9a/ffffff">
     <meta class="mktoString" id="header-img-width" mktoName="Header Image Width (vw)" default="100">
@@ -79,6 +79,7 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoBoolean" id="showBanner" mktoName="Show Banner Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBannerContent" mktoName="Show Banner Content?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBanner2" mktoName="Show Banner ver. 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showBanner3" mktoName="Show Banner ver. 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBannerButton" mktoName="Show Banner Button?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -185,13 +186,26 @@ Button Banner Hover color = #1FA2DC
         padding: 0;
       }
       #banner2 .row {
-        max-width: 960px;
+        max-width: 700px;
       }
       #banner2 h1 {
         font-size: 40px;
         font-weight: 500 !important;
         margin: 2rem 0;
         line-height: 1.2;
+      }
+      #banner3 {
+        background: url(${banner3BackgroundImg}) left center/cover no-repeat;
+        padding: 10rem 0;
+      }
+      #banner3 .row {
+        padding: 0 20px;
+      }
+      #banner3 h3 {
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: 300;
+        text-shadow: 1px 1px 15px #000;
       }
       /* Header setup */
       .header-image-wrapper {
@@ -227,6 +241,24 @@ Button Banner Hover color = #1FA2DC
       /* Section 2a */
         #section2a {
         background-color: ${section2aBgColor};
+      }
+      
+      #section2a .row {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        justify-content: space-between;
+        gap: 6rem;
+      }
+      #section2a .column:nth-child(1) {
+        width: calc((100% / 2) + 10% - 6rem);
+      }
+      #section2a .column:nth-child(2) {
+        
+        width: calc((100% / 2) - 10% - 6rem);
+      }
+      #section2a .column:nth-child(2) {
+        background: #ffffff;
+        padding: 2.5rem;
       }
       /* Section 3 */
       #section3 {
@@ -743,7 +775,8 @@ Button Banner Hover color = #1FA2DC
           </div>
       </div>
     </div>
-    <!-- End Banner ver 2 -->
+    <!-- End Banner ver 3 -->
+    
 
     <!-- Section 1 -->
     <div id="section1" style="display:${showSection1};">
@@ -796,9 +829,9 @@ Button Banner Hover color = #1FA2DC
       <div id="section2a" style="display:${showSection2a};"> 
         <div class="container padding40 paddingbottom-15">
           <div class="row">  
-            <div class="column col-md-8" id="main-content2" >
+            <div class="column" id="main-content2a" >
 
-              <div class="mktoText" id="section-2-left" mktoName="Section 2 Left Content" style="padding:0px 20px;">
+              <div class="mktoText" id="section-2a-left" mktoName="Section 2a Left Col Text">
                 <h2>SECTION 2a TITLE</h2>
                 <h4 class="sub-head">Celanese supplies industrial chemicals used in additives, architectural coatings, inks, films, solvents, pharmaceutical and vinyl foundations.</h4>
                 <hr class="line">
@@ -808,14 +841,14 @@ Button Banner Hover color = #1FA2DC
               </div>
 
             </div>
-              <div class="column col-md-4">
+              <div class="column">
                             <h3><strong>Want to know more?&nbsp;</strong></h3>
                             <p class="lead">Download our biopolymer literature and watch our new video here.</p>
                             <img alt="video thumbnail" src="https://explore.celanese.com/rs/139-DBZ-834/images/video.png">
                             <div class="row">
-                                <div class="col-md-6"><img class="img-fluid" src="https://explore.celanese.com/rs/139-DBZ-834/images/thumbnail %281%29.png" alt="Clarifoil Brochure"><button class="btn btn-link btn-sm w-100" type="button">Download</button></div>
+                                <div class="col-md-6"><img class="img-fluid" src="https://explore.celanese.com/rs/139-DBZ-834/images/thumbnail %281%29.png" alt="Clarifoil Brochure"><a>Download</a></div>
                                 
-                                <div class="col-md-6"><img class="img-fluid" src="https://explore.celanese.com/rs/139-DBZ-834/images/thumbnail %281%29.png" alt="Life Cycle Infographic"><button class="btn btn-link btn-sm w-100" type="button">Download</button></div>
+                                <div class="col-md-6"><img class="img-fluid" src="https://explore.celanese.com/rs/139-DBZ-834/images/thumbnail %281%29.png" alt="Life Cycle Infographic"><a>Download</button></div>
                             </div>
             </div>
           </div>
@@ -1080,6 +1113,19 @@ Button Banner Hover color = #1FA2DC
                 </div>
               </div>
               <!-- End Client Logos -->
+
+                                                                                                                                                                                                               <!-- Banner verion 3-->	
+    <div style="display:${showBanner3};">
+      <div id="banner3">
+          <div class="container">
+            <div class="row">
+           <h3><strong>Celanese BioPolymer Solutions</strong><br>The Best Packaging Solutions Begin + Return to Nature<br></h3>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- End Banner ver 3 -->
+                                                                                                                                                                                             
 
               <!-- Footer Bottom -->	      
               <div id="footerSection" style="display:${showFooter};"> 
