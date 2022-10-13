@@ -1,0 +1,50 @@
+#inlineTextForm form.mktoForm {
+    border: none !important;
+    max-width: unset !important;
+    padding: 0 !important;
+}
+
+#inlineTextForm .mktoForm .mktoLabel {
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+#inlineTextForm .mktoForm .mktoOffset,
+#inlineTextForm .mktoForm .mktoGutter {
+    display: none !important;
+}
+
+#inlineTextForm .mktoForm {
+    display: flex;
+}
+
+#inlineTextForm .mktoForm .mktoButtonRow,
+#inlineTextForm .mktoFieldDescriptor.mktoFormCol {
+    margin: 0 !important
+}
+
+#inlineTextForm .mktoForm .mktoButtonRow {
+    display: flex !important;
+    align-items: end;
+    width: fit-content !important;
+}
+
+#inlineTextForm .mktoForm .mktoButtonWrap {
+    margin: 0 !important;
+}
+
+#inlineTextForm .mktoButton {
+    padding: 12px 16px !important;
+}
+
+#inlineTextForm .mktoForm input[type=text],
+#inlineTextForm .mktoForm input[type=url],
+#inlineTextForm .mktoForm input[type=email],
+#inlineTextForm .mktoForm input[type=tel],
+#inlineTextForm .mktoForm input[type=number],
+#inlineTextForm .mktoForm input[type=date],
+#inlineTextForm .mktoForm select.mktoField,
+#inlineTextForm .mktoForm textarea.mktoField {
+    font-size: 20px !important;
+    border-radius: 0 !important;
+}

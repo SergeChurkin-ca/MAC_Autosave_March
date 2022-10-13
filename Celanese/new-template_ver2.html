@@ -25,8 +25,8 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoString" id="logoLink" mktoName="Logo Link" default="https://celanese.com/">    
     <meta class="mktoString" id="logowidth" mktoName="Logo width (px)" default="163">    
     <meta class="mktoString" id="bannerBackgroundImg" mktoName="Banner Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/Home_Elements_of_Opportunity_Carousel_image.jpeg">
-	<meta class="mktoString" id="banner2BackgroundImg" mktoName="Banner 2 Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/bg-hero.jpg">
-	<meta class="mktoString" id="banner3BackgroundImg" mktoName="Banner 3 Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/bg-forest.png">
+    <meta class="mktoString" id="banner2BackgroundImg" mktoName="Banner 2 Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/Home_Elements_of_Opportunity_Carousel_image.jpeg">
+    <meta class="mktoString" id="banner3BackgroundImg" mktoName="Banner 3 Background Image" default="https://explore.celanese.com/rs/139-DBZ-834/images/bg-forest.png">
     <meta class="mktoString" id="banner-padding-top" mktoName="Banner Padding Top (px)" default="140">
     <meta class="mktoBoolean" id="background-attachment" mktoName="Banner Bg Img Fixed?" default="false" true_value="fixed" false_value="unset" false_value_name="No" true_value_name="Fixed">
     <meta class="mktoString" id="banner-padding-bottom" mktoName="Banner Padding Bottom (px)" default="70">
@@ -46,6 +46,7 @@ Button Banner Hover color = #1FA2DC
 
     <meta class="mktoString" id="bannerButtonLabel" mktoName="Banner Button Label" default="Download Now">
     <meta class="mktoString" id="bannerButtonLink" mktoName="Banner Button Link" default="#">
+
 
     <meta class="mktoString" id="headerImage" mktoName="Header Image" default="https://dummyimage.com/1170x335/007d9a/ffffff">
     <meta class="mktoString" id="header-img-width" mktoName="Header Image Width (vw)" default="100">
@@ -78,12 +79,12 @@ Button Banner Hover color = #1FA2DC
     <meta class="mktoBoolean" id="showHeaderImage" mktoName="Show Header Image?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBanner" mktoName="Show Banner Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBannerContent" mktoName="Show Banner Content?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showBanner2" mktoName="Show Banner ver. 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showBanner3" mktoName="Show Banner ver. 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showBanner2" mktoName="Show Banner ver. 2?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showBannerButton" mktoName="Show Banner Button?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection1" mktoName="Show Section 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection2" mktoName="Show Section 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showSection2a" mktoName="Show Section 2a?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showSection2a" mktoName="Show Section 2a - Two Cols?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showBanner3" mktoName="Show Banner ver. 3?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showSection2Form" mktoName="Show Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="form-max-width" mktoName="Form Max Width (px)" default="500">
     <meta class="mktoBoolean" id="showFormLeftText" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -161,10 +162,6 @@ Button Banner Hover color = #1FA2DC
       #banner .container {
         background-color: ${banner-container-BgColor} !important;
       }
-      #banner2 .row {
-        margin: 0 auto !important;
-        padding: 0 20px;
-      }
       #banner h1,
       #banner2 h1 {
         color:${bannerContent-h1-color} !important;
@@ -187,17 +184,27 @@ Button Banner Hover color = #1FA2DC
         padding: 0;
       }
       #banner2 .row {
-        max-width: 700px;
+        margin: 0 auto !important;
+        padding: 0 15px !important;
       }
       #banner2 h1 {
         font-size: 40px;
         font-weight: 500 !important;
-        margin: 2rem 0;
+        margin: 2.5rem 0;
         line-height: 1.2;
       }
+      @media (max-width:600px) {
+        #banner2 {
+          height: auto;
+        }
+        #banner2 h1 {
+          font-size: calc(2.375rem + 1.5vw);
+        }
+      }
+      /* Banner version 3 */
       #banner3 {
         background: url(${banner3BackgroundImg}) left center/cover no-repeat;
-        padding: 10rem 0;
+        padding: 15rem 0;
       }
       #banner3 .row {
         padding: 0 20px;
@@ -228,10 +235,9 @@ Button Banner Hover color = #1FA2DC
       #section2 {
         background-color: ${section2BgColor};
       }
-      #section2 .flex-row, #section2a .row {
+      #section2 .row {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
       }
       #section2 #main-content {
         flex: 1 0 350px;
@@ -240,12 +246,14 @@ Button Banner Hover color = #1FA2DC
         max-width: ${form-max-width}px;
         margin: 0 auto;
       }
-      
       /* Section 2a */
-        #section2a {
+      /* Section 2a */
+      #section2a {
         background-color: ${section2aBgColor};
       }
-      
+      .column {
+        max-width: 100%;
+      }
       #section2a .flex-row {
         margin: 2rem 0;
         justify-content: space-between;
@@ -268,7 +276,7 @@ Button Banner Hover color = #1FA2DC
         padding: 0 20px;
       }
       #section2a .column:nth-child(2) {
-       flex: 1 0 350px; 
+        flex: 1 0 350px; 
         width: calc((100% / 2) - 10% - 6rem);
       }
       #section2a .column:nth-child(2) {
@@ -320,6 +328,11 @@ Button Banner Hover color = #1FA2DC
         background-color: ${footerBgColor};
         padding:25px 0px 15px 0px;
       }
+      div#footerContainer {
+        margin-top: 0 !important;
+        padding-top: 20px !important;
+
+      }                                                                                                                                                                                                                                                                                                                                                                  
       #bottomGradient {
         display: ${show-bottomGradient};
       }
@@ -525,6 +538,60 @@ Button Banner Hover color = #1FA2DC
         color: #333 !important;
         border: 1px solid #ccc !important;
         border-radius: 3px !important;
+      }
+    </style>
+
+    <!-- Email contact Form for two columns section -->
+    <style>
+      #inlineTextForm form.mktoForm {
+        border: none !important;
+        max-width: unset !important;
+        padding: 0 !important;
+      }
+
+      #inlineTextForm .mktoForm .mktoLabel {
+        font-weight: 400;
+        margin-bottom: 0.75rem;
+      }
+
+      #inlineTextForm .mktoForm .mktoOffset,
+      #inlineTextForm .mktoForm .mktoGutter {
+        display: none !important;
+      }
+
+      #inlineTextForm .mktoForm {
+        display: flex;
+      }
+
+      #inlineTextForm .mktoForm .mktoButtonRow,
+      #inlineTextForm .mktoFieldDescriptor.mktoFormCol {
+        margin: 0 !important
+      }
+
+      #inlineTextForm .mktoForm .mktoButtonRow {
+        display: flex !important;
+        align-items: end;
+        width: fit-content !important;
+      }
+
+      #inlineTextForm .mktoForm .mktoButtonWrap {
+        margin: 0 !important;
+      }
+
+      #inlineTextForm .mktoButton {
+        padding: 12px 16px !important;
+      }
+
+      #inlineTextForm .mktoForm input[type=text],
+      #inlineTextForm .mktoForm input[type=url],
+      #inlineTextForm .mktoForm input[type=email],
+      #inlineTextForm .mktoForm input[type=tel],
+      #inlineTextForm .mktoForm input[type=number],
+      #inlineTextForm .mktoForm input[type=date],
+      #inlineTextForm .mktoForm select.mktoField,
+      #inlineTextForm .mktoForm textarea.mktoField {
+        font-size: 20px !important;
+        border-radius: 0 !important;
       }
     </style>
 
@@ -784,18 +851,22 @@ Button Banner Hover color = #1FA2DC
     <!-- Banner verion 2-->	
     <div style="display:${showBanner2};">
       <div id="banner2" class="bg-blur">
-          <div class="container-option2 container">
-            <div class="row">
+        <div class="banner-content container">
+
+          <div class="container-option2">
+            <div class="mktoText row" mktoName="Banner 2 Text" id="banner2-txt">
+
               <h1>You want to transition your brands to more sustainable packaging.<br>It's hard. We get that.<br></h1>
               <h1>Celanese has a way to make it so much easier.<br></h1>
               <h1>High performance biopolymer film + pellets that are<br></h1>
               <h1><strong>RENEWABLE</strong><br><strong>BIODEGRADABLE</strong><br><strong>COMPOSTABLE</strong><br></h1>
+
             </div>
           </div>
+        </div>
       </div>
     </div>
-    <!-- End Banner ver 3 -->
-    
+    <!-- End Banner ver 2 -->
 
     <!-- Section 1 -->
     <div id="section1" style="display:${showSection1};">
@@ -844,7 +915,8 @@ Button Banner Hover color = #1FA2DC
         </div>
       </div>
 
-      <!-- Section 2a - Two Columns-->   
+      <!-- end of Section 2 -->
+      <!-- Section 2a - Two columns -->
       <div id="section2a" style="display:${showSection2a};"> 
         <div class="container padding40 paddingbottom-15">
           <div class="flex-row">  
@@ -857,436 +929,441 @@ Button Banner Hover color = #1FA2DC
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
                 <p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
-              </div>
 
+              </div>
+              <div class="mktoForm" id="inlineTextForm" mktoName="Two Cols Inline Form">
+              </div>
+              <div class="mktoText" id="section-2a-left2" mktoName="Section 2a Left Col Text2">
+                <p>text under the form</p>
+              </div>
             </div>
-              <div class="column">
+            <div class="mktoText column" mktoName="Section2a - column 2" id="section2a-column2">
               <h3><strong>Want to know more?&nbsp;</strong></h3>
               <p class="lead">Download our biopolymer literature and watch our new video here.</p>
               <img alt="video thumbnail" src="https://explore.celanese.com/rs/139-DBZ-834/images/video.png">
               <div class="flex-row row2">
-                  <div class="column-sm"><img class="img-fluid" src="https://explore.celanese.com/rs/139-DBZ-834/images/thumbnail %281%29.png" alt="Clarifoil Brochure"><a>Download</a></div>
-                  
-                  <div class="column-sm"><img class="img-fluid" src="https://explore.celanese.com/rs/139-DBZ-834/images/thumbnail %281%29.png" alt="Life Cycle Infographic"><a>Download</button></a></div>
+                <div class="column-sm"><img class="img-fluid" src="https://explore.celanese.com/rs/139-DBZ-834/images/thumbnail %281%29.png" alt="Clarifoil Brochure"><a>Download</a></div>
+
+                <div class="column-sm"><img class="img-fluid" src="https://explore.celanese.com/rs/139-DBZ-834/images/thumbnail %281%29.png" alt="Life Cycle Infographic"><a>Download</button></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of Section 2a - two columns
+
+<div>
+
+
+<!-- Section 3 -->
+    <div id="section3" style="display:${showSection3};"> 
+      <section id="three-main" class="section30 white-text padding40">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="mktoText" id="section-3" mktoName="Section 3 Headline">
+                <div class="headline">
+                  <h2>Section 3 Headline</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquando posse.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="mktoText" id="section-3-1" mktoName="Section 3 Point 1">
+                <div class="main-point"><!-- Main Point -->
+                  <div class="line-font">
+                    <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
+                  </div><!-- Main Point Icon -->
+                  <h3>Section 3 Point 1</h3><!-- Main Point Title -->
+                  <p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p><!-- Main Point Text -->
+                </div><!-- End Main Point -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mktoText" id="section-3-2" mktoName="Section 3 Point 2">
+                <div class="main-point">
+                  <div class="line-font">
+                    <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
+                  </div>
+                  <h3>Section 3 Point 2</h3>
+                  <p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="mktoText" id="section-3-3" mktoName="Section 3 Point 3">
+                <div class="main-point">
+                  <div class="line-font">
+                    <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
+                  </div>
+                  <h3>Section 3 Point 3</h3>
+                  <p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p>
+                </div>
+              </div>
+            </div>				
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+  <!--End Section 3 -->
+
+  <div><!-- Separator -->
+
+
+    <div class="container">
+      <div id="section4" style="display:${showSection4};"> 
+        <div class="row paddingtop-40">
+          <div class="col-lg-6 col-md-6">
+            <div class="mktoText img-responsive" id="section-4-image" mktoName="Section 4 Image">
+              <img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="mktoText" id="section-4" mktoName="Section 4 Points">
+              <div class="features"><!-- Main Points -->
+                <h3>Section 4 - Point 1</h3><!-- Main Title -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p><!-- Main Text -->
+              </div><!-- End Main Points -->
+              <div class="features">
+                <h3>Section 4 - Point 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="features">
+                <h3>Section 4 - Point 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <div id="section5" style="display:${showSection5};"> 
+        <div class="row section paddingtop-40">
+          <div class="col-lg-6 col-md-6 section5-img" style="float:right;">
+            <div class="mktoText img-responsive" id="section-5-image" mktoName="Section 5 Image">
+              <img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6" style="float:left;">
+            <div class="mktoText" id="section-5" mktoName="Section 5 Text">
+              <h2>SECTION 5 TITLE</h2>
+              <h4 class="sub-head">Sub Header</h4>
+              <hr class="line">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="section6" style="display:${showSection6};"> 
+        <div class="row section paddingbottom-50">
+          <div class="col-md-6">
+            <div class="mktoText img-responsive" id="section-6-image" mktoName="Section 6 Image">
+              <img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mktoText" id="section-6" mktoName="Section 6 Text">
+              <div>
+                <h2>SECTION 6 TITLE</h2>
+                <h4 class="sub-head">Sub Head</h4>
+                <hr class="line">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                <ul class="green-arrow"><!--Green arrow list -->
+                  <li>Many addon features</li>
+                  <li>Fully responsive &amp; adaptive</li>
+                  <li>SEO optimized</li>
+                  <li>Attractive with a modern touch</li>
+                  <li>Full Support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+
+      <!-- Video -->
+      <div id="section7" style="display:${showSection7};">
+        <section id="how-it-works" class="section30 bg-section white-text padding40">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mktoText" id="section-7" mktoName="Section 7">
+                  <div class="headline">
+                    <h2>Section 7 Video Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquando posse.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                <div class="video-container">
+
+                  <div id="player"></div>
+                  <script>
+                    var tag = document.createElement('script');
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    document.getElementsByTagName('head')[0].appendChild(tag);
+
+
+                    //Change '{{my.VideoURL}}' to video needed//
+
+                    var player, videoId = '{{my.VideoURL}}';
+                    function onYouTubeIframeAPIReady() {
+                      player = new YT.Player('player', {
+                        height: '390',
+                        width: '640',
+                        videoId: videoId,
+                        events: {
+                          'onStateChange': onPlayerStateChange
+                        }
+                      });
+                    }
+                    function onPlayerStateChange(event) {
+                      switch( event.data ) {
+
+
+                          //Send video started event to Marketo// 
+
+                        case YT.PlayerState.PLAYING: Munchkin.munchkinFunction('visitWebPage', {
+                          url: '/video/'+videoId
+                          , params: 'video=started'
+                        }
+                                                                              );
+                          break;
+
+
+                          //Send video finished event to Marketo//
+
+                        case YT.PlayerState.ENDED: Munchkin.munchkinFunction('visitWebPage', {
+                          url: '/video/'+videoId
+                          , params: 'video=finished'
+                        }
+                                                                            );
+                          break;
+                      }
+                    }
+                  </script>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Video -->
+
       <div>
 
-
-        <!-- Section 3 -->
-        <div id="section3" style="display:${showSection3};"> 
-          <section id="three-main" class="section30 white-text padding40">
+        <!-- Video 2 START -->
+        <div id="section9" style="display:${showSection9};">
+          <section id="how-it-works" class="section30 bg-section white-text padding40">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="mktoText" id="section-3" mktoName="Section 3 Headline">
+                  <div class="mktoText" id="section-9" mktoName="Section 9">
                     <div class="headline">
-                      <h2>Section 3 Headline</h2>
+                      <h2>Section 9 Video Title</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquando posse.</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row text-center">
-                <div class="col-md-4">
-                  <div class="mktoText" id="section-3-1" mktoName="Section 3 Point 1">
-                    <div class="main-point"><!-- Main Point -->
-                      <div class="line-font">
-                        <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
-                      </div><!-- Main Point Icon -->
-                      <h3>Section 3 Point 1</h3><!-- Main Point Title -->
-                      <p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p><!-- Main Point Text -->
-                    </div><!-- End Main Point -->
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <div class="video-container">
+                    <iframe src="${section9VideoLink}"></iframe> <!-- Responsive video iframe -->
                   </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="mktoText" id="section-3-2" mktoName="Section 3 Point 2">
-                    <div class="main-point">
-                      <div class="line-font">
-                        <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
-                      </div>
-                      <h3>Section 3 Point 2</h3>
-                      <p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="mktoText" id="section-3-3" mktoName="Section 3 Point 3">
-                    <div class="main-point">
-                      <div class="line-font">
-                        <img src="https://dummyimage.com/175x125/EEF3F9/B3B8C4">
-                      </div>
-                      <h3>Section 3 Point 3</h3>
-                      <p>Lorem ipsum dolor sit amet, magna consectetur adipisicing elit, sed do eiusmod incididunt. </p>
-                    </div>
-                  </div>
-                </div>				
+                  <div class="col-md-2"></div>
+                </div>	
               </div>
             </div>
           </section>
         </div>
-      </div>
-      <!--End Section 3 -->
-
-      <div><!-- Separator -->
-
-
-        <div class="container">
-          <div id="section4" style="display:${showSection4};"> 
-            <div class="row paddingtop-40">
-              <div class="col-lg-6 col-md-6">
-                <div class="mktoText img-responsive" id="section-4-image" mktoName="Section 4 Image">
-                  <img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <div class="mktoText" id="section-4" mktoName="Section 4 Points">
-                  <div class="features"><!-- Main Points -->
-                    <h3>Section 4 - Point 1</h3><!-- Main Title -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p><!-- Main Text -->
-                  </div><!-- End Main Points -->
-                  <div class="features">
-                    <h3>Section 4 - Point 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                  </div>
-                  <div class="features">
-                    <h3>Section 4 - Point 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="section5" style="display:${showSection5};"> 
-            <div class="row section paddingtop-40">
-              <div class="col-lg-6 col-md-6 section5-img" style="float:right;">
-                <div class="mktoText img-responsive" id="section-5-image" mktoName="Section 5 Image">
-                  <img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6" style="float:left;">
-                <div class="mktoText" id="section-5" mktoName="Section 5 Text">
-                  <h2>SECTION 5 TITLE</h2>
-                  <h4 class="sub-head">Sub Header</h4>
-                  <hr class="line">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut. Ut ad minim veniam.</p>
-                  <p>Vestibulum ante ipsum primis in faucibus orci luctus etel ultrices posuere cubilia Curae.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="section6" style="display:${showSection6};"> 
-            <div class="row section paddingbottom-50">
-              <div class="col-md-6">
-                <div class="mktoText img-responsive" id="section-6-image" mktoName="Section 6 Image">
-                  <img src="https://dummyimage.com/530x380/EEF3F9/B3B8C4" alt="" title="">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="mktoText" id="section-6" mktoName="Section 6 Text">
-                  <div>
-                    <h2>SECTION 6 TITLE</h2>
-                    <h4 class="sub-head">Sub Head</h4>
-                    <hr class="line">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-                    <ul class="green-arrow"><!--Green arrow list -->
-                      <li>Many addon features</li>
-                      <li>Fully responsive &amp; adaptive</li>
-                      <li>SEO optimized</li>
-                      <li>Attractive with a modern touch</li>
-                      <li>Full Support</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Video 2 END -->
         <div>
 
-          <!-- Video -->
-          <div id="section7" style="display:${showSection7};">
-            <section id="how-it-works" class="section30 bg-section white-text padding40">
+          <!-- Client Logos -->      
+          <div id="section8" style="display:${showSection8};"> 
+            <div id="clients" class="padding40 bg-grey hidden-xs">
               <div class="container">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="mktoText" id="section-7" mktoName="Section 7">
-                      <div class="headline">
-                        <h2>Section 7 Video Title</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquando posse.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-2"></div>
-                  <div class="col-md-8">
-                    <div class="video-container">
-
-                      <div id="player"></div>
-                      <script>
-                        var tag = document.createElement('script');
-                        tag.src = "https://www.youtube.com/iframe_api";
-                        document.getElementsByTagName('head')[0].appendChild(tag);
-
-
-                        //Change '{{my.VideoURL}}' to video needed//
-
-                        var player, videoId = '{{my.VideoURL}}';
-                        function onYouTubeIframeAPIReady() {
-                          player = new YT.Player('player', {
-                            height: '390',
-                            width: '640',
-                            videoId: videoId,
-                            events: {
-                              'onStateChange': onPlayerStateChange
-                            }
-                          });
-                        }
-                        function onPlayerStateChange(event) {
-                          switch( event.data ) {
-
-
-                              //Send video started event to Marketo// 
-
-                            case YT.PlayerState.PLAYING: Munchkin.munchkinFunction('visitWebPage', {
-                              url: '/video/'+videoId
-                              , params: 'video=started'
-                            }
-                                                                                  );
-                              break;
-
-
-                              //Send video finished event to Marketo//
-
-                            case YT.PlayerState.ENDED: Munchkin.munchkinFunction('visitWebPage', {
-                              url: '/video/'+videoId
-                              , params: 'video=finished'
-                            }
-                                                                                );
-                              break;
-                          }
-                        }
-                      </script>
-                    </div>
-                    <div class="col-md-2"></div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-          <!-- Video -->
-
-          <div>
-
-
-            <!-- Video 2 START -->
-            <div id="section9" style="display:${showSection9};">
-              <section id="how-it-works" class="section30 bg-section white-text padding40">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <div class="mktoText" id="section-9" mktoName="Section 9">
-                        <div class="headline">
-                          <h2>Section 9 Video Title</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquando posse.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                      <div class="video-container">
-                        <iframe src="${section9VideoLink}"></iframe> <!-- Responsive video iframe -->
-                      </div>
-                      <div class="col-md-2"></div>
-                    </div>	
-                  </div>
-                </div>
-              </section>
-            </div>
-            <!-- Video 2 END -->
-            <div>
-
-              <!-- Client Logos -->      
-              <div id="section8" style="display:${showSection8};"> 
-                <div id="clients" class="padding40 bg-grey hidden-xs">
-                  <div class="container">
-                    <div class="mktoText" id="section-8" mktoName="Section 8">
-                      <ul class="list-inline clients-logo text-center">
-                        <li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title=""  /></li><!--Image path of logo -->
-                        <li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
-                        <li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
-                        <li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Client Logos -->
-
-                                                                                                                                                                                                               <!-- Banner verion 3-->	
-    <div style="display:${showBanner3};">
-      <div id="banner3">
-          <div class="container">
-            <div class="row">
-           <h3><strong>Celanese BioPolymer Solutions</strong><br>The Best Packaging Solutions Begin + Return to Nature<br></h3>
-            </div>
-          </div>
-      </div>
-    </div>
-    <!-- End Banner ver 3 -->
-                                                                                                                                                                                             
-
-              <!-- Footer Bottom -->	      
-              <div id="footerSection" style="display:${showFooter};"> 
-                <div id="footerContainer">
-                  <footer>
-                    <h1 >About Celanese</h1>
-                    <hr class="horizontal-gradient">
-                    <section id="about">
-                      <p >Celanese (NYSE: CE) is a global technology and specialty materials company that engineers and manufactures a wide variety of products essential to everyday living.</p>
-                    </section>
-                    <section id="navigation"><nav >
-                      <ul>
-                        <li><a href="https://celanese.com/contact-us.aspx">Contact information</a></li>
-                        <li><a href="https://celanese.com/disclaimer.aspx">Disclaimer</a></li>
-                        <li><a href="https://www.celanese.com/terms-and-conditions.aspx">Terms &amp; conditions</a></li>
-                        <li><a href="https://celanese.com/careers.aspx">Careers</a></li>
-                        <li><a href="https://celanese.com/California%20Transparency%20Act.aspx">California transparency</a></li>
-                        <li><a href="https://explore.celanese.com/privacy-policy.html" target="_blank">Privacy policy</a></li>
-                      </ul>
-                      </nav></section>
-                    <section id="followUs">
-                      <h1 >Follow us</h1>
-                      <nav class="footer-nav">
-                        <ul>
-                          <li><a href="https://twitter.com/Celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
-                          <li><a href="https://www.facebook.com/Celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"> <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a></li>
-                          <li><a href="https://www.linkedin.com/company/celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
-                          <li><a href="https://www.youtube.com/user/CelaneseCorporation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"> <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></li>
-                          <li><a href="http://www.celaneseblog.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M25.57 176.1C12.41 175.4 .9117 185.2 .0523 198.4s9.173 24.65 22.39 25.5c120.1 7.875 225.7 112.7 233.6 233.6C256.9 470.3 267.4 480 279.1 480c.5313 0 1.062-.0313 1.594-.0625c13.22-.8438 23.25-12.28 22.39-25.5C294.6 310.3 169.7 185.4 25.57 176.1zM32 32C14.33 32 0 46.31 0 64s14.33 32 32 32c194.1 0 352 157.9 352 352c0 17.69 14.33 32 32 32s32-14.31 32-32C448 218.6 261.4 32 32 32zM63.1 351.9C28.63 351.9 0 380.6 0 416s28.63 64 63.1 64s64.08-28.62 64.08-64S99.37 351.9 63.1 351.9z"/></svg></li>
-                        </ul>
-                      </nav></section>
-                    <section id="copyright" >
-                      <p >&copy;
-                        <script>// <![CDATA[
-                          document.write(new Date().getFullYear());
-                          // ]]></script> Celanese Corporation. All rights reserved.</p>
-                    </section>
-                  </footer>
-                  <div id="bottomGradient" ><br /></div>
-                </div> 
-              </div>
-              <!-- End Footer Bottom -->
-              <script>
-                if ('${showSection2Form}' == 'none') {
-                  document.getElementById('main-content').style.setProperty('width','100%','important')
-                } else {}
-                var anchors = document.querySelectorAll('a');
-                anchors.forEach(function (element) {
-                  if (!element.href.includes('https')) {
-                    element.href = element.href.replace('http', 'https')
-                  }
-                });
-              </script>
-              <div class="mktoSnippet" id="section-10" mktoName="Section 10 Snippet"></div>
-
-
-              <div class="cookieStatement__container" style="display:${showCookieBanner};">
-                <p class="cookieStatement__message">This website uses 'cookies' to give you the best, most relevant experience. Using this website means you are Ok with this. You can change which cookies are set at any time - and find out more about them - by <a href="/privacy-policy" target="_blank">following this link</a>.</p>
-                <div class="cookieStatement__choices">
-                  <ul>
-                    <li>
-                      <label for="cookieStatement__required" class="cookieStatement__option">
-                        <span class="cookieStatement__label">Necessary</span>
-                        <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__required" checked aria-checked="true" disabled>
-                        <div class="cookieStatement__switch"></div>
-                      </label>
-                    </li>
-                    <li>
-                      <label for="cookieStatement__marketing" class="cookieStatement__option">
-                        <span class="cookieStatement__label">Marketing</span>
-                        <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__marketing" aria-checked="false">
-                        <div class="cookieStatement__switch"></div>
-                      </label>
-                    </li>
-                    <li>
-                      <label for="cookieStatement__analytics" class="cookieStatement__option">
-                        <span class="cookieStatement__label">Analytical</span>
-                        <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__analytics" aria-checked="false">
-                        <div class="cookieStatement__switch"></div>
-                      </label>
-                    </li>
+                <div class="mktoText" id="section-8" mktoName="Section 8">
+                  <ul class="list-inline clients-logo text-center">
+                    <li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title=""  /></li><!--Image path of logo -->
+                    <li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
+                    <li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
+                    <li><img src="https://dummyimage.com/175X70/333333/ffffff" alt="" title="" /></li>
                   </ul>
                 </div>
-                <div class="cookieStatement__confirmation">
-                  <button class="cookieStatement__cta" type="button" id="cookieStatement__acceptAll">Accept All</button>
-                  <button class="cookieStatement__cta" type="button" id="cookieStatement__save">Accept Selected</button>
-                </div>
-                <p class="cookieStatement__message">Information on the processing of your personal data within the USA by Google and Marketo:<br />
-                  By clicking "Accept All", or selecting "Marketing" and/or "Analytical" and then clicking "Accept Selected", you also consent in accordance with Art. 49(1)(a) GDPR that your data may be processed in the USA. The USA is considered by the European Court of Justice to be a country with no adequate level of data protection according to EU standards. In particular, there is a risk that your data may be processed by US authorities for surveillance and investigation purposes, possibly without the opportunity for legal remedies. If you select “Necessary”  and then click on "Accept Selected”, the transfer described above will not take place. You will find more detailed information in <a href="/privacy-policy" target="_blank">our privacy policy</a>.</p>
               </div>
             </div>
-            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-            <script>
-              $(document).ready(function () {
-                if ('${showCookieBanner}' === 'block') {
-                  if (!localStorage.getItem('celaneseCookieConsentDismissed')) $('.cookieStatement__container').addClass('opened')
-                  if (localStorage.getItem('celaneseCookieConsentDateOfAcceptance')) {
-                    const currDate = new Date()
-                    const dateOfAcceptance = new Date(localStorage.getItem('celaneseCookieConsentDateOfAcceptance'))
-                    const timePassed = currDate - dateOfAcceptance
-                    if ( timePassed >= 31536000000) {
-                      $('.cookieStatement__container').addClass('opened')
-                    }
-                  }
-                  if (localStorage.getItem('celaneseMarketingCookiesAccepted')) $('#cookieStatement__marketing').prop('checked', true)
-                  if (localStorage.getItem('celaneseAnalyticsCookiesAccepted')) $('#cookieStatement__analytics').prop('checked', true)
+          </div>
+          <!-- End Client Logos -->
 
-                  $('#cookieStatement__acceptAll').click(function () {
-                    $('#cookieStatement__marketing').prop('checked', true)
-                    $('#cookieStatement__analytics').prop('checked', true)
-                    localStorage.setItem('celaneseCookieConsentDismissed', true);
-                    localStorage.setItem('celaneseCookieConsentDateOfAcceptance', new Date());
-                    localStorage.setItem('celaneseMarketingCookiesAccepted', true);
-                    localStorage.setItem('celaneseAnalyticsCookiesAccepted', true);
-                    $('.cookieStatement__container').removeClass('opened');
-                    window.location.reload()
-                  })
+          <!-- Banner Version 3 -->
+          <div style="display:${showBanner3};">
+            <div id="banner3">
+              <div class="container">
+                <div class="mktoText row" mktoName="Banner 3 Text" id="banenr3-txt">
+                  <h3><strong>Celanese BioPolymer Solutions</strong><br>The Best Packaging Solutions Begin + Return to Nature<br></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Banner ver 3 -->
 
-                  $('#cookieStatement__save').click(function () {
-                    localStorage.setItem('celaneseCookieConsentDismissed', true);
-                    localStorage.setItem('celaneseCookieConsentDateOfAcceptance', new Date());
-                    if ($('#cookieStatement__marketing').is(':checked')) localStorage.setItem('celaneseMarketingCookiesAccepted', true)
-                    if (!$('#cookieStatement__marketing').is(':checked')) localStorage.removeItem('celaneseMarketingCookiesAccepted')
-                    if ($('#cookieStatement__analytics').is(':checked')) localStorage.setItem('celaneseAnalyticsCookiesAccepted', true)
-                    if (!$('#cookieStatement__analytics').is(':checked')) localStorage.removeItem('celaneseAnalyticsCookiesAccepted')
-                    $('.cookieStatement__container').removeClass('opened');
-                    if (!$('#cookieStatement__marketing').is(':checked')) {
-                      window.location.replace(window.location.href + '?marketo_opt_out=true')
-                    } else {
-                      window.location.reload()
-                    }
-                  })
+          <!-- Footer Bottom -->	      
+          <div id="footerSection" style="display:${showFooter};"> 
+            <div id="footerContainer">
+              <footer>
+                <h1 >About Celanese</h1>
+                <hr class="horizontal-gradient">
+                <section id="about">
+                  <p >Celanese (NYSE: CE) is a global technology and specialty materials company that engineers and manufactures a wide variety of products essential to everyday living.</p>
+                </section>
+                <section id="navigation"><nav >
+                  <ul>
+                    <li><a href="https://celanese.com/contact-us.aspx">Contact information</a></li>
+                    <li><a href="https://celanese.com/disclaimer.aspx">Disclaimer</a></li>
+                    <li><a href="https://www.celanese.com/terms-and-conditions.aspx">Terms &amp; conditions</a></li>
+                    <li><a href="https://celanese.com/careers.aspx">Careers</a></li>
+                    <li><a href="https://celanese.com/California%20Transparency%20Act.aspx">California transparency</a></li>
+                    <li><a href="https://explore.celanese.com/privacy-policy.html" target="_blank">Privacy policy</a></li>
+                  </ul>
+                  </nav></section>
+                <section id="followUs">
+                  <h1 >Follow us</h1>
+                  <nav class="footer-nav">
+                    <ul>
+                      <li><a href="https://twitter.com/Celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"> <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></li>
+                      <li><a href="https://www.facebook.com/Celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"> <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a></li>
+                      <li><a href="https://www.linkedin.com/company/celanese"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></li>
+                      <li><a href="https://www.youtube.com/user/CelaneseCorporation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"> <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></li>
+                      <li><a href="http://www.celaneseblog.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M25.57 176.1C12.41 175.4 .9117 185.2 .0523 198.4s9.173 24.65 22.39 25.5c120.1 7.875 225.7 112.7 233.6 233.6C256.9 470.3 267.4 480 279.1 480c.5313 0 1.062-.0313 1.594-.0625c13.22-.8438 23.25-12.28 22.39-25.5C294.6 310.3 169.7 185.4 25.57 176.1zM32 32C14.33 32 0 46.31 0 64s14.33 32 32 32c194.1 0 352 157.9 352 352c0 17.69 14.33 32 32 32s32-14.31 32-32C448 218.6 261.4 32 32 32zM63.1 351.9C28.63 351.9 0 380.6 0 416s28.63 64 63.1 64s64.08-28.62 64.08-64S99.37 351.9 63.1 351.9z"/></svg></li>
+                    </ul>
+                  </nav></section>
+                <section id="copyright" >
+                  <p >&copy;
+                    <script>// <![CDATA[
+                      document.write(new Date().getFullYear());
+                      // ]]></script> Celanese Corporation. All rights reserved.</p>
+                </section>
+              </footer>
+              <div id="bottomGradient" ><br /></div>
+            </div> 
+          </div>
+          <!-- End Footer Bottom -->
+          <script>
+            if ('${showSection2Form}' == 'none') {
+              document.getElementById('main-content').style.setProperty('width','100%','important')
+            } else {}
+            var anchors = document.querySelectorAll('a');
+            anchors.forEach(function (element) {
+              if (!element.href.includes('https')) {
+                element.href = element.href.replace('http', 'https')
+              }
+            });
+          </script>
+          <div class="mktoSnippet" id="section-10" mktoName="Section 10 Snippet"></div>
 
-                  // Opt-out button
-                  $('.optOutBtn').click(function() {
-                    localStorage.removeItem('celaneseMarketingCookiesAccepted')
-                    localStorage.removeItem('celaneseAnalyticsCookiesAccepted')
-                    window.location.replace(window.location.href + '?marketo_opt_out=true')
-                  })
+
+          <div class="cookieStatement__container" style="display:${showCookieBanner};">
+            <p class="cookieStatement__message">This website uses 'cookies' to give you the best, most relevant experience. Using this website means you are Ok with this. You can change which cookies are set at any time - and find out more about them - by <a href="/privacy-policy" target="_blank">following this link</a>.</p>
+            <div class="cookieStatement__choices">
+              <ul>
+                <li>
+                  <label for="cookieStatement__required" class="cookieStatement__option">
+                    <span class="cookieStatement__label">Necessary</span>
+                    <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__required" checked aria-checked="true" disabled>
+                    <div class="cookieStatement__switch"></div>
+                  </label>
+                </li>
+                <li>
+                  <label for="cookieStatement__marketing" class="cookieStatement__option">
+                    <span class="cookieStatement__label">Marketing</span>
+                    <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__marketing" aria-checked="false">
+                    <div class="cookieStatement__switch"></div>
+                  </label>
+                </li>
+                <li>
+                  <label for="cookieStatement__analytics" class="cookieStatement__option">
+                    <span class="cookieStatement__label">Analytical</span>
+                    <input type="checkbox" name="cookieStatement__decisions" id="cookieStatement__analytics" aria-checked="false">
+                    <div class="cookieStatement__switch"></div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="cookieStatement__confirmation">
+              <button class="cookieStatement__cta" type="button" id="cookieStatement__acceptAll">Accept All</button>
+              <button class="cookieStatement__cta" type="button" id="cookieStatement__save">Accept Selected</button>
+            </div>
+            <p class="cookieStatement__message">Information on the processing of your personal data within the USA by Google and Marketo:<br />
+              By clicking "Accept All", or selecting "Marketing" and/or "Analytical" and then clicking "Accept Selected", you also consent in accordance with Art. 49(1)(a) GDPR that your data may be processed in the USA. The USA is considered by the European Court of Justice to be a country with no adequate level of data protection according to EU standards. In particular, there is a risk that your data may be processed by US authorities for surveillance and investigation purposes, possibly without the opportunity for legal remedies. If you select “Necessary”  and then click on "Accept Selected”, the transfer described above will not take place. You will find more detailed information in <a href="/privacy-policy" target="_blank">our privacy policy</a>.</p>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            if ('${showCookieBanner}' === 'block') {
+              if (!localStorage.getItem('celaneseCookieConsentDismissed')) $('.cookieStatement__container').addClass('opened')
+              if (localStorage.getItem('celaneseCookieConsentDateOfAcceptance')) {
+                const currDate = new Date()
+                const dateOfAcceptance = new Date(localStorage.getItem('celaneseCookieConsentDateOfAcceptance'))
+                const timePassed = currDate - dateOfAcceptance
+                if ( timePassed >= 31536000000) {
+                  $('.cookieStatement__container').addClass('opened')
                 }
-              });
-            </script>
+              }
+              if (localStorage.getItem('celaneseMarketingCookiesAccepted')) $('#cookieStatement__marketing').prop('checked', true)
+              if (localStorage.getItem('celaneseAnalyticsCookiesAccepted')) $('#cookieStatement__analytics').prop('checked', true)
 
-            </body>
-          </html>
+              $('#cookieStatement__acceptAll').click(function () {
+                $('#cookieStatement__marketing').prop('checked', true)
+                $('#cookieStatement__analytics').prop('checked', true)
+                localStorage.setItem('celaneseCookieConsentDismissed', true);
+                localStorage.setItem('celaneseCookieConsentDateOfAcceptance', new Date());
+                localStorage.setItem('celaneseMarketingCookiesAccepted', true);
+                localStorage.setItem('celaneseAnalyticsCookiesAccepted', true);
+                $('.cookieStatement__container').removeClass('opened');
+                window.location.reload()
+              })
+
+              $('#cookieStatement__save').click(function () {
+                localStorage.setItem('celaneseCookieConsentDismissed', true);
+                localStorage.setItem('celaneseCookieConsentDateOfAcceptance', new Date());
+                if ($('#cookieStatement__marketing').is(':checked')) localStorage.setItem('celaneseMarketingCookiesAccepted', true)
+                if (!$('#cookieStatement__marketing').is(':checked')) localStorage.removeItem('celaneseMarketingCookiesAccepted')
+                if ($('#cookieStatement__analytics').is(':checked')) localStorage.setItem('celaneseAnalyticsCookiesAccepted', true)
+                if (!$('#cookieStatement__analytics').is(':checked')) localStorage.removeItem('celaneseAnalyticsCookiesAccepted')
+                $('.cookieStatement__container').removeClass('opened');
+                if (!$('#cookieStatement__marketing').is(':checked')) {
+                  window.location.replace(window.location.href + '?marketo_opt_out=true')
+                } else {
+                  window.location.reload()
+                }
+              })
+
+              // Opt-out button
+              $('.optOutBtn').click(function() {
+                localStorage.removeItem('celaneseMarketingCookiesAccepted')
+                localStorage.removeItem('celaneseAnalyticsCookiesAccepted')
+                window.location.replace(window.location.href + '?marketo_opt_out=true')
+              })
+            }
+          });
+        </script>
+
+        </body>
+      </html>
