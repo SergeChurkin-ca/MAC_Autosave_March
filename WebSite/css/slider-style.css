@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.yellowbg h2, #bluebg h2 {
+  padding-bottom:40px;
+}
+.columns-slider-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.column-slider-column p {
+  font-size:10px;
+  margin-bottom:0px;
+  text-align:center;
+}
+.column-slider-column strong {
+  font-size: 12px;
+}
+.col-image-icon.u-center {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.column-slider-column .teamcopy {
+  padding: 10px;
+  min-height: 80px;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+    display: flex;
+}
+.jorcard.team-box .teamcopy {
+  display: block;
+}
+.team-box .teamcopy {
+  min-height: 100px;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+    display: flex;
+}
+.columns-slider-wrap:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(to right, #FCB344, rgba(249, 179, 71, 0) 50%);
+  pointer-events: none;
+}
+@media (min-width: 544px) {
+  .columns-slider-wrap:before {
+    width: 100px;
+  }
+}
+.columns-slider-wrap:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 50px;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(to left, #FCB344, rgba(249, 179, 71, 0) 50%);
+  pointer-events: none;
+}
+@media (min-width: 544px) {
+  .columns-slider-wrap:after {
+    width: 100px;
+  }
+}
+
+.columns-slider {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  cursor: grab;
+}
+
+.columns-slider:active {
+  cursor: grabbing;
+}
+.columns-slider * {
+  user-select: none;
+}
+
+.columns-slider .column-slider-column {
+  text-align: center;
+  padding: 0 60px;
+  flex: 0 0 auto;
+}
+.columns-slider[cols="1"] .column-slider-column {
+  width: 100%;
+  padding: 0 10px;
+}
+@media (min-width: 544px) {
+  .columns-slider[cols="1"] .column-slider-column {
+    padding: 0 60px;
+  }
+}
+.columns-slider[cols="2"] .column-slider-column {
+  width: 50%;
+  padding: 0 10px;
+}
+@media (min-width: 544px) {
+  .columns-slider[cols="2"] .column-slider-column {
+    padding: 0 60px;
+  }
+}
+.columns-slider[cols="3"] .column-slider-column {
+  width: 50%;
+  padding: 0 10px;
+}
+@media (min-width: 544px) {
+  .columns-slider[cols="3"] .column-slider-column {
+    padding: 0 60px;
+  }
+}
+@media (min-width: 768px) {
+  .columns-slider[cols="3"] .column-slider-column {
+    width: 33.333%;
+  }
+}
+.columns-slider[cols="4"] .column-slider-column {
+  width: 50%;
+  padding: 0 10px;
+}
+@media (min-width: 544px) {
+  .columns-slider[cols="4"] .column-slider-column {
+    padding: 0 60px;
+  }
+}
+@media (min-width: 768px) {
+  .columns-slider[cols="4"] .column-slider-column {
+    width: 33.333%;
+  }
+}
+@media (min-width: 1024px) {
+  .columns-slider[cols="4"] .column-slider-column {
+    width: 25%;
+  }
+}
+.columns-slider[cols="5"] .column-slider-column {
+  width: 50%;
+  padding: 0 10px;
+}
+@media (min-width: 544px) {
+  .columns-slider[cols="5"] .column-slider-column {
+    padding: 0 20px;
+  }
+}
+@media (min-width: 768px) {
+  .columns-slider[cols="5"] .column-slider-column {
+    width: 33.333%;
+  }
+}
+@media (min-width: 1024px) {
+  .columns-slider[cols="5"] .column-slider-column {
+    width: 20%;
+  }
+}
+
+.columns-slider-indicator {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 1px;
+  background: #ffffff;
+  margin-top: 40px;
+}
+.columns-slider-indicator .columns-slider-grabber {
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 15px);
+  width: 100px;
+  height: 30px;
+  cursor: grab;
+  transform-origin: 100% 100%;
+}
+.columns-slider-indicator .columns-slider-grabber:active {
+  cursor: grabbing;
+}
+.columns-slider-indicator .columns-slider-grabber:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: calc(50% - 2px);
+  background: #f15a24;
+}
