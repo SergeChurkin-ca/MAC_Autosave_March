@@ -1,0 +1,196 @@
+<body>
+
+    <header id="brand">
+        <div class="section">
+            <div class="logo-container">
+                <div class="mktoSnippet" id="bannerlogo-1" mktoName="Banner - Logo">
+                    <a href="https://nationalcreditcare.com/" target="_blank"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-logo.jpg" width="160" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="header">
+        <div class="section" x-data="{result: new URLSearchParams(location.search).get('result')|| ''}">
+
+            <template x-if="result == ''"><h1>${deftitle}<span><br>${defcopy}</span></h1></template>
+            <template x-if="result == 'a'"><h1>${atitle}<span><br>${acopy}</span></h1></template>
+            <template x-if="result == 'b'"><h1>${btitle}<span><br>${bcopy}</span></h1></template>
+            <template x-if="result == 'c'"><h1>${ctitle}<span><br>${ccopy}</span></h1></template>
+            <template x-if="result == 'd'"><h1>${dtitle}<span><br>${dcopy}</span></h1></template>
+
+
+
+
+            <div class="mktoText" mktoName="Header CTA" id="hdrcta">
+                <div>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center; text-decoration:none; font-size:18px; line-height:135%; font-family: 'Raleway',Arial, sans-serif; border:2px solid #0a58a3; background-color:#ffffff; border-radius: 5px;padding:5px; text-transform: uppercase;">
+                                    <a style="min-height:10px; text-decoration:none; color:#0a58a3; padding: 9px 30px; display:inline-block" href="#form"><b>Submit Referral</b></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="freetext">
+        <div class="section">
+            <div id="socialshare">
+                <div class="mktoText" id="socialsharedynamic" mktoName="Social Share Buttons">
+                    <h3>SHARE</h3>'
+                    <div>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-facebook-icon.svg" /></a>
+                        <a href="https://twitter.com/intent/tweet?text=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-twitter-icon.svg" /></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-linkedin-icon.svg" /></a>
+                        <a href="mailto:?body=Hey!%20Check%20out%20this%20Credit%20Quiz%20https%3A// target=" blank="" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/Mail-social.svg" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla egestas nisl egestas viverra at vitae nisi. Nulla congue maximus erat. Aenean nunc leo, ullamcorper non ipsum a, tempus laoreet purus. Nullam metus erat, porttitor convallis est ut,
+                    consequat feugiat sem. Ut facilisis erat nec risus blandit molestie. Praesent blandit elit eget felis posuere, a posuere metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In sollicitudin
+                    nulla id neque faucibus, nec aliquam lectus rutrum. Phasellus feugiat velit id laoreet auctor. Proin aliquet ut justo ac efficitur. Quisque bibendum et elit at vulputate. Maecenas mollis ultrices elit. Pellentesque vulputate odio vel
+                    magna tempus, ac posuere sem finibus. Curabitur ut lacus ut ex luctus maximus at eget neque.
+                    <br><br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ligula lectus, fermentum nec lectus at, pellentesque venenatis justo. Etiam sodales, tortor eu finibus porta, est justo tincidunt
+                    turpis, a luctus lacus elit quis sem. Morbi consectetur consectetur fringilla. Sed luctus, tortor non sollicitudin eleifend, nunc quam mollis turpis, in elementum ipsum dolor eu nisi. Cras ullamcorper arcu vel dolor dapibus, sed euismod
+                    nibh vulputate. Quisque at turpis at velit laoreet aliquet. Aliquam bibendum lacinia velit ut aliquet. Aenean egestas sem sed neque eleifend laoreet. Sed sit amet diam auctor, maximus justo quis, bibendum quam. Vestibulum viverra sem
+                    vel justo vestibulum, a maximus sapien tristique. Duis ornare placerat nisi. Duis tincidunt interdum tempor. Nulla vitae lorem lorem. Cras justo massa, porta at arcu ut, sollicitudin vulputate ligula. Ut ornare blandit urna, id pulvinar
+                    urna consequat eu.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="formsection">
+        <a id="form"></a>
+        <div class="section">
+            <div class="mktoText" id="formheadline" mktoName="Form Header">
+                <b>Submit a Client Referral on Behalf</b>
+            </div>
+            <div>
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                    <input type="hidden" name="oid" value="00D6A000002EuuB">
+                    <input type="hidden" name="retURL" value="{{lead.Invoice Website}}">
+                    <input type="hidden" name="broker_fname" value="{{lead.First Name}}">
+                    <input type="hidden" name="broker_lname" value="{{lead.Last Name}}">
+
+                    <!--  ----------------------------------------------------------------------  -->
+                    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                    <!--  these lines if you wish to test in debug mode.                          -->
+                    <!--  <input type="hidden" name="debug" value=1>                              -->
+                    <!--  <input type="hidden" name="debugEmail" value="anand@sairoop.com">       -->
+                    <!--  ----------------------------------------------------------------------  -->
+                    <div class="row_form">
+                        <input placeholder="Borrower First Name" id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+
+                        <input placeholder="Borrower Last Name" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                        <input placeholder="Borrower Mobile" id="mobile" maxlength="40" name="mobile" size="20" type="text" /></div>
+
+
+                    <div class="row_form">
+                        <input placeholder="Borrower Email" id="email" maxlength="80" name="email" size="20" type="text" />
+
+                        <input id="00N6A00000PLHHb" placeholder="Borrower Preferred Name" maxlength="100" name="00N6A00000PLHHb" size="20" type="text" />
+
+                        <input placeholder="Borrower Phone" id="phone" maxlength="40" name="phone" size="20" type="text" /></div>
+
+
+                    <div class="row_form">
+                        <div class="checkbox_cont">
+                            <div class="label">Spanish Preferred:</div><input class="check" id="00N6A00000PLHHq" name="00N6A00000PLHHq" type="checkbox" value="1" /></div>
+
+                        <textarea id="00N6A00000PNU8Q" placeholder="What would you like us to know about this borrower?" name="00N6A00000PNU8Q" rows="4" type="text" wrap="soft"></textarea>
+
+                        <input placeholder="Company" id="company" maxlength="40" value="{{lead.SFDC Id}}" name="company" size="20" type="text" type="hidden" />
+                    </div>
+
+                    <div class="button_cont">
+                        <input type="submit" name="submit"></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer id="footer" style="padding-top: 30px; padding-bottom: 30px;">
+        <div class="footer-container">
+
+            <div class="column1 mktoSnippet" id="footersnippet" mktoName="Footer Snippet">
+                <div class="row1">
+                    <div class="col">
+                        <div class="footer-logo" id="footerlogo" mktoName="Footer - Logo">
+                            <a href="https://nationalcreditcare.com/" target="_blank"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-logo.jpg" width="160" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <p class="col" id="footertext1" mktoName="Footer - Text 1" style="margin:0;">
+                        <span style="color: #3d3d3d; font-size: 12px;">© National Credit Care 2022 </span><br><span style="color: #3d3d3d; font-size: 12px;"> 1499 W 121st Ave #300 | Westminster, CO 80234 | + 1 866 595 6313 </span><br><span style="color: #3d3d3d;"><span style="font-size: 12px;"> <a href="https://nationalcreditcare.com/terms-and-conditions/" target="_blank" id="" style="color: #3d3d3d;">Terms &amp; Conditions</a> | <a href="https://nationalcreditcare.com/privacy-policy/" target="_blank" id="" style="color: #3d3d3d;">Privacy Policy</a></span><br></span>
+                    </p>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        const idField = document.querySelector("input[name=company]");
+        const websiteField = document.querySelector("input[name=retURL]");
+        const fnameField = document.querySelector("input[name=broker_fname]");
+        const lnameField = document.querySelector("input[name=broker_lname]");
+        let refData = {
+            id: idField ? .value,
+            website: websiteField ? .value,
+            firstName: fnameField ? .value,
+            lastName: lnameField ? .value
+        }
+
+        if (!refData.firstName || !refData.firstName.length < 1) {
+            // refData isn't pre-populated
+            // pull refData from URL
+            let currentUrl = new URL(window.location);
+            let params = new URLSearchParams(currentUrl.search);
+            refDataToken = params.get("refData");
+            if (refDataToken) refData = JSON.parse(atob(decodeURIComponent(refDataToken)));
+
+            // set hidden field values
+            if (refData) {
+                if (idField) idField.value = refData.id;
+                if (websiteField) websiteField.value = refData.website;
+                if (fnameField) fnameField.value = refData.firstName;
+                if (lnameField) lnameField.value = refData.lastName;
+            }
+        }
+
+        // proceed if we have proper refData              
+        if (refData.firstName && refData.firstName.length >= 1) {
+            refDataToken = btoa(JSON.stringify(refData));
+
+            // update all share links
+            document.querySelectorAll("#socialshare a").forEach(function(e) {
+                e.href += (encodeURIComponent('&refData=' + refDataToken));
+            })
+
+            // update referral CTA text
+            const cta = document.getElementById("referral-cta")
+            if (refData ? .firstName && refData ? .firstName.length) {
+                cta.innerHTML += ' on behalf of ' + refData.firstName + ' ' + refData.lastName;
+            }
+        }
+    </script>
+</body>
