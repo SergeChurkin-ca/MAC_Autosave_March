@@ -45,6 +45,8 @@
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#3d3d3d">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#3d3d3d">
+    <meta class="mktoColor" id="freetext-btn-bg" mktoName="Free-Text -btn background" default="#0A57A4">
+    <meta class="mktoString" id="freetext-btn-fz" mktoName="Free-Text btn font size" default="16">
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#0a58a3">
     <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="none">
@@ -126,11 +128,16 @@
         font-family: Helvetica, sans-serif;
         font-family: Raleway, sans-serif !important;
       }
+ /* general setup */     
 .flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+img {
+  width: 100%;
+}
+/* end of general setup */
 div#hdrcta {
     margin-top: 35px;
 }
@@ -218,10 +225,7 @@ div#hdrcta {
         display:${showbanner};
         background-blend-mode: ${background-blend-mode};
       }
-      #freetext{
-        background-color:${freeTextBackgroundColor};
-        display:${showsec1};
-      }
+  
       #formsection{
         background-color:${mainformbgclr};
         display:${showformsec};
@@ -282,9 +286,7 @@ div#hdrcta {
         color: ${bannerTextColor} !important;
         font-weight:normal
       }
-      #freetext .btn {
-        margin-top:30px;
-      }
+  
 
 /* banner with form */
 
@@ -372,15 +374,53 @@ margin-bottom: 0.25rem;
 }                                                                                                                        
 /* end of banner with form */
 
+/* freetext */
+    #freetext{
+        background-color:${freeTextBackgroundColor};
+        display:${showsec1};
+      }
       #freetext p,
       #freetext ul,
       #freetext li {
         color: ${freeTextTextColor} !important;
       }
-
+      #freetext #optional-CTA1, #img-right #optional-CTA2 {
+        margin-top: 2.5rem;
+      }
+        #freetext .btn, #img-right .btn {
+        font-size:${freetext-btn-fz}px;
+        background: ${freetext-btn-bg};
+        color: #ffffff;
+        font-weight: 600;
+        padding: 12px 42px;
+        border-radius: 4px;
+      }
+/* end of freetext */
       #formlefttext h2 {
         color: ${formSectionHeaderColor} !important;
       }
+
+/* image right section */
+#img-right .flex-row {
+  border: solid 1px red;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: wrap-reverse;
+}
+#img-right .flex-column {
+width: calc((100% / 2) - 1rem);
+  border: solid 1px red;
+}
+#img-right .flex-column:nth-child(1) {
+  flex: 1 0 400px;
+}
+#img-right .flex-column:nth-child(2) {
+flex: 1 0 245px;
+}
+
+
+/* end of image rightt section */
+
 
       #formsection p,
       #formsection ul,
@@ -735,7 +775,12 @@ width: 49%;
 		.ft-table{
 			text-align: right;
 		}
-
+@media (max-width: 1200px) {
+ #img-right .flex-column:nth-child(2) {
+    flex: 1 0 400px !important;
+    border: solid 1px blue;
+  }
+}
       @media screen and (max-width:900px){
         .flex{
           flex-wrap:wrap;
@@ -942,8 +987,36 @@ float:none;
                     urna consequat eu.
                 </p>
             </div>
+            <div class="mktoText" id="optional-CTA1" mktoName="Free Text CTA ">
+              <a href="#" class="btn">OPTIONAL CTA</a>
+             </div> 
         </div>
     </div>
+    
+        <!-- Header with form -->
+    <div id="img-right">
+      <div class="section flex-row">
+        <div class="flex-column">
+              <div class="mktoText" id="imgright-copy" mktoName="Img RIght Copy ">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla egestas nisl egestas viverra at vitae nisi. Nulla congue maximus erat. Aenean nunc leo, ullamcorper non ipsum a, tempus laoreet purus. Nullam metus erat, porttitor convallis est ut,
+                    consequat feugiat sem. Ut facilisis erat nec risus blandit molestie. Praesent blandit elit eget felis posuere, a posuere metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                    <br><br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ligula lectus, fermentum nec lectus at, pellentesque venenatis justo. Etiam sodales, tortor eu finibus porta, est justo tincidunt
+                    turpis, a luctus lacus elit quis sem. Morbi consectetur consectetur fringilla. Sed luctus, tortor non sollicitudin eleifend, nunc quam mollis turpis, in elementum ipsum dolor eu nisi. Cras ullamcorper arcu vel dolor dapibus, sed euismod
+                    nibh vulputate. 
+                </p>
+            </div>
+                <div class="mktoText" id="optional-CTA2" mktoName="Free Text CTA 2">
+              <a href="#" class="btn">OPTIONAL CTA</a>
+             </div> 
+        </div>
+        <div class="flex-column">
+          
+       <img src="https://dummyimage.com/481x304/eaf2ff/0a57a4" alt="image" />
+        </div>
+      </div>
+    </div>
+    <!-- end of Header with form -->
 
 
     <div id="formsection">
