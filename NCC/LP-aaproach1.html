@@ -49,6 +49,7 @@
     <meta class="mktoColor" id="headerform-bg" mktoName="HeaderForm - Text Color" default="#0A57A4">
     <meta class="mktoColor" id="headerform-color" mktoName="HeaderForm - Text Color" default="#ffffff">
 
+    <meta class="mktoString" id="freetext-maxwidth" mktoName="FreeText - Max Width (px)" default="600">
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#3d3d3d">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#3d3d3d">
@@ -95,6 +96,8 @@
     <!-- Three columns section Styling -->
     <meta class="mktoColor" id="threecols-bg-color" mktoName="Three Columns bg color" default="#DEDED6">
     <meta class="mktoString" mktoName="Thee Cols p size" id="threecols-p-fontsize" default="14">
+    <meta class="mktoString" mktoName="Thee Cols Padding top" id="three-cols-padtop" default="75">
+    <meta class="mktoString" mktoName="Thee Cols Padding bottom" id="three-cols-padbtm" default="75">
     <!-- Footer Section Styling -->
 
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
@@ -408,6 +411,8 @@
         background-color:${freeTextBackgroundColor};
         display:${showsec1};
         order: ${freetext-order};
+        max-width: ${freetext-maxwidth}px;
+        margin: 0 auto;
       }
       #freetext p,
       #freetext ul,
@@ -472,6 +477,10 @@
         background: ${threecols-bg-color};
         display: ${show-three-cols};
         order: ${threecols-order};
+      }
+      #three-columns .section {
+        padding-top: ${three-cols-padtop}px;
+        padding-bottom: ${three-cols-padbtm}px;
       }
       #img-right .section {
         padding: 50px 0 80px;
@@ -1037,7 +1046,7 @@
         </div>
         <div class="flex-column">
           <h2 class="mktoText" mktoName="banner-form-headline" id="bannerform-headline">DOWNLOAD</h2>
-          <div class="mktoForm" mktoName="Header Form" id="banner-form">
+          <div class="mktoText" mktoName="Header Right Box" id="banner-form">
            
           </div>
         </div>

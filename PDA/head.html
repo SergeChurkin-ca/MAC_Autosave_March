@@ -21,12 +21,24 @@
         width: calc((100% / 3) - 1rem) !important;
     }
     
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm input[type=email],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=number],
+    .mktoForm input[type=date],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField {
+        width: 100% !important;
+    }
+    
     .Form2_Row_15 {
         margin-top: -1.5rem !important;
     }
     
     #C-Form fieldset legend {
         margin: 3rem 0 !important;
+        font-size: 14.95px !important;
     }
     
     @media (max-width: 900px) {
@@ -67,7 +79,6 @@
     
     .mktoForm fieldset legend {
         border: none !important;
-        font-size: 1rem !important;
     }
     
     #C-Form .mktoForm .mktoButton {

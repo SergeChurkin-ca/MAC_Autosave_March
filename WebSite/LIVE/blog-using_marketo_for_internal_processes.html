@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <!-- Global site tag (gtag.js) - Google Ads: 813741477 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-813741477"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-813741477');
+   gtag('config', 'AW-758911101');
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-176161056-1');
+</script>	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>
+Using Marketo for Internal Processes
+</title>
+
+<meta name="description" content="Marketo is a powerful platform for automating and streamlining processes. Here's how Marketing Automation Canada implemented a formal leave approval process using Marketo.">
+
+<meta property="og:title" content="Using Marketo for Internal Processes" />
+<meta property="og:description" content="Marketo is a powerful platform for automating and streamlining processes. Here's how Marketing Automation Canada implemented a formal leave approval process using Marketo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://marketing-automation.ca/blog-using_marketo_for_internal_processes.html" />
+<meta property="og:image" content="images/blog-6-small-image.jpg" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="http://www.marketing-automation.ca/rfp_css/nav-dropdown.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link rel="icon" href="/images/favicon.png" sizes="32x32">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,900" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<style>
+#topheader .navbar-nav>li>a:hover, .dropdown:hover .dropbtn{background-color:#fff; color:red !important;}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: bold;
+    line-height: 1.42857143;
+    color: red;
+    white-space: nowrap;
+	font-family: 'Work Sans', sans-serif;
+	text-transform: capitalize !important;
+}
+</style>
+<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-43007665-1', 'marketing-automation.ca');
+		ga('send', 'pageview');
+
+	</script>
+    
+    <script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('217-NBW-905');
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+
+</head>
+
+<body>
+  <header id="topheader">
+    <div class="container">
+
+        <div class="col-md-12 nopadding">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid nopadding">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn"
+                                    href="https://marketing-automation-us.com/about-us.html">About Us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://marketing-automation-us.com/meet-the-team.html">Meet Our Team</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn">Products</a>
+                                <ul class="dropdown-menu">
+                                    <li><a
+                                            href="https://marketing-automation-us.com/marketo-master-email-template.html">Marketo
+                                            Master Email Template</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://marketing-automation-us.com/pricing.html">Pricing</a></li>
+                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn"
+                                    href="https://marketing-automation-us.com/what-we-do.html">What We Do</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a class="nav-link dropdown-toggle dropbtn" href="https://marketing-automation-us.com/marketo.html">Marketo</a>
+                                        <ul class="dropdown-menu"
+                                            style="position: relative; background-color: #f0f0f0; box-shadow: 0 0px 0px rgba(0,0,0,0); min-width: 100%">
+                                            <li><a href="https://marketing-automation-us.com/strategic_consulting.html "
+                                                    style="font-weight: normal;">Strategic Consulting</a></li>
+                                            <li><a href="https://marketing-automation-us.com/custom_marketo_email_landingpage_templates.html"
+                                                    style="font-weight: normal;">Custom Marketo Email & Landing Page
+                                                    Templates</a></li>
+                                            <li><a href="https://marketing-automation-us.com/custom_tailored_training.html"
+                                                    style="font-weight: normal;">Custom Tailored Training</a></li>
+                                            <li><a href="https://marketing-automation-us.com/platform_integrations.html"
+                                                    style="font-weight: normal;">Platform Integrations</a></li>
+                                            <li><a href="https://marketing-automation-us.com/marketo_system_audits.html"
+                                                    style="font-weight: normal;">Marketo System Audits</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="nav-link dropdown-toggle dropbtn" href="https://marketing-automation-us.com/hubspot.html">Hubspot</a>
+                                        <ul class="dropdown-menu"
+                                            style="position: relative; background-color: #f0f0f0; box-shadow: 0 0px 0px rgba(0,0,0,0); min-width: 100%">
+                                            <li><a href="https://marketing-automation-us.com/hubspot_strategic_consulting.html "
+                                                    style="font-weight: normal;">Strategic Consulting</a></li>
+                                            <li><a href="https://marketing-automation-us.com/custom_hubspot_email_landingpage_templates.html"
+                                                    style="font-weight: normal;">Custom Hubspot Email & Landing Page
+                                                    Templates</a></li>
+                                            <li><a href="https://marketing-automation-us.com/hubspot_custom_tailored_training.html"
+                                                    style="font-weight: normal;">Custom Tailored Training</a></li>
+                                            <li><a href="https://marketing-automation-us.com/hubspot_platform_integrations.html"
+                                                    style="font-weight: normal;">Platform Integrations</a></li>
+                                            <li><a href="https://marketing-automation-us.com/hubspot_system_audits.html"
+                                                    style="font-weight: normal;">Hubspot System Audits</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://marketing-automation-us.com/Microsoft-Dynamics-365.html">Microsoft Dynamics</a></li>
+                                    <li><a href="https://marketing-automation-us.com/MACpack.html">MACpack Services</a></li>
+                                    <li><a href="https://marketing-automation-us.com/marketing-cloud.html">Salesforce Marketing Cloud</a></li>
+                                    <li><a href="https://marketing-automation-us.com/pardot.html">Salesforce Pardot</a></li>
+                                    <li><a href="https://marketing-automation-us.com/crm-consulting-corp.html">Salesforce Sales Cloud</a></li>
+                                    <li><a href="https://marketing-automation-us.com/what-we-do.html">Eloqua</a></li>
+                                    <li><a href="https://marketing-automation-us.com/rfp.html">RFP Assistance</a></li>
+                                    <li><a href="https://marketing-automation-us.com/web-services.html">Web Services</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://marketing-automation-us.com/our-work.html">Our Work</a></li>
+                            <li class="active"><a href="https://marketing-automation-us.com/resources.html">Resources</a></li>
+                            <li class="dropdown"><a class="nav-link dropdown-toggle dropbtn"
+                                    href="https://marketing-automation-us.com/contact-us.html">Contact Us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://marketing-automation-us.com/careers.html">Careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="logo"><a href="https://marketing-automation-us.com"><img src="images/MAC-logo-us.svg" /></a></div>
+        </div>
+
+
+    </div>
+
+</header>
+<!--banner starts-->
+<div id="banner" class="blogpage">
+<div class="container">
+<div class="col-md-8 col-md-push-2">
+<div class="title-box" style="">
+<h1>Using Marketo for Internal Processes</h1>
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+<section id="blogpage">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="blogdetail">
+          <p class="date">03/30/2020</p>
+          <p class="author">By: Shweta Rao</p>
+        </div>
+      </div>
+      <div class="col-md-12" style="">
+        <div class="blog">          
+            <p>You may have used Marketo for your external client-facing operations, but can you also apply it to your internal communications and processes?
+<br><br>
+Ask yourself these questions.<br><br> 
+<ol><li>Do you have additional capacity in your database to store internal employees?</li>
+<li>Would it be easier to store employees in a separate workspace?</li>
+<li>Do you have a process to add or delete a list of employees who are on-boarded or no longer in the system?</li>
+<li>Do you want to sync employees to your CRM or do you want them to stay in Marketo?</li>
+			</ol><br></p>
+<p>Assuming you have answers to the above, Marketo (or any marketing automation platform) can be used to boost the efficiency of your processes. The first step is to set up a process and streamline it. The next step is to use Marketo to implement the process. 
+<br><br>
+In our company, we did not have a formal vacation policy or a process through which employees could submit a leave or vacation request. We decided to use Marketo to set up an efficient leave approval system and here's how we did it.
+<br><br>
+            </p>
+
+            <div class="break"><img src="images/testdot.png" alt="divider"><hr></div>
+
+            <h2>The Problem:</h2>
+            <p><br>Our earlier leave application system was a series of emails sent by employees to their managers and managers sending them their responses over emails. Needless to say, it was difficult to track leaves, maintain a calendar, and identify schedule conflicts.
+<br><br></p>
+            <div class="break"><img src="images/testdot.png" alt="divider"><hr></div>
+
+            <h2>Our Solution:</h2>
+            <p><br>To correct this, our organization first formalized a process to approve leaves by documenting a policy and setting up an approval hierarchy. Employees could submit their requests through a form that would trigger back-end processes in Marketo.<br><br></p>
+<h3 style="font-family: 'Work Sans';
+font-weight: bold;
+font-size: 18px;
+color:
+#f9b348;">How did we leverage Marketo for this?</h3><br>
+			<p><ol><li>Form: We created a form asking for the email ID of the employee requesting leave, out of office dates and the reason for the request as mandatory fields.</li>
+<li>Auto-responder: An email connected to the form triggered to the next level in the hierarchy when a form was submitted. To make the email more informative to managers, it contained lead tokens corresponding to the form fields.</li> 
+<li>Smart lists: Smart lists were used to create the approval hierarchy, consisting of employees and their managers.</li>  
+<li>Smart Campaign: As the next step, we created a smart campaign that used flow steps to send alerts to the next person in the hierarchy whenever a form was submitted.</li></ol> 
+</p><br>
+				<img src="images/0325_img1.jpg" width="100%" style="max-width: 70%;" border="0" alt="Using Marketo for Internal Processes"><br><br><img src="images/0325_img2.jpg" width="100%" style="max-width: 70%;" border="0" alt="Using Marketo for Internal Processes"><br><br>
+            <p>Once the smart campaign was turned on, those who wanted to avail leaves entered the flow and the approval process was set in motion. 
+<br><br>
+Do you want to know more about how Marketo can streamline your processes and boost productivity? <a href="http://marketing-automation-us.com/contact-us.html" target="_blank">Contact Us</a><br><br></p><div style="background-image: url(images/btm-cta-bg.jpg);padding: 20px;background-size: cover;background-position: center;">
+
+            <p style="text-align: center;"><br><span style="text-align: center; font-size:30px; font-weight: 700;
+line-height: 40px;">Ready to get started?</span><br><span style="color:#ffffff; font-size: 18px;
+font-weight: 600;
+line-height: 28px;">Contact our experts today to discover how Marketing Automation Canada can help you get the most out of your MA tool.</span>
+</p>
+            <div style="margin: 20px auto;text-align: center;" class="button">
+              <a href="https://www.marketing-automation.ca/contact-us.html">Get In Touch!</a>
+            </div>
+</div><br><br>
+<div class="signatureblock">
+  <div class="detail">
+    <p style="font-size: 13px">PUBLISHED: 03/30/2020<br>By: Shweta Rao<br><br>
+    <a href="https://www.linkedin.com/in/rao-shweta/">
+      <img src="images/linkedin-icon.png" alt="linkedin" border="0" width="30" style="float: left;margin-right: 20px">
+    </a>
+    Shweta is an experienced Marketing Automation expert who has helped multiple clients achieve their business objectives by customizing solutions to fit their needs.
+    </p>
+  </div>
+</div>
+        </div>
+        <div>
+          <img src="images/blog-bottom.png" width="100%" border="0" class="blogpaper">
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="footer">
+<div class="container">
+<div class="row left-footer-sec">
+<div class="col-md-4">
+<div class="logo-footer"><img src="images/MAC-logo-US-Footer.svg" alt="Marketing Automation Corp. logo - white" /></div>
+</div>
+
+<div class="col-md-8">
+<p><b>Marketing Automation Corp.</b> offers expert Marketo consultant services. We can assist with Marketo design by using Marketo certified experts. We also offer expert Pardot consultants, and Pardot implementations by Pardot certified consultants.  </p>
+
+</div>
+
+</div>
+
+
+<div class="row right-footer-sec">
+<div class="col-md-4">
+<div class="getintouch-sec">
+<p>Marketing Automation Canada © 2022<br>
+    <a href="https://www.marketing-automation-us.com/privacy-policy.html">Privacy Policy</a><br>
+    </p>
+<p><a href="tel:1-437-703-2699" style="font-size: 15px;">+1-437-703-2699</a><br><a href="mailto:info@marketing-automation.ca" style="font-size: 15px;">info@marketing-automation.ca</a></p>
+<p>Unit 403, 2333 Dundas St. W., <br />Toronto, ON M6R 3A6</p>
+</div>
+</div>
+<div class="col-md-8">
+<div class="left-footer">
+<span>Offerings</span>
+<ul>
+<li><a href="about-us.html">Marketo Consultant</a></li>
+<li><a href="about-us.html">Marketo Design</a></li>
+<li><a href="about-us.html">Marketo certified Experts</a></li>
+<li><a href="about-us.html">Marketo Assistance</a></li>
+<li><a href="about-us.html">Marketo Outsourced</a></li>
+</ul>
+</div>
+
+<div class="right-footer">
+<span></span>
+<ul>
+  <li><a href="about-us.html">SalesForce Sales Cloud Consultant</a></li>
+  <li><a href="about-us.html">SalesForce Sales Cloud Consulting</a></li>
+  <li><a href="about-us.html">Pardot Certified Consultant</a></li>
+  <li><a href="about-us.html">Pardot Implementation</a></li>
+  <li><a href="about-us.html">Salesforce Marketing Cloud Consulting</a></li>
+<li></li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div class="row" id="bottom">
+<div class="col-md-12">
+
+<p>Marketing Automation Canada © 2022<br>
+    <a href="https://www.marketing-automation-us.com/privacy-policy.html">Privacy Policy</a><br>
+    </p>
+<p><a href="tel:1-437-703-2699" style="font-size: 15px;">+1-437-703-2699</a><br><a href="mailto:info@marketing-automation.ca" style="font-size: 15px;">info@marketing-automation.ca</a></p>
+<p>Unit 403, 2333 Dundas St. W., <br />Toronto, ON M6R 3A6</p>
+
+
+</div>
+
+</div>
+
+
+
+</section>
+<div class="slanted-bottom">
+
+<div class="inner-div">
+<svg class="triangle"version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 100" style="enable-background:new 0 0 800 100;" xml:space="preserve">
+        <polyline id="XMLID_2_" class="st0" points="0,124.5 0,0 600,130 "/>
+      </svg>
+      </div>
+</div>
+
+<script type="text/javascript">
+_linkedin_data_partner_id = "97516";
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=97516&fmt=gif" />
+</noscript>
+	<script>
+	jQuery(function($) {
+  if ($(window).width() > 769) {
+    $('.navbar .dropdown').hover(function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(150).slideDown();
+
+    }, function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+    });
+
+    $('.navbar .dropdown > a').click(function() {
+      location.href = this.href;
+    });
+
+  }
+});
+	</script>
+</body>
+</html>
