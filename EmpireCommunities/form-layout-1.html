@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="%%description%%" />
+    <title>%%title%%</title>
+    <style>
+        #pardot-form {
+            font-family: 'Helvetica', sans-serif;
+        }
+        
+        form.form p {
+            clear: none!important;
+        }
+        
+        #pardot-form .form-field {
+            margin: 0;
+            padding: 5px 0 0 0;
+        }
+        /* The input fields */
+        
+        #pardot-form input.text,
+        #pardot-form textarea.standard,
+        #pardot-form select,
+        #pardot-form input.date {
+            border: 0;
+            border-bottom: 2px solid #2e2624;
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box !important;
+            background-color: #f1f0f0;
+            padding: 0 10px;
+            box-shadow: none;
+            font-size: 13px;
+            line-height: 43px;
+        }
+        /* the input fields on focus */
+        
+        #pardot-form input.text:focus,
+        #pardot-form textarea.standard:focus,
+        #pardot-form select:focus,
+        #pardot-form input.date:focus {
+            outline: none;
+        }
+        
+        #pardot-form textarea.standard {
+            border: 2px solid #2e2624;
+        }
+        
+        #pardot-form span.value {
+            margin-left: 0;
+        }
+        /* the field labels */
+        
+        #pardot-form label {
+            font-size: 15px;
+            color: black;
+            font-weight: normal;
+            padding-top: 5px;
+            padding-bottom: 2px;
+            float: none;
+            text-align: left;
+            width: auto;
+            display: block;
+        }
+        /* the submit button */
+        
+        #pardot-form .submit input {
+            border: none !important;
+            box-shadow: none !important;
+            background-image: none !important;
+            background-color: #2e2624;
+            color: #fff;
+            font-weight: normal;
+            text-shadow: none;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px;
+            border-radius: 0;
+        }
+        /* the submit button hover */
+        
+        #pardot-form .submit input:hover {}
+        /* the spacing around the submit button */
+        
+        #pardot-form .submit {
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            text-align: center;
+            width: 100%;
+        }
+        /*.form-field:nth-child(1){*/
+        /*    width:33%;*/
+        /*    float:left;*/
+        /*}*/
+        /*.form-field:nth-child(3){*/
+        /*    width:32%;*/
+        /*    float:left;*/
+        /*    margin:0 1%!important;*/
+        /*}*/
+        /*.form-field:nth-child(5){*/
+        /*    width:33%;*/
+        /*    float:left;*/
+        /*}*/
+        /*.form-field:nth-child(7){*/
+        /*    width:33%;*/
+        /*    float:left;*/
+        /*}*/
+        /*.form-field:nth-child(7){*/
+        /*    width:33%;*/
+        /*    float:left;*/
+        /*}*/
+        /*.form-field:nth-child(7){*/
+        /*    width:33%;*/
+        /*    float:left;*/
+        /*}*/
+        
+        .form-field.first_name,
+        .form-field.phone {
+            /* width: 33%; */
+            float: left;
+        }
+        
+        .form-field.last_name,
+        .form-field.Preferred_Contact_Method {
+            /* width: 32%; */
+            float: left;
+            /* margin: 0 1%!important; */
+        }
+        
+        .form-field.email,
+        .form-field.Working_with_Real_Estate_Agent {
+            /* width: 33%; */
+            float: left;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .form-field.first_name,
+            .form-field.phone {
+                width: 100%;
+                float: left;
+            }
+            .form-field.last_name,
+            .form-field.Preferred_Contact_Method {
+                width: 100%;
+                float: left;
+                margin: 0!important;
+            }
+            .form-field.email,
+            .form-field.Working_with_Real_Estate_Agent {
+                width: 100%;
+                float: left;
+            }
+            .form-field.third-width {
+                width: 100%;
+            }
+        }
+        /* formfields flex layout additional workarounds */
+        
+        .full-width {
+            width: 100%;
+        }
+        
+        .third-width {
+            width: calc((100% / 3) - 1rem);
+        }
+        
+        .twothird-width {
+            width: calc((100% / 3) + 30% + 2rem);
+        }
+        
+        #pardot-form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        form.form .pd-checkbox {
+            margin-top: 1rem !important;
+        }
+        
+        form.form .value span {
+            display: flex !important;
+            align-items: flex-start;
+        }
+        
+        form.form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        form.form .pd-checkbox label {
+            padding: 0 !important;
+            margin-top: -4px !important;
+        }
+    </style>
+</head>
+
+<body>
+    %%content%%
+</body>
+
+</html>
