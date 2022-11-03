@@ -824,15 +824,19 @@
         gap: 1.5rem;
         max-width:${section-max-width}px;
       }
-      #footer .column {
-        border: solid 1px red;
-        width: calc((100% / 6) - 1rem)
+
+      #footer .column:nth-child(2) {
+        flex: 1 0 400px;
+      }
+      #footer .column:nth-child(5) {
+        display: flex;
+        align-items: center;
       }
       #footer .section{
         padding:30px 0;
 
       }
-      #footer p {
+      #footer p, #footer a {
         font-weight: 400;
       }
       .footer-logo img{
@@ -879,6 +883,7 @@
         max-width: 1400px;
         margin: 0 auto;
         justify-content: space-between;
+        gap: 2rem;
       }
       .row1{
         text-align: left;
@@ -907,7 +912,17 @@
           max-width: 600px;
         }
       }
-      @media screen and (max-width:900px){
+      @media screen and (max-width:1100px){
+        .column1 {
+          flex-direction: column;
+        }
+        #footer .column:nth-child(2) {
+          flex: 0;
+        }
+        #footer .column:nth-child(5), #footer .column:nth-child(6) .col {
+          display: flex;
+          justify-content: center;
+        }
         .flex{
           flex-wrap:wrap;
           flex-direction:column;
@@ -991,25 +1006,8 @@
           min-height: auto!important;
           height: auto!important;
         }
-        .column1{
-          display: block;
-          max-width: 1400px;
-          margin: 0 auto;
-        }
-        .row1{
-          text-align: center;
-          width: 100%;
-          padding-right: 0px;
-        }
-        .row2{
-          text-align: center;
-          width: 100%;
-          padding-top: 10px;
-        } 
-        .row3{
-          text-align: center;
-          width: 100%;
-        }
+     
+      
       }
 
       @media (max-width: 480px) {
@@ -1105,7 +1103,7 @@
       <div class="section">
         <div class="logo-container">
           <div class="mktoSnippet" id="bannerlogo-1" mktoName="Banner - Logo">
-            <a href="https://nationalcreditcare.com/" target="_blank"><img src="https://lp.ycs.com/rs/023-OOY-216/images/UQ-Logo-Lockup-Black%403x.png" width="160" alt="logo"></a>
+            <a href="https://uqual.com/" target="_blank"><img src="https://lp.ycs.com/rs/023-OOY-216/images/UQ-Logo-Lockup-Black%403x.png" width="160" alt="logo"></a>
           </div>
         </div>
       </div>
@@ -1315,7 +1313,7 @@
           <div class="column">
             <div class="col">
               <div class="footer-logo" id="footerlogo" mktoName="Footer - Logo">
-                <a href="https://nationalcreditcare.com/" target="_blank"><img src="https://lp.ycs.com/rs/023-OOY-216/images/uqual-logo-white-short.png" alt="logo"></a>
+                <a href="https://uqual.com/" target="_blank"><img src="https://lp.ycs.com/rs/023-OOY-216/images/uqual-logo-white-short.png" alt="logo"></a>
               </div>
             </div>
           </div>
@@ -1346,13 +1344,15 @@
           </div>
           <div class="column">
             <p class="col" id="footertext1" mktoName="Footer - Text 1" style="margin:0;">
-            social
+            <a href="https://www.linkedin.com/company/uqual/about/" target="_blank">
+              <svg style="width:30px;"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+            </a>
             </p>
 
           </div>
           <div class="column">
             <p class="col" id="footertext1" mktoName="Footer - Text 1" style="margin:0;">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 118 118" style="enable-background:new 0 0 118 118;" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 118 118" style="enable-background:new 0 0 118 118;width:120px;" xml:space="preserve">
  
 <g>
 	<g>
