@@ -197,6 +197,9 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 }
+.flex-wrap {
+    flex-wrap;
+}                                                                                                                                                                                                                                                                                                                                                 
     .banner2 h2 {
     font-size: 3.125rem;
     max-width: 80%;
@@ -398,8 +401,13 @@ flex-wrap: wrap;
     font-size: 14px
 
     } 
-    
-    footer a, footer p {
+    footer .text-xl {
+        font-size: 16px !important;
+    }
+    footer .grey-txt {
+        color: #4a4b4a;
+    }
+    footer a, footer p, footer .location-block {
     color:#032155;
     font-weight:600;
     }
@@ -439,6 +447,7 @@ flex-wrap: wrap;
         width: calc((100% / 3));
         display: flex;
         flex-direction: column;
+        margin-bottom: 1.5rem;
     }
     footer .column:nth-child(1) {
         width: calc((100%/3) - 10%)
@@ -452,6 +461,18 @@ flex-wrap: wrap;
        footer .column:nth-child(3) {
         width: calc((100%/3) - 16%)
     }
+    
+    footer .container:nth-child(2) .column {
+        width: calc((100% / 3));
+        min-width: 300px;
+    }
+      footer .container:nth-child(2) .column:nth-child(2) {
+         width: calc((100% / 3) - 10%);
+      }
+    footer .container:nth-child(2) ul {
+        padding: 0;
+        justify-content: space-evenly;
+    }
     .footer-button .footer-location-name:after {
     content: "";
     display: inline-block;
@@ -462,6 +483,9 @@ flex-wrap: wrap;
     border-right: 2px solid white;
     margin-left: 16px;
     top: 0;
+    }
+    .cursor-pointer {
+        margin: 0.5rem 0 !important;
     }
     .collapsed.footer-button .footer-location-name:after {
     top: -3px;
@@ -561,6 +585,15 @@ flex-wrap: wrap;
     #section1 .container {
         width: 100%;
     }
+    footer .column:nth-child(2) .flex-row {
+        justify-content: space-between;
+    }
+    }
+    @media (max-width: 992px) {
+         footer .column:nth-child(2) .flex-row {
+            flex-direction: column !important;
+            white-space: nowrap;
+        }
     }
     @media screen and (max-width: 767px) {
     .mobilenav{position: absolute;
@@ -587,6 +620,9 @@ flex-wrap: wrap;
 
     }
     .navbar.responsive div:first-child {display: block;}
+    footer .container:nth-child(2) ul {
+        justify-content: flex-start !important;
+    }
     }
 
     @media(max-width:970px){
@@ -640,7 +676,9 @@ flex-wrap: wrap;
         height: 40px !important;
         font-size: 14px !important;
     }
-
+footer .container:nth-child(2) .column {
+    min-width: fit-content !important;
+}
     }
 
 </style>
@@ -1292,7 +1330,7 @@ flex-wrap: wrap;
     <footer class="footer pt-8 md:pt-24 pb-12 px-4 md:px-6 bg-white">
                                                                                                                                                                                                                                                                                                                                                                                                                                             <div class="container">
                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-        <div class="flex justify-between flex-col md:flex-row">
+        <div class="flex justify-between flex-wrap flex-col md:flex-row">
         <div class="column">
             <a href="https://www.bluecore.com:443" aria-label="Home">
             <div class="logo">
@@ -1328,12 +1366,10 @@ flex-wrap: wrap;
                         Press              </a>
                     <a class="mb-2" href="https://www.bluecore.com:443/careers/">
                         Careers              </a>
-                    <a class="mb-2" href="https://www.bluecore.com:443/terms-of-use/">
-                        Terms of Use              </a>
+            
                     <a class="mb-2" href="https://www.bluecore.com:443/privacy/">
                         Privacy              </a>
-                    <a class="mb-2" href="https://www.bluecore.com:443/legal/">
-                        Legal              </a>
+           
                     <a class="mb-2" href="/privacy/#california">
                         Do Not Sell My Personal Information              </a>
                     </nav>
@@ -1345,11 +1381,11 @@ flex-wrap: wrap;
             
                     </nav>
                             <nav class="column">
-                                    <p class="text-xl pb-2 font-display">Offices</p>
+                                    <p class="text-xl font-display grey-txt">OFFICES</p>
                                     <div class="location-block" data-js-behavior="heightToggle">
                     <div>
                     <p class="cursor-pointer" data-trigger>New York<span class="arrow"></span>
-                    <p>
+                    </p>
                     <div class="overflow-hidden location-block__body" data-body>
                         222 Broadway<br />
                         16th Floor<br />
@@ -1359,7 +1395,7 @@ flex-wrap: wrap;
                     <div class="location-block" data-js-behavior="heightToggle">
                     <div>
                     <p class="cursor-pointer" data-trigger>India      <span class="arrow"></span>
-                    <p>
+                    </p>
                     <div class="overflow-hidden location-block__body" data-body>
                         Studio 212-213, 2nd Floor,<br />
                         IHDP Business Park,<br />
@@ -1391,11 +1427,20 @@ flex-wrap: wrap;
             </div>
         </div>
     </div>
-    <div class="container flex justify-between mt-12 items-center">
-        <p class="w-1/2">
+    <div class="container flex flex-wrap justify-between mt-12 items-center">
+        <div class="column">
+        <p class="grey-txt">
         &copy; 2022 Bluecore all rights reserved
         </p>
-
+        </div>
+        <div class="column">
+            <ul style="list-style:none;display: flex;margin-top:10px;gap:1rem;white-space:nowrap;">
+                <li> <a class="mb-2" href="https://www.bluecore.com:443/terms-of-use/">Terms of Use</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a class="mb-2" href="https://www.bluecore.com:443/legal/">Legal</a></li>
+            </ul>
+        </div>
+        <div class="column"></div>
     </div>
     </footer>
 
@@ -1421,17 +1466,7 @@ flex-wrap: wrap;
                         fs.parentNode.insertBefore(t, fs); })
     (window,document,'script','https://tag.demandbase.com/2be6f81b.min.js','demandbase_js_lib');  
 </script>
-
-  <script>                                                                                                                                                                                                                                                                                                                                                                                                                                      <script>
-Array.from(document.querySelectorAll('.cursor-pointer')).map((x) => x.addEventListener('click', toggleFunc))
-
-
-function toggleFunc() {
-    console.log('check')
-}
-
-           
-           </script>             
+          
                                                                                                                                                                                                        </script>
 <script type="text/javascript" src="https://get.bluecore.com/rs/527-FSF-769/images/smush-lazy-load-js.js" id="smush-lazy-load-js"></script>
 <script type="text/javascript" src="https://get.bluecore.com/rs/527-FSF-769/images/main-js.js" id="main.js-js"></script>
