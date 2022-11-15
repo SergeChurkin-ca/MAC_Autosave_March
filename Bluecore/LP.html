@@ -41,7 +41,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link href="https://get.bluecore.com/rs/527-FSF-769/images/bootstrap.min.css" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
 <meta class="mktoString" mktoName="Page Title" id="ptitle" default="Bluecore">	
 <meta class="mktoString" mktoName="Page UTL" id="purl" default="Page URL">
@@ -161,35 +163,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     }
 
-    @font-face {
-    font-family: 'Moderat';
-    src: url("https://get.bluecore.com/rs/527-FSF-769/images/moderat-regular.woff2") format("woff2"), url("https://get.bluecore.com/rs/527-FSF-769/images/moderat-regular.woff") format("woff");
-    font-style: normal;
-    font-weight: 400;
-    }
-
-
-    @font-face {
-    font-family: 'Moderat';
-    src: url("https://get.bluecore.com/rs/527-FSF-769/images/moderat-bold.woff2") format("woff2"), url("https://get.bluecore.com/rs/527-FSF-769/images/moderat-bold.woff") format("woff");
-    font-style: normal;
-    font-weight: 700;
-    }
-
-
-    @font-face {
-    font-family: 'Moderat';
-    src: url("https://get.bluecore.com/rs/527-FSF-769/images/moderat-bold-italic.woff2") format("woff2"), url("https://get.bluecore.com/rs/527-FSF-769/images/moderat-bold-italic.woff") format("woff");
-    font-style: italic;
-    font-weight: 700;
-    }
-
-    @font-face {
-    font-family: 'Moderat';
-    src: url("https://get.bluecore.com/rs/527-FSF-769/images/Moderat-Black.woff2") format("woff2"), url("https://get.bluecore.com/rs/527-FSF-769/images/Moderat-Black.woff") format("woff");
-    font-style: normal;
-    font-weight: 900;
-    }
+   
 
 
 .flex-row {
@@ -208,7 +182,7 @@ flex-wrap: wrap;
     color: #20242b;
     padding: 0 0 2rem;
     margin: 0 0 2rem;
-    font-family: 'Moderat';font-weight:900;
+    font-family: 'Inter';font-weight:900;
     }
 
 
@@ -218,7 +192,7 @@ flex-wrap: wrap;
     -moz-box-sizing: border-box;
     }
 
-    body {background:#fff;font-family: 'Moderat', Arial, sans-serif} 
+    body {background:#fff;font-family: 'Inter', Arial, sans-serif} 
     .container{width: 100%;max-width: 1440px}
     .logo{padding: 25px 0}
     #section1 .container {
@@ -231,7 +205,7 @@ flex-wrap: wrap;
     padding-left:15px;
     width: 100%;
     font-size: 16px;
-    font-family: 'Moderat', Arial, sans-serif
+    font-family: 'Inter', Arial, sans-serif
     }
     #section1 .items-center {
         flex-wrap: wrap;
@@ -253,7 +227,7 @@ flex-wrap: wrap;
     text-align: right;
     margin: 0px 0;
     font-size: 16px;
-    font-family: 'Moderat', Arial, sans-serif
+    font-family: 'Inter', Arial, sans-serif
     }
 
     .navbar ul li {
@@ -261,7 +235,7 @@ flex-wrap: wrap;
     text-align: center;
     margin: 5px 1.5%;
     font-size: 16px;
-    font-family: 'Moderat', Arial, sans-serif
+    font-family: 'Inter', Arial, sans-serif
     }
     .navbar > div{width: 100%}
 
@@ -270,11 +244,11 @@ flex-wrap: wrap;
     .subheadline{padding-top: 70px;padding-bottom: 70px}
     h1{font-weight: 900;color:${headlinecolor};font-size: ${bgfontsize}px;line-height: 1.6;}
     h1.highlight{line-height: 2em;background-color:${highlight1color}; display:inline;padding: 10px 0;box-shadow: 20px 0 0 ${highlight1color}, -20px 0 0 ${highlight1color};}
-    h2{font-size: 31px;line-height: 1.25em;font-family: 'Moderat', Arial, sans-serif;color:#20242b;font-weight: 800}
+    h2{font-size: 31px;line-height: 1.25em;font-family: 'Inter', Arial, sans-serif;color:#20242b;font-weight: 800}
 
     h3{font-weight: bold;font-size: 20px;color:#0020a0;line-height: 1.25em}
 
-    h4{font-size: 31px;line-height: 1.25em;font-family: 'Moderat', Arial, sans-serif;color:${headline2color};font-weight: 800}
+    h4{font-size: 31px;line-height: 1.25em;font-family: 'Inter', Arial, sans-serif;color:${headline2color};font-weight: 800}
     h4.highlight{line-height: 2em;background-color:${highlight2color};color:${headline2color}; display:inline;padding: 10px 0;box-shadow: 20px 0 0 ${highlight2color}, -20px 0 0 ${highlight2color};}
 
     .mar40{margin-top:40px;}
@@ -296,7 +270,7 @@ flex-wrap: wrap;
     .bnsub{display:${bnsubshow}}
     .bnsub p{color: ${bnsubtext};font-size: 22px;}
     .form{background: #ffffff;
-    width: 100%;padding: 2em;margin: 65px auto;max-width: 380px}
+    width: 100%;padding: 2em;margin: 65px auto;max-width:518px;border-radius:10px;box-shadow:5px 5px 12px #5a5a5a, -5px 5px 20px #5a5a5a;}
 
     #section3, #section4, #section5, #section6, #section7, #section8{padding: 4em 0 }
     #section5{background-color:#f3f4f4}
@@ -331,21 +305,21 @@ flex-wrap: wrap;
 
 
     .btn p{margin-bottom: 0}
-    .btn a{color: #ffffff;text-decoration: none;padding: 2px 20px; font-family: 'Moderat', Arial, Helvetica, sans-serif; font-weight: bold; text-align: center;margin: 15px auto;border-radius: 0.5rem;}
+    .btn a{color: #ffffff;text-decoration: none;padding: 2px 20px; font-family: 'Inter', Arial, Helvetica, sans-serif; font-weight: bold; text-align: center;margin: 15px auto;border-radius: 0.5rem;}
 
 
-    .bannerbtn .btnt a{color:${bnbtntext}; font-family: 'Moderat', Arial, Helvetica, sans-serif; font-weight: bold; font-size: 25px;background: ${bnbtnbg};padding: 10px 15px;border: 3px solid ${bnbtnbd}; border-radius: 0.5rem; text-decoration: none;}
+    .bannerbtn .btnt a{color:${bnbtntext}; font-family: 'Inter', Arial, Helvetica, sans-serif; font-weight: bold; font-size: 25px;background: ${bnbtnbg};padding: 10px 15px;border: 3px solid ${bnbtnbd}; border-radius: 0.5rem; text-decoration: none;}
 
-    .bannerbtn .btnt a:hover{color:${bnbtntexth}; font-family: 'Moderat', Arial, Helvetica, sans-serif; font-weight: bold; font-size: 25px;background: ${bnbtnbgh};padding: 10px 15px;border: 3px solid ${bnbtnbdh}; border-radius: 0.5rem;}
+    .bannerbtn .btnt a:hover{color:${bnbtntexth}; font-family: 'Inter', Arial, Helvetica, sans-serif; font-weight: bold; font-size: 25px;background: ${bnbtnbgh};padding: 10px 15px;border: 3px solid ${bnbtnbdh}; border-radius: 0.5rem;}
 
-    .btns a{color:${ctbtntext}; font-family: 'Moderat', Arial, Helvetica, sans-serif; font-weight: bold; background: ${ctbtnbg};padding: 10px 15px;border: 3px solid ${ctbtnbdh}; border-radius: 0.5rem; text-decoration: none; margin-top: 20px; display: inline-block;}
+    .btns a{color:${ctbtntext}; font-family: 'Inter', Arial, Helvetica, sans-serif; font-weight: bold; background: ${ctbtnbg};padding: 10px 15px;border: 3px solid ${ctbtnbdh}; border-radius: 0.5rem; text-decoration: none; margin-top: 20px; display: inline-block;}
 
-    .btns a:hover{color:${ctbtntexth}; font-family: 'Moderat', Arial, Helvetica, sans-serif; font-weight: bold; background: ${ctbtnbgh};padding: 10px 15px;border: 3px solid ${ctbtnbdh}; border-radius: 0.5rem;}
+    .btns a:hover{color:${ctbtntexth}; font-family: 'Inter', Arial, Helvetica, sans-serif; font-weight: bold; background: ${ctbtnbgh};padding: 10px 15px;border: 3px solid ${ctbtnbdh}; border-radius: 0.5rem;}
 
     #imageleft {display:${showleft};}
     #imageright {display:${showright};}
     .navbar ul li.btn {
-    font-family: 'Moderat', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 16px;
     border: 3px solid #0020a0;
     border-radius: 0;
@@ -510,9 +484,13 @@ flex-wrap: wrap;
     }
     form{width:100% !important}    
     .mktoForm {
-    font-family: 'Moderat', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
     font-size: 16px !important;
     font-weight: 400 !important;
+    max-width:518px !important;
+    }
+    .mktoForm .mktoGutter, .mktoForm .mktoOffset {
+        display: none !important;
     }
     .mktoForm .mktoRequiredField label.mktoLabel {
     font-weight:normal !important;
@@ -523,28 +501,44 @@ flex-wrap: wrap;
     .mktoFormCol, .mktoFieldWrap {
     width:100% !important;
     }
-    .mktoForm .mktoOffset {
-    float: left;
-    height:0 !important;
-    width:10px;
+    .mktoForm .mktoFormRow {
+        margin: 1rem 0 !important;
     }
     .mktoButtonWrap {
     margin-left:0 !important;
+    width:100% !important;
     }
     .mktoButtonRow {
-    width:100% !important;
+    width:80% !important;
     text-align:center !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    min-width: 200px;
+    margin-top: 1rem !important;
     }
-    .mktoForm .mktoLabel{width:100% !important}
-    .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField
-    {
-
-    background-color: #fff !important;
-    border: 2px solid #000 !important;
-    padding: 10px 0.5em !important;
+    .mktoForm .mktoLabel{width:100% !important;font-weight:500;color: #0A20A0 !important;}
+    .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+    background-color: #fcfcfc !important;
+    border: 1.5px solid #eeeeef !important;
+    padding: 12px 14px !important;
     box-shadow: none !important;
     text-shadow: none !important;
+    border-radius: 6px !important;
+    height: unset !important;
+      color: #032155 !important;
+      font-weight:500;
     }
+    .mktoForm input[type=text]:focus,
+.mktoForm input[type=url]:focus,
+.mktoForm input[type=email]:focus,
+.mktoForm input[type=tel]:focus,
+.mktoForm input[type=number]:focus,
+.mktoForm input[type=date]:focus,
+.mktoForm select.mktoField:focus,
+.mktoForm textarea.mktoField:focus,
+.mktoForm select.mktoField:focus {
+    border: solid 2px #4858b8 !important;
+}
     .mktoForm .mktoRequiredField .mktoAsterix{display:none !important}
     ::-webkit-input-placeholder { /* Edge */
     color: black;
@@ -557,9 +551,9 @@ flex-wrap: wrap;
     ::placeholder {
     color: black;
     }
-    button.mktoButton {
+    .mktoForm button.mktoButton  {
     width: 100% !important;
-    background-color: #0020a0 !important;
+    background-color: #0820a1 !important;
     background-image: none !important;
     border: 0px !important;
     box-shadow: none !important;
@@ -568,17 +562,23 @@ flex-wrap: wrap;
     line-height: 1.5em !important;
     padding: 11px 0px !important;
     margin-top: 15px !important;
-    color:#ffffff  !important
+    color:#ffffff  !important;
+    border-radius: 30px !important;
+    }
+    .mktoForm button.mktoButton:hover,
+    .mktoForm button.mktoButton:focus {
+        background: #20242B !important;
+        color: #ffffff !important;
     }
     .mktoForm select.mktoField {
-    border-radius: 0px !important;
-    height: 43px !important;
-    border-radius: 0px !important;
+    height: unset !important;
+    padding: 12px 14px !important;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position: right 50%;
     background-repeat: no-repeat;
     background-image: url(https://get.bluecore.com/rs/527-FSF-769/images/down.png);
+    
     }
     @media (max-width: 1200px){
     .container{width:95%;}
@@ -766,7 +766,7 @@ footer .container:nth-child(2) .column {
         <div class="col-md-6 align-self-center">
             <div class="form"  id="showform">
             <div class="mktoForm" id="form1" mktoName="Banner Form">
-
+<script src="//get.bluecore.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2266"></form> <script>MktoForms2.loadForm("//get.bluecore.com", "527-FSF-769", 2266);</script>
             </div>
             <div class="mktoText" id="thankyoumessage" mktoName="thankyoumessage">
             </div>
