@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://go.as-software.com/rs/074-NJA-430/images/LP_MAC_Style.css" rel="stylesheet">
 
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
     <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://go.as-software.com/rs/074-NJA-430/images/favicon.png">
@@ -18,6 +19,7 @@
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec2" mktoName="Show Free-Text2 Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
@@ -30,7 +32,6 @@
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#000000">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#656565">
-
 
     <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#3A8CDD">
     <meta class="mktoColor" id="btnbrdclr" mktoName="Free-Text - Btn Border Color" default="#3A8CDD">
@@ -50,6 +51,18 @@
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#3A8CDD">
     <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#3A8CDD">
 
+    <meta class="mktoColor" id="freeText2BackgroundColor" mktoName="Free-Text2 - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="freeText2HeaderColor" mktoName="Free-Text2 - Title Color" default="#000000">
+    <meta class="mktoColor" id="freeText2TextColor" mktoName="Free-Text2 - Text Color" default="#656565">
+
+    <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#f5f5f5">
+    <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
+    <meta class="mktoString" id="three-col-pad-topbtm" mktoName="3 cols padding top/bottom (rem)" default="3" allowHtml="true">
+    <meta class="mktoString" id="threecol-pad-leftright" mktoName="3 cols padding left/eirgh (rem)" default="1" allowHtml="true">
+
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#000000">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
     <meta class="mktoColor" id="footerhoverclr" mktoName="Footer - Hover Text Color" default="#ffffff">
@@ -57,10 +70,10 @@
     <!-- Font Size Meta Tags -->
     <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="64">
     <meta class="mktoString" mktoName="Freetext - H1(Freetext) Font Size (px)" id="freeTextH1size" default="32">
+    <meta class="mktoString" mktoName="Freetext2 - H1(Freetext2) Font Size (px)" id="freeText2H1size" default="32">
     <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="24">
     <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="64">
     <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="24">
-
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="18.66">
 
     <!-- Banner Section Styling -->
@@ -75,6 +88,7 @@
 
     <!-- Free-Text Section Styling -->
     <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+    <meta class="mktoString" mktoName="Free-Text2 Section - Top/Bottom Padding (px)" id="section2paddingtb" default="40">
 
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
@@ -100,6 +114,17 @@
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="0">
 
+    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#f5f5f5">
+    <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
+    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+
+    <meta class="mktoString" id="freetextorder" mktoName="Free Text - Order" default="2" allowHtml="true">
+    <meta class="mktoString" id="formsectionorder" mktoName="Form Section - Order" default="3" allowHtml="true">
+    <meta class="mktoString" id="freetext2order" mktoName="Free Text 2- Order" default="4" allowHtml="true">
+    <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="5" allowHtml="true">
+    <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="6" allowHtml="true">
 
     <style>
       ${googlefontimport}
@@ -116,7 +141,7 @@
 
 
 
-      body {background:#fff;} 
+      body {background:#fff;display: flex;flex-direction:column;} 
 
       #header h1 {
         font-size: ${header-h1fontsize}px;
@@ -161,11 +186,17 @@
         display: -webkit-flex;
         display:flex;
       }
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+      }
       .column {
         flex-direction: column;
       }
       .w50{
-        width:48%;
+        width:56%;
       }
       .w100{
         width:100%;
@@ -202,7 +233,28 @@
         min-height:20px;
 
       }
-
+      .threecolumns {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+      }
+      .threecolumns .btn {
+        margin-top: 2rem;
+      }
+      #threecol {
+        background-color:${threecolbgcolor};
+        display:${threecolshow};
+        order:${threecolorder};
+      }
+      #threecol .col33 {
+        background-color:${threecolcolumnbgcolor};
+        border-radius:${threecolradius}px;
+        box-shadow: ${threecolshadow};
+        -webkit-box-shadow: ${threecolshadow};
+        -moz-box-shadow: ${threecolshadow};
+        text-align:center;
+        padding: ${three-col-pad-topbtm}rem ${threecol-pad-leftright}rem;
+      }
       .mktoForm input[type="text"],
       .mktoForm input[type="url"], 
       .mktoForm input[type="email"], 
@@ -216,7 +268,7 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         border-radius: 2px !important;
-        padding: 27px 16px !important;
+        padding: 18px 16px !important;
       }
 
 
@@ -245,13 +297,21 @@
       #freetext{
         background-color:${freeTextBackgroundColor};
         display:${showsec1};
+        order: ${freetextorder};
       }
       #formsection{
         background-color:${mainformbgclr};
         display:${showformsec};
+        order: ${formsectionorder};
       }
-
-
+      #freetext2{
+        background-color:${freeText2BackgroundColor};
+        display:${showsec2};
+        order: ${freetext2order};
+      }
+      #brand {
+        order: -100;
+      }
       #brand .section{
         display:flex;
         flex-direction:column;
@@ -261,7 +321,9 @@
         padding-top:${logopaddingtop}px;
         padding-bottom:${logopaddingbtm}px;
       }
-
+      #header {
+        order: -100;
+      }
 
       #header .section{
         display:flex;
@@ -336,7 +398,7 @@
         justify-content: space-between;
       }
       #formsection .form-container{
-        max-width: 700px;
+        max-width: 500px;
         background-color:${formbgclr};
         padding-top: ${formTopBottomPadding}rem;
         padding-bottom: ${formTopBottomPadding}rem;
@@ -346,7 +408,7 @@
       }
       #formsection .lefttext{
         display:${showlefttext};
-        margin-right:40px;
+        margin-right:20px;
       }
 
 
@@ -367,7 +429,7 @@
       }
       form.mktoForm{
         width:99% !important;
-        max-width:700px !important;
+        max-width:500px !important;
         margin: 0 auto !important;
         ${fontfamily}
       }
@@ -401,12 +463,12 @@
       }
       .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
         min-height:25px !important;
-        height:40px !important;
+        height:30px !important;
         font-weight: 800;
       }
       .mktoForm textarea.mktoField{
-        height:70px !important;
-        min-height:40px !important;
+        height:40px !important;
+        min-height:30px !important;
       }
       .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
         border: 1px solid #D0D3D4 !important;
@@ -415,7 +477,7 @@
         -moz-border-radius: 0 !important;
         -webkit-border-radius: 0 !important;
         border-radius: 0 !important;
-        padding-left: 10px !important;
+        padding-left: 20px !important;
         font-size:${formfontsize}px !important;
       }
       .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -519,11 +581,30 @@
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
+      #freetext2 h1 {
+        color: ${freeText2HeaderColor} !important;
+        font-size: ${freeText2H1size}px;
+        font-family: ${fontfamily}, sans-serif !important;
+      }
+      #freetext2 p,
+      #freetext2 ul,
+      #freetext2 li {
+        color: ${freeText2TextColor} !important;
+      }
       #footer{
+        order: 100;
         display:${showfooter};
         background-color:${footerbgclr};
         color:${footerfontclr};
         font-size:${footerfontsize}px;
+      }
+      #video {
+        background-color:${videobgcolor};
+        display:${videoshow};
+        order:${videoorder};
+      }
+      #video .left {
+        background-color:${videoleftbgcolor};
       }
       #footer .logo {
         width: ${footerlogowidth}px;
@@ -562,7 +643,7 @@
       #footer .row1 p {
         line-height: 27px;
       }
-    
+
       #footer .col {
         justify-content: right;
         display: flex;
@@ -580,7 +661,7 @@
       #footer .footer-menu strong{
         font-size: cal(2px + ${footerfontsize}px);
       }
-  
+
       #footer p {
         margin: 0 !important;
       }
@@ -624,6 +705,20 @@
       }
       #footericons {
         margin-top: 2.5rem;
+      }
+      @media (max-width: 980px) {
+        .threecolumns {
+          flex-direction: column;
+        }
+        #formsection .flex-row {
+          flex-direction: column;
+        }
+        .w50 {
+          width: 100%;
+        }
+        .form-container {
+          margin: 0 auto;
+        }
       }
       @media (max-width: 900px) {
         .row1 {
@@ -676,6 +771,7 @@
         }
         #formsection .form-container{
           padding:20px;
+          margin-top: 1rem;
         }
         .row1 {
           justify-content: center !important;
@@ -714,17 +810,15 @@
         font-weight: normal;
         font-style: normal;
       }
-
-
-
     </style>
   </head>
+  
   <body>
     <header id="brand">
       <div class="section">
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
-            <a href="#"><img src="https://go.as-software.com/rs/074-NJA-430/images/AS-Software_Logo_Full-Color.png" alt="logo"></a>
+            <a href="https://www.as-software.com/"><img src="https://go.as-software.com/rs/074-NJA-430/images/AS-Software_Logo_Full-Color.png" alt="logo"></a>
           </div>
         </div>
       </div>
@@ -733,7 +827,7 @@
       <div class="section">
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
-            <a href="#"><img src="https://go.as-software.com/rs/074-NJA-430/images/AS-Software_Logo_White-Cutout.png" alt="logo"></a>
+            <a href="https://www.as-software.com/"><img src="https://go.as-software.com/rs/074-NJA-430/images/AS-Software_Logo_White-Cutout.png" alt="logo"></a>
           </div>
         </div>
         <div class="mktoText" id="bannertext" mktoName="Banner - Text">
@@ -777,7 +871,7 @@
 
 
     <div id="formsection">
-      <div class="section flex">
+      <div class="section flex-row">
 
         <div class="w50 lefttext">
           <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
@@ -798,40 +892,146 @@
             <h2  class="bold">Form Headline</h2>
           </div>
           <div class="mktoForm" id="form1" mktoName="Form">
-            <script src="//875-NJN-601.mktoweb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1003"></form> <script>MktoForms2.loadForm("//875-NJN-601.mktoweb.com", "875-NJN-601", 1003);</script>
+
           </div>
         </div>
 
       </div>
     </div>
 
+    <div id="freetext2">
+      <div class="section">
+        <div class="mktoText" id="freetext2copy1" mktoName="Free-Text2 - Copy 1">
+          <h1>
+            Lorem ipsum dolor sit amet
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="mktoText" id="freetext2copy2" mktoName="Free-Text2 - Copy 2">
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+
+    <!-- Three Column -->
+    <div class="container_100" id="threecol">
+      <div class="container_inner section">
+        <div class="mktoText center" id="threecoltextmain" mktoName="Three Col - Main Copy">
+          <h2>Lorem Ipsum Dolor Sit Amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
+        </div>
+        <div class="threecolumns">
+          <div class="col33">
+            <div class="threecolimg">
+              <div class="mktoImg" id="threecolImg1" mktoName="Three Col - Col 1 Image">
+                <img src="https://go.as-software.com/rs/074-NJA-430/images/RGarbi Headshot.png" width="140">
+              </div>
+              <div class="mktoText" id="threecoltext1" mktoName="Three Col - Col 1 Copy">
+                <br>
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+              </div>
+              <div class="mktoText btn" id="threecolbtn1" mktoName="Three Col - Col 1 Button"><a href="#">CTA Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="mid"></div>
+          <div class="col33">
+            <div class="mktoImg" id="threecolImg2" mktoName="Three Col - Col 2 Image">
+              <img src="https://go.as-software.com/rs/074-NJA-430/images/RGarbi Headshot.png" width="140">
+            </div>
+            <div class="mktoText" id="threecoltext2" mktoName="Three Col - Col 2 Copy">
+              <br>
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+            </div>
+            <div class="mktoText btn" id="threecolbtn2" mktoName="Three Col - Col 2 Button"><a href="#">CTA Button</a>
+            </div>
+          </div>
+          <div class="mid"></div>
+          <div class="col33">
+            <div class="mktoImg" id="threecolImg3" mktoName="Three Col - Col 3 Image">
+              <img src="https://go.as-software.com/rs/074-NJA-430/images/RGarbi Headshot.png" width="140">
+            </div>
+            <div class="mktoText" id="threecoltext3" mktoName="Three Col - Col 3 Copy">
+              <br>
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+            </div>
+            <div class="mktoText btn" id="threecolbtn3" mktoName="Three Col - Col 3 Button"><a href="#">CTA Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Three Column -->
+
+    <!-- Video -->
+    <div class="container_100" id="video">
+      <div class="container_inner section">
+        <div class="left">
+          <div class="mktoText" id="videotext" mktoName="Video - Copy">
+            <h2>Lorem Ipsum Dolor Sit Amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+            <ul>
+              <li>Fusce vel nisi vel velit finibus congue.</li>
+              <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
+              <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="videoWrapper videoWrapper169 js-videoWrapper">
+            <!-- YouTube iframe. -->
+            <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+            <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+            <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+            <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+            <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter});">Play video</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Video -->
     <footer id="footer">
       <div class="footer-container section flex">
 
         <div class="row1">
 
           <div class="logo-container col menu mktoText" mktoName="footer col 1" id="footer-col1">
-              <a href="#"><img class="logo" src="https://go.as-software.com/rs/074-NJA-430/images/AS-Software_Logo_White-Cutout.png" alt="footer logo"></a>
-        
+            <a href="https://www.as-software.com/"><img class="logo" src="https://go.as-software.com/rs/074-NJA-430/images/AS-Software_Logo_White-Cutout.png" alt="footer logo"></a>
+
           </div>
 
           <div class="col mktoText" mktoName="footer col 2" id="footer-col2">
             © 1991- 2022 AS Software Inc. All Rights Reserved
-            </div>
-     
-          <div class="col mktoText" mktoName="footer col 3" id="footer-col3">
-        560 Sylvan Avenue | Englewood Cliffs NJ, 07632
-        <br /> ph:201-541-1900 fax:201-541-1199 | info@as-software.com
           </div>
 
-    
+          <div class="col mktoText" mktoName="footer col 3" id="footer-col3">
+            560 Sylvan Avenue | Englewood Cliffs NJ, 07632
+            <br /> ph:201-541-1900 fax:201-541-1199 | info@as-software.com
+          </div>
+
+
         </div>
- 
+
       </div>
 
     </footer>
 
+
+    <script src="https://go.as-software.com/rs/074-NJA-430/images/mac-jquery.js"></script>
+    <script src="https://go.as-software.com/rs/074-NJA-430/images/mac-video-script.js"></script>
 
   </body>
 </html>
