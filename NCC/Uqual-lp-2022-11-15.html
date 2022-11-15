@@ -19,6 +19,7 @@
     <!-- Show and Hide Meta Tags -->
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-header-img" mktoName="Show Top Banner Img" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner-with-form" mktoName="Show Banner with Form" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-banner-prod-img" mktoName="Show Banner Product Image" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -303,7 +304,10 @@
         gap: 2rem;
       }
       #header .column {
-        flex: 1 0 480px;
+        flex: 1 0 360px;
+      }
+      #header .column:nth-child(2) {
+        display: ${show-header-img}
       }
     #header .btn {
         font-size:${freetext-btn-fz}px;
@@ -346,7 +350,7 @@
         color: ${bannerTextColor} !important;
         font-weight:normal
       }
-
+    
 
       /* banner with form */
 
@@ -1123,16 +1127,15 @@
             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ab temporibus molestiae adipisci aliquam dicta odit velit optio beatae laboriosam!</p>
           </div>
-           <div class="mktoText banner-product-image" id="banner-prod-img" mktoName="Banner Product Image">
+           <div class="mktoText banner-product-image" id="banner-prod-img2" mktoName="Banner Product Image">
              <img src="https://lp.ycs.com/rs/023-OOY-216/images/ai.png" alt="banner product image" />
           </div>
         </div>
         <div class="flex-column">
           <h2 class="mktoText" mktoName="banner-form-headline" id="bannerform-headline">DOWNLOAD</h2>
-          <div class="mktoText" mktoName="Header Right Box" id="banner-form">
-          </div>
-          <div class="mktoForm" id="banner-form" mktoName="top-form">
-            <script src="//lp.ycs.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1037"></form> <script>MktoForms2.loadForm("//lp.ycs.com", "023-OOY-216", 1037);</script>
+ 
+          <div class="mktoForm" id="banner-form" mktoName="Banner Form">
+            
           </div>
         </div>
       </div>
@@ -1241,47 +1244,8 @@
         <div class="mktoText" id="formheadline" mktoName="Form Header">
           <b>Submit a Client Referral on Behalf</b>
         </div>
-        <div>
-          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-
-            <input type="hidden" name="oid" value="00D6A000002EuuB">
-            <input type="hidden" name="retURL" value="{{lead.Invoice Website}}">
-            <input type="hidden" name="broker_fname" value="{{lead.First Name}}">
-            <input type="hidden" name="broker_lname" value="{{lead.Last Name}}">
-
-            <!--  ----------------------------------------------------------------------  -->
-            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-            <!--  these lines if you wish to test in debug mode.                          -->
-            <!--  <input type="hidden" name="debug" value=1>                              -->
-            <!--  <input type="hidden" name="debugEmail" value="anand@sairoop.com">       -->
-            <!--  ----------------------------------------------------------------------  -->
-            <div class="row_form">
-              <input placeholder="Borrower First Name" id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-
-              <input placeholder="Borrower Last Name" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
-              <input placeholder="Borrower Mobile" id="mobile" maxlength="40" name="mobile" size="20" type="text" /></div>
-
-
-            <div class="row_form">
-              <input placeholder="Borrower Email" id="email" maxlength="80" name="email" size="20" type="text" />
-
-              <input id="00N6A00000PLHHb" placeholder="Borrower Preferred Name" maxlength="100" name="00N6A00000PLHHb" size="20" type="text" />
-
-              <input placeholder="Borrower Phone" id="phone" maxlength="40" name="phone" size="20" type="text" /></div>
-
-
-            <div class="row_form">
-              <div class="checkbox_cont">
-                <div class="label">Spanish Preferred:</div><input class="check" id="00N6A00000PLHHq" name="00N6A00000PLHHq" type="checkbox" value="1" /></div>
-
-              <textarea id="00N6A00000PNU8Q" placeholder="What would you like us to know about this borrower?" name="00N6A00000PNU8Q" rows="4" type="text" wrap="soft"></textarea>
-
-              <input placeholder="Company" id="company" maxlength="40" value="{{lead.SFDC Id}}" name="company" size="20" type="text" type="hidden" />
-            </div>
-
-            <div class="button_cont">
-              <input type="submit" name="submit"></div>
-          </form>
+        <div class="mktoForm" id="form2" mktoName="bottom Form">
+     
         </div>
       </div>
 
