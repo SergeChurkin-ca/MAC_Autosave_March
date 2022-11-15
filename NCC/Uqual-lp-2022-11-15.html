@@ -18,8 +18,9 @@
 
     <!-- Show and Hide Meta Tags -->
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner-with-form" mktoName="Show Banner with Form" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-banner-prod-img" mktoName="Show Banner Product Image" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec-img-right" mktoName="Show Img Right Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-CTA1" mktoName="Show Optional CTA 1" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -30,21 +31,24 @@
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <meta class="mktoString" mktoName="A - title" id="atitle" default="Correct!">
-    <meta class="mktoString" mktoName="A - Copy" id="acopy" default="While an inquiry only affects a credit score from 2-5 points, they add up.">
+    <meta class="mktoString" mktoName="A - Copy" id="acopy" default="Your path to loan approval starts here">
     <meta class="mktoString" mktoName="B - title" id="btitle" default="Nice try!">
-    <meta class="mktoString" mktoName="B - Copy" id="bcopy" default="Read more below to learn about how credit inquiries can prevent homeownership">
+    <meta class="mktoString" mktoName="B - Copy" id="bcopy" default="Your path to loan approval starts here">
     <meta class="mktoString" mktoName="C - title" id="ctitle" default="Nice try!">
-    <meta class="mktoString" mktoName="C - Copy" id="ccopy" default="Read more below to learn about how credit inquiries can prevent homeownership">
+    <meta class="mktoString" mktoName="C - Copy" id="ccopy" default="Your path to loan approval starts here">
     <meta class="mktoString" mktoName="D - title" id="dtitle" default="Nice try!">
-    <meta class="mktoString" mktoName="D - Copy" id="dcopy" default="Read more below to learn about how credit inquiries can prevent homeownership">
+    <meta class="mktoString" mktoName="D - Copy" id="dcopy" default="Your path to loan approval starts here">
     <meta class="mktoString" mktoName="Default - title" id="deftitle" default="Nice try!">
-    <meta class="mktoString" mktoName="Default - Copy" id="defcopy" default="Read more below to learn about how credit inquiries can prevent homeownership">
+    <meta class="mktoString" mktoName="Default - Copy" id="defcopy" default="Your path to loan approval starts here">
 
 
     <!-- Background, Buttons, and Text Color Meta Tags -->
-    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#0A57A4">
-    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
-    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#F1F2F2">
+    <meta class="mktoColor" id="header-btn-bg" mktoName="Banner - Button Background Color" default="#ffffff">
+    <meta class="mktoColor" id="header-btn-brdr" mktoName="Header - Button Border Color" default="#0543DA">
+    <meta class="mktoColor" id="header-btn-clr" mktoName="Header - Button Txt Color" default="#0543DA">
+    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#333333">
+    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#333333">
 
     <!-- Banner with form styling -->
     <meta class="mktoColor" id="headerform-bg" mktoName="Banner - Text Color" default="#6C47E0">
@@ -87,7 +91,7 @@
     <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="20">
 
     <!-- Banner Section Styling -->
-    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="https://lp.ycs.com/rs/023-OOY-216/images/lpbg1.jpg">
+    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="#">
     <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="160">
     <meta class="mktoString" mktoName="Banner Background Blend Mode" id="background-blend-mode" default="none">
 
@@ -179,10 +183,13 @@
 
 
       #header h1 {
-        font-size: ${header-h1fontsize}px;
+        font-family:${fontfamily-banner-headline} !important;
+        font-size: ${banner-h1fontsize}px;
+        font-weight: 100 !important;
       }
+      
       #header span {
-        font-size: ${header-p-fontsize}px;
+        font-size: ${banner-pfontsize}px !important;
       }
 
       p,ul,ol{
@@ -286,14 +293,29 @@
       }
       #header .section{
         display:flex;
-        flex-direction:column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content:center;
         min-height:500px;
         position:relative;
         padding-top:${headerpaddingtop}px;
         padding-bottom:${headerpaddingbtm}px;
+        gap: 2rem;
       }
-
+      #header .column {
+        flex: 1 0 480px;
+      }
+    #header .btn {
+        font-size:${freetext-btn-fz}px;
+        background: ${header-btn-bg};
+        border: solid 1px ${header-btn-brdr} !important;
+        color: ${header-btn-clr};
+        font-weight: 600;
+        padding: 22px 42px;
+        border-radius: 70px;
+        font-family: ${fontfamily-medium}, sans-serif !important;
+        font-weight: 600;
+    }
       #header .logo-container img{
         width:${toplogowidth}px;
       }
@@ -358,6 +380,10 @@
       #banner-with-form .flex-column {
         width: calc((100% / 2 ) - 2rem);
         flex: 1 0 400px;
+        flex-direction: column;
+      }
+      #banner-with-form .banner-product-image {
+        display: ${show-banner-prod-img};
       }
       #banner-with-form .flex-column:nth-child(1) {
         display: flex;
@@ -367,6 +393,7 @@
       #banner-form, #banner-with-form .flex-column:nth-child(2) {
         background: ${banner-rightbox-bg};
         border-radius: 4px;
+        height: fit-content;
       }
       #banner-with-form .flex-column:nth-child(2) {
         padding: 2rem 2.25rem;
@@ -513,8 +540,7 @@
       }
       #three-columns .flex-column {
         width: calc((100% / 3) - 3.08rem);
-        background: #${threecol-col-bg};
-
+        background: ${threecol-col-bgr};
       }
       #three-columns p {
         padding: 1rem 2rem 1.5rem;
@@ -582,45 +608,7 @@
         clear:none !important; float: left;margin-bottom:0px;
       }
 
-      .mktoForm .mktoFormRow:nth-child(2){
-        float:left;
-        width: 100%;
-      }
-      .mktoForm .mktoFormRow:nth-child(3){
-        float:left;
-        width: 32%;
-        margin-right: 15px;
-      }
-      .mktoForm .mktoFormRow:nth-child(4){
-        float:left;
-        width: 32%;
-        margin-right: 15px;
-      }
-      .mktoForm .mktoFormRow:nth-child(5){
-        float:left;
-        width: 32%;
-      }
-      .mktoForm .mktoFormRow:nth-child(6){
-        float:left;
-        width: 100%;
-      }
-      .mktoForm .mktoFormRow:nth-child(7){
-        float:left;
-        width: 32%;
-        margin-right: 15px;
-      }
-      .mktoForm .mktoFormRow:nth-child(8){
-        float:left;
-        width: 32%;
-        margin-right: 15px;
-      }
-      .mktoForm .mktoFormRow:nth-child(9){
-        float:left;
-        width: 32%;
-      }
-      .label {
-        color: #ffffff;
-      }
+   
 
       .row_form {
         display: flex;
@@ -697,8 +685,6 @@
       .mktoForm .mktoLabel{
         width:90% !important;
         font-size:16px !important;
-        color: #ffffff !important;
-        color: #ffffff !important;
       }
       .mktoForm .mktoFormRow{
         display:flex !important;
@@ -895,9 +881,7 @@
         width: 33%;
         padding-top: 10px;
       }
-      .ft-table{
-        text-align: right;
-      }
+
       @media (max-width: 1200px) {
         #img-right .flex-column:nth-child(2) {
           flex: 1 0 400px !important;
@@ -1112,27 +1096,22 @@
     <div id="header">
       <div class="section" x-data="{result: new URLSearchParams(location.search).get('result')|| ''}">
 
-        <template x-if="result == ''"><h1>${deftitle}<span><br>${defcopy}</span></h1></template>
-        <template x-if="result == 'a'"><h1>${atitle}<span><br>${acopy}</span></h1></template>
-        <template x-if="result == 'b'"><h1>${btitle}<span><br>${bcopy}</span></h1></template>
-        <template x-if="result == 'c'"><h1>${ctitle}<span><br>${ccopy}</span></h1></template>
-        <template x-if="result == 'd'"><h1>${dtitle}<span><br>${dcopy}</span></h1></template>
-
-
-
-        <div class="mktoText" mktoName="Header CTA" id="hdrcta">
-          <div>
-            <table cellpadding="0" cellspacing="0" border="0">
-              <tbody>
-                <tr>
-                  <td style="text-align: center; text-decoration:none; font-size:18px; line-height:135%; font-family: 'Raleway',Arial, sans-serif; border:2px solid #0a58a3; background-color:#ffffff; border-radius: 5px;padding:5px; text-transform: uppercase;">
-                    <a style="min-height:10px; text-decoration:none; color:#0a58a3; padding: 9px 30px; display:inline-block" href="#form"><b>Submit Referral</b></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="column">
+            <template x-if="result == ''"><h1>${deftitle}<span><br>${defcopy}</span></h1></template>
+            <template x-if="result == 'a'"><h1>${atitle}<span><br>${acopy}</span></h1></template>
+            <template x-if="result == 'b'"><h1>${btitle}<span><br>${bcopy}</span></h1></template>
+            <template x-if="result == 'c'"><h1>${ctitle}<span><br>${ccopy}</span></h1></template>
+            <template x-if="result == 'd'"><h1>${dtitle}<span><br>${dcopy}</span></h1></template>
+            <div class="mktoText" mktoName="Header CTA" id="hdrcta">
+                <a class="btn" href="#form">Submit Referral</a>
+            </div>
         </div>
+
+         <div class="column">
+             <div class="mktoText banner-product-image" id="banner-prod-img" mktoName="Banner Product Image">
+                 <img src="https://lp.ycs.com/rs/023-OOY-216/images/uqual-hero3-812x1024.png" alt="banner product image" />
+              </div>
+         </div>
       </div>
     </div>
     <!-- end of Header -->
@@ -1143,16 +1122,17 @@
           <div class="mktoText" mktoName="Header Headline" id="header-headline">
             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ab temporibus molestiae adipisci aliquam dicta odit velit optio beatae laboriosam!</p>
-           
           </div>
-          <div>
-             <img class="mktoText banner-product-image" id="banner-prod-img" mktoName="Banner Product Image" src="https://lp.ycs.com/rs/023-OOY-216/images/ai.png" alt="banner product image" />
+           <div class="mktoText banner-product-image" id="banner-prod-img" mktoName="Banner Product Image">
+             <img src="https://lp.ycs.com/rs/023-OOY-216/images/ai.png" alt="banner product image" />
           </div>
         </div>
         <div class="flex-column">
           <h2 class="mktoText" mktoName="banner-form-headline" id="bannerform-headline">DOWNLOAD</h2>
           <div class="mktoText" mktoName="Header Right Box" id="banner-form">
-
+          </div>
+          <div class="mktoForm" id="banner-form" mktoName="top-form">
+            <script src="//lp.ycs.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1037"></form> <script>MktoForms2.loadForm("//lp.ycs.com", "023-OOY-216", 1037);</script>
           </div>
         </div>
       </div>
@@ -1255,8 +1235,7 @@
     </div>
     <!-- end of three columns -->
 
-
-    <div id="formsection">
+<div id="formsection">
       <a id="form"></a>
       <div class="section">
         <div class="mktoText" id="formheadline" mktoName="Form Header">
@@ -1307,6 +1286,7 @@
       </div>
 
     </div>
+
 
 
 

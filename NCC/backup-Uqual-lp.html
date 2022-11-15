@@ -20,6 +20,7 @@
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner-with-form" mktoName="Show Banner with Form" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-banner-prod-img" mktoName="Show Banner Product Image" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec-img-right" mktoName="Show Img Right Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-CTA1" mktoName="Show Optional CTA 1" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -358,6 +359,10 @@
       #banner-with-form .flex-column {
         width: calc((100% / 2 ) - 2rem);
         flex: 1 0 400px;
+        flex-direction: column;
+      }
+      #banner-with-form .banner-product-image {
+        display: ${show-banner-prod-img};
       }
       #banner-with-form .flex-column:nth-child(1) {
         display: flex;
@@ -367,6 +372,7 @@
       #banner-form, #banner-with-form .flex-column:nth-child(2) {
         background: ${banner-rightbox-bg};
         border-radius: 4px;
+        height: fit-content;
       }
       #banner-with-form .flex-column:nth-child(2) {
         padding: 2rem 2.25rem;
@@ -513,8 +519,7 @@
       }
       #three-columns .flex-column {
         width: calc((100% / 3) - 3.08rem);
-        background: #${threecol-col-bg};
-
+        background: ${threecol-col-bgr};
       }
       #three-columns p {
         padding: 1rem 2rem 1.5rem;
@@ -1143,10 +1148,9 @@
           <div class="mktoText" mktoName="Header Headline" id="header-headline">
             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ab temporibus molestiae adipisci aliquam dicta odit velit optio beatae laboriosam!</p>
-           
           </div>
-          <div>
-             <img class="mktoText banner-product-image" id="banner-prod-img" mktoName="Banner Product Image" src="https://lp.ycs.com/rs/023-OOY-216/images/ai.png" alt="banner product image" />
+           <div class="mktoText banner-product-image" id="banner-prod-img" mktoName="Banner Product Image">
+             <img src="https://lp.ycs.com/rs/023-OOY-216/images/ai.png" alt="banner product image" />
           </div>
         </div>
         <div class="flex-column">
