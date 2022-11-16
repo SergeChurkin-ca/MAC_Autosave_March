@@ -155,17 +155,35 @@
         border-radius: 50px;
         color: #ffffff;
         position: relative;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        position: relative;
+        max-height:46px;
+        
       }
+      
 .topcta svg {
 transform: translateY(-50%);
-right: 0;
-// opacity: 0;
+opacity:0;
 transition: all .3s;
 fill: #ffffff;
 max-width: 50px;
+width: 50px;
+height: 30px;
+margin-right: -28px;
+margin-top:30px;
+margin-left: -30px;
+}
+
+.topcta:hover svg {
+  // display:flex;
+  opacity:1;
+  transition: all 0.3s;
+  margin-left: 0;
 }
       .topcta:hover{
-        background-color: #20242B;
+        
         color: #ffffff;
       }
       @media (min-width: 992px){
@@ -173,8 +191,6 @@ max-width: 50px;
           position: relative;
         }
       }
-
-
 
 
       .flex-row {
@@ -864,16 +880,8 @@ max-width: 50px;
                     </a>
                     <a class="topcta" href="https://www.bluecore.com/contact-us/" style="text-decoration: none; font-family: Moderat, Arial, Helvetica, sans-serif; font-weight: bold;">
                       Request A Demo
-                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100">
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
-    refX="0" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" />
-    </marker>
-  </defs>
-  <line x1="0" y1="50" x2="250" y2="50" stroke="#ffffff" 
-  stroke-width="8" marker-end="url(#arrowhead)" />
-</svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+
                       </a>
                   </div>
                 </div>
