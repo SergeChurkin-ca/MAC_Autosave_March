@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Uqual">
+
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://lp.ycs.com/rs/023-OOY-216/images/cropped-UQ-Logo-Site-32x32.png">
+
+    <title>${pagetitle}</title>
+    <link rel="icon" href="${faviconlink}">
+
+    <meta class="mktoString" mktoName="Section Max Width" id="section-max-width" default="1200">
+    <meta class="mktoString" mktoName="Freetext Section Max Width" id="freetext-section-max-width" default="1400">
+
+    <!-- Show and Hide Meta Tags -->
+    <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-header-img" mktoName="Show Top Banner Img" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbanner-with-form" mktoName="Show Banner with Form" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-banner-prod-img" mktoName="Show Banner Product Image" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec-img-right" mktoName="Show Img Right Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-CTA1" mktoName="Show Optional CTA 1" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-three-cols" mktoName="Show 3 Cols Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-CTA2" mktoName="Show Optional CTA 2" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+
+
+
+    <!-- Background, Buttons, and Text Color Meta Tags -->
+    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#F1F2F2">
+    <meta class="mktoColor" id="header-btn-bg" mktoName="Banner - Button Background Color" default="#ffffff">
+    <meta class="mktoColor" id="header-btn-brdr" mktoName="Header - Button Border Color" default="#0543DA">
+    <meta class="mktoColor" id="header-btn-clr" mktoName="Header - Button Txt Color" default="#0543DA">
+    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#333333">
+    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#333333">
+
+    <!-- Banner with form styling -->
+    <meta class="mktoColor" id="headerform-bg" mktoName="Banner - Text Color" default="#6C47E0">
+    <meta class="mktoColor" id="headerform-color" mktoName="Banner - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="banner-rightbox-bg" mktoName="Banner Right Box - BG Color" default="#ffffff">
+    <meta class="mktoString" id="banner-withform-padtop" mktoName="Banner Top Padding(px)" default="100">
+    <meta class="mktoString" id="banner-withform-padbtm" mktoName="Banner Bottom Padding" default="100">
+
+    <meta class="mktoString" id="freetext-maxwidth" mktoName="FreeText - Max Width (px)" default="1200">
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#3d3d3d">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#3d3d3d">
+    <meta class="mktoColor" id="freetext-btn-bg" mktoName="Free-Text - btn background" default="#6C47E0">
+    <meta class="mktoString" id="freetext-btn-fz" mktoName="Free-Text - btn font size" default="21">
+
+    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#6C47E0">
+    <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="none">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#ffffff">
+    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#3d3d3d">
+    <meta class="mktoColor" id="formbtnbdrColor" mktoName="Form - Button Border Color" default="#ffffff">
+
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#6C47E0">
+    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
+    <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#ffffff">
+    <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#ffffff">
+    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#0a58a3">
+    <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:BG Color" default="#ffffff">
+
+    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#09E37F">
+    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#333">
+
+
+    <!-- Font Size Meta Tags -->
+    <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
+    <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="20">
+    <meta class="mktoString" mktoName="Banner - H1(Header) Font Size (px)" id="banner-h1fontsize" default="60">
+    <meta class="mktoString" mktoName="Banner - p Font Size (px)" id="banner-pfontsize" default="26">
+
+    <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="20">
+
+    <!-- Banner Section Styling -->
+    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="#">
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="160">
+    <meta class="mktoString" mktoName="Banner Background Blend Mode" id="background-blend-mode" default="none">
+
+    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="30">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="30">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="50">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="50">
+
+    <!-- Free-Text Section Styling -->
+    <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="50">
+
+    <!-- Three columns section Styling -->
+    <meta class="mktoColor" id="threecols-bg-color" mktoName="Three Columns bg color" default="#F0F2F2">
+    <meta class="mktoColor" id="threecol-col-bgr" mktoName="Three Columns Box bg color" default="#F0F2F2">
+    <meta class="mktoString" mktoName="Thee Cols H3 size" id="threecols-h3-fontsize" default="40">
+    <meta class="mktoString" mktoName="Thee Cols p size" id="threecols-p-fontsize" default="20">
+    <meta class="mktoString" mktoName="Thee Cols Padding top" id="three-cols-padtop" default="75">
+    <meta class="mktoString" mktoName="Thee Cols Padding bottom" id="three-cols-padbtm" default="75">
+    <!-- Footer Section Styling -->
+
+    <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
+    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="160">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="30">
+    <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
+
+
+    <!-- Google Fonts -->
+    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="FoundersGroteskLight">
+    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily-medium" default="FoundersGroteskMedium">
+    <meta class="mktoString" mktoName="Banner Headline Font - Family" id="fontfamily-headline" default="Canela-Thin-Web">
+    <meta class="mktoString" mktoName="Banner Headline Font - Family" id="fontfamily-banner-headline" default="Canela-Thin-Web">
+
+    <!-- General Button Styling -->
+    <meta class="mktoString" mktoName="Form Button - Text Size (px)" id="btnfontsize" default="18">
+    <meta class="mktoString" mktoName="Form Button - Border Radius (px)" id="btnborderrds" default="5">
+    <meta class="mktoString" mktoName="Form Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
+    <meta class="mktoString" mktoName="Form Button Left/Right Padding (px)" id="btnpaddinglr" default="30">
+    <meta class="mktoString" mktoName="Form Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="8">
+
+    <!-- Form Section Styling -->
+    <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="30">
+    <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
+    <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
+    <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
+
+    <!-- Sections custom reorder -->
+    <meta class="mktoString" mktoName="Header Order" id="header-order" default="1">
+    <meta class="mktoString" mktoName="Banner With Form Order" id="banner-withform-order" default="2">
+    <meta class="mktoString" mktoName="Free Text Order" id="freetext-order" default="3">
+    <meta class="mktoString" mktoName="Image Right Order" id="imgright-order" default="4">
+    <meta class="mktoString" mktoName="Three Cols Order" id="threecols-order" default="5">
+    <meta class="mktoString" mktoName="Form Section Order" id="formsection-order" default="6">
+
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+      * {
+        padding:0;
+        border: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: ${fontfamily}, sans-serif !important;
+      }
+
+      /* general setup */     
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .flex-column {
+        max-width: 99%;
+      }
+      img {
+
+        width: 100%;
+      }
+      /* end of general setup */
+      div#hdrcta {
+        margin-top: 35px;
+      }
+
+      body {background:#fff;display:flex;flex-direction: column;} 
+
+
+      #header h1 {
+        font-family:${fontfamily-banner-headline} !important;
+        font-size: ${banner-h1fontsize}px;
+        font-weight: 100 !important;
+      }
+
+      #header span {
+        font-size: ${banner-pfontsize}px !important;
+      }
+
+      p,ul,ol{
+        margin:10px 0;
+      }
+      ul,ol{
+        margin-left:45px;
+      }
+      p, li{
+        line-height:1.5;
+        font-size:${pfontsize}px;
+      }
+      b, .bold, em{
+        font-weight:bold;
+      }
+      a {text-decoration: none}
+      img{
+        vertical-align:bottom;
+        max-width:100%;
+        height:auto;
+      }
+      .logo-container a{
+        text-decoration:none;
+      }
+
+      .flex{
+        display: -webkit-flex;
+        display:flex;
+      }
+      .flex .col:not(:last-child){
+        margin-right:30px;
+      }
+      .flex .col:last-child{
+        margin-right:0;
+      }
+      .w50{
+        width:48%;
+      }
+      .w100{
+        width:100%;
+      }
+
+      .section{
+        width:85%;
+        max-width:${section-max-width}px;
+        margin:0 auto;
+        padding:${sectionpaddingtb}px 0;
+      }
+      .form-container{
+        min-height:20px;
+
+      }
+
+      .mktoForm input[type="text"],
+      .mktoForm input[type="url"], 
+      .mktoForm input[type="email"], 
+      .mktoForm input[type="tel"], 
+      .mktoForm input[type="number"], 
+      .mktoForm input[type="date"], 
+      .mktoForm textarea.mktoField, 
+      .mktoForm select.mktoField {
+        color: ${formTextColor} !important;
+      }
+
+
+
+      h3 {margin-bottom:15px;}
+
+
+      #formsection{
+        background-color:${mainformbgclr};
+        display:${showformsec};
+        order: ${formsection-order};
+      }
+      #footer{
+        display:${showfooter};
+        background-color:${footerbgclr};
+        color:${footerfontclr};
+        font-size:${footerfontsize}px;
+        order: 100;
+      }
+      #brand .section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        max-height:350px;
+        position:relative;
+        padding-top:${logopaddingtop}px;
+        padding-bottom:${logopaddingbtm}px;
+      }
+
+      #header{
+        background-color:${bannerclr};
+        background-image:url('${bannerimage}');
+        background-repeat:no-repeat;
+        background-position:top center;
+        background-size:cover;
+        display:${showbanner};
+        order: ${header-order};
+        background-blend-mode: ${background-blend-mode};
+      }
+      #header .section{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        min-height:500px;
+        position:relative;
+        padding-top:${headerpaddingtop}px;
+        padding-bottom:${headerpaddingbtm}px;
+        gap: 2rem;
+      }
+      #header .column {
+        flex: 1 0 360px;
+      }
+      #header .column:nth-child(2) {
+        display: ${show-header-img}
+      }
+      #header .btn {
+        font-size:${freetext-btn-fz}px;
+        background: ${header-btn-bg};
+        border: solid 1px ${header-btn-brdr} !important;
+        color: ${header-btn-clr};
+        font-weight: 600;
+        padding: 22px 42px;
+        border-radius: 70px;
+        font-family: ${fontfamily-medium}, sans-serif !important;
+        font-weight: 600;
+      }
+      #header .logo-container img{
+        width:${toplogowidth}px;
+      }
+      #brand{
+        display:${showtoplogo-1};
+        order: -100;
+      }
+      #brand .logo-container{
+        top:${sectionpaddingtb}px;
+        left:0;
+        width:100%;
+      }
+      #brand .logo-container img{
+        width:${toplogowidth}px;
+      }
+      #header #bannertext, #header #bannertexta, #header #bannertextb, #header #bannertextc, #header #bannertextd{
+        padding-top:80px;
+        padding-bottom:30px;
+      }
+
+      #header h1 {
+        color: ${bannerHeaderColor} !important;
+      }
+
+      #header span,
+      #header ul,
+      #header li {
+        color: ${bannerTextColor} !important;
+        font-weight:normal
+      }
+
+
+      /* banner with form */
+
+      #banner-with-form {
+        background-color: ${headerform-bg};
+        display: ${showbanner-with-form};
+        order: ${banner-withform-order};
+        z-index: 1;
+
+      }
+      #banner-with-form h1, #banner-with-form p {
+        color: ${headerform-color};
+        margin: 1.25rem 0;
+        max-width: 560px;
+
+      }
+      #banner-with-form h1 {
+        font-family:${fontfamily-banner-headline} !important;
+        font-size: ${banner-h1fontsize}px;
+        font-weight: 100 !important;
+      }
+      #banner-with-form p {
+        font-size: ${banner-pfontsize}px !important;
+
+      }
+      #banner-with-form .flex-row {
+        justify-content: space-between;
+        gap: 2.25rem;
+        padding: ${banner-withform-padtop}px 0 ${banner-withform-padbtm}px !important;
+      }
+      #banner-with-form .flex-column {
+        width: calc((100% / 2 ) - 2rem);
+        flex: 1 0 400px;
+        flex-direction: column;
+      }
+      #banner-with-form .banner-product-image {
+        display: ${show-banner-prod-img};
+      }
+      #banner-with-form .flex-column:nth-child(1) {
+        display: flex;
+        align-items: center;
+        margin-top: -2rem;
+      }
+      #banner-form, #banner-with-form .flex-column:nth-child(2) {
+        background: ${banner-rightbox-bg};
+        border-radius: 4px;
+        height: fit-content;
+      }
+      #banner-with-form .flex-column:nth-child(2) {
+        padding: 2rem 2.25rem;
+        margin-bottom: -2rem;
+      }
+      #banner-form .mktoForm .mktoOffset
+      #banner-form .mktoForm .mktoGutter {
+        display: none !important;
+      }
+      #banner-form form.mktoForm {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.25rem;
+      }
+      #banner-form .mktoForm .mktoFormRow {
+        width: calc((100% / 2 ) - 1rem) !important;
+        margin: 0 auto !important;
+        flex: 1 0 240px;
+        min-width: 40%;
+      }
+      #bannerform-headline {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      #bannerform-headline::after {
+        content: "";
+        width: 68px;
+        background-color: #161616;
+        height: 4px;
+        margin: 0.25rem auto 1rem;
+      }
+      #banner-form .mktoForm input[type=text],
+      #banner-form .mktoForm input[type=url],
+      #banner-form .mktoForm input[type=email],
+      #banner-form .mktoForm input[type=tel],
+      #banner-form .mktoForm input[type=number],
+      #banner-form #banner-form .mktoForm input[type=date],
+      #banner-form .mktoForm textarea.mktoField,
+      #banner-form .mktoForm select.mktoField {
+        background: #eeeeee !important;
+        border: none !important;
+        height: 41px !important;
+      }        
+      #banner-form .mktoForm .mktoLabel {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        color: #161616 !important;
+        margin-bottom: 0.25rem;
+      }           
+      #banner-form .mktoForm .mktoButtonRow {
+        margin: 1.5rem auto 1rem !important;
+      } 
+      #banner-form .mktoForm .mktoButtonWrap.mktoSimple .mktoButton, input[type="submit"] {
+        height: unset !important;
+      }                                                                                                                        
+      /* end of banner with form */
+
+      /* freetext */
+      #freetext{
+        background-color:${freeTextBackgroundColor};
+        display:${showsec1};
+        order: ${freetext-order};
+        margin: 0 auto;
+      }
+      #freetext .section {
+        max-width: ${freetext-section-max-width}px;
+      }
+      #freetext p,
+      #freetext ul,
+      #freetext li {
+        color: ${freeTextTextColor} !important;
+      }
+      #freetext #optional-CTA1 {
+        display: ${show-CTA1};
+      }
+      #freetext #optional-CTA1, #img-right #optional-CTA2 {
+        margin-top: 2.5rem;
+      }
+      #freetext .btn, #img-right .btn {
+        font-size:${freetext-btn-fz}px;
+        background: ${freetext-btn-bg};
+        color: #ffffff;
+        font-weight: 600;
+        padding: 22px 42px;
+        border-radius: 70px;
+        font-family: ${fontfamily-medium}, sans-serif !important;
+      }
+      #freetext .btn:hover, #img-right .btn:focus,
+      #freetext .btn:focus, #img-right .btn:hover {
+        opacity: 0.9;
+        transition: all 0.3s;
+      }
+      /* end of freetext */
+      #formlefttext h2 {
+        color: ${formSectionHeaderColor} !important;
+      }
+
+      /* image right section */
+      #img-right {
+        display: ${showsec-img-right};
+        order: ${imgright-order};
+      }
+      #img-right .section {
+
+      }
+      #img-right #optional-CTA2 {
+        display: ${show-CTA2};
+      }
+      #img-right .flex-row {
+        justify-content: space-between;
+        gap: 5rem;
+        flex-wrap: wrap-reverse;
+      }
+      #img-right .flex-column {
+        width: calc((100% / 2) - 1rem);
+      }
+      #img-right .flex-column:nth-child(1) {
+        flex: 1 0 400px;
+      }
+      #img-right .flex-column:nth-child(2) {
+        flex: 1 0 245px;
+      }
+
+
+      /* end of image rightt section */
+
+      /* 3 columns */
+      #three-columns {
+        background: ${threecols-bg-color};
+        display: ${show-three-cols};
+        order: ${threecols-order};
+      }
+      #three-columns .section {
+        padding-top: ${three-cols-padtop}px;
+        padding-bottom: ${three-cols-padbtm}px;
+      }
+      #img-right .section {
+        padding: 50px 0 80px;
+      }
+      #three-columns .flex-row {
+        justify-content: space-between;
+      }
+      #three-columns .flex-column {
+        width: calc((100% / 3) - 3.08rem);
+        background: ${threecol-col-bgr};
+      }
+      #three-columns p {
+        padding: 1rem 2rem 1.5rem;
+        font-size: ${threecols-p-fontsize}px;
+      }
+      #three-columns h3 {
+        padding: 1rem 2rem 00rem;
+        font-size: ${threecols-h3-fontsize}px;
+        font-family: ${fontfamily-headline} !important;
+        font-weight: 100 !important;
+      }
+      #three-columns a {
+        color: #6C47E0;
+        font-weight: 600;
+        font-size: ${threecols-p-fontsize}px;
+        white-space: nowrap;
+      }
+      #three-columns img {
+        max-width: 150px;
+        display: flex;
+        margin: 0 auto;
+      }
+      /* end of three columns */
+
+      #formsection p,
+      #formsection ul,
+      #formsection li {
+        color: ${formTextColor} !important;
+      }
+      #formsection .section{
+        justify-content: space-between;
+      }
+      #formsection .form-container{
+        background-color:${formbgclr};
+        padding-top: ${formTopBottomPadding}px;
+        padding-bottom: ${formTopBottomPadding}px;
+      }
+
+
+
+      .mktoForm .mktoRequiredField .mktoAsterix {
+        display: none !impor!ant;
+      }
+      #formheadline{
+        font-size: ${formheadlinefontsize}px;
+        color: ${formHeadLineColor} !important;
+        text-align:center;
+        margin-bottom: 10px;
+      }
+
+      #formheadline h2{
+        color: ${formHeadLineColor} !important;
+        font-size: ${formheadlinefontsize}px !important;
+      }
+      form.mktoForm{
+        margin: 0 auto !important;
+        font-family: ${fontfamily}, sans-serif !important;
+        width:100% !important;
+      }
+
+      .mktoFormCol, .mktoFieldWrap {
+        width:100% !important;
+      }
+      .mktoForm .mktoFormRow {
+        clear:none !important; float: left;margin-bottom:0px;
+      }
+
+
+
+      .row_form {
+        display: flex;
+        width: 100%;
+        flex: 3;
+        gap: 15px;
+        align-items: flex-start;
+        margin-bottom:15px;
+      }
+
+      form {
+        margin-top: 40px;
+      }
+
+      .row_form input, .row_form textarea {
+        width: 100%;
+      }
+      input {
+        height: 50px;
+
+      }
+      textarea {
+        padding-top: 15px;
+      }
+      .lastrow_form {
+        display: inline-flex;
+        width: 100%;
+      }
+      .button_cont {width:100%;text-align:center;
+      }
+      input, .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField, textarea{
+        border: 1px solid #D0D3D4 !important;
+        background: #ffffff !important;
+        color: #3d3d3d !important;
+        -moz-border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding-left: 10px !important;
+        font-size:16px !important;
+      }
+      input, .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color:#3a3a3a !important;
+      }
+      input, .mktoForm input::-moz-placeholder { /* Firefox 19+ */
+        color:#3a3a3a !important;
+      }
+      input, .mktoForm input:-ms-input-placeholder { /* IE 10+ */
+        color:#3a3a3a !important;
+      }
+      input,  .mktoForm input:-moz-placeholder { /* Firefox 18- */
+        color:#3a3a3a !important;
+      }
+      .check {width:20%!important;}
+
+      input.check {
+        height: 25px!important;
+        width: 25px!important;
+        margin-left: 20px;
+      }
+      .checkbox_cont {
+        width: 49%;
+        display: inline-flex;
+        align-items: center;
+        margin-right: 5px;
+
+      }
+
+      .mktoForm .mktoGutter{
+        width:0 !important;
+      }
+      .mktoForm .mktoOffset {
+        height: 7px !important;
+      }
+      .mktoForm .mktoLabel{
+        width:90% !important;
+        font-size:16px !important;
+      }
+      .mktoForm .mktoFormRow{
+        display:flex !important;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
+        margin-left:20px;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol:first-child{
+        margin-left:0 !important;
+      }
+      .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap, .mktoForm input, .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm .mktoButtonRow{
+        width:100% !important;
+      }
+      .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
+        min-height:25px !important;
+        height:50px !important;
+        font-family: ${fontfamily-medium}, sans-serif !important;
+      }
+      .mktoForm textarea.mktoField{
+        height:70px !important;
+        min-height:40px !important;
+      }
+      .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+        border: 1px solid #D0D3D4 !important;
+        background: #ffffff !important;
+        color: #3d3d3d !important;
+        -moz-border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding-left: 10px !important;
+        font-size:16px !important;
+      }
+      .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input::-moz-placeholder { /* Firefox 19+ */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input:-ms-input-placeholder { /* IE 10+ */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input:-moz-placeholder { /* Firefox 18- */
+        color:#3a3a3a !important;
+      }
+      .mktoForm select.mktoField{
+        background-color:#ffffff !important;
+        background-image: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/select-arrow.png') !important;
+        background-repeat: no-repeat !important;
+        background-position:97% 50% !important;
+        -moz-appearance: none; 
+        -webkit-appearance: none; 
+        appearance: none;
+        background-size: 24px !important;
+      }
+      .mktoForm input:invalid, .mktoForm select.mktoField:invalid, .mktoForm textarea.mktoField:invalid{
+        box-shadow: 0px 0px 0px 3px #e83131 !important;
+      }
+      .mktoLogicalField.mktoCheckboxList input{
+        width: 20px !important;
+        height: 20px !important;
+        margin-top: 3px !important;
+        margin-right: 5px!important;
+      }
+      .mktoForm a, .mktoForm a:visited{
+        color:#3a3a3a !important;
+      }
+      .mktoForm .mktoLogicalField.mktoCheckboxList{
+        order:1;
+        margin-right: 8px !important;
+      }
+      .mktoForm .mktoButtonWrap{
+        margin-left: 0 !important;
+      }
+      .mktoForm .mktoButtonRow{
+        margin-top:30px;
+        text-align: center;
+      }
+      .mktoButtonWrap button.mktoButton {
+        color:#fff;
+        text-align: center !important;
+        font-size:18px !important;
+        -moz-border-radius: 5px !important;
+        -webkit-border-radius: 5px !important;
+        border-radius:70px !important;
+        opacity:1;
+        transition:300ms opacity;
+      }
+
+      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton, input[type="submit"] {
+        background: ${formButtonColor} !important;
+        color: ${formButtonTextColor} !important;
+        border: 2px solid ${formbtnbdrColor}!important;
+        padding: 9px 30px !important;
+        font-weight:bold;
+      }
+
+      .mktoForm button.mktoButton:hover, .mktoForm button.mktoButton:focus, input[type="submit"]:hover{
+        opacity:0.7;
+        color:${formButtonHoverColor} !important;
+        background-color:${formButtonHoverBGColor} !important;
+        background: ${formButtonHoverBGColor} !important;
+        border: solid 2px ${formButtonBorder};
+      }
+
+      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+        color: ${formButtonHoverColor} !important;
+        background-color: ${formButtonHoverBGColor} !important;
+        background: ${formButtonHoverBGColor} !important;
+      }
+
+      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+        margin-left: 1.5em;
+        margin-top: 0.1em;
+        margin-bottom: 0.3em;
+        line-height: 2em!important;
+        display: block;
+        min-height: 12px;
+        font-size: 16px!important;
+      }
+
+      .footer-container {
+        flex-direction: row;
+        gap: 1.5rem;
+        max-width:${section-max-width}px;
+      }
+
+      #footer .column:nth-child(2) {
+        flex: 1 0 400px;
+      }
+      #footer .column:nth-child(5) {
+        display: flex;
+        align-items: center;
+      }
+      #footer .section{
+        padding:30px 0;
+
+      }
+      #footer p, #footer a {
+        font-weight: 400;
+      }
+      .footer-logo img{
+        width:90px;
+        height: auto;
+      }
+      #footer .logo-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      #footer .icons-container img{
+        width:30px;
+      }
+
+      #footer .icons-container {
+        justify-content: center;
+      }
+      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
+        color:#333333;
+        font-size:16px;
+      }
+      #footertext2 ul, #footericons ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      #footertext2 ul {
+        flex-direction: column;
+      }
+      #footer ul {
+        margin: 0 auto !important;
+      }
+      #footer ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+      .column1{
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      .row1{
+        text-align: left;
+        padding-right: 30px;
+      }
+
+      .row3{
+        text-align: right;
+        width: 33%;
+        padding-top: 10px;
+      }
+
+      @media (max-width: 1200px) {
+        #img-right .flex-column:nth-child(2) {
+          flex: 1 0 400px !important;
+        }
+        #three-columns .flex-row {
+          flex-direction: column;
+          gap: 2rem;
+        }
+        #three-columns .flex-column {
+          width: 100%;
+          margin: 0 auto;
+          max-width: 600px;
+        }
+      }
+      @media screen and (max-width:1100px){
+        .column1 {
+          flex-direction: column;
+        }
+        #footer .column:nth-child(2) {
+          flex: 0;
+        }
+        #footer .column:nth-child(5), #footer .column:nth-child(6) .col {
+          display: flex;
+          justify-content: center;
+        }
+        .flex{
+          flex-wrap:wrap;
+          flex-direction:column;
+        }
+        .flex .col:not(:last-child){
+          margin-left:0;
+          margin-right:0;
+        }
+        .footer-container img {
+          width: 100px;
+          min-width: 100px;
+        }
+        .w50{
+          width:100%;
+        }
+        .section, #header .section{
+          width:90%;
+          padding:40px 0;
+          padding-top:40px;
+          padding-bottom:40px;
+        }
+        #brand .logo-container{
+          top:40px;
+        }
+        #formsection .lefttext{
+          margin-right:0;
+          width:100%;
+          margin-bottom:20px;
+        }
+        #formsection .form-container{
+          padding:20px;
+        }
+        .mktoForm .mktoFormRow:nth-child(3){
+          float:none;
+          width: 100%;
+          margin-right: 0px;
+        }
+        .mktoForm .mktoFormRow:nth-child(4){
+          float:none;
+          width: 100%;
+          margin-right: 0px;
+        }
+        .mktoForm .mktoFormRow:nth-child(5){
+          float:none;
+          width: 100%;
+        }
+        .mktoForm .mktoFormRow:nth-child(7){
+          float:none;
+          width: 100%;
+          margin-right: 0px;
+        }
+        .mktoForm .mktoFormRow:nth-child(8){
+          float:none;
+          width: 100%;
+          margin-right: 0px;
+        }
+        .mktoForm .mktoFormRow:nth-child(9){
+          float:none;
+          width: 100%;
+        }
+      }
+
+
+      @media screen and (max-width:550px){
+        .mktoForm .mktoFormRow{
+          display:block !important;
+        }
+        .row_form {
+          display: block;
+          margin-bottom: 0px;
+        }
+
+        .row_form input, .row_form textarea {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .mktoForm .mktoFormRow .mktoFormCol{
+          margin-left:0 !important;
+        }
+        .mktoForm button.mktoButton {
+          min-height: auto!important;
+          height: auto!important;
+        }
+
+
+      }
+
+      @media (max-width: 480px) {
+        #banner-with-form .flex-column:nth-child(2) {
+          padding: 2rem 0.5rem;
+        }
+        #banner-form .mktoForm .mktoFormRow {
+          max-width: 99% !important;
+        }
+      }
+
+      @font-face {
+        font-family: 'Canela-Thin-Web';
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/Canela-Thin-Web.eot');
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/Canela-Thin-Web.eot.eot?#iefix') format('embedded-opentype'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/Canela-Thin-Web.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'FoundersGrotesk-Bold';
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGrotesk-Bold.svg#FoundersGrotesk-Bold') format('svg'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGrotesk-Bold.ttf') format('truetype'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGrotesk-Bold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'founders-grotesk-web-bold';
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-bold.eot');
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-bold.eot?#iefix') format('embedded-opentype'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-bold.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'FoundersGroteskLight';
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGroteskLight.svg#FoundersGroteskLight') format('svg'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGroteskLight.ttf') format('truetype'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGroteskLight.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'founders-grotesk-web-light';
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-light.eot');
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-light.eot?#iefix') format('embedded-opentype'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-light.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'FoundersGroteskMedium';
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGroteskMedium.svg#FoundersGroteskMedium') format('svg'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGroteskMedium.ttf') format('truetype'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/FoundersGroteskMedium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'founders-grotesk-web-medium';
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-medium.eot');
+        src: url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-medium.eot?#iefix') format('embedded-opentype'),
+          url('https://lp.ycs.com/rs/023-OOY-216/images/founders-grotesk-web-medium.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+
+
+
+
+    </style>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6X3W9KQ19X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6X3W9KQ19X');
+    </script>
+
+  </head>
+  <body>
+
+    <header id="brand">
+      <div class="section">
+        <div class="logo-container">
+          <div class="mktoSnippet" id="bannerlogo-1" mktoName="Banner - Logo">
+            <a href="https://uqual.com/" target="_blank"><img src="https://lp.ycs.com/rs/023-OOY-216/images/UQ-Logo-Lockup-Black%403x.png" width="160" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header -->
+    <div id="header">
+      <div class="section" x-data="{result: new URLSearchParams(location.search).get('result')|| ''}">
+
+        <div class="column">
+         
+          <div class="mktoText" mktoName="Header CTA" id="hdrcta">
+            <a class="btn" href="#form">Submit Referral</a>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="mktoText banner-product-image" id="banner-prod-img" mktoName="Banner Product Image">
+            <img src="https://lp.ycs.com/rs/023-OOY-216/images/uqual-hero3-812x1024.png" alt="banner product image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of Header -->
+    <!-- Header with form -->
+    <div id="banner-with-form">
+      <div class="section flex-row">
+        <div class="flex-column">
+          <div class="mktoText" mktoName="Header Headline" id="header-headline">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ab temporibus molestiae adipisci aliquam dicta odit velit optio beatae laboriosam!</p>
+          </div>
+          <div class="mktoText banner-product-image" id="banner-prod-img2" mktoName="Banner Product Image">
+            <img src="https://lp.ycs.com/rs/023-OOY-216/images/ai.png" alt="banner product image" />
+          </div>
+        </div>
+        <div class="flex-column">
+          <h2 class="mktoText" mktoName="Banner Right Box Text" id="bannerform-headline">DOWNLOAD</h2>
+          <div class="mktoText" mktoName="jotformembeded" id="jotformembeded">
+          </div>
+          <div class="mktoForm" id="banner-form" mktoName="Banner Form">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of Header with form -->
+
+
+    <div id="freetext">
+      <div class="section">
+
+        <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla egestas nisl egestas viverra at vitae nisi. Nulla congue maximus erat. Aenean nunc leo, ullamcorper non ipsum a, tempus laoreet purus. Nullam metus erat, porttitor convallis est ut,
+            consequat feugiat sem. Ut facilisis erat nec risus blandit molestie. Praesent blandit elit eget felis posuere, a posuere metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In sollicitudin
+            nulla id neque faucibus, nec aliquam lectus rutrum. Phasellus feugiat velit id laoreet auctor. Proin aliquet ut justo ac efficitur. Quisque bibendum et elit at vulputate. Maecenas mollis ultrices elit. Pellentesque vulputate odio vel
+            magna tempus, ac posuere sem finibus. Curabitur ut lacus ut ex luctus maximus at eget neque.
+            <br><br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ligula lectus, fermentum nec lectus at, pellentesque venenatis justo. Etiam sodales, tortor eu finibus porta, est justo tincidunt
+            turpis, a luctus lacus elit quis sem. Morbi consectetur consectetur fringilla. Sed luctus, tortor non sollicitudin eleifend, nunc quam mollis turpis, in elementum ipsum dolor eu nisi. Cras ullamcorper arcu vel dolor dapibus, sed euismod
+            nibh vulputate. Quisque at turpis at velit laoreet aliquet. Aliquam bibendum lacinia velit ut aliquet. Aenean egestas sem sed neque eleifend laoreet. Sed sit amet diam auctor, maximus justo quis, bibendum quam. Vestibulum viverra sem
+            vel justo vestibulum, a maximus sapien tristique. Duis ornare placerat nisi. Duis tincidunt interdum tempor. Nulla vitae lorem lorem. Cras justo massa, porta at arcu ut, sollicitudin vulputate ligula. Ut ornare blandit urna, id pulvinar
+            urna consequat eu.
+          </p>
+        </div>
+        <div class="mktoText" id="optional-CTA1" mktoName="Free Text CTA ">
+          <a href="#" class="btn">Optional CTA</a>
+        </div> 
+      </div>
+    </div>
+
+    <!-- Image right text left-->
+    <div id="img-right">
+      <div class="section flex-row">
+        <div class="flex-column">
+          <div class="mktoText" id="imgright-copy" mktoName="Img RIght Copy ">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla egestas nisl egestas viverra at vitae nisi. Nulla congue maximus erat. Aenean nunc leo, ullamcorper non ipsum a, tempus laoreet purus. Nullam metus erat, porttitor convallis est ut,
+              consequat feugiat sem. Ut facilisis erat nec risus blandit molestie. Praesent blandit elit eget felis posuere, a posuere metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+              <br><br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ligula lectus, fermentum nec lectus at, pellentesque venenatis justo. Etiam sodales, tortor eu finibus porta, est justo tincidunt
+              turpis, a luctus lacus elit quis sem. Morbi consectetur consectetur fringilla. Sed luctus, tortor non sollicitudin eleifend, nunc quam mollis turpis, in elementum ipsum dolor eu nisi. Cras ullamcorper arcu vel dolor dapibus, sed euismod
+              nibh vulputate. 
+            </p>
+          </div>
+          <div class="mktoText" id="optional-CTA2" mktoName="Free Text CTA 2">
+            <a href="#" class="btn">Optional CTA</a>
+          </div> 
+        </div>
+        <div class="flex-column">
+          <div class="mktoText" mktoName="Two Cols Image" id="two-cols-image">
+            <img src="https://dummyimage.com/481x304/eaf2ff/0a57a4" alt="image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of Image right text left -->
+
+    <!-- Three columns-->
+    <div id="three-columns">
+      <div class="section flex-row">
+        <div class="flex-column">
+          <div class="mktoText" id="threecols1-copy1" mktoName="Three cols 1 copy">
+            <img src="https://lp.ycs.com/rs/023-OOY-216/images/Identity-green-icon.png" alt="image" />
+            <h3>Colum Headline</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu sapien ipsum. Fusce sollicitudin eleifend leo id rhoncus. Sed sodales aliquet magna, at vulputate mi euismod vel. Aenean blandit tellus nunc, eget vehicula purus luctus sed. Proin dapibus
+              lorem sit amet mauris facilisis varius. Mauris auctor dui massa, id imperdiet leo convallis at. Aenean sit amet felis at ex ornare venenatis. &nbsp;<a href="#">READ MORE →</a>
+            </p>
+          </div>
+        </div>
+        <div class="flex-column">
+          <div class="mktoText" id="threecols2-copy2" mktoName="Three cols 2 copy">
+            <img src="https://lp.ycs.com/rs/023-OOY-216/images/Learning_Center-green-icon.png" alt="image" />
+            <h3>Colum Headline</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu sapien ipsum. Fusce sollicitudin eleifend leo id rhoncus. Sed sodales aliquet magna, at vulputate mi euismod vel. Aenean blandit tellus nunc, eget vehicula purus luctus sed. Proin dapibus
+              lorem sit amet mauris facilisis varius. Mauris auctor dui massa, id imperdiet leo convallis at. Aenean sit amet felis at ex ornare venenatis. &nbsp;<a href="#">READ MORE →</a>
+            </p>
+          </div>
+        </div>
+        <div class="flex-column">
+          <div class="mktoText" id="threecols2-copy3" mktoName="Three cols 3 copy">
+            <img src="https://lp.ycs.com/rs/023-OOY-216/images/Money-green-icon.png" alt="image" />
+            <h3>Colum Headline</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu sapien ipsum. Fusce sollicitudin eleifend leo id rhoncus. Sed sodales aliquet magna, at vulputate mi euismod vel. Aenean blandit tellus nunc, eget vehicula purus luctus sed. Proin dapibus
+              lorem sit amet mauris facilisis varius. Mauris auctor dui massa, id imperdiet leo convallis at. Aenean sit amet felis at ex ornare venenatis. &nbsp;<a href="#">READ MORE →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of three columns -->
+
+    <div id="formsection">
+      <a id="form"></a>
+      <div class="section">
+        <div class="mktoText" id="formheadline" mktoName="Form Header">
+          <b>Submit a Client Referral on Behalf</b>
+        </div>
+        <div class="mktoForm" id="form2" mktoName="bottom Form">
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <footer id="footer" style="padding-top: 30px; padding-bottom: 30px;">
+      <div class="footer-container section">
+
+        <div class="column1 mktoSnippet" id="footersnippet" mktoName="Footer Snippet">
+          <div class="column">
+            <div class="col">
+              <div class="footer-logo" id="footerlogo" mktoName="Footer - Logo">
+                <a href="https://uqual.com/" target="_blank"><img src="https://lp.ycs.com/rs/023-OOY-216/images/uqual-logo-white-short.png" alt="logo"></a>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <p class="col" id="footertext1" mktoName="Footer - Text 1" style="margin:0;">
+              <span style="color: #333333; font-size:20px;">© 2022 UQUAL LLC</span><br>
+              <span style="color: #333333; font-size: 16px;">Uqual LLC is a loan readiness company providing financial tools, loan readiness coaches, and customized plans to get consumers ready to qualify for a loan. Uqual LLC is not a credit repair company and does not provide credit repair, debt settlement, legal or tax guidance.</span>
+            </p>
+
+          </div>
+          <div class="column">
+
+            <ul class="col" id="footertext1" mktoName="Footer - Text 1" style="margin:0;">
+              <li><a href="https://uqual.com/" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+              <li><a href="https://uqual.com/about-us/" class="elementor-item">About Us</a></li>
+              <li><a href="https://uqual.com/partner-with-us/" class="elementor-item">Partner With Us</a></li>
+              <li><a href="https://uqual.com/contact-us/" class="elementor-item">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="col" id="footertext1" mktoName="Footer - Text 1" style="margin:0;">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-304"><a href="https://uqual.com/careers/" class="elementor-item">Careers</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306"><a href="https://uqual.com/terms-and-conditions/" class="elementor-item">Terms and Conditions</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-305"><a href="https://uqual.com/mobile-ts-and-cs/" class="elementor-item">Mobile Terms &amp; Conditions</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-422"><a href="https://uqual.com/free-credit-consultation/" class="elementor-item">Free Credit Consultation</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-307"><a href="https://uqual.com/privacy-policy/" class="elementor-item">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <p class="col" id="footertext1" mktoName="Footer - Text 1" style="margin:0;">
+              <a href="https://www.linkedin.com/company/uqual/about/" target="_blank">
+                <svg style="width:30px;"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+              </a>
+            </p>
+
+          </div>
+          <div class="column">
+            <p class="col" id="footertext1" mktoName="Footer - Text 1" style="margin:0;">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 118 118" style="enable-background:new 0 0 118 118;width:120px;" xml:space="preserve">
+
+                <g>
+                  <g>
+                    <g>
+                      <path d="M13.28,73.74l-9.21,2.63l1.12,3.91L3.37,80.8L0.5,70.75l1.82-0.52l1.13,3.96l9.21-2.63L13.28,73.74z"></path>
+                      <path d="M11.27,65.76L-0.2,66.03l-0.05-2.28l4.68-0.11l-0.13-5.66l-4.68,0.11l-0.05-2.28l11.47-0.27l0.05,2.28l-4.91,0.12     L6.3,63.6l4.91-0.11L11.27,65.76z"></path>
+                      <path d="M13.25,44.69l-1.86,8.37l-11.2-2.49l1.83-8.21l1.85,0.41L2.52,48.8l2.72,0.61l1.05-4.73l1.83,0.41l-1.05,4.73l2.95,0.66     l1.38-6.19L13.25,44.69z"></path>
+                      <path d="M7.12,30.64l8.24,4.91l3.11-5.22l1.63,0.97l-4.27,7.17L5.95,32.6L7.12,30.64z"></path>
+                      <path d="M24.66,26.52c-2.33,2.41-5.79,2.51-8.33,0.06c-2.54-2.45-2.56-5.92-0.24-8.33c2.31-2.4,5.78-2.5,8.32-0.04     C26.95,20.66,26.98,24.13,24.66,26.52z M17.54,19.64c-1.47,1.52-1.29,3.56,0.44,5.23c1.73,1.67,3.78,1.77,5.24,0.25     c1.47-1.52,1.29-3.56-0.44-5.23C21.05,18.23,19,18.12,17.54,19.64z"></path>
+                      <path d="M29.02,8.35L39,15.69l-2.06,1.27l-2.46-1.82l-4.16,2.55l0.54,3l-1.96,1.2L26.86,9.67L29.02,8.35z M29.99,15.83L32.97,14     l-3.72-2.76l-0.06,0.04L29.99,15.83z"></path>
+                      <path d="M46.71,9.32l-2.19-7.33l2.03-0.61l3.28,11l-1.74,0.52l-7.93-6.07l2.31,7.75l-2.03,0.6l-3.28-11l2.16-0.64L46.71,9.32z"></path>
+                      <path d="M64.18,12c-0.22-0.32-0.32-1.11-0.35-2.39c-0.02-1.3-0.57-1.91-1.89-1.98l-2.69-0.14l-0.22,4.24l-2.24-0.12L57.4,0.14     l5.19,0.28c2.93,0.15,4.3,1.6,4.18,3.73c-0.09,1.73-1.27,2.67-2.68,2.78c1.3,0.32,1.93,1.12,1.99,2.48     c0.06,1.7,0.08,2.29,0.44,2.73L64.18,12z M61.99,5.85c1.66,0.09,2.45-0.42,2.51-1.66c0.06-1.15-0.67-1.86-2.32-1.95L59.54,2.1     l-0.19,3.6L61.99,5.85z"></path>
+                      <path d="M76.7,15.01l-8.23-2.43l3.25-11.01l8.08,2.38l-0.54,1.82l-5.93-1.75l-0.79,2.67l4.65,1.37l-0.53,1.8l-4.65-1.37     l-0.86,2.9l6.08,1.79L76.7,15.01z"></path>
+                      <path d="M89.88,9.08l-1.79,12.28L86,20.13l0.45-3.03l-4.21-2.48l-2.4,1.89l-1.98-1.17l9.83-7.54L89.88,9.08z M83.73,13.46     l3.02,1.78l0.69-4.59l-0.06-0.04L83.73,13.46z"></path>
+                      <path d="M97.33,14.28l3.06,3.07c2.61,2.62,2.71,5.76,0.16,8.3c-2.54,2.53-5.69,2.42-8.3-0.2l-3.06-3.07L97.33,14.28z      M93.45,24.06c1.71,1.72,3.71,1.66,5.46-0.09c1.73-1.72,1.8-3.72,0.09-5.44l-1.35-1.36l-5.55,5.53L93.45,24.06z"></path>
+                      <path d="M108.38,27.11l-9.48,6.47l-1.28-1.88l9.48-6.47L108.38,27.11z"></path>
+                      <path d="M107.17,41.37l7.01-3.08l0.85,1.93l-10.51,4.61l-0.73-1.67l5.05-8.62l-7.41,3.25l-0.85-1.93l10.51-4.61l0.91,2.07     L107.17,41.37z"></path>
+                      <path d="M106.6,55.69l-1.47-8.46l11.32-1.97l1.44,8.3l-1.87,0.33l-1.06-6.09l-2.75,0.48l0.83,4.78l-1.85,0.32l-0.83-4.78     l-2.98,0.52l1.09,6.25L106.6,55.69z"></path>
+                      <path d="M110.78,59.38c-1.79,0-2.65,1.25-2.74,2.85c-0.07,1.42,0.44,2.36,1.41,2.41c0.87,0.04,1.24-0.63,1.54-1.82l0.51-2.16     c0.42-1.77,1.47-2.95,3.36-2.86c2.15,0.11,3.45,1.87,3.31,4.55c-0.15,3-1.79,4.62-4.34,4.52l0.03-2.1     c1.57,0.01,2.44-0.97,2.52-2.54c0.07-1.35-0.49-2.14-1.47-2.19c-0.84-0.04-1.16,0.54-1.41,1.57L113,63.71     c-0.54,2.23-1.66,3.23-3.52,3.14c-2.26-0.12-3.38-2.13-3.24-4.71c0.15-2.95,1.79-5,4.56-4.86L110.78,59.38z"></path>
+                      <path d="M109.42,71.36c-1.74-0.41-2.87,0.6-3.32,2.14c-0.4,1.36-0.11,2.4,0.81,2.67c0.84,0.24,1.35-0.33,1.91-1.41l1-1.99     c0.81-1.62,2.11-2.53,3.92-2c2.06,0.6,2.91,2.62,2.17,5.19c-0.84,2.88-2.8,4.08-5.26,3.4l0.52-2.03c1.52,0.37,2.6-0.38,3.03-1.88     c0.38-1.29,0.02-2.2-0.93-2.47c-0.8-0.23-1.25,0.26-1.73,1.2l-0.96,1.92c-1.03,2.05-2.36,2.76-4.14,2.24     c-2.17-0.63-2.79-2.84-2.07-5.33c0.83-2.83,2.89-4.45,5.55-3.67L109.42,71.36z"></path>
+                    </g>
+                    <g>
+                      <path d="M12.94,84.4l1.22,2.12l-2.12,1.22l-1.22-2.12L12.94,84.4z"></path>
+                      <path d="M25.93,93.71c2.44,2.36,2.3,5.19,0.43,7.42l-1.64-1.46c1.07-1.34,1.32-3.06-0.19-4.52c-1.47-1.42-3.5-1.26-5.19,0.49     c-1.69,1.74-1.78,3.78-0.31,5.2c1.51,1.46,3.22,1.16,4.52,0.04l1.51,1.59c-2.17,1.96-4.99,2.17-7.43-0.19     c-2.35-2.27-2.45-5.75,0-8.29C20.1,91.45,23.58,91.44,25.93,93.71z"></path>
+                      <path d="M30.17,111.51c-2.94-1.62-3.94-4.94-2.23-8.03c1.71-3.09,5.04-4.02,7.98-2.4c2.92,1.61,3.92,4.93,2.22,8.02     C36.43,112.2,33.09,113.12,30.17,111.51z M34.95,102.83c-1.85-1.02-3.78-0.31-4.94,1.79c-1.16,2.11-0.73,4.11,1.12,5.13     c1.85,1.02,3.78,0.31,4.94-1.79C37.24,105.86,36.8,103.85,34.95,102.83z"></path>
+                      <path d="M44.9,117.02l-0.78-9.43l-0.07-0.02l-1.96,8.82l-2.06-0.46l2.49-11.2l3.5,0.78l0.64,8.69l0.05,0.01l4.14-7.62l3.43,0.76     l-2.49,11.2l-2.24-0.5l1.96-8.82l-0.07-0.02l-4.65,8.22L44.9,117.02z"></path>
+                      <path d="M59.44,118.69l-2.26,0.1l-0.49-11.47l4.57-0.19c2.93-0.12,4.66,1.17,4.76,3.55c0.1,2.38-1.51,3.84-4.44,3.96l-2.31,0.1     L59.44,118.69z M61.43,112.79c1.71-0.07,2.43-0.76,2.38-2c-0.05-1.24-0.83-1.9-2.54-1.83l-2.24,0.1l0.16,3.82L61.43,112.79z"></path>
+                      <path d="M72.74,105.14l7.56,9.82l-2.34,0.64l-1.86-2.43l-4.71,1.3l-0.32,3.03l-2.21,0.61l1.43-12.3L72.74,105.14z M71.6,112.6     l3.37-0.93l-2.81-3.68l-0.07,0.02L71.6,112.6z"></path>
+                      <path d="M89.08,105.93l-3.85-6.61l1.83-1.06l5.78,9.92l-1.57,0.92l-9.14-4.04l4.07,6.99l-1.83,1.06l-5.78-9.92l1.95-1.14     L89.08,105.93z"></path>
+                      <path d="M94.49,91.31l1.75-1.72l1.78,8.14l3.1,3.16l-1.59,1.56l-3.1-3.16l-8.12-1.91l1.81-1.78l5.63,1.28L94.49,91.31z"></path>
+                      <path d="M103.5,86.53l1.22-2.12l2.12,1.22l-1.22,2.12L103.5,86.53z"></path>
+                    </g>
+                  </g>
+                  <g>
+                    <path class="st0" d="M34.83,59.41c0,2.38-1.23,3.57-3.24,3.57c-2.03,0-3.26-1.27-3.26-3.66v-7.34h-2.27v7.43    c0,3.74,2.14,5.68,5.49,5.68c3.37,0,5.55-1.94,5.55-5.79v-7.32h-2.27V59.41z"></path>
+                    <path class="st0" d="M64.45,59.41c0,2.38-1.24,3.58-3.24,3.58c-2.03,0-3.26-1.27-3.26-3.67v-7.34h-2.27v7.43    c0,3.74,2.14,5.68,5.49,5.68c3.37,0,5.55-1.94,5.55-5.79v-7.32h-2.27V59.41z"></path>
+                    <path class="st0" d="M86.89,51.98h-2.27v12.9h9.05v-2.07h-6.78V51.98z"></path>
+                    <path class="st0" d="M50.18,64.3c-0.03,0-0.06-0.01-0.08-0.03s-0.04-0.04-0.05-0.07c-0.01-0.03-0.01-0.06,0-0.09    c0.01-0.03,0.03-0.05,0.05-0.07c0.94-0.6,1.71-1.44,2.24-2.42c0.53-0.98,0.8-2.08,0.79-3.2v-0.04c0-3.63-2.77-6.64-6.73-6.64    c-3.96,0-6.77,3.04-6.77,6.67v0.04c0,3.63,2.77,6.64,6.73,6.64c0.97,0.01,1.93-0.19,2.82-0.57c0.07-0.03,0.14-0.04,0.22-0.02    c0.07,0.02,0.14,0.06,0.18,0.12l2.11,2.54h2.75l-2.39-2.88H50.18z M46.4,63c-2.56,0-4.39-2.06-4.39-4.57v-0.04    c0-2.5,1.79-4.53,4.35-4.53c2.56,0,4.39,2.06,4.39,4.57v0.04C50.76,60.97,48.97,63,46.4,63L46.4,63z"></path>
+                    <path class="st0" d="M73.54,51.98l1.57,2.9c0.02,0.04,0.03,0.08,0.03,0.12c0,0.04-0.01,0.08-0.03,0.11    c-0.02,0.03-0.05,0.06-0.08,0.08s-0.07,0.03-0.11,0.03h-2.1l-4.92,9.66h2.6l1.11-2.17h7.8l1.19,2.17h2.6l-7.02-12.9H73.54z     M72.63,60.65l2.51-4.93c0.02-0.04,0.05-0.07,0.09-0.09c0.04-0.02,0.08-0.03,0.12-0.03c0.04,0,0.08,0.01,0.12,0.03    c0.04,0.02,0.07,0.05,0.09,0.09l2.7,4.93L72.63,60.65z"></path>
+                    <path class="st0" d="M91.28,53.31h0.28v-1.08h0.41v-0.25h-1.09v0.25h0.41V53.31z"></path>
+                    <path class="st0" d="M93.34,51.98l-0.39,0.93l-0.39-0.93H92.2v1.33h0.28v-0.84l0.36,0.84h0.21l0.37-0.85v0.85h0.26v-1.33H93.34z"></path>
+                  </g>
+                </g>
+              </svg>
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </footer>
+
+
+    <script>
+      const idField = document.querySelector("input[name=company]");
+      const websiteField = document.querySelector("input[name=retURL]");
+      const fnameField = document.querySelector("input[name=broker_fname]");
+      const lnameField = document.querySelector("input[name=broker_lname]");
+      let refData = {
+        id: idField ? .value,
+        website: websiteField ? .value,
+        firstName: fnameField ? .value,
+        lastName: lnameField ? .value
+      }
+
+        if (!refData.firstName || !refData.firstName.length < 1) {
+        // refData isn't pre-populated
+        // pull refData from URL
+        let currentUrl = new URL(window.location);
+        let params = new URLSearchParams(currentUrl.search);
+        refDataToken = params.get("refData");
+        if (refDataToken) refData = JSON.parse(atob(decodeURIComponent(refDataToken)));
+
+        // set hidden field values
+        if (refData) {
+        if (idField) idField.value = refData.id;
+        if (websiteField) websiteField.value = refData.website;
+        if (fnameField) fnameField.value = refData.firstName;
+        if (lnameField) lnameField.value = refData.lastName;
+      }
+      }
+
+        // proceed if we have proper refData              
+        if (refData.firstName && refData.firstName.length >= 1) {
+        refDataToken = btoa(JSON.stringify(refData));
+
+        // update all share links
+        document.querySelectorAll("#socialshare a").forEach(function(e) {
+        e.href += (encodeURIComponent('&refData=' + refDataToken));
+      })
+
+        // update referral CTA text
+        const cta = document.getElementById("referral-cta")
+        if (refData ? .firstName && refData ? .firstName.length) {
+        cta.innerHTML += ' on behalf of ' + refData.firstName + ' ' + refData.lastName;
+      }
+      }
+    </script>
+  </body>
+
+
+</html>
