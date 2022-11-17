@@ -91,8 +91,8 @@
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="15">
     <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="50">
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
-    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="30">
-    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="13">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="28">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="12">
 
     <!-- Form Section Styling -->
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
@@ -192,6 +192,9 @@
         font-size:${btnfontsize}px;
         transition:300ms opacity;
         font-weight: 500;
+        display: flex;
+        align-items:center;
+        width: fit-content;
       }
       .btn a:hover, .btn a:focus {
         background: ${btnhoverbackground};
@@ -479,6 +482,9 @@
         box-shadow: none !important;
         padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
         height: unset !important;
+         display: flex;
+        align-items:center;
+        width: fit-content;
       }
 
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
@@ -524,7 +530,7 @@
         font-size: 15px;
         text-transform:uppercase;
       }
-    
+
       #footer .row1 {
         display: flex;
         align-items: flex-start;
@@ -582,7 +588,7 @@
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
-       
+
       }
       #footer .footer-menu strong{
         font-size: cal(2px + ${footerfontsize}px);
@@ -635,45 +641,45 @@
         height: 19px;
         margin: 0 0 0 30px;
       }
-    @media (max-width: 900px) {
-      .row1 {
-        flex-direction: column;
-        align-content: center;
+      @media (max-width: 900px) {
+        .row1 {
+          flex-direction: column;
+          align-content: center;
+        }
+        #footer .col {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          margin: 0 auto;
+          max-width: 600px;
+        }
+        #footericons ul {
+          justify-content: center !important;
+          width: 20vw;
+        }
+
+        footer ul li, #footer strong {
+          margin: 0 auto !important;
+          justify-content: center;
+        }
+        #footer .icons-container {
+          padding: 0 !important;
+        }
       }
-      #footer .col {
+      #footer .icons-container ul {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-        max-width: 600px;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        margin-bottom: 2rem !important;
       }
-      #footericons ul {
-        justify-content: center !important;
-        width: 20vw;
-      }
-      
-      footer ul li, #footer strong {
-        margin: 0 auto !important;
-        justify-content: center;
-      }
-      #footer .icons-container {
-        padding: 0 !important;
-      }
-    }
-    #footer .icons-container ul {
-      width: 100%;
-      justify-content: flex-end;
-      gap: 1.5rem;
-      margin-bottom: 2rem !important;
-    }
-    
+
       @media screen and (max-width:768px){
         .flex{
           flex-wrap:wrap;
           flex-direction:column;
         }
-    
+
         .row2 ul li:after {
           display: none;
         }
@@ -724,34 +730,32 @@
         }
       }
       @media (max-width: 480px) {
-            #footer .flex-row:nth-child(1) {
+        #footer .flex-row:nth-child(1) {
           flex-direction: column;
         }
       }
 
-@font-face {
-  font-family: 'TradeGothicNextLTPro-BdCn';
-  src:  url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.ttf') format('truetype'),
-        url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.woff') format('woff'),
-        url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.eot'),
-        url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.eot?#iefix') format('embedded-opentype'),
-       url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+      @font-face {
+        font-family: 'TradeGothicNextLTPro-BdCn';
+        src:  url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.ttf') format('truetype'),
+          url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.woff') format('woff'),
+          url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.eot'),
+          url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.eot?#iefix') format('embedded-opentype'),
+          url('https://go.ans.org/rs/099-YLU-630/images/TradeGothicNextLTPro-BdCn.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
 
-@font-face {
-  font-family: 'Gibson-Book';
-  src: url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.ttf') format('truetype'),
-       url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.woff') format('woff'),
-      url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.eot');
-      url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.eot?#iefix') format('embedded-opentype'),
-       url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
+      @font-face {
+        font-family: 'Gibson-Book';
+        src: url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.ttf') format('truetype'),
+          url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.woff') format('woff'),
+          url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.eot'),
+          url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.eot?#iefix') format('embedded-opentype'),
+          url('https://go.ans.org/rs/099-YLU-630/images/Gibson-Book.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
 
     </style>
   </head>
@@ -806,7 +810,7 @@
           </ul>
         </div>
         <div class="mktoText btn" id="freetextbtn1" mktoName="Free-Text - Button Content">
-          <a href="#">Read more <span style="margin-left:15px;margin-right:-10px;padding: 5px 8px;background:#000000;border-radius:50%;">&rarr;</span></a>
+          <a href="#">Read more <span class="arrow-circle"><img style="width:27px;height:auto;margin-left:15px;margin-right:-12px;" src="https://go.ans.org/rs/099-YLU-630/images/circle-arrow.gif"/></span></a>
         </div>
       </div>
     </div>
@@ -840,71 +844,74 @@
     </div>
 
 
-   <footer id="footer">
-    <div class="footer-container section flex">
+    <footer id="footer">
+      <div class="footer-container section flex">
 
         <div class="row1">
 
-            <div class="logo-container col">
-                <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
-                    <a href="https://www.ans.org/"><img src="https://go.ans.org/rs/099-YLU-630/images/ans-ligature-white-548x74.png" alt="logo"></a>
-                    <p>Advancing nuclear science and technology for the benefit of humanity</p>
-                </div>
-
+          <div class="logo-container col">
+            <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
+              <a href="https://www.ans.org/"><img src="https://go.ans.org/rs/099-YLU-630/images/ans-ligature-white-548x74.png" alt="logo"></a>
+              <p>Advancing nuclear science and technology for the benefit of humanity</p>
             </div>
-       
-      
 
-            <div class="icons-container col">
-<ul class="flex-row">
-						<li><a href="https://www.ans.org/advertising/" data-feathr-click-track="true">Advertising Opportunities</a></li>
-						<li><a href="https://www.ans.org/pi/navigatingnuclear/" data-feathr-click-track="true">Navigating Nuclear</a></li>
-						<li><a href="https://www.ans.org/contact/" data-feathr-click-track="true">Contact Us</a></li>
-					</ul>
-                    <ul class="flex-row social">
-                        <li id="footer-icon1">
-                            <a href="https://www.facebook.com/www.ans.org" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#facebook">
+          </div>
+
+
+          <div class="icons-container col">
+            <ul class="flex-row">
+              <li><a href="https://www.ans.org/advertising/" data-feathr-click-track="true">Advertising Opportunities</a></li>
+              <li><a href="https://www.ans.org/pi/navigatingnuclear/" data-feathr-click-track="true">Navigating Nuclear</a></li>
+              <li><a href="https://www.ans.org/contact/" data-feathr-click-track="true">Contact Us</a></li>
+            </ul>
+            <ul class="flex-row social">
+              <li id="footer-icon1">
+                <a href="https://www.facebook.com/www.ans.org" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#facebook">
                   <path d="M20.762 0C14.563 0 13.152 4.601 13.152 7.544L13.152 11.658L9.562 11.658L9.562 18.016L13.144 18.016C13.144 26.175 13.144 36 13.144 36L20.684 36C20.684 36 20.684 26.076 20.684 18.016L25.77 18.016L26.438 11.658L20.692 11.658L20.692 7.924C20.692 6.517 21.628 6.191 22.287 6.191L26.345 6.191L26.345 0.024L20.762 0Z"></path>
                   </svg></a>
-                        </li>
-   <li id="footer-icon2">
-                            <a href="https://twitter.com/ans_org" target="_blank">
-                                <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#twitter">
+              </li>
+              <li id="footer-icon2">
+                <a href="https://twitter.com/ans_org" target="_blank">
+                  <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#twitter">
                     <path d="M25.3 3.379C21.146 3.379 18.125 6.452 18.125 10.383C18.125 10.874 18.125 11.243 18.251 11.489L18.125 11.489C10.951 11.489 6.168 10.014 2.518 5.59C1.888 6.697 1.259 7.803 1.259 9.154C1.259 11.611 2.895 13.7 4.909 15.051L4.909 15.051C3.65 15.051 2.266 14.438 1.259 13.823L1.259 13.823C1.259 17.386 6.294 21.44 9.692 22.055C9.251 22.485 8.439 22.629 7.548 22.629C5.898 22.629 3.977 22.135 3.65 22.055L3.65 22.055C4.657 24.88 7.678 26.723 10.825 26.723C8.307 28.69 5.286 29.672 1.762 29.672C1.133 29.672 0.629 29.672 0 29.55L0 29.55C3.272 31.637 7.803 32.621 12.083 32.621C25.678 32.621 32.601 22.177 32.601 12.594C32.601 12.225 32.601 11.734 32.601 11.365C33.859 10.505 35.118 9.154 36 7.68L36 7.68C34.615 8.294 32.727 9.032 31.216 9.154C32.727 8.294 34.237 6.205 34.866 4.485L34.866 4.485C33.733 5.223 32.349 6.083 30.964 6.574L30.083 5.714C28.699 4.363 27.44 3.379 25.3 3.379Z"></path>
                   </svg></a>
-                        </li>
-                        <li id="footer-icon3">
-                            <a href="https://www.linkedin.com/company/ans-american-nuclear-society-" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#linkedin">
+              </li>
+              <li id="footer-icon3">
+                <a href="https://www.linkedin.com/company/ans-american-nuclear-society-" target="_blank"> <svg viewBox="0 0 36 36" data-use="/cms/svg/site/d_lyvew5ask.36.2203111705258.svg#linkedin">
                   <path d="M4.286 1.688C1.695 1.688 0 3.347 0 5.536C0 7.684 1.647 9.378 4.187 9.378L4.238 9.378C6.875 9.378 8.517 7.677 8.517 5.529C8.467 3.342 6.875 1.688 4.286 1.688ZM27.096 11.936C23.076 11.936 20.557 14.106 20.091 15.627L20.091 12.149L12.208 12.149C12.311 13.996 12.208 34.312 12.208 34.312L20.091 34.312L20.091 22.319C20.091 21.653 20.06 20.986 20.262 20.508C20.805 19.176 21.969 17.792 24.063 17.792C26.799 17.792 28.044 19.842 28.044 22.843L28.044 34.312L36 34.312L36 21.989C36 15.125 32.082 11.936 27.096 11.936ZM0.908 12.15L0.908 34.312L7.924 34.312L7.924 12.15L0.908 12.15Z"></path>
                   </svg></a>
-                        </li>
-                     
-                        <li id="footer-icon4">
-                            <a href="https://www.instagram.com/americannuclear/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-                        </li>
-                     
+              </li>
 
-                    </ul>
-                </div>
-            </div>
+              <li id="footer-icon4">
+                <a href="https://www.instagram.com/americannuclear/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+              </li>
 
 
+            </ul>
+          </div>
         </div>
+
         <div class="row2">
-            <p>&copy; COPYRIGHT 2022 AMERICAN NUCLEAR SOCIETY<br></br>
-              
-            </p>
-            <ul class="flex-row">
-				<li><a href="https://www.ans.org/about/policies/privacy/" data-feathr-click-track="true">Privacy Policy</a></li>
-				<li><a href="https://www.ans.org/about/policies/use/" data-feathr-click-track="true">Terms of Use</a></li>
-				<li><a href="https://ssl.ans.org/invoice/" data-feathr-click-track="true">Invoices</a></li>
-				<li><a href="https://www.ans.org/media/" data-feathr-click-track="true">Media</a></li>
+          <p>&copy; COPYRIGHT 2022 AMERICAN NUCLEAR SOCIETY<br><br>
 
-			</ul>
+          </p>
+          <ul class="flex-row">
+            <li><a href="https://www.ans.org/about/policies/privacy/" data-feathr-click-track="true">Privacy Policy</a></li>
+            <li><a href="https://www.ans.org/about/policies/use/" data-feathr-click-track="true">Terms of Use</a></li>
+            <li><a href="https://ssl.ans.org/invoice/" data-feathr-click-track="true">Invoices</a></li>
+            <li><a href="https://www.ans.org/media/" data-feathr-click-track="true">Media</a></li>
+
+          </ul>
         </div>
 
-    </div>
-</footer>
+      </div>
+      <script>
+        <!-- adding arrow to form button dynamically -->
+      MktoForms2.whenReady(function(form) {
+        document.querySelectorAll('.mktoButton')[0].insertAdjacentHTML('beforeend','<span class="arrow-circle"><img style="width:27px;height:auto;margin-left:15px;margin-right:-12px;" src="https://go.ans.org/rs/099-YLU-630/images/circle-arrow.gif"/></span>')
+      });
+      </script>
+    </footer>
 
 
   </body>
