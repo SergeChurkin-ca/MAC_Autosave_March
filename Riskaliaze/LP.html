@@ -19,6 +19,7 @@
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooter2" mktoName="Show Footer 2 Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <!-- Background, Buttons, and Text Color Meta Tags -->
@@ -37,8 +38,8 @@
     <meta class="mktoColor" id="btnbrdrhoverbackground" mktoName="Free-Text - Btn Hover Bg Color" default="#476478">
     <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#ffffff">
 
-    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#">
-    <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="#">
+    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
+    <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#404041">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#404401">
     <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#476478">
@@ -222,7 +223,7 @@
         border-radius: 2px !important;
         padding: 23px 12px !important;
         font-weight:400;
-        
+
       }
       .mktoForm input[type="text"]:focus,
       .mktoForm input[type="url"]:focus, 
@@ -404,13 +405,13 @@
       }
       .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap, .mktoForm input, .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm .mktoButtonRow{
         width:100% !important;
-        
+
       }
       .mktoForm input, .mktoForm select.mktoField, button.mktoButton{
         min-height:25px !important;
         height:40px !important;
         font-weight: 700;
-        
+
       }
       .mktoForm textarea.mktoField{
         height:70px !important;
@@ -522,13 +523,13 @@
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
-#footer2 {
-      display:${showfooter2};
+      #footer2 {
+        display:${showfooter2};
         background-color:${footerbgclr2};
-}
-#footer2 .section {
-    padding: 1.5rem 0 0 !important;
-}
+      }
+      #footer2 .section {
+        padding: 1.5rem 0 0 !important;
+      }
       #footer .row1 {
         display: flex;
         align-items: flex-start;
@@ -554,11 +555,11 @@
         height: auto;
         margin-bottom: 2rem;
       }
-     
+
       #footer .row1 p {
         line-height: 27px;
       }
-    
+
       #footer svg{
         width:${footericonswidth}rem;
       }
@@ -575,7 +576,7 @@
       #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
         color:${footerfontclr};
         font-size:${footerfontsize}px;
-       
+
       }
       #footer .footer-menu strong{
         font-size: cal(2px + ${footerfontsize}px);
@@ -586,7 +587,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
+
       }
       #footer2 p {
         color:${footerfontclr2};
@@ -607,7 +608,7 @@
         max-width: 100%;
         max-height:21px;
       }
-#footer2 
+      #footer2 
       #footer p {
         margin: 0 !important;
       }
@@ -642,32 +643,32 @@
       #footericons {
         margin-top: 2.5rem;
       }
-    @media (max-width: 900px) {
-      .row1 {
-        flex-direction: column;
-        align-content: center;
+      @media (max-width: 900px) {
+        .row1 {
+          flex-direction: column;
+          align-content: center;
+        }
+        #footer .col {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          margin: 0 auto;
+        }
+        #footericons ul {
+          justify-content: center !important;
+          width: 20vw;
+        }
+        footer ul li, #footer strong {
+          margin: 0 auto !important;
+          justify-content: center;
+        }
+        #footer .icons-container {
+          padding: 0 !important;
+        }
       }
-      #footer .col {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin: 0 auto;
-      }
-      #footericons ul {
-        justify-content: center !important;
-        width: 20vw;
-      }
-      footer ul li, #footer strong {
-        margin: 0 auto !important;
-        justify-content: center;
-      }
-      #footer .icons-container {
-        padding: 0 !important;
-      }
-    }
-    
-    
+
+
       @media screen and (max-width:768px){
         .flex{
           flex-wrap:wrap;
@@ -720,10 +721,10 @@
           margin-left:0 !important;
         }
         #footer2 .row2 {
-            flex-direction: column;
+          flex-direction: column;
         }
         #footer-logo {
-            margin: 0 auto;
+          margin: 0 auto;
         }
       }
 
@@ -810,7 +811,7 @@
             <h2  class="bold">Form Headline</h2>
           </div>
           <div class="mktoForm" id="form1" mktoName="Form">
-            <script src="//lp.riskalyze.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1003"></form> <script>MktoForms2.loadForm("//lp.riskalyze.com", "043-PQF-624", 1003);</script>
+            
           </div>
         </div>
 
@@ -818,109 +819,105 @@
     </div>
 
 
-   <footer id="footer">
-    <div class="footer-container section flex">
+    <footer id="footer">
+      <div class="footer-container section flex">
 
-        <div class="row1" class="mktoText" id="footer row1" mktoName="Footer Text row 1">
+        <div class="mktoText row1" id="footerrow1" mktoName="Footer Text row 1">
 
-            <div class="logo-container col">
-                  <ul id="menu-footer-menu" class="footer-menu">
+          <div class="logo-container col">
+            <ul id="menu-footer-menu" class="footer-menu">
               <li><strong>Solutions</strong></li>
-        <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://www.riskalyze.com/alignment/">Risk Alignment</a></li>
-        <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://www.riskalyze.com/analytics/">Portfolio Analytics &amp; Research</a></li>
-        <li id="menu-item-970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-970"><a href="https://www.riskalyze.com/command-center/">Compliance</a></li>
-        <li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://www.riskalyze.com/trading/">Trading</a></li>
-        <li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="https://www.riskalyze.com/partner-store/">Model Marketplace</a></li>
-        <li id="menu-item-972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-972"><a href="https://www.riskalyze.com/reg-bi/">Reg BI Compliance</a></li>
-        <li id="menu-item-971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-971"><a href="https://www.riskalyze.com/api/">Riskalyze APIs</a></li>
-</ul>
-            </div>
-            <div class="col">
-                <ul id="menu-footer-menu" class="footer-menu">
-                     <li><strong>Who We Serve</strong></li>
-	<li id="menu-item-975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-975"><a href="https://www.riskalyze.com/alignment/">Financial Advisors</a></li>
-	<li id="menu-item-973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-973"><a href="https://www.riskalyze.com/enterprise/">Wealth Management Firms</a></li>
-	<li id="menu-item-974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-974"><a href="https://www.riskalyze.com/api/">Technology Providers</a></li>
-	<li id="menu-item-6906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6906"><a href="https://www.riskalyze.com/banks/">Banks</a></li>
-</ul>
-</li>
-                </ul>
-            </div>
-            <div class="col">
-               <ul id="menu-footer-menu" class="footer-menu">
+              <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://www.riskalyze.com/alignment/">Risk Alignment</a></li>
+              <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://www.riskalyze.com/analytics/">Portfolio Analytics &amp; Research</a></li>
+              <li id="menu-item-970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-970"><a href="https://www.riskalyze.com/command-center/">Compliance</a></li>
+              <li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a href="https://www.riskalyze.com/trading/">Trading</a></li>
+              <li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="https://www.riskalyze.com/partner-store/">Model Marketplace</a></li>
+              <li id="menu-item-972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-972"><a href="https://www.riskalyze.com/reg-bi/">Reg BI Compliance</a></li>
+              <li id="menu-item-971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-971"><a href="https://www.riskalyze.com/api/">Riskalyze APIs</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li><strong>Who We Serve</strong></li>
+              <li id="menu-item-975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-975"><a href="https://www.riskalyze.com/alignment/">Financial Advisors</a></li>
+              <li id="menu-item-973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-973"><a href="https://www.riskalyze.com/enterprise/">Wealth Management Firms</a></li>
+              <li id="menu-item-974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-974"><a href="https://www.riskalyze.com/api/">Technology Providers</a></li>
+              <li id="menu-item-6906" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6906"><a href="https://www.riskalyze.com/banks/">Banks</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
               <li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-80"><strong>Resources</strong>
 
-	<li id="menu-item-6091" class="menu-item menu-item-type-post_type_archive menu-item-object-webinar menu-item-6091"><a href="https://www.riskalyze.com/webinars-and-events/">Events</a></li>
-	<li id="menu-item-977" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-977"><a href="https://www.riskalyze.com/blog/">Blog</a></li>
-	<li id="menu-item-980" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-980"><a href="https://www.riskalyze.com/use-cases/">Use Cases</a></li>
-	<li id="menu-item-981" class="menu-item menu-item-type-post_type_archive menu-item-object-success-story menu-item-981"><a href="https://www.riskalyze.com/success-stories/">Success Stories</a></li>
-	<li id="menu-item-982" class="menu-item menu-item-type-post_type_archive menu-item-object-white-paper menu-item-982"><a href="https://www.riskalyze.com/white-papers/">White Papers</a></li>
-	<li id="menu-item-983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-983"><a href="https://kb.riskalyze.com/">Knowledge Base</a></li>
-	<li id="menu-item-979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-979"><a href="https://www.riskalyze.com/training/">Training</a></li>
-	<li id="menu-item-6188" class="menu-item menu-item-type-post_type_archive menu-item-object-integration menu-item-6188"><a href="https://www.riskalyze.com/integrations/">Integrations</a></li>
-	<li id="menu-item-995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-995"><a href="https://www.riskalyze.com/methodology/">Methodology</a></li>
-	<li id="menu-item-994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-994"><a href="https://www.riskalyze.com/compliance-kit/">Compliance Kit</a></li>
-	<li id="menu-item-993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993"><a href="https://www.riskalyze.com/style/">Design</a></li>
-</ul>
+              <li id="menu-item-6091" class="menu-item menu-item-type-post_type_archive menu-item-object-webinar menu-item-6091"><a href="https://www.riskalyze.com/webinars-and-events/">Events</a></li>
+              <li id="menu-item-977" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-977"><a href="https://www.riskalyze.com/blog/">Blog</a></li>
+              <li id="menu-item-980" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-980"><a href="https://www.riskalyze.com/use-cases/">Use Cases</a></li>
+              <li id="menu-item-981" class="menu-item menu-item-type-post_type_archive menu-item-object-success-story menu-item-981"><a href="https://www.riskalyze.com/success-stories/">Success Stories</a></li>
+              <li id="menu-item-982" class="menu-item menu-item-type-post_type_archive menu-item-object-white-paper menu-item-982"><a href="https://www.riskalyze.com/white-papers/">White Papers</a></li>
+              <li id="menu-item-983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-983"><a href="https://kb.riskalyze.com/">Knowledge Base</a></li>
+              <li id="menu-item-979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-979"><a href="https://www.riskalyze.com/training/">Training</a></li>
+              <li id="menu-item-6188" class="menu-item menu-item-type-post_type_archive menu-item-object-integration menu-item-6188"><a href="https://www.riskalyze.com/integrations/">Integrations</a></li>
+              <li id="menu-item-995" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-995"><a href="https://www.riskalyze.com/methodology/">Methodology</a></li>
+              <li id="menu-item-994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-994"><a href="https://www.riskalyze.com/compliance-kit/">Compliance Kit</a></li>
+              <li id="menu-item-993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-993"><a href="https://www.riskalyze.com/style/">Design</a></li>
+            </ul>
+          </div>
 
-                </ul>
-            </div>
+          <div class="icons-container col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li id="menu-item-82" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82"><strong>Legal</strong></li>
+              <li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a href="/legal#privacy">Privacy</a></li>
+              <li id="menu-item-998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-998"><a href="/legal#tos">Terms of Service</a></li>
+              <li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.riskalyze.com/security/">Security</a></li>
+              <li id="menu-item-1002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1002"><a href="/legal#copyright">Copyright</a></li>
+            </ul>
+          </div>
 
-            <div class="icons-container col">
-   <ul id="menu-footer-menu" class="footer-menu">
-          <li id="menu-item-82" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-82"><strong>Legal</strong></li>
-	<li id="menu-item-83" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-83"><a href="/legal#privacy">Privacy</a></li>
-	<li id="menu-item-998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-998"><a href="/legal#tos">Terms of Service</a></li>
-	<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="https://www.riskalyze.com/security/">Security</a></li>
-	<li id="menu-item-1002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1002"><a href="/legal#copyright">Copyright</a></li>
-</ul>
-            </div>
-
-            <div class="col">
-                <ul id="menu-footer-menu" class="footer-menu">
-                    <li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-84"><strong>Company</strong>
-	<li id="menu-item-1009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1009"><a href="https://www.riskalyze.com/about/">About</a></li>
-	<li id="menu-item-1010" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1010"><a href="/about/#leadership">Leadership</a></li>
-	<li id="menu-item-1013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1013"><a href="https://www.riskalyze.com/values/">Core Values</a></li>
-	<li id="menu-item-1012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1012"><a href="https://www.riskalyze.com/careers/">Careers</a></li>
-	<li id="menu-item-1011" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1011"><a href="/about/#contact">Contact</a></li>
-</li>
-                </ul>
-            </div>
+          <div class="col">
+            <ul id="menu-footer-menu" class="footer-menu">
+              <li id="menu-item-84" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-84"><strong>Company</strong>
+              <li id="menu-item-1009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1009"><a href="https://www.riskalyze.com/about/">About</a></li>
+              <li id="menu-item-1010" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1010"><a href="/about/#leadership">Leadership</a></li>
+              <li id="menu-item-1013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1013"><a href="https://www.riskalyze.com/values/">Core Values</a></li>
+              <li id="menu-item-1012" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1012"><a href="https://www.riskalyze.com/careers/">Careers</a></li>
+              <li id="menu-item-1011" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1011"><a href="/about/#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        
-   
 
-    </div>
-</footer>
 
-<footer id="footer2">
-    <div class="footer-container section">
-         <div class="row2">
-              <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo" style="display:flex;flex-direction:row;">
-                    <a href="#"><img src="https://lp.riskalyze.com/rs/043-PQF-624/images/HexIcon_Dark.png" alt="logo"></a>
-                    <p style="color:#85949f;">© 2022 - Riskalyze, Inc. All Rights Reserved.</p>
-                </div>
+
+      </div>
+    </footer>
+
+    <footer id="footer2">
+      <div class="footer-container section">
+        <div class="row2">
+          <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo" style="display:flex;flex-direction:row;">
+            <a href="#"><img src="https://lp.riskalyze.com/rs/043-PQF-624/images/HexIcon_Dark.png" alt="logo"></a>
+            <p style="color:#85949f;">© 2022 - Riskalyze, Inc. All Rights Reserved.</p>
+          </div>
           <div class="mktoText social" id="socail" mktoName="Socail Icons">
-                    <ul>
-                             <li id="footer-icon1">
-                            <a href="https://twitter.com/riskalyze" target="_blank">
-                              <img src="https://lp.riskalyze.com/rs/043-PQF-624/images/twitter-grey.png" alt="twiter icon"></a>
-                        </li>
-                                <li id="footer-icon2">
-                            <a href="https://www.linkedin.com/company/riskalyze" target="_blank">
-                                <img src="https://lp.riskalyze.com/rs/043-PQF-624/images/linkedin-grey.png" alt="linkedin icon">
-                            </a>
-                        </li>
-                        <li id="footer-icon3">
-                            <a href="https://www.facebook.com/riskalyze" target="_blank"> 
-                            <img src="https://lp.riskalyze.com/rs/043-PQF-624/images/facebook-grey.png" alt="facebook icon"></a>
-                        </li>
-                    </ul>
-                </div>
-                </div>
+            <ul>
+              <li id="footer-icon1">
+                <a href="https://twitter.com/riskalyze" target="_blank">
+                  <img src="https://lp.riskalyze.com/rs/043-PQF-624/images/twitter-grey.png" alt="twiter icon"></a>
+              </li>
+              <li id="footer-icon2">
+                <a href="https://www.linkedin.com/company/riskalyze" target="_blank">
+                  <img src="https://lp.riskalyze.com/rs/043-PQF-624/images/linkedin-grey.png" alt="linkedin icon">
+                </a>
+              </li>
+              <li id="footer-icon3">
+                <a href="https://www.facebook.com/riskalyze" target="_blank"> 
+                  <img src="https://lp.riskalyze.com/rs/043-PQF-624/images/facebook-grey.png" alt="facebook icon"></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
-</footer>
+
+      </div>
+    </footer>
   </body>
 </html>
