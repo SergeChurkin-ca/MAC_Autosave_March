@@ -90,7 +90,6 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad5" mktoname="Button Top Padding" default="5" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="18" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad1" mktoname="Button Top Padding" default="1" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad5" mktoname="Button Top Padding" default="5" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad" mktoname="Button Top Padding" default="20" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead" mktoName="Button Text Color" default="#F9F9FB" />
@@ -285,7 +284,6 @@ font-family: Arial, serif !important;
                 float: none !important;
                 width: 100% !important;
             }
-            
             .left_align {
                 text-align: left !important;
             }
@@ -311,13 +309,19 @@ font-family: Arial, serif !important;
                 height: auto !important
             }
             .imgmaxwidth {
-                width:$ {imgmaxwidth}px !important;
+                width:$ {
+                    imgmaxwidth
+                }
+                px !important;
                 max-width:100% !important;
                 height: auto !important
             }
             .logowidth {
                 width: 100%;
-                max-width:$ {logowidth}px !important;
+                max-width:$ {
+                    logowidth
+                }
+                px !important;
                 height: auto !important
             }
             .vidMod.left {
@@ -350,6 +354,7 @@ font-family: Arial, serif !important;
                 width: 110px !important;
             }
         }
+        
         @media (max-width:320px) {
             .block2 {
                 display: block;
@@ -357,7 +362,7 @@ font-family: Arial, serif !important;
                 float: none !important;
                 width: 100% !important;
             }
-              .hidden2 {
+            .hidden2 {
                 display: none !important;
             }
             .top_pad2 {
@@ -394,7 +399,7 @@ font-family: Arial, serif !important;
 
                                                 <th width="130" align="center" class="center block2 top_pad2" valign="middle" style="vertical-align:middle;width:130px;">
 
-                                                    <table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${socialcolwidth}">
+                                                    <table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="130">
                                                         <tr>
 
                                                             <td width="30" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:30px;padding-right:5px;">
@@ -425,28 +430,29 @@ font-family: Arial, serif !important;
                             </table>
                             <!--end of Logo with social icons-->
                             <!--Logo-->
-<table class="mktoModule" mktoName="Logo" id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-<tr>
-<td bgColor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;">
-<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px; border-collapse: collapse;border-spacing: 0;" border="0" width="590">
-<tr>
-<td height="${top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-<tr>
-<th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
-<div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="https://pages.pexcard.com/rs/319-FZO-038/images/pex-logo-2022-white-bg.png" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;" /></a>
-</div>
-</th>
-</tr>
-<tr>
-<td height="${btm_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<!--Logo--> 
+                            <table class="mktoModule" mktoName="Logo" id="logo2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="${logo-bg-color}" valign="top" style="background-color:${logo-bg-color};vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px; border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+                                            <tr>
+                                                <td height="${top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
+                                                    <div class="mktoImg" id="headerLogo2" mktoName="Header Logo1" mktoLockImgSize="false">
+                                                        <a href="#" target="_blank"><img class="logowidth" alt="logo" src="https://pages.pexcard.com/rs/319-FZO-038/images/pex-logo-2022-white-bg.png" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;"
+                                                            /></a>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td height="${btm_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Logo-->
 
                             <!--Banner-->
                             <table class="mktoModule" mktoName="Banner" mktoAddByDefault="true" id="banner1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -512,7 +518,8 @@ font-family: Arial, serif !important;
                                                                                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                                                                                         <div class="mktoImg" mktoname="Image" id="leftImage-b">
                                                                                             <div>
-                                                                                                <img src="https://pages.pexcard.com/rs/319-FZO-038/images/placeholder-image.png" width="289" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:100%;border-radius:5px;max-width:289px;" />
+                                                                                                <img src="https://pages.pexcard.com/rs/319-FZO-038/images/placeholder-image.png" width="289" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:100%;border-radius:5px;max-width:289px;"
+                                                                                                />
                                                                                             </div>
                                                                                         </div>
                                                                                     </td>
@@ -539,7 +546,7 @@ font-family: Arial, serif !important;
                             </table>
                             <!--Banner  Ends-->
                             <!--Banner2-->
-                            <table class="mktoModule" mktoName="Banner 2" mktoAddByDefault="true" id="banner1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" mktoName="Banner 2" mktoAddByDefault="true" id="banner2" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
                                     <td bgcolor="${banner-bg-color}" valign="top" background="${banner2_img}" style="background-image:url('${banner2_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: multiply;">
                                         <!--[if gte mso 9]>
@@ -554,47 +561,47 @@ font-family: Arial, serif !important;
                                                         <tr>
                                                             <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                                         </tr>
-                                                <tr>
-                                                                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize28}px; font-weight:700;line-height: 120%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
-                                                                        <div class="mktoText" mktoName="Headline" id="Headline-text-b">
-                                                                            <div>The Spending Solution Made <br>
-                                                                                to Scale with your Businesses</div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                       <tr>
+                                                        <tr>
+                                                            <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize28}px; font-weight:700;line-height: 120%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
+                                                                <div class="mktoText" mktoName="Headline" id="Headline-text-b2">
+                                                                    <div>The Spending Solution Made <br> to Scale with your Businesses</div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
                                                             <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                                         </tr>
-                                                                                            <tr>
-                                                                                    <td align="${alignbtn}">
-                                                                                        <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
-                                                                                            <div>
-                                                                                                <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
-                                                                                                    <tbody>
-                                                                                                        <tr>
-                                                                                                            <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btn1FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 8px 20px; border-radius: ${btnBorderRadius}px;">
-                                                                                                                <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
-                                                                                                            </td>
-                                                                                                        </tr>
-                                                                                                    </tbody>
-                                                                                                </table>
-                                                                                            </div>
-                                                                                        </div>
+                                                        <tr>
+                                                            <td align="${alignbtn}">
+                                                                <div class="mktoText" id="btn2-btn-bs2" mktoname="Button">
+                                                                    <div>
+                                                                        <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btn1FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 8px 20px; border-radius: ${btnBorderRadius}px;">
+                                                                                        <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                                                     </td>
                                                                                 </tr>
-                                                                                             <tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
                                                             <td height="${cta-btm-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                                         </tr>
-                                                                                            <tr>
-                                                                                    <td class="center" align="left" valign="top" style="vertical-align: top;">
-                                                                                        <div class="mktoImg" mktoname="Image" id="leftImage-b">
-                                                                                            <div>
-                                                                                                <img src="https://pages.pexcard.com/rs/319-FZO-038/images/placeholder-image.png" width="265" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:100%;border-radius:5px;max-width:265px;" />
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </td>
-                                                                                </tr>
-                                                       
+                                                        <tr>
+                                                            <td class="center" align="left" valign="top" style="vertical-align: top;">
+                                                                <div class="mktoImg" mktoname="Image" id="leftImage-b2">
+                                                                    <div>
+                                                                        <img src="https://pages.pexcard.com/rs/319-FZO-038/images/placeholder-image.png" width="265" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:100%;border-radius:5px;max-width:265px;"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
                                                         <tr>
                                                             <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                                         </tr>
@@ -619,43 +626,42 @@ font-family: Arial, serif !important;
                                                 <td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                             </tr>
                                             <!-- copy module partil width -->
-                                                         <tr>
+                                            <tr>
                                                 <td>
                                                     <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                         <tr class="block">
-                                                          <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr0}">&nbsp;</th>
-                                                          
+                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr0}">&nbsp;</th>
+
                                                             <th bgcolor="${mod-bg-color}" align="left" class="block" valign="top" style="vertical-align: top;background-color:${mod-bg-color};border-radius:10px;max-width:300px;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                                                    
-                                                                    
-                                                               
+
+
+
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignLeft};">
                                                                             <div class="mktoText" mktoName="Right Text" id="threeSubHeadline-textc">
                                                                                 <div>
-                                                                                    Hello {{mylead.FirstName}}<br><br>
-                                                                                    Hello Marcin,
-
-Meet PEX Base, all the power of our corporate card & platform, starting at $0 a month.  When considering what products and services to implement at your organization- it's important that they're able to adapt as your needs change. Our platform was designed to help you better manage expenses and to scale along with your business as it grows. Whether you need 1 card or 1,000- PEX can be made to meet the needs of your organization. 
-<br><br>
-Here at PEX, we believe businesses and start-ups shouldn't be priced out of critical resources for their operations. That's why we're proud to introduce PEX Base, receive your first 5 cards for free, and never worry about monthly subscription fees.
+                                                                                    Hello {{mylead.FirstName}}<br><br> Hello Marcin, Meet PEX Base, all the power of our corporate card & platform, starting at $0 a month. When considering what products
+                                                                                    and services to implement at your organization- it's important that they're able to adapt as your needs change. Our platform was designed to help you better manage expenses
+                                                                                    and to scale along with your business as it grows. Whether you need 1 card or 1,000- PEX can be made to meet the needs of your organization.
+                                                                                    <br><br> Here at PEX, we believe businesses and start-ups shouldn't be priced out of critical resources for their operations. That's why we're proud to introduce PEX Base,
+                                                                                    receive your first 5 cards for free, and never worry about monthly subscription fees.
                                                                                 </div>
                                                                             </div>
                                                                         </td>
                                                                     </tr>
-                                                          
-                                                                   
+
+
                                                                 </table>
                                                             </th>
-                                                            
-                                                        <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr0}">&nbsp;</th>
+
+                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr0}">&nbsp;</th>
                                                         </tr>
                                                     </table>
                                                 </td>
                                             </tr>
-                                           
-                                            
+
+
                                             <tr>
                                                 <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                             </tr>
@@ -698,7 +704,7 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                     </tr>
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
-                        ">
+                                                 ">
                                                                             <div class="mktoText" mktoName="Text" id="smimgleft-copy">
                                                                                 <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
                                                                             </div>
@@ -709,7 +715,7 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                     </tr>
                                                                     <tr>
                                                                         <td align="${alignbtn}">
-                                                                            <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
+                                                                            <div class="mktoText" id="btn2-btn-bs3" mktoname="Button">
                                                                                 <div>
                                                                                     <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn1}">
                                                                                         <tbody>
@@ -772,7 +778,7 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                     </tr>
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
-                        ">
+                                                 ">
                                                                             <div class="mktoText" mktoName="Text" id="imgleft-copy">
                                                                                 <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
                                                                             </div>
@@ -889,7 +895,7 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                             </div>
                                                                         </td>
                                                                     </tr>
-                                                                
+
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
                                                                             <div class="mktoText" mktoName="Middle Text" id="SubHeadline-textb">
@@ -902,7 +908,7 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="mktoText" id="btn" mktoname="Button">
+                                                                            <div class="mktoText" id="btn2" mktoname="Button">
                                                                                 <div>
                                                                                     <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
                                                                                         <tbody>
@@ -950,7 +956,7 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                     </tr>
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
-                                                                            <div class="mktoText" mktoName="Right Text" id="threeSubHeadline-textc">
+                                                                            <div class="mktoText" mktoName="Right Text" id="threeSubHeadline-textc2">
                                                                                 <div>Monthly Subscription: $0<br> Cards Included: up to 5<br> Additional Cards: $8</div>
                                                                             </div>
                                                                         </td>
@@ -960,7 +966,7 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
-                                                                            <div class="mktoText" id="btn" mktoname="Button">
+                                                                            <div class="mktoText" id="btn3" mktoname="Button">
                                                                                 <div>
                                                                                     <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
                                                                                         <tbody>
@@ -1008,7 +1014,7 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                                     <tr>
                                                                         <td class="center" align="left" valign="top" style="vertical-align: top;">
-                                                                            <div class="mktoImg" mktoname="Image" id="leftImage-b">
+                                                                            <div class="mktoImg" mktoname="Image" id="leftImage-b3">
                                                                                 <div>
                                                                                     <img src="https://pages.pexcard.com/rs/319-FZO-038/images/placeholder-shadow-Group 20207.png" width="285" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:100%;max-width:300px;border-radius:5px;"
                                                                                     />
@@ -1031,23 +1037,23 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                                             <div style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize16}px; font-weight:700;line-height: 110%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignLeft};">Subheadline</div>
                                                                                         </th>
                                                                                         <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
-                                                                                    </td>
+
                                                                                 </tr>
                                                                             </table>
-                                                                        </td>
+                                                                            </td>
                                                                     </tr>
-                                                              
+
                                                                     <tr>
                                                                         <td>
                                                                             <table>
                                                                                 <tr>
-                                                                                    <td>
-                                                                                        <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
-                                                                                        <th>
-                                                                                            <div style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                                                                        </th>
-                                                                                        <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
-                                                                                    </td>
+
+                                                                                    <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
+                                                                                    <th>
+                                                                                        <div style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                                                                    </th>
+                                                                                    <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
+
                                                                                 </tr>
                                                                             </table>
                                                                         </td>
@@ -1075,18 +1081,18 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                         <td>
                                                                             <table>
                                                                                 <tr>
-                                                                                    <td>
-                                                                                        <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
-                                                                                        <th>
-                                                                                            <div style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize16}px; font-weight:700;line-height: 110%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignLeft};">Subheadline</div>
-                                                                                        </th>
-                                                                                        <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
-                                                                                    </td>
+
+                                                                                    <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
+                                                                                    <th>
+                                                                                        <div style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize16}px; font-weight:700;line-height: 110%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignLeft};">Subheadline</div>
+                                                                                    </th>
+                                                                                    <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
+
                                                                                 </tr>
                                                                             </table>
                                                                         </td>
                                                                     </tr>
-                                                                
+
                                                                     <tr>
                                                                         <td>
                                                                             <table>
@@ -1097,29 +1103,29 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                                             <div style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                                                                                         </th>
                                                                                         <th class="hidden" style="font-size:1px; line-height: 1px;" width="${padding-lr10}">&nbsp;</th>
-                                                                                    </td>
+
                                                                                 </tr>
                                                                             </table>
-                                                                        </td>
+                                                                            </td>
                                                                     </tr>
 
                                                                 </table>
                                                             </th>
                                                         </tr>
                                                     </table>
-                                                </td>
+                                                    </td>
                                             </tr>
                                             <tr>
                                                 <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                             </tr>
                                         </table>
-                                    </td>
+                                        </td>
                                 </tr>
                             </table>
                             <!--2 Col Module-->
-                        
-                                <!-- CTA right-->
-                            <table class="mktoModule" mktoName="2 Col Small Image Left with btn" id="smimgleft1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+
+                            <!-- CTA right-->
+                            <table class="mktoModule" mktoName="2 Col Small Image Left with btn" id="smimgleft1a" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
                                     <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                                         <table bgColor="${mod-bg-color-blue}" class="inner_table" cellpadding="0" cellspacing="0" align="center" style="background-Color:${mod-bg-color-blue};margin:0 auto; width:620px;border-collapse: collapse;border-spacing: 0;" border="0" width="620">
@@ -1130,18 +1136,16 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                 <td>
                                                     <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="95%">
                                                         <tr>
-                                                          <th width="350" align="left" class="block top_pad" valign="top" style="vertical-align: top;width:350px;">
+                                                            <th width="350" align="left" class="block top_pad" valign="top" style="vertical-align: top;width:350px;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                                                  
+
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize16}px;font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
-                                                                            <div class="mktoText" mktoName="Headline" id="smimgleft-headline">
+                                                                            <div class="mktoText" mktoName="Headline" id="smimgleft-headline2">
                                                                                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae.</div>
                                                                             </div>
                                                                         </td>
                                                                     </tr>
-                                                                     
-                                                               
                                                                 </table>
                                                             </th>
                                                             <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
@@ -1149,13 +1153,13 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                                     <tr>
                                                                         <td align="${alignbtn}">
-                                                                            <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
+                                                                            <div class="mktoText" id="btn2-btn-bs4" mktoname="Button">
                                                                                 <div>
                                                                                     <table cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btn1FontSize}px; line-height:110%; font-family: '${fontfamily}',Arial, sans-serif; padding: 8px 20px; border-radius: ${btnBorderRadius}px;">
-                                                                                                    <a style="text-decoration:none; color:${btnColor};" href="${btnURL6}">${btnText6}</a>
+                                                                                                    <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText6}</a>
                                                                                                 </td>
                                                                                             </tr>
                                                                                         </tbody>
@@ -1178,8 +1182,6 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                 </tr>
                             </table>
                             <!-- end of CTA right-->
-                          
-                     
 
                             <!--Divider Module-->
                             <table class="mktoModule" mktoName="Divider Module" id="DividerModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1193,16 +1195,14 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                 <td class="center" bgcolor="${DividerBGColor}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor};">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                                <td height="${btm_pad50}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                <td height="${btm_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
                             </table>
                             <!--Divider Module-->
-                         
-                       
-                      
+
                             <!--Footer Module-->
                             <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
@@ -1212,74 +1212,70 @@ Here at PEX, we believe businesses and start-ups shouldn't be priced out of crit
                                                 <td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                             </tr>
 
-                                               <tr>
+                                            <tr>
                                                 <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize12}px; line-height: 116%; mso-line-height-rule: exactly; color: ${CopyColorwhite}; text-align: ${alignLeft};">
                                                     <div class="mktoText" mktoName="Text" id="Copy">
                                                         <div>
-                                                        
-This is an advertisement email.<br><br>
 
-The PEX Visa® Prepaid Card is issued by Fifth Third Bank, N.A., Member FDIC, or The Bancorp Bank, <br>
-Member FDIC, pursuant to a license from Visa U.S.A Inc. and may be used everywhere Visa Prepaid <br>
-cards are accepted. Please see the back of your card for its issuing bank.<br><br>
+                                                            This is an advertisement email.<br><br> The PEX Visa® Prepaid Card is issued by Fifth Third Bank, N.A., Member FDIC, or The Bancorp Bank, <br> Member FDIC, pursuant to a license from Visa U.S.A
+                                                            Inc. and may be used everywhere Visa Prepaid <br> cards are accepted. Please see the back of your card for its issuing bank.<br><br> 462 7th Ave, 21st Floor, New York, NY 10018 | © 2007-2022
+                                                            PEX Card. All Rights Reserved.<br><br>
 
-462 7th Ave, 21st Floor, New York, NY 10018 | © 2007-2022 PEX Card. All Rights Reserved.<br><br>
-
-<a href="#" style="color:${CopyColorblue};text-decoration:underline;">Unsubscribe from this email</a>
+                                                            <a href="#" style="color:${CopyColorblue};text-decoration:underline;">Unsubscribe from this email</a>
 
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
 
-                                                <tr>
-                                                    <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                                </tr>
+                                            <tr>
+                                                <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
                                         </table>
                                     </td>
-                                    </tr>
+                                </tr>
                             </table>
                             <!--Footer Module-->
 
-                                <!--Footer Snippet Section Begin--> 
-    
-<table class="main" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;margin:0 auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="640">
-<tbody>
-<tr>
-<td bgcolor="${Footer-BgColor}" style="border-collapse:collapse; background-color:${Footer-BgColor};"> 
-            
-<table class="inner_table" style="margin:0 auto;width:600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-<!--Extra Space--> 
-              
-<tbody>
-<tr>
-<td height="${Footer-SpaceTop}" style="line-height:1px;font-size:1px;">&nbsp; </td>
-</tr>
-<tr>
-</tr>
-<tr>
-<td valign="top" style="font-size:12px; color:${Footer-TextColor}; font-family:${TextFontFamily}; mso-line-height-rule: exactly; line-height:20px;text-align:center;">
-<div class="mktoSnippet" id="Footersnippet" mktoName="Footer Snippet" ></div>
+                            <!--Footer Snippet Section Begin-->
+                            <table class="main" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;margin:0 auto;" align="center" border="0" cellpadding="0" cellspacing="0"
+                                width="640">
+                                <tbody>
+                                    <tr>
+                                        <td bgcolor="${footer-bg-color}" style="border-collapse:collapse; background-color:${footer-bg-color};">
 
-</td>
-</tr>
-<!--Extra Space--> 
-                
-<tr>
-<td height="${Footer-SpaceBottom}" style="line-height:1px;font-size:1px;">&nbsp; </td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-<!--Footer Snippet Section End-->  
-                        </td>
-                        </tr>
+                                            <table class="inner_table" style="margin:0 auto;width:600px;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                                                <!--Extra Space-->
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td height="${footer-bg-color}" style="line-height:1px;font-size:1px;">&nbsp; </td>
+                                                    </tr>
+                                                    <tr>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" style="font-size:12px; color:${footer-bg-color}; font-family:${fontfamily}; mso-line-height-rule: exactly; line-height:20px;text-align:center;">
+                                                            <div class="mktoSnippet" id="Footersnippet" mktoName="Footer Snippet"></div>
+
+                                                        </td>
+                                                    </tr>
+                                                    <!--Extra Space-->
+
+                                                    <tr>
+                                                        <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--Footer Snippet Section End-->
+                            </td>
+                    </tr>
                 </table>
-            </td>
-            </tr>
+                </td>
+        </tr>
     </table>
 </body>
 
