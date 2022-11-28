@@ -23,7 +23,7 @@
     <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
     <link rel="icon" type="image/x-icon" href="${favicon}" />
     <title>${pageTitle}</title>
-    <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="220" allowHtml="true">
+    <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="150" allowHtml="true">
     <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#00205b">
     <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#00205b">
     <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#00205b">
@@ -40,6 +40,7 @@
     <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#1F203E">
     <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
     <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#1F203E">
+    <meta class="mktoString" id="btnborder" mktoName="Button Border" default="" allowHtml="true">
     <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
@@ -116,25 +117,11 @@
     <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
 
-    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
-    <meta class="mktoString" id="btmformbgimg" mktoName="Buttom Form Bg Image" default="https://go.qomplx.com/rs/449-EVP-026/images/home-banner.jpg" allowHtml="true">
-    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
-    <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
-    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
-    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
-    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
-    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
-    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
-    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom banner - BG Color" default="#1F203E">
+    <meta class="mktoString" id="btmformbgimg" mktoName="Buttom Banner Bg Image" default="https://go.qomplx.com/rs/449-EVP-026/images/home-banner.jpg" allowHtml="true">
+    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Banner - Text BG Color" default="#ffffff">
+
 
     <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#1c2759">
@@ -149,7 +136,7 @@
     <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
     <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
     <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
-    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
+    <meta class="mktoString" id="btmformorder" mktoName="Bottom Banner - Order" default="8" allowHtml="true">
 
 
 
@@ -252,6 +239,7 @@
         background-color:${videobgcolor};
         display:${videoshow};
         order:${videoorder};
+        z-index:1;
       }
       #video .left {
         background-color:${videoleftbgcolor};
@@ -261,7 +249,7 @@
         background-image:url(${btmformbgimg});
         background-size: cover; 
         display:${btmformshow};
-        order:${btmformorder};
+        order:${btmbannerorder};
       }
       #btmform .container_inner {
         background-color:${btmforminnerbgcolor};
@@ -269,13 +257,16 @@
       #footer {
         background-color:${footerbgcolor};
       }
+      #footer a {
+        white-space:nowrap;
+      }
       #footer a, #footer h4, #footer i, #footer p {
         color:${footerlinkcolor};
         font-size:${footerfsize}px;
         font-weight:${pweight};
         text-decoration:none;
       }
-      #footer .chevron-footer {
+      #footer .chevron-footer, #footer svg {
         width:${footerfsize}px;
         fill:${footerlinkcolor};
       }
@@ -355,7 +346,7 @@
       #banner .button a {
         background-color:${banbtnbgcolor};
         background-image: linear-gradient(45deg,${gradient2},${gradient3});
-        border:1px solid ${banbtnbordercolor};
+        border: ${btnborder}px solid ${banbtnbordercolor};
         border-radius:${banbtnborderradius}px;
         font-size:${banbtntextsize}px;
         padding:15px 50px;
@@ -368,6 +359,7 @@
         font-size:${formtextpsize}px!important;
         font-weight:${formtextpweight}!important;
         display:${showformtextlabel}!important;
+        padding-bottom: 0 !important;
       }
       #formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
         border:${formtextbordercolor} ${formtextborderheight}px solid;
@@ -389,6 +381,12 @@
       }
       .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField{
         box-shadow:none !important;
+      }
+      .mktoForm .mktoFieldDescriptor, .mktoForm .mktoFormCol {
+        margin-bottom: 0 !important;
+      }
+      .mktoForm .mktoButtonRow {
+        margin-top: 1rem !important;
       }
       .mktoForm .mktoButtonWrap {
         margin-left:0 !important;
@@ -414,6 +412,7 @@
         text-decoration:none!important;
         width: auto!important!important;
         display:inline-block;
+        white-space:nowrap;
       }
       ${formtexttwocol}
 
@@ -424,7 +423,7 @@
       .button a {
         background-color:${btnbgcolor};
         background-image: linear-gradient(45deg,${gradient2},${gradient1});
-        border:1px solid ${btnbordercolor};
+        border:${btnborder}px solid ${btnbordercolor};
         border-radius:${btnborderradius}px;
         font-size:${btntextsize}px;
         padding:15px 50px;
@@ -604,7 +603,7 @@
           </div>
           <div class="right">
             <div class="mktoImg" id="bannerimgright" mktoName="Banner - Image">
-              <img src="https://go.qomplx.com/rs/449-EVP-026/images/BG_Image_Icon.png">
+              <img src="https://dummyimage.com/500x350/485bc7/fff">
             </div>
           </div>
         </div>
@@ -758,7 +757,7 @@
           <div class="threecolumns">
             <div class="col50">
               <div class="threecolimg">
-                <div class="mktoImg" id="twocolimg1" mktoName="Two Cols - Image 1"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
+                <div class="mktoImg" id="twocolimg1" mktoName="Two Cols - Image 1"><img src="https://go.qomplx.com/rs/449-EVP-026/images/icon-placeholder.svg" width="140"></div>
               </div>
               <div class="threecoltext">
                 <div class="mktoText" id="twocoltext1" mktoName="Two Cols - Copy 1">
@@ -770,7 +769,7 @@
             <div class="mid"></div>
             <div class="col50">
               <div class="threecolimg">
-                <div class="mktoImg" id="twocolimg2" mktoName="Two Cols - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
+                <div class="mktoImg" id="twocolimg2" mktoName="Two Cols - Image 2"><img src="https://go.qomplx.com/rs/449-EVP-026/images/icon-placeholder.svg" width="140"></div>
               </div>
               <div class="threecoltext">
                 <div class="mktoText" id="twocoltext2" mktoName="Two Cols - Copy 2">
@@ -814,12 +813,15 @@
         </div>
       </div>
       <!-- END Video -->
-      <!-- Bottom Form -->
+      <!-- Bottom Banner -->
       <div class="container_100" id="btmform">
         <div class="container_inner section">
           <div class="formleft">
-            <div class="mktoText" id="btmformheadline" mktoName="Bottom Form - Headline">
-              <h2>Lorem Ipsum Dolor Sit Amet</h2>
+            <div class="mktoText" id="btmmheadline" mktoName="Bottom Banner - Headline">
+            <h2>Lorem Ipsum Dolor Sit Amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+            </div>
+            <div class="mktoText button" id="imgleftbtn" mktoName="Image Left - Button"><a href="#">CTA Button</a>
             </div>
             <div class="mktoForm" id="btmFormform" mktoName="Bottom Form"></div>
           </div>
@@ -946,29 +948,29 @@
         </div>
         <div class="threecolumns">
           <div class="col3">
-            <div class="mktoText" id="footercol1" mktoName="Footer - Links Col 1">
-            <p><a href="/terms-of-service-agreement/">Terms of Service Agreement</a> | <a href="/privacy-policy/">Privacy
-                  Policy</a>
-            </p>
-        
+            <div class="mktoText" id="footercol1b" mktoName="Footer - Links Col 1">
+              <p><a href="/terms-of-service-agreement/">Terms of Service Agreement</a> | <a href="/privacy-policy/">Privacy
+                Policy</a>
+              </p>
+
             </div>
           </div>
 
           <div class="col3">
-            <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
-            <div class="col3" style="text-align:center;">
-                  <a href="https://twitter.com/QOMPLX" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                  <a href="https://www.linkedin.com/company/qomplx/about/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-               </div>
-             
+            <div class="mktoText" id="footercol2b" mktoName="Footer - Links Col 2">
+              <div style="display:flex;justify-content:center;flex-direction:row; gap:1.5rem;">
+                <a href="https://twitter.com/QOMPLX" target="_blank" rel="noopener" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                <a href="https://www.linkedin.com/company/qomplx/about/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+              </div>
+
             </div>
           </div>
 
 
           <div class="col3">
-            <div class="mktoText" id="footercol6" mktoName="Footer - Links Col 3">
-          <p>Copyright © QOMPLX, Inc. 2022 All rights reserved</p>
-             
+            <div class="mktoText" id="footercol6b" mktoName="Footer - Links Col 3">
+              <p>Copyright © QOMPLX, Inc. 2022 All rights reserved</p>
+
             </div>
           </div>
 
@@ -978,9 +980,9 @@
     </div>
     <!-- END Footer -->
 
+    <!-- footer submenu toggle -->
     <script>
       Array.from(document.querySelectorAll('.chevron-footer')).map((x) => x.addEventListener('click', toggler))
-
       function toggler(e) {
         e.target.parentNode.parentNode.parentNode.classList.toggle("active-menu")
       }
