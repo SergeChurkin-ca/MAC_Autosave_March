@@ -53,6 +53,11 @@
   <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
   <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#1F203E">
 
+  <meta class="mktoColor" id="blurry-shadow-clr" mktoName="Blurry Shadow Color" default="#bbbddc">
+  <meta class="mktoColor" id="blurry-shadow-clr2" mktoName="Blurry Shadow Color" default="#fef0d4">
+  <meta class="mktoString" id="blurry-shadow-bottom" mktoName="Blurry Shadow Position Bottom" default="-9" allowHtml="true">
+
+
   <meta class="mktoColor" id="gradient1" mktoName="Gradient 1 Navy Blue" default="#00205b">
   <meta class="mktoColor" id="gradient2" mktoName="Gradient 2 Light Blue" default="#485cc7">
   <meta class="mktoColor" id="gradient3" mktoName="Gradient 3 Purple" default="#7f35b2">
@@ -86,10 +91,10 @@
   <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
 
   <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
+  <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#f8f9f9">
   <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
   <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-  <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
+  <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="3" allowHtml="true">
 
   <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
@@ -98,10 +103,10 @@
   <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
     
   <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
+  <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#f8f9f9">
   <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
   <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-  <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
+  <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="3" allowHtml="true">
     
   <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
@@ -186,6 +191,10 @@
           display:${imgrightshow};
           order:${imgrightorder};
 		}
+      #imgright .left, #imgleft .left {
+         z-index: 10;
+         position: relative;
+      }
         #imgright h2, #imgleft h2 {
             position: relative;
         }
@@ -204,12 +213,36 @@
 			background-color:${imgleftbgcolor};
           display:${imgleftshow};
           order:${imgleftorder};
+          z-index:0;
+          
 		}
 		#twocolicons {
           background-color:${twocoliconsbgcolor};
           display:${twocoliconsshow};
           order:${twocoliconsorder};
+          position: relative;
+          z-index: -1;
 		}
+      #twocolicons .center {
+         position: relative;
+         z-index: 15 !important;
+      }
+      #twocolicons .blurry-decoration,
+      #twocolicons .blurry-decoration2 {
+         position: absolute;
+         width: 600px;
+         z-index: -15 !important;
+      }
+      #twocolicons .blurry-decoration {
+         left: -300px !important;
+         bottom: -100px !important;
+      }
+      #twocolicons .blurry-decoration2 {
+         top: -200px !important;
+         right: -150px !important;
+         bottom: -100px !important;
+         z-index: -15 !important;
+      }
 		#video {
           background-color:${videobgcolor};
           display:${videoshow};
@@ -470,6 +503,52 @@
               padding:16px 30px!important;
           }
 		}
+
+
+#imgrightimg {
+    position: relative;
+    z-index: 1;
+}
+
+.blurry-decoration {
+      position: absolute !important;
+      bottom: -9rem !important;
+      width: 100%;
+      right: -3rem !important;
+      z-index: -1;
+}
+#imgright .blurry-decoration2 {
+   position: absolute;
+   z-index: -1;
+   left: -13rem;
+   width: 100%;
+   bottom: 1rem !important;
+}
+#imgleft .blurry-decoration2 {
+   position: absolute;
+   z-index: -1;
+   right: 0rem;
+   width: 100%;
+   top: -17rem !important;
+}
+#imgleft .blurry-decoration {
+   bottom: -6rem !important;
+   right: -6rem !important;
+}
+#imgrigh .left, #imgleft .right {
+   z-index: 3;
+   position: relative;
+}
+@media (max-width: 800px) {
+   #imgleft .blurry-decoration, #imgright .blurry-decoration {
+      bottom: -5rem !important;
+      right: 0 !important;
+      width: 80%; 
+   }
+   #imgleft .blurry-decoration2, #imgright .blurry-decoration2 {
+      display: none !important;
+   }
+}
 	</style>
 </head>
 
@@ -590,6 +669,16 @@
             <div class="mktoImg" id="imgrightimg" mktoName="Image Right - Image">
                <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
             </div>
+            <div class="blurry-decoration">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="1"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+	<feGaussianBlur stdDeviation="84" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="227.5" ry="137.5" cx="426.396334024" cy="508.0240871569249" fill="${blurry-shadow-clr}"></ellipse></g></svg>
+            
+            </div>
+            <div class="blurry-decoration2">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="1"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+	<feGaussianBlur stdDeviation="84" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="227.5" ry="137.5" cx="426.396334024" cy="508.0240871569249" fill="${blurry-shadow-clr2}"></ellipse></g></svg>
+            </div>
          </div>
       </div>
    </div>
@@ -600,6 +689,16 @@
          <div class="right">
             <div class="mktoImg" id="imgleftimg" mktoName="Image Left - Image">
                <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
+            </div>
+            <div class="blurry-decoration">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="1"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+	<feGaussianBlur stdDeviation="84" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="227.5" ry="137.5" cx="426.396334024" cy="508.0240871569249" fill="${blurry-shadow-clr}"></ellipse></g></svg>
+         
+            </div>
+            <div class="blurry-decoration2">
+     
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="1"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+	<feGaussianBlur stdDeviation="84" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="227.5" ry="137.5" cx="426.396334024" cy="508.0240871569249" fill="${blurry-shadow-clr2}"></ellipse></g></svg>
             </div>
          </div>
          <div class="left">
@@ -616,6 +715,17 @@
    <!-- Two Columns -->
    <div class="container_100" id="twocolicons">
       <div class="container_inner section">
+      <div class="blurry-decoration">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="1"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+	<feGaussianBlur stdDeviation="84" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="227.5" ry="137.5" cx="426.396334024" cy="508.0240871569249" fill="${blurry-shadow-clr}"></ellipse></g></svg>
+            </div>
+            <div class="blurry-decoration2">
+           
+           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" opacity="1"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+  <feGaussianBlur stdDeviation="84" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="227.5" ry="227.5" cx="426.396334024" cy="508.0240871569249" fill="${blurry-shadow-clr2}"></ellipse></g></svg>
+
+           </div>
+        
          <div class="mktoText center" id="twocolmaintext" mktoName="Two Cols - Button">
             <h2>Lorem Ipsum Dolor Sit Amet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>

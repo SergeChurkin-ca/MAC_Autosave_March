@@ -25,6 +25,7 @@ img {
 .container_100 {
     width: 100%;
     display: inline-block;
+    z-index: 1;
 }
 
 .container_inner {
@@ -90,18 +91,6 @@ p {
 #imgright .right {
     position: relative;
     z-index: 1;
-}
-
-#imgright .right:after {
-    content: ".";
-    display: block;
-    width: 180px;
-    height: 100px;
-    position: absolute;
-    bottom: 2rem;
-    right: 5rem;
-    z-index: -1;
-    box-shadow: 10px 30px 500px blue;
 }
 
 .left {
