@@ -25,7 +25,7 @@ img {
 .container_100 {
     width: 100%;
     display: inline-block;
-    z-index: 1;
+    z-index:
 }
 
 .container_inner {
@@ -50,6 +50,8 @@ img {
 .button {
     padding-top: 45px;
     padding-bottom: 35px;
+    position: relative !important;
+    z-index: 20 !important;
 }
 
 h1,
@@ -106,17 +108,26 @@ p {
     vertical-align: top;
 }
 
-#footer .left {
-    width: 45%;
-    display: inline-block;
-    vertical-align: top;
+#footer {
+    padding: 2rem 0;
 }
 
-#footer .right {
-    width: 50%;
-    display: inline-block;
-    margin-left: 4%;
-    vertical-align: top;
+#footer .col33 {
+    width: calc((100% / 6) - 0.5rem) !important;
+}
+
+#footer .col3 {
+    width: 33% !important;
+    padding: 15px;
+}
+
+#footer p {
+    line-height: 1.1;
+}
+
+#footer h4 i,
+#footer .chevron-footer {
+    display: none;
 }
 
 .formleft {
@@ -147,19 +158,28 @@ p {
 }
 
 .threecolumns {
-    display: flex;
+    display: table;
     margin-top: 50px;
 }
 
 .col33 {
     display: table-cell;
-    width: calc((100% / 7) - 0.5rem);
+    width: 30%;
+    padding: 30px;
 }
 
 #footer .threecolumns {
-    display: table;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 0px;
+}
+
+#footer .col33 {
+    display: table-cell;
+    width: 30%;
+    padding: 15px;
 }
 
 .mid {
@@ -323,10 +343,6 @@ p {
 #footer ul {
     list-style: none;
     padding: 0;
-}
-
-#footer a:hover {
-    font-weight: bold;
 }
 
 .list-unstyled {
@@ -493,14 +509,6 @@ span.mktoButtonWrap.mktoNative {
         width: 100%;
         margin-left: 0px;
     }
-    #footer .left {
-        width: 100%;
-        text-align: center;
-    }
-    #footer .right {
-        width: 100%;
-        margin-left: 0px;
-    }
     .threecolumns {
         display: block;
     }
@@ -509,7 +517,6 @@ span.mktoButtonWrap.mktoNative {
         width: 100%;
         padding: 30px;
     }
-    #footer .col33,
     .col33 {
         display: block;
         width: 100%;
@@ -571,6 +578,29 @@ span.mktoButtonWrap.mktoNative {
         font-size: 16px!important;
         margin-bottom: 15px!important;
     }
+    #footer .threecolumns {
+        flex-direction: column;
+        width: 100%;
+    }
+    #footer ul {
+        display: none;
+    }
+    #footer .col33 {
+        width: 100% !important;
+        text-align: left;
+    }
+    #footer h4 i,
+    #footer .chevron-footer {
+        display: flex;
+        cursor: pointer;
+    }
+    #footer h4 span {
+        float: right;
+    }
+    #footer .col3 {
+        width: 100% !important;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -590,22 +620,17 @@ span.mktoButtonWrap.mktoNative {
 }
 
 @media only screen and (max-width: 480px),
-only screen and (max-device-width: 480px),
-only screen and (max-device-height: 480px) {}
-
-.mktoMobileShow .mktoForm,
-.mktoForm * {
-    padding: 0!important;
-}
-
-.mktoForm input,
-.mktoForm textarea,
-.mktoForm select {
-    width: 100%!important;
-    padding: 18px 12px!important;
-    font-size: 16px!important;
-    margin-bottom: 15px!important;
-}
-
-
+only screen and (max-device-width: 480px) {
+    .mktoMobileShow .mktoForm,
+    .mktoForm * {
+        padding: 0!important;
+    }
+    .mktoForm input,
+    .mktoForm textarea,
+    .mktoForm select {
+        width: 100%!important;
+        padding: 18px 12px!important;
+        font-size: 16px!important;
+        margin-bottom: 15px!important;
+    }
 }
