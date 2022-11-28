@@ -110,13 +110,14 @@
     
   <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
-  <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
+  <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#f2f2f2">
   <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
   <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
 
   <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
+  <meta class="mktoString" id="btmformbgimg" mktoName="Buttom Form Bg Image" default="https://go.qomplx.com/rs/449-EVP-026/images/home-banner.jpg" allowHtml="true">
   <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
   <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
   <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
@@ -135,8 +136,8 @@
   <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
 
   <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
-  <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
-  <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
+  <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#1c2759">
+  <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#ffffff">
   <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
   <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
   
@@ -253,6 +254,8 @@
 		}
 		#btmform {
           background-color:${btmformbgcolor};
+          background-image:url(${btmformbgimg});
+          background-size: cover; 
           display:${btmformshow};
           order:${btmformorder};
 		}
@@ -390,7 +393,7 @@
 		.mktoForm * {
           font-family: 'Inter',Arial, sans-serif !important;
 		}
-		#footer a {
+		#footer a, #footer h4 {
           color:${footerlinkcolor};
           font-size:${psize}px;
           font-weight:${pweight};
@@ -727,7 +730,7 @@
            </div>
         
          <div class="mktoText center" id="twocolmaintext" mktoName="Two Cols - Button">
-            <h2>Lorem Ipsum Dolor Sit Amet</h2>
+            <h2>Lorem Ipsum Dolor Sit Amet</h2>.
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
          </div>
          <div class="threecolumns">
@@ -808,34 +811,8 @@
    <!-- Footer -->
    <div class="container_100" id="footer">
       <div class="container_inner section">
-         <div class="left logo">
-            <div class="mktoText" id="footerlogo" mktoName="Logo">
-              <a href="#">
-               <img class="logowidthl" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" border="0">
-               </a>
-            </div>
-            <div class="mktoText" id="footersocial" mktoName="Footer - Social">
-               <ul class="social-icons icon-circle list-unstyled list-inline">
-                  <li> <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-google-plus"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-youtube"></i></a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <div class="right">
+          
+         
             <div class="threecolumns">
                <div class="col33">
                   <div class="mktoText" id="footercol1" mktoName="Footer - Links Col 1">
@@ -859,7 +836,7 @@
                      </ul>
                   </div>
                </div>
-               <div class="mid"></div>
+               
                <div class="col33">
                   <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
                      <h4>Heading</h4>
@@ -882,7 +859,99 @@
                      </ul>
                   </div>
                </div>
-               <div class="mid"></div>
+               
+               <div class="col33">
+                  <div class="mktoText" id="footercol3" mktoName="Footer - Links Col 3">
+                     <h4>Heading</h4>
+                     <ul>
+                        <li>
+                           <a href="#" target="blank">Link 1</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 2</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 3</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 4</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 5</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               
+               <div class="col33">
+                  <div class="mktoText" id="footercol3" mktoName="Footer - Links Col 3">
+                     <h4>Heading</h4>
+                     <ul>
+                        <li>
+                           <a href="#" target="blank">Link 1</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 2</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 3</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 4</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 5</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               
+               <div class="col33">
+                  <div class="mktoText" id="footercol3" mktoName="Footer - Links Col 3">
+                     <h4>Heading</h4>
+                     <ul>
+                        <li>
+                           <a href="#" target="blank">Link 1</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 2</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 3</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 4</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 5</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               
+               <div class="col33">
+                  <div class="mktoText" id="footercol3" mktoName="Footer - Links Col 3">
+                     <h4>Heading</h4>
+                     <ul>
+                        <li>
+                           <a href="#" target="blank">Link 1</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 2</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 3</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 4</a>
+                        </li>
+                        <li>
+                           <a href="#" target="blank">Link 5</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               
                <div class="col33">
                   <div class="mktoText" id="footercol3" mktoName="Footer - Links Col 3">
                      <h4>Heading</h4>
@@ -907,7 +976,7 @@
                </div>
             </div>
          </div>
-      </div>
+      
    </div>
    <!-- END Footer -->
 
