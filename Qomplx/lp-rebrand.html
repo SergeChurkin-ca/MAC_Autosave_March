@@ -136,7 +136,7 @@
     <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
     <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
     <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
-    <meta class="mktoString" id="btmformorder" mktoName="Bottom Banner - Order" default="8" allowHtml="true">
+    <meta class="mktoString" id="btmbannerorder" mktoName="Bottom Banner - Order" default="8" allowHtml="true">
 
 
 
@@ -441,35 +441,8 @@
       #form {
         background-color:${formbgcolor};
       }
-      #btmform .mktoForm .mktoLabel {
-        color:${btmformpcolor}!important;
-        font-size:${btmformpsize}px!important;
-        font-weight:${btmformpweight}!important;
-        display:${showbtmformlabel}!important;
-      }
-      #btmform .mktoForm input, #btmform .mktoForm textarea,  #btmform .mktoForm select {
-        border:${btmformbordercolor} ${btmformborderheight}px solid;
-        border-radius:${btmformborderradius}px!important;
-        background-color:${btmformfieldcolor}!important;
-        color:${btmformpcolor}!important;
-      }
-      #btmform .mktoForm input::placeholder, #btmform .mktoForm textarea::placeholder,  #btmform .mktoForm select::placeholder {
-        color:${btmformpcolor}!important;
-      }
-      #btmform .mktoForm button.mktoButton {
-        background:${btmformbtnbgcolor}!important;
-        background-color:${btmformbtnbgcolor}!important;
-        border:1px solid ${btmformbtnbordercolor}!important;
-        border-radius:${btmformbtnborderradius}px!important;
-        font-size:${btmformbtntextsize}px!important;
-        padding:15px 50px!important;
-        color:${btmformbtntextcolor}!important;
-        font-weight:bold!important;
-        text-decoration:none!important;
-        width: auto!important!important;
-        display:inline-block;
-      }
-      ${btmformtwocol}
+
+  
       #threecol .col33 {
         background-color:${threecolcolumnbgcolor};
         border-radius:${threecolradius}px;
