@@ -1,0 +1,118 @@
+    /* general setup */
+    
+    .list-style-none {
+        list-style: none;
+    }
+    
+    .container_inner {
+        padding: 0 20px;
+    }
+    
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+    /* end of general setup */
+    /* navbar */
+    
+    #navbar {
+        background-color: #124559;
+    }
+    
+    navbar,
+    navbar ul {
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    navbar ul {
+        gap: 1.5rem;
+    }
+    
+    #navlogo {
+        margin-right: 3rem;
+        height: 6rem;
+    }
+    
+    #navbadge {
+        height: 6rem;
+        padding: 12px;
+    }
+    
+    navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    navbar img {
+        max-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+    }
+    /* end of navbar */
+    
+    #imgleft2 .right {
+        margin-left: 0%;
+        margin-right: 4%;
+    }
+    /* banner */
+    
+    #banner {
+        position: relative;
+    }
+    
+    #banner .container_inner {
+        padding-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    #banner .left,
+    #banner .right {
+        flex: 1 0 500px;
+    }
+    
+    #banner .right,
+    #banner .left {
+        position: relative;
+        z-index: 1;
+    }
+    
+    #banner .right {
+        cursor: pointer;
+    }
+    
+    .elementor-shape {
+        transform: rotate(180deg);
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        line-height: 0;
+        direction: ltr;
+        width: 100%;
+    }
+    
+    .elementor-shape svg {
+        height: calc(11vw + 10px);
+        transform: translateX(-50%) rotateY(180deg);
+        fill: #FCB344;
+        width: 100%;
+        z-index: -1;
+        width: calc(100% + 1.3px);
+        position: relative;
+        left: 50%;
+    }
+    /* end of banner */
+    /* centerred text */
+    
+    #centertextcopy {
+        text-align: center;
+    }
+    /* end of centerred text */
