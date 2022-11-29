@@ -24,6 +24,7 @@
         flex-direction: row !important;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     
     navbar ul {
@@ -32,11 +33,13 @@
     
     #navlogo {
         margin-right: 3rem;
-        height: 6rem;
+        height: 80px;
+        min-height: 80px;
     }
     
     #navbadge {
-        height: 6rem;
+        height: 80px;
+        min-height: 80px;
         padding: 12px;
     }
     
@@ -45,6 +48,7 @@
         text-decoration: none;
         font-weight: 600;
         text-transform: uppercase;
+        font-size: 13px;
     }
     
     navbar img {
@@ -74,7 +78,7 @@
     
     #banner .left,
     #banner .right {
-        flex: 1 0 500px;
+        flex: 1 0 400px;
     }
     
     #banner .right,
@@ -92,7 +96,7 @@
         overflow: hidden;
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: -5px;
         width: 100%;
         line-height: 0;
         direction: ltr;
@@ -112,7 +116,93 @@
     /* end of banner */
     /* centerred text */
     
-    #centertextcopy {
+    #centertextcopy,
+    #centertextcopy-img {
         text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    #centertext h3,
+    #centertext h3,
+    #centertext2 h2,
+    #centertext2 h2 {
+        margin: 0 2vw;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    #centertextcopy {
+        margin-bottom: 2rem;
+    }
+    
+    #centertextcopy:before {
+        content: '';
+        height: 0.5px;
+        width: 20vw;
+        background-color: #ffffff;
+        flex-grow: 1;
+    }
+    
+    #centertextcopy:after {
+        content: '';
+        height: 0.5px;
+        width: 20vw;
+        background-color: #ffffff;
+        flex-grow: 1;
+    }
+    
+    #centertext img {
+        width: 100px;
     }
     /* end of centerred text */
+    
+    #imgrightheadline {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    #imgrightheadline h2 {
+        margin: 0 2vw;
+    }
+    
+    #imgrightheadline:before {
+        content: '';
+        height: 0.5px;
+        width: 20vw;
+        background-color: #1F203E;
+        flex-grow: 1;
+    }
+    
+    #imgrightheadline:after {
+        content: '';
+        height: 0.5px;
+        width: 20vw;
+        background-color: #1F203E;
+        flex-grow: 1;
+    }
+    /* center text section 2 */
+    
+    #centertext2 ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style: none;
+        justify-content: space-between;
+        padding: 0;
+    }
+    
+    #centertext2 li {
+        width: 20%;
+        border-top: solid 7px #1F203E;
+        background-color: #124559;
+        padding: 1rem;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    /* end  center text section 2 */

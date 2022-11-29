@@ -32,10 +32,10 @@
   <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
   <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
   <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
-  <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
+  <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="18" allowHtml="true">
   <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
   <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="20" allowHtml="true">
+  <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="16" allowHtml="true">
   <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
   <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
 
@@ -51,7 +51,7 @@
   <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
   <meta class="mktoColor" id="banner-txt-color" mktoName="Banner - Txt Color" default="#ffffff">
   <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#F15A25">
-  <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
+  <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="29" allowHtml="true">
   <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
   <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#1F203E">
   <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
@@ -79,7 +79,7 @@
   <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
   <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
   <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
+  <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="1" allowHtml="true">
 
   <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
@@ -123,7 +123,7 @@
   <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
   <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
   <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
+  <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="1" allowHtml="true">
 
   <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
   <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
@@ -134,8 +134,10 @@
   <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
   <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
   <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
-  <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
+  
   <meta class="mktoString" id="centertextorder" mktoName="Image Right - Order" default="3" allowHtml="true">
+  <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
+  <meta class="mktoString" id="centertext2order" mktoName="Image Right - Order" default="5" allowHtml="true">
   <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="6" allowHtml="true">
   <meta class="mktoString" id="imgright2order" mktoName="Image Right - Order" default="7" allowHtml="true">
   <meta class="mktoString" id="imgleft2order" mktoName="Image Left - Order" default="8" allowHtml="true">
@@ -168,6 +170,9 @@
          color: ${banner-txt-color};
          
       }
+      #banner li {
+         margin: 0.5rem 0;
+      }
       #banner ul {
          padding: 0;
       }
@@ -187,15 +192,34 @@
         box-shadow:${threecolshadow};
         border-radius:${threecolradius}
       }
-      #centertext {
-         background-color: #FCB344;
-         order: ${centertextorder};
+      #centertext,
+      #centertext2 {
+       order: ${centertextorder};
+       background-color: #54BCAB;
+     
       }
+#centertext2 {
+order: ${centertext2order};
+background-color: #54BCAB;
+}
+#centertext2 h2,
+#centertext2 li {
+   color: #ffffff;
+   margin: 0.5rem 0;
+}
+      #centertext h3,
+      #centertext2 h3 {
+         color:#ffffff;
+      }
+
 		#imgright {
 			background-color:${imgrightbgcolor};
           display:${imgrightshow};
           order:${imgrightorder};
 		}
+      #imgrightheadline {
+         text-align: center;
+      }
 		#imgleft {
 			background-color:${imgleftbgcolor};
           display:${imgleftshow};
@@ -254,7 +278,7 @@
           font-size:${bannercopysize}px;
           color:${pcolor};
           font-weight:${pweight};
-          font-size: 29px;
+          font-size: 24px;
 		}
 		p {
           color:${pcolor};
@@ -271,6 +295,7 @@
 			color:${h2color};
 			font-size:${h2size}px;
 			font-weight:bold;
+         text-transform: uppercase;
 		}
 		h3 {
 			color:${h3color};
@@ -602,34 +627,38 @@ is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s 
    <div class="container_100" id="centertext">
       <div class="container_inner section">
     
-            <div class="mktoText" id="centertextcopy" mktoName="Center Text - Copy">
+            <div class="mktoText flex-row" id="centertextcopy" mktoName="Center Text - Copy">
                
                <h3>Let’s GROW and HELP each other!</h3>
+               
+            </div>
+            <div class="mktoText flex-row" id="centertextcopy-img" mktoName="Center Text - Image">
+               
+            <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hubspot_112022_3.png" alt="hubspot box"/>
+               
             </div>
             
             </div>
       </div>
-   </div>
+   
    <!-- END of Center Text  -->
    <!-- Image Right 1 -->
    <div class="container_100" id="imgright">
       <div class="container_inner section" id="flex">
+      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+            <h2>Who is MAC?</h2>
+            </div>
          <div class="left">
+         
             <div class="mktoText" id="imgrighttext" mktoName="Image Right - Copy">
-               <h2>Who is MAC?</h2>
-               <p>Marketing Automation is our passion and Hubspot
-is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s such as yourself.</p>
-<p>
-Why MAC...
-<ul class="list-style-none">
-<li>➔ Calloborative sales process</li>
-<li>➔ Experienced real client examples</li>
-<li>➔ Sales and Marketing expertise</li>
-<li>➔ Custom Solutions</li>
-<li>➔ Client Onboarding & Implementation expertise</li>
- ➔ We’ll bring Net New prospects
-</ul>
-</p>
+              
+               <h3><strong>
+                  12 year old agency with Headquarters in Toronto, Canada<br>
+                   Servicing remote clients all over the world<br>
+                  Strategic Sales, Marketing, Service + Rev Ops Consultants<br>
+                   In house design + development team
+               </strong></p>
+
             </div>
           
          </div>
@@ -641,6 +670,36 @@ Why MAC...
       </div>
    </div>
    <!-- END Image Right 1 -->
+   <!-- Center Text -->
+   <div class="container_100" id="centertext2">
+      <div class="container_inner section">
+    
+            <div class="mktoText flex-row" id="centertextcopy" mktoName="Center Text - Copy">
+               
+               <h2>Why introduct MAC to your clients?</h2>
+      
+            </div>
+            <div class="mktoText flex-row" id="bulletpoints" mktoName="Center Text - Copy">
+               
+            <ul>
+               <li>By the hour agency with one of the best retainer rates !</li>
+<li>Same day Sync/Demo/Implementation Calls </li>
+<li>Abilitiy to start new projects within 2 Days</li>
+<li>Hourly rates starting as low as $100 US/Hr </li>
+<li>One-Stop-Shop</li>
+<li>HubSpot Solutions Engineer for Connecting, planning, and project execution</li>
+<li>HubSpot Solutions Architect for ensuring quality, Strategic support </li>
+<li>Dedicated CRM Team</li>
+
+               </ul>
+      
+            </div>
+     
+            
+            </div>
+      </div>
+   
+   <!-- END of Center Text  -->
    <!-- Image Left 1 -->
    <div class="container_100" id="imgleft">
       <div class="container_inner section">
