@@ -138,8 +138,10 @@
   <meta class="mktoString" id="centertextorder" mktoName="Image Right - Order" default="3" allowHtml="true">
   <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
   <meta class="mktoString" id="centertext2order" mktoName="Image Right - Order" default="5" allowHtml="true">
+  <meta class="mktoString" id="imgright3order" mktoName="Image Right - Order" default="6" allowHtml="true">
   <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="6" allowHtml="true">
   <meta class="mktoString" id="imgright2order" mktoName="Image Right - Order" default="7" allowHtml="true">
+  <meta class="mktoString" id="imgright3order" mktoName="Image Right - Order" default="9" allowHtml="true">
   <meta class="mktoString" id="imgleft2order" mktoName="Image Left - Order" default="8" allowHtml="true">
   <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="9" allowHtml="true">
   <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="10" allowHtml="true">
@@ -235,6 +237,18 @@ background-color: #54BCAB;
           display:${imgleftshow};
           order:${imgleft2order};
 		}
+	#imgright3 {
+			background-color:${imgrightbgcolor};
+          display:${imgrightshow};
+          order:${imgright3order};
+		}
+#imgrightimg3 {
+   text-align: center;
+   margin-bottom: 3rem;
+}
+#imgrightimg3 img {
+   max-width: 280px;
+}
 		#twocolicons {
           background-color:${twocoliconsbgcolor};
           display:${twocoliconsshow};
@@ -657,7 +671,7 @@ is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s 
                    Servicing remote clients all over the world<br>
                   Strategic Sales, Marketing, Service + Rev Ops Consultants<br>
                    In house design + development team
-               </strong></p>
+               </strong></h3>
 
             </div>
           
@@ -700,6 +714,28 @@ is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s 
       </div>
    
    <!-- END of Center Text  -->
+
+   <!-- Image Right 3 -->
+   <div class="container_100" id="imgright3">
+      <div class="container_inner section" id="flex">
+      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+            <h2>Our Intangibles</h2>
+            </div>
+        
+            <div class="mktoImg" id="imgrightimg3" mktoName="Image Right - Image">
+               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hero-img-pi.png">
+            </div>
+            <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+            <h2>Hubspot/ Salesforce Integration.. This is in our Wheelhouse!</h2>
+            </div>
+            <div class="mktoImg" id="imgrightimg3" mktoName="Image Right - Image">
+               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/sf_plus_husbpot.jpeg">
+            </div>
+      </div>
+   </div>
+   <!-- END Image Right 1 -->
+
+
    <!-- Image Left 1 -->
    <div class="container_100" id="imgleft">
       <div class="container_inner section">
