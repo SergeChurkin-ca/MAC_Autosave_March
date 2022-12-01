@@ -17,6 +17,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/LP_MAC_Style.css" rel="stylesheet">
+	<link href="carousel.css" rel="stylesheet">
 	<link href="addedcss.css" rel="stylesheet">
 	<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
   
@@ -89,6 +90,7 @@
 
   <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
+  <meta class="mktoColor" id="carousel-color" mktoName="Carousel Sectino Color" default="#f15a25">
     
   <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
@@ -141,11 +143,12 @@
   <meta class="mktoString" id="imgright3order" mktoName="Image Right - Order" default="6" allowHtml="true">
   <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="6" allowHtml="true">
   <meta class="mktoString" id="imgright2order" mktoName="Image Right - Order" default="7" allowHtml="true">
-  <meta class="mktoString" id="imgright3order" mktoName="Image Right - Order" default="9" allowHtml="true">
-  <meta class="mktoString" id="imgleft2order" mktoName="Image Left - Order" default="8" allowHtml="true">
-  <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="9" allowHtml="true">
-  <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="10" allowHtml="true">
-  <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="111" allowHtml="true">
+  <meta class="mktoString" id="carouselsection-order" mktoName="Carousel Sectoin Order" default="8" allowHtml="true">
+  <meta class="mktoString" id="imgright3order" mktoName="Image Right - Order" default="10" allowHtml="true">
+  <meta class="mktoString" id="imgleft2order" mktoName="Image Left - Order" default="9" allowHtml="true">
+  <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="10" allowHtml="true">
+  <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="11" allowHtml="true">
+  <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="12" allowHtml="true">
   
 
 
@@ -227,11 +230,34 @@ background-color: #54BCAB;
           display:${imgleftshow};
           order:${imgleftorder};
 		}
+
+      #imgleft .flex-wrap {
+         gap: 2rem;
+      }
+      #imgleft .right {
+         min-width: 250px;
+         max-width: 250px;
+         width: auto;
+         flex: 1 0 300px;
+         margin-bottom: 2rem;
+      }
+       #imgleft .left {
+        width: auto;
+        flex: 1 0 500px;
+      }
 		#imgright2 {
 			background-color:${imgrightbgcolor};
           display:${imgrightshow};
           order:${imgright2order};
 		}
+      #carouselsection {
+         order: ${carouselsection-order};
+         background-color:${carousel-color};
+      }
+      #carouselsection h2 {
+         color: #ffffff;
+      }
+ 
 		#imgleft2 {
 			background-color:${imgleftbgcolor};
           display:${imgleftshow};
@@ -242,9 +268,11 @@ background-color: #54BCAB;
           display:${imgrightshow};
           order:${imgright3order};
 		}
+      #imgright3 .section {
+         margin-bottom: 0px;
+      }
 #imgrightimg3 {
    text-align: center;
-   margin-bottom: 3rem;
 }
 #imgrightimg3 img {
    max-width: 280px;
@@ -308,13 +336,15 @@ background-color: #54BCAB;
 		h2 {
 			color:${h2color};
 			font-size:${h2size}px;
-			font-weight:bold;
+			font-weight:400;
          text-transform: uppercase;
+         letter-spacing: 1px;
 		}
 		h3 {
 			color:${h3color};
 			font-size:${h3size}px;
 			font-weight:bold;
+         letter-spacing: 1px;
 		}
 		h4 {
 			color:${h4color};
@@ -545,12 +575,12 @@ is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s 
          
             
 <ul class="list-style-none">
-<li>➔ Calloborative sales process</li>
-<li>➔ Experienced real client examples</li>
-<li>➔ Sales and Marketing expertise</li>
-<li>➔ Custom Solutions</li>
-<li>➔ Client Onboarding & Implementation expertise</li>
- <li>➔ We’ll bring Net New prospects</li>
+<li>➔Calloborative sales process</li>
+<li>➔xperienced real client examples</li>
+<li>➔Sales and Marketing expertise</li>
+<li>➔Custom Solutions</li>
+<li>➔lient Onboarding & Implementation expertise</li>
+<li>➔We’ll bring Net New prospects</li>
 </ul>
 
          </div>
@@ -640,21 +670,14 @@ is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s 
    <!-- Center Text -->
    <div class="container_100" id="centertext">
       <div class="container_inner section">
-    
             <div class="mktoText flex-row" id="centertextcopy" mktoName="Center Text - Copy">
-               
                <h3>Let’s GROW and HELP each other!</h3>
-               
             </div>
             <div class="mktoText flex-row" id="centertextcopy-img" mktoName="Center Text - Image">
-               
             <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hubspot_112022_3.png" alt="hubspot box"/>
-               
             </div>
-            
             </div>
       </div>
-   
    <!-- END of Center Text  -->
    <!-- Image Right 1 -->
    <div class="container_100" id="imgright">
@@ -718,19 +741,15 @@ is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s 
    <!-- Image Right 3 -->
    <div class="container_100" id="imgright3">
       <div class="container_inner section" id="flex">
-      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+      <div class="mktoText" id="imgrightheadline" mktoName="Center Headline">
             <h2>Our Intangibles</h2>
             </div>
         
             <div class="mktoImg" id="imgrightimg3" mktoName="Image Right - Image">
                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hero-img-pi.png">
             </div>
-            <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
-            <h2>Hubspot/ Salesforce Integration.. This is in our Wheelhouse!</h2>
-            </div>
-            <div class="mktoImg" id="imgrightimg3" mktoName="Image Right - Image">
-               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/sf_plus_husbpot.jpeg">
-            </div>
+
+          
       </div>
    </div>
    <!-- END Image Right 1 -->
@@ -738,72 +757,128 @@ is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s 
 
    <!-- Image Left 1 -->
    <div class="container_100" id="imgleft">
-      <div class="container_inner section">
+  
+      <div class="container_inner section flex-wrap">
+      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+            <h2>Hubspot/ Salesforce Integration.. This is in our Wheelhouse!</h2>
+            </div>
          <div class="right">
             <div class="mktoImg" id="imgleftimg" mktoName="Image Left - Image">
-               <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
+            <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/sf_plus_husbpot.jpeg">
             </div>
          </div>
          <div class="left">
             <div class="mktoText" id="imgLefttext" mktoName="Image Left - Copy">
-               
-              <p>12 year old agency with Headquarters in Toronto, Canada Servicing remote clients all over the world
-Strategic Sales, Marketing, Service + Rev Ops Consultants In house design + development team</p>
-            </div>
-            <div class="mktoText button" id="imgleftbtn" mktoName="Image Left - Button"><a href="#">CTA Button</a>
-            </div>
+               <h2><strong>Why?</strong></h2>
+              <p>With in-house certified Hubspot and Salesforce experts we’re the one stop agency that can help with all your client's Sales and Marketing needs. From implementations to Onboarding. Our strategic consultants can help improve sales and marketing alignment.</p>
+           
          </div>
       </div>
+   </div>
    </div>
    <!-- END Image Left 1 -->
 
 
-   <!-- Image Right 2 -->
+   <!-- Image Right 2 --> 
    <div class="container_100" id="imgright2">
       <div class="container_inner section" id="flex">
+      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+            <h2>Custom Inbound Strategies to Grow their Business & Meet their Goals!</h2>
+            </div>
          <div class="left">
             <div class="mktoText" id="imgrighttext" mktoName="Image Right - Copy">
-               <h2>Lorem Ipsum Dolor Sit Amet</h2>
-               <p>Marketing Automation is our passion and Hubspot
-is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s such as yourself.</p>
 <p>
-Why MAC...
-<ul class="list-style-none">
-<li>➔ Calloborative sales process</li>
-<li>➔ Experienced real client examples</li>
-<li>➔ Sales and Marketing expertise</li>
-<li>➔ Custom Solutions</li>
-<li>➔ Client Onboarding & Implementation expertise</li>
- ➔ We’ll bring Net New prospects
+<ul class="list-style-none dotted-list">
+<li>Custom audit and strategy sessions</li>
+<li>Ads Management and Keyword Strategies</li>
+<li>Lead Generation Campaigns </li>
+<li>ABM Campaigns</li>
+<li>Retargeting Campaigns</li>
+<li>Upsell Campaigns</li>
+<li>Gated Content</li>
+<li>+More</li>
 </ul>
 </p>
-            </div>
-            <div class="mktoText button" id="imgrightbtn" mktoName="Image Right - Button"><a href="#">CTA Button</a>
             </div>
          </div>
          <div class="right">
             <div class="mktoImg" id="imgrightimg" mktoName="Image Right - Image">
-               <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
+               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/image25 copy.png">
             </div>
          </div>
       </div>
    </div>
    <!-- END Image Right 2 -->
+
+   <!-- Carousel Section -->
+   <div class="container_100" id="carouselsection">
+      <div class="container_inner section">
+ 
+<div class="slideshow-container">
+<div class="col1">
+   
+      <img class="robot-image" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/G2-Reviews-09.png" alt="review robot image" />
+      <img class="g2-quotes" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/G2-Reviews-07.png" alt="quotes" />
+</div>
+<div class="col2">
+   
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://dummyimage.com/300x200/ffffff/7b7fb5" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+   
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+         <p>Slide2</p>
+        <div class="text">Caption Two</div>
+      </div>
+   
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://dummyimage.com/300x200/ffffff/7b7fb5" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+   
+</div>
+   <a class="prev" onclick="plusSlides(-1)">❮</a>
+   <a class="next" onclick="plusSlides(1)">❯</a>
+   
+   </div>
+   <br>
+   
+   <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span> 
+     <span class="dot" onclick="currentSlide(2)"></span> 
+     <span class="dot" onclick="currentSlide(3)"></span> 
+   </div>
+         </div>
+      </div>
+   <!-- END of Carousel Section  --></div>
+
+
+
    <!-- Image Left 2-->
    <div class="container_100" id="imgleft2">
       <div class="container_inner section">
+      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+            <h2>Our Trajectory</h2>
+            </div>
          <div class="right">
             <div class="mktoImg" id="imgleftimg" mktoName="Image Left - Image">
-               <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
+               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/path.jpeg">
             </div>
          </div>
          <div class="left">
             <div class="mktoText" id="imgLefttext" mktoName="Image Left - Copy">
-               <h2>Lorem Ipsum Dolor Sit Amet</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+               <ul class="list-style-none dotted-list">
+<li>Custom audit and strategy sessions</li>
+<li>Founded date?</li>
+<li>Gold partner Date</li>
+<li>Platinum Partner Date</li> 
+</ul>
             </div>
-            <div class="mktoText button" id="imgleftbtn" mktoName="Image Left - Button"><a href="#">CTA Button</a>
-            </div>
+            
          </div>
       </div>
    </div>
@@ -1003,6 +1078,36 @@ Why MAC...
 
 	<script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
 	<script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 
 </html>
