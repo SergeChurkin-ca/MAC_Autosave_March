@@ -14,6 +14,23 @@
     flex-direction: row;
 }
 
+#carouselsection h2 {
+    color: #1b988a;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 30px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    letter-spacing: unset;
+    text-transform: unset;
+}
+
 
 /* carousel */
 
@@ -37,18 +54,34 @@
     position: absolute;
     top: 0;
     z-index: 90;
+    max-width: 210px;
 }
 
 .robot-image {
     position: absolute;
     z-index: 100;
     bottom: -5rem;
+    max-width: 243px;
+    left: 1.75rem;
 }
 
 .g2-logo {
     position: absolute;
     top: 0;
     right: 2.5rem;
+}
+
+
+/* stars */
+
+.slideshow-container .elementskit-stars {
+    padding: 0;
+    gap: 0.45rem;
+    margin-top: 2.5rem;
+}
+
+.slideshow-container .elementskit-stars i {
+    color: #f9b348;
 }
 
 
@@ -67,7 +100,7 @@
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
