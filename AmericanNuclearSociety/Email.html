@@ -19,8 +19,10 @@ font-family: Arial, serif !important;
 
     <meta class="mktoNumber" id="logowidth" mktoname="Mobile Logo Width (px)" default="190" />
     <meta class="mktoNumber" id="imgmaxwidth" mktoname="Banner Img Mobile Width (px)" default="690" />
+    <meta class="mktoNumber" id="imgmaxwidth" mktoname="Banner Img Mobile Width (px)" default="690" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="mod-bg-color" mktoName="Background Color" default="#ffffff" />
+    <meta mktoModuleScope="true" class="mktoColor" id="mod-bg-color2" mktoName="Background Color" default="#0066CC" />
     <meta mktoModuleScope="true" class="mktoColor" id="banner-bg-color" mktoName="Banner Tint Color" default="#004C97" />
     <meta mktoModuleScope="true" class="mktoColor" id="bannerdark-bg-Color" mktoName="Background Color" default="#004C97" />
     <meta mktoModuleScope="true" class="mktoColor" id="banner-lite-Color" mktoName="Background Color" default="#ffffff" />
@@ -573,6 +575,31 @@ font-family: Arial, serif !important;
                 </table>
                 <!--Copy Module-->
 
+                <!--Center Narrow Copy Module-->
+                <table class="mktoModule" mktoName="Narrow Free Text Module" id="narrowCopyModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                  <tr>
+                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+                      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:${${narrowcopywith}px;border-collapse: collapse;border-spacing: 0;" border="0" width="${narrowcopywith}">
+                        <tr>
+                          <td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 140%; mso-line-height-rule: exactly; color: ${CopyColor}; text-align: ${alignLeft};">
+                            <div class="mktoText" mktoName="Text" id="Copy">
+                              <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Center Narrow Copy Module-->
+
 
                 <!--btn Module-->
                 <table class="mktoModule" mktoName="Button Module" id="btnModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -854,6 +881,33 @@ font-family: Arial, serif !important;
                   </tr>
                 </table>
                 <!-- end of text Block Width Cta and headline-->
+
+
+
+                <!--Links Block Module-->
+                <table class="mktoModule" mktoName="Headline Module" id="Headline" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                  <tr>
+                    <td bgColor="${mod-bg-color2}" valign="top" style="background-Color:${mod-bg-color2};vertical-align: top;">
+                      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+                        <tr>
+                          <td height="${top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td align="${alignCenter}">
+                            <div class="mktoText" mktoName="Headline" id="Headline-text2" style="color:#ffffff;">
+                                <a style="font-family: '${fontfamily-headline}',Arial, sans-serif; font-size: ${CopySize16}px; font-weight:${headlineFontWeight};line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};text-decoration:none;" href="#">Webinars</a> | <a style="font-family: '${fontfamily-headline}',Arial, sans-serif; font-size: ${CopySize16}px; font-weight:${headlineFontWeight};line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};text-decoration:none;" href="#" target="_blank">Communities</a> | <a style="font-family: '${fontfamily-headline}',Arial, sans-serif; font-size: ${CopySize16}px; font-weight:${headlineFontWeight};line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};text-decoration:none;" href="#" target="_blank">Publications</a> | <a style="font-family: '${fontfamily-headline}',Arial, sans-serif; font-size: ${CopySize16}px; font-weight:${headlineFontWeight};line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColorWhite}; text-align: ${alignCenter};text-decoration:none;" href="#" target="_blank">Nuclear Newswire</a>
+                                </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--Links Block Module-->
+
 
                 <!--Footer Module-->
                 <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
