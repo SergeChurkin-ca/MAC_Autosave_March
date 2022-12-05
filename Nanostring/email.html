@@ -42,15 +42,15 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta mktoModuleScope="true" class="mktoNumber" id="hero-SpaceTop" mktoname="Hero Space Top" default="15" min="0" max="150" step="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="hero-Spacebtm" mktoname="Hero Space Bottom" default="20" min="0" max="250" step="1" />	
     <meta class="mktoNumber" id="hero-title-SpaceTop" mktoname="Hero Title Space Top" default="20" min="0" max="50" step="1" />
-    <meta class="mktoNumber" id="hero-title-Spacebtm" mktoname="Hero Title Space Bottom" default="20" min="0" max="50" step="1" />
+    <meta class="mktoNumber" id="hero-title-Spacebtm" mktoname="Hero Title Space Bottom" default="5" min="0" max="50" step="1" />
     <meta class="mktoColor" id="hero-text-BgColor" mktoname="Hero Text Background" default="#00708B" />
-    <meta class="mktoNumber" id="hero-text-SpaceTop" mktoname="Hero Text Space Top" default="20" min="0" max="50" step="1" />
-    <meta class="mktoNumber" id="hero-text-Spacebtm" mktoname="Hero Text Space Bottom" default="20" min="0" max="50" step="1" />
+    <meta class="mktoNumber" id="hero-text-SpaceTop" mktoname="Hero Text Space Top" default="10" min="0" max="50" step="1" />
+    <meta class="mktoNumber" id="hero-text-Spacebtm" mktoname="Hero Text Space Bottom" default="10" min="0" max="50" step="1" />
     <meta class="mktoColor" id="hero-cta-BgColor" mktoname="Hero CTA Background" default="#00708B" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="5"  />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad" mktoname="Button Top Padding" default="15"  />
     <meta class="mktoNumber" id="hero-cta-SpaceTop" mktoname="Hero CTA Space Top" default="20" min="0" max="50" step="1" />
-    <meta class="mktoNumber" id="hero-cta-Spacebtm" mktoname="Hero CTA Space Bottom" default="20" min="0" max="50" step="1" />
+    <meta class="mktoNumber" id="hero-cta-Spacebtm" mktoname="Hero CTA Space Bottom" default="5" min="0" max="50" step="1" />
     <meta class="mktoColor" id="img-button" mktoname="Img + Button Background" default="#00708B" />
     <meta mktoModuleScope="true" class="mktoNumber" id="head-lh" mktoname="Head Line Height Size" default="34" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh" mktoname="Text Line Height Size" default="22" />
@@ -674,7 +674,7 @@ padding-left:60px !important
                                                           </td>
                                                         </tr>
                                                         <tr>
-                                                          <td height="40"
+                                                          <td height="${hero-title-SpaceTop}"
                                                               style="font-size:1px; line-height:1px;">&nbsp;
 
                                                           </td>
@@ -693,16 +693,18 @@ padding-left:60px !important
                                                           </td>
                                                         </tr>
                                                         <tr>
-                                                          <td height="13"
-                                                              style="font-size:1px; line-height:1px;">&nbsp;
-
+                                                          <td height="${hero-title-Spacebtm}" style="font-size:1px; line-height:1px;">&nbsp;
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="${hero-text-SpaceTop}" style="font-size:1px; line-height:1px;">&nbsp;
                                                           </td>
                                                         </tr>
                                                         <tr>
                                                           <td align="left"
                                                               valign="top"
                                                               class="em_white"
-                                                              style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 0px;text-align: left;font-family:${TextFontFamily} ;font-size: 14px;line-height: 145%; mso-line-height-rule: exactly; color: #FFF;padding-top: 10px;padding-right: 0px; padding-bottom: 20px;border-collapse: collapse;">
+                                                              style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 0px;text-align: left;font-family:${TextFontFamily} ;font-size: 14px;line-height:${p-lh20}px; mso-line-height-rule: exactly; color: #FFF;;padding-right: 0px;;border-collapse: collapse;">
                                                             <div class="mktoText"
                                                                  mktoname="Banner_Hero_Description"
                                                                  id="Hero_Description_text">
@@ -729,9 +731,11 @@ padding-left:60px !important
                                                           </td>
                                                         </tr>
                                                         <tr>
-                                                          <td height="13"
-                                                              style="font-size:1px; line-height:1px;">&nbsp;
-
+                                                          <td height="${hero-text-Spacebtm}" style="font-size:1px; line-height:1px;">&nbsp;
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="${hero-cta-SpaceTop}" style="font-size:1px; line-height:1px;">&nbsp;
                                                           </td>
                                                         </tr>
                                                         <tr>
@@ -767,6 +771,10 @@ padding-left:60px !important
                                                               </tr>
                                                             </table>
                                                             <!--End Button-->
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="${hero-cta-Spacebtm}" style="font-size:1px; line-height:1px;">&nbsp;
                                                           </td>
                                                         </tr>
                                                         <tr>
@@ -881,8 +889,7 @@ padding-left:60px !important
                                                             </table>
                                                           </td>
                                                         </tr>
-                                                        <tr>
-                                                          <td height="40"
+                                                        <td height="${hero-title-SpaceTop}"
                                                               style="font-size:1px; line-height:1px;">&nbsp;
 
                                                           </td>
@@ -901,9 +908,11 @@ padding-left:60px !important
                                                           </td>
                                                         </tr>
                                                         <tr>
-                                                          <td height="13"
-                                                              style="font-size:1px; line-height:1px;">&nbsp;
-
+                                                          <td height="${hero-title-Spacebtm}" style="font-size:1px; line-height:1px;">&nbsp;
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="${hero-text-SpaceTop}" style="font-size:1px; line-height:1px;">&nbsp;
                                                           </td>
                                                         </tr>
                                                         <tr>
@@ -938,9 +947,7 @@ padding-left:60px !important
                                                         </tr>
 
                                                         <tr>
-                                                          <td height="${hero-Spacebtm}"
-                                                              style="font-size:1px; line-height:1px;">&nbsp;
-
+                                                          <td height="${hero-text-Spacebtm}" style="font-size:1px; line-height:1px;">&nbsp;
                                                           </td>
                                                         </tr>
                                                         <tr>
@@ -1228,7 +1235,7 @@ padding-left:60px !important
                             </tr>
                             <!--CTA button-->
                             <tr>
-                              <td align="left"valign="top"class="em_white"style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 0px;text-align: left;font-family:${TextFontFamily} ;font-size: 14px;line-height: 145%; mso-line-height-rule: exactly; color: #FFF;padding-top: 10px;padding-right: 0px; padding-bottom: 20px;border-collapse: collapse;">
+                              <td align="left"valign="top"class="em_white"style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 0px;text-align: left;font-family:${TextFontFamily} ;font-size: 14px;line-height: 145%; mso-line-height-rule: exactly; color: #FFF;padding-right: 0px;border-collapse: collapse;">
                                 <div class="mktoText" mktoname="Banner_Hero_Description" id="Description_text">
                                   Etiam scelerisque  semperjusto ut convallis. Cras tempor non convallis tincidunt,
                                   est eros tincidunt ligula dictum  nunc magna ligula
