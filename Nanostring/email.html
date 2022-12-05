@@ -47,11 +47,14 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta class="mktoNumber" id="hero-text-SpaceTop" mktoname="Hero Text Space Top" default="20" min="0" max="50" step="1" />
     <meta class="mktoNumber" id="hero-text-Spacebtm" mktoname="Hero Text Space Bottom" default="20" min="0" max="50" step="1" />
     <meta class="mktoColor" id="hero-cta-BgColor" mktoname="Hero CTA Background" default="#00708B" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="5"  />
+    <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad" mktoname="Button Top Padding" default="15"  />
     <meta class="mktoNumber" id="hero-cta-SpaceTop" mktoname="Hero CTA Space Top" default="20" min="0" max="50" step="1" />
     <meta class="mktoNumber" id="hero-cta-Spacebtm" mktoname="Hero CTA Space Bottom" default="20" min="0" max="50" step="1" />
     <meta class="mktoColor" id="img-button" mktoname="Img + Button Background" default="#00708B" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="head-lh" mktoname="Text Line Height Size" default="34" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="head-lh" mktoname="Head Line Height Size" default="34" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh" mktoname="Text Line Height Size" default="22" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="p-lh20" mktoname="Text Line Height Size" default="20" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh18" mktoname="Text Line Height Size" default="18" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh16" mktoname="Text Line Height Size" default="16" />
 
@@ -115,7 +118,7 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta mktoModuleScope="true" class="mktoNumber" id="FreeText-bottom-space" mktoname="Bottom Space" default="20"min="0" max="50" step="1" />
     <!--FreeText Module Variables End-->
     <!--Button Module Variables Begin-->
-    <meta mktoModuleScope="true" class="mktoColor" id="Button-BgColor" mktoname="Background Button Color" default="#00708B" />
+    <meta mktoModuleScope="true" class="mktoColor" id="Button-BgColor" mktoname="Background Button Color" default="#007088" />
     <meta mktoModuleScope="true" class="mktoColor" id="Button-Color" mktoname="Button Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoString" id="Button-Width" mktoname="Button Width" default="auto" />
     <meta mktoModuleScope="true" class="mktoList" id="Button-Position" mktoname="Button Alignment" default="center"  values="center,left,right">
@@ -2494,7 +2497,7 @@ padding-left:60px !important
                                   </tr>
                                   <tr>
                                     <td width="30" style="width:30px;">&nbsp;</td>
-                                    <td style="font-size:14px; color:${TextColor}; font-family:${TextFontFamily}; line-height:${p-lh118}px;mso-line-height-rule: exactly; text-align:left;"
+                                    <td style="font-size:14px; color:${TextColor}; font-family:${TextFontFamily}; line-height:${p-lh18}px;mso-line-height-rule: exactly; text-align:left;"
                                         valign="top">
                                       <div id="leftTextsmallimg" class="mktoText"
                                            mktoname="Left Text 70%">
@@ -2837,8 +2840,7 @@ padding-left:60px !important
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
-                                                                    ">
+                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;">
                                           <div class="mktoText" mktoName="Text"
                                                id="imgright-SubHeadline-1">
                                             <div>Sed ut perspiciatis unde omnis
@@ -2895,9 +2897,9 @@ padding-left:60px !important
 
                   <table class="mktoModule" mktoName="2 Col Image Left with Button-1" id="imgLeft-button" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;"
                          border="0" width="100%">
-                    <tr>
-                      <td align="center" valign="top"  class="em_bg" bgColor="${img-button}"
-                          style="background-color:${img-button};">
+                    <tr>    
+                      <td align="center" valign="top"  class="em_bg" bgColor="#ffffff"
+                          style="background-color:#ffffff">
                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center"
                                style="margin:0 auto; width:580px;border-collapse: collapse;border-spacing: 0;"
                                border="0" width="580">
@@ -2933,7 +2935,7 @@ padding-left:60px !important
                                            border="0" width="100%">
                                       <tr>
                                         <td class="em_white"
-                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
+                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily};font-size: 30px;color:#00455f; font-weight: normal; line-height:34px;">
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgleft-headline-1">
@@ -2947,8 +2949,7 @@ padding-left:60px !important
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
-                                                                    ">
+                                        <td class="em_white" style="line-height:145%; mso-line-height-rule: exactly; font-family:${TextFontFamily};font-size: 14px;color:#00708B;font-weight: normal;">
                                           <div class="mktoText" mktoName="Text"
                                                id="imgleft-SubHeadline-1">
                                             <div>Sed ut perspiciatis unde omnis
@@ -2970,15 +2971,15 @@ padding-left:60px !important
                                         <td>
                                           <div class="mktoText" id="imgleft-btn1-1" mktoname="Button">
                                             <div>
-                                              <table cellpadding="0"  cellspacing="0" border="0"  align="${HeroCTA-Button-Position}">
+                                              <table cellpadding="0"  cellspacing="0" border="0"  align="left">
                                                 <tbody>
                                                   <tr>
-                                                    <td style="background-color: ${HeroCTA-Button-Color}; border:4px solid ${HeroCTA-Button-BorderColor};border-radius:${HeroCTA-Button-Radius};font-family:${TextFontFamily}; font-size: 16px; mso-line-height-rule: exactly;  text-align: center; vertical-align: middle; color: ${HeroCTA-Button-Text-Color}; display: block; padding:9px 22px 8px;"
+                                                    <td style="background-color:#fffff; border:4px solid #00708B;border-radius:10px;font-family:${TextFontFamily}; font-size: 16px; mso-line-height-rule: exactly;text-align: center; vertical-align: middle; color:#00708B; display: block; padding:9px 22px 8px;"
                                                         valign="middle">
-                                                      <a style="text-decoration: none; color: ${HeroCTA-Button-Text-Color} !important;outline: none;"
-                                                         href="${HeroCTA-ButtonLink}">
+                                                      <a style="text-decoration: none; color:#00708B !important;outline: none;"
+                                                         href="#">
                                                         <span
-                                                              style="font-weight:bold;color:${HeroCTA-Button-Text-Color};">${HeroCTA-Button-Text}</span>
+                                                              style="font-weight:bold;color:#00455f">LEARN MORE</span>
                                                       </a>
                                                     </td>
                                                   </tr>
@@ -3065,7 +3066,7 @@ padding-left:60px !important
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
+                                        <td class="em_white" style="line-height:${p-lh20}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
                                                                     ">
                                           <div class="mktoText" mktoName="Text"
                                                id="imgright-SubHeadline">
@@ -3247,6 +3248,305 @@ padding-left:60px !important
                       </td>
                     </tr>
                   </table>
+
+                  <table class="mktoModule" mktoName="2 Col Image Left width Caption and Button" id="imgRight1a"
+                         mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0"
+                         style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;"
+                         border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top"  class="em_bg" bgColor="${img-button}" style="background-color:${img-button}; ">
+     
+                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center"
+                               style="margin:0 auto; width:580px;border-collapse: collapse;border-spacing: 0;"
+                               border="0" width="580">
+                          <tr>
+                            <td height="${hero-SpaceTop}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;"border="0" width="100%">
+                                <tr>
+                                  <th width="216" align="left" class="block center" valign="top" style="vertical-align: top;">
+
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+              
+                    <div class="mktoImg" mktoname="Image"
+                                         id="imgLeft-img" mktoLockImgSize="false">
+                                      <div>
+                                        <img src="https://dummyimage.com/216x216/EEF3F9/B3B8C4"
+                                             width="216" border="0" height="216"
+                                             style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                      </div>
+                                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            
+                <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                <td style="line-height:30px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;" valign="top">
+                                      <div id="leftTextwithbutton" class="mktoText"
+                                           mktoname="Image Caption">
+                                        <div>Image Caption</div>
+                                      </div>
+                                    </td>
+                </tr>
+                <tr>
+                    <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="${alignbtn}">
+                        <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
+                            <div>
+                                <table class="center" cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
+                                    <tbody>
+                                        <tr>
+                                        <td style="background-color: ${HeroCTA-Button-Color}; border:4px solid ${HeroCTA-Button-BorderColor};border-radius:${HeroCTA-Button-Radius};font-family:${TextFontFamily}; font-size: 16px; mso-line-height-rule: exactly;  text-align: center; vertical-align: middle; color: ${HeroCTA-Button-Text-Color}; display: block; padding:9px 22px 8px;"
+                                                        valign="middle">
+                                                      <a style="text-decoration: none; color: ${HeroCTA-Button-Text-Color} !important;outline: none;"
+                                                         href="${HeroCTA-ButtonLink}">
+                                                        <span
+                                                              style="font-weight:bold;color:${HeroCTA-Button-Text-Color};">${HeroCTA-Button-Text}</span>
+                                                      </a>
+                                                    </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${cta-btm-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+            </table>
+                                  </th>
+
+                                  <th class="hidden"
+                                      style="font-size:1px; line-height: 1px;" width="20">&nbsp;
+                                  </th>
+                                  <th align="left" class="block top_pad"
+                                      valign="top" style="vertical-align: top;">
+                                    <table cellpadding="0" cellspacing="0"
+                                           align="center"
+                                           style="margin:0 auto; border-collapse: collapse;border-spacing: 0;"
+                                           border="0" width="100%">
+                                      <tr>
+                                        <td class="em_white"
+                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
+                                          <div class="mktoText"
+                                               mktoName="Headline"
+                                               id="imgleft-headline">
+                                            <div>Module with image caption</div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="10"
+                                            style="line-height:1px;font-size:1px;">&nbsp;
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;">
+                                          <div class="mktoText" mktoName="Text"
+                                               id="imgleft-SubHeadline">
+                                            <div>Sed ut perspiciatis unde omnis
+                                              iste natus error sit voluptatem
+                                              accusantium doloremque
+                                              laudantium, totam rem aperiam,
+                                              eaque ipsa quae ab illo
+                                              inventore veritatis et quas.
+                                              Sed ut perspiciatis unde omnis
+                                              iste natus error sit voluptatem
+                                              accusantium doloremque
+                                              laudantium, totam rem aperiam,
+                                              eaque ipsa quae ab illo
+                                              inventore veritatis et quas.
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="15"
+                                            style="line-height:1px;font-size:1px;">&nbsp;
+                                        </td>
+                                      </tr>
+        
+                                    </table>
+                                  </th>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="${hero-Spacebtm}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+
+
+
+                  <!--Image Right Text Left with btn-->
+                  <table class="mktoModule" mktoName="2 Col Image Right with Button" id="imgRight1z"
+                         mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0"
+                         style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;"
+                         border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" class="em_bg" bgColor="${img-button}" style="background-color:${img-button};">
+                      
+
+                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center"
+                               style="margin:0 auto; width:580px;border-collapse: collapse;border-spacing: 0;"
+                               border="0" width="580">
+                          <tr>
+                            <td height="${hero-SpaceTop}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table dir="rtl" cellpadding="0" cellspacing="0" align="center"
+                                     style="margin:0 auto; border-collapse: collapse;border-spacing: 0;"
+                                     border="0" width="100%">
+                                <tr>
+                                  <th dir="ltr" width="216" align="left"
+                                      class="block center" valign="top"
+                                      style="vertical-align: top;">
+                                      <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                        <tr>
+                                            <td class="center" align="left" valign="top" style="vertical-align: top;">
+                                      
+                                            <div class="mktoImg" mktoname="Image"
+                                                                 id="imgLeft-img" mktoLockImgSize="false">
+                                                              <div>
+                                                                <img src="https://dummyimage.com/216x216/EEF3F9/B3B8C4"
+                                                                     width="216" border="0" height="216"
+                                                                     style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                                              </div>
+                                                            </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                        <td style="line-height:30px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;" valign="top">
+                                                              <div id="leftTextwithbutton" class="mktoText"
+                                                                   mktoname="Image Caption">
+                                                                <div>Image 2 Caption</div>
+                                                              </div>
+                                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="${alignbtn}">
+                                                <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
+                                                    <div>
+                                                        <table class="center" cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
+                                                            <tbody>
+                                                                <tr>
+                                                                <td style="background-color: ${HeroCTA-Button-Color}; border:4px solid ${HeroCTA-Button-BorderColor};border-radius:${HeroCTA-Button-Radius};font-family:${TextFontFamily}; font-size: 16px; mso-line-height-rule: exactly;  text-align: center; vertical-align: middle; color: ${HeroCTA-Button-Text-Color}; display: block; padding:9px 22px 8px;"
+                                                                                valign="middle">
+                                                                              <a style="text-decoration: none; color: ${HeroCTA-Button-Text-Color} !important;outline: none;"
+                                                                                 href="${HeroCTA-ButtonLink}">
+                                                                                <span
+                                                                                      style="font-weight:bold;color:${HeroCTA-Button-Text-Color};">${HeroCTA-Button-Text}</span>
+                                                                              </a>
+                                                                            </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="${cta-btm-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                  </th>
+                                  <th class="hidden"
+                                      style="font-size:1px; line-height: 1px;" width="20">&nbsp;
+                                  </th>
+                                  <th dir="ltr" align="left" class="block top_pad"
+                                      valign="top" style="vertical-align: top;">
+                                    <table cellpadding="0" cellspacing="0"
+                                           align="center"
+                                           style="margin:0 auto; border-collapse: collapse;border-spacing: 0;"
+                                           border="0" width="100%">
+                                      <tr>
+                                        <td class="em_white"
+                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
+                                          <div class="mktoText"
+                                               mktoName="Headline"
+                                               id="imgright-headline">
+                                            <div>Module with image caption 2</div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height="10"
+                                            style="line-height:1px;font-size:1px;">&nbsp;
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="em_white" style="line-height:${p-lh20}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
+                                                                    ">
+                                          <div class="mktoText" mktoName="Text"
+                                               id="imgright-SubHeadline">
+                                            <div>Sed ut perspiciatis unde omnis
+                                              iste natus error sit voluptatem
+                                              accusantium doloremque
+                                              laudantium, totam rem aperiam,
+                                              eaque ipsa quae ab illo
+                                              inventore veritatis et quas.
+                                              Sed ut perspiciatis unde omnis
+                                              iste natus error sit voluptatem
+                                              accusantium doloremque
+                                              laudantium, totam rem aperiam,
+                                              eaque ipsa quae ab illo
+                                              inventore veritatis et quas.
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                
+                       
+                                    </table>
+                                  </th>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="${hero-Spacebtm}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+
+
 
                   <!--TEXT + Button Module Begin-->
                   <table class="mktoModule" mktoActive="true" mktoAddByDefault="false" id="textandButton"
