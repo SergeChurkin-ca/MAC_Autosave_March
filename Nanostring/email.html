@@ -33,7 +33,13 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta mktoModuleScope="true" class="mktoList" id="logo-Position" mktoname="Logo Alignment" default="left"  values="center,left,right">
     <meta mktoModuleScope="true" class="mktoList" id="cta-Position" mktoname="CTA Alignment" default="left"  values="center,left,right">
     <meta mktoModuleScope="true" class="mktoList" id="img-Position" mktoname="Image Alignment" default="right"  values="right,left">
+    <meta mktoModuleScope="true" class="mktoList" id="img-valign" mktoname="Image Veritcal Alignment" default="middle"  values="top,middle,bottom">
     <meta mktoModuleScope="true" class="mktoList" id="img-Positiontw" mktoname="Image Alignment" default="center"  values="center,left,right">
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-right-pad" mktoname="Img Right Spacing" default="20"  />
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-pad-right" mktoname="Inline img pad right" default="20"  />
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-pad-btm" mktoname="Inline img pad right" default="15"  />
+
+        
     <meta class="mktoColor" id="logo-BgColor" mktoname="Logo Background" default="#00708B" />
     <meta class="mktoNumber" id="logo-SpaceTop" mktoname="Logo Space Top" default="20" min="0" max="50" step="1" />
     <meta class="mktoNumber" id="logo-Spacebtm" mktoname="Logo Space Bottom" default="20" min="0" max="50" step="1" />
@@ -49,9 +55,11 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta class="mktoColor" id="hero-cta-BgColor" mktoname="Hero CTA Background" default="#00708B" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="5"  />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-btm-pad" mktoname="Button Top Padding" default="15"  />
+    
     <meta class="mktoNumber" id="hero-cta-SpaceTop" mktoname="Hero CTA Space Top" default="20" min="0" max="50" step="1" />
     <meta class="mktoNumber" id="hero-cta-Spacebtm" mktoname="Hero CTA Space Bottom" default="5" min="0" max="50" step="1" />
     <meta class="mktoColor" id="img-button" mktoname="Img + Button Background" default="#00708B" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="head-lh" mktoname="Head Line Height Size" default="34" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh" mktoname="Text Line Height Size" default="22" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh20" mktoname="Text Line Height Size" default="20" />
@@ -580,6 +588,14 @@ padding-left:60px !important
         }
         .mbhgt{
           height: auto !important;
+        }
+      }
+      @media (max-width:500px) {
+        .block2 {
+            display: block;
+            margin: 0 auto;
+            float: none !important;
+            width: 100% !important;
         }
       }
     </style>
@@ -1444,9 +1460,9 @@ padding-left:60px !important
                                 <div id="FreeTextContentii" class="mktoText"
                                      mktoname="FreeTextContent with Inline Image">
 
-                                  <table cellpadding="0" cellspacing="0" border="0" align="${img-Position}">
+                                  <table class="block2 center2" cellpadding="0" cellspacing="0" border="0" align="${img-Position}">
                                     <tr>
-                                      <td style="padding: 10px;">
+                                      <td class="block2 center" style="padding: 10px 0 ${img-pad-btm}px ${img-pad-right}px">
                                         <img src="https://go.nanostring.com/rs/700-JYF-171/images/nCounter Pro.png" width="250" style="max-width: 250px;" border="0" />
                                       </td>
                                     </tr>
@@ -1459,7 +1475,7 @@ padding-left:60px !important
                                   quam sit amet conuat Lorem Ipsum Dolor Amet
                                   Consetur.Nunc in urna eu massa iaculis viverra id
                                   nec nulla vtim quis ultricies.Cassa vitae dignissim
-                                  ligula ded congue et quam sit amet conuat
+                                  ligula ded congue et quam sit amet conuat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum quia accusamus incidunt rem tenetur quaerat mollitia consequatur voluptate ad a sit saepe, ducimus laudantium recusandae deleniti beatae molestias fugiat? Quaerat.
                                 </div>
                               </td>
                             </tr>
@@ -1671,7 +1687,7 @@ padding-left:60px !important
                                 </table>
                               </td>
                               <td class="block padding_top" width="160" valign="top"
-                                  style="vertical-align:top;width:160px;">
+                                  style="vertical-align:${img-valign};width:160px;">
                                 <table cellpadding="0" cellspacing="0" width="100%"
                                        border="0"
                                        style="width: 100%; border-collapse: collapse;">
@@ -1681,9 +1697,10 @@ padding-left:60px !important
                                       <div id="rightImg2575" mktoName="Right Image"
                                            class="mktoImg" mktoLockImgSize="false">
                                         <img src="https://dummyimage.com/160X160/eee/333"
-                                             border="0" alt="" width="160" height="160"/>
+                                             border="0" alt="" width="100%" style="max-width:160px;"/>
                                       </div>
                                     </td>
+                                    <td class="hidden" width="${img-right-pad}" style="width:${img-right-pad}px;">&nbsp;</td>
                                   </tr>
                                 </table>
                               </td>
@@ -3280,7 +3297,7 @@ padding-left:60px !important
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
               
                     <div class="mktoImg" mktoname="Image"
-                                         id="imgLeft-img" mktoLockImgSize="false">
+                                         id="imgLeft-img2" mktoLockImgSize="false">
                                       <div>
                                         <img src="https://dummyimage.com/216x216/EEF3F9/B3B8C4"
                                              width="216" border="0" height="216"
@@ -3289,9 +3306,7 @@ padding-left:60px !important
                                     </div>
                     </td>
                 </tr>
-                <tr>
-                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                </tr>
+       
             
                 <tr>
                     <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
@@ -3308,10 +3323,10 @@ padding-left:60px !important
                     <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td align="${alignbtn}">
+                    <td>
                         <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
                             <div>
-                                <table class="center" cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
+                                <table class="center" cellpadding="0" cellspacing="0" border="0">
                                     <tbody>
                                         <tr>
                                         <td style="background-color: ${HeroCTA-Button-Color}; border:4px solid ${HeroCTA-Button-BorderColor};border-radius:${HeroCTA-Button-Radius};font-family:${TextFontFamily}; font-size: 16px; mso-line-height-rule: exactly;  text-align: center; vertical-align: middle; color: ${HeroCTA-Button-Text-Color}; display: block; padding:9px 22px 8px;"
@@ -3434,7 +3449,7 @@ padding-left:60px !important
                                             <td class="center" align="left" valign="top" style="vertical-align: top;">
                                       
                                             <div class="mktoImg" mktoname="Image"
-                                                                 id="imgLeft-img" mktoLockImgSize="false">
+                                                                 id="imgLeft-img3" mktoLockImgSize="false">
                                                               <div>
                                                                 <img src="https://dummyimage.com/216x216/EEF3F9/B3B8C4"
                                                                      width="216" border="0" height="216"
@@ -3443,10 +3458,6 @@ padding-left:60px !important
                                                             </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                        </tr>
-                                    
                                         <tr>
                                             <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                         </tr>
@@ -3462,10 +3473,10 @@ padding-left:60px !important
                                             <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                         </tr>
                                         <tr>
-                                            <td align="${alignbtn}">
+                                            <td>
                                                 <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
                                                     <div>
-                                                        <table class="center" cellpadding="0" cellspacing="0" border="0" align="${alignbtn}">
+                                                        <table class="center" cellpadding="0" cellspacing="0" border="0">
                                                             <tbody>
                                                                 <tr>
                                                                 <td style="background-color: ${HeroCTA-Button-Color}; border:4px solid ${HeroCTA-Button-BorderColor};border-radius:${HeroCTA-Button-Radius};font-family:${TextFontFamily}; font-size: 16px; mso-line-height-rule: exactly;  text-align: center; vertical-align: middle; color: ${HeroCTA-Button-Text-Color}; display: block; padding:9px 22px 8px;"
