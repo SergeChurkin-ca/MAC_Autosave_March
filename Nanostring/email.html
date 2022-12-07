@@ -33,8 +33,9 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta mktoModuleScope="true" class="mktoList" id="cta-Position" mktoname="CTA Alignment" default="left"  values="center,left,right">
     <meta mktoModuleScope="true" class="mktoList" id="img-Position" mktoname="Image Alignment" default="right"  values="right,left">
     <meta mktoModuleScope="true" class="mktoList" id="img-valign" mktoname="Image Veritcal Alignment" default="middle"  values="top,middle,bottom">
+    <meta mktoModuleScope="true" class="mktoList" id="img-valigntop" mktoname="Image Veritcal Alignment" default="top"  values="top,middle,bottom">
     <meta mktoModuleScope="true" class="mktoList" id="img-Positiontw" mktoname="Image Alignment" default="center"  values="center,left,right">
-    <meta mktoModuleScope="true" class="mktoNumber" id="img-right-pad" mktoname="Img Right Spacing" default="20"  />
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-right-pad" mktoname="Img Right Spacing" default="0"  />
     <meta mktoModuleScope="true" class="mktoNumber" id="img-pad-right" mktoname="Inline img pad right" default="20"  />
     <meta mktoModuleScope="true" class="mktoNumber" id="img-pad-btm" mktoname="Inline img pad right" default="15"  />
 
@@ -59,8 +60,8 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta class="mktoNumber" id="hero-cta-Spacebtm" mktoname="Hero CTA Space Bottom" default="5" min="0" max="50" step="1" />
     <meta class="mktoColor" id="img-button" mktoname="Img + Button Background" default="#00708B" />
     <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="head-lh43" mktoname="Head Line Height Size" default="43" />
     <meta mktoModuleScope="true" class="mktoNumber" id="head-lh" mktoname="Head Line Height Size" default="34" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="p-lh" mktoname="Text Line Height Size" default="22" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh" mktoname="Text Line Height Size" default="22" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh20" mktoname="Text Line Height Size" default="20" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh18" mktoname="Text Line Height Size" default="18" />
@@ -936,7 +937,7 @@ padding-left:60px !important
                                                           <td align="left"
                                                               valign="top"
                                                               class="em_white"
-                                                              style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 0px;text-align: left;font-family:${TextFontFamily} ;font-size: 14px;line-height: 145%; mso-line-height-rule: exactly; color: #FFF;padding-top: 10px;padding-right: 0px; padding-bottom: 20px;border-collapse: collapse;">
+                                                              style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 0px;text-align: left;font-family:${TextFontFamily} ;font-size: 14px;line-height:${p-lh}px; mso-line-height-rule: exactly; color: #FFF;padding-top: 10px;padding-right: 0px; padding-bottom: 20px;border-collapse: collapse;">
                                                             <div class="mktoText"
                                                                  mktoname="Banner_Hero_Description"
                                                                  id="Hero_Description_textn">
@@ -1028,8 +1029,8 @@ padding-left:60px !important
                                      border="0" width="100%">
                                 <tr>
                                   <th dir="ltr" width="216" align="left"
-                                      class="block center" valign="top"
-                                      style="vertical-align: top;">
+                                      class="block center" valign="${img-valigntop}"
+                                      style="vertical-align:${img-valign-top};">
                                     <div class="mktoImg" mktoname="Image"
                                          id="imgRight-imgb" mktoLockImgSize="false">
                                       <div>
@@ -1055,7 +1056,7 @@ padding-left:60px !important
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgright-headlineb">
-                                            <div>Lorem Ipsum </div>
+                                            <div>Lorem Ipsum</div>
                                           </div>
                                         </td>
                                       </tr>
@@ -1065,7 +1066,7 @@ padding-left:60px !important
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
+                                        <td class="em_white" style="line-height:${p-lh}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
                                                                     ">
                                           <div class="mktoText" mktoName="Text"
                                                id="imgright-SubHeadlineb">
@@ -1252,7 +1253,7 @@ padding-left:60px !important
                             </tr>
                             <!--CTA button-->
                             <tr>
-                              <td align="left"valign="top"class="em_white"style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 0px;text-align: left;font-family:${TextFontFamily} ;font-size: 14px;line-height: 145%; mso-line-height-rule: exactly; color: #FFF;padding-right: 0px;border-collapse: collapse;">
+                              <td align="left"valign="top"class="em_white"style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 0px;text-align: left;font-family:${TextFontFamily} ;font-size: 14px;line-height:${p-lh20}px; mso-line-height-rule: exactly; color: #FFF;padding-right: 0px;border-collapse: collapse;">
                                 <div class="mktoText" mktoname="Banner_Hero_Description" id="Description_text">
                                   Etiam scelerisque  semperjusto ut convallis. Cras tempor non convallis tincidunt,
                                   est eros tincidunt ligula dictum  nunc magna ligula
@@ -1373,7 +1374,7 @@ padding-left:60px !important
                                   height="${Title-top-space}">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td style="font-size:20px; color:${Color-title}; font-family:${TextFontFamily}; mso-line-height-rule: exactly;"
+                              <td style="font-size:20px; color:${Color-title}; font-family:${TextFontFamily}; mso-line-height-rule: exactly;line-height:${head-lh}px;"
                                   valign="top">
                                 <div id="titlesec-main-title" class="mktoText"
                                      mktoname="Main Title">
@@ -1456,7 +1457,7 @@ padding-left:60px !important
                                   height="${FreeText-top-space}">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td style="font-size:14px; color:${TextColor}; font-family:${TextFontFamily}; line-height:${p-lh16}px;mso-line-height-rule: exactly; text-align:left;"
+                              <td style="font-size:14px; color:${TextColor}; font-family:${TextFontFamily}; line-height:${p-lh16}px;mso-line-height-rule: exactly; text-align:left;line-height:${p-lh20}px;"
                                   valign="top">
                                 <div id="FreeTextContentii" class="mktoText"
                                      mktoname="FreeTextContent with Inline Image">
@@ -1539,18 +1540,18 @@ padding-left:60px !important
                                   </tr>
                                 </table>
                               </td>
-                              <td class="block padding_top" width="320" valign="top"
-                                  style="vertical-align:top;width:320px;">
+                              <td class="block padding_top" width="320" valign="${img-valign}"
+                                  style="vertical-align:${img-valign};width:320px;">
                                 <table cellpadding="0" cellspacing="0" width="100%"
                                        border="0"
                                        style="width: 100%; border-collapse: collapse;">
                                   <tr>
                                     <!--image-width:280-->
-                                    <td style="text-align:${alignimg};" class="imgcentremob" valign="top">
+                                    <td style="text-align:${alignimg};" class="imgcentremob" valign="${img-valign}">
                                       <div id="rightImg" mktoName="Right Image"
                                            class="mktoImg" mktoLockImgSize="false">
                                         <img src="https://dummyimage.com/320X320/eee/333"
-                                             border="0" alt="" width="100%" style="max-width:300px"/>
+                                             border="0" alt="" width="100%" max-width="320px;" />
                                       </div>
                                     </td>
                                     <td class="hidden" width="${img-right-pad}" style="width:${img-right-pad}px;"></td>
@@ -1613,14 +1614,14 @@ padding-left:60px !important
                                   </tr>
                                 </table>
                               </td>
-                              <td class="block padding_top" width="256" valign="top"
-                                  style="vertical-align:top;width:256px;">
+                              <td class="block padding_top" width="256" valign="${img-valign}"
+                                  style="vertical-align:${img-valign};width:256px;">
                                 <table cellpadding="0" cellspacing="0" width="100%"
                                        border="0"
                                        style="width: 100%; border-collapse: collapse;">
                                   <tr>
                                     <!--image-width:280-->
-                                    <td style="text-align:${alignimg};" class="imgcentremob" valign="top">
+                                    <td style="text-align:${alignimg};" class="imgcentremob" valign="${img-valign}">
                                       <div id="rightImg6040" mktoName="Right Image"
                                            class="mktoImg" mktoLockImgSize="false">
                                         <img src="https://dummyimage.com/256X256/eee/333"
@@ -1689,14 +1690,14 @@ padding-left:60px !important
                                   </tr>
                                 </table>
                               </td>
-                              <td class="block padding_top" width="160" valign="top"
+                              <td class="block padding_top" width="160" valign="${img-valign}"
                                   style="vertical-align:${img-valign};width:160px;">
                                 <table cellpadding="0" cellspacing="0" width="100%"
                                        border="0"
                                        style="width: 100%; border-collapse: collapse;">
                                   <tr>
                                     <!--image-width:280-->
-                                    <td style="text-align:${alignimg};" class="imgcentremob" valign="top">
+                                    <td style="text-align:${alignimg};" class="imgcentremob" valign="${img-valign}">
                                       <div id="rightImg2575" mktoName="Right Image"
                                            class="mktoImg" mktoLockImgSize="false">
                                         <img src="https://dummyimage.com/160X160/eee/333"
@@ -1731,8 +1732,8 @@ padding-left:60px !important
                           <!--Extra space-->
                           <tbody>
                             <tr>
-                              <td class="block" width="320" valign="top"
-                                  style="vertical-align:top;width:290px;">
+                              <td class="block" width="320" valign="${img-valigntop}"
+                                  style="vertical-align:${img-valigntop};width:290px;">
                                 <table cellpadding="0" cellspacing="0" width="100%"
                                        border="0">
                                   <tr>
@@ -1803,8 +1804,8 @@ padding-left:60px !important
                           <!--Extra space-->
                           <tbody>
                             <tr>
-                              <td class="block" width="256" valign="top"
-                                  style="vertical-align:top;width:256px;">
+                              <td class="block" width="256" valign="${img-valigntop}"
+                                  style="vertical-align:${img-valigntop};width:256px;">
                                 <table cellpadding="0" cellspacing="0" width="100%"
                                        border="0">
                                   <tr>
@@ -1878,13 +1879,13 @@ padding-left:60px !important
                           <!--Extra space-->
                           <tbody>
                             <tr>
-                              <td class="block" width="160" valign="top"
-                                  style="vertical-align:top;width:160px;">
+                              <td class="block" width="160" valign="${img-valigntop}"
+                                  style="vertical-align:${img-valigntop};width:160px;">
                                 <table cellpadding="0" cellspacing="0" width="100%"
                                        border="0">
                                   <tr>
                                     <!--image-width:280-->
-                                    <td style="text-align:${alignimg};" class="imgcentremob" valign="top">
+                                    <td style="text-align:${alignimg};" class="imgcentremob" valign="${img-valigntop}">
                                       <div id="leftImg2575" mktoName="Left Image"
                                            class="mktoImg" mktoLockImgSize="false">
                                         <img src="https://dummyimage.com/160X82/eee/333"
@@ -2637,14 +2638,14 @@ padding-left:60px !important
                                 </table>
                               </td>
 
-                              <td class="block padding_top" width="180" valign="top"
-                                  style="vertical-align:top;width:180px;">
+                              <td class="block padding_top" width="180" valign="${img-valigntop}"
+                                  style="vertical-align:${img-valigntop};width:180px;">
                                 <table cellpadding="0" cellspacing="0" width="100%"
                                        border="0"
                                        style="width: 100%; border-collapse: collapse;">
                                   <tr>
                                     <!--image-width:180-->
-                                    <td style="text-align:right;" valign="top">
+                                    <td style="text-align:right;" valign="${img-valigntop}">
                                       <div id="smallrightImg"
                                            mktoName="Small Right Image"
                                            class="mktoImg" mktoLockImgSize="false">
@@ -2652,6 +2653,7 @@ padding-left:60px !important
                                              border="0" alt="" width="180" height="155"/>
                                       </div>
                                     </td>
+                                    <td class="hidden" width="${img-right-pad}" style="width:${img-right-pad}px;"></td>
                                   </tr>
                                 </table>
                               </td>
@@ -2723,7 +2725,7 @@ padding-left:60px !important
                             </tr>
                             <tr>
                               <td width="35" style="width:35px;">&nbsp;</td>
-                              <td style="font-size:20px; color:${Color-title-1}; font-family:${TextFontFamily}; mso-line-height-rule: exactly; text-align:left;"
+                              <td style="font-size:20px; color:${Color-title-1}; font-family:${TextFontFamily}; mso-line-height-rule: exactly; line-height:${head-lh}px;text-align:left;"
                                   valign="top" align="left">
                                 <div id="titleleftalign" class="mktoText"
                                      mktoname="Title Left Align">
@@ -2915,8 +2917,8 @@ padding-left:60px !important
                                      border="0" width="100%">
                                 <tr>
                                   <th dir="ltr" width="216" align="left"
-                                      class="block center" valign="top"
-                                      style="vertical-align: top;">
+                                      class="block center" valign="${img-valign}"
+                                      style="vertical-align:${img-valign};">
                                     <div class="mktoImg" mktoname="Image"
                                          id="imgRight-img-1" mktoLockImgSize="false">
                                       <div>
@@ -2941,7 +2943,7 @@ padding-left:60px !important
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgright-headline-1">
-                                            <div>Lorem Ipsum </div>
+                                            <div>Lorem Ipsum</div>
                                           </div>
                                         </td>
                                       </tr>
@@ -3024,8 +3026,8 @@ padding-left:60px !important
                                      border="0" width="100%">
                                 <tr>
                                   <th width="216" align="left"
-                                      class="block center" valign="top"
-                                      style="vertical-align: top;">
+                                      class="block center" valign="${img-valigntop}"
+                                      style="vertical-align:${img-valigntop};">
                                     <div class="mktoImg" mktoname="Image"
                                          id="imgLeft-img-1" mktoLockImgSize="false">
                                       <div>
@@ -3141,8 +3143,8 @@ padding-left:60px !important
                                      border="0" width="100%">
                                 <tr>
                                   <th dir="ltr" width="216" align="left"
-                                      class="block center" valign="top"
-                                      style="vertical-align: top;">
+                                      class="block center" valign="${img-valigntop}"
+                                      style="vertical-align:${img-valigntop};">
                                     <div class="mktoImg" mktoname="Image"
                                          id="imgRight-img" mktoLockImgSize="false">
                                       <div>
@@ -3264,8 +3266,8 @@ padding-left:60px !important
                                      border="0" width="100%">
                                 <tr>
                                   <th width="216" align="left"
-                                      class="block center" valign="top"
-                                      style="vertical-align: top;">
+                                      class="block center" valign="${img-valigntop}"
+                                      style="vertical-align:${img-valigntop};">
                                     <div class="mktoImg" mktoname="Image"
                                          id="imgLeft-img" mktoLockImgSize="false">
                                       <div>
@@ -3402,7 +3404,7 @@ padding-left:60px !important
                 <td style="line-height:30px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;" valign="top">
                                       <div id="leftTextwithbutton" class="mktoText"
                                            mktoname="Image Caption">
-                                        <div>Image Caption</div>
+                                      <div>Image Caption</div>
                                       </div>
                                     </td>
                 </tr>
@@ -3824,7 +3826,7 @@ padding-left:60px !important
                             <td height="10"style="line-height:1px;font-size:1px;">&nbsp;</td>
                           </tr>
                           <tr>
-                            <td  algin="center" style="font-weight:700;line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color:${Footer-TextColor-1}; text-align:center;">
+                            <td  algin="center" style="font-weight:700;line-height:${head-lh43}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color:${Footer-TextColor-1}; text-align:center;">
                               <div class="mktoText" mktoName="Footer-Headline" id="Footer-Headline">
                                 <div>Have Questions? We have Answers.</div>
                               </div>
