@@ -61,6 +61,7 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" />
     <meta mktoModuleScope="true" class="mktoNumber" id="head-lh" mktoname="Head Line Height Size" default="34" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh" mktoname="Text Line Height Size" default="22" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="p-lh" mktoname="Text Line Height Size" default="22" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh20" mktoname="Text Line Height Size" default="20" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh18" mktoname="Text Line Height Size" default="18" />
     <meta mktoModuleScope="true" class="mktoNumber" id="p-lh16" mktoname="Text Line Height Size" default="16" />
@@ -144,6 +145,7 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta mktoModuleScope="true" class="mktoNumber" id="FreeText2Col-bottom-space" mktoname="Bottom Space" default="20"  min="0" max="50" step="1" />
     <!--FreeText2Col Module Variables End-->
     <meta mktoModuleScope="true" class="mktoNumber" id="colhgt" mktoname="Column Height" default="100"  min="0" max="1000" step="1" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="colhgt2" mktoname="Column Height" default="60"  min="0" max="1000" step="1" />
     <meta mktoModuleScope="true" class="mktoColor" id="SpeakersText-BgColor" mktoname="Text Background Color" default="#00455f" />
     <meta mktoModuleScope="true" class="mktoColor" id="Speakersimg-BgColor" mktoname="Img Background Color" default="#fff" />
     <meta mktoModuleScope="true" class="mktoColor" id="Speakerstext-Color" mktoname="Text Color" default="#FFFFFF" />
@@ -386,7 +388,7 @@ padding-left:60px !important
         }
 
         *[class].button_width {
-          width: 100% !Important;
+          width: 90% !Important;
         }
       }
 
@@ -2028,7 +2030,7 @@ padding-left:60px !important
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td class="mbhgt" height="${colhgt}" valign="top"
+                                              <td class="mbhgt" height="${colhgt2}" valign="top"
                                                   style="font-size:14px; color:${Speakerstext-Color}; font-family:${TextFontFamily}; line-height:${p-lh16}px;mso-line-height-rule: exactly; text-align:left; height: ${colhgt};">
                                                 <div class="mktoText"
                                                      id="Speaker3ColLDesc"
@@ -2044,7 +2046,10 @@ padding-left:60px !important
                                               </td>
                                             </tr>
                                             <!--Extra space-->
-
+                                            <tr>
+                                              <td height="15" style="line-height: 1px;font-size: 1px;">&nbsp;
+                                              </td>
+                                            </tr>
                                             <tr>
                               <td valign="top">
                                 <div class="mktoText" mktoName="Button" id="speaker-button">
@@ -2115,7 +2120,7 @@ padding-left:60px !important
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td class="mbhgt" height="${colhgt}" valign="top"
+                                              <td class="mbhgt" height="${colhgt2}" valign="top"
                                                   style="font-size:14px; color:${Speakerstext-Color}; font-family:${TextFontFamily}; line-height:${p-lh16}px;mso-line-height-rule: exactly; text-align:left; height: ${colhgt};">
                                                 <div class="mktoText"
                                                      id="speaker3ColCDesc"
@@ -2131,6 +2136,34 @@ padding-left:60px !important
                                               </td>
                                             </tr>
                                             <!--Extra space-->
+                                            <tr>
+                                              <td height="15" style="line-height: 1px;font-size: 1px;">&nbsp;
+                                              </td>
+                                            </tr>
+                                            <tr>
+                              <td valign="top">
+                                <div class="mktoText" mktoName="Button" id="speaker-button">
+                                  <table
+                                         style="margin: 0 auto; border-collapse: collapse;"
+                                         width="${Button-Width}" align="${cta-Position}"
+                                         border="0" cellpadding="0" cellspacing="0"
+                                         >
+                                    <tbody>
+                                      <tr>
+                                        <td style="background-color: ${CTA-BgColor}; border:4px solid ${HeroCTA-Button-BorderColor};border-radius:${HeroCTA-Button-Radius}px;font-family:${TextFontFamily}; font-size: 16px; mso-line-height-rule: exactly;  text-align: center; vertical-align: middle; color: ${CTA-Button-Color}; display: block; padding:9px 22px 8px;"
+                                            valign="middle">
+                                          <a style="text-decoration: none; color: ${CTA-Button-Color} !important;outline: none;"
+                                             href="${HeroCTA-ButtonLink}">
+                                            <span
+                                                  style="color:${CTA-Button-Color};font-weight:700;">${HeroCTA-Button-Text}</span>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
                                             <tr>
                                               <td height="${Photos2Col-space-below-description}"
                                                   style="line-height: 1px;font-size: 1px;">&nbsp;
@@ -2178,7 +2211,7 @@ padding-left:60px !important
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td class="mbhgt" height="${colhgt}" valign="top"
+                                              <td class="mbhgt" height="${colhgt2}" valign="top"
                                                   style="font-size:14px; color:${Speakerstext-Color}; font-family:${TextFontFamily}; line-height:${p-lh16}px;mso-line-height-rule: exactly; text-align:left; height: ${colhgt};">
                                                 <div class="mktoText"
                                                      id="speaker3ColRDesc"
@@ -2194,6 +2227,34 @@ padding-left:60px !important
                                               </td>
                                             </tr>
                                             <!--Extra space-->
+                                            <tr>
+                                              <td height="15" style="line-height: 1px;font-size: 1px;">&nbsp;
+                                              </td>
+                                            </tr>
+                                            <tr>
+                              <td valign="top">
+                                <div class="mktoText" mktoName="Button" id="speaker-button">
+                                  <table
+                                         style="margin: 0 auto; border-collapse: collapse;"
+                                         width="${Button-Width}" align="${cta-Position}"
+                                         border="0" cellpadding="0" cellspacing="0"
+                                         >
+                                    <tbody>
+                                      <tr>
+                                        <td style="background-color: ${CTA-BgColor}; border:4px solid ${HeroCTA-Button-BorderColor};border-radius:${HeroCTA-Button-Radius}px;font-family:${TextFontFamily}; font-size: 16px; mso-line-height-rule: exactly;  text-align: center; vertical-align: middle; color: ${CTA-Button-Color}; display: block; padding:9px 22px 8px;"
+                                            valign="middle">
+                                          <a style="text-decoration: none; color: ${CTA-Button-Color} !important;outline: none;"
+                                             href="${HeroCTA-ButtonLink}">
+                                            <span
+                                                  style="color:${CTA-Button-Color};font-weight:700;">${HeroCTA-Button-Text}</span>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
                                             <tr>
                                               <td height="${Photos2Col-space-below-description}"
                                                   style="line-height: 1px;font-size: 1px;">&nbsp;
@@ -2876,7 +2937,7 @@ padding-left:60px !important
                                            border="0" width="100%">
                                       <tr>
                                         <td class="em_white"
-                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
+                                            style="mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgright-headline-1">
@@ -2890,7 +2951,7 @@ padding-left:60px !important
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;">
+                                        <td class="em_white" style="line-height:${p-lh20}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;">
                                           <div class="mktoText" mktoName="Text"
                                                id="imgright-SubHeadline-1">
                                             <div>Sed ut perspiciatis unde omnis
@@ -2985,7 +3046,7 @@ padding-left:60px !important
                                            border="0" width="100%">
                                       <tr>
                                         <td class="em_white"
-                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily};font-size: 30px;color:#00455f; font-weight: normal; line-height:34px;">
+                                            style="mso-line-height-rule: exactly; font-family:${TextFontFamily};font-size: 30px;color:#00455f; font-weight: normal; line-height:${head-lh}px;">
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgleft-headline-1">
@@ -2999,7 +3060,7 @@ padding-left:60px !important
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="em_white" style="line-height:145%; mso-line-height-rule: exactly; font-family:${TextFontFamily};font-size: 14px;color:#00708B;font-weight: normal;">
+                                        <td class="em_white" style="line-height:${p-lh20}px; mso-line-height-rule: exactly; font-family:${TextFontFamily};font-size: 14px;color:#00708B;font-weight: normal;">
                                           <div class="mktoText" mktoName="Text"
                                                id="imgleft-SubHeadline-1">
                                             <div>Sed ut perspiciatis unde omnis
@@ -3102,7 +3163,7 @@ padding-left:60px !important
                                            border="0" width="100%">
                                       <tr>
                                         <td class="em_white"
-                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
+                                            style="mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgright-headline">
@@ -3225,7 +3286,7 @@ padding-left:60px !important
                                            border="0" width="100%">
                                       <tr>
                                         <td class="em_white"
-                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
+                                            style="mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgleft-headline">
@@ -3239,7 +3300,7 @@ padding-left:60px !important
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
+                                        <td class="em_white" style="line-height:${p-lh20}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;
                                                                     ">
                                           <div class="mktoText" mktoName="Text"
                                                id="imgleft-SubHeadline">
@@ -3387,7 +3448,7 @@ padding-left:60px !important
                                            border="0" width="100%">
                                       <tr>
                                         <td class="em_white"
-                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
+                                            style="line-height:${head-lh}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgleft-headline">
@@ -3401,7 +3462,7 @@ padding-left:60px !important
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td class="em_white" style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;">
+                                        <td class="em_white" style="line-height:${p-lh}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 14px;color: #FFF; font-weight: normal;">
                                           <div class="mktoText" mktoName="Text"
                                                id="imgleft-SubHeadline">
                                             <div>Sed ut perspiciatis unde omnis
@@ -3536,7 +3597,7 @@ padding-left:60px !important
                                            border="0" width="100%">
                                       <tr>
                                         <td class="em_white"
-                                            style="line-height: 145%; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
+                                            style="line-height:${head-lh}px; mso-line-height-rule: exactly; font-family:${TextFontFamily} ;font-size: 30px;color: #FFF; font-weight: normal; line-height:${head-lh}px;">
                                           <div class="mktoText"
                                                mktoName="Headline"
                                                id="imgright-headline">
@@ -3615,7 +3676,7 @@ padding-left:60px !important
                                        border="0">
 
                                   <tr>
-                                    <td style="font-size:14px; color:${TextColor2}; font-family:${TextFontFamily}; line-height:20px;mso-line-height-rule: exactly; text-align:left;"
+                                    <td style="font-size:14px; color:${TextColor2}; font-family:${TextFontFamily}; line-height:${p-lh}px;mso-line-height-rule: exactly; text-align:left;"
                                         valign="top">
                                       <div id="leftTextwithbutton" class="mktoText"
                                            mktoname="Text 70%">
@@ -3714,7 +3775,7 @@ padding-left:60px !important
 
                                   <tr>
                                     <td width="20" style="width:20px;">&nbsp;</td>
-                                    <td style="font-size:14px; color:${TextColor2}; font-family:${TextFontFamily}; mso-line-height-rule: exactly; text-align:left;line-height:20px;"
+                                    <td class="padding_top" style="font-size:14px; color:${TextColor2}; font-family:${TextFontFamily}; mso-line-height-rule: exactly; text-align:left;line-height:${p-lh}px;"
                                         valign="top">
                                       <div id="leftTextwithbuttonz" class="mktoText"
                                            mktoname="Text 70%">
