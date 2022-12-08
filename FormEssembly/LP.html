@@ -18,8 +18,13 @@
     <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showspeakers" mktoName="Show Speakers Section?" default="true" true_value="flax" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showspeakers" mktoName="Show Speakers Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-speaker1" mktoName="Show Speaker 1" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speaker2" mktoName="Show Speaker 2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speaker3" mktoName="Show Speaker 3" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speaker4" mktoName="Show Speaker 4" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speaker5" mktoName="Show Speaker 5" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speaker6" mktoName="Show Speaker 6" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -56,6 +61,8 @@
     <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#ffffff">
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#028a5d">
     <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#028a5d">
+
+    <meta class="mktoString" id="speakers-bg" mktoName="Speakers - Background Color" default="#F8F9FC">  
 
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#ffffff">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#8d9aa0">
@@ -343,6 +350,11 @@
         font-size: ${freeTextH1size}px;
         font-family: ${fontfamily}, sans-serif !important;
       }
+      #speakers h1 {
+        color: ${freeTextHeaderColor} !important;
+        font-size: ${freeTextH1size}px;
+        font-family: ${fontfamily}, sans-serif !important;
+      }
 
       #freetext p,
       #freetext ul,
@@ -547,14 +559,33 @@
       }
       #speakers {
         display:${showspeakers};
+        background-color: ${speakers-bg};
       }
- 
+      #speakers #speakers-headline {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
       #speakers .column {
         flex-direction: column;
         text-align: center;
       }
       #speakers .column:nth-child(1) {
         display: ${show-speaker1};
+      }
+      #speakers .column:nth-child(2) {
+        display: ${show-speaker2};
+      }
+      #speakers .column:nth-child(3) {
+        display: ${show-speaker3};
+      }
+      #speakers .column:nth-child(4) {
+        display: ${show-speaker4};
+      }
+      #speakers .column:nth-child(5) {
+        display: ${show-speaker5};
+      }
+      #speakers .column:nth-child(6) {
+        display: ${show-speaker6};
       }
       #speakers .flex-row {
         display: grid !important;
@@ -943,8 +974,15 @@
     </div>
 
 <div id="speakers">
-<div class="section flex-row">
-
+  
+ 
+<div class="section">
+<div class="mktoText" mktoName="Speakers Headline" id="speakers-headline">
+  <h1>
+            Lorem ipsum dolor sit amet
+          </h1>
+  </div>
+<div class="flex-row">
 <div class="column">
 <div class="mktoText" id="speaker-img1" mktoName="Speaker 1 img">
   <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
@@ -961,7 +999,7 @@
   <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
 </div>
 <div class="mktoText" id="speaker-txt2" mktoName="Speaker 2 txt">
-  <h4>Speaker Twi</h4>
+  <h4>Speaker Two</h4>
   <h4>Title</h4>
   <p>Company</p>
   </div>
@@ -1010,7 +1048,7 @@
   <p>Company</p>
   </div>
 </div>
-
+</div>
 
 </div>
 </div>
