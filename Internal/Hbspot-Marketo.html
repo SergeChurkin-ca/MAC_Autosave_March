@@ -1,197 +1,197 @@
 <!DOCTYPE html>
 <!--[if lt IE 7 ]>
 <html class="ie ie6" lang="en">
-   <![endif]-->
+<![endif]-->
 <!--[if IE 7 ]>
-   <html class="ie ie7" lang="en">
-      <![endif]-->
+<html class="ie ie7" lang="en">
+<![endif]-->
 <!--[if IE 8 ]>
-      <html class="ie ie8" lang="en">
-         <![endif]-->
+<html class="ie ie8" lang="en">
+<![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/LP_MAC_Style.css" rel="stylesheet">
-	<link href="carousel.css" rel="stylesheet">
-	<link href="addedcss.css" rel="stylesheet">
-	<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
-  
-  <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700;900&display=swap');" allowHtml="true">
-  <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Work Sans" allowHtml="true">
-  <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://favicon.io/favicon.ico" allowHtml="true">
-  <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
-	<link rel="icon" type="image/x-icon" href="${favicon}" />
-	<title>${pageTitle}</title>
-  <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="220" allowHtml="true">
-  <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#1F203E">
-  <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
-  <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
-  <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
-  <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
-  <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="18" allowHtml="true">
-  <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
-  <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="16" allowHtml="true">
-  <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
-  <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/LP_MAC_Style.css" rel="stylesheet">
+    {/* <link href="carousel.css" rel="stylesheet"> */}
+    {/* <link href="addedcss.css" rel="stylesheet"> */}
+    <link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
 
-
-  <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#124559">
-  <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
-  <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#124559">
-  <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="0" allowHtml="true">
-  
-  <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
-  <meta class="mktoColor" id="banner-txt-color" mktoName="Banner - Txt Color" default="#ffffff">
-  <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#F15A25">
-  <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="29" allowHtml="true">
-  <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
-  <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#1F203E">
-  <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
-  <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#1F203E">
-  <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
-
-  
-  <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
-  <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
-  <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-  <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-  <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
-  <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
-  <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
-  <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#ffffff">
-  <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
-  <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
-  <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
-  <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
-  <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="1" allowHtml="true">
-
-  <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
-  <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
-  <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-  <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
-
-  <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
-  <meta class="mktoColor" id="carousel-color" mktoName="Carousel Sectino Color" default="#f15a25">
-    
-  <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
-    
-  <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
-  <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
-  <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-  <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
-    
-  <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
-  <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
-  <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
-  <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+    <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700;900&display=swap');" allowHtml="true">
+    <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Work Sans" allowHtml="true">
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://favicon.io/favicon.ico" allowHtml="true">
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <link rel="icon" type="image/x-icon" href="${favicon}" />
+    <title>${pageTitle}</title>
+    <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="220" allowHtml="true">
+    <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
+    <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
+    <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
+    <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="18" allowHtml="true">
+    <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="16" allowHtml="true">
+    <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
+    <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
 
 
-  <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="fase" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
-  <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
-  <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-  <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
-  <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
-  <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
-  <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
-  <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-  <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
-  <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-  <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
-  <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="1" allowHtml="true">
+    <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#124559">
+    <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#124559">
+    <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="0" allowHtml="true">
 
-  <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
-  <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
-  <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
-  <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
-  <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
-  
-  <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
-  <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
-  <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
-  
-  <meta class="mktoString" id="centertextorder" mktoName="Image Right - Order" default="3" allowHtml="true">
-  <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
-  <meta class="mktoString" id="centertext2order" mktoName="Image Right - Order" default="5" allowHtml="true">
-  <meta class="mktoString" id="imgright3order" mktoName="Image Right - Order" default="6" allowHtml="true">
-  <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="6" allowHtml="true">
-  <meta class="mktoString" id="imgright2order" mktoName="Image Right - Order" default="7" allowHtml="true">
-  <meta class="mktoString" id="carouselsection-order" mktoName="Carousel Sectoin Order" default="8" allowHtml="true">
-  <meta class="mktoString" id="imgright3order" mktoName="Image Right - Order" default="10" allowHtml="true">
-  <meta class="mktoString" id="imgleft2order" mktoName="Image Left - Order" default="9" allowHtml="true">
-  <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="10" allowHtml="true">
-  <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="11" allowHtml="true">
-  <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="12" allowHtml="true">
-  
+    <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="#" allowHtml="true">
+    <meta class="mktoColor" id="banner-txt-color" mktoName="Banner - Txt Color" default="#ffffff">
+    <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#F15A25">
+    <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="29" allowHtml="true">
+    <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
 
 
-	<style>
+    <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
+    <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
+    <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#ffffff">
+    <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="1" allowHtml="true">
+
+    <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="carousel-color" mktoName="Carousel Sectino Color" default="#f15a25">
+
+    <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
+    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+
+
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
+    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
+    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="1" allowHtml="true">
+
+    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
+    <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
+    <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
+    <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
+
+    <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
+    <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
+
+    <meta class="mktoString" id="centertextorder" mktoName="Image Right - Order" default="3" allowHtml="true">
+    <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
+    <meta class="mktoString" id="centertext2order" mktoName="Image Right - Order" default="5" allowHtml="true">
+    <meta class="mktoString" id="imgright3order" mktoName="Image Right - Order" default="6" allowHtml="true">
+    <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="6" allowHtml="true">
+    <meta class="mktoString" id="imgright2order" mktoName="Image Right - Order" default="7" allowHtml="true">
+    <meta class="mktoString" id="carouselsection-order" mktoName="Carousel Sectoin Order" default="8" allowHtml="true">
+
+    <meta class="mktoString" id="imgleft2order" mktoName="Image Left - Order" default="9" allowHtml="true">
+    <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="10" allowHtml="true">
+    <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="11" allowHtml="true">
+    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="12" allowHtml="true">
+
+
+
+    <style>
       ${googleimport}
-		* {
-          font-family: '${globalfont}',Arial, sans-serif;
-		}
-        img{
-          max-width:100%;
-          height:auto;
-        }
-        .container_inner{
-          width:90%;
-        }
-		#banner {
-          background-color:${bannerbgcolor};
-          background-image:url('${bannerbgimg}');
-          display:${bannershow};
-          order:${bannerorder};
+      * {
+        font-family: '${globalfont}',Arial, sans-serif;
+      }
+      img{
+        max-width:100%;
+        height:auto;
+      }
+      .container_inner{
+        width:90%;
+      }
+      #banner {
+        background-color:${bannerbgcolor};
+        background-image:url('${bannerbgimg}');
+        display:${bannershow};
+        order:${bannerorder};
 
-		}
+      }
       #banner h1, #banner h2, #banner h3, #banner h4, #banner p, #banner li {
-         color: ${banner-txt-color};
-         
+        color: ${banner-txt-color};
+
       }
       #banner li {
-         margin: 0.5rem 0;
+        margin: 0.5rem 0;
       }
       #banner ul {
-         padding: 0;
+        padding: 0;
       }
 
-		#formtext {
-          background-color:${formtextbgcolor};
-          display:${formtextshow};
-          order:${formtextorder};
-		}
-		#threecol {
-			background-color:${threecolbgcolor};
-          display:${threecolshow};
-          order:${threecolorder};
-		}
+      #formtext {
+        background-color:${formtextbgcolor};
+        display:${formtextshow};
+        order:${formtextorder};
+      }
+      #threecol {
+        background-color:${threecolbgcolor};
+        display:${threecolshow};
+        order:${threecolorder};
+      }
       #threecol .col33 {
         background:${threecolcolumnbgcolor};
         box-shadow:${threecolshadow};
@@ -199,965 +199,1432 @@
       }
       #centertext,
       #centertext2 {
-       order: ${centertextorder};
-       background-color: #54BCAB;
-     
+        order: ${centertextorder};
+        background-color: #54BCAB;
+
       }
-#centertext2 {
-order: ${centertext2order};
-background-color: #54BCAB;
-}
-#centertext2 h2,
-#centertext2 li {
-   color: #ffffff;
-   margin: 0.5rem 0;
-}
+      #centertext2 {
+        order: ${centertext2order};
+        background-color: #54BCAB;
+      }
+      #centertext2 h2,
+      #centertext2 li {
+        color: #ffffff;
+        margin: 0.5rem 0;
+      }
       #centertext h3,
       #centertext2 h3 {
-         color:#ffffff;
+        color:#ffffff;
       }
 
-		#imgright {
-			background-color:${imgrightbgcolor};
-          display:${imgrightshow};
-          order:${imgrightorder};
-		}
-      #imgrightheadline {
-         text-align: center;
+      #imgright {
+        background-color:${imgrightbgcolor};
+        display:${imgrightshow};
+        order:${imgrightorder};
       }
-		#imgleft {
-			background-color:${imgleftbgcolor};
-          display:${imgleftshow};
-          order:${imgleftorder};
-		}
+      #imgrightheadline {
+        text-align: center;
+      }
+      #imgleft {
+        background-color:${imgleftbgcolor};
+        display:${imgleftshow};
+        order:${imgleftorder};
+      }
 
       #imgleft .flex-wrap {
-         gap: 2rem;
+        gap: 2rem;
       }
       #imgleft .right {
-         min-width: 250px;
-         max-width: 250px;
-         width: auto;
-         flex: 1 0 300px;
-         margin-bottom: 2rem;
+        min-width: 250px;
+        max-width: 250px;
+        width: auto;
+        flex: 1 0 300px;
+        margin-bottom: 2rem;
       }
-       #imgleft .left {
+      #imgleft .left {
         width: auto;
         flex: 1 0 500px;
       }
-		#imgright2 {
-			background-color:${imgrightbgcolor};
-          display:${imgrightshow};
-          order:${imgright2order};
-		}
+      #imgright2 {
+        background-color:${imgrightbgcolor};
+        display:${imgrightshow};
+        order:${imgright2order};
+      }
       #carouselsection {
-         order: ${carouselsection-order};
-         background-color:${carousel-color};
+        order: ${carouselsection-order};
+        background-color:${carousel-color};
       }
       #carouselsection .section {
-         margin-top: 120px;
-         margin-bottom: 120px;
+        margin-top: 120px;
+        margin-bottom: 120px;
       }
-#carouselsection p {
-   font-size: 14px;
-}
- #carouselsection a {
-   color: #54bbaa;
-   font-weight: 700;
-   text-decoration: none;
-   font-size: 14px;
-   margin-top: 10px;
-   margin-bottom: 30px;
- }
- .next, 
- .prev {
-   color: #ffffff !important;
- }
-		#imgleft2 {
-			background-color:${imgleftbgcolor};
-          display:${imgleftshow};
-          order:${imgleft2order};
-		}
-	#imgright3 {
-			background-color:${imgrightbgcolor};
-          display:${imgrightshow};
-          order:${imgright3order};
-		}
+      #carouselsection p {
+        font-size: 14px;
+      }
+      #carouselsection a {
+        color: #54bbaa;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      .next, 
+      .prev {
+        color: #ffffff !important;
+      }
+      #imgleft2 {
+        background-color:${imgleftbgcolor};
+        display:${imgleftshow};
+        order:${imgleft2order};
+      }
+      #imgright3 {
+        background-color:${imgrightbgcolor};
+        display:${imgrightshow};
+        order:${imgright3order};
+      }
       #imgright3 .section {
-         margin-bottom: 0px;
+        margin-bottom: 0px;
       }
-#imgrightimg3 {
-   text-align: center;
-}
-#imgrightimg3 img {
-   max-width: 280px;
-}
-		#twocolicons {
-          background-color:${twocoliconsbgcolor};
-          display:${twocoliconsshow};
-          order:${twocoliconsorder};
-		}
-		#video {
-          background-color:${videobgcolor};
-          display:${videoshow};
-          order:${videoorder};
-		}
-		#video .left {
-          background-color:${videoleftbgcolor};
-		}
-		#btmform {
-          background-color:${btmformbgcolor};
-          display:${btmformshow};
-          order:${btmformorder};
-		}
-		#btmform .container_inner {
-			background-color:${btmforminnerbgcolor};
-		}
-		#footer {
-          background-color:${footerbgcolor};
-          order: 100;
-		}
-      
-        .logo img{
-          width:${logowidth}px;
-          height:auto;
-          vertical-align:middle;
-        }
-        #footer .logo{
-          padding-bottom:0;
-        }
-		.headlinetext h1 {
-          font-size:${bannerheadsize}px;
-          color:${h1color};
-			font-weight:bold;
-		}
-		.headlinetext p, .headlinetext li {
-          font-size:${bannercopysize}px;
-          color:${pcolor};
-          font-weight:${pweight};
-          font-size: 24px;
-		}
-		p {
-          color:${pcolor};
-          font-size:${psize}px;
-          font-weight:${pweight};
-		}
-		li {
-          color:${pcolor};
-          font-size:${psize}px;
-          font-weight:${pweight};
-		}
-		
-		h2 {
-			color:${h2color};
-			font-size:${h2size}px;
-			font-weight:400;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-		}
-		h3 {
-			color:${h3color};
-			font-size:${h3size}px;
-			font-weight:bold;
-         letter-spacing: 1px;
-		}
-		h4 {
-			color:${h4color};
-			font-size:${h2size}px;
-			font-weight:bold;
-			margin-top:0;
-		}
-		#banner .button a {
-          background-color:${banbtnbgcolor};
-          border:1px solid ${banbtnbordercolor};
-          border-radius:${banbtnborderradius}px;
-          font-size:${banbtntextsize}px;
-          padding:15px 50px;
-          color:${banbtntextcolor};
-          font-weight:bold;
-          text-decoration:none;
-		}
-		#formtext .mktoForm .mktoLabel {
-          color:${formtextpcolor}!important;
-          font-size:${formtextpsize}px!important;
-          font-weight:${formtextpweight}!important;
-          display:${showformtextlabel}!important;
-		}
-		#formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
-          border:${formtextbordercolor} ${formtextborderheight}px solid;
-          border-radius:${formtextborderradius}px!important;
-          background-color:${formtextfieldcolor}!important;
-          color:${formtextpcolor}!important;
-          box-shadow:0 !important;
-          box-shadow:none !important;
-          height:50px !important;
-          min-height:40px !important;
-          padding: 5px 10px !important;
-        }
-		.mktoForm input, .mktoForm textarea, .mktoForm select {
-          box-shadow:0 !important;
-          box-shadow:none !important;
-          height:50px !important;
-          min-height:40px !important;
-          padding: 5px 10px !important;
-        }
-        .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField{
-          box-shadow:none !important;
-        }
-        .mktoForm .mktoButtonWrap {
-          margin-left:0 !important;
-        }
-      	.mktoForm textarea {
-          height:100px !important;
-          min-height:80px !important;
-        }
-        .mktoForm .mktoButtonWrap.mktoGlow .mktoButton{
-          box-shadow:none !important;
-        }
-      	#formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
-          color:${formtextpcolor}!important;
-        }
-		#formtext .mktoForm button.mktoButton {
-          background-color:${formtextbtnbgcolor}!important;
-          border:1px solid ${formtextbtnbordercolor}!important;
-          border-radius:${formtextbtnborderradius}px!important;
-          font-size:${formtextbtntextsize}px!important;
-          padding:15px 50px!important;
-          color:${formtextbtntextcolor}!important;
-          font-weight:bold!important;
-          text-decoration:none!important;
-          width: auto!important!important;
-          display:inline-block;
-		}
+      #imgrightimg3 {
+        text-align: center;
+      }
+      #imgrightimg3 img {
+        max-width: 280px;
+      }
+      #twocolicons {
+        background-color:${twocoliconsbgcolor};
+        display:${twocoliconsshow};
+        order:${twocoliconsorder};
+      }
+      #video {
+        background-color:${videobgcolor};
+        display:${videoshow};
+        order:${videoorder};
+      }
+      #video .left {
+        background-color:${videoleftbgcolor};
+      }
+      #btmform {
+        background-color:${btmformbgcolor};
+        display:${btmformshow};
+        order:${btmformorder};
+      }
+      #btmform .container_inner {
+        background-color:${btmforminnerbgcolor};
+      }
+      #footer {
+        background-color:${footerbgcolor};
+        order: 100;
+      }
+
+      .logo img{
+        width:${logowidth}px;
+        height:auto;
+        vertical-align:middle;
+      }
+      #footer .logo{
+        padding-bottom:0;
+      }
+      .headlinetext h1 {
+        font-size:${bannerheadsize}px;
+        color:${h1color};
+        font-weight:bold;
+      }
+      .headlinetext p, .headlinetext li {
+        font-size:${bannercopysize}px;
+        color:${pcolor};
+        font-weight:${pweight};
+        font-size: 24px;
+      }
+      p {
+        color:${pcolor};
+        font-size:${psize}px;
+        font-weight:${pweight};
+      }
+      li {
+        color:${pcolor};
+        font-size:${psize}px;
+        font-weight:${pweight};
+      }
+
+      h2 {
+        color:${h2color};
+        font-size:${h2size}px;
+        font-weight:400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      h3 {
+        color:${h3color};
+        font-size:${h3size}px;
+        font-weight:bold;
+        letter-spacing: 1px;
+      }
+      h4 {
+        color:${h4color};
+        font-size:${h2size}px;
+        font-weight:bold;
+        margin-top:0;
+      }
+      #banner .button a {
+        background-color:${banbtnbgcolor};
+        border:1px solid ${banbtnbordercolor};
+        border-radius:${banbtnborderradius}px;
+        font-size:${banbtntextsize}px;
+        padding:15px 50px;
+        color:${banbtntextcolor};
+        font-weight:bold;
+        text-decoration:none;
+      }
+      #formtext .mktoForm .mktoLabel {
+        color:${formtextpcolor}!important;
+        font-size:${formtextpsize}px!important;
+        font-weight:${formtextpweight}!important;
+        display:${showformtextlabel}!important;
+      }
+      #formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
+        border:${formtextbordercolor} ${formtextborderheight}px solid;
+        border-radius:${formtextborderradius}px!important;
+        background-color:${formtextfieldcolor}!important;
+        color:${formtextpcolor}!important;
+        box-shadow:0 !important;
+        box-shadow:none !important;
+        height:50px !important;
+        min-height:40px !important;
+        padding: 5px 10px !important;
+      }
+      .mktoForm input, .mktoForm textarea, .mktoForm select {
+        box-shadow:0 !important;
+        box-shadow:none !important;
+        height:50px !important;
+        min-height:40px !important;
+        padding: 5px 10px !important;
+      }
+      .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+        box-shadow:none !important;
+      }
+      .mktoForm .mktoButtonWrap {
+        margin-left:0 !important;
+      }
+      .mktoForm textarea {
+        height:100px !important;
+        min-height:80px !important;
+      }
+      .mktoForm .mktoButtonWrap.mktoGlow .mktoButton{
+        box-shadow:none !important;
+      }
+      #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
+        color:${formtextpcolor}!important;
+      }
+      #formtext .mktoForm button.mktoButton {
+        background-color:${formtextbtnbgcolor}!important;
+        border:1px solid ${formtextbtnbordercolor}!important;
+        border-radius:${formtextbtnborderradius}px!important;
+        font-size:${formtextbtntextsize}px!important;
+        padding:15px 50px!important;
+        color:${formtextbtntextcolor}!important;
+        font-weight:bold!important;
+        text-decoration:none!important;
+        width: auto!important!important;
+        display:inline-block;
+      }
       ${formtexttwocol}
-		
-		.mktoForm * {
-          font-family: '${globalfont}',Arial, sans-serif !important;
-		}
-		#footer a {
-          color:${footerlinkcolor};
-          font-size:${psize}px;
-          font-weight:${pweight};
-          text-decoration:none;
-		}
-		.button a {
-          background-color:${btnbgcolor};
-          border:1px solid ${btnbordercolor};
-          border-radius:${btnborderradius}px;
-          font-size:${btntextsize}px;
-          padding:15px 50px;
-          color:${btntextcolor};
-          font-weight:bold;
-          text-decoration:none;
-          display:inline-block;
-		}
-		.section {
-          margin-top:${sectionspacing}px;
-			margin-bottom:${sectionspacing}px;
-		}
-		#form {
-          background-color:${formbgcolor};
-		}
-		#btmform .mktoForm .mktoLabel {
-          color:${btmformpcolor}!important;
-          font-size:${btmformpsize}px!important;
-          font-weight:${btmformpweight}!important;
-          display:${showbtmformlabel}!important;
-		}
-		#btmform .mktoForm input, #btmform .mktoForm textarea,  #btmform .mktoForm select {
-          border:${btmformbordercolor} ${btmformborderheight}px solid;
-          border-radius:${btmformborderradius}px!important;
-          background-color:${btmformfieldcolor}!important;
-          color:${btmformpcolor}!important;
-        }
-      	#btmform .mktoForm input::placeholder, #btmform .mktoForm textarea::placeholder,  #btmform .mktoForm select::placeholder {
-          color:${btmformpcolor}!important;
-        }
-		#btmform .mktoForm button.mktoButton {
-          background:${btmformbtnbgcolor}!important;
-          background-color:${btmformbtnbgcolor}!important;
-          border:1px solid ${btmformbtnbordercolor}!important;
-          border-radius:${btmformbtnborderradius}px!important;
-          font-size:${btmformbtntextsize}px!important;
-          padding:15px 50px!important;
-          color:${btmformbtntextcolor}!important;
-          font-weight:bold!important;
-          text-decoration:none!important;
-          width: auto!important!important;
-          display:inline-block;
-		}
+
+      .mktoForm * {
+        font-family: '${globalfont}',Arial, sans-serif !important;
+      }
+      #footer a {
+        color:${footerlinkcolor};
+        font-size:${psize}px;
+        font-weight:${pweight};
+        text-decoration:none;
+      }
+      .button a {
+        background-color:${btnbgcolor};
+        border:1px solid ${btnbordercolor};
+        border-radius:${btnborderradius}px;
+        font-size:${btntextsize}px;
+        padding:15px 50px;
+        color:${btntextcolor};
+        font-weight:bold;
+        text-decoration:none;
+        display:inline-block;
+      }
+      .section {
+        margin-top:${sectionspacing}px;
+        margin-bottom:${sectionspacing}px;
+      }
+      #form {
+        background-color:${formbgcolor};
+      }
+      #btmform .mktoForm .mktoLabel {
+        color:${btmformpcolor}!important;
+        font-size:${btmformpsize}px!important;
+        font-weight:${btmformpweight}!important;
+        display:${showbtmformlabel}!important;
+      }
+      #btmform .mktoForm input, #btmform .mktoForm textarea,  #btmform .mktoForm select {
+        border:${btmformbordercolor} ${btmformborderheight}px solid;
+        border-radius:${btmformborderradius}px!important;
+        background-color:${btmformfieldcolor}!important;
+        color:${btmformpcolor}!important;
+      }
+      #btmform .mktoForm input::placeholder, #btmform .mktoForm textarea::placeholder,  #btmform .mktoForm select::placeholder {
+        color:${btmformpcolor}!important;
+      }
+      #btmform .mktoForm button.mktoButton {
+        background:${btmformbtnbgcolor}!important;
+        background-color:${btmformbtnbgcolor}!important;
+        border:1px solid ${btmformbtnbordercolor}!important;
+        border-radius:${btmformbtnborderradius}px!important;
+        font-size:${btmformbtntextsize}px!important;
+        padding:15px 50px!important;
+        color:${btmformbtntextcolor}!important;
+        font-weight:bold!important;
+        text-decoration:none!important;
+        width: auto!important!important;
+        display:inline-block;
+      }
       ${btmformtwocol}
-		#threecol .col33 {
-          background-color:${threecolcolumnbgcolor};
-          border-radius:${threecolradius}px;
-          box-shadow: ${threecolshadow};
-		-webkit-box-shadow: ${threecolshadow};
-		-moz-box-shadow: ${threecolshadow};
-		text-align:center;
-		}
-		.col50 {
-          background-color:${twocoliconscolumnbgcolor};
-          border-radius:${twocoliconsradius}px;
-          box-shadow: ${twocoliconsshadow};
-          -webkit-box-shadow: ${twocoliconsshadow};
-          -moz-box-shadow: ${twocoliconsshadow};
-		}
-		.social-icons i {
-          background-color:${footersocialbgcolor};
-		}
-		.social-icons .fa {
-          color:${footersocialcolor};
-		}
-      	#form{
-          padding:${formtextpad}px ${formtextpad}px;
+      #threecol .col33 {
+        background-color:${threecolcolumnbgcolor};
+        border-radius:${threecolradius}px;
+        box-shadow: ${threecolshadow};
+        -webkit-box-shadow: ${threecolshadow};
+        -moz-box-shadow: ${threecolshadow};
+        text-align:center;
+      }
+      .col50 {
+        background-color:${twocoliconscolumnbgcolor};
+        border-radius:${twocoliconsradius}px;
+        box-shadow: ${twocoliconsshadow};
+        -webkit-box-shadow: ${twocoliconsshadow};
+        -moz-box-shadow: ${twocoliconsshadow};
+      }
+      .social-icons i {
+        background-color:${footersocialbgcolor};
+      }
+      .social-icons .fa {
+        color:${footersocialcolor};
+      }
+      #form{
+        padding:${formtextpad}px ${formtextpad}px;
+      }
+
+      @media only screen and (max-width: 900px){
+        .headlinetext h1 {
+          font-size:35px;
         }
-		
-		@media only screen and (max-width: 900px){
-          .headlinetext h1 {
-              font-size:35px;
-          }
-          .headlinetext p {
-              font-size:20px;
-          }
-          p {
+        .headlinetext p {
+          font-size:20px;
+        }
+        p {
           font-size:18px;
-          }
-          li {
+        }
+        li {
           font-size:18px;
-          }
+        }
 
-          h2 {
-              font-size:25px;
-          }
-          h3 {
-              font-size:22px;
-          }
-          h4 {
+        h2 {
+          font-size:25px;
+        }
+        h3 {
+          font-size:22px;
+        }
+        h4 {
           font-size:18px;
-          }
-          .container_inner{
-            width:99%;
-          }
-          .button a, #btmform .mktoForm button.mktoButton, #formtext .mktoForm button.mktoButton {
-              font-size:16px!important;
-              padding:16px 30px!important;
-          }
-		}
+        }
+        .container_inner{
+          width:99%;
+        }
+        .button a, #btmform .mktoForm button.mktoButton, #formtext .mktoForm button.mktoButton {
+          font-size:16px!important;
+          padding:16px 30px!important;
+        }
+      }
 
 
-	</style>
-</head>
+    </style>
+    <style>
+    /* general setup */
 
-<body>
-<div class="flex">
-<div class="container_100" id="navbar">
-   <div class="container_inner">
+.dotted-list li {
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    position: relative;
+}
 
-               <navbar class="flex"> 
+.dotted-list li:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #ee5a21;
+    border-radius: 100%;
+    left: 0;
+    top: 9px;
+}
 
-               <div class="flex-row">
-                  <div class="mktoText" id="navlogo" mktoName="Logo">
-                    <a href="#">
-                     <img class="logowidthl" alt="logo" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/MAC-Logo-194.png" border="0">
-                     </a>
-                  
-                  </div>
-                  <div class="mktoText" id="navbadge" mktoName="Nav Badge">
-                  
-                     <a href="#">
-                     <img class="nav-badge" alt="logo" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hubspot_11022_badge.png" border="0">
-                     </a>
-                  </div>
-               </div>
-                     <ul class="flex list-style-none">
-                        <li><a href="#">Testemonials</a></li>
-                        <li><a href="">Case Studies</a></li>
-                        <li><a href="">Book a Call</a></li>
-                     </ul>
-                  </navbar>
-   </div>
-   </div>
-   <!-- Banner -->
-   <div class="container_100" id="banner">
-      <div class="container_inner">
-         <div class="left">
-         
-            <div class="mktoText headlinetext" id="bannerheadline" mktoName="Banner - Headline">
-               <h1>Marketing Automation is our passion and Hubspot
-is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s such as yourself.</h1>
-               <p>Marketing Automation is our passion and Hubspot is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s such as yourself.</p>
-               <p>Why MAC...</p>
-         
-            
-<ul class="list-style-none">
-<li>➔&nbsp; Calloborative sales process</li>
-<li>➔&nbsp; Experienced real client examples</li>
-<li>➔&nbsp; Sales and Marketing expertise</li>
-<li>➔&nbsp; Custom Solutions</li>
-<li>➔&nbsp; Client Onboarding & Implementation expertise</li>
-<li>➔&nbsp; We’ll bring Net New prospects</li>
-</ul>
+li {
+    line-height: 1.45;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.container_inner {
+    padding: 0 20px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
-         </div>
-         </div>
-         <div class="right">
-           <div class="mktoText" id="bannerrightframe" mktoName="Banner - Right Frame">
-       
+/* end of general setup */
 
-       <!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marketing-automation-canada'});return false;"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/calendlyscreenshot.png" alt="calendly placeholder" /></a>
-<!-- Calendly link widget end -->
 
-           </div>
-         </div>
-         <div class="mktoText flex-row" id="centertextcopy" mktoName="Center Text - Copy">
-               <h3>Let’s GROW and HELP each other!</h3>
+/* navbar */
+
+#navbar {
+    background-color: #124559;
+}
+
+navbar .flex-row {
+    align-items: center;
+}
+
+navbar,
+navbar ul {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+navbar ul {
+    gap: 1.5rem;
+}
+
+#navlogo {
+    margin-right: 3rem;
+    height: 80px;
+    min-height: 80px;
+}
+
+#navbadge {
+    /* height: 80px; */
+    min-height: 80px;
+    padding: 12px;
+    max-width: 130px;
+}
+
+navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+navbar img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+
+/* end of navbar */
+
+#imgleft2 .right {
+    margin-left: 0%;
+    margin-right: 4%;
+}
+
+
+/* banner */
+
+#banner {
+    position: relative;
+}
+
+#banner .container_inner {
+    padding-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#banner .left,
+#banner .right {
+    flex: 1 0 400px;
+}
+
+#banner .right,
+#banner .left {
+    position: relative;
+    z-index: 1;
+}
+
+#banner .right {
+    cursor: pointer;
+}
+
+.elementor-shape {
+    transform: rotate(180deg);
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    width: 100%;
+}
+
+.elementor-shape svg {
+    height: calc(11vw + 10px);
+    transform: translateX(-50%) rotateY(180deg);
+    fill: #FCB344;
+    width: 100%;
+    z-index: -1;
+    width: calc(100% + 1.3px);
+    position: relative;
+    left: 50%;
+}
+
+
+/* end of banner */
+
+
+/* centerred text */
+
+#centertextcopy,
+#centertextcopy-img {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#centertext h3,
+#centertext h3,
+#centertext2 h2,
+#centertext2 h2 {
+    margin: 0 2vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#centertextcopy {
+    margin-bottom: 2rem;
+}
+
+#centertextcopy:before,
+#centertextcopy:after {
+    content: '';
+    height: 0.5px;
+    background-color: #ffffff;
+    flex-grow: 1;
+}
+
+#centertext img {
+    width: 100px;
+}
+
+
+/* end of centerred text */
+
+.imgrightheadline {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.imgrightheadline h2 {
+    margin: 0 2vw;
+}
+
+.imgrightheadline:before {
+    content: '';
+    height: 0.5px;
+    background-color: #1F203E;
+    flex-grow: 1;
+}
+
+.imgrightheadline:after {
+    content: '';
+    height: 0.5px;
+    background-color: #1F203E;
+    flex-grow: 1;
+}
+
+
+/* center text section 2 */
+
+#centertext2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+#centertext2 li {
+    width: 20%;
+    border-top: solid 7px #1F203E;
+    background-color: #124559;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 300px;
+}
+
+
+/* end  center text section 2 */
+
+#imgrightheadline {
+    width: 100%;
+}
+
+#imgleft #imgrightheadline:after {
+    width: 10vw !important;
+}
+
+#imgleft #imgrightheadline:before {
+    width: 10vw !important;
+}
+
+
+/* carousel */
+    </style>
+    <style>
+    .fa-chevron-right,
+.fa-chevron-left {
+    cursor: pointer;
+}
+
+#carouselsection .carousel-container {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#carouselsection h2 {
+    color: #1b988a;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 30px;
+    padding-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    letter-spacing: unset;
+    text-transform: unset;
+}
+
+
+/* carousel */
+
+.slideshow-container .col1 {
+    position: relative;
+    width: 30%;
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.slideshow-container .col2 {
+    width: 70%;
+    height: 40vh;
+    background-color: #ffffff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.g2-quotes {
+    position: absolute;
+    top: 0;
+    z-index: 90;
+    max-width: 210px;
+}
+
+.robot-image {
+    position: absolute;
+    z-index: 100;
+    bottom: -5rem;
+    max-width: 243px;
+    left: 1.75rem;
+}
+
+.g2-logo {
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+}
+
+
+/* stars */
+
+.slideshow-container .elementskit-stars {
+    padding: 0;
+    gap: 0.45rem;
+    margin-top: 2.5rem;
+}
+
+.slideshow-container .elementskit-stars i {
+    color: #f9b348;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1020px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: -4rem !important;
+}
+
+.prev {
+    left: -4rem !important;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    padding-right: 2rem;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4 pos
+    }
+    to {
+        opacity: 1
+    }
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <div class="container_100" id="navbar">
+        <div class="container_inner">
+
+          <navbar class="flex"> 
+
+            <div class="flex-row">
+              <div class="mktoText" id="navlogo" mktoName="Logo">
+                <a href="#">
+                  <img class="logowidthl" alt="logo" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/MAC-Logo-194.png" border="0">
+                </a>
+
+              </div>
+              <div class="mktoText" id="navbadge" mktoName="Nav Badge">
+
+                <a href="#">
+                  <img class="nav-badge" alt="logo" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hubspot_11022_badge.png" border="0">
+                </a>
+              </div>
             </div>
-            <div class="mktoText flex-row" id="centertextcopy-img" mktoName="Center Text - Image">
-            <img class="bannerimg" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hubspot_112022_3.png" alt="hubspot box"/>
-            </div>
-         <div class="elementor-shape elementor-shape-bottom" data-negative="false">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-	<path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z"></path>
-</svg>		</div>
+            <ul class="flex list-style-none">
+              <li><a href="#">Testemonials</a></li>
+              <li><a href="">Case Studies</a></li>
+              <li><a href="">Book a Call</a></li>
+            </ul>
+          </navbar>
+        </div>
       </div>
-      
-   </div>
-   <!-- END Banner -->
-   <!-- Form/Text -->
-   <div class="container_100" id="formtext">
-      <div class="container_inner section">
-         <div class="mktoText left" id="formtextcopy" mktoName="Form/Text - Copy">
+      <!-- Banner -->
+      <div class="container_100" id="banner">
+        <div class="container_inner">
+          <div class="left">
+
+            <div class="mktoText headlinetext" id="bannerheadline" mktoName="Banner - Headline">
+              <h1>Marketing Automation is our passion and Hubspot
+                is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s such as yourself.</h1>
+              <p>Marketing Automation is our passion and Hubspot is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s such as yourself.</p>
+              <p>Why MAC...</p>
+
+
+              <ul class="list-style-none">
+                <li>➔&nbsp; Calloborative sales process</li>
+                <li>➔&nbsp; Experienced real client examples</li>
+                <li>➔&nbsp; Sales and Marketing expertise</li>
+                <li>➔&nbsp; Custom Solutions</li>
+                <li>➔&nbsp; Client Onboarding & Implementation expertise</li>
+                <li>➔&nbsp; We’ll bring Net New prospects</li>
+              </ul>
+
+
+            </div>
+          </div>
+          <div class="right">
+            <div class="mktoText" id="bannerrightframe" mktoName="Banner - Right Frame">
+
+
+              <!-- Calendly link widget begin -->
+              <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+              <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+              <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/marketing-automation-canada'});return false;"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/calendlyscreenshot.png" alt="calendly placeholder" /></a>
+              <!-- Calendly link widget end -->
+
+            </div>
+          </div>
+          <div class="mktoText flex-row" id="centertextcopy" mktoName="Center Text - Copy">
+            <h3>Let’s GROW and HELP each other!</h3>
+          </div>
+          <div class="mktoText flex-row" id="centertextcopy-img" mktoName="Center Text - Image">
+            <img class="bannerimg" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hubspot_112022_3.png" alt="hubspot box"/>
+          </div>
+          <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+              <path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z"></path>
+            </svg>		</div>
+        </div>
+
+      </div>
+      <!-- END Banner -->
+      <!-- Form/Text -->
+      <div class="container_100" id="formtext">
+        <div class="container_inner section">
+          <div class="mktoText left" id="formtextcopy" mktoName="Form/Text - Copy">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
             <ul>
-               <li>Fusce vel nisi vel velit finibus congue.</li>
-               <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
-               <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi cu.</li>
+              <li>Fusce vel nisi vel velit finibus congue.</li>
+              <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
+              <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi cu.</li>
             </ul>
-         </div>
-         <div class="right" id="form">
+          </div>
+          <div class="right" id="form">
             <div class="mktoText" id="formheadline" mktoName="Form/Text - Form Headline">
               <h2>Form Headline</h2>
-           </div>
+            </div>
             <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form"></div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Form/Text -->
-   <!-- Three Column -->
-   <div class="container_100" id="threecol">
-      <div class="container_inner section">
-         <div class="mktoText center" id="threecoltextmain" mktoName="Three Col - Main Copy">
+      <!-- END Form/Text -->
+      <!-- Three Column -->
+      <div class="container_100" id="threecol">
+        <div class="container_inner section">
+          <div class="mktoText center" id="threecoltextmain" mktoName="Three Col - Main Copy">
             <h2>Lorem Ipsum Dolor Sit Amet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
-         </div>
-         <div class="threecolumns">
+          </div>
+          <div class="threecolumns">
             <div class="col33">
-               <div class="threecolimg">
-                  <div class="mktoImg" id="threecolImg1" mktoName="Three Col - Col 1 Image">
-                     <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
-                  </div>
-                  <div class="mktoText" id="threecoltext1" mktoName="Three Col - Col 1 Copy">
-                     <h3>Heading</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-                  </div>
-                  <div class="mktoText button" id="threecolbtn1" mktoName="Three Col - Col 1 Button"><a href="#">CTA Button</a>
-                  </div>
-               </div>
+              <div class="threecolimg">
+                <div class="mktoImg" id="threecolImg1" mktoName="Three Col - Col 1 Image">
+                  <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+                </div>
+                <div class="mktoText" id="threecoltext1" mktoName="Three Col - Col 1 Copy">
+                  <h3>Heading</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+                </div>
+                <div class="mktoText button" id="threecolbtn1" mktoName="Three Col - Col 1 Button"><a href="#">CTA Button</a>
+                </div>
+              </div>
             </div>
             <div class="mid"></div>
             <div class="col33">
-               <div class="mktoImg" id="threecolImg2" mktoName="Three Col - Col 2 Image">
-                  <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
-               </div>
-               <div class="mktoText" id="threecoltext2" mktoName="Three Col - Col 2 Copy">
-                  <h3>Heading</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-               </div>
-               <div class="mktoText button" id="threecolbtn2" mktoName="Three Col - Col 2 Button"><a href="#">CTA Button</a>
-               </div>
+              <div class="mktoImg" id="threecolImg2" mktoName="Three Col - Col 2 Image">
+                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+              </div>
+              <div class="mktoText" id="threecoltext2" mktoName="Three Col - Col 2 Copy">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+              </div>
+              <div class="mktoText button" id="threecolbtn2" mktoName="Three Col - Col 2 Button"><a href="#">CTA Button</a>
+              </div>
             </div>
             <div class="mid"></div>
             <div class="col33">
-               <div class="mktoImg" id="threecolImg3" mktoName="Three Col - Col 3 Image">
-                  <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
-               </div>
-               <div class="mktoText" id="threecoltext3" mktoName="Three Col - Col 3 Copy">
-                  <h3>Heading</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-               </div>
-               <div class="mktoText button" id="threecolbtn3" mktoName="Three Col - Col 3 Button"><a href="#">CTA Button</a>
-               </div>
+              <div class="mktoImg" id="threecolImg3" mktoName="Three Col - Col 3 Image">
+                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+              </div>
+              <div class="mktoText" id="threecoltext3" mktoName="Three Col - Col 3 Copy">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+              </div>
+              <div class="mktoText button" id="threecolbtn3" mktoName="Three Col - Col 3 Button"><a href="#">CTA Button</a>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Three Column -->
+      <!-- END Three Column -->
 
-   <!-- Image Right 1 -->
-   <div class="container_100" id="imgright">
-      <div class="container_inner section" id="flex">
-      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+      <!-- Image Right 1 -->
+      <div class="container_100" id="imgright">
+        <div class="container_inner section" id="flex">
+          <div class="mktoText imgrightheadline" id="imgrightheadline" mktoName="Image Right - Headline">
             <h2>Who is MAC?</h2>
-            </div>
-         <div class="left">
-         
+          </div>
+          <div class="left">
+
             <div class="mktoText" id="imgrighttext" mktoName="Image Right - Copy">
-              
-               <h3><strong>
-                  12 year old agency with Headquarters in Toronto, Canada<br>
-                   Servicing remote clients all over the world<br>
-                  Strategic Sales, Marketing, Service + Rev Ops Consultants<br>
-                   In house design + development team
-               </strong></h3>
+
+              <h3><strong>
+                12 year old agency with Headquarters in Toronto, Canada<br>
+                Servicing remote clients all over the world<br>
+                Strategic Sales, Marketing, Service + Rev Ops Consultants<br>
+                In house design + development team
+                </strong></h3>
 
             </div>
-          
-         </div>
-         <div class="right">
+
+          </div>
+          <div class="right">
             <div class="mktoImg" id="imgrightimg" mktoName="Image Right - Image">
-               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/robot_conveyor_112022_2.png">
+              <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/robot_conveyor_112022_2.png">
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Image Right 1 -->
-   <!-- Center Text -->
-   <div class="container_100" id="centertext2">
-      <div class="container_inner section">
-    
-            <div class="mktoText flex-row" id="centertextcopy" mktoName="Center Text - Copy">
-               
-               <h2>Why introduct MAC to your clients?</h2>
-      
-            </div>
-            <div class="mktoText flex-row" id="bulletpoints" mktoName="Center Text - Copy">
-               
+      <!-- END Image Right 1 -->
+      <!-- Center Text -->
+      <div class="container_100" id="centertext2">
+        <div class="container_inner section">
+
+          <div class="mktoText flex-row imgrightheadline" id="centertextcopy2" mktoName="Center Text - Copy">
+
+            <h2>Why introduct MAC to your clients?</h2>
+
+          </div>
+          <div class="mktoText flex-row" id="bulletpoints" mktoName="Center Text - Copy">
+
             <ul>
-               <li>By the hour agency with one of the best retainer rates !</li>
-<li>Same day Sync/Demo/Implementation Calls </li>
-<li>Abilitiy to start new projects within 2 Days</li>
-<li>Hourly rates starting as low as $100 US/Hr </li>
-<li>One-Stop-Shop</li>
-<li>HubSpot Solutions Engineer for Connecting, planning, and project execution</li>
-<li>HubSpot Solutions Architect for ensuring quality, Strategic support </li>
-<li>Dedicated CRM Team</li>
+              <li>By the hour agency with one of the best retainer rates !</li>
+              <li>Same day Sync/Demo/Implementation Calls </li>
+              <li>Abilitiy to start new projects within 2 Days</li>
+              <li>Hourly rates starting as low as $100 US/Hr </li>
+              <li>One-Stop-Shop</li>
+              <li>HubSpot Solutions Engineer for Connecting, planning, and project execution</li>
+              <li>HubSpot Solutions Architect for ensuring quality, Strategic support </li>
+              <li>Dedicated CRM Team</li>
 
-               </ul>
-      
-            </div>
-     
-            
-            </div>
+            </ul>
+
+          </div>
+
+
+        </div>
       </div>
-   
-   <!-- END of Center Text  -->
 
-   <!-- Image Right 3 -->
-   <div class="container_100" id="imgright3">
-      <div class="container_inner section" id="flex">
-      <div class="mktoText" id="imgrightheadline" mktoName="Center Headline">
+      <!-- END of Center Text  -->
+
+      <!-- Image Right 3 -->
+      <div class="container_100" id="imgright3">
+        <div class="container_inner section" id="flex">
+          <div class="mktoText imgrightheadline" id="imgrightheadline2" mktoName="Center Headline">
             <h2>Our Intangibles</h2>
-            </div>
-        
-            <div class="mktoImg" id="imgrightimg3" mktoName="Image Right - Image">
-               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hero-img-pi.png">
-            </div>
+          </div>
 
-          
+          <div class="mktoImg" id="imgrightimg3" mktoName="Image Right - Image">
+            <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/hero-img-pi.png">
+          </div>
+
+
+        </div>
       </div>
-   </div>
-   <!-- END Image Right 1 -->
+      <!-- END Image Right 1 -->
 
 
-   <!-- Image Left 1 -->
-   <div class="container_100" id="imgleft">
-  
-      <div class="container_inner section flex-wrap">
-      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+      <!-- Image Left 1 -->
+      <div class="container_100" id="imgleft">
+
+        <div class="container_inner section flex-wrap">
+          <div class="mktoText imgrightheadline" id="imgrightheadline3" mktoName="Image Right - Headline">
             <h2>Hubspot/ Salesforce Integration.. This is in our Wheelhouse!</h2>
-            </div>
-         <div class="right">
+          </div>
+          <div class="right">
             <div class="mktoImg" id="imgleftimg" mktoName="Image Left - Image">
-            <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/sf_plus_husbpot.jpeg">
+              <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/sf_plus_husbpot.jpeg">
             </div>
-         </div>
-         <div class="left">
+          </div>
+          <div class="left">
             <div class="mktoText" id="imgLefttext" mktoName="Image Left - Copy">
-               <h2><strong>Why?</strong></h2>
+              <h2><strong>Why?</strong></h2>
               <p>With in-house certified Hubspot and Salesforce experts we’re the one stop agency that can help with all your client's Sales and Marketing needs. From implementations to Onboarding. Our strategic consultants can help improve sales and marketing alignment.</p>
-           
-         </div>
+
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-   </div>
-   <!-- END Image Left 1 -->
+      <!-- END Image Left 1 -->
 
 
-   <!-- Image Right 2 --> 
-   <div class="container_100" id="imgright2">
-      <div class="container_inner section" id="flex">
-      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
+      <!-- Image Right 2 --> 
+      <div class="container_100" id="imgright2">
+        <div class="container_inner section" id="flex">
+          <div class="mktoText imgrightheadline" id="imgrightheadline4" mktoName="Image Right - Headline">
             <h2>Custom Inbound Strategies to Grow their Business & Meet their Goals!</h2>
-            </div>
-         <div class="left">
-            <div class="mktoText" id="imgrighttext" mktoName="Image Right - Copy">
-<p>
-<ul class="list-style-none dotted-list">
-<li>Custom audit and strategy sessions</li>
-<li>Ads Management and Keyword Strategies</li>
-<li>Lead Generation Campaigns </li>
-<li>ABM Campaigns</li>
-<li>Retargeting Campaigns</li>
-<li>Upsell Campaigns</li>
-<li>Gated Content</li>
-<li>+More</li>
-</ul>
-</p>
-            </div>
-         </div>
-         <div class="right">
-            <div class="mktoImg" id="imgrightimg" mktoName="Image Right - Image">
-               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/image25 copy.png">
-            </div>
-         </div>
+          </div>
+          <div class="left">
+            <div class="mktoText" id="imgrighttext4" mktoName="Image Right - Copy">
+              <p>
+              <ul class="list-style-none dotted-list">
+                <li>Custom audit and strategy sessions</li>
+                <li>Ads Management and Keyword Strategies</li>
+                <li>Lead Generation Campaigns </li>
+                <li>ABM Campaigns</li>
+                <li>Retargeting Campaigns</li>
+                <li>Upsell Campaigns</li>
+                <li>Gated Content</li>
+                <li>+More</li>
+              </ul>
+              </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="mktoImg" id="imgrightimg5" mktoName="Image Right - Image">
+            <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/image25 copy.png">
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Image Right 2 -->
+    </div>
+    <!-- END Image Right 2 -->
 
-   <!-- Carousel Section -->
-   <div class="container_100" id="carouselsection">
+    <!-- Carousel Section -->
+    <div class="container_100" id="carouselsection">
       <div class="container_inner section">
- 
-<div class="slideshow-container">
-<div class="col1">
-   
-      <img class="robot-image" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/G2-Reviews-09.png" alt="review robot image" />
-      <img class="g2-quotes" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/G2-Reviews-07.png" alt="quotes" />
-      
-</div>
-<div class="col2">
-<img class="g2-logo" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/G2-Reviews-04.png" alt="quotes" />
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-                    <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
 
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>Knowledgeable, Great Service!
-                    </h2>
-                    <p>The MAC team came to the rescue! We didn't have an in-house Marketo expert, and I was definitely in over my head with a Marketo migration. Post-migration, we continue to leverage the team for day-to-day operations, CRM integration,
-                        marketing design/strategy, campaign development (build/test/deploy), and analyzing campaign performance. Highly recommend!</p><a href="https://www.g2.com/products/marketing-automation-canada/reviews/marketing-automation-canada-review-5332629"
-                        target="_blank">CONTINUE READING →</a>
-                    <p></p>
+        <div class="slideshow-container">
+          <div class="col1">
 
+            <img class="robot-image" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/G2-Reviews-09.png" alt="review robot image" />
+            <img class="g2-quotes" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/G2-Reviews-07.png" alt="quotes" />
 
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Tracy H</strong>
-                                <span class="elementskit-author-des">Sr. Content Strategist <br>Small-Business (50 or fewer emp.)</span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-d892475"></div>
-                </div>
-      </div>
-   
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-      <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>MAC team is an integral part of our automation strategy</h2>
-                    <p>What I enjoy most about working with the team at MAC is that they understand our business and feel like a part of the team. They discuss the scenario, best practices and various alternatives, all the while educating us on the platform.</p>
-                    <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3746716">CONTINUE READING →</a>
-                    <p></p>
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Samantha P</strong><br>
-                                <span class="elementskit-author-des">Marketing Manager <br> Medical Devices</span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-4e0662a"></div>
-                </div>
-      </div>
-   
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-      <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>Excellent support and dependable expertise from Marketing Automation Canada</h2>
-                    <p>Marketing Automation Canada helped us expand our usage of Marketo, building custom landing pages, a preference center, custom reports, data clean-up and more. They were also available to answer a plethora of questions as I worked to
-                        develop other aspects of the program.</p>
-                    <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3711525" target="_blank">CONTINUE READING →</a>
-                    <p></p>
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Bailey D</strong>
-                                <span class="elementskit-author-des">Senior Marketing Coordinator <br>Higher Education</span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-81bd85e"></div>
-                </div>
-      </div>
-   
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-      <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>Tailored Marketing...tailored for me</h2>
-                    <p>Loved the fact that I could connect with a consultant on a personal level, where they were able to understand my needs and intentions. This made the entire process much easier and effective.</p>
-                    <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3788532" target="_blank">CONTINUE READING →</a>
-                    <p></p>
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Alex B</strong>
-                                <span class="elementskit-author-des">Digital Marketing Specialist <br>Marketing and Advertising </span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-a997095"></div>
-                </div>
-      </div>
-   
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-      <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>Responsive and highly qualified consulting</h2>
-                    <p>What I enjoy most about working with the team at MAC is that they understand our business and feel like a part of the team. They discuss the scenario, best practices and various alternatives, all the while educating us on the platform.</p>
-                    <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3825863" target="_blank">CONTINUE READING →</a>
-                    <p></p>
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Emma C</strong>
-                                <span class="elementskit-author-des">General Manager Marketing</span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-354794a"></div>
-                </div>
-      </div>
-   
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-      <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>Excellent Marketo Support Partners</h2>
-                    <p>Very responsive, great attention to detail, easy to work with, excellent Marketo knowledge, caught other vendors errors before project was released to the public which was big, very reasonably priced and no retainer required.</p>
-                    <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3786565" target="_blank">CONTINUE READING →</a>
-                    <p></p>
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Marlaine H</strong>
-                                <span class="elementskit-author-des">Mid-Market(51-200 employees)</span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-1f8f5d4"></div>
-                </div>
-      </div>
-   
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-      <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>Lifesaver for my team</h2>
-                    <p>Not only is MAC responsive, but best in class with their advice and best practices for set up. However, they 100% work with clients to meet individual company needs and workflow. They listened to our needs, drafted a very detailed
-                        project management timeline and communicated with many moving parts/departments internally. And we had fun while we completed the project.
-                    </p>
-                    <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3724263" target="_blank">CONTINUE READING →</a>
-                    <p></p>
+          </div>
+          <div class="col2">
+            <img class="g2-logo" src="http://go.marketing-automation.ca/rs/217-NBW-905/images/G2-Reviews-04.png" alt="quotes" />
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>Knowledgeable, Great Service!
+                </h2>
+                <p>The MAC team came to the rescue! We didn't have an in-house Marketo expert, and I was definitely in over my head with a Marketo migration. Post-migration, we continue to leverage the team for day-to-day operations, CRM integration,
+                  marketing design/strategy, campaign development (build/test/deploy), and analyzing campaign performance. Highly recommend!</p><a href="https://www.g2.com/products/marketing-automation-canada/reviews/marketing-automation-canada-review-5332629"
+                                                                                                                                                   target="_blank">CONTINUE READING →</a>
+                <p></p>
 
 
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Manager/Operations in Information Technology and Services</strong>
-                                <span class="elementskit-author-des">Mid-Market(51-200 employees)</span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-83ca88c"></div>
-                </div>
-      </div>
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-      <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
-
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>Knowledgeable, Great Service!
-                    </h2>
-                    <p>The MAC team came to the rescue! We didn't have an in-house Marketo expert, and I was definitely in over my head with a Marketo migration. Post-migration, we continue to leverage the team for day-to-day operations, CRM integration,
-                        marketing design/strategy, campaign development (build/test/deploy), and analyzing campaign performance. Highly recommend!</p><a href="https://www.g2.com/products/marketing-automation-canada/reviews/marketing-automation-canada-review-5332629"
-                        target="_blank">CONTINUE READING →</a>
-                    <p></p>
-
-
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Tracy H</strong>
-                                <span class="elementskit-author-des">Sr. Content Strategist <br>Small-Business (50 or fewer emp.)</span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-d892475"></div>
-                </div>
-      </div>
-      <div class="mySlides fade">
-      <div class="elementskit-testimonial_card" style="background-image: url();">
-      <ul class="elementskit-stars list-style-none flex-row">
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                        <li><a><i class="fa fa-solid fa-star"></i></a></li>
-                    </ul>
-                    <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
-                    <h2>MAC team is an integral part of our automation strategy</h2>
-                    <p>What I enjoy most about working with the team at MAC is that they understand our business and feel like a part of the team. They discuss the scenario, best practices and various alternatives, all the while educating us on the platform.</p>
-                    <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3746716">CONTINUE READING →</a>
-                    <p></p>
-                    <span class="elementskit-profile-info">
-                                <strong class="elementskit-author-name">Samantha P</strong><br>
-                                <span class="elementskit-author-des">Marketing Manager <br> Medical Devices</span>
-                    </span>
-                    <div class="xs-overlay elementor-repeater-item-4e0662a"></div>
-                </div>
-      </div>
-   
-</div>
-   <a class="prev" onclick="plusSlides(-1)">❮</a>
-   <a class="next" onclick="plusSlides(1)">❯</a>
-   
-   </div>
-   <br>
-   
-
-         </div>
-      </div>
-   <!-- END of Carousel Section  --></div>
-
-
-
-   <!-- Image Left 2-->
-   <div class="container_100" id="imgleft2">
-      <div class="container_inner section">
-      <div class="mktoText" id="imgrightheadline" mktoName="Image Right - Headline">
-            <h2>Our Trajectory</h2>
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Tracy H</strong>
+                  <span class="elementskit-author-des">Sr. Content Strategist <br>Small-Business (50 or fewer emp.)</span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-d892475"></div>
+              </div>
             </div>
-         <div class="right">
-            <div class="mktoImg" id="imgleftimg" mktoName="Image Left - Image">
-               <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/path.jpeg">
+
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>MAC team is an integral part of our automation strategy</h2>
+                <p>What I enjoy most about working with the team at MAC is that they understand our business and feel like a part of the team. They discuss the scenario, best practices and various alternatives, all the while educating us on the platform.</p>
+                <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3746716">CONTINUE READING →</a>
+                <p></p>
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Samantha P</strong><br>
+                  <span class="elementskit-author-des">Marketing Manager <br> Medical Devices</span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-4e0662a"></div>
+              </div>
             </div>
-         </div>
-         <div class="left">
-            <div class="mktoText" id="imgLefttext" mktoName="Image Left - Copy">
-               <ul class="list-style-none dotted-list">
-<li>Custom audit and strategy sessions</li>
-<li>Founded date?</li>
-<li>Gold partner Date</li>
-<li>Platinum Partner Date</li> 
-</ul>
+
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>Excellent support and dependable expertise from Marketing Automation Canada</h2>
+                <p>Marketing Automation Canada helped us expand our usage of Marketo, building custom landing pages, a preference center, custom reports, data clean-up and more. They were also available to answer a plethora of questions as I worked to
+                  develop other aspects of the program.</p>
+                <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3711525" target="_blank">CONTINUE READING →</a>
+                <p></p>
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Bailey D</strong>
+                  <span class="elementskit-author-des">Senior Marketing Coordinator <br>Higher Education</span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-81bd85e"></div>
+              </div>
             </div>
-            
-         </div>
+
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>Tailored Marketing...tailored for me</h2>
+                <p>Loved the fact that I could connect with a consultant on a personal level, where they were able to understand my needs and intentions. This made the entire process much easier and effective.</p>
+                <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3788532" target="_blank">CONTINUE READING →</a>
+                <p></p>
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Alex B</strong>
+                  <span class="elementskit-author-des">Digital Marketing Specialist <br>Marketing and Advertising </span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-a997095"></div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>Responsive and highly qualified consulting</h2>
+                <p>What I enjoy most about working with the team at MAC is that they understand our business and feel like a part of the team. They discuss the scenario, best practices and various alternatives, all the while educating us on the platform.</p>
+                <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3825863" target="_blank">CONTINUE READING →</a>
+                <p></p>
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Emma C</strong>
+                  <span class="elementskit-author-des">General Manager Marketing</span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-354794a"></div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>Excellent Marketo Support Partners</h2>
+                <p>Very responsive, great attention to detail, easy to work with, excellent Marketo knowledge, caught other vendors errors before project was released to the public which was big, very reasonably priced and no retainer required.</p>
+                <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3786565" target="_blank">CONTINUE READING →</a>
+                <p></p>
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Marlaine H</strong>
+                  <span class="elementskit-author-des">Mid-Market(51-200 employees)</span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-1f8f5d4"></div>
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>Lifesaver for my team</h2>
+                <p>Not only is MAC responsive, but best in class with their advice and best practices for set up. However, they 100% work with clients to meet individual company needs and workflow. They listened to our needs, drafted a very detailed
+                  project management timeline and communicated with many moving parts/departments internally. And we had fun while we completed the project.
+                </p>
+                <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3724263" target="_blank">CONTINUE READING →</a>
+                <p></p>
+
+
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Manager/Operations in Information Technology and Services</strong>
+                  <span class="elementskit-author-des">Mid-Market(51-200 employees)</span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-83ca88c"></div>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>Knowledgeable, Great Service!
+                </h2>
+                <p>The MAC team came to the rescue! We didn't have an in-house Marketo expert, and I was definitely in over my head with a Marketo migration. Post-migration, we continue to leverage the team for day-to-day operations, CRM integration,
+                  marketing design/strategy, campaign development (build/test/deploy), and analyzing campaign performance. Highly recommend!</p><a href="https://www.g2.com/products/marketing-automation-canada/reviews/marketing-automation-canada-review-5332629"
+                                                                                                                                                   target="_blank">CONTINUE READING →</a>
+                <p></p>
+
+
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Tracy H</strong>
+                  <span class="elementskit-author-des">Sr. Content Strategist <br>Small-Business (50 or fewer emp.)</span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-d892475"></div>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="elementskit-testimonial_card" style="background-image: url();">
+                <ul class="elementskit-stars list-style-none flex-row">
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                  <li><a><i class="fa fa-solid fa-star"></i></a></li>
+                </ul>
+                <p class="elementskit-commentor-coment"><b>As reviewed on G2:</b></p>
+                <h2>MAC team is an integral part of our automation strategy</h2>
+                <p>What I enjoy most about working with the team at MAC is that they understand our business and feel like a part of the team. They discuss the scenario, best practices and various alternatives, all the while educating us on the platform.</p>
+                <a href="https://www.g2.com/products/marketing-automation-canada/reviews#survey-response-3746716">CONTINUE READING →</a>
+                <p></p>
+                <span class="elementskit-profile-info">
+                  <strong class="elementskit-author-name">Samantha P</strong><br>
+                  <span class="elementskit-author-des">Marketing Manager <br> Medical Devices</span>
+                </span>
+                <div class="xs-overlay elementor-repeater-item-4e0662a"></div>
+              </div>
+            </div>
+
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+
       </div>
-   </div>
-   <!-- END Image Left 2-->
-   
-   <!-- Two Columns -->
-   <div class="container_100" id="twocolicons">
-      <div class="container_inner section">
-         <div class="mktoText center" id="twocolmaintext" mktoName="Two Cols - Button">
-            <h2>Lorem Ipsum Dolor Sit Amet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
-         </div>
-         <div class="threecolumns">
-            <div class="col50">
-               <div class="threecolimg">
-                  <div class="mktoImg" id="twocolimg1" mktoName="Two Cols - Image 1"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
-               </div>
-               <div class="threecoltext">
-                  <div class="mktoText" id="twocoltext1" mktoName="Two Cols - Copy 1">
-                     <h3>Heading</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="mid"></div>
-            <div class="col50">
-               <div class="threecolimg">
-                  <div class="mktoImg" id="twocolimg2" mktoName="Two Cols - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
-               </div>
-               <div class="threecoltext">
-                  <div class="mktoText" id="twocoltext2" mktoName="Two Cols - Copy 2">
-                     <h3>Heading</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="button" id="center">
-            <div class="mktoText button" id="twocoltbtn" mktoName="Two Cols - Button"><a href="#">CTA Button</a>
-            </div>
-         </div>
+    </div>
+    <!-- END of Carousel Section  --></div>
+
+
+
+  <!-- Image Left 2-->
+  <div class="container_100" id="imgleft2">
+    <div class="container_inner section">
+      <div class="mktoText imgrightheadline" id="imgrightheadline5" mktoName="Image Right - Headline">
+        <h2>Our Trajectory</h2>
       </div>
-   </div>
-   <!-- END Two Columns -->
-   <!-- Video -->
-   <div class="container_100" id="video">
-      <div class="container_inner section">
-         <div class="left">
-            <div class="mktoText" id="videotext" mktoName="Video - Copy">
-               <h2>Lorem Ipsum Dolor Sit Amet</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
-               <ul>
-                  <li>Fusce vel nisi vel velit finibus congue.</li>
-                  <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
-                  <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi.</li>
-               </ul>
-            </div>
-         </div>
-         <div class="right">
-            <div class="videoWrapper videoWrapper169 js-videoWrapper">
-               <!-- YouTube iframe. -->
-               <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
-               <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
-               <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-               <!-- the poster frame - in the form of a button to make it keyboard accessible -->
-               <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter});">Play video</button>
-            </div>
-         </div>
+      <div class="right">
+        <div class="mktoImg" id="imgleftimg5" mktoName="Image Left - Image">
+          <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/path.jpeg">
+        </div>
       </div>
-   </div>
-   <!-- END Video -->
+      <div class="left">
+        <div class="mktoText" id="imgLefttext5" mktoName="Image Left - Copy">
+          <ul class="list-style-none dotted-list">
+            <li>Custom audit and strategy sessions</li>
+            <li>Founded date?</li>
+            <li>Gold partner Date</li>
+            <li>Platinum Partner Date</li> 
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- END Image Left 2-->
+
+  <!-- Two Columns -->
+  <div class="container_100" id="twocolicons">
+    <div class="container_inner section">
+      <div class="mktoText center" id="twocolmaintext" mktoName="Two Cols - Button">
+        <h2>Lorem Ipsum Dolor Sit Amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
+      </div>
+      <div class="threecolumns">
+        <div class="col50">
+          <div class="threecolimg">
+            <div class="mktoImg" id="twocolimg1" mktoName="Two Cols - Image 1"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
+          </div>
+          <div class="threecoltext">
+            <div class="mktoText" id="twocoltext1" mktoName="Two Cols - Copy 1">
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mid"></div>
+        <div class="col50">
+          <div class="threecolimg">
+            <div class="mktoImg" id="twocolimg2" mktoName="Two Cols - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
+          </div>
+          <div class="threecoltext">
+            <div class="mktoText" id="twocoltext2" mktoName="Two Cols - Copy 2">
+              <h3>Heading</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button" id="center">
+        <div class="mktoText button" id="twocoltbtn" mktoName="Two Cols - Button"><a href="#">CTA Button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Two Columns -->
+  <!-- Video -->
+  <div class="container_100" id="video">
+    <div class="container_inner section">
+      <div class="left">
+        <div class="mktoText" id="videotext" mktoName="Video - Copy">
+          <h2>Lorem Ipsum Dolor Sit Amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+          <ul>
+            <li>Fusce vel nisi vel velit finibus congue.</li>
+            <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
+            <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="videoWrapper videoWrapper169 js-videoWrapper">
+          <!-- YouTube iframe. -->
+          <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+          <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+          <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+          <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+          <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter});">Play video</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Video -->
   <!-- Bottom Form -->
   <div class="container_100" id="btmform">
     <div class="container_inner section">
@@ -1176,158 +1643,150 @@ is our jam! We’re ready to GROW our RELATIONSHIPS with awesome Hubspot AE’s 
     </div>
   </div>
   </div>
-  <!-- END Bottom Form -->
+<!-- END Bottom Form -->
 
-   <!-- Footer -->
-   <div class="container_100" id="footer">
-      <div class="container_inner section">
-         <div class="left logo">
-            <div class="mktoText" id="footerlogo" mktoName="Logo">
-              <a href="#">
-               <img class="logowidthl" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" border="0">
-               </a>
-            </div>
-            <div class="mktoText" id="footersocial" mktoName="Footer - Social">
-               <ul class="social-icons icon-circle list-unstyled list-inline">
-                  <li> <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-google-plus"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-youtube"></i></a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <div class="right">
-            <div class="threecolumns">
-               <div class="col33">
-                  <div class="mktoText" id="footercol1" mktoName="Footer - Links Col 1">
-                     <h4>Heading</h4>
-                     <ul>
-                        <li>
-                           <a href="#" target="blank">Link 1</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 2</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 3</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 4</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 5</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="mid"></div>
-               <div class="col33">
-                  <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
-                     <h4>Heading</h4>
-                     <ul>
-                        <li>
-                           <a href="#" target="blank">Link 1</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 2</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 3</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 4</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 5</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="mid"></div>
-               <div class="col33">
-                  <div class="mktoText" id="footercol3" mktoName="Footer - Links Col 3">
-                     <h4>Heading</h4>
-                     <ul>
-                        <li>
-                           <a href="#" target="blank">Link 1</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 2</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 3</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 4</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 5</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
+<!-- Footer -->
+<div class="container_100" id="footer">
+  <div class="container_inner section">
+    <div class="left logo">
+      <div class="mktoText" id="footerlogo" mktoName="Logo">
+        <a href="#">
+          <img class="logowidthl" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" border="0">
+        </a>
       </div>
-   </div>
-   <!-- END Footer -->
+      <div class="mktoText" id="footersocial" mktoName="Footer - Social">
+        <ul class="social-icons icon-circle list-unstyled list-inline">
+          <li> <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li> <a href="#"><i class="fa fa-google-plus"></i></a>
+          </li>
+          <li> <a href="#"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li> <a href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li> <a href="#"><i class="fa fa-pinterest"></i></a>
+          </li>
+          <li> <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li> <a href="#"><i class="fa fa-vimeo-square"></i></a>
+          </li>
+          <li> <a href="#"><i class="fa fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="threecolumns">
+        <div class="col33">
+          <div class="mktoText" id="footercol1" mktoName="Footer - Links Col 1">
+            <h4>Heading</h4>
+            <ul>
+              <li>
+                <a href="#" target="blank">Link 1</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 2</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 3</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 4</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 5</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mid"></div>
+        <div class="col33">
+          <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
+            <h4>Heading</h4>
+            <ul>
+              <li>
+                <a href="#" target="blank">Link 1</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 2</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 3</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 4</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 5</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mid"></div>
+        <div class="col33">
+          <div class="mktoText" id="footercol3" mktoName="Footer - Links Col 3">
+            <h4>Heading</h4>
+            <ul>
+              <li>
+                <a href="#" target="blank">Link 1</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 2</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 3</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 4</a>
+              </li>
+              <li>
+                <a href="#" target="blank">Link 5</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Footer -->
 
-	<script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
-	<script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
+<script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
+<script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
 
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
 </script>
 
-<script>
-document.querySelectorAll("iframe")[0].addEventListener('load', myfunc)
-
-function myfunc() {
-   alert('ya!')
-}
-</script>
 
 
 
-</script>
 </body>
 
 </html>
