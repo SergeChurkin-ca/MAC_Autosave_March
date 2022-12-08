@@ -574,6 +574,11 @@
       #speakers .column {
         flex-direction: column;
         text-align: center;
+        box-shadow: 30px 30px 70px rgb(25 25 25 / 10%);
+        border-radius: 10px;
+        background: #ffffff;
+        margin: 1rem;
+        padding: 1.25rem 0.2rem 0.5rem;
       }
       #speakers .column:nth-child(1) {
         display: ${show-speaker1};
@@ -595,7 +600,7 @@
       }
       #speakers .flex-row {
         display: grid !important;
-        grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
       }
       #speakers img {
         border-radius: ${speaker-border-rad}%;
