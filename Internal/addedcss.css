@@ -51,6 +51,10 @@ li {
     background-color: #124559;
 }
 
+navbar .flex-row {
+    align-items: center;
+}
+
 navbar,
 navbar ul {
     flex-direction: row !important;
@@ -70,9 +74,10 @@ navbar ul {
 }
 
 #navbadge {
-    height: 80px;
+    /* height: 80px; */
     min-height: 80px;
     padding: 12px;
+    max-width: 130px;
 }
 
 navbar a {
