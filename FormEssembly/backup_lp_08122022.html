@@ -12,14 +12,11 @@
     <link rel="icon" href="${faviconlink}">
 
     <!-- Show and Hide Meta Tags -->
-    <meta class="mktoBoolean" id="shownavbar" mktoName="Show Navbar?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showbanner-form" mktoName="Show Banner Form?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showspeakers" mktoName="Show Speakers Section?" default="true" true_value="flax" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="show-speaker1" mktoName="Show Speaker 1" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -29,11 +26,7 @@
     <meta class="mktoColor" id="bannergard2" mktoName="Banner - Gradient 2" default="#5b1ee2">
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
-    <meta class="mktoString" id="banner-padding-top" mktoName="Banner Padding Top" default="10">
-    <meta class="mktoString" id="banner-padding-bottom" mktoName="Banner Padding Bottom" default="30">
-    <meta class="mktoString" id="banner-form-bg" mktoName="Banner Form Background" default="#F8F9FC">
-    <meta class="mktoString" id="banner-form-margin-top" mktoName="Banner Form Margin Top (rem)" default="-6">
-    
+
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#002e54">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#8d9aa0">
@@ -78,13 +71,11 @@
 
     <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="30">
     <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="30">
-    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="20">
-    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="20">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
 
     <!-- Free-Text Section Styling -->
     <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
-
-    <meta class="mktoString" id="speaker-border-rad" mktoName="Speaker Image Border Radius %" default="50">  
 
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="60">
@@ -173,10 +164,7 @@
         display: -webkit-flex;
         display:flex;
       }
-      .flex-row {
-        display: flex;
-        flex-direction: row;
-      }
+
       .w50{
         width:48%;
       }
@@ -222,13 +210,13 @@
       }
       .form-container{
         min-height:20px;
-        text-align: center;
+
       }
 
       .mktoForm input[type="text"],
       .mktoForm input[type="url"], 
       .mktoForm input[type="email"], 
-      .mktoForm input[type="tel"],  
+      .mktoForm input[type="tel"], 
       .mktoForm input[type="number"], 
       .mktoForm input[type="date"], 
       .mktoForm textarea.mktoField, 
@@ -274,13 +262,12 @@
 
       #header .section{
         display:flex;
-        flex-direction:row;
-        justify-content:space-between;
+        flex-direction:column;
+        justify-content:center;
+        min-height:500px;
         position:relative;
         padding-top:${headerpaddingtop}px;
         padding-bottom:${headerpaddingbtm}px;
-        gap: 2rem;
-        align-items: center;
       }
       #header .logo-container{
         top:${sectionpaddingtb}px;
@@ -291,26 +278,8 @@
       #header .logo-container img{
         width:${toplogowidth}px;
       }
-
-      #header .column:nth-child(1) {
-        width: fit-content;
-        max-width: 100%;
-        height: fit-content;
-        width: 55%;
-        
-      }
-      #header .column:nth-child(2) {
-        display:${showbanner-form};
-        width: 40%;
-        height: fit-content;
-        margin-top: ${banner-form-margin-top}rem;
-        background-color: ${banner-form-bg};
-        padding: 2rem;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      }
-      navbar {
-        display:${shownavbar};
+      #brand{
+        display:${showtoplogo-1};
       }
       #brand .logo-container{
         top:${sectionpaddingtb}px;
@@ -321,8 +290,8 @@
         width:${toplogowidth}px;
       }
       #header #bannertext{
-        padding-top:${banner-padding-top}px;
-        padding-bottom:${banner-padding-bottom}px;
+        padding-top:80px;
+        padding-bottom:30px;
       }
 
       #header h1 {
@@ -393,15 +362,11 @@
         font-size: ${formheadlinefontsize}px !important;
         font-family: ${fontfamily};
       }
-      #form1 {
-         width: 100% !important;
-      }
       form.mktoForm{
         width:99% !important;
         max-width:700px !important;
         margin: 0 auto !important;
-        font-family:${fontfamily};
-       
+        ${fontfamily}
       }
       .mktoForm .mktoGutter{
         width:0 !important;
@@ -545,25 +510,6 @@
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
-      #speakers {
-        display:${showspeakers};
-      }
- 
-      #speakers .column {
-        flex-direction: column;
-        text-align: center;
-      }
-      #speakers .column:nth-child(1) {
-        display: ${show-speaker1};
-      }
-      #speakers .flex-row {
-        display: grid !important;
-        grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
-      }
-      #speakers img {
-        border-radius: ${speaker-border-rad}%;
-        margin-bottom: 1rem;
-      }
       #footer{
         display:${showfooter};
         background-color:${footerbgclr};
@@ -696,15 +642,6 @@
         margin-top: 2.5rem;
       }
       @media (max-width: 900px) {
-        #header .flex-row {
-          flex-wrap: wrap !important;
-        }
-        #header .column {
-          width: 100% !important;
-        }
-        #header .column:nth-child(2) {
-          margin-top: 1rem !important;
-        }
         .row1 {
           flex-direction: column;
           align-content: center;
@@ -752,9 +689,11 @@
         .w50{
           width:100%;
         }
-        .section {
+        .section, #header .section{
           width:90%;
           padding:40px 0;
+          padding-top:40px;
+          padding-bottom:40px;
         }
         #brand .logo-container{
           top:40px;
@@ -845,42 +784,32 @@
     </style>
   </head>
   <body>
-    <navbar id="brand">
+    <header id="brand">
       <div class="section">
-
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
             <a href="https://www.formassembly.com/"><img src="https://go.formassembly.com/rs/794-XNU-091/images/logo_color-2022.png" alt="logo"></a>
           </div>
         </div>
       </div>
-    </navbar>
-
+    </header>
     <div id="header">
-      <div class="section flex-row">
-        <div class="column">
-          <div class="logo-container">
-            <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
-              <a href="https://www.formassembly.com/"><img src="https://go.formassembly.com/rs/794-XNU-091/images/logo-new-white-2022.png" alt="logo"></a>
-            </div>
-          </div>
-          <div class="mktoText" id="bannertext" mktoName="Banner - Text">
-            <h1>
-              Lorem Ipsum
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            </p>
-          </div>
-          
-                </div>
-                <div class="column">
-                <div class="mktoForm" id="form1" mktoName="Form">
-          <script src="//go.formassembly.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1122"></form> <script>MktoForms2.loadForm("//go.formassembly.com", "794-XNU-091", 1122);</script>
+      <div class="section">
+        <div class="logo-container">
+          <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
+            <a href="https://www.formassembly.com/"><img src="https://go.formassembly.com/rs/794-XNU-091/images/logo-new-white-2022.png" alt="logo"></a>
           </div>
         </div>
+        <div class="mktoText" id="bannertext" mktoName="Banner - Text">
+          <h1>
+            Lorem Ipsum
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
         </div>
-       
+
+      </div>
     </div>
 
 
@@ -932,88 +861,16 @@
 
         <div class="form-container w100">
           <div class="mktoText" id="formheadline" mktoName="Form - Headline">
-            <h2  class="bold">Embedded Code Headline</h2>
+            <h2  class="bold">Form Headline</h2>
           </div>
-        <div class="mktoText" id="freetext-img" mktoName="Embedded Code Element">
-          <img src="https://dummyimage.com/600x400/b1c3f5/fff" alt="image">
+          <div class="mktoForm" id="form1" mktoName="Form">
+
           </div>
         </div>
 
       </div>
     </div>
 
-<div id="speakers">
-<div class="section flex-row">
-
-<div class="column">
-<div class="mktoText" id="speaker-img1" mktoName="Speaker 1 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt1" mktoName="Speaker 1 txt">
-  <h4>Speaker One</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
-
-<div class="column">
-<div class="mktoText" id="speaker-img2" mktoName="Speaker 2 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt2" mktoName="Speaker 2 txt">
-  <h4>Speaker Twi</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
-
-<div class="column">
-<div class="mktoText" id="speaker-img3" mktoName="Speaker 3 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt3" mktoName="Speaker 3 txt">
-  <h4>Speaker Three</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
-
-<div class="column">
-<div class="mktoText" id="speaker-img4" mktoName="Speaker 4 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt4" mktoName="Speaker 4 txt">
-  <h4>Speaker Four</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
-
-<div class="column">
-<div class="mktoText" id="speaker-img5" mktoName="Speaker 5 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt5" mktoName="Speaker 5 txt">
-  <h4>Speaker Five</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
-
-<div class="column">
-<div class="mktoText" id="speaker-img6" mktoName="Speaker 6 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt6" mktoName="Speaker 6 txt">
-  <h4>Speaker Six</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
-
-
-</div>
-</div>
 
     <footer id="footer">
       <div class="footer-container section flex">
