@@ -1,0 +1,103 @@
+/* typography */
+
+
+/*
+
+h1 - banner
+h2 - section headers
+h3 - center text - smaller
+h4 - clients logos
+h4 - carousel cards headers
+
+*/
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70.8px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 43.5px;
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+h5 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.body-container::after {
+    background-color: #F7EBF3 !important;
+}
+
+
+/* general setup */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    border: solid 5px pink;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    border: solid 1px red;
+    width: 50%;
+}
+
+
+/* partners logos */
+
+.partnersicons h4 {
+    text-align: right;
+}
+
+.partnersicons .grid-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.5rem;
+    /* border: solid 1px red; */
+}
+
+.partnersicons .img-container {
+    margin: 1rem;
+    /* border: solid 1px red; */
+    /* width: calc((100% / 7)); */
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.partnersicons img {
+    max-width: 100px;
+    max-height: 35px;
+    object-fit: contain;
+}
+
+
+/* end of partenrs logos */
