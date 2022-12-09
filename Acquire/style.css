@@ -20,7 +20,7 @@ h1 {
 h2 {
     font-size: 48px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.25;
 }
 
 h3 {
@@ -40,6 +40,54 @@ h5 {
     font-weight: 700;
     line-height: 45px;
 }
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.section2 p {
+    font-size: 16px;
+    line-height: 1.83;
+}
+
+.section3 p,
+.section4 p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.section4 h2 {
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+.section6 h2 {
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+.section7 h2 {
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+.section8 h2 {
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+.section9 h2 {
+    font-size: 54px;
+    line-height: 1.2;
+}
+
+.bannerform p {
+    line-height: 1.9;
+}
+
+
+/* end of typography */
 
 .body-container::after {
     background-color: #F7EBF3 !important;
@@ -69,7 +117,7 @@ section {
 }
 
 
-/* partners logos */
+/* Section 1 partners logos */
 
 .partnersicons h4 {
     text-align: right;
@@ -100,4 +148,31 @@ section {
 }
 
 
-/* end of partenrs logos */
+/* end of Section 1 partenrs logos */
+
+
+/*  Section 2 center text*/
+
+.section2 {
+    align-items: center;
+    text-align: center;
+}
+
+.section2 img {
+    max-width: 100px;
+    height: auto;
+}
+
+
+/*  end of Section 2 center text*/
+
+
+/* Section 9 center cta */
+
+.section9 {
+    align-items: center;
+    text-align: center;
+}
+
+
+/* end of Section 9 center cta */
