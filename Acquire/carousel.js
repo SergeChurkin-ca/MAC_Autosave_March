@@ -5,16 +5,14 @@ let owlStageContainer = document.querySelectorAll('.owl-stage')[0]
 let total = 0
 
 function carousleNext() {
-    total -= 200
+    total -= 296
 
-    owlStageContainer.style = `transform: translate3d(calc(${total -1477}px), 0px, 0px); transition: all 0.25s ease 0s;`
+    owlStageContainer.style = `transform: translate3d(calc(${total - 0 }px), 0px, 0px); transition: all 0.25s ease 0s;`
 }
 
 
 
-
-
 function carouslePrev() {
-
-    owlStageContainer.style = "transform: translate3d(-1077px, 0px, 0px); transition: all 0.25s ease 0s;"
+    total += 296
+    owlStageContainer.style = `transform: translate3d(calc(${total - 0}px), 0px, 0px); transition: all 0.25s ease 0s;`
 }
