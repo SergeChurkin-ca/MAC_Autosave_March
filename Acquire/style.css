@@ -1,5 +1,9 @@
 /* typography */
 
+* {
+    font-family: "Poppins", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
 
 /*
 
@@ -82,6 +86,10 @@ p {
     line-height: 1.2;
 }
 
+.mktoForm {
+    font-family: "Poppins", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
 .bannerform p {
     line-height: 1.9;
 }
@@ -106,7 +114,7 @@ p {
 }
 
 section {
-    border: solid 5px pink;
+    /* border: solid 5px pink; */
     flex-direction: row;
     justify-content: space-between;
 }
@@ -115,6 +123,41 @@ section {
     border: solid 1px red;
     width: 50%;
 }
+
+
+/* banner  */
+
+.bannerform {
+    margin: 3rem auto 3rem;
+}
+
+.bannerform .column {
+    width: 40%;
+}
+
+.bannerform .column:nth-child(2) {
+    border-radius: 8px;
+    box-shadow: 0 4px 22px 0 rgb(124 124 124 / 25%);
+    background-color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    padding-bottom: 2.5rem;
+}
+
+.bannerform .mktoForm {
+    width: auto !important;
+}
+
+.bannerform .mktoButtonRow {
+    margin-top: 2rem !important;
+}
+
+.mktoButtonWrap.mktoSimple::before {
+    display: none !important;
+}
+
+
+/* banner  */
 
 
 /* Section 1 partners logos */
@@ -158,8 +201,8 @@ section {
     text-align: center;
 }
 
-.section2 img {
-    max-width: 100px;
+.section2 .icon {
+    max-width: 100px !important;
     height: auto;
 }
 
@@ -176,3 +219,25 @@ section {
 
 
 /* end of Section 9 center cta */
+
+
+/* section 10 testimonials */
+
+.section10 {
+    margin-bottom: 3rem;
+}
+
+
+/* end of section 10 testimonials */
+
+
+/* media queries */
+
+@media (max-width: 960px) {
+    .bannerform {
+        flex-direction: column;
+    }
+    .bannerform .column {
+        width: 100%;
+    }
+}

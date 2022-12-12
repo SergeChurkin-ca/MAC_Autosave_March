@@ -99,12 +99,6 @@ html body .owl-carousel .owl-nav .disabled {
     color: #000
 }
 
-.owl-stage {
-    display: flex;
-    box-sizing: border-box;
-    width: 100vw !important;
-}
-
 .owl-stage .owl-item {
     padding: 0px 25px;
     border-radius: 0px;
@@ -125,7 +119,7 @@ html body .owl-carousel .owl-nav .disabled {
 .testimonialIris .owl-prev {
     position: absolute;
     top: 50%;
-    left: -80px;
+    left: 30px;
     background: url(https://acquire.io/wp-content/themes/acquire/assets/images/iris/svg/previous-btn.svg) no-repeat !important;
     height: 43px;
     width: 22px
@@ -134,8 +128,9 @@ html body .owl-carousel .owl-nav .disabled {
 .testimonialIris .owl-next {
     position: absolute;
     top: 50%;
-    right: -80px;
-    background: url(https://acquire.io/wp-content/themes/acquire/assets/images/iris/svg/next-btn.svg) no-repeat !important;
+    right: 30px;
+    background: url(https://acquire.io/wp-content/themes/acquire/assets/images/iris/svg/previous-btn.svg) no-repeat !important;
+    transform: scaleX(-1);
     height: 43px;
     width: 22px
 }
@@ -166,7 +161,8 @@ html body .owl-carousel .owl-nav .disabled {
 .testiIcon {
     margin: auto;
     display: block;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    max-width: 125px !important;
 }
 
 @media(max-width:1600px) {
@@ -601,10 +597,6 @@ body {
     float: unset !important
 }
 
-body {
-    font-family: "Poppins", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important
-}
-
 sup {
     top: -.5em;
     position: relative;
@@ -648,16 +640,6 @@ p:empty,
 span:empty,
 span:blank {
     display: none !important
-}
-
-h1,
-h1 span {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1.18;
-    padding: 0 0 30px 0;
-    color: #000;
-    font-family: "Poppins", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important
 }
 
 @media screen and (max-width:1140px) {
@@ -1147,7 +1129,7 @@ button:hover,
     min-height: 1px;
     float: left;
     -webkit-backface-visibility: hidden;
-    -webkit-touch-callout: none
+    -webkit-touch-callout: none;
 }
 
 .owl-carousel .owl-item img {
@@ -1603,6 +1585,72 @@ button:hover,
     width: 100%
 }
 
+.owl-stage {
+    display: flex;
+    box-sizing: border-box;
+    /* width: max-content !important; */
+}
+
 .owl-item {
-    width: 296px !important;
+    /* width: 290px !important; */
+    /* border: solid 1px pink; */
+}
+
+
+/* cornet decorations */
+
+.triangle-top.white-top-angle {
+    border-color: #fff transparent transparent transparent;
+    width: 0;
+    height: 0;
+    border-width: 140px 140px 0 0;
+    border-style: solid;
+    position: absolute;
+    z-index: 0;
+    left: -20px;
+    top: -20px;
+}
+
+.triangle-top:after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 179px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    left: 54px;
+    background: transparent;
+    top: -96px;
+    box-shadow: -2px -6px 5px -7px rgb(0 0 0 / 18%);
+}
+
+.triangle-bottom {
+    width: 0;
+    height: 0;
+    border-width: 0 0 140px 140px;
+    border-color: transparent #fff #fff transparent;
+    border-style: solid;
+    position: absolute;
+    z-index: 0;
+    right: -20px;
+    bottom: -20px;
+}
+
+.triangle-bottom:after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 155px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    right: 24px;
+    background: transparent;
+    top: -121px;
+    box-shadow: 6px 0px 2px -5px rgb(0 0 0 / 18%);
 }
