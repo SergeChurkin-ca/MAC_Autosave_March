@@ -34,13 +34,15 @@
     <meta class="mktoColor" id="bannergard2" mktoName="Banner - Gradient 2" default="#5b1ee2">
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
+    <meta class="mktoString" id="banner-form-col-width" mktoName="Banner Form Column With (%)" default="60">
     <meta class="mktoString" id="banner-padding-top" mktoName="Banner Padding Top" default="10">
     <meta class="mktoString" id="banner-padding-bottom" mktoName="Banner Padding Bottom" default="30">
     <meta class="mktoString" id="banner-form-bg" mktoName="Banner Form Background" default="#F8F9FC">
-    <meta class="mktoString" id="banner-form-margin-top" mktoName="Banner Form Margin Top (rem)" default="-6">
 
-    <meta class="mktoBoolean" id="align-banner" mktoName="Align Banner Middle?" default="true" true_value="center" false_value="flex-start" false_value_name="Top" true_value_name="Middle">
+    <meta class="mktoBoolean" id="formcolumn" mktoName="Form 1 Column?" default="false" true_value="100%" false_value="calc((100% / 2) - 1.5rem)" false_value_name="2 Columns" true_value_name="1 Column"></meta>  
     
+    <meta class="mktoBoolean" id="align-banner" mktoName="Align Banner Middle?" default="true" true_value="center" false_value="flex-start" false_value_name="Top" true_value_name="Middle">
+
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#002e54">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#8d9aa0">
@@ -53,7 +55,7 @@
 
     <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#F8F9FC">
     <meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="#F8F9FC">
-    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#0a253f">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#6D7C8C">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#000000">
     <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#1e8458">
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
@@ -87,8 +89,8 @@
 
     <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="30">
     <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="30">
-    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="20">
-    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="20">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="50">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="50">
 
     <!-- Free-Text Section Styling -->
     <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
@@ -143,7 +145,7 @@
         font-family: ${fontfamily}, sans-serif !important;
         font-weight:900;
       }
-      
+
       #header p {
         font-size: ${header-p-fontsize}px;
       }
@@ -310,13 +312,12 @@
         max-width: 100%;
         height: fit-content;
         width: 55%;
-        
+
       }
       #header .column:nth-child(2) {
         display:${showbanner-form};
-        width: 40%;
+        width: ${banner-form-col-width}%;
         height: fit-content;
-        margin-top: ${banner-form-margin-top}rem;
         background-color: ${banner-form-bg};
         padding: 2rem;
         border-radius: 10px;
@@ -412,14 +413,15 @@
         font-family: ${fontfamily};
       }
       #form1 {
-         width: 100% !important;
+        width: 100% !important;
       }
       form.mktoForm{
         width:99% !important;
         max-width:700px !important;
         margin: 0 auto !important;
         font-family:${fontfamily};
-       
+display:flex;
+flex-wrap: wrap;
       }
       .mktoForm .mktoGutter{
         width:0 !important;
@@ -431,8 +433,9 @@
         width:90% !important;
         font-size:${formfontsize}px !important;
         color: ${formLabelColor} !important;
-        margin-bottom: 1rem !important;
+        margin-bottom: 0.25rem !important;
         font-weight: 800 !important;
+        padding-top: 0 !important;
 
       }
       .mktoForm.mktoLayoutAbove .mktoRequiredField .mktoAsterix {
@@ -440,6 +443,9 @@
       }
       .mktoForm .mktoFormRow{
         display:flex !important;
+        width: ${formcolumn} !important;
+        margin: 0 0.75rem !important;
+        flex: 1 0 240px;
       }
       .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
         margin-left:20px;
@@ -914,15 +920,15 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             </p>
           </div>
-          
-                </div>
-                <div class="column">
-                <div class="mktoForm" id="form1" mktoName="Form">
+
+        </div>
+        <div class="column">
+          <div class="mktoForm" id="form1" mktoName="Form">
           <script src="//go.formassembly.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1122"></form> <script>MktoForms2.loadForm("//go.formassembly.com", "794-XNU-091", 1122);</script>
           </div>
         </div>
-        </div>
-       
+      </div>
+
     </div>
 
 
@@ -976,93 +982,93 @@
           <div class="mktoText" id="formheadline" mktoName="Form - Headline">
             <h2  class="bold">Embedded Code Headline</h2>
           </div>
-        <div class="mktoText" id="freetext-img" mktoName="Embedded Code Element">
-          <img src="https://dummyimage.com/600x400/b1c3f5/fff" alt="image">
+          <div class="mktoText" id="freetext-img" mktoName="Embedded Code Element">
+            <img src="https://dummyimage.com/600x400/b1c3f5/fff" alt="image">
           </div>
         </div>
 
       </div>
     </div>
 
-<div id="speakers">
-  
- 
-<div class="section">
-<div class="mktoText" mktoName="Speakers Headline" id="speakers-headline">
-  <h1>
+    <div id="speakers">
+
+
+      <div class="section">
+        <div class="mktoText" mktoName="Speakers Headline" id="speakers-headline">
+          <h1>
             Lorem ipsum dolor sit amet
           </h1>
-  </div>
-<div class="flex-row">
-<div class="column">
-<div class="mktoText" id="speaker-img1" mktoName="Speaker 1 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt1" mktoName="Speaker 1 txt">
-  <h4>Speaker One</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
+        </div>
+        <div class="flex-row">
+          <div class="column">
+            <div class="mktoText" id="speaker-img1" mktoName="Speaker 1 img">
+              <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
+            </div>
+            <div class="mktoText" id="speaker-txt1" mktoName="Speaker 1 txt">
+              <h4>Speaker One</h4>
+              <h4>Title</h4>
+              <p>Company</p>
+            </div>
+          </div>
 
-<div class="column">
-<div class="mktoText" id="speaker-img2" mktoName="Speaker 2 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt2" mktoName="Speaker 2 txt">
-  <h4>Speaker Two</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
+          <div class="column">
+            <div class="mktoText" id="speaker-img2" mktoName="Speaker 2 img">
+              <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
+            </div>
+            <div class="mktoText" id="speaker-txt2" mktoName="Speaker 2 txt">
+              <h4>Speaker Two</h4>
+              <h4>Title</h4>
+              <p>Company</p>
+            </div>
+          </div>
 
-<div class="column">
-<div class="mktoText" id="speaker-img3" mktoName="Speaker 3 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt3" mktoName="Speaker 3 txt">
-  <h4>Speaker Three</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
+          <div class="column">
+            <div class="mktoText" id="speaker-img3" mktoName="Speaker 3 img">
+              <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
+            </div>
+            <div class="mktoText" id="speaker-txt3" mktoName="Speaker 3 txt">
+              <h4>Speaker Three</h4>
+              <h4>Title</h4>
+              <p>Company</p>
+            </div>
+          </div>
 
-<div class="column">
-<div class="mktoText" id="speaker-img4" mktoName="Speaker 4 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt4" mktoName="Speaker 4 txt">
-  <h4>Speaker Four</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
+          <div class="column">
+            <div class="mktoText" id="speaker-img4" mktoName="Speaker 4 img">
+              <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
+            </div>
+            <div class="mktoText" id="speaker-txt4" mktoName="Speaker 4 txt">
+              <h4>Speaker Four</h4>
+              <h4>Title</h4>
+              <p>Company</p>
+            </div>
+          </div>
 
-<div class="column">
-<div class="mktoText" id="speaker-img5" mktoName="Speaker 5 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt5" mktoName="Speaker 5 txt">
-  <h4>Speaker Five</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
+          <div class="column">
+            <div class="mktoText" id="speaker-img5" mktoName="Speaker 5 img">
+              <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
+            </div>
+            <div class="mktoText" id="speaker-txt5" mktoName="Speaker 5 txt">
+              <h4>Speaker Five</h4>
+              <h4>Title</h4>
+              <p>Company</p>
+            </div>
+          </div>
 
-<div class="column">
-<div class="mktoText" id="speaker-img6" mktoName="Speaker 6 img">
-  <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
-</div>
-<div class="mktoText" id="speaker-txt6" mktoName="Speaker 6 txt">
-  <h4>Speaker Six</h4>
-  <h4>Title</h4>
-  <p>Company</p>
-  </div>
-</div>
-</div>
+          <div class="column">
+            <div class="mktoText" id="speaker-img6" mktoName="Speaker 6 img">
+              <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="speaker" />
+            </div>
+            <div class="mktoText" id="speaker-txt6" mktoName="Speaker 6 txt">
+              <h4>Speaker Six</h4>
+              <h4>Title</h4>
+              <p>Company</p>
+            </div>
+          </div>
+        </div>
 
-</div>
-</div>
+      </div>
+    </div>
 
     <footer id="footer">
       <div class="footer-container section flex">
@@ -1073,7 +1079,7 @@
             <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
               <a href="https://www.formassembly.com/"><img src="https://go.formassembly.com/rs/794-XNU-091/images/logo_color-2022.png" alt="logo"></a>
             </div>
-            <ul id="footer-menu1" mktoName="Footer Menu 1"  class="mktText footer-menu">
+            <ul id="footer-menu1" mktoName="Footer Menu 1"  class="mktoText footer-menu">
               <li><a href="https://www.formassembly.com/abuse/">Report Abuse</a></li>
               <li><a href="https://www.formassembly.com/terms-of-service/">Terms of Service</a></li>
               <li><a href="https://www.formassembly.com/privacy-policy/">Privacy Policy</a></li>
@@ -1098,7 +1104,7 @@
             </div>
           </div>
           <div class="col">
-            <ul id="menu-footer-menu" class="mktoTex footer-menu" mktoName="Foore Menu">
+            <ul id="menu-footer-menu" class="mktoText footer-menu" mktoName="Foore Menu">
               <li><strong>PRODUCT</strong></li>
               <ul class="sub-menu">
                 <li><a href="https://www.formassembly.com/how-it-works/">How it works</a></li>
@@ -1112,7 +1118,7 @@
 
           </div>
           <div class="col">
-            <ul id="menu-footer-menu" class="mktoTex footer-menu" mktoName="Foore Menu">
+            <ul id="menu-footer-menu2" class="mktoText footer-menu" mktoName="Foore Menu">
               <li><strong>RESOURCES</strong></li>
               <ul class="sub-menu">
                 <li> <a href="https://www.formassembly.com/resources/">Resource Library</a></li>
@@ -1125,7 +1131,7 @@
             </ul>
           </div>
           <div class="col">
-            <ul id="menu-footer-menu" class="footer-menu">
+            <ul id="menu-footer-menu3" class="mktoText footer-menu" mktoName="Footer Menu">
               <li><strong>COMPANY</strong></li>
               <ul class="sub-menu">
                 <li><a href="https://www.formassembly.com/team/">FormAssembly Team</a></li>
@@ -1139,7 +1145,7 @@
           </div>
 
           <div class="icons-container col">
-            <ul id="menu-footer-menu" class="mktoTex footer-menu" mktoName="Foore Menu">
+            <ul id="menu-footer-menu4" class="mktoText footer-menu" mktoName="Foore Menu">
               <li><strong>DOWNLOAD</strong></li>
               <li>
                 <a style="white-space:nowrap;display:flex;flex-direction:row;padding:1rem 1.5rem;border:1px solid #ebeff2;gap:10px;border-radius:12px;" href="https://apps.apple.com/us/app/formassembly-mobile/id1120698698" class="appstore flex color-color-blue-very-dark-03" target="_blank">
