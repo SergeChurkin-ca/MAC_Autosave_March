@@ -6,12 +6,12 @@ let owlStageContainer = document.querySelector('.owl-stage')
 let outstageWidth = document.querySelector('.owl-stage-outer').offsetWidth;
 let owlconatiners = Array.from(document.querySelectorAll('.owl-item'))
 let startingpoint = 0 - (owlconatiners[0].offsetWidth * 4)
-let total = 0
+let total = -1292 // it is 4 sums of wol contaibaers
 
 function carousleNext() {
-    total -= owlconatiners[0].offsetWidth
-    owlStageContainer.style = `transform: translate3d(calc(${total - 0 }px), 0px, 0px); transition: all 0.25s ease 0s;width:max-content;`
-
+    total -= owlconatiners[0].offsetWidth // this is step 
+    owlStageContainer.style = `transform: translate3d(calc(${total - 0}px ), 0px, 0px); transition: all 0.25s ease 0s;width:max-content;`
+    console.log.log(owlconatiners[0].offsetWidth)
 }
 
 function carouslePrev() {
@@ -23,10 +23,8 @@ function carouslePrev() {
 }
 
 
-
 window.addEventListener("load", (event) => {
     owlconatiners.map((x) => x.style = `width: calc((${outstageWidth}px / 3)) !important;`)
-
 
     let startingpoint = 0 - (owlconatiners[0].offsetWidth * 4)
 
@@ -41,7 +39,7 @@ window.addEventListener("load", (event) => {
     };
     duplicateChildNodes();
     owlStageContainer.style = `transform: translate3d(calc(${startingpoint - 0 }px), 0px, 0px); transition: all 0.25s ease 0s;width:max-content;`
-    console.log('totas is', startingpoint)
+
 });
 
 
@@ -53,7 +51,7 @@ window.addEventListener("load", (event) => {
 window.addEventListener('resize', windowResize)
 
 function windowResize() {
-    owlconatiners.map((x) => x.style = `width: calc((${outstageWidth}px / 3)) !important;border: solid 1px red;`)
+    owlconatiners.map((x) => x.style = `width: calc((${outstageWidth}px / 3)) !important;`)
 
 }
 
