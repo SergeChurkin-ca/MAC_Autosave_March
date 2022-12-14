@@ -19,9 +19,7 @@ function carouslePrev() {
     total += owlconatiners[0].offsetWidth
     owlStageContainer.style = `transform: translate3d(calc(${total}px), 0px, 0px); transition: all 0.25s ease 0s;width:max-content;`
 
-
 }
-
 
 window.addEventListener("load", (event) => {
     owlconatiners.map((x) => x.style = `width: calc((${outstageWidth}px / 3)) !important;`)
@@ -41,10 +39,6 @@ window.addEventListener("load", (event) => {
     owlStageContainer.style = `transform: translate3d(calc(${startingpoint - 0 }px), 0px, 0px); transition: all 0.25s ease 0s;width:max-content;`
 
 });
-
-
-
-
 
 
 
