@@ -13,13 +13,15 @@
   <!--<![endif]-->
 
   <head>
-   &lt;!-- Google Tag Manager --&gt;
-&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({&#39;gtm.start&#39;:
-new Date().getTime(),event:&#39;gtm.js&#39;});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.async=true;j.src=
-&#39;https://www.googletagmanager.com/gtm.js?id=&#39;+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,&#39;script&#39;,&#39;dataLayer&#39;,&#39;GTM-56QRR3S&#39;);&lt;/script&gt;
-&lt;!-- End Google Tag Manager --&gt;
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                })(window,document,'script','dataLayer','GTM-56QRR3S');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,6 +61,9 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
     <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="4" allowHtml="true">
 
+    <meta class="mktoBoolean" id="shownavbar" mktoName="Show Navbar?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbannerlogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="navbar-bg-color" mktoName="Navbr - BG Color" default="#ffffff"> 
     <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
     <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#F7FCFE">
@@ -91,7 +96,7 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
     <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#009FE3">
     <meta class="mktoColor" id="hover-formtextbtnbgcolor" mktoName="Form/Text - Hover Btn BG Color" default="#ffffff">
     <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
-    
+
     <meta class="mktoColor" id="hover-formtextbtnbordercolor" mktoName="Form/Text - Hover Btn Border Color" default="#009FE3">
     <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text -  Btn Border Color" default="#009FE3">
     <meta class="mktoColor" id="hover-formtextbtntextcolor" mktoName="Form/Text - Hover Btn Text Color" default="#009FE3">
@@ -174,6 +179,15 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
       .container_inner{
         width:90%;
       }
+      #navbar {
+        display: ${shownavbar};
+        background: ${navbar-bg-color};
+        padding: 2rem 0;
+      }
+      #navbar .logo {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
       #banner {
         background-color:${bannerbgcolor};
         background-image:url('${bannerbgimg}');
@@ -232,44 +246,44 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
         order: 100;
       }
       #footer a, #footer p {
-         font-family: ${headline-font}, sans-serif !important;
+        font-family: ${headline-font}, sans-serif !important;
       }
       #footer .logowidthl {
-         max-width: 171px;
+        max-width: 171px;
       }
       #footer a:hover {
-         font-weight: normal !important;
+        font-weight: normal !important;
       }
       #footer .section {
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         gap: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
       #footer .left {
-         width: 20% !important;
-         margin-bottom: 2rem !important;
+        width: 20% !important;
+        margin-bottom: 2rem !important;
       }
       #footerlogo {
-         margin-bottom: 2rem !important;
+        margin-bottom: 2rem !important;
       }
       #footer .right {
-         width: 70% !important;
-         display:flex;
-         display:flex;
-         flex-direction: row;
-         margin: 0 !important;
+        width: 70% !important;
+        display:flex;
+        display:flex;
+        flex-direction: row;
+        margin: 0 !important;
       }
       #footer .threecolumns {
-         display: flex;
-         flex-direction: row;
-         gap: 1rem;
-         justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
       }
       #footer .right .column {
-         width: calc((100% / 4) - 2rem)l;
-         display: flex;
+        width: calc((100% / 4) - 2rem)l;
+        display: flex;
       }
       #footer svg {
         fill: #ffffff;
@@ -349,6 +363,9 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
         margin-top:0;
         font-family: ${headline-font}, sans-serif !important;
       }
+      #banner .logo {
+        display: ${showbannerlogo};
+      }
       #banner .button a {
         background-color:${banbtnbgcolor};
         border: 2.5px solid ${banbtnbordercolor};
@@ -399,7 +416,7 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
         font-family: ${copy-font}, sans-serif !important;
       }
       #formtext .mktoForm input:-ms-input-placeholder { /* IE 10+ */
-       color:${formtextpcolor}!important;
+        color:${formtextpcolor}!important;
         font-weight: 400;
         font-size: 16px;
         font-family: ${copy-font}, sans-serif !important;
@@ -449,10 +466,10 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
       }
       #formtext .mktoForm .mktoButton:hover,
       #formtext .mktoForm .mktoButton:focus {
-   background-color:${hover-formtextbtnbgcolor}!important;
-   border:2.5px solid ${hover-formtextbtnbordercolor}!important;
-   color:${hover-formtextbtntextcolor}!important;
-   transition: 0.3s all;
+        background-color:${hover-formtextbtnbgcolor}!important;
+        border:2.5px solid ${hover-formtextbtnbordercolor}!important;
+        color:${hover-formtextbtntextcolor}!important;
+        transition: 0.3s all;
       }
       ${formtexttwocol}
 
@@ -485,10 +502,10 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
       }
       .button a:hover, 
       .button a:focus {
-          background-color:${hover-btnbgcolor};
-          border: 2.5px solid ${hover-btnbordercolor};
-          color:${hover-btntextcolor};
-          transition: 0.3s all;
+        background-color:${hover-btnbgcolor};
+        border: 2.5px solid ${hover-btnbordercolor};
+        color:${hover-btntextcolor};
+        transition: 0.3s all;
       }
       .section {
         margin-top:${sectionspacing}px;
@@ -550,23 +567,23 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
       #form{
         padding:${formtextpad}px ${formtextpad}px;
       }
-.mktoForm .mktoGutter, .mktoForm .mktoOffset {
-   display: none !important;
-}
-@media (max-width: 1200px) {
-   #footer .section {
-      flex-direction: column;
-   }
-   #footer .right {
-      width: 100% !important;
-   }
-   #footer .threecolumns {
-      flex-wrap: wrap;
-   }
-   #footer .right .column {
-      flex: 1 0 200px;
-   }
-}
+      .mktoForm .mktoGutter, .mktoForm .mktoOffset {
+        display: none !important;
+      }
+      @media (max-width: 1200px) {
+        #footer .section {
+          flex-direction: column;
+        }
+        #footer .right {
+          width: 100% !important;
+        }
+        #footer .threecolumns {
+          flex-wrap: wrap;
+        }
+        #footer .right .column {
+          flex: 1 0 200px;
+        }
+      }
       @media only screen and (max-width: 900px){
         .headlinetext h1 {
           font-size:35px;
@@ -624,13 +641,34 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56QRR3S"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="flex">
+
+      <!-- navbar -->
+      <div class="container_100" id="navbar">
+        <div class="container_inner">
+          <div class="left">
+            <div class="logo">
+              <div class="mktoText" id="navlogo" mktoName="Logo">
+                <a href="https://www.e-t-a.com/">
+                  <img class="logowidthl" alt="logo" src="https://info.e-t-a.com/rs/322-RYQ-302/images/eta-logo.gif" border="0">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of navbar -->
       <!-- Banner -->
       <div class="container_100" id="banner">
         <div class="container_inner">
           <div class="left">
             <div class="logo">
-              <div class="mktoText" id="navlogo" mktoName="Logo">
+              <div class="mktoText" id="navlogotop" mktoName="Logo">
                 <a href="https://www.e-t-a.com/">
                   <img class="logowidthl" alt="logo" src="https://info.e-t-a.com/rs/322-RYQ-302/images/eta-logo.gif" border="0">
                 </a>
@@ -667,7 +705,7 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
               <h2>Form Headline</h2>
             </div>
             <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
-            <script src="//info.e-t-a.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_3284"></form> <script>MktoForms2.loadForm("//info.e-t-a.com", "322-RYQ-302", 3284);</script>
+
             </div>
           </div>
         </div>
@@ -849,14 +887,14 @@ j=d.createElement(s),dl=l!=&#39;dataLayer&#39;?&#39;&amp;l=&#39;+l:&#39;&#39;;j.
     <!-- Footer -->
     <div class="container_100" id="footer">
       <div class="container_inner section">
-          <div class="mktoText" id="footerlogo" mktoName="Logo">
-            <a href="https://www.e-t-a.com/">
-              <img class="logowidthl" alt="logo" src="https://info.e-t-a.com/rs/322-RYQ-302/images/eta-blue-logo.png" border="0">
-            </a>
-          </div>
-          <div class="mktoText" id="footersocial" mktoName="Footer - Social">
+        <div class="mktoText" id="footerlogo" mktoName="Logo">
+          <a href="https://www.e-t-a.com/">
+            <img class="logowidthl" alt="logo" src="https://info.e-t-a.com/rs/322-RYQ-302/images/eta-blue-logo.png" border="0">
+          </a>
+        </div>
+        <div class="mktoText" id="footersocial" mktoName="Footer - Social">
 
-          </div>
+        </div>
         <div class="right">
           <div class="threecolumns">
             <div class="column">
