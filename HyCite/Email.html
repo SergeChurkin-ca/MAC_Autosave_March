@@ -79,6 +79,7 @@ font-family: Arial, serif !important;
 
 <meta mktoModuleScope="true" class="mktoImg" id="banner1_img" mktoName="Background Image" default="./banner-top.png">
 <meta mktoModuleScope="true" class="mktoImg" id="banner2_img" mktoName="Background Image" default="./img1-notxt.png">
+<meta mktoModuleScope="true" class="mktoImg" id="banner3_img" mktoName="Background Image" default="./img4-notxt.png">
 <meta mktoModuleScope="true" class="mktoImg" id="video_img" mktoName="Video Image" default="https://dummyimage.com/450x270/1F203E/B3B8C4">
 <meta mktoModuleScope="true" class="mktoImg" id="vidPlayBtn" mktoname="Play Button" default="http://go.marketing-automation.ca/rs/217-NBW-905/images/play-button.png" />
 <meta mktoModuleScope="true" class="mktoString" id="video_link" mktoName="Video Link / CTA" default="http://marketing-automation.ca">
@@ -220,6 +221,7 @@ th{font-weight:normal !important}
 @media only screen and (max-width: 640px){
   .main {width:100% !important; min-width: 100% !important; }		
   .inner_table{width:90% !important;margin:0 auto !important;}
+  .inner_table2{width:90% !important;margin:0 auto !important;}
   .logomob {max-width:90% !important;margin:0 auto !important; height: auto !important}
   .show{display: block !important; visibility: visible !important;}
   .res{width:100% !important;display:block; height: auto !important}
@@ -498,25 +500,25 @@ cocines sin complicaciones.</div>
 <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
 <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
 <tr>
-<td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+<td  height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
 </tr>
 <tr>
 <td>
 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
     <tr>
-        <th width="236" align="left" class="block center" valign="top" style="vertical-align: top;">
+        <th width="280" align="left" class="block center" valign="top" style="vertical-align: top;">
             <div class="mktoImg" mktoname="Image" id="imgleft-img">
                 <div>
-                    <img src="./img2.png" width="236" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                    <img src="./img2.png" width="280" border="0" style="-ms-interpolation-mode:bicubic; width:280px;border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                         />
                 </div>
             </div>
         </th>
-        <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th class="hidden" style="font-size:1px; line-height: 1px;" width="40">&nbsp;</th>
         <th valign="middle" align="left" class="block top_pad" valign="top" style="vertical-align: middle;">
-            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+            <table class="inner_table2 block" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                 <tr>
-                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
+                    <td style="font-family: '${fontfamily-headline}',Arial, sans-serif; font-size: ${headlineFontSize26}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
                         <div class="mktoText" mktoName="Headline" id="imgleft-headline">
                             <div>Calidad</div>
                         </div>
@@ -526,7 +528,7 @@ cocines sin complicaciones.</div>
                     <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}">
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize18}px; font-weight:400;line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}">
                         <div class="mktoText" mktoName="Text" id="imgleft-copy">
                             <div>Son más resistentes y te duran más que otros antiadherentes convencionales.</div>
                         </div>
@@ -541,13 +543,68 @@ cocines sin complicaciones.</div>
 </td>
 </tr>
 <tr>
-<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+<td height="${btm_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
 <!--end of Image Left Text Right-->  
+
+<!--Banner 3-->
+<table class="mktoModule" mktoName="Banner 3" mktoAddByDefault="true" id="banner3" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:590px;border-spacing: 0px;border-collapse: collapse;" border="0" width="590">
+<tr>
+    <td height="464" bgcolor="${banner-bg-color}" valign="bottom" background="${banner3_img}" style="background-image:url('${banner3_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align:bottom;background-blend-mode: multiply;height:464px;">
+        <!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:590px;display:block;height:${outlook-ht2}px;">
+<v:fill type="frame" src="${banner3_img}" Color="${banner-bg-color}" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+        <table class="inner_table" width="540" style="margin: 0 auto; width: 540px; border-spacing: 0px; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+            <tr>
+                
+                <td style="font-family: '${fontfamily-headline}',Arial, sans-serif; color: ${headlineFontColor};font-weight:bold; font-size: ${headlineFontSize26}px; line-height: 110%; mso-line-height-rule: exactly; text-align: ${align}">
+                    <div class="mktoText" mktoName="Headline" id="bannerhead">
+                        <div>Hecho en Italia</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="font-family: '${fontfamily}',Arial, sans-serif;font-weight:400; color: ${CopyColor}; font-size: ${CopySize18}px; line-height: 140%; mso-line-height-rule: exactly; text-align: ${align}">
+                    <div class="mktoText" mktoName="Text" id="bannertext">
+                        <div>Fabricados con tecnología <br>
+                            plasma y materiales de <br>
+                            primer nivel.</div>
+                    </div>
+                </td>
+            </tr>
+       
+            <tr>
+                <td height="${btm_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+            </tr>
+        </table>
+        <!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]-->
+    </td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+<!--Banner 3  Ends-->
 
 <!--Image Module-->
 <table class="mktoModule" mktoName="Image Module" id="ImageModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -705,7 +762,7 @@ cocines sin complicaciones.</div>
                     <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px; font-weight:700;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
+                    <td style="font-family: '${fontfamily-headline}',Arial, sans-serif; font-size: ${headlineFontSize26}px; font-weight:700;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
                         <div class="mktoText" mktoName="Headline" id="Headline-text-b">
                             <div>Lorem Ipsum Dolor Sit Amet</div>
                         </div>
@@ -715,7 +772,7 @@ cocines sin complicaciones.</div>
                     <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize18}px; font-weight:400;line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
                         <div class="mktoText" mktoName="Text" id="SubHeadline-text-b">
                             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                         </div>
