@@ -64,6 +64,7 @@
 
  <meta class="mktoString" mktoName="3 cols Padding Top (px)" id="theecols-pad-top" default="60">
  <meta class="mktoString" mktoName="3 cols Padding Bottom (px)" id="theecols-pad-bottom" default="20">
+ <meta class="mktoString" mktoName="3 cols Text Container heihght (rem)" id="textcontainer-height" default="8">
 
 
 <meta class="mktoString" mktoName="3 Cols 1 Card Image" id="card1-img" default="https://lp.illumio.com/rs/093-SFK-561/images/card-head.png">
@@ -144,6 +145,7 @@
 
 #brand  {
 background-color: ${logobgcolor};
+border-bottom: solid 1.75px #FA6624;
 }
     #header h1 {
     font-size: ${header-h1fontsize}px;
@@ -253,7 +255,7 @@ background-color: ${logobgcolor};
     max-width: 100%;
 }
 #hero img {
-    max-width: 744px;
+    
 }
 #hero h1 {
     font-size: 60px;
@@ -277,19 +279,20 @@ background-color: ${logobgcolor};
     position: relative;
     z-index: 1;
     overflow: hidden;
+    
  }
 .hero-img:after {
     content: '';
     background: url('https://lp.illumio.com/rs/093-SFK-561/images/mask-group%402x.svg');
     background-repeat: no-repeat;
     position: absolute;
-    top: 17.5rem;
-    right: -21.75vw;
-    background-size: 100%;
+    top: 0;
+    right: -4vw;
+    background-size: 90%;
     z-index: 10;
     width: 42vw;
     height: 35rem;
-    transform: translate(-50%, -50%); 
+    // transform: translate(-50%, -50%); 
     
 }
 
@@ -299,8 +302,8 @@ background-color: ${logobgcolor};
     justify-content:space-between;
     max-height:350px;
     position:relative;
-    padding-top:${logopaddingtop}px;
-    padding-bottom:${logopaddingbtm}px;
+    align-items: center;
+    padding: 1.75rem 0;
     }
 
 
@@ -420,10 +423,10 @@ background-color: ${logobgcolor};
     justify-content: space-between;
  }
  #threecols .column {
-    width: calc((100% / 3 ) - 1.5rem);
+    width: calc((100% / 3 ) - 2rem);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 640px;
     text-align: left;
     
  }
@@ -446,10 +449,26 @@ background: url(${card2-img});
 background: url(${card3-img});
  }
  #threecols .text-container {
-    padding: 2rem 1.5rem;
+    padding: 2rem 2rem;
     height: fit-content;
     display: grid;
-    grid-template-rows: auto 1fr 60% auto;
+    grid-template-rows: auto 1fr ${textcontainer-height}rem auto;
+    border: solid 1px red;
+ }
+ #threecols h4 {
+    color: #FA6624;
+    font-size: 20px;
+    line-height:24px;
+ }
+ #threecols h3 {
+    font-size: 28px;
+    line-height: 34px;
+    color: #313638;
+ }
+ #threecols p {
+    font-size: 18px;
+    color: #64686A;
+    line-height: 24px;
  }
     #footer{
     display:${showfooter};
@@ -561,10 +580,11 @@ background: url(${card3-img});
             width: 100%;
         }
         .hero-img:after {
-            background-size: 70%;
-            width: 30vw;
-            height: 10rem;
-            right: -9vw;
+     background: url('https://lp.illumio.com/rs/093-SFK-561/images/mobile-mask-group-1%402x.svg');
+     background-size: 90%;
+     background-repeat: no-repeat;
+     width: 90vw;
+     right: -9vw;
         }
  
     }
@@ -774,10 +794,10 @@ background: url(${card3-img});
 
         <div class="column">
             <div class="topimg"></div>
-            <div class="text-container">
+            <div class="text-container mktoText" id="col1-txt" mktoName="Card 1 text">
                 <h4>RESEARCH REPORT</h4>
-                <h3>ZERO TRUST IMPACT REPORT</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
+                <h3>Zero Trust Impact Report</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <p class="cta">
                     <a href="#">READ NOW > </a>
                 </p>
@@ -789,7 +809,7 @@ background: url(${card3-img});
             <div class="topimg"></div>
             <div class="text-container">
                 <h4>RESEARCH REPORT</h4>
-                <h3>ZERO TRUST IMPACT REPORT</h3>
+                <h3>Forrester Wave Report</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
                 <p class="cta">
                     <a href="#">READ NOW > </a>
@@ -801,7 +821,7 @@ background: url(${card3-img});
             <div class="topimg"></div>
             <div class="text-container">
                 <h4>RESEARCH REPORT</h4>
-                <h3>ZERO TRUST IMPACT REPORT</h3>
+                <h3>Bishop Fox Assessment Report</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
                 <p class="cta">
                     <a href="#">READ NOW > </a>
