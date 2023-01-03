@@ -12,13 +12,15 @@
 <link rel="icon" href="${faviconlink}">
 
 <!-- Show and Hide Meta Tags -->
-<meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" mktoName="Top Logo Width" id="toplogowidth" default="42">
 
-<meta class="mktoBoolean" id="show-hero-section" mktoName="Show Hero Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="show-hero-section" mktoName="Show Hero Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     
-<meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-<meta class="mktoBoolean" id="showsec2" mktoName="Show Two Cols Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showsec2" mktoName="Show Two Cols Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showsec3" mktoName="Show Center Cta Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+<meta class="mktoBoolean" id="showsec4" mktoName="Show 3 Columns?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     
 <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -32,6 +34,9 @@
 <meta class="mktoColor" id="heroHeaderColor" mktoName="Hero - Title Color" default="#313638">
 <meta class="mktoColor" id="heroH2Color" mktoName="Hero  - H2  Color" default="#64686A">
  <meta class="mktoColor" id="heroTextColor" mktoName="Hero - Text Color" default="#64686A">
+
+    
+ <meta class="mktoColor" id="heroTextColor" mktoName="Hero - Text Color" default="#64686A">
     
 <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#313638">
 <meta class="mktoColor" id="twocolsdHeaderColor" mktoName="Two Cols- Title Color" default="#313638">
@@ -41,6 +46,7 @@
 
 
 <meta class="mktoColor" id="ctaclr" mktoName="CTA Text Color" default="#FA6624">
+
 <meta class="mktoColor" id="btnbgclr" mktoName="Btn Background Color" default="#FA6624">
 <meta class="mktoColor" id="btnbrdclr" mktoName="Btn Border Color" default="#FA6624">
 <meta class="mktoColor" id="btnhoverbackground" mktoName="Btn Hover Bg Color" default="#FA6624">
@@ -52,16 +58,17 @@
 <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#536A79">
 <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#536A79">
 
-<meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#536A79">
-<meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#536A79">
-<meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#536A79">
     
-<meta class="mktoColor" id="formButtonBgColor" mktoName="Form Button - Bg Color" default="#ffffff">
-<meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#536A79">
-<meta class="mktoColor" id="formButtonBorderColor" mktoName="Form Button - Brdr Color" default="#5CBAFA">
-<meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button -Hover Bg Color" default="#5CBAFA">
-<meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button -Hover Txt Color" default="#ffffff">
-    
+ <meta class="mktoColor" id="cta-bgcolor" mktoName="CTA Sec Background Color" default="#f5f5f5">   
+ <meta class="mktoString" mktoName="Center CTA Padding top/bottom (px)" id="cta-padtopbottom" default="80">
+
+ <meta class="mktoString" mktoName="3 cols Padding Top (px)" id="theecols-pad-top" default="60">
+ <meta class="mktoString" mktoName="3 cols Padding Bottom (px)" id="theecols-pad-bottom" default="20">
+
+
+<meta class="mktoString" mktoName="3 Cols 1 Card Image" id="card1-img" default="https://lp.illumio.com/rs/093-SFK-561/images/card-head.png">
+<meta class="mktoString" mktoName="3 Cols 2 Card Image" id="card2-img" default="https://lp.illumio.com/rs/093-SFK-561/images/card-head.png">
+<meta class="mktoString" mktoName="3 Cols 3 Card Image" id="card3-img" default="https://lp.illumio.com/rs/093-SFK-561/images/card-head.png">
 
 <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#536A79">
 <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
@@ -69,14 +76,13 @@
 
 <!-- Font Size Meta Tags -->
 <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="60">
-    <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="24">
+<meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="24">
         
 <meta class="mktoString" mktoName="Freetext - Headline Font Size (px)" id="freeText-headline-size" default="32">
-    <meta class="mktoString" mktoName="Global - p Large Font Size (px)" id="p-large-fontsize" default="22">
-    <meta class="mktoString" mktoName="Global - Cta Font Size" id="cta-font-size" default="18">
+<meta class="mktoString" mktoName="Global - p Large Font Size (px)" id="p-large-fontsize" default="22">
+<meta class="mktoString" mktoName="Global - Cta Font Size" id="cta-font-size" default="18">
 
     
-
 
 <!-- Navbar Section Styling -->
 
@@ -86,12 +92,13 @@
 <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
 
 <!-- Free-Text Section Styling -->
-<meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+                                                                                                                                                                                                                                <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+                                                                                                                                                                                                                                    
 
 <!-- Footer Section Styling -->
 <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
 <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="147">
-<meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="1">
+<meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="10">
 <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="16">
 
 
@@ -108,11 +115,13 @@
 <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="18">
 <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="12">
 
-<!-- Form Section Styling -->
+
     
 <meta class="mktoString" mktoName="Order: Hero Section" id="hero-order" default="1">
 <meta class="mktoString" mktoName="Order: FreeText Section" id="sec1-order" default="2">
 <meta class="mktoString" mktoName="Order: 2 Columns Section" id="sec2-order" default="3">
+<meta class="mktoString" mktoName="Order: Center Cta Section" id="sec3-order" default="4">
+<meta class="mktoString" mktoName="Order: 3 Columns Section" id="sec4-order" default="5">
 
 
 
@@ -131,7 +140,7 @@
 
 
 
-    body {background:#fff;} 
+    body {background:#fff;display:flex;flex-direction: column;} 
 
 #brand  {
 background-color: ${logobgcolor};
@@ -188,7 +197,10 @@ background-color: ${logobgcolor};
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
     .w50{
     width:48%;
     }
@@ -261,8 +273,37 @@ background-color: ${logobgcolor};
     color: ${heroTextColor};
     line-height: 32px;
  }
-   
-
+ .hero-img {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+ }
+.hero-img:after {
+    content: '';
+    background: url('https://lp.illumio.com/rs/093-SFK-561/images/group-225%402x.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5rem;
+    right: -1.2vw;
+    background-size: 90%;
+    z-index: 10;
+    width: 12vw;
+    height: 10rem;
+    transform: translate(-50%, -50%)
+}
+.hero-img:before {
+    content: '';
+    background: url('https://lp.illumio.com/rs/093-SFK-561/images/mask-group%402x.svg');
+      background-repeat: no-repeat;
+    position: absolute;
+    top: 16rem;
+    right: -12.7vw;
+    background-size: 74%;
+    z-index: 10;
+    width: 17vw;
+    height: 25rem;
+    transform: translate(-50%, -50%)
+}
     #brand .section{
     display:flex;
     flex-direction:row;
@@ -362,11 +403,71 @@ background-color: ${logobgcolor};
     color: ${p-color};
     line-height: 24px;
  }
+ 
+ #centercta {
+    display: ${showsec3};;
+    order: ${sec3-order};
+    background: ${cta-bgcolor};
+    text-align: center;
+ }
+ #centercta .flex-column {
+    gap: 3rem;
+    padding: ${cta-padtopbottom}px 0;
+ }
+ #centercta #ctaheadline {
+    color: #64686A;
+ }
+ #threecols {
+    display: ${showsec4};
+    order: ${sec4-order};
+    flex-direction: column !important;
+    text-align: center;
+    padding: ${theecols-pad-top}px 0 ${theecols-pad-bottom}px;
+ }
+ #threeecols h2 {
+    text-align: center;
+ }
+ #threecols .flex-row {
+    justify-content: space-between;
+ }
+ #threecols .column {
+    width: calc((100% / 3 ) - 1.5rem);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: left;
+    
+ }
+ #threecols .column .topimg {
+        background-size: cover;
+    background-position: top center;
+    background-repeat:no-repeat;
+    height: 3.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+ #threecols .column:nth-child(1) .topimg{
+    background: url(${card1-img});
+
+ }
+ #threecols .column:nth-child(2) .topimg {
+background: url(${card2-img});
+ }
+ #threecols .column:nth-child(3) .topimg {
+background: url(${card3-img});
+ }
+ #threecols .text-container {
+    padding: 2rem 1.5rem;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: auto 1fr 60% auto;
+ }
     #footer{
     display:${showfooter};
     background-color:${footerbgclr};
     color:${footerfontclr};
     font-size:${footerfontsize}px;
+    order: 100;
     }
 
     #footer .row1 {
@@ -383,6 +484,7 @@ background-color: ${logobgcolor};
     }
     #footer .col {
     width: calc((100% / 3) - 2rem);
+    border: solid 1px red;
     }
     #footer .section{
     padding:${footerpaddingtb}px 0;
@@ -399,7 +501,7 @@ background-color: ${logobgcolor};
     justify-content: left;
     text-align: left;
     margin-bottom: 2rem;
-    margin-right: 3rem;
+    
     }
     #footer .row1 p {
     line-height: 27px;
@@ -421,18 +523,15 @@ background-color: ${logobgcolor};
     display: flex;
     flex-direction: column;
     padding-left: 5%;
+    
     }
     #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
     color:${footerfontclr};
     font-size:${footerfontsize}px;
     
     }
-    #footer .footer-menu strong{
-    font-size: cal(2px + ${footerfontsize}px);
-    }
-    #footer .row2 p {
-    text-align: center !important;
-    }
+    
+   
     #footer p {
     margin: 0 !important;
     }
@@ -472,6 +571,7 @@ background-color: ${logobgcolor};
     flex-direction: column;
     align-content: center;
     }
+
     #footer .col {
     width: 100%;
     display: flex;
@@ -535,7 +635,15 @@ background-color: ${logobgcolor};
         marign-top: 1rem;
     }
     }
-
+@media (max-width: 800px) {
+    #threecols .flex-row{
+        justify-content: center;
+        gap: 2rem;
+    }
+       #threecols .column {
+        width: 100%;
+    }     
+}
 
     @media screen and (max-width:550px){
     .mktoForm .mktoFormRow{
@@ -544,6 +652,7 @@ background-color: ${logobgcolor};
     .mktoForm .mktoFormRow .mktoFormCol{
         margin-left:0 !important;
     }
+                                                                                                                                                                                                                                                                                 
     }
 
 
@@ -600,7 +709,7 @@ background-color: ${logobgcolor};
     </div>
     
     <div class="column">
-        <div class="mktoTex" id="hero-img" mktoName="Hero Image"><img src="https://lp.illumio.com/rs/093-SFK-561/images/image-frame%401x.png" alt="hero image" /></div>
+        <div class="mktoText hero-img" id="hero-img" mktoName="Hero Image"><img src="https://lp.illumio.com/rs/093-SFK-561/images/image-frame%401x.png" alt="hero image" /></div>
     </div>
     </div>
     
@@ -644,6 +753,62 @@ background-color: ${logobgcolor};
     </div>
 </section>
 
+<section id="centercta">
+    <div class="section flex-column">
+        <div class="mktoText" id="ctaheadline" mktoName="Center CTA Headline">
+            <h2>Ready to learn more about Zero Trust Segmentation?</h2>
+        </div>
+        <div class="mktoText btn" id="navbarbutton" mktoName="NavBar Button">
+        <a href="#">LEARN MORE</a>
+    </div>
+    </div>
+</section>
+
+<section id="threecols">
+    <h2 class="mktoText" id="threecols-headline" mktoName="Three Cols Headline">
+        RELATED RESOURCES
+    </h2>
+    <div class="section flex-row">
+
+        <div class="column">
+            <div class="topimg"></div>
+            <div class="text-container">
+                <h4>RESEARCH REPORT</h4>
+                <h3>ZERO TRUST IMPACT REPORT</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
+                <p class="cta">
+                    <a href="#">READ NOW > </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="column">
+            <div class="topimg"></div>
+            <div class="text-container">
+                <h4>RESEARCH REPORT</h4>
+                <h3>ZERO TRUST IMPACT REPORT</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
+                <p class="cta">
+                    <a href="#">READ NOW > </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="topimg"></div>
+            <div class="text-container">
+                <h4>RESEARCH REPORT</h4>
+                <h3>ZERO TRUST IMPACT REPORT</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
+                <p class="cta">
+                    <a href="#">READ NOW > </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer id="footer">
 <div class="footer-container section flex">
 
@@ -671,32 +836,30 @@ background-color: ${logobgcolor};
         </div>
         </div>
         <div class="icons-container col">
-            <p>
-    Nuclera USA <br>
-Nuclera Nucleics Corp. 1000<br>
-Technology Park Drive Suite B Billerica<br> MA 01821
-    </p>
+         
     
 
  <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
 <ul>
+    
 <li id="footer-icon1">
-    <a href="https://twitter.com/illumio" target="_blank" ><img src="https://lp.illumio.com/rs/093-SFK-561/images/twitter-square-brands.png"/></a>
+    <a href="https://twitter.com/illumio" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/twitter-square-brands.png"></a>
 </li>
 <li id="footer-icon3">
-    <a href="https://www.linkedin.com/company/illumio/" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/linkedin-square-white.png" alt="social icon" /></a>
+    <a href="https://www.linkedin.com/company/illumio/" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/linkedin-square-white.png" alt="social icon"></a>
 </li>
 <li id="footer-icon4">
-    <a href="https://www.facebook.com/illumio" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/facebook-square-white.png" alt="social icon" /></a>
+    <a href="https://www.facebook.com/illumio" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/facebook-square-white.png" alt="social icon"></a>
 </li>
 <li id="footer-icon5">
-    <a href="https://www.youtube.com/channel/UCcc37xm_Ezy5TprR-N4CCJA" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/youtube-square-brands.png" alt="social icon" /></a>
+    <a href="https://www.youtube.com/channel/UCcc37xm_Ezy5TprR-N4CCJA" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/youtube-square-brands.png" alt="social icon"></a>
 </li>
 
 </ul>
 
 
             </div>
+            
         </div>
 
     </div>
