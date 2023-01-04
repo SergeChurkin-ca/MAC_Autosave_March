@@ -60,6 +60,9 @@
 
     <meta class="mktoBoolean" id="show-hero-btn" mktoName="Show Hero Button" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-herodecoration" mktoName="Show Hero Decoration" default="true" true_value="visible" false_value="hidden" false_value_name="Hide" true_value_name="Show">
+      
+     <meta class="mktoBoolean" id="show-formdecoration" mktoName="Show Form Decoration" default="true" true_value="visible" false_value="hidden" false_value_name="Hide" true_value_name="Show">  
+                                                                                        
     <meta class="mktoString" mktoName="Hero CTA Margin Top (rem)" id="herocta-mg-top" default="3">
     <meta class="mktoString" mktoName="Hero CTA Margin Bottom (rem)" id="herocta-mg-btm" default="1">
 
@@ -375,6 +378,22 @@
         width: calc((100% / 2) - 7rem);
         max-width: 100%;
         border: solid 1px red;
+      position: relative;
+        
+      }
+      #formsection .column:nth-child(2):after {
+        content: '';
+        visibility: ${show-formdecoration};
+        background: url('https://lp.illumio.com/rs/093-SFK-561/images/secondary-hero-background.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: -5vw;
+        background-size: 100%;
+        z-index: 1;
+        width: 80vw;
+        max-width: 1400px;
+        height: 35rem;
       }
       #formsection h1 {
         font-size: 60px;
@@ -954,9 +973,31 @@
       .form-container {
         max-width: ${form-max-width}px;
         margin: 0;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        border-radius: 20px;
+        z-index: 2;
+        position: relative;
+        background: #ffffff;
+        padding: 2rem 1rem;
       }
       .mktoForm .mktoOffset, .mktoForm .mktoGutter {
         display: none !important;
+      }
+      .mktoForm .mktoLabel {
+        white-space: nowrap;
+        font-family: ${fontfmaily-bold}, sans-serif !important;
+        color: #64686a !important;
+        font-weight: 800;
+        font-size: 12px !important;
+        position: absolute;
+        background: #ffffff;
+        bottom: 2rem;
+        padding: 0.4rem !important;
+        left: 0.5rem;
+        width: auto !important;
+      }
+      .mktoForm .mktoFormRow {
+        margin: 0.5rem 0;
       }
       .mktoForm,
       .mktoForm .mktoFormRow,
@@ -965,9 +1006,17 @@
        {
         display: flex;
         flex-direction: column;
-        border: solid 1px blue;
         width: 100% !important;
         max-width: 100% !important;
+      }
+     .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm option {
+        border: solid 1.5px #64686A;
+        border-radius: 4px;
+        width: 100% !important;
+        font-size: 16px;
+        font-family: ${fontfamily-secondary}, sans-serfi !important;
+        padding: 13px 11px !important;
+        color: #64686A;
       }
     </style>
   </head>
@@ -981,8 +1030,7 @@
           </div>
         </div>
         <div class="mktoText btn" id="navbarbutton" mktoName="NavBar Button">
-          <a href="#">Try Iluumio</a>
-        </div>                                                                                                                                                                                                                                                               
+          <a href="#">Try Iluumio</a></div>                                                                                                                                                                                                                                                               
       </div>
     </header>
 
