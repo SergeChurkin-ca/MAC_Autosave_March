@@ -23,7 +23,7 @@
     <meta class="mktoBoolean" id="showsec4" mktoName="Show 3 Columns?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showfootersocial" mktoName="Show Footer Social Icons" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfootersocial" mktoName="Show Footer Social Icons" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <!-- Colors -->
     <meta class="mktoColor" id="logobgcolor" mktoName="Top Logo - Background Color" default="#ffffff">
@@ -56,7 +56,7 @@
 
     <meta class="mktoBoolean" id="show-herodecoration" mktoName="Show Hero Decoration" default="true" true_value="visible" false_value="hidden" false_value_name="Hide" true_value_name="Showr">
     <meta class="mktoString" mktoName="Hero CTA Margin Top (rem)" id="herocta-mg-top" default="3">
-    <meta class="mktoString" mktoName="Hero CTA Margin Bottom (rem)" id="herocta-mg-btm" default="0">
+    <meta class="mktoString" mktoName="Hero CTA Margin Bottom (rem)" id="herocta-mg-btm" default="1">
 
     <meta class="mktoBoolean" id="align-freetext" mktoName="FreeText Align Center? " default="false" true_value="center" false_value="flex-start" false_value_name="Left" true_value_name="Center">
     <meta class="mktoString" mktoName="FreeText Max width (px)" id="freetext-maxwidth" default="1200">
@@ -98,7 +98,7 @@
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
     <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="120">
-    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="10">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="20">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="12">
 
 
@@ -150,8 +150,6 @@
       #header p {
         font-size: ${header-p-fontsize}px;
       }
-
-
 
 
       p,ul,ol{
@@ -543,14 +541,12 @@
         margin: 0 1rem 0 0;
       }
       #footer svg, #footericons img{
-        width:${footericonswidth}rem;
+        width:${footericonswidth}px;
       }
       #footer svg:hover, #footer svg:focus {
         fill: ${footerhoverclr};
       }
-      #footer svg {
-        fill: ${footerfontclr};
-      }
+    
       #footer .icons-container {
         justify-content: right;
         display: flex;
@@ -603,10 +599,12 @@
       }
 
       #footericons {
-        margin-top: 2.5rem;
         display: ${showfootersocial};
       }
-
+#footericons ul {
+  gap: 1rem;
+  max-width: 160px;
+}
       @media (max-width: 980px) {
         #hero .column {
           width: 100%;
@@ -636,7 +634,7 @@
         }
         #footericons ul {
           justify-content: center !important;
-          width: 40vw;
+          
         }
         footer ul li, #footer strong {
           margin: 0 auto !important;
@@ -757,7 +755,7 @@
       @font-face {
         font-family: 'Gotham-Bold';
         src: url('https://lp.illumio.com/rs/093-SFK-561/images/GothamBold.ttf') format('truetype'),
-          url('https://lp.illumio.com/rs/093-SFK-561/images/GothamBold.otf') format('otf'),
+          //   url('https://lp.illumio.com/rs/093-SFK-561/images/GothamBold.otf') format('otf'),
           url('https://lp.illumio.com/rs/093-SFK-561/images/GothamBold.woff') format('woff'),
           url('https://lp.illumio.com/rs/093-SFK-561/images/GothamBold.eot'),
           url('https://lp.illumio.com/rs/093-SFK-561/images/GothamBold.eot?#iefix') format('embedded-opentype'),
@@ -826,7 +824,7 @@
 
     <section id="twocols">
       <div class="section flex-row">
-        <div class="column mktoText" id="col1-txt" mktoName="Colun 1 Text">
+        <div class="column mktoText" id="col1-txta" mktoName="Colun 1 Text">
           <h3>
             Column One Headline
           </h3>
@@ -844,7 +842,7 @@
           </p>
 
         </div>
-        <div class="column mktoText" id="col2-txt" mktoName="Column 2 Text">
+        <div class="column mktoText" id="col2-txta" mktoName="Column 2 Text">
           <h3>
             Column One Headline
           </h3>
@@ -866,7 +864,7 @@
         <div class="mktoText" id="ctaheadline" mktoName="Center CTA Headline">
           <h2>Ready to learn more about Zero Trust Segmentation?</h2>
         </div>
-        <div class="mktoText btn" id="centercta" mktoName="Center Cta">
+        <div class="mktoText btn" id="centerctabtn" mktoName="Center Cta">
           <a href="#">LEARN MORE</a>
         </div>
       </div>
@@ -893,7 +891,7 @@
 
         <div class="column">
           <div class="topimg"></div>
-          <div class="text-container">
+          <div class="text-container mktoText" id="col2-txt" mktoName="Card 2 text">
             <h4>RESEARCH REPORT</h4>
             <h3>Forrester Wave Report</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
@@ -905,7 +903,7 @@
 
         <div class="column">
           <div class="topimg"></div>
-          <div class="text-container">
+          <div class="text-container mktoText" id="col3-txt" mktoName="Card 3 text">
             <h4>RESEARCH REPORT</h4>
             <h3>Bishop Fox Assessment Report</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
