@@ -141,7 +141,9 @@
 
 
       body {background:#fff;display:flex;flex-direction: column;} 
-
+.mobile-content {
+  display: none;
+}
       #brand  {
         background-color: ${logobgcolor};
         border-bottom: solid 1.75px #FA6624;
@@ -261,6 +263,9 @@
         width: calc((100% / 2) - 2rem);
         max-width: 100%;
       }
+      #hero img {
+        border-radius: 20px;
+      }
 .column {
   max-width: 100%;
 }
@@ -286,7 +291,9 @@
         line-height: 32px;
         font-weight: 400;
       }
-
+#hero p.mobile-content {
+  margin-top: 2.5rem;
+}
 
       #brand .section{
         display:flex;
@@ -439,7 +446,8 @@
         text-align: center;
         padding: ${theecols-pad-top}px 0 ${theecols-pad-bottom}px;
       }
-      #threecols-headline {
+      #threecols-headline,
+      #threecols-headline span {
         text-align: center;
         font-family: ${fontfamily-headline}, sans-serif !important;
         font-weight: 500;
@@ -610,17 +618,23 @@
   max-width: 160px;
 }
       @media (max-width: 980px) {
+      
+        #hero {
+         padding: 0.25rem 0 !important
+        }
         #hero .column {
           width: 100%;
         }
+        
         .hero-img:after {
           visiblity: ${show-herodecoration};
           background: url('https://lp.illumio.com/rs/093-SFK-561/images/mobile-mask-group-1%402x.svg');
-          background-size: 90%;
+          background-size: 100%;
           background-repeat: no-repeat;
           width: 90vw;
-          right: -9vw;
+          right: -1vw;
         }
+        
         #footer .row1 {
           flex-direction: column;
         }
@@ -691,9 +705,7 @@
         }
         .section, #header .section{
           width:90%;
-          padding:40px 0;
-          padding-top:40px;
-          padding-bottom:40px;
+          padding:20px 0;
         }
         #brand .logo-container{
           top:40px;
@@ -724,7 +736,13 @@
       }
       @media (max-width: 1300px) {
         .section {
-          width: 95%;
+          width: 90%;
+        }
+        #threecols h2 {
+          text-align: left;
+              max-width: 480px;
+              margin: 0 auto;
+              width: 95% !important;
         }
         #threecols .flex-row{
           justify-content: center;
@@ -748,6 +766,15 @@
       }
 
 @media (max-width:690px) {
+    .desktop-content {
+          display: none;
+        }
+        .mobile-content {
+          display: block;
+        }
+        #hero .btn {
+          display: none;
+        }
   #hero h1 {
     font-size: 36px;
     line-height: 40px;
@@ -789,11 +816,17 @@
   #threecols h2 {
     font-size: 36px;
     line-height: 44px;
+    
   }
   #threecols h4 {
     font-size: 14px;
     line-height: 100%;
   }
+  #threecols h2 span:before {
+    content: "\a";
+    white-space: pre;
+  }
+  
   #threecols h3 {
     font-size: 24px;
     line-height: 28px;;
@@ -870,13 +903,13 @@
             <h1>
               Visit Illumio at ut etia amet nisl purus mattis
             </h1>
-            <h2>
+            <h2 class="desktop-content">
               Adipiscing elit, sed do eiusmod tempor,
               Magna eget est lorem ipsum
             </h2>
           </div>
           <div class="mktoText" id="freetextcopy2" mktoName="Free-Text - Copy 2">
-            <p>
+            <p  class="desktop-content">
               Adipiscing elit, sed do eiusmod tempor,
               Magna eget est lorem ipsum</p>
           </div>
@@ -887,6 +920,9 @@
 
         <div class="column">
           <div class="mktoText hero-img" id="hero-img" mktoName="Hero Image"><img src="https://lp.illumio.com/rs/093-SFK-561/images/image-frame%401x.png" alt="hero image" /></div>
+           <p  class="mobile-content">
+              Adipiscing elit, sed do eiusmod tempor,
+              Magna eget est lorem ipsum</p>
         </div>
       </div>
 
@@ -951,7 +987,7 @@
 
     <section id="threecols">
       <h2 class="mktoText" id="threecols-headline" mktoName="Three Cols Headline">
-        Related Resources
+        Related <span>Resources</span>
       </h2>
       <div class="section flex-row">
 
