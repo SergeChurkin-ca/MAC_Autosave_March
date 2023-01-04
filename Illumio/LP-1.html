@@ -156,7 +156,7 @@
         margin:10px 0;
       }
       ul,ol{
-        margin-left:45px;
+        margin-left: 25px;
       }
       p, li{
         line-height:1.5;
@@ -404,6 +404,8 @@
       #twocols .subhead {
         font-size: 18px;
         color: ${twocolsdHeaderColor};
+        font-family: ${fontfamily-bold}, sans-serif !important;
+        font-weight: 700;
       }     
       #twocols p, #twocols li {
         font-size: 18px;
@@ -619,7 +621,38 @@
           width: 90vw;
           right: -9vw;
         }
-
+        #footer .row1 {
+          flex-direction: column;
+        }
+ #footer .icons-container {
+          order: 1;
+        }
+        #footer .col:nth-child(2) {
+          order: 2;
+        }
+         #footer .icons-container {
+          padding: 0 !important;
+        }
+        #footertext2 {
+          max-width: 500px;
+          
+        }
+        #footertext2 ul {
+          gap: 0 !important;
+          justify-content: center;
+          
+        }
+        #footertext2 li {
+          margin: 0.35rem 0 !important;
+          justify-content: center;
+        }
+          #footertext2 ul li:nth-child(1) {
+        width: 100% !important;
+        margin-bottom: 0.75rem !important;
+       }
+       #footertext2 ul li:nth-child(1):after {
+        content: ''
+       }
       }
       @media (max-width: 900px) {
         .row1 {
@@ -642,15 +675,8 @@
           margin: 0 auto !important;
           justify-content: center;
         }
-        #footer .icons-container {
-          padding: 0 !important;
-        }
-        #footer .icons-container {
-          order: 1;
-        }
-        #footer .col:nth-child(2) {
-          order: 2;
-        }
+       
+     
       }
 
 
@@ -721,7 +747,58 @@
 
       }
 
-
+@media (max-width:690px) {
+  #hero h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #hero p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .btn a {
+   padding: calc(${btnpaddingtb}px - 2px) ${btnpaddinglr}px;
+  }
+  .btn a {
+    font-size: 14px;
+  }
+  #freetext h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  #freetext p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  #twocols h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #twocols h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #centercta h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #threecols h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  #threecols h4 {
+    font-size: 14px;
+    line-height: 100%;
+  }
+  #threecols h3 {
+    font-size: 24px;
+    line-height: 28px;;
+  }
+}
       @font-face {
         font-family: 'Gotham-Black';
         src: url('https://lp.illumio.com/rs/093-SFK-561/images/Gotham-Black.ttf') format('truetype'),
@@ -882,7 +959,8 @@
           <div class="topimg"></div>
           <div class="text-container mktoText" id="col1-txt" mktoName="Card 1 text">
             <h4>RESEARCH REPORT</h4>
-            <h3>Zero Trust Impact Report</h3>
+            <h3>Zero Trust Impact <br>
+              Report</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             <p class="cta">
               <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
@@ -895,7 +973,8 @@
           <div class="topimg"></div>
           <div class="text-container mktoText" id="col2-txt" mktoName="Card 2 text">
             <h4>RESEARCH REPORT</h4>
-            <h3>Forrester Wave Report</h3>
+            <h3>Forrester Wave<br>
+               Report</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
             <p class="cta">
               <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
