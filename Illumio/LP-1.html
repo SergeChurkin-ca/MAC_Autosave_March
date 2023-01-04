@@ -21,46 +21,38 @@
 <meta class="mktoBoolean" id="showsec2" mktoName="Show Two Cols Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showsec3" mktoName="Show Center Cta Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showsec4" mktoName="Show 3 Columns?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-    
 <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 <meta class="mktoBoolean" id="showfootersocial" mktoName="Show Footer Social Icons" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
-<!-- Background, Buttons, and Text Color Meta Tags -->
+<!-- Colors -->
 <meta class="mktoColor" id="logobgcolor" mktoName="Top Logo - Background Color" default="#ffffff">
-
 <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
-    
 <meta class="mktoColor" id="heroHeaderColor" mktoName="Hero - Title Color" default="#313638">
 <meta class="mktoColor" id="heroH2Color" mktoName="Hero  - H2  Color" default="#64686A">
  <meta class="mktoColor" id="heroTextColor" mktoName="Hero - Text Color" default="#64686A">
-
-    
  <meta class="mktoColor" id="heroTextColor" mktoName="Hero - Text Color" default="#64686A">
-    
 <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#313638">
 <meta class="mktoColor" id="twocolsdHeaderColor" mktoName="Two Cols- Title Color" default="#313638">
-
 <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#64686A">
 <meta class="mktoColor" id="p-color" mktoName="Two Cols p color" default="#64686A">
-
-
 <meta class="mktoColor" id="ctaclr" mktoName="CTA Text Color" default="#FA6624">
-
+<!-- CTA -->
 <meta class="mktoColor" id="btnbgclr" mktoName="Btn Background Color" default="#FA6624">
 <meta class="mktoColor" id="btnbrdclr" mktoName="Btn Border Color" default="#FA6624">
 <meta class="mktoColor" id="btnhoverbackground" mktoName="Btn Hover Bg Color" default="#FA6624">
 <meta class="mktoColor" id="btnfontclr" mktoName="Btn Text Color" default="#ffffff">
 <meta class="mktoColor" id="btnHoverTxtColor" mktoName="Btn Hover Text Color" default="#ffffff">
 
-<meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
-<meta class="mktoString" id="formbgclr" mktoName="Form - Background Color" default="#ffffff">
-<meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#536A79">
-<meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#536A79">
-
-    
  <meta class="mktoColor" id="cta-bgcolor" mktoName="CTA Sec Background Color" default="#f5f5f5">   
  <meta class="mktoString" mktoName="Center CTA Padding top/bottom (px)" id="cta-padtopbottom" default="80">
+
+<!-- Margins, paddings, alignments and sections styling -->
+
+<meta class="mktoBoolean" id="show-herodecoration" mktoName="Show Hero Decoration" default="true" true_value="visible" false_value="hidden" false_value_name="Hide" true_value_name="Showr">
+
+<meta class="mktoBoolean" id="align-freetext" mktoName="FreeText Align Center? " default="false" true_value="center" false_value="flex-start" false_value_name="Left" true_value_name="Center">
+<meta class="mktoString" mktoName="FreeText Max width (px)" id="freetext-maxwidth" default="1200">
 
  <meta class="mktoString" mktoName="3 cols Padding Top (px)" id="theecols-pad-top" default="60">
  <meta class="mktoString" mktoName="3 cols Padding Bottom (px)" id="theecols-pad-bottom" default="20">
@@ -93,8 +85,8 @@
 <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
 
 <!-- Free-Text Section Styling -->
-                                                                                                                                                                                                                                <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
-                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                        <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+            
 
 <!-- Footer Section Styling -->
 <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
@@ -241,7 +233,7 @@ border-bottom: solid 1.75px #FA6624;
     }
     .section{
     width:85%;
-    max-width:1920px;
+    max-width:1500px;
     margin:0 auto;
     padding:${sectionpaddingtb}px 0;
     }
@@ -283,6 +275,7 @@ border-bottom: solid 1.75px #FA6624;
  }
 .hero-img:after {
     content: '';
+    visibility: ${show-herodecoration};
     background: url('https://lp.illumio.com/rs/093-SFK-561/images/mask-group%402x.svg');
     background-repeat: no-repeat;
     position: absolute;
@@ -292,7 +285,6 @@ border-bottom: solid 1.75px #FA6624;
     z-index: 10;
     width: 42vw;
     height: 35rem;
-    // transform: translate(-50%, -50%); 
     
 }
 
@@ -305,7 +297,6 @@ border-bottom: solid 1.75px #FA6624;
     align-items: center;
     padding: 1.75rem 0;
     }
-
 
     #header .section{
     display:flex;
@@ -343,7 +334,14 @@ border-bottom: solid 1.75px #FA6624;
     display:${showsec1};
     order: ${sec1-order};
     }
-
+    #freetext .section {
+        justify-content: ${align-freetext};
+        display: flex;
+    }
+#freetext #freetextcontainer {
+    max-width: ${freetext-maxwidth}px;
+    
+}
 
 
     #freetext h1,
@@ -423,18 +421,18 @@ border-bottom: solid 1.75px #FA6624;
     justify-content: space-between;
  }
  #threecols .column {
-    width: calc((100% / 3 ) - 2rem);
+    width: calc((100% / 3) - 1rem);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     border-radius: 10px;
-    max-width: 640px;
+    max-width: 480px;
     text-align: left;
     
  }
  #threecols .column .topimg {
-        background-size: cover;
-    background-position: top center;
+    background-size: cover;
+    background-position: 15% 40% !important;
     background-repeat:no-repeat;
-    height: 3.5rem;
+    height: 5.3rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
  }
@@ -452,8 +450,7 @@ background: url(${card3-img});
     padding: 2rem 2rem;
     height: fit-content;
     display: grid;
-    grid-template-rows: auto 1fr ${textcontainer-height}rem auto;
-    border: solid 1px red;
+    grid-template-rows: 2.5rem 1.5fr ${textcontainer-height}rem 1fr;
  }
  #threecols h4 {
     color: #FA6624;
@@ -579,7 +576,8 @@ background: url(${card3-img});
         #hero .column {
             width: 100%;
         }
-        .hero-img:after {
+    .hero-img:after {
+        visiblity: ${show-herodecoration};
      background: url('https://lp.illumio.com/rs/093-SFK-561/images/mobile-mask-group-1%402x.svg');
      background-size: 90%;
      background-repeat: no-repeat;
@@ -657,13 +655,15 @@ background: url(${card3-img});
         marign-top: 1rem;
     }
     }
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
     #threecols .flex-row{
         justify-content: center;
         gap: 2rem;
+        flex-direction: column;
     }
        #threecols .column {
         width: 100%;
+        margin: 0 auto;
     }     
 }
 
@@ -739,8 +739,10 @@ background: url(${card3-img});
 
 <section id="freetext">
     <div class="section">
-        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eaque, sed perferendis id mollitia animi in odio nesciunt asperiores, quia illum fuga! Error saepe inventore veritatis ut, blanditiis magni corrupti?`</p>
+        <div class="mktoText" id="freetextcontainer" mktoName="FreeText">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eaque, sed perferendis id mollitia animi in odio nesciunt asperiores, quia illum fuga! Error saepe inventore veritatis ut, blanditiis magni corrupti?`</p>
+        </div>
     </div>
 </section>
 
