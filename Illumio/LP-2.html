@@ -16,7 +16,7 @@
     <meta class="mktoString" mktoName="Top Logo Width" id="toplogowidth" default="42">
 
     <meta class="mktoBoolean" id="show-hero-section" mktoName="Show Hero Section?" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-      
+
     <meta class="mktoBoolean" id="show-form-section" mktoName="Show Form Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -38,6 +38,7 @@
     <meta class="mktoColor" id="twocolsdHeaderColor" mktoName="Two Cols- Title Color" default="#313638">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#64686A">
     <meta class="mktoColor" id="p-color" mktoName="Two Cols p color" default="#64686A">
+    <meta class="mktoColor" id="p-color2" mktoName="Two Cols p color 2" default="#989a9b">
     <meta class="mktoColor" id="ctaclr" mktoName="CTA Text Color" default="#FA6624">
     <!-- CTA -->
     <meta class="mktoColor" id="btnbgclr" mktoName="Btn Background Color" default="#FA6624">
@@ -52,20 +53,20 @@
     <!-- Margins, paddings, alignments and sections styling -->
     <meta class="mktoString" mktoName="Hero Section Pad Top" id="hero-pd-top" default="3">
     <meta class="mktoString" mktoName="Hero Section Pad Bottom" id="hero-pd-btm" default="2">
-      
+
     <meta class="mktoString" mktoName="Hero Section Pad Top" id="form-pd-top" default="3">
     <meta class="mktoString" mktoName="Hero Section Pad Bottom" id="form-pd-btm" default="2">
 
     <meta class="mktoString" mktoName="Form Container Max Width" id="form-max-width" default="480">
-      
+
     <meta class="mktoString" mktoName="Two Cols Pad Top" id="twovols-pd-top" default="0">
     <meta class="mktoString" mktoName="Two Cols pad Bottom" id="twovols-pd-btm" default="2">
 
     <meta class="mktoBoolean" id="show-hero-btn" mktoName="Show Hero Button" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-herodecoration" mktoName="Show Hero Decoration" default="true" true_value="visible" false_value="hidden" false_value_name="Hide" true_value_name="Show">
-      
-     <meta class="mktoBoolean" id="show-formdecoration" mktoName="Show Form Decoration" default="true" true_value="visible" false_value="hidden" false_value_name="Hide" true_value_name="Show">  
-                                                                                        
+
+    <meta class="mktoBoolean" id="show-formdecoration" mktoName="Show Form Decoration" default="true" true_value="visible" false_value="hidden" false_value_name="Hide" true_value_name="Show">  
+
     <meta class="mktoString" mktoName="Hero CTA Margin Top (rem)" id="herocta-mg-top" default="3">
     <meta class="mktoString" mktoName="Hero CTA Margin Bottom (rem)" id="herocta-mg-btm" default="1">
 
@@ -129,7 +130,7 @@
 
     <!-- Sections order -->    
     <meta class="mktoString" mktoName="Order: Hero Section" id="hero-order" default="1">
-    <meta class="mktoString" mktoName="Order: Form Section" id="hero-order" default="1">
+    <meta class="mktoString" mktoName="Order: Form Section" id="form-order" default="1">
     <meta class="mktoString" mktoName="Order: FreeText Section" id="sec1-order" default="2">
     <meta class="mktoString" mktoName="Order: 2 Columns Section" id="sec2-order" default="3">
     <meta class="mktoString" mktoName="Order: Center Cta Section" id="sec3-order" default="4">
@@ -153,9 +154,9 @@
 
 
       body {background:#fff;display:flex;flex-direction: column;overflow-x:hidden;} 
-.mobile-content {
-  display: none;
-}
+      .mobile-content {
+        display: none;
+      }
       #brand  {
         background-color: ${logobgcolor};
         border-bottom: solid 1.75px #FA6624;
@@ -277,9 +278,9 @@
       #hero img {
         border-radius: 20px;
       }
-.column {
-  max-width: 100%;
-}
+      .column {
+        max-width: 100%;
+      }
       #hero h1 {
         font-size: 60px;
         font-family: ${fontfamily-headline}, sans-serif !important;
@@ -302,9 +303,9 @@
         line-height: 32px;
         font-weight: 400;
       }
-#hero p.mobile-content {
-  margin-top: 2.5rem;
-}
+      #hero p.mobile-content {
+        margin-top: 2.5rem;
+      }
 
       #brand .section{
         display:flex;
@@ -362,12 +363,12 @@
       }
 
 
-  #formsection {
+      #formsection {
         display: ${show-form-section};
         order: ${form-order};
         padding: ${form-pd-top}rem 0 ${form-pd-btm}rem;
       }
-      
+
       #formsection .flex-row {
         gap: 1em;
         justify-content: space-between;
@@ -379,8 +380,8 @@
       #formsection .column:nth-child(2) {
         width: calc((100% / 2) - 7rem);
         max-width: 100%;
-      position: relative;
-        
+        position: relative;
+
       }
       #formsection .column:nth-child(2):after {
         content: '';
@@ -420,9 +421,9 @@
         line-height: 32px;
         font-weight: 400;
       }
-#formsection p.mobile-content {
-  margin-top: 2.5rem;
-}      
+      #formsection p.mobile-content {
+        margin-top: 2.5rem;
+      }      
 
       #freetext{
         background-color:${freeTextBackgroundColor};
@@ -476,36 +477,52 @@
         flex: 1 0 380px;
       }     
 
-#twocols .column:nth-child(1) {
-  text-align: center;
-}
-#twocols .insights {
-  max-width: 480px;
-}
-#twocols .stars {
-  max-width: 306px;
-}
-#twocols .line {
-width: 140px;
-margin: 1rem auto;
-  border: solid 1px #000000;
-}
-#twocols .subhead-score {
-  font-size: 53.25px;
-  line-height: 140%;
-  color: #313638;
-  font-family: 'Montserrat', sans-serif !important;
-}
-#twocols h5 {
-  font-size: 30px;
-  color: #6d6d6d;
-  font-family: ${fontfamily-bold}, sans-serif !important;
-  font-weight: 600;
-}     
-      #twocols p, #twocols li {
-        font-size: 18px;
-        color: ${p-color};
+      #twocols .column:nth-child(1) {
+        text-align: center;
+      }
+      #twocols .insights {
+        max-width: 480px;
+      }
+      #twocols .stars {
+        max-width: 306px;
+      }
+      #twocols .line {
+        width: 140px;
+        margin: 1rem auto;
+        border-bottom: solid 1px #000000;
+      }
+      #twocols .subhead-score {
+        font-size: 53.25px;
+        line-height: 140%;
+        color: #313638;
+        font-family: 'Montserrat', sans-serif !important;
+      }
+      #twocols h5 {
+        font-size: 30px;
+        color: #6d6d6d;
+        font-family: ${fontfamily-bold}, sans-serif !important;
+        font-weight: 600;
+      }
+      #twocols .quote {
+        font-size: 32px;
+        line-height: 113%;
+        font-weight: 500;
+        color: ${p-color2};
+        font-family: 'Montserrat', sans-serif !important;
+      }
+      #twocols .orange-txt {
+        color: #fa6624;
+        font-size: 20px;
         line-height: 24px;
+        font-family: ${fontfmaily}, sans-serif !important;
+        font-weight: 600;
+      }     
+      #twocols p, #twocols li {
+        font-size: 24px;
+        color: ${p-color2};
+        line-height: 32px;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700;
       }
 
       #centercta {
@@ -646,7 +663,7 @@ margin: 1rem auto;
       #footer svg:hover, #footer svg:focus {
         fill: ${footerhoverclr};
       }
-    
+
       #footer .icons-container {
         justify-content: right;
         display: flex;
@@ -701,20 +718,19 @@ margin: 1rem auto;
       #footericons {
         display: ${showfootersocial};
       }
-#footericons ul {
-  gap: 1rem;
-  max-width: 160px;
-}
+      #footericons ul {
+        gap: 1rem;
+        max-width: 160px;
+      }
       @media (max-width: 980px) {
-      
+
         #hero {
-         padding: 0.25rem 0 !important
+          padding: 0.25rem 0 !important
         }
         #hero .column {
           width: 100%;
         }
-       
-        
+
         .hero-img:after {
           visiblity: ${show-herodecoration};
           background: url('https://lp.illumio.com/rs/093-SFK-561/images/mobile-mask-group-1%402x.svg');
@@ -723,8 +739,8 @@ margin: 1rem auto;
           width: 90vw;
           right: -1vw;
         }
-          #formsection {
-         padding: 0.25rem 0 !important
+        #formsection {
+          padding: 0.25rem 0 !important
         }
         #formsection .column {
           width: 100%;
@@ -732,35 +748,35 @@ margin: 1rem auto;
         #footer .row1 {
           flex-direction: column;
         }
- #footer .icons-container {
+        #footer .icons-container {
           order: 1;
         }
         #footer .col:nth-child(2) {
           order: 2;
         }
-         #footer .icons-container {
+        #footer .icons-container {
           padding: 0 !important;
         }
         #footertext2 {
           max-width: 500px;
-          
+
         }
         #footertext2 ul {
           gap: 0 !important;
           justify-content: center;
-          
+
         }
         #footertext2 li {
           margin: 0.35rem 0 !important;
           justify-content: center;
         }
-          #footertext2 ul li:nth-child(1) {
-        width: 100% !important;
-        margin-bottom: 0.75rem !important;
-       }
-       #footertext2 ul li:nth-child(1):after {
-        content: ''
-       }
+        #footertext2 ul li:nth-child(1) {
+          width: 100% !important;
+          margin-bottom: 0.75rem !important;
+        }
+        #footertext2 ul li:nth-child(1):after {
+          content: ''
+        }
       }
       @media (max-width: 900px) {
         .row1 {
@@ -777,7 +793,7 @@ margin: 1rem auto;
         }
         #footericons ul {
           justify-content: center !important;
-          
+
         }
         footer ul li, #footer strong {
           margin: 0 auto !important;
@@ -829,7 +845,7 @@ margin: 1rem auto;
         .section {
           width: 90%;
         }
-         #formsection .column {
+        #formsection .column {
           width: 100% !important;
         }
         .form-container {
@@ -838,11 +854,28 @@ margin: 1rem auto;
         #formsection .column:nth-child(2):after {
           display: none;
         }
+        #twocols .flex-row {
+          gap: 0;
+        }
+        #twocols .section {
+          width: 100%;
+          flex-direction: column;
+        }
+        #twocols .column {
+          width:100%;
+          padding: 5%;
+          flex: 0;
+        }
+        #twocols .column:nth-child(1) {
+          background: #fff7ef;
+          padding: 3rem 5%;
+        }
+
         #threecols h2 {
           text-align: left;
-              max-width: 480px;
-              margin: 0 auto;
-              width: 95% !important;
+          max-width: 480px;
+          margin: 0 auto;
+          width: 95% !important;
         }
         #threecols .flex-row{
           justify-content: center;
@@ -865,8 +898,8 @@ margin: 1rem auto;
 
       }
 
-@media (max-width:690px) {
-    .desktop-content {
+      @media (max-width:690px) {
+        .desktop-content {
           display: none;
         }
         .mobile-content {
@@ -875,84 +908,86 @@ margin: 1rem auto;
         #hero .btn {
           display: none;
         }
-  #hero h1 {
-    font-size: 36px;
-    line-height: 40px;
-  }
-  #hero h2 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  #hero p,
-  #hero ul,
-  #hero li {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  
-    #formsection h1 {
-    font-size: 36px;
-    line-height: 40px;
-  }
-  
-  #formsection h2 {
-    font-size: 20px;
-    line-height: 24px;
-  } 
-  #formsection p,
-  #formsection ul,
-  #formsection li {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .form-container {
-    margin: 2rem auto 3rem !important;
-  }
-  .btn a {
-   padding: calc(${btnpaddingtb}px - 2px) ${btnpaddinglr}px;
-  }
-  .btn a {
-    font-size: 14px;
-  }
-  #freetext h2 {
-    font-size: 30px;
-    line-height: 36px;
-  }
-  #freetext p {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  #twocols h3 {
-    font-size: 24px;
-    line-height: 28px;
-  }
-  #twocols h4 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  #centercta h2 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  #threecols h2 {
-    font-size: 36px;
-    line-height: 44px;
-    
-  }
-  #threecols h4 {
-    font-size: 14px;
-    line-height: 100%;
-  }
-  #threecols h2 span:before {
-    content: "\a";
-    white-space: pre;
-  }
-  
-  #threecols h3 {
-    font-size: 24px;
-    line-height: 28px;;
-  }
-}
+        #hero h1 {
+          font-size: 36px;
+          line-height: 40px;
+        }
+        #hero h2 {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        #hero p,
+        #hero ul,
+        #hero li {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
+        #formsection h1 {
+          font-size: 36px;
+          line-height: 40px;
+        }
+
+        #formsection h2 {
+          font-size: 20px;
+          line-height: 24px;
+        } 
+        #formsection p,
+        #formsection ul,
+        #formsection li {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .form-container {
+          margin: 2rem auto 3rem !important;
+        }
+        .btn a {
+          padding: calc(${btnpaddingtb}px - 2px) ${btnpaddinglr}px;
+        }
+        .btn a {
+          font-size: 14px;
+        }
+        #freetext h2 {
+          font-size: 30px;
+          line-height: 36px;
+        }
+        #freetext p {
+          font-size: 20px;
+          line-height: 28px;
+        }
+        #twocols .quote {
+          font-size: 20px
+        }
+        #twocols .orange-txt {
+          color: ${p-color2};
+          font-size: 14px;
+        }
+        #twocols p {
+          font-size: 20px;
+        }
+        #centercta h2 {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        #threecols h2 {
+          font-size: 36px;
+          line-height: 44px;
+
+        }
+        #threecols h4 {
+          font-size: 14px;
+          line-height: 100%;
+        }
+        #threecols h2 span:before {
+          content: "\a";
+          white-space: pre;
+        }
+
+        #threecols h3 {
+          font-size: 24px;
+          line-height: 28px;;
+        }
+      }
       @font-face {
         font-family: 'Gotham-Black';
         src: url('https://lp.illumio.com/rs/093-SFK-561/images/Gotham-Black.ttf') format('truetype'),
@@ -1017,7 +1052,7 @@ margin: 1rem auto;
       }
       .mktoForm .mktoLabel {
         white-space: nowrap;
-        font-family: ${fontfmaily-bold}, sans-serif !important;
+        font-family: ${fontfamily-bold}, sans-serif !important;
         color: #64686a !important;
         font-weight: 800;
         font-size: 12px !important;
@@ -1042,13 +1077,13 @@ margin: 1rem auto;
       .mktoForm .mktoFormRow,
       .mktoForm .mktoFieldWrap,
       .mktoForm .mktoFormCol
-       {
+      {
         display: flex;
         flex-direction: column;
         width: 100% !important;
         max-width: 100% !important;
       }
-     .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm option {
+      .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm option {
         border: solid 1.5px #64686A;
         border-radius: 4px;
         width: 100% !important;
@@ -1057,50 +1092,50 @@ margin: 1rem auto;
         padding: 13px 11px !important;
         color: #64686A;
       }
-.mktoForm .mktoFormRow:focus-within label {
-  opacity: 0;
-  transition: all 0.3s;
-  
-}
-.checkboxcontainer {
-  display: flex !important;
-  flex-direction: row-reverse !important;
-  justify-content: flex-end;
-}
-.mktoForm .mktoFormRow:focus-within .checkboxcontainer label {
-  opacity: 1 !important;
-  
-}
-.mktoForm .checkboxcontainer label {
-  position: relative;
-  white-space: unset !important;
-  float: none !important;
-  width: 94% !important;
-  bottom: 0;
-  padding-top: 0 !important;
-}
-.mktoForm .checkboxcontainer .mktoCheckboxList {
-  width: 1rem !important;
-}
-.checkboxcontainer input[type=checkbox] + label {
-  display: none !important;
-}
- 
-@media only screen and (max-width: 480px) {
- 
-.mktoForm input[type=text],
-.mktoForm input[type=url],
-.mktoForm input[type=email],
-.mktoForm input[type=tel],
-.mktoForm input[type=number],
-.mktoForm input[type=date],
-.mktoForm textarea.mktoField,
-.mktoForm select.mktoField {
-    height: 3rem !important;
-    line-height: initial !important;
-    font-size: initial !important;
-}
-}
+      .mktoForm .mktoFormRow:focus-within label {
+        opacity: 0;
+        transition: all 0.3s;
+
+      }
+      .checkboxcontainer {
+        display: flex !important;
+        flex-direction: row-reverse !important;
+        justify-content: flex-end;
+      }
+      .mktoForm .mktoFormRow:focus-within .checkboxcontainer label {
+        opacity: 1 !important;
+
+      }
+      .mktoForm .checkboxcontainer label {
+        position: relative;
+        white-space: unset !important;
+        float: none !important;
+        width: 94% !important;
+        bottom: 0;
+        padding-top: 0 !important;
+      }
+      .mktoForm .checkboxcontainer .mktoCheckboxList {
+        width: 1rem !important;
+      }
+      .checkboxcontainer input[type=checkbox] + label {
+        display: none !important;
+      }
+
+      @media only screen and (max-width: 480px) {
+
+        .mktoForm input[type=text],
+        .mktoForm input[type=url],
+        .mktoForm input[type=email],
+        .mktoForm input[type=tel],
+        .mktoForm input[type=number],
+        .mktoForm input[type=date],
+        .mktoForm textarea.mktoField,
+        .mktoForm select.mktoField {
+          height: 3rem !important;
+          line-height: initial !important;
+          font-size: initial !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1144,9 +1179,9 @@ margin: 1rem auto;
 
         <div class="column">
           <div class="mktoText hero-img" id="hero-img" mktoName="Hero Image"><img src="https://lp.illumio.com/rs/093-SFK-561/images/image-frame%401x.png" alt="hero image" /></div>
-           <p  class="mobile-content">
-              Adipiscing elit, sed do eiusmod tempor,
-              Magna eget est lorem ipsum</p>
+          <p  class="mobile-content">
+            Adipiscing elit, sed do eiusmod tempor,
+            Magna eget est lorem ipsum</p>
         </div>
       </div>
     </section>
@@ -1155,7 +1190,7 @@ margin: 1rem auto;
       <div class="section flex-row">
 
         <div class="column">
-          <div class="mktoText" id="freetextcopy1" mktoName="Form text - Copy 1">
+          <div class="mktoText" id="freetextcopy1a" mktoName="Form text - Copy 1">
             <h1>
               Visit Illumio at ut etia amet nisl purus mattis
             </h1>
@@ -1164,205 +1199,208 @@ margin: 1rem auto;
               Magna eget est lorem ipsum
             </h2>
           </div>
-          <div class="mktoText desktop-content" id="freetextcopy2" mktoName="Free-Text - Copy 2">
-           
-              
-             <p>
+          <div class="mktoText desktop-content" id="freetextcopy2a" mktoName="Free-Text - Copy 2">
+
+
+            <p>
               Vestibulum nec consequat ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida magna risus, finibus lacinia nunc lacinia sed. Donec vulputate ante eget nibh mattis, at sollicitudin risus ornare. 
               <br><br>
-Morbi venenatis, neque eget dignissim tincidunt, arcu augue elementum mauris:
-<br><br>
-<ul>
-  <li>Donec mi ex, bibendum maximus venenatis sit amet</li>
-  <li>Nulla vitae felis ut tortor vestibulum ultricies. Morbi urna leo, notias tempus iaculis lorem</li>
-  <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuer maximus</li>
-</ul>
-             </p>
-          </div>
-       
+              Morbi venenatis, neque eget dignissim tincidunt, arcu augue elementum mauris:
+              <br><br>
+            <ul>
+              <li>Donec mi ex, bibendum maximus venenatis sit amet</li>
+              <li>Nulla vitae felis ut tortor vestibulum ultricies. Morbi urna leo, notias tempus iaculis lorem</li>
+              <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuer maximus</li>
+            </ul>
+            </p>
         </div>
 
-        <div class="column"> 
-          <div class="form-container">
-            <div class="mktoText" id="form" mktoName="Form">
+      </div>
+
+      <div class="column"> 
+        <div class="form-container">
+          <div class="mktoText" id="form" mktoName="Form">
             <script src="//lp.illumio.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1851"></form> <script>MktoForms2.loadForm("//lp.illumio.com", "093-SFK-561", 1851);</script>
-            </div>
-          </div>
-         <div class="mktoText mobile-content" id="freetextcopy3" mktoName="Free-Text - Copy 2">
-             <p>
-              Vestibulum nec consequat ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida magna risus, finibus lacinia nunc lacinia sed. Donec vulputate ante eget nibh mattis, at sollicitudin risus ornare. 
-              <br><br>
-Morbi venenatis, neque eget dignissim tincidunt, arcu augue elementum mauris:
-<br><br>
-<ul>
-  <li>Donec mi ex, bibendum maximus venenatis sit amet</li>
-  <li>Nulla vitae felis ut tortor vestibulum ultricies. Morbi urna leo, notias tempus iaculis lorem</li>
-  <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuer maximus</li>
-</ul>
-             </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="freetext">
-      <div class="section">
-        <div class="mktoText" id="freetextcontainer" mktoName="Form Text">
-          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eaque, sed perferendis id mollitia animi in odio nesciunt asperiores, quia illum fuga! Error saepe inventore veritatis ut, blanditiis magni corrupti?`</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="twocols">
-      <div class="section flex-row">
-        <div class="column mktoText" id="col1-txta" mktoName="Column 1 Text">
-         <img class="insights" src="https://lp.illumio.com/rs/093-SFK-561/images/gartner-peer-insights.png" alt="Gartner Peer Insights tm" />
-          <h4 class="subhead-score">
-            4.6
-          </h4>
-          
-          <img class="stars" src="https://lp.illumio.com/rs/093-SFK-561/images/five-stars.svg" alt="five stars" />
-          <hr class="line">
-          <h5>
-            89% <br>
-Recommend Illumio
-          </p>
-          <p>based on 89 verified reviews as of April 5, 2022</p>
-          <br>
-          <p class="cta">
-            <a href="#" target="_blank">WRITE A REVIEW ></a>
-          </p>
-
-        </div>
-        <div class="column mktoText" id="col2-txta" mktoName="Column 2 Text">
-        <span class="orange-txt">MARCH 14, 2022</span>
+        <div class="mktoText mobile-content" id="freetextcopy3" mktoName="Free-Text - Copy 2">
           <p>
-            “Illumio Core has provided Zero Trust Segmentation to us that proved incredibly helpful to us in avoiding successful hacks and ransomware from becoming cyber disasters.”
+            Vestibulum nec consequat ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida magna risus, finibus lacinia nunc lacinia sed. Donec vulputate ante eget nibh mattis, at sollicitudin risus ornare. 
+            <br><br>
+            Morbi venenatis, neque eget dignissim tincidunt, arcu augue elementum mauris:
+            <br><br>
+          <ul>
+            <li>Donec mi ex, bibendum maximus venenatis sit amet</li>
+            <li>Nulla vitae felis ut tortor vestibulum ultricies. Morbi urna leo, notias tempus iaculis lorem</li>
+            <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuer maximus</li>
+          </ul>
           </p>
-        <p>Assistant Director of Communications</p>
- <p class="cta">
-            <a href="#" target="_blank">READ MORE ></a>
-          </p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+<section id="freetext">
+  <div class="section">
+    <div class="mktoText" id="freetextcontainer" mktoName="Form Text">
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eaque, sed perferendis id mollitia animi in odio nesciunt asperiores, quia illum fuga! Error saepe inventore veritatis ut, blanditiis magni corrupti?`</p>
+    </div>
+  </div>
+</section>
+
+<section id="twocols">
+  <div class="section flex-row">
+    <div class="column mktoText" id="col1-txta" mktoName="Column 1 Text">
+      <img class="insights" src="https://lp.illumio.com/rs/093-SFK-561/images/gartner-peer-insights.png" alt="Gartner Peer Insights tm" />
+      <h4 class="subhead-score">
+        4.6
+      </h4>
+
+      <img class="stars" src="https://lp.illumio.com/rs/093-SFK-561/images/five-stars.svg" alt="five stars" />
+      <hr class="line">
+      <h5>
+        89% <br>
+        Recommend Illumio
+        </p>
+      <p>based on 89 verified reviews as of April 5, 2022</p>
+      <br>
+      <p class="cta">
+        <a href="#" target="_blank">WRITE A REVIEW ></a>
+      </p>
+
+    </div>
+    <div class="column mktoText" id="col2-txta" mktoName="Column 2 Text">
+      <span class="orange-txt">MARCH 14, 2022</span>
+      <br>
+      <br>
+      <p class="quote">
+        “Illumio Core has provided Zero Trust Segmentation to us that proved incredibly helpful to us in avoiding successful hacks and ransomware from becoming cyber disasters.”
+      </p>
+      <p>Assistant Director of Communications</p>
+      <br>
+      <p class="cta">
+        <a href="#" target="_blank">READ MORE ></a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="centercta">
+  <div class="section flex-column">
+    <div class="mktoText" id="ctaheadline" mktoName="Center CTA Headline">
+      <h2>Ready to learn more about Zero Trust Segmentation?</h2>
+    </div>
+    <div class="mktoText btn" id="centerctabtn" mktoName="Center Cta">
+      <a href="#">LEARN MORE</a>
+    </div>
+  </div>
+</section>
+
+<section id="threecols">
+  <h2 class="mktoText" id="threecols-headline" mktoName="Three Cols Headline">
+    Related <span>Resources</span>
+  </h2>
+  <div class="section flex-row">
+
+    <div class="column">
+      <div class="topimg"></div>
+      <div class="text-container mktoText" id="col1-txt" mktoName="Card 1 text">
+        <h4>RESEARCH REPORT</h4>
+        <h3>Zero Trust Impact <br>
+          Report</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p class="cta">
+          <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="column">
+      <div class="topimg"></div>
+      <div class="text-container mktoText" id="col2-txt" mktoName="Card 2 text">
+        <h4>RESEARCH REPORT</h4>
+        <h3>Forrester Wave<br>
+          Report</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
+        <p class="cta">
+          <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="topimg"></div>
+      <div class="text-container mktoText" id="col3-txt" mktoName="Card 3 text">
+        <h4>RESEARCH REPORT</h4>
+        <h3>Bishop Fox Assessment Report</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
+        <p class="cta">
+          <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-container section flex">
+
+    <div class="row1">
+      <div class="logo-container col">
+        <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
+          <a href="https://illumio.com"><img src="https://lp.illumio.com/rs/093-SFK-561/images/footer_logo_short.png" alt="logo"></a>
         </div>
       </div>
-    </section>
-
-    <section id="centercta">
-      <div class="section flex-column">
-        <div class="mktoText" id="ctaheadline" mktoName="Center CTA Headline">
-          <h2>Ready to learn more about Zero Trust Segmentation?</h2>
-        </div>
-        <div class="mktoText btn" id="centerctabtn" mktoName="Center Cta">
-          <a href="#">LEARN MORE</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="threecols">
-      <h2 class="mktoText" id="threecols-headline" mktoName="Three Cols Headline">
-        Related <span>Resources</span>
-      </h2>
-      <div class="section flex-row">
-
-        <div class="column">
-          <div class="topimg"></div>
-          <div class="text-container mktoText" id="col1-txt" mktoName="Card 1 text">
-            <h4>RESEARCH REPORT</h4>
-            <h3>Zero Trust Impact <br>
-              Report</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <p class="cta">
-              <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
-            </p>
-          </div>
-
-        </div>
-
-        <div class="column">
-          <div class="topimg"></div>
-          <div class="text-container mktoText" id="col2-txt" mktoName="Card 2 text">
-            <h4>RESEARCH REPORT</h4>
-            <h3>Forrester Wave<br>
-               Report</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
-            <p class="cta">
-              <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
-            </p>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="topimg"></div>
-          <div class="text-container mktoText" id="col3-txt" mktoName="Card 3 text">
-            <h4>RESEARCH REPORT</h4>
-            <h3>Bishop Fox Assessment Report</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
-            <p class="cta">
-              <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
-            </p>
-          </div>
+      <div class="col">
+        <div class="mktoText" id="footertext2" mktoName="Footer Text 2">
+          <ul>
+            <li>© 2022 Illumio</li>
+            <li><a href="https://illumio.com/legal-information">Legal</a>
+            </li>
+            <li><a href="https://www.illumio.com/privacy-policy">Privacy</a>
+            </li>
+            <li><a href="https://www.illumio.com/terms-of-use">Terms of Use</a>
+            </li>
+            <li><a href="https://www.illumio.com/responsible-disclosure-policy">Responsible Disclosure</a>
+            </li>
+            <li><a href="https://www.illumio.com/trust">Trust</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+      <div class="icons-container col">
 
-    <footer id="footer">
-      <div class="footer-container section flex">
-
-        <div class="row1">
-          <div class="logo-container col">
-            <div class="mktoText" id="footer-logo" mktoName="Foote logo - Logo">
-              <a href="https://illumio.com"><img src="https://lp.illumio.com/rs/093-SFK-561/images/footer_logo_short.png" alt="logo"></a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="mktoText" id="footertext2" mktoName="Footer Text 2">
-              <ul>
-                <li>© 2022 Illumio</li>
-                <li><a href="https://illumio.com/legal-information">Legal</a>
-                </li>
-                <li><a href="https://www.illumio.com/privacy-policy">Privacy</a>
-                </li>
-                <li><a href="https://www.illumio.com/terms-of-use">Terms of Use</a>
-                </li>
-                <li><a href="https://www.illumio.com/responsible-disclosure-policy">Responsible Disclosure</a>
-                </li>
-                <li><a href="https://www.illumio.com/trust">Trust</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="icons-container col">
-
-            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
-              <ul>
-                <li id="footer-icon1">
-                  <a href="https://twitter.com/illumio" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/twitter-square-brands.png"></a>
-                </li>
-                <li id="footer-icon3">
-                  <a href="https://www.linkedin.com/company/illumio/" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/linkedin-square-white.png" alt="social icon"></a>
-                </li>
-                <li id="footer-icon4">
-                  <a href="https://www.facebook.com/illumio" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/facebook-square-white.png" alt="social icon"></a>
-                </li>
-                <li id="footer-icon5">
-                  <a href="https://www.youtube.com/channel/UCcc37xm_Ezy5TprR-N4CCJA" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/youtube-square-brands.png" alt="social icon"></a>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-
+        <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
+          <ul>
+            <li id="footer-icon1">
+              <a href="https://twitter.com/illumio" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/twitter-square-brands.png"></a>
+            </li>
+            <li id="footer-icon3">
+              <a href="https://www.linkedin.com/company/illumio/" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/linkedin-square-white.png" alt="social icon"></a>
+            </li>
+            <li id="footer-icon4">
+              <a href="https://www.facebook.com/illumio" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/facebook-square-white.png" alt="social icon"></a>
+            </li>
+            <li id="footer-icon5">
+              <a href="https://www.youtube.com/channel/UCcc37xm_Ezy5TprR-N4CCJA" target="_blank"><img src="https://lp.illumio.com/rs/093-SFK-561/images/youtube-square-brands.png" alt="social icon"></a>
+            </li>
+          </ul>
         </div>
 
-
       </div>
-    </footer>
+
+    </div>
+
+
+  </div>
+</footer>
 <script>
-MktoForms2.whenReady(function(form) {
+  MktoForms2.whenReady(function(form) {
     document.querySelectorAll('.mktoLogicalField')[0].parentElement.classList.add('checkboxcontainer')
-});
+  });
 </script>
 
-  </body>
+</body>
 </html>
