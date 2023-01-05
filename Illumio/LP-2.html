@@ -52,6 +52,9 @@
     <!-- Margins, paddings, alignments and sections styling -->
     <meta class="mktoString" mktoName="Hero Section Pad Top" id="hero-pd-top" default="3">
     <meta class="mktoString" mktoName="Hero Section Pad Bottom" id="hero-pd-btm" default="2">
+      
+    <meta class="mktoString" mktoName="Hero Section Pad Top" id="form-pd-top" default="3">
+    <meta class="mktoString" mktoName="Hero Section Pad Bottom" id="form-pd-btm" default="2">
 
     <meta class="mktoString" mktoName="Form Container Max Width" id="form-max-width" default="480">
       
@@ -149,7 +152,7 @@
 
 
 
-      body {background:#fff;display:flex;flex-direction: column;} 
+      body {background:#fff;display:flex;flex-direction: column;overflow-x:hidden;} 
 .mobile-content {
   display: none;
 }
@@ -233,22 +236,22 @@
         font-family: ${fontfamily-bold}, sans-serif !important;
         font-weight: 700;
       }
-      .btn a{
-        border: 2.5px solid ${btnbrdclr};
-        background: ${btnbgclr};
-        padding: ${btnpaddingtb}px ${btnpaddinglr}px;
-        -moz-border-radius: ${btnborderrds}px;
-        -webkit-border-radius: ${btnborderrds}px;
-        border-radius:${btnborderrds}px;
+      .btn a, .mktoForm .mktoButton {
+        border: 2.5px solid ${btnbrdclr} !important;
+        background: ${btnbgclr} !important;;
+        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
+        -moz-border-radius: ${btnborderrds}px !important;
+        -webkit-border-radius: ${btnborderrds}px !important;
+        border-radius:${btnborderrds}px !important;
         text-align:center;
-        font-size:${btnfontsize}px;
-        transition:300ms opacity;
-        text-transform: uppercase;
-        font-weight: 800;
-        transition: all 0.2s;
-        white-space: nowrap;
+        font-size:${btnfontsize}px !important;
+        transition:300ms opacity !important;
+        text-transform: uppercase !important;
+        font-weight: 800 !important;
+        transition: all 0.2s !important;
+        white-space: nowrap !important;
         font-family: ${fontfamily-bold}, sans-serif !important;
-        font-weight: 600;
+        font-weight: 600 !important;
       }
       .btn a:hover, .btn a:focus {
         background: ${btnhoverbackground};
@@ -372,12 +375,10 @@
       #formsection .column:nth-child(1) {
         width: calc((100% / 2) - 0.5rem);
         max-width: 100%;
-        border: solid 1px red;
       }
       #formsection .column:nth-child(2) {
         width: calc((100% / 2) - 7rem);
         max-width: 100%;
-        border: solid 1px red;
       position: relative;
         
       }
@@ -387,13 +388,13 @@
         background: url('https://lp.illumio.com/rs/093-SFK-561/images/secondary-hero-background.png');
         background-repeat: no-repeat;
         position: absolute;
-        top: 0;
-        right: -5vw;
-        background-size: 100%;
+        top: -2rem;
+        background-size: 110%;
         z-index: 1;
-        width: 80vw;
-        max-width: 1400px;
-        height: 35rem;
+        width: 1700px;
+        max-width: 1600px;
+        height: 85rem;
+        transform: translate(-50%, -1%);
       }
       #formsection h1 {
         font-size: 60px;
@@ -818,6 +819,12 @@
          #formsection .column {
           width: 100% !important;
         }
+        .form-container {
+          margin: 2rem auto 0 !important;
+        }
+        #formsection .column:nth-child(2):after {
+          display: none;
+        }
         #threecols h2 {
           text-align: left;
               max-width: 480px;
@@ -863,21 +870,30 @@
     font-size: 20px;
     line-height: 24px;
   }
-  #hero p {
+  #hero p,
+  #hero ul,
+  #hero li {
     font-size: 20px;
     line-height: 24px;
   }
+  
     #formsection h1 {
     font-size: 36px;
     line-height: 40px;
   }
+  
   #formsection h2 {
     font-size: 20px;
     line-height: 24px;
   } 
-  #formsection p {
+  #formsection p,
+  #formsection ul,
+  #formsection li {
     font-size: 20px;
     line-height: 24px;
+  }
+  .form-container {
+    margin: 2rem auto 3rem !important;
   }
   .btn a {
    padding: calc(${btnpaddingtb}px - 2px) ${btnpaddinglr}px;
@@ -973,7 +989,7 @@
       .form-container {
         max-width: ${form-max-width}px;
         margin: 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        box-shadow: 0px 0px 10px #00000040;
         border-radius: 20px;
         z-index: 2;
         position: relative;
@@ -982,6 +998,9 @@
       }
       .mktoForm .mktoOffset, .mktoForm .mktoGutter {
         display: none !important;
+      }
+      .mktoForm .mktoButtonRow {
+        width: 100 !important;
       }
       .mktoForm .mktoLabel {
         white-space: nowrap;
@@ -998,6 +1017,13 @@
       }
       .mktoForm .mktoFormRow {
         margin: 0.5rem 0;
+      }
+      .mktoForm .mktoButtonWrap {
+        display: flex;
+        margin: 0 auto !important;
+      }
+      .mktoForm .mktoButton {
+        margin: 0 auto !important;
       }
       .mktoForm,
       .mktoForm .mktoFormRow,
@@ -1021,6 +1047,46 @@
 .mktoForm .mktoFormRow:focus-within label {
   opacity: 0;
   transition: all 0.3s;
+  
+}
+.checkboxcontainer {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  justify-content: flex-end;
+}
+.mktoForm .mktoFormRow:focus-within .checkboxcontainer label {
+  opacity: 1 !important;
+  
+}
+.mktoForm .checkboxcontainer label {
+  position: relative;
+  white-space: unset !important;
+  float: none !important;
+  width: 94% !important;
+  bottom: 0;
+  padding-top: 0 !important;
+}
+.mktoForm .checkboxcontainer .mktoCheckboxList {
+  width: 1rem !important;
+}
+.checkboxcontainer input[type=checkbox] + label {
+  display: none !important;
+}
+ 
+@media only screen and (max-width: 480px) {
+ 
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    height: 3rem !important;
+    line-height: initial !important;
+    font-size: initial !important;
+}
 }
     </style>
   </head>
@@ -1110,8 +1176,6 @@ Morbi venenatis, neque eget dignissim tincidunt, arcu augue elementum mauris:
             </div>
           </div>
          <div class="mktoText mobile-content" id="freetextcopy2" mktoName="Free-Text - Copy 2">
-           
-              
              <p>
               Vestibulum nec consequat ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida magna risus, finibus lacinia nunc lacinia sed. Donec vulputate ante eget nibh mattis, at sollicitudin risus ornare. 
               <br><br>
@@ -1284,7 +1348,11 @@ Morbi venenatis, neque eget dignissim tincidunt, arcu augue elementum mauris:
 
       </div>
     </footer>
-
+<script>
+MktoForms2.whenReady(function(form) {
+    document.querySelectorAll('.mktoLogicalField')[0].parentElement.classList.add('checkboxcontainer')
+});
+</script>
 
   </body>
 </html>
