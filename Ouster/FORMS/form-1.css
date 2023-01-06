@@ -1,0 +1,198 @@
+body {
+    background-color: lightblue;
+}
+
+.mktoForm .mktoOffset,
+.mktoForm .mktoGutter,
+.mktoForm .mktoAsterix {
+    display: none !important;
+}
+
+.mktoForm {
+    max-width: 540px;
+    width: 540px !important;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap {
+    width: 100%;
+}
+
+.mktoForm .mktoFormRow {
+    margin: 0.1rem 0 !important;
+}
+
+.mktoForm .mktoFieldWrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mktoForm .mktoLabel {
+    width: 30% !important;
+    color: #0a2540;
+    font-weight: 600 !important;
+    font-size: 15px;
+    padding-right: 1rem !important;
+}
+
+.mktoForm .mktoLabel span {
+    font-size: 13px !important;
+    font-weight: 300 !important;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField,
+.mktoForm select.mktoField {
+    width: 70% !important;
+    background-color: #f1f4f7 !important;
+    border: solid 1px #f1f4f7;
+    outline: none !important;
+    padding: 9px 12px !important;
+    color: #0a2540;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 4px !important;
+}
+
+.mktoForm select.mktoField {
+    padding: 9px 10px !important;
+    height: fit-content;
+}
+
+.mktoForm input[type=text]::placeholder,
+.mktoForm input[type=url]::placeholder,
+.mktoForm input[type=email]::placeholder,
+.mktoForm input[type=tel]::placeholder,
+.mktoForm input[type=number]::placeholder,
+.mktoForm input[type=date]::placeholder,
+.mktoForm textarea.mktoField::placeholder,
+{
+    color: #ACB9C5;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.mktoForm .mktoButtonWrap {
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    margin-top: 0.75rem !important;
+}
+
+.mktoForm .mktoButton {
+    background-color: #635bff !important;
+    background: #635bff !important;
+    border: solid 1px #f1f4f7;
+    border-radius: 16.5px !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    width: unset !important;
+    height: unset !important;
+    padding: 8px 16px !important;
+}
+
+textarea.mktoField {
+    resize: vertical !important;
+    max-height: 300px !important;
+    min-height: 4rem !important;
+}
+
+@media (max-width:640px) {
+    .mktoForm {
+        max-width: 95% !important;
+    }
+    .mktoForm .mktoFieldWrap {
+        flex-direction: column;
+    }
+    .mktoForm .mktoLabel {
+        margin-bottom: 0.25rem;
+    }
+    .mktoForm .mktoLabel,
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm input[type=email],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=number],
+    .mktoForm input[type=date],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField,
+    .mktoForm select.mktoField {
+        width: 100% !important;
+    }
+    .mktoForm .mktoButtonWrap {
+        width: 100%;
+        justify-content: flex-start;
+        margin: 1rem 0 0.25rem 0 !important;
+    }
+}
+
+@media (max-width:480px) {
+    .mktoForm {
+        padding: 1rem !important
+    }
+    .mktoForm input[type=text],
+    .mktoForm input[type=url],
+    .mktoForm input[type=email],
+    .mktoForm input[type=tel],
+    .mktoForm input[type=number],
+    .mktoForm input[type=date],
+    .mktoForm textarea.mktoField,
+    .mktoForm select.mktoField,
+    .mktoForm select.mktoField {
+        width: 100% !important;
+        background-color: #f1f4f7 !important;
+        border: solid 1px #f1f4f7;
+        outline: none !important;
+        padding: 9px 12px !important;
+        color: #0a2540;
+        font-weight: 400;
+        font-size: 15px;
+        border-radius: 4px !important;
+        height: unset !important;
+        line-height: unset !important;
+    }
+    .mktoForm select.mktoField {
+        padding: 9px 10px !important;
+        height: fit-content;
+    }
+}
+
+
+/* err validations */
+
+.mktoForm input[type=text].mktoInvalid,
+.mktoForm input[type=url].mktoInvalid,
+.mktoForm input[type=email].mktoInvalid,
+.mktoForm input[type=tel].mktoInvalid,
+.mktoForm input[type=number].mktoInvalid,
+.mktoForm input[type=date].mktoInvalid,
+.mktoForm textarea.mktoField.mktoInvalid,
+.mktoForm select.mktoField.mktoInvalid,
+.mktoForm select.mktoField.mktoInvalid {
+    border: solid 1px #ff5996 !important;
+}
+
+.mktoForm input[type=text].mktoInvalid:active,
+.mktoForm input[type=url].mktoInvalid:active,
+.mktoForm input[type=email].mktoInvalid:active,
+.mktoForm input[type=tel].mktoInvalid:active,
+.mktoForm input[type=number].mktoInvalid:active,
+.mktoForm input[type=date].mktoInvalid:active,
+.mktoForm textarea.mktoField.mktoInvalid:active,
+.mktoForm select.mktoField.mktoInvalid:active,
+.mktoForm select.mktoField.mktoInvalid:active {
+    border: solid 1px #f1f4f7;
+}
