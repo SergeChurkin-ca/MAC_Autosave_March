@@ -78,8 +78,7 @@ body {
 .mktoForm input[type=tel]::placeholder,
 .mktoForm input[type=number]::placeholder,
 .mktoForm input[type=date]::placeholder,
-.mktoForm textarea.mktoField::placeholder,
-{
+.mktoForm textarea.mktoField::placeholder {
     color: #ACB9C5;
     font-size: 15px;
     font-weight: 500;
@@ -159,7 +158,7 @@ textarea.mktoField {
         padding: 9px 12px !important;
         color: #0a2540;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 15px !important;
         border-radius: 4px !important;
         height: unset !important;
         line-height: unset !important;
@@ -167,6 +166,17 @@ textarea.mktoField {
     .mktoForm select.mktoField {
         padding: 9px 10px !important;
         height: fit-content;
+    }
+    .mktoForm input[type=text]::placeholder,
+    .mktoForm input[type=url]::placeholder,
+    .mktoForm input[type=email]::placeholder,
+    .mktoForm input[type=tel]::placeholder,
+    .mktoForm input[type=number]::placeholder,
+    .mktoForm input[type=date]::placeholder,
+    .mktoForm textarea.mktoField::placeholder {
+        color: #ACB9C5;
+        font-size: 15px;
+        font-weight: 500;
     }
 }
 
