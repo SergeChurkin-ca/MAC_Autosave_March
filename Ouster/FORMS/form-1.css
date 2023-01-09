@@ -206,3 +206,32 @@ textarea.mktoField {
 .mktoForm select.mktoField.mktoInvalid:active {
     border: solid 1px #f1f4f7;
 }
+
+
+/* error message */
+
+.mktoForm .mktoError .mktoErrorMsg {
+    display: none !important
+}
+
+.mktoForm .mktoError {
+    right: 0.4rem !important;
+    bottom: 0.75rem !important;
+}
+
+.mktoForm .mktoError::after {
+    content: '!' !important;
+    z-index: 99 !important;
+    font-weight: 800 !important;
+    font-size: 13px !important;
+    border-radius: 50% !important;
+    border: solid 1px #F6D6E5 !important;
+    width: 2rem !important;
+    height: 0.75rem !important;
+    padding: 0.15rem 0.5rem !important;
+    background-color: #F6D6E5 !important;
+}
+
+.mktoForm .mktoError .mktoErrorArrowWrap {
+    display: none !important;
+}
