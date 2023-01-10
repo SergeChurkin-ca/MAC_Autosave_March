@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
-    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://it.recastsoftware.com/rs/563-ODB-688/images/favicon.ico">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://it.recastsoftware.com/rs/563-ODB-688/images/favicon.png">
 
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
@@ -23,6 +23,7 @@
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <!-- Background, Buttons, and Text Color Meta Tags -->
+    <meta class="mktoColor" id="topanvbhcolor" mktoName="Brand - Background Color" default="#E0E4E1">
     <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#E0E4E1">
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#323e48">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#323e48">
@@ -61,7 +62,7 @@
     <!-- Font Size Meta Tags -->
     <meta class="mktoString" mktoName="Header - H1(Header) Font Size (px)" id="header-h1fontsize" default="40">
     <meta class="mktoString" mktoName="Freetext - H1(Freetext) Font Size (px)" id="freeTextH1size" default="32">
-    <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="16">
+    <meta class="mktoString" mktoName="Header - p Font Size (px)" id="header-p-fontsize" default="24">
     <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="32">
     <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="24">
 
@@ -74,8 +75,8 @@
 
     <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="30">
     <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="30">
-    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
-    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="1">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="1">
 
     <!-- Free-Text Section Styling -->
     <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
@@ -247,7 +248,9 @@
         display:${showformsec};
       }
 
-
+#brand {
+  background: ${topanvbhcolor};
+}
       #brand .section{
         display:flex;
         flex-direction:column;
@@ -256,6 +259,7 @@
         position:relative;
         padding-top:${logopaddingtop}px;
         padding-bottom:${logopaddingbtm}px;
+        
       }
 
 
@@ -574,7 +578,7 @@
         max-width:${footerlogowidth}px;
       }
   #footer .footer-menu {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem !important;
     white-space: nowrap;
   }
   #footer .footer-menu li {
@@ -763,7 +767,7 @@
       <div class="section">
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
-            <a href="https://www.recastsoftware.com/events-webinars/"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/Recast-Logo-Dark_Horizontal.png" alt="logo"></a>
+            <a href="https://www.recastsoftware.com/"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/Recast-Logo-Dark_Horizontal.png" alt="logo"></a>
           </div>
         </div>
       </div>
@@ -772,7 +776,7 @@
       <div class="section">
         <div class="logo-container">
           <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
-            <a href="https://www.recastsoftware.com/events-webinars/"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/Recast-Logo-Dark_Horizontal.png" alt="logo"></a>
+            <a href="https://www.recastsoftware.com/"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/Recast-Logo-Dark_Horizontal.png" alt="logo"></a>
           </div>
         </div>
         <div class="mktoText" id="bannertext" mktoName="Banner - Text">
@@ -852,12 +856,12 @@
 
             <div class="logo-container col">
                 <div class="mktoText" id="footer-logo" mktoName="Footer logo - Logo">
-                    <a href="https://www.investmentctr.com/"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/Recast-Logo-White_Horizontal.png" alt="logo"></a>
+                    <a href="https://www.recastsoftware.com/"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/Recast-Logo-White_Horizontal.png" alt="logo"></a>
                 </div>
      <div class="icons-container mktoText" id="footer" mktoName="Footer Social">
         <ul class="social-icons">
-                    <li><a target="_blank" href="https://facebook.com/investmentcenterinc" >
-                    <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/twitter.png" class="footer__social-image" alt="facebook icon">
+                    <li><a target="_blank" href="https://twitter.com/recastsoftware?lang=en" >
+                    <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/twitter.png" class="footer__social-image" alt="icon">
                 </a></li>
                 <li><a target="_blank" href="https://www.youtube.com/c/RecastSoftware" >
                     <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/youtube.png" alt="icon">
