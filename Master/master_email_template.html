@@ -25,26 +25,20 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoColor" id="bannerLight-bg-Color" mktoName="Background Color" default="#ECF4FB" />
   
 <meta mktoModuleScope="true" class="mktoNumber" id="regLogoWidth" mktoname="Logo Width (px)" default="220" />
-<meta mktoModuleScope="true" class="mktoNumber" id="vidWidth" mktoname="Video Image Width (px)" default="450" />
 <meta mktoModuleScope="true" class="mktoNumber" id="imgWidth" mktoname="Image Width (px)" default="690" />
   
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad0" mktoname="Top Padding" default="0" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad5" mktoname="Top Padding" default="5" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad10" mktoname="Top Padding" default="10" />
-<meta mktoModuleScope="true" class="mktoNumber" id="top_pad15" mktoname="Top Padding" default="15" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad20" mktoname="Top Padding" default="20" />
-<meta mktoModuleScope="true" class="mktoNumber" id="top_pad25" mktoname="Top Padding" default="25" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad30" mktoname="Top Padding" default="30" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad40" mktoname="Top Padding" default="40" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad70" mktoname="Top Padding" default="70" />
-<meta mktoModuleScope="true" class="mktoNumber" id="top_pad110" mktoname="Top Padding" default="110" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad0" mktoname="Bottom Padding" default="0" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad5" mktoname="Bottom Padding" default="5" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad10" mktoname="Bottom Padding" default="10" />
-<meta mktoModuleScope="true" class="mktoNumber" id="btm_pad15" mktoname="Bottom Padding" default="15" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad20" mktoname="Bottom Padding" default="20" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad35" mktoname="Bottom Padding" default="35" />
-<meta mktoModuleScope="true" class="mktoNumber" id="btm_pad30" mktoname="Bottom Padding" default="30" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad40" mktoname="Bottom Padding" default="40" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad110" mktoname="Bottom Padding" default="110" />
 <meta mktoModuleScope="true" class="mktoNumber" id="head-btm_pad" mktoname="Headline Bottom Padding" default="10" />
@@ -70,7 +64,6 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoString" id="video_link" mktoName="Video Link / CTA" default="http://marketing-automation.ca">
 
 <meta mktoModuleScope="true" id="outlook-ht1" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="360" min="0" max="1000" step="1" />
-<meta mktoModuleScope="true" id="outlook-ht2" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="290" min="0" max="1000" step="1" />
 <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="20"  />
 
 <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead" mktoName="Button Text Color" default="#ffffff" />
@@ -103,7 +96,6 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoList" id="alignCenterlogo" mktoName="Logo Align" values="left,center,right" default="center" />
 <meta mktoModuleScope="true" class="mktoList" id="alignCenter" mktoName="Align" values="left,center,right" default="center" />
 <meta mktoModuleScope="true" class="mktoList" id="alignLeft" mktoName="Align" values="left,center,right" default="left" />
-<meta mktoModuleScope="true" class="mktoList" id="alignRight" mktoName="Align" values="left,center,right" default="right" />
 <meta mktoModuleScope="true" class="mktoList" id="alignbtn" mktoName="Align Button" values="left,center,right" default="center" />
 <meta mktoModuleScope="true" class="mktoList" id="align" mktoName="Content Align" values="left,center,right" default="left" />
 
@@ -263,7 +255,7 @@ th{font-weight:normal !important}
 <tr>
 <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
 <div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;" /></a>
+    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;max-width:${regLogoWidth}px;" /></a>
 </div>
 </th>
 </tr>
@@ -354,9 +346,9 @@ th{font-weight:normal !important}
 </tr>
 <tr>
 <td class="fullWid center" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px;">
-<div class="mktoImg" mktoname="Image" id="Image1" mktoLockImgSize="false">
+<div class="mktoImg" mktoname="Image" id="Image1" mktoLockImgSize="true">
     <div>
-        <img class="imgmaxwidth" src="https://dummyimage.com/690x270/EEF3F9/B3B8C4" width="${imgWidth}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; width:${imgWidth}px; padding:0px; margin:0px auto; border-spacing:0;max-width:100%;"
+        <img class="imgmaxwidth" src="https://dummyimage.com/690x270/EEF3F9/B3B8C4" width="${imgWidth}" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; width:${imgWidth}px; padding:0px; margin:0px auto; border-spacing:0;max-width:${imgWidth}px;"
             />
     </div>
 </div>
@@ -393,6 +385,9 @@ th{font-weight:normal !important}
 </tr>
 </table>
 <!--Headline Module-->
+  
+
+  
 <!--SubHeadline Module-->
 <table class="mktoModule" mktoName="SubHeadline Module" id="SubHeadline" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
@@ -1155,7 +1150,7 @@ th{font-weight:normal !important}
 <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
 <td bgColor="${mod-bg-color}" valign="top" style="background-color:${mod-bg-color};vertical-align: top;">
-<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
 <tr>
 <td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
 </tr>
@@ -1215,7 +1210,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in nunc ligula
 <tr>
 <td align="${alignLeft}" style="text-align: ${alignLeft};">
 <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidthl" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" width="220" border="0" /></a>
+    <a href="#" target="_blank"><img class="logowidthl" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" width="220" border="0" style="max-width:200px;" /></a>
 </div>
 </td>
 </tr>
