@@ -16,11 +16,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="./LP_MAC_Style.css" rel="stylesheet">
+	
 	<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
          <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">   
         
 	<link href="./form.css" rel="stylesheet">
+        <link href="./LP_MAC_Style.css" rel="stylesheet">
   
   <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');" allowHtml="true">
   <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Roboto" allowHtml="true">
@@ -75,7 +76,10 @@
 
   
   <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
+  <meta class="mktoBoolean" id="showformtextform" mktoName="Show Form/Text Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="showformtexttext" mktoName="Show Form/Text Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
+  <meta class="mktoColor" id="formtext-maxwidth" mktoName="Form/Text - Max Width" default="800">  
   <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
   <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
   <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
@@ -207,6 +211,24 @@
           display:${formtextshow};
           order:${formtextorder};
 		}
+         #formtext .container_inner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        #formtext .right, #formtext .left {
+            flex: 1 0 400px;
+        }
+       
+        #formtext .left {
+            display: ${showformtexttext};
+        }
+        #formtext .right {
+            display: ${showformtextform};
+            justify-content: center;
+            margin: 0 auto;
+            max-width:${formtext-maxwidth}px;
+        }
 		#threecol {
 			background-color:${threecolbgcolor};
           display:${threecolshow};
@@ -458,10 +480,44 @@
           text-decoration:none!important;
           width: auto!important!important;
           display:inline-block;
+          max-width: 400px !important;
 		}
   
       ${formtexttwocol}
       ${formtexttwocol2}
+      
+@media ( max-width: 480px) {
+    .section {
+        max-width: 90% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        border: solid 1px red;
+    }
+    .left,
+    .right {
+        max-width: 100% !important;
+    }
+    #bannner .mktoForm .mktoFormRow,
+    #formtext .mktoForm .mktoFormRow {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0 auto !important;
+    }
+    .mktoForm .mktoFormRow {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .mktoForm div,
+    .mktoForm span,
+    .mktoForm label,
+    .mktoForm p {
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+}
  </style>
     
 </head>
