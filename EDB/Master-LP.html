@@ -16,8 +16,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/LP_MAC_Style.css" rel="stylesheet">
+	<link href="./LP_MAC_Style.css" rel="stylesheet">
 	<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
+        
 	<link href="./form.css" rel="stylesheet">
   
   <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');" allowHtml="true">
@@ -73,18 +74,20 @@
   <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
   <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
   <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-  <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-  <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
+  <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="false" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    
+  <meta class="mktoBoolean" id="formtexttwocol2" mktoName="Banner Form - First Row Two Columns?" default="true" true_value="#banner .mktoForm .mktoFormRow:nth-child(2) {width:48%!important;display:inline-block!important;margin-right:2%;}; #banner .mktoForm .mktoFormRow:nth-child(3) {width:48%!important;display:inline-block;}" false_value="#banner .mktoForm .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+  <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="14" allowHtml="true">
   <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
   <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
   <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
-  <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#ffffff">
+  <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#1f023e">
   <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
   <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
   <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
   <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
-  <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#1F203E">
+  <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#4d4d4d">
   <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
   <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
   <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
@@ -374,11 +377,64 @@
      
 		}
 	</style>
-    <style>
-        .container_inner {
-            border: solid 1px red;
+ <!-- Form Text -->
+ <style>
+    #formtext .mktoForm .mktoLabel {
+          color:${formtextpcolor}!important;
+          font-size:${formtextpsize}px!important;
+          font-weight:${formtextpweight}!important;
+          
+		}
+		#formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
+          border:${formtextbordercolor} ${formtextborderheight}px solid;
+          border-radius:${formtextborderradius}px!important;
+          background-color:${formtextfieldcolor}!important;
+          color:${formtextpcolor}!important;
+          box-shadow:0 !important;
+          box-shadow:none !important;
+          height:50px !important;
+          min-height:40px !important;
         }
-    </style>
+        #formtext .mktoForm input, #formtext .mktoForm textarea, .mktoForm select {
+          box-shadow:0 !important;
+          box-shadow:none !important;
+          height:50px !important;
+          min-height:40px !important;
+          
+        }
+        #formtext .mktoForm input[type=text], #formtext .mktoForm input[type=url], #formtext .mktoForm input[type=email], #formtext .mktoForm input[type=tel], #formtext  .mktoForm input[type=number], #formtext .mktoForm input[type=date], #formtext  .mktoForm select.mktoField, #formtext .mktoForm textarea.mktoField{
+          box-shadow:none !important;
+        }
+        .mktoForm .mktoButtonWrap {
+          margin-left:0 !important;
+        }
+      	.mktoForm textarea {
+          height:100px !important;
+          min-height:80px !important;
+        }
+        .mktoForm .mktoButtonWrap.mktoGlow .mktoButton{
+          box-shadow:none !important;
+        }
+      	#formtext #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
+          color:${formtextpcolor}!important;
+        }
+		#formtext .mktoForm button.mktoButton {
+          background-color:${formtextbtnbgcolor}!important;
+          border:1px solid ${formtextbtnbordercolor}!important;
+          border-radius:${formtextbtnborderradius}px!important;
+          font-size:${formtextbtntextsize}px!important;
+          padding:15px 50px!important;
+          color:${formtextbtntextcolor}!important;
+          font-weight:bold!important;
+          text-decoration:none!important;
+          width: auto!important!important;
+          display:inline-block;
+		}
+  
+      ${formtexttwocol}
+      ${formtexttwocol2}
+ </style>
+    
 </head>
 
 <body>
@@ -415,8 +471,8 @@
          </div>
          <div class="right">
            <div class="mktText" id="bannerightcol" mktoName="Banner - Right Column">
-            <!-- <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/elephant-hero.png"> -->
-                <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2544"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 2544);</script>
+             <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/elephant-hero.png">
+              
            </div>
          </div>
       </div>
@@ -438,7 +494,7 @@
               <h2>Form Headline</h2>
            </div>
             <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
-                
+                  <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2544"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 2544);</script>
             </div>
          </div>
       </div>
@@ -768,32 +824,8 @@
        }
     };
 
-    MktoForms2.onFormRender(function(){
-      formLabels();
-      styleForm();
-    });
-
-    (function(){
-    $('.mktoForm').hide();
-      MktoForms2.whenRendered(function(formObject){
-        var $theForm = formObject.getFormElem();
-        $('style', $theForm).remove();
-        $('#mktoForms2BaseStyle').remove();
-        $('#mktoForms2ThemeStyle').remove();
-        $theForm.removeAttr('style');
-        $('*', $theForm).removeAttr('style');
-
-        // Strip extra elements
-        $('.mktoOffset', $theForm).remove();
-        $('.mktoGutter', $theForm).remove();
-        $('.mktoClear', $theForm).remove();
-        $('.mktoAsterix', $theForm).remove();
-
-        // Remove excess classes
-        $('*').removeClass('mktoHasWidth');
-      });
-    $('.mktoForm').fadeIn(1500);
-    })();
+    
+ 
     </script>
     <script type="text/javascript">
     (function() {
@@ -878,8 +910,8 @@ MktoForms2.whenReady(function (form) {
     Array.from(document.querySelectorAll('input')).map((x) => x.addEventListener('change', myFunc));
    Array.from(document.querySelectorAll('select')).map((x) => x.addEventListener('change', myFunc2));
 
-   function myFunc() {
-       Array.from(document.querySelectorAll('input')).map((x) => x.value !== '' ? x.parentElement.classList.add('activefield') : x.parentElement.classList.remove('activefield'))
+   function myFunc(e) {
+       Array.from(document.querySelectorAll('input')).map((x) => x.target.value !== '' ? x.parentElement.classList.add('activefield') : x.parentElement.classList.remove('activefield'))
    }
 
    function myFunc2(e) {
