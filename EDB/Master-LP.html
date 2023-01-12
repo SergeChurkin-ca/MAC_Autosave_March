@@ -911,7 +911,7 @@ MktoForms2.whenReady(function (form) {
    Array.from(document.querySelectorAll('select')).map((x) => x.addEventListener('change', myFunc2));
 
    function myFunc(e) {
-       Array.from(document.querySelectorAll('input')).map((x) => x.target.value !== '' ? x.parentElement.classList.add('activefield') : x.parentElement.classList.remove('activefield'))
+       e.target.parentElement.classList.toggle('activefield')
    }
 
    function myFunc2(e) {
