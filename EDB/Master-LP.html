@@ -18,6 +18,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="./LP_MAC_Style.css" rel="stylesheet">
 	<link href="http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-fontawesome.css" rel="stylesheet">
+         <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">   
         
 	<link href="./form.css" rel="stylesheet">
   
@@ -42,10 +43,12 @@
   <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
 
 
-  <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#1F203E">
+  <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#FF5442">
+  <meta class="mktoColor" id="hover-btnbgcolor" mktoName="All Buttons - Hover:BG Color" default="#C23105">
   <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
-  <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#1F203E">
-  <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="20" allowHtml="true">
+  <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#FF5442">
+  <meta class="mktoColor" id="hover-btnbordercolor" mktoName="All Buttons - Hover:Border Color" default="#FF5442">
+  <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="16" allowHtml="true">
   <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
   <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
   
@@ -58,7 +61,8 @@
 
   <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#EEF3F9">
   <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
-  <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
+  <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="20" allowHtml="true">
+  <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#ffffff">
   <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#ffffff">
   <meta class="mktoColor" id="hover-banbtnbgcolor" mktoName="Banner - Hover: Btn BG Color" default="#ebebeb">
   <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#1f1f1f">
@@ -74,7 +78,7 @@
   <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
   <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
   <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-  <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="false" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+  <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
     
   <meta class="mktoBoolean" id="formtexttwocol2" mktoName="Banner Form - First Row Two Columns?" default="true" true_value="#banner .mktoForm .mktoFormRow:nth-child(2) {width:48%!important;display:inline-block!important;margin-right:2%;}; #banner .mktoForm .mktoFormRow:nth-child(3) {width:48%!important;display:inline-block;}" false_value="#banner .mktoForm .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
   <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="14" allowHtml="true">
@@ -88,9 +92,9 @@
   <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
   <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
   <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#4d4d4d">
-  <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="20" allowHtml="true">
+  <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="14" allowHtml="true">
   <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="50" allowHtml="true">
+  <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="3" allowHtml="true">
 
   <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
@@ -129,7 +133,7 @@
   <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
   <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
   <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-  <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
+  <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="FF5442">
   <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
   <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
   <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
@@ -151,9 +155,6 @@
   <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
   <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
 
 	<style>
       ${googleimport}
@@ -166,6 +167,12 @@
         }
         .container_inner{
           width:90%;
+        }
+        #navbar {
+            padding: 1.75rem 0 !important;
+        }
+        .navbarlogo {
+            width: 94px;
         }
 		#banner {
           background-color:${bannerbgcolor};
@@ -253,10 +260,14 @@
           color:${h1color};
 			font-weight:bold;
 		}
-		.headlinetext p {
+		.headlinetext p,
+		.headlinetext ul,
+		.headlinetext li,
+		.headlinetext ol {
           font-size:${bannercopysize}px;
           color:${bannerpcolor};
           font-weight:${pweight};
+          line-height: 30px;
 		}
 		p {
           color:${pcolor};
@@ -285,6 +296,19 @@
 			font-weight:bold;
 			margin-top:0;
 		}
+        .list-style-icons {
+            list-style: none !important;
+            padding: 0;
+        }
+        #banner .list-style-icons li:before {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            margin-right: 1rem;
+            color: #FE5000;
+            font-size: ${psize}px;
+        }
+       
 		#banner .button a {
           background-color:${banbtnbgcolor};
           border:1px solid ${banbtnbordercolor};
@@ -318,7 +342,14 @@
           font-weight:bold;
           text-decoration:none;
           display:inline-block;
+          cursor: pointer;
 		}
+        .button a:hover,
+        .button a:focus {
+        background-color:${hover-btnbgcolor};
+          border:1px solid ${hover-btnbordercolor};
+          color:${hover-btntextcolor};
+        }
 		.section {
           margin-top:${sectionspacing}px;
 			margin-bottom:${sectionspacing}px;
@@ -392,13 +423,11 @@
           color:${formtextpcolor}!important;
           box-shadow:0 !important;
           box-shadow:none !important;
-          height:50px !important;
           min-height:40px !important;
         }
         #formtext .mktoForm input, #formtext .mktoForm textarea, .mktoForm select {
           box-shadow:0 !important;
           box-shadow:none !important;
-          height:50px !important;
           min-height:40px !important;
           
         }
@@ -465,6 +494,13 @@
             <div class="mktoText headlinetext" id="bannerheadline" mktoName="Banner - Headline">
                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                <p>Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue.</p>
+               <ul class="list-style-icons">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Non, culpa. Est, quidem tenetur.</li>
+                <li>Voluptates ipsum totam quod sequi.</li>
+                <li>Eos enim ipsum cupiditate et?</li>
+                <li>Provident aliquam et ullam soluta.</li>
+               </ul>
             </div>
             <div class="mktoText button" id="bannerbtn" mktoName="Banner - Button"><a href="#">CTA Button</a>
             </div>
@@ -775,7 +811,7 @@
    </div>
    <!-- END Footer -->
 
-	{/* <script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script> */}
+	<script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
 	<script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
     
    
@@ -904,25 +940,19 @@
 	}
     </script>
 
- 
 <script>
 MktoForms2.whenReady(function (form) {
     Array.from(document.querySelectorAll('input')).map((x) => x.addEventListener('change', myFunc));
    Array.from(document.querySelectorAll('select')).map((x) => x.addEventListener('change', myFunc2));
-
    function myFunc(e) {
        e.target.parentElement.classList.toggle('activefield')
    }
-
    function myFunc2(e) {
        e.target.parentElement.classList.add('activefield')
    }
 });
 </script>
 
- 
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 </body>
 
 </html>
