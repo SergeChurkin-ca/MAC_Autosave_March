@@ -1,1452 +1,1350 @@
 <!DOCTYPE html>
 <!--[if lt IE 7 ]>
 <html class="ie ie6" lang="en">
-   <![endif]-->
+<![endif]-->
 <!--[if IE 7 ]>
-   <html class="ie ie7" lang="en">
-      <![endif]-->
+<html class="ie ie7" lang="en">
+<![endif]-->
 <!--[if IE 8 ]>
-      <html class="ie ie8" lang="en">
-         <![endif]-->
+<html class="ie ie8" lang="en">
+<![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-<!--<![endif]-->
+  <!--<![endif]-->
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-         <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">   
-        
-	<!-- <link href="./form.css" rel="stylesheet"> -->
-        <link href="./LP_MAC_Style.css" rel="stylesheet">
-  
-  <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');" allowHtml="true">
-  <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Roboto" allowHtml="true">
-  <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://info.enterprisedb.com/rs/069-ALB-339/images/favicon.ico" allowHtml="true">
-  <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
-	<link rel="icon" type="image/x-icon" href="${favicon}" />
-	<title>${pageTitle}</title>
-  <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="220" allowHtml="true">
-  <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#ffffff">
-  <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
-  <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
-  <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
-  <meta class="mktoColor" id="bannerpcolor" mktoName="Global - banner p Color" default="#ffffff">
-  <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
-  <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
-  <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
-  <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
-  <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">   
 
-  <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#FF5442">
-  <meta class="mktoColor" id="btnbgcolor-transparent" mktoName="Transparent Button - BG Color" default="#ffffff">
-  <meta class="mktoColor" id="hover-btnbgcolor" mktoName="All Buttons - Hover:BG Color" default="#C23105">
-  <meta class="mktoColor" id="hover-btnbgcolor-transparent" mktoName="transparetn Button - Hover:BG Color" default="#FF5442">
-  <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
-  <meta class="mktoColor" id="hover-btntextcolor-transparent" mktoName="Transparent Button - Hover:Text Color" default="#ffffff">
-  <meta class="mktoColor" id="btntextcolor-transparent" mktoName="Transparent Button - Text Color" default="#FF5442">
-  <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#FF5442">
-  <meta class="mktoColor" id="btnbordercolor-transparent" mktoName="Transparetn Button - Border Color" default="#FF5442">
-  <meta class="mktoColor" id="hover-btnbordercolor" mktoName="All Buttons - Hover:Border Color" default="#FF5442">
-  <meta class="mktoColor" id="hover-btnbordercolor-transparent" mktoName="Transparent Button - Hover:Border Color" default="#FF5442">
-  <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="16" allowHtml="true">
-  <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
-  
-  <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoBoolean" id="showbannerlogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoBoolean" id="showbannertext" mktoName="Show Banner Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoBoolean" id="showbannerhero" mktoName="Show Banner Hero?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="https://info.enterprisedb.com/rs/069-ALB-339/images/EM-Hero-PurpleWave%401320x568.png" allowHtml="true">
+    <!-- <link href="./form.css" rel="stylesheet"> -->
+    <link href="https://info.enterprisedb.com/rs/069-ALB-339/images/LP_MAC_Style.css" rel="stylesheet">
+
+    <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');" allowHtml="true">
+    <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Roboto" allowHtml="true">
+    <meta class="mktoString" id="favicon" mktoName="Global - Fav Icon" default="https://info.enterprisedb.com/rs/069-ALB-339/images/favicon.ico" allowHtml="true">
+    <meta class="mktoString" id="pageTitle" mktoName="Global - Page Title" default="Page Title" allowHtml="true">
+    <link rel="icon" type="image/x-icon" href="${favicon}" />
+    <title>${pageTitle}</title>
+    <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="220" allowHtml="true">
+    <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#ffffff">
+    <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#1F203E">
+    <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#1F203E">
+    <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#1F203E">
+    <meta class="mktoColor" id="bannerpcolor" mktoName="Global - banner p Color" default="#ffffff">
+    <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#1F203E">
+    <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
+    <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="psize" mktoName="Global - p Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="pweight" mktoName="Global - p Font weight" default="400" allowHtml="true">
+    <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
+
+    <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#FF5442">
+    <meta class="mktoColor" id="btnbgcolor-transparent" mktoName="Transparent Button - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="hover-btnbgcolor" mktoName="All Buttons - Hover:BG Color" default="#C23105">
+    <meta class="mktoColor" id="hover-btnbgcolor-transparent" mktoName="transparetn Button - Hover:BG Color" default="#FF5442">
+    <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="hover-btntextcolor" mktoName="All Buttons - Hover:Text Color" default="#ffffff">
+    <meta class="mktoColor" id="hover-btntextcolor-transparent" mktoName="Transparent Button - Hover:Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btntextcolor-transparent" mktoName="Transparent Button - Text Color" default="#FF5442">
+    <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#FF5442">
+    <meta class="mktoColor" id="btnbordercolor-transparent" mktoName="Transparetn Button - Border Color" default="#FF5442">
+    <meta class="mktoColor" id="hover-btnbordercolor" mktoName="All Buttons - Hover:Border Color" default="#FF5442">
+    <meta class="mktoColor" id="hover-btnbordercolor-transparent" mktoName="Transparent Button - Hover:Border Color" default="#FF5442">
+    <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="16" allowHtml="true">
+    <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbannerlogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbannertext" mktoName="Show Banner Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbannerhero" mktoName="Show Banner Hero?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="https://info.enterprisedb.com/rs/069-ALB-339/images/EM-Hero-PurpleWave%401320x568.png" allowHtml="true">
     <meta class="mktoString" id="bannerhero-maxwidth" mktoName="Banner - Hero Max Width" default="400" allowHtml="true">
 
-  <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#FAFAFA">
-  <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
-  <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#ffffff">
-  <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#ffffff">
-  <meta class="mktoColor" id="hover-banbtnbgcolor" mktoName="Banner - Hover: Btn BG Color" default="#ebebeb">
-  <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#1f1f1f">
-  <meta class="mktoColor" id="hover-banbtntextcolor" mktoName="Hover: Banner - Btn Text Color" default="#1f1f1f">
-  <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#ffffff">
-  <meta class="mktoColor" id="hover-banbtnbordercolor" mktoName="Banner - Hover:Btn Border Color" default="#ebebeb">
-  <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
+    <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#FAFAFA">
+    <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
+    <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#ffffff">
 
-  
-  <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoBoolean" id="showformtextform" mktoName="Show Form/Text Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoBoolean" id="showformtexttext" mktoName="Show Form/Text Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="hover-banbtnbgcolor" mktoName="Banner - Hover: Btn BG Color" default="#ebebeb">
+    <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#1f1f1f">
+    <meta class="mktoColor" id="hover-banbtntextcolor" mktoName="Hover: Banner - Btn Text Color" default="#1f1f1f">
+    <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#ffffff">
+    <meta class="mktoColor" id="hover-banbtnbordercolor" mktoName="Banner - Hover:Btn Border Color" default="#ebebeb">
+    <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
+
+
+    <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformtextform" mktoName="Show Form/Text Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformtexttext" mktoName="Show Form/Text Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-  <meta class="mktoColor" id="formtext-maxwidth" mktoName="Form/Text - Max Width" default="800">  
-  <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#FAFAFA">
-  <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
-  <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-  <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-    
-  <meta class="mktoBoolean" id="formtexttwocol2" mktoName="Banner Form - First Row Two Columns?" default="true" true_value="#banner .mktoForm .mktoFormRow:nth-child(2) {width:48%!important;display:inline-block!important;margin-right:2%;}; #banner .mktoForm .mktoFormRow:nth-child(3) {width:48%!important;display:inline-block;}" false_value="#banner .mktoForm .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-  <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="14" allowHtml="true">
-  <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
-  <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
-  <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
-  <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#1f023e">
-  <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
-  <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
-  <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
-  <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#4d4d4d">
-  <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="14" allowHtml="true">
-  <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="3" allowHtml="true">
+    <meta class="mktoString" id="formtext-maxwidth" mktoName="Form/Text - Max Width" default="800" allowHtml="true">  
+    <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#FAFAFA">
+    <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
 
-  <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#fafafa">
-  <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
-  <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-  <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
+    <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
 
-  <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
-    
-  <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
-    
-  <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#fafafa">
-  <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
-  <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
-  <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
-    
-  <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
-  <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
-  <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
-  <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+    <meta class="mktoBoolean" id="formtexttwocol2" mktoName="Banner Form - First Row Two Columns?" default="true" true_value="#banner .mktoForm .mktoFormRow:nth-child(2) {width:48%!important;display:inline-block!important;margin-right:2%;}; #banner .mktoForm .mktoFormRow:nth-child(3) {width:48%!important;display:inline-block;}" false_value="#banner .mktoForm .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="14" allowHtml="true">
+    <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#1f023e">
+    <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#1F203E">
+    <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#4d4d4d">
+    <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="14" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="3" allowHtml="true">
+
+    <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#fafafa">
+    <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
+
+    <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#fafafa">
+    <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
+    <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+    <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
+
+    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#EEF3F9">
+    <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
+    <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
+
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="linear-gradient(to right bottom, rgb(23, 24, 69), rgb(115, 45, 217))">
+
+    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#">
+
+    <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
+    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
+    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
+    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
+    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
+    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#FF5442">
+    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
+    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
+    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
+
+    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="showfooterbutton1" mktoName="Show Footer Btn1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="showfooterbutton2" mktoName="Show Footer Btn2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="showfooterbutton3" mktoName="Show Footer Btn3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="showfooterbutton4" mktoName="Show Footer Btn4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#333333">
+    <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
+    <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
+
+    <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
+    <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
+    <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
+    <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
+    <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
+    <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
+    <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
+    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
 
 
-  <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoString" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="linear-gradient(to right bottom, rgb(23, 24, 69), rgb(115, 45, 217))">
-    
-  <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#">
-    
-  <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-  <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
-  <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
-  <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
-  <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
-  <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-  <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="FF5442">
-  <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-  <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
-  <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
-
-  <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
-  <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#ffffff">
-  <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#333333">
-  <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
-  <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
-  
-  <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
-  <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
-  <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
-  <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
-  <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
-  <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
-  <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
-  <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
-  
-
-	<style>
+    <style>
       ${googleimport}
-		* {
-          font-family: '${globalfont}',Arial, sans-serif;
-		}
-        img{
-          max-width:100%;
-          height:auto;
+      * {
+        font-family: '${globalfont}',Arial, sans-serif;
+      }
+      img{
+        max-width:100%;
+        height:auto;
+      }
+      .container_inner{
+        width:90%;
+      }
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+      }
+      #navbar {
+        padding: 1.75rem 0 !important;
+      }
+      .navbarlogo {
+        width: 94px;
+      }
+      #banner {
+        background-color:${bannerbgcolor};
+        background-image:url('${bannerbgimg}');
+        display:${bannershow};
+        order:${bannerorder};
+
+      }
+      #banner .container_inner {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #banner .right, #banner .left {
+        flex: 1 0 400px;
+      }
+      #banner .logo {
+        display: ${showbannerlogo};
+      }
+      #banner .left {
+        display: ${showbannertext};
+      }
+      #banner .right {
+        display: ${showbannerhero};
+        justify-content: center;
+      }
+      #banner .right img {
+        max-width: ${bannerhero-maxwidth}px;
+        margin: 0 auto;
+      }
+      #formtext {
+        background-color:${formtextbgcolor};
+        display:${formtextshow};
+        order:${formtextorder};
+      }
+      #formtext .container_inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+      #formtext .right, #formtext .left {
+        flex: 1 0 400px;
+      }
+
+      #formtext .left {
+        display: ${showformtexttext};
+      }
+      #formtext .right {
+        display: ${showformtextform};
+        justify-content: center;
+        margin: 0 auto;
+        max-width:${formtext-maxwidth}px;
+      }
+      #threecol {
+        background-color:${threecolbgcolor};
+        display:${threecolshow};
+        order:${threecolorder};
+      }
+      #imgright {
+        background-color:${imgrightbgcolor};
+        display:${imgrightshow};
+        order:${imgrightorder};
+      }
+      #imgleft {
+        background-color:${imgleftbgcolor};
+        display:${imgleftshow};
+        order:${imgleftorder};
+      }
+      #twocolicons {
+        background-color:${twocoliconsbgcolor};
+        display:${twocoliconsshow};
+        order:${twocoliconsorder};
+      }
+      #video {
+        background-color:${videobgcolor};
+        display:${videoshow};
+        order:${videoorder};
+      }
+      #video .left {
+        background-color:${videoleftbgcolor};
+      }
+      #btmform {
+        background-color:${btmformbgcolor};
+        display:${btmformshow};
+        order:${btmformorder};
+        background-image: ${btmformbgcolor};
+      }
+      #btmform h2,
+      #btmform p {
+        color: #ffffff;
+      }
+      #btmform .container_inner {
+        background-color:${btmforminnerbgcolor};
+
+      }
+      footer {
+        background-color:${footerbgcolor};
+      }
+      #footerbutton1 {
+        display: ${showfooterbutton1};
+      }
+      #footerbutton2 {
+        display: ${showfooterbutton2};
+      }
+      #footerbutton3 {
+        display: ${showfooterbutton3};
+      }
+      #footerbutton4 {
+        display: ${showfooterbutton4};
+      }
+      footer .section {
+        margin-top: 0 !important;
+      }
+      footer .buttonrow {
+        display: flex;
+        flex-direction:row;
+        gap: 0rem 2rem; 
+        align-items: center;
+        flex-wrap: wrap;
+
+      }
+      footer .button a,
+      footer .button-transparent a {
+        white-space: nowrap;
+        text-decoration: none !important;
+      }
+
+      footer a {
+        color:${footerlinkcolor};
+        font-size: 12px;
+        font-weight:${pweight};
+        text-decoration:none;
+      }
+      .footersocial a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      }
+      footer a:hover,
+      footer a:focus {
+        text-decoration:underline;
+      }
+      footer .menu-headline {
+        font-size: 18px;
+      }
+      footer 
+      .logo img{
+        width:${logowidth}px;
+        height:auto;
+        vertical-align:middle;
+      }
+
+      footer ul {
+        list-style:none;
+        padding: 0 !important;
+      }
+      footer .row2 ul,
+      footer .row2 p {
+        margin: 0 auto;
+        text-align: center;
+      }
+      footer p, footer li {
+        font-size: 12px;
+        max-width: 500px;
+      }
+      .footermenu-col {
+        width: calc((100% / 5 ));
+        min-width: 256px;
+      }
+      .footermenu-col li {
+        margin: 0.75rem 0 !important;
+        white-space: nowrap;
+      }
+
+      footer .short-row .footermenu-col {
+        min-width: 120px;
+      }
+      footer .short-row li {
+        margin: 0.35rem 0 !important;
+      }
+      footer .row2 {
+        margin-top: 2rem;
+      }
+      footer #legal {
+        gap: 2rem;
+      }
+      footer .row2 p {
+        margin-top: 2rem !important;
+        max-width: 500px;
+      }
+      .headlinetext h1 {
+        font-size:${bannerheadsize}px;
+        color:${h1color};
+        font-weight:bold;
+      }
+      .headlinetext p,
+      .headlinetext ul,
+      .headlinetext li,
+      .headlinetext ol {
+        font-size:${bannercopysize}px;
+        color:${bannerpcolor};
+        font-weight:${pweight};
+        line-height: 30px;
+      }
+      p {
+        color:${pcolor};
+        font-size:${psize}px;
+        font-weight:${pweight};
+      }
+      li {
+        color:${pcolor};
+        font-size:${psize}px;
+        font-weight:${pweight};
+      }
+
+      h2 {
+        color:${h2color};
+        font-size:${h2size}px;
+        font-weight:bold;
+      }
+      h3 {
+        color:${h3color};
+        font-size:${h3size}px;
+        font-weight:bold;
+      }
+      h4 {
+        color:${h4color};
+        font-size:${h2size}px;
+        font-weight:bold;
+        margin-top:0;
+      }
+      .list-style-icons {
+        list-style: none !important;
+        padding: 0;
+      }
+      #banner .list-style-icons li:before {
+        content: "\f058";
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        margin-right: 1rem;
+        color: #FE5000;
+        font-size: ${psize}px;
+      }
+
+      #banner .button a {
+        background-color:${banbtnbgcolor};
+        border:1px solid ${banbtnbordercolor};
+        border-radius:${banbtnborderradius}px;
+        font-size:${banbtntextsize}px;
+        padding:15px 50px;
+        color:${banbtntextcolor};
+        font-weight:bold;
+        text-decoration:none !important;
+      }
+      #banner .button a:hover,
+      #banner .button a:focus {
+        background-color:${hover-banbtnbgcolor};
+        border:1px solid ${hover-banbtnbordercolor};
+        color:${hover-banbtntextcolor};
+        text-decoration: none !important;
+      }
+
+      .button a {
+        background-color:${btnbgcolor};
+        border:1px solid ${btnbordercolor};
+        border-radius:${btnborderradius}px;
+        font-size:${btntextsize}px;
+        padding:15px 50px;
+        color:${btntextcolor};
+        font-weight:bold;
+        text-decoration:none !important;
+        display:inline-block;
+        cursor: pointer;
+      }
+      .button a:hover,
+      .button a:focus {
+        background-color:${hover-btnbgcolor};
+        border:1px solid ${hover-btnbordercolor};
+        color:${hover-btntextcolor};
+      }
+      .button-transparent a {
+        background-color:${btnbgcolor-transparent};
+        border:1px solid ${btnbordercolor-transparent};
+        border-radius:${btnborderradius}px;
+        font-size:${btntextsize}px;
+        padding:15px 50px;
+        color:${btntextcolor-transparent};
+        font-weight:bold;
+        text-decoration:none;
+        display:inline-block;
+        cursor: pointer;
+      }
+
+      .button-transparent a:hover,
+      .button-transparent a:focus {
+        background-color:${hover-btnbgcolor-transparent};
+        border:1px solid ${hover-btnbordercolor-transparent};
+        color:${hover-btntextcolor-transparent};
+      }
+      .section {
+        margin-top:${sectionspacing}px;
+        margin-bottom:${sectionspacing}px;
+      }
+
+
+      #threecol .col33 {
+        background-color:${threecolcolumnbgcolor};
+        border-radius:${threecolradius}px;
+        box-shadow: ${threecolshadow};
+        -webkit-box-shadow: ${threecolshadow};
+        -moz-box-shadow: ${threecolshadow};
+        text-align:center;
+      }
+      .col50 {
+        background-color:${twocoliconscolumnbgcolor};
+        border-radius:${twocoliconsradius}px;
+        box-shadow: ${twocoliconsshadow};
+        -webkit-box-shadow: ${twocoliconsshadow};
+        -moz-box-shadow: ${twocoliconsshadow};
+      }
+      .social-icons i {
+        background-color:${footersocialbgcolor};
+      }
+      .social-icons .fa {
+        color:${footersocialcolor};
+      }
+
+      @media (max-width: 1200px) {
+        footer .buttonrow {
+          gap: 0 0.85rem;
+          justify-content: space-around;
+          margin-bottom: 2rem;
+        }
+        footer .short-row {
+          gap: 0.75rem;
+        }
+      }
+      @media only screen and (max-width: 900px){
+        .headlinetext h1 {
+          font-size:35px;
+        }
+        .headlinetext p {
+          font-size:20px;
+        }
+        p {
+          font-size:18px;
+        }
+        li {
+          font-size:18px;
+        }
+
+        h2 {
+          font-size:25px;
+        }
+        h3 {
+          font-size:22px;
+        }
+        h4 {
+          font-size:18px;
         }
         .container_inner{
-          width:90%;
+          width:99%;
         }
-        .flex-row {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        .flex-col {
-            display: flex;
-            flex-direction: column;
-        }
-        #navbar {
-            padding: 1.75rem 0 !important;
-        }
-        .navbarlogo {
-            width: 94px;
-        }
-		#banner {
-          background-color:${bannerbgcolor};
-          background-image:url('${bannerbgimg}');
-          display:${bannershow};
-          order:${bannerorder};
 
-		}
-        #banner .container_inner {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        #banner .right, #banner .left {
-            flex: 1 0 400px;
-        }
-        #banner .logo {
-            display: ${showbannerlogo};
-        }
-        #banner .left {
-            display: ${showbannertext};
-        }
-        #banner .right {
-            display: ${showbannerhero};
-            justify-content: center;
-        }
-        #banner .right img {
-            max-width: ${bannerhero-maxwidth}px;
-            margin: 0 auto;
-        }
-		#formtext {
-          background-color:${formtextbgcolor};
-          display:${formtextshow};
-          order:${formtextorder};
-		}
-         #formtext .container_inner {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
-        }
-        #formtext .right, #formtext .left {
-            flex: 1 0 400px;
-        }
-       
-        #formtext .left {
-            display: ${showformtexttext};
-        }
-        #formtext .right {
-            display: ${showformtextform};
-            justify-content: center;
-            margin: 0 auto;
-            max-width:${formtext-maxwidth}px;
-        }
-		#threecol {
-			background-color:${threecolbgcolor};
-          display:${threecolshow};
-          order:${threecolorder};
-		}
-		#imgright {
-			background-color:${imgrightbgcolor};
-          display:${imgrightshow};
-          order:${imgrightorder};
-		}
-		#imgleft {
-			background-color:${imgleftbgcolor};
-          display:${imgleftshow};
-          order:${imgleftorder};
-		}
-		#twocolicons {
-          background-color:${twocoliconsbgcolor};
-          display:${twocoliconsshow};
-          order:${twocoliconsorder};
-		}
-		#video {
-          background-color:${videobgcolor};
-          display:${videoshow};
-          order:${videoorder};
-		}
-		#video .left {
-          background-color:${videoleftbgcolor};
-		}
-		#btmform {
-          background-color:${btmformbgcolor};
-          display:${btmformshow};
-          order:${btmformorder};
-             background-image: ${btmformbgcolor};
-		}
-        #btmform h2,
-        #btmform p {
-            color: #ffffff;
-        }
-		#btmform .container_inner {
-			background-color:${btmforminnerbgcolor};
-            
-		}
-		footer {
-          background-color:${footerbgcolor};
-		}
-        footer .section {
-            margin-top: 0 !important;
-        }
-        footer .buttonrow {
-            display: flex;
-            flex-direction:row;
-            gap: 0rem 2rem; 
-            align-items: center;
-            flex-wrap: wrap;
-            
-        }
-         footer .button a,
-         footer .button-transparent a {
-            white-space: nowrap;
-         }
-         
-		footer a {
-          color:${footerlinkcolor};
-          font-size: 12px;
-          font-weight:${pweight};
-          text-decoration:none;
-		}
-        footer a:hover,
-        footer a:focus {
-            text-decoration:underline!important;
-        }
-        footer .menu-headline {
-            font-size: 18px;
-        }
-      footer 
-        .logo img{
-          width:${logowidth}px;
-          height:auto;
-          vertical-align:middle;
-        }
-        
-        footer ul {
-            list-style:none;
-            padding: 0 !important;
-        }
-        footer .row2 ul,
-        footer .row2 p {
-            margin: 0 auto;
-            text-algin: center;
-        }
-        footer p, footer li {
-            font-size: 12px;
-            max-wdith: 500px;
-        }
-        .footermenu-col {
-            width: calc((100% / 5 ));
-            min-width: 256px;
-        }
-        .footermenu-col li {
-            margin: 0.75rem 0 !important;
-            white-space: nowrap;
-        }
-       
-        footer .short-row .footermenu-col {
-            min-width: 120px;
-        }
-        footer .short-row li {
-            margin: 0.35rem 0 !important;
-        }
-        footer .row2 {
-            margin-top: 2rem;
-        }
-        footer #legal {
-            gap: 2rem;
-        }
-        footer .row2 p {
-            margin-top: 2rem !important;
-            max-width: 500px;
-        }
-		.headlinetext h1 {
-          font-size:${bannerheadsize}px;
-          color:${h1color};
-			font-weight:bold;
-		}
-		.headlinetext p,
-		.headlinetext ul,
-		.headlinetext li,
-		.headlinetext ol {
-          font-size:${bannercopysize}px;
-          color:${bannerpcolor};
-          font-weight:${pweight};
-          line-height: 30px;
-		}
-		p {
-          color:${pcolor};
-          font-size:${psize}px;
-          font-weight:${pweight};
-		}
-		li {
-          color:${pcolor};
-          font-size:${psize}px;
-          font-weight:${pweight};
-		}
-		
-		h2 {
-			color:${h2color};
-			font-size:${h2size}px;
-			font-weight:bold;
-		}
-		h3 {
-			color:${h3color};
-			font-size:${h3size}px;
-			font-weight:bold;
-		}
-		h4 {
-			color:${h4color};
-			font-size:${h2size}px;
-			font-weight:bold;
-			margin-top:0;
-		}
-        .list-style-icons {
-            list-style: none !important;
-            padding: 0;
-        }
-        #banner .list-style-icons li:before {
-            content: "\f058";
-            font-family: "Font Awesome 5 Free"; 
-            font-weight: 900; 
-            margin-right: 1rem;
-            color: #FE5000;
-            font-size: ${psize}px;
-        }
-       
-		#banner .button a {
-          background-color:${banbtnbgcolor};
-          border:1px solid ${banbtnbordercolor};
-          border-radius:${banbtnborderradius}px;
-          font-size:${banbtntextsize}px;
-          padding:15px 50px;
-          color:${banbtntextcolor};
-          font-weight:bold;
-          text-decoration:none;
-		}
-		#banner .button a:hover,
-		#banner .button a:focus {
-          background-color:${hover-banbtnbgcolor};
-          border:1px solid ${hover-banbtnbordercolor};
-          color:${hover-banbtntextcolor};
-		}
-      
-		.button a {
-          background-color:${btnbgcolor};
-          border:1px solid ${btnbordercolor};
-          border-radius:${btnborderradius}px;
-          font-size:${btntextsize}px;
-          padding:15px 50px;
-          color:${btntextcolor};
-          font-weight:bold;
-          text-decoration:none;
-          display:inline-block;
-          cursor: pointer;
-		}
-        .button a:hover,
-        .button a:focus {
-        background-color:${hover-btnbgcolor};
-          border:1px solid ${hover-btnbordercolor};
-          color:${hover-btntextcolor};
-        }
-        .button-transparent a {
-        background-color:${btnbgcolor-transparent};
-          border:1px solid ${btnbordercolor-transparent};
-          border-radius:${btnborderradius}px;
-          font-size:${btntextsize}px;
-          padding:15px 50px;
-          color:${btntextcolor-transparent};
-          font-weight:bold;
-          text-decoration:none;
-          display:inline-block;
-          cursor: pointer;
-		}
-      
-        .button-transparent a:hover,
-        .button-transparent a:focus {
-        background-color:${hover-btnbgcolor-transparent};
-          border:1px solid ${hover-btnbordercolor-transparent};
-          color:${hover-btntextcolor-transparent};
-        }
-		.section {
-          margin-top:${sectionspacing}px;
-			margin-bottom:${sectionspacing}px;
-		}
-	 
-   
-		#threecol .col33 {
-          background-color:${threecolcolumnbgcolor};
-          border-radius:${threecolradius}px;
-          box-shadow: ${threecolshadow};
-		-webkit-box-shadow: ${threecolshadow};
-		-moz-box-shadow: ${threecolshadow};
-		text-align:center;
-		}
-		.col50 {
-          background-color:${twocoliconscolumnbgcolor};
-          border-radius:${twocoliconsradius}px;
-          box-shadow: ${twocoliconsshadow};
-          -webkit-box-shadow: ${twocoliconsshadow};
-          -moz-box-shadow: ${twocoliconsshadow};
-		}
-		.social-icons i {
-          background-color:${footersocialbgcolor};
-		}
-		.social-icons .fa {
-          color:${footersocialcolor};
-		}
-      	 
-		@media (max-width: 1200px) {
-            footer .buttonrow {
-                gap: 0 0.85rem;
-                justify-content: space-around;
-                margin-bottom: 2rem;
-            }
-            footer .short-row {
-                gap: 0.75rem;
-            }
-        }
-		@media only screen and (max-width: 900px){
-          .headlinetext h1 {
-              font-size:35px;
-          }
-          .headlinetext p {
-              font-size:20px;
-          }
-          p {
-          font-size:18px;
-          }
-          li {
-          font-size:18px;
-          }
+      }
+    </style>
+    <!-- Forms -->
+    <style>
+      #formtext .mktoForm .mktoLabel {
+        color:${formtextpcolor}!important;
+        font-size:${formtextpsize}px!important;
+        font-weight:${formtextpweight}!important;
 
-          h2 {
-              font-size:25px;
-          }
-          h3 {
-              font-size:22px;
-          }
-          h4 {
-          font-size:18px;
-          }
-          .container_inner{
-            width:99%;
-          }
-     
-		}
-	</style>
- <!-- Forms -->
- <style>
-    #formtext .mktoForm .mktoLabel {
-          color:${formtextpcolor}!important;
-          font-size:${formtextpsize}px!important;
-          font-weight:${formtextpweight}!important;
-          
-		}
-		#formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
-          border:${formtextbordercolor} ${formtextborderheight}px solid;
-          border-radius:${formtextborderradius}px!important;
-          background-color:${formtextfieldcolor}!important;
-          color:${formtextpcolor}!important;
-          box-shadow:0 !important;
-          box-shadow:none !important;
-          min-height:40px !important;
-        }
-        #formtext .mktoForm input, #formtext .mktoForm textarea, .mktoForm select {
-          box-shadow:0 !important;
-          box-shadow:none !important;
-          min-height:40px !important;
-          
-        }
-        #formtext .mktoForm input[type=text], #formtext .mktoForm input[type=url], #formtext .mktoForm input[type=email], #formtext .mktoForm input[type=tel], #formtext  .mktoForm input[type=number], #formtext .mktoForm input[type=date], #formtext  .mktoForm select.mktoField, #formtext .mktoForm textarea.mktoField{
-          box-shadow:none !important;
-        }
-        .mktoForm .mktoButtonWrap {
-          margin-left:0 !important;
-        }
-      	.mktoForm textarea {
-          height:100px !important;
-          min-height:80px !important;
-        }
-        .mktoForm .mktoButtonWrap.mktoGlow .mktoButton{
-          box-shadow:none !important;
-        }
-      	#formtext #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
-          color:${formtextpcolor}!important;
-        }
-		#formtext .mktoForm button.mktoButton {
-          background-color:${formtextbtnbgcolor}!important;
-          border:1px solid ${formtextbtnbordercolor}!important;
-          border-radius:${formtextbtnborderradius}px!important;
-          font-size:${formtextbtntextsize}px!important;
-          padding:15px 50px!important;
-          color:${formtextbtntextcolor}!important;
-          font-weight:bold!important;
-          text-decoration:none!important;
-          width: auto!important!important;
-          display:inline-block;
-          max-width: 400px !important;
-		}
-   *:focus {
-     outline: none !important;
- }
- /* Form Section */
- 
- .mktoForm .mktoRequiredField .mktoAsterix {
-     display: none !important;
- }
- 
- .mktoForm {
-     width: 100% !important;
-     font-family: "proxima_nova", Helvetica, sans-serif;
- }
- 
- #banner .mktoForm label,
- #banner .mktoForm .mktoHtmlText,
- #banner .mktoForm input,
- #btmform .mktoForm label,
- #btmform .mktoForm .mktoHtmlText,
- #btmform .mktoForm input {
-     color: #F2F2F2;
- }
- 
- #banner .mktoForm option {
-     color: #4D4D4D;
- }
- 
- #banner .mktoForm input,
- #banner .mktoForm select,
- #banner .mktoForm textarea,
- #banner .mktoForm input[type="checkbox"]+label:before,
- #banner .mktoForm input[type="radio"]+label:before,
- #btmform .mktoForm input,
- #btmform .mktoForm select,
- #btmform .mktoForm textarea,
- #btmform .mktoForm input[type="checkbox"]+label:before,
- #btmform .mktoForm input[type="radio"]+label:before {
-     color: #F2F2F2;
-     border: 1px solid #F2F2F2;
-     background: rgba(255, 255, 255, 0.1);
- }
- 
- #btmform .mktoForm input,
- #btmform .mktoForm select,
- #btmform .mktoForm textarea,
- #btmform .mktoForm input[type="checkbox"]+label:before,
- #btmform .mktoForm input[type="radio"]+label:before {
-     color: #F2F2F2;
-     border: 1px solid #F2F2F2;
-     background: rgba(255, 255, 255, 0.1);
- }
- 
- #banner .mktoForm .select-wrapper:before,
- #btmform .mktoForm .select-wrapper:before {
-     color: #F2F2F2;
- }
- 
- .header-form__light label,
- .header-form__light .mktoHtmlText,
- .header-form__light input {
-     color: #4D4D4D;
- }
- 
- #banner .mktoFieldWrap {
-     position: relative;
- }
- 
- #banner .mktoFieldWrap label,
- #formtext .mktoFieldWrap label,
- #btmform .mktoFieldWrap label {
-     position: absolute !important;
-     font-weight: normal;
-     top: 13px !important;
-     left: 12px !important;
-     z-index: 50;
-     pointer-events: none;
-     transform: translateY(0);
-     transition: transform .25s ease, color .25s ease, font-size .25s ease;
-     transition: transform .25s ease, color .25s ease, font-size .25s ease, -webkit-transform .25s ease;
-     font-family: "proxima_nova", Helvetica, sans-serif;
-     font-size: 15px;
- }
- 
- .mktoForm .mktoFieldWrap input:not([type=checkbox]),
- .mktoForm .mktoFieldWrap input:not([type=radio]),
- .mktoForm .mktoFieldWrap select,
- .mktoForm .mktoFieldWrap textarea {
-     box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     -webkit-box-sizing: border-box;
-     margin-bottom: 20px !important;
-     padding: 18px 10px 7px !important;
-     border-radius: 2px;
-     max-width: 100%;
-     font-size: 14px;
- }
- 
- #banner .mktoFieldWrap input:not([type=checkbox]):focus,
- #banner .mktoFieldWrap input:not([type=checkbox]):focus~label,
- #banner .mktoFieldWrap input:not([type=checkbox]):focus+label,
- #banner .mktoFieldWrap input:not([type=checkbox]):active,
- #banner .mktoFieldWrap input:not([type=checkbox]):active+label,
- #banner .mktoFieldWrap input:not([type=checkbox]):active~label,
- #banner .mktoFieldWrap input:not([type=radio]):focus,
- #banner .mktoFieldWrap input:not([type=radio]):active {
-     outline: none !important;
- }
- 
- #banner .mktoFieldWrap:focus label,
- #banner .mktoFieldWrap:active label,
- #banner .mktoFieldWrap:focus-within label,
- #banner .mktoForm .activefield label,
- #formtext .mktoFieldWrap:focus label,
- #formtext .mktoFieldWrap:active label,
- #formtext .mktoFieldWrap:focus-within label,
- #formtext .mktoForm .activefield label,
- #btmform .mktoFieldWrap:focus label,
- #btmform .mktoFieldWrap:active label,
- #btmform .mktoFieldWrap:focus-within label,
- #btmform .mktoForm .activefield label {
-     top: 4px !important;
-     left: 8px !important;
-     font-size: 10px !important;
- }
- 
- #banner .mktoFieldWrap input[type="checkbox"],
- #banner .mktoFieldWrap input[type="radio"] {
-     opacity: 0;
-     height: 40px;
- }
- 
- #banner .mktoFieldWrap input[type="checkbox"]+label:before {
-     content: '';
-     width: 18px;
-     height: 18px;
-     border-radius: 3px;
-     background: transparent;
-     position: absolute;
-     left: -12px;
-     top: 0px;
- }
- 
- #banner .mktoFieldWrap input[type="radio"]~label:before {
-     content: '';
-     width: 18px;
-     height: 18px;
-     border-radius: 100%;
-     background: transparent;
-     position: absolute;
-     left: 0;
-     top: 4px;
-     border-radius: 100%;
- }
- 
- #banner .mktoFieldWrap input[type="checkbox"]:checked+label:before,
- #banner .mktoFieldWrap input[type="radio"]:checked+label:before {
-     content: '';
-     border: 2px solid #FE5000;
-     background: #FE5000;
- }
- 
- #banner .mktoFieldWrap input[type="checkbox"]+label,
- #banner .mktoFieldWrap input[type="radio"]+label {
-     padding-right: 10px;
-     padding-left: 28px;
-     font-weight: normal;
-     font-size: 16px;
-     text-transform: none;
-     color: #2d3035;
-     cursor: pointer;
- }
- 
- #banner .mktoFieldWrap select {
-     -webkit-appearance: none;
-     -moz-appearance: none;
- }
- 
- .mktoForm .mktoButton {
-     max-width: 100%;
-     width: 100% !important;
-     font-size: 13px;
-     text-transform: uppercase;
-     letter-spacing: 0.05em;
-     padding: 13px 35px !important;
-     background-color: #FF3E00 !important;
- }
- 
- .mktoForm .mktoButton:hover,
- .mktoForm .mktoButton:focus {
-     background: #CC5835 !important;
- }
- 
- .mktoForm .mktoGutter,
- .mktoForm .mktoOffset {
-     display: none !important;
- }
- 
- #banner .mktForm .mktoButtonRow {
-     padding-top: 1em;
-     width: 100% !important;
- }
- 
- #banner .mktoForm .mktoButtonWrap {
-     margin-left: 0 !important;
- }
- 
- #banner select {
-     max-width: 100% !important;
- }
- 
- div.mktoFieldDescriptor.mktoFormCol>div#banner .mktoFieldWrap>label {
-     width: auto !important;
- }
- 
- .mktoForm .mktoRadioList>label,
- .mktoForm .mktoCheckboxList>label {
-     margin-bottom: .7em !important;
-     margin-top: 0em !important;
- }
- 
- .select-wrapper {
-     position: relative;
- }
- 
- .select-wrapper:before {
-     position: absolute;
-     right: 10px;
-     top: 25%;
-     display: block;
-     content: ' ';
-     background-image: url("https://info.enterprisedb.com/rs/069-ALB-339/images/arrow.svg");
-     height: 10px;
-     width: 10px;
-     z-index: 1000;
-     pointer-events: none;
-     background-size: 100% auto;
-     background-repeat: no-repeat;
- }
- 
- select::-ms-expand {
-     display: none;
- }
- 
- .mktoHtmlText {
-     position: absolute;
-     left: 30px;
-     top: -70px;
-     font-size: 13px;
-     width: 100% !important;
- }
- /* error messages */
+      }
+      #formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
+        border:${formtextbordercolor} ${formtextborderheight}px solid;
+        border-radius:${formtextborderradius}px!important;
+        background-color:${formtextfieldcolor}!important;
+        color:${formtextpcolor}!important;
+        box-shadow:0 !important;
+        box-shadow:none !important;
+        min-height:40px !important;
+      }
+      #formtext .mktoForm input, #formtext .mktoForm textarea, .mktoForm select {
+        box-shadow:0 !important;
+        box-shadow:none !important;
+        min-height:40px !important;
+
+      }
+      #formtext .mktoForm input[type=text], #formtext .mktoForm input[type=url], #formtext .mktoForm input[type=email], #formtext .mktoForm input[type=tel], #formtext  .mktoForm input[type=number], #formtext .mktoForm input[type=date], #formtext  .mktoForm select.mktoField, #formtext .mktoForm textarea.mktoField{
+        box-shadow:none !important;
+      }
+      .mktoForm .mktoButtonWrap {
+        margin-left:0 !important;
+      }
+      .mktoForm textarea {
+        height:100px !important;
+        min-height:80px !important;
+      }
+      .mktoForm .mktoButtonWrap.mktoGlow .mktoButton{
+        box-shadow:none !important;
+      }
+      #formtext #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
+        color:${formtextpcolor}!important;
+      }
+      #formtext .mktoForm button.mktoButton {
+        background-color:${formtextbtnbgcolor}!important;
+        border:1px solid ${formtextbtnbordercolor}!important;
+        border-radius:${formtextbtnborderradius}px!important;
+        font-size:${formtextbtntextsize}px!important;
+        padding:15px 50px!important;
+        color:${formtextbtntextcolor}!important;
+        font-weight:bold!important;
+        text-decoration:none!important;
+        width: auto!important!important;
+        display:inline-block;
+        max-width: 400px !important;
+      }
+      *:focus {
+        outline: none !important;
+      }
+      /* Form Section */
+
+      .mktoForm .mktoRequiredField .mktoAsterix {
+        display: none !important;
+      }
+
+      .mktoForm {
+        width: 100% !important;
+        font-family: "proxima_nova", Helvetica, sans-serif;
+      }
+
+      #banner .mktoForm label,
+      #banner .mktoForm .mktoHtmlText,
+      #banner .mktoForm input,
+      #btmform .mktoForm label,
+      #btmform .mktoForm .mktoHtmlText,
+      #btmform .mktoForm input {
+        color: #F2F2F2;
+      }
+
+      #banner .mktoForm option {
+        color: #4D4D4D;
+      }
+
+      #banner .mktoForm input,
+      #banner .mktoForm select,
+      #banner .mktoForm textarea,
+      #banner .mktoForm input[type="checkbox"]+label:before,
+      #banner .mktoForm input[type="radio"]+label:before,
+      #btmform .mktoForm input,
+      #btmform .mktoForm select,
+      #btmform .mktoForm textarea,
+      #btmform .mktoForm input[type="checkbox"]+label:before,
+      #btmform .mktoForm input[type="radio"]+label:before {
+        color: #F2F2F2;
+        border: 1px solid #F2F2F2;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      #btmform .mktoForm input,
+      #btmform .mktoForm select,
+      #btmform .mktoForm textarea,
+      #btmform .mktoForm input[type="checkbox"]+label:before,
+      #btmform .mktoForm input[type="radio"]+label:before {
+        color: #F2F2F2;
+        border: 1px solid #F2F2F2;
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      #banner .mktoForm .select-wrapper:before,
+      #btmform .mktoForm .select-wrapper:before {
+        color: #F2F2F2;
+      }
+
+      .header-form__light label,
+      .header-form__light .mktoHtmlText,
+      .header-form__light input {
+        color: #4D4D4D;
+      }
+
+      #banner .mktoFieldWrap {
+        position: relative;
+      }
+
+      #banner .mktoFieldWrap label,
+      #formtext .mktoFieldWrap label,
+      #btmform .mktoFieldWrap label {
+        position: absolute !important;
+        font-weight: normal;
+        top: 13px !important;
+        left: 12px !important;
+        z-index: 50;
+        pointer-events: none;
+        transform: translateY(0);
+        transition: transform .25s ease, color .25s ease, font-size .25s ease;
+        transition: transform .25s ease, color .25s ease, font-size .25s ease, -webkit-transform .25s ease;
+        font-family: "proxima_nova", Helvetica, sans-serif;
+        font-size: 15px;
+      }
+
+      .mktoForm .mktoFieldWrap input:not([type=checkbox]),
+      .mktoForm .mktoFieldWrap input:not([type=radio]),
+      .mktoForm .mktoFieldWrap select,
+      .mktoForm .mktoFieldWrap textarea {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin-bottom: 20px !important;
+        padding: 18px 10px 7px !important;
+        border-radius: 2px;
+        max-width: 100%;
+        font-size: 14px;
+      }
+
+      #banner .mktoFieldWrap input:not([type=checkbox]):focus,
+      #banner .mktoFieldWrap input:not([type=checkbox]):focus~label,
+      #banner .mktoFieldWrap input:not([type=checkbox]):focus+label,
+      #banner .mktoFieldWrap input:not([type=checkbox]):active,
+      #banner .mktoFieldWrap input:not([type=checkbox]):active+label,
+      #banner .mktoFieldWrap input:not([type=checkbox]):active~label,
+      #banner .mktoFieldWrap input:not([type=radio]):focus,
+      #banner .mktoFieldWrap input:not([type=radio]):active {
+        outline: none !important;
+      }
+
+      #banner .mktoFieldWrap:focus label,
+      #banner .mktoFieldWrap:active label,
+      #banner .mktoFieldWrap:focus-within label,
+      #banner .mktoForm .activefield label,
+      #formtext .mktoFieldWrap:focus label,
+      #formtext .mktoFieldWrap:active label,
+      #formtext .mktoFieldWrap:focus-within label,
+      #formtext .mktoForm .activefield label,
+      #btmform .mktoFieldWrap:focus label,
+      #btmform .mktoFieldWrap:active label,
+      #btmform .mktoFieldWrap:focus-within label,
+      #btmform .mktoForm .activefield label {
+        top: 4px !important;
+        left: 8px !important;
+        font-size: 10px !important;
+      }
+
+      #banner .mktoFieldWrap input[type="checkbox"],
+      #banner .mktoFieldWrap input[type="radio"] {
+        opacity: 0;
+        height: 40px;
+      }
+
+      #banner .mktoFieldWrap input[type="checkbox"]+label:before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        background: transparent;
+        position: absolute;
+        left: -12px;
+        top: 0px;
+      }
+
+      #banner .mktoFieldWrap input[type="radio"]~label:before {
+        content: '';
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        background: transparent;
+        position: absolute;
+        left: 0;
+        top: 4px;
+        border-radius: 100%;
+      }
+
+      #banner .mktoFieldWrap input[type="checkbox"]:checked+label:before,
+      #banner .mktoFieldWrap input[type="radio"]:checked+label:before {
+        content: '';
+        border: 2px solid #FE5000;
+        background: #FE5000;
+      }
+
+      #banner .mktoFieldWrap input[type="checkbox"]+label,
+      #banner .mktoFieldWrap input[type="radio"]+label {
+        padding-right: 10px;
+        padding-left: 28px;
+        font-weight: normal;
+        font-size: 16px;
+        text-transform: none;
+        color: #2d3035;
+        cursor: pointer;
+      }
+
+      #banner .mktoFieldWrap select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+
+      .mktoForm .mktoButton {
+        max-width: 100%;
+        width: 100% !important;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 13px 35px !important;
+        background-color: #FF3E00 !important;
+      }
+
+      .mktoForm .mktoButton:hover,
+      .mktoForm .mktoButton:focus {
+        background: #CC5835 !important;
+      }
+
+      .mktoForm .mktoGutter,
+      .mktoForm .mktoOffset {
+        display: none !important;
+      }
+
+      #banner .mktForm .mktoButtonRow {
+        padding-top: 1em;
+        width: 100% !important;
+      }
+
+      #banner .mktoForm .mktoButtonWrap {
+        margin-left: 0 !important;
+      }
+
+      #banner select {
+        max-width: 100% !important;
+      }
+
+      div.mktoFieldDescriptor.mktoFormCol>div#banner .mktoFieldWrap>label {
+        width: auto !important;
+      }
+
+      .mktoForm .mktoRadioList>label,
+      .mktoForm .mktoCheckboxList>label {
+        margin-bottom: .7em !important;
+        margin-top: 0em !important;
+      }
+
+      .select-wrapper {
+        position: relative;
+      }
+
+      .select-wrapper:before {
+        position: absolute;
+        right: 10px;
+        top: 25%;
+        display: block;
+        content: ' ';
+        background-image: url("https://info.enterprisedb.com/rs/069-ALB-339/images/arrow.svg");
+        height: 10px;
+        width: 10px;
+        z-index: 1000;
+        pointer-events: none;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+      }
+
+      select::-ms-expand {
+        display: none;
+      }
+
+      .mktoHtmlText {
+        position: absolute;
+        left: 30px;
+        top: -70px;
+        font-size: 13px;
+        width: 100% !important;
+      }
+      /* error messages */
       ${formtexttwocol}
       ${formtexttwocol2}
       ${btmformtwocol}
-      
-@media ( max-width: 480px) {
-    .section {
-        max-width: 90% !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    .left,
-    .right {
-        max-width: 100% !important;
-    }
-    #bannner .mktoForm .mktoFormRow,
-    #formtext .mktoForm .mktoFormRow {
-        width: 100% !important;
-        display: flex !important;
-        flex-direction: column !important;
-        margin: 0 auto !important;
-    }
-    .mktoForm .mktoFormRow {
-        display: flex !important;
-        flex-direction: column !important;
-        margin: 0 auto !important;
-        width: 100% !important;
-    }
-    .mktoForm div,
-    .mktoForm span,
-    .mktoForm label,
-    .mktoForm p {
-        max-width: 100% !important;
-        margin: 0 auto !important;
-    }
-    .mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList {
-        width: initial !important;
-    }
-}
- </style>
-    <style>
-      
- 
-    </style>
-</head>
 
-<body>
-<div class="flex">
-    <!-- Navbar -->
-    <div class="container_100" id="navbar">
+      @media ( max-width: 480px) {
+        .section {
+          max-width: 90% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .left,
+        .right {
+          max-width: 100% !important;
+        }
+        #bannner .mktoForm .mktoFormRow,
+        #formtext .mktoForm .mktoFormRow {
+          width: 100% !important;
+          display: flex !important;
+          flex-direction: column !important;
+          margin: 0 auto !important;
+        }
+        .mktoForm .mktoFormRow {
+          display: flex !important;
+          flex-direction: column !important;
+          margin: 0 auto !important;
+          width: 100% !important;
+        }
+        .mktoForm div,
+        .mktoForm span,
+        .mktoForm label,
+        .mktoForm p {
+          max-width: 100% !important;
+          margin: 0 auto !important;
+        }
+        .mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList {
+          width: initial !important;
+        }
+      }
+    </style>
+    <style>
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <!-- Navbar -->
+      <div class="container_100" id="navbar">
         <div class="container_inner">
-           <div class="navbarlogo">
-               <div class="mktoText" id="navlogo" mktoName="Logo">
-                 <a href="#">
-                  <img class="logowidthl" alt="logo" src="https://info.enterprisedb.com/rs/069-ALB-339/images/logo_3.png" border="0">
-                  </a>
-               </div>
+          <div class="navbarlogo">
+            <div class="mktoText" id="navlogo" mktoName="Logo">
+              <a href="https://www.enterprisedb.com/">
+                <img class="logowidthl" alt="logo" src="https://info.enterprisedb.com/rs/069-ALB-339/images/logo_3.png" border="0">
+              </a>
             </div>
+          </div>
         </div>
-    </div>
-   <!-- Banner -->
-   <div class="container_100" id="banner">
-      <div class="container_inner">
-         <div class="left">
+      </div>
+      <!-- Banner -->
+      <div class="container_100" id="banner">
+        <div class="container_inner">
+          <div class="left">
             <div class="logo">
-               <div class="mktoText" id="navlogo" mktoName="Logo">
-                 <a href="#">
+              <div class="mktoText" id="bannernavlogo" mktoName="Logo">
+                <a href="https://www.enterprisedb.com/">
                   <img class="logowidthl" alt="logo" src="https://info.enterprisedb.com/rs/069-ALB-339/images/logo_3.png" border="0">
-                  </a>
-               </div>
+                </a>
+              </div>
             </div>
             <div class="mktoText headlinetext" id="bannerheadline" mktoName="Banner - Headline">
-               <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-               <p>Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue.</p>
-               <ul class="list-style-icons">
+              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+              <p>Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue.</p>
+              <ul class="list-style-icons">
                 <li>Lorem ipsum dolor sit amet.</li>
                 <li>Non, culpa. Est, quidem tenetur.</li>
                 <li>Voluptates ipsum totam quod sequi.</li>
                 <li>Eos enim ipsum cupiditate et?</li>
                 <li>Provident aliquam et ullam soluta.</li>
-               </ul>
+              </ul>
             </div>
             <div class="mktoText button" id="bannerbtn" mktoName="Banner - Button"><a href="#">CTA Button</a>
             </div>
-         </div>
-         <div class="right">
-           <div class="mktText" id="bannerightcol" mktoName="Banner - Right Column">
-             <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/elephant-hero.png">
-              
-           </div>
-         </div>
+          </div>
+          <div class="right">
+            <div class="mktText" id="bannerightcol" mktoName="Banner - Right Column">
+              <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/elephant-hero.png">
+
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Banner -->
-   <!-- Form/Text -->
-   <div class="container_100" id="formtext">
-      <div class="container_inner section">
-         <div class="mktoText left" id="formtextcopy" mktoName="Form/Text - Copy">
+      <!-- END Banner -->
+      <!-- Form/Text -->
+      <div class="container_100" id="formtext">
+        <div class="container_inner section">
+          <div class="mktoText left" id="formtextcopy" mktoName="Form/Text - Copy">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
             <ul>
-               <li>Fusce vel nisi vel velit finibus congue.</li>
-               <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
-               <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi cu.</li>
+              <li>Fusce vel nisi vel velit finibus congue.</li>
+              <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
+              <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi cu.</li>
             </ul>
-         </div>
-         <div class="right" id="form">
+          </div>
+          <div class="right" id="form">
             <div class="mktoText" id="formheadline" mktoName="Form/Text - Form Headline">
               <h2>Form Headline</h2>
-           </div>
-            <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
-                 <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2544"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 2544);</script>
             </div>
-         </div>
+            <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
+              <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2544"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 2544);</script>
+            </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Form/Text -->
-   <!-- Three Column -->
-   <div class="container_100" id="threecol">
-      <div class="container_inner section">
-         <div class="mktoText center" id="threecoltextmain" mktoName="Three Col - Main Copy">
+      <!-- END Form/Text -->
+      <!-- Three Column -->
+      <div class="container_100" id="threecol">
+        <div class="container_inner section">
+          <div class="mktoText center" id="threecoltextmain" mktoName="Three Col - Main Copy">
             <h2>Lorem Ipsum Dolor Sit Amet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
-         </div>
-         <div class="threecolumns">
+          </div>
+          <div class="threecolumns">
             <div class="col33">
-               <div class="threecolimg">
-                  <div class="mktoImg" id="threecolImg1" mktoName="Three Col - Col 1 Image">
-                     <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
-                  </div>
-                  <div class="mktoText" id="threecoltext1" mktoName="Three Col - Col 1 Copy">
-                     <h3>Heading</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-                  </div>
-                  <div class="mktoText button" id="threecolbtn1" mktoName="Three Col - Col 1 Button"><a href="#">CTA Button</a>
-                  </div>
-               </div>
+              <div class="threecolimg">
+                <div class="mktoImg" id="threecolImg1" mktoName="Three Col - Col 1 Image">
+                  <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+                </div>
+                <div class="mktoText" id="threecoltext1" mktoName="Three Col - Col 1 Copy">
+                  <h3>Heading</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+                </div>
+                <div class="mktoText button" id="threecolbtn1" mktoName="Three Col - Col 1 Button"><a href="#">CTA Button</a>
+                </div>
+              </div>
             </div>
             <div class="mid"></div>
             <div class="col33">
-               <div class="mktoImg" id="threecolImg2" mktoName="Three Col - Col 2 Image">
-                  <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
-               </div>
-               <div class="mktoText" id="threecoltext2" mktoName="Three Col - Col 2 Copy">
-                  <h3>Heading</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-               </div>
-               <div class="mktoText button" id="threecolbtn2" mktoName="Three Col - Col 2 Button"><a href="#">CTA Button</a>
-               </div>
+              <div class="mktoImg" id="threecolImg2" mktoName="Three Col - Col 2 Image">
+                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+              </div>
+              <div class="mktoText" id="threecoltext2" mktoName="Three Col - Col 2 Copy">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+              </div>
+              <div class="mktoText button" id="threecolbtn2" mktoName="Three Col - Col 2 Button"><a href="#">CTA Button</a>
+              </div>
             </div>
             <div class="mid"></div>
             <div class="col33">
-               <div class="mktoImg" id="threecolImg3" mktoName="Three Col - Col 3 Image">
-                  <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
-               </div>
-               <div class="mktoText" id="threecoltext3" mktoName="Three Col - Col 3 Copy">
-                  <h3>Heading</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-               </div>
-               <div class="mktoText button" id="threecolbtn3" mktoName="Three Col - Col 3 Button"><a href="#">CTA Button</a>
-               </div>
+              <div class="mktoImg" id="threecolImg3" mktoName="Three Col - Col 3 Image">
+                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+              </div>
+              <div class="mktoText" id="threecoltext3" mktoName="Three Col - Col 3 Copy">
+                <h3>Heading</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+              </div>
+              <div class="mktoText button" id="threecolbtn3" mktoName="Three Col - Col 3 Button"><a href="#">CTA Button</a>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Three Column -->
-   <!-- Image Right -->
-   <div class="container_100" id="imgright">
-      <div class="container_inner section" id="flex">
-         <div class="left">
+      <!-- END Three Column -->
+      <!-- Image Right -->
+      <div class="container_100" id="imgright">
+        <div class="container_inner section" id="flex">
+          <div class="left">
             <div class="mktoText" id="imgrighttext" mktoName="Image Right - Copy">
-               <h2>Lorem Ipsum Dolor Sit Amet</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+              <h2>Lorem Ipsum Dolor Sit Amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
             </div>
             <div class="mktoText button" id="imgrightbtn" mktoName="Image Right - Button"><a href="#">CTA Button</a>
             </div>
-         </div>
-         <div class="right">
+          </div>
+          <div class="right">
             <div class="mktoImg" id="imgrightimg" mktoName="Image Right - Image">
-               <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
+              <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Image Right -->
-   <!-- Image Left -->
-   <div class="container_100" id="imgleft">
-      <div class="container_inner section">
-         <div class="right">
+      <!-- END Image Right -->
+      <!-- Image Left -->
+      <div class="container_100" id="imgleft">
+        <div class="container_inner section">
+          <div class="right">
             <div class="mktoImg" id="imgleftimg" mktoName="Image Left - Image">
-               <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
+              <img src="https://dummyimage.com/700x550/EEF3F9/B3B8C4">
             </div>
-         </div>
-         <div class="left">
+          </div>
+          <div class="left">
             <div class="mktoText" id="imgLefttext" mktoName="Image Left - Copy">
-               <h2>Lorem Ipsum Dolor Sit Amet</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+              <h2>Lorem Ipsum Dolor Sit Amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
             </div>
             <div class="mktoText button" id="imgleftbtn" mktoName="Image Left - Button"><a href="#">CTA Button</a>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Image Left -->
-   <!-- Two Columns -->
-   <div class="container_100" id="twocolicons">
-      <div class="container_inner section">
-         <div class="mktoText center" id="twocolmaintext" mktoName="Two Cols - Button">
+      <!-- END Image Left -->
+      <!-- Two Columns -->
+      <div class="container_100" id="twocolicons">
+        <div class="container_inner section">
+          <div class="mktoText center" id="twocolmaintext" mktoName="Two Cols - Button">
             <h2>Lorem Ipsum Dolor Sit Amet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
-         </div>
-         <div class="threecolumns">
+          </div>
+          <div class="threecolumns">
             <div class="col50">
-               <div class="threecolimg">
-                  <div class="mktoImg" id="twocolimg1" mktoName="Two Cols - Image 1"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
-               </div>
-               <div class="threecoltext">
-                  <div class="mktoText" id="twocoltext1" mktoName="Two Cols - Copy 1">
-                     <h3>Heading</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-                  </div>
-               </div>
+              <div class="threecolimg">
+                <div class="mktoImg" id="twocolimg1" mktoName="Two Cols - Image 1"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
+              </div>
+              <div class="threecoltext">
+                <div class="mktoText" id="twocoltext1" mktoName="Two Cols - Copy 1">
+                  <h3>Heading</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+                </div>
+              </div>
             </div>
             <div class="mid"></div>
             <div class="col50">
-               <div class="threecolimg">
-                  <div class="mktoImg" id="twocolimg2" mktoName="Two Cols - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
-               </div>
-               <div class="threecoltext">
-                  <div class="mktoText" id="twocoltext2" mktoName="Two Cols - Copy 2">
-                     <h3>Heading</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
-                  </div>
-               </div>
+              <div class="threecolimg">
+                <div class="mktoImg" id="twocolimg2" mktoName="Two Cols - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
+              </div>
+              <div class="threecoltext">
+                <div class="mktoText" id="twocoltext2" mktoName="Two Cols - Copy 2">
+                  <h3>Heading</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Quisque at egestas neque, rhoncus posuere mi.</p>
+                </div>
+              </div>
             </div>
-         </div>
-         <div class="button" id="center">
+          </div>
+          <div class="button" id="center">
             <div class="mktoText button" id="twocoltbtn" mktoName="Two Cols - Button"><a href="#">CTA Button</a>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Two Columns -->
-   <!-- Video -->
-   <div class="container_100" id="video">
-      <div class="container_inner section">
-         <div class="left">
+      <!-- END Two Columns -->
+      <!-- Video -->
+      <div class="container_100" id="video">
+        <div class="container_inner section">
+          <div class="left">
             <div class="mktoText" id="videotext" mktoName="Video - Copy">
-               <h2>Lorem Ipsum Dolor Sit Amet</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
-               <ul>
-                  <li>Fusce vel nisi vel velit finibus congue.</li>
-                  <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
-                  <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi.</li>
-               </ul>
+              <h2>Lorem Ipsum Dolor Sit Amet</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
+              <ul>
+                <li>Fusce vel nisi vel velit finibus congue.</li>
+                <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
+                <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi.</li>
+              </ul>
             </div>
-         </div>
-         <div class="right">
+          </div>
+          <div class="right">
             <div class="videoWrapper videoWrapper169 js-videoWrapper">
-               <!-- YouTube iframe. -->
-               <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
-               <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
-               <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
-               <!-- the poster frame - in the form of a button to make it keyboard accessible -->
-               <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter});">Play video</button>
+              <!-- YouTube iframe. -->
+              <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+              <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+              <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="${videoembed}?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+              <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+              <button class="videoPoster js-videoPoster" style="background-image:url(${videoposter});">Play video</button>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
-   <!-- END Video -->
-   <!-- Bottom Form -->
-   <div class="container_100" id="btmform">
-      <div class="container_inner section">
-         <div class="formleft">
+      <!-- END Video -->
+      <!-- Bottom Form -->
+      <div class="container_100" id="btmform">
+        <div class="container_inner section">
+          <div class="formleft">
             <div class="mktoText" id="btmformheadline" mktoName="Bottom Form - Headline">
-               <h2>Lorem Ipsum Dolor Sit Amet</h2>
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste neque repellat sequi soluta laboriosam, ullam nesciunt non sunt eligendi cumque.</p>
+              <h2>Lorem Ipsum Dolor Sit Amet</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste neque repellat sequi soluta laboriosam, ullam nesciunt non sunt eligendi cumque.</p>
             </div>
             <div class="mktoForm" id="btmFormform" mktoName="Bottom Form">
-                 
+
             </div>
-         </div>
-         <div class="formright">
+          </div>
+          <div class="formright">
             <div class="mktoImg" id="btmformimg" mktoName="Bottom Form - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/image-placeholder.png"></div>
-         </div>
-      </div>
-   </div>
-   <!-- END Bottom Form -->
-  </div>
-   <!-- Footer -->
-   <footer id="footer">
-        <div class="container_inner section">
-            <div class="row1">
-                <nav class="buttonrow">
-                    <div class="mktoText" id="footerbutton1" mktoName="Footer Button 1">
-                        <div class="button">
-                            <a href="https://www.enterprisedb.com/contact">Contact sales</a>
-                        </div>
-                    </div>
-                    <div class="mktoText" id="footerbutton2" mktoName="Footer Button 2">
-                        <div class="button-transparent">
-                            <a href="https://www.enterprisedb.com/docs/">Docs</a>
-                        </div>
-                    </div>
-                    <div class="mktoText" id="footerbutton3" mktoName="Footer Button 3">
-                        <div class="button-transparent">
-                            <a href="https://www.enterprisedb.com/accounts/login?fromURI=https%3A%2F%2Fwww.enterprisedb.com%2F%3F">Sign In</a>
-                        </div>
-                    </div>
-                    <div class="mktoText" id="footerbutton3" mktoName="Footer Button 4">
-                        <div class="button-transparent">
-                            <a href="https://www.enterprisedb.com/get-started">Get Started</a>
-                        </div>
-                    </div>
-                    </nav>
-                <nav class="footernav">
-                    <div>
-                        <div class="menu-headline"><span>Solutions</span>
-                            <ul class="flex-row mktoText" id="footermenu1" mktoName="Footer Menu Row">
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a href="/solutions/postgres-anywhere">Your Power to Postgres Anywhere</a></li>
-                                        <li><a href="/solutions/oracle-compatibility-migration">Migrate from Oracle to Postgres with EDB</a></li>
-                                        <li><a href="/solutions/postgres-as-a-service">Fully Managed Postgres in the Cloud</a></li>
-                                    </ul>
-                                </li>
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a href="/solutions/enterprise-grade-postgres">Real Enterprise Postgres by Real Postgres Experts</a></li>
-                                        <li><a href="/solutions/extreme-high-availability">Extreme High Availability Postgres</a></li>
-                                        <li><a href="/solutions/expert-services-support">Professional Services, Training and Support</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="menu-headline"><span>Products</span>
-                            <ul class="flex-row mktoText" id="footermenu2" mktoName="Footer Menu Row">
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a href="/products/edb-enterprise">EDB Enterprise Plan</a></li>
-                                        <li><a href="/products/edb-standard">EDB Standard Plan</a></li>
-                                        <li><a href="/products/edb-community-360">EDB Community 360 Plan</a></li>
-                                        <li><a href="/products/plans-comparison">EDB Subscription Plan Comparison →</a></li>
-                                    </ul>
-                                </li>
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a href="/products/biganimal-cloud-postgresql">EDB BigAnimal Plan</a></li>
-                                        <li><a href="/products/edb-postgres-distributed">EDB Postgres Distributed</a></li>
-                                        <li><a href="/products/edb-postgres-for-kubernetes">EDB Postgres for Kubernetes</a></li>
-                                        <li><a href="/products/edb-postgres-advanced-server">EDB Postgres Advanced Server</a></li>
-                                        <li><a href="/products/view-all-products-postgresql-database-management-software-tools">EDB Software portfolio →</a></li>
-                                    </ul>
-                                </li>
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a href="/products/postgresql-databases">Postgres Databases</a></li>
-                                        <li><a href="/products/cluster-management">Postgres Clustering with EDB</a></li>
-                                        <li><a href="/products/migration">EDB Postgres Migration</a></li>
-                                        <li><a  href="/products/replication">Replication</a></li>
-                                    </ul>
-                                </li>
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a  href="/products/monitoring">PostgreSQL Monitoring &amp; Query Performance</a></li>
-                                        <li><a  href="/products/backup-recovery">PostgreSQL Database Backup Solutions</a></li>
-                                        <li><a  href="/products/integrations">Foreign Data Wrappers</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="menu-headline"><span>Resources</span>
-                            <ul class="flex-row mktoText" id="footermenu2" mktoName="Footer Menu Row">
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a href="/docs/">Docs</a></li>
-                                        <li><a  href="/blog">Blog</a></li>
-                                        <li><a  href="/resources/webinars">Webinars</a></li>
-                                    </ul>
-                                </li>
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a  href="/training/free-postgres-training">Training</a></li>
-                                        <li><a  href="/resources/white-papers"><span>White Papers</span></a></li>
-                                        <li><a  href="/blog/edb-customer-success-stories">Customer Success Stories</a></li>
-                                    </ul>
-                                </li>
-                                <li class="footermenu-col">
-                                    <ul>
-                                        <li><a  href="/services/support">Support Center</a></li>
-                                        <li><a  href="/resources/platform-compatibility">Platform Compatibility</a></li>
-                                        <li><a href="https://support.enterprisedb.com/support/s" class>Knowledge Base &amp; Tech Alerts</a></li>
-                                        <li><a  href="/software-downloads-postgres">Downloads</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="flex-row short-row">
-
-                        <div class="footermenu-col">
-                            <div class="menu-headline"><span>Services</span></div>
-                                <ul class="flex-col mktoText" id="footermenu2" mktoName="Footer Menu Row">
-                                    <li><a href="/services/support">Support Center</a></li>
-                                    <li><a href="/services/professional-services">Professional Services</a></li>
-                                    <li><a href="/support/postgresql-remote-dba-service-for-on-premises-cloud-databases-support-24x7-help">Remote DBA Service</a></li>
-                                    <li><a href="/training/free-postgres-training">Training</a></li>
-                                </ul>
-                            </div>
-                        
-                        <div class="footermenu-col">
-                            <div class="menu-headline"><span>Partners</span></div>
-                                <ul class="flex-col mktoText" id="footermenu2" mktoName="Footer Menu Row">
-                                    <li><a href="/partners">Why Partner with EDB</a></li>
-                                    <li><a href="/partners/find-partner">Partners</a></li>
-                                    <li><a href="/partners/become-partner">Become a Partner</a></li>
-                                </ul>
-                            </div>
-                        
-                       <div class="footermenu-col">
-                           <div class="menu-headline"><span>Company</span></div>
-                                <ul class="flex-col mktoText" id="footermenu2" mktoName="Footer Menu Row">
-                                    <li><a href="/company/about">About EDB</a></li>
-                                    <li><a href="/careers">Careers</a></li>
-                                    <li><a href="/company/media-coverage">Media Coverage</a></li>
-                                </ul>
-                            </div>
-                       
-                        
-                        <div class="footermenu-col">
-                            
-                            <ul class="flex-col mktoText" id="footermenu2" mktoName="Footer Menu Row">
-                                <li><a href="https://twitter.com/EDBPostgres"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M28 6.937c-.957.425-1.985.711-3.064.84a5.343 5.343 0 002.345-2.951 10.696 10.696 0 01-3.388 1.295 5.334 5.334 0 00-9.089 4.864A15.143 15.143 0 013.809 5.411a5.321 5.321 0 00-.721 2.683 5.33 5.33 0 002.372 4.439 5.323 5.323 0 01-2.416-.667v.067a5.335 5.335 0 004.279 5.23 5.336 5.336 0 01-2.409.092 5.34 5.34 0 004.983 3.705 10.699 10.699 0 01-6.625 2.284c-.43 0-.855-.025-1.273-.075a15.102 15.102 0 008.177 2.396c9.812 0 15.176-8.128 15.176-15.177 0-.231-.005-.461-.015-.69A10.855 10.855 0 0028 6.937z"></path></svg>Twitter</a></li>
-                                <li
-                                ><a href="https://www.facebook.com/EDBpostgres"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm4.181 8h-1.729C16.376 11 16 11.568 16 12.718V14h3.154l-.428 3H16v7.95a10.057 10.057 0 01-3-.151V17h-3v-3h3v-1.611C13 9.339 14.486 8 17.021 8c1.214 0 1.856.09 2.16.131V11z"></path></svg>Facebook</a></li>
-                                    <li
-                                    ><a href="https://www.linkedin.com/company/enterprisedb"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M24 4H6a2 2 0 00-2 2v18a2 2 0 002 2h18a2 2 0 002-2V6a2 2 0 00-2-2zM10.954 22h-2.95v-9.492h2.95V22zM9.449 11.151a1.72 1.72 0 110-3.44 1.72 1.72 0 010 3.44zM22.004 22h-2.948v-4.616c0-1.101-.02-2.517-1.533-2.517-1.535 0-1.771 1.199-1.771 2.437V22h-2.948v-9.492h2.83v1.297h.04c.394-.746 1.356-1.533 2.791-1.533 2.987 0 3.539 1.966 3.539 4.522V22z"></path></svg>LinkedIn</a></li>
-                                        <li
-                                        ><a href="https://www.youtube.com/user/EnterpriseDB"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M7.414 3L9.19 9.412v3.076h1.538V9.412L12.525 3h-1.548l-.645 2.918a33.19 33.19 0 00-.35 1.818h-.046a27.26 27.26 0 00-.35-1.83L8.965 3h-1.55zm6.904 2.42c-.52 0-.941.102-1.261.31-.321.207-.556.539-.707.99-.15.454-.227 1.052-.227 1.798v1.005c0 .738.067 1.33.2 1.776.131.445.352.773.665.984.313.211.745.318 1.295.319.535 0 .962-.105 1.274-.313.312-.208.538-.533.677-.982.14-.45.21-1.043.21-1.782V8.518c0-.746-.072-1.342-.215-1.791-.143-.448-.368-.78-.678-.99-.31-.212-.72-.317-1.233-.317zm2.934.137v5.177c0 .641.11 1.113.328 1.414.22.301.558.452 1.018.452.663 0 1.16-.32 1.492-.961h.033l.137.847h1.22v-6.93h-1.558v5.505a.765.765 0 01-.277.318.688.688 0 01-.391.125.353.353 0 01-.34-.2c-.068-.131-.102-.35-.102-.66V5.558h-1.56zm-2.969.937c.218 0 .373.116.46.346.086.229.128.592.128 1.09v2.16c0 .513-.043.881-.129 1.107-.086.226-.24.34-.457.34-.218 0-.37-.114-.453-.34-.084-.226-.125-.595-.125-1.107V7.93c0-.497.045-.86.13-1.09.087-.23.235-.346.446-.346zM6.5 13.9A2.5 2.5 0 004 16.4v8a2.5 2.5 0 002.5 2.5h17a2.5 2.5 0 002.5-2.5v-8a2.5 2.5 0 00-2.5-2.5h-17zm8.559 2.3h1.27v3.083h.009c.114-.223.276-.402.486-.539.21-.137.438-.205.68-.205.312 0 .555.083.732.248.177.165.308.434.387.803.079.37.12.882.12 1.537v.924c0 .872-.105 1.513-.315 1.924-.21.41-.54.617-.985.617-.248 0-.473-.058-.677-.172a1.11 1.11 0 01-.457-.469h-.03l-.133.553H15.06v-8.305zm-7.875.296h3.904v1.06H9.779v6.948H8.49v-6.947H7.184v-1.06zm13.933 2.047c.451 0 .8.081 1.041.246.241.166.413.424.512.773.098.35.146.835.146 1.452v1.004h-2.203v.296c0 .376.01.657.033.844.023.187.07.325.14.41.07.086.177.13.323.13.197 0 .333-.077.407-.23.073-.151.113-.407.119-.763l1.135.066c.006.05.01.122.01.211 0 .541-.148.945-.444 1.211-.296.268-.715.403-1.256.403-.649 0-1.103-.205-1.365-.612-.262-.407-.39-1.037-.39-1.89v-1.022c0-.878.135-1.519.405-1.924s.732-.605 1.387-.605zm-8.168.107h1.319v5.852h-.004v.002h-1.032l-.113-.717h-.03c-.28.542-.699.813-1.259.813-.389 0-.674-.126-.86-.381-.184-.254-.277-.654-.277-1.194v-4.373h1.32v4.297c0 .26.03.449.087.559.058.112.152.166.287.166a.576.576 0 00.328-.106.655.655 0 00.234-.267v-4.65zm8.14.782c-.14 0-.245.04-.312.123-.067.083-.111.218-.132.406a7.745 7.745 0 00-.034.853v.42h.963v-.42c0-.376-.012-.66-.037-.853-.025-.195-.07-.33-.137-.41-.067-.08-.17-.12-.31-.12zm-4.179.043a.506.506 0 00-.353.152.833.833 0 00-.229.39v3.323a.581.581 0 00.225.228c.092.05.192.078.3.078.14 0 .252-.05.334-.152.083-.102.142-.273.176-.515a7.38 7.38 0 00.053-1.002v-.754c0-.458-.014-.812-.043-1.06-.028-.249-.08-.426-.152-.53a.358.358 0 00-.31-.158z"></path></svg>YouTube</a></li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                    </nav>
-          
-            <div class="row2 flex-col">
-                <ul class="flex-row mktoText" id="legal" mktoName="Footer Legal"><li>© 2023 EDB</li><li><a class="css-s2bz3d" href="/legal">Legal Notices</a></li><li><a href="/gdpr">GDPR</a></li><li><a href="/privacy-policy">Privacy Policy</a></li><li><a href="https://info.enterprisedb.com/rs/069-ALB-339/images/ESG statement 2022.pdf" clas>ESG</a></li><li><a href="/terms-use">Terms of Use</a></li><li><a href="/trademarks">Trademarks</a></li><li><a href="https://info.enterprisedb.com/manage-email-preferences-unknown" clas>Marketing Preferences</a></li></ul>
-      
-                
-                <p class="mktoText" id="copyright" mktoName="Copyright" stlye="color:7C878E;">This automated translation should not be considered exact and only used to approximate the original English language content. EDB does not guarantee the accuracy, reliability, or timeliness of any information translated.</p>
-            </div>
+          </div>
         </div>
-         </div>
-        
-</footer>
-   <!-- END Footer -->
+      </div>
+      <!-- END Bottom Form -->
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container_inner section">
+        <div class="row1">
+          <nav class="buttonrow">
+            <div class="mktoText" id="footerbutton1" mktoName="Footer Button 1">
+              <div class="button">
+                <a href="https://www.enterprisedb.com/contact">Contact sales</a>
+              </div>
+            </div>
+            <div class="mktoText" id="footerbutton2" mktoName="Footer Button 2">
+              <div class="button-transparent">
+                <a href="https://www.enterprisedb.com/docs/">Docs</a>
+              </div>
+            </div>
+            <div class="mktoText" id="footerbutton3" mktoName="Footer Button 3">
+              <div class="button-transparent">
+                <a href="https://www.enterprisedb.com/accounts/login?fromURI=https%3A%2F%2Fwww.enterprisedb.com%2F%3F">Sign In</a>
+              </div>
+            </div>
+            <div class="mktoText" id="footerbutton4" mktoName="Footer Button 4">
+              <div class="button-transparent">
+                <a href="https://www.enterprisedb.com/get-started">Get Started</a>
+              </div>
+            </div>
+          </nav>
+          <nav class="footernav">
+            <div>
+              <div class="menu-headline"><span>Solutions</span>
+                <ul class="flex-row mktoText" id="footermenu1" mktoName="Footer Menu Row">
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a href="/solutions/postgres-anywhere">Your Power to Postgres Anywhere</a></li>
+                      <li><a href="https://www.enterprisedb.com/solutions/oracle-compatibility-migration">Migrate from Oracle to Postgres with EDB</a></li>
+                      <li><a href="solutions/postgres-as-a-service">Fully Managed Postgres in the Cloud</a></li>
+                    </ul>
+                  </li>
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a href="https://www.enterprisedb.com/solutions/enterprise-grade-postgres">Real Enterprise Postgres by Real Postgres Experts</a></li>
+                      <li><a href="https://www.enterprisedb.com/solutions/extreme-high-availability">Extreme High Availability Postgres</a></li>
+                      <li><a href="https://www.enterprisedb.com/solutions/expert-services-support">Professional Services, Training and Support</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="menu-headline"><span>Products</span>
+                <ul class="flex-row mktoText" id="footermenu2" mktoName="Footer Menu Row">
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a href="https://www.enterprisedb.com/products/edb-enterprise">EDB Enterprise Plan</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/edb-standard">EDB Standard Plan</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/edb-community-360">EDB Community 360 Plan</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/plans-comparison">EDB Subscription Plan Comparison →</a></li>
+                    </ul>
+                  </li>
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a href="https://www.enterprisedb.com/products/biganimal-cloud-postgresql">EDB BigAnimal Plan</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/edb-postgres-distributed">EDB Postgres Distributed</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/edb-postgres-for-kubernetes">EDB Postgres for Kubernetes</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/edb-postgres-advanced-server">EDB Postgres Advanced Server</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/view-all-products-postgresql-database-management-software-tools">EDB Software portfolio →</a></li>
+                    </ul>
+                  </li>
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a href="https://www.enterprisedb.com/products/postgresql-databases">Postgres Databases</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/cluster-management">Postgres Clustering with EDB</a></li>
+                      <li><a href="https://www.enterprisedb.com/products/migration">EDB Postgres Migration</a></li>
+                      <li><a  href="https://www.enterprisedb.com/products/replication">Replication</a></li>
+                    </ul>
+                  </li>
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a  href="https://www.enterprisedb.com/products/monitoring">PostgreSQL Monitoring &amp; Query Performance</a></li>
+                      <li><a  href="https://www.enterprisedb.com/products/backup-recovery">PostgreSQL Database Backup Solutions</a></li>
+                      <li><a  href="https://www.enterprisedb.com/products/integrations">Foreign Data Wrappers</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="menu-headline"><span>Resources</span>
+                <ul class="flex-row mktoText" id="footermenu2a" mktoName="Footer Menu Row">
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a href="https://www.enterprisedb.com/docs/">Docs</a></li>
+                      <li><a  href="https://www.enterprisedb.com/blog">Blog</a></li>
+                      <li><a  href="https://www.enterprisedb.com/resources/webinars">Webinars</a></li>
+                    </ul>
+                  </li>
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a  href="https://www.enterprisedb.com/training/free-postgres-training">Training</a></li>
+                      <li><a  href="https://www.enterprisedb.com/resources/white-papers"><span>White Papers</span></a></li>
+                      <li><a  href="https://www.enterprisedb.com/blog/edb-customer-success-stories">Customer Success Stories</a></li>
+                    </ul>
+                  </li>
+                  <li class="footermenu-col">
+                    <ul>
+                      <li><a  href="https://www.enterprisedb.com/services/support">Support Center</a></li>
+                      <li><a  href="https://www.enterprisedb.com/resources/platform-compatibility">Platform Compatibility</a></li>
+                      <li><a href="https://support.enterprisedb.com/support/s" class>Knowledge Base &amp; Tech Alerts</a></li>
+                      <li><a  href="https://www.enterprisedb.com/software-downloads-postgres">Downloads</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex-row short-row">
 
-	<script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
-	<script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
-    
-   
-    <script type="text/javascript">
-    // Label forms
-    var formLabels = function() {
-      $('.mktoFieldWrap').each(function() {
-         var input = $(this).children('input');
-         var select = $(this).children('select');
-         var label = $(this).children('label');
-         var checkbox = $(this).children('.mktoCheckboxList');
-         $(input).prop('required',true);
-         $(label).insertAfter(input);
-         $(label).insertAfter(select);
-      });
-    }
+              <div class="footermenu-col">
+                <div class="menu-headline"><span>Services</span></div>
+                <ul class="flex-col mktoText" id="footermenu2b" mktoName="Footer Menu Row">
+                  <li><a href="https://www.enterprisedb.com/services/support">Support Center</a></li>
+                  <li><a href="https://www.enterprisedb.com/services/professional-services">Professional Services</a></li>
+                  <li><a href="https://www.enterprisedb.com/support/postgresql-remote-dba-service-for-on-premises-cloud-databases-support-24x7-help">Remote DBA Service</a></li>
+                  <li><a href="https://www.enterprisedb.com/training/free-postgres-training">Training</a></li>
+                </ul>
+              </div>
 
-    // Form Style of Buttons
-    var styleForm = function(){
-      $(".mktoButton").addClass("btn").removeClass("mktoButton");
-      $('select').wrap('<div class="select-wrapper" />');
-      var rowWithTextInput = $('.mktoFormRow').has('input[type=text],select')
-      // Create columns
-      $(rowWithTextInput).each(function() {
-          var colCount = $(this).children('.mktoFormCol').length;
-          if (colCount > 1) {
-              $(this).addClass('mktoFormRow-' + colCount + '-col');
-          }
-        });
-    }
+              <div class="footermenu-col">
+                <div class="menu-headline"><span>Partners</span></div>
+                <ul class="flex-col mktoText" id="footermenu3" mktoName="Footer Menu Row">
+                  <li><a href="https://www.enterprisedb.com/partners">Why Partner with EDB</a></li>
+                  <li><a href="https://www.enterprisedb.com/partners/find-partner">Partners</a></li>
+                  <li><a href="https://www.enterprisedb.com/partners/become-partner">Become a Partner</a></li>
+                </ul>
+              </div>
 
-    // Form Validation error fix
-    MktoForms2.whenReady(function(form) {
-       form.onValidate(function(native) {
-          // Your error message as the 1st argument
-          fixCheckboxValidation20170623("This field is required.", form, native);
-       });
-    });
-    fixCheckboxValidation20170623 = function(errorMessage, form, native) {
-       var formEl = form.getFormElem()[0],
-          topInvalid = formEl.querySelector(".mktoInvalid"),
-          topInvalidCheckbox = formEl.querySelector(".mktoInvalid.mktoCheckboxList");
+              <div class="footermenu-col">
+                <div class="menu-headline"><span>Company</span></div>
+                <ul class="flex-col mktoText" id="footermenu4" mktoName="Footer Menu Row">
+                  <li><a href="https://www.enterprisedb.com/company/about">About EDB</a></li>
+                  <li><a href="https://www.enterprisedb.com/careers">Careers</a></li>
+                  <li><a href="https://www.enterprisedb.com/company/media-coverage">Media Coverage</a></li>
+                </ul>
+              </div>
 
-       if (!native && topInvalidCheckbox == topInvalid) {
-          form.showErrorMessage(errorMessage, MktoForms2.$(topInvalidCheckbox));
-       }
-    };
 
-    
+              <div class="footermenu-col">
+
+                <ul class="flex-col footersocial mktoText" id="footermenu5" mktoName="Footer Menu Row">
+                  <li><a href="https://twitter.com/EDBPostgres"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M28 6.937c-.957.425-1.985.711-3.064.84a5.343 5.343 0 002.345-2.951 10.696 10.696 0 01-3.388 1.295 5.334 5.334 0 00-9.089 4.864A15.143 15.143 0 013.809 5.411a5.321 5.321 0 00-.721 2.683 5.33 5.33 0 002.372 4.439 5.323 5.323 0 01-2.416-.667v.067a5.335 5.335 0 004.279 5.23 5.336 5.336 0 01-2.409.092 5.34 5.34 0 004.983 3.705 10.699 10.699 0 01-6.625 2.284c-.43 0-.855-.025-1.273-.075a15.102 15.102 0 008.177 2.396c9.812 0 15.176-8.128 15.176-15.177 0-.231-.005-.461-.015-.69A10.855 10.855 0 0028 6.937z"></path></svg>Twitter</a></li>
+                  <li
+                      ><a href="https://www.facebook.com/EDBpostgres"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm4.181 8h-1.729C16.376 11 16 11.568 16 12.718V14h3.154l-.428 3H16v7.95a10.057 10.057 0 01-3-.151V17h-3v-3h3v-1.611C13 9.339 14.486 8 17.021 8c1.214 0 1.856.09 2.16.131V11z"></path></svg>Facebook</a></li>
+                  <li
+                      ><a href="https://www.linkedin.com/company/enterprisedb"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M24 4H6a2 2 0 00-2 2v18a2 2 0 002 2h18a2 2 0 002-2V6a2 2 0 00-2-2zM10.954 22h-2.95v-9.492h2.95V22zM9.449 11.151a1.72 1.72 0 110-3.44 1.72 1.72 0 010 3.44zM22.004 22h-2.948v-4.616c0-1.101-.02-2.517-1.533-2.517-1.535 0-1.771 1.199-1.771 2.437V22h-2.948v-9.492h2.83v1.297h.04c.394-.746 1.356-1.533 2.791-1.533 2.987 0 3.539 1.966 3.539 4.522V22z"></path></svg>LinkedIn</a></li>
+                  <li
+                      ><a href="https://www.youtube.com/user/EnterpriseDB"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M7.414 3L9.19 9.412v3.076h1.538V9.412L12.525 3h-1.548l-.645 2.918a33.19 33.19 0 00-.35 1.818h-.046a27.26 27.26 0 00-.35-1.83L8.965 3h-1.55zm6.904 2.42c-.52 0-.941.102-1.261.31-.321.207-.556.539-.707.99-.15.454-.227 1.052-.227 1.798v1.005c0 .738.067 1.33.2 1.776.131.445.352.773.665.984.313.211.745.318 1.295.319.535 0 .962-.105 1.274-.313.312-.208.538-.533.677-.982.14-.45.21-1.043.21-1.782V8.518c0-.746-.072-1.342-.215-1.791-.143-.448-.368-.78-.678-.99-.31-.212-.72-.317-1.233-.317zm2.934.137v5.177c0 .641.11 1.113.328 1.414.22.301.558.452 1.018.452.663 0 1.16-.32 1.492-.961h.033l.137.847h1.22v-6.93h-1.558v5.505a.765.765 0 01-.277.318.688.688 0 01-.391.125.353.353 0 01-.34-.2c-.068-.131-.102-.35-.102-.66V5.558h-1.56zm-2.969.937c.218 0 .373.116.46.346.086.229.128.592.128 1.09v2.16c0 .513-.043.881-.129 1.107-.086.226-.24.34-.457.34-.218 0-.37-.114-.453-.34-.084-.226-.125-.595-.125-1.107V7.93c0-.497.045-.86.13-1.09.087-.23.235-.346.446-.346zM6.5 13.9A2.5 2.5 0 004 16.4v8a2.5 2.5 0 002.5 2.5h17a2.5 2.5 0 002.5-2.5v-8a2.5 2.5 0 00-2.5-2.5h-17zm8.559 2.3h1.27v3.083h.009c.114-.223.276-.402.486-.539.21-.137.438-.205.68-.205.312 0 .555.083.732.248.177.165.308.434.387.803.079.37.12.882.12 1.537v.924c0 .872-.105 1.513-.315 1.924-.21.41-.54.617-.985.617-.248 0-.473-.058-.677-.172a1.11 1.11 0 01-.457-.469h-.03l-.133.553H15.06v-8.305zm-7.875.296h3.904v1.06H9.779v6.948H8.49v-6.947H7.184v-1.06zm13.933 2.047c.451 0 .8.081 1.041.246.241.166.413.424.512.773.098.35.146.835.146 1.452v1.004h-2.203v.296c0 .376.01.657.033.844.023.187.07.325.14.41.07.086.177.13.323.13.197 0 .333-.077.407-.23.073-.151.113-.407.119-.763l1.135.066c.006.05.01.122.01.211 0 .541-.148.945-.444 1.211-.296.268-.715.403-1.256.403-.649 0-1.103-.205-1.365-.612-.262-.407-.39-1.037-.39-1.89v-1.022c0-.878.135-1.519.405-1.924s.732-.605 1.387-.605zm-8.168.107h1.319v5.852h-.004v.002h-1.032l-.113-.717h-.03c-.28.542-.699.813-1.259.813-.389 0-.674-.126-.86-.381-.184-.254-.277-.654-.277-1.194v-4.373h1.32v4.297c0 .26.03.449.087.559.058.112.152.166.287.166a.576.576 0 00.328-.106.655.655 0 00.234-.267v-4.65zm8.14.782c-.14 0-.245.04-.312.123-.067.083-.111.218-.132.406a7.745 7.745 0 00-.034.853v.42h.963v-.42c0-.376-.012-.66-.037-.853-.025-.195-.07-.33-.137-.41-.067-.08-.17-.12-.31-.12zm-4.179.043a.506.506 0 00-.353.152.833.833 0 00-.229.39v3.323a.581.581 0 00.225.228c.092.05.192.078.3.078.14 0 .252-.05.334-.152.083-.102.142-.273.176-.515a7.38 7.38 0 00.053-1.002v-.754c0-.458-.014-.812-.043-1.06-.028-.249-.08-.426-.152-.53a.358.358 0 00-.31-.158z"></path></svg>YouTube</a></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </nav>
+
+        <div class="row2 flex-col">
+          <ul class="flex-row mktoText" id="legal" mktoName="Footer Legal"><li>© 2023 EDB</li><li><a class="css-s2bz3d" href="https://www.enterprisedb.com/legal">Legal Notices</a></li><li><a href="https://www.enterprisedb.com/gdpr">GDPR</a></li><li><a href="https://www.enterprisedb.com/privacy-policy">Privacy Policy</a></li><li><a href="https://info.enterprisedb.com/rs/069-ALB-339/images/ESG statement 2022.pdf" clas>ESG</a></li><li><a href="https://www.enterprisedb.com/terms-use">Terms of Use</a></li><li><a href="https://www.enterprisedb.com/trademarks">Trademarks</a></li><li><a href="https://info.enterprisedb.com/manage-email-preferences-unknown" clas>Marketing Preferences</a></li></ul>
+
+
+          <p class="mktoText" id="copyright" mktoName="Copyright" stlye="color:#7C878E;">This automated translation should not be considered exact and only used to approximate the original English language content. EDB does not guarantee the accuracy, reliability, or timeliness of any information translated.</p>
+        </div>
+      </div>
+      </div>
+
+    </footer>
+  <!-- END Footer -->
+
+  <script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
+  <script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
+
  
-    </script>
-    <script type="text/javascript">
-    (function() {
-    // Please include the email domains you would like to block in this list
-    var invalidDomains = ["@gmail.", "@yahoo.", "@hotmail.", "@live.", "@aol.", "@outlook."];
-    var allowPersonalEmails = ${allow-personal-emails};
 
-    if (allowPersonalEmails == false) {
-      MktoForms2.whenReady(function(form) {
-        form.onValidate(function() {
-          var email = form.vals().Email;
-          if (email) {
-            if (!isEmailGood(email)) {
-              form.submitable(false);
-              var emailElem = form.getFormElem().find("#Email");
-              form.showErrorMessage("Must be Business email.", emailElem);
-            } else {
-              form.submitable(true);
-            }
-          }
-        });
-      });
-    }
-
-    function isEmailGood(email) {
-      for (var i = 0; i < invalidDomains.length; i++) {
-        var domain = invalidDomains[i];
-        if (email.indexOf(domain) != -1) {
-          return false;
-        }
+  <script>
+    MktoForms2.whenReady(function (form) {
+      Array.from(document.querySelectorAll('input')).map((x) => x.addEventListener('change', myFunc));
+      Array.from(document.querySelectorAll('select')).map((x) => x.addEventListener('change', myFunc2));
+      function myFunc(e) {
+        e.target.parentElement.classList.toggle('activefield')
       }
-      return true;
-    }
-    })();
-    </script>
-        <script type="text/javascript">
-	var heapForm = document.getElementsByClassName('heapForm')[0];
-
-    document.addEventListener('click', function (event) {
-      
-
-	// If the clicked element doesn't have the right selector, bail
-	  if (!event.target.matches('button[type=submit]')) return;
-      // make sure we are using right form
-      if (heapForm) {
-        var heapEmail = heapForm.querySelector('[name="Email"]');
-        
-        // find T&C input 
-        var termsCond = document.querySelector('#termsandConditions');
-        
-        // find T&C wrapper
-        var tcWrapper = termsCond.parentNode;
-        
-        // check invalidity based on terms and conditions consent, needs to be false to proceed.
-        var ariaInvalid = tcWrapper.getAttribute('aria-invalid');
-
-        
-        // make sure heap is loaded
-        if(typeof heap.addUserProperties === "function")
-        {
-          var inputValue = heapEmail.value;
-          if (inputValue && validateEmail(inputValue) && ariaInvalid == 'false') {
-            heap.addUserProperties({"email":inputValue});
-          } 
-        };
+      function myFunc2(e) {
+        e.target.parentElement.classList.add('activefield')
       }
-      
-	// Don't follow the link
-	  //event.preventDefault();
-	
+
+
     });
-      
-    function validateEmail(email) {
-  		const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  		return re.test(String(email).toLowerCase());
-	}
-    </script>
-
-<script>
-MktoForms2.whenReady(function (form) {
-    Array.from(document.querySelectorAll('input')).map((x) => x.addEventListener('change', myFunc));
-   Array.from(document.querySelectorAll('select')).map((x) => x.addEventListener('change', myFunc2));
-   function myFunc(e) {
-       e.target.parentElement.classList.toggle('activefield')
-   }
-   function myFunc2(e) {
-       e.target.parentElement.classList.add('activefield')
-   }
-   
- 
-});
-</script>
+  </script>
 
 
-</body>
+  </body>
 
 </html>
