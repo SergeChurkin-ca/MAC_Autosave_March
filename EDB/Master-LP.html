@@ -102,7 +102,7 @@
   <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="3" allowHtml="true">
 
   <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F6F9FC">
+  <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#fafafa">
   <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
   <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
   <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
@@ -114,7 +114,7 @@
   <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
     
   <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
+  <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#fafafa">
   <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
   <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
   <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
@@ -127,8 +127,10 @@
 
 
   <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
-  <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
+  <meta class="mktoString" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="linear-gradient(to right bottom, rgb(23, 24, 69), rgb(115, 45, 217))">
+    
+  <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#">
+    
   <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
   <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
   <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
@@ -146,7 +148,7 @@
   <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
 
   <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
-  <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
+  <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#ffffff">
   <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#1F203E">
   <meta class="mktoColor" id="footersocialbgcolor" mktoName="Footer - Social BG color" default="#98A0B8">
   <meta class="mktoColor" id="footersocialcolor" mktoName="Footer - Social color" default="#ffffff">
@@ -262,9 +264,15 @@
           background-color:${btmformbgcolor};
           display:${btmformshow};
           order:${btmformorder};
+             background-image: ${btmformbgcolor};
 		}
+        #btmform h2,
+        #btmform p {
+            color: #ffffff;
+        }
 		#btmform .container_inner {
 			background-color:${btmforminnerbgcolor};
+            
 		}
 		#footer {
           background-color:${footerbgcolor};
@@ -486,6 +494,7 @@
   
       ${formtexttwocol}
       ${formtexttwocol2}
+      ${btmformtwocol}
       
 @media ( max-width: 480px) {
     .section {
@@ -589,7 +598,7 @@
               <h2>Form Headline</h2>
            </div>
             <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
-                  <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2544"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 2544);</script>
+              
             </div>
          </div>
       </div>
@@ -754,8 +763,11 @@
          <div class="formleft">
             <div class="mktoText" id="btmformheadline" mktoName="Bottom Form - Headline">
                <h2>Lorem Ipsum Dolor Sit Amet</h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste neque repellat sequi soluta laboriosam, ullam nesciunt non sunt eligendi cumque.</p>
             </div>
-            <div class="mktoForm" id="btmFormform" mktoName="Bottom Form"></div>
+            <div class="mktoForm" id="btmFormform" mktoName="Bottom Form">
+                    <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2544"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 2544);</script>
+            </div>
          </div>
          <div class="formright">
             <div class="mktoImg" id="btmformimg" mktoName="Bottom Form - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/image-placeholder.png"></div>
@@ -765,109 +777,156 @@
    <!-- END Bottom Form -->
   </div>
    <!-- Footer -->
-   <div class="container_100" id="footer">
-      <div class="container_inner section">
-         <div class="left logo">
-            <div class="mktoText" id="footerlogo" mktoName="Logo">
-              <a href="#">
-               <img class="logowidthl" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" border="0">
-               </a>
+   <footer aria-labelledby="footerHeading" class="css-19zu0t8">
+    <h2 id="footerHeading" class="sr-only">Footer</h2>
+    <div class="css-ia6r9t">
+        <div class="css-lwdqsj">
+            <div class="css-1ff36h2">
+                <nav class="css-l3sjp9"><a class="css-10llstd" href="/contact">Contact sales</a><a href="/docs/" class="css-1zchk9">Docs</a><a href="/accounts/login?fromURI=https%3A%2F%2Fwww.enterprisedb.com%2F%3F" class="css-1zchk9">Sign in</a><a class="css-1zchk9" href="/get-started">Get started</a></nav>
+                <nav
+                    class="css-wl1e6j">
+                    <div class="css-1qu77zd e5sbpiq0">
+                        <div class="css-9i66m2"><span class="css-1sfhkha">Solutions</span>
+                            <ul class="css-1lkcu33">
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/solutions/postgres-anywhere">Your Power to Postgres Anywhere</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/solutions/oracle-compatibility-migration">Migrate from Oracle to Postgres with EDB</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/solutions/postgres-as-a-service">Fully Managed Postgres in the Cloud</a></li>
+                                    </ul>
+                                </li>
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/solutions/enterprise-grade-postgres">Real Enterprise Postgres by Real Postgres Experts</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/solutions/extreme-high-availability">Extreme High Availability Postgres</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/solutions/expert-services-support">Professional Services, Training and Support</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="css-1qu77zd e5sbpiq0">
+                        <div class="css-9i66m2"><span class="css-1sfhkha">Products</span>
+                            <ul class="css-1lkcu33">
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/edb-enterprise">EDB Enterprise Plan</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/edb-standard">EDB Standard Plan</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/edb-community-360">EDB Community 360 Plan</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/plans-comparison">EDB Subscription Plan Comparison →</a></li>
+                                    </ul>
+                                </li>
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/biganimal-cloud-postgresql">EDB BigAnimal Plan</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/edb-postgres-distributed">EDB Postgres Distributed</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/edb-postgres-for-kubernetes">EDB Postgres for Kubernetes</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/edb-postgres-advanced-server">EDB Postgres Advanced Server</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/view-all-products-postgresql-database-management-software-tools">EDB Software portfolio →</a></li>
+                                    </ul>
+                                </li>
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/postgresql-databases">Postgres Databases</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/cluster-management">Postgres Clustering with EDB</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/migration">EDB Postgres Migration</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/replication">Replication</a></li>
+                                    </ul>
+                                </li>
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/monitoring">PostgreSQL Monitoring &amp; Query Performance</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/backup-recovery">PostgreSQL Database Backup Solutions</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/products/integrations">Foreign Data Wrappers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="css-1qu77zd e5sbpiq0">
+                        <div class="css-9i66m2"><span class="css-1sfhkha">Resources</span>
+                            <ul class="css-1lkcu33">
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a href="/docs/" class="css-1g3bj7c">Docs</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/blog">Blog</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/resources/webinars">Webinars</a></li>
+                                    </ul>
+                                </li>
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/training/free-postgres-training">Training</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/resources/white-papers"><span data-no-translate="-ja ">White Papers</span></a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/blog/edb-customer-success-stories">Customer Success Stories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="css-1jixykv">
+                                    <ul>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/services/support">Support Center</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/resources/platform-compatibility">Platform Compatibility</a></li>
+                                        <li class="css-1gok8e8"><a href="https://support.enterprisedb.com/support/s" class="css-1g3bj7c">Knowledge Base &amp; Tech Alerts</a></li>
+                                        <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/software-downloads-postgres">Downloads</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="css-1qu77zd e5sbpiq0">
+                        <div class="css-hy36c5"><span class="css-1sfhkha">Services</span>
+                            <ul class="css-13wylk3">
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/services/support">Support Center</a></li>
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/services/professional-services">Professional Services</a></li>
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/support/postgresql-remote-dba-service-for-on-premises-cloud-databases-support-24x7-help">Remote DBA Service</a></li>
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/training/free-postgres-training">Training</a></li>
+                            </ul>
+                        </div>
+                        <div class="css-hy36c5"><span class="css-1sfhkha">Partners</span>
+                            <ul class="css-13wylk3">
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/partners">Why Partner with EDB</a></li>
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/partners/find-partner">Partners</a></li>
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/partners/become-partner">Become a Partner</a></li>
+                            </ul>
+                        </div>
+                        <div class="css-hy36c5"><span class="css-1sfhkha">Company</span>
+                            <ul class="css-13wylk3">
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/company/about">About EDB</a></li>
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/careers">Careers</a></li>
+                                <li class="css-1gok8e8"><a class="css-1g3bj7c" href="/company/media-coverage">Media Coverage</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="css-1my2d0n"></div>
+                            <ul class="css-1o3nkn">
+                                <li class="css-1gok8e8"><a href="https://twitter.com/EDBPostgres" class="css-1g3bj7c"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M28 6.937c-.957.425-1.985.711-3.064.84a5.343 5.343 0 002.345-2.951 10.696 10.696 0 01-3.388 1.295 5.334 5.334 0 00-9.089 4.864A15.143 15.143 0 013.809 5.411a5.321 5.321 0 00-.721 2.683 5.33 5.33 0 002.372 4.439 5.323 5.323 0 01-2.416-.667v.067a5.335 5.335 0 004.279 5.23 5.336 5.336 0 01-2.409.092 5.34 5.34 0 004.983 3.705 10.699 10.699 0 01-6.625 2.284c-.43 0-.855-.025-1.273-.075a15.102 15.102 0 008.177 2.396c9.812 0 15.176-8.128 15.176-15.177 0-.231-.005-.461-.015-.69A10.855 10.855 0 0028 6.937z"></path></svg>Twitter</a></li>
+                                <li
+                                    class="css-1gok8e8"><a href="https://www.facebook.com/EDBpostgres" class="css-1g3bj7c"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M15 3C8.373 3 3 8.373 3 15s5.373 12 12 12 12-5.373 12-12S21.627 3 15 3zm4.181 8h-1.729C16.376 11 16 11.568 16 12.718V14h3.154l-.428 3H16v7.95a10.057 10.057 0 01-3-.151V17h-3v-3h3v-1.611C13 9.339 14.486 8 17.021 8c1.214 0 1.856.09 2.16.131V11z"></path></svg>Facebook</a></li>
+                                    <li
+                                        class="css-1gok8e8"><a href="https://www.linkedin.com/company/enterprisedb" class="css-1g3bj7c"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M24 4H6a2 2 0 00-2 2v18a2 2 0 002 2h18a2 2 0 002-2V6a2 2 0 00-2-2zM10.954 22h-2.95v-9.492h2.95V22zM9.449 11.151a1.72 1.72 0 110-3.44 1.72 1.72 0 010 3.44zM22.004 22h-2.948v-4.616c0-1.101-.02-2.517-1.533-2.517-1.535 0-1.771 1.199-1.771 2.437V22h-2.948v-9.492h2.83v1.297h.04c.394-.746 1.356-1.533 2.791-1.533 2.987 0 3.539 1.966 3.539 4.522V22z"></path></svg>LinkedIn</a></li>
+                                        <li
+                                            class="css-1gok8e8"><a href="https://www.youtube.com/user/EnterpriseDB" class="css-1g3bj7c"><svg viewBox="0 0 30 30" width="1em" height="1em" fill="currentColor" class="css-wra0u5"><path d="M7.414 3L9.19 9.412v3.076h1.538V9.412L12.525 3h-1.548l-.645 2.918a33.19 33.19 0 00-.35 1.818h-.046a27.26 27.26 0 00-.35-1.83L8.965 3h-1.55zm6.904 2.42c-.52 0-.941.102-1.261.31-.321.207-.556.539-.707.99-.15.454-.227 1.052-.227 1.798v1.005c0 .738.067 1.33.2 1.776.131.445.352.773.665.984.313.211.745.318 1.295.319.535 0 .962-.105 1.274-.313.312-.208.538-.533.677-.982.14-.45.21-1.043.21-1.782V8.518c0-.746-.072-1.342-.215-1.791-.143-.448-.368-.78-.678-.99-.31-.212-.72-.317-1.233-.317zm2.934.137v5.177c0 .641.11 1.113.328 1.414.22.301.558.452 1.018.452.663 0 1.16-.32 1.492-.961h.033l.137.847h1.22v-6.93h-1.558v5.505a.765.765 0 01-.277.318.688.688 0 01-.391.125.353.353 0 01-.34-.2c-.068-.131-.102-.35-.102-.66V5.558h-1.56zm-2.969.937c.218 0 .373.116.46.346.086.229.128.592.128 1.09v2.16c0 .513-.043.881-.129 1.107-.086.226-.24.34-.457.34-.218 0-.37-.114-.453-.34-.084-.226-.125-.595-.125-1.107V7.93c0-.497.045-.86.13-1.09.087-.23.235-.346.446-.346zM6.5 13.9A2.5 2.5 0 004 16.4v8a2.5 2.5 0 002.5 2.5h17a2.5 2.5 0 002.5-2.5v-8a2.5 2.5 0 00-2.5-2.5h-17zm8.559 2.3h1.27v3.083h.009c.114-.223.276-.402.486-.539.21-.137.438-.205.68-.205.312 0 .555.083.732.248.177.165.308.434.387.803.079.37.12.882.12 1.537v.924c0 .872-.105 1.513-.315 1.924-.21.41-.54.617-.985.617-.248 0-.473-.058-.677-.172a1.11 1.11 0 01-.457-.469h-.03l-.133.553H15.06v-8.305zm-7.875.296h3.904v1.06H9.779v6.948H8.49v-6.947H7.184v-1.06zm13.933 2.047c.451 0 .8.081 1.041.246.241.166.413.424.512.773.098.35.146.835.146 1.452v1.004h-2.203v.296c0 .376.01.657.033.844.023.187.07.325.14.41.07.086.177.13.323.13.197 0 .333-.077.407-.23.073-.151.113-.407.119-.763l1.135.066c.006.05.01.122.01.211 0 .541-.148.945-.444 1.211-.296.268-.715.403-1.256.403-.649 0-1.103-.205-1.365-.612-.262-.407-.39-1.037-.39-1.89v-1.022c0-.878.135-1.519.405-1.924s.732-.605 1.387-.605zm-8.168.107h1.319v5.852h-.004v.002h-1.032l-.113-.717h-.03c-.28.542-.699.813-1.259.813-.389 0-.674-.126-.86-.381-.184-.254-.277-.654-.277-1.194v-4.373h1.32v4.297c0 .26.03.449.087.559.058.112.152.166.287.166a.576.576 0 00.328-.106.655.655 0 00.234-.267v-4.65zm8.14.782c-.14 0-.245.04-.312.123-.067.083-.111.218-.132.406a7.745 7.745 0 00-.034.853v.42h.963v-.42c0-.376-.012-.66-.037-.853-.025-.195-.07-.33-.137-.41-.067-.08-.17-.12-.31-.12zm-4.179.043a.506.506 0 00-.353.152.833.833 0 00-.229.39v3.323a.581.581 0 00.225.228c.092.05.192.078.3.078.14 0 .252-.05.334-.152.083-.102.142-.273.176-.515a7.38 7.38 0 00.053-1.002v-.754c0-.458-.014-.812-.043-1.06-.028-.249-.08-.426-.152-.53a.358.358 0 00-.31-.158z"></path></svg>YouTube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </nav>
             </div>
-            <div class="mktoText" id="footersocial" mktoName="Footer - Social">
-               <ul class="social-icons icon-circle list-unstyled list-inline">
-                  <li> <a href="#"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-google-plus"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-pinterest"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-vimeo-square"></i></a>
-                  </li>
-                  <li> <a href="#"><i class="fa fa-youtube"></i></a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <div class="right">
-            <div class="threecolumns">
-               <div class="col33">
-                  <div class="mktoText" id="footercol1" mktoName="Footer - Links Col 1">
-                     <h4>Heading</h4>
-                     <ul>
-                        <li>
-                           <a href="#" target="blank">Link 1</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 2</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 3</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 4</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 5</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="mid"></div>
-               <div class="col33">
-                  <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
-                     <h4>Heading</h4>
-                     <ul>
-                        <li>
-                           <a href="#" target="blank">Link 1</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 2</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 3</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 4</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 5</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="mid"></div>
-               <div class="col33">
-                  <div class="mktoText" id="footercol3" mktoName="Footer - Links Col 3">
-                     <h4>Heading</h4>
-                     <ul>
-                        <li>
-                           <a href="#" target="blank">Link 1</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 2</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 3</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 4</a>
-                        </li>
-                        <li>
-                           <a href="#" target="blank">Link 5</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+        </div>
+        <ul class="css-dmshpl">
+            <li>© 2022 EDB</li>
+            <li><a class="css-s2bz3d" href="/legal">Legal Notices</a></li>
+            <li><a class="css-s2bz3d" href="/gdpr">GDPR</a></li>
+            <li><a class="css-s2bz3d" href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://info.enterprisedb.com/rs/069-ALB-339/images/ESG statement 2022.pdf" class="css-s2bz3d">ESG</a></li>
+            <li><a class="css-s2bz3d" href="/terms-use">Terms of Use</a></li>
+            <li><a class="css-s2bz3d" href="/trademarks">Trademarks</a></li>
+            <li><a href="https://info.enterprisedb.com/manage-email-preferences-unknown" class="css-s2bz3d">Marketing Preferences</a></li>
+            <li><button class="css-s2bz3d" type="button">Cookie Preferences</button></li>
+        </ul>
+        <div class="css-qx54cm"><span data-no-translate="true"><ul class="css-1u3uha8"><li><button class="css-eznexy" type="button">English</button></li><li><button class="css-4q8e1v" type="button">Nederlands</button></li><li><button class="css-4q8e1v" type="button">français</button></li><li><button class="css-4q8e1v" type="button">Deutsche</button></li><li><button class="css-4q8e1v" type="button">日本語</button></li><li><button class="css-4q8e1v" type="button">한국어</button></li><li><button class="css-4q8e1v" type="button">português</button></li><li><button class="css-4q8e1v" type="button">Español</button></li></ul></span>
+            <p
+                class="css-l4ptje">This automated translation should not be considered exact and only used to approximate the original English language content. EDB does not guarantee the accuracy, reliability, or timeliness of any information translated.</p>
+        </div>
+    </div>
+</footer>
    <!-- END Footer -->
 
 	<script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>

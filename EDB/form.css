@@ -17,7 +17,10 @@
     
     #banner .mktoForm label,
     #banner .mktoForm .mktoHtmlText,
-    #banner .mktoForm input {
+    #banner .mktoForm input,
+    #btmform .mktoForm label,
+    #btmform .mktoForm .mktoHtmlText,
+    #btmform .mktoForm input {
         color: #F2F2F2;
     }
     
@@ -29,13 +32,29 @@
     #banner .mktoForm select,
     #banner .mktoForm textarea,
     #banner .mktoForm input[type="checkbox"]+label:before,
-    #banner .mktoForm input[type="radio"]+label:before {
+    #banner .mktoForm input[type="radio"]+label:before,
+    #btmform .mktoForm input,
+    #btmform .mktoForm select,
+    #btmform .mktoForm textarea,
+    #btmform .mktoForm input[type="checkbox"]+label:before,
+    #btmform .mktoForm input[type="radio"]+label:before {
         color: #F2F2F2;
         border: 1px solid #F2F2F2;
         background: rgba(255, 255, 255, 0.1);
     }
     
-    #banner .mktoForm .select-wrapper:before {
+    #btmform .mktoForm input,
+    #btmform .mktoForm select,
+    #btmform .mktoForm textarea,
+    #btmform .mktoForm input[type="checkbox"]+label:before,
+    #btmform .mktoForm input[type="radio"]+label:before {
+        color: #F2F2F2;
+        border: 1px solid #F2F2F2;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    #banner .mktoForm .select-wrapper:before,
+    #btmform .mktoForm .select-wrapper:before {
         color: #F2F2F2;
     }
     
@@ -50,7 +69,8 @@
     }
     
     #banner .mktoFieldWrap label,
-    #formtext .mktoFieldWrap label {
+    #formtext .mktoFieldWrap label,
+    #btmform .mktoFieldWrap label {
         position: absolute !important;
         font-weight: normal;
         top: 13px !important;
@@ -96,7 +116,11 @@
     #formtext .mktoFieldWrap:focus label,
     #formtext .mktoFieldWrap:active label,
     #formtext .mktoFieldWrap:focus-within label,
-    #formtext .mktoForm .activefield label {
+    #formtext .mktoForm .activefield label,
+    #btmform .mktoFieldWrap:focus label,
+    #btmform .mktoFieldWrap:active label,
+    #btmform .mktoFieldWrap:focus-within label,
+    #btmform .mktoForm .activefield label {
         top: 4px !important;
         left: 8px !important;
         font-size: 10px !important;
