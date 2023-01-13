@@ -8,3 +8,8 @@
    function myFunc2(e) {
        e.target.classLsit.add('activefield')
    }
+
+
+
+
+   document.querySelectorAll('.mktoCheckboxList')[0].parentElement.parentElement.parentElement.appendChild(document.querySelectorAll('.mktoCheckboxList')[0].parentElement.parentElement.parentElement.querySelectorAll('.mktoHtmlText')[0])
