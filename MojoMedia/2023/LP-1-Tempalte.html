@@ -29,7 +29,8 @@
         }
         
         .banner {
-            background-image: url('https://go.pardot.com/l/391962/2023-01-16/fcvhkz/391962/16738796637DKkpDeZ/RRS_1_1_bimbo_bakeries_LP_Header.png');
+            /* background-image: url('https://go.pardot.com/l/391962/2023-01-16/fcvhkz/391962/16738796637DKkpDeZ/RRS_1_1_bimbo_bakeries_LP_Header.png'); */
+            background-image: url(var(--bg-image));
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -402,7 +403,7 @@
     </nav>
 
     <!-- Banner -->
-    <section class="banner">
+    <section class="banner" data-editable data-name="bg-image" data-default="https://www.example.com/images/bg.jpg">
         <div class="container text-center">
             <div class="header" pardot-region="header-text">
                 <h1><span style="color:#ffffff;font-weight: 700;">Improve Hygiene and Electrical Reliability 
@@ -440,7 +441,7 @@
                         <img src="https://go.pardot.com/l/391962/2022-01-07/cd8p9h/391962/1641570579QbN2USoa/rss_foodandbev_awareness_lp_checkmark_graphic.png" width="40px" alt="checkmark" class="check-icon">
                     </div>
                     <p pardot-region="icon-header-3">
-                        Reduce maintenance costs over time</p>
+                        Reduce maintenance costs over time
                     </p>
                 </div>
             </div>

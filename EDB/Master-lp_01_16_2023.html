@@ -77,7 +77,7 @@
     <meta class="mktoColor" id="hover-banbtnbordercolor" mktoName="Banner - Hover:Btn Border Color" default="#ebebeb">
     <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
+    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="3" allowHtml="true">
 
 
     <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -96,10 +96,10 @@
     <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
     <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
-    <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#FF5442">
+    <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#1f023e">
     <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="2" allowHtml="true">
-    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#FF5442\">
+    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#FF5442">
     <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
     <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#FF5442">
     <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="14" allowHtml="true">
@@ -133,7 +133,7 @@
     <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="linear-gradient(to right bottom, rgb(23, 24, 69), rgb(115, 45, 217))">
 
-    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#">
+    <meta class="mktoString" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#" allowHtml="true">
 
     <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
     <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
@@ -172,6 +172,10 @@
 
 
     <style>
+     
+      html, body {
+        overflow-x:hidden;
+      }
       ${googleimport}
       * {
         font-family: '${globalfont}',Arial, sans-serif;
@@ -282,6 +286,7 @@
         display:${btmformshow};
         order:${btmformorder};
         background-image: ${btmformbgcolor};
+        
       }
       #btmform h2,
       #btmform p {
@@ -330,9 +335,9 @@
         text-decoration:none;
       }
       .footersocial a {
-      display: flex;
-      align-items: center;
-      gap: 6px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
       }
       footer a:hover,
       footer a:focus {
@@ -601,8 +606,9 @@
       #formtext #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
         color:${formtextpcolor}!important;
       }
-      #formtext .mktoForm button.mktoButton {
+     .mktoForm .mktoButton {
         background-color:${formtextbtnbgcolor}!important;
+        background-image:none !important;
         border:1px solid ${formtextbtnbordercolor}!important;
         border-radius:${formtextbtnborderradius}px!important;
         font-size:${formtextbtntextsize}px!important;
@@ -613,6 +619,13 @@
         width: auto!important!important;
         display:inline-block;
         max-width: 400px !important;
+        width: unset !important;
+      }
+      .mktoForm .mktoButton:hover,
+       .mktoForm .mktoButton:focus {
+        background-color:${formtextbtnbgcolor}!important;
+        background-image:none !important;
+        border:1px solid ${formtextbtnbordercolor}!important;
       }
       *:focus {
         outline: none !important;
@@ -860,7 +873,7 @@
       .mktoHtmlText {
         position: absolute;
         left: 30px;
-        top: -70px;
+        top: -59px;
         font-size: 13px;
         width: 100% !important;
       }
@@ -950,8 +963,8 @@
             </div>
           </div>
           <div class="right">
-            <div class="mktText" id="bannerightcol" mktoName="Banner - Right Column">
-              <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/elephant-hero.png">
+            <div class="mktoText" id="bannerightcol" mktoName="Banner - Right Column">
+              <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/elephant-hero.png"> 
 
             </div>
           </div>
@@ -974,7 +987,7 @@
               <h2>Form Headline</h2>
             </div>
             <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
-              <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2544"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 2544);</script>
+               <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_3188"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 3188);</script>
             </div>
           </div>
         </div>
@@ -991,7 +1004,7 @@
             <div class="col33">
               <div class="threecolimg">
                 <div class="mktoImg" id="threecolImg1" mktoName="Three Col - Col 1 Image">
-                  <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+                  <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/icon-placeholder.svg" width="140">
                 </div>
                 <div class="mktoText" id="threecoltext1" mktoName="Three Col - Col 1 Copy">
                   <h3>Heading</h3>
@@ -1004,7 +1017,7 @@
             <div class="mid"></div>
             <div class="col33">
               <div class="mktoImg" id="threecolImg2" mktoName="Three Col - Col 2 Image">
-                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+                <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/icon-placeholder.svg" width="140">
               </div>
               <div class="mktoText" id="threecoltext2" mktoName="Three Col - Col 2 Copy">
                 <h3>Heading</h3>
@@ -1016,7 +1029,7 @@
             <div class="mid"></div>
             <div class="col33">
               <div class="mktoImg" id="threecolImg3" mktoName="Three Col - Col 3 Image">
-                <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140">
+                <img src="https://info.enterprisedb.com/rs/069-ALB-339/images/icon-placeholder.svg" width="140">
               </div>
               <div class="mktoText" id="threecoltext3" mktoName="Three Col - Col 3 Copy">
                 <h3>Heading</h3>
@@ -1077,7 +1090,7 @@
           <div class="threecolumns">
             <div class="col50">
               <div class="threecolimg">
-                <div class="mktoImg" id="twocolimg1" mktoName="Two Cols - Image 1"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
+                <div class="mktoImg" id="twocolimg1" mktoName="Two Cols - Image 1"><img src="https://info.enterprisedb.com/rs/069-ALB-339/images/icon-placeholder.svg" width="140"></div>
               </div>
               <div class="threecoltext">
                 <div class="mktoText" id="twocoltext1" mktoName="Two Cols - Copy 1">
@@ -1089,7 +1102,7 @@
             <div class="mid"></div>
             <div class="col50">
               <div class="threecolimg">
-                <div class="mktoImg" id="twocolimg2" mktoName="Two Cols - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/icon-placeholder.svg" width="140"></div>
+                <div class="mktoImg" id="twocolimg2" mktoName="Two Cols - Image 2"><img src="https://info.enterprisedb.com/rs/069-ALB-339/images/icon-placeholder.svg" width="140"></div>
               </div>
               <div class="threecoltext">
                 <div class="mktoText" id="twocoltext2" mktoName="Two Cols - Copy 2">
@@ -1146,7 +1159,7 @@
             </div>
           </div>
           <div class="formright">
-            <div class="mktoImg" id="btmformimg" mktoName="Bottom Form - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/image-placeholder.png"></div>
+            <div class="mktoImg" id="btmformimg" mktoName="Bottom Form - Image 2"><img src="https://info.enterprisedb.com/rs/069-ALB-339/images/placeholderimg.png"></div>
           </div>
         </div>
       </div>
@@ -1318,7 +1331,7 @@
 
           <p class="mktoText" id="copyright" mktoName="Copyright" stlye="color:#7C878E;">This automated translation should not be considered exact and only used to approximate the original English language content. EDB does not guarantee the accuracy, reliability, or timeliness of any information translated.</p>
         </div>
-      </div>
+
       </div>
 
     </footer>
@@ -1327,7 +1340,6 @@
   <script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
   <script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
 
- 
 
   <script>
     MktoForms2.whenReady(function (form) {
