@@ -20,7 +20,7 @@
     <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showbanner-with-form" mktoName="Show Banner with Form" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec-img-right" mktoName="Show Img Right Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-CTA1" mktoName="Show Optional CTA 1" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-three-cols" mktoName="Show 3 Cols Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -42,7 +42,7 @@
     <meta class="mktoColor" id="headerform-color" mktoName="HeaderForm - Text Color" default="#ffffff">
     <meta class="mktoString" id="headerform-mg-top" mktoName="Banner Form Margin Top (rem)" default="0">
 
-    <meta class="mktoString" id="freetext-maxwidth" mktoName="FreeText - Max Width (px)" default="600">
+    <meta class="mktoString" id="freetext-maxwidth" mktoName="FreeText - Max Width (px)" default="1200">
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#3d3d3d">
     <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#3d3d3d">
@@ -211,10 +211,11 @@
       }
 
       .section{
-        width:85%;
+        width:90vw;
         max-width:${section-max-width}px;
         margin:0 auto;
         padding:${sectionpaddingtb}px 0;
+        
       }
       .form-container{
         min-height:20px;
@@ -413,6 +414,7 @@
         max-width: ${freetext-maxwidth}px;
         margin: 0 auto;
       }
+   
       #freetext p,
       #freetext ul,
       #freetext li {
@@ -1063,33 +1065,35 @@
 
     <div id="freetext">
       <div class="section">
-        <div id="socialshare">
-          <div class="mktoText" id="socialsharedynamic" mktoName="Social Share Buttons">
-            <h3>SHARE</h3>'
-            <div>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-facebook-icon.svg" alt="social icon" /></a>
-              <a href="https://twitter.com/intent/tweet?text=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-twitter-icon.svg" alt="social icon"/></a>
-              <a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-linkedin-icon.svg" alt="icon"/></a>
-              <a href="mailto:?body=Hey!%20Check%20out%20this%20Credit%20Quiz%20https%3A// target=" blank="" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/Mail-social.svg" alt="social icon"/></a>
+        <div class="flex-column">
+            <div id="socialshare">
+              <div class="mktoText" id="socialsharedynamic" mktoName="Social Share Buttons">
+                <h3>SHARE</h3>'
+                <div>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-facebook-icon.svg" alt="social icon" /></a>
+                  <a href="https://twitter.com/intent/tweet?text=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-twitter-icon.svg" alt="social icon"/></a>
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;source=https%3A//" target="blank" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/ncc-linkedin-icon.svg" alt="icon"/></a>
+                  <a href="mailto:?body=Hey!%20Check%20out%20this%20Credit%20Quiz%20https%3A// target=" blank="" class="socialsharebtn"><img src="https://lp.ycs.com/rs/023-OOY-216/images/Mail-social.svg" alt="social icon"/></a>
+                </div>
+              </div>
             </div>
-          </div>
+            <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla egestas nisl egestas viverra at vitae nisi. Nulla congue maximus erat. Aenean nunc leo, ullamcorper non ipsum a, tempus laoreet purus. Nullam metus erat, porttitor convallis est ut,
+                consequat feugiat sem. Ut facilisis erat nec risus blandit molestie. Praesent blandit elit eget felis posuere, a posuere metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In sollicitudin
+                nulla id neque faucibus, nec aliquam lectus rutrum. Phasellus feugiat velit id laoreet auctor. Proin aliquet ut justo ac efficitur. Quisque bibendum et elit at vulputate. Maecenas mollis ultrices elit. Pellentesque vulputate odio vel
+                magna tempus, ac posuere sem finibus. Curabitur ut lacus ut ex luctus maximus at eget neque.
+                <br><br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ligula lectus, fermentum nec lectus at, pellentesque venenatis justo. Etiam sodales, tortor eu finibus porta, est justo tincidunt
+                turpis, a luctus lacus elit quis sem. Morbi consectetur consectetur fringilla. Sed luctus, tortor non sollicitudin eleifend, nunc quam mollis turpis, in elementum ipsum dolor eu nisi. Cras ullamcorper arcu vel dolor dapibus, sed euismod
+                nibh vulputate. Quisque at turpis at velit laoreet aliquet. Aliquam bibendum lacinia velit ut aliquet. Aenean egestas sem sed neque eleifend laoreet. Sed sit amet diam auctor, maximus justo quis, bibendum quam. Vestibulum viverra sem
+                vel justo vestibulum, a maximus sapien tristique. Duis ornare placerat nisi. Duis tincidunt interdum tempor. Nulla vitae lorem lorem. Cras justo massa, porta at arcu ut, sollicitudin vulputate ligula. Ut ornare blandit urna, id pulvinar
+                urna consequat eu.
+              </p>
+            </div>
+            <div class="mktoText" id="optional-CTA1" mktoName="Free Text CTA ">
+              <a href="#" class="btn">OPTIONAL CTA</a>
+            </div>
         </div>
-        <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla egestas nisl egestas viverra at vitae nisi. Nulla congue maximus erat. Aenean nunc leo, ullamcorper non ipsum a, tempus laoreet purus. Nullam metus erat, porttitor convallis est ut,
-            consequat feugiat sem. Ut facilisis erat nec risus blandit molestie. Praesent blandit elit eget felis posuere, a posuere metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In sollicitudin
-            nulla id neque faucibus, nec aliquam lectus rutrum. Phasellus feugiat velit id laoreet auctor. Proin aliquet ut justo ac efficitur. Quisque bibendum et elit at vulputate. Maecenas mollis ultrices elit. Pellentesque vulputate odio vel
-            magna tempus, ac posuere sem finibus. Curabitur ut lacus ut ex luctus maximus at eget neque.
-            <br><br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc ligula lectus, fermentum nec lectus at, pellentesque venenatis justo. Etiam sodales, tortor eu finibus porta, est justo tincidunt
-            turpis, a luctus lacus elit quis sem. Morbi consectetur consectetur fringilla. Sed luctus, tortor non sollicitudin eleifend, nunc quam mollis turpis, in elementum ipsum dolor eu nisi. Cras ullamcorper arcu vel dolor dapibus, sed euismod
-            nibh vulputate. Quisque at turpis at velit laoreet aliquet. Aliquam bibendum lacinia velit ut aliquet. Aenean egestas sem sed neque eleifend laoreet. Sed sit amet diam auctor, maximus justo quis, bibendum quam. Vestibulum viverra sem
-            vel justo vestibulum, a maximus sapien tristique. Duis ornare placerat nisi. Duis tincidunt interdum tempor. Nulla vitae lorem lorem. Cras justo massa, porta at arcu ut, sollicitudin vulputate ligula. Ut ornare blandit urna, id pulvinar
-            urna consequat eu.
-          </p>
-        </div>
-        <div class="mktoText" id="optional-CTA1" mktoName="Free Text CTA ">
-          <a href="#" class="btn">OPTIONAL CTA</a>
-        </div> 
       </div>
     </div>
 
