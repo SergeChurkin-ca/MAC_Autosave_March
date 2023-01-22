@@ -67598,6 +67598,19 @@
                                             position: absolute;
                                             top: 90px;
                                             background: #F5F5F5;
+                                            visibility: hidden;
+                                            opacity: 0;
+                                            height: 0;
+                                            transition: all 0.2s;
+                                        }
+                                        .header-2022 .header-container .header-wrapper .header-nav-wrapper .primary-nav-wrapper.active {
+                                            position: absolute;
+                                            top: 90px;
+                                            background: #F5F5F5;
+                                            visibility: visible;
+                                            opacity: 1;
+                                            height: 100vh;
+                                            transition: all 0.3s;
                                         }
                                         .header-2022 .header-container .header-wrapper .header-nav-wrapper .primary-nav-wrapper .mash-list-items-menu {
                                             display: none;
@@ -67714,9 +67727,13 @@
                                         }
                                         .header-2022 .header-container .header-wrapper .header-nav-wrapper .primary-nav-wrapper .mash-list-items-menu .nav-parent-item.collapse {
                                             display: none;
+                                            height: 0;
+                                            transition: all 0.5s;
                                         }
                                         .header-2022 .header-container .header-wrapper .header-nav-wrapper .primary-nav-wrapper .mash-list-items-menu .nav-parent-item.show {
                                             display: block;
+                                            height: 100%;
+                                            transition: all 0.5s;
                                         }
                                         .header-2022 .header-container .header-wrapper .header-nav-wrapper .secondary-nav-wrapper .popup-nav-controls {
                                             display: block;
