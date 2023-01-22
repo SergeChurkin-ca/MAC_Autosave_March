@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
     <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://lp.illumio.com/rs/093-SFK-561/images/favicon.ico">
+    <link href="./navbar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <title>${pagetitle}</title>
     <link rel="icon" href="${faviconlink}">
@@ -138,9 +141,9 @@
 .mobile-content {
   display: none;
 }
-      #brand  {
+      #header-2022  {
         background-color: ${logobgcolor};
-        border-bottom: solid 1.75px #FA6624;
+        
       }
 
       #header p {
@@ -208,7 +211,7 @@
       .w100{
         width:100%;
       }
-      .btn a, .btn a:visited{
+      .button a, .button a:visited{
         color: ${btnfontclr};
         text-decoration:none;
 
@@ -219,7 +222,7 @@
         font-family: ${fontfamily-bold}, sans-serif !important;
         font-weight: 700;
       }
-      .btn a{
+      .button a{
         border: 2.5px solid ${btnbrdclr};
         background: ${btnbgclr};
         padding: ${btnpaddingtb}px ${btnpaddinglr}px;
@@ -236,7 +239,7 @@
         font-family: ${fontfamily-bold}, sans-serif !important;
         font-weight: 600;
       }
-      .btn a:hover, .btn a:focus {
+      .button a:hover, .button a:focus {
         background: ${btnhoverbackground};
         border: 2.5px solid ${btnhoverbackground};
         color: ${btnHoverTxtColor};
@@ -339,7 +342,7 @@
         height: 35rem;
 
       }
-      #hero .btn {
+      #hero .button {
         margin: ${herocta-mg-top}rem 0 ${herocta-mg-btm}rem;
         display: ${show-hero-btn};
       }
@@ -767,7 +770,7 @@
         .mobile-content {
           display: block;
         }
-        #hero .btn {
+        #hero .button {
           display: none;
         }
   #hero h1 {
@@ -782,10 +785,10 @@
     font-size: 20px;
     line-height: 24px;
   }
-  .btn a {
+  .button a {
    padding: calc(${btnpaddingtb}px - 2px) ${btnpaddinglr}px;
   }
-  .btn a {
+  .button a {
     font-size: 14px;
   }
   #freetext h2 {
@@ -827,6 +830,11 @@
     line-height: 28px;;
   }
 }
+
+ .header-2022 .header-wrapper .header-nav-wrapper .primary-nav-wrapper .mash-list-items-menu .nav-parent-item:hover>.dropdown-2022 {
+            visibility: visible !important;
+            opacity: 1 !important;
+ }
       @font-face {
         font-family: 'Gotham-Black';
         src: url('https://lp.illumio.com/rs/093-SFK-561/images/Gotham-Black.ttf') format('truetype'),
@@ -870,23 +878,615 @@
         font-weight: normal;
         font-style: normal;
       }
+        
 
     </style>
   </head>
   <body>
 
-    <header id="brand">
-      <div class="section">
-        <div class="logo-container">
-          <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
-            <a href="https://www.illumio.com/"><img src="https://lp.illumio.com/rs/093-SFK-561/images/logo-lp-short.png" alt="logo"></a>
-          </div>
+   <div class="header-2022" id="header-2022">
+        <div class="header-container">
+            <div class="header-wrapper lumiblade-container add-box-shadow">
+                <div class="grid-container">
+                    <div class="header-logo-wrapper flex flex-col width-full xl-1-col xl-col-start-1 l-1-col l-col-start-1 m-1-col m-col-start-1 s-1-col s-col-start-1">
+                        <div class="header-logo">
+                            <a href="/" style="border:0;">
+                                <img src=" /sites/default/files/2022-10/IllumioIcon2022.svg" class="hs-image-widget" style="border:0;" alt="illumio_Logo_2022" title="illumio_Logo_2022"></a>
+                        </div>
+                    </div>
+                    <div class="header-nav-wrapper flex width-full xl-11-col xl-col-start-2 l-11-col l-col-start-2 m-7-col m-col-start-2 s-3-col s-col-start-2">
+                        <div class="primary-nav-wrapper mobile-nav-fullscreen">
+
+
+                            <ul class="mash-list-items-menu d-flex">
+                                <button type="button" class="mobile-view btn btn-info collapsed" data-target="#menuitemmenu_link_content:ed086acd-7a62-40a1-a176-6172d43da672" aria-expanded="false">
+        <legend class="filter-title">
+          <a href="/products">Platform</a>
+        </legend>
+        <span class="close-filters filter-collapse-icon">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+        <span class="open-filters filter-collapse-icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+                                <li class="nav-parent-item parent fieldset-wrapper collapse" id="menuitemmenu_link_content:ed086acd-7a62-40a1-a176-6172d43da672" style="">
+                                    <a href="/products">Platform</a>
+                                    <div class="dropdown-2022 dropdown-medium dropdown--platform
+			 dropdown-promotion-container  " style="visibility: hidden; opacity: 0;">
+                                        <div class="dropdown-design grid-container
+				         default-bg ">
+                                            <div class="dropdown-child-menus flex width-full xl-8-col xl-col-start-2 l-8-col l-col-start-2 ">
+
+<ul class="mash-list-items-22">
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:0bc3cbcd-bc00-457f-8f86-b2d347dfa359">
+                                                        <a href="" class="child head-link">The Zero Trust Segmentation platform</a>
+                                                        <ul class="level-2-list">
+                                                            <li class="l-2 parent">
+                                                                <a href="/products/what-is-zero-trust-segmentation" class="child">What is Zero Trust Segmentation?</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:8596c358-bc16-41a8-8803-6b665db73c74">
+                                                        <a href="" class="child head-link">Products</a>
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/products/illumio-core" class="child">Illumio Core</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/products/illumio-cloudsecure" class="child">Illumio CloudSecure</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/products/illumio-endpoint" class="child">Illumio Endpoint</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li></ul>
+
+                                            </div>
+                                            <div class="dropdown-promo-content flex width-full xl-3-col xl-col-start-10 l-3-col l-col-start-10"><div class="image-container">
+                                                    <div class="image-holder">
+
+                                                        <div> <img width="" height="" src="/sites/default/files/2022-11/Illumio%20Experience%20Logo.svg" alt="Illumio Experience Logo" typeof="foaf:Image">
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="image-desc">
+                                                        <p>Free interactive 90-minute virtual product workshops.</p>
+                                                    </div>
+                                                    <div class="image-cta">
+                                                        <a href="/events/illumio-experience">
+                  Try Illumio Hands-On
+                </a>
+                                                    </div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <button type="button" class="mobile-view btn btn-info collapsed" data-target="#menuitemmenu_link_content:89e569c8-c8c6-4c70-b970-70218ca0395a" aria-expanded="false">
+        <legend class="filter-title">
+          <a href="/solutions" data-drupal-link-system-path="node/37416">Solutions</a>
+        </legend>
+        <span class="close-filters filter-collapse-icon">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+        <span class="open-filters filter-collapse-icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+                                <li class="nav-parent-item parent fieldset-wrapper collapse" id="menuitemmenu_link_content:89e569c8-c8c6-4c70-b970-70218ca0395a">
+                                    <a href="/solutions" data-drupal-link-system-path="node/37416">Solutions</a>
+                                    <div class="dropdown-2022 dropdown-medium dropdown--solutions
+			 dropdown-promotion-container  " style="visibility: hidden; opacity: 0;">
+                                        <div class="dropdown-design grid-container
+				         white-bg ">
+                                            <div class="s-row-start-1 l-col-start-1 bg-white height-full" style="border-bottom-left-radius: 12px;"></div>
+                                            <div class="dropdown-child-menus flex width-full xl-8-col xl-col-start-2 l-8-col l-col-start-2 s-row-start-1">
+
+<ul class="mash-list-items-22">
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:e83ff793-c202-4d49-9425-80d3c7234a91">
+                                                        <a href="" class="child head-link">Initiatives</a>
+
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/cloud-security" class="child">Cloud Security</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/cyber-resilience" class="child">Cyber Resiliency</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/ransomware-containment" class="child">Ransomware Containment</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/zero-trust-segmentation" class="child">Zero Trust Segmentation</a>
+                                                            </li>
+                                                        </ul>
+
+
+                                                    </li>
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:5e61afbf-54e1-4ff9-afcf-bd2357a6a045">
+                                                        <a href="" class="child head-link">Industries</a>
+
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/airlines" class="child">Airlines</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/banking-and-financial-services" class="child">Banking &amp; Financial Services</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/federal" class="child">Federal</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/healthcare" class="child">Healthcare</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/law-firms" class="child">Law Firms</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/retail" class="child">Retail</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/solutions/smb" class="child">Small &amp; Midsize Businesses</a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </li></ul>
+
+
+
+                                            </div>
+                                            <div class="dropdown-promo-content flex width-full xl-3-col xl-col-start-10 l-3-col l-col-start-10"><div class="image-container">
+                                                    <div class="image-holder">
+
+                                                        <div>
+                                                            <picture loading="lazy">
+                                                                <source srcset="/sites/default/files/styles/optimize_image_original_size_80percent/public/2022-03/Forrester_Wave_Microsegmentation_Q12022_Crop_916x960.webp?itok=MVQ20LYH 1x" type="image/webp">
+                                                                <source srcset="/sites/default/files/styles/optimize_image_original_size_80percent/public/2022-03/Forrester_Wave_Microsegmentation_Q12022_Crop_916x960.png?itok=MVQ20LYH 1x" type="image/png">
+                                                                <img srcset="/sites/default/files/styles/optimize_image_original_size_80percent/public/2022-03/Forrester_Wave_Microsegmentation_Q12022_Crop_916x960.png?itok=MVQ20LYH 1x" src="/sites/default/files/styles/optimize_image_original_size_80percent/public/2022-03/Forrester_Wave_Microsegmentation_Q12022_Crop_916x960.png?itok=MVQ20LYH"
+                                                                    width="916" height="960" alt="Hover_Menu_Forrester_Wave_Microsegmentation" loading="lazy" typeof="foaf:Image">
+
+                                                            </picture>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="image-desc">
+                                                        <p>Illumio Named A Leader In The Forrester New Wave™ For Microsegmentation</p>
+                                                    </div>
+                                                    <div class="image-cta">
+                                                        <a href="/resource-center/research-report/forrester-new-wave-microsegmentation-leader-2022">
+                  Read the report
+                </a>
+                                                    </div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <button type="button" class="mobile-view btn btn-info collapsed" data-target="#menuitemmenu_link_content:eb3fad2c-93f2-4ebc-88a1-ca8cb76a6524" aria-expanded="false">
+        <legend class="filter-title">
+          <a href="/partners" data-drupal-link-system-path="node/34491">Partners</a>
+        </legend>
+        <span class="close-filters filter-collapse-icon">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+        <span class="open-filters filter-collapse-icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+                                <li class="nav-parent-item parent fieldset-wrapper collapse" id="menuitemmenu_link_content:eb3fad2c-93f2-4ebc-88a1-ca8cb76a6524">
+                                    <a href="/partners" data-drupal-link-system-path="node/34491">Partners</a>
+
+                                    <div class="dropdown-2022 dropdown-medium dropdown--partners
+			 " style="visibility: hidden; opacity: 0;">
+                                        <div class="dropdown-design grid-container
+				         default-bg ">
+                                            <div class="dropdown-child-menus flex width-full xl-8-col xl-col-start-2 l-8-col l-col-start-2 ">
+
+<ul class="mash-list-items-22">
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:c5727e4d-af57-455a-a6c3-8f703092ca42">
+                                                        <a href="" class="child head-link">Partner programs</a>
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/partners/msp" class="child">Managed service providers</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/partners/channel" class="child">Solutions providers</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/partners/tap" class="child">Technology alliance partners</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/partners/mssp" class="child">Managed security service providers</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/partners/channel" class="child">System integrators</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/partners/channel" class="child">Value-added distributors</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li></ul>
+                                            </div>
+                                            <div class="dropdown-promo-content flex width-full xl-3-col xl-col-start-10 l-3-col l-col-start-10">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </li>
+                                <button type="button" class="mobile-view btn btn-info collapsed" data-target="#menuitemmenu_link_content:2428a6ad-29b4-4e40-ae91-c9edea37a759" aria-expanded="false">
+        <legend class="filter-title">
+          <a href="/customers" data-drupal-link-system-path="node/16">Customers</a>
+        </legend>
+        <span class="close-filters filter-collapse-icon">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+        <span class="open-filters filter-collapse-icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+                                <li class="nav-parent-item parent fieldset-wrapper collapse" id="menuitemmenu_link_content:2428a6ad-29b4-4e40-ae91-c9edea37a759">
+                                    <a href="/customers" data-drupal-link-system-path="node/16">Customers</a>
+                                    <div class="dropdown-2022 dropdown-medium dropdown--customers
+			 dropdown-promotion-container  " style="visibility: hidden; opacity: 0;">
+                                        <div class="dropdown-design grid-container
+				         default-bg ">
+                                            <div class="dropdown-child-menus flex width-full xl-8-col xl-col-start-2 l-8-col l-col-start-2 ">
+
+<ul class="mash-list-items-22">
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:513d5749-dd6f-46fa-bfe2-ca184e7266eb">
+                                                        <a href="" class="child head-link">Customer spotlights</a>
+
+
+
+
+
+
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/customers/success-stories/cathay-pacific" class="child">Cathay Pacific</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/customers/success-stories/frankfurter-volksbank" class="child">Frankfurter Volksbank</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/customers/success-stories/servicenow" class="child">ServiceNow</a>
+                                                            </li>
+                                                        </ul>
+
+
+
+
+                                                        <div class="dropdown-menu-cta">
+                                                            <a href="https://resources.illumio.com/customer-stories">See all customer stories</a>
+                                                        </div>
+
+
+
+
+
+                                                    </li></ul>
+
+
+
+                                            </div>
+                                            <div class="dropdown-promo-content flex width-full xl-3-col xl-col-start-10 l-3-col l-col-start-10"><div class="image-container">
+                                                    <div class="image-holder">
+
+                                                        <div>
+                                                            <picture loading="lazy">
+                                                                <source srcset="/sites/default/files/styles/optimize_image_original_size_80percent/public/2021-07/main_nav_promo_706x446_customers_qbe.webp?itok=WxizeXAF 1x" type="image/webp">
+                                                                <source srcset="/sites/default/files/styles/optimize_image_original_size_80percent/public/2021-07/main_nav_promo_706x446_customers_qbe.png?itok=WxizeXAF 1x" type="image/png">
+                                                                <img srcset="/sites/default/files/styles/optimize_image_original_size_80percent/public/2021-07/main_nav_promo_706x446_customers_qbe.png?itok=WxizeXAF 1x" src="/sites/default/files/styles/optimize_image_original_size_80percent/public/2021-07/main_nav_promo_706x446_customers_qbe.png?itok=WxizeXAF"
+                                                                    width="706" height="550" alt="main_nav_promo_customers_qbe" loading="lazy" typeof="foaf:Image">
+
+                                                            </picture>
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="image-desc">
+                                                        <p>Hear how QBE prevents breach impact with Illumio Core's Zero Trust Segmentation.</p>
+                                                    </div>
+                                                    <div class="image-cta">
+                                                        <a href="/resource-center/video/QBE-Zero-Trust-CISO">
+                  Watch the video
+                </a>
+                                                    </div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </li>
+                                <button type="button" class="mobile-view btn btn-info collapsed" data-toggle="collapse" data-target="#menuitemmenu_link_content:a7631270-6d26-4c8d-bef6-47b4675c1dfd" aria-expanded="false">
+        <legend class="filter-title">
+          <a href="https://resources.illumio.com/">Resources</a>
+        </legend>
+        <span class="close-filters filter-collapse-icon">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+        <span class="open-filters filter-collapse-icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+                                <li class="nav-parent-item parent fieldset-wrapper collapse" id="menuitemmenu_link_content:a7631270-6d26-4c8d-bef6-47b4675c1dfd">
+                                    <a href="https://resources.illumio.com/">Resources</a>
+
+
+
+
+
+                                    <div class="dropdown-2022 dropdown-medium dropdown--resources
+			 " style="visibility: hidden; opacity: 0;">
+                                        <div class="dropdown-design grid-container
+				         default-bg ">
+                                            <div class="dropdown-child-menus flex width-full xl-8-col xl-col-start-2 l-8-col l-col-start-2 ">
+
+<ul class="mash-list-items-22">
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:525fc060-6808-4473-be39-4bdc7d97b41b">
+                                                        <a href="" class="child head-link">Resource center</a>
+
+
+
+
+
+
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/blog" class="child">Blog</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/certifications" class="child">Certifications</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="https://resources.illumio.com/customer-stories" class="child">Customer stories</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/events" class="child">Events</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/cybersecurity-101" class="child">Glossary</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/resources/webinar-hub" class="child">Webinars</a>
+                                                            </li>
+                                                        </ul>
+
+
+
+
+                                                        <div class="dropdown-menu-cta">
+                                                            <a href="https://resources.illumio.com/">See All Resources</a>
+                                                        </div>
+
+
+
+
+
+                                                    </li></ul>
+
+
+
+                                            </div>
+                                            <div class="dropdown-promo-content flex width-full xl-3-col xl-col-start-10 l-3-col l-col-start-10">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </li>
+                                <button type="button" class="mobile-view btn btn-info collapsed" data-toggle="collapse" data-target="#menuitemmenu_link_content:c0bcc4e6-06ff-4e73-b9bd-af347e021bc4" aria-expanded="false">
+        <legend class="filter-title">
+          <a href="/company" data-drupal-link-system-path="node/14056">Company</a>
+        </legend>
+        <span class="close-filters filter-collapse-icon">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+        <span class="open-filters filter-collapse-icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+                                <li class="nav-parent-item parent fieldset-wrapper collapse" id="menuitemmenu_link_content:c0bcc4e6-06ff-4e73-b9bd-af347e021bc4">
+                                    <a href="/company" data-drupal-link-system-path="node/14056">Company</a>
+
+
+
+
+
+                                    <div class="dropdown-2022 dropdown-medium dropdown--company
+			 " style="visibility: hidden; opacity: 0;">
+                                        <div class="dropdown-design grid-container
+				         default-bg ">
+                                            <div class="dropdown-child-menus flex width-full xl-8-col xl-col-start-2 l-8-col l-col-start-2 ">
+
+<ul class="mash-list-items-22">
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:a215aa02-2f1e-4566-926d-0f83255f3ff4">
+                                                        <a href="" class="child head-link">Company information</a>
+
+
+
+
+
+
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/what-we-do?type=company" class="child">About Illumio</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/awards" class="child">Awards &amp; recognition</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/board-of-directors" class="child">Board of directors</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/careers" class="child">Careers</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/leadership" class="child">Leadership</a>
+                                                            </li>
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/news" class="child">News</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li></ul>
+                                            </div>
+                                            <div class="dropdown-promo-content flex width-full xl-3-col xl-col-start-10 l-3-col l-col-start-10">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <button type="button" class="mobile-view btn btn-info collapsed" data-toggle="collapse" data-target="#menuitemmenu_link_content:5dd0aaeb-c9e9-4bf0-bb5b-09fdce8b20ba" aria-expanded="false">
+        <legend class="filter-title">
+          <a href="/support" data-drupal-link-system-path="node/2271">Support</a>
+        </legend>
+        <span class="close-filters filter-collapse-icon">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+        <span class="open-filters filter-collapse-icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+                                <li class="nav-parent-item parent fieldset-wrapper collapse" id="menuitemmenu_link_content:5dd0aaeb-c9e9-4bf0-bb5b-09fdce8b20ba">
+                                    <a href="/support" data-drupal-link-system-path="node/2271">Support</a>
+                                    <div class="dropdown-2022 dropdown-medium dropdown--support
+			 dropdown-promotion-container  " style="visibility: hidden; opacity: 0;">
+                                        <div class="dropdown-design grid-container
+				         default-bg ">
+                                            <div class="dropdown-child-menus flex width-full xl-8-col xl-col-start-2 l-8-col l-col-start-2 ">
+
+<ul class="mash-list-items-22">
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:1771d672-eee1-4b15-8d7d-454bc54027e9">
+                                                        <a href="" class="child head-link">Need assistance?</a>
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/support" class="child">Support</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="l-1 parent fieldset-wrapper" id="menuitemmenu_link_content:10b17919-a23f-4881-a245-f6fdf5e00100">
+                                                        <a href="" class="child head-link">Get in touch</a>
+                                                        <ul class="level-2-list">
+
+                                                            <li class="l-2 parent">
+                                                                <a href="/contact" class="child">Contact</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li></ul>
+                                            </div>
+                                            <div class="dropdown-promo-content flex width-full xl-3-col xl-col-start-10 l-3-col l-col-start-10"><div class="image-container">
+                                                    <div class="image-holder">
+                                                        <div> <img width="" height="" src="/sites/default/files/2022-11/Illumio%20Experience%20Logo.svg" alt="Illumio Experience Logo" typeof="foaf:Image">
+                                                        </div>
+                                                    </div>
+                                                    <div class="image-desc">
+                                                        <p>Free interactive 90-minute virtual product workshops.</p>
+                                                    </div>
+                                                    <div class="image-cta">
+                                                        <a href="/events/illumio-experience">
+                  Try Illumio Hands-On
+                </a>
+                                                    </div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="header-buttons xs-mobile-header-buttons d-flex">
+                                <div class="try-illumio-btn">
+                                    <a href="/events/illumio-experience" title="Try Illumio">
+                                        <button class="orange-cta-header-button">Try Illumio</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="secondary-nav-wrapper flex">
+
+                            <div class="popup-nav-controls">
+                                <button class="nav-toggle-button nav-expanded" aria-label="hamburger">
+                <i class="fa fa-bars hamburger-icon"></i>
+              </button>
+                            </div>
+                            <div class="header-buttons">
+                                <div class="try-illumio-btn">
+                                    <a href="/events/illumio-experience" title="Try Illumio">
+                                        <button class="orange-cta-header-button">Try Illumio</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-search-container">
+                    <div class="header-search-wrapper">
+                        <div class="grid-container">
+                            <div class="header-logo-wrapper flex flex-col width-full xl-1-col xl-col-start-1 l-1-col l-col-start-1 m-1-col m-col-start-1 s-1-col s-col-start-1">
+                                <div class="header-logo">
+                                    <a href="/" style="border:0;">
+                                        <img src=" /sites/default/files/2022-10/IllumioIcon2022.svg" class="hs-image-widget" style="border:0;" alt="illumio_Logo_2022" title="illumio_Logo_2022"></a>
+                                </div>
+                            </div>
+                            <div class="header-search-bar flex width-full xl-11-col xl-col-start-2 l-11-col l-col-start-2 m-7-col m-col-start-2 s-3-col s-col-start-2">
+                                <form id="cludo-search-form-2022" role="search">
+                                    <input type="search" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off">
+                                    <span class="xc-search xc-search__close"><i class="fa fa-times"></i></span>
+                                    <button type="submit" class="search-button xc-search orange-hero-button monochrome-button" id="search-button" aria-label="search">
+                  Search
+                </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mktoText btn" id="navbarbutton" mktoName="NavBar Button">
-          <a href="#">Try Iluumio</a>
-        </div>                                                                                                                                                                                                                                                               
-      </div>
-    </header>
+    </div>
 
 
 
@@ -908,7 +1508,7 @@
               Adipiscing elit, sed do eiusmod tempor,
               Magna eget est lorem ipsum</p>
           </div>
-          <div class="mktoText btn" id="freetextbtn1" mktoName="Hero - Button Content">
+          <div class="mktoText button" id="freetextbtn1" mktoName="Hero - Button Content">
             <a href="#">LOREM IPSUM</a>
           </div>
         </div>
@@ -974,7 +1574,7 @@
         <div class="mktoText" id="ctaheadline" mktoName="Center CTA Headline">
           <h2>Ready to learn more about Zero Trust Segmentation?</h2>
         </div>
-        <div class="mktoText btn" id="centerctabtn" mktoName="Center Cta">
+        <div class="mktoText button" id="centerctabutton" mktoName="Center Cta">
           <a href="#">LEARN MORE</a>
         </div>
       </div>
