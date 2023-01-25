@@ -13178,7 +13178,7 @@ h5 {
 }
 
 .grid-container {
-    width: 100%;
+    width: 97%;
     padding-right: 20px;
     padding-left: 20px;
     margin-right: auto;
@@ -16599,6 +16599,18 @@ table td {
     }
 }
 
+
+/* overrides of previous styles */
+
+.maxwidth92 {
+    max-width: 92% !important;
+}
+
 #footer span {
     word-spacing: normal !important;
+    white-space: nowrap;
+}
+
+#footer .custom-nav li:before {
+    display: none !important;
 }
