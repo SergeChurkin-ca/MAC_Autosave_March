@@ -50,7 +50,7 @@
     <meta class="mktoColor" id="btnbgcolor1" mktoName="All Buttons - Gradient 1 BG Color" default="#3888c7">
     <meta class="mktoColor" id="btnbgcolor2" mktoName="All Buttons - Gradient 2 BG Color" default="#20a6d1">
     <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#29ABE2">
+    
     <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="14" allowHtml="true">
     <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="2" allowHtml="true">
     <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="20" allowHtml="true">
@@ -69,7 +69,7 @@
     
     <meta class="mktoString" id="banbtntextsize" mktoName="Banner - Btn Font Size (px)" default="14" allowHtml="true">
     <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="25" allowHtml="true">
+    <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="20" allowHtml="true">
 
     <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Bg Color" default="#ffffff">
     <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#e0e4e1">
@@ -90,9 +90,10 @@
     <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#cbd6e2">
     <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="formtextborderradius" mktoName="Form/Text - Field Border Radius (px)" default="15" allowHtml="true">
-    <meta class="mktoColor" id="formtextbtnbgcolor" mktoName="Form/Text - Btn BG Color" default="#29ABE2">
+    <meta class="mktoColor" id="formtextbtnbgcolor1" mktoName="Form/Text - Btn Grad 1 BG Color" default="#3888c7">
+    <meta class="mktoColor" id="formtextbtnbgcolor2" mktoName="Form/Text - Btn Grad 2 BG Color" default="#20a6d1">
     <meta class="mktoColor" id="formtextbtntextcolor" mktoName="Form/Text - Btn Text Color" default="#ffffff">
-    <meta class="mktoColor" id="formtextbtnbordercolor" mktoName="Form/Text - Btn Border Color" default="#29ABE2">
+
     <meta class="mktoString" id="formtextbtntextsize" mktoName="Form/Text - Btn Font Size (px)" default="14" allowHtml="true">
     <meta class="mktoString" id="formtextbtnbordersize" mktoName="Form/Text - Btn Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="formtextbtnborderradius" mktoName="Form/Text - Btn Border Radius" default="20" allowHtml="true">
@@ -138,9 +139,10 @@
     <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#cbd6e2">
     <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="15" allowHtml="true">
-    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#29ABE2">
+    <meta class="mktoColor" id="btmformbtnbgcolor1" mktoName="Bottom Form - Btn Gradient 1 BG Color" default="#3888c7">
+    <meta class="mktoColor" id="btmformbtnbgcolor2" mktoName="Bottom Form - Btn Gradient 2 BG Color" default="#20a6d1">
     <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#29abe2">
+    
     <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="14" allowHtml="true">
     <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="20" allowHtml="true">
@@ -327,21 +329,20 @@
         font-family: ${globalfont}, sans-serif !important;
       }
       #banner .button a {
-        // background-color:${banbtnbgcolor};
         background: linear-gradient(to right, ${banbtnbgcolor1} 0%, ${banbtnbgcolor2} 100%);
         border-color: none;
         border-radius:${banbtnborderradius}px;
         font-size:${banbtntextsize}px;
         padding:18px 35px;
         color:${banbtntextcolor};
-        font-weight: 400;
+        font-weight: 600;
         text-decoration:none;
       }
       #banner .button a:hover, #banner .button a:focus {
         background: ${btnhoverbackground};
         border: 1px solid ${btnhoverborder};
         color: ${btnhoverclr};
-        padding:17px 35px;
+        padding:17px 34px;
       }
       #formtext .mktoForm .mktoLabel {
         color:${formtextpcolor}!important;
@@ -386,13 +387,13 @@
         color:${formtextpcolor}!important;
       }
       #formtext .mktoForm .mktoButton {
-        background: linear-gradient(to right, #3888c7 0%, #20a6d1 100%);        
+        background: linear-gradient(to right, ${formtextbtnbgcolor1} 0%, ${formtextbtnbgcolor2} 100%);        
         border: none !important;
         border-radius:${formtextbtnborderradius}px!important;
         font-size:${formtextbtntextsize}px!important;
         padding:17px 35px!important;
         color:${formtextbtntextcolor}!important;
-        font-weight:400 !important;
+        font-weight:600 !important;
         text-decoration:none!important;
         width: auto!important!important;
         display:inline-block;
@@ -457,7 +458,7 @@
         font-size:${btntextsize}px;
         padding:18px 35px;
         color:${btntextcolor};
-        font-weight: 400;
+        font-weight: 600;
         text-decoration:none;
         display:inline-block;
       }
@@ -465,7 +466,7 @@
         background: ${btnhoverbackground};
         border: 1px solid ${btnhoverborder};
         color: ${btnhoverclr};
-padding:17px 35px;
+padding:17px 34px;
       }
       .section {
         margin-top:${sectionspacing}px;
@@ -492,16 +493,13 @@ padding:17px 35px;
         color:${btmformpcolor}!important;
       }
       #btmform .mktoForm button.mktoButton {
-        // background:${btmformbtnbgcolor}!important;
-        background: linear-gradient(to right, #3888c7 0%, #20a6d1 100%);
-        // background-image: none !important;
-        // background-color:${btmformbtnbgcolor}!important;
+        background: linear-gradient(to right, ${btmformbtnbgcolor1} 0%, ${btmformbtnbgcolor2} 100%);
         border: none !important;
         border-radius:${btmformbtnborderradius}px!important;
         font-size:${btmformbtntextsize}px!important;
         padding:17px 35px!important;
         color:${btmformbtntextcolor}!important;
-        font-weight:400 !important;
+        font-weight:600 !important;
         text-decoration:none!important;
         width: auto!important!important;
         display:inline-block;
@@ -580,6 +578,8 @@ padding:17px 35px;
           width: calc((100% / 4) - 0.5rem) !important;
           text-align: center;
           flex: 1 0 600px;
+          max-width: 90%;
+          margin: 0 auto;
         }
 
         #footer .col:nth-child(1) {
@@ -590,11 +590,7 @@ padding:17px 35px;
         }
 
       }
-      @media screen and (max-width:768px){
-        #footer .col:nth-child(n+2) {
-          flex: 1 0 180px;
-        }
-      }
+  
    
 
     </style>
@@ -857,8 +853,8 @@ padding:17px 35px;
           <div class="mktoText" id="footercol2" mktoName="Footer - Links Col 2">
                    <h5><p>
 
-<a href="/terms-of-use/">Terms of Use</a> &nbsp;
-<a href="/privacy-policy/">Privacy Policy</a></p>
+<a href="https://prescryptive.com/contact/terms-of-use/">Terms of Use</a> &nbsp;
+<a href="https://prescryptive.com/contact/privacy-policy/">Privacy Policy</a></p>
 </h5>
             
           </div>
