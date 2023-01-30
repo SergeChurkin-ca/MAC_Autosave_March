@@ -88,13 +88,13 @@
     <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#FAFAFA">
     <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
 
-    <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="true" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    
 
-    <meta class="mktoBoolean" id="formtexttwocol2" mktoName="Banner Form - First Row Two Columns?" default="true" true_value="#banner .mktoForm .mktoFormRow:nth-child(2) {width:48%!important;display:inline-block!important;margin-right:2%;}; #banner .mktoForm .mktoFormRow:nth-child(3) {width:48%!important;display:inline-block;}" false_value="#banner .mktoForm .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    
     <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="14" allowHtml="true">
     <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
-    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
     <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
     <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#1f023e">
     <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
@@ -109,7 +109,7 @@
     <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#fafafa">
     <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
-    <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
+
     <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
 
     <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -119,6 +119,11 @@
     <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
 
     <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="twocolctashow" mktoName="Show Two Col Cta?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="twocol-cta-justify" mktoName="Two Col Cta Align" default="center" allowHtml="true">
+     <meta class="mktoString" id="twocolcta-mg-top" mktoName="Two Col Cta Top Margin (rem)" default="2.5" allowHtml="true">
+     <meta class="mktoString" id="twocolcta-mg-btm" mktoName="Two Col Cta Btm Margin (rem)" default="0" allowHtml="true">
+           
     <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#fafafa">
     <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
     <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
@@ -135,11 +140,11 @@
 
     <meta class="mktoString" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#" allowHtml="true">
 
-    <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    
     <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
-    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    
     <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
     <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
     <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
@@ -258,6 +263,7 @@
         display:${threecolshow};
         order:${threecolorder};
       }
+
       #imgright {
         background-color:${imgrightbgcolor};
         display:${imgrightshow};
@@ -272,6 +278,16 @@
         background-color:${twocoliconsbgcolor};
         display:${twocoliconsshow};
         order:${twocoliconsorder};
+      }
+    #twocolicons #center {
+        padding: 0 !important;
+        border: solid 1px red;
+        display: ${twocolctashow};
+        justify-content: ${twocol-cta-justify};
+        margin: ${twocolcta-mg-top}rem 0 ${twocolcta-mg-btm}rem !important;
+      }
+      #twocolicons #center .button {
+        padding: 0 !important;
       }
       #video {
         background-color:${videobgcolor};
@@ -298,6 +314,7 @@
       }
       footer {
         background-color:${footerbgcolor};
+        displayL ${footershow};
       }
       #footerbutton1 {
         display: ${showfooterbutton1};
@@ -509,9 +526,6 @@
       #threecol .col33 {
         background-color:${threecolcolumnbgcolor};
         border-radius:${threecolradius}px;
-        box-shadow: ${threecolshadow};
-        -webkit-box-shadow: ${threecolshadow};
-        -moz-box-shadow: ${threecolshadow};
         text-align:center;
       }
       .col50 {
@@ -878,9 +892,7 @@
         width: 100% !important;
       }
       /* error messages */
-      ${formtexttwocol}
-      ${formtexttwocol2}
-      ${btmformtwocol}
+
 
       @media ( max-width: 480px) {
         .section {
