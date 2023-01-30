@@ -88,9 +88,9 @@
     <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#FAFAFA">
     <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
 
-    
 
-    
+
+
     <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="14" allowHtml="true">
     <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
@@ -121,9 +121,9 @@
     <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="twocolctashow" mktoName="Show Two Col Cta?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoString" id="twocol-cta-justify" mktoName="Two Col Cta Align" default="center" allowHtml="true">
-     <meta class="mktoString" id="twocolcta-mg-top" mktoName="Two Col Cta Top Margin (rem)" default="2.5" allowHtml="true">
-     <meta class="mktoString" id="twocolcta-mg-btm" mktoName="Two Col Cta Btm Margin (rem)" default="0" allowHtml="true">
-           
+    <meta class="mktoString" id="twocolcta-mg-top" mktoName="Two Col Cta Top Margin (rem)" default="2.5" allowHtml="true">
+    <meta class="mktoString" id="twocolcta-mg-btm" mktoName="Two Col Cta Btm Margin (rem)" default="0" allowHtml="true">
+
     <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#fafafa">
     <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
     <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
@@ -140,11 +140,11 @@
 
     <meta class="mktoString" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#" allowHtml="true">
 
-    
+
     <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
-    
+
     <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
     <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
     <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
@@ -177,7 +177,7 @@
 
 
     <style>
-     
+
       html, body {
         overflow-x:hidden;
       }
@@ -279,7 +279,7 @@
         display:${twocoliconsshow};
         order:${twocoliconsorder};
       }
-    #twocolicons #center {
+      #twocolicons #center {
         padding: 0 !important;
         display: ${twocolctashow};
         justify-content: ${twocol-cta-justify};
@@ -301,7 +301,7 @@
         display:${btmformshow};
         order:${btmformorder};
         background-image: ${btmformbgcolor};
-        
+
       }
       #btmform h2,
       #btmform p {
@@ -596,7 +596,7 @@
         box-shadow:0 !important;
         box-shadow:none !important;
       }
- 
+
       #formtext .mktoForm input[type=text], #formtext .mktoForm input[type=url], #formtext .mktoForm input[type=email], #formtext .mktoForm input[type=tel], #formtext  .mktoForm input[type=number], #formtext .mktoForm input[type=date], #formtext  .mktoForm select.mktoField, #formtext .mktoForm textarea.mktoField{
         box-shadow:none !important;
       }
@@ -613,7 +613,7 @@
       #formtext #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
         color:${formtextpcolor}!important;
       }
-     .mktoForm .mktoButton {
+      .mktoForm .mktoButton {
         background-color:${formtextbtnbgcolor}!important;
         background-image:none !important;
         border:1px solid ${formtextbtnbordercolor}!important;
@@ -629,7 +629,7 @@
         width: unset !important;
       }
       .mktoForm .mktoButton:hover,
-       .mktoForm .mktoButton:focus {
+      .mktoForm .mktoButton:focus {
         background-color:${formtextbtnbgcolor}!important;
         background-image:none !important;
         border:1px solid ${formtextbtnbordercolor}!important;
@@ -918,7 +918,8 @@
           width: initial !important;
         }
       }
-      
+
+      /* additional checkboxes workarund with css class added by .js script below the body */
       .checkboxrowParent {
         display: flex;
         align-items: center;
@@ -944,7 +945,7 @@
         margin: auto 0 !important;
       }
     </style>
-    
+
   </head>
 
   <body>
@@ -1011,34 +1012,7 @@
               <h2>Form Headline</h2>
             </div>
             <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
-             <!--  <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_3188"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 3188);</script> -->
-             <form class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_3609" novalidate="novalidate" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; color: rgb(51, 51, 51); width: 2943px;">
-<style type="text/css">.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
-color:#fff;
-border:1px solid #75ae4c;
-padding:0.4em 1em;
-font-size:1em;
-background-color:#99c47c;
-background-image: -webkit-gradient(linear, left top, left bottom, from(#99c47c), to(#75ae4c));
-background-image: -webkit-linear-gradient(top, #99c47c, #75ae4c);
-background-image: -moz-linear-gradient(top, #99c47c, #75ae4c);
-background-image: linear-gradient(to bottom, #99c47c, #75ae4c);
-}
-.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
-border:1px solid #447f19;
-}
-.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus {
-outline:none;
-border:1px solid #447f19;
-}
-.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active{
-background-color:#75ae4c;
-background-image: -webkit-gradient(linear, left top, left bottom, from(#75ae4c), to(#99c47c));
-background-image: -webkit-linear-gradient(top, #75ae4c, #99c47c);
-background-image: -moz-linear-gradient(top, #75ae4c, #99c47c);
-background-image: linear-gradient(to bottom, #75ae4c, #99c47c);
-}
-</style><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="FirstName" id="LblFirstName" class="mktoLabel mktoHasWidth" style="width: 124px;"><div class="mktoAsterix">*</div>First Name</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="FirstName" name="FirstName" maxlength="255" aria-labelledby="LblFirstName InstructFirstName" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><span id="InstructFirstName" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="LastName" id="LblLastName" class="mktoLabel mktoHasWidth" style="width: 124px;"><div class="mktoAsterix">*</div>Last Name</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="LastName" name="LastName" maxlength="255" aria-labelledby="LblLastName InstructLastName" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><span id="InstructLastName" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Email" id="LblEmail" class="mktoLabel mktoHasWidth" style="width: 124px;"><div class="mktoAsterix">*</div>Work Email</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Email" name="Email" maxlength="255" aria-labelledby="LblEmail InstructEmail" type="email" class="mktoField mktoEmailField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><span id="InstructEmail" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Phone" id="LblPhone" class="mktoLabel mktoHasWidth" style="width: 124px;"><div class="mktoAsterix">*</div>Work Phone</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Phone" name="Phone" maxlength="255" aria-labelledby="LblPhone InstructPhone" type="tel" class="mktoField mktoTelField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><span id="InstructPhone" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Title" id="LblTitle" class="mktoLabel mktoHasWidth" style="width: 124px;"><div class="mktoAsterix">*</div>Title</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Title" name="Title" maxlength="255" aria-labelledby="LblTitle InstructTitle" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><span id="InstructTitle" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="Industry" id="LblIndustry" class="mktoLabel mktoHasWidth" style="width: 124px;"><div class="mktoAsterix">*</div>Organizaton Type</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Industry" name="Industry" aria-labelledby="LblIndustry InstructIndustry" class="mktoField mktoHasWidth" style="width: 150px;"><option value="Large Enterprise (G2000/F250)">Large Enterprise (G2000/F250)</option><option value="Enterprise">Enterprise</option><option value="Small-Medium Business">Small-Medium Business</option><option value="Government">Government</option><option value="Education">Education</option><option value="Partner">Partner</option><option value="Student">Student</option></select><span id="InstructIndustry" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Company" id="LblCompany" class="mktoLabel mktoHasWidth" style="width: 124px;"><div class="mktoAsterix">*</div>Company</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><input id="Company" name="Company" maxlength="255" aria-labelledby="LblCompany InstructCompany" type="text" class="mktoField mktoTextField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><span id="InstructCompany" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="Country" id="LblCountry" class="mktoLabel mktoHasWidth" style="width: 124px;"><div class="mktoAsterix">*</div>Country</label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><select id="Country" name="Country" aria-labelledby="LblCountry InstructCountry" class="mktoField mktoHasWidth mktoRequired" aria-required="true" style="width: 150px;"><option value=""></option><option value="AL">Albania </option><option value="DZ">Algeria </option><option value="AS">American Samoa </option><option value="AD">Andorra </option><option value="AI">Anguilla </option><option value="AG">Antigua and Barbuda </option><option value="AR">Argentina </option><option value="AM">Armenia </option><option value="AW">Aruba </option><option value="AU">Australia </option><option value="AT">Austria </option><option value="AZ">Azerbaijan </option><option value="BS">Bahamas </option><option value="BH">Bahrain </option><option value="BD">Bangladesh </option><option value="BB">Barbados </option><option value="BY">Belarus </option><option value="BE">Belgium </option><option value="BZ">Belize </option><option value="BJ">Benin </option><option value="BM">Bermuda </option><option value="BT">Bhutan </option><option value="BO">Bolivia </option><option value="BL">Bonaire </option><option value="BA">Bosnia and Herzegovina </option><option value="BW">Botswana </option><option value="BV">Bouvet Island </option><option value="BR">Brazil </option><option value="IO">British Indian Ocean Territory </option><option value="BN">Brunei Darussalam </option><option value="BG">Bulgaria </option><option value="BF">Burkina Faso </option><option value="BI">Burundi </option><option value="KH">Cambodia </option><option value="CM">Cameroon </option><option value="CA">Canada </option><option value="IC">Canary Islands </option><option value="CV">Cape Verde </option><option value="KY">Cayman Islands </option><option value="CF">Central African Republic </option><option value="TD">Chad </option><option value="CD">Channel Islands </option><option value="CL">Chile </option><option value="CN">China </option><option value="CX">Christmas Island </option><option value="CC">Cocos (Keeling) Islands </option><option value="CO">Colombia </option><option value="KM">Comoros </option><option value="CG">Congo </option><option value="CK">Cook Islands </option><option value="CR">Costa Rica </option><option value="CI">Cote D'Ivoire (Ivory Coast) </option><option value="HR">Croatia (Hrvatska) </option><option value="CB">Curacao </option><option value="CY">Cyprus </option><option value="CZ">Czech Republic </option><option value="DK">Denmark </option><option value="DJ">Djibouti </option><option value="DM">Dominica </option><option value="DO">Dominican Republic </option><option value="TP">East Timor </option><option value="EC">Ecuador </option><option value="EG">Egypt </option><option value="SV">El Salvador </option><option value="EN">England </option><option value="GQ">Equatorial Guinea </option><option value="ER">Eritrea </option><option value="EE">Estonia </option><option value="ET">Ethiopia </option><option value="FK">Falkland Islands (Malvinas) </option><option value="FO">Faroe Islands </option><option value="FJ">Fiji </option><option value="FI">Finland </option><option value="FR">France </option><option value="GF">French Guiana </option><option value="PF">French Polynesia </option><option value="TF">French Southern Territories </option><option value="GA">Gabon </option><option value="GM">Gambia </option><option value="GE">Georgia </option><option value="DE">Germany </option><option value="GH">Ghana </option><option value="GI">Gibraltar </option><option value="GB">Great Britain (UK) </option><option value="GR">Greece </option><option value="GL">Greenland </option><option value="GD">Grenada </option><option value="GP">Guadeloupe </option><option value="GU">Guam </option><option value="GT">Guatemala </option><option value="GN">Guinea </option><option value="GW">Guinea-Bissau </option><option value="GY">Guyana </option><option value="HT">Haiti </option><option value="HM">Heard Island and McDonald Islands </option><option value="HN">Honduras </option><option value="HK">Hong Kong </option><option value="HU">Hungary </option><option value="IS">Iceland </option><option value="IN">India </option><option value="ID">Indonesia </option><option value="IE">Ireland </option><option value="IL">Israel </option><option value="IT">Italy </option><option value="JM">Jamaica </option><option value="JP">Japan </option><option value="JO">Jordan </option><option value="KZ">Kazakhstan </option><option value="KE">Kenya </option><option value="KI">Kiribati </option><option value="KR">Korea (South) </option><option value="KO">Kosrae </option><option value="KW">Kuwait </option><option value="KG">Kyrgyzstan </option><option value="LA">Laos </option><option value="LV">Latvia </option><option value="LB">Lebanon </option><option value="LS">Lesotho </option><option value="LR">Liberia </option><option value="LI">Liechtenstein </option><option value="LT">Lithuania </option><option value="LU">Luxembourg </option><option value="MO">Macau </option><option value="MK">Macedonia </option><option value="MG">Madagascar </option><option value="MW">Malawi </option><option value="MY">Malaysia </option><option value="MV">Maldives </option><option value="ML">Mali </option><option value="MT">Malta </option><option value="MH">Marshall Islands </option><option value="MQ">Martinique </option><option value="MR">Mauritania </option><option value="MU">Mauritius </option><option value="YT">Mayotte </option><option value="MX">Mexico </option><option value="FM">Micronesia </option><option value="MD">Moldova </option><option value="MC">Monaco </option><option value="MN">Mongolia </option><option value="MS">Montserrat </option><option value="MA">Morocco </option><option value="MZ">Mozambique </option><option value="NA">Namibia </option><option value="NR">Nauru </option><option value="NP">Nepal </option><option value="NL">Netherlands </option><option value="AN">Netherlands Antilles </option><option value="NT">Neutral Zone </option><option value="NC">New Caledonia </option><option value="NZ">New Zealand (Aotearoa) </option><option value="NI">Nicaragua </option><option value="NE">Niger </option><option value="NG">Nigeria </option><option value="NU">Niue </option><option value="NF">Norfolk Island </option><option value="NB">Northern Ireland </option><option value="MP">Northern Mariana Islands </option><option value="NO">Norway </option><option value="OM">Oman </option><option value="PK">Pakistan </option><option value="PW">Palau </option><option value="PA">Panama </option><option value="PG">Papua New Guinea </option><option value="PY">Paraguay </option><option value="PE">Peru </option><option value="PH">Philippines </option><option value="PN">Pitcairn </option><option value="PL">Poland </option><option value="PO">Ponape </option><option value="PT">Portugal </option><option value="PR">Puerto Rico </option><option value="QA">Qatar </option><option value="RE">Reunion </option><option value="RO">Romania </option><option value="RT">Rota </option><option value="RU">Russian Federation </option><option value="RW">Rwanda </option><option value="SS">Saba </option><option value="KN">Saint Kitts and Nevis </option><option value="LC">Saint Lucia </option><option value="VC">Saint Vincent and the Grenadines </option><option value="SP">Saipan </option><option value="WS">Samoa </option><option value="SM">San Marino </option><option value="ST">Sao Tome and Principe </option><option value="SA">Saudi Arabia </option><option value="SF">Scotland </option><option value="SN">Senegal </option><option value="RS">Serbia </option><option value="SC">Seychelles </option><option value="SL">Sierra Leone </option><option value="SG">Singapore </option><option value="SK">Slovak Republic </option><option value="SI">Slovenia </option><option value="SB">Solomon Islands </option><option value="SO">Somalia </option><option value="ZA">South Africa </option><option value="GS">South Georgia and South Sandwich Islands. </option><option value="ES">Spain </option><option value="LK">Sri Lanka </option><option value="SW">St. Christopher </option><option value="EU">St. Eustatius </option><option value="SH">St. Helena </option><option value="MB">St. Maarten </option><option value="TB">St. Martin </option><option value="PM">St. Pierre and Miquelon </option><option value="SR">Suriname </option><option value="SJ">Svalbard and Jan Mayen Islands </option><option value="SZ">Swaziland </option><option value="SE">Sweden </option><option value="CH">Switzerland </option><option value="TW">Taiwan </option><option value="TJ">Tajikistan </option><option value="TZ">Tanzania </option><option value="TH">Thailand </option><option value="TI">Tinian </option><option value="TG">Togo </option><option value="TK">Tokelau </option><option value="TO">Tonga </option><option value="TT">Trinidad and Tobago </option><option value="TU">Truk </option><option value="TN">Tunisia </option><option value="TR">Turkey </option><option value="TM">Turkmenistan </option><option value="TC">Turks and Caicos Islands </option><option value="TV">Tuvalu </option><option value="UM">US Minor Outlying Islands </option><option value="SU">USSR (former) </option><option value="UG">Uganda </option><option value="UA">Ukraine </option><option value="AE">United Arab Emirates </option><option value="UK">United Kingdom </option><option value="US">United States </option><option value="UY">Uruguay </option><option value="UZ">Uzbekistan </option><option value="VU">Vanuatu </option><option value="VA">Vatican City State (Holy See) </option><option value="VN">Vietnam </option><option value="VG">Virgin Islands (British) </option><option value="VI">Virgin Islands (U.S.) </option><option value="WF">Wallis and Futuna Islands </option><option value="EH">Western Sahara </option><option value="YA">Yap </option><option value="YE">Yemen </option><option value="YU">Yugoslavia </option><option value="ZR">Zaire </option><option value="ZM">Zambia </option><option value="ZW">Zimbabwe</option></select><span id="InstructCountry" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoPlaceholder mktoPlaceholderState"></div><div class="mktoClear"></div></div><div class="mktoFormRow checkboxrowParent"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap mktoRequiredField"><label for="termsandConditions" id="LbltermsandConditions" class="mktoLabel mktoHasWidth" style="width: 0px;"><div class="mktoAsterix">*</div></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth mktoRequired" style="width: 20px;"><input name="termsandConditions" id="termsandConditions" type="checkbox" value="yes" aria-required="true" aria-labelledby="LbltermsandConditions InstructtermsandConditions" class="mktoField"><label for="termsandConditions" id="LbltermsandConditions"></label></div><span id="InstructtermsandConditions" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset mktoHasWidth" style="width: 10px;"></div><div class="mktoFieldWrap"><div class="mktoHtmlText mktoHasWidth" style="width: 310px;"><span style="font-size: 10px;">I agree to receive email communications from EnterpriseDB and can unsubscribe any time at the <a href="https://info.enterprisedb.com/manage-email-preferences.html" target="_blank">subscription center</a>. All data is protected and secured as outlined in the <a href="https://www.enterprisedb.com/privacy-policy" target="_blank">privacy policy</a>.</span><br><br></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow checkboxrowParent"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="progdemo" id="Lblprogdemo" class="mktoLabel mktoHasWidth" style="width: 0px;"><div class="mktoAsterix">*</div></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth mktoValid" style="width: 25px;" aria-invalid="false"><input name="progdemo" id="progdemo" type="checkbox" value="yes" aria-labelledby="Lblprogdemo Instructprogdemo" class="mktoField"><label for="progdemo" id="Lblprogdemo"></label></div><span id="Instructprogdemo" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset mktoHasWidth" style="width: 10px;"></div><div class="mktoFieldWrap"><div class="mktoHtmlText mktoHasWidth" style="width: 310px;"><strong>I would like to request an EDB Demo</strong></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow checkboxrowParent"><div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset" style="width: 10px;"></div><div class="mktoFieldWrap"><label for="progmeeting" id="Lblprogmeeting" class="mktoLabel mktoHasWidth" style="width: 0px;"><div class="mktoAsterix">*</div></label><div class="mktoGutter mktoHasWidth" style="width: 10px;"></div><div class="mktoLogicalField mktoCheckboxList mktoHasWidth" style="width: 25px;"><input name="progmeeting" id="progmeeting" type="checkbox" value="yes" aria-labelledby="Lblprogmeeting Instructprogmeeting" class="mktoField"><label for="progmeeting" id="Lblprogmeeting"></label></div><span id="Instructprogmeeting" tabindex="-1" class="mktoInstruction"></span><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormCol" style="margin-bottom: 10px;"><div class="mktoOffset mktoHasWidth" style="width: 10px;"></div><div class="mktoFieldWrap"><div class="mktoHtmlText mktoHasWidth" style="width: 310px;"><strong>I would like to request a meeting with EDB</strong></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="uTMCampaign" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="uTMContent" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="uTMMedium" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoFormRow"><input type="hidden" name="uTMSource" class="mktoField mktoFieldDescriptor mktoFormCol" value="" style="margin-bottom: 10px;"><div class="mktoClear"></div></div><div class="mktoButtonRow"><span class="mktoButtonWrap mktoSimple" style="margin-left: 120px;"><button type="submit" class="mktoButton">Submit</button></span></div><input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="3609"><input type="hidden" name="lpId" class="mktoField mktoFieldDescriptor" value="18367"><input type="hidden" name="subId" class="mktoField mktoFieldDescriptor" value="59"><input type="hidden" name="munchkinId" class="mktoField mktoFieldDescriptor" value="069-ALB-339"><input type="hidden" name="lpurl" class="mktoField mktoFieldDescriptor" value="//info.enterprisedb.com/test-MAC-Sarah_01232023.html?cr={creative}&amp;kw={keyword}"><input type="hidden" name="cr" class="mktoField mktoFieldDescriptor" value=""><input type="hidden" name="kw" class="mktoField mktoFieldDescriptor" value=""><input type="hidden" name="q" class="mktoField mktoFieldDescriptor" value=""></form>
+              <!--  <script src="//info.enterprisedb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_3188"></form> <script>MktoForms2.loadForm("//info.enterprisedb.com", "069-ALB-339", 3188);</script> -->
             </div>
           </div>
         </div>
@@ -1386,26 +1360,26 @@ background-image: linear-gradient(to bottom, #75ae4c, #99c47c);
       </div>
 
     </footer>
-  <!-- END Footer -->
+    <!-- END Footer -->
 
-  <script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
-  <script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
+    <script src='http://go.marketing-automation.ca/rs/217-NBW-905/images/mac-jquery.min.js'></script>
+    <script src="http://go.marketing-automation.ca/rs/217-NBW-905/images/video-script.js"></script>
 
 
-  <script>
-    MktoForms2.whenReady(function (form) {
-      Array.from(document.querySelectorAll('input')).map((x) => x.addEventListener('change', myFunc));
-      Array.from(document.querySelectorAll('select')).map((x) => x.addEventListener('change', myFunc2));
-      function myFunc(e) {
-        e.target.parentElement.classList.toggle('activefield')
-      }
-      function myFunc2(e) {
-        e.target.parentElement.classList.add('activefield')
-      }
+    <script>
+      MktoForms2.whenReady(function (form) {
+        Array.from(document.querySelectorAll('input')).map((x) => x.addEventListener('change', myFunc));
+        Array.from(document.querySelectorAll('select')).map((x) => x.addEventListener('change', myFunc2));
+        function myFunc(e) {
+          e.target.parentElement.classList.toggle('activefield')
+        }
+        function myFunc2(e) {
+          e.target.parentElement.classList.add('activefield')
+        }
 
-Array.from(document.querySelectorAll('.mktoCheckboxList')).map((x)=>x.parentNode.parentNode.parentNode.classList.add('checkboxrowParent'))
-    });
-  </script>
+        Array.from(document.querySelectorAll('.mktoCheckboxList')).map((x)=>x.parentNode.parentNode.parentNode.classList.add('checkboxrowParent'))
+      });
+    </script>
 
 
   </body>
