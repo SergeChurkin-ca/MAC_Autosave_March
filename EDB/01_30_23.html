@@ -89,8 +89,6 @@
     <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">
 
 
-
-
     <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="14" allowHtml="true">
     <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#1F203E">
@@ -136,10 +134,11 @@
     <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
     <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+      <meta class="mktoString" id="btmform-leftcol-width" mktoName="Bottom Left Col width (%)" default="60" allowHtml="true">
+      <meta class="mktoString" id="btmform-max-width" mktoName="Bottom Form maxwidth (px)" default="600" allowHtml="true">
     <meta class="mktoString" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="linear-gradient(to right bottom, rgb(23, 24, 69), rgb(115, 45, 217))">
 
     <meta class="mktoString" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#" allowHtml="true">
-
 
     <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
@@ -157,6 +156,7 @@
     <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
 
     <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="footer-nav-show" mktoName="Show Footer Menu?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="showfooterbutton1" mktoName="Show Footer Btn1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="showfooterbutton2" mktoName="Show Footer Btn2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="showfooterbutton3" mktoName="Show Footer Btn3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -311,23 +311,31 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 4rem;
       }
       #btmform .container_inner {
         background-color:${btmforminnerbgcolor};
-
       }
       #btmform .formleft {
-        border: solid 1px red;
-        width: 40% !important;
+        width: calc(${btmform-leftcol-width}% - 0.5rem) !important;
+        flex: 1 0 400px;
       }
       #btmform .formright {
-        border: solid 1px red;
+        width: calc(100% - ${btmform-leftcol-width}% - 0.5rem) !important;
+        margin:0 !important;
+        flex: 1 0 400px;
         
-        
+      }
+      #btmform #btmFormform {
+        max-width: ${btmform-max-width}px;
+        margin: 0 auto;
       }
       footer {
         background-color:${footerbgcolor};
         displayL ${footershow};
+      }
+      .footernav {
+        display: ${footer-nav-show};
       }
       #footerbutton1 {
         display: ${showfooterbutton1};
