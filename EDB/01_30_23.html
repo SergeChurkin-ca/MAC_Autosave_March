@@ -43,17 +43,17 @@
     <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
 
     <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#FF5442">
-    <meta class="mktoColor" id="btnbgcolor-transparent" mktoName="Transparent Button - BG Color" default="#ffffff">
+    <meta class="mktoColor" id="btnbgcolor-transparent" mktoName="Footer Transparent Btn - BG Color" default="#ffffff">
     <meta class="mktoColor" id="hover-btnbgcolor" mktoName="All Buttons - Hover:BG Color" default="#C23105">
-    <meta class="mktoColor" id="hover-btnbgcolor-transparent" mktoName="transparetn Button - Hover:BG Color" default="#FF5442">
+    <meta class="mktoColor" id="hover-btnbgcolor-transparent" mktoName="Footer Transparetn Btn - Hover:BG Color" default="#FF5442">
     <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
     <meta class="mktoColor" id="hover-btntextcolor" mktoName="All Buttons - Hover:Text Color" default="#ffffff">
-    <meta class="mktoColor" id="hover-btntextcolor-transparent" mktoName="Transparent Button - Hover:Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btntextcolor-transparent" mktoName="Transparent Button - Text Color" default="#FF5442">
+    <meta class="mktoColor" id="hover-btntextcolor-transparent" mktoName="Footer Transparent Btn - Hover:Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btntextcolor-transparent" mktoName="Footer Transparent Btn - Text Color" default="#FF5442">
     <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#FF5442">
-    <meta class="mktoColor" id="btnbordercolor-transparent" mktoName="Transparetn Button - Border Color" default="#FF5442">
+    <meta class="mktoColor" id="btnbordercolor-transparent" mktoName="Footer Transparetn Btn - Border Color" default="#FF5442">
     <meta class="mktoColor" id="hover-btnbordercolor" mktoName="All Buttons - Hover:Border Color" default="#FF5442">
-    <meta class="mktoColor" id="hover-btnbordercolor-transparent" mktoName="Transparent Button - Hover:Border Color" default="#FF5442">
+    <meta class="mktoColor" id="hover-btnbordercolor-transparent" mktoName="Footer Transparent Btn - Hover:Border Color" default="#FF5442">
     <meta class="mktoString" id="btntextsize" mktoName="All Buttons Font Size (px)" default="16" allowHtml="true">
     <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="50" allowHtml="true">
@@ -134,8 +134,7 @@
     <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
     <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-      <meta class="mktoString" id="btmform-leftcol-width" mktoName="Bottom Left Col width (%)" default="60" allowHtml="true">
-      <meta class="mktoString" id="btmform-max-width" mktoName="Bottom Form maxwidth (px)" default="600" allowHtml="true">
+    <meta class="mktoString" id="btmform-leftcol-width" mktoName="Bottom Left Col width (%)" default="60" allowHtml="true">
     <meta class="mktoString" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="linear-gradient(to right bottom, rgb(23, 24, 69), rgb(115, 45, 217))">
 
     <meta class="mktoString" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#" allowHtml="true">
@@ -155,8 +154,9 @@
     <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
 
-    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="footer-nav-show" mktoName="Show Footer Menu?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="footer-logo-show" mktoName="Show Footer Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="showfooterbutton1" mktoName="Show Footer Btn1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="showfooterbutton2" mktoName="Show Footer Btn2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="showfooterbutton3" mktoName="Show Footer Btn3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -220,6 +220,7 @@
       }
       #banner .right, #banner .left {
         flex: 1 0 400px;
+
       }
       #banner .logo {
         display: ${showbannerlogo};
@@ -319,20 +320,22 @@
       #btmform .formleft {
         width: calc(${btmform-leftcol-width}% - 0.5rem) !important;
         flex: 1 0 400px;
+        max-width:100%;
       }
       #btmform .formright {
         width: calc(100% - ${btmform-leftcol-width}% - 0.5rem) !important;
         margin:0 !important;
         flex: 1 0 400px;
-        
-      }
-      #btmform #btmFormform {
-        max-width: ${btmform-max-width}px;
-        margin: 0 auto;
+        max-width:100%;
+
       }
       footer {
         background-color:${footerbgcolor};
-        displayL ${footershow};
+        display: ${footershow};
+      }
+      footer .footerlogo {
+        display: ${footer-logo-show};
+        margin-top: 3rem;
       }
       .footernav {
         display: ${footer-nav-show};
@@ -958,10 +961,10 @@
       .checkboxrowParent .mktoFieldDescriptor {
         width: 2rem !important;
       }
-       .checkboxrowParent input {
+      .checkboxrowParent input {
         margin: auto 0 !important;
         min-height: 20px !important;
-        
+
       }
       .mktoForm .checkboxrowParent .mktoFieldWrap input:not([type=checkbox]), .mktoForm .checkboxrowParent .mktoFieldWrap input:not([type=radio]), .mktoForm .checkboxrowParent .mktoFormCol {
         margin: auto 0 !important;
@@ -1215,6 +1218,13 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="container_inner section">
+        <div class="footerlogo">
+          <div class="mktoText" id="footerlogo" mktoName="Footer Logo">
+            <a href="https://www.enterprisedb.com/">
+              <img class="logowidthl" alt="logo" src="https://info.enterprisedb.com/rs/069-ALB-339/images/logo_3.png" border="0" style="width:97px;max-width:100%;">
+            </a>
+          </div>
+        </div>
         <div class="row1">
           <nav class="buttonrow">
             <div class="mktoText" id="footerbutton1" mktoName="Footer Button 1">
