@@ -85,11 +85,12 @@ font-family: Arial, serif !important;
     <meta mktomodulescope="true" class="mktoColor" id="CopyColor" mktoname="Text Color" default="#232A34" />
     <meta mktomodulescope="true" class="mktoColor" id="CopyColorwhite" mktoname="Text Color" default="#FFFFFF" />
     <meta mktomodulescope="true" class="mktoImg" id="banner1_img" mktoname="Background Image" default="https://us-en.RoyalPrestige.com/rs/562-QTL-234/images/banner-top.png" />
+        <meta mktomodulescope="true" id="banner2-height" class="mktoNumber" mktoname="Banner Height (px)" default="1110" min="0" max="1800" step="1" />
     <meta mktomodulescope="true" class="mktoImg" id="banner2_img" mktoname="Background Image" default="https://us-en.RoyalPrestige.com/rs/562-QTL-234/images/img1-notxt.png" />
     <meta mktomodulescope="true" class="mktoImg" id="banner3_img" mktoname="Background Image" default="https://us-en.RoyalPrestige.com/rs/562-QTL-234/images/img4-notxt.png" />
     <meta mktomodulescope="true" class="mktoImg" id="banner4_img" mktoname="Background Image" default="https://us-en.RoyalPrestige.com/rs/562-QTL-234/images/shutterstock_1007864638 1.png" />
     <meta mktomodulescope="true" id="outlook-ht1" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="1050" min="0" max="1050" step="1" />
-    <meta mktoModuleScope="true" id="outlook-ht1b" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="750" min="0" max="750" step="1" />
+    <meta mktoModuleScope="true" id="outlook-ht1b" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="800" min="0" max="800" step="1" />
     <meta mktomodulescope="true" id="outlook-ht2" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="464" min="0" max="1000" step="1" />
     <meta mktomodulescope="true" id="outlook-ht3" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="200" min="0" max="1000" step="1" />
     <meta mktomodulescope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="20" />
@@ -455,8 +456,11 @@ font-family: Arial, serif !important;
 
                           <table class="inner_table" cellpadding="0" cellspacing="0" align="center" class="main" style="margin:0 auto; width:590px;border-spacing: 0px;border-collapse: collapse;" border="0" width="590">
                             <tr>
-                              <td valign="top" height="700"  valign="top" background="${banner1_img}" style="background-image:url('${banner1_img}');background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode:none;height:700px;">
+                              <td valign="top" height="${banner2-height}"  valign="top" background="${banner1_img}" style="background-image:url('${banner1_img}');background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode:none;height:${banner2-height}px;">
+                                
                                 <!--[if gte mso 9]>
+<td valign="top" height="${outlook-ht1b}" background="${banner1_img}" 
+style="background-image:url('${banner1_img}');background-repeat:no-repeat;background-size:cover;background-position:center;vertical-align:top;background-blend-mode:none;height:${outlook-ht1b}px;"> 
 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:590px;display:block;height:${outlook-ht1b}px;">
 <v:fill type="frame" src="${banner1_img}" Color="${banner-bg-color}" />
 <v:textbox inset="0,0,0,0">
