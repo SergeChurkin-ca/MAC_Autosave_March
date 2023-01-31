@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cloud.email.merck.ca/hpv-popup-style">
+    <style>
+        #item-1,
+        #item-2,
+        #item-3,
+        #item-4,
+        #item-5,
+        #item-6,
+        #item-7 {
+            display: none;
+        }
+        
+        .form-row form .stylingblock-content-wrapper:nth-child(3) .stylingblock-content-wrapper,
+        .form-row form .stylingblock-content-wrapper:nth-child(9) .stylingblock-content-wrapper,
+        .form-row form .stylingblock-content-wrapper:nth-child(12) .stylingblock-content-wrapper {
+            position: relative;
+            top: -158px;
+            left: 70%;
+        }
+        
+        .form-row form .stylingblock-content-wrapper:nth-child(12) .stylingblock-content-wrapper {
+            left: 35%;
+        }
+        
+        .form-row form .stylingblock-content-wrapper:nth-child(6) .stylingblock-content-wrapper {
+            position: relative;
+            top: -158px;
+            left: 157%;
+        }
+        
+        .form-row form .stylingblock-content-wrapper:nth-child(4) .stylingblock-content-wrapper,
+        .form-row form .stylingblock-content-wrapper:nth-child(10) .stylingblock-content-wrapper {
+            position: relative;
+            top: -158px;
+            left: 20%;
+        }
+        
+        .form-row form .stylingblock-content-wrapper:nth-child(7) .stylingblock-content-wrapper {
+            position: relative;
+            top: -158px;
+            left: 25%;
+        }
+        
+        .booklet-languages .sc-formfield-input {
+            display: inline-block;
+            padding: 1rem 0;
+            width: 40%;
+        }
+        
+        .form-row form .stylingblock-content-wrapper:nth-child(6) {
+            width: 50%!important;
+            min-width: 1px !important;
+            display: inline-block;
+        }
+        
+        .form-row form .stylingblock-content-wrapper:nth-child(8) {
+            min-width: 100%!important;
+            width: 100%!important;
+        }
+        
+        .form-row form .stylingblock-content-wrapper:nth-child(8) .stylingblock-content-wrapper {
+            padding-left: 0px!important;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .form-row form .stylingblock-content-wrapper:nth-child(4) .stylingblock-content-wrapper,
+            .form-row form .stylingblock-content-wrapper:nth-child(10) .stylingblock-content-wrapper,
+            .form-row form .stylingblock-content-wrapper:nth-child(7) .stylingblock-content-wrapper {
+                position: unset;
+            }
+            .form-row form .stylingblock-content-wrapper:nth-child(6) .stylingblock-content-wrapper,
+            .form-row form .stylingblock-content-wrapper:nth-child(3) .stylingblock-content-wrapper,
+            .form-row form .stylingblock-content-wrapper:nth-child(9) .stylingblock-content-wrapper,
+            .form-row form .stylingblock-content-wrapper:nth-child(12) .stylingblock-content-wrapper {
+                position: unset;
+            }
+        }
+        
+        #smartcapture-block-602n8fvsdwp input[type="text"],
+        #smartcapture-block-602n8fvsdwp input[type="email"],
+        #smartcapture-block-602n8fvsdwp input[type="number"] {
+            width: 100%!important;
+            border: 1px solid #000;
+            height: 31px !important;
+            padding: 2px 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="layout layout-canvas-g">
+        <div class="section">
+            <div class="columns col1">
+                <div data-type="slot" data-key="col1"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script>
+        jQuery('button[type=submit]').click(function(e) {
+            if ($('#smartcapture-block-602n8fvsdwp').find('input[type=checkbox]:checked').length == 0) {
+                console.log("hello");
+                $(".chkbx-validate").css("display", "block");
+                e.preventDefault();
+                // event.preventDefault();
+            } else {
+                jQuery(".chkbx-validate").css("display", "none")
+            }
+        });
+        jQuery('input[type=checkbox]').click(function() {
+            // if(jQuery('#smartcapture-block-zyrfrlylge').find('input[type=checkbox]:checked').length == 0)
+            if (jQuery('#smartcapture-block-602n8fvsdwp').find('input[type=checkbox]:checked').length == 0) {
+                jQuery(".chkbx-validate").css("display", "block");
+            } else {
+                jQuery(".chkbx-validate").css("display", "none")
+            }
+        });
+    </script>
+    <script>
+        $('input.checkbox_check').on('click', function() {
+            isChecked = $(this).is(':checked')
+
+            if (isChecked) {
+                $('#item-1').css('display', 'block');
+                $('#item5-quantity').attr('required', true);
+            } else {
+                $('#item-1').css('display', 'none');
+                $('#item5-quantity').attr('required', false);
+            }
+        });
+        $('input.checkbox_check-2').on('click', function() {
+            isChecked = $(this).is(':checked')
+
+            if (isChecked) {
+                $('#item-2').css('display', 'block');
+                $('#item6-quantity').attr('required', true);
+            } else {
+                $('#item-2').css('display', 'none');
+                $('#item6-quantity').attr('required', false);
+            }
+        });
+        $('input.checkbox_check-3').on('click', function() {
+            isChecked = $(this).is(':checked')
+
+            if (isChecked) {
+                $('#item-3').css('display', 'block');
+                $('#item7-quantity').attr('required', true);
+            } else {
+                $('#item-3').css('display', 'none');
+                $('#item7-quantity').attr('required', false);
+            }
+        });
+        $('input.checkbox_check-4').on('click', function() {
+            isChecked = $(this).is(':checked')
+
+            if (isChecked) {
+                $('#item-4').css('display', 'block');
+                $('#item8-quantity').attr('required', true);
+            } else {
+                $('#item-4').css('display', 'none');
+                $('#item8-quantity').attr('required', false);
+            }
+        });
+        $('input.checkbox_check-5').on('click', function() {
+            isChecked = $(this).is(':checked')
+
+            if (isChecked) {
+                $('#item-5').css('display', 'block');
+                $('#item9-quantity').attr('required', true);
+            } else {
+                $('#item-5').css('display', 'none');
+                $('#item9-quantity').attr('required', false);
+            }
+        });
+        $('input.checkbox_check-6').on('click', function() {
+            isChecked = $(this).is(':checked')
+
+            if (isChecked) {
+                $('#item-6').css('display', 'block');
+                $('#item10-quantity').attr('required', true);
+            } else {
+                $('#item-6').css('display', 'none');
+                $('#item10-quantity').attr('required', false);
+            }
+        });
+        $('input.checkbox_check-7').on('click', function() {
+            isChecked = $(this).is(':checked')
+
+            if (isChecked) {
+                $('#item-7').css('display', 'block');
+                $('#item11-quantity').attr('required', true);
+            } else {
+                $('#item-7').css('display', 'none');
+                $('#item11-quantity').attr('required', false);
+            }
+        })
+    </script>
+</body>
+
+</html>
