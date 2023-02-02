@@ -144,6 +144,9 @@
     <meta class="mktoColor" id="btmButtonHoverBGColor" mktoName="Btm Form - Btn Hover Bg Color" default="#ffffff">
     <meta class="mktoColor" id="btmButtonHoverColor" mktoName="Btm Form-  Btn Text Color" default="#29abe2">
     <meta class="mktoColor" id="btmButtonHoverBorder" mktoName="Btm Form-  Btn Hover Border Color" default="#29ABE2">
+     
+     <meta class="mktoBoolean" id="event-show" mktoName="Show Calendar Event" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+      <meta class="mktoColor" id="event-bg-color" mktoName="Event Bg Color" default="#29ABE2">  
 
     <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="footershow2" mktoName="Show Footer 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -162,6 +165,7 @@
     <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
     <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
     <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
+    <meta class="mktoString" id="calendarevent-order" mktoName="Bottom Form - Order" default="9" allowHtml="true">
 
 
 
@@ -261,6 +265,33 @@
       }
       #btmform .container_inner {
         background-color:${btmforminnerbgcolor};
+      }
+      #calendarEvent {
+        display: ${event-show};
+        order: ${calendarevent-order};
+        background: ${event-bg-color};
+      }
+      #calendarEvent .section {
+        padding: 3rem 0 !important;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+      #calendarEvent .col {
+        width: calc((100% / 3)  - 2rem);
+      }
+      #calendarEvent img {
+        max-width: 50px;
+        height: 50px;
+        width: auto;
+        margin-bottom: 1rem;
+      }
+      #calendarEvent, #calendarEvent h3 {
+        color: #ffffff;
+        font-weitght: 700;
+      }
+      #calendarEvent span {
+        color: #F8DA1E;
+        font-size: 22px;
       }
       #footer {
         background-color:${footerbgcolor};
@@ -610,6 +641,13 @@
           flex: 1 0 180px;
         }
       }
+      @media (max-width:520px) {
+        #calendarEvent .flex-row {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+      }
       @font-face {
         font-family: 'ArchiaSemiBold';
         src:  url('http://it.recastsoftware.com/rs/563-ODB-688/images/Archia-SemiBold.ttf') format('truetype'),
@@ -850,11 +888,31 @@
         </div>
       </div>
       <!-- END Bottom Form -->
+    
+    <div class="container_100" id="calendarEvent">
+        <div class="container_inner section flex-row">
+            <div class="col mtkoText" mktoName="Event Detail 1">
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/calendar.png" alt="icon" />
+                 <h3>Date:</h3>   
+                 <span>Nov 12</span>
+            </div>
+            <div class="col mtkoText" mktoName="Event Detail 1">
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/clock.png" alt="icon" />
+                 <h3>Time:</h3>   
+                 <span>09:00 AM</span>
+            </div>
+            <div class="col mtkoText" mktoName="Event Detail 1">
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/circle-paly-solid.png" alt="icon" />
+                 <h3>Duration:</h3>   
+                 <span>2 HRS</span>
+            </div>
+            </div>
+    </div>
     </div>
     <!-- Footer -->
     <footer class="container_100" id="footer">
       <div class="container_inner section">
-        <div class="logo-container col">
+        <div class="logo-container flex-col">
           <div class="mktoImg" id="footerlogo" mktoName="Footer Logo">
             <a href="https://www.recastsoftware.com/">
               <img class="logowidthl" alt="logo" src="https://it.recastsoftware.com/rs/563-ODB-688/images/Recast-Logo-White_Horizontal.png" border="0">
