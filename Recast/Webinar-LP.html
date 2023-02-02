@@ -146,7 +146,10 @@
     <meta class="mktoColor" id="btmButtonHoverBorder" mktoName="Btm Form-  Btn Hover Border Color" default="#29ABE2">
      
      <meta class="mktoBoolean" id="event-show" mktoName="Show Calendar Event" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-      <meta class="mktoColor" id="event-bg-color" mktoName="Event Bg Color" default="#29ABE2">  
+    <meta class="mktoColor" id="event-bg-color" mktoName="Event Bg Color" default="#29ABE2">  
+    
+     <meta class="mktoBoolean" id="speakers-show" mktoName="Show Speakers" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="speakers-bg-color" mktoName="Event Bg Color" default="#f2f5f4">  
 
     <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="footershow2" mktoName="Show Footer 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -166,6 +169,7 @@
     <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
     <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
     <meta class="mktoString" id="calendarevent-order" mktoName="Bottom Form - Order" default="9" allowHtml="true">
+    <meta class="mktoString" id="speakers-order" mktoName="Bottom Form - Order" default="10" allowHtml="true">
 
 
 
@@ -293,6 +297,36 @@
         color: #F8DA1E;
         font-size: 22px;
       }
+      #speakers {
+        display: ${speakers-show};
+        order: ${speakers-order};
+        background: ${speakers-bg-color};
+        margin: 0 auto;
+      }
+      #speakersheadline {
+        text-align: center;
+        margin: 3rem 0 0;
+      }
+       .dots {
+color: #29ABE2;
+font-size: 32px;
+      }
+      #speakers .flex-row {
+        justify-content: space-evenly;
+        display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 0.5rem;
+        margin-top: 3rem auto;
+      }
+      #speakers .col {
+        border: solid 1px red;
+        text-align: center;
+      }
+      #speakers img {
+        border-radius: 50%;
+        border: solid 2px #29ABE2;
+      }
       #footer {
         background-color:${footerbgcolor};
         display:${footershow} !important;
@@ -313,7 +347,7 @@
         flex-wrap: wrap;
         gap: 1.5rem;
       }
-      }
+      
       .logo img{
         width:${logowidth}px;
         height:auto;
@@ -615,6 +649,9 @@
           font-size:16px!important;
           padding:10px 24px!important;
         }
+        #speakers .flex-row {
+             grid-template-columns: repeat(2, 1fr);
+        }
       }
       @media (max-width: 1200px) {
         footer .row2 .col {
@@ -646,6 +683,9 @@
             flex-direction: column;
             align-items: center;
             gap: 2rem;
+        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           #speakers .flex-row {
+             grid-template-columns: repeat(1, 1fr);
         }
       }
       @font-face {
@@ -888,7 +928,7 @@
         </div>
       </div>
       <!-- END Bottom Form -->
-    
+    <!-- Calendar Event -->
     <div class="container_100" id="calendarEvent">
         <div class="container_inner section flex-row">
             <div class="col mtkoText" mktoName="Event Detail 1">
@@ -908,7 +948,43 @@
             </div>
             </div>
     </div>
+  
+    <!-- End of Calendar Event -->
+    
+    <!-- Speakerts Section -->
+    <div class="container_100" id="speakers">
+         <div class="mktoText" mktoName="Speakers Headline" id="speakersheadline">
+                <h2>OUR SPEAKERS</h2>
+                <span class="dots">•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•</span>
+            </div>
+        <div class="container_inner section flex-row">
+           
+            <div class="col mtkoText" mktoName="Speaker 1">
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/img-placeholder120x120.png" alt="speakerheadshot" />
+                 <h3>John Doe</h3>   
+                 <span>Speaker Title</span>
+            </div>
+           <div class="col mtkoText" mktoName="Speaker 1">
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/img-placeholder120x120.png" alt="speakerheadshot" />
+                 <h3>John Doe</h3>   
+                 <span>Speaker Title</span>
+            </div>
+          <div class="col mtkoText" mktoName="Speaker 1">
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/img-placeholder120x120.png" alt="speakerheadshot" />
+                 <h3>John Doe</h3>   
+                 <span>Speaker Title</span>
+            </div>
+          <div class="col mtkoText" mktoName="Speaker 1">
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/img-placeholder120x120.png" alt="speakerheadshot" />
+                 <h3>John Doe</h3>   
+                 <span>Speaker Title</span>
+            </div>
+            </div>
     </div>
+    </div>
+    <!-- End of Speakers -->
+    
+    
     <!-- Footer -->
     <footer class="container_100" id="footer">
       <div class="container_inner section">
