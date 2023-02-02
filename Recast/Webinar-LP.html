@@ -51,6 +51,7 @@
     <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="6" allowHtml="true">
 
     <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-banner-logo" mktoName="Show Banner Log" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-banner-right" mktoName="Show Banner Right Col?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
      <meta class="mktoBoolean" id="banner-right-valign" mktoName="Banner Right Valign Top?" default="true" true_value="baseline" false_value="center" false_value_name="Middle" true_value_name="Top">     
     <meta class="mktoBoolean" id="show-banner-left" mktoName="Show Banner Left Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -73,10 +74,10 @@
     <meta class="mktoColor" id="btnhoverborder" mktoName="Free-Text - Btn Hover Border Color" default="#29ABE2">
 
     <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
+    <meta class="mktoString" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#" allowHtml="true">  
     <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#F2F5F4">
     <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-    <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="false" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+ 
     <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#323e48">
@@ -125,7 +126,7 @@
     <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#ffffff">
     <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#F2F5F4">
-    <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="false" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+    
     <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#323e48">
@@ -196,6 +197,9 @@
         display:${bannershow};
         order:${bannerorder};
 
+      }
+      #banner .logo {
+        display: ${show-banner-logo};
       }
       #banner .flex-row {
         justify-content: space-between;
@@ -283,6 +287,7 @@
         width:${logowidth}px;
         height:auto;
         vertical-align:middle;
+        
       }
       #footer .col {
         width: calc((100%/ 4 ) - 4.5rem);
@@ -355,6 +360,7 @@
         border: 2px solid ${btnhoverborder};
         color: ${btnhoverclr};
       }
+      
       #formtext .mktoForm .mktoLabel {
         color:${formtextpcolor}!important;
         font-size:${formtextpsize}px!important;
@@ -480,6 +486,9 @@
       }
       #form {
         background-color:${formbgcolor};
+      }
+      .mktoForm .mktoFormRow {
+        margin: 0 !important;
       }
       #btmform .mktoForm .mktoLabel {
         color:${btmformpcolor}!important;
@@ -637,9 +646,12 @@
             <div class="mktoText button" id="bannerbtn" mktoName="Banner - Button"><a href="#">CTA BUTTON</a>
             </div>
           </div>
-          <div class="right">
+          <div class="right flex-column">
             <div class="mktoImg" id="bannerimgright" mktoName="Banner - Image">
-              <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/BG_Image_Icon.png">
+           <!--   <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/BG_Image_Icon.png"> -->
+            </div>
+            <div class="mktoForm" id="formtext" mktoName="Banner - Form">
+                <script src="//it.recastsoftware.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1076"></form> <script>MktoForms2.loadForm("//it.recastsoftware.com", "563-ODB-688", 1076);</script>
             </div>
           </div>
         </div>
