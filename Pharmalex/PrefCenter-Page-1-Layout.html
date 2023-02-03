@@ -422,6 +422,80 @@
             animation-name: bounce;
         }
     </style>
+    <!--  additional workarounds  -->
+    <style>
+        form.form {
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.5rem 2rem;
+            margin-bottom: 2rem !important;
+        }
+        
+        form.form p label {
+            color: #ffffff !important;
+            width: fit-content !important;
+        }
+        
+        form.form .email label {
+            display: inline !important;
+        }
+        
+        form.form input.text,
+        form.form textarea.standard {
+            color: #ffffff !important;
+            border: solid 1px #ffffff !important;
+            border-radius: 1px !important;
+        }
+        
+        form.form span.value {
+            width: fit-content !important;
+            margin: 0 0.5rem 0 0 !important;
+        }
+        
+        form.form p label.inline {
+            display: none !important;
+        }
+        
+        .email.pd-text {
+            width: 100%;
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 1rem !important;
+        }
+        
+        form.form p.submit {
+            width: 100% !important;
+            text-align: left;
+        }
+        
+        form.form p.submit input {
+            text-decoration: none;
+            font-size: 20px !important;
+            color: #ffffff;
+            background-color: #00aab1 !important;
+            padding-left: 25px !important;
+            padding-right: 25px!important;
+            padding-bottom: 10px !important;
+            padding-top: 10px !important;
+            border-radius: 1px !important;
+            font-weight: 400 !important;
+            width: unset !important;
+            margin: 0 !important;
+        }
+        /* this class name comes from .js */
+        
+        .checkbox-field-paragraph {
+            display: flex !important;
+            flex-direction: row-reverse !important;
+        }
+        
+        @media (max-width: 576px) {
+            form.form p.submit {
+                text-align: center !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -487,6 +561,32 @@
 
     </div>
 
+    <script>
+        const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'))
+            // add classneme to be able to manipulate with css not touching the form
+        checkboxes.map((x) => x.parentNode.parentNode.parentNode.classList.add('checkbox-field-paragraph'))
+        for (i = 0; i < checkboxes.length; i++) {
+            if (i % 2 !== 0) {
+                checkboxes[i].parentNode.style = "visibility: hidden !important;"
+                checkboxes[i].checked = true;
+                checkboxes[i - 1].checked = false;
+            }
+        }
+        checkboxes.map((x) => x.addEventListener('change', uncheckSibling));
+
+        function uncheckSibling() {
+
+            for (i = 0; i < checkboxes.length; i++) {
+                if (i % 2 === 0) {
+                    if (checkboxes[i].checked === true) {
+                        checkboxes[1 + i].checked = false
+                    } else {
+                        checkboxes[i + 1].checked = true
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
