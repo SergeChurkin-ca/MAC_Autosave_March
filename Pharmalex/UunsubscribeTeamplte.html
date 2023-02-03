@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="http://go.pardot.com">
+    <meta charset="utf-8" />
+    <meta name="description" content="%%description%%" />
+    <title>%%title%%</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="https://go.pharmalex.com/l/484291/2021-02-12/2hlg3g/484291/16258199266jmqacfY/Only_Arrow.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        /* --------------------------------------------------------------
+            FORM STYLES
+        ----------------------------------------------------------------- */
+        /* Border-box box model FTW! */
+        
+        #pardot-form,
+        #pardot-form *,
+        #pardot-form *:before,
+        #pardot-form *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        /* Override form margin and padding set in the default stylesheet. Inherit font and color from page. */
+        
+        #pardot-form {
+            margin: 0;
+            padding: 0;
+            font: inherit;
+            color: inherit;
+        }
+        /* Override form field wrapper margin and padding set in the default stylesheet. */
+        
+        #pardot-form .form-field,
+        #pardot-form .submit {
+            margin: 15px 0 15px 0;
+            padding: 0;
+        }
+        /* Remove top margin from first from field wrapper. */
+        
+        #pardot-form .form-field:first-child {
+            margin-top: 0;
+        }
+        /* Set default input style. */
+        
+        #pardot-form input {
+            border: 1px solid #00aab1;
+            border-radius: 1px;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 7px 15px;
+        }
+        /* When labels are not floated left, set width on text inputs, textareas, and selects to 100%. */
+        
+        #pardot-form input.text,
+        #pardot-form input.date,
+        #pardot-form textarea,
+        #pardot-form select {
+            width: 100%;
+            font-family: inherit;
+            color: inherit;
+        }
+        /* When labels are floated left, set width on field labels to a percentage of available width. In browsers that support calc(), use static label width instead and the form field will consume the remaining width. */
+        
+        #pardot-form.label-left .field-label {
+            width: 35%;
+            width: calc(115px);
+        }
+        /* When labels are floated left, set width on text inputs, textareas, and selects to a percentage. In supported browsers, set width to 100% minus the width of the label instead. */
+        
+        #pardot-form.label-left input.text,
+        #pardot-form.label-left input.date,
+        #pardot-form.label-left textarea,
+        #pardot-form.label-left select {
+            width: 65%;
+            width: calc(100% - 115px);
+        }
+        /* When labels are floated left, indent supporting form elements by the same amount as the field label. */
+        
+        #pardot-form.label-left span.value,
+        #pardot-form.label-left .description,
+        #pardot-form.label-left .no-label>*,
+        #pardot-form.label-left .submit,
+        #pardot-form.label-left .error.no-label {
+            margin-left: 35%;
+            margin-left: calc(115px);
+        }
+        /* Remove unnecessary left padding on required radio/checkbox field labels when label alignment is set to above and the required symbol is set to default in form styling options. */
+        
+        #pardot-form label.inline {
+            padding-left: 0;
+        }
+        /* Backup styles in case padding is added to text inputs. */
+        
+        #pardot-form input.date {
+            padding-left: 20px;
+            background-position: left center;
+        }
+        
+        #pardot-form .submit input {
+            background-color: #00aab1;
+            color: #fff;
+        }
+        /* --------------------------------------------------------------
+            BASE
+        ----------------------------------------------------------------- */
+        /* Set the base font */
+        
+        body {
+            color: #444;
+            font-family: inherit;
+            line-height: 27px;
+            font-size: 15px;
+        }
+        /* Set heading fonts */
+        
+        h3 {
+            font-size: 20px;
+        }
+        /* Set default background colour */
+        
+        .bgcolour {
+            background-color: #eee;
+        }
+        /* Set custom background colours for specific blocks, also update font colours if dark BG  */
+        
+        .header.bgcolour {
+            background-color: #ffffff;
+        }
+        
+        .block-one.bgcolour {
+            background-color: #20232c;
+            color: #fff;
+        }
+        
+        .block-two.bgcolour {
+            /* background-color: #eee; */
+        }
+        /* --------------------------------------------------------------
+            TEMPLATE DETAILS
+        ----------------------------------------------------------------- */
+        
+        .logo {
+            text-align: left;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        .logo,
+        .cta-container {
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+        }
+        
+        .cta p {
+            margin-bottom: 0;
+            font-size: 21px;
+            font-weight: 200;
+        }
+        
+        .block-two .thumbnail img {
+            max-width: 100%;
+        }
+        
+        #footer {
+            background-color: #263b4c;
+            padding: 0 60px;
+            color: #ffffff !important
+        }
+        
+        #footer .custom-nav li:before {
+            display: inline-block;
+            content: url('https://www.pharmalex.com/wp-content/uploads/2018/02/li.png');
+            margin-right: 7px;
+            vertical-align: text-top;
+        }
+        
+        #footer .iso {
+            padding: 20px 0;
+        }
+        
+        .wf-float-left {
+            float: left;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding-left: 40px;
+            margin-right: 0;
+        }
+        
+        #footer #wpcf7-f2823-o1 {
+            margin-top: 20px;
+        }
+        /* --------------------------------------------------------------
+            SPACING
+        ----------------------------------------------------------------- */
+        /* make element edge to edge */
+        
+        .flush {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        /* vertical padding */
+        
+        .vpadding {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        /* top padding only */
+        
+        .tpadding {
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+        /* bottom padding only */
+        
+        .bpadding {
+            padding-top: 0px;
+            padding-bottom: 20px;
+        }
+        /* large vertical padding */
+        
+        .vpaddingLG {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        /* spave below headings */
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 15px;
+        }
+        /* space below paragraph */
+        
+        p {
+            margin-bottom: 20px;
+        }
+        /* --------------------------------------------------------------
+            SOCIAL
+        ----------------------------------------------------------------- */
+        /* Social container spacing */
+        
+        .social {
+            padding-top: 15px;
+            line-height: 20px;
+            float: left;
+        }
+        /* Make everything within social display next to one another */
+        
+        .social * {
+            display: inline;
+            line-height: 20px;
+        }
+        /* Social list spacing */
+        
+        .social-list {
+            padding-left: 10px;
+            margin: 0px;
+        }
+        /* Social list display next to one another */
+        
+        .social-list li {
+            display: inline;
+        }
+        /* Disable underlines on image link hover */
+        
+        .social-list a:hover {
+            text-decoration: none;
+        }
+        /* Share button image specific style */
+        
+        #share-buttons img {
+            width: 20px;
+            border: 0;
+            box-shadow: 0;
+            display: inline;
+        }
+        /* --------------------------------------------------------------
+            RESPONSIVE
+        ----------------------------------------------------------------- */
+        /* xs */
+        
+        @media(max-width:767px) {
+            .pull-right {
+                float: none !important;
+                text-align: center;
+            }
+            .social {
+                text-align: center;
+                float: none;
+            }
+            .cta {
+                padding-top: 20px;
+                text-align: center;
+            }
+            .logo {
+                width: 100%;
+                text-align: center;
+            }
+            .cta-container {
+                width: 100%;
+            }
+            .cta p {
+                margin-bottom: 0;
+            }
+            .jumbotron {
+                margin-bottom: 0;
+            }
+        }
+        /* sm */
+        
+        @media(max-width:768px) {
+            #pardot-form.label-left .field-label {
+                width: 100%;
+                text-align: left;
+            }
+            #pardot-form.label-left input.text,
+            #pardot-form.label-left input.date,
+            #pardot-form.label-left textarea,
+            #pardot-form.label-left select {
+                width: 100%;
+            }
+            #pardot-form.label-left span.value,
+            #pardot-form.label-left .description,
+            #pardot-form.label-left .no-label>*,
+            #pardot-form.label-left .submit,
+            #pardot-form.label-left .error.no-label {
+                width: 100%;
+            }
+            #pardot-form.label-left span.value,
+            #pardot-form.label-left .description,
+            #pardot-form.label-left .no-label>*,
+            #pardot-form.label-left .submit,
+            #pardot-form.label-left .error.no-label {
+                margin-left: 0;
+            }
+            form.form p {
+                margin-left: 0px !important;
+                padding-left: 0px !important;
+            }
+            .mbhidden {
+                display: none;
+            }
+        }
+        /* md */
+        
+        @media(max-width:992px) {}
+        /* lg */
+        
+        @media(min-width:1200px) {}
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="header bgcolour vpadding">
+        <div class="container" style="width:100vw;">
+            <div class="row" style="max-width:1280px;margin:0 auto -2rem;">
+                <div class="col-md-8 col-sm-8 logo">
+                    <div style="float:left;"><img src="https://www.pharmalex.com/wp-content/uploads/2018/02/PLX_Logo_Claim_4C.svg" width="250" alt="logo" placehold="logo" pardot-region="logo" pardot-region-type="image">
+                    </div>
+                    <div class="mbhidden" style="float:left; width: 30px;">&nbsp;</div>
+                    <div style="float:left;">
+                        <img src="https://storage.pardot.com/484291/1632305867NDb5bRTZ/IMG_Logo_BiopharmaExcellence.jpg" width="159" alt="logo" placehold="logo2" pardot-region="logo2" pardot-region-type="image">
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <!--
+             -->
+                <div class="cta-container col-md-9 col-sm-6 clearfix">
+                    <div class="cta pull-right text-center">
+                        <div class="editable">
+
+                        </div>
+                        <!-- editable -->
+                    </div>
+                    <!-- cta -->
+                </div>
+                <!-- col-md-9 -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+
+    <div class="container" style="width:100vw;background-color: #e4f0f2;background-image: url('https://go.pharmalex.com/l/484291/2023-02-03/3dpmny/484291/16754594383Azkb0Th/unsub_bg.jpg'); background-repeat:no-repeat;background-size: cover;">
+        <div class="row vpadding" style="max-width:1280px;margin: 0 auto;padding-top:3rem;padding-bottom: 30rem;min-height: 48vh;">
+            <div class="col-md-8">
+                <div class="editable">
+
+                    %%content%%
+                </div>
+            </div>
+        </div>
+        <!-- row vpadding -->
+
+    </div>
+    <!--/.container-->
+    <!-- !Footer -->
+    <footer id="footer" class="footer solid-bg">
+        <table align="center" style="max-width: 1188px;" width="100%">
+            <tbody>
+                <tr>
+
+                    <td style="padding-top:30px;padding-bottom: 30px;" align="center" width="50%">
+                        <div>
+
+                            ©
+                            <script type="text/javascript">
+                                document.write(new Date().getFullYear());
+                            </script> PharmaLex GmbH. All rights reserved.
+                        </div>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </footer>
+
+    <!--#footer-->
+    </div>
+    </div>
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script>
+        /* --------------------------------------------------------------
+                                                                                                                                                                                                                        FUNCTIONS
+                                                                                                                                                                                                                    ----------------------------------------------------------------- */
+        /**
+         * Replace all occurences of https://simplesharebuttons.com in the
+         * social sharing list with the url of this page, and all occurrence
+         * of "Check this out" with the page title
+         */
+        $(".social-list a").each(function() {
+            // get values
+            var thisPage = window.location.href;
+            var url = $(this).attr('href');
+
+            // get title of this page
+            var title = $(document).find("title").text();
+
+            // replace values
+            url = url.replace("http://www.pardot.com", thisPage);
+            url = url.replace("template-title", title);
+
+            //update value of the link anchor
+            $(this).attr('href', url);
+        });
+
+        /**
+         * Pardot label alignment fix
+         */
+        pardot.$(function() {
+            var $ = window.pardot.$;
+            // Add label-left class to the <form> if label alignment is set to Default or Left in form styling
+            var $labelAlignment = $('#pardot-form .field-label').css('float');
+            if ($labelAlignment == 'left') {
+                $('#pardot-form').addClass('label-left');
+            }
+        });
+    </script>
+</body>
+
+</html>

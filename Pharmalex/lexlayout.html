@@ -17,6 +17,10 @@
     <meta name="msapplication-TileImage" content="https://www.pharmalex.com/wp-content/uploads/2022/07/cropped-cropped-Site-image-1-150x150-1-270x270.png" />
 
     <style>
+        html {
+            overflow-x: hidden;
+        }
+        
         p.pd-text label,
         p.pd-select label,
         p.pd-textarea label {
@@ -175,7 +179,7 @@
         
         .formbox {
             width: 100%;
-            margin: 70px auto;
+            margin: 20px auto 20px;
             text-align: center;
             margin-bottom: 0 !important;
         }
@@ -433,6 +437,7 @@
         }
         
         form.form p label {
+            color: #ffffff !important;
             width: fit-content !important;
         }
         
@@ -442,9 +447,10 @@
         
         form.form input.text,
         form.form textarea.standard {
-            color: #ffffff !important;
+            color: #000000 !important;
             border: solid 1px #ffffff !important;
             border-radius: 1px !important;
+            background-color: #ffffff !important;
         }
         
         form.form span.value {
@@ -461,6 +467,7 @@
             display: flex !important;
             flex-direction: row !important;
             gap: 1rem !important;
+            align-items: center;
         }
         
         form.form p.submit {
