@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="https://go.pharmalex.com">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="%%description%%" />
+    <title>PharmaLex</title>
+    <link rel="icon" href="#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="icon" href="https://www.pharmalex.com/wp-content/uploads/2022/07/cropped-cropped-Site-image-1-150x150-1-32x32.png.webp" sizes="32x32" />
+    <link rel="icon" href="https://www.pharmalex.com/wp-content/uploads/2022/07/cropped-cropped-Site-image-1-150x150-1-192x192.png.webp" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://www.pharmalex.com/wp-content/uploads/2022/07/cropped-cropped-Site-image-1-150x150-1-180x180.png.webp" />
+    <meta name="msapplication-TileImage" content="https://www.pharmalex.com/wp-content/uploads/2022/07/cropped-cropped-Site-image-1-150x150-1-270x270.png" />
+
+    <style>
+        p.pd-text label,
+        p.pd-select label,
+        p.pd-textarea label {
+            display: none !important;
+        }
+        
+        form.form input.text,
+        form.form textarea.standard {
+            width: 80% !important;
+            padding: 10px 15px !important;
+            background-color: rgb(30, 156, 169, 0.1) !important;
+            border: none !important;
+            border-radius: 15px !important;
+            font-family: Arial, sans-serif !important;
+            color: #959595 !important;
+            font-size: 14px !important;
+        }
+        
+        form.form {
+            margin: 0 !important;
+            font-family: Arial, sans-serif !important;
+            padding: 0.5em 0 2em !important;
+        }
+        
+        form.form p {
+            margin: 15px 5px !important;
+        }
+        
+        form.form input {
+            font-weight: 400 !important;
+            font-family: Arial, sans-serif !important;
+            font-size: 14px !important;
+            color: #959595 !important;
+        }
+        
+        form.form p.submit {
+            margin: 0 !important;
+        }
+        
+        form.form p.submit input {
+            margin: 0 auto !important;
+            padding: 10px 12px !important;
+            width: 80% !important;
+            border: 0 !important;
+            background-color: #1E9CA9 !important;
+            color: #ffffff !important;
+            font-family: Arial, sans-serif !important;
+            font-weight: 600 !important;
+            border-radius: 15px !important;
+            text-align: center !important;
+        }
+        
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        
+        body {
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif !important;
+            height: 100%;
+            width: 100%
+        }
+        
+        h1 {
+            font-family: Arial, sans-serif !important;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 31px;
+            line-height: 40px;
+            align-items: center;
+            color: #ffffff;
+        }
+        
+        h2 {
+            font-family: Arial, sans-serif !important;
+            font-size: 27px;
+            font-weight: bold;
+            line-height: 33px;
+            color: #ffffff;
+        }
+        
+        h3 {
+            font-family: Arial, sans-serif !important;
+            font-size: 20px;
+            line-height: 30px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+        
+        p,
+        ol,
+        ul,
+        span {
+            font-family: Arial, sans-serif !important;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        
+        #header {
+            background-color: #ffffff;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 0;
+        }
+        
+        #header img {
+            width: 280px;
+            max-width: 280px;
+        }
+        
+        .container_100 {
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .container_inner {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto
+        }
+        
+        #form-section {
+            width: 100%;
+            margin: 0px auto;
+            background-color: #ffffff;
+            background-image: url(https://go.pharmalex.com/l/484291/2023-02-01/3dpjpk/484291/1675277301nq1QS15K/bg_plex.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .headline {
+            padding-bottom: 100px;
+        }
+        
+        .unsub-cta {
+            margin-top: 30px;
+        }
+        
+        .title {
+            text-align: center;
+        }
+        
+        .banner-img {
+            width: 100%;
+            max-width: 100%
+        }
+        
+        .contentImg {
+            width: 100%;
+            max-width: 100%
+        }
+        
+        .formbox {
+            width: 100%;
+            margin: 70px auto;
+            text-align: center;
+            margin-bottom: 0 !important;
+        }
+        
+        .formheader {
+            background: #ffffff;
+            padding: 20px 0px;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px
+        }
+        
+        .formarea {
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px
+        }
+        
+        #section1 {
+            padding: 0 0 2.5em;
+            background-color: #ffffff;
+        }
+        
+        #section2 {
+            padding: 3em 0px;
+            background-color: #E9F5F7;
+        }
+        
+        #footer {
+            padding: 2.5em 0px;
+            background-color: #263b4c;
+        }
+        
+        #footer p {
+            color: #ffffff;
+        }
+        
+        .list {
+            padding-bottom: 20px;
+        }
+        
+        .mobileheadline {
+            margin: 100px auto;
+            margin-bottom: 0 !important;
+        }
+        
+        .section1-left {
+            margin: 0 auto;
+        }
+        
+        .ctabtn {
+            margin-top: 1em;
+            text-align: center;
+        }
+        
+        .ctabtn a {
+            background-color: #1E9CA9;
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block
+        }
+        
+        .breadcrumbs {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .social-icons,
+        .footer-p {
+            margin-top: 1em;
+        }
+        
+        .socials a {
+            text-decoration: none;
+        }
+        
+        .socials {
+            text-align: center;
+            width: 100%;
+        }
+        
+        .footerlogo img {
+            float: left;
+            max-width: 120px;
+            width: 100%
+        }
+        
+        .socials img {
+            width: 2.8em;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        #socialicon {
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0 auto;
+        }
+        
+        .fttxtright {
+            text-align: right;
+        }
+        
+        @media(max-width: 1200px) {
+            .container_inner {
+                max-width: 90%
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .px-5 {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            .mgt-m {
+                margin-top: 20px;
+            }
+            .mobileheadline {
+                margin: 30px 0px 0px;
+            }
+            .formbox {
+                width: 100%;
+                margin: 0px auto;
+            }
+            .fttxtright {
+                text-align: center;
+            }
+            .mbcenter {
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container_inner {
+                max-width: 85%;
+            }
+            h1 {
+                font-size: 28px;
+                text-align: center;
+                display: block
+            }
+            #header img,
+            #header {
+                text-align: center;
+                margin: 0 auto
+            }
+            .socials,
+            .breadcrumbs {
+                text-align: center;
+                margin: 10px 0px
+            }
+            .footerlogo img {
+                float: none;
+                max-width: 120px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .footerlogo {
+                margin: 0 auto;
+                text-align: center;
+            }
+            .mobileheadline div {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .unsub-cta {
+                margin-top: 30px !important;
+            }
+        }
+    </style>
+
+    <style>
+        .down {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+        }
+        
+        .down:before {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 100%;
+        }
+        
+        .down .fas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            animation: bounce 2s linear infinite;
+        }
+        
+        @-webkit-keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                -webkit-transform: translateY(0);
+                opacity: 1
+            }
+            40% {
+                -webkit-transform: translateY(-30px);
+                opacity: 0.4
+            }
+            60% {
+                -webkit-transform: translateY(-15px);
+                opacity: 0.4
+            }
+        }
+        
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+                opacity: 1
+            }
+            40% {
+                transform: translateY(-30px);
+                opacity: 0.4
+            }
+            60% {
+                transform: translateY(-15px);
+                opacity: 0.4
+            }
+        }
+        
+        .bounce {
+            -webkit-animation-name: bounce;
+            animation-name: bounce;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container_100">
+
+            <div id="header">
+                <div class="container_inner">
+                    <a href="https://www.pharmalex.com/" target="_blank"><img src="https://go.pharmalex.com/l/484291/2023-02-01/3dpjpc/484291/1675277301NE4vCrOj/logo_plex.png" width="280" height="auto" pardot-region="logo" pardot-region-type="image" /></a>
+                </div>
+            </div>
+
+            <div id="form-section">
+                <div class="headline">
+                    <div class="container_inner">
+                        <div class="row">
+                            <div class="col-md-9 mobileheadline">
+                                <div pardot-region="headline">
+                                    <h1>Thank you for your interest in Biopharma Excellence.</h1>
+                                    <h3>We value your privacy. Customize your preferences by unchecking the topics that you would like to be excluded from and save by hitting the "Update Preferences" button.</h3>
+                                </div>
+                                <div class="mobileform mgt-m" id="mainForm-1">
+                                    <div class="formbox">
+                                        <div class="formarea">
+                                            %%content%%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div pardot-region="unsubscribe">
+                                    <h1>Want to leave?</h1>
+                                    <h3>Click below to opt-out of all emails. (We will miss you).</h3>
+                                    <div class="unsub-cta">
+                                        <a href="#" style="text-decoration: none; font-size: 20px; color: #ffffff; background-color: #00aab1; padding-left: 25px; padding-right: 25px; padding-bottom: 10px; padding-top: 10px;">Unsubscribe From All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container_inner">
+            <div class="row">
+                <div class="col-md-6 mbcenter">
+                    <a href="https://www.pharmalex.com/"><img src="https://go.pharmalex.com/l/484291/2023-02-01/3dpjq8/484291/1675279527ShnsN17V/btm_logo.png" alt="logo" width="280" pardot-region="footer-logo" pardot-region-type="image" /></a>
+                </div>
+                <div class="col-md-6 fttxtright" style="padding-top: 10px;">
+                    <p style="font-size: 14px;">
+                        ©2023 PharmaLex GmbH. All rights reserved.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
