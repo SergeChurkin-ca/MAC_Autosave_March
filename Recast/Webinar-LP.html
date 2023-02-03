@@ -349,6 +349,18 @@ font-size: 32px;
         border-radius: 50%;
         border: solid 2px #29ABE2;
       }
+      #benefits .flex-row {
+        grid-column-gap: 3rem;
+         grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      }
+      #benefits .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 2rem;
+      }
       #benefits .img-wrapper {
         background:#ecf8fc; 
         display: flex;
@@ -358,8 +370,11 @@ font-size: 32px;
         padding: 1rem;
         justify-content: center;
         laign-items: center;
+        margin-bottom: 1rem;
       }
-   
+   #benefits img {
+    height: 100%;
+   }
       #footer {
         background-color:${footerbgcolor};
         display:${footershow} !important;
@@ -1025,22 +1040,22 @@ font-size: 32px;
             <div class="col mtkoText" mktoName="Benefit 1">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 1</h3>   
-                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</span>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
            <div class="col mtkoText" mktoName="Benefit 1">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 2</h3>   
-                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</span>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
            <div class="col mtkoText" mktoName="Benefit 1">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 3</h3>   
-                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</span>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
            <div class="col mtkoText" mktoName="Benefit 1">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 4</h3>   
-                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</span>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
             </div>
     </div>
