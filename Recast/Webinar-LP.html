@@ -149,7 +149,13 @@
     <meta class="mktoColor" id="event-bg-color" mktoName="Event Bg Color" default="#29ABE2">  
     
      <meta class="mktoBoolean" id="speakers-show" mktoName="Show Speakers" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="speakers-bg-color" mktoName="Event Bg Color" default="#f2f5f4">  
+     <meta class="mktoBoolean" id="speaker1-show" mktoName="Show Speaker 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+     <meta class="mktoBoolean" id="speaker2-show" mktoName="Show Speaker 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+     <meta class="mktoBoolean" id="speaker3-show" mktoName="Show Speaker 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+     <meta class="mktoBoolean" id="speaker4-show" mktoName="Show Speaker 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="speakers-bg-color" mktoName="Event Bg Color" default="#f2f5f4">
+      <meta class="mktoString" id="speaker-padding-top" mktoName="Speakers Top Pad (rem)" default="1" allowHtml="true">  
+      <meta class="mktoString" id="speaker-padding-btm" mktoName="Speakers Btm Pad (rem)" default="3" allowHtml="true">  
 
     <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="footershow2" mktoName="Show Footer 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -302,16 +308,32 @@
         order: ${speakers-order};
         background: ${speakers-bg-color};
         margin: 0 auto;
+        padding: ${speaker-padding-top}rem 0 ${speaker-padding-btm}rem !important;
+      }
+      #speakers img {
+        margin-bottom: 1rem;
       }
       #speakersheadline {
         text-align: center;
         margin: 3rem 0 0;
       }
+      #speakers .col:nth-child(1) {
+        display: ${speaker1-show};
+      }
+      #speakers .col:nth-child(2) {
+        display: ${speaker2-show};
+      }
+      #speakers .col:nth-child(3) {
+        display: ${speaker3-show};
+      }
+      #speakers .col:nth-child(4) {
+        display: ${speaker4-show};
+      }
        .dots {
 color: #29ABE2;
 font-size: 32px;
       }
-      #speakers .flex-row {
+      #speakers .flex-row, #benefits .flex-row {
         justify-content: space-evenly;
         display: grid;
          grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
@@ -322,10 +344,22 @@ font-size: 32px;
       #speakers .col {
         text-align: center;
       }
+    
       #speakers img {
         border-radius: 50%;
         border: solid 2px #29ABE2;
       }
+      #benefits .img-wrapper {
+        background:#ecf8fc; 
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        border-radius:50%;
+        padding: 1rem;
+        justify-content: center;
+        laign-items: center;
+      }
+   
       #footer {
         background-color:${footerbgcolor};
         display:${footershow} !important;
@@ -683,7 +717,7 @@ font-size: 32px;
             align-items: center;
             gap: 2rem;
         }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           #speakers .flex-row {
+#speakers .flex-row {
              grid-template-columns: repeat(1, 1fr);
         }
       }
@@ -959,22 +993,22 @@ font-size: 32px;
         <div class="container_inner section flex-row">
            
             <div class="col mtkoText" mktoName="Speaker 1">
-                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/img-placeholder120x120.png" alt="speakerheadshot" />
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
                  <h3>John Doe</h3>   
                  <span>Speaker Title</span>
             </div>
            <div class="col mtkoText" mktoName="Speaker 1">
-                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/img-placeholder120x120.png" alt="speakerheadshot" />
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
                  <h3>John Doe</h3>   
                  <span>Speaker Title</span>
             </div>
           <div class="col mtkoText" mktoName="Speaker 1">
-                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/img-placeholder120x120.png" alt="speakerheadshot" />
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
                  <h3>John Doe</h3>   
                  <span>Speaker Title</span>
             </div>
           <div class="col mtkoText" mktoName="Speaker 1">
-                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/img-placeholder120x120.png" alt="speakerheadshot" />
+                <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
                  <h3>John Doe</h3>   
                  <span>Speaker Title</span>
             </div>
@@ -982,6 +1016,36 @@ font-size: 32px;
     </div>
     </div>
     <!-- End of Speakers -->
+    
+    <!-- Points Section -->
+    <div class="container_100" id="benefits">
+          
+        <div class="container_inner section flex-row">
+           
+            <div class="col mtkoText" mktoName="Benefit 1">
+                <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
+                 <h3>Benefit 1</h3>   
+                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</span>
+            </div>
+           <div class="col mtkoText" mktoName="Benefit 1">
+                <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
+                 <h3>Benefit 2</h3>   
+                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</span>
+            </div>
+           <div class="col mtkoText" mktoName="Benefit 1">
+                <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
+                 <h3>Benefit 3</h3>   
+                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</span>
+            </div>
+           <div class="col mtkoText" mktoName="Benefit 1">
+                <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
+                 <h3>Benefit 4</h3>   
+                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</span>
+            </div>
+            </div>
+    </div>
+    </div>
+    <!-- End of Points -->
     
     
     <!-- Footer -->
