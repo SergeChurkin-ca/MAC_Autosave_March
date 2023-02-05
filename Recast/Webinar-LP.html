@@ -50,6 +50,16 @@
     <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="2" allowHtml="true">
     <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="6" allowHtml="true">
 
+    
+    <meta class="mktoColor" id="btnbgcolor2" mktoName="Reverse Btn- BG Color" default="#ffffff">
+    <meta class="mktoColor" id="btntextcolor2" mktoName="Reverse button - Text Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnbordercolor2" mktoName="Reverse button - Border Color" default="#29ABE2">
+
+    <meta class="mktoColor" id="btnhoverbackground2" mktoName="Reverse Btn - Hover Bg Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnfontclr2" mktoName="Reverse Btn - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btnhoverclr2" mktoName="Reverse Btn - Hover Text Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnhoverborder2" mktoName="Reverse Btn - Hover Border Color" default="#29ABE2">
+
     <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-banner-logo" mktoName="Show Banner Log" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-banner-right" mktoName="Show Banner Right Col?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -74,9 +84,15 @@
     <meta class="mktoColor" id="btnhoverborder" mktoName="Free-Text - Btn Hover Border Color" default="#29ABE2">
 
     <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoString" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#" allowHtml="true">  
     <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#F2F5F4">
     <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
+
+
+    <meta class="mktoBoolean" id="copy-show" mktoName="Show Copy" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="copy-bgcolor" mktoName="Copy BG Color" default="#" allowHtml="true">  
+    <meta class="mktoString" id="copy-mg-top" mktoName="Copy Top Margin" default="0" allowHtml="true">
+    <meta class="mktoString" id="copy-mg-btm" mktoName="Copy Btm Margin" default="3" allowHtml="true">
+
  
     <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
@@ -148,6 +164,11 @@
       <meta class="mktoBoolean" id="show-benefit3" mktoName="Show Benefit 3" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
       <meta class="mktoBoolean" id="show-benefit4" mktoName="Show Benefit 4" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
 
+<meta class="mktoBoolean" id="centercta-show" mktoName="Show Benefits" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+<meta class="mktoBoolean" id="button-reverse-show" mktoName="Show Reversed clr button?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+<meta class="mktoString" id="center-cta-mgtop" mktoName="Center CTA margin top" default="1" allowHtml="true">  
+<meta class="mktoString" id="center-cta-mgbtm" mktoName="Center CTA margin bottom" default="3" allowHtml="true">  
+
     <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="footershow2" mktoName="Show Footer 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#323e48">
@@ -159,6 +180,7 @@
 
     <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
     <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
+    <meta class="mktoString" id="copy-order" mktoName="Form/Text - Order" default="2" allowHtml="true">
     <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
     <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
     <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
@@ -168,6 +190,7 @@
     <meta class="mktoString" id="calendarevent-order" mktoName="Celendar Event - Order" default="9" allowHtml="true">
     <meta class="mktoString" id="speakers-order" mktoName="Speakers- Order" default="10" allowHtml="true">
     <meta class="mktoString" id="benefits-order" mktoName="Benefits - Order" default="11" allowHtml="true">
+    <meta class="mktoString" id="centercta-order" mktoName="Benefits - Order" default="12" allowHtml="true">
 
 
 
@@ -231,6 +254,14 @@
         background-color:${formtextbgcolor};
         display:${formtextshow};
         order:${formtextorder};
+      }
+      #copymodule {
+        background-color: ${copy-bgcolor};
+        display: ${copy-show};
+        order: ${copy-order};
+      }
+      #copymodule .section {
+        margin: ${copy-mg-top}rem auto ${copy-mg-btm}rem !important;
       }
       #threecol {
         background-color:${threecolbgcolor};
@@ -383,6 +414,39 @@ font-size: 32px;
    #benefits img {
     height: 100%;
    }
+   #centercta {
+    display: ${centercta-show};
+    order: ${centercta-order}
+   }
+   #centercta .section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: ${center-cta-mgtop}rem auto ${center-cta-mgbtm}rem !important;
+   }
+   #centercta .flex-row {
+    gap: 2rem;
+   }
+   #centercta .button {
+    padding: 0;
+   }
+   .button-reverse {
+    display: ${button-reverse-show};
+   }
+  .button-reverse a {
+    background-color:${btnbgcolor2} !important;
+        border:2px solid ${btnbordercolor2} !important;
+        color:${btntextcolor2} !important;
+        font-weight:bold;
+        text-decoration:none;
+        display:inline-block;
+   }
+      .button-reverse a:hover, .button-reverse a:focus {
+        background: ${btnhoverbackground2} !important;
+        border: 2px solid ${btnhoverborder2} !important;
+        color: ${btnfontclr2} !important;
+
+      }
       #footer {
         background-color:${footerbgcolor};
         display:${footershow} !important;
@@ -778,6 +842,21 @@ font-size: 32px;
         </div>
       </div>
       <!-- END Form/Text -->
+      <!-- Copy Module -->
+      <div class="container_100" id="copymodule">
+        <div class="container_inner section">
+          <div class="mktoText" id="copy" mktoName="Copy Text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore natus nesciunt, eveniet odit sequi eos molestiae fuga nostrum quia ab iusto. Numquam ea, laboriosam consequuntur quae autem quam, temporibus beatae exercitationem natus dignissimos consectetur. Debitis vitae et enim recusandae omnis optio dolore, totam laborum minima qui maxime, ea minus voluptatibus.</p>
+            <ul>
+              <li>Fusce vel nisi vel velit finibus congue.</li>
+              <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
+              <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi cu.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END of Copy Module -->
       <!-- Three Column -->
       <div class="container_100" id="threecol">
         <div class="container_inner section">
@@ -952,17 +1031,17 @@ font-size: 32px;
     <!-- Calendar Event -->
     <div class="container_100" id="calendarEvent">
         <div class="container_inner section flex-row">
-            <div class="col mtkoText" mktoName="Event Detail 1">
+            <div class="col mtkoText" mktoName="Event Detail 1" id="detail1">
                 <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/calendar.png" alt="icon" />
                  <h3>Date:</h3>   
                  <span>Nov 12</span>
             </div>
-            <div class="col mtkoText" mktoName="Event Detail 1">
+            <div class="col mtkoText" mktoName="Event Detail 1" id="detail2">
                 <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/clock.png" alt="icon" />
                  <h3>Time:</h3>   
                  <span>09:00 AM</span>
             </div>
-            <div class="col mtkoText" mktoName="Event Detail 1">
+            <div class="col mtkoText" mktoName="Event Detail 1" id="detail3">
                 <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/circle-paly-solid.png" alt="icon" />
                  <h3>Duration:</h3>   
                  <span>2 HRS</span>
@@ -980,22 +1059,22 @@ font-size: 32px;
             </div>
         <div class="container_inner section flex-row">
            
-            <div class="col mtkoText" mktoName="Speaker 1">
+            <div class="col mtkoText" mktoName="Speaker 1" id="speaeker1">
                 <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
                  <h3>John Doe</h3>   
                  <span>Speaker Title</span>
             </div>
-           <div class="col mtkoText" mktoName="Speaker 1">
+           <div class="col mtkoText" mktoName="Speaker 1" id="speaeker2">
                 <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
                  <h3>John Doe</h3>   
                  <span>Speaker Title</span>
             </div>
-          <div class="col mtkoText" mktoName="Speaker 1">
+          <div class="col mtkoText" mktoName="Speaker 1" id="speaeker3">
                 <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
                  <h3>John Doe</h3>   
                  <span>Speaker Title</span>
             </div>
-          <div class="col mtkoText" mktoName="Speaker 1">
+          <div class="col mtkoText" mktoName="Speaker 1" id="speaeker4">
                 <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
                  <h3>John Doe</h3>   
                  <span>Speaker Title</span>
@@ -1007,25 +1086,24 @@ font-size: 32px;
     
     <!-- Points Section -->
     <div class="container_100" id="benefits">
-          
         <div class="container_inner section flex-row">
            
-            <div class="col mtkoText" mktoName="Benefit 1">
+            <div class="col mtkoText" mktoName="Benefit 1" id="benefit1">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 1</h3>   
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
-           <div class="col mtkoText" mktoName="Benefit 2">
+           <div class="col mtkoText" mktoName="Benefit 2" id="benefit2">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 2</h3>   
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
-           <div class="col mtkoText" mktoName="Benefit 3">
+           <div class="col mtkoText" mktoName="Benefit 3" id="benefit3">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 3</h3>   
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
-           <div class="col mtkoText" mktoName="Benefit 4">
+           <div class="col mtkoText" mktoName="Benefit 4" id="benefit4">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 4</h3>   
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
@@ -1034,6 +1112,23 @@ font-size: 32px;
     </div>
    
     <!-- End of Points -->
+    <!-- Center CTA -->
+ <div class="container_100" id="centercta">
+  <div class="container_inner section flex-column">
+    <div class="mktoText" mktoName="CTA Headline">
+      <h2>Center CTA Headline</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <br>
+    </div>
+          <div class="flex-row">
+            <div class="mktoText button" id="centerbtn1" mktoname="Banner - Button"><a href="#">CTA BUTTON 1</a>
+              </div>
+            <div class="mktoText button button-reverse" id="centerbtn2" mktoname="Banner - Button"><a href="#">CTA BUTTON 2</a>
+              </div>
+            </div>
+  </div>
+        </div>
+    <!-- end of Center CTA -->
         </div>
     
     <!-- Footer -->
