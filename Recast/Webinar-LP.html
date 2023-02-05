@@ -123,24 +123,9 @@
     <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
 
-    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#ffffff">
-    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#F2F5F4">
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Banner - Text BG Color" default="#F2F5F4">
     
-    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
-    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#323e48">
-    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#ffffff">
-    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#323e48">
-    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#29ABE2">
-    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#29abe2">
-    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="3" allowHtml="true">
     <meta class="mktoColor" id="btmButtonHoverBGColor" mktoName="Btm Form - Btn Hover Bg Color" default="#ffffff">
     <meta class="mktoColor" id="btmButtonHoverColor" mktoName="Btm Form-  Btn Text Color" default="#29abe2">
     <meta class="mktoColor" id="btmButtonHoverBorder" mktoName="Btm Form-  Btn Hover Border Color" default="#29ABE2">
@@ -156,6 +141,12 @@
     <meta class="mktoColor" id="speakers-bg-color" mktoName="Event Bg Color" default="#f2f5f4">
       <meta class="mktoString" id="speaker-padding-top" mktoName="Speakers Top Pad (rem)" default="1" allowHtml="true">  
       <meta class="mktoString" id="speaker-padding-btm" mktoName="Speakers Btm Pad (rem)" default="3" allowHtml="true">  
+
+      <meta class="mktoBoolean" id="benefits-show" mktoName="Show Benefits" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+      <meta class="mktoBoolean" id="show-benefit1" mktoName="Show Benefit 1" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+      <meta class="mktoBoolean" id="show-benefit2" mktoName="Show Benefit 2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+      <meta class="mktoBoolean" id="show-benefit3" mktoName="Show Benefit 3" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+      <meta class="mktoBoolean" id="show-benefit4" mktoName="Show Benefit 4" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
 
     <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="footershow2" mktoName="Show Footer 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -173,9 +164,10 @@
     <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
     <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
     <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
-    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
-    <meta class="mktoString" id="calendarevent-order" mktoName="Bottom Form - Order" default="9" allowHtml="true">
-    <meta class="mktoString" id="speakers-order" mktoName="Bottom Form - Order" default="10" allowHtml="true">
+    <meta class="mktoString" id="btmformorder" mktoName="Bottom Banner - Order" default="8" allowHtml="true">
+    <meta class="mktoString" id="calendarevent-order" mktoName="Celendar Event - Order" default="9" allowHtml="true">
+    <meta class="mktoString" id="speakers-order" mktoName="Speakers- Order" default="10" allowHtml="true">
+    <meta class="mktoString" id="benefits-order" mktoName="Benefits - Order" default="11" allowHtml="true">
 
 
 
@@ -349,6 +341,10 @@ font-size: 32px;
         border-radius: 50%;
         border: solid 2px #29ABE2;
       }
+      #benefits {
+        display: ${benefits-show};
+        order: ${benefits-order};
+      }
       #benefits .flex-row {
         grid-column-gap: 3rem;
          grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -359,7 +355,19 @@ font-size: 32px;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 0 2rem;
+        padding: 0 1rem;
+      }
+      #benefits .col:nth-child(1) {
+        display: ${show-benefit1};
+      }
+      #benefits .col:nth-child(2) {
+        display: ${show-benefit2};
+      }
+      #benefits .col:nth-child(3) {
+        display: ${show-benefit3};
+      }
+      #benefits .col:nth-child(4) {
+       display: ${show-benefit4};
       }
       #benefits .img-wrapper {
         background:#ecf8fc; 
@@ -603,43 +611,8 @@ font-size: 32px;
       .mktoForm .mktoFormRow {
         margin: 0 !important;
       }
-      #btmform .mktoForm .mktoLabel {
-        color:${btmformpcolor}!important;
-        font-size:${btmformpsize}px!important;
-        font-weight:${btmformpweight}!important;
-        display:${showbtmformlabel}!important;
-      }
-      #btmform .mktoForm input, #btmform .mktoForm textarea,  #btmform .mktoForm select {
-        border:${btmformbordercolor} ${btmformborderheight}px solid;
-        border-radius:${btmformborderradius}px!important;
-        background-color:${btmformfieldcolor}!important;
-        color:${btmformpcolor}!important;
-      }
-      #btmform .mktoForm input::placeholder, #btmform .mktoForm textarea::placeholder,  #btmform .mktoForm select::placeholder {
-        color:${btmformpcolor}!important;
-      }
-      #btmform .mktoForm button.mktoButton {
-        background:${btmformbtnbgcolor}!important;
-        background-image: none !important;
-        background-color:${btmformbtnbgcolor}!important;
-        border:2px solid ${btmformbtnbordercolor}!important;
-        border-radius:${btmformbtnborderradius}px!important;
-        font-size:${btmformbtntextsize}px!important;
-        padding:10px 24px!important;
-        color:${btmformbtntextcolor}!important;
-        font-weight:bold!important;
-        text-decoration:none!important;
-        width: auto!important!important;
-        display:inline-block;
-      }
-      #btmform .mktoForm button.mktoButton:hover,
-      #btmform .mktoForm button.mktoButton:focus {
-        color: ${btmButtonHoverColor} !important;
-        background-color: ${btmButtonHoverBGColor} !important;
-        background: ${btmButtonHoverBGColor} !important;
-        border: solid 2px ${btmButtonHoverBorder} !important;
-      }
-
+ 
+   
       ${btmformtwocol}
       #threecol .col33 {
         background-color:${threecolcolumnbgcolor};
@@ -1029,7 +1002,7 @@ font-size: 32px;
             </div>
             </div>
     </div>
-    </div>
+
     <!-- End of Speakers -->
     
     <!-- Points Section -->
@@ -1042,26 +1015,26 @@ font-size: 32px;
                  <h3>Benefit 1</h3>   
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
-           <div class="col mtkoText" mktoName="Benefit 1">
+           <div class="col mtkoText" mktoName="Benefit 2">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 2</h3>   
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
-           <div class="col mtkoText" mktoName="Benefit 1">
+           <div class="col mtkoText" mktoName="Benefit 3">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 3</h3>   
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
-           <div class="col mtkoText" mktoName="Benefit 1">
+           <div class="col mtkoText" mktoName="Benefit 4">
                 <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
                  <h3>Benefit 4</h3>   
                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
             </div>
             </div>
     </div>
-    </div>
+   
     <!-- End of Points -->
-    
+        </div>
     
     <!-- Footer -->
     <footer class="container_100" id="footer">
