@@ -1,0 +1,468 @@
+%%[ Var @DG_EN_quantity, @DG_FR_quantity, @CK_EN_quantity, @CK_FR_quantity, @Card_EN_quantity, @Card_FR_quantity, @pcbrochureqty, @DG_qty_EN, @DG_qty_FR, @CK_qty_EN, @CK_qty_FR, @Card_qty_EN, @Card_qty_FR, @Brochure_qty SET @DG_EN_quantity = [DG_en_qty]
+SET @DG_qty_EN = Iif(not Empty(@DG_EN_quantity), @DG_EN_quantity, "0") SET @DG_FR_quantity = [DG_fr_qty] SET @DG_qty_FR = Iif(not Empty(@DG_FR_quantity), @DG_FR_quantity, "0") SET @CK_EN_quantity = [Checklist_en_qty] SET @CK_qty_EN = Iif(not Empty(@CK_EN_quantity),
+@CK_EN_quantity, "0") SET @CK_FR_quantity = [Checklist_fr_qty] SET @CK_qty_FR = Iif(not Empty(@CK_FR_quantity), @CK_FR_quantity, "0") SET @Card_EN_quantity = [DG_card_en_qty] SET @Card_qty_EN = Iif(not Empty(@Card_EN_quantity), @Card_EN_quantity, "0")
+SET @Card_FR_quantity = [DG_card_fr_qty] SET @Card_qty_FR = Iif(not Empty(@Card_FR_quantity), @Card_FR_quantity, "0") SET @pcbrochureqty = [PC_brochure_qty] SET @Brochure_qty = Iif(not Empty(@pcbrochureqty), @pcbrochureqty, "0") ]%%
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+    body {
+        margin: 0;
+        padding: 0
+    }
+    
+    img {
+        border: 0!important;
+        outline: none!important
+    }
+    
+    p {
+        Margin: 0px!important;
+        Padding: 0px!important
+    }
+    
+    table {
+        border-collapse: collapse
+    }
+    
+    td,
+    a,
+    span {
+        border-collapse: collapse
+    }
+    
+    .m_ExternalClass * {
+        line-height: 100%
+    }
+    
+    .m_qe_defaultlink a {
+        color: inherit;
+        text-decoration: none
+    }
+    
+    .m_qe_defaultlink1 a {
+        color: inherit;
+        text-decoration: underline
+    }
+    
+    .m_qe_white a {
+        color: #ffffff;
+        text-decoration: none
+    }
+    
+    .m_qe_black a {
+        color: #000000;
+        text-decoration: none
+    }
+    
+    .m_qe_g_img+div {
+        display: none
+    }
+    
+    u+.m_qe_body a,
+    #m_MessageViewBody a {
+        color: inherit;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit
+    }
+    
+    @media only screen and (max-width:599px) {
+        .m_qe_wrapper {
+            width: 100%!important
+        }
+        .m_qe_full_img img {
+            width: 100%!important;
+            height: auto!important
+        }
+        .m_qe_aside15 {
+            padding: 0 15px!important
+        }
+        .m_qe_side15 {
+            width: 15px!important
+        }
+        .m_qe_ptop {
+            padding-top: 20px!important
+        }
+        .m_qe_pbottom {
+            padding-bottom: 30px!important
+        }
+        .m_qe_none {
+            display: none!important
+        }
+        .m_qe_hauto {
+            height: auto!important
+        }
+        .m_qe_h20 {
+            height: 20px!important;
+            line-height: 1px!important;
+            font-size: 1px!important
+        }
+        .m_qe_h30 {
+            height: 30px!important;
+            line-height: 1px!important;
+            font-size: 1px!important
+        }
+        .m_qe_pall {
+            padding: 20px 15px!important
+        }
+        .m_qe_center {
+            text-align: center!important
+        }
+        .m_qe_mob_block {
+            display: block!important
+        }
+        .m_qe_clear {
+            clear: both!important;
+            width: 100%!important;
+            display: block!important
+        }
+        .m_qe_side24 {
+            width: 24px!important
+        }
+        .m_qe_aside24 {
+            padding: 0px 24px!important
+        }
+        .m_qe_h83 {
+            height: 83px!important
+        }
+        .m_qe_h13 {
+            height: 13px!important;
+            line-height: 0px!important;
+            font-size: 0px!important
+        }
+        .m_hide_desktop {
+            display: table!important;
+            float: none!important;
+            width: 100%!important;
+            overflow: visible!important;
+            height: auto!important
+        }
+    }
+    
+    @media only screen and (max-width:480px) {
+        u+.m_body .m_qe_full_wrap {
+            width: 100%!important;
+            width: 100vw!important
+        }
+        .m_qe_bg {
+            background-image: url(https://ci6.googleusercontent.com/proxy/cDR8iHHU8WbGWY3e75wsGNvASLa-jRVEN3pMCYDOZ44SE7F6wvW1EZ5Xbzhi-XP9Q16deI0lt3qfyMdccWmMMaDQxqzisFxkV35QBX6UL42cRV4=s0-d-e1-ft#https://merck.onlinefiles.ca/Harvest-186-3265/banner_img_mob.jpg)!important;
+            height: auto!important
+        }
+    }
+</style><u></u>
+
+<div class="m_qe_body" style="margin:0px auto;padding:0px" bgcolor="#ffffff">
+
+    <span class="m_mcnPreviewText" style="display:none;font-size:0px;line-height:0px;max-height:0px;max-width:0px;opacity:0;overflow:hidden">Review your order</span>
+
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="m_qe_full_wrap" bgcolor="#ffffff" style="table-layout:fixed">
+        <tr>
+            <td align="center" valign="top">
+                <table align="center" width="600" border="0" cellspacing="0" cellpadding="0" class="m_qe_wrapper" style="width:600px;table-layout:fixed" bgcolor="#ffffff">
+                    <tr>
+                        <td align="center" valign="top">
+
+                            <table width="600" border="0" cellspacing="0" class="m_qe_wrapper" cellpadding="0" align="center" style="width:600px">
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#6eceb2">
+                                            <tr>
+                                                <td align="left" valign="top">
+                                                    <table width="180" border="0" cellspacing="0" cellpadding="0" align="left" style="width:180px">
+                                                        <tr>
+                                                            <td align="left" valign="top"><img src="https://ci4.googleusercontent.com/proxy/t7GNblETZaD5WseSYCZvLq_PP6feLG759bxRhmlge_u68GL4xEVoPZl9hy9YXV_gDmMPWrY62PP3jQGNrCYWPhzXlmn7VGS6QCo1ThqOnQ=s0-d-e1-ft#https://merck.onlinefiles.ca/Harvest-186-3265/merck_logo.png"
+                                                                    border="0" style="display:block;max-width:180px;font:15px/18px Arial,sans-serif;color:#ffffff" width="180" height="77" alt="Merck"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="3" style="height:3px;line-height:0px;font-size:0px" bgcolor="#00928d"><img src="https://ci5.googleusercontent.com/proxy/yhcYXtuPX_NOBV8G2KAV1SoTViISXEZNFKTSh9K7hZT0x18zyp87hA4Y-99s8Tjv_s6hugeTzFT5OXZYKdVBmgDwiR4fIFpaAc35S-LtXEY=s0-d-e1-ft#https://merck.onlinefiles.ca/Harvest-186-3265/default_img.gif"
+                                            width="1" height="1" alt="" border="0" style="display:block"></td>
+                                </tr>
+                            </table>
+
+
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px" class="m_qe_wrapper">
+                                <tr>
+                                    <td class="m_qe_bg" align="center" valign="top" background="https://ci4.googleusercontent.com/proxy/PDuI3YpZfruQn6IDBzjj0H9CFijwCKFY0KDIy40MhRTZzI3Vr2CiUi75w546iyrhJxI4SzTEY_X8Lfo3ImoMpkc2lSUaw_0Z9y4lP0cmSA=s0-d-e1-ft#https://merck.onlinefiles.ca/Harvest-186-3265/banner_img.jpg"
+                                        height="234" style="background-image:url(https://ci4.googleusercontent.com/proxy/PDuI3YpZfruQn6IDBzjj0H9CFijwCKFY0KDIy40MhRTZzI3Vr2CiUi75w546iyrhJxI4SzTEY_X8Lfo3ImoMpkc2lSUaw_0Z9y4lP0cmSA=s0-d-e1-ft#https://merck.onlinefiles.ca/Harvest-186-3265/banner_img.jpg);background-position:right center;background-repeat:no-repeat;height:234px;background-size:cover">
+
+
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td width="42" style="width:42px" class="m_qe_side24">&nbsp;</td>
+                                                <td align="center" valign="top">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td height="83" style="height:83px" class="m_qe_h83">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="m_qe_white" align="right" valign="top" style="font-family:'Helvetica',Arial,sans-serif;font-size:40px;line-height:42px;color:#ffffff;letter-spacing:2px">Thank you</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="9" style="height:9px;font-size:0px;line-height:0px">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="m_qe_white" align="right" valign="top" style="font-family:'Helvetica',Arial,sans-serif;font-size:14px;line-height:17px;color:#ffffff;letter-spacing:1px">FOR YOUR ORDER!</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td height="35" style="height:35px" class="m_qe_h83">&nbsp;</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="42" style="width:42px" class="m_qe_side24">&nbsp;</td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="width:600px" class="m_qe_wrapper" bgcolor="#f7f7f7">
+                                <tr>
+                                    <td align="center" valign="top" style="padding:0px 36px" class="m_qe_aside24">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f7f7f7">
+                                            <tr>
+                                                <td height="39" style="height:39px">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="m_qe_defaultlink" align="left" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:19px;color:#757575">We have received your order. Get ready to use these resources to support<br class="m_qe_none"> your practice.</td>
+                                            </tr>
+                                            <tr>
+                                                <td height="24" style="height:24px">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table width="600" border="1" cellspacing="0" cellpadding="0" align="left" style="width:600px" class="qe_wrapper" bgcolor="#f7f7f7">
+
+
+
+                                <tr class="m_qe_defaultlink" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:17px;color:#0b2340">
+                                    <th align="center" width="60">Quantity</th>
+                                    <th align="center">Tool Name</th>
+                                    <th align="center" width="90">Language</th>
+                                </tr>
+
+
+                                %%[IF (EMPTY(@DG_qty_EN) or @DG_qty_EN == 0) THEN]%% %%[ELSE]%%
+
+                                <tr class="m_qe_defaultlink" align="left" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:19px;color:#757575">
+                                    <td align="Center" width="60">%%=V(@DG_qty_EN)=%%</td>
+                                    <td align="Center">G9 Discussion Guide(CA-GSL-00482 EN)</td>
+                                    <td align="Center" width="90">English</td>
+
+                                </tr>
+
+                                %%[ENDIF]%% %%[IF (EMPTY(@DG_qty_FR) or @DG_qty_FR == 0) THEN]%% %%[ELSE]%%
+
+                                <tr class="m_qe_defaultlink" align="left" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:19px;color:#757575">
+                                    <td align="Center" width="60">%%=V(@DG_qty_FR)=%%</td>
+                                    <td align="Center">G9 Discussion Guide(CA-GSL-00483 FR)</td>
+                                    <td align="Center" width="90">French</td>
+
+                                </tr>
+
+                                %%[ENDIF]%% %%[IF (EMPTY(@CK_qty_EN) or @CK_qty_EN == 0) THEN]%% %%[ELSE]%%
+
+                                <tr class="m_qe_defaultlink" align="left" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:19px;color:#757575">
+                                    <td align="Center" width="60">%%=V(@CK_qty_EN)=%%</td>
+                                    <td align="Center">G9 Checklist(CA-GSL-00702 EN)</td>
+                                    <td align="Center" width="90">English</td>
+
+                                </tr>
+
+                                %%[ENDIF]%% %%[IF (EMPTY(@CK_qty_FR) or @CK_qty_FR == 0) THEN]%% %%[ELSE]%%
+
+                                <tr class="m_qe_defaultlink" align="left" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:19px;color:#757575">
+                                    <td align="Center" width="60">%%=V(@CK_qty_FR)=%%</td>
+                                    <td align="Center">G9 Checklist(CA-GSL-00703 FR)</td>
+                                    <td align="Center" width="90">French</td>
+
+                                </tr>
+
+                                %%[ENDIF]%% %%[IF (EMPTY(@Card_qty_EN) or @Card_qty_EN == 0) THEN]%% %%[ELSE]%%
+
+                                <tr class="m_qe_defaultlink" align="left" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:19px;color:#757575">
+                                    <td align="Center" width="60">%%=V(@Card_qty_EN)=%%</td>
+                                    <td align="Center">G9 Digital Guide Card(CA-GSL-00509 EN)</td>
+                                    <td align="Center" width="90">English</td>
+
+                                </tr>
+
+                                %%[ENDIF]%% %%[IF (EMPTY(@Card_qty_FR) or @Card_qty_FR == 0) THEN]%% %%[ELSE]%%
+
+                                <tr class="m_qe_defaultlink" align="left" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:19px;color:#757575">
+                                    <td align="Center" width="60">%%=V(@Card_qty_FR)=%%</td>
+                                    <td align="Center">G9 Digital Guide Card(CA-GSL-00510 FR)</td>
+                                    <td align="Center" width="90">French</td>
+
+                                </tr>
+
+                                %%[ENDIF]%% %%[IF (EMPTY(@Brochure_qty) or @Brochure_qty == 0) THEN]%% %%[ELSE]%%
+                                <tr class="m_qe_defaultlink" align="left" valign="top" style="font-family:Arial,sans-serif;font-size:14px;line-height:19px;color:#757575">
+                                    <td align="Center" width="60">%%=V(@Brochure_qty)=%%</td>
+                                    <td align="Center">Punjabi/Chinese Brochure(CA-GSL-00531)</td>
+                                    <td align="Center" width="90">Punjabi / <br>Chinese</td>
+
+                                </tr>
+
+                                %%[ENDIF]%%
+
+
+                            </table>
+
+                            <table>
+                                <tr>
+                                    <td height="10" style="height:10px" width="600" border="1" cellspacing="0" cellpadding="0" align="left" style="width:600px" class="qe_wrapper" bgcolor="#f7f7f7"></td>
+                                </tr>
+                            </table>
+
+
+
+                            <table width="600" border="0" cellspacing="0" cellpadding="0" style="width:600px;" class="qe_wrapper">
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table width="400" border="0" cellspacing="0" cellpadding="0" align="left" style="width:400px;" class="qe_wrapper">
+                                            <tr>
+                                                <td align="left" valign="top" style="padding:17px 17px 10px 17px; background-color:#00877c;" bgcolor="#00877c" class="qe_pad3">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                                        <tr>
+                                                            <td align="left" valign="top"><img src="https://merck.onlinefiles.ca/Harvest-301-2899/logo2.png" width="126" alt="MERCK" border="0" style="display:block; max-width:126px; font:15px/18px Arial, sans-serif; color:#ffffff;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="top" style="padding-top:9px;">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="qe_wrapper">
+                                                                    <tr>
+                                                                        <td align="center" valign="top">
+                                                                            <table width="190" border="0" cellspacing="0" cellpadding="0" align="left" style="width:190px;" class="qe_wrapper">
+                                                                                <tr>
+                                                                                    <td align="left" valign="top" style="font:12px/16px Arial, sans-serif; color:#FFFFFF;">Merck Canada Inc.<br> 16750 Trans-Canada Highway<br> Kirkland (Quebec), Canada <br class="qe_none"> H9H 4M7</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" valign="top" class="qe_white qe_pb10" style="font:bold 12px/14px Arial, sans-serif; color:#FFFFFF; padding-bottom: 20px;"><a href="http://www.merck.ca/en/home/" target="_blank" style="text-decoration:none; color:#ffffff;">merck.ca</a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" valign="top" class="qe_white" style="font: 10px/13px Arial, sans-serif; color:#FFFFFF;"><span style="font-size:60%;line-height: 9px;vertical-align: top;mso-text-raise: 50%;">&reg;</span> Merck Sharp &amp; Dohme LLC. <br class="qe_none">Used under license.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" valign="top" class="qe_white" style="font: 10px/13px Arial, sans-serif; color:#FFFFFF;padding-top: 5px;">
+                                                                                        &copy; 2022 Merck &amp; Co., Inc., Rahway,<br class="qe_none"> NJ, USA and its affiliates. <br class="qe_none">All rights reserved.
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+
+                                                                            <!--[if gte mso 9]>
+                                                                                                            </td>
+                                                                                                            <td valign="top">
+                                                                                                        <![endif]-->
+
+                                                                            <table border="0" cellspacing="0" cellpadding="0" align="right" class="qe_wrapper">
+                                                                                <tr>
+                                                                                    <td align="left" class="qe_white_ul qe_pt10 qe_pb10" valign="top" style="font:bold 12px/20px Arial, sans-serif; color:#FFFFFF;padding-bottom: 6px;"><a href="https://www.merck.ca/en/privacy/" target="_blank" style="text-decoration:underline; color:#ffffff; white-space:nowrap;">Privacy Policy</a><br>
+                                                                                        <a href="http://www.mercklibrary.ca/unsubscribe.html?imtoken=%%token%%" target="_blank" style="text-decoration:underline; color:#ffffff; white-space:nowrap;">Preferences &amp; Unsubscribe</a><br>
+                                                                                        <a href="https://www.merck.ca/en/contact-us/" target="_blank" style="text-decoration:underline; color:#ffffff; white-space:nowrap;">Contact Us</a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" class="qe_white_ul" valign="top" style="font: 12px/16px Arial, sans-serif; color:#FFFFFF;">Need information about <br class="qe_none"> our products? <br>
+                                                                                        <img src="https://image.email.merck.ca/lib/fe8b1373776105747c/m/2/icon_phone_1371.png" width="12" alt="" border="0" style="display: inline-block;vertical-align:middle;">
+                                                                                        <a href="tel:18005672594" style="text-decoration:none; color:#ffffff; white-space:nowrap;">1-800-567-2594</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td align="left" valign="top" class="qe_white qe_pt10" style="font: 10px/14px Arial, sans-serif; color:#FFFFFF; padding-top:35px;">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="top">
+                                                    <table align="left" border="0" cellspacing="0" cellpadding="0" width="398" style="width:398px;" class="qe_wrapper">
+                                                        <tr>
+                                                            <td align="center" valign="top" class="qe_padtb6lr" style="padding:12px 30px 12px 16px;">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tr>
+                                                                        <td align="left" valign="middle" class="qe_w200" width="230" style="width:230px;"><img class="qe_w200" src="https://image.email.merck.ca/lib/fe8b1373776105747c/m/4/imc_en_2498.png" width="230" border="0" style="display:block; max-width:230px; font:15px/18px Arial, sans-serif; color:#000000;"
+                                                                                alt="Innovative Medicines Canada"></td>
+                                                                        <td style="font-size:0px;line-height:0px;"></td>
+                                                                        <td align="right" valign="middle" width="80" style="width:80px;">
+                                                                            <img src="https://merck.onlinefiles.ca/Harvest-301-2899/paab_logo.png" width="80" alt="PAAB" border="0" style="font-family:Arial, sans-serif;font-size:10px;line-height:12px;color:#000000;display:block;max-width:80px;"></td>
+                                                                    </tr>
+                                                                </table>
+
+
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!--[if gte mso 9]>
+                                                                        </td>
+                                                                        <td valign="top">
+                                                                    <![endif]-->
+
+                                        <table width="200" border="0" cellspacing="0" cellpadding="0" style="width:200px;" align="right" class="qe_wrapper">
+                                            <tr>
+                                                <td class="qe_none" align="right" valign="top" style="padding-top:20px;background-color:#6ECEB2;"><img src="https://merck.onlinefiles.ca/Harvest-301-2899/ftr_img.png" width="200" border="0" style="display:block; max-width:200px;" class="qe_img100" alt=""></td>
+                                            </tr>
+                                            <!-- Mobile Show -->
+                                            <!--[if !mso 9]><!-->
+                                            <tr>
+                                                <td height="0">
+                                                    <div class="hide_desktop" style="display:none;width:0;overflow:hidden;max-height:0!important">
+                                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                            <tr>
+                                                                <td align="center" valign="top"><img class="qe_img100" src="https://merck.onlinefiles.ca/Harvest-301-2899/ftr_img_mob.png" width="100%" border="0" style="display:block;  font:15px/18px Arial, sans-serif; color:#000000;"
+                                                                        alt=""></td>
+                                                            </tr>
+
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!--<![endif]-->
+                                            <!-- //Mobile Show -->
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Footer Section End -->
+
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" height="1" class="qe_none" style="height:1px; line-height:0px; font-size:0px;"><img src="https://merck.onlinefiles.ca/Harvest-301-2899/default_img.gif" width="600" height="1" alt="" border="0" style="display:block; max-width:600px;"></td>
+        </tr>
+    </table>
+
+
+    <div style="display:none">
+        %%Member_Busname%%,%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%,
+        <custom name="opencounter" type="tracking">
+            <a href="%%profile_center_url%%" alias="Update Profile">Update Profile/Unsubscribe</a></custom>
+    </div>
+</div>
