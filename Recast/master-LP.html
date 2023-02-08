@@ -50,8 +50,24 @@
     <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="2" allowHtml="true">
     <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="6" allowHtml="true">
 
+
+    <meta class="mktoColor" id="btnbgcolor2" mktoName="Reverse Btn- BG Color" default="#ffffff">
+    <meta class="mktoColor" id="btntextcolor2" mktoName="Reverse button - Text Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnbordercolor2" mktoName="Reverse button - Border Color" default="#29ABE2">
+
+    <meta class="mktoColor" id="btnhoverbackground2" mktoName="Reverse Btn - Hover Bg Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnfontclr2" mktoName="Reverse Btn - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btnhoverclr2" mktoName="Reverse Btn - Hover Text Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnhoverborder2" mktoName="Reverse Btn - Hover Border Color" default="#29ABE2">
+
     <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="" allowHtml="true">
+    <meta class="mktoBoolean" id="show-banner-logo" mktoName="Show Banner Log" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-banner-right" mktoName="Show Banner Right Col?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="banner-right-valign" mktoName="Banner Right Valign Top?" default="true" true_value="baseline" false_value="center" false_value_name="Middle" true_value_name="Top">     
+    <meta class="mktoBoolean" id="show-banner-left" mktoName="Show Banner Left Col?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-banner-button" mktoName="Show Banner CTA?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="https://dummyimage.com/1800x1600/e0e4e0/fff" allowHtml="true">
+    <meta class="mktoString" id="banner-right-maxwidth" mktoName="Banner Right COl max width" default="400" allowHtml="true">
     <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#e0e4e1">
     <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
     <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
@@ -67,16 +83,27 @@
     <meta class="mktoColor" id="btnhoverclr" mktoName="Free-Text - Btn Hover Text Color" default="#29ABE2">
     <meta class="mktoColor" id="btnhoverborder" mktoName="Free-Text - Btn Hover Border Color" default="#29ABE2">
 
+    <meta class="mktoBoolean" id="bannerimgshow" mktoName="Show Banner Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="bannerformshow" mktoName="Show Banner Form?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
     <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
+    <meta class="mktoString" id="formtextbgcolor" mktoName="Form Text Section Bf Color" default="#ffffff" allowHtml="true">
+
     <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#F2F5F4">
     <meta class="mktoString" id="formtextpad" mktoName="Form/Text - Padding (px)" default="20" allowHtml="true">
-    <meta class="mktoBoolean" id="formtexttwocol" mktoName="Form/Text - First Row Two Columns?" default="false" true_value="#formtext .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #formtext .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#formtext .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
+
+
+    <meta class="mktoBoolean" id="copy-show" mktoName="Show Copy" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoString" id="copy-bgcolor" mktoName="Copy BG Color" default="#" allowHtml="true">  
+    <meta class="mktoString" id="copy-mg-top" mktoName="Copy Top Margin" default="0" allowHtml="true">
+    <meta class="mktoString" id="copy-mg-btm" mktoName="Copy Btm Margin" default="3" allowHtml="true">
+
+
     <meta class="mktoString" id="formtextpsize" mktoName="Form/Text - Label Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="formtextpweight" mktoName="Form/Text - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Text - Label Color" default="#323e48">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#323e48"> 
-    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show Form/Text Label?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Text - Field Background Color" default="#ffffff">
     <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Text - Field Border Color" default="#323e48">
     <meta class="mktoString" id="formtextborderheight" mktoName="Form/Text - Field Border Size (px)" default="1" allowHtml="true">
@@ -117,27 +144,35 @@
     <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
 
-    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#ffffff">
-    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#F2F5F4">
-    <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="false" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-    <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
-    <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#323e48">
-    <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#ffffff">
-    <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#323e48">
-    <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-    <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#29ABE2">
-    <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#29abe2">
-    <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
-    <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-    <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="3" allowHtml="true">
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Banner - Text BG Color" default="#F2F5F4">
+
     <meta class="mktoColor" id="btmButtonHoverBGColor" mktoName="Btm Form - Btn Hover Bg Color" default="#ffffff">
     <meta class="mktoColor" id="btmButtonHoverColor" mktoName="Btm Form-  Btn Text Color" default="#29abe2">
     <meta class="mktoColor" id="btmButtonHoverBorder" mktoName="Btm Form-  Btn Hover Border Color" default="#29ABE2">
+
+    <meta class="mktoBoolean" id="event-show" mktoName="Show Calendar Event" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="event-bg-color" mktoName="Event Bg Color" default="#29ABE2">  
+
+    <meta class="mktoBoolean" id="speakers-show" mktoName="Show Speakers" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="speaker1-show" mktoName="Show Speaker 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="speaker2-show" mktoName="Show Speaker 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="speaker3-show" mktoName="Show Speaker 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="speaker4-show" mktoName="Show Speaker 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoColor" id="speakers-bg-color" mktoName="Event Bg Color" default="#f2f5f4">
+    <meta class="mktoString" id="speaker-padding-top" mktoName="Speakers Top Pad (rem)" default="1" allowHtml="true">  
+    <meta class="mktoString" id="speaker-padding-btm" mktoName="Speakers Btm Pad (rem)" default="3" allowHtml="true">  
+
+    <meta class="mktoBoolean" id="benefits-show" mktoName="Show Benefits" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="show-benefit1" mktoName="Show Benefit 1" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="show-benefit2" mktoName="Show Benefit 2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="show-benefit3" mktoName="Show Benefit 3" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="show-benefit4" mktoName="Show Benefit 4" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+
+    <meta class="mktoBoolean" id="centercta-show" mktoName="Show Benefits" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+    <meta class="mktoBoolean" id="button-reverse-show" mktoName="Show Reversed clr button?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+    <meta class="mktoString" id="center-cta-mgtop" mktoName="Center CTA margin top" default="1" allowHtml="true">  
+    <meta class="mktoString" id="center-cta-mgbtm" mktoName="Center CTA margin bottom" default="3" allowHtml="true">  
 
     <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="footershow2" mktoName="Show Footer 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -150,22 +185,35 @@
 
     <meta class="mktoString" id="bannerorder" mktoName="Banner - Order" default="1" allowHtml="true">
     <meta class="mktoString" id="formtextorder" mktoName="Form/Text - Order" default="2" allowHtml="true">
+    <meta class="mktoString" id="copy-order" mktoName="Form/Text - Order" default="2" allowHtml="true">
     <meta class="mktoString" id="threecolorder" mktoName="Form/Text - Three Col - Order" default="3" allowHtml="true">
     <meta class="mktoString" id="imgrightorder" mktoName="Image Right - Order" default="4" allowHtml="true">
     <meta class="mktoString" id="imgleftorder" mktoName="Image Left - Order" default="5" allowHtml="true">
     <meta class="mktoString" id="twocoliconsorder" mktoName="Two Col - Order" default="6" allowHtml="true">
     <meta class="mktoString" id="videoorder" mktoName="Video - Order" default="7" allowHtml="true">
-    <meta class="mktoString" id="btmformorder" mktoName="Bottom Form - Order" default="8" allowHtml="true">
+    <meta class="mktoString" id="btmformorder" mktoName="Bottom Banner - Order" default="8" allowHtml="true">
+    <meta class="mktoString" id="calendarevent-order" mktoName="Celendar Event - Order" default="9" allowHtml="true">
+    <meta class="mktoString" id="speakers-order" mktoName="Speakers- Order" default="10" allowHtml="true">
+    <meta class="mktoString" id="benefits-order" mktoName="Benefits - Order" default="11" allowHtml="true">
+    <meta class="mktoString" id="centercta-order" mktoName="Benefits - Order" default="12" allowHtml="true">
 
 
 
     <style>
-        .mktoText {
-            border: solid 10px
-        }
+
       ${googleimport}
       * {
         font-family: '${globalfont}',Arial, sans-serif;
+      }
+      .flex-column, .flex-row {
+        display: flex;
+      }
+      .flex-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .flex-column {
+        flex-direction: column;
       }
       img{
         max-width:100%;
@@ -184,10 +232,47 @@
         order:${bannerorder};
 
       }
+      #bannerform {
+        display: ${bannerformshow} !important;
+      }
+      #bannerimgright {
+        display: ${bannerimgshow};
+      }
+      #banner .logo {
+        display: ${show-banner-logo};
+      }
+      #banner .flex-row {
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      #banner .left, #banner .right {
+        flex: 1 0 400px;
+      }
+      #banner .right {
+        display: ${show-banner-right};
+        max-width: ${banner-right-maxwidth}px;
+        margin: 0 auto;
+        align-items: ${banner-right-valign};
+      }
+
+      #banner .left {
+        display: ${show-banner-left};
+      }
+      #banner .button {
+        display:${show-banner-button};
+      }
       #formtext {
         background-color:${formtextbgcolor};
         display:${formtextshow};
         order:${formtextorder};
+      }
+      #copymodule {
+        background-color: ${copy-bgcolor};
+        display: ${copy-show};
+        order: ${copy-order};
+      }
+      #copymodule .section {
+        margin: ${copy-mg-top}rem auto ${copy-mg-btm}rem !important;
       }
       #threecol {
         background-color:${threecolbgcolor};
@@ -218,12 +303,160 @@
         background-color:${videoleftbgcolor};
       }
       #btmform {
-        background-color:${btmformbgcolor};
+
         display:${btmformshow};
         order:${btmformorder};
       }
       #btmform .container_inner {
         background-color:${btmforminnerbgcolor};
+      }
+      #calendarEvent {
+        display: ${event-show};
+        order: ${calendarevent-order};
+        background: ${event-bg-color};
+      }
+      #calendarEvent .section {
+        padding: 3rem 0 !important;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+      #calendarEvent .col {
+        width: calc((100% / 3)  - 2rem);
+      }
+      #calendarEvent img {
+        max-width: 50px;
+        height: 50px;
+        width: auto;
+        margin-bottom: 1rem;
+      }
+      #calendarEvent, #calendarEvent h3 {
+        color: #ffffff;
+        font-weitght: 700;
+      }
+      #calendarEvent span {
+        color: #F8DA1E;
+        font-size: 22px;
+      }
+      #speakers {
+        display: ${speakers-show};
+        order: ${speakers-order};
+        background: ${speakers-bg-color};
+        margin: 0 auto;
+        padding: ${speaker-padding-top}rem 0 ${speaker-padding-btm}rem !important;
+      }
+      #speakers img {
+        margin-bottom: 1rem;
+      }
+      #speakersheadline {
+        text-align: center;
+        margin: 3rem 0 0;
+      }
+      #speakers .col:nth-child(1) {
+        display: ${speaker1-show};
+      }
+      #speakers .col:nth-child(2) {
+        display: ${speaker2-show};
+      }
+      #speakers .col:nth-child(3) {
+        display: ${speaker3-show};
+      }
+      #speakers .col:nth-child(4) {
+        display: ${speaker4-show};
+      }
+      .dots {
+        color: #29ABE2;
+        font-size: 32px;
+      }
+      #speakers .flex-row, #benefits .flex-row {
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        grid-column-gap: 2rem;
+        grid-row-gap: 0.5rem;
+        margin-top: 3rem auto;
+      }
+      #speakers .col {
+        text-align: center;
+      }
+
+      #speakers img {
+        border-radius: 50%;
+        border: solid 2px #29ABE2;
+      }
+      #benefits {
+        display: ${benefits-show};
+        order: ${benefits-order};
+      }
+      #benefits .flex-row {
+        grid-column-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      }
+      #benefits .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+      }
+      #benefits .col:nth-child(1) {
+        display: ${show-benefit1};
+      }
+      #benefits .col:nth-child(2) {
+        display: ${show-benefit2};
+      }
+      #benefits .col:nth-child(3) {
+        display: ${show-benefit3};
+      }
+      #benefits .col:nth-child(4) {
+        display: ${show-benefit4};
+      }
+      #benefits .img-wrapper {
+        background:#ecf8fc; 
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        border-radius:50%;
+        padding: 1rem;
+        justify-content: center;
+        laign-items: center;
+        margin-bottom: 1rem;
+      }
+      #benefits img {
+        height: 100%;
+      }
+      #centercta {
+        display: ${centercta-show};
+        order: ${centercta-order}
+      }
+      #centercta .section {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: ${center-cta-mgtop}rem auto ${center-cta-mgbtm}rem !important;
+      }
+      #centercta .flex-row {
+        gap: 2rem;
+      }
+      #centercta .button {
+        padding: 0;
+      }
+      .button-reverse {
+        display: ${button-reverse-show};
+      }
+      .button-reverse a {
+        background-color:${btnbgcolor2} !important;
+        border:2px solid ${btnbordercolor2} !important;
+        color:${btntextcolor2} !important;
+        font-weight:bold;
+        text-decoration:none;
+        display:inline-block;
+      }
+      .button-reverse a:hover, .button-reverse a:focus {
+        background: ${btnhoverbackground2} !important;
+        border: 2px solid ${btnhoverborder2} !important;
+        color: ${btnfontclr2} !important;
+
       }
       #footer {
         background-color:${footerbgcolor};
@@ -245,11 +478,12 @@
         flex-wrap: wrap;
         gap: 1.5rem;
       }
-      }
+
       .logo img{
         width:${logowidth}px;
         height:auto;
         vertical-align:middle;
+
       }
       #footer .col {
         width: calc((100%/ 4 ) - 4.5rem);
@@ -322,22 +556,26 @@
         border: 2px solid ${btnhoverborder};
         color: ${btnhoverclr};
       }
-      #formtext .mktoForm .mktoLabel {
+
+      #formtext .mktoForm .mktoLabel,
+      #bannerform .mktoForm .mktoLabel {
         color:${formtextpcolor}!important;
         font-size:${formtextpsize}px!important;
         font-weight:${formtextpweight}!important;
         display:${showformtextlabel}!important;
       }
-      #formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select {
+      #formtext .mktoForm input, #formtext .mktoForm textarea,  #formtext .mktoForm select,
+      #bannerform .mktoForm input, #bannerform .mktoForm textarea,  #bannerform .mktoForm select {
         border:${formtextbordercolor} ${formtextborderheight}px solid;
         border-radius:${formtextborderradius}px!important;
         background-color:${formtextfieldcolor}!important;
         color:${formtextpcolor}!important;
         box-shadow:0 !important;
         box-shadow:none !important;
-        height:50px !important;
-        min-height:40px !important;
-        padding: 5px 10px !important;
+        height: 50px;
+    min-height: 40px;
+    padding: 5px 10px !important;
+        
       }
       .mktoForm input, .mktoForm textarea, .mktoForm select {
         box-shadow:0 !important;
@@ -359,10 +597,12 @@
       .mktoForm .mktoButtonWrap.mktoGlow .mktoButton{
         box-shadow:none !important;
       }
-      #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder {
+      #formtext .mktoForm input::placeholder, #formtext .mktoForm textarea::placeholder,  #formtext .mktoForm select::placeholder,
+      #bannerform .mktoForm input::placeholder, #bannerform .mktoForm textarea::placeholder,  #bannerform .mktoForm select::placeholder {
         color:${formtextpcolor}!important;
       }
-      #formtext .mktoForm .mktoButton {
+      #formtext .mktoForm .mktoButton,
+      #bannerform .mktoForm .mktoButton {
         background-color:${formtextbtnbgcolor}!important;
         background-image: none !important;
         border:2px solid ${formtextbtnbordercolor}!important;
@@ -376,7 +616,9 @@
         display:inline-block;
       }
       #formtext .mktoForm .mktoButton:hover,
-      #formtext .mktoForm .mktoButton:focus {
+      #formtext .mktoForm .mktoButton:focus,
+      #bannerform .mktoForm .mktoButton:hover,
+      #bannerform .mktoForm .mktoButton:focus {
         color: ${formButtonHoverColor} !important;
         background-color: ${formButtonHoverBGColor} !important;
         background: ${formButtonHoverBGColor} !important;
@@ -384,13 +626,29 @@
       }
 
 
-      ${formtexttwocol}
-
       .mktoForm * {
         font-family: '${globalfont}',Arial, sans-serif !important;
       }
       .mktoForm .mktoError .mktoErrorMsg{
         padding: 5px 12px !important;
+      }
+      
+        .mktoLogicalField {
+        width: 100% !important;
+        margin-top: 1rem !important; 
+      }
+    .mktoForm .mktoLogicalField input {
+        float: none !important;
+        height: 20px !important;
+        min-height: unset !important;
+        float: none !important;
+        height: 20px !important;
+        min-height: unset !important;
+      }
+      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+        margin-top: -35px !important;
+        margin-bottom: 30px !important;
+        margin-left: 31px !important;
       }
       #footer .logowidthl {
         width: ${logowidth2}px;
@@ -448,42 +706,10 @@
       #form {
         background-color:${formbgcolor};
       }
-      #btmform .mktoForm .mktoLabel {
-        color:${btmformpcolor}!important;
-        font-size:${btmformpsize}px!important;
-        font-weight:${btmformpweight}!important;
-        display:${showbtmformlabel}!important;
+      .mktoForm .mktoFormRow {
+        margin: 0 !important;
       }
-      #btmform .mktoForm input, #btmform .mktoForm textarea,  #btmform .mktoForm select {
-        border:${btmformbordercolor} ${btmformborderheight}px solid;
-        border-radius:${btmformborderradius}px!important;
-        background-color:${btmformfieldcolor}!important;
-        color:${btmformpcolor}!important;
-      }
-      #btmform .mktoForm input::placeholder, #btmform .mktoForm textarea::placeholder,  #btmform .mktoForm select::placeholder {
-        color:${btmformpcolor}!important;
-      }
-      #btmform .mktoForm button.mktoButton {
-        background:${btmformbtnbgcolor}!important;
-        background-image: none !important;
-        background-color:${btmformbtnbgcolor}!important;
-        border:2px solid ${btmformbtnbordercolor}!important;
-        border-radius:${btmformbtnborderradius}px!important;
-        font-size:${btmformbtntextsize}px!important;
-        padding:10px 24px!important;
-        color:${btmformbtntextcolor}!important;
-        font-weight:bold!important;
-        text-decoration:none!important;
-        width: auto!important!important;
-        display:inline-block;
-      }
-      #btmform .mktoForm button.mktoButton:hover,
-      #btmform .mktoForm button.mktoButton:focus {
-        color: ${btmButtonHoverColor} !important;
-        background-color: ${btmButtonHoverBGColor} !important;
-        background: ${btmButtonHoverBGColor} !important;
-        border: solid 2px ${btmButtonHoverBorder} !important;
-      }
+
 
       ${btmformtwocol}
       #threecol .col33 {
@@ -510,6 +736,9 @@
       }
 
       @media only screen and (max-width: 900px){
+        #banner .right, #banner .left {
+          max-width: 100%;
+        }
         .headlinetext h1 {
           font-size:35px;
         }
@@ -539,6 +768,9 @@
           font-size:16px!important;
           padding:10px 24px!important;
         }
+        #speakers .flex-row {
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
       @media (max-width: 1200px) {
         footer .row2 .col {
@@ -565,6 +797,16 @@
           flex: 1 0 180px;
         }
       }
+      @media (max-width:520px) {
+        #calendarEvent .flex-row {
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+        }
+        #speakers .flex-row {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
       @font-face {
         font-family: 'ArchiaSemiBold';
         src:  url('http://it.recastsoftware.com/rs/563-ODB-688/images/Archia-SemiBold.ttf') format('truetype'),
@@ -585,7 +827,7 @@
     <div class="flex">
       <!-- Banner -->
       <div class="container_100" id="banner">
-        <div class="container_inner">
+        <div class="container_inner flex-row">
           <div class="left">
             <div class="logo">
               <div class="mktoText" id="navlogo" mktoName="Logo">
@@ -601,9 +843,12 @@
             <div class="mktoText button" id="bannerbtn" mktoName="Banner - Button"><a href="#">CTA BUTTON</a>
             </div>
           </div>
-          <div class="right">
+          <div class="right flex-column">
             <div class="mktoImg" id="bannerimgright" mktoName="Banner - Image">
               <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/BG_Image_Icon.png">
+            </div>
+            <div class="mktoForm" id="bannerform" mktoName="Banner - Form">
+
             </div>
           </div>
         </div>
@@ -625,12 +870,27 @@
               <h2>Form Headline</h2>
             </div>
             <div class="mktoForm" id="formtextForm" mktoName="Form/Text - Form">
-              
+
             </div>
           </div>
         </div>
       </div>
       <!-- END Form/Text -->
+      <!-- Copy Module -->
+      <div class="container_100" id="copymodule">
+        <div class="container_inner section">
+          <div class="mktoText" id="copy" mktoName="Copy Text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet. Quisque at egestas neque, rhoncus posuere mi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore natus nesciunt, eveniet odit sequi eos molestiae fuga nostrum quia ab iusto. Numquam ea, laboriosam consequuntur quae autem quam, temporibus beatae exercitationem natus dignissimos consectetur. Debitis vitae et enim recusandae omnis optio dolore, totam laborum minima qui maxime, ea minus voluptatibus.</p>
+            <ul>
+              <li>Fusce vel nisi vel velit finibus congue.</li>
+              <li>Integer convallis leo eu lacus vestibulum, a rhoncus eros tincidunt.</li>
+              <li>Mauris libero metus, malesuada in nulla id, varius lobortis nisi cu.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END of Copy Module -->
       <!-- Three Column -->
       <div class="container_100" id="threecol">
         <div class="container_inner section">
@@ -793,7 +1053,7 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique rem cupiditate necessitatibus? Laboriosam vero pariatur animi velit error impedit asperiores!</p>
             </div>
             <div class="mktoForm" id="btmFormform" mktoName="Bottom Form">
-<script src="//it.recastsoftware.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1"></form> <script>MktoForms2.loadForm("//it.recastsoftware.com", "563-ODB-688", 1);</script>
+
             </div>
           </div>
           <div class="formright">
@@ -802,13 +1062,115 @@
         </div>
       </div>
       <!-- END Bottom Form -->
+      <!-- Calendar Event -->
+      <div class="container_100" id="calendarEvent">
+        <div class="container_inner section flex-row">
+          <div class="col mktoText" mktoName="Event Detail 1" id="detail1">
+            <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/calendar.png" alt="icon" />
+            <h3>Date:</h3>   
+            <span>Nov 12</span>
+          </div>
+          <div class="col mktoText" mktoName="Event Detail 1" id="detail2">
+            <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/clock.png" alt="icon" />
+            <h3>Time:</h3>   
+            <span>09:00 AM</span>
+          </div>
+          <div class="col mktoText" mktoName="Event Detail 1" id="detail3">
+            <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/circle-paly-solid.png" alt="icon" />
+            <h3>Duration:</h3>   
+            <span>2 HRS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Calendar Event -->
+
+      <!-- Speakerts Section -->
+      <div class="container_100" id="speakers">
+        <div class="mktoText" mktoName="Speakers Headline" id="speakersheadline">
+          <h2>OUR SPEAKERS</h2>
+          <span class="dots">•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•</span>
+        </div>
+        <div class="container_inner section flex-row">
+
+          <div class="col mktoText" mktoName="Speaker 1" id="speaeker1">
+            <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
+            <h3>John Doe</h3>   
+            <span>Speaker Title</span>
+          </div>
+          <div class="col mktoText" mktoName="Speaker 1" id="speaeker2">
+            <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
+            <h3>John Doe</h3>   
+            <span>Speaker Title</span>
+          </div>
+          <div class="col mktoText" mktoName="Speaker 1" id="speaeker3">
+            <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
+            <h3>John Doe</h3>   
+            <span>Speaker Title</span>
+          </div>
+          <div class="col mktoText" mktoName="Speaker 1" id="speaeker4">
+            <img src="https://it.recastsoftware.com/rs/563-ODB-688/images/ChrisA-circle_150px.png" alt="speakerheadshot" />
+            <h3>John Doe</h3>   
+            <span>Speaker Title</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Speakers -->
+
+      <!-- Points Section -->
+      <div class="container_100" id="benefits">
+        <div class="container_inner section flex-row">
+
+          <div class="col mktoText" mktoName="Benefit 1" id="benefit1">
+            <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
+            <h3>Benefit 1</h3>   
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
+          </div>
+          <div class="col mktoText" mktoName="Benefit 2" id="benefit2">
+            <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
+            <h3>Benefit 2</h3>   
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
+          </div>
+          <div class="col mktoText" mktoName="Benefit 3" id="benefit3">
+            <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
+            <h3>Benefit 3</h3>   
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
+          </div>
+          <div class="col mktoText" mktoName="Benefit 4" id="benefit4">
+            <div class="img-wrapper"><img src="https://it.recastsoftware.com/rs/563-ODB-688/images/light-bulb.png" alt="benefits icon" /></div>
+            <h3>Benefit 4</h3>   
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, id.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Points -->
+      <!-- Center CTA -->
+      <div class="container_100" id="centercta">
+        <div class="container_inner section flex-column">
+          <div class="mktoText" mktoName="CTA Headline" id="ctaheadline">
+            <h2>Center CTA Headline</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+          </div>
+          <div class="flex-row">
+            <div class="mktoText button" id="centerbtn1" mktoname="Banner - Button"><a href="#">CTA BUTTON 1</a>
+            </div>
+            <div class="mktoText button button-reverse" id="centerbtn2" mktoname="Banner - Button"><a href="#">CTA BUTTON 2</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of Center CTA -->
     </div>
+
     <!-- Footer -->
     <footer class="container_100" id="footer">
       <div class="container_inner section">
-        <div class="logo-container col">
-          <div class="mktoText" id="footerlogo" mktoName="Logo">
-            <a href="#">
+        <div class="logo-container flex-col">
+          <div class="mktoImg" id="footerlogo" mktoName="Footer Logo">
+            <a href="https://www.recastsoftware.com/">
               <img class="logowidthl" alt="logo" src="https://it.recastsoftware.com/rs/563-ODB-688/images/Recast-Logo-White_Horizontal.png" border="0">
             </a>
           </div>
@@ -895,6 +1257,13 @@
 
     <script src='https://it.recastsoftware.com/rs/563-ODB-688/images/mac-jquery.min.js'></script>
     <script src="https://it.recastsoftware.com/rs/563-ODB-688/images/video-script.js"></script>
+       <script>
+      MktoForms2.whenReady(function(form) {
+
+        Array.from(document.querySelectorAll('input[type="hidden"]')).map((x) => x.parentNode.className == 'mktoFormRow' ? x.parentNode.style = 'position:absolute;top:0;visibility:hidden' : '')
+
+      });
+    </script>
   </body>
 
 </html>
