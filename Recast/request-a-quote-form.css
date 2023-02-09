@@ -228,6 +228,7 @@ mktoHtmlText.mktoHasWidth {
 }
 
 .mktoCheckboxList input+label:before {
+    cursor: pointer;
     content: '';
     background: #fff;
     border: 1px solid #323e48;
@@ -246,6 +247,7 @@ mktoHtmlText.mktoHasWidth {
 .mktoForm .mktoRadioList>label,
 .mktoForm .mktoCheckboxList>label {
     margin-left: 0!important;
+    width: max-content !important;
 }
 
 .mktoCheckboxList input:checked+label:before {
@@ -289,13 +291,14 @@ mktoHtmlText.mktoHasWidth {
 }
 
 .mktoForm .mktoCheckboxList input:checked+label:after {
+    cursor: pointer;
     transform: scale(1) rotate(0);
     content: "";
     background: url(https://it.recastsoftware.com/rs/563-ODB-688/images/Asset-1-1.svg) no-repeat;
     background-size: 16px;
     position: absolute;
-    top: 11px;
-    left: 6px;
+    top: 8px;
+    left: 4px;
     padding: 10px;
     line-height: 0;
     -webkit-transition: all .2s;
@@ -324,6 +327,11 @@ mktoHtmlText.mktoHasWidth {
     .mktoForm .mktoFormRow:nth-child(12) {
         width: 100%;
         float: left;
+    }
+    .mktoCheckboxList {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -20rem !important;
     }
 }
 

@@ -48,10 +48,14 @@
     width: 100%!important;
     outline: none!important;
     padding: 15px 15px 12px!important;
-    border: 1px solid #323e48!important;
+    border: 1px solid #323e48 !important;
     box-shadow: none!important;
-    background-color: #f2f5f4!important;
-    color: #323e48!important;
+    background-color: #f2f5f4 !important;
+    color: #323e48 !important;
+}
+
+.mktoForm select.mktoField {
+    color: #757575 !important;
 }
 
 .mktoLabel {
@@ -81,12 +85,12 @@
 }
 
 .mktoButtonRow {
-    width: 100%!important;
-    text-align: center!important;
+    width: 100% !important;
+    text-align: center !important;
 }
 
 .mktoButtonWrap.mktoInset {
-    margin-left: 0px!important;
+    margin-left: 0px !important;
 }
 
 .mktoButtonWrap {
@@ -152,8 +156,12 @@
         float: left;
     }
     .mktoForm .mktoFormRow:nth-child(5) {
-        width: 100% !important;
-        margin-left: 0 !important;
+        width: 100%;
+        float: left;
+        margin-left: 0;
+    }
+    .mktoForm .mktoFormRow:nth-child(7) {
+        margin-bottom: -15rem !important;
     }
 }
 
@@ -163,6 +171,32 @@ mktoHtmlText.mktoHasWidth {
     font-size: 16px!important;
 }
 
+.mktoForm .mktoFormRow:nth-child(9) {
+    width: 49%;
+    float: left;
+    margin-left: 2%;
+    margin: 0 0;
+}
+
+.mktoForm .mktoFormRow:nth-child(10) {
+    width: 49%;
+    float: left;
+    margin: 0 0;
+}
+
+.mktoForm .mktoFormRow:nth-child(11) {
+    width: 49%;
+    float: left;
+    margin-left: 2%;
+    margin: 0 0;
+}
+
+.mktoForm .mktoFormRow:nth-child(12) {
+    width: 49%;
+    float: left;
+    margin: 0 0;
+}
+
 .mktoForm .mktoFormRow:nth-child(8) .mktoLabel,
 .mktoForm .mktoFormRow:nth-child(9) .mktoLabel,
 .mktoForm .mktoFormRow:nth-child(10) .mktoLabel,
@@ -170,32 +204,6 @@ mktoHtmlText.mktoHasWidth {
 .mktoForm .mktoFormRow:nth-child(12) .mktoLabel {
     margin-left: 20px;
     padding-top: 0px!important;
-}
-
-::-webkit-input-placeholder {
-    color: #323F48;
-}
-
-::-moz-placeholder {
-    color: #323F48;
-}
-
-:-ms-input-placeholder {
-    color: #323F48;
-}
-
-:-moz-placeholder {
-    color: #323F48;
-}
-
-.mktoCheckboxList {
-    display: grid;
-    width: 100% !important;
-    grid-template-columns: 1fr 1fr;
-}
-
-.mktoLogicalField.mktoCheckboxList.mktoHasWidth {
-    width: 100% !important;
 }
 
 .mktoCheckboxList input {
@@ -212,19 +220,7 @@ mktoHtmlText.mktoHasWidth {
 }
 
 .mktoCheckboxList label {
-    position: right;
-    width: 45em;
-    margin-right: 1em;
-    font-family: "Work Sans", sans-serif;
-    letter-spacing: .17px!important;
-    line-height: 1.42!important;
-    font-size: 16px!important;
-    -webkit-transition: .2s all;
-    transition: .2s all!important;
-    cursor: text!important;
-    color: #323e48!important;
-    width: 100% !important;
-    font-weight: normal!important;
+    position: relative;
 }
 
 .mktoCheckboxList input+label:before {
@@ -233,9 +229,8 @@ mktoHtmlText.mktoHasWidth {
     border: 1px solid #323e48;
     display: inline-block;
     vertical-align: middle;
-    width: 1.2em;
-    height: 1.2em;
-    font-size: 23px;
+    width: 15px;
+    height: 15px;
     padding: 2px;
     margin-right: 10px;
     text-align: center;
@@ -253,53 +248,18 @@ mktoHtmlText.mktoHasWidth {
     border: 1px solid #29abe2;
 }
 
-.mktoForm .mktoRadioList>label,
-.mktoForm .mktoCheckboxList>label {
-    margin-left: 0!important;
-    position: relative;
+.mktoLogicalField.mktoCheckboxList.mktoHasWidth {
+    width: 20px!important;
 }
 
-.mktoForm .mktoCheckboxList input:checked+label:before {
-    background: #29abe2;
-    border: 1px solid #29abe2;
-    height: 22.3px !important;
-    width: 22.3px !important;
-}
-
-.mktoCheckboxList input+label:before {
-    content: '';
-    background: #fff;
-    border: 1px solid #323e48;
-    display: inline-block;
-    vertical-align: middle;
-    height: 22.3px !important;
-    width: 22.3px !important;
-    font-size: 23px;
-    padding: 2px;
-    margin-right: 10px;
-    text-align: center;
-    border-radius: .2em;
-    margin-top: 5px;
-}
-
-.mktoForm .mktoFormRow:nth-child(8) .mktoLabel {
-    width: 100% !Important;
-    display: flex;
-    margin-left: 0 !important;
-}
-
-.mktoForm .mktoCheckboxList input:checked+label:after {
-    transform: scale(1) rotate(0);
+.mktoCheckboxList input:checked+label:after {
     content: "";
-    background: url(https://it.recastsoftware.com/rs/563-ODB-688/images/Asset-1-1.svg) no-repeat;
-    background-size: 16px;
+    background: url('https://www.recastsoftware.com/wp-content/uploads/2021/02/Asset-1-1.svg');
+    color: #fff;
     position: absolute;
-    top: 11px;
-    left: 6px;
-    padding: 10px;
-    line-height: 0;
-    -webkit-transition: all .2s;
-    transition: all .2s;
+    top: 10px;
+    left: 5px;
+    padding: 6px;
 }
 
 @media (max-width: 768px) {
@@ -340,6 +300,7 @@ mktoHtmlText.mktoHasWidth {
 .mktoForm select.mktoField,
 .mktoForm textarea.mktoField {
     height: 50px;
+    border-radius: 3px !important;
 }
 
 .mktoHtmlText.mktoHasWidth,
@@ -359,4 +320,18 @@ mktoHtmlText.mktoHasWidth {
 
 .mktoHtmlText.mktoHasWidth {
     width: 100%!important;
+}
+
+@media (max-width: 468px) {
+    .mktoHtmlText.mktoHasWidth,
+    .mktoForm input[type="text"],
+    .mktoForm input[type="url"],
+    .mktoForm input[type="email"],
+    .mktoForm input[type="tel"],
+    .mktoForm input[type="number"],
+    .mktoForm input[type="date"],
+    .mktoForm select.mktoField,
+    .mktoForm textarea.mktoField {
+        height: initial !important;
+    }
 }
