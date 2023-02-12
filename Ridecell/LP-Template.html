@@ -40,7 +40,10 @@
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#FFF">
 
                                                                                                                         
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free Text? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="show-gradient" mktoName="Show Gradient Line? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="benefits-show" mktoName="Show Benefits" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+
     <meta class="mktoColor" id="benefits-bg-color" mktoName="Benefits - Background Color" default="#ededed">
      <meta class="mktoColor" id="benefits-txt-color" mktoName="Benefits - Text Color" default="#474747">   
     <meta class="mktoBoolean" id="show-benefit1" mktoName="Show Benefit 1" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -64,9 +67,9 @@
     <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="http://go.marketing-automation.ca/rs/217-NBW-905/images/img_bg_EcosystemAndPartners.jpg">
     <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="150">
     
-    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="80">
-    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="80">
-    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="80">
+    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="10">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="10">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="15">
     <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
 
     <!-- Free-Text Section Styling -->
@@ -95,6 +98,10 @@
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
+      
+    <meta class="mktoString" mktoName="FreeText Order" id="freetext-order" default="1">
+    <meta class="mktoString" mktoName="Gradient Order" id="gradient-order" default="2">
+    <meta class="mktoString" mktoName="Benefits Order" id="benefits-order" default="3">
 
     
 
@@ -112,7 +119,7 @@
         font-family: ${googlefontfamily} !important;
       }
       
-      body {background:#fff;} 
+      body {background:#fff;display: flex;flex-direction: column;} 
       
       h1{
         font-size: ${h1fontsize}px;
@@ -188,12 +195,8 @@
         margin:0 auto;
         padding:${sectionpaddingtb}px 0;
       }
-      .form-container{
-        min-height:20px;
-        
-      }
+  
 
-      
       
       #header{
         background-image:url('${bannerimage}');
@@ -203,49 +206,52 @@
          clip-path: polygon(0 0, 100vw 0, 100vw 80%, 0 100%);
          background-color: ${bannerclr};
          background-blend-mode: overlay;
+         order: -100;
       }
       #header .column {
-        border: solid 1px red;
         flex: 1 0 400px;
         width: calc((100% / 2) - 2rem);
       }
       #header .column:nth-child(3) {
         padding: 1rem 3rem;
-        border: solid 5px blue;
+        position: relative;
       }
       #header .formcontainer {
         background: ${formbgclr};
         border-radius: 5px;
+        padding: 1.5rem 2rem;
+        position: absolute;
       }
+
+
       #freetext{
         background-color:${freeTextBackgroundColor};
         display:${showsec1};
+        order: ${freetext-order};
       }
  
- 
-      
       #header .section{
         padding-top:${headerpaddingtop}px;
         padding-bottom:${headerpaddingbtm}px;
       }
         #header .logo-container{
-        position:absolute;
-        top:${sectionpaddingtb}px;
-        left:0;
+        padding-top:${logopaddingtop}px;
+        padding-bottom: ${logopaddingbtm}px;
         width:100%;
       }
       #header .logo-container img{
         width:${toplogowidth}px;
       }
      
-   
-    
 
       #header h1 {
         color: ${bannerHeaderColor} !important;
         font-weight: 600;
       }
-
+      #header #formheadline {
+        color: #000000;
+        margin-bottom: 2rem;
+      }
       #header p,
       #header ul,
       #header li {
@@ -267,6 +273,15 @@
         color: ${freeTextTextColor} !important;
       }
 
+#gradient {
+  display: ${show-gradient};
+  width: 100%;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(105,191,75) , rgb(55,197,238) , rgb(156,85,162));
+    order: ${gradient-order};
+}
  #benefits {
         display: ${benefits-show};
         order: ${benefits-order};
@@ -275,6 +290,7 @@
       }
   #benefits .flex-row {
     justify-content: space-around;
+    align-items: flex-start;
   }
       #benefits .col {
         display: flex;
@@ -284,6 +300,7 @@
         text-align: center;
         padding: 0 1rem;
         width: calc((100% /  4) - 2rem);
+        flex: 1 0 250px;
       }
       #benefits .col:nth-child(1) {
         display: ${show-benefit1};
@@ -299,8 +316,6 @@
       }
       #benefits .img-wrapper {
         display: flex;
-        width: 20rem;
-        height: 13rem;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
@@ -315,31 +330,14 @@
         color: ${formSectionHeaderColor} !important;
       }
 
- 
-      #formsection .form-container{
-        background-color:${formbgclr};
-        padding-top: ${formTopBottomPadding}px;
-        padding-bottom: ${formTopBottomPadding}px;
-      }
-      #formsection .lefttext{
-        display:${showlefttext};
-        margin-right:40px;
-      }
-
-      #formheadline{
-        font-size: ${formheadlinefontsize}px;
-        color: ${formHeadLineColor} !important;
-        text-align:center;
-        margin-bottom: 10px;
-      }
-
       #formheadline h2{
         color: ${formHeadLineColor} !important;
         font-size: ${formheadlinefontsize}px !important;
+        text-align: center;
       }
-      .mktoForm .mktoRequiredField .mktoAsterix,
-      .mktoForm .mktoRequiredField .mktoOffset,
-      .mktoForm .mktoRequiredField .mktoGutter {
+      .mktoForm .mktoAsterix,
+      .mktoForm .mktoOffset,
+      .mktoForm .mktoGutter {
         display: none !important;
       }
       .mktoForm input[type="text"],
@@ -351,6 +349,7 @@
       .mktoForm textarea.mktoField, 
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
+        width: 100% !important;
       }
       .mktoForm.mktoHasWidth {
         width: auto !important;
@@ -358,12 +357,15 @@
       .mktoForm .mktoLabel{
         font-size:${formfontsize}px !important;
         color: ${formLabelColor} !important;
+        white-space: nowrap !important;
+        visibility: hidden;
+        margin-bottom: -18px;
       }
       .mktoForm .mktoFormRow, .mktoForm .mktoFieldWrap {
         display:flex !important;
         flex-direction: column !important;
         float: none !important;
-        width: 95% !important;
+        width: 100%% !important;
         margin: 0 auto !important;
       }
     .mktoForm .mktoFormCol {
@@ -412,6 +414,7 @@
         background-color: ${footerbgclr};
         color:${footerfontclr};
         font-size:${footerfontsize}px;
+        order: 100;
       }
       #footer .section{
         padding:${footerpaddingtb}px 0;
@@ -456,7 +459,7 @@
         <div class="column">
             <div class="mktoText" id="bannertext" mktoName="Banner - Text">
               <h1>
-                Motropool
+                Motoropool
               </h1>
               <p>
                 Maker your operations more efficient, automate manual tasks, and server more users without adding resources.
@@ -465,8 +468,15 @@
             
         </div>
         <div class="column">
+         
         <div class="formcontainer">
-            <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_2039"></form> <script>MktoForms2.loadForm("//217-NBW-905.mktoweb.com", "217-NBW-905", 2039);</script>
+ <div class="mktoText" id="formheadline" mktName="Form Headline">
+            <h2>Find out how Ridecell Motorpool can transform your fleet operationsx</h2>
+          </div>
+            <div class="mktoForm" id="form1" mktoName="Banner Form">
+              <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js">
+                </script> <form id="mktoForm_2039"></form> <script>MktoForms2.loadForm("//217-NBW-905.mktoweb.com", "217-NBW-905", 2039);</script>
+            </div>
         </div>
             </div>
         </div>
@@ -476,30 +486,32 @@
     
     <section id="freetext">
       <div class="section">
-        <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
-          <h1>
-            Lorem ipsum dolor sit amet
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="mktoText" id="freetextcopy2" mktoName="Free-Text - Copy 2">
-          <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-          </ul>
-        </div>
-        <div class="mktoText btn" id="freetextbtn1" mktoName="Free-Text - Button Content">
-          <a href="#">Button</a>
+        <div class="column">
+          <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="mktoText" id="freetextcopy2" mktoName="Free-Text - Copy 2">
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-    
+    <!-- Gradient Line -->
+<section id="gradient">
+  <div class="section">
+
+  </div>
+</section>
+    <!-- end of gradient line -->
   <!-- Points Section -->
       <section class="container_100" id="benefits">
         <div class="container_inner section flex-row">
@@ -557,5 +569,7 @@
       </div>
     </footer>
     
+
+
   </body>
 </html>
