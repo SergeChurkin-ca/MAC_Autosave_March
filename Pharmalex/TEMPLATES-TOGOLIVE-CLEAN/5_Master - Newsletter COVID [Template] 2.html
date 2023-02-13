@@ -128,22 +128,17 @@
             width: 1em;
             margin-right: .2em;
             text-align: center;
-            /* opacity: .8; */
             /* For safety - reset parent styles, that can break glyph codes*/
             font-variant: normal;
             text-transform: none;
             /* fix buttons height, for twitter bootstrap */
             line-height: 1em;
             /* Animation center compensation - margins should be symmetric */
-            /* remove if not needed */
             margin-left: .2em;
             /* you can be more comfortable with increased icons size */
-            /* font-size: 120%; */
             /* Font smoothing. That was taken from TWBS */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            /* Uncomment for 3D effect */
-            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
         }
         
         .icon-pharmalex-arrow:before {
@@ -368,7 +363,7 @@
         input[type="checkbox"] {
             margin-right: 10px;
             width: 24px!important;
-            min-width: 0px!important;
+            min-width: 24px!important;
         }
         
         input[type="submit"]:hover,
@@ -607,6 +602,10 @@
             background-image: linear-gradient(360deg, #575860 0, #3a3a3a 100%);
         }
         
+        #footer .widget {
+            margin-bottom: -20px;
+        }
+        
         #footer a:not(.btn) {
             color: #ffffff;
             white-space: nowrap;
@@ -642,16 +641,26 @@
         
         #footer .custom-nav li {
             font-size: 15px;
-            padding: 0 0 10px;
             line-height: 1.75;
+        }
+        
+        #footer .custom-nav li:before {
+            display: inline-block;
+            content: '' !important;
+            background-image: url(https://go.pharmalex.com/l/484291/2023-01-24/3dp7tr/484291/1674592369Yr1zryym/arrow2.png) !important;
+            background-repeat: no-repeat;
+            background-color: transparent !important;
+            background-size: 13px 13px;
+            vertical-align: text-top;
+            padding-right: 7px!important;
+            border: none !important;
+            width: 13px !important;
+            height: 13px !important;
+            margin: 3px 9px 0 0 !important;
         }
         
         #footer .custom-nav li a {
             display: inline-block;
-        }
-        
-        #footer .custom-nav li:before {
-            display: none !important;
         }
         
         #footer .svg_logo {
@@ -1756,7 +1765,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
                 <div class="row flex-column flex-md-row">
-                    <div class="col col-md-4 col-lg-5 mx-auto ml-sm-auto mr-sm-0" id="pardot-form-container" style="padding-bottom:3rem;">
+                    <div class="col col-md-5 col-lg-5 mx-auto ml-sm-auto mr-sm-0" id="pardot-form-container" style="padding-bottom:3rem;">
                         %%content%%
                     </div>
                     <div class="col col-md-6 col-lg-5 mr-auto mt-4 mt-sm-0" pardot-region="section#4-summary">
