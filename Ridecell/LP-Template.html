@@ -30,15 +30,14 @@
 
     <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#ededed">
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#000">
-    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
-    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#1c1c1c">
+    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#7a7a7a">
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#44af4b">
     <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
     <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#000">
     <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#000">
     <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#000">
     <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#000">
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#FFF">
-
                                                                                                                         
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free Text? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-gradient" mktoName="Show Gradient Line? " default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -50,8 +49,6 @@
     <meta class="mktoBoolean" id="show-benefit2" mktoName="Show Benefit 2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-benefit3" mktoName="Show Benefit 3" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-benefit4" mktoName="Show Benefit 4" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
-
-
 
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#3e3e3e">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
@@ -70,10 +67,14 @@
     <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="10">
     <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="10">
     <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="15">
-    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="80">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="0">
 
-    <!-- Free-Text Section Styling -->
-    <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+<!-- FreeText section -->
+    <meta class="mktoString" mktoName="Free Text Top Padding (px)" id="freetext-pd-top" default="5">
+    <meta class="mktoString" mktoName="Free Text Bottom Padding (px)" id="freetext-pd-btm" default="40">
+
+    <!-- All Sections Styling -->
+    <meta class="mktoString" mktoName="All Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
 
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
@@ -87,14 +88,14 @@
     <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Montserrat', sans-serif">
 
     <!-- General Button Styling -->
-    <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
-    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="8">
+    <meta class="mktoString" mktoName="Button - Font Size (px)" id="btnfontsize" default="18">
+    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="5">
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="0.7">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="35">
     <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="8">
 
     <!-- Form Section Styling -->
-    <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
+    <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="23">
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="10">
@@ -102,8 +103,6 @@
     <meta class="mktoString" mktoName="FreeText Order" id="freetext-order" default="1">
     <meta class="mktoString" mktoName="Gradient Order" id="gradient-order" default="2">
     <meta class="mktoString" mktoName="Benefits Order" id="benefits-order" default="3">
-
-    
 
 
     <style>
@@ -244,7 +243,7 @@
     position: absolute;
     bottom: -1rem;
     right: -20vw;
-    width: 120vw;
+    width: 100vw;
     height: 21vw;
     border-width: 0 0 12vw 116vw;
     border-color: transparent transparent #ffffff transparent;
@@ -260,7 +259,7 @@
         font-weight: 600;
       }
       #header #formheadline {
-        color: #000000;
+        color: 3f4042;
         margin-bottom: 2rem;
       }
       #header p,
@@ -297,6 +296,9 @@
         background-color:${freeTextBackgroundColor};
         display:${showsec1};
         order: ${freetext-order};
+      }
+      #freetext .section {
+        padding: ${freetext-pd-top}px 0 ${freetext-pd-btm}px !important;
       }
 #freetext .column {
   width: 45%;
@@ -351,6 +353,7 @@
         color: ${formHeadLineColor} !important;
         font-size: ${formheadlinefontsize}px !important;
         text-align: center;
+        line-height: 120%;
       }
       .mktoForm .mktoAsterix,
       .mktoForm .mktoOffset,
@@ -367,7 +370,24 @@
       .mktoForm select.mktoField {
         color: ${formTextColor} !important;
         width: 100% !important;
+        padding: 10px 5px !important;
+        font-size: ${formfontsize}px;
+        border: 1px solid #D0D3D4 !important;
+        height: unset !important;
       }
+      .mktoForm ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: ${formTextColor};
+  opacity: 1; /* Firefox */
+}
+
+.mktoForm :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: ${formTextColor};
+}
+
+.mktoForm ::-ms-input-placeholder { /* Microsoft Edge */
+  color: ${formTextColor};
+}
+    
       .mktoForm.mktoHasWidth {
         width: auto !important;
       }
@@ -388,7 +408,10 @@
     .mktoForm .mktoFormCol {
         width: 100% !important;
     }
-      .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+    .mktoForm .mktoFormRow {
+      margin-bottom: 1rem !important;
+    }
+       .mktoForm select.mktoField, .mktoForm textarea.mktoField{
         border: 1px solid #D0D3D4 !important;
         background: #ffffff !important;
         color: ${formTextColor} !important;
@@ -397,22 +420,35 @@
         border-radius: 0 !important;
         padding-left: 10px !important;
         font-size:${formfontsize}px !important;
+        padding: 10px 3px !important;
+        height: unset !important;
       }
     
+    .mktoForm .mktoButtonRow {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem !important;
+      
+    }
   
-   
       .mktoButtonWrap button.mktoButton {
         background: ${formButtonColor} !important;
-         
-      }
+         font-size: ${btnfontsize}px !important;
+         text-transform: uppercase;
+         padding: 15px 30px !important;
 
+      }
+      .mktoForm .mktoButtonWrap {
+        margin: 0 !important;
+      }
       .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
         background: ${formButtonColor} !important;
         color: ${formButtonTextColor} !important;
         border: 1px solid ${formButtonColor} !important;
+        border-radius: ${btnborderrds}px;
       }
-
-      .mktoForm button.mktoButton:hover{
+  .mktoForm button.mktoButton:hover{
         opacity:${btnhvropacity};
         color: ${formButtonHoverColor} !important;
         background-color: ${formButtonHoverBGColor} !important;
@@ -456,7 +492,11 @@
         font-size:${footerfontsize}px;
       }
       
-
+@media (max-width: 1400px) {
+  #freetext .section {
+    padding-top: calc(${freetext-pd-top}px + 10px) !important;
+  }
+}
 @media (max-width: 1200px) {
   #header .flex-row {
     flex-direction: column;
@@ -477,15 +517,23 @@
   #header .formcontainer {
     margin: 2rem auto -15rem;
     max-width: 700px;
-    padding: 1.5rem 1rem;
+    
   }
   #freetext .column {
     width: 100%;
-    padding-top: 8.5rem;
+    padding-top: calc(240px + ${freetext-pd-top}px);
   }
 
 }
-    
+    @media (max-width: 480px) {
+      .formcontainer {
+  padding: 1.5rem 1rem !important;
+}
+.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date] {
+  height: unset !important;
+  line-height: initial !important;
+}
+    }
     </style>
   </head>
   <body>
@@ -514,7 +562,7 @@
          
                 <div class="formcontainer">
         <div class="mktoText" id="formheadline" mktName="Form Headline">
-                    <h2>Find out how Ridecell Motorpool can transform your fleet operationsx</h2>
+                    <h2>Find out how Ridecell Motorpool can transform your fleet operations</h2>
           </div>
             <div class="mktoForm" id="form1" mktoName="Banner Form">
               <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js">
