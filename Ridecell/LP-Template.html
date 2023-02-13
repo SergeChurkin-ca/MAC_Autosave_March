@@ -107,6 +107,9 @@
 
 
     <style>
+      html {
+        overflow-x: hidden;
+      }
       ${googlefontimport}
       *{
         padding:0;
@@ -195,21 +198,33 @@
         margin:0 auto;
         padding:${sectionpaddingtb}px 0;
       }
-  
+        #header .section{
+        padding-top:${headerpaddingtop}px;
+        padding-bottom:${headerpaddingbtm}px;
+        position: relative;
+        z-index: 2;
+        justify-content: space-between;
+      }
+        #header .logo-container{
+        padding-top:${logopaddingtop}px;
+        padding-bottom: ${logopaddingbtm}px;
+        width:100%;
+      }
+      #header .logo-container img{
+        width:${toplogowidth}px;
+      }  
 
-      
       #header{
         background-image:url('${bannerimage}');
         background-repeat:no-repeat;
         background-position:center;
         background-size:cover;
-         clip-path: polygon(0 0, 100vw 0, 100vw 80%, 0 100%);
          background-color: ${bannerclr};
          background-blend-mode: overlay;
          order: -100;
+         position: relative;
       }
       #header .column {
-        flex: 1 0 400px;
         width: calc((100% / 2) - 2rem);
       }
       #header .column:nth-child(3) {
@@ -220,29 +235,24 @@
         background: ${formbgclr};
         border-radius: 5px;
         padding: 1.5rem 2rem;
-        position: absolute;
+        margin-top: -4rem;
+        margin-bottom: -13rem;
       }
 
-
-      #freetext{
-        background-color:${freeTextBackgroundColor};
-        display:${showsec1};
-        order: ${freetext-order};
-      }
+#header .decoration-triangle {
+    position: absolute;
+    bottom: -1rem;
+    right: -20vw;
+    width: 120vw;
+    height: 21vw;
+    border-width: 0 0 12vw 116vw;
+    border-color: transparent transparent #ffffff transparent;
+    border-style: solid;
+    left: -10rem;
+    z-index: 1;
+}
  
-      #header .section{
-        padding-top:${headerpaddingtop}px;
-        padding-bottom:${headerpaddingbtm}px;
-      }
-        #header .logo-container{
-        padding-top:${logopaddingtop}px;
-        padding-bottom: ${logopaddingbtm}px;
-        width:100%;
-      }
-      #header .logo-container img{
-        width:${toplogowidth}px;
-      }
-     
+    
 
       #header h1 {
         color: ${bannerHeaderColor} !important;
@@ -282,6 +292,14 @@
     background: linear-gradient(to right, rgb(105,191,75) , rgb(55,197,238) , rgb(156,85,162));
     order: ${gradient-order};
 }
+     #freetext{
+        background-color:${freeTextBackgroundColor};
+        display:${showsec1};
+        order: ${freetext-order};
+      }
+#freetext .column {
+  width: 45%;
+}
  #benefits {
         display: ${benefits-show};
         order: ${benefits-order};
@@ -319,8 +337,6 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
-        border: solid 1px red;
-        
       }
       #benefits img {
       height: 100%;
@@ -441,7 +457,34 @@
       }
       
 
+@media (max-width: 1200px) {
+  #header .flex-row {
+    flex-direction: column;
+  }
+  #header .decoration-triangle {
+    right: -28vw;
+    width: 150vw;
+    height: 18vw;
+    border-width: 0 0 15vw 140vw;
+  }
+  #header .column {
+    width: 100%;
+    max-width: 95vw;
+  }
+  #header .column:nth-child(3) {
+    padding: 1rem 0;
+  }
+  #header .formcontainer {
+    margin: 2rem auto -15rem;
+    max-width: 700px;
+    padding: 1.5rem 1rem;
+  }
+  #freetext .column {
+    width: 100%;
+    padding-top: 8.5rem;
+  }
 
+}
     
     </style>
   </head>
@@ -469,18 +512,24 @@
         </div>
         <div class="column">
          
-        <div class="formcontainer">
- <div class="mktoText" id="formheadline" mktName="Form Headline">
-            <h2>Find out how Ridecell Motorpool can transform your fleet operationsx</h2>
+                <div class="formcontainer">
+        <div class="mktoText" id="formheadline" mktName="Form Headline">
+                    <h2>Find out how Ridecell Motorpool can transform your fleet operationsx</h2>
           </div>
             <div class="mktoForm" id="form1" mktoName="Banner Form">
               <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js">
                 </script> <form id="mktoForm_2039"></form> <script>MktoForms2.loadForm("//217-NBW-905.mktoweb.com", "217-NBW-905", 2039);</script>
             </div>
         </div>
-            </div>
         </div>
-      
+     
+        </div>
+        <div class="decoration-triangle">
+     <!--     <svg width="100%" height="100">
+            <polygon points="0,0 100,0 100, 100" fill="#ffffff"/>
+          </svg> -->
+        </div>
+
     </header>
       
     
