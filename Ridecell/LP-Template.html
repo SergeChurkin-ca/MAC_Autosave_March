@@ -21,8 +21,7 @@
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
 
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
-    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#000">
-    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#000">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#7E837D">
 
 
     <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#474747">
@@ -44,7 +43,7 @@
     <meta class="mktoBoolean" id="benefits-show" mktoName="Show Benefits" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
 
     <meta class="mktoColor" id="benefits-bg-color" mktoName="Benefits - Background Color" default="#ededed">
-     <meta class="mktoColor" id="benefits-txt-color" mktoName="Benefits - Text Color" default="#474747">   
+     <meta class="mktoColor" id="benefits-txt-color" mktoName="Benefits - Text Color" default="#3e3e3e">   
     <meta class="mktoBoolean" id="show-benefit1" mktoName="Show Benefit 1" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-benefit2" mktoName="Show Benefit 2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-benefit3" mktoName="Show Benefit 3" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
@@ -62,11 +61,11 @@
 
     <!-- Banner Section Styling -->
     <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="http://go.marketing-automation.ca/rs/217-NBW-905/images/img_bg_EcosystemAndPartners.jpg">
-    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="150">
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="121">
     
     <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="10">
-    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="10">
-    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="15">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="25">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="30">
     <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="0">
 
 <!-- FreeText section -->
@@ -84,8 +83,9 @@
 
 
     <!-- Google Fonts -->
-    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
-    <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Montserrat', sans-serif">
+   
+  <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');" allowHtml="true">
+  <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Montserrat" allowHtml="true">
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Font Size (px)" id="btnfontsize" default="18">
@@ -106,11 +106,7 @@
 
 
     <style>
-    
-      html {
-        overflow-x: hidden;
-      }
-      ${googlefontimport}
+         ${googleimport}
       *{
         padding:0;
         border: 0;
@@ -118,9 +114,12 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        font-family: Helvetica, sans-serif;
-        font-family: ${googlefontfamily} !important;
+         font-family: '${globalfont}', Helvetica, sans-serif;
       }
+      html {
+        overflow-x: hidden;
+      }
+ 
       
       body {background:#fff;display: flex;flex-direction: column;} 
       
@@ -256,7 +255,7 @@
 
       #header h1 {
         color: ${bannerHeaderColor} !important;
-        font-weight: 600;
+        font-weight: 500;
       }
       #header #formheadline {
         color: 3f4042;
@@ -267,15 +266,13 @@
       #header li {
         color: ${bannerTextColor} !important;
         font-size: 18px;
-        font-weeight: 600;
+        font-weight: 600;
       }
       #freetext .btn {
         margin-top:30px;
       }
 
-      #freetext h1 {
-        color: ${freeTextHeaderColor} !important;
-      }
+ 
 
       #freetext p,
       #freetext ul,
@@ -309,6 +306,7 @@
         background-color: ${benefits-bg-color};
         color: ${benefits-txt-color};
       }
+   
   #benefits .flex-row {
     justify-content: space-around;
     align-items: flex-start;
@@ -543,7 +541,7 @@
         
         <div class="logo-container">
            <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
-            <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
+            <img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/Ridecell_logotype-white.png" alt="logo">
           </div>
         </div>
         
