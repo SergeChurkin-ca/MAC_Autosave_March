@@ -124,6 +124,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoList" id="alignColTxt" mktoName="Align Column Text" values="left,center,right" default="left" />
     <meta mktoModuleScope="true" class="mktoList" id="alignRight" mktoName="Align" values="left,center,right" default="right" />
     <meta mktoModuleScope="true" class="mktoList" id="alignbtn" mktoName="Align Button" values="left,center,right" default="center" />
+    <meta mktoModuleScope="true" class="mktoList" id="alignbtn2" mktoName="Align Button" values="left,center,right" default="left" />
     <meta mktoModuleScope="true" class="mktoList" id="alignbtnLeft" mktoName="Align Button Left" values="left,center,right" default="left" />
     <meta mktoModuleScope="true" class="mktoList" id="alignbtnRight" mktoName="Align Button Right" values="left,center,right" default="left" />
     <meta mktoModuleScope="true" class="mktoList" id="align" mktoName="Content Align" values="left,center,right" default="left" />
@@ -270,6 +271,11 @@ font-family: Arial, serif !important;
           width:110px !important;
         }
       }
+      @media only screen and (max-width:380px){
+        .block3{display:block;margin:0 auto;float:none !important; width: 100% !important; }
+        .top_pad3{padding-top:20px !important;}
+        .hidden4 {display:none !important;}
+      }
     </style>
   </head>
   <body style="width: 100%; min-width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
@@ -332,7 +338,7 @@ font-family: Arial, serif !important;
 
 
                 <!--Banner Deafault-->
-                <table class="mktoModule" mktoName="Hero with CTA" mktoAddByDefault="true" id="banner1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <table class="mktoModule" mktoName="Hero with CTA Button" mktoAddByDefault="true" id="banner1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td bgcolor="${banner-bg-color}" valign="top" background="${banner1_img}" style="background-image:url('${banner1_img}');background-color:${banner-bg-color};background-repeat: no-repeat; background-size: cover;background-position:center;vertical-align: top;background-blend-mode: multiply;">
                       <!--[if gte mso 9]>
@@ -761,26 +767,6 @@ font-family: Arial, serif !important;
                 </table>
                 <!--2 Col Module-->
 
-                <!--Divider Module-->
-                <table class="mktoModule" mktoName="Divider Module" id="DividerModule2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                      <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
-                        <tr>
-                          <td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td class="center" bgcolor="${DividerBGColor2}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor2};">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td height="${btm_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--Divider Module-->
-
                 <!--Image Left Text Right with btn-->
                 <table class="mktoModule" mktoName="2 Col Image Left with Button" id="imgleft1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
@@ -932,30 +918,8 @@ font-family: Arial, serif !important;
                 </table>
                 <!--Image Right Text Left with btn-->   
 
-
-                <!--Divider Module-->
-                <table class="mktoModule" mktoName="Divider Module" id="DividerModule3" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                      <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
-                        <tr>
-                          <td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td class="center" bgcolor="${DividerBGColor2}" height="${DividerHeight}" style="line-height:1px;font-size:1px; background-color: ${DividerBGColor2};">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td height="${btm_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--Divider Module-->
-
-                <!--Divider Module-->
                 <!--3 Col-->
-                <table class="mktoModule" mktoName="Three Columns Module" id="threeCol2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <table class="mktoModule" mktoName="Three Column Image and Text" id="threeCol2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                       <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:520px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
@@ -1116,32 +1080,10 @@ font-family: Arial, serif !important;
                 </table>
                 <!--3 Col-->
 
-                <!--CTA Headline Module-->
-                <table class="mktoModule" mktoName="CTA Headline Module" id="btn-Headline-mod" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                  <tr>
-                    <td bgcolor="${mod-bg-color2}" valign="top" style="background-color:${mod-bg-color2};vertical-align: top;">
-                      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
-                        <tr>
-                          <td  height="${top_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td align="${alignCenter}" style="font-family: 'Roboto',Arial, sans-serif; font-size: ${headlineFontSize24}px; font-weight:400;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor}; text-align: ${alignCenter};">
-                            <div class="mktoText" mktoName="Headline" id="btn-Headline">
-                              <div>Global presence with local expertise.</div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td height="${btm_pad15}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <!--btn Headline Module-->
+          
 
                 <!--3 Col images -->
-                <table class="mktoModule" mktoName="Three Columns Module 2" id="threeCol21" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <table class="mktoModule" mktoName="Three Column Logos" id="threeCol21" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td bgColor="${mod-bg-color2}" valign="top" style="background-Color:${mod-bg-color2};vertical-align: top;">
                       <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:520px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
@@ -1208,45 +1150,495 @@ font-family: Arial, serif !important;
                   </tr>
                 </table>
                 <!--3 Col-->
-
-
-                <!--Dark CTA Module-->
-                <table class="mktoModule" mktoName="Dark CTA Module" id="btn-btnModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                
+                
+               <!--  2 column with 1/3 left  image -->
+               <table class="mktoModule" mktoName="2 column with 1/3 left image" id="smimgleft1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:530px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
+<tr>
+<td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <th width="170" align="left" class="block center" valign="top" style="vertical-align: top;">
+            <div class="mktoImg" mktoname="Image" id="smimgleft-img">
+                <div>
+                    <img src="https://dummyimage.com/170x170/EEF3F9/B3B8C4" width="170" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                        />
+                </div>
+            </div>
+        </th>
+        <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th align="left" class="block top_pad" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
+                        <div class="mktoText" mktoName="Headline" id="smimgleft-headline">
+                            <div>Lorem Ipsum Dolor Sit Amet</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="center" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
+                        ">
+                        <div class="mktoText" mktoName="Text" id="smimgleft-copy">
+                            <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
+                        </div>
+                    </td>
+                </tr> 
+                          <tr>
+                                      <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="${alignbtn2}">
+                                        <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
+                                          <div>
+                                            <table class="center" cellpadding="0" cellspacing="0" border="0" align="${alignbtn2}">
+                                              <tbody>
+                                                <tr>
+                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btn1FontSize}px; line-height:110%; font-family: 'Roboto',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
+                                                    <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                </table>
+        </th>
+    </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--  end of 2 column with 1/3 left image -->
+               <!--  2 column with 1/3 right  image -->
+               <table class="mktoModule" mktoName="2 column with 1/3 right image " id="smimgright2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:530px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
+<tr>
+<td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <th width="170" align="left" class="block center" valign="top" style="vertical-align: top;">
+            <div class="mktoImg" mktoname="Image" id="smimgleft-img">
+                <div>
+                    <img src="https://dummyimage.com/170x170/EEF3F9/B3B8C4" width="170" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                        />
+                </div>
+            </div>
+        </th>
+        <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th align="left" class="block top_pad" valign="top" style="vertical-align: top;">
+            <table dir="ltr"  cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
+                        <div class="mktoText" mktoName="Headline" id="smimgleft-headline">
+                            <div>Lorem Ipsum Dolor Sit Amet</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                     <td class="center" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
+                        ">
+                        <div class="mktoText" mktoName="Text" id="smimgleft-copy">
+                            <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
+                        </div>
+                    </td>
+                </tr> 
+                <tr>
+                                      <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="${alignbtn2}">
+                                        <div class="mktoText" id="btn2-btn-bs" mktoname="Button">
+                                          <div>
+                                            <table class="center" cellpadding="0" cellspacing="0" border="0" align="${alignbtn2}">
+                                              <tbody>
+                                                <tr>
+                                                  <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none; font-size:${btn1FontSize}px; line-height:110%; font-family: 'Roboto',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
+                                                    <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                                                                                                                
+                </table>
+        </th>
+    </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--  end of 2 column with 1/3 right image -->
+               
+               <!--  2 column with 1/4 left  image -->
+               <table class="mktoModule" mktoName="2 column with 1/4 left image" id="smimgleft1" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:530px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
+<tr>
+<td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <th width="130" align="left" class="block3 center" valign="top" style="vertical-align: top;">
+            <div class="mktoImg" mktoname="Image" id="smimgleft-img">
+                <div>
+                    <img src="https://dummyimage.com/130x130/EEF3F9/B3B8C4" width="130" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                        />
+                </div>
+            </div>
+        </th>
+        <th class="hidden4" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th align="left" class="block3 top_pad3" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center2" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
+                        <div class="mktoText" mktoName="Headline" id="smimgleft-headline">
+                            <div>Lorem Ipsum Dolor Sit Amet</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="center2" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
+                        ">
+                        <div class="mktoText" mktoName="Text" id="smimgleft-copy">
+                            <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
+                        </div>
+                    </td>
+                </tr> 
+                  
+                </table>
+        </th>
+    </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--  end of 2 column with 1/4 left image -->
+               <!--  2 column with 1/4 right  image -->
+               <table class="mktoModule" mktoName="2 column with 1/4 right image " id="smimgright2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:530px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
+<tr>
+<td  height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table dir="rtl" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <th width="130" align="left" class="block3 center" valign="top" style="vertical-align: top;">
+            <div class="mktoImg" mktoname="Image" id="smimgleft-img">
+                <div>
+                    <img src="https://dummyimage.com/130x130/EEF3F9/B3B8C4" width="130" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                        />
+                </div>
+            </div>
+        </th>
+        <th class="hidden4" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th align="left" class="block3 top_pad3" valign="top" style="vertical-align: top;">
+            <table dir="ltr" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <tr>
+                    <td class="center2" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
+                        <div class="mktoText" mktoName="Headline" id="smimgleft-headline">
+                            <div>Lorem Ipsum Dolor Sit Amet</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="center2" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}
+                        ">
+                        <div class="mktoText" mktoName="Text" id="smimgleft-copy">
+                            <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
+                        </div>
+                    </td>
+                </tr> 
+                  
+                </table>
+        </th>
+    </tr>
+</table>
+</td>
+</tr>
+</table>
+<!--  end of 2 column with 1/4 right image -->
+               
+       <!--2 Col Text -->
+                <table class="mktoModule" mktoName="Two Column Text" id="twoColtxt" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
-                    <td bgColor="${mod-bg-color2}" valign="top" style="background-Color:${mod-bg-color2};vertical-align: top;">
+                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                       <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:530px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
                         <tr>
-                          <td  height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                         <tr>
                           <td>
-                            <div class="mktoText" id="CTA-btns" mktoname="Button">
-                              <div>
-                                <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
-                                  <tbody>
+                            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                              <tr>
+                                <th width="242" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                   
                                     <tr>
-                                      <td bgcolor="${btnBGColorhead}" style="text-align: center;border:1px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: 'Roboto',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
-                                        <a style="text-decoration:none; color:${btnColorhead};" href="${btnURL}">${btnText2}</a>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Text" id="SubHeadline-text-b7">
+                                          <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolorem ipsa itaque assumenda. Nisi sit temporibus, reprehenderit, vel dolorem eligendi totam provident molestias qui in, error assumenda! Sequi, alias voluptas fugiat consectetur quia vitae est similique obcaecati? A, deserunt fugit.</div>
+                                        </div>
                                       </td>
                                     </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
+                                  
+                                    <tr>
+                                      <td class="show2" height="40" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                  </table>
+                                </th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="40">&nbsp;</th>
+                                <th width="242" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Text" id="SubHeadline-text-b3">
+                                          <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolorem ipsa itaque assumenda. Nisi sit temporibus, reprehenderit, vel dolorem eligendi totam provident molestias qui in, error assumenda! Sequi, alias voluptas fugiat consectetur quia vitae est similique obcaecati? A, deserunt fugit.</div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </th>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                         <tr>
-                          <td height="${btm_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                 </table>
-                <!--Dark CTA Module-->
+                <!--2 Col Text-->            
+        <!--3 Col Text-->
+                <table class="mktoModule" mktoName="Three Column Text" id="threeColtxt" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                  <tr>
+                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+                      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:520px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
+                        <tr>
+                          <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                              <tr>
+                                <th width="165" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta5">
+                                            <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta12">
+                                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum illum itaque impedit reiciendis iure voluptas consectetur praesentium harum ipsum ad quae quam, autem earum voluptatem.</div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  
 
+                                  </table>
+                                </th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="60">&nbsp;</th>
+                                <th width="165" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                               
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta8">
+                                            <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta12">
+                                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum illum itaque impedit reiciendis iure voluptas consectetur praesentium harum ipsum ad quae quam, autem earum voluptatem.</div>
+                                        </div>
+                                      </td>
+                                    </tr>
 
+                                  </table>
+                                </th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="60">&nbsp;</th>
+                                <th width="165" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta12">
+                                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum illum itaque impedit reiciendis iure voluptas consectetur praesentium harum ipsum ad quae quam, autem earum voluptatem.</div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </th>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--3 Col Text-->
+        <!--4 Col Text-->
+                <table class="mktoModule" mktoName="Four Column Text" id="fourColtxt" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                  <tr>
+                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+                      <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:520px;border-collapse: collapse;border-spacing: 0;" border="0" width="530">
+                        <tr>
+                          <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                              <tr>
+                                <th width="130" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta5">
+                                            <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta12">
+                                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum illum itaque impedit reiciendis iure voluptas consectetur praesentium harum ipsum ad quae quam, autem earum voluptatem.</div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  
+
+                                  </table>
+                                </th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="30">&nbsp;</th>
+                                <th width="130" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                               
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta8">
+                                            <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta12">
+                                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum illum itaque impedit reiciendis iure voluptas consectetur praesentium harum ipsum ad quae quam, autem earum voluptatem.</div>
+                                        </div>
+                                      </td>
+                                    </tr>
+
+                                  </table>
+                                </th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="30">&nbsp;</th>
+                                <th width="130" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta12">
+                                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum illum itaque impedit reiciendis iure voluptas consectetur praesentium harum ipsum ad quae quam, autem earum voluptatem.</div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </th>
+                                <th class="hidden" style="font-size:1px; line-height: 1px;" width="30">&nbsp;</th>
+                                <th width="130" align="left" class="block" valign="top" style="vertical-align: top;">
+                                  <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                    <tr>
+                                      <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td style="font-family: 'Roboto',Arial, sans-serif; font-size: ${CopySize14}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignColTxt};">
+                                        <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta12">
+                                          <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus dolorum illum itaque impedit reiciendis iure voluptas consectetur praesentium harum ipsum ad quae quam, autem earum voluptatem.</div>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </th>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--4 Col Text-->
+
+          
                 <!--Footer Module-->
-                <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                <table class="mktoModule" mktoName="Snippet" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                   <tr>
                     <td bgColor="${mod-bg-color}" valign="top" style="background-color:${mod-bg-color};vertical-align: top;">
                       <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
