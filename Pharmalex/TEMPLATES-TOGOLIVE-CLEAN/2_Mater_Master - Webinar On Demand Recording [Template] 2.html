@@ -200,6 +200,7 @@
             object-fit: cover;
         }
         
+        .axis-container-background-3 li:before,
         #axis-content .listype-white-arrow li::before {
             display: inline-block;
             content: '';
@@ -497,12 +498,15 @@
         #axis-content ul li::before,
         #modal-body ul li::before {
             display: inline-block;
-            content: url('https://go.pharmalex.com/l/484291/2023-01-24/3dp7tn/484291/1674592369RpoDpFWW/arrow1.png');
+            content: '' !important;
+            background-image: url('https://go.pharmalex.com/l/484291/2023-01-24/3dp7tn/484291/1674592369RpoDpFWW/arrow1.png') !important;
             margin-right: 7px;
             vertical-align: text-top;
+            width: 17px !important;
+            background-repeat: no-repeat;
             padding-right: 7px!important;
-            background: none;
-            border: none
+            border: none;
+            margin-left: 0 !important;
         }
         
         hr.axis-line {

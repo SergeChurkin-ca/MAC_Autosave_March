@@ -126,7 +126,6 @@
             width: 1em;
             margin-right: .2em;
             text-align: center;
-            /* opacity: .8; */
             /* For safety - reset parent styles, that can break glyph codes*/
             font-variant: normal;
             text-transform: none;
@@ -136,12 +135,9 @@
             /* remove if not needed */
             margin-left: .2em;
             /* you can be more comfortable with increased icons size */
-            /* font-size: 120%; */
             /* Font smoothing. That was taken from TWBS */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            /* Uncomment for 3D effect */
-            /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
         }
         
         .icon-pharmalex-arrow:before {
@@ -203,12 +199,13 @@
             object-fit: cover;
         }
         
+        .axis-container-background-3 ul li::before,
         #axis-content .listype-white-arrow li::before {
             display: inline-block;
-            content: '';
+            content: '' !important;
             background-image: url('https://go.pharmalex.com/l/484291/2023-01-24/3dp7tn/484291/1674592369RpoDpFWW/arrow1.png') !important;
             background-color: transparent !important;
-            background-size: 13px 13px;
+            background-size: 13px !important;
             vertical-align: text-top;
             padding-right: 7px!important;
             border: none !important;
