@@ -82,7 +82,10 @@ tr { font-size:0px; line-height:0px; border-collapse: collapse; }
     <meta mktoModuleScope="true" class="mktoList" id="img-valign" mktoname="Image Veritcal Alignment" default="middle" values="top,middle,bottom">
     <meta mktoModuleScope="true" class="mktoList" id="img-valigntop" mktoname="Image Veritcal Alignment" default="top" values="top,middle,bottom">
     <meta mktoModuleScope="true" class="mktoList" id="img-Positiontw" mktoname="Image Alignment" default="center" values="center,left,right">
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-top-pad" mktoname="Img Top Spacing" default="0" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-btm-pad" mktoname="Img Bottom Spacing" default="0" />
     <meta mktoModuleScope="true" class="mktoNumber" id="img-right-pad" mktoname="Img Right Spacing" default="0" />
+    <meta mktoModuleScope="true" class="mktoNumber" id="img-left-pad" mktoname="Img Left Spacing" default="0" />
     <meta mktoModuleScope="true" class="mktoNumber" id="img-pad-left" mktoname="Inline img pad left" default="20" />
     <meta mktoModuleScope="true" class="mktoNumber" id="img-pad-btm" mktoname="Inline img pad bottom" default="15" />
 
@@ -1234,11 +1237,10 @@ padding-left:60px !important
                         </td>
                         <td class="block padding_top" width="320" valign="${img-valign}" style="vertical-align:${img-valign};width:320px;">
                           <table cellpadding="0" cellspacing="0" width="100%" border="0" style="width: 100%; border-collapse: collapse;">
-           
                             <tr>
                               <!--image-width:280-->
-                              <td class="hidden" width="${img-right-pad}" style="width:${img-right-pad}px;"></td>
-                              <td style="text-align:${alignimg};" class="imgcentremob" valign="${img-valign}">
+                              <td class="hidden" width="${img-left-pad}" style="width:${img-left-pad}px;"></td>
+                              <td style="text-align:${alignimg};padding-top:${img-top-pad}px;padding-bottom:${img-btm-pad}px;" class="imgcentremob" valign="${img-valign}">
                                 <div id="rightImg" mktoName="Right Image" class="mktoImg" mktoLockImgSize="false">
                                   <img src="https://dummyimage.com/320X320/eee/333" border="0" alt="" width="100%" max-width="320px;" />
                                 </div>
