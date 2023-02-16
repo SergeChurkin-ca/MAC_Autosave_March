@@ -246,29 +246,18 @@ th{font-weight:normal !important}
       @media (prefers-color-scheme: dark) {
         .lightimage {display: none !important;}
         .darkimage {display: block !important;}
-        .darkimgbg {
-          background-color:#000000 !important;
-          background-image: url('https://dummyimage.com/300x400/000/000');"
-        }
-             *[class].darkimgbg {
-          background-color:#000000 !important;background-image: url('https://dummyimage.com/300x400/000/000');"
-        }
-          *[class].lightimage {
-            display:none !important;
-          }
-           *[class].darkimage {
-            display: block !important;;
-          }
+        .darkimgbg { background-color:#000000 !important; background-image: url('https://dummyimage.com/300x400/000/000');}
+             *[class].darkimgbg { background-color:#000000 !important;background-image: url('https://dummyimage.com/300x400/000/000');}
+          *[class].lightimage {display:none !important;}
+           *[class].darkimage {display: block !important;}
         .apple-mail-implicit-dark-support .darkimage {display: block !important;}
            .apple-mail-implicit-dark-support .lightimage {display: none !important;}
-        .apple-mail-implicit-dark-support .darkimgbg {
-          background-color:#000000 !important;background-image: url('https://dummyimage.com/300x400/000/000');"
-        }
+        .apple-mail-implicit-dark-support .darkimgbg { background-color:#000000 !important;background-image: url('https://dummyimage.com/300x400/000/000');}
       }
 
       [data-ogsc] .lightimage { display: none !important;}
     	[data-ogsc] .darkimage {display: block !important;}
-        [data-ogsc] .darkimgbg {background-color:#000000 !important;background-image: url('https://dummyimage.com/300x400/000/000');"}
+        [data-ogsc] .darkimgbg {background-color:#000000 !important;background-image: url('https://dummyimage.com/300x400/000/000');}
 
 </style>
 </head>
@@ -277,11 +266,11 @@ th{font-weight:normal !important}
 <tr>
 <td bgcolor="${bodyBgColor}" style="background-color:${bodyBgColor};">
   <!--Logo-->
-<table id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<table id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;min-width: 600px; width: 600px;" border="0" width="600">
 <tr>
     <td class="darkimgbg" bgcolor="#ffffff" valign="top" style=";vertical-align: top;background-color:#ffffff;"> 
     
-<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:535px; border-collapse: collapse;border-spacing: 0;" border="0" width="535">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:535px; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
 <td height="30" style="line-height:1px;font-size:1px;">&nbsp;</td>
 </tr>
