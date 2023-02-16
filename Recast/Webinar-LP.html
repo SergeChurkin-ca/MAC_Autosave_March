@@ -180,7 +180,8 @@
     <meta class="mktoString" id="speaker-padding-btm" mktoName="Speakers Btm Pad (rem)" default="3" allowHtml="true">  
 
     
-    <meta class="mktoString" id="center-cta-mgbtm" mktoName="Center CTA margin bottom" default="3" allowHtml="true">  
+    <meta class="mktoString" id="center-cta-mgtop" mktoName="Center CTA margin top" default="1" allowHtml="true">  
+    <meta class="mktoString" id="center-cta-mgbtm" mktoName="Center CTA margin bottom" default="4" allowHtml="true">  
 
     
     <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#323e48">
@@ -291,10 +292,16 @@
         display:${imgrightshow};
         order:${imgrightorder};
       }
+      #imright .section {
+        margin-bottom: 20px !important;
+      }
       #imgleft {
         background-color:${imgleftbgcolor};
         display:${imgleftshow};
         order:${imgleftorder};
+      }
+      #imgleft .section {
+        margin-top: 0 !important;
       }
       #twocolicons {
         background-color:${twocoliconsbgcolor};
