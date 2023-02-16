@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Page Title">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="./favicon.ico">
+    
+    <title>${pagetitle}</title>
+    <link rel="icon" href="${faviconlink}">
+
+    <!-- Show and Hide Meta Tags -->
+    <meta class="mktoBoolean" id="showtoplogo-1" mktoName="Show Top Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showbanner" mktoName="Show Banner?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showtoplogo" mktoName="Show Banner Logo?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformsec" mktoName="Show Form Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showlefttext" mktoName="Show Form Left Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+   
+    <!-- Background, Buttons, and Text Color Meta Tags -->
+    <meta class="mktoColor" id="bannerclr" mktoName="Banner - Background Color" default="#bbbbbb">
+    <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
+    <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
+
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#000">
+    <meta class="mktoColor" id="freeTextTextColor" mktoName="Free-Text - Text Color" default="#000">
+
+
+    <meta class="mktoColor" id="btnbgclr" mktoName="Free-Text - Btn Background Color" default="#ffffff">
+    <meta class="mktoColor" id="btnbrdrclr" mktoName="Free-Text - Btn Border Color" default="#000000">
+    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#000000">
+    <meta class="mktoColor" id="btnbgclr-hover" mktoName="Free-Text - Btn:hover Background Color" default="#000000">
+    <meta class="mktoColor" id="btnbrdrclr-hover" mktoName="Free-Text - Btn:hover Border Color" default="#000000">
+    <meta class="mktoColor" id="btnfontclr-hover" mktoName="Free-Text - Btn:hover Text Color" default="#ffffff">
+    <meta class="mktoColor" id="btn-font-weight" mktoName="Free Text Btn Font weight" default="700">
+
+    <meta class="mktoColor" id="mainformbgclr" mktoName="Form Section - Background Color" default="#ffffff">
+    <meta class="mktoColor" id="formbgclr" mktoName="Form - Background Color" default="#F6F6F6">
+    <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#000">
+    <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#222">
+    <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#000000">
+    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
+    <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#000">
+    <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#000">
+    <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#000">
+    <meta class="mktoColor" id="formButtonHoverColor" mktoName="Form Button - Hov:Text Color" default="#000">
+    <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#FFF">
+
+    <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#000000">
+    <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
+    
+    <!-- Font Size Meta Tags -->
+    <meta class="mktoString" mktoName="Global - H1(Titles) Font Size (px)" id="h1fontsize" default="36">
+    <meta class="mktoString" mktoName="Global - H2(Subtitles) Font Size (px)" id="h2fontsize" default="32">
+    <meta class="mktoString" mktoName="Global - H3(Subtitles) Font Size (px)" id="h3fontsize" default="20">
+
+    
+    <meta class="mktoString" mktoName="Global - p(Paragraphs) Font Size (px)" id="pfontsize" default="16">
+
+    <!-- Banner Section Styling -->
+    <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="./News_events_hero_cut_desktop.jpg">
+    <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="150">
+    
+    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="80">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="80">
+    <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="100">
+    <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="0">
+    <meta class="mktoString" mktoName="Background Blend Mode" id="background-blend-mode" default="multiply">
+    <meta class="mktoString" mktoName="Background Position" id="bg-position-right" default="right">
+
+    <!-- Free-Text Section Styling -->
+    <meta class="mktoString" mktoName="Free-Text Section - Top/Bottom Padding (px)" id="sectionpaddingtb" default="40">
+
+    <!-- Footer Section Styling -->
+    <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
+    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="211">
+    <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="40">
+    <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
+
+
+    <!-- Google Fonts -->
+    <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
+    <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Poppins', sans-serif">
+
+    <!-- General Button Styling -->
+    <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
+    <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="25">
+    <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
+    <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="15">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
+
+    <!-- Form Section Styling -->
+    <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
+    <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
+    <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
+    <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="30">
+
+    
+
+
+    <style>
+      ${googlefontimport}
+      *{
+        padding:0;
+        border: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: Helvetica, sans-serif;
+        font-family: ${googlefontfamily} !important;
+      }
+      
+      body {background:#fff;} 
+      
+      h1{
+        font-size: ${h1fontsize}px;
+      }
+
+      h2{
+        font-size: ${h2fontsize}px;
+      }
+      p,ul,ol{
+        margin:10px 0;
+      }
+      ul,ol{
+        margin-left:45px;
+      }
+      p, li{
+        line-height:1.5;
+        font-size:${pfontsize}px;
+      }
+      b, .bold, em{
+        font-weight:bold;
+      }
+      img{
+        vertical-align:bottom;
+        max-width:100%;
+        height:auto;
+      }
+      .logo-container a{
+        text-decoration:none;
+      }
+      
+      .flex{
+        display: -webkit-flex;
+        display:flex;
+      }
+      .flex .col:not(:last-child){
+        margin-right:30px;
+      }
+      .flex .col:last-child{
+        margin-right:0;
+      }
+      .w50{
+        width:48%;
+      }
+      .w100{
+        width:100%;
+      }
+      .btn a, .btn a:visited{
+        color: ${btnfontclr};
+        text-decoration:none;
+      }
+      .btn a{
+        border: 1px solid ${btnbrdrclr};
+        background: ${btnbgclr};
+        padding: ${btnpaddingtb}px ${btnpaddinglr}px;
+        -moz-border-radius: ${btnborderrds}px;
+        -webkit-border-radius: ${btnborderrds}px;
+        border-radius:${btnborderrds}px;
+        text-align:center;
+        font-size:${btnfontsize}px;
+        transition: 0.4s all;
+        font-weight: ${btn-font-weight};
+        min-width: 167px;
+        width: 167px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn a:hover, 
+      .btn a:focus {
+        opacity:${btnhvropacity};
+        border: 1px solid ${btnbrdrclr-hover};
+        background: ${btnbgclr-hover};
+        color: ${btnfontclr-hover};
+        transition: 0.4s all;
+      }
+      .section{
+        width:85%;
+        max-width:1400px;
+        margin:0 auto;
+        padding:${sectionpaddingtb}px 0;
+      }
+      .form-container{
+        min-height:20px;
+        
+      }
+.mktoForm .mktoAsterix {
+  display: none !important;
+}
+      .mktoForm input[type="text"],
+      .mktoForm input[type="url"], 
+      .mktoForm input[type="email"], 
+      .mktoForm input[type="tel"], 
+      .mktoForm input[type="number"], 
+      .mktoForm input[type="date"], 
+      .mktoForm textarea.mktoField, 
+      .mktoForm select.mktoField {
+        color: ${formTextColor} !important;
+      }
+      
+      #header{
+        background-color:${bannerclr};
+        background-image:url('${bannerimage}');
+        background-repeat:no-repeat;
+        background-position:center ${bg-position-right};
+        background-size:cover;
+        display:${showbanner};
+        background-blend-mode:${background-blend-mode};
+      }
+      #freetext{
+        background-color:${freeTextBackgroundColor};
+        display:${showsec1};
+      }
+      #formsection{
+        background-color:${mainformbgclr};
+        display:${showformsec};
+      }
+      #footer{
+        display:${showfooter};
+        background-color:${footerbgclr};
+        color:${footerfontclr};
+        font-size:${footerfontsize}px;
+      }
+      #footericons span {
+        visibility: hidden;
+      }
+       #brand .section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        max-height:350px;
+        position:relative;
+        padding-top:${logopaddingtop}px;
+        padding-bottom:${logopaddingbtm}px;
+      }
+      
+      
+      #header .section{
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        min-height:500px;
+        position:relative;
+        padding-top:${headerpaddingtop}px;
+        padding-bottom:${headerpaddingbtm}px;
+      }
+        #header .logo-container{
+        position:absolute;
+        top:${sectionpaddingtb}px;
+        left:0;
+        width:100%;
+        display:${showtoplogo};
+      }
+      #header .logo-container img{
+        width:${toplogowidth}px;
+      }
+      #brand{
+        display:${showtoplogo-1};
+      }
+      #brand .logo-container{
+        position:absolute;
+        top:${sectionpaddingtb}px;
+        left:0;
+        width:100%;
+      }
+      #brand .logo-container img{
+        width:${toplogowidth}px;
+      }
+
+      #header h1 {
+        color: ${bannerHeaderColor} !important;
+      }
+
+      #header p,
+      #header ul,
+      #header li {
+        color: ${bannerTextColor} !important;
+      }
+      #freetext .btn {
+        margin-top:30px;
+      }
+
+      #freetext h1 {
+        color: ${freeTextHeaderColor} !important;
+      }
+
+      #freetext p,
+      #freetext ul,
+      #freetext li {
+        color: ${freeTextTextColor} !important;
+      }
+
+      #formlefttext h3 {
+        color: ${formSectionHeaderColor} !important;
+        font-size: ${h3fontsize}px;
+      }
+
+      #formsection p,
+      #formsection ul,
+      #formsection li {
+        color: ${formSectionTextColor} !important;
+      }
+      #formsection .section{
+        justify-content: space-between;
+      }
+      #formsection .form-container{
+        background-color:${formbgclr};
+        padding-top: ${formTopBottomPadding}px;
+        padding-bottom: ${formTopBottomPadding}px;
+      }
+      #formsection .lefttext{
+        display:${showlefttext};
+        margin-right:40px;
+      }
+
+      #formheadline{
+        font-size: ${formheadlinefontsize}px;
+        color: ${formHeadLineColor} !important;
+        text-align:center;
+        margin-bottom: 10px;
+      }
+
+      #formheadline h2{
+        color: ${formHeadLineColor} !important;
+        font-size: ${formheadlinefontsize}px !important;
+      }
+      .form-container {
+        max-width: 700px;
+      }
+      form.mktoForm{
+        width:99% !important;
+        margin: 0 auto !important;
+        ${googlefontfamily}
+      }
+      .mktoForm.mktoHasWidth {
+        padding: 1rem 2rem;
+      }
+      .mktoForm .mktoGutter{
+        width:0 !important;
+      }
+      .mktoForm .mktoOffset {
+        height: 7px !important;
+      }
+      .mktoForm .mktoLabel{
+        width:90% !important;
+        font-size:${formfontsize}px !important;
+        color: ${formLabelColor} !important;
+        margin-bottom: 0.5rem;
+      }
+      .mktoForm .mktoFormRow{
+        display:flex !important;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol:not(:first-child){
+        margin-left:20px;
+      }
+      .mktoForm .mktoFormRow .mktoFormCol:first-child{
+        margin-left:0 !important;
+      }
+      .mktoForm .mktoFormCol, .mktoForm .mktoFieldWrap, .mktoForm input, .mktoForm textarea.mktoField, .mktoForm select.mktoField, .mktoForm .mktoButtonRow{
+        width:100% !important;
+        
+      }
+      .mktoForm .mktoButtonRow {
+        display: flex;
+        margin: 2rem auto 0 !important;
+        justify-content: center;
+      }
+      .mktoForm input, .mktoForm select.mktoField {
+        min-height:25px !important;
+        height:40px !important;
+      }
+      .mktoForm textarea.mktoField{
+        height:70px !important;
+        min-height:40px !important;
+      }
+      .mktoForm input, .mktoForm select.mktoField, .mktoForm textarea.mktoField{
+        border: 1px solid #D0D3D4 !important;
+        background: #ffffff !important;
+        color: ${formTextColor} !important;
+        -moz-border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
+        padding-left: 10px !important;
+        font-size:${formfontsize}px !important;
+      }
+      .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input::-moz-placeholder { /* Firefox 19+ */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input:-ms-input-placeholder { /* IE 10+ */
+        color:#3a3a3a !important;
+      }
+      .mktoForm input:-moz-placeholder { /* Firefox 18- */
+        color:#3a3a3a !important;
+      }
+      .mktoForm select.mktoField{
+        background-color:#ffffff !important;
+        background-image: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/select-arrow.png') !important;
+        background-repeat: no-repeat !important;
+        background-position:97% 50% !important;
+        -moz-appearance: none; 
+        -webkit-appearance: none; 
+        appearance: none;
+        background-size: 24px !important;
+      }
+      .mktoForm input:invalid, .mktoForm select.mktoField:invalid, .mktoForm textarea.mktoField:invalid{
+        box-shadow: 0px 0px 0px 3px #e83131 !important;
+      }
+      .mktoLogicalField.mktoCheckboxList input{
+        width: 20px !important;
+        height: 20px !important;
+        margin-top: 3px !important;
+        margin-right: 5px!important;
+      }
+      .mktoForm a, .mktoForm a:visited{
+        color:#3a3a3a !important;
+      }
+      .mktoForm .mktoLogicalField.mktoCheckboxList{
+        order:1;
+        margin-right: 8px !important;
+      }
+      .mktoForm .mktoButtonWrap{
+        margin-left: 0 !important;
+      }
+      .mktoForm .mktoButtonRow{
+        margin-top:10px;
+      }
+
+
+      .mktoForm .mktoButtonWrap .mktoButton {
+          text-align: center !important;
+        font-size:${btnfontsize}px !important;
+        -moz-border-radius: ${btnborderrds}px !important;
+        -webkit-border-radius: ${btnborderrds}px !important;
+        border-radius:${btnborderrds}px !important;
+        background: ${formButtonColor} !important;
+        color: ${formButtonTextColor} !important;
+        border: 1px solid ${formButtonColor} !important;
+        width: 167px;
+        min-width: 167px;
+        font-weight: ${btn-font-weight};
+         opacity:1;
+        transition: 0.4s all;
+        padding: ${btnpaddingtb}px ${btnpaddinglr}px !important;
+      }
+
+      .mktoForm button.mktoButton:hover, 
+      .mktoForm button.mktoButton:focus{
+        opacity:${btnhvropacity};
+        color: ${formButtonHoverColor} !important;
+        background-color: ${formButtonHoverBGColor} !important;
+        background: ${formButtonHoverBGColor} !important;
+      }
+
+      .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+        color: ${formButtonHoverColor} !important;
+        background-color: ${formButtonHoverBGColor} !important;
+        background: ${formButtonHoverBGColor} !important;
+      }
+
+      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+        margin-left: 1.5em;
+        margin-top: 0.1em;
+        margin-bottom: 0.3em;
+        line-height: 2em!important;
+        display: block;
+        min-height: 12px;
+        font-size: ${formfontsize-1}px!important;
+}
+      #footer .section{
+        padding:${footerpaddingtb}px 0;
+        
+      }
+      #footer .row1{
+        align-items:center;
+        justify-content: space-between;
+        margin-bottom:20px;
+      }
+      #footer .logo-container img{
+        width:${footerlogowidth}px;
+      }
+      .footer-menu {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 0.75rem;
+      }
+      .footer-menu a {
+        text-decoration: none;
+      }
+      .icons-container ul, .icons-container ol{
+        display:flex;
+        flex-direction:row;
+        margin-left:0;
+        list-style:none;
+      }
+      .icons-container ul li, .icons-container ol li{
+        list-style:none;
+        margin-right:10px;
+      }
+      .icons-container svg {
+        width: 21px;
+      }
+      #footer .icons-container img{
+        width:${footericonswidth}px;
+      }
+      #footer p, #footer a, #footer a:visited, #footer h1, #footer h2, #footer h3, #footer ul li, #footer ol li{
+        color:${footerfontclr};
+        font-size:${footerfontsize}px;
+      }
+      
+      
+      @media screen and (max-width:768px){
+        .flex{
+          flex-wrap:wrap;
+          flex-direction:column;
+        }
+        .flex .col:not(:last-child){
+          margin-left:0;
+          margin-right:0;
+        }
+        .w50{
+          width:100%;
+        }
+        .section, #header .section{
+          width:90%;
+        }
+        #brand .logo-container{
+          top:40px;
+        }
+        #formsection .lefttext{
+          margin-right:0;
+          width:100%;
+          margin-bottom:20px;
+        }
+        #formsection .form-container{
+          padding:20px;
+        }
+        #footer .section{
+          padding:25px 0;
+          align-items:center;
+          justify-content: center;
+          text-align:center;
+        }
+        #footer .logo-container{
+          margin-bottom:10px;
+        }
+        .icons-container ul, .icons-container ol{
+          justify-content:center;
+        }
+      }
+      
+      
+      @media screen and (max-width:550px){
+        .mktoForm .mktoFormRow{
+          display:block !important;
+        }
+        .mktoForm .mktoFormRow .mktoFormCol{
+          margin-left:0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="brand">
+      <div class="section">
+           <div class="logo-container">
+            <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
+            <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header">
+      <div class="section">
+        <div class="logo-container">
+           <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
+            <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
+          </div>
+        </div>
+        <div class="mktoText" id="bannertext" mktoName="Banner - Text">
+          <h1>
+            Lorem Ipsum
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+        
+      </div>
+    </div>
+      
+    
+    <div id="freetext">
+      <div class="section">
+        <div class="mktoText" id="freetextcopy1" mktoName="Free-Text - Copy 1">
+          <h2>
+            Lorem ipsum dolor sit amet
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="mktoText" id="freetextcopy2" mktoName="Free-Text - Copy 2">
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+          </ul>
+        </div>
+        <div class="mktoText btn" id="freetextbtn1" mktoName="Free-Text - Button Content">
+          <a href="#">Button</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="formsection">
+      <div class="section flex">
+        
+        <div class="w50 lefttext">
+          <div class="mktoText" id="formlefttext" mktoName="Form - Left Text">
+            <h3>
+              Lorem ipsum dolor sit amet
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        
+        <div class="form-container w100">
+          <div class="mktoText" id="formheadline" mktoName="Form - Headline">
+            <h2  class="bold">Form Headline</h2>
+          </div>
+          <div class="mktoForm" id="form1" mktoName="Form">
+                  <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js">
+              </script> <form id="mktoForm_2039"></form> <script>MktoForms2.loadForm("//217-NBW-905.mktoweb.com", "217-NBW-905", 2039);</script>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    <footer id="footer">
+      <div class="section">
+        
+        <div class="row1 flex">
+          <div class="logo-container col" style="display:${showfooterlogo};">
+            <div class="mktoText" id="footerlogo" mktoName="Footer - Logo">
+              <a href="https://www.verizon.com/" taget="_blank"><img src="vz-2_rgb_r.png" alt="footer logo"></a>
+            </div>
+          </div>
+
+          <div class="mktoText col" id="footertext1" mktoName="Footer - Text">
+            &copy; <script>document.write(new Date().getFullYear())</script> Verizon
+          </div>
+
+          <div class="mktoText col" id="footertext2" mktoName="Footer - Text 2">
+            <ul class="footer-menu">
+              <li>
+			<a href="https://www.verizon.com/about/terms-conditions/overview" data-track="global footer:terms &amp; conditions">
+				Terms &amp; Conditions
+			</a>
+		</li>
+    <li>
+			<a href="https://www.verizon.com/home/fios/advertising-sales.html" data-track="global footer:advertise with us">
+				Advertise With Us
+			</a>
+		</li>
+    <li>
+			<a href="https://www.verizon.com/about/privacy/" data-track="global footer:privacy policy">
+				Privacy Policy
+			</a>
+		</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="row2">
+          <div class="icons-container">
+            <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
+              <ul>
+                <li><a href="https://www.facebook.com/verizon" target="_blank" aria-label="Follow Verizon on Facebook" title="Opens New Window">
+					<span>facebook-official</span>
+					<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1017.78"><path fill="#fff" d="M1024,512C1024,229.23,794.77,0,512,0S0,229.23,0,512c0,255.55,187.23,467.37,432,505.78v-357.78h-130v-148h130v-112.8c0-128.32,76.44-199.2,193.39-199.2,56.02,0,114.61,10,114.61,10v126h-64.56c-63.6,0-83.44,39.47-83.44,79.96v96.04h142l-22.7,148h-119.3v357.78c244.77-38.41,432-250.22,432-505.78Z"></path></svg>
+				</a></li>
+                <li><a href="https://twitter.com/verizon" target="_blank" aria-label="Follow Verizon on Twitter" title="Opens New Window">
+					<span>twitter</span>
+					<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+						<path fill="#FFF" d="M15.9,4.3c0.8-0.5,1.3-1.2,1.6-2C16.8,2.7,16,3,15.2,3.1C14.5,2.4,13.6,2,12.5,2c-2,0-3.7,1.6-3.7,3.7c0,0.3,0,0.6,0.1,0.8
+							c-3-0.2-5.7-1.6-7.5-3.8C1.1,3.2,0.9,3.8,0.9,4.5c0,1.3,0.6,2.4,1.6,3C1.9,7.5,1.3,7.3,0.8,7c0,1.8,1.3,3.2,2.9,3.6
+							c-0.3,0.1-0.6,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.8,2.5,3.4,2.5c-1.3,1-2.8,1.6-4.5,1.6c-0.3,0-0.6,0-0.9-0.1
+							c1.8,1.2,3.7,1.9,5.8,1.9c6.7,0,10.4-5.6,10.4-10.4c0-0.2,0-0.3,0-0.5c0.7-0.5,1.3-1.2,1.8-1.9C17.3,4,16.6,4.2,15.9,4.3z"></path>
+					</svg>
+				</a></li>
+        <li><a href="https://www.youtube.com/user/verizon" target="_blank" aria-label="Follow Verizon on Youtube" title="Opens New Window">
+					<span>you-tube</span>
+					<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.5 18" style="enable-background:new 0 0 18.5 18;" xml:space="preserve">
+						<path fill="#FFF" d="M17.8,4.8C17.6,4,17,3.4,16.2,3.2c-1.4-0.4-7-0.4-7-0.4s-5.6,0-7,0.4C1.4,3.4,0.8,4.1,0.6,4.8C0.2,6.3,0.2,9.2,0.2,9.2
+							s0,2.9,0.4,4.4c0.2,0.7,0.8,1.4,1.6,1.6c1.4,0.4,7,0.4,7,0.4s5.6,0,7-0.4c0.8-0.2,1.4-0.8,1.6-1.6c0.4-1.5,0.4-4.4,0.4-4.4
+							S18.2,6.3,17.8,4.8z M7.4,11.9V6.5l4.7,2.7L7.4,11.9z"></path>
+					</svg>
+				</a></li>
+        <li><a href="https://www.instagram.com/verizon/" target="_blank" aria-label="Follow Verizon on Instagram" title="Opens New Window">
+					<span>instagram</span>
+					<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+						<g>
+							<path fill="#FFF" d="M18,5.3c0-1-0.2-1.6-0.4-2.2c-0.2-0.6-0.5-1.1-1-1.6c-0.5-0.5-1-0.8-1.6-1c-0.6-0.2-1.2-0.4-2.2-0.4C11.8,0,11.4,0,9,0
+								S6.3,0,5.3,0c-1,0-1.6,0.2-2.2,0.4C2.5,0.7,2,1,1.5,1.5s-0.8,1-1,1.6C0.3,3.7,0.1,4.3,0.1,5.3C0,6.2,0,6.6,0,9c0,2.4,0,2.8,0.1,3.7
+								c0,1,0.2,1.6,0.4,2.2c0.2,0.6,0.5,1.1,1,1.6s1,0.8,1.6,1c0.6,0.2,1.2,0.4,2.2,0.4C6.3,18,6.6,18,9,18s2.8,0,3.7-0.1
+								c1,0,1.6-0.2,2.2-0.4c0.6-0.2,1.1-0.5,1.6-1c0.5-0.5,0.8-1,1-1.6c0.2-0.6,0.4-1.2,0.4-2.2c0-1,0.1-1.3,0.1-3.7
+								C18,6.6,18,6.2,18,5.3z M16.3,12.6c0,0.9-0.2,1.4-0.3,1.7c-0.2,0.4-0.4,0.7-0.7,1s-0.6,0.5-1,0.7c-0.3,0.1-0.8,0.3-1.7,0.3
+								c-0.9,0-1.2,0.1-3.6,0.1s-2.7,0-3.6-0.1c-0.9,0-1.4-0.2-1.7-0.3c-0.4-0.2-0.7-0.4-1-0.7s-0.5-0.6-0.7-1c-0.1-0.3-0.3-0.8-0.3-1.7
+								c0-0.9-0.1-1.2-0.1-3.6c0-2.4,0-2.7,0.1-3.6C1.7,4.5,1.9,4,2,3.7c0.2-0.4,0.4-0.7,0.7-1C3,2.3,3.3,2.1,3.7,2C4,1.9,4.5,1.7,5.4,1.7
+								c0.9,0,1.2-0.1,3.6-0.1c2.4,0,2.7,0,3.6,0.1c0.9,0,1.4,0.2,1.7,0.3c0.4,0.2,0.7,0.4,1,0.7s0.5,0.6,0.7,1c0.1,0.3,0.3,0.8,0.3,1.7
+								c0,0.9,0.1,1.2,0.1,3.6C16.4,11.4,16.4,11.7,16.3,12.6z"></path>
+							<path fill="#FFF" d="M9,4.4C6.5,4.4,4.4,6.4,4.4,9c0,2.6,2.1,4.6,4.6,4.6s4.6-2.1,4.6-4.6C13.6,6.4,11.6,4.4,9,4.4z M9,12c-1.7,0-3-1.3-3-3
+								c0-1.7,1.3-3,3-3c1.7,0,3,1.3,3,3C12,10.7,10.7,12,9,12z"></path>
+							<path fill="#FFF" d="M13.8,3.1c-0.6,0-1.1,0.5-1.1,1.1c0,0.6,0.5,1.1,1.1,1.1c0.6,0,1.1-0.5,1.1-1.1C14.9,3.6,14.4,3.1,13.8,3.1z"></path>
+						</g>
+					</svg>
+				</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    
+  </body>
+</html>
