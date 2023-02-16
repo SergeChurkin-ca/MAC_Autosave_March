@@ -27,11 +27,14 @@
     <title>${pageTitle}</title>
     <meta class="mktoString" id="logowidth" mktoName="Global - Logo Width" default="240" allowHtml="true">
     <meta class="mktoString" id="logowidth2" mktoName="Footer - Logo Width" default="240" allowHtml="true">
+    <meta class="mktoColor" id="headline-h1color" mktoName="Headline - H1 Color" default="#323e48">
+    <meta class="mktoColor" id="headline-pcolor" mktoName="Global - P Color" default="#323e48">
     <meta class="mktoColor" id="h1color" mktoName="Global - H1 Color" default="#323e48">
     <meta class="mktoColor" id="h2color" mktoName="Global - H2 Color" default="#323e48">
     <meta class="mktoColor" id="h3color" mktoName="Global - H3 Color" default="#323e48">
     <meta class="mktoColor" id="h4color" mktoName="Global - H4 Color" default="#323e48">
-    <meta class="mktoColor" id="pcolor" mktoName="Global - H1 Color" default="#323e48">
+    <meta class="mktoColor" id="pcolor" mktoName="Global - P Color" default="#323e48">
+
     <meta class="mktoString" id="h2size" mktoName="Global - h2 Font Size (px)" default="30" allowHtml="true">
     <meta class="mktoString" id="h3size" mktoName="Global - h3 Font Size (px)" default="25" allowHtml="true">
     <meta class="mktoString" id="h4size" mktoName="Global - h4 Font Size (px)" default="20" allowHtml="true">
@@ -42,7 +45,6 @@
     <meta class="mktoString" id="sectionspacing" mktoName="Global - Section Padding (px)" default="60" allowHtml="true">
     <meta class="mktoString" id="footersectionspacing" mktoName="Footer - Section Padding (px)" default="30" allowHtml="true">
 
-
     <meta class="mktoColor" id="btnbgcolor" mktoName="All Buttons - BG Color" default="#29ABE2">
     <meta class="mktoColor" id="btntextcolor" mktoName="All Buttons - Text Color" default="#ffffff">
     <meta class="mktoColor" id="btnbordercolor" mktoName="All Buttons - Border Color" default="#29ABE2">
@@ -50,16 +52,15 @@
     <meta class="mktoString" id="btnbordersize" mktoName="All Buttons Border Size (px)" default="2" allowHtml="true">
     <meta class="mktoString" id="btnborderradius" mktoName="All Buttons Border Radius" default="6" allowHtml="true">
 
-    <meta class="mktoColor" id="btnbgcolor2" mktoName="Reverse Btn- BG Color" default="#ffffff">
-    <meta class="mktoColor" id="btntextcolor2" mktoName="Reverse button - Text Color" default="#29ABE2">
-    <meta class="mktoColor" id="btnbordercolor2" mktoName="Reverse button - Border Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnbgcolor2" mktoName="Btn2- BG Color" default="#ffffff">
+    <meta class="mktoColor" id="btntextcolor2" mktoName="Btn2 - Text Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnbordercolor2" mktoName="Btn2 - Border Color" default="#29ABE2">
 
-    <meta class="mktoColor" id="btnhoverbackground2" mktoName="Reverse Btn - Hover Bg Color" default="#29ABE2">
-    <meta class="mktoColor" id="btnfontclr2" mktoName="Reverse Btn - Text Color" default="#ffffff">
-    <meta class="mktoColor" id="btnhoverclr2" mktoName="Reverse Btn - Hover Text Color" default="#29ABE2">
-    <meta class="mktoColor" id="btnhoverborder2" mktoName="Reverse Btn - Hover Border Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnhoverbackground2" mktoName="Btn2 - Hover Bg Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnfontclr2" mktoName="Btn2 - HoverText Color" default="#ffffff">
+    <meta class="mktoColor" id="btnhoverborder2" mktoName="Btn2 - Hover Border Color" default="#29ABE2">
 
-      <!-- Toggle Sections -->
+    <!-- Toggle Sections -->
 
     <meta class="mktoBoolean" id="bannershow" mktoName="Show Banner?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-banner-logo" mktoName="Show Banner Log" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -69,37 +70,41 @@
     <meta class="mktoBoolean" id="show-banner-button" mktoName="Show Banner CTA?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="bannerimgshow" mktoName="Show Banner Img?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="bannerformshow" mktoName="Show Banner Form?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-      <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-        <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show FormText Label?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-        <meta class="mktoBoolean" id="copy-show" mktoName="Show Copy" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-          <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-            <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-              <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-                <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-                  <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-                    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-                      <meta class="mktoBoolean" id="event-show" mktoName="Show Calendar Event" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showformtextlabel" mktoName="Show FormText Label?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="copy-show" mktoName="Show Copy" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="threecolshow" mktoName="Show Three Col?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="imgrightshow" mktoName="Show Image Right?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="imgleftshow" mktoName="Show Image Left?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="twocoliconsshow" mktoName="Show Two Col?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="videoshow" mktoName="Show Video?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+
+    <meta class="mktoBoolean" id="event-show" mktoName="Show Calendar Event" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+
     <meta class="mktoBoolean" id="speakers-show" mktoName="Show Speakers" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="speaker1-show" mktoName="Show Speaker 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="speaker2-show" mktoName="Show Speaker 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="speaker3-show" mktoName="Show Speaker 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="speaker4-show" mktoName="Show Speaker 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
     <meta class="mktoBoolean" id="benefits-show" mktoName="Show Benefits" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-benefit1" mktoName="Show Benefit 1" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-benefit2" mktoName="Show Benefit 2" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-benefit3" mktoName="Show Benefit 3" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="show-benefit4" mktoName="Show Benefit 4" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+
     <meta class="mktoBoolean" id="centercta-show" mktoName="Show Benefits" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
-    <meta class="mktoBoolean" id="button-reverse-show" mktoName="Show Reversed clr button?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
-  <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
+    <meta class="mktoBoolean" id="button-reverse-show" mktoName="Show 2nd Button?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"> 
+    <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
     <meta class="mktoBoolean" id="footershow2" mktoName="Show Footer 2?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">  
 
-      
     <meta class="mktoString" id="bannerbgimg" mktoName="Banner - BG Image URL" default="https://dummyimage.com/1800x1600/e0e4e0/fff" allowHtml="true">
     <meta class="mktoString" id="banner-right-maxwidth" mktoName="Banner Right COl max width" default="400" allowHtml="true">
     <meta class="mktoColor" id="bannerbgcolor" mktoName="Banner - BG Color" default="#e0e4e1">
     <meta class="mktoString" id="bannerheadsize" mktoName="Banner - Headline Font Size (px)" default="50" allowHtml="true">
     <meta class="mktoString" id="bannercopysize" mktoName="Banner - Copy Font Size (px)" default="25" allowHtml="true">
+    <meta class="mktoString" id="banner-button-align" mktoName="Banner - Btn Align" default="center" allowHtml="true">
     <meta class="mktoColor" id="banbtnbgcolor" mktoName="Banner - Btn BG Color" default="#29ABE2">
     <meta class="mktoColor" id="banbtntextcolor" mktoName="Banner - Btn Text Color" default="#ffffff">
     <meta class="mktoColor" id="banbtnbordercolor" mktoName="Banner - Btn Border Color" default="#29ABE2">
@@ -107,26 +112,22 @@
     <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
     <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="6" allowHtml="true">
 
-    <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Bg Color" default="#ffffff">
-    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#e0e4e1">
-    <meta class="mktoColor" id="btnhoverclr" mktoName="Free-Text - Btn Hover Text Color" default="#29ABE2">
-    <meta class="mktoColor" id="btnhoverborder" mktoName="Free-Text - Btn Hover Border Color" default="#29ABE2">
-    
-    <meta class="mktoString" id="formtextbgcolor" mktoName="Form Text Section Bf Color" default="#ffffff" allowHtml="true">
-
-    <meta class="mktoColor" id="formbgcolor" mktoName="Form/Txt - Form BG Color" default="#F2F5F4">
-    <meta class="mktoString" id="formtextpad" mktoName="Form/Txt - Padding (px)" default="20" allowHtml="true">
-
     <meta class="mktoString" id="copy-bgcolor" mktoName="Copy BG Color" default="#" allowHtml="true">  
     <meta class="mktoString" id="copy-mg-top" mktoName="Copy Top Margin" default="0" allowHtml="true">
     <meta class="mktoString" id="copy-mg-btm" mktoName="Copy Btm Margin" default="3" allowHtml="true">
 
+    <meta class="mktoColor" id="btnhoverbackground" mktoName="Free-Text - Btn Hover Bg Color" default="#ffffff">
+    <meta class="mktoColor" id="btnfontclr" mktoName="Free-Text - Btn Text Color" default="#e0e4e1">
+    <meta class="mktoColor" id="btnhoverclr" mktoName="Free-Text - Btn Hover Text Color" default="#29ABE2">
+    <meta class="mktoColor" id="btnhoverborder" mktoName="Free-Text - Btn Hover Border Color" default="#29ABE2">
 
+    <meta class="mktoString" id="formtextbgcolor" mktoName="Form Text Section Bg Color" default="#ffffff" allowHtml="true">
+    <meta class="mktoColor" id="formbgcolor" mktoName="Form/Txt - Form BG Color" default="#F2F5F4">
+    <meta class="mktoString" id="formtextpad" mktoName="Form/Txt - Padding (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="formtextpsize" mktoName="Form/Txt - Label Font Size (px)" default="20" allowHtml="true">
     <meta class="mktoString" id="formtextpweight" mktoName="Form/Txt - Label Font weight" default="400" allowHtml="true">
     <meta class="mktoColor" id="formtextpcolor" mktoName="Form/Txt - Label Color" default="#323e48">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#323e48"> 
-    
     <meta class="mktoColor" id="formtextfieldcolor" mktoName="Form/Txt - Field Background Color" default="#ffffff">
     <meta class="mktoColor" id="formtextbordercolor" mktoName="Form/Txt - Field Border Color" default="#323e48">
     <meta class="mktoString" id="formtextborderheight" mktoName="Form/Txt - Field Border Size (px)" default="1" allowHtml="true">
@@ -141,49 +142,39 @@
     <meta class="mktoColor" id="formButtonHoverBGColor" mktoName="Form Button - Hov:BG Color" default="#ffffff">
     <meta class="mktoColor" id="formButtonBorder" mktoName="Form Button - Hov:Brdr Color" default="#29ABE2">
     <meta class="mktoColor" id="formButtonHoverBorder" mktoName="Form Button - Hov:Brdr Color" default="#29ABE2">
-    
+
     <meta class="mktoColor" id="threecolbgcolor" mktoName="Three Col - BG Color" default="#F2F5F4">
     <meta class="mktoColor" id="threecolcolumnbgcolor" mktoName="Three Col - Column BG Color" default="#ffffff">
     <meta class="mktoBoolean" id="threecolshadow" mktoName="Three Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
     <meta class="mktoString" id="threecolradius" mktoName="Three Col - Column Radius" default="10" allowHtml="true">
 
-    
     <meta class="mktoColor" id="imgrightbgcolor" mktoName="Image Right - BG Color" default="#ffffff">
-    
     <meta class="mktoColor" id="imgleftbgcolor" mktoName="Image Left - BG Color" default="#ffffff">
 
-    
     <meta class="mktoColor" id="twocoliconsbgcolor" mktoName="Two Col - BG Color" default="#F6F9FC">
     <meta class="mktoColor" id="twocoliconscolumnbgcolor" mktoName="Two Col - Column BG Color" default="#ffffff">
     <meta class="mktoBoolean" id="twocoliconsshadow" mktoName="Two Col - Shadow" default="true" true_value="2px 2px 5px 3px rgba(31,32,62,0.05)" false_value="none" false_value_name="No Shadow" true_value_name="Shadow">
     <meta class="mktoString" id="twocoliconsradius" mktoName="Two Col - Column Radius" default="10" allowHtml="true">
 
-    
     <meta class="mktoColor" id="videobgcolor" mktoName="Video - BG Color" default="#ffffff">
     <meta class="mktoColor" id="videoleftbgcolor" mktoName="Video Text - BG Color" default="#E0E4E0">
     <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
     <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
-
-    
     <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#F2F5F4">
-
     <meta class="mktoColor" id="btmButtonHoverBGColor" mktoName="Btm Form - Btn Hover Bg Color" default="#ffffff">
     <meta class="mktoColor" id="btmButtonHoverColor" mktoName="Btm Form-  Btn Text Color" default="#29abe2">
     <meta class="mktoColor" id="btmButtonHoverBorder" mktoName="Btm Form-  Btn Hover Border Color" default="#29ABE2">
 
-    
     <meta class="mktoColor" id="event-bg-color" mktoName="Event Bg Color" default="#29ABE2">  
 
     <meta class="mktoColor" id="speakers-bg-color" mktoName="Event Bg Color" default="#f2f5f4">
     <meta class="mktoString" id="speaker-padding-top" mktoName="Speakers Top Pad (rem)" default="1" allowHtml="true">  
     <meta class="mktoString" id="speaker-padding-btm" mktoName="Speakers Btm Pad (rem)" default="3" allowHtml="true">  
 
-    
     <meta class="mktoString" id="center-cta-mgtop" mktoName="Center CTA margin top" default="1" allowHtml="true">  
     <meta class="mktoString" id="center-cta-mgbtm" mktoName="Center CTA margin bottom" default="4" allowHtml="true">  
 
-    
     <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#323e48">
     <meta class="mktoColor" id="footerbgcolor2" mktoName="Footer - BG Color" default="#192025">
     <meta class="mktoColor" id="footerlinkcolor" mktoName="Footer - Link Color" default="#ffffff">
@@ -204,7 +195,6 @@
     <meta class="mktoString" id="speakers-order" mktoName="Order:Speakers- Order" default="3" allowHtml="true">
     <meta class="mktoString" id="benefits-order" mktoName="Order:Benefits" default="3" allowHtml="true">
     <meta class="mktoString" id="centercta-order" mktoName="Order:Center CTA" default="12" allowHtml="true">
-
 
 
     <style>
@@ -268,6 +258,7 @@
       }
       #banner .button {
         display:${show-banner-button};
+        text-align: ${banner-button-align};
       }
       #formtext {
         background-color:${formtextbgcolor};
@@ -292,7 +283,7 @@
         display:${imgrightshow};
         order:${imgrightorder};
       }
-      #imright .section {
+      #imgright .section {
         margin-bottom: 20px !important;
       }
       #imgleft {
@@ -516,14 +507,14 @@
       #footer .logo{
         padding-bottom:0;
       }
-      .headlinetext h1 {
+      .bannertext h1 {
         font-size:${bannerheadsize}px;
-        color:${h1color};
+        color:${headline-h1color};
         font-family: ${fontfamily-headline}, sans-serif !important;
       }
-      .headlinetext p {
+      .bannertext p {
         font-size:${bannercopysize}px;
-        color:${pcolor};
+        color:${headline-pcolor};
         font-weight:${pweight};
       }
       p {
@@ -559,7 +550,7 @@
         font-weight:bold;
         font-family: ${fontfamily-headline}, sans-serif !important;
       }
-      
+
       #banner .button a {
         background-color:${banbtnbgcolor};
         border:2px solid ${banbtnbordercolor};
@@ -769,8 +760,6 @@
         margin: 0 !important;
       }
 
-
-      ${btmformtwocol}
       #threecol .col33 {
         background-color:${threecolcolumnbgcolor};
         border-radius:${threecolradius}px;
@@ -798,10 +787,10 @@
         #banner .right, #banner .left {
           max-width: 100%;
         }
-        .headlinetext h1 {
+        .bannertext h1 {
           font-size:35px;
         }
-        .headlinetext p {
+        .bannertext p {
           font-size:20px;
         }
         p {
@@ -859,6 +848,12 @@
         #footer .col:nth-child(n+2) {
           flex: 1 0 180px;
         }
+        #bannerform .mktoForm select,
+         #formtext .mktoForm select {
+           height: 44px; !important;
+        min-height: 40px !important;
+          padding: 5px 10px !important;
+        }
       }
       @media (max-width:520px) {
         #calendarEvent .flex-row {
@@ -899,7 +894,7 @@
                 </a>
               </div>
             </div>
-            <div class="mktoText headlinetext" id="bannerheadline" mktoName="Banner - Headline">
+            <div class="mktoText bannertext" id="bannerheadline" mktoName="Banner - Headline">
               <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
               <p>Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue.</p>
             </div>
@@ -1320,6 +1315,7 @@
 
     <script src='https://it.recastsoftware.com/rs/563-ODB-688/images/mac-jquery.min.js'></script>
     <script src="https://it.recastsoftware.com/rs/563-ODB-688/images/video-script.js"></script>
+    <!-- Hiding marketo hidden fields -->
     <script>
       MktoForms2.whenReady(function(form) {
 
