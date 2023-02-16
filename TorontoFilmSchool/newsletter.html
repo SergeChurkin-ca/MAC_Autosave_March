@@ -238,6 +238,9 @@ font-family: Arial, serif !important;
         width:110px !important;
     }
     }
+    @media only screen and (max-width: 640px){
+        .block3 {width: 80% !important;}
+    }
     /* darkmode workadounrs */
     :root {
     color-scheme: light dark;
@@ -270,7 +273,7 @@ font-family: Arial, serif !important;
     <tr>
     <td bgcolor="${bodyBgColor}" style="background-color:${bodyBgColor};">
         <!--Logo-->
-        <table id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;min-width: 600px; width: 600px;" border="0" width="600">
+        <table id="logo" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;max-width:600px; width:100%;" border="0" width="600">
         <tr>
             <td class="darkimgbg" bgcolor="#ffffff" valign="top" style=";vertical-align: top;background-color:#ffffff;"> 
 
@@ -976,15 +979,22 @@ font-family: Arial, serif !important;
     <table cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
         <tr>
         <td bgColor="${footer-bg-color}" valign="top" style="background-color:${footer-bg-color};vertical-align: top;">
-            <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:535px;border-collapse: collapse;border-spacing: 0;" border="0" width="535">
+            <table class="block3" align="center" calass="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:535px;border-collapse: collapse;border-spacing: 0;text-align:center;" border="0" width="535">
             <tr>
                 <td height="35" style="line-height:1px;font-size:1px;">&nbsp;</td>
             </tr>
 
             <tr>
-                <td align="center" style="text-align: center;">
-                <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-                    <a href="https://www.torontofilmschool.ca/" target="_blank"><img class="logowidthl" alt="logo" src="https://lp.yorkvilleu.ca/rs/961-UXG-821/images/Insider-Advantage-Logo-white.png" width="178" border="0" style="max-width:178px;" /></a>
+                
+                <td class="block" align="center" style="text-align: center;display:inline-block;">
+                <div class="mktoImg" id="footerLogo1" mktoName="Footer Logo 1" mktoLockImgSize="false">
+                    <a href="https://www.torontofilmschool.ca/" target="_blank"><img class="logowidthl" alt="logo" src="https://lp.yorkvilleu.ca/rs/961-UXG-821/images/tfs-logo.jpg" width="120" border="0" style="max-width:100px;" /></a>
+                </div>
+                </td>
+                <td class="hidden" style="width:40px;font-size:1px;mso-line-height:exacly;line-height:1px;display:inline-block;">&nbsp</td>
+                <td class="block" align="center" style="text-align: center;display:inline-block;">
+                <div class="mktoImg" id="footerLogo2" mktoName="Footer Logo 2" mktoLockImgSize="false">
+                    <a href="https://www.torontofilmschool.ca/" target="_blank"><img class="logowidthl" alt="logo" src="https://lp.yorkvilleu.ca/rs/961-UXG-821/images/Insider-Advantage-Logo-white.png" width="120" border="0" style="max-width:178px;" /></a>
                 </div>
                 </td>
             </tr>
