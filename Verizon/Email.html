@@ -71,9 +71,9 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoColor" id="btnBGColorhead" mktoName="Button BG Color" default="#000000">
 <meta mktoModuleScope="true" class="mktoColor" id="btnBorderColorhead" mktoName="Button Border Color" default="#000000" />
   
-<meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#ffffff" />
-<meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#1c1c1c">
-<meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#1c1c1c" />
+<meta mktoModuleScope="true" class="mktoColor" id="btnColor" mktoName="Button Text Color" default="#000000" />
+<meta mktoModuleScope="true" class="mktoColor" id="btnBGColor" mktoName="Button BG Color" default="#ffffff">
+<meta mktoModuleScope="true" class="mktoColor" id="btnBorderColor" mktoName="Button Border Color" default="#000000" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btnBorderRadius" mktoname="Button Border Radius (px)" default="35" />
 <meta mktoModuleScope="true" class="mktoString" id="btnText" mktoName="Button Text" default="Read More">
 <meta mktoModuleScope="true" class="mktoNumber" id="btn1FontSize" mktoname="Button Font Size (px)" default="18" />
@@ -93,7 +93,7 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoList" id="align" mktoName="Content Align" values="left,center,right" default="left" />
   
 <meta mktoModuleScope="true" class="mktoColor" id="footerbgclr" mktoname="Footer Background Color" default="#1c1c1c" />
-<meta mktoModuleScope="true" class="mktoNumber" id="logowidth2" mktoname="Logo Width (px)" default="200" />
+<meta mktoModuleScope="true" class="mktoNumber" id="logowidth2" mktoname="Logo Width (px)" default="100" />
 <meta mktoModuleScope="true" class="mktoNumber" id="logocolwidth" mktoname="Column Width (px)" default="215" />
   
 <title>{{my.ViewAsWebpage Title}}</title>
@@ -213,7 +213,7 @@ th{font-weight:normal !important}
 <tr>
 <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
 <div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="https://dummyimage.com/220x60/212121/B3B8C4" border="0" style="height:auto !important;" /></a>
+    <a href="#" target="_blank"><img width="100" class="logowidth" alt="logo" src="logo-white-email.png" border="0" style="height:auto !important;witdh:100px;" /></a>
 </div>
 </th>
 </tr>
@@ -331,19 +331,21 @@ th{font-weight:normal !important}
             <tr>
                 <td height="25" style="line-height:1px;font-size:1px;">&nbsp;</td>
             </tr>
-            <tr>
+        <tr>
                 <td valign="top">
-                    <div class="mktoText" mktoName="Banner Dynamic CTA" id="banner-btnsdy"> 
-                                              <div> 
-                                                <table cellspacing="0" cellpadding="0" border="0" align="left"> 
-                                                  <tbody> 
-                                                    <tr> 
-                                                      <td style="text-align: center; text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: 'Work Sans',Arial, sans-serif; border:1px solid #ffffff; background-color:#5c5c5c; border-radius: 10px;padding:5px;"> <a style="min-height:10px; text-decoration:none; color:#ffffff; padding: 13px 40px; display:inline-block" href="#">Read More</a> </td> 
-                                                    </tr> 
-                                                  </tbody> 
-                                                </table> 
-                                              </div> 
-                                            </div>
+                    <div class="mktoText" id="banner-btns" mktoname="Button">
+                        <div>
+                            <table cellpadding="0" cellspacing="0" border="0" align="${align}">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center; text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif; border:1px solid ${btnBorderColorhead}; background-color:${btnBGColorhead}; border-radius: ${btnBorderRadius}px;padding:5px;">
+                                            <a style="min-height:10px; text-decoration:none; color:${btnColorhead}; padding: 10px 45px; display:inline-block" href="${btnURL}">${btnText}</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -475,7 +477,7 @@ th{font-weight:normal !important}
             <tbody>
                 <tr>
                     <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:1px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
-                        <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor}; padding: 9px 30px; display:inline-block" href="${btnURL}">${btnText2}</a>
+                        <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor}; padding: 7px 35px; display:inline-block" href="${btnURL}">${btnText2}</a>
                     </td>
                 </tr>
             </tbody>
@@ -508,7 +510,9 @@ th{font-weight:normal !important}
                                         <table cellspacing="0" cellpadding="0" border="0" align="center"> 
                                           <tbody> 
                                             <tr> 
-                                              <td style="min-height:10px;text-align: center;text-decoration:none; font-size:18px;font-weight:bold; line-height:135%; font-family: 'Work Sans',Arial, sans-serif;border:1px solid #1c1c1c;background-color:#1c1c1c;border-radius: 10px;padding:5px"> <a style="min-height:10px; text-decoration:none; color:#ffffff; color:#ffffff; padding: 9px 30px; display:inline-block" href="#">Dynamic Button</a> </td> 
+                                               <td style="min-height:10px;text-align: center;text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:135%; font-family: '${fontfamily}',Arial, sans-serif;border:1px solid ${btnBorderColor};background-color:${btnBGColor};border-radius: ${btnBorderRadius}px;padding:5px">
+                        <a style="min-height:10px; text-decoration:none; color:${btnColor}; color:${btnColor}; padding: 7px 35px; display:inline-block" href="#">Dynamic Button</a>
+                    </td>
                                             </tr> 
                                           </tbody> 
                                         </table> 
@@ -542,30 +546,25 @@ th{font-weight:normal !important}
        
        <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
          <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
-         	<a href="#" target="_blank"><img alt="" width="35" height="auto" src="https://dummyimage.com/35x35/5c5c5c/fff" style="width:35px;height:auto;" /></a>
+         	<a href="https://www.facebook.com/verizon" target="_blank"><img alt="" width="35" height="auto" src="fb.png" style="width:35px;height:auto;" /></a>
          </div>
        </td> 
        <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
          <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
-         	<a href="#" target="_blank"><img alt="" width="35" height="auto" src="https://dummyimage.com/35x35/5c5c5c/fff" style="width:35px;height:auto;" /></a>
+         	<a href="https://twitter.com/verizon" target="_blank"><img alt="" width="35" height="auto" src="tw.png" style="width:35px;height:auto;" /></a>
          </div>
        </td> 
        <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-right:10px;">
          <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3">
-         	<a href="#" target="_blank"><img alt="" width="35" height="auto" src="https://dummyimage.com/35x35/5c5c5c/fff" style="width:35px;height:auto;" /></a>
+         	<a href="https://www.youtube.com/user/verizon" target="_blank"><img alt="" width="35" height="auto" src="youtube.png" style="width:35px;height:auto;" /></a>
          </div>
        </td> 
        <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;">
          <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4">
-         	<a href="#" target="_blank"><img alt="" width="35" height="auto" src="https://dummyimage.com/35x35/5c5c5c/fff" style="width:35px;height:auto;" /></a>
+         	<a href="https://www.instagram.com/verizon/" target="_blank"><img alt="" width="35" height="auto" src="inst.png" style="width:35px;height:auto;" /></a>
          </div>
        </td> 
-       <td width="45" align="${alignCenter}" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:45px;padding-left:10px;">
-         <div class="mktoText" mktoName="Footer Icon 5" id="footer-icon5">
-         	<a href="#" target="_blank"><img alt="" width="35" height="auto" src="https://dummyimage.com/35x35/5c5c5c/fff" style="width:35px;height:auto;" /></a>
-         </div>
-       </td> 
-       
+ 
      </tr> 
   </table>
 </td>
@@ -610,7 +609,7 @@ th{font-weight:normal !important}
 <tr>
 <td align="${alignCenter}" style="text-align: ${alignCenter};">
 <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="https://dummyimage.com/200x55/5c5c5c/fff" border="0" style="width:${logowidth2}px; height:auto !important;" /></a>
+    <a href="#" target="_blank"><img class="logowidth" width="${logowidth2}" alt="logo" src="vz-2_rgb_r.png" border="0" style="width:${logowidth2}px; height:auto !important;" /></a>
 </div>
 </td>
 </tr>
