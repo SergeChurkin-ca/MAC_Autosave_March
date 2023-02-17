@@ -66,8 +66,8 @@
     <meta class="mktoString" mktoName="Banner - Image" id="bannerimage" default="./News_events_hero_cut_desktop.jpg">
     <meta class="mktoString" mktoName="Banner - Logo Width (px)" id="toplogowidth" default="150">
     
-    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="80">
-    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="80">
+    <meta class="mktoString" mktoName="Logo - Top Padding(px)" id="logopaddingtop" default="30">
+    <meta class="mktoString" mktoName="Logo - Bottom Padding(px)" id="logopaddingbtm" default="30">
     <meta class="mktoString" mktoName="Banner - Top Padding(px)" id="headerpaddingtop" default="100">
     <meta class="mktoString" mktoName="Banner - Bottom Padding(px)" id="headerpaddingbtm" default="0">
     <meta class="mktoString" mktoName="Background Blend Mode" id="background-blend-mode" default="multiply">
@@ -78,7 +78,7 @@
 
     <!-- Footer Section Styling -->
     <meta class="mktoString" mktoName="Footer - Top/Bottom Padding (px)" id="footerpaddingtb" default="30">
-    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="211">
+    <meta class="mktoString" mktoName="Footer Logo - Width (px)" id="footerlogowidth" default="100">
     <meta class="mktoString" mktoName="Footer Icons - Width (px)" id="footericonswidth" default="40">
     <meta class="mktoString" mktoName="Footer - Font Size (px)" id="footerfontsize" default="13">
 
@@ -94,7 +94,7 @@
     <meta class="mktoString" mktoName="Button - Border Radius (px)" id="btnborderrds" default="25">
     <meta class="mktoString" mktoName="Button - Hover Opacity (0 to 1)" id="btnhvropacity" default="1">
     <meta class="mktoString" mktoName="Button Left/Right Padding (px)" id="btnpaddinglr" default="15">
-    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="10">
+    <meta class="mktoString" mktoName="Button Top/Bottomm Padding (px)" id="btnpaddingtb" default="13">
 
     <!-- Form Section Styling -->
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
@@ -278,8 +278,6 @@
         display:${showtoplogo-1};
       }
       #brand .logo-container{
-        position:absolute;
-        top:${sectionpaddingtb}px;
         left:0;
         width:100%;
       }
@@ -607,7 +605,7 @@
       <div class="section">
            <div class="logo-container">
             <div class="mktoText" id="bannerlogo-1" mktoName="Banner - Logo">
-            <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
+            <a href="https://www.verizon.com/" target="_blank"><img src="vz-2_rgb_p.png" alt="logo"></a>
           </div>
         </div>
       </div>
@@ -616,7 +614,7 @@
       <div class="section">
         <div class="logo-container">
            <div class="mktoText" id="bannerlogo" mktoName="Banner - Logo">
-            <img src="https://dummyimage.com/150x80/000/fff" alt="logo">
+            <a href="https://www.verizon.com/" target="_blank"><img src="vz-2_rgb_p.png" alt="logo"></a>
           </div>
         </div>
         <div class="mktoText" id="bannertext" mktoName="Banner - Text">
