@@ -1,0 +1,180 @@
+ .mktoForm .mktoGutter,
+ .mktoForm .mktoOffset,
+ .mktoForm .mktoAsterix {
+     display: none !important;
+ }
+ 
+ .mktoForm.mktoHasWidth {
+     background-color: #2d3a5b;
+     margin: 0 auto;
+     display: flex !important;
+     flex-direction: column !important;
+     box-shadow: 0 8px 20px #000;
+     padding: 48px 64px !important;
+     border-radius: 8px;
+     width: unset !important;
+     max-width: 800px;
+ }
+ 
+ .mktoForm .mktoFormRow,
+ .mktoForm .mktoFieldWrap,
+ .mktoForm .mktoFormCol {
+     width: 100% !important;
+ }
+ 
+ .mktoForm .mktoFormRow {
+     display: flex !important;
+     margin: 0 !important;
+     flex-direction: column;
+ }
+ 
+ .mktoForm .mktoFormCol {
+     margin: 0 0 23px 0 !important;
+ }
+ 
+ .mktoForm .mktoLabel {
+     color: #ffffff;
+     font-size: 12px;
+     font-weight: 500 !important;
+     margin-bottom: 0.3rem;
+     width: 100% !important;
+ }
+ 
+ .mktoForm input[type=text],
+ .mktoForm input[type=url],
+ .mktoForm input[type=email],
+ .mktoForm input[type=tel],
+ .mktoForm input[type=number],
+ .mktoForm input[type=date],
+ .mktoForm textarea.mktoField,
+ .mktoForm select.mktoField {
+     width: 100% !important;
+     padding: 10px 30px 10px 15px !important;
+     height: usnet !important;
+     border: solid 2px #d6d6d6 !important;
+     border-radius: 5px !important;
+     font-size: 18px !important;
+     line-height: 1 !important;
+     outline: none !important;
+     font-weight: 500 !important;
+     box-shadow: none !important;
+ }
+ 
+ .mktoForm input[type=text]:focus-visible,
+ .mktoForm input[type=url]:focus-visible,
+ .mktoForm input[type=email]:focus-visible,
+ .mktoForm input[type=tel]:focus-visible,
+ .mktoForm input[type=number]:focus-visible,
+ .mktoForm input[type=date]:focus-visible,
+ .mktoForm textarea.mktoFieldfocus-visible,
+ .mktoForm select.mktoField:focus-visible {
+     box-shadow: 0 0 3px 3px #1966ff !important;
+ }
+ 
+ .mktoForm input[type=text].mktoInvalid,
+ .mktoForm input[type=url].mktoInvalid,
+ .mktoForm input[type=email].mktoInvalid,
+ .mktoForm input[type=tel].mktoInvalid,
+ .mktoForm input[type=number].mktoInvalid,
+ .mktoForm input[type=date].mktoInvalid,
+ .mktoForm textarea.mktoField.mktoInvalid,
+ .mktoForm select.mktoField.mktoInvalid .mktoForm .mktoInvalid {
+     box-shadow: 0 0 2px 2px #e60d31 !important;
+ }
+ 
+ .mktoForm select.mktoField {
+     padding: 10px 30px 10px 10px !important;
+ }
+ 
+ .mktoForm textarea.mktoField {
+     padding: 10px 30px 10px 10px !important;
+ }
+ 
+ .mktoForm .mktoButtonRow {
+     display: flex;
+     justify-content: flex-start;
+     margin: 1rem 0 0 !important;
+ }
+ 
+ .mktoForm .mktoButtonWrap {
+     margin: 0 !important;
+ }
+ 
+ .mktoForm .mktoButtonWrap .mktoButton {
+     margin: 0 !important;
+     background-color: #ffffff !important;
+     background: #ffffff !important;
+     color: #000000 !important;
+     text-shadow: none !important;
+     border-radius: 8px !important;
+     font-size: 18px !important;
+     font-weight: 500 !important;
+     padding: 15px 30px !important;
+     width: unset !important;
+     box-shadow: none !important;
+ }
+ 
+ @media (max-width:480px) {
+     .mktoForm {
+         padding: 32px !important;
+     }
+     .mktoForm input[type=text],
+     .mktoForm input[type=url],
+     .mktoForm input[type=email],
+     .mktoForm input[type=tel],
+     .mktoForm input[type=number],
+     .mktoForm input[type=date],
+     .mktoForm textarea.mktoField,
+     .mktoForm select.mktoField {
+         height: unset !important;
+         min-height: unset !important;
+         padding: 10px 30px 8px 15px !important;
+         line-height: 1 !important;
+     }
+ }
+ /* Error Message */
+ 
+ .mktoForm .mktoError {
+     right: 0 !important;
+     color: #ffffff !important;
+     text-shadow: none !important;
+     white-space: nowrap !important;
+     font-style: italic;
+     font-size: 12px !important;
+     text-align: right !important;
+     display: flex !important;
+     justify-content: flex-end !important;
+     width: 100% !important;
+ }
+ 
+ .mktoForm .mktoError .mktoErrorMsg {
+     background: none !important;
+     border: none !important;
+     background-color: none !important;
+     box-shadow: none !important;
+     text-shadow: none !important;
+     width: 100% !important;
+     display: flex !important;
+     justify-content: flex-end !important;
+     position: relative !important;
+     top: 0px !important;
+ }
+ 
+ .mktoForm .mktoError .mktoErrorArrowWrap {
+     display: none !important;
+ }
+ 
+ .mktoForm #ValidMsgEmail {
+     display: flex !important;
+     border: solid 1px red;
+     position: absolute !important;
+     top: -4px !important;
+     /* right: 250px !important */
+ }
+ 
+ @media (max-width:360px) {
+     .mktoForm .mktoError {
+         white-space: initial;
+         width: 100% !important;
+     }
+ }
