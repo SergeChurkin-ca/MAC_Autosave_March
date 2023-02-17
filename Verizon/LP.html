@@ -86,6 +86,8 @@
     <!-- Google Fonts -->
     <meta class="mktoString" mktoName="Google Font - @Import" id="googlefontimport" default="@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');">
     <meta class="mktoString" mktoName="Google Font - Family" id="googlefontfamily" default="'Poppins', sans-serif">
+    <meta class="mktoString" mktoName="Google Font - Family" id="fontfamily" default="VerizonNHGDS-Regular">
+    <meta class="mktoString" mktoName="Headline Font - Family" id="headline-fontfamily" default="VerizonNHGDS-Bold">
 
     <!-- General Button Styling -->
     <meta class="mktoString" mktoName="Button - Text Size (px)" id="btnfontsize" default="16">
@@ -104,6 +106,7 @@
 
 
     <style>
+       
       ${googlefontimport}
       *{
         padding:0;
@@ -112,18 +115,19 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        font-family: Helvetica, sans-serif;
-        font-family: ${googlefontfamily} !important;
+        font-family: ${fontfamily}, sans-serif !important;
       }
-      
+   
       body {background:#fff;} 
       
       h1{
         font-size: ${h1fontsize}px;
+        font-family: ${headline-fontfamily}, sans-serif !important;
       }
 
       h2{
         font-size: ${h2fontsize}px;
+        font-family: ${headline-fontfamily}, sans-serif !important;
       }
       p,ul,ol{
         margin:10px 0;
@@ -239,9 +243,7 @@
         color:${footerfontclr};
         font-size:${footerfontsize}px;
       }
-      #footericons span {
-        visibility: hidden;
-      }
+   
        #brand .section{
         display:flex;
         flex-direction:column;
@@ -287,6 +289,7 @@
 
       #header h1 {
         color: ${bannerHeaderColor} !important;
+        font-family: ${headline-fontfamily}, sans-serif !important;
       }
 
       #header p,
@@ -311,6 +314,7 @@
       #formlefttext h3 {
         color: ${formSectionHeaderColor} !important;
         font-size: ${h3fontsize}px;
+        font-family: ${headline-fontfamily}, sans-serif !important;
       }
 
       #formsection p,
@@ -505,7 +509,7 @@
         list-style: none;
         gap: 0.75rem;
       }
-      .footer-menu a {
+      .footer-menu a, .icons-container a {
         text-decoration: none;
       }
       .icons-container ul, .icons-container ol{
@@ -513,14 +517,19 @@
         flex-direction:row;
         margin-left:0;
         list-style:none;
+        width: fit-content;    
+        gap: 1rem;
+        margin-top: 3rem;
       }
       .icons-container ul li, .icons-container ol li{
         list-style:none;
         margin-right:10px;
+
       }
       .icons-container svg {
         width: 21px;
       }
+
       #footer .icons-container img{
         width:${footericonswidth}px;
       }
@@ -567,6 +576,7 @@
         }
         .icons-container ul, .icons-container ol{
           justify-content:center;
+
         }
       }
       
@@ -579,6 +589,17 @@
           margin-left:0 !important;
         }
       }
+      
+        @font-face {
+            font-family: 'VerizonNHGDS-Bold';
+              src: url('./Fonts/VerizonNHGeTX-Bold.ttf') format('truetype'), 
+              url ('./Fonts/VerizonNHGeTX-Bold.otf');
+        }
+             @font-face {
+            font-family: 'VerizonNHGDS-Rugular';
+              src: url('Fonts/VerizonNHGeTX-Regular.ttf') format('truetype'), 
+              url ('Fonts/VerizonNHGeTX-Regular.otf');
+        }
     </style>
   </head>
   <body>
@@ -710,11 +731,9 @@
             <div class="mktoText" id="footericons" mktoName="Footer - Social Media Icons/Links">
               <ul>
                 <li><a href="https://www.facebook.com/verizon" target="_blank" aria-label="Follow Verizon on Facebook" title="Opens New Window">
-					<span>facebook-official</span>
 					<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1017.78"><path fill="#fff" d="M1024,512C1024,229.23,794.77,0,512,0S0,229.23,0,512c0,255.55,187.23,467.37,432,505.78v-357.78h-130v-148h130v-112.8c0-128.32,76.44-199.2,193.39-199.2,56.02,0,114.61,10,114.61,10v126h-64.56c-63.6,0-83.44,39.47-83.44,79.96v96.04h142l-22.7,148h-119.3v357.78c244.77-38.41,432-250.22,432-505.78Z"></path></svg>
 				</a></li>
                 <li><a href="https://twitter.com/verizon" target="_blank" aria-label="Follow Verizon on Twitter" title="Opens New Window">
-					<span>twitter</span>
 					<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 						<path fill="#FFF" d="M15.9,4.3c0.8-0.5,1.3-1.2,1.6-2C16.8,2.7,16,3,15.2,3.1C14.5,2.4,13.6,2,12.5,2c-2,0-3.7,1.6-3.7,3.7c0,0.3,0,0.6,0.1,0.8
 							c-3-0.2-5.7-1.6-7.5-3.8C1.1,3.2,0.9,3.8,0.9,4.5c0,1.3,0.6,2.4,1.6,3C1.9,7.5,1.3,7.3,0.8,7c0,1.8,1.3,3.2,2.9,3.6
@@ -723,7 +742,6 @@
 					</svg>
 				</a></li>
         <li><a href="https://www.youtube.com/user/verizon" target="_blank" aria-label="Follow Verizon on Youtube" title="Opens New Window">
-					<span>you-tube</span>
 					<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.5 18" style="enable-background:new 0 0 18.5 18;" xml:space="preserve">
 						<path fill="#FFF" d="M17.8,4.8C17.6,4,17,3.4,16.2,3.2c-1.4-0.4-7-0.4-7-0.4s-5.6,0-7,0.4C1.4,3.4,0.8,4.1,0.6,4.8C0.2,6.3,0.2,9.2,0.2,9.2
 							s0,2.9,0.4,4.4c0.2,0.7,0.8,1.4,1.6,1.6c1.4,0.4,7,0.4,7,0.4s5.6,0,7-0.4c0.8-0.2,1.4-0.8,1.6-1.6c0.4-1.5,0.4-4.4,0.4-4.4
@@ -731,7 +749,6 @@
 					</svg>
 				</a></li>
         <li><a href="https://www.instagram.com/verizon/" target="_blank" aria-label="Follow Verizon on Instagram" title="Opens New Window">
-					<span>instagram</span>
 					<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 						<g>
 							<path fill="#FFF" d="M18,5.3c0-1-0.2-1.6-0.4-2.2c-0.2-0.6-0.5-1.1-1-1.6c-0.5-0.5-1-0.8-1.6-1c-0.6-0.2-1.2-0.4-2.2-0.4C11.8,0,11.4,0,9,0
