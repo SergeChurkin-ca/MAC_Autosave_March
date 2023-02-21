@@ -116,9 +116,52 @@
     box-shadow: none!important;
 }
 
+.mktoForm .mktoFormRow:nth-child(2) {
+    width: 49%;
+    float: left;
+}
+
+.mktoForm .mktoFormRow:nth-child(3) {
+    width: 49%;
+    float: left;
+    margin-left: 2%;
+}
+
+.mktoForm .mktoFormRow:nth-child(4) {
+    width: 49%;
+    float: left;
+}
+
+.mktoForm .mktoFormRow:nth-child(5) {
+    width: 49%;
+    float: left;
+    margin-left: 2%;
+}
+
 @media (max-width: 768px) {
     .mktoForm .mktoFormRow {
         clear: both !important;
+    }
+    .mktoForm .mktoFormRow:nth-child(2) {
+        width: 100%;
+        float: left;
+    }
+    .mktoForm .mktoFormRow:nth-child(3) {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+    }
+    .mktoForm .mktoFormRow:nth-child(4) {
+        width: 100%;
+        float: left;
+    }
+    .mktoForm .mktoFormRow:nth-child(5) {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+    }
+    .mktoForm .mktoFormRow:nth-child(7) {
+        margin-bottom: -15rem !important;
     }
 }
 
@@ -126,6 +169,41 @@ mktoHtmlText.mktoHasWidth {
     width: 100%!important;
     color: #323e48 !important;
     font-size: 16px!important;
+}
+
+.mktoForm .mktoFormRow:nth-child(9) {
+    width: 49%;
+    float: left;
+    margin-left: 2%;
+    margin: 0 0;
+}
+
+.mktoForm .mktoFormRow:nth-child(10) {
+    width: 49%;
+    float: left;
+    margin: 0 0;
+}
+
+.mktoForm .mktoFormRow:nth-child(11) {
+    width: 49%;
+    float: left;
+    margin-left: 2%;
+    margin: 0 0;
+}
+
+.mktoForm .mktoFormRow:nth-child(12) {
+    width: 49%;
+    float: left;
+    margin: 0 0;
+}
+
+.mktoForm .mktoFormRow:nth-child(8) .mktoLabel,
+.mktoForm .mktoFormRow:nth-child(9) .mktoLabel,
+.mktoForm .mktoFormRow:nth-child(10) .mktoLabel,
+.mktoForm .mktoFormRow:nth-child(11) .mktoLabel,
+.mktoForm .mktoFormRow:nth-child(12) .mktoLabel {
+    margin-left: 20px;
+    padding-top: 0px!important;
 }
 
 .mktoCheckboxList input {
@@ -182,6 +260,31 @@ mktoHtmlText.mktoHasWidth {
     top: 10px;
     left: 5px;
     padding: 6px;
+}
+
+@media (max-width: 768px) {
+    .mktoForm .mktoFormRow:nth-child(8) {
+        width: 100%;
+        float: left;
+    }
+    .mktoForm .mktoFormRow:nth-child(9) {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+    }
+    .mktoForm .mktoFormRow:nth-child(10) {
+        width: 100%;
+        float: left;
+    }
+    .mktoForm .mktoFormRow:nth-child(11) {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+    }
+    .mktoForm .mktoFormRow:nth-child(12) {
+        width: 100%;
+        float: left;
+    }
 }
 
 .mktoButtonWrap.mktoSimple {

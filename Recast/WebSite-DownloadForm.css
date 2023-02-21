@@ -10,8 +10,15 @@
     font-family: "Work Sans", sans-serif!important;
 }
 
+.mktoForm.mktoHasWidth {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .mktoFormRow {
-    width: 100%;
+    width: 49%;
     float: none;
 }
 
@@ -230,5 +237,17 @@ mktoHtmlText.mktoHasWidth {
     .mktoForm select.mktoField,
     .mktoForm textarea.mktoField {
         height: initial !important;
+    }
+}
+
+.hiddenClass {
+    position: absolute;
+    top: 0;
+    visibility: hidden
+}
+
+@media (max-width: 480px) {
+    .mktoFormRow {
+        width: 100%;
     }
 }
