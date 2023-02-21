@@ -140,44 +140,69 @@
             margin: 3rem auto;
         }
         
-        #footer {
+        .footer {
             background-color: #383838;
         }
         
-        #footer .flex-row {
+        .footer .container_inner {
+            padding: 2rem 0;
+        }
+        
+        .footer .flex-row {
             justify-content: space-between;
         }
         
-        #footer .column {
+        .footer .column {
             width: calc((100% / 3));
             padding: 0;
             margin: 0;
         }
         
-        #footer ul {
+        .footer ul {
             padding: 0;
         }
         
-        #footer .column:nth-child(2) {
+        .footer .column:nth-child(2) {
             width: calc((100% / 3) - 10rem);
         }
         
-        #footer svg {
+        .footer svg {
             width: 20px;
             max-height: 20px;
             fill: #ffffff;
         }
         
-        #footer p,
-        #footer a {
+        .footer p,
+        .footer a {
             color: #ffffff !important;
             font-size: 14.8px !important;
             line-height: 22.2px;
             font-weight: 400;
         }
         
-        #footer a {
+        .footer a {
             text-decoration: none;
+            padding: 0.4rem 0;
+            line-height: 28px;
+        }
+        
+        .footer a:hover,
+        .footer a:focus {
+            color: #6fbe49 !important;
+        }
+        
+        .footermenu li {
+            margin: 0 0 1.25rem 0;
+            white-space: nowrap;
+        }
+        
+        .fbottom {
+            padding: 2rem 0;
+        }
+        
+        .fbottom .social {
+            justify-content: flex-end !important;
+            gap: 1.25rem;
         }
         /* form  */
         
@@ -337,7 +362,6 @@
         <section id="columns" class="form">
             <div class="container_inner">
 
-
                 <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js">
                 </script>
                 <form id="mktoForm_2039"></form>
@@ -367,7 +391,7 @@
             </div>
         </section>
 
-        <footer id="footer">
+        <footer class="footer">
             <div class="container_inner">
                 <div class="flex-row">
                     <div class="column">
@@ -400,7 +424,15 @@
                         <p><a href="mailto:press@ridecell.com">press@ridecell.com</a></p>
                     </div>
                 </div>
-                <div class="fbottom expanded row">
+
+            </div>
+
+        </footer>
+
+        <footer class="footer">
+            <div class="container_inner">
+
+                <div class="fbottom flex-row">
                     <div class="column">
                         <p>© 2022 Ridecell, Inc</p>
                     </div>
@@ -420,7 +452,6 @@
             </div>
 
         </footer>
-
 
     </div>
 
