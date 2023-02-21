@@ -109,14 +109,20 @@
         .gradient-green .flex-row {
             margin: 0 auto;
             width: fit-content;
+            justify-content: center;
+            gap: 1rem;
         }
         
         .gradient-green .white-text {
             color: #fff!important;
+            margin: 0;
         }
         
         .gradient-green .social {
             list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 1rem;
         }
         
         .gradient-green svg {
@@ -130,14 +136,167 @@
             background: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/preference_bg.jpg');
         }
         
+        .form .container_inner {
+            margin: 3rem auto;
+        }
+        
         #footer {
             background-color: #383838;
+        }
+        
+        #footer .flex-row {
+            justify-content: space-between;
+        }
+        
+        #footer .column {
+            width: calc((100% / 3));
+            padding: 0;
+            margin: 0;
+        }
+        
+        #footer ul {
+            padding: 0;
+        }
+        
+        #footer .column:nth-child(2) {
+            width: calc((100% / 3) - 10rem);
         }
         
         #footer svg {
             width: 20px;
             max-height: 20px;
             fill: #ffffff;
+        }
+        
+        #footer p,
+        #footer a {
+            color: #ffffff !important;
+            font-size: 14.8px !important;
+            line-height: 22.2px;
+            font-weight: 400;
+        }
+        
+        #footer a {
+            text-decoration: none;
+        }
+        /* form  */
+        
+        .mktoForm .mktoOffset,
+        .mktoForm .mktoGutter {
+            display: none !important;
+        }
+        
+        .mktoForm .mktoFieldWrap {
+            position: relative;
+        }
+        
+        .mktoForm .mktoLabel {
+            position: absolute;
+            right: 0;
+            left: 0;
+            visibility: hidden;
+        }
+        
+        .mktoForm.mktoHasWidth {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem 0 !important;
+            flex-direction: row;
+            width: 100% !important;
+            justify-content: space-between;
+        }
+        
+        .mktoForm .mktoFieldWrap,
+        .mktoForm .mktoFormCol {
+            display: flex;
+            width: 100% !important;
+        }
+        
+        .mktoForm .mktoFormRow {
+            width: calc((100% / 2) - 1rem);
+        }
+        
+        .mktoForm input[type=text],
+        .mktoForm input[type=url],
+        .mktoForm input[type=email],
+        .mktoForm input[type=tel],
+        .mktoForm input[type=number],
+        .mktoForm input[type=date],
+        .mktoForm textarea.mktoField,
+        .mktoForm select.mktoField {
+            width: 100% !important;
+            border: 2px solid #eaeaea !important;
+            outline: none;
+            transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+            font-size: 18.8px !important;
+            height: unset !important;
+            min-height: unset !important;
+            padding: 2px 2px !important;
+            line-height: 28.2px !important;
+        }
+        
+        .mktoForm input[type=text]:focus,
+        .mktoForm input[type=url]:focus,
+        .mktoForm input[type=email]:focus,
+        .mktoForm input[type=tel]:focus,
+        .mktoForm input[type=number]:focus,
+        .mktoForm input[type=date]:focus,
+        .mktoForm textarea.mktoField:focus,
+        .mktoForm select.mktoField:focus {
+            border: 2px solid #4eb855 !important;
+        }
+        
+        .mktoForm select.mktoField {
+            padding: 4px 0 !important;
+        }
+        
+        .mktoForm select,
+        .mktoForm input::-webkit-input-placeholder {
+            /* Edge */
+            color: #545454;
+            font-weight: 300;
+        }
+        
+        .mktoForm input:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #545454;
+            font-weight: 300;
+        }
+        
+        .mktoForm input::placeholder {
+            color: #545454;
+            font-weight: 300;
+        }
+        
+        .mktoForm .mktoButton {
+            background: #4eb855 !important;
+            padding: 0.9rem 2.3rem !important;
+            text-transform: uppercase !important;
+            font-weight: 600 !important;
+            border: solid 1px #4eb855;
+            border-radius: 3px !important;
+        }
+        
+        .mktoForm .mktoButtonRow {
+            margin: 2rem 0 !important;
+            width: 100% !important;
+        }
+        
+        .mktoform .mktoButtonWrap {
+            margin: 0 !important;
+        }
+        
+        .mktoForm .mktoButton:hover,
+        .mktoForm .mktoButton:focus {
+            background-color: #54d05c !important;
+            border: solid 1px #54d05c !important;
+            ;
+        }
+        
+        @media (max-width:520px) {
+            .mktoForm .mktoFormRow {
+                width: 100% !important;
+            }
         }
     </style>
 
@@ -210,8 +369,8 @@
 
         <footer id="footer">
             <div class="container_inner">
-                <div class="row">
-                    <div>
+                <div class="flex-row">
+                    <div class="column">
                         <p class="list-title">About Ridecell</p>
                         <p>Ridecell Inc. is leading the way in the digital transformation of fleet businesses and operations. Our Fleet IoT (Internet of Things) solutions modernize and monetize fleets by combining data insights with digital vehicle control
                             to turn today’s manual processes into automated workflows. The result is unmatched levels of efficiency and control for shared services, motorpools, rental, and logistic fleets.
@@ -219,7 +378,7 @@
                         <p>Today Ridecell powers some of the most successful fleet businesses in cities across Europe and North America, including Ferrovial, Groupe Renault, Gig Car Share from AAA, and Toyota Sweden.&nbsp;Ridecell is headquartered in San
                             Francisco with offices in Madrid, Paris, Berlin and Pune India.</p>
                     </div>
-                    <div class="footernav small-12 large-3 column">
+                    <div class="column">
                         <p class="list-title">Navigation</p>
                         <ul class="footermenu">
                             <li id="menu-item-1490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1490"><a href="https://ridecell.com/about/">About Ridecell</a></li>
@@ -235,7 +394,7 @@
                             <li id="menu-item-2664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2664"><a href="https://ridecell.com/sitemap/">Sitemap</a></li>
                         </ul>
                     </div>
-                    <div class="contactinfo small-12 large-4 column">
+                    <div class="column">
                         <p class="list-title">Contacts</p>
                         <p>514 Bryant St., San Francisco, CA 94107</p>
                         <p><a href="mailto:press@ridecell.com">press@ridecell.com</a></p>
