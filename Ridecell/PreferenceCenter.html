@@ -1,12 +1,10 @@
+<!DOCTYPE html>
+
 <html>
-
-<head>
-    <base href="https://info.ridecell.com">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="description" content="">
-    <title>Preference Center</title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Preference Center">
@@ -21,470 +19,484 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
-        body,
-        html {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        
-        * {
-            font-family: 'Montserrat', sans-serif !important;
-        }
-        
-        .flex {
-            flex-direction: row;
-            display: flex;
-        }
-        
-        .flex-row {
-            flex-direction: row;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .container_inner {
-            width: 95vw !important;
-            max-width: 1280px;
-            padding: 0;
-            margin: 0 auto;
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        navbar .flex-row {
-            padding: 20px 0;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .toptext a {
-            color: #6fbe49;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 400;
-        }
-        
-        #main {
-            background-color: #F8F8F8!important;
-            padding: 4rem 0 4rem;
-        }
-        
-        #main .subheadline {
-            color: #54d05c!important;
-            font-size: 30px;
-            line-height: 130%;
-            font-weight: 500;
-            padding-bottom: 20px;
-        }
-        
-        #main p {
-            color: #292929;
-            font-weight: 300;
-            font-size: 1.175rem;
-            width: 100%;
-        }
-        
-        .gradient-green {
-            background: #54d05c!important;
-            width: 100%;
-            margin: 0;
-            text-align: center;
-            text-align: center;
-            padding: 20px 0;
-        }
-        
-        .gradient-green .flex-row {
-            margin: 0 auto;
-            width: fit-content;
-            justify-content: center;
-            gap: 1rem;
-        }
-        
-        .gradient-green .white-text {
-            color: #fff!important;
-            margin: 0;
-        }
-        
+
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+      body,
+      html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      * {
+        font-family: 'Montserrat', sans-serif !important;
+      }
+
+      .flex {
+        flex-direction: row;
+        display: flex;
+      }
+
+      .flex-row {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container_inner {
+        width: 95vw !important;
+        max-width: 1280px;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      navbar .flex-row {
+        padding: 20px 0;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .toptext a {
+        color: #6fbe49;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      #main {
+        background-color: #F8F8F8!important;
+        padding: 4rem 0 4rem;
+      }
+
+      #main .subheadline {
+        color: #54d05c!important;
+        font-size: 30px;
+        line-height: 130%;
+        font-weight: 500;
+        padding-bottom: 20px;
+      }
+
+      #main p {
+        color: #292929;
+        font-weight: 300;
+        font-size: 1.175rem;
+        width: 100%;
+      }
+
+      .gradient-green {
+        background: #54d05c!important;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .gradient-green .flex-row {
+        margin: 0 auto;
+        width: fit-content;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .gradient-green .white-text {
+        color: #fff!important;
+        margin: 0;
+      }
+
+      .gradient-green .social {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+      }
+
+      .gradient-green svg {
+        fill: #ffffff;
+        width: 20px;
+        max-height: 20px;
+        ;
+      }
+
+      .form {
+        background: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/preference_bg.jpg');
+      }
+
+      .form .container_inner {
+        margin: 3rem auto;
+      }
+
+      .footer {
+        background-color: #383838;
+      }
+
+      .footer .container_inner {
+        padding: 2rem 0;
+      }
+
+      .footer .flex-row {
+        justify-content: space-between;
+      }
+
+      .footer .column {
+        width: calc((100% / 3));
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer ul {
+        padding: 0;
+      }
+
+      .footer .column:nth-child(2) {
+        width: calc((100% / 3) - 10rem);
+      }
+
+      .footer svg {
+        width: 20px;
+        max-height: 20px;
+        fill: #ffffff;
+      }
+
+      .footer p,
+      .footer a {
+        color: #ffffff !important;
+        font-size: 14.8px !important;
+        line-height: 22.2px;
+        font-weight: 400;
+      }
+
+      .footer a {
+        text-decoration: none;
+        padding: 0.4rem 0;
+        line-height: 28px;
+      }
+
+      .footer a:hover,
+      .footer a:focus {
+        color: #6fbe49 !important;
+      }
+
+      .footermenu li {
+        margin: 0 0 1.25rem 0;
+        white-space: nowrap;
+      }
+
+      .footer:nth-of-type(2) {
+        border-top: 1px solid #474747 !important;
+      }
+
+      .fbottom {
+        padding: 2rem 0;
+      }
+
+      .fbottom .social {
+        justify-content: flex-end !important;
+        gap: 1.25rem;
+      }
+      /* form  */
+
+      .mktoForm .mktoOffset,
+      .mktoForm .mktoGutter {
+        display: none !important;
+      }
+
+      .mktoForm .mktoFieldWrap {
+        position: relative;
+      }
+
+      .mktoForm .mktoLabel {
+        position: absolute;
+        right: 0;
+        left: 0;
+        visibility: hidden;
+      }
+
+      .mktoForm.mktoHasWidth {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 0 !important;
+        flex-direction: row;
+        width: 100% !important;
+        justify-content: space-between;
+      }
+
+      .mktoForm .mktoFieldWrap,
+      .mktoForm .mktoFormCol {
+        display: flex;
+        width: 100% !important;
+      }
+
+      .mktoForm .mktoFormRow {
+        width: calc((100% / 2) - 1rem);
+      }
+
+      .mktoForm input[type=text],
+      .mktoForm input[type=url],
+      .mktoForm input[type=email],
+      .mktoForm input[type=tel],
+      .mktoForm input[type=number],
+      .mktoForm input[type=date],
+      .mktoForm textarea.mktoField,
+      .mktoForm select.mktoField {
+        width: 100% !important;
+        border: 2px solid #eaeaea !important;
+        outline: none;
+        transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+        font-size: 18.8px !important;
+        height: unset !important;
+        min-height: unset !important;
+        padding: 2px 2px !important;
+        line-height: 28.2px !important;
+      }
+
+      .mktoForm input[type=text]:focus,
+      .mktoForm input[type=url]:focus,
+      .mktoForm input[type=email]:focus,
+      .mktoForm input[type=tel]:focus,
+      .mktoForm input[type=number]:focus,
+      .mktoForm input[type=date]:focus,
+      .mktoForm textarea.mktoField:focus,
+      .mktoForm select.mktoField:focus {
+        border: 2px solid #4eb855 !important;
+      }
+
+      .mktoForm select.mktoField {
+        padding: 4px 0 !important;
+      }
+
+      .mktoForm select,
+      .mktoForm input::-webkit-input-placeholder {
+        /* Edge */
+        color: #545454;
+        font-weight: 300;
+      }
+
+      .mktoForm input:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #545454;
+        font-weight: 300;
+      }
+
+      .mktoForm input::placeholder {
+        color: #545454;
+        font-weight: 300;
+      }
+
+      .mktoForm .mktoButton {
+        background: #4eb855 !important;
+        padding: 0.9rem 2.3rem !important;
+        text-transform: uppercase !important;
+        font-weight: 600 !important;
+        border: solid 1px #4eb855;
+        border-radius: 3px !important;
+      }
+
+      .mktoForm .mktoButtonRow {
+        margin: 2rem 0 !important;
+        width: 100% !important;
+      }
+
+      .mktoform .mktoButtonWrap {
+        margin: 0 !important;
+      }
+
+      .mktoForm .mktoButton:hover,
+      .mktoForm .mktoButton:focus {
+        background-color: #54d05c !important;
+        border: solid 1px #54d05c !important;
+      }
+
+      @media (max-width:1000px) {
         .gradient-green .social {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            gap: 1rem;
+          width: inherit;
         }
-        
-        .gradient-green svg {
-            fill: #ffffff;
-            width: 20px;
-            max-height: 20px;
-            ;
-        }
-        
-        .form {
-            background: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/preference_bg.jpg');
-        }
-        
-        .form .container_inner {
-            margin: 3rem auto;
-        }
-        
-        .footer {
-            background-color: #383838;
-        }
-        
-        .footer .container_inner {
-            padding: 2rem 0;
-        }
-        
         .footer .flex-row {
-            justify-content: space-between;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
         }
-        
         .footer .column {
-            width: calc((100% / 3));
-            padding: 0;
-            margin: 0;
+          width: 100% !important;
         }
-        
-        .footer ul {
-            padding: 0;
-        }
-        
-        .footer .column:nth-child(2) {
-            width: calc((100% / 3) - 10rem);
-        }
-        
-        .footer svg {
-            width: 20px;
-            max-height: 20px;
-            fill: #ffffff;
-        }
-        
-        .footer p,
-        .footer a {
-            color: #ffffff !important;
-            font-size: 14.8px !important;
-            line-height: 22.2px;
-            font-weight: 400;
-        }
-        
-        .footer a {
-            text-decoration: none;
-            padding: 0.4rem 0;
-            line-height: 28px;
-        }
-        
-        .footer a:hover,
-        .footer a:focus {
-            color: #6fbe49 !important;
-        }
-        
-        .footermenu li {
-            margin: 0 0 1.25rem 0;
-            white-space: nowrap;
-        }
-        
-        .footer:nth-of-type(2) {
-            border-top: 1px solid #474747 !important;
-        }
-        
         .fbottom {
-            padding: 2rem 0;
+          padding: 0;
         }
-        
-        .fbottom .social {
-            justify-content: flex-end !important;
-            gap: 1.25rem;
+        .social {
+          flex-direction: row !important;
+          margin: 1.25rem auto 0 !important;
+          display: flex;
         }
-        /* form  */
-        
-        .mktoForm .mktoOffset,
-        .mktoForm .mktoGutter {
-            display: none !important;
+      }
+
+      @media (max-width: 680px) {
+        .container_inner {
+          max-width: 90%;
         }
-        
-        .mktoForm .mktoFieldWrap {
-            position: relative;
+        navbar .flex-row {
+          gap: 1rem;
         }
-        
-        .mktoForm .mktoLabel {
-            position: absolute;
-            right: 0;
-            left: 0;
-            visibility: hidden;
+        .logolp {
+          margin: 0 auto;
+          display: flex;
         }
-        
-        .mktoForm.mktoHasWidth {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem 0 !important;
-            flex-direction: row;
-            width: 100% !important;
-            justify-content: space-between;
+        #main {
+          text-align: center;
         }
-        
-        .mktoForm .mktoFieldWrap,
-        .mktoForm .mktoFormCol {
-            display: flex;
-            width: 100% !important;
-        }
-        
+      }
+
+      @media (max-width:520px) {
         .mktoForm .mktoFormRow {
-            width: calc((100% / 2) - 1rem);
+          width: 100% !important;
         }
-        
-        .mktoForm input[type=text],
-        .mktoForm input[type=url],
-        .mktoForm input[type=email],
-        .mktoForm input[type=tel],
-        .mktoForm input[type=number],
-        .mktoForm input[type=date],
-        .mktoForm textarea.mktoField,
-        .mktoForm select.mktoField {
-            width: 100% !important;
-            border: 2px solid #eaeaea !important;
-            outline: none;
-            transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
-            font-size: 18.8px !important;
-            height: unset !important;
-            min-height: unset !important;
-            padding: 2px 2px !important;
-            line-height: 28.2px !important;
-        }
-        
-        .mktoForm input[type=text]:focus,
-        .mktoForm input[type=url]:focus,
-        .mktoForm input[type=email]:focus,
-        .mktoForm input[type=tel]:focus,
-        .mktoForm input[type=number]:focus,
-        .mktoForm input[type=date]:focus,
-        .mktoForm textarea.mktoField:focus,
-        .mktoForm select.mktoField:focus {
-            border: 2px solid #4eb855 !important;
-        }
-        
-        .mktoForm select.mktoField {
-            padding: 4px 0 !important;
-        }
-        
-        .mktoForm select,
-        .mktoForm input::-webkit-input-placeholder {
-            /* Edge */
-            color: #545454;
-            font-weight: 300;
-        }
-        
-        .mktoForm input:-ms-input-placeholder {
-            /* Internet Explorer 10-11 */
-            color: #545454;
-            font-weight: 300;
-        }
-        
-        .mktoForm input::placeholder {
-            color: #545454;
-            font-weight: 300;
-        }
-        
-        .mktoForm .mktoButton {
-            background: #4eb855 !important;
-            padding: 0.9rem 2.3rem !important;
-            text-transform: uppercase !important;
-            font-weight: 600 !important;
-            border: solid 1px #4eb855;
-            border-radius: 3px !important;
-        }
-        
-        .mktoForm .mktoButtonRow {
-            margin: 2rem 0 !important;
-            width: 100% !important;
-        }
-        
-        .mktoform .mktoButtonWrap {
-            margin: 0 !important;
-        }
-        
-        .mktoForm .mktoButton:hover,
-        .mktoForm .mktoButton:focus {
-            background-color: #54d05c !important;
-            border: solid 1px #54d05c !important;
-        }
-        
-        @media (max-width:1000px) {
-            .footer .flex-row {
-                flex-direction: column;
-                text-align: center;
-                align-items: center;
-            }
-            .social {
-                flex-direction: row !important;
-            }
-        }
-        
-        @media (max-width: 680px) {
-            .container_inner {
-                max-width: 90%;
-            }
-            navbar .flex-row {
-                gap: 1rem;
-            }
-            .logolp {
-                margin: 0 auto;
-                display: flex;
-            }
-            #main {
-                text-align: center;
-            }
-        }
-        
-        @media (max-width:520px) {
-            .mktoForm .mktoFormRow {
-                width: 100% !important;
-            }
-        }
+      }
     </style>
 
 
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
 
-        <navbar class="container_100">
-            <div id="topcontent">
-                <div class="container_inner flex-row">
-                    <div class="logolp">
-                        <a href="https://ridecell.com/" target="_blank"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/Ridecell_logo.png" width="121" alt="Logo" border="0"></a>
-                    </div>
-                    <div class="toptext" pardot-region="toptext"><a href="https://ridecell.com/" target="_blank">VISIT RIDECELL.COM</a></div>
+      <navbar class="container_100">
+        <div id="topcontent">
+          <div class="container_inner flex-row">
+            <div class="mktoText logolp" id="logotop" mktoName="Logo">
+              <a href="https://ridecell.com/" target="_blank"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/Ridecell_logo.png" width="121" alt="Logo" border="0"></a>
+            </div>
+            <div class="mktoText toptext" id="toptext" mktoName="Top Text"><a href="https://ridecell.com/" target="_blank">VISIT RIDECELL.COM</a></div>
+          </div>
+        </div>
+      </navbar>
+
+      <section class="container_100">
+        <div id="main">
+          <div class="container_inner">
+            <div class="row">
+              <div>
+                <div class="mktoText subheadline" id="subheadlnie" mktoName="Subheeadline">Lorem ipsum dolor sit amet</div>
+                <div class="mktoText bodyctext" id="bodytext" mktoName="Body Text">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore sint quos soluta enim aspernatur quia illo nobis, magni perferendis nesciunt dolore, obcaecati ipsum assumenda tempora natus? Modi, pariatur consectetur?</p>
                 </div>
+              </div>
             </div>
-        </navbar>
+          </div>
+        </div>
+      </section>
 
-        <section class="container_100">
-            <div id="main">
-                <div class="container_inner">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="subheadline" pardot-region="headertext2" pardot-region-type="Basic">Lorem ipsum dolor sit amet</div>
-                            <div class="bodyctext" pardot-region="bodytexta">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore sint quos soluta enim aspernatur quia illo nobis, magni perferendis nesciunt dolore, obcaecati ipsum assumenda tempora natus? Modi, pariatur consectetur?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+      <section id="columns" class="form">
+        <div class="container_inner">
+          <div class="mktoForm" id="fomr1" mktoName="Form">
+
+            <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js">
+            </script>
+            <form id="mktoForm_2039"></form>
+            <script>
+              MktoForms2.loadForm("//217-NBW-905.mktoweb.com", "217-NBW-905", 2039);
+            </script>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="gradient-green">
+        <div class="container_inner flex-row">
+          <span class="mktoText white-text" id="whitetext" mktoName="Green Line Text">Be sure to check us out on social:</span>
+          <ul class="social mktoText flex-row" id="gradsocial" mktoName="Social">
+            <li>
+              <a target="_blank" href="https://twitter.com/ridecell">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/company/ridecell"></a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/RideCell-192466184127400/?fref=ts"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container_inner">
+          <div class="flex-row">
+            <div class="column mktoText" id="footertext1" mktoName="Footer Text">
+              <p class="list-title">About Ridecell</p>
+              <p>Ridecell Inc. is leading the way in the digital transformation of fleet businesses and operations. Our Fleet IoT (Internet of Things) solutions modernize and monetize fleets by combining data insights with digital vehicle control
+                to turn today’s manual processes into automated workflows. The result is unmatched levels of efficiency and control for shared services, motorpools, rental, and logistic fleets.
+              </p>
+              <p>Today Ridecell powers some of the most successful fleet businesses in cities across Europe and North America, including Ferrovial, Groupe Renault, Gig Car Share from AAA, and Toyota Sweden.&nbsp;Ridecell is headquartered in San
+                Francisco with offices in Madrid, Paris, Berlin and Pune India.</p>
             </div>
-        </section>
-
-
-
-        <section id="columns" class="form">
-            <div class="container_inner">
-
-                <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js">
-                </script>
-                <form id="mktoForm_2039"></form>
-                <script>
-                    MktoForms2.loadForm("//217-NBW-905.mktoweb.com", "217-NBW-905", 2039);
-                </script>
-
-
+            <div class="column mktoText" id="footermenu" mktoName="Footer Menu">
+              <p class="list-title">Navigation</p>
+              <ul class="footermenu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1490"><a href="https://ridecell.com/about/">About Ridecell</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1489"><a href="https://ridecell.com/about/sustainability/">Sustainability</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1489"><a href="https://ridecell.com/about/careers/">Careers</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1510"><a href="https://ridecell.com/press-room/">Press Room</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1502"><a href="https://ridecell.com/privacy-policy/">Privacy Policy</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506"><a href="https://ridecell.com/security-policy/">Security Policy</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a href="https://ridecell.com/terms-of-use/">Terms of Use</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-729 current_page_item menu-item-1507">
+                  <a href="https://ridecell.com/contact-us/" aria-current="page">Contact Us</a>
+                </li>
+                <li><a href="https://ridecell.com/sitemap/">Sitemap</a></li>
+              </ul>
             </div>
-        </section>
-
-        <section class="gradient-green">
-            <div class="container_inner flex-row">
-                <span class=" white-text" pardot-region="socialtext" pardot-region-type="Basic">Be sure to check us out on social:</span>
-                <ul class="social mktoText flex-row" id="gradsocial" mktoName="Social">
-                    <li>
-                        <a target="_blank" href="https://twitter.com/ridecell">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/company/ridecell"></a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></li>
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/RideCell-192466184127400/?fref=ts"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
-                    </li>
-                </ul>
+            <div class="column mktoText" id="contacts" mktoName="Footer Text">
+              <p class="list-title">Contacts</p>
+              <p>514 Bryant St., San Francisco, CA 94107</p>
+              <p><a href="mailto:press@ridecell.com">press@ridecell.com</a></p>
             </div>
-        </section>
+          </div>
 
-        <footer class="footer">
-            <div class="container_inner">
-                <div class="flex-row">
-                    <div class="column">
-                        <p class="list-title">About Ridecell</p>
-                        <p>Ridecell Inc. is leading the way in the digital transformation of fleet businesses and operations. Our Fleet IoT (Internet of Things) solutions modernize and monetize fleets by combining data insights with digital vehicle control
-                            to turn today’s manual processes into automated workflows. The result is unmatched levels of efficiency and control for shared services, motorpools, rental, and logistic fleets.
-                        </p>
-                        <p>Today Ridecell powers some of the most successful fleet businesses in cities across Europe and North America, including Ferrovial, Groupe Renault, Gig Car Share from AAA, and Toyota Sweden.&nbsp;Ridecell is headquartered in San
-                            Francisco with offices in Madrid, Paris, Berlin and Pune India.</p>
-                    </div>
-                    <div class="column">
-                        <p class="list-title">Navigation</p>
-                        <ul class="footermenu">
-                            <li id="menu-item-1490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1490"><a href="https://ridecell.com/about/">About Ridecell</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1489"><a href="https://ridecell.com/about/sustainability/">Sustainability</a></li>
-                            <li id="menu-item-1489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1489"><a href="https://ridecell.com/about/careers/">Careers</a></li>
-                            <li id="menu-item-1510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1510"><a href="https://ridecell.com/press-room/">Press Room</a></li>
-                            <li id="menu-item-1502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1502"><a href="https://ridecell.com/privacy-policy/">Privacy Policy</a></li>
-                            <li id="menu-item-1506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1506"><a href="https://ridecell.com/security-policy/">Security Policy</a></li>
-                            <li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a href="https://ridecell.com/terms-of-use/">Terms of Use</a></li>
-                            <li id="menu-item-1507" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-729 current_page_item menu-item-1507">
-                                <a href="https://ridecell.com/contact-us/" aria-current="page">Contact Us</a>
-                            </li>
-                            <li id="menu-item-2664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2664"><a href="https://ridecell.com/sitemap/">Sitemap</a></li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <p class="list-title">Contacts</p>
-                        <p>514 Bryant St., San Francisco, CA 94107</p>
-                        <p><a href="mailto:press@ridecell.com">press@ridecell.com</a></p>
-                    </div>
-                </div>
+        </div>
 
+      </footer>
+
+      <footer class="footer">
+        <div class="container_inner">
+
+          <div class="fbottom flex-row">
+            <div class="column mktoText" id="copyright" mktoName="Copyrihght">
+              <p>© 2022 Ridecell, Inc</p>
             </div>
-
-        </footer>
-
-        <footer class="footer">
-            <div class="container_inner">
-
-                <div class="fbottom flex-row">
-                    <div class="column">
-                        <p>© 2022 Ridecell, Inc</p>
-                    </div>
-                    <div class="column social">
-                        <ul class="social flex-row">
-                            <li>
-                                <a target="_blank" rel="noopener" href="https://twitter.com/ridecell"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
-                            </li>
-                            <li id="menu-item-1480" class="linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-1480">
-                                <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/ridecell"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></li>
-                            <li id="menu-item-1478" class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-1478">
-                                <a target="_blank" rel="noopener" href="https://www.facebook.com/RideCell-192466184127400/?fref=ts"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="column social">
+              <ul class="mktoText social flex-row" id="footersocial" mktoName="Footer Social">
+                <li> 
+                  <a target="_blank" rel="noopener" href="https://twitter.com/ridecell"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                </li>
+                <li id="menu-item-1480" class="linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-1480">
+                  <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/ridecell"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></li>
+                <li id="menu-item-1478" class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-1478">
+                  <a target="_blank" rel="noopener" href="https://www.facebook.com/RideCell-192466184127400/?fref=ts"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
 
-        </footer>
+      </footer>
 
     </div>
 
 
 
 
-</body>
+  </body>
 
 </html>
