@@ -163,14 +163,15 @@ mktoHtmlText.mktoHasWidth {
     font-size: 16px!important;
 }
 
-.mktoForm .mktoFormRow:nth-child(8) .mktoLabel,
+
+/* .mktoForm .mktoFormRow:nth-child(8) .mktoLabel,
 .mktoForm .mktoFormRow:nth-child(9) .mktoLabel,
 .mktoForm .mktoFormRow:nth-child(10) .mktoLabel,
 .mktoForm .mktoFormRow:nth-child(11) .mktoLabel,
 .mktoForm .mktoFormRow:nth-child(12) .mktoLabel {
     margin-left: 20px;
     padding-top: 0px!important;
-}
+} */
 
 ::-webkit-input-placeholder {
     color: #323F48;
@@ -242,11 +243,12 @@ mktoHtmlText.mktoHasWidth {
     position: relative;
 }
 
-.mktoForm .mktoFormRow:nth-child(8) .mktoLabel {
+
+/* .mktoForm .mktoFormRow:nth-child(8) .mktoLabel {
     width: 100% !Important;
     display: flex;
     margin-left: 0 !important;
-}
+} */
 
 .mktoForm .mktoCheckboxList input:checked+label:after {
     cursor: pointer;
@@ -254,7 +256,10 @@ mktoHtmlText.mktoHasWidth {
 }
 
 @media (max-width: 768px) {
-    .mktoForm .mktoFormRow:nth-child(8) {
+    .mktoForm .mktoFormRow {
+        width: 100%;
+    }
+    /* .mktoForm .mktoFormRow:nth-child(8) {
         width: 100%;
         float: left;
     }
@@ -275,11 +280,10 @@ mktoHtmlText.mktoHasWidth {
     .mktoForm .mktoFormRow:nth-child(12) {
         width: 100%;
         float: left;
-    }
+    } */
     .mktoCheckboxList {
         display: grid;
         grid-template-columns: 2.5rem 200px;
-        margin-bottom: -20rem !important;
     }
 }
 
@@ -323,10 +327,6 @@ mktoHtmlText.mktoHasWidth {
 .mktoHtmlText.mktoHasWidth {
     width: 100%!important;
 }
-
-
-/* 
-*/
 
 .mktoForm .mktoRadioList>label,
 .mktoForm .mktoCheckboxList>label {
