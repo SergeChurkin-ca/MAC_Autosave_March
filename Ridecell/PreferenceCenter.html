@@ -8,13 +8,15 @@
 
 
     <meta class="mktoString" mktoName="Global - Page Title" id="pagetitle" default="Preference Center">
-    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="http://go.marketing-automation.ca/rs/217-NBW-905/images/favicon.ico">
+    <meta class="mktoString" mktoName="Global - Link to Favicon" id="faviconlink" default="https://go.ridecell.com/rs/585-LOJ-016/images/favicon.ico">
     <link rel="icon" href="${faviconlink}">
     <title>${pagetitle}</title>
 
 
     <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');" allowHtml="true">
     <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Montserrat" allowHtml="true">
+    
+    <meta class="mktoString" id="formsec-bg" mktoName="Form Section Bg Image" default="https://go.ridecell.com/rs/585-LOJ-016/images/preference_bg.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -129,8 +131,11 @@
         ;
       }
 
-      .form {
-        background: url('http://go.marketing-automation.ca/rs/217-NBW-905/images/preference_bg.jpg');
+      .form  {
+        background-image:url('${formsec-bg}');
+        bakcground-size: cover;
+        background-repeat: no-repeat;
+
       }
 
       .form .container_inner {
@@ -251,7 +256,10 @@
       .mktoForm textarea.mktoField,
       .mktoForm select.mktoField {
         width: 100% !important;
+        border-radius: 3px !important;
+        border-width: 2px !important;
         border: 2px solid #eaeaea !important;
+        box-shadow 0.5s, border-color 0.25s ease-in-out !important;
         outline: none;
         transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
         font-size: 18.8px !important;
@@ -301,6 +309,7 @@
         font-weight: 600 !important;
         border: solid 1px #4eb855;
         border-radius: 3px !important;
+
       }
 
       .mktoForm .mktoButtonRow {
@@ -317,7 +326,24 @@
         background-color: #54d05c !important;
         border: solid 1px #54d05c !important;
       }
-
+.mktoForm .checkboxContainer {
+  width: 100% !important;
+  position: relative;
+}
+.checkboxContainer .mktoFieldWrap {
+  display: flex;
+  flex-direction: column !important;
+}
+.checkboxContainer .mktoLabel {
+  visibility: visible !important;
+  position: relative;
+  width: 100% !important;
+}
+.checkboxContainer .mktoLabel {
+  font-weight: 400;
+  line-height: 34.56px;
+  font-size: 19px !important;
+}
       @media (max-width:1000px) {
         .gradient-green .social {
           width: inherit;
@@ -373,14 +399,14 @@
         <div id="topcontent">
           <div class="container_inner flex-row">
             <div class="mktoText logolp" id="logotop" mktoName="Logo">
-              <a href="https://ridecell.com/" target="_blank"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/Ridecell_logo.png" width="121" alt="Logo" border="0"></a>
+              <a href="https://ridecell.com/" target="_blank"><img src="https://go.ridecell.com/rs/585-LOJ-016/images/Ridecell_logo.png" width="121" alt="Logo" border="0"></a>
             </div>
             <div class="mktoText toptext" id="toptext" mktoName="Top Text"><a href="https://ridecell.com/" target="_blank">VISIT RIDECELL.COM</a></div>
           </div>
         </div>
       </navbar>
 
-      <section class="container_100">
+      <section class="container_100 ">
         <div id="main">
           <div class="container_inner">
             <div class="row">
@@ -394,21 +420,11 @@
           </div>
         </div>
       </section>
-
-
       <section id="columns" class="form">
         <div class="container_inner">
           <div class="mktoForm" id="fomr1" mktoName="Form">
-
-            <script src="//217-NBW-905.mktoweb.com/js/forms2/js/forms2.min.js">
-            </script>
-            <form id="mktoForm_2039"></form>
-            <script>
-              MktoForms2.loadForm("//217-NBW-905.mktoweb.com", "217-NBW-905", 2039);
-            </script>
+          <script src="//go.ridecell.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1002"></form> <script>MktoForms2.loadForm("//go.ridecell.com", "585-LOJ-016", 1002);</script>
           </div>
-
-
         </div>
       </section>
 
@@ -473,7 +489,7 @@
 
           <div class="fbottom flex-row">
             <div class="column mktoText" id="copyright" mktoName="Copyrihght">
-              <p>© 2022 Ridecell, Inc</p>
+              <p>© <script>document.write(new Date().getFullYear())</script> Ridecell, Inc</p>
             </div>
             <div class="column social">
               <ul class="mktoText social flex-row" id="footersocial" mktoName="Footer Social">
@@ -495,7 +511,13 @@
     </div>
 
 
+<script>
+MktoForms2.whenReady(function(form) {
 
+Array.from(document.querySelectorAll('input[type="checkbox"]')).map((x) => x.parentNode.parentNode.parentNode.parentNode.classList.add('checkboxContainer'))
+
+});
+</script>
 
   </body>
 
