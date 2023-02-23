@@ -15,7 +15,7 @@
 
     <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');" allowHtml="true">
     <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Montserrat" allowHtml="true">
-    
+
     <meta class="mktoString" id="formsec-bg" mktoName="Form Section Bg Image" default="https://go.ridecell.com/rs/585-LOJ-016/images/preference_bg.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,9 +145,9 @@
       .footer {
         background-color: #383838;
       }
-.footer:nth-of-type(2) .container_inner {
-  padding: 1rem 0 1.5rem;
-}
+      .footer:nth-of-type(2) .container_inner {
+        padding: 1rem 0 1.5rem;
+      }
       .footer .container_inner {
         padding: 2rem 0;
       }
@@ -248,9 +248,9 @@
       .mktoForm .mktoFormRow {
         width: calc((100% / 2) - 1rem);
       }
-.mktoForm .mktoFormRow:nth-child(6) {
-  width: 100% !important;
-}
+      .mktoForm .mktoFormRow:nth-child(6) {
+        width: 100% !important;
+      }
       .mktoForm input[type=text],
       .mktoForm input[type=url],
       .mktoForm input[type=email],
@@ -271,6 +271,7 @@
         min-height: unset !important;
         padding: 2px 2px !important;
         line-height: 28.2px !important;
+        height: 39px !important;
       }
 
       .mktoForm input[type=text]:focus,
@@ -330,52 +331,52 @@
         background-color: #54d05c !important;
         border: solid 1px #54d05c !important;
       }
-.mktoForm .checkboxContainer {
-  width: 100% !important;
-  position: relative;
-  margin: 0.75rem 0 0;
-}
-.mktoForm .checkboxContainer:nth-of-type(2n-2) .mktoCheckboxList {
-display: flex;
-flex-direction: column;
-margin-top: -0.25rem;
-padding: 0 !important;
-}
-.mktoForm .checkboxContainer:nth-of-type(2n-2) label {
-  width: max-content !important;
-  margin: -1rem 0 1rem !important
-}
-.mktoForm .checkboxContainer:nth-of-type(2n-2) input {
-  margin-left: 4rem !important;
-}
-.mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoFieldWrap  {
- display: flex;
- flex-direction: row-reverse !important;
-}
-.mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoLogicalField {
-  width: fit-content !important;
-}
-.checkboxContainer .mktoFieldWrap {
-  display: flex;
-  flex-direction: column !important;
-}
+      .mktoForm .checkboxContainer {
+        width: 100% !important;
+        position: relative;
+        margin: 0.75rem 0 0;
+      }
+      .mktoForm .checkboxContainer:nth-of-type(2n-2) .mktoCheckboxList {
+        display: flex;
+        flex-direction: column;
+        margin-top: -0.25rem;
+        padding: 0 !important;
+      }
+      .mktoForm .checkboxContainer:nth-of-type(2n-2) label {
+        width: max-content !important;
+        margin: -1rem 0 1rem !important
+      }
+      .mktoForm .checkboxContainer:nth-of-type(2n-2) input {
+        margin-left: 4rem !important;
+      }
+      .mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoFieldWrap  {
+        display: flex;
+        flex-direction: row-reverse !important;
+      }
+      .mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoLogicalField {
+        width: fit-content !important;
+      }
+      .checkboxContainer .mktoFieldWrap {
+        display: flex;
+        flex-direction: column !important;
+      }
 
-.mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoLabel {
-  font-size: 14px !important;
-}
+      .mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoLabel {
+        font-size: 14px !important;
+      }
 
-.checkboxContainer .mktoLabel {
-  visibility: visible !important;
-  position: relative;
-  width: 100% !important;
+      .checkboxContainer .mktoLabel {
+        visibility: visible !important;
+        position: relative;
+        width: 100% !important;
 
-}
-.checkboxContainer .mktoLabel {
-  font-weight: 400;
-  line-height: 34.56px;
-  font-size: 19px !important;
-  padding-bottom: 0.5rem;
-}
+      }
+      .checkboxContainer .mktoLabel {
+        font-weight: 400;
+        line-height: 34.56px;
+        font-size: 19px !important;
+        padding-bottom: 0.5rem;
+      }
       @media (max-width:1000px) {
         .gradient-green .social {
           width: inherit;
@@ -455,7 +456,7 @@ padding: 0 !important;
       <section id="columns" class="form">
         <div class="container_inner">
           <div class="mktoForm" id="fomr1" mktoName="Form">
-          <script src="//go.ridecell.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1002"></form> <script>MktoForms2.loadForm("//go.ridecell.com", "585-LOJ-016", 1002);</script>
+            <script src="//go.ridecell.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1002"></form> <script>MktoForms2.loadForm("//go.ridecell.com", "585-LOJ-016", 1002);</script>
           </div>
         </div>
       </section>
@@ -542,14 +543,14 @@ padding: 0 !important;
 
     </div>
 
+<!-- dynamic class name to manipulate mkto default checkboxes -->
+    <script>
+      MktoForms2.whenReady(function(form) {
 
-<script>
-MktoForms2.whenReady(function(form) {
+        Array.from(document.querySelectorAll('input[type="checkbox"]')).map((x) => x.parentNode.parentNode.parentNode.parentNode.classList.add('checkboxContainer'))
 
-Array.from(document.querySelectorAll('input[type="checkbox"]')).map((x) => x.parentNode.parentNode.parentNode.parentNode.classList.add('checkboxContainer'))
-
-});
-</script>
+      });
+    </script>
 
   </body>
 
