@@ -14,17 +14,18 @@ font-family: Arial, serif !important;
 <meta class="mktoNumber" id="bodyborderWid" mktoname="Body Border Width (px)" default="0" />
 <meta class="mktoString" id="fontfamilyembed" mktoName="Google Font @Import" default="@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap');" />	
 <meta class="mktoString" id="fontfamily" mktoName="Font Family Name" default="Inter" />	
-<meta class="mktoNumber" id="logowidth" mktoname="Logo Mobile Width (px)" default="220" />
+<meta class="mktoNumber" id="logowidth" mktoname="Logo Mobile Width (px)" default="100" />
 <meta class="mktoNumber" id="imgmaxwidth" mktoname="Banner Img Mobile Width (px)" default="600" />
   
 <meta mktoModuleScope="true" class="mktoColor" id="logo-bg-color" mktoName="Background Color" default="#F6F9FC" />
 <meta mktoModuleScope="true" class="mktoColor" id="mod-bg-color" mktoName="Background Color" default="#ffffff" />
+<meta mktoModuleScope="true" class="mktoColor" id="footer-bg-color" mktoName="Background Color" default="#232122" />
 <meta mktoModuleScope="true" class="mktoColor" id="banner-bg-color" mktoName="Banner Tint Color" default="#ffffff" />
 <meta mktoModuleScope="true" class="mktoColor" id="video-bg-color" mktoName="Video Fallback Background Color" default="#1c1c1c" />
 <meta mktoModuleScope="true" class="mktoColor" id="bannerdark-bg-Color" mktoName="Background Color" default="#1F203E" />
 <meta mktoModuleScope="true" class="mktoColor" id="bannerLight-bg-Color" mktoName="Background Color" default="#ECF4FB" />
   
-<meta mktoModuleScope="true" class="mktoNumber" id="regLogoWidth" mktoname="Logo Width (px)" default="220" />
+<meta mktoModuleScope="true" class="mktoNumber" id="regLogoWidth" mktoname="Logo Width (px)" default="100" />
 <meta mktoModuleScope="true" class="mktoNumber" id="imgWidth" mktoname="Image Width (px)" default="690" />
   
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad0" mktoname="Top Padding" default="0" />
@@ -261,7 +262,7 @@ th{font-weight:normal !important}
 <tr>
 <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
 <div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;max-width:${regLogoWidth}px;" /></a>
+    <a href="#" target="_blank"><img class="logowidth" alt="logo" src="http://go.missionassetfund.org/rs/571-HII-426/images/MAF-logo.png" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;max-width:${regLogoWidth}px;" /></a>
 </div>
 </th>
 </tr>
@@ -1255,7 +1256,7 @@ th{font-weight:normal !important}
 <!--Testimonial Speaker -->
 <table class="mktoModule" mktoName="Testimonial Photo" id="testimonial" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
-<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};background-image:url('https://dummyimage.com/600x600/ffbb00/ffbb00');background-position:0px 100px;background-repeat:no-repeat;background-size:690px; vertical-align: top;">
 <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
 <tr>
 <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
@@ -1296,7 +1297,7 @@ th{font-weight:normal !important}
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                             <div>
-                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/speaker-palceholder.png" width="100" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/speaker-palceholder.png" width="140" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border: solid 8px #ffffff;border-radius:50%;"
                                     />
                             </div>
                         </div>
@@ -1346,9 +1347,8 @@ th{font-weight:normal !important}
                     </td>
                 </tr>
                 <tr>
-                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                    <td height="35" style="line-height:1px;font-size:1px;">&nbsp;</td>
                 </tr>
-               
             
             </table>
         </th>
@@ -1367,7 +1367,7 @@ th{font-weight:normal !important}
 <!--Footer Module-->
 <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
-<td bgColor="${mod-bg-color}" valign="top" style="background-color:${mod-bg-color};vertical-align: top;">
+<td bgColor="${footer-bg-color}" valign="top" style="background-color:${footer-bg-color};vertical-align: top;">
 <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
 <tr>
 <td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
@@ -1375,33 +1375,33 @@ th{font-weight:normal !important}
 
   
 <tr>
-<td bgColor="${mod-bg-color}" class="center" align="left" valign="top" style="vertical-align: top;padding-top:15px;">
+<td bgColor="${footer-bg-color}" class="center" align="left" valign="top" style="vertical-align: top;padding-top:15px;">
  <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%"> 
     <tr> 
        <td class="footer-leftcol" width="1" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:1px"></td> 
        <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
-         	<a href="#"><img width="33" height="auto" src="https://dummyimage.com/35x35/1F203E/B3B8C4" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="#"><img width="33" height="auto" src="http://go.missionassetfund.org/rs/571-HII-426/images/twitter.png" style="width:33px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
        <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
-         	<a href="#"><img width="33" height="auto" src="https://dummyimage.com/35x35/1F203E/B3B8C4" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="#"><img width="33" height="auto" src="http://go.missionassetfund.org/rs/571-HII-426/images/facebook.png" style="width:33px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
        <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 3" id="footer-icon3">
-         	<a href="#"><img width="33" height="auto" src="https://dummyimage.com/35x35/1F203E/B3B8C4" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="#"><img width="33" height="auto" src="http://go.missionassetfund.org/rs/571-HII-426/images/linkedin.png" style="width:33px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
        <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4">
-         	<a href="#"><img width="33" height="auto" src="https://dummyimage.com/35x35/1F203E/B3B8C4" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="#"><img width="33" height="auto" src="http://go.missionassetfund.org/rs/571-HII-426/images/youtube.png" style="width:33px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
        <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
          <div class="mktoText" mktoName="Footer Icon 5" id="footer-icon5">
-         	<a href="#"><img width="33" height="auto" src="https://dummyimage.com/35x35/1F203E/B3B8C4" style="width:33px;height:auto;max-width:96%;" /></a>
+         	<a href="#"><img width="33" height="auto" src="http://go.missionassetfund.org/rs/571-HII-426/images/instagram.png" style="width:33px;height:auto;max-width:96%;" /></a>
          </div>
        </td> 
        <td class="footer-rightcol" width="1" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:1px;"></td> 
@@ -1428,7 +1428,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in nunc ligula
 <tr>
 <td align="${alignCenter}" style="text-align: ${alignCenter};">
 <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-    <a href="#" target="_blank"><img class="logowidthl" alt="logo" src="https://dummyimage.com/220x60/1F203E/B3B8C4" width="220" border="0" style="max-width:200px;" /></a>
+    <a href="#" target="_blank"><img class="logowidthl" alt="logo" src="http://go.missionassetfund.org/rs/571-HII-426/images/MAF-logo-reverse.png" width="100" border="0" style="max-width:100px;width:100px;" /></a>
 </div>
 </td>
 </tr>
