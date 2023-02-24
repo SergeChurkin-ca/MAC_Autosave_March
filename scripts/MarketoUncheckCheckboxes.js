@@ -19,14 +19,14 @@ checkboxes.forEach((checkbox) => {
 
 
 // experiment working
-
-
 function uncheckFunction() {
     // get all checkboxes on the page
     const checkboxes2 = Array.from(document.querySelectorAll('input[type=checkbox]'));
 
+
     // check if the "other" checkbox is checked
     const otherCheckbox = checkboxes2.find((checkbox) => checkbox.value.toLowerCase() === 'other');
+
     if (otherCheckbox.checked) {
         // show the next .mktoFormRow element
         const currentRow = otherCheckbox.parentNode.parentNode.parentNode.parentNode
