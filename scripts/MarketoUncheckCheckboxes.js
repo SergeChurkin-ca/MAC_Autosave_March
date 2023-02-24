@@ -1,10 +1,12 @@
-// experiment working
+MktoForms2.whenReady(function(form) {
+    Array.from(document.querySelectorAll('input[type=checkbox]'))[0].parentNode.parentNode.parentNode.parentNode.nextElementSibling.classList.add('hideAtStart');
 
-Array.from(document.querySelectorAll('input[type=checkbox]'))[0].parentNode.parentNode.parentNode.parentNode.nextElementSibling.classList.add('hideAtStart');
+})
 
 function uncheckFunction() {
     // get all checkboxes on the page
     const checkboxes2 = Array.from(document.querySelectorAll('input[type=checkbox]'));
+
 
 
     // check if the "other" checkbox is checked
@@ -52,11 +54,3 @@ const checkboxes2 = Array.from(document.querySelectorAll('input[type=checkbox]')
 checkboxes2.forEach((checkbox) => {
     checkbox.addEventListener('change', uncheckFunction);
 });
-
-// additional
-
-
-MktoForms2.whenReady(function(form) {
-    Array.from(document.querySelectorAll('input[type=checkbox]'))[0].parentNode.parentNode.parentNode.parentNode.nextSibling.stlye = "display: none;"
-
-})
