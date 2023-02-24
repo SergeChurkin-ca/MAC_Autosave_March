@@ -7,8 +7,6 @@ function uncheckFunction() {
     // get all checkboxes on the page
     const checkboxes2 = Array.from(document.querySelectorAll('input[type=checkbox]'));
 
-
-
     // check if the "other" checkbox is checked
     const otherCheckbox = checkboxes2.find((checkbox) => checkbox.value.toLowerCase() === 'other');
 
@@ -22,6 +20,7 @@ function uncheckFunction() {
                 nextRow.style = 'display: block !important;';
             }
         }
+
     } else {
         const currentRow = otherCheckbox.parentNode.parentNode.parentNode.parentNode
         if (currentRow) {
@@ -33,8 +32,8 @@ function uncheckFunction() {
                 // Check if any checkboxes within the next row are checked
                 const isChecked = Array.from(nextRow.querySelectorAll('input[type=checkbox]'))
                     .some((checkbox) => checkbox.checked);
-
                 if (isChecked) {
+
                     nextRow.style = 'display: block !important;';
                 }
             }
