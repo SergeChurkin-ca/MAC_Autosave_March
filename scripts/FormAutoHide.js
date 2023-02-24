@@ -25,3 +25,9 @@ MktoForms2.whenReady(function(form) {
 
     }
 })
+
+
+MktoForms2.whenReady(function(form) {
+    Array.from(document.querySelectorAll('input[type=checkbox]'))[0].parentNode.parentNode.parentNode.parentNode.nextElementSibling.classList.add('hideAtStart');
+
+})

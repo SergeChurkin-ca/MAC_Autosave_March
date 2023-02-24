@@ -1,24 +1,7 @@
-function uncheckFunction() {
-    // get all checkboxes on the page
-    const checkboxes = Array.from(document.querySelectorAll('input[type=checkbox]'));
-
-    // uncheck all checkboxes that are not the one that triggered the event
-    checkboxes.forEach((checkbox) => {
-        if (checkbox !== this) {
-            checkbox.checked = false;
-        }
-    });
-}
-
-// add event listener to all checkboxes on the page
-const checkboxes = Array.from(document.querySelectorAll('input[type=checkbox]'));
-checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener('change', uncheckFunction);
-});
-
-
-
 // experiment working
+
+Array.from(document.querySelectorAll('input[type=checkbox]'))[0].parentNode.parentNode.parentNode.parentNode.nextElementSibling.classList.add('hideAtStart');
+
 function uncheckFunction() {
     // get all checkboxes on the page
     const checkboxes2 = Array.from(document.querySelectorAll('input[type=checkbox]'));
@@ -26,6 +9,7 @@ function uncheckFunction() {
 
     // check if the "other" checkbox is checked
     const otherCheckbox = checkboxes2.find((checkbox) => checkbox.value.toLowerCase() === 'other');
+
 
     if (otherCheckbox.checked) {
         // show the next .mktoFormRow element
@@ -68,3 +52,11 @@ const checkboxes2 = Array.from(document.querySelectorAll('input[type=checkbox]')
 checkboxes2.forEach((checkbox) => {
     checkbox.addEventListener('change', uncheckFunction);
 });
+
+// additional
+
+
+MktoForms2.whenReady(function(form) {
+    Array.from(document.querySelectorAll('input[type=checkbox]'))[0].parentNode.parentNode.parentNode.parentNode.nextSibling.stlye = "display: none;"
+
+})
