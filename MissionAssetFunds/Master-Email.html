@@ -34,6 +34,8 @@ font-family: Arial, serif !important;
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad30" mktoname="Top Padding" default="30" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad40" mktoname="Top Padding" default="40" />
 <meta mktoModuleScope="true" class="mktoNumber" id="top_pad70" mktoname="Top Padding" default="70" />
+<meta mktoModuleScope="true" class="mktoNumber" id="quote_top_pad5" mktoname="close quote mark Top Padding" default="5" />
+<meta mktoModuleScope="true" class="mktoNumber" id="quote_top_pad10" mktoname="open quote mark Top Padding" default="10" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad0" mktoname="Bottom Padding" default="0" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad5" mktoname="Bottom Padding" default="5" />
 <meta mktoModuleScope="true" class="mktoNumber" id="btm_pad10" mktoname="Bottom Padding" default="10" />
@@ -1152,7 +1154,7 @@ th{font-weight:normal !important}
 <!--Dark CTA Module-->
 
 <!--Testimonial No Photo -->
-<table class="mktoModule" mktoName="Testimonial No Phote" id="testimonial" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<table class="mktoModule" mktoName="Testimonial No Phot0" id="testimonial" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
 <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
 <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
@@ -1163,13 +1165,16 @@ th{font-weight:normal !important}
 <td>
 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
     <tr>
-        <th width="40" align="left" class="block2" valign="top" style="vertical-align: top;">
+        <th width="60" align="left" class="block2" valign="top" style="vertical-align: top;">
             <table cellpadding="0" cellspacing="0" align="left" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+            <tr>
+<td height="${quote_top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
                 <tr>
                     <td class="center" align="left" valign="top" style="vertical-align: top;">
                         <div class="mktoImg" mktoname="Open quote" id="threeleftImagea">
                             <div>
-                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/quotes-open.png" width="40" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/quotes-open.png" width="60" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                                     />
                             </div>
                         </div>
@@ -1191,7 +1196,8 @@ th{font-weight:normal !important}
                 <tr>
                     <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
                         <div class="mktoText" mktoName="Middle Headline" id="Headline-textb">
-                            <div>"One of the best partnerships we've had."</div>
+                            <div>"One of the best partnerships we've had. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, numquam!"</div>
+                           
                         </div>
                     </td>
                 </tr>
@@ -1208,17 +1214,19 @@ th{font-weight:normal !important}
                     </td>
                 </tr>
                  
-            
             </table>
         </th>
         <th class="hidden2" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-        <th width="40" align="right" class="block2" valign="top" style="vertical-align: top;">
+        <th width="60" align="right" class="block2" valign="top" style="vertical-align: top;">
             <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+            <tr>
+<td height="${quote_top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
                 <tr>
                     <td class="center" align="right" style="font-size: 1px; line-height: 1px;">
                         <div class="mktoImg" mktoname="Closing quote" id="threeleftImagec">
                             <div>
-                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/quotes-closed.png" width="40" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/quotes-closed.png" width="60" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
                                     />
                             </div>
                         </div>
@@ -1243,6 +1251,119 @@ th{font-weight:normal !important}
 </tr>
 </table>
 <!--End of Testimonial No Photo-->
+
+<!--Testimonial Speaker -->
+<table class="mktoModule" mktoName="Testimonial Photo" id="testimonial" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+<tr>
+<td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+<table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+<tr>
+<td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+    <tr>
+        <th width="60" align="left" class="block2" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="left" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+            <tr>
+<td height="${quote_top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Open quote" id="threeleftImagea">
+                            <div>
+                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/quotes-open.png" width="60" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+       
+            </table>
+        </th>
+        <th class="hidden2" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th width="380" align="center" class="block2" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+              
+                <tr>
+                    <td height="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="center" align="left" valign="top" style="vertical-align: top;">
+                        <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                            <div>
+                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/speaker-palceholder.png" width="100" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="24" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
+                        <div class="mktoText" mktoName="Middle Headline" id="Headline-textb">
+                            <div>"One of the best partnerships we've had. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, numquam!"</div>
+                           
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
+                        <div class="mktoText" mktoName="Middle Text" id="SubHeadline-textb">
+                            <div>- Director of Employee Wellbeing,<br>
+                            Piedmont Healthcare
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                 
+            </table>
+        </th>
+        <th class="hidden2" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+        <th width="60" align="right" class="block2" valign="top" style="vertical-align: top;">
+            <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+            <tr>
+<td height="${quote_top_pad5}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+                <tr>
+                    <td class="center" align="right" style="font-size: 1px; line-height: 1px;">
+                        <div class="mktoImg" mktoname="Closing quote" id="threeleftImagec">
+                            <div>
+                                <img src="http://go.missionassetfund.org/rs/571-HII-426/images/quotes-closed.png" width="60" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;"
+                                    />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                </tr>
+               
+            
+            </table>
+        </th>
+    </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--End of Testimonial Speaker-->
 <!--Footer Module-->
 <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
 <tr>
