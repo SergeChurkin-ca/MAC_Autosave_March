@@ -104,24 +104,10 @@
   <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
 
-  <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom Form?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom Form - BG Color" default="#1F203E">
-  <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom Form - Text BG Color" default="#ffffff">
-  <meta class="mktoBoolean" id="btmformtwocol" mktoName="Bottom Form - First Row Two Columns?" default="true" true_value="#btmform .mktoFormRow:nth-child(2){width:49%!important;display:inline-block;margin-right:2%;} #btmform .mktoFormRow:nth-child(3) {width:49%!important;display:inline-block;}" false_value="#btmform .mktoFormRow{width:100%;}" false_value_name="Full Width" true_value_name="Two Columns">
-  <meta class="mktoString" id="btmformpsize" mktoName="Bottom Form - Label Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="btmformpweight" mktoName="Bottom Form - Label Font weight" default="400" allowHtml="true">
-  <meta class="mktoColor" id="btmformpcolor" mktoName="Bottom Form - Label Color" default="#1F203E">
-  <meta class="mktoBoolean" id="showbtmformlabel" mktoName="Show Bottom Form Label?" default="false" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="btmformfieldcolor" mktoName="Bottom Form - Field Background Color" default="#F6F9FC">
-  <meta class="mktoColor" id="btmformbordercolor" mktoName="Bottom Form - Field Border Color" default="#F6F9FC">
-  <meta class="mktoString" id="btmformborderheight" mktoName="Bottom Form - Field Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btmformborderradius" mktoName="Bottom Form - Field Border Radius (px)" default="2" allowHtml="true">
-  <meta class="mktoColor" id="btmformbtnbgcolor" mktoName="Bottom Form - Btn BG Color" default="#1F203E">
-  <meta class="mktoColor" id="btmformbtntextcolor" mktoName="Bottom Form - Btn Text Color" default="#ffffff">
-  <meta class="mktoColor" id="btmformbtnbordercolor" mktoName="Bottom Form - Btn Border Color" default="#1F203E">
-  <meta class="mktoString" id="btmformbtntextsize" mktoName="Bottom Form - Btn Font Size (px)" default="20" allowHtml="true">
-  <meta class="mktoString" id="btmformbtnbordersize" mktoName="Bottom Form - Btn Border Size (px)" default="1" allowHtml="true">
-  <meta class="mktoString" id="btmformbtnborderradius" mktoName="Bottom Form - Btn Border Radius" default="50" allowHtml="true">
+  <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom CTA?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom CTA - BG Color" default="#1F203E">
+  <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom CTA - Text BG Color" default="#ffffff">
+ 
 
   <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
   <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
@@ -426,7 +412,7 @@
           .container_inner{
             width:99%;
           }
-          .button a, #btmform .mktoForm button.mktoButton, #formtext .mktoForm button.mktoButton {
+          .button a, #formtext .mktoForm button.mktoButton {
               font-size:16px!important;
               padding:16px 30px!important;
           }
@@ -635,25 +621,25 @@
       </div>
    </div>
    <!-- END Video -->
-  <!-- Bottom Form -->
+  <!-- Bottom CTA -->
   <div class="container_100" id="btmform">
     <div class="container_inner section">
       <div class="formleft">
-        <div class="mktoText" id="btmformheadline" mktoName="Bottom Form - Headline">
+        <div class="mktoText" id="btmformheadline" mktoName="Bottom CTA - Headline">
           <h2>Lorem Ipsum Dolor Sit Amet</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet finibus nulla. Integer a ligula viverra, dapibus mi eu, volutpat purus. Praesent posuere et risus nec bibendum. Curabitur quam nibh, maximus lobortis tortor ac, congue pulvinar augue. Pellentesque pretium mauris eget imperdiet laoreet.</p>
         </div>
-        <div class="mktoName button" id="imgleftbtn2" mktoName="Bottom Form - CTA"><a href="#">CTA Button</a>
+        <div class="mktoName button" id="imgleftbtn2" mktoName="Bottom CTA  - Button"><a href="#">CTA Button</a>
         </div>
-        <div class="mktoForm" id="btmFormform" mktoName="Bottom Form"></div>
+        
       </div>
       <div class="formright">
-        <div class="mktoImg" id="btmformimg" mktoName="Bottom Form - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/image-placeholder.png"></div>
+        <div class="mktoImg" id="btmformimg" mktoName="Bottom CTA - Image 2"><img src="http://go.marketing-automation.ca/rs/217-NBW-905/images/image-placeholder.png"></div>
       </div>
     </div>
   </div>
   </div>
-  <!-- END Bottom Form -->
+  <!-- END Bottom CTA -->
 
    <!-- Footer -->
    <div class="container_100" id="footer">
