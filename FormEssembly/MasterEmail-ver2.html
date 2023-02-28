@@ -19,9 +19,6 @@ font-family: Arial, serif !important;
     <meta class="mktoNumber" id="logowidth" mktoname="Logo Mobile Width (px)" default="220" />
     <meta class="mktoNumber" id="imgmaxwidth" mktoname="Banner Img Mobile Width (px)" default="600" />
 
-    <meta class="mktoColor" id="link-color" mktoName="Link Color Dark" default="#000000" />
-    <meta class="mktoColor" id="link-color-white" mktoName="Link Color Light" default="#ffffff" />
-
     <meta mktoModuleScope="true" class="mktoColor" id="logo-bg-color" mktoName="Background Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="mod-bg-color" mktoName="Background Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="banner-bg-color" mktoName="Banner Tint Color" default="#ffffff" />
@@ -67,7 +64,7 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" class="mktoColor" id="SubheadlineFontColor" mktoname="Subheadlinbe Text Color" default="#002e54" />
     <meta mktoModuleScope="true" class="mktoNumber" id="CopySize18" mktoname="Text Font Size" default="18" />
     <meta mktoModuleScope="true" class="mktoNumber" id="CopySize" mktoname="Text Font Size" default="16" />
-    <meta mktoModuleScope="true" class="mktoColor" id="CopyColor" mktoname="Text Color" default="#8d9aa0" />
+    <meta mktoModuleScope="true" class="mktoColor" id="CopyColor" mktoname="Text Color" default="#002E54" />
     <meta mktoModuleScope="true" class="mktoColor" id="CopyColorwhite" mktoname="Text Color" default="#FFFFFF" />
 
     <meta mktoModuleScope="true" class="mktoImg" id="banner1_img" mktoName="Background Image" default="https://go.formassembly.com/rs/794-XNU-091/images/email-banner.png">
@@ -78,9 +75,6 @@ font-family: Arial, serif !important;
     <meta mktoModuleScope="true" id="outlook-ht1" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="360" min="0" max="1000" step="1" />
     <meta mktoModuleScope="true" id="outlook-ht2" class="mktoNumber" mktoname="Background Image Outlook Height (px)" default="290" min="0" max="1000" step="1" />
     <meta mktoModuleScope="true" class="mktoNumber" id="cta-top-pad" mktoname="Button Top Padding" default="20" />
-
-    <meta mktoModuleScope="true" class="mktoNumber" id="img-border-radius" mktoname="Img Border Raidus (%)" default="50" />
-    <meta mktoModuleScope="true" class="mktoNumber" id="img-border-radius0" mktoname="Img Border Raidus (%)" default="0" />
 
     <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead" mktoName="Button Text Color" default="#ffffff" />
     <meta mktoModuleScope="true" class="mktoColor" id="btnColorhead2" mktoName="Button Text Color" default="#002e54" />
@@ -199,10 +193,7 @@ font-family: Arial, serif !important;
     </style>
     <style>
         a {
-            color: $ {
-                link-color
-            }
-            ;
+            color: #000000
         }
         
         th {
@@ -375,7 +366,7 @@ font-family: Arial, serif !important;
                                             <tr>
                                                 <th width="100%" class="center block" align="${alignCenterlogo}" style="width: 690px; max-width:100%; text-align: ${alignCenterlogo};">
                                                     <div class="mktoImg" id="headerLogo1" mktoName="Header Logo1" mktoLockImgSize="false">
-                                                        <a href="https://www.formassembly.com/" target="_blank"><img class="logowidth" alt="logo" src="https://go.formassembly.com/rs/794-XNU-091/images/logo_color-2022-email.png" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;"
+                                                        <a href="https://www.formassembly.com/" target="_blank"><img class="logowidth" alt="logo" src="https://go.formassembly.com/rs/794-XNU-091/images/FormAssembly-lockup-logo.png" width="${regLogoWidth}" border="0" style="height:auto !important;width:${regLogoWidth}px;"
                                                             /></a>
                                                     </div>
                                                 </th>
@@ -940,7 +931,7 @@ font-family: Arial, serif !important;
                             </table>
                             <!--Divider Module-->
                             <!--3 Col-->
-                            <table class="mktoModule" mktoName="Two Columns Module" id="twoCol" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" mktoName="Three Columns Module" id="threeCol" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
                                     <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
@@ -957,7 +948,7 @@ font-family: Arial, serif !important;
                                                                         <td class="center" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                                                                                 <div>
-                                                                                    <img src="https://dummyimage.com/179x179/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border-radius:${img-border-radius}%" />
+                                                                                    <img src="https://dummyimage.com/179x142/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -967,7 +958,7 @@ font-family: Arial, serif !important;
                                                                     </tr>
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
-                                                                            <div class="mktoText" mktoName="Left Headline" id="threeHeadline-textb">
+                                                                            <div class="mktoText" mktoName="Left Headline" id="threeHeadline-texta">
                                                                                 <div>Lorem ipsum dolor sit amet</div>
                                                                             </div>
                                                                         </td>
@@ -995,7 +986,7 @@ font-family: Arial, serif !important;
                                                                         <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
                                                                             <div class="mktoImg" mktoname="Middle Image" id="leftImageb">
                                                                                 <div>
-                                                                                    <img src="https://dummyimage.com/179x179/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border-radius:${img-border-radius}%" />
+                                                                                    <img src="https://dummyimage.com/179x142/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -1033,7 +1024,7 @@ font-family: Arial, serif !important;
                                                                         <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
                                                                             <div class="mktoImg" mktoname="Right Image" id="threeleftImagec">
                                                                                 <div>
-                                                                                    <img src="https://dummyimage.com/179x179/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border-radius:${img-border-radius}%" />
+                                                                                    <img src="https://dummyimage.com/179x142/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -1075,8 +1066,8 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--3 Col-->
-                            <!--2 Col-->
-                            <table class="mktoModule" mktoName="Two Columns Module" id="threeCol" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <!--3 Col II -->
+                            <table class="mktoModule" mktoName="Three Columns Module 2 " id="threeCol 2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
                                     <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
@@ -1091,9 +1082,9 @@ font-family: Arial, serif !important;
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                                     <tr>
                                                                         <td class="center" align="left" valign="top" style="vertical-align: top;">
-                                                                            <div class="mktoImg" mktoname="Left Image" id="threeleftImageb">
+                                                                            <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                                                                                 <div>
-                                                                                    <img src="https://dummyimage.com/179x179/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border-radius:${img-border-radius0}%" />
+                                                                                    <img src="https://dummyimage.com/142x142/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border-radius: 50%;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -1113,7 +1104,7 @@ font-family: Arial, serif !important;
                                                                     </tr>
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
-                                                                            <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-text2b">
+                                                                            <div class="mktoText" mktoName="Left Text" id="threeSubHeadline-texta">
                                                                                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                                                                             </div>
                                                                         </td>
@@ -1124,15 +1115,14 @@ font-family: Arial, serif !important;
 
                                                                 </table>
                                                             </th>
-
                                                             <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
                                                             <th width="180" align="left" class="block top_pad1" valign="top" style="vertical-align: top;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                                     <tr>
                                                                         <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
-                                                                            <div class="mktoImg" mktoname="Right Image" id="threeleftImage2b">
+                                                                            <div class="mktoImg" mktoname="Middle Image" id="leftImageb">
                                                                                 <div>
-                                                                                    <img src="https://dummyimage.com/179x179/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border-radius:${img-border-radius0}%" />
+                                                                                    <img src="https://dummyimage.com/142x142/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border-radius:50%;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -1142,7 +1132,7 @@ font-family: Arial, serif !important;
                                                                     </tr>
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
-                                                                            <div class="mktoText" mktoName="Right Headline" id="threeHeadline-text2b">
+                                                                            <div class="mktoText" mktoName="Middle Headline" id="Headline-textb">
                                                                                 <div>Lorem ipsum dolor sit amet</div>
                                                                             </div>
                                                                         </td>
@@ -1152,7 +1142,45 @@ font-family: Arial, serif !important;
                                                                     </tr>
                                                                     <tr>
                                                                         <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
-                                                                            <div class="mktoText" mktoName="Right Text" id="threeSubHeadline-textb">
+                                                                            <div class="mktoText" mktoName="Middle Text" id="SubHeadline-textb">
+                                                                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+
+                                                                </table>
+                                                            </th>
+                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                                                            <th width="180" align="left" class="block top_pad1" valign="top" style="vertical-align: top;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
+                                                                            <div class="mktoImg" mktoname="Right Image" id="threeleftImagec">
+                                                                                <div>
+                                                                                    <img src="https://dummyimage.com/142x142/EEF3F9/B3B8C4" width="180" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;border-radius:50%;" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${headlineFontSize18}px;  font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};text-align:${alignCenter};">
+                                                                            <div class="mktoText" mktoName="Right Headline" id="threeHeadline-textc">
+                                                                                <div>Lorem ipsum dolor sit amet</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: '${fontfamily}',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor};text-align:${alignCenter};">
+                                                                            <div class="mktoText" mktoName="Right Text" id="threeSubHeadline-textc">
                                                                                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                                                                             </div>
                                                                         </td>
@@ -1173,7 +1201,7 @@ font-family: Arial, serif !important;
                                     </td>
                                 </tr>
                             </table>
-                            <!--2 Col-->
+                            <!--3 Col II -->
                             <!--Video Headline Module-->
                             <table class="mktoModule" mktoName="Video Headline Module" id="Video-Headline-mod" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
@@ -1279,6 +1307,63 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--Updated Video Module-->
+                            <!--Updated Video Module 2 -->
+                            <table class="mktoModule" mktoName="Video Image Module 2" id="videomodule2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="${bannerLight-bg-Color}" valign="top" style="background-color:${bannerLight-bg-Color};vertical-align: top;">
+                                        <table class="inner_table vidMod ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:450px;border-collapse: collapse;border-spacing: 0;" border="0" width="450">
+                                            <tr>
+                                                <td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color:${video-bg-color};background-image:url('${video_img}');background-size:cover;background-repeat:no-repeat;background-position:center; vertical-align: top;">
+                                                    <!--[if gte mso 9]>
+<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:690px;display:block;height:270px;">
+<v:fill type="frame" src="${video_img}" Color="${video-bg-color}" />
+<v:textbox inset="0,0,0,0">
+<![endif]-->
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                        <tr>
+                                                            <th width="450" align="left" class="block" valign="top">
+
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td height="${video-top_pad}" style="line-height:1px;font-size:20px;color:transparent;"><a target="_blank" href="${video_link}" style="display: block; height: ${video-top_pad}px; color: transparent;text-decoration:none;">&nbsp;</a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="center" align="center" style="font-size: 1px; line-height: 1px;">
+                                                                            <a target="_blank" href="${video_link}">
+                                                                                <div>
+
+
+                                                                                </div>
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="${video-btm_pad}" style="line-height:1px;font-size:20px;color:transparent;"><a target="_blank" href="${video_link}" style="display: block; height: ${video-btm_pad}px; color: transparent;text-decoration:none;">&nbsp;</a></td>
+                                                                    </tr>
+
+                                                                </table>
+
+
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                    <!--[if gte mso 9]>
+</v:textbox>
+</v:rect>
+<![endif]-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="${btm_pad40}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Updated Video Module 2-->
 
                             <!--CTA Headline Module-->
                             <table class="mktoModule" mktoName="CTA Headline Module" id="btn-Headline-mod" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1307,7 +1392,7 @@ font-family: Arial, serif !important;
                             <table class="mktoModule" mktoName="Bottom CTA - Text" id="btn-TextModule" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
                                     <td bgColor="${bannerdark-bg-Color}" valign="top" style="background-Color:${bannerdark-bg-Color};vertical-align: top;">
-                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+                                    <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
                                             <tr>
                                                 <td height="${top_pad10}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                             </tr>
@@ -1360,6 +1445,7 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--Dark CTA Module-->
+
                             <!--Footer Module-->
                             <table class="mktoModule" mktoName="Footer Module" id="FooterModule" mktoAddByDefault="false" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
@@ -1368,27 +1454,39 @@ font-family: Arial, serif !important;
                                             <tr>
                                                 <td height="${top_pad30}" style="line-height:1px;font-size:1px;">&nbsp;</td>
                                             </tr>
+
                                             <tr>
-                                                <td bgColor="${mod-bg-color}" class="center" align="left" valign="top" style="vertical-align: top;padding-top:15px;">
-                                                    <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                <td class="center" align="${alignCenter};" valign="top" style="vertical-align: top;">
+                                                    <table cellpadding="0" cellspacing="0" align="${alignCenter}" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="215">
                                                         <tr>
-                                                            <td class="footer-leftcol" width="1" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:1px"></td>
-                                                            <td width="40" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:40px">
+
+                                                            <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
                                                                 <div class="mktoText" mktoName="Footer Icon 1" id="footer-icon1">
                                                                     <a href="https://twitter.com/FormAssembly"><img width="21" height="auto" src="https://go.formassembly.com/rs/794-XNU-091/images/tw.png" style="width:21px;height:auto;max-width:96%;" /></a>
                                                                 </div>
                                                             </td>
-                                                            <td width="40" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:40px">
+                                                            <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
                                                                 <div class="mktoText" mktoName="Footer Icon 2" id="footer-icon2">
                                                                     <a href="https://www.facebook.com/FormAssembly/"><img width="13" height="auto" src="https://go.formassembly.com/rs/794-XNU-091/images/fb.png" style="width:13px;height:auto;max-width:96%;" /></a>
                                                                 </div>
                                                             </td>
 
-                                                            <td width="40" align="center" style="text-align: ${alignLeft}; font-size: 1px; line-height: 1px; width:40px">
+                                                            <td width="40" align="center" style="text-align: ${alignCenter}; font-size: 1px; line-height: 1px; width:40px">
                                                                 <div class="mktoText" mktoName="Footer Icon 4" id="footer-icon4">
                                                                     <a href="https://www.linkedin.com/company/formassembly"><img width="22" height="auto" src="https://go.formassembly.com/rs/794-XNU-091/images/lnin.png" style="width:22px;height:auto;max-width:96%;" /></a>
                                                                 </div>
                                                             </td>
+
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td bgColor="${mod-bg-color}" class="center" align="left" valign="top" style="vertical-align: top;padding-top:15px;">
+                                                    <table class="footer-icons ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                        <tr>
+                                                            <td class="footer-leftcol" width="1" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:1px"></td>
+
 
                                                             <td class="footer-rightcol" width="489" align="center" style="text-align: center; font-size: 1px; line-height: 1px; width:489px"></td>
                                                         </tr>
@@ -1399,7 +1497,7 @@ font-family: Arial, serif !important;
                                             <tr>
                                                 <td align="${alignCenter}" style="padding-top:15px;font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}; text-align: ${alignCenter};">
                                                     <div class="mktoText" mktoName="Footer Text" id="footer-text">
-                                                        <div>Copyright © 2006–2022 FormAssembly Inc.
+                                                        <div>Copyright © 2006–2023 FormAssembly Inc.
                                                             <br><br>
                                                             <a href="tel:+18442932367" style="color:${CopyColor}; text-decoration: none !important;">+1 (844) 293-2367</a><br><br> FormAssembly Inc.<br> 885 S College Mall Rd, #399<br> Bloomington, IN 47401</div>
 
@@ -1414,7 +1512,7 @@ font-family: Arial, serif !important;
                                             <tr>
                                                 <td align="${alignCenter}" style="text-align: ${alignCenter};">
                                                     <div class="mktoImg" id="footerLogo1s" mktoName="Footer Logo" mktoLockImgSize="false">
-                                                        <a href="https://www.formassembly.com/" target="_blank"><img class="logowidthl" alt="logo" src="https://go.formassembly.com/rs/794-XNU-091/images/logo_color-2022.png" width="220" border="0" /></a>
+                                                        <a href="https://www.formassembly.com/" target="_blank"><img class="logowidthl" alt="logo" src="https://go.formassembly.com/rs/794-XNU-091/images/FormAssembly-logomark.png" width="40" border="0" /></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1429,7 +1527,7 @@ font-family: Arial, serif !important;
                             <!--Footer Module-->
 
                             <!--Footer Module - version 2 -->
-                            <table class="mktoModule" mktoName="Footer Module - ver 2" id="FooterModule2" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" mktoName="Footer Module - ver 2" id="FooterModule2" mktoAddByDefault="false" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
                                     <td bgColor="${mod-bg-color}" valign="top" style="background-color:${mod-bg-color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -1446,7 +1544,7 @@ font-family: Arial, serif !important;
                                                             </td>
                                                             <td class="block" align="${alignLeft}" style="font-family: '${fontfamily}',Arial, sans-serif; font-size: 13px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}; text-align: ${alignLeft};">
                                                                 <div class="mktoText" mktoName="Footer Text" id="footer-text2">
-                                                                    Copyright © 2006–2022 FormAssembly Inc.
+                                                                    Copyright © 2006–2023 FormAssembly Inc.
                                                                     <a href="tel:+18442932367" style="color:${CopyColor}; text-decoration: none !important;white-space:nowrap;">+1 (844) 293-2367</a><br></br>
                                                             </td>
 
@@ -1493,7 +1591,7 @@ font-family: Arial, serif !important;
                                                             </td>
                                                             <td class="center block" align="${alignRight}" style="text-align: ${alignRight};">
                                                                 <div class="mktoImg" id="footerLogo1s2" mktoName="Footer Logo" mktoLockImgSize="false">
-                                                                    <a href="https://www.formassembly.com/" target="_blank"><img class="logowidthl" alt="logo" src="https://go.formassembly.com/rs/794-XNU-091/images/logo_color-2022.png" width="220" border="0" /></a>
+                                                                    <a href="https://www.formassembly.com/" target="_blank"><img class="logowidthl" alt="logo" src="https://go.formassembly.com/rs/794-XNU-091/images/FormAssembly-logomark.png" width="40" border="0" /></a>
                                                                 </div>
                                                             </td>
 
@@ -1511,6 +1609,117 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--end of Footer Module version 2-->
+
+                    <!--Signature Module -->
+                            <table class="mktoModule" mktoName="Signature Module" id="signature" mktoAddByDefault="true" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:590px;border-collapse: collapse;border-spacing: 0;" border="0" width="590">
+                                            <tr>
+                                                <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table class="inner_table" cellpadding="0" cellspacing="0" align="left" style="margin:0 auto; width:400px;border-collapse: collapse;border-spacing: 0;" border="0" width="400">
+                                                        <tr>
+                                                            <th  class="block" width="60" align="left" valign="top" style="vertical-align: top;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                  
+                                                                    <tr>
+                                                                        <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+                                                             
+                                                                    
+                                                                    <tr>
+                                                                    <td valign="middle" width="80">
+                                                                        <div>
+                               <a href="http://formassembly.com/" target="_blank">
+                                   <img width="80" height="80" src="https://ci3.googleusercontent.com/proxy/mMdHbUGBm6Z-VvK94QMZDZrEQKevr5RnyPkwtZ1L15g1afH2gQgXBFytvBPz2D7j1zxtKBGMwzpqkCsmKXUIhIDZi3dXjstmceY6Cam1Pd76yAf4JEl78kxVbgsr=s0-d-e1-ft#https://smart.formassembly.com/v2/imagebucket/formassembly.com/default.png" alt="logo" style="display:block;"   > </a>
+                           </div>
+                       </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="2">&nbsp;</th>
+                                                            <th  class="block top_pad" width="285" align="left" valign="top" style="vertical-align: top;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                            
+                                                                    <tr>
+                                                                        <td height="15" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td valign="middle" width="322">
+                           <table class="block" cellpadding="0" cellspacing="0" width="322" style="font-family:sans-serif;line-height:13px;width:322px;border-collapse:collapse;color:#333">
+                               <tbody><tr>
+                                   <td valign="top"><div style="margin:0.75pt;color:rgb(4,59,87);font-size:16px;line-height:18px;font-family:Arial,sans-serif">
+                                       Gina DeMarco </div>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td valign="top"><div style="margin:0.75pt;font-size:11px;font-family:Arial,sans-serif;color:rgb(0,115,230);font-weight:700;text-transform:uppercase">
+                                           <span>Senior Manager, Marketing Operations, FORMASSEMBLY</span>
+                                       </div>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td valign="top"><div style="margin:0.75pt;font-size:11px;font-family:Arial,sans-serif">
+                                           
+                                           <a href="http://formassembly.com/" style="text-decoration:underline;color:#999" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://formassembly.com/&amp;source=gmail&amp;ust=1677696988736000&amp;usg=AOvVaw0sn0YTcI5W9ykJ8qRbJ6UV">FormAssembly.com</a>
+                                       </div>
+                                   </td>
+                               </tr>
+
+                               <tr>
+                                   <td valign="top" style="padding:3px 0 0">
+                                       <table cellpadding="0" cellspacing="0" style="font-family:sans-serif;line-height:13px;width:auto;border-collapse:collapse;color:#333">
+                                           <tbody><tr>
+                                               <td valign="middle" width="20"><div style="margin:0.75pt">
+                                                       <a href="https://www.facebook.com/FormAssembly/" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.facebook.com/FormAssembly/&amp;source=gmail&amp;ust=1677696988736000&amp;usg=AOvVaw06zzrRLjKFMzKdkUKIByYk">
+                                                           <img width="18" height="18" src="https://ci5.googleusercontent.com/proxy/ZHBdHaAWIHIZ0DvGpFcpQStDGBO7m00Shyyatsk-qygcfVAjdIIW-_DNKtuYvmKeP3D4cjU_U1lpVX4HomLYwt-0LLlqhuLXijFTBXAqP1Ft7oC-l2j1_Q=s0-d-e1-ft#https://smart.formassembly.com/v2/imagebucket/formassembly.com/fb.png" style="border:0" class="CToWUd" data-bit="iit">
+                                                       </a>
+                                                   </div>
+                                               </td>
+                                               <td valign="middle" width="19" style="padding-right:2px"><div style="margin:0.75pt">
+                                                       <a href="https://www.linkedin.com/company/formassembly-com-by-veer-west-llc-" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://www.linkedin.com/company/formassembly-com-by-veer-west-llc-&amp;source=gmail&amp;ust=1677696988736000&amp;usg=AOvVaw2vtxqHCUFJAh45QT0icnuW">
+                                                           <img width="17" height="17" src="https://ci6.googleusercontent.com/proxy/gMuJ1DRto6BtAjZ3x1YgoGm8QvaMI2x8635OWIngES2kYJ7VRzgiR872rXCZTJcKp7iRebt0NilBgeMusmLxEnbgeWnM_BfKUDHGtoT8dQbluPzf5Epk8GsYHwHloA=s0-d-e1-ft#https://smart.formassembly.com/v2/imagebucket/formassembly.com/linkedin.png" style="border:0" class="CToWUd" data-bit="iit">
+                                                       </a>
+                                                   </div>
+                                               </td>
+                                               <td valign="middle" width="22" style="padding-right:3px"><div style="margin:0.75pt">
+                                                       <a href="https://twitter.com/formassembly" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://twitter.com/formassembly&amp;source=gmail&amp;ust=1677696988736000&amp;usg=AOvVaw21BGjJrXSOFB8WyKFpIzb2">
+                                                           <img width="20" height="20" src="https://ci3.googleusercontent.com/proxy/3bp945pupitVmKnMGJQhkRUSnA3WBz01sZwe2vJxg5IQTTRhRMHygxJlQxpO7zkiSqT2AyLXjlMnWov1LbDVLhWRJaLbhnjl8_KiDyr4jJTRxp2reKBhk83sns_z=s0-d-e1-ft#https://smart.formassembly.com/v2/imagebucket/formassembly.com/twitter.png" style="border:0" class="CToWUd" data-bit="iit">
+                                                       </a>
+                                                   </div>
+                                               </td>
+                                               <td valign="middle" width="72"><div style="margin:0.75pt">
+                                                       <a>
+                                                           <img width="70" height="22" src="https://ci3.googleusercontent.com/proxy/f7FSdXMtGZ9QSYEljsCTsvkw4HwExzJQ-6ZQvXLsQcz-cgTtqnmZK9qSAYhMgLuIveaylcf-mUfaE3M26c22NASp9QtY3fgFZxJ8gkxjInOe-_LHBeoUu0mHOkd9bghn=s0-d-e1-ft#https://smart.formassembly.com/v2/imagebucket/formassembly.com/salesforce.png" style="border:0" class="CToWUd" data-bit="iit">
+                                                       </a>
+                                                   </div>
+                                               </td>
+                                           </tr>
+                                       </tbody></table>
+                                   </td>
+                               </tr>
+                           </tbody></table>
+                       </td>
+                                                                    </tr>
+                                                                   
+                                                                </table>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--2 Col Module-->
+
                         </td>
                     </tr>
                 </table>
