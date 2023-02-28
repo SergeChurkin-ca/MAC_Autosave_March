@@ -58,7 +58,6 @@
   <meta class="mktoString" id="banbtnbordersize" mktoName="Banner - Btn Border Size (px)" default="1" allowHtml="true">
   <meta class="mktoString" id="banbtnborderradius" mktoName="Banner - Btn Border Radius" default="50" allowHtml="true">
 
-  
   <meta class="mktoBoolean" id="formtextshow" mktoName="Show Form/Text?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoColor" id="formtextbgcolor" mktoName="Form/Text - BG Color" default="#ffffff">  
   <meta class="mktoColor" id="formbgcolor" mktoName="Form/Text - Form BG Color" default="#EEF3F9">
@@ -103,11 +102,9 @@
   <meta class="mktoString" id="videoposter" mktoName="Video - Video Poster" default="https://dummyimage.com/700x600/1F203E/B3B8C4" allowHtml="true">
   <meta class="mktoString" id="videoembed" mktoName="Video - Video Embed URL" default="https://www.youtube.com/embed/pVE92TNDwUk" allowHtml="true">
 
-
   <meta class="mktoBoolean" id="btmformshow" mktoName="Show Bottom CTA?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
-  <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom CTA - BG Color" default="#1F203E">
+  <meta class="mktoColor" id="btmformbgcolor" mktoName="Bottom CTA - BG Color" default="#000000">
   <meta class="mktoColor" id="btmforminnerbgcolor" mktoName="Bottom CTA - Text BG Color" default="#ffffff">
- 
 
   <meta class="mktoBoolean" id="footershow" mktoName="Show Footer?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">  
   <meta class="mktoColor" id="footerbgcolor" mktoName="Footer - BG Color" default="#F6F9FC">
@@ -332,35 +329,7 @@
 		#form {
           background-color:${formbgcolor};
 		}
-		#btmform .mktoForm .mktoLabel {
-          color:${btmformpcolor}!important;
-          font-size:${btmformpsize}px!important;
-          font-weight:${btmformpweight}!important;
-          display:${showbtmformlabel}!important;
-		}
-		#btmform .mktoForm input, #btmform .mktoForm textarea,  #btmform .mktoForm select {
-          border:${btmformbordercolor} ${btmformborderheight}px solid;
-          border-radius:${btmformborderradius}px!important;
-          background-color:${btmformfieldcolor}!important;
-          color:${btmformpcolor}!important;
-        }
-      	#btmform .mktoForm input::placeholder, #btmform .mktoForm textarea::placeholder,  #btmform .mktoForm select::placeholder {
-          color:${btmformpcolor}!important;
-        }
-		#btmform .mktoForm button.mktoButton {
-          background:${btmformbtnbgcolor}!important;
-          background-color:${btmformbtnbgcolor}!important;
-          border:1px solid ${btmformbtnbordercolor}!important;
-          border-radius:${btmformbtnborderradius}px!important;
-          font-size:${btmformbtntextsize}px!important;
-          padding:15px 50px!important;
-          color:${btmformbtntextcolor}!important;
-          font-weight:bold!important;
-          text-decoration:none!important;
-          width: auto!important!important;
-          display:inline-block;
-		}
-      ${btmformtwocol}
+
 		#threecol .col33 {
           background-color:${threecolcolumnbgcolor};
           border-radius:${threecolradius}px;
