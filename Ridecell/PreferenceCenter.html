@@ -248,9 +248,7 @@
       .mktoForm .mktoFormRow {
         width: calc((100% / 2) - 1rem);
       }
-      .mktoForm .mktoFormRow:nth-child(6) {
-        width: 100% !important;
-      }
+
       .mktoForm input[type=text],
       .mktoForm input[type=url],
       .mktoForm input[type=email],
@@ -349,26 +347,28 @@
       .mktoForm .checkboxContainer:nth-of-type(2n-2) input {
         margin-left: 4rem !important;
       }
-      .mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoFieldWrap  {
+      .mktoForm .checkboxContainer:nth-of-type(1n+2) .mktoFieldWrap  {
         display: flex;
         flex-direction: row-reverse !important;
       }
-      .mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoLogicalField {
+      .mktoForm .checkboxContainer:nth-of-type(1n+2) .mktoLogicalField {
         width: fit-content !important;
       }
+                            .mktoForm .checkboxContainer:nth-of-type(1n+2) .mktoLabel {
+                              padding-top: 0 !important;
+                            }
       .checkboxContainer .mktoFieldWrap {
         display: flex;
         flex-direction: column !important;
       }
 
-      .mktoForm .checkboxContainer:nth-of-type(2n+1) .mktoLabel {
-        font-size: 14px !important;
-      }
+ 
 
       .checkboxContainer .mktoLabel {
         visibility: visible !important;
         position: relative;
         width: 100% !important;
+        font-size: 16px !imporant;
 
       }
       .checkboxContainer .mktoLabel {
@@ -376,6 +376,17 @@
         line-height: 34.56px;
         font-size: 19px !important;
         padding-bottom: 0.5rem;
+      }
+      .mktoForm .mktoRadioList > input, .mktoForm .mktoCheckboxList > input {
+        transform: scale(1.2); 
+      }
+      .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+        font-size: 16px !important;
+                            padding-bottom: 0.25rem !important;
+                          margin-top: -0.1rem !important;
+      }
+      .mktoForm .hiddenRow {
+        display: none;
       }
       @media (max-width:1000px) {
         .gradient-green .social {
@@ -456,7 +467,7 @@
       <section id="columns" class="form">
         <div class="container_inner">
           <div class="mktoForm" id="fomr1" mktoName="Form">
-          
+
           </div>
         </div>
       </section>
@@ -543,11 +554,37 @@
 
     </div>
 
-    <!-- dynamic class name to manipulate mkto default checkboxes -->
+
     <script>
+
+
       MktoForms2.whenReady(function(form) {
 
         Array.from(document.querySelectorAll('input[type="checkbox"]')).map((x) => x.parentNode.parentNode.parentNode.parentNode.classList.add('checkboxContainer'))
+
+        /* toggle row with input which is hidden with visibility rule */
+        Array.from(document.querySelectorAll('.mktoPlaceholder')).map((x) => x.parentNode.classList.add('hiddenRow'))
+
+        /* hide rows conditionally */
+        Array.from(document.querySelectorAll('input[type="checkbox"]')).map((x) => x.addEventListener('change', hiddenFunction))
+
+
+        document.querySelectorAll(`input[name="Email"]`)[0].parentNode.parentNode.parentNode.classList.add('hiddenRow');
+        document.querySelectorAll(`input[name="Phone"]`)[0].parentNode.parentNode.parentNode.classList.add('hiddenRow');
+
+        Array.from(document.querySelectorAll('input[type="checkbox"]')).map((x) => x.addEventListener('change', hiddenFunction))
+
+        function hiddenFunction(e) {
+          const inputName = e.target.value;
+          console.log(inputName)
+          if (inputName === "Email") {
+            document.querySelectorAll(`input[name="Email"]`)[0].parentNode.parentNode.parentNode.classList.toggle('hiddenRow');
+          } else if (inputName === "Phone") {
+            document.querySelectorAll(`input[name="Phone"]`)[0].parentNode.parentNode.parentNode.classList.toggle('hiddenRow');
+          }
+
+        }
+
 
       });
     </script>
