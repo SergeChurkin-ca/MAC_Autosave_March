@@ -67,6 +67,8 @@
     <meta class="mktoString" mktoName="Hero Section Pad Bottom" id="form-pd-btm" default="2">
 
     <meta class="mktoString" mktoName="Form Container Max Width" id="form-max-width" default="480">
+      
+    <meta class="mktoString" mktoName="Speakers Banner Max Width" id="speakerbanner-maxiwidth" default="1500" >
 
     <meta class="mktoString" mktoName="Two Cols Pad Top" id="twovols-pd-top" default="0">
     <meta class="mktoString" mktoName="Two Cols pad Bottom" id="twovols-pd-btm" default="2">
@@ -394,15 +396,19 @@
         line-height: 58px;
         font-weight: 500;
         margin-top: 4.5rem;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
+        padding-right: 8vw;
+        z-index: 2;
 }
 #speakersbanner .section {
   background: #FEEFE8;
   padding: 6rem 3rem;
   position: relative;
+  max-width: ${speakerbanner-maxiwidth}px;
 }
 #speakersbanner .button-container {
   gap: 1rem;
+  z-index: 2;
 }
 #speakersbanner .btn {
   padding: 0;
@@ -419,7 +425,7 @@
 
 #speakersbanner .flex-column:after {
      content: '';
-        visibility: ${show-formdecoration};
+        
         background: url('https://lp.illumio.com/rs/093-SFK-561/images/brand-decoration.gif');
         background-repeat: no-repeat;
         position: absolute;
@@ -435,11 +441,22 @@
   max-width: 120px !important;
   heigth: 120px;
 }
-
+#speakersbanner .speakers-container {
+  justify-content: space-between;
+  z-index: 3;
+  position: relative;
+}
 #speakersbanner .img-container:nth-child(2),
 #speakersbanner .img-container:nth-child(3) {
   margin-left: -2.6rem;
 }
+
+#speakersbanner .logo img {
+  width: 42px;
+  margin-top: 4rem;
+}
+
+
       #formsection {
         display: ${show-form-section};
         order: ${form-order};
@@ -995,7 +1012,22 @@
         .mktoForm .mktoFormRow .mktoFormCol{
           margin-left:0 !important;
         }
-
+        #speakersbanner, #speakersbanner .flex-row {
+          text-align: center;
+          justify-content: center;
+        }
+        #speakersbanner h1 {
+          margin: 4rem 0 !important;
+        }
+#speakersbanner .flex-column:after {
+        bottom: -17rem !important;
+        right: 0rem;
+        background-size: 100%;
+        z-index: 1;
+        width: 170px;
+        height: 100%;
+        transform: translate(0%, 55%)
+}
       }
 
       @media (max-width:690px) {
@@ -1022,11 +1054,31 @@
           font-size: 20px;
           line-height: 24px;
         }
-
+        #speakersbanner h1 {
+          font-size: 36px;
+          line-height: 36px;
+        }
+        
         #formsection h1 {
           font-size: 36px;
           line-height: 40px;
         }
+       
+#speakersbanner .button-container {
+  gap: 3rem;
+}
+
+#speakersbanner .logo img {
+  margin-top: 0;
+}
+#speakersbanner .speakers-container img {
+  max-width: 80px !important;
+}
+
+#speakersbanner .img-container:nth-child(2),
+#speakersbanner .img-container:nth-child(3) {
+  margin-left: -2rem;
+}
 
         #formsection h2 {
           font-size: 20px;
@@ -1261,6 +1313,13 @@
           height: 3rem !important;
           line-height: initial !important;
           font-size: initial !important;
+        }
+         #speakersbanner .section {
+          padding: 6rem 1rem;
+        }
+        #speakersbanner .logo {
+          text-align: left;
+          
         }
       }
     </style>
@@ -1827,8 +1886,6 @@
       </div>
     </div>
 
-
-
     <section id="hero">
       <div class="section flex-row">
 
@@ -1872,12 +1929,19 @@
                 <a href="#">MARKETO</a>
               </div>
      </div>
-     <h1 mktoText="Speakers Banner Ttitle">Marketo Email & <br>Landing Pages</h1>
+     <h1 mktoText="Speakers Banner Ttitle">Marketo Email & Landing Pages</h1>
+     
    </div>
    <div class="speakers-container flex-row">
-    <div class="mktoText img-container" mktoName="Speaker 1" id="speaker1"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Heather S.png" alt="speaker one" /></div>
-    <div class="mktoText img-container" mktoName="Speaker 2" id="speaker2"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Basel B.png" alt="speaker two" /></div>
-    <div class="mktoText img-container" mktoName="Speaker 3" id="speaker3"><img style="width:115px;" src="https://lp.illumio.com/rs/093-SFK-561/images/Jacy C.png" alt="speaker three" /></div>
+    <div class="group flex-row">
+      <div class="mktoText img-container" mktoName="Speaker 1" id="speaker1"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Heather S.png" alt="speaker one" /></div>
+      <div class="mktoText img-container" mktoName="Speaker 2" id="speaker2"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Basel B.png" alt="speaker two" /></div>
+      <div class="mktoText img-container" mktoName="Speaker 3" id="speaker3"><img style="width:115px;" src="https://lp.illumio.com/rs/093-SFK-561/images/Jacy C.png" alt="speaker three" /></div>
+    </div>
+     <div class="logo">
+                <a href="https://www.illumio.com/" target="_blank" style="border:0;">
+                  <img src="https://lp.illumio.com/rs/093-SFK-561/images/logo-lp-short.png" class="hs-image-widget" style="border:0;" alt="illumio_Logo_2022" title="illumio_Logo_2022"></a>
+              </div>
    </div>
    
   </div>
