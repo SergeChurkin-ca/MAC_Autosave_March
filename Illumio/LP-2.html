@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+"<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -18,6 +18,7 @@
     <meta class="mktoString" mktoName="Top Logo Width" id="toplogowidth" default="42">
 
     <meta class="mktoBoolean" id="show-hero-section" mktoName="Show Hero Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speakersbanner-section" mktoName="Show SpeakersBanner Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <meta class="mktoBoolean" id="show-form-section" mktoName="Show Form Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 
@@ -138,6 +139,7 @@
 
     <!-- Sections order -->    
     <meta class="mktoString" mktoName="Order: Hero Section" id="hero-order" default="1">
+    <meta class="mktoString" mktoName="Order: SpeakerrBanner Section" id="speakerbanner-order" default="1">
     <meta class="mktoString" mktoName="Order: Form Section" id="form-order" default="1">
     <meta class="mktoString" mktoName="Order: FreeText Section" id="sec1-order" default="2">
     <meta class="mktoString" mktoName="Order: 2 Columns Section" id="sec2-order" default="3">
@@ -379,8 +381,65 @@
         margin: ${herocta-mg-top}rem 0 ${herocta-mg-btm}rem;
         display: ${show-hero-btn};
       }
+#speakersbanner {
+  display: ${show-speakersbanner-section};
+  order: ${speakerbanner-order};
+  
+}
 
+#speakersbanner h1 {
+    font-size: 60px;
+        font-family: ${fontfamily-headline}, sans-serif !important;
+        color: ${heroHeaderColor};
+        line-height: 58px;
+        font-weight: 500;
+        margin-top: 4.5rem;
+}
+#speakersbanner .section {
+  background: #FEEFE8;
+  padding: 6rem 3rem;
+  position: relative;
+}
+#speakersbanner .button-container {
+  gap: 1rem;
+}
+#speakersbanner .btn {
+  padding: 0;
+}
+#speakersbanner .btn a {
+  font-size: 24px !important;
+  padding: 7px 11px !important;
+}
+#speakersbanner .btn-reverse a {
+  background-color: transparent !important;
+  border: 2.5px solid #313638 !important;
+  color: #313638 !important;
+}
 
+#speakersbanner .flex-column:after {
+     content: '';
+        visibility: ${show-formdecoration};
+        background: url('https://lp.illumio.com/rs/093-SFK-561/images/brand-decoration.gif');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 1.5rem;
+        right: 0;
+        background-size: 115%;
+        z-index: 1;
+        width: 200px;
+        height: 100%;
+        
+}
+
+#speakersbanner img {
+  max-width: 120px !important;
+  heigth: 120px;
+}
+
+#speakersbanner .img-container:nth-child(2),
+#speakersbanner .img-container:nth-child(3) {
+  margin-left: -2.6rem;
+}
       #formsection {
         display: ${show-form-section};
         order: ${form-order};
@@ -828,7 +887,7 @@
         }
         #footericons ul {
           justify-content: center !important;
-padding:0 !important;
+          padding:0 !important;
         }
         footer ul li, #footer strong {
           margin: 0 auto !important;
@@ -1510,7 +1569,6 @@ padding:0 !important;
 
                             </li>
                           </ul>
-
                         </div>
                         <div class="dropdown-promo-content flex width-full xl-3-col xl-col-start-10 l-3-col l-col-start-10">
                           <div class="image-container">
@@ -1521,11 +1579,8 @@ padding:0 !important;
 
                                   <img src="https://lp.illumio.com/rs/093-SFK-561/images/main_nav_promo_706x446_customers_qbe.png"
                                        width="706" height="550" alt="main_nav_promo_customers_qbe" loading="lazy" typeof="foaf:Image">
-
                                 </picture>
-
                               </div>
-
                             </div>
                             <div class="image-desc">
                               <p>Hear how QBE prevents breach impact with Illumio Core's Zero Trust Segmentation.</p>
@@ -1806,6 +1861,28 @@ padding:0 !important;
       </div>
     </section>
 
+<section id="speakersbanner">
+  <div class="section">
+   <div class="flex-column">
+     <div class="flex-row button-container">
+       <div class="mktoText btn" id="speakersbutton" mktoName="Speakers - Button 1 Content">
+                <a href="#">CORPORATE</a>
+              </div>
+       <div class="mktoText btn btn-reverse" id="speakersbutton2" mktoName="Speakers - Button 2 Content">
+                <a href="#">MARKETO</a>
+              </div>
+     </div>
+     <h1 mktoText="Speakers Banner Ttitle">Marketo Email & <br>Landing Pages</h1>
+   </div>
+   <div class="speakers-container flex-row">
+    <div class="mktoText img-container" mktoName="Speaker 1" id="speaker1"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Heather S.png" alt="speaker one" /></div>
+    <div class="mktoText img-container" mktoName="Speaker 2" id="speaker2"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Basel B.png" alt="speaker two" /></div>
+    <div class="mktoText img-container" mktoName="Speaker 3" id="speaker3"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Jacy C.png" alt="speaker three" /></div>
+   </div>
+   
+  </div>
+</section>
+
     <section id="formsection">
       <div class="section flex-row">
 
@@ -1841,7 +1918,7 @@ padding:0 !important;
         <div class="column"> 
           <div class="form-container">
             <div class="mktoForm" id="form" mktoName="Form">
-              
+
             </div>
           </div>
           <div class="mktoText mobile-content" id="freetextcopy3" mktoName="Free-Text - Mobile Copy 2">
@@ -2066,4 +2143,4 @@ padding:0 !important;
       });
     </script>
   </body>
-</html>
+</html>"
