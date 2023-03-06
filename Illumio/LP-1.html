@@ -30,6 +30,12 @@
     <meta class="mktoBoolean" id="show-threecols-col1" mktoName="Show 3 Cols - Col1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-threecols-col2" mktoName="Show 3 Cols - Col2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-threecols-col3" mktoName="Show 3 Cols - Col3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec5" mktoName="Show Speakers" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show"></meta>
+     <meta class="mktoBoolean" id="show-speakers-col1" mktoName="Show Speaker 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speakers-col2" mktoName="Show Speaker 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speakers-col3" mktoName="Show Speaker 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speakers-col3" mktoName="Show Speaker 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+   
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfootersocial" mktoName="Show Footer Social Icons" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -82,6 +88,10 @@
     <meta class="mktoString" mktoName="3 Cols 2 Card Image" id="card2-img" default="https://lp.illumio.com/rs/093-SFK-561/images/card-head.png">
     <meta class="mktoString" mktoName="3 Cols 3 Card Image" id="card3-img" default="https://lp.illumio.com/rs/093-SFK-561/images/card-head.png">
 
+                                                                                                                          
+  <meta class="mktoString" mktoName="Speakers Padding Top (px)" id="speakers-pad-top" default="1">
+    <meta class="mktoString" mktoName="Speakers Padding Bottom (px)" id="speakers-pad-bottom" default="20">
+                                                                                                                                
     <meta class="mktoColor" id="footerbgclr" mktoName="Footer - Background Color" default="#313638">
     <meta class="mktoColor" id="footerfontclr" mktoName="Footer - Text Color" default="#ffffff">
     <meta class="mktoColor" id="footerhoverclr" mktoName="Footer - Hover Text Color" default="#FA6624">
@@ -124,11 +134,12 @@
 
     <!-- Sections order -->    
     <meta class="mktoString" mktoName="Order: Hero Section" id="hero-order" default="1">
-        <meta class="mktoString" mktoName="Order: SpeakerrBanner Section" id="speakerbanner-order" default="2">
+      <meta class="mktoString" mktoName="Order: SpeakerrBanner Section" id="speakerbanner-order" default="2">
     <meta class="mktoString" mktoName="Order: FreeText Section" id="sec1-order" default="2">
     <meta class="mktoString" mktoName="Order: 2 Columns Section" id="sec2-order" default="3">
     <meta class="mktoString" mktoName="Order: Center Cta Section" id="sec3-order" default="4">
     <meta class="mktoString" mktoName="Order: 3 Columns Section" id="sec4-order" default="5">
+    <meta class="mktoString" mktoName="Order: 3 Columns Section" id="sec5-order" default="6">
 
 
 
@@ -554,7 +565,7 @@
         width: calc((100% / 3) - 1.75rem);
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
         border-radius: 10px;
-        max-width: 480px;
+        max-width: 336px;
         text-align: left;
 
       }
@@ -607,6 +618,57 @@
         font-size: 18px;
         color: #64686A;
         line-height: 24px;
+      }
+      
+      #speakers {
+        display: ${showsec5};
+        order: ${sec5-order};
+        flex-direction: column !important;
+        text-align: center;
+        padding: ${speakers-pad-top}px 0 ${speakers-pad-bottom}px !important;
+        text-align: left;
+      }
+         #speakers .column {
+        width: calc((100% / 4) - 2.5rem);
+        border-radius: 10px;
+        max-width: 480px;
+        text-align: left;
+        min-width: 300px;
+      }
+      #speakers h2 {
+        color: #64686A !important;
+        font-size: 40px;
+        font-wight: 700;
+         font-family: ${fontfamily-bold}, sans-serif !important;
+         margin: 2rem 0 1rem;
+      }
+      #speakers h3 {
+        color: #FA6624;
+        line-height: 30px;
+        font-size: 20px;
+        
+      }
+      #speakers span {
+        color: #64686A;
+      }
+      #speakers .flex-row {
+        justify-content: flex-start;
+        gap: 2.5rem;
+      }
+      #speakers .column:nth-child(1) {
+        display: ${show-speakers-col1};
+      }
+       #speakers .column:nth-child(2) {
+        display: ${show-speakers-col2};
+      } 
+       #speakers .column:nth-child(3) {
+        display: ${show-speakers-col3};
+      } 
+       #speakers .column:nth-child(4) {
+        display: ${show-speakers-col4};
+      }
+      #speakers .imgcontainer img {
+        max-width: 336px !important;
       }
       #footer{
         display:${showfooter};
@@ -769,6 +831,15 @@
         }
         #footertext2 ul li:nth-child(1):after {
           content: ''
+        }
+      }
+      @media (max-width: 960px) {
+        #speakers .flex-row {
+          justify-content: space-around;
+        }
+        #speakers .column {
+          width: calc((100% / 2) - 3rem);
+          min-width: unset !important;
         }
       }
       @media (max-width: 900px) {
@@ -981,6 +1052,15 @@
         #threecols h3 {
           font-size: 24px;
           line-height: 28px;;
+        }
+        #speakers .flex-row {
+          flex-direction: column !important;
+          
+        }
+        #speakers .column {
+          width: 336px;
+          margin: 0.5rem auto;
+          max-width:90%;
         }
       }
       @media (max-width:480px) {
@@ -1767,6 +1847,62 @@
         </div>
       </div>
     </section>
+    
+    
+                                                                                                                                                                                      
+<section id="speakers">
+    
+      <div class="section flex-row">
+
+<div class="column">
+<div class="imgcontainer mktoText" mktoName="Speaker 1 Headshot">
+<img src="https://lp.illumio.com/rs/093-SFK-561/images/paceholder-image-17%402x.png" alt="Speaker" />
+</div>
+<h2 class="mktoText" mktoName="Speaker 1 Name" id="speaker1-name">Eiusmod <br>Tempor</h2>
+<h3 class="mktoText" mktoName="Speaker 1 Title" id="speaker1-title">Chief Cyber Technologist,<br>
+<span>Illumio</span></h3>
+ 
+<p class="mktoText" mktoName="Speaker 1 Text" id="speaker1-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur maxime, ab voluptas praesentium modi recusandae dolore natus ullam fugit perspiciatis.</p>
+</div>
+
+<div class="column">
+<div class="imgcontainer mktoText" mktoName="Speaker 1 Headshot">
+<img src="https://lp.illumio.com/rs/093-SFK-561/images/paceholder-image-17%402x.png" alt="Speaker" />
+</div>
+<h2 class="mktoText" mktoName="Speaker 1 Name" id="speaker1-name">Eiusmod <br>Tempor</h2>
+<h3 class="mktoText" mktoName="Speaker 1 Title" id="speaker1-title">Chief Cyber Technologist,<br>
+<span>Illumio</span></h3>
+ 
+<p class="mktoText" mktoName="Speaker 1 Text" id="speaker1-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur maxime, ab voluptas praesentium modi recusandae dolore natus ullam fugit perspiciatis.</p>
+</div>
+
+<div class="column">
+<div class="imgcontainer mktoText" mktoName="Speaker 1 Headshot">
+<img src="https://lp.illumio.com/rs/093-SFK-561/images/paceholder-image-17%402x.png" alt="Speaker" />
+</div>
+<h2 class="mktoText" mktoName="Speaker 1 Name" id="speaker1-name">Eiusmod <br>Tempor</h2>
+<h3 class="mktoText" mktoName="Speaker 1 Title" id="speaker1-title">Chief Cyber Technologist,<br>
+<span>Illumio</span></h3>
+ 
+<p class="mktoText" mktoName="Speaker 1 Text" id="speaker1-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur maxime, ab voluptas praesentium modi recusandae dolore natus ullam fugit perspiciatis.</p>
+</div>
+
+<div class="column">
+<div class="imgcontainer mktoText" mktoName="Speaker 1 Headshot">
+<img src="https://lp.illumio.com/rs/093-SFK-561/images/paceholder-image-17%402x.png" alt="Speaker" />
+</div>
+<h2 class="mktoText" mktoName="Speaker 1 Name" id="speaker1-name">Eiusmod <br>Tempor</h2>
+<h3 class="mktoText" mktoName="Speaker 1 Title" id="speaker1-title">Chief Cyber Technologist,<br>
+<span>Illumio</span></h3>
+ 
+<p class="mktoText" mktoName="Speaker 1 Text" id="speaker1-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur maxime, ab voluptas praesentium modi recusandae dolore natus ullam fugit perspiciatis.</p>
+</div>
+  
+      </div>
+      
+    </section>
+    
+    
 
     <footer id="footer">
       <div class="footer-container section flex">
