@@ -1,1 +1,0 @@
-// now let'sget index of e target value and uncheck previos Indexof
