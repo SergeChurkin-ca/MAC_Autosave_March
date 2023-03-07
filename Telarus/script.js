@@ -1,0 +1,2 @@
+MktoForms2.whenReady(function(form) {
+            var redirectTimeMs = 4000; // 4 seconds  form.onSuccess(function(vals,thankYouURL){    // whatever you were going to do to show the Thank You message goes here    setTimeout(function(){      document.location.href = thankYouURL;    }, redirectTimeMs);    return false;  });});‍‍‍‍‍‍‍‍‍‍
