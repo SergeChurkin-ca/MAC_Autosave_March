@@ -18,12 +18,11 @@
     <meta class="mktoString" mktoName="Top Logo Width" id="toplogowidth" default="42">
 
     <meta class="mktoBoolean" id="show-hero-section" mktoName="Show Hero Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="show-speakersbanner-section" mktoName="Show SpeakersBanner Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <meta class="mktoBoolean" id="show-form-section" mktoName="Show Form Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
 
     <meta class="mktoBoolean" id="showsec1" mktoName="Show Free-Text Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
-    <meta class="mktoBoolean" id="showsec2" mktoName="Show Two Cols Section?" default="false" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec2" mktoName="Show Two Cols Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec3" mktoName="Show Center Cta Section?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec3-headline" mktoName="Show Center Cta Headline?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showsec3-cta" mktoName="Show Center Cta Button?" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -31,6 +30,12 @@
     <meta class="mktoBoolean" id="show-threecols-col1" mktoName="Show 3 Cols - Col1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-threecols-col2" mktoName="Show 3 Cols - Col2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="show-threecols-col3" mktoName="Show 3 Cols - Col3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="showsec5" mktoName="Show Speakers" default="true" true_value="flex" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speakers-col1" mktoName="Show Speaker 1?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speakers-col2" mktoName="Show Speaker 2?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speakers-col3" mktoName="Show Speaker 3?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+    <meta class="mktoBoolean" id="show-speakers-col4" mktoName="Show Speaker 4?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+
 
     <meta class="mktoBoolean" id="showfooter" mktoName="Show Footer Section?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
     <meta class="mktoBoolean" id="showfooterlogo" mktoName="Show Footer Logo?" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
@@ -88,6 +93,8 @@
     <meta class="mktoString" mktoName="3 cols Padding Bottom (px)" id="theecols-pad-bottom" default="20">
     <meta class="mktoString" mktoName="3 cols Text Container heihght (rem)" id="textcontainer-height" default="8">
 
+    <meta class="mktoString" mktoName="Speakers Padding Top (px)" id="speakers-pad-top" default="1">
+    <meta class="mktoString" mktoName="Speakers Padding Bottom (px)" id="speakers-pad-bottom" default="20">
 
     <meta class="mktoString" mktoName="3 Cols 1 Card Image" id="card1-img" default="https://lp.illumio.com/rs/093-SFK-561/images/card-head.png">
     <meta class="mktoString" mktoName="3 Cols 2 Card Image" id="card2-img" default="https://lp.illumio.com/rs/093-SFK-561/images/card-head.png">
@@ -141,13 +148,12 @@
 
     <!-- Sections order -->    
     <meta class="mktoString" mktoName="Order: Hero Section" id="hero-order" default="1">
-    <meta class="mktoString" mktoName="Order: SpeakerrBanner Section" id="speakerbanner-order" default="1">
     <meta class="mktoString" mktoName="Order: Form Section" id="form-order" default="1">
     <meta class="mktoString" mktoName="Order: FreeText Section" id="sec1-order" default="2">
     <meta class="mktoString" mktoName="Order: 2 Columns Section" id="sec2-order" default="3">
     <meta class="mktoString" mktoName="Order: Center Cta Section" id="sec3-order" default="4">
     <meta class="mktoString" mktoName="Order: 3 Columns Section" id="sec4-order" default="5">
-
+    <meta class="mktoString" mktoName="Order: Speaker Section" id="sec5-order" default="6">
 
 
     <style>
@@ -204,20 +210,31 @@
       a {text-decoration: none}
       a:hover, a:focus {
         text-decoration: underline;
+      } ul.no-bullets {
+        margin-left: 4px !important;
+        padding-left: 0 !important;
+        
+      }
+      ul.no-bullets li {
+        list-style-type: none;
+        position: relative;
+        padding-left: 19px;
+      }
+      ul.no-bullets li:before {
+        content: url(https://lp.illumio.com/rs/093-SFK-561/images/shevron-right.png);
+        position: absolute;
+        top: 3px;
+        left: 0;
+        padding-right: 8px;
+      }
+      .chevron-right {
+        position: relative;
       }
       .chevron-right::before {
-        border-style: solid;
-        border-width: 0.25rem 0.25rem 0 0;
-        content: '';
-        display: inline-block;
-        height: 0.65rem;
-        width: 0.65rem;
-        left: -0.25em !important;
-        position: relative;
-        top: 0.55rem;
-        transform: rotate(45deg);
-        vertical-align: top;
-        left: 0;
+        content: url(https://lp.illumio.com/rs/093-SFK-561/images/shevron-right.png);
+        position: absolute;
+        top: 3px;
+        left: 9px;
       }
       img{
         vertical-align:bottom;
@@ -256,7 +273,7 @@
       .cta a {
         color: ${ctaclr};
         font-size: ${cta-font-size}px;
-        font-family: ${fontfamily-bold}, sans-serif !important;
+        font-family: ${fontfamily-secondary}, sans-serif !important;
         font-weight: 700;
 
       }
@@ -274,7 +291,7 @@
         font-weight: 800 !important;
         transition: all 0.2s !important;
         white-space: nowrap !important;
-        font-family: ${fontfamily-bold}, sans-serif !important;
+        font-family: ${fontfamily-secondary}, sans-serif !important;
         font-weight: 600 !important;
       }
       .btn a:hover, .btn a:focus {
@@ -384,81 +401,7 @@
         margin: ${herocta-mg-top}rem 0 ${herocta-mg-btm}rem;
         display: ${show-hero-btn};
       }
-      #speakersbanner {
-        display: ${show-speakersbanner-section};
-        order: ${speakerbanner-order};
-
-      }
-
-      #speakersbanner h1 {
-        font-size: 60px;
-        font-family: ${fontfamily-headline}, sans-serif !important;
-        color: ${heroHeaderColor};
-        line-height: 58px;
-        font-weight: 500;
-        margin-top: 4.5rem;
-        margin-bottom: 5rem;
-        padding-right: 8vw;
-        z-index: 2;
-        position: relative;
-      }
-      #speakersbanner .section {
-        background: #FEEFE8;
-        padding: 6rem 3rem;
-        position: relative;
-        max-width: ${speakerbanner-maxiwidth}px;
-      }
-      #speakersbanner .button-container {
-        gap: 1rem;
-        z-index: 2;
-      }
-      #speakersbanner .btn {
-        padding: 0;
-      }
-      #speakersbanner .btn a {
-        font-size: 24px !important;
-        padding: 7px 11px !important;
-      }
-      #speakersbanner .btn-reverse a {
-        background-color: transparent !important;
-        border: 2.5px solid #313638 !important;
-        color: #313638 !important;
-      }
-
-      #speakersbanner .flex-column:after {
-        content: '';
-
-        background: url('https://lp.illumio.com/rs/093-SFK-561/images/brand-decoration.gif');
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 2rem;
-        right: 0rem;
-        background-size: 100%;
-        z-index: 1;
-        width: 230px;
-        height: 100%;
-      }
-
-      #speakersbanner img {
-        max-width: 120px !important;
-        heigth: 120px;
-      }
-      #speakersbanner .speakers-container {
-        justify-content: space-between;
-        z-index: 3;
-        position: relative;
-      }
-      #speakersbanner .img-container:nth-child(2),
-      #speakersbanner .img-container:nth-child(3) {
-        margin-left: -2.6rem;
-      }
-
-      #speakersbanner .logo img {
-        width: 42px;
-        margin-top: 4rem;
-      }
-
-
+      
       #formsection {
         display: ${show-form-section};
         order: ${form-order};
@@ -620,9 +563,7 @@
         font-family: 'Montserrat', sans-serif !important;
         font-weight: 700;
       }
-      #twocols .chevron-right::before {
-        top: 0.8rem !important;
-      }
+    
       #centercta {
         display: ${showsec3};;
         order: ${sec3-order};
@@ -722,6 +663,60 @@
         font-size: 18px;
         color: #64686A;
         line-height: 24px;
+      }
+
+     #speakers {
+        display: ${showsec5};
+        order: ${sec5-order};
+        flex-direction: column !important;
+        text-align: center;
+        padding: ${speakers-pad-top}px 0 ${speakers-pad-bottom}px !important;
+        text-align: left;
+      }
+      #speakers .column {
+        border-radius: 10px;
+        text-align: left;
+        max-width: 400px;
+      }
+      #speakers h2 {
+        color: #64686A !important;
+        font-size: 40px;
+        font-weight: 700;
+        font-family: ${fontfamily-bold}, sans-serif !important;
+        margin: 2rem 0 1rem;
+      }
+      #speakers h3 {
+        color: #FA6624;
+        line-height: 30px;
+        font-size: 20px;
+
+      }
+      #speakers span {
+        color: #64686A;
+      }
+      #speakers .flex-row {
+        justify-content: space-around;
+        grid-gap: 2.5rem;
+        display: grid !important;
+      grid-template-columns: repeat( auto-fit, minmax(240px, auto) );
+      }
+      
+      #speakers .column:nth-child(1) {
+        display: ${show-speakers-col1};
+      }
+      #speakers .column:nth-child(2) {
+        display: ${show-speakers-col2};
+      } 
+      #speakers .column:nth-child(3) {
+        display: ${show-speakers-col3};
+      } 
+      #speakers .column:nth-child(4) {
+        display: ${show-speakers-col4};
+      }
+      #speakers .imgcontainer img {
+        max-width: 260px !important;
+        display: flex;
+        margin: 0 auto;
       }
       #footer{
         display:${showfooter};
@@ -835,6 +830,8 @@
         gap: 1rem;
         max-width: 160px;
       }
+
+     
       @media (max-width: 980px) {
 
         #hero {
@@ -1014,22 +1011,7 @@
         .mktoForm .mktoFormRow .mktoFormCol{
           margin-left:0 !important;
         }
-        #speakersbanner, #speakersbanner .flex-row {
-          text-align: center;
-          justify-content: center;
-        }
-        #speakersbanner h1 {
-          margin: 4rem 0 !important;
-        }
-        #speakersbanner .flex-column:after {
-          bottom: -17rem !important;
-          right: 0rem;
-          background-size: 100%;
-          z-index: 1;
-          width: 170px;
-          height: 100%;
-          transform: translate(0%, 55%)
-        }
+       
       }
 
       @media (max-width:690px) {
@@ -1056,32 +1038,14 @@
           font-size: 20px;
           line-height: 24px;
         }
-        #speakersbanner h1 {
-          font-size: 36px;
-          line-height: 36px;
-        }
+       
 
         #formsection h1 {
           font-size: 36px;
           line-height: 40px;
         }
 
-        #speakersbanner .button-container {
-          gap: 3rem;
-        }
-
-        #speakersbanner .logo img {
-          margin-top: 0;
-        }
-        #speakersbanner .speakers-container img {
-          max-width: 80px !important;
-        }
-
-        #speakersbanner .img-container:nth-child(2),
-        #speakersbanner .img-container:nth-child(3) {
-          margin-left: -2rem;
-        }
-
+      
         #formsection h2 {
           font-size: 20px;
           line-height: 24px;
@@ -1316,13 +1280,7 @@
           line-height: initial !important;
           font-size: initial !important;
         }
-        #speakersbanner .section {
-          padding: 6rem 1rem;
-        }
-        #speakersbanner .logo {
-          text-align: left;
-
-        }
+       
       }
     </style>
   </head>
@@ -1909,6 +1867,7 @@
           <div class="mktoText btn" id="freetextbtn1" mktoName="Hero - Button Content">
             <a href="#">LOREM IPSUM</a>
           </div>
+          
         </div>
 
         <div class="column">
@@ -1917,34 +1876,6 @@
             Adipiscing elit, sed do eiusmod tempor,
             Magna eget est lorem ipsum</p>
         </div>
-      </div>
-    </section>
-
-    <section id="speakersbanner">
-      <div class="section">
-        <div class="flex-column">
-          <div class="flex-row button-container">
-            <div class="mktoText btn" id="speakersbutton" mktoName="Speakers - Button 1 Content">
-              <a href="#">CORPORATE</a>
-            </div>
-            <div class="mktoText btn btn-reverse" id="speakersbutton2" mktoName="Speakers - Button 2 Content">
-              <a href="#">MARKETO</a>
-            </div>
-          </div>
-          <div class="mktoText" id="speakersheadline" mktoName="Speakers Banner Headline"><h1 >Marketo Email & Landing Pages</h1></div>
-        </div>
-        <div class="speakers-container flex-row">
-          <div class="group flex-row">
-            <div class="mktoText img-container" mktoName="Speaker 1" id="speaker1"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Heather S.png" alt="speaker one" /></div>
-            <div class="mktoText img-container" mktoName="Speaker 2" id="speaker2"><img src="https://lp.illumio.com/rs/093-SFK-561/images/Basel B.png" alt="speaker two" /></div>
-            <div class="mktoText img-container" mktoName="Speaker 3" id="speaker3"><img style="width:115px;" src="https://lp.illumio.com/rs/093-SFK-561/images/Jacy C.png" alt="speaker three" /></div>
-          </div>
-          <div class="logo">
-            <a href="https://www.illumio.com/" target="_blank" style="border:0;">
-              <img src="https://lp.illumio.com/rs/093-SFK-561/images/logo-lp-short.png" class="hs-image-widget" style="border:0;" alt="illumio_Logo_2022" title="illumio_Logo_2022"></a>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -1970,11 +1901,10 @@
               Morbi venenatis, neque eget dignissim tincidunt, arcu augue elementum mauris:
               <br><br>
             </p>
-            <ul>
-              <li>Donec mi ex, bibendum maximus venenatis sit amet</li>
-              <li>Nulla vitae felis ut tortor vestibulum ultricies. Morbi urna leo, notias tempus iaculis lorem</li>
-              <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuer maximus</li>
-            </ul>
+        <ul class="no-bullets">
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, vel!</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, vel!</li>
+       </ul>
 
           </div>
 
@@ -2030,7 +1960,7 @@
           <p>based on 89 verified reviews as of April 5, 2022</p>
           <br>
           <p class="cta">
-            <a href="#" target="_blank">WRITE A REVIEW &nbsp;&nbsp;<span style="line-height:100%;font-weight:800;"class="chevron-right"></span></a>
+            <a href="#" target="_blank">WRITE A REVIEW <span class="chevron-right"></span></a>
           </p>
 
         </div>
@@ -2044,8 +1974,9 @@
           <p>Assistant Director of Communications</p>
           <br>
           <p class="cta">
-            <a href="#" target="_blank">READ MORE &nbsp;&nbsp;<span style="line-height:100%;font-weight:800;"class="chevron-right"></span></a>
+              <a href="#">READ NOW<span class="chevron-right"></span></a>
           </p>
+          
         </div>
       </div>
     </section>
@@ -2056,7 +1987,7 @@
           <h2>Ready to learn more about Zero Trust Segmentation?</h2>
         </div>
         <div class="mktoText btn" id="centerctabtn" mktoName="Center Cta">
-          <a href="#">LEARN MORE</a>
+           <a href="#">READ NOW<span class="chevron-right"></span></a>
         </div>
       </div>
     </section>
@@ -2075,7 +2006,7 @@
               Report</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             <p class="cta">
-              <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
+               <a href="#">READ NOW<span class="chevron-right"></span></a>
             </p>
           </div>
 
@@ -2089,7 +2020,7 @@
               Report</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
             <p class="cta">
-              <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
+               <a href="#">READ NOW<span class="chevron-right"></span></a>
             </p>
           </div>
         </div>
@@ -2101,12 +2032,62 @@
             <h3>Bishop Fox Assessment Report</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, earum.</p>
             <p class="cta">
-              <a href="#">READ NOW &nbsp;&nbsp;<span style="line-height:30px;font-weight:800;"class="chevron-right"></span></a>
+               <a href="#">READ NOW<span class="chevron-right"></span></a>
             </p>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="speakers">
+      <div class="section flex-row">
+
+        <div class="column">
+          <div class="imgcontainer mktoText" mktoName="Speaker 1 Headshot" id="heashot1">
+            <img src="https://lp.illumio.com/rs/093-SFK-561/images/paceholder-image-17%402x.png" alt="Speaker" />
+          </div>
+          <h2 class="mktoText" mktoName="Speaker 1 Name" id="speaker1-name">Eiusmod <br>Tempor</h2>
+          <h3 class="mktoText" mktoName="Speaker 1 Title" id="speaker1-title">Chief Cyber Technologist,<br>
+            <span>Illumio</span></h3>
+
+          <p class="mktoText" mktoName="Speaker 1 Text" id="speaker1-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur maxime, ab voluptas praesentium modi recusandae dolore natus ullam fugit perspiciatis.</p>
+        </div>
+
+        <div class="column">
+          <div class="imgcontainer mktoText" mktoName="Speaker 2 Headshot" id="heashot2">
+            <img src="https://lp.illumio.com/rs/093-SFK-561/images/paceholder-image-17%402x.png" alt="Speaker" />
+          </div>
+          <h2 class="mktoText" mktoName="Speaker 2 Name" id="speaker1-name1">Eiusmod <br>Tempor</h2>
+          <h3 class="mktoText" mktoName="Speaker 2 Title" id="speaker1-title1">Chief Cyber Technologist,<br>
+            <span>Illumio</span></h3>
+
+          <p class="mktoText" mktoName="Speaker 2 Text" id="speaker1-txt1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur maxime, ab voluptas praesentium modi recusandae dolore natus ullam fugit perspiciatis.</p>
+        </div>
+
+        <div class="column">
+          <div class="imgcontainer mktoText" mktoName="Speaker 3 Headshot" id="heashot3">
+            <img src="https://lp.illumio.com/rs/093-SFK-561/images/paceholder-image-17%402x.png" alt="Speaker" />
+          </div>
+          <h2 class="mktoText" mktoName="Speaker 3 Name" id="speaker1-name2">Eiusmod <br>Tempor</h2>
+          <h3 class="mktoText" mktoName="Speaker 4 Title" id="speaker1-title2">Chief Cyber Technologist,<br>
+            <span>Illumio</span></h3>
+          <p class="mktoText" mktoName="Speaker 3 Text" id="speaker1-txt2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur maxime, ab voluptas praesentium modi recusandae dolore natus ullam fugit perspiciatis.</p>
+        </div>
+        <div class="column">
+          <div class="imgcontainer mktoText" mktoName="Speaker 4 Headshot" id="headshot">
+            <img src="https://lp.illumio.com/rs/093-SFK-561/images/paceholder-image-17%402x.png" alt="Speaker" />
+          </div>
+          <h2 class="mktoText" mktoName="Speaker 4 Name" id="speaker1-name3">Eiusmod <br>Tempor</h2>
+          <h3 class="mktoText" mktoName="Speaker 4 Title" id="speaker1-title4">Chief Cyber Technologist,<br>
+            <span>Illumio</span></h3>
+
+          <p class="mktoText" mktoName="Speaker 4 Text" id="speaker1-txt3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur maxime, ab voluptas praesentium modi recusandae dolore natus ullam fugit perspiciatis.</p>
+        </div>
+
+      </div>
+
+    </section>
+
 
     <footer id="footer">
       <div class="footer-container section flex">
@@ -2120,7 +2101,7 @@
           <div class="col">
             <div class="mktoText" id="footertext2" mktoName="Footer Text 2">
               <ul>
-                <li>© 2022 Illumio</li>
+                <li>© <script type="text/javascript">document.write(new Date().getFullYear());</script> Illumio</li>
                 <li><a href="https://illumio.com/legal-information">Legal</a>
                 </li>
                 <li><a href="https://www.illumio.com/privacy-policy">Privacy</a>
