@@ -16,7 +16,7 @@
     <meta class="mktoString" id="googleimport" mktoName="Global - Google Font @import" default="@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');" allowHtml="true">
     <meta class="mktoString" id="globalfont" mktoName="Global - Google Font Name" default="Montserrat" allowHtml="true">
 
-    <meta class="mktoString" id="formsec-bg" mktoName="Form Section Bg Image" default="https://go.ridecell.com/rs/585-LOJ-016/images/preference_bg.jpg">
+    <meta class="mktoString" id="formsec-bg" mktoName="Form Section Bg Image" default="https://go.ridecell.com/rs/585-LOJ-016/images/img_map_bg1_darker.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -80,18 +80,18 @@
         padding: 4rem 0 4rem;
       }
 
-      #main .subheadline {
-        color: #6cc04a!important;
-        font-size: 30px;
+      .form .subheadline {
+        color: #ffffff; 
+        font-size: 56px;
         line-height: 130%;
         font-weight: 500;
         padding-bottom: 20px;
       }
 
-      #main p {
-        color: #292929;
-        font-weight: 300;
-        font-size: 1.175rem;
+      .form p {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 1.25rem;
         width: 100%;
       }
 
@@ -334,16 +334,21 @@
         position: relative;
         margin: 0.75rem 0 0;
       }
+      .mktoForm .checkboxContainer .mktoCheckboxList {
+        width: 100% !important;
+        display: flex;
+        margin-top: 1rem !important;
+      }
+      .checkboxContainer .mktoLabel, .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
+        color: #ffffff;
+      }
       .mktoForm .checkboxContainer:nth-of-type(2n-2) .mktoCheckboxList {
         display: flex;
         flex-direction: column;
         margin-top: -0.25rem;
         padding: 0 !important;
       }
-      .mktoForm .checkboxContainer:nth-of-type(2n-2) label {
-        width: max-content !important;
-        margin: -1rem 0 1rem !important
-      }
+    
       .mktoForm .checkboxContainer:nth-of-type(2n-2) input {
         margin-left: 4rem !important;
       }
@@ -354,15 +359,16 @@
       .mktoForm .checkboxContainer:nth-of-type(1n+2) .mktoLogicalField {
         width: fit-content !important;
       }
-                            .mktoForm .checkboxContainer:nth-of-type(1n+2) .mktoLabel {
-                              padding-top: 0 !important;
-                            }
+      .mktoForm .checkboxContainer:nth-of-type(1n+2) .mktoLabel {
+        padding-top: 1.5rem !important;
+        margin-left: -2.5rem !important;
+      }
       .checkboxContainer .mktoFieldWrap {
         display: flex;
         flex-direction: column !important;
       }
 
- 
+
 
       .checkboxContainer .mktoLabel {
         visibility: visible !important;
@@ -378,12 +384,19 @@
         padding-bottom: 0.5rem;
       }
       .mktoForm .mktoRadioList > input, .mktoForm .mktoCheckboxList > input {
-        transform: scale(1.2); 
+        transform: scale(1.5); 
       }
       .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
         font-size: 16px !important;
-                            padding-bottom: 0.25rem !important;
-                          margin-top: -0.1rem !important;
+        padding-bottom: 0.25rem !important;
+        margin-top: -0.1rem !important;
+      }
+      .mktoForm .checkboxContainer .mktoCheckboxList > label {
+        margin-left: 1rem !important;
+          margin-bottom: 0 !important;
+          margin-top: 0.3rem !important;
+        margin-right: 3.5rem !important;
+        font-weight:400;
       }
       .mktoForm .hiddenRow {
         display: none;
@@ -421,9 +434,7 @@
           margin: 0 auto;
           display: flex;
         }
-        #main {
-          text-align: center;
-        }
+       
       }
 
       @media (max-width:520px) {
@@ -450,24 +461,19 @@
         </div>
       </navbar>
 
-      <section class="container_100 ">
-        <div id="main">
-          <div class="container_inner">
-            <div class="row">
+      
+      <section id="columns" class="form">
+                              <div class="container_inner">
+                                       <div class="row">
               <div>
-                <div class="mktoText subheadline" id="subheadlnie" mktoName="Subheeadline">Lorem ipsum dolor sit amet</div>
+                <div class="mktoText subheadline" id="subheadlnie" mktoName="Subheeadline">Thank you for your interest in Ridecell</div>
                 <div class="mktoText bodyctext" id="bodytext" mktoName="Body Text">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore sint quos soluta enim aspernatur quia illo nobis, magni perferendis nesciunt dolore, obcaecati ipsum assumenda tempora natus? Modi, pariatur consectetur?</p>
+                  <p>We value your privacy. Customize your experience by checking your preferred contact method or unsubscribe from all Ridecell communications below.</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="columns" class="form">
-        <div class="container_inner">
           <div class="mktoForm" id="fomr1" mktoName="Form">
-
+<script src="//go.ridecell.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1007"></form> <script>MktoForms2.loadForm("//go.ridecell.com", "585-LOJ-016", 1007);</script>
           </div>
         </div>
       </section>
