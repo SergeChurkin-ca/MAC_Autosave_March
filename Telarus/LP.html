@@ -26,6 +26,13 @@
     <meta class="mktoColor" id="bannerclr2" mktoName="Banner - Gradient Background Color 2" default="#478dc8">
     <meta class="mktoColor" id="bannerHeaderColor" mktoName="Banner - Header Color" default="#ffffff">
     <meta class="mktoColor" id="bannerTextColor" mktoName="Banner - Text Color" default="#ffffff">
+    <meta class="mktoColor" id="bannerTextWidth" mktoName="Banner - Text width (%)" default="100">
+    <meta class="mktoColor" id="bannerTextPadTopBtm" mktoName="Banner - Text pad/top-bottom" default="48">
+    <meta class="mktoColor" id="bannerTextPadLeftRight" mktoName="Banner - Text pad/left-right" default="64">
+    <meta class="mktoColor" id="bannerTextBgColor" mktoName="Banner - Text Bg Color" default="#">
+    <meta class="mktoColor" id="bannerTextBorder" mktoName="Banner - Text Border Color" default="#000000">
+    <meta class="mktoColor" id="bannerTextBorderRad" mktoName="Bannr Txt Brdr Raidus" default="8">
+    <meta class="mktoBoolean" id="bannerTextBoxShadow" mktoName="banner Text Box Shadow?" default="true" true_value="0 8px 20px #000;" false_value="none" false_value_name="NoShadow" true_value_name="Shadow">
 
     <meta class="mktoColor" id="freeTextBackgroundColor" mktoName="Free-Text - Background Color" default="#ffffff">
     <meta class="mktoColor" id="freeTextHeaderColor" mktoName="Free-Text - Title Color" default="#282d30">
@@ -42,7 +49,7 @@
     <meta class="mktoColor" id="formLabelColor" mktoName="Form - Label Color" default="#478DC8">
     <meta class="mktoColor" id="formTextColor" mktoName="Form - Text Color" default="#282d30">
     <meta class="mktoColor" id="formButtonColor" mktoName="Form Button - Background Color" default="#478DC8">
-    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#fff">
+    <meta class="mktoColor" id="formButtonTextColor" mktoName="Form Button - Text Color" default="#000000">
     <meta class="mktoColor" id="formHeadLineColor" mktoName="Form - Headline Color" default="#011B3E">
     <meta class="mktoColor" id="formSectionHeaderColor" mktoName="Form Sec. - Left Headline Color" default="#282d30">
     <meta class="mktoColor" id="formSectionTextColor" mktoName="Form Sec. - Left Text Color" default="#282d30">
@@ -97,6 +104,7 @@
     <!-- Form Section Styling -->
     <meta class="mktoString" mktoName="Form Header - Size (px)" id="formheadlinefontsize" default="25">
     <meta class="mktoString" mktoName="Form Text - Size (px)" id="formfontsize" default="16">
+        <meta class="mktoString" mktoName="Form Label - Size (px)" id="formlabelsize" default="14">
     <meta class="mktoString" mktoName="Form Checkbox/Radio - Size (px)" id="formfontsize-1" default="16">
     <meta class="mktoString" mktoName="Form - Top/Bottomm Padding (px)" id="formTopBottomPadding" default="0">
 
@@ -293,9 +301,16 @@
         width:${toplogowidth}px;
       }
       #header #bannertext{
-        padding-top:80px;
-        padding-bottom:30px;
-      }
+        
+        
+        background-color:${bannerTextBgColor};
+        box-shadow: ${bannerTextBoxShadow};
+    padding: ${bannerTextPadTopBtm}px ${bannerTextPadLeftRight}px !important;
+    border-radius: ${bannerTextBorderRad}px !important;
+    width: ${bannerTextWidth} !important;
+    
+}
+
 
       #header h1 {
         color: ${bannerHeaderColor} !important;
@@ -369,7 +384,7 @@
         width:99% !important;
         max-width:700px !important;
         margin: 0 auto !important;
-        ${fontfamily}
+        font-family: ${fontfamily}, sans-serif !important;
       }
       .mktoForm .mktoGutter{
         width:0 !important;
@@ -379,10 +394,15 @@
       }
       .mktoForm .mktoLabel{
         width:90% !important;
-        font-size:${formfontsize}px !important;
+        font-size:${formlabelsize}px !important;
         color: ${formLabelColor} !important;
         margin-bottom: 0.35rem !important;
-        font-weight: 600 !important;
+      }
+      .mktoForm .mktoForm .mktoRadioList > label, 
+      .mktoForm .mktoCheckboxList > label {
+        font-size:${formlabelsize}px !important;
+        font-weight: 500 !iimportant;
+        margin-bottom: -0.3rem !important;
       }
       .mktoForm.mktoLayoutAbove .mktoRequiredField .mktoAsterix {
         color: ${formLabelColor} !important;
@@ -419,20 +439,20 @@
         font-size:${formfontsize}px !important;
       }
       .mktoForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color:#282d30 !important;
+        color:#282830 !important;
         font-weight: 400;
 
       }
       .mktoForm input::-moz-placeholder { /* Firefox 19+ */
-        color:#282d30 !important;
+        color:#282830 !important;
         font-weight: 400;
       }
       .mktoForm input:-ms-input-placeholder { /* IE 10+ */
-        color:#282d30 !important;
+        color:#282830 !important;
         font-weight: 400;
       }
       .mktoForm input:-moz-placeholder { /* Firefox 18- */
-        color:#282d30 !important;
+        color:#282830 !important;
         font-weight: 400;
       }
       .mktoForm select.mktoField{
@@ -456,6 +476,9 @@
         margin-top: 3px !important;
         margin-right: 5px!important;
       }
+      .mktoForm input[type=checkbox] + label:before {
+       margin-top: 7px !important; 
+      }
       .mktoForm a, .mktoForm a:visited{
         color:#3a3a3a !important;
       }
@@ -473,8 +496,9 @@
       }
       .mktoButtonWrap button.mktoButton, .mktoForm .mktoButtonWrap.mktoGlow .mktoButton {
         background: ${formButtonColor} !important;
+        background-color: ${formButtonColor} !important;
         border: ${formButtonColor} !important;
-        color:${btnfontclr};
+        color: ${formButtonTextColor} !important;
         text-align: center !important;
         letter-spacing: unset !important;
         font-size:${btnfontsize}px !important;
@@ -519,6 +543,16 @@
         min-height: 12px;
         font-size: ${formfontsize-1}px!important;
       }
+.mktoForm input[type=checkbox], .mktoForm input[type=radio] {
+  display: none !important;
+}
+.mktoForm input[type=checkbox] + label:before, .mktoForm input[type=radio] + label:before {
+  margin-top: 0.45rem !important;
+}
+.mktoForm input[type=radio]:checked + label:before {
+  background-position: center !important;
+}
+      
       #footer{
         display:${showfooter};
         background-color:${footerbgclr};
@@ -844,7 +878,7 @@
             <h2  class="bold">Form Headline</h2>
           </div>
           <div class="mktoForm" id="form1" mktoName="Form">
-            <script src="//875-NJN-601.mktoweb.com/js/forms2/js/forms2.min.js"></script> <form id="mktoForm_1003"></form> <script>MktoForms2.loadForm("//875-NJN-601.mktoweb.com", "875-NJN-601", 1003);</script>
+        
           </div>
         </div>
 
@@ -866,7 +900,8 @@
                 <a target="_blank" href="mailto:info@telarus.com">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>                            nfo@telarus.com
+                    <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                  info@telarus.com
                 </a><br>
               </li>
               <li class="ico-foot"><a href="tel:877-346-3232" targer="_blank">
@@ -903,20 +938,20 @@
             </ul>
           </div>
 
-         <div class="icons-container col" mkfotName="footer col 4" id="footer-col4">
+          <div class="icons-container col" mkfotName="footer col 4" id="footer-col4">
 
-           <ul id="menu-technology" class="menu"><li id="menu-item-1743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1743"><a href="https://www.telarus.com/technology/">TECHNOLOGY</a></li>
-<li id="menu-item-9962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9962"><a href="https://www.telarus.com/solutionvue/">SolutionVue</a></li>
-<li id="menu-item-9480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9480"><a href="/technology#mobile">Mobile App</a></li>
-<li id="menu-item-1745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1745"><a href="/technology#geoquote">GeoQuote®</a></li>
-<li id="menu-item-1746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1746"><a href="/technology#circuit">Circuit Monitoring</a></li>
-<li id="menu-item-1747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1747"><a href="/technology#noc">NOC Services</a></li>
-<li id="menu-item-1748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1748"><a href="/technology#decision">Decision Matrices</a></li>
-<li id="menu-item-1749" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1749"><a href="/technology#vx">VX Support Line</a></li>
-<li id="menu-item-1750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1750"><a href="/technology#moonrize">Telarus StatusVue Order Status</a></li>
-<li id="menu-item-1751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1751"><a href="/technology#backoffice">Partner Back Office</a></li>
-</ul>
-            </div>
+            <ul id="menu-technology" class="menu"><li id="menu-item-1743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1743"><a href="https://www.telarus.com/technology/">TECHNOLOGY</a></li>
+              <li id="menu-item-9962" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9962"><a href="https://www.telarus.com/solutionvue/">SolutionVue</a></li>
+              <li id="menu-item-9480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9480"><a href="/technology#mobile">Mobile App</a></li>
+              <li id="menu-item-1745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1745"><a href="/technology#geoquote">GeoQuote®</a></li>
+              <li id="menu-item-1746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1746"><a href="/technology#circuit">Circuit Monitoring</a></li>
+              <li id="menu-item-1747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1747"><a href="/technology#noc">NOC Services</a></li>
+              <li id="menu-item-1748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1748"><a href="/technology#decision">Decision Matrices</a></li>
+              <li id="menu-item-1749" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1749"><a href="/technology#vx">VX Support Line</a></li>
+              <li id="menu-item-1750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1750"><a href="/technology#moonrize">Telarus StatusVue Order Status</a></li>
+              <li id="menu-item-1751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1751"><a href="/technology#backoffice">Partner Back Office</a></li>
+            </ul>
+          </div>
 
         </div>
 
